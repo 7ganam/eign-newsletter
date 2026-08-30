@@ -237,25 +237,11 @@ export function Influencers() {
           <a href="/visualisations">Funding map</a>
           <a href="/software-companies">Software companies</a>
           <a href="/influencers" aria-current="page">Influencers</a>
-          <a href="/research">Research sheet</a>
+          <a href="/research">Startups</a>
         </nav>
       </header>
 
       <main className="influencers-main">
-        <section className="influencers-heading" aria-labelledby="influencers-title">
-          <div>
-            <span className="influencers-eyebrow">Ecosystem directory · Egypt + GCC</span>
-            <h1 id="influencers-title">The people moving capital, companies, and access.</h1>
-            <p>A working index of founders, investors, public-program leaders, and high-signal media voices. Influence is based on operating reach—not follower count.</p>
-          </div>
-          <dl className="influencers-overview" aria-label="Influencer index summary">
-            <div><dt>People</dt><dd>{INFLUENCERS.length}</dd></div>
-            <div><dt>Markets</dt><dd>{COUNTRY_ORDER.length - 1}</dd></div>
-            <div><dt>Priority</dt><dd>{PRIORITY_COUNT}</dd></div>
-            <div><dt>Arabic / bilingual</dt><dd>{ARABIC_COUNT}</dd></div>
-          </dl>
-        </section>
-
         <section className="influencer-country-index" aria-label="People by market">
           {COUNTRY_ORDER.map((item) => {
             const count = COUNTRY_COUNTS.get(item) ?? 0

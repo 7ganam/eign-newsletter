@@ -3,10 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "pnpm dev:db:up && concurrently -k -n api,web -c yellow,green \"pnpm dev:api\" \"pnpm dev:web\"",
-    "dev:api": "tsx watch server/index.ts",
+    "start": "concurrently -k -n api,web -c yellow,green \"pnpm dev:api\" \"pnpm dev:web\"",
+    "dev:api": "tsx watch --include 'eign_index.*.json' --include 'assets/companies/*.csv' server/index.ts",
     "dev:web": "vite",
-    "dev:db:up": "docker compose up -d --wait",
     "build": "tsc --noEmit && vite build",
     "categorize:yc-crunchbase-audit": "tsx scripts/categorize-yc-crunchbase-audit.ts",
     "analyze:yc-crunchbase-risky": "tsx scripts/analyze-risky-link-error-sample.ts",
@@ -27,7 +26,6 @@
     "d3-voronoi-treemap": "1.1.2",
     "echarts": "^6.1.0",
     "hono": "^4.13.5",
-    "mongodb": "^7.6.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },

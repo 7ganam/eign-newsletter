@@ -870,7 +870,7 @@ export function Visualisations() {
           <a href="/visualisations" aria-current="page">Funding map</a>
           <a href="/software-companies">Software companies</a>
           <a href="/influencers">Influencers</a>
-          <a href="/research">Research sheet</a>
+          <a href="/research">Startups</a>
         </nav>
       </header>
 

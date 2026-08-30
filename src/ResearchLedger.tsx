@@ -270,7 +270,7 @@ export function ResearchLedger() {
 
   useEffect(() => {
     const previousTitle = document.title
-    document.title = 'EIGN Research Sheet'
+    document.title = 'Startups · EIGN Data Workspace'
     return () => { document.title = previousTitle }
   }, [])
 
@@ -495,16 +495,22 @@ export function ResearchLedger() {
 
   return (
     <main className="sheet-app">
+      <header className="workspace-header sheet-workspace-header">
+        <a className="workspace-brand" href="/">EI</a>
+        <div className="workspace-title"><strong>EIGN data workspace</strong><span>Companies, capital, and ecosystem directories</span></div>
+        <nav aria-label="Primary navigation">
+          <a href="/">Dashboard</a>
+          <a href="/visualisations">Funding map</a>
+          <a href="/software-companies">Software companies</a>
+          <a href="/influencers">Influencers</a>
+          <a href="/research" aria-current="page">Startups</a>
+        </nav>
+      </header>
+
       <header className="sheet-titlebar">
-        <a className="sheet-brand" href="/" aria-label="Open dashboard">EI</a>
         <div className="sheet-document">
-          <strong>EIGN company research</strong>
-          <span>Local MongoDB · {schema?.collection ?? 'companies'}</span>
-        </div>
-        <div className="sheet-titlebar-links">
-          <a className="sheet-dashboard-link" href="/software-companies">Software companies</a>
-          <a className="sheet-dashboard-link" href="/influencers">Influencers</a>
-          <a className="sheet-dashboard-link" href="/">Dashboard</a>
+          <strong>Startups</strong>
+          <span>Local JSON files · {schema?.collection ?? 'companies'}</span>
         </div>
       </header>
 
@@ -606,7 +612,7 @@ export function ResearchLedger() {
         className="sheet-grid-scroll"
         tabIndex={0}
         onKeyDown={handleGridKeyDown}
-        aria-label="Company research spreadsheet"
+        aria-label="Startups spreadsheet"
       >
         <div className="sheet-grid" style={styleVariables}>
           <div className="sheet-grid-header">
@@ -695,7 +701,7 @@ export function ResearchLedger() {
       </div>
 
       <footer className="sheet-statusbar">
-        <span className="sheet-tab">Companies</span>
+        <span className="sheet-tab">Startups</span>
         <span>{schema?.fields.length ?? 0} columns</span>
         <span>{rows.length.toLocaleString()} of {total.toLocaleString()} rows loaded</span>
         <span>{hasMore ? 'Scroll down to load more' : 'All matching rows loaded'}</span>

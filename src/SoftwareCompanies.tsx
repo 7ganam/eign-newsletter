@@ -144,7 +144,7 @@ export function SoftwareCompanies() {
           <a href="/visualisations">Funding map</a>
           <a href="/software-companies" aria-current="page">Software companies</a>
           <a href="/influencers">Influencers</a>
-          <a href="/research">Research sheet</a>
+          <a href="/research">Startups</a>
         </nav>
       </header>
 

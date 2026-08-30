@@ -1505,110 +1505,12 @@ a {
   padding: 14px;
 }
 
-.influencers-heading {
-  position: relative;
-  display: grid;
-  min-height: 220px;
-  padding: 28px;
-  overflow: hidden;
-  grid-template-columns: minmax(0, 1.45fr) minmax(360px, 0.75fr);
-  align-items: end;
-  gap: 34px;
-  color: #fff;
-  background: #202124;
-  border: 1px solid #202124;
-  border-radius: 5px 5px 0 0;
-}
-
-.influencers-heading::before {
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(90deg, transparent 49.85%, rgba(255, 255, 255, 0.055) 50%, transparent 50.15%) 0 0 / 70px 70px,
-    linear-gradient(transparent 49.85%, rgba(255, 255, 255, 0.055) 50%, transparent 50.15%) 0 0 / 70px 70px,
-    radial-gradient(circle at 78% 18%, rgba(52, 168, 83, 0.24), transparent 32%);
-  content: '';
-  pointer-events: none;
-}
-
-.influencers-heading::after {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 5px;
-  background: #34a853;
-  content: '';
-}
-
-.influencers-heading > * {
-  position: relative;
-  z-index: 1;
-}
-
-.influencers-eyebrow {
-  display: block;
-  margin-bottom: 18px;
-  color: #81c995;
-  font-family: var(--font-mono);
-  font-size: 9px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.influencers-heading h1 {
-  max-width: 760px;
-  margin: 0;
-  font-size: clamp(27px, 3vw, 46px);
-  font-weight: 500;
-  letter-spacing: -0.045em;
-  line-height: 1.04;
-}
-
-.influencers-heading p {
-  max-width: 690px;
-  margin: 16px 0 0;
-  color: #bdc1c6;
-  font-size: 11px;
-  line-height: 1.6;
-}
-
-.influencers-overview {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin: 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.18);
-  border-left: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-.influencers-overview > div {
-  min-height: 72px;
-  padding: 12px;
-  border-right: 1px solid rgba(255, 255, 255, 0.18);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-.influencers-overview dt {
-  color: #9aa0a6;
-  font-size: 8px;
-  text-transform: uppercase;
-}
-
-.influencers-overview dd {
-  margin: 8px 0 0;
-  font-family: var(--font-mono);
-  font-size: 21px;
-  font-weight: 500;
-}
-
 .influencer-country-index {
   display: grid;
   grid-template-columns: repeat(8, minmax(105px, 1fr));
   overflow-x: auto;
   background: #fff;
-  border-right: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-  border-left: 1px solid var(--line);
+  border: 1px solid var(--line);
 }
 
 .influencer-country-index__item {
@@ -2160,17 +2062,6 @@ a {
     padding: 8px;
   }
 
-  .influencers-heading {
-    min-height: 0;
-    padding: 23px 20px;
-    grid-template-columns: 1fr;
-    gap: 26px;
-  }
-
-  .influencers-overview {
-    width: 100%;
-  }
-
   .influencer-country-index {
     grid-template-columns: repeat(8, 112px);
   }
@@ -2203,14 +2094,6 @@ a {
 }
 
 @media (max-width: 520px) {
-  .influencers-heading h1 {
-    font-size: 28px;
-  }
-
-  .influencers-heading p {
-    font-size: 10px;
-  }
-
   .influencer-filters {
     grid-template-columns: 1fr;
   }

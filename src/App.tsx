@@ -150,7 +150,7 @@ function CompanyDrawer({ detail, loading, onClose }: { detail: CompanyDetailResp
             <div className="drawer-links">
               {company.website && <a href={company.website} target="_blank" rel="noreferrer">Website <ExternalIcon /></a>}
               {company.notionUrl && <a href={company.notionUrl} target="_blank" rel="noreferrer">Notion record <ExternalIcon /></a>}
-              <a href={`/research?company=${encodeURIComponent(company.slug)}`}>Open in research sheet</a>
+              <a href={`/research?company=${encodeURIComponent(company.slug)}`}>Open in Startups</a>
             </div>
 
             <section className="drawer-metrics">
@@ -354,17 +354,16 @@ export function App() {
         <div className="workspace-title"><strong>EIGN data workspace</strong><span>Companies and funding records</span></div>
         <nav aria-label="Primary navigation">
           <a href="/" aria-current="page">Dashboard</a>
-          <a href="#company-table">Companies</a>
           <a href="/visualisations">Funding map</a>
           <a href="/software-companies">Software companies</a>
           <a href="/influencers">Influencers</a>
-          <a href="/research">Research sheet</a>
+          <a href="/research">Startups</a>
         </nav>
       </header>
 
       <main className="dashboard-main">
         <div className="dashboard-context">
-          <div><strong>Dataset overview</strong><span>Local MongoDB · Updated {formatDate(dashboard.summary.updatedAt, 'long')}</span></div>
+          <div><strong>Dataset overview</strong><span>Local JSON files · Updated {formatDate(dashboard.summary.updatedAt, 'long')}</span></div>
           <span className="connection-status"><i /> Connected</span>
         </div>
 
@@ -424,7 +423,7 @@ export function App() {
         </section>
 
         <section className="company-explorer" id="company-table">
-          <header className="section-toolbar"><div><h2>Company table</h2><p>Search, filter, sort, and open a company record</p></div><a href="/research">Open full research sheet →</a></header>
+          <header className="section-toolbar"><div><h2>Company table</h2><p>Search, filter, sort, and open a company record</p></div><a href="/research">Open Startups →</a></header>
           <div className="filter-bar">
             <label className="search-field"><span className="sr-only">Search companies</span><SearchIcon /><input type="search" placeholder="Search name, summary, or slug" value={filters.q} onChange={(event) => updateFilter('q', event.target.value)} /></label>
             <label><span>Industry</span><select value={filters.industry} onChange={(event) => updateFilter('industry', event.target.value)}><option value="">All industries</option>{dashboard.industries.map((item) => <option key={item.industry} value={item.industry}>{item.industry}</option>)}</select></label>
