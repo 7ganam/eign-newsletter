@@ -1,0 +1,34 @@
+{
+  "sourceAudit": "/Users/ahmedelghannam/projects/playground/eign-newsletter/outputs/yc-crunchbase-links-public/run-2026-08-28T13-08-54-240Z/yc-crunchbase-audit.csv",
+  "totalRows": 6302,
+  "riskyUniqueRows": 3653,
+  "nonRiskyRows": 2649,
+  "categoryCounts": {
+    "unverified_candidate": 3533,
+    "archive_observed_candidate": 19,
+    "source_conflict": 8,
+    "url_collision": 12,
+    "invalid_source_value": 9,
+    "historical_only": 109,
+    "invalid_company_website": 38,
+    "slug_only_source": 3,
+    "sample_validation_failed": 2,
+    "sample_validation_unresolved": 0
+  },
+  "categoryFiles": {
+    "unverified_candidate": "/Users/ahmedelghannam/projects/playground/eign-newsletter/outputs/yc-crunchbase-links-public/run-2026-08-28T13-08-54-240Z/risk-separation/risky-categories/yc-crunchbase-risk-unverified-candidate.csv",
+    "archive_observed_candidate": "/Users/ahmedelghannam/projects/playground/eign-newsletter/outputs/yc-crunchbase-links-public/run-2026-08-28T13-08-54-240Z/risk-separation/risky-categories/yc-crunchbase-risk-archive-observed-candidate.csv",
+    "source_conflict": "/Users/ahmedelghannam/projects/playground/eign-newsletter/outputs/yc-crunchbase-links-public/run-2026-08-28T13-08-54-240Z/risk-separation/risky-categories/yc-crunchbase-risk-source-conflict.csv",
+    "url_collision": "/Users/ahmedelghannam/projects/playground/eign-newsletter/outputs/yc-crunchbase-links-public/run-2026-08-28T13-08-54-240Z/risk-separation/risky-categories/yc-crunchbase-risk-url-collision.csv",
+    "invalid_source_value": "/Users/ahmedelghannam/projects/playground/eign-newsletter/outputs/yc-crunchbase-links-public/run-2026-08-28T13-08-54-240Z/risk-separation/risky-categories/yc-crunchbase-risk-invalid-source-value.csv",
+    "historical_only": "/Users/ahmedelghannam/projects/playground/eign-newsletter/outputs/yc-crunchbase-links-public/run-2026-08-28T13-08-54-240Z/risk-separation/risky-categories/yc-crunchbase-risk-historical-only.csv",
+    "invalid_company_website": "/Users/ahmedelghannam/projects/playground/eign-newsletter/outputs/yc-crunchbase-links-public/run-2026-08-28T13-08-54-240Z/risk-separation/risky-categories/yc-crunchbase-risk-invalid-company-website.csv",
+    "slug_only_source": "/Users/ahmedelghannam/projects/playground/eign-newsletter/outputs/yc-crunchbase-links-public/run-2026-08-28T13-08-54-240Z/risk-separation/risky-categories/yc-crunchbase-risk-slug-only-source.csv",
+    "sample_validation_failed": "/Users/ahmedelghannam/projects/playground/eign-newsletter/outputs/yc-crunchbase-links-public/run-2026-08-28T13-08-54-240Z/risk-separation/risky-categories/yc-crunchbase-risk-sample-validation-failed.csv",
+    "sample_validation_unresolved": "/Users/ahmedelghannam/projects/playground/eign-newsletter/outputs/yc-crunchbase-links-public/run-2026-08-28T13-08-54-240Z/risk-separation/risky-categories/yc-crunchbase-risk-sample-validation-unresolved.csv"
+  },
+  "definition": {
+    "nonRisky": "publicly sourced by full Crunchbase URL, present in the current YC roster, with a usable company website, no source conflict, URL collision, invalid source value, or observed validation failure/unresolved result",
+    "categoryCountsMayOverlap": true
+  }
+}

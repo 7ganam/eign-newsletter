@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "completedAt": "2026-08-28T12:45:56.878Z",
+  "scope": "Union of the current public YC launched-company roster and historical YC rows in the dated DataHive snapshot, excluding the Y Combinator directory entry itself.",
+  "verifiedOutputDefinition": "A canonical Crunchbase organization URL explicitly present in the public DataHive source. No URL was opened or live-validated against Crunchbase.",
+  "candidateOutputDefinition": "A syntactically safe URL inferred from the YC slug. It is not included in the verified link files and may not exist or may identify a different organization.",
+  "sources": {
+    "currentYcRoster": {
+      "provider": "yc-oss public mirror of the YC Algolia directory index",
+      "url": "https://yc-oss.github.io/api/companies/all.json",
+      "metadataUrl": "https://yc-oss.github.io/api/meta.json",
+      "snapshotUpdatedAt": "2026-08-28T08:04:00.641Z",
+      "reportedRows": 6194,
+      "sha256": "354abc9e9256cd7ac5cfef0c57275bf196a790c77b4ed76e0a0b1920001e40f0",
+      "metadataSha256": "55216f22d13c2f9a364188283a704fa1c90474a7f3866dfaef2d1d455620ad18"
+    },
+    "historicalLinkDataset": {
+      "provider": "DataHive via Hugging Face",
+      "url": "https://huggingface.co/datasets/datahiveai/ycombinator-companies/resolve/main/yc-companies.csv?download=true",
+      "rows": 5384,
+      "sha256": "6dd6fddcfbf93e31267a3bab720db81235e3bb13ec43ef7a0e57cfe96e59d24a",
+      "licenseMetadata": "cc-by-nc-2.0",
+      "licenseNote": "The repository metadata says CC BY-NC 2.0 while its README text says CC BY-NC 4.0; resolve that discrepancy before commercial reuse."
+    }
+  },
+  "completeness": {
+    "excludedNonPortfolioRows": 1,
+    "historicalOnlyCompanies": 14,
+    "invalidNonemptySourceValues": 19,
+    "publiclySourcedCompanyRows": 2617,
+    "publiclySourcedUniqueLinks": 2615,
+    "rosterCompanies": 6207,
+    "unverifiedCandidateCompanies": 3590,
+    "uniqueLinkCollisions": 2
+  },
+  "networkSafety": {
+    "crunchbaseRequests": 0,
+    "browserOpened": false,
+    "browserProfileRead": false,
+    "crunchbaseApiKeyRead": false,
+    "cookiesRead": false,
+    "refreshRequested": false,
+    "allowedSourceHosts": [
+      "huggingface.co",
+      "yc-oss.github.io"
+    ],
+    "requestsByHostname": {},
+    "redirectsFollowedAfterAllowlistValidation": 0
+  },
+  "outputs": {
+    "verifiedLinksText": "yc-crunchbase-links.txt",
+    "verifiedLinksJson": "yc-crunchbase-links.json",
+    "verifiedSlugsJson": "yc-crunchbase-slugs.json",
+    "auditCsv": "yc-crunchbase-audit.csv",
+    "candidatesCsv": "yc-crunchbase-candidates.csv"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 2,
+  "completedAt": "2026-08-28T13:00:03.112Z",
+  "scope": "Union of the current public YC launched-company roster plus historical rows in the DataHive and Radema snapshots, excluding the Y Combinator directory self-entry.",
+  "publiclySourcedOutputDefinition": "A canonical Crunchbase organization URL explicitly present in at least one public YC-specific dataset. No URL was opened or live-validated against Crunchbase.",
+  "allCandidateOutputDefinition": "The publicly sourced links plus syntactically safe URLs inferred from YC slugs or, for historical rows lacking a YC slug, company names. Inferred candidates may not exist or may identify another organization.",
+  "sources": {
+    "currentYcRoster": {
+      "provider": "yc-oss public mirror of the YC Algolia directory index",
+      "url": "https://yc-oss.github.io/api/companies/all.json",
+      "metadataUrl": "https://yc-oss.github.io/api/meta.json",
+      "snapshotUpdatedAt": "2026-08-28T08:04:00.641Z",
+      "reportedRows": 6194,
+      "sha256": "354abc9e9256cd7ac5cfef0c57275bf196a790c77b4ed76e0a0b1920001e40f0",
+      "metadataSha256": "55216f22d13c2f9a364188283a704fa1c90474a7f3866dfaef2d1d455620ad18"
+    },
+    "datahive": {
+      "provider": "DataHive via Hugging Face",
+      "commit": "b87ba8d6944993675bf5af3987782dfb299c4413",
+      "url": "https://huggingface.co/datasets/datahiveai/ycombinator-companies/resolve/b87ba8d6944993675bf5af3987782dfb299c4413/yc-companies.csv?download=true",
+      "rows": 5384,
+      "validLinkRows": 2628,
+      "invalidNonemptyLinkValues": 8,
+      "sha256": "6dd6fddcfbf93e31267a3bab720db81235e3bb13ec43ef7a0e57cfe96e59d24a",
+      "licenseMetadata": "cc-by-nc-2.0",
+      "licenseNote": "The repository metadata says CC BY-NC 2.0 while its README text says CC BY-NC 4.0; resolve that discrepancy before commercial reuse."
+    },
+    "radema": {
+      "provider": "radema/yc-scraper on GitHub",
+      "commit": "34bf382b9d68f6d86a3cc371fcca2552d045c8d7",
+      "url": "https://raw.githubusercontent.com/radema/yc-scraper/34bf382b9d68f6d86a3cc371fcca2552d045c8d7/data/2024-05-11-yc-companies.csv",
+      "rows": 4663,
+      "validLinkRows": 2587,
+      "invalidNonemptyLinkValues": 8,
+      "sha256": "fd9b3359834e58877ca040102c968418b231546c7e4484f09e6d9d684eeb3a14",
+      "license": "MIT"
+    },
+    "kaggleHistorical": {
+      "provider": "joebeachcapital/startups on Kaggle",
+      "datasetVersion": 1,
+      "createdAt": "2023-08-15T01:33:39.220Z",
+      "url": "https://www.kaggle.com/datasets/joebeachcapital/startups",
+      "rows": 688,
+      "validLinkRows": 602,
+      "invalidNonemptyLinkValues": 10,
+      "sha256": "0c417a44f9e1ac2cb9533ae734dd679b40964b1c8071e9aaea76614924654355",
+      "license": "CC-BY-SA-4.0"
+    },
+    "commonCrawlCandidateIndex": {
+      "provider": "Common Crawl ZipNum index",
+      "crawl": "CC-MAIN-2019-51",
+      "url": "https://data.commoncrawl.org/cc-index/collections/CC-MAIN-2019-51/indexes/cluster.idx",
+      "sha256": "0279d69a19d507f469e73a1e0d04a916e3e46ff8aae2a328cf5617ff47ef3728",
+      "note": "Used only to label exact YC-slug candidates as historically observed. A crawl attempt does not prove company identity or current URL validity."
+    }
+  },
+  "completeness": {
+    "allCandidateUniqueLinks": 6422,
+    "archiveObservedCandidateCompanies": 19,
+    "commonCrawlDictionaryUrls": 8875,
+    "commonCrawlExactSlugCandidateMatches": 19,
+    "excludedNonPortfolioRows": 1,
+    "historicalOnlyCompanies": 109,
+    "noCandidateCompanies": 0,
+    "publicEvidenceRows": 5817,
+    "publiclySourcedCompanyRows": 2750,
+    "publiclySourcedUniqueLinks": 2907,
+    "rosterCompanies": 6302,
+    "sourceConflicts": 8,
+    "unverifiedCandidateCompanies": 3552
+  },
+  "networkSafety": {
+    "crunchbaseRequests": 0,
+    "browserOpened": false,
+    "browserProfileRead": false,
+    "crunchbaseApiKeyRead": false,
+    "cookiesRead": false,
+    "refreshRequested": false,
+    "allowedSourceHosts": [
+      "huggingface.co",
+      "raw.githubusercontent.com",
+      "yc-oss.github.io"
+    ],
+    "requestsByHostname": {},
+    "redirectsFollowedAfterAllowlistValidation": 0
+  },
+  "outputs": {
+    "publiclySourcedLinksText": "yc-crunchbase-links.txt",
+    "publiclySourcedLinksJson": "yc-crunchbase-links.json",
+    "publiclySourcedSlugsJson": "yc-crunchbase-slugs.json",
+    "allCandidatesText": "yc-crunchbase-all-candidates.txt",
+    "allCandidatesJson": "yc-crunchbase-all-candidates.json",
+    "auditCsv": "yc-crunchbase-audit.csv",
+    "inferredCandidatesCsv": "yc-crunchbase-candidates.csv",
+    "noCandidateCsv": "yc-companies-without-candidate.csv",
+    "publicEvidenceCsv": "yc-crunchbase-public-evidence.csv",
+    "sourceConflictsCsv": "yc-crunchbase-source-conflicts.csv"
+  }
+}

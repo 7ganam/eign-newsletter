@@ -1,0 +1,79 @@
+{
+  "scope": "risky rows only; lower-risk rows excluded",
+  "population": {
+    "totalRiskyRows": 3653,
+    "knownCertaintyRows": 4,
+    "randomlySampledFrameRows": 3649
+  },
+  "design": {
+    "method": "simple random sample without replacement via SHA-256 ordering",
+    "seed": "risky-link-error-audit-2026-08-28-v1",
+    "randomSampleSize": 100,
+    "randomSampleFraction": 0.02740476842970677,
+    "knownCertaintyCounts": {
+      "correct": 2,
+      "wrong": 2
+    },
+    "sampleCounts": {
+      "correct": 53,
+      "wrong": 32,
+      "unresolved": 15
+    },
+    "sampleCategoryCounts": {
+      "unverified_candidate": 100,
+      "archive_observed_candidate": 0,
+      "source_conflict": 0,
+      "url_collision": 0,
+      "invalid_source_value": 0,
+      "historical_only": 0,
+      "invalid_company_website": 0,
+      "slug_only_source": 0,
+      "sample_validation_failed": 0,
+      "sample_validation_unresolved": 0
+    }
+  },
+  "estimates": {
+    "centralAssumption": {
+      "assumption": "unresolved cases have the same wrong-link rate as resolved cases",
+      "wrongLinkProbability": 0.3766058517576207,
+      "confidenceLevel": 0.95,
+      "confidenceInterval": {
+        "lower": 0.28116283810371984,
+        "upper": 0.4827198639628716
+      },
+      "estimatedWrongRows": 1376,
+      "estimatedWrongRowsInterval": {
+        "lower": 1027,
+        "upper": 1763
+      }
+    },
+    "classificationBounds": {
+      "allUnresolvedCorrect": {
+        "wrongLinkProbability": 0.3201970982753901,
+        "confidenceInterval": {
+          "lower": 0.23697979356397947,
+          "upper": 0.4167174796319211
+        },
+        "estimatedWrongRows": 1170
+      },
+      "allUnresolvedWrong": {
+        "wrongLinkProbability": 0.470032849712565,
+        "confidenceInterval": {
+          "lower": 0.37524493494014866,
+          "upper": 0.5670379439258347
+        },
+        "estimatedWrongRows": 1717
+      },
+      "combinedSamplingAndClassificationEnvelope": {
+        "lower": 0.23697979356397947,
+        "upper": 0.5670379439258347
+      }
+    }
+  },
+  "notes": [
+    "Wilson score intervals are computed on the random-sample component and transformed to include the four fully known certainty rows.",
+    "The finite-population correction is intentionally omitted, making intervals slightly conservative.",
+    "The central confidence interval assumes unresolved status is unrelated to whether the link is wrong; the classification bounds do not make that assumption.",
+    "All 100 randomly selected rows carried unverified_candidate; rare overlapping risk flags were not represented and cannot be estimated separately from this sample."
+  ]
+}

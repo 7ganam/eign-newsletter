@@ -1,0 +1,61 @@
+{
+  "createdAt": "2026-08-28T20:14:42.274Z",
+  "population": {
+    "riskyRows": 3653,
+    "previouslyReviewedRiskyRows": 4,
+    "unreviewedRiskyRows": 3649,
+    "categoryCounts": {
+      "unverified_candidate": 3533,
+      "archive_observed_candidate": 19,
+      "source_conflict": 8,
+      "url_collision": 12,
+      "invalid_source_value": 9,
+      "historical_only": 109,
+      "invalid_company_website": 38,
+      "slug_only_source": 3,
+      "sample_validation_failed": 2,
+      "sample_validation_unresolved": 0
+    }
+  },
+  "sample": {
+    "frame": "unreviewed risky rows only",
+    "method": "simple random sample without replacement via SHA-256 ordering",
+    "size": 100,
+    "seed": "risky-link-error-audit-2026-08-28-v1",
+    "sampleCategoryCounts": {
+      "unverified_candidate": 100,
+      "archive_observed_candidate": 0,
+      "source_conflict": 0,
+      "url_collision": 0,
+      "invalid_source_value": 0,
+      "historical_only": 0,
+      "invalid_company_website": 0,
+      "slug_only_source": 0,
+      "sample_validation_failed": 0,
+      "sample_validation_unresolved": 0
+    },
+    "output": "/Users/ahmedelghannam/projects/playground/eign-newsletter/outputs/yc-crunchbase-links-public/run-2026-08-28T13-08-54-240Z/risk-separation/risky-link-error-audit/risky-link-random-sample.csv"
+  },
+  "reviewedRiskyRows": [
+    {
+      "yc_id": "12738",
+      "name": "Vahan",
+      "validation_status": "incorrect"
+    },
+    {
+      "yc_id": "30609",
+      "name": "Halluminate",
+      "validation_status": "incorrect"
+    },
+    {
+      "yc_id": "1918",
+      "name": "JITX",
+      "validation_status": "confirmed"
+    },
+    {
+      "yc_id": "23265",
+      "name": "Mono",
+      "validation_status": "confirmed"
+    }
+  ]
+}

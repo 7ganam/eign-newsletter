@@ -1,0 +1,45 @@
+{
+  "name": "eign-newsletter",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "pnpm dev:db:up && concurrently -k -n api,web -c yellow,green \"pnpm dev:api\" \"pnpm dev:web\"",
+    "dev:api": "tsx watch server/index.ts",
+    "dev:web": "vite",
+    "dev:db:up": "docker compose up -d --wait",
+    "build": "tsc --noEmit && vite build",
+    "categorize:yc-crunchbase-audit": "tsx scripts/categorize-yc-crunchbase-audit.ts",
+    "analyze:yc-crunchbase-risky": "tsx scripts/analyze-risky-link-error-sample.ts",
+    "sample:yc-crunchbase-risky": "tsx scripts/create-risky-link-audit-sample.ts",
+    "extract:crunchbase-insights": "tsx scripts/extract-crunchbase-insights.ts",
+    "export:yc-crunchbase-links": "tsx scripts/export-yc-crunchbase-links.ts",
+    "export:yc-crunchbase-links:public": "tsx scripts/export-yc-crunchbase-links-public.ts",
+    "scrape:crunchbase": "tsx scripts/scrape-crunchbase.ts",
+    "test:yc-crunchbase-links:public": "tsx --test scripts/lib/public-yc-crunchbase-links.test.ts",
+    "test:yc-crunchbase-links": "tsx --test scripts/lib/yc-crunchbase-links.test.ts"
+  },
+  "dependencies": {
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/ibm-plex-sans": "^5.3.0",
+    "@hono/node-server": "^2.1.1",
+    "@tanstack/react-virtual": "^3.14.10",
+    "d3": "7.9.0",
+    "d3-voronoi-treemap": "1.1.2",
+    "echarts": "^6.1.0",
+    "hono": "^4.13.5",
+    "mongodb": "^7.6.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/d3": "7.4.3",
+    "@types/node": "^26.4.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.5",
+    "@vitejs/plugin-react": "^6.1.0",
+    "concurrently": "^10.0.5",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.2"
+  }
+}

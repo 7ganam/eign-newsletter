@@ -1,0 +1,30 @@
+{
+  "validatedAt": "2026-08-28",
+  "population": {
+    "label": "lower-risk rows after strict risk separation and first-sample failures were excluded",
+    "rows": 2649
+  },
+  "selection": {
+    "sampleSize": 15,
+    "method": "deterministic stratified sample across source, YC status, and company age",
+    "seed": "final-lower-risk-sample-2026-08-28:yc_id",
+    "excludedPreviouslyValidatedYcIds": true,
+    "strata": {
+      "datahive_active_recent": 3,
+      "datahive_active_mid": 3,
+      "datahive_active_older": 2,
+      "datahive_inactive": 2,
+      "datahive_acquired": 2,
+      "datahive_public": 1,
+      "radema_active": 1,
+      "radema_inactive": 1
+    }
+  },
+  "results": {
+    "confirmed": 15,
+    "incorrect": 0,
+    "unresolved": 0,
+    "observedErrorRate": 0
+  },
+  "interpretation": "This is a positive smoke test of the lower-risk partition, not proof that every row is correct. With only 15 observations, the approximate rule-of-three 95% upper bound on the underlying error rate is 20%."
+}
