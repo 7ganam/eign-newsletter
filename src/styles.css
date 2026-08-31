@@ -3027,7 +3027,12 @@ a {
   height: 15px;
   margin: 0;
   accent-color: #087a50;
-  cursor: default;
+  cursor: pointer;
+}
+
+.leap-target-checkbox.is-overridden {
+  outline: 2px solid rgba(8, 122, 80, 0.22);
+  outline-offset: 2px;
 }
 
 .leap-image-source {

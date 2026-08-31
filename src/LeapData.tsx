@@ -37,11 +37,13 @@ type SortDirection = 'asc' | 'desc'
 type ColumnDrop = { column: LeapColumn; position: 'before' | 'after' }
 type CompletenessFilter = 'all' | 'complete' | 'missing-title' | 'missing-organization'
 type CampaignFilter = 'all' | 'checked' | 'unchecked'
+type CampaignOverrides = Record<string, boolean>
 
 const PAGE_SIZE = 100
 const SOURCE_URL = 'https://onegiantleap.com/2026-speakers'
 const COLUMN_ORDER_STORAGE_KEY = 'eign-leap-speakers.column-order.v1'
 const ROW_SORT_STORAGE_KEY = 'eign-leap-speakers.row-sort.v1'
+const CAMPAIGN_OVERRIDES_STORAGE_KEY = 'eign-leap-speakers.middle-eastern-overrides.v1'
 const REGION_KEYWORDS = [
   'middle east',
   'middle-east',
@@ -164,6 +166,26 @@ const saveColumnOrder = (columns: LeapColumn[]) => {
     // Column reordering remains available for the current session.
   }
 }
+
+const restoreCampaignOverrides = (): CampaignOverrides => {
+  try {
+    const saved = JSON.parse(localStorage.getItem(CAMPAIGN_OVERRIDES_STORAGE_KEY) ?? '{}') as unknown
+    if (!saved || typeof saved !== 'object' || Array.isArray(saved)) return {}
+    return Object.fromEntries(
+      Object.entries(saved).filter((entry): entry is [string, boolean] => typeof entry[1] === 'boolean'),
+    )
+  } catch {
+    return {}
+  }
+}
+
+const saveCampaignOverrides = (overrides: CampaignOverrides) => {
+  try {
+    localStorage.setItem(CAMPAIGN_OVERRIDES_STORAGE_KEY, JSON.stringify(overrides))
+  } catch {
+    // Checkbox editing remains available for the current session.
+  }
+}
 const AUTOMATIC_MIDDLE_EAST_NAME_SUBSTRINGS = [
   'abdul',
   'al',
@@ -237,32 +259,8 @@ const speakers = (leapData as LeapSpeaker[]).map((speaker, sourceIndex): Indexed
   }
 })
 
-const LEAP_SUMMARY = (() => {
-  let missingTitles = 0
-  let missingOrganizations = 0
-  let explicitRegionSignals = 0
-  let automaticMiddleEastNameMatches = 0
-  let arabicIndicators = 0
-  let checkedTargets = 0
-
-  for (const speaker of speakers) {
-    if (!speaker.title) missingTitles += 1
-    if (!speaker.organization) missingOrganizations += 1
-    if (speaker.explicitRegionSignal) explicitRegionSignals += 1
-    if (speaker.automaticMiddleEastNameMatch) automaticMiddleEastNameMatches += 1
-    if (speaker.arabicNameSignal === 'arabic-name-form') arabicIndicators += 1
-    if (speaker.campaignSignal !== 'uncertain') checkedTargets += 1
-  }
-
-  return {
-    missingTitles,
-    missingOrganizations,
-    explicitRegionSignals,
-    automaticMiddleEastNameMatches,
-    arabicIndicators,
-    checkedTargets,
-  }
-})()
+const isCampaignChecked = (speaker: IndexedLeapSpeaker, overrides: CampaignOverrides) =>
+  overrides[speaker.profile_url] ?? (speaker.campaignSignal !== 'uncertain')
 
 const initials = (name: string) => name
   .split(/\s+/)
@@ -304,7 +302,19 @@ function SearchIcon() {
   )
 }
 
-function LeapSpeakerCell({ column, speaker }: { column: LeapColumn; speaker: IndexedLeapSpeaker }) {
+function LeapSpeakerCell({
+  campaignChecked,
+  campaignOverridden,
+  column,
+  onCampaignChange,
+  speaker,
+}: {
+  campaignChecked: boolean
+  campaignOverridden: boolean
+  column: LeapColumn
+  onCampaignChange: (checked: boolean) => void
+  speaker: IndexedLeapSpeaker
+}) {
   if (column === 'name') {
     return (
       <td>
@@ -341,11 +351,11 @@ function LeapSpeakerCell({ column, speaker }: { column: LeapColumn; speaker: Ind
     return (
       <td>
         <input
-          aria-label={`${speaker.name}: Middle Eastern ${speaker.campaignSignal === 'uncertain' ? 'unchecked' : 'checked'}`}
-          className="leap-target-checkbox"
-          checked={speaker.campaignSignal !== 'uncertain'}
-          readOnly
-          title={CAMPAIGN_SIGNAL_LABEL[speaker.campaignSignal]}
+          aria-label={`${speaker.name}: Middle Eastern ${campaignChecked ? 'checked' : 'unchecked'}`}
+          className={`leap-target-checkbox${campaignOverridden ? ' is-overridden' : ''}`}
+          checked={campaignChecked}
+          onChange={(event) => onCampaignChange(event.target.checked)}
+          title={`${campaignOverridden ? 'Manual override' : 'Automatic value'} · ${CAMPAIGN_SIGNAL_LABEL[speaker.campaignSignal]}`}
           type="checkbox"
         />
       </td>
@@ -372,6 +382,7 @@ export function LeapData() {
     sortDirection,
     sortField,
   } = usePersistedSort<LeapColumn>(ROW_SORT_STORAGE_KEY, DEFAULT_SORT, LEAP_COLUMN_KEYS)
+  const [campaignOverrides, setCampaignOverrides] = useState<CampaignOverrides>(restoreCampaignOverrides)
   const [columnOrder, setColumnOrder] = useState<LeapColumn[]>(restoreColumnOrder)
   const [draggingColumn, setDraggingColumn] = useState<LeapColumn | null>(null)
   const [columnDrop, setColumnDrop] = useState<ColumnDrop | null>(null)
@@ -394,8 +405,8 @@ export function LeapData() {
         return true
       })
       .filter((speaker) => {
-        if (campaignFilter === 'checked') return speaker.campaignSignal !== 'uncertain'
-        if (campaignFilter === 'unchecked') return speaker.campaignSignal === 'uncertain'
+        if (campaignFilter === 'checked') return isCampaignChecked(speaker, campaignOverrides)
+        if (campaignFilter === 'unchecked') return !isCampaignChecked(speaker, campaignOverrides)
         return true
       })
       .filter((speaker) => {
@@ -403,14 +414,18 @@ export function LeapData() {
 
         return LEAP_COLUMNS.some((column) => {
           const value = column.key === 'campaignSignal'
-            ? speaker.campaignSignal === 'uncertain' ? 'unchecked' : 'checked middle eastern'
+            ? isCampaignChecked(speaker, campaignOverrides) ? 'checked middle eastern' : 'unchecked'
             : speaker[column.key]
           return String(value ?? '').toLocaleLowerCase().includes(normalizedQuery)
         })
       })
       .sort((left, right) => {
-        const leftValue = String(left[sortField] ?? '')
-        const rightValue = String(right[sortField] ?? '')
+        const leftValue = sortField === 'campaignSignal'
+          ? isCampaignChecked(left, campaignOverrides) ? '1' : '0'
+          : String(left[sortField] ?? '')
+        const rightValue = sortField === 'campaignSignal'
+          ? isCampaignChecked(right, campaignOverrides) ? '1' : '0'
+          : String(right[sortField] ?? '')
         if (!leftValue || !rightValue) {
           if (!leftValue && rightValue) return 1
           if (leftValue && !rightValue) return -1
@@ -418,7 +433,12 @@ export function LeapData() {
         const comparison = leftValue.localeCompare(rightValue, undefined, { numeric: true, sensitivity: 'base' })
         return (sortDirection === 'asc' ? comparison : -comparison) || left.sourceIndex - right.sourceIndex
       })
-  }, [completeness, campaignFilter, deferredQuery, sortDirection, sortField])
+  }, [campaignOverrides, completeness, campaignFilter, deferredQuery, sortDirection, sortField])
+
+  const checkedTargetCount = useMemo(
+    () => speakers.reduce((total, speaker) => total + Number(isCampaignChecked(speaker, campaignOverrides)), 0),
+    [campaignOverrides],
+  )
 
   const pageCount = Math.max(1, Math.ceil(results.length / PAGE_SIZE))
   const safePage = Math.min(page, pageCount)
@@ -531,6 +551,17 @@ export function LeapData() {
     setColumnDrop(null)
   }
 
+  const updateCampaignTarget = (speaker: IndexedLeapSpeaker, checked: boolean) => {
+    setCampaignOverrides((current) => {
+      const next = { ...current }
+      const automaticValue = speaker.campaignSignal !== 'uncertain'
+      if (checked === automaticValue) delete next[speaker.profile_url]
+      else next[speaker.profile_url] = checked
+      saveCampaignOverrides(next)
+      return next
+    })
+  }
+
   const clearFilters = () => {
     setQuery('')
     setCompleteness('all')
@@ -622,7 +653,7 @@ export function LeapData() {
 
           <div className="result-meta leap-data-meta" aria-live="polite">
             <span>{results.length.toLocaleString()} matching speakers · sorted by {LEAP_COLUMNS_BY_KEY.get(sortField)?.label.toLocaleLowerCase()} {sortDirection === 'asc' ? '↑' : '↓'}</span>
-            <span>{LEAP_SUMMARY.checkedTargets} automatically checked · drag headers to reorder · click arrows to sort · drag edges to resize</span>
+            <span>{checkedTargetCount} checked · {Object.keys(campaignOverrides).length} manual overrides · drag headers to reorder · click arrows to sort · drag edges to resize</span>
           </div>
 
           <div className="riseup-speakers-table-wrap leap-data-table-wrap">
@@ -682,7 +713,14 @@ export function LeapData() {
                 {visibleSpeakers.map((speaker) => (
                   <tr key={`${speaker.profile_url}-${speaker.sourceIndex}`}>
                     {columnOrder.map((column) => (
-                      <LeapSpeakerCell key={column} column={column} speaker={speaker} />
+                      <LeapSpeakerCell
+                        key={column}
+                        campaignChecked={isCampaignChecked(speaker, campaignOverrides)}
+                        campaignOverridden={Object.prototype.hasOwnProperty.call(campaignOverrides, speaker.profile_url)}
+                        column={column}
+                        onCampaignChange={(checked) => updateCampaignTarget(speaker, checked)}
+                        speaker={speaker}
+                      />
                     ))}
                   </tr>
                 ))}
