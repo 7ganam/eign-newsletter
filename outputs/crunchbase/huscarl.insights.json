@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:59:18.414Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:59:18.362Z",
+    "url": "https://www.crunchbase.com/organization/huscarl"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Huscarl",
+      "shortDescription": "Huscarl provides AI-driven actuarial advisory and insurance analytics for corporate risk managers and finance leaders.",
+      "description": "Huscarl provides AI-native actuarial advisory and insurance analytics for corporate risk managers and finance leaders. The company develops software that scans and quantifies corporate risk exposures across property, casualty, specialty, and benefits programs. Its platform ingests complex, multi-hundred-page insurance policies and translates them into standardized actuarial and financial models. Huscarl uses these models to identify coverage gaps, over-insurance, and optimization opportunities across captives, high deductibles, and alternative risk transfer structures. It offers advisory on captives feasibility and structuring, retention management, and parametric and structured solutions. The company’s tools support forward-looking loss modelling, underwriting-friendly submissions, and decision dashboards that help enterprises adjust insurance programs to match their explicit risk footprint.",
+      "website": "https://www.huscarl.io/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Paris, Ile-de-France, France",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Analytics",
+        "Artificial Intelligence (AI)",
+        "Enterprise Software",
+        "Financial Services",
+        "Health Insurance",
+        "Insurance",
+        "Machine Learning",
+        "Risk Management",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Financial Services",
+        "Professional Services",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Alex Musy",
+        "Paulien Jeunesse"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An AI-native risk modelling engine that converts complex corporate insurance policies into structured actuarial and financial models.",
+        "name": "Huscarl Actuarial Analytics Engine"
+      },
+      {
+        "description": "An interactive dashboard that visualizes corporate risk exposures, loss scenarios, and self-insurance structures.",
+        "name": "Huscarl Risk Map"
+      },
+      {
+        "description": "Advisory service supporting captives, high deductibles, and alternative risk transfer using actuarial modelling.",
+        "name": "Captive and Self-Insurance Advisory"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2026-06-16",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2026-06-16",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 4223296,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2026-06-16",
+          "title": "Pre Seed Round - Huscarl"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 5,
+      "growthScore": 91,
+      "heatScore": 80
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 30.72
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 94.98,
+        "timingEstimatePercent": {
+          "within6Months": 99.97,
+          "months6To11": 0.03,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.4
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 3.85
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $500,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $4,223,296 to $4,223,296, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

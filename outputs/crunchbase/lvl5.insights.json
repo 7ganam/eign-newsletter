@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:11:43.959Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:11:43.904Z",
+    "url": "https://www.crunchbase.com/organization/lvl5"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "lvl5",
+      "shortDescription": "lvl5 create high-resolution maps for autonomous vehicles and robots using computer vision.",
+      "description": "lvl5 creates high-resolution maps for autonomous vehicles and robots using computer vision. lvl5 provides mapping and localization services to support both ADAS and full autonomy.",
+      "website": "http://www.lvl5.ai/",
+      "foundedYear": 2016,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Customer Service",
+        "Mapping Services"
+      ],
+      "sectors": [
+        "Navigation and Mapping",
+        "Professional Services"
+      ],
+      "founders": [
+        "Andrew Kouri",
+        "George Tall"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 2000000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 3,
+      "detailedRoundCount": 3,
+      "lastFundingDate": "2019-01-01",
+      "lastFundingType": "Venture round",
+      "rounds": [
+        {
+          "announcedDate": "2019-01-01",
+          "investorCount": 2,
+          "type": "Venture round"
+        },
+        {
+          "announcedDate": "2018-02-05",
+          "investorCount": 1,
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2017-07-21",
+          "amount": {
+            "amount": 2000000,
+            "currency": "USD"
+          },
+          "investorCount": 6,
+          "leadInvestors": [
+            "Max Altman",
+            "Paul Buchheit"
+          ],
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 9,
+        "visibleNames": [
+          {
+            "name": "Base Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Day One Ventures",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "John Sung Kim",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Matt Bellamy",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Max Altman",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Paul Buchheit",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Pi Campus",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "PJC",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 5,
+      "includedUniqueCount": 5,
+      "items": [
+        {
+          "date": "2019-08-20",
+          "publisher": "TechCrunch",
+          "title": "DoorDash acquires autonomous driving startup Scotty Labs",
+          "url": "https://techcrunch.com/2019/08/20/doordash-acquires-autonomous-driving-startup-scotty-labs/"
+        },
+        {
+          "date": "2019-04-01",
+          "title": "lvl5 acquired by DoorDash"
+        },
+        {
+          "date": "2019-01-01",
+          "title": "Venture Round - lvl5"
+        },
+        {
+          "date": "2018-02-05",
+          "title": "Seed Round - lvl5"
+        },
+        {
+          "date": "2017-07-21",
+          "title": "Seed Round - lvl5"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 2000000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 4,
+      "heatScore": 47
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

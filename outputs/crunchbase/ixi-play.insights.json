@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:20:51.907Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:20:51.857Z",
+    "url": "https://www.crunchbase.com/organization/ixi-play"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "IXI-Play",
+      "shortDescription": "IXI-Play is a robot for young children to play games with it.",
+      "description": "IXI-Play is building a smart, Android-based robot for young children. They can play games with it; they’ll show the robot cards and it will mimic emotions on them. It sees, hears, speaks and moves.\r\n\r\nThe toy itself retails for $299 but it will also come with an app store and other accessories. It’s a hardware platform that can have customizable skins for different characters so it can either build its own IP or license out IP from other toy companies.",
+      "website": "http://ixiplay.com/",
+      "foundedYear": 2013,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Mountain View, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Hardware",
+        "Software"
+      ],
+      "sectors": [
+        "Hardware",
+        "Software"
+      ],
+      "founders": [
+        "Ruud Van der Aalst"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2013-08-20",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2013-08-20",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2013-08-20",
+          "title": "Seed Round - IXI-Play"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -15,
+      "heatScore": 7
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Moxie is an AI robot for kids aged 5-10 that uses play-based conversational learning to teach emotional and social skills.",
+          "employeeRange": "51-100",
+          "name": "Moxie",
+          "similarityScore": 97
+        },
+        {
+          "description": "Miko is a consumer robotics lab that develops artificial intelligence robots to educate and entertain children.",
+          "employeeRange": "251-500",
+          "name": "Miko",
+          "similarityScore": 89
+        },
+        {
+          "description": "Roybi Robot is an AI-powered companion robot toy for young children in language learning & early childhood education.",
+          "employeeRange": "11-50",
+          "name": "ROYBI",
+          "similarityScore": 85
+        },
+        {
+          "description": "Digital Dream Labs provides hands-on educational technology for children through robots and robotic toys.",
+          "employeeRange": "51-100",
+          "name": "Digital Dream Labs",
+          "similarityScore": 81
+        },
+        {
+          "description": "KEYi Technology is a consumer robotics that develops AI-powered consumer robots focused on education, creativity, and companionship.",
+          "employeeRange": "51-100",
+          "name": "KEYi Tech",
+          "similarityScore": 77
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $120,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Moxie, Miko, ROYBI.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

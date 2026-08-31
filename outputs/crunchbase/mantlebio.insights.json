@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:17:07.039Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:17:06.983Z",
+    "url": "https://www.crunchbase.com/organization/mantlebio"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "MantleBio",
+      "shortDescription": "MantleBio is an operator of a medical technology company intended to build software to scale data-driven discovery for biotech.",
+      "website": "https://www.mantlebio.com/",
+      "foundedYear": 2023,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Developer Tools",
+        "Manufacturing",
+        "Operating Systems",
+        "Software"
+      ],
+      "sectors": [
+        "Manufacturing",
+        "Platforms",
+        "Software"
+      ],
+      "founders": [
+        "Emily Damato",
+        "Madeline Schade"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A cloud-based platform that integrates biotech data, computation, and team collaboration to streamline data-driven discovery processes.",
+        "name": "Mantle Platform"
+      },
+      {
+        "description": "A digital notebook for running, recording, and sharing reproducible bioinformatics analyses with automatic data lineage tracking.",
+        "name": "Electronic Lab Notebook (ELN)"
+      },
+      {
+        "description": "Infrastructure hosting for bioinformatics pipelines, allowing users to run custom or pre-built workflows at scale.",
+        "name": "Bioinformatics Pipeline Hosting"
+      },
+      {
+        "description": "Software tools that automate extraction, transformation, and loading (ETL) of biotech data from various sources to reduce errors and centralize data management.",
+        "name": "Data Integration and ETL Automation"
+      },
+      {
+        "description": "Integration of Jupyter notebooks with customizable compute environments and on-demand GPU access for data analysis and machine learning.",
+        "name": "Jupyter Notebook Integration with Compute Resources"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2023-07-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2023-07-01",
+          "investorCount": 4,
+          "postMoneyValuation": {
+            "amount": 8205845,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 4,
+        "visibleNames": [
+          {
+            "name": "Eight Capital",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Lobster Capital",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Pioneer Fund",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2023-07-01",
+          "title": "Seed Round - MantleBio"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 1,
+      "heatScore": 60
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 57.21
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 40.79,
+        "timingEstimatePercent": {
+          "within6Months": 13.12,
+          "months6To11": 11.4,
+          "months12To24": 18.5,
+          "beyond24Months": 24.51
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 72.58
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 41.46
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Benchling is an IT company that provides a cloud-based software platform for biology researchers and research and development organizations.",
+          "employeeRange": "501-1,000",
+          "name": "Benchling",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Data Engineering",
+            "Laboratory Information Management Systems (LIMS)",
+            "Data Pipelines"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "TetraScience is the Scientific Data and AI Company building Tetra OS, the operating system for scientific intelligence.",
+          "employeeRange": "101-250",
+          "name": "TetraScience",
+          "sharedSpecialties": [
+            "Data Lineage Management",
+            "Extract Transform Load (ETL)",
+            "Data Cataloging",
+            "Data Quality and Observability",
+            "Metadata Management",
+            "Laboratory Information Management Systems (LIMS)",
+            "Bioanalytics",
+            "Data Pipelines"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Dotmatics is an R&D scientific software connecting science, data, and decision-making.",
+          "employeeRange": "501-1,000",
+          "name": "Dotmatics",
+          "sharedSpecialties": [
+            "DNA Sequencing Analysis",
+            "Omics Data Integration",
+            "Metadata Management",
+            "Laboratory Information Management Systems (LIMS)",
+            "Bioanalytics",
+            "Data Pipelines"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Genestack provides customers in the pharma, biotech and healthcare sectors with multi-omics data management and integration solutions.",
+          "employeeRange": "51-100",
+          "name": "Genestack",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Data Engineering",
+            "Data Cataloging",
+            "Omics Data Integration",
+            "Metadata Management",
+            "Laboratory Information Management Systems (LIMS)",
+            "Data Pipelines"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Provider of LIMS and ELN Solutions",
+          "employeeRange": "11-50",
+          "name": "Sapio Sciences LLC",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Data Cataloging",
+            "Metadata Management",
+            "Laboratory Information Management Systems (LIMS)"
+          ],
+          "similarityScore": 86
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $8,205,845 to $8,205,845, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Benchling, TetraScience, Dotmatics.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

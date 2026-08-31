@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:10:02.910Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:10:02.853Z",
+    "url": "https://www.crunchbase.com/organization/lume"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Lume",
+      "shortDescription": "Lume Agency is an outdoor advertising firm specializing in digital billboard placement and city ad programs based in Krasnodar.",
+      "website": "http://lume.agency/",
+      "foundedYear": 2014,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "estimatedRevenueRange": "$10M-$50M",
+      "headquarters": "Krasnodar, Russian Federation",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Advertising",
+        "E-Commerce",
+        "Fashion",
+        "Leisure",
+        "Lifestyle",
+        "Web Design"
+      ],
+      "sectors": [
+        "Advertising",
+        "Clothing and Apparel",
+        "Commerce and Shopping",
+        "Community and Lifestyle",
+        "Design",
+        "Sales and Marketing"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -22,
+      "heatScore": 52
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 22.41
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 70.91
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 14.35
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "JCDecaux designs and maintains a variety of free or low-cost services, such as bus shelters, self-service bicycle programmes.",
+          "employeeRange": "10,001+",
+          "name": "JCDecaux",
+          "similarityScore": 97
+        },
+        {
+          "description": "Clear Channel Outdoor CCO Baltimore launches partnership with MEMA to deliver emergency messaging across the state using digital billboards.",
+          "employeeRange": "1,001-5,000",
+          "name": "Clear Channel Outdoor",
+          "sharedCategories": [
+            "Advertising"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Sela is an online retailer that offers clothing accessories for men, women, and children under one roof.",
+          "employeeRange": "1,001-5,000",
+          "name": "Sela",
+          "sharedCategories": [
+            "E-Commerce",
+            "Fashion"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Lamar Advertising is an advertising company that offers digital marketing services.",
+          "employeeRange": "1,001-5,000",
+          "name": "Lamar Advertising",
+          "sharedCategories": [
+            "Advertising"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Visual Displays and Marketing Solutions",
+          "employeeRange": "1,001-5,000",
+          "name": "Outfront Media",
+          "sharedCategories": [
+            "Advertising"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include JCDecaux, Clear Channel Outdoor, Sela.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

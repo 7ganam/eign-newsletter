@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:10:12.388Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:10:12.360Z",
+    "url": "https://www.crunchbase.com/organization/lumeria"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Lumeria",
+      "shortDescription": "Lumeria is a company whose goal is to use Internet technology to help make computers both more powerful and easier to use.",
+      "description": "Lumeria is a company whose goal is to use Internet technology to help make computers both more powerful and easier to use.\r\n\r\nLumeria strives to bring innovation, new paradigms, open platforms, and new opportunities to Internet computing for work, home, and play.\r\n\r\nLumeria was founded on the principle that the most valuable part of computing is your personal information. And that your information needs to be safe, well-guarded, and yet easy for you to access.\r\n\r\nLumeria's software can increase the effectiveness of the Net by connecting you to the information you need -- and to other people, in order to enable collaboration, negotiation, commerce, interpersonal relations, learning, entertainment, and community.",
+      "website": "http://www.lumeria.com/",
+      "foundedYear": 1997,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Berkeley, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Computer",
+        "Developer Platform",
+        "Information Technology",
+        "IT Infrastructure"
+      ],
+      "sectors": [
+        "Consumer Electronics",
+        "Hardware",
+        "Information Technology",
+        "Software"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2000-05-23",
+      "lastFundingType": "Venture round",
+      "rounds": [
+        {
+          "announcedDate": "2000-05-23",
+          "type": "Venture round"
+        }
+      ]
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2000-05-23",
+          "title": "Venture Round - Lumeria"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 4,
+      "growthScore": 85,
+      "heatChange90Days": 14,
+      "heatScore": 80
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 43.02
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 85 (+4 over 90 days) and market heat at 80 (+14).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

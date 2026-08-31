@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:40:43.227Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:40:43.170Z",
+    "url": "https://www.crunchbase.com/organization/kestral"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Kestral",
+      "shortDescription": "Kestral Computing designs, develops, tests, and supports radiology information system and pathology laboratory system (PLS) solutions.",
+      "description": "Kestral Computing designs, develops, tests, markets, and supports radiology information system (RIS) and pathology laboratory system (PLS) solutions for the health industry in Australia and New Zealand. It offers Karisma, an RIS solution to schedule examinations, book resources, batch Medicare claims, and manage patient accounts; HL7Connect, an HL7 messaging interface that enables communication between HL7-compliant applications; and Clinical Integration System, an application that enables the retrieval of medical information from existing local and remote sources through a browser interface. The company also provides PLS, an information management solution for pathology; and Radiology Management System, an information system for radiology practices in hospital and private practice environment.",
+      "website": "http://www.kestral.com.au/",
+      "foundedYear": 1989,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Heidelberg, Baden-Wurttemberg, Germany",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Information Services",
+        "Information Technology"
+      ],
+      "sectors": [
+        "Information Technology"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A radiology information system designed to manage radiology workflows, patient data, and reporting processes.",
+        "name": "Karisma Radiology Information System (RIS)"
+      },
+      {
+        "description": "A customizable software system to manage pathology laboratory operations and data.",
+        "name": "Pathology Laboratory System (PLS)"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2013-03-01",
+          "title": "LRS Health acquired by Kestral"
+        },
+        {
+          "date": "2012-04-04",
+          "title": "Kestral acquired by Jonas Software"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 5,
+      "heatScore": 82
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-13",
+        "probabilityPercent": 83.43
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "InterSystems is a vendor of software and technology for high-performance database management, integration, and health information systems.",
+          "employeeRange": "1,001-5,000",
+          "name": "Intersystems",
+          "sharedCategories": [
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Health Systems Integration",
+            "Medical Records Management"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Clinisys is a software company that offers IT solutions to support diagnostic testing across the life sciences and healthcare sectors.",
+          "employeeRange": "1,001-5,000",
+          "name": "Clinisys",
+          "sharedCategories": [
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Digital Pathology",
+            "Molecular Diagnostics",
+            "Health Systems Integration",
+            "Laboratory Information Management Systems (LIMS)"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Sunquest is the market leader in the laboratory. Sunquest Information Systems, Inc.",
+          "employeeRange": "501-1,000",
+          "name": "Sunquest Information Systems",
+          "sharedCategories": [
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Molecular Diagnostics",
+            "Health Systems Integration",
+            "Laboratory Information Management Systems (LIMS)",
+            "Medical Records Management"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Dedalus Group is a Italian healthcare IT systems company.",
+          "employeeRange": "5,001-10,000",
+          "name": "Dedalus Group",
+          "sharedCategories": [
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Revenue Cycle Management",
+            "Health Systems Integration",
+            "Medical Records Management"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "CompuGroup Medical provides software and communications solutions that assist doctors, dentists, general practitioners, and clinics.",
+          "employeeRange": "5,001-10,000",
+          "name": "CompuGroup Medical",
+          "sharedCategories": [
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Electronic Claims Processing",
+            "Medical Imaging Software",
+            "Patient Portal",
+            "Revenue Cycle Management",
+            "Health Systems Integration",
+            "Laboratory Information Management Systems (LIMS)",
+            "Medical Records Management"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Intersystems, Clinisys, Sunquest Information Systems.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

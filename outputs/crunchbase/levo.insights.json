@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:58:53.174Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:58:53.125Z",
+    "url": "https://www.crunchbase.com/organization/levo"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Levo",
+      "shortDescription": "Gesture based computer interaction.",
+      "description": "Levo is developing software that bridges the gap between computers and its users through gesture based interaction.\nBy developing software that takes advantage of input from the Myo armband, Levo will provide solutions for industries where people get their hands dirty but still need to navigate digital information.\nThis can benefit industries using heavy and dangerous machinery, working in extreme conditions (weather/sterile) as well as environments that require hands free interaction.",
+      "website": "http://www.levo.is/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Reykjavík, Gullbringusysla, Iceland",
+      "geographicRegions": [
+        "Nordic Countries",
+        "Scandinavia",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Computer",
+        "Medical",
+        "Mobile Devices",
+        "Software"
+      ],
+      "sectors": [
+        "Consumer Electronics",
+        "Hardware",
+        "Health Care",
+        "Mobile",
+        "Software"
+      ],
+      "founders": [
+        "Gudmundur Mar Gunnarsson",
+        "Hans Emil Atlason",
+        "Tomas Pall Mate"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 121757,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2015-12-15",
+      "lastFundingType": "Grant",
+      "rounds": [
+        {
+          "announcedDate": "2015-12-15",
+          "amount": {
+            "amount": 85168,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Technology Development Fund"
+          ],
+          "type": "Grant"
+        },
+        {
+          "announcedDate": "2015-03-01",
+          "amount": {
+            "amount": 36589,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Technology Development Fund"
+          ],
+          "type": "Grant"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Technology Development Fund",
+            "rounds": [
+              "Grant"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2024-12-04",
+          "publisher": "PR Newswire",
+          "title": "Legacy Hospice Selects Levo's Workforce Management Platform to Strengthen Clinician Engagement and Patient Care",
+          "url": "https://www.prnewswire.com/news-releases/legacy-hospice-selects-levos-workforce-management-platform-to-strengthen-clinician-engagement-and-patient-care-302320002.html"
+        },
+        {
+          "date": "2015-12-15",
+          "title": "Grant - Levo"
+        },
+        {
+          "date": "2015-03-01",
+          "title": "Grant - Levo"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 2,
+    "knownDetailedFundingAmount": {
+      "amount": 121757,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 69.95,
+    "grantFunding": {
+      "amount": {
+        "amount": 121757,
+        "currency": "USD"
+      },
+      "disclosedRoundCount": 2,
+      "shareOfTotalPercent": 100
+    }
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "reportedPartnerships": {
+      "note": "Provider event summaries with linked sources; not independently verified.",
+      "items": [
+        {
+          "date": "2024-12-04",
+          "description": "Levo partners with Legacy Hospice to implement its workforce management platform, aiming to improve clinician engagement and retention, thereby enhancing patient care.",
+          "sources": [
+            {
+              "date": "2024-12-04",
+              "publisher": "PR Newswire",
+              "title": "Legacy Hospice Selects Levo's Workforce Management Platform to Strengthen Clinician Engagement and Patient Care",
+              "url": "https://www.prnewswire.com/news-releases/legacy-hospice-selects-levos-workforce-management-platform-to-strengthen-clinician-engagement-and-patient-care-302320002.html"
+            }
+          ]
+        }
+      ]
+    },
+    "crunchbaseMomentum": {
+      "heatChange90Days": -14,
+      "heatScore": 8
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Grant round raised $85,168, or 69.95% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Meaningful non-dilutive funding",
+      "statement": "2 disclosed grants total $121,757, representing 100% of reported funding.",
+      "implication": "The grants reduce the share of reported financing attributed to equity or notes, although their restrictions and milestone requirements need separate verification.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.grantFunding"
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

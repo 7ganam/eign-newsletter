@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:01:21.266Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:01:21.225Z",
+    "url": "https://www.crunchbase.com/organization/cartcam"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Cartcam",
+      "shortDescription": "Cartcam is a shopping app that lets you buy products at significant discounts in exchange for creating short video reviews.",
+      "description": "Cartcam is a shopping platform that gives people discounts for creating short video reviews. The company hopes to take advantage of the trend of consumers who are 85% more likely to purchase an item after watching a video. Cartcam incentivizes mobile creators to review items by offering them discounts on the items they want to buy. Already 12 percent of users place an order through the platform, and they are all creating content for Cartcam. The company makes money by partnering with brands who pay for the discounts in exchange for content that will sell more goods for them.",
+      "website": "https://www.cartcam.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Apps",
+        "Consumer",
+        "E-Commerce",
+        "Mobile",
+        "Shopping"
+      ],
+      "sectors": [
+        "Apps",
+        "Commerce and Shopping",
+        "Mobile",
+        "Other",
+        "Software"
+      ],
+      "founders": [
+        "Jonathan Wald"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2017-03-20",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2017-03-20",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2016-08-10",
+          "investorCount": 1,
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "Liquid 2 Ventures",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2017-03-20",
+          "title": "Seed Round - Cartcam"
+        },
+        {
+          "date": "2016-08-10",
+          "title": "Pre Seed Round - Cartcam"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -3,
+      "heatScore": 45
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Influenster is a product discovery, read trends, watch tutorials shop, and reviews platform for consumers.",
+          "employeeRange": "101-250",
+          "name": "Influenster",
+          "similarityScore": 91
+        },
+        {
+          "description": "Viggle AI is a Canadian startup that uses generative artificial intelligence to revolutionize character animation.",
+          "employeeRange": "11-50",
+          "name": "Viggle AI",
+          "sharedCategories": [
+            "Apps"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "BzzAgent helps the world’s largest brands engage everyday influencers to drive sales.",
+          "employeeRange": "101-250",
+          "name": "BzzAgent",
+          "similarityScore": 89
+        },
+        {
+          "description": "trnd help brands market with their consumers rather than at them. Europe's leading Collaborative Marketing company.",
+          "employeeRange": "251-500",
+          "name": "trnd",
+          "similarityScore": 87
+        },
+        {
+          "description": "Personalized Consumer Sampling Service",
+          "employeeRange": "11-50",
+          "name": "SampleSource",
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $120,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Influenster, Viggle AI, BzzAgent.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

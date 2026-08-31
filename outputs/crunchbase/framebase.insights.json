@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:17:34.492Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:17:34.434Z",
+    "url": "https://www.crunchbase.com/organization/framebase"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Framebase",
+      "shortDescription": "Framebase develops application programming interfaces that enable developers to record, play and upload a video online.",
+      "description": "Framebase is programmatic video.\r\n\r\nWriting applications which use video in a meaningful way is extremely difficult. And then there's the maintenance.\r\n\r\nFramebase makes video a first-class object. Instead of hiring a team to deal with transcoding configurations, device compatibility bugs, or CDN contracts, Framebase lets you add two lines of code to start treating videos as class instances.\r\n\r\nFramebase is a pivot of TapIn.tv, which is a Y Combinator S 2012 company.",
+      "website": "http://framebase.io/",
+      "foundedYear": 2012,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "B2B",
+        "Developer APIs",
+        "Video"
+      ],
+      "sectors": [
+        "Media and Entertainment",
+        "Other",
+        "Software",
+        "Video"
+      ],
+      "founders": [
+        "Paul Cretu",
+        "Tyler Menezes",
+        "Vu Tran"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2012-08-27",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2012-08-27",
+          "investorCount": 2,
+          "leadInvestors": [
+            "Streamlined"
+          ],
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Streamlined",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 4,
+      "includedUniqueCount": 4,
+      "items": [
+        {
+          "date": "2015-07-02",
+          "publisher": "Inc.com",
+          "title": "An Entrepreneur Shares How He Scored Top-Shelf Seed Funding…Twice!",
+          "url": "http://www.inc.com/quora/an-entrepreneur-shares-how-he-scored-top-shelf-seed-funding-twice.html"
+        },
+        {
+          "date": "2015-03-20",
+          "publisher": "TechCrunch",
+          "title": "SlideMail Is An Intelligent Email App For The Rest Of Us",
+          "url": "http://techcrunch.com/2015/03/20/slidemail-is-an-intelligent-email-app-for-the-rest-of-us/"
+        },
+        {
+          "date": "2013-04-08",
+          "publisher": "TechCrunch",
+          "title": "YC-Backed TapIn.TV Evolves Into Framebase To Make Building Video Products Less Painful",
+          "url": "http://techcrunch.com/2013/04/08/yc-backed-tapin-tv-evolves-into-framebase-to-make-building-video-products-less-painful/"
+        },
+        {
+          "date": "2012-08-27",
+          "title": "Seed Round - Framebase"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -10,
+      "heatScore": 54
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Mux is a video platform designed to make video streaming and analytics possible for every development team.",
+          "employeeRange": "51-100",
+          "name": "Mux",
+          "sharedCategories": [
+            "Developer APIs",
+            "Video"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Bytescale makes it easy for developers to handle images, videos, and audio at scale.",
+          "employeeRange": "1-10",
+          "name": "Bytescale",
+          "similarityScore": 95
+        },
+        {
+          "description": "Frame.io is a cloud-based video collaboration platform that allows users to upload source media and assets into private workspaces.",
+          "employeeRange": "101-250",
+          "name": "Frame.io",
+          "sharedCategories": [
+            "Video"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Vimeo is a video platform providing tools for hosting, live streaming, and secure distribution.",
+          "employeeRange": "1,001-5,000",
+          "name": "Vimeo",
+          "sharedCategories": [
+            "Video"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Building the backbone of online video",
+          "employeeRange": "11-50",
+          "name": "api.video",
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Mux, Bytescale, Frame.io.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

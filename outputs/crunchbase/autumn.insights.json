@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:17:36.948Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:17:36.895Z",
+    "url": "https://www.crunchbase.com/organization/autumn"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Autumn",
+      "shortDescription": "Autumn is a shopping app that remembers the user's favorite stores and keeps track of items they love.",
+      "description": "Sick of going to hundreds of different sites to shop for clothes, home decor, and gifts? Autumn lets you browse across thousands of stores by just swiping—it's like Tinder for shopping!\n\nAs you swipe, the app learns what you like and recommends more items and stores that match your style.\n\nYou can find over 5,000 stores in the app from Zara, West Elm, to local boutiques—this means all of your favorite stores are in one place, making it easy to compare items and keep track of new arrivals and sales.",
+      "website": "https://www.shop-autumn.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "New York, United States",
+      "geographicRegions": [
+        "Greater New York Area",
+        "East Coast",
+        "Northeastern US"
+      ],
+      "industries": [
+        "E-Commerce",
+        "Fashion",
+        "Shopping"
+      ],
+      "sectors": [
+        "Clothing and Apparel",
+        "Commerce and Shopping",
+        "Design"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A mobile application that tracks users' favorite stores and items they like for personalized shopping management.",
+        "name": "Autumn Shopping App"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -3,
+      "heatScore": 66
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 49.95
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 46.58
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 31.8
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Pinterest is a visual bookmarking tool for saving and discovering creative ideas.",
+          "employeeRange": "1,001-5,000",
+          "name": "Pinterest",
+          "sharedSpecialties": [
+            "Recommendation Engines",
+            "Social Commerce Platforms"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Honey is a shopping platform that provides access to exclusive savings, deals, rewards, and discovery.",
+          "employeeRange": "251-500",
+          "name": "Honey",
+          "sharedCategories": [
+            "E-Commerce",
+            "Shopping"
+          ],
+          "sharedSpecialties": [
+            "E-Commerce Mobile Apps"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Walmart is a retail corporation that operates several chains of supermarkets, discount stores, and e-commerce platforms.",
+          "employeeRange": "10,001+",
+          "name": "Walmart",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "Hopper is a travel technology platform that operates the Hopper app & website and its B2B division, HTS (Hopper Technology Solutions).",
+          "employeeRange": "501-1,000",
+          "name": "Hopper",
+          "sharedSpecialties": [
+            "Recommendation Engines",
+            "E-Commerce Mobile Apps"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Google specializes in internet-related services and products, including search, advertising, and software.",
+          "employeeRange": "10,001+",
+          "name": "Google",
+          "similarityScore": 86
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Pinterest, Honey, Walmart.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

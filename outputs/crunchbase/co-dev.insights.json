@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:21:12.951Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:21:12.892Z",
+    "url": "https://www.crunchbase.com/organization/co-dev"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "CO-DEV",
+      "shortDescription": "The Companions of the Dev are ambitious to accompany citizens to become actors of the digital",
+      "description": "The Compagn Compagnons du Dev  was founded in June 2013 with the objective of offering the keys of the digital world to the widest possible audience. Beyond the appropriation of tools, they want to accompany citizens to become digital artisans , to open new access routes to education, employment, culture and social ties and to build a civil society More participatory.",
+      "website": "http://co-dev.org/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Montreuil, Ile-de-France, France",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Information Technology"
+      ],
+      "sectors": [
+        "Information Technology"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A six-month training program certifying participants as IT maintenance technicians.",
+        "name": "AccessNum"
+      },
+      {
+        "description": "Educational workshops for children to learn programming, robotics, 3D printing, and electronics through hands-on activities.",
+        "name": "Kids Coding Club"
+      },
+      {
+        "description": "A public digital fabrication lab providing access to digital manufacturing tools and workshops for diverse users.",
+        "name": "Formalab FabLab"
+      },
+      {
+        "description": "A six-month training program preparing individuals to manage and support digital needs within organizations.",
+        "name": "Digital Referent Training"
+      },
+      {
+        "description": "An educational resource providing guidance and strategies to protect teenagers from webcam blackmail threats.",
+        "name": "Webcam Blackmail Prevention Kit for Teens"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 1,
+      "heatScore": 60
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 89.45
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Simplon.co are a network of social digital factories in France and abroad.",
+          "employeeRange": "251-500",
+          "name": "Simplon.co",
+          "sharedSpecialties": [
+            "Digital Inclusion and Digital Literacy",
+            "Vocational and Workforce Training"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Ada Tech School is a coding training school that promotes feminization of tech based on IT culture.",
+          "employeeRange": "1-10",
+          "name": "Ada Tech School",
+          "sharedCategories": [
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Vocational and Workforce Training",
+            "Coding Education"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Epitech is a computer school gives IT training, development, programming.",
+          "name": "EPITECH",
+          "similarityScore": 91
+        },
+        {
+          "description": "Le Wagon is a coding boot camp that offers web development training.",
+          "employeeRange": "101-250",
+          "name": "Le Wagon",
+          "similarityScore": 89
+        },
+        {
+          "description": "Emmaus Connect provides support to people needing digital and online assistance.",
+          "name": "Emmaus Connect",
+          "sharedCategories": [
+            "Information Technology"
+          ],
+          "similarityScore": 73
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Simplon.co, Ada Tech School, EPITECH.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T09:53:14.074Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T09:53:14.019Z",
+    "url": "https://www.crunchbase.com/organization/appcanary"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Appcanary",
+      "shortDescription": "Appcanary monitors your servers and lets you know when you might be running vulnerable software",
+      "description": "appCanary sits on your servers, finds out what software is vulnerable and informs you and then fixes your security issues, ensuring your servers stay safe.",
+      "website": "https://appcanary.com/",
+      "foundedYear": 2015,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Mountain View, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Enterprise Software",
+        "Security"
+      ],
+      "sectors": [
+        "Privacy and Security",
+        "Software"
+      ],
+      "founders": [
+        "Max Veytsman",
+        "Phillip Mendonça-Vieira"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A service that allows users to integrate Appcanary's vulnerability monitoring into their own systems.",
+        "name": "API"
+      },
+      {
+        "description": "A software component that runs on servers to monitor and report on the security status of installed software packages.",
+        "name": "Agent"
+      },
+      {
+        "description": "A feature that notifies users when their servers are running vulnerable software.",
+        "name": "Monitor alerting"
+      },
+      {
+        "description": "A web page that allows users to browse known vulnerabilities.",
+        "name": "Public vulnerability page"
+      },
+      {
+        "description": "A tool that lets users check for vulnerable dependencies by uploading their gemfile.",
+        "name": "isitvulnerable.com"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2015-08-18",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2015-08-18",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 2066613,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "Four Cities Capital",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2018-01-04",
+          "publisher": "TechCrunch",
+          "title": "Appcanary shuts down its vulnerability scanning service as the team joins GitHub",
+          "url": "https://techcrunch.com/2018/01/04/appcanary-shuts-down-its-vulnerability-scanning-service-as-the-team-joins-github/"
+        },
+        {
+          "date": "2015-08-18",
+          "title": "Seed Round - Appcanary"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -1,
+      "heatScore": 8
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 2.94,
+        "timingEstimatePercent": {
+          "within6Months": 14.6,
+          "months6To11": 12.47,
+          "months12To24": 19.74,
+          "beyond24Months": 24.9
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 51.9
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Snyk is a cloud native application security provider that enables millions of developers to build software securely.",
+          "employeeRange": "1,001-5,000",
+          "name": "Snyk",
+          "sharedCategories": [
+            "Security"
+          ],
+          "sharedSpecialties": [
+            "Attack Surface Management",
+            "Supply Chain Security",
+            "Open Source Security",
+            "Cloud Workload Protection Platform (CWPP)"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "GitHub is a software company that offers code hosting services that allow developers to build software for open-source and private projects.",
+          "employeeRange": "1,001-5,000",
+          "name": "GitHub",
+          "sharedSpecialties": [
+            "Open Source Security",
+            "Open Source Governance"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Aqua Security is a software company that provides an end-to-end security platform to improve security for cloud-native applications.",
+          "employeeRange": "251-500",
+          "name": "Aqua Security",
+          "sharedCategories": [
+            "Security"
+          ],
+          "sharedSpecialties": [
+            "Attack Surface Management",
+            "Supply Chain Security",
+            "Open Source Security",
+            "Extended Detection and Response",
+            "Cloud Workload Protection Platform (CWPP)"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "JFrog provides software developers with a binary repository management solution.",
+          "employeeRange": "1,001-5,000",
+          "name": "JFrog",
+          "sharedCategories": [
+            "Enterprise Software"
+          ],
+          "sharedSpecialties": [
+            "Supply Chain Security",
+            "Open Source Security",
+            "Open Source Governance"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "Sonatype is the developer-friendly full-spectrum software supply chain management platform helps organizations and software developers.",
+          "employeeRange": "501-1,000",
+          "name": "Sonatype",
+          "sharedCategories": [
+            "Enterprise Software"
+          ],
+          "sharedSpecialties": [
+            "Supply Chain Security",
+            "Open Source Security",
+            "Open Source Governance"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $120,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $2,066,613 to $2,066,613, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Snyk, GitHub, Aqua Security.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

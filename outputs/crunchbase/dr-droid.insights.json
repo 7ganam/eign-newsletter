@@ -1,0 +1,320 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:01:38.963Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:01:38.918Z",
+    "url": "https://www.crunchbase.com/organization/dr-droid"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Doctor Droid",
+      "shortDescription": "Doctor Droid is an on-call intelligence platform to accelerate production issue & incident investigations.",
+      "website": "https://drdroid.io/",
+      "foundedYear": 2022,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Developer Tools",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Dipesh Mittal",
+        "Siddarth Jain"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An AI-driven platform that automates first-level debugging and remediation of production alerts to reduce manual intervention and alert fatigue.",
+        "name": "Doctor Droid AI Agent for Observability & Production Monitoring"
+      },
+      {
+        "description": "An open-source natural language runbook automation engine that converts standard operating procedures into automated workflows for incident response.",
+        "name": "Doctor Droid PlayBooks Runbook Automation Framework"
+      },
+      {
+        "description": "A unified alert management tool that consolidates alerts from various monitoring sources into a single Slack-based inbox for efficient triage and resolution.",
+        "name": "Doctor Droid Alerts Inbox"
+      },
+      {
+        "description": "A Slack bot that analyzes alert channels to identify noisy alerts and provides insights to reduce alert fatigue and improve alert quality.",
+        "name": "Doctor Droid Alert Noise Reduction Slack Bot"
+      },
+      {
+        "description": "An AI-powered bot that enables troubleshooting, diagnostics, and remediation of Kubernetes clusters directly from Slack using AI-driven commands.",
+        "name": "Doctor Droid Kubernetes Bot"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2024-06-17",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2024-06-17",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 10834776,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2023-04-05",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 6062907,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "Accel",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2025-04-05",
+          "publisher": "SiliconANGLE",
+          "title": "KubeCon London: Europe takes the cloud-native reins",
+          "url": "https://siliconangle.com/2025/04/05/kubecon-london-europe-takes-cloud-native-reins/"
+        },
+        {
+          "date": "2024-06-17",
+          "title": "Seed Round - Doctor Droid"
+        },
+        {
+          "date": "2023-04-05",
+          "title": "Pre Seed Round - Doctor Droid"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1.79
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -3,
+      "growthScore": 25,
+      "heatChange90Days": -14,
+      "heatScore": 53
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.38
+      },
+      "funding": {
+        "generatedDate": "2026-06-20",
+        "probabilityPercent": 84.79,
+        "timingEstimatePercent": {
+          "within6Months": 99.85,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0.15
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 71.96
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 3.86
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Incident.io provides incident management software that helps teams detect, manage, and resolve issues through Slack and Teams.",
+          "employeeRange": "101-250",
+          "name": "incident.io",
+          "sharedSpecialties": [
+            "Workflow Automation",
+            "Incident Response",
+            "AIOps and IT Automation",
+            "Process Orchestration",
+            "IT Operations Management"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Rootly provides incident management solutions designed to streamline operations and reduce response times for organizations.",
+          "employeeRange": "51-100",
+          "name": "Rootly",
+          "sharedCategories": [
+            "Software",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Workflow Automation",
+            "Incident Response",
+            "IT Operations Management",
+            "Log Management",
+            "IT Infrastructure Monitoring"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "FireHydrant, Inc provides an all-in-one alerting, on-call, and incident management platform for engineering and reliability teams.",
+          "name": "FireHydrant, Inc",
+          "sharedCategories": [
+            "Software",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Process Orchestration",
+            "Log Management"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "PagerDuty is an operations performance platform that helps monitor IT infrastructure, detect issues, and resolve incidents.",
+          "employeeRange": "1,001-5,000",
+          "name": "PagerDuty",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Agentic Orchestration",
+            "Workflow Automation",
+            "Incident Response",
+            "AIOps and IT Automation",
+            "Process Orchestration",
+            "IT Operations Management",
+            "Workflow Automation Agents"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Blameless is an IT software development firm offering site reliability engineering (SRE) platform.",
+          "employeeRange": "51-100",
+          "name": "Blameless",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Workflow Automation",
+            "Incident Response",
+            "AIOps and IT Automation",
+            "Process Orchestration",
+            "Data Quality and Observability",
+            "IT Infrastructure Monitoring"
+          ],
+          "similarityScore": 88
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $6,062,907 to $10,834,776, a 1.79x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 25 (-3 over 90 days) and market heat at 53 (-14).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include incident.io, Rootly, FireHydrant, Inc.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

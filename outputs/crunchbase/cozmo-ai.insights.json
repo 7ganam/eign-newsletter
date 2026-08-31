@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:36:34.306Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:36:34.251Z",
+    "url": "https://www.crunchbase.com/organization/cozmo-ai"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Cozmo AI",
+      "shortDescription": "Cozmo AI provides a multimodal AI employee platform for regulated enterprises to run customer operations and workflows.",
+      "description": "Cozmo AI provides a multimodal AI employee platform for regulated enterprises to operate customer-facing and back-office workflows. The platform lets companies deploy AI employees composed of agents that handle live voice calls, messaging, and document and video intake while applying company policies. Cozmo AI integrates into core systems such as CRM, banking, lending, and insurance platforms to update records and execute actions in real time. Its capabilities cover seeing, speaking, reasoning, and doing, including vision for claims and fraud, policy-driven decision logic, and workflow execution. Each AI decision is logged with reasoning and policy references to support audit, compliance, and operational review. Cozmo AI is used in use cases such as customer support, collections, first notice of loss, policy renewals, SME lending, and sales operations.",
+      "website": "https://www.hellocozmo.ai/",
+      "foundedYear": 2025,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Banking",
+        "Compliance",
+        "Customer Service",
+        "Enterprise Software",
+        "Financial Services",
+        "Insurance",
+        "Software",
+        "Telecommunications"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Financial Services",
+        "Lending and Investments",
+        "Messaging and Telecommunications",
+        "Professional Services",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A multimodal AI employee platform for regulated enterprises to run customer operations and complex workflows.",
+        "name": "Cozmo AI Platform"
+      },
+      {
+        "description": "A control layer that orchestrates AI agents, enforces policy, and maintains shared enterprise state for AI employees.",
+        "name": "APE (Agent Protocol Engine)"
+      },
+      {
+        "description": "A vision module that interprets photos, videos, and documents and links structured findings to enterprise records.",
+        "name": "See"
+      },
+      {
+        "description": "A real-time voice and conversation layer for AI agents handling inbound and outbound calls across languages.",
+        "name": "Speak"
+      },
+      {
+        "description": "A policy-driven reasoning engine that applies enterprise rules to produce governed, explainable decisions.",
+        "name": "Think"
+      },
+      {
+        "description": "An execution layer that carries out decisions in core systems and tracks end-to-end case outcomes.",
+        "name": "Do"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2026-01-01",
+      "lastFundingType": "Venture round",
+      "rounds": [
+        {
+          "announcedDate": "2026-01-01",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 33233218,
+            "currency": "USD"
+          },
+          "type": "Venture round"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Rebel Fund",
+            "rounds": [
+              "Venture round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2026-01-01",
+          "title": "Venture Round - Cozmo AI"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 9,
+      "growthScore": 73,
+      "heatChange90Days": 80,
+      "heatScore": 80
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 90.85
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 67.57,
+        "timingEstimatePercent": {
+          "within6Months": 99.99,
+          "months6To11": 0.01,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 91.27
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 4.82
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $33,233,218 to $33,233,218, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 73 (+9 over 90 days) and market heat at 80 (+80).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

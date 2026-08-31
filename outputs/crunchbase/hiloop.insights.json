@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:53:15.653Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:53:15.597Z",
+    "url": "https://www.crunchbase.com/organization/hiloop"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "hiloop",
+      "shortDescription": "hiloop provides infrastructure for automated research, including compute, experiment orchestration, and observability.",
+      "description": "hiloop provides infrastructure for automated research and machine learning experimentation. Its platform provisions compute environments that agents can snapshot, fork, restore, and use to run experiments. The system records experiment activity as telemetry and links compute state with run lineage. Users can query captured events with SQL, add structured annotations, and derive views such as trajectories or training exports. Hiloop supports customer-provided research harnesses and can run in hosted environments or within a customer's cloud or on-premises infrastructure.",
+      "website": "https://hiloop.ai/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "AI Infrastructure",
+        "Analytics",
+        "Artificial Intelligence (AI)",
+        "Cloud Computing",
+        "Data Management",
+        "Developer Tools",
+        "Enterprise Software",
+        "Machine Learning"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Internet Services",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A software platform for running, tracking, and analyzing automated research and machine learning experiments.",
+        "name": "hiloop Autoresearch Platform"
+      },
+      {
+        "description": "A command-line interface for launching sandboxes, managing snapshots, inspecting run lineage, and querying trace data.",
+        "name": "hiloop CLI"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 80,
+      "heatScore": 81
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 66.42
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

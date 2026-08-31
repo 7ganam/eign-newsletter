@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T09:51:56.978Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T09:51:56.927Z",
+    "url": "https://www.crunchbase.com/organization/apartio"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Apartio",
+      "shortDescription": "Apartio is a hotel service company that offers accommodation with free TV, WiFi, and air conditioning for travelers and customers.",
+      "description": "Apartio is a hotel service company that offers accommodation with free TV, WiFi, and air conditioning for travelers and customers. It is always ready to receive accommodation whether it is for leisure, work meetings or whatever commitment. \n\nIt is headquartered in Sao Paulo, Brazil.",
+      "website": "http://www.apartio.com.br/",
+      "foundedYear": 2019,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "São Paulo, Sao Paulo, Brazil",
+      "geographicRegions": [
+        "Latin America"
+      ],
+      "industries": [
+        "Heating, Ventilation, and Air Conditioning (HVAC)",
+        "Hospitality",
+        "Hotel",
+        "Travel Accommodations"
+      ],
+      "sectors": [
+        "Real Estate",
+        "Travel and Tourism"
+      ],
+      "founders": [
+        "Cassio Menezes",
+        "Luiz Eduardo Studart"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Apartio offers accommodation services including rooms with free TV, WiFi, and air conditioning.",
+        "name": "Accommodation"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 150000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2020-03-16",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2020-03-16",
+          "amount": {
+            "amount": 150000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "postMoneyValuation": {
+            "amount": 1419006,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "big_bets",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2021-07-01",
+          "title": "Apartio acquired by CarpeDiem Homes"
+        },
+        {
+          "date": "2020-03-16",
+          "title": "Seed Round - Apartio"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 150000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -8,
+      "heatScore": 30
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2025-03-16",
+        "probabilityPercent": 2.52
+      },
+      "growth": {
+        "generatedDate": "2026-03-21",
+        "probabilityPercent": 64.35
+      },
+      "ipo": {
+        "generatedDate": "2025-03-16",
+        "probabilityPercent": 0.23
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $150,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $1,419,006 to $1,419,006, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

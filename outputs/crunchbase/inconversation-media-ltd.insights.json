@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:09:33.171Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:09:33.133Z",
+    "url": "https://www.crunchbase.com/organization/inconversation-media-ltd"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Inconvo",
+      "shortDescription": "Inconvo develops conversational research software that connects brands with digital audiences for real-time insights.",
+      "description": "Inconvo develops conversational research software that connects brands with digital audiences for real-time insight gathering. Its platform uses automated chat infrastructure, including chatbots on messenger channels and online touchpoints, to facilitate structured two-way conversations with consumers. The technology is designed to transform passive online audiences into engaged communities that can answer targeted research questions. InConversation Media focuses on supporting brands and research organizations that need scalable ways to validate opinions, test concepts, and measure sentiment. The platform is integrated into broader data and analytics workflows to capture, structure, and stream audience feedback. As part of YouGov, InConversation Media operates as a specialized unit that underpins digital panels and interactive research experiences used in commercial market research programs.",
+      "website": "https://inconvo.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Dublin, Ireland",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Analytics",
+        "Artificial Intelligence (AI)",
+        "Chatbot",
+        "Data Collection and Labeling",
+        "Digital Marketing",
+        "Marketing",
+        "Market Research",
+        "Social Media Marketing",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Design",
+        "Sales and Marketing",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Inconvo is a conversational research platform that gathers structured market insights from digital audiences via automated chat channels.",
+        "name": "Inconvo"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2026-07-13",
+          "publisher": "Silicon Republic",
+          "title": "Irish-founded AI platform Inconvo acquired by UK-based Attio",
+          "url": "https://www.siliconrepublic.com/business/irish-founded-ai-platform-inconvo-acquired-by-uk-based-attio"
+        },
+        {
+          "date": "2026-07-08",
+          "title": "Inconvo acquired by Attio"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 9,
+      "growthScore": 90,
+      "heatChange90Days": 66,
+      "heatScore": 70
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-06-27",
+        "probabilityPercent": 37.04
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 87.55
+      },
+      "ipo": {
+        "generatedDate": "2026-06-27",
+        "probabilityPercent": 18.45
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 90 (+9 over 90 days) and market heat at 70 (+66).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

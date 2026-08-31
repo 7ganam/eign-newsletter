@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:32:50.404Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:32:50.363Z",
+    "url": "https://www.crunchbase.com/organization/copilot-de7b"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Copilot",
+      "shortDescription": "Copilot provides strategic advisory, proven execution, and insightful analytic services.",
+      "description": "Copilot offers cutting edge cloud solutions backed by decades of technical knowledge. They employ user experience driven design to solve complex issues. The customers receive breakthrough salesforce and data solutions from its experienced designers, analysts, and subject-matter experts. In order to combine the flexibility of consulting with the force of in house competence, they know the proper inquiries to ask and the ideal cloud platforms to turn data into actionable insights. After decades of working in private equity, real estate, and tech companies both inside and as advisors, they knew that to do. The professional staff spent a lot of time working for consultants that aimed to complete one project before moving on to the next.",
+      "website": "https://www.crmcopilot.com/",
+      "foundedYear": 2018,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "New York, United States",
+      "geographicRegions": [
+        "Greater New York Area",
+        "East Coast",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Cloud Data Services",
+        "Software",
+        "Venture Capital"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Information Technology",
+        "Internet Services",
+        "Lending and Investments",
+        "Software"
+      ],
+      "founders": [
+        "David Tebbi",
+        "Thomas Lesnick"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Consulting services focused on designing, building, and managing Salesforce solutions tailored for Financial Services, Real Estate, and SaaS companies.",
+        "name": "Salesforce Consulting Services"
+      },
+      {
+        "description": "Business analyst support for Salesforce projects, including requirements gathering, backlog management, and facilitating communication between clients and technical teams.",
+        "name": "Business Analyst Services"
+      },
+      {
+        "description": "Senior-level Salesforce consulting involving client management, project leadership, backlog grooming, and Salesforce configuration to deliver tailored solutions.",
+        "name": "Senior Salesforce Consultant Services"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2023-01-18",
+          "title": "Copilot acquired by VASS"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -12,
+      "heatScore": 33
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-13",
+        "probabilityPercent": 71.52
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Top-ranked Salesforce consultancy, 89% repeat-client rate, serving enterprise clients across the US and UK through senior-led teams.",
+          "employeeRange": "51-100",
+          "name": "CloudMasonry",
+          "sharedCategories": [
+            "Cloud Data Services"
+          ],
+          "sharedSpecialties": [
+            "Custom CRM Development",
+            "Revenue Operations",
+            "CRM Consulting and Integrations"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Appirio is an IT technology company providing mobile, social, crowdsourcing, and cloud technology services.",
+          "employeeRange": "1,001-5,000",
+          "name": "Appirio",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Apexon is a digital-first technology services firm, accelerating business transformation and delivering human-centric digital experiences.",
+          "employeeRange": "5,001-10,000",
+          "name": "Apexon",
+          "similarityScore": 89
+        },
+        {
+          "description": "Magnetic is a AI digital marketing platform",
+          "employeeRange": "51-100",
+          "name": "Magnetic",
+          "similarityScore": 88
+        },
+        {
+          "description": "Slalom Consulting is a business and technology consulting firm that designs and builds strategies and systems to help its clients",
+          "employeeRange": "10,001+",
+          "name": "Slalom",
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include CloudMasonry, Appirio, Apexon.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

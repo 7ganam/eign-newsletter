@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:33:47.261Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:33:47.203Z",
+    "url": "https://www.crunchbase.com/organization/jobalchemist"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "JobAlchemist",
+      "shortDescription": "JobAlchemist builds online recruiting software.",
+      "description": "JobAlchemist is a Y Combinator-backed startup that builds online recruiting software. \r\n\r\nTheir products include job board software that powers both niche destination sites such as Startuply and white label sites redditJobs and Homeby3, and JobSyndicate, a job affiliate network.",
+      "website": "http://jobalchemist.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Human Resources",
+        "Internet",
+        "Recruiting",
+        "Software"
+      ],
+      "sectors": [
+        "Administrative Services",
+        "Information Technology",
+        "Professional Services",
+        "Software"
+      ],
+      "founders": [
+        "Loc Ngo"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2008-08-14",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2008-08-14",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2009-06-15",
+          "publisher": "TechCrunch",
+          "title": "Get A Job With Reddit Jobs. Or At Least Vote On One.",
+          "url": "http://techcrunch.com/2009/06/15/get-a-job-with-reddit-jobs-or-at-least-vote-on-one/"
+        },
+        {
+          "date": "2008-08-14",
+          "title": "Seed Round - JobAlchemist"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -17,
+      "heatScore": 54
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Breezy HR modernizes your hiring process with end-to-end recruiting software built to scale for every-sized team.",
+          "employeeRange": "11-50",
+          "name": "Breezy HR",
+          "sharedCategories": [
+            "Recruiting",
+            "Human Resources"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Workable is an all-in-one HR platform for hiring and managing talent, offering a top-tier ATS and flexible HRIS for all HR needs.",
+          "employeeRange": "251-500",
+          "name": "Workable",
+          "sharedCategories": [
+            "Recruiting",
+            "Human Resources",
+            "Software"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Lever is a talent acquisition suite that provides talent leaders with the solutions they need to build strong relationships with candidates.",
+          "employeeRange": "501-1,000",
+          "name": "Lever",
+          "sharedCategories": [
+            "Recruiting",
+            "Human Resources"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "ICIMS is a talent cloud company that helps organizations to attract, engage, hire, and advance the right talent.",
+          "employeeRange": "1,001-5,000",
+          "name": "iCIMS",
+          "sharedCategories": [
+            "Recruiting",
+            "Human Resources"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "SmartRecruiters is a recruiting AI company that provides a hiring platform that automates and optimizes the talent acquisition process.",
+          "employeeRange": "501-1,000",
+          "name": "SmartRecruiters",
+          "sharedCategories": [
+            "Recruiting",
+            "Human Resources"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Breezy HR, Workable, Lever.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

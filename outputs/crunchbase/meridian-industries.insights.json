@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:30:15.613Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:30:15.556Z",
+    "url": "https://www.crunchbase.com/organization/meridian-industries"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Meridian Industries",
+      "shortDescription": "Meridian Industries is a manufacturer of liquids, disposables, textile finishes, and coatings.",
+      "website": "http://www.meridiancompanies.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$10M-$50M",
+      "headquarters": "Milwaukee, Wisconsin, United States",
+      "geographicRegions": [
+        "Great Lakes",
+        "Midwestern US"
+      ],
+      "industries": [
+        "Consumer Goods",
+        "Manufacturing",
+        "Service Industry"
+      ],
+      "sectors": [
+        "Consumer Goods",
+        "Manufacturing",
+        "Other"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Manufacturer of specialty textile products including finishes and coatings for various industrial applications.",
+        "name": "Aurora Specialty Textiles Group, Inc."
+      },
+      {
+        "description": "Producer of elastomer-based products for industrial and commercial uses.",
+        "name": "Kent Elastomer Products, Inc."
+      },
+      {
+        "description": "Supplier of disposable products for testing and industrial applications.",
+        "name": "Kleen Test Products Corporation"
+      },
+      {
+        "description": "Manufacturer of liquid products for industrial and commercial applications.",
+        "name": "Majilite Corporation"
+      },
+      {
+        "description": "Producer of specialty yarns for industrial textile applications.",
+        "name": "Meridian Specialty Yarn Group, Inc."
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -3,
+      "growthScore": 83,
+      "heatChange90Days": -17,
+      "heatScore": 52
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 92.86
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Aurora Specialty Textiles Group has evolved from its roots as a cotton-spinning mill, into one of the leading textile finishing operations.",
+          "employeeRange": "101-250",
+          "name": "Aurora Specialty Textiles Group",
+          "sharedSpecialties": [
+            "Textile Chemicals"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "Kleen Test Products, a subsidiary of Meridian Industries, is a privately held, family-owned company.",
+          "employeeRange": "501-1,000",
+          "name": "Kleen Test Products Corporation",
+          "sharedCategories": [
+            "Consumer Goods",
+            "Manufacturing"
+          ],
+          "sharedSpecialties": [
+            "Cleaning Cloths and Wipes"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Kent Elastomer Products specializes in the manufacturing of thermoplastic elastomer tubing, Dip molded parts, PVC and latex tubing products.",
+          "employeeRange": "101-250",
+          "name": "Kent Elastomer Products",
+          "sharedCategories": [
+            "Manufacturing"
+          ],
+          "sharedSpecialties": [
+            "Seals and Gaskets",
+            "Rubber and Elastomer Manufacturing"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Majilite Corporation is a manufacturer and distributor of faux leather, precision films, accessories and footwear.",
+          "employeeRange": "51-100",
+          "name": "Majilite Corporation",
+          "sharedCategories": [
+            "Manufacturing"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Apexical is a manufacturer of products for textile industry.",
+          "employeeRange": "1-10",
+          "name": "Apexical",
+          "sharedCategories": [
+            "Manufacturing"
+          ],
+          "sharedSpecialties": [
+            "Fine Chemicals and Intermediates",
+            "Textile Chemicals",
+            "Coatings and Protective Linings"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 83 (-3 over 90 days) and market heat at 52 (-17).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Aurora Specialty Textiles Group, Kleen Test Products Corporation, Kent Elastomer Products.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

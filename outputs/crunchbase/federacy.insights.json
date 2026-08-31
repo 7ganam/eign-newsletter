@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:57:24.300Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:57:24.256Z",
+    "url": "https://www.crunchbase.com/organization/federacy"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Federacy",
+      "shortDescription": "Federacy operates as a bug bounty platform for startups.",
+      "description": "Federacy operates as a bug bounty platform for startups. Founded in 2018, the company is headquartered in San Francisco, California.",
+      "website": "https://www.federacy.com/",
+      "foundedYear": 2018,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Cyber Security",
+        "Internet",
+        "Security"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Privacy and Security"
+      ],
+      "founders": [
+        "James Sulinski",
+        "WIlliam Sulinski"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A platform that connects startups with security researchers to identify and resolve software vulnerabilities through managed bug bounty programs.",
+        "name": "Federacy Bug Bounty Platform"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2018-08-20",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2018-08-20",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "postMoneyValuation": {
+            "amount": 2445527,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "Liquid 2 Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2018-08-20",
+          "title": "Seed Round - Federacy"
+        },
+        {
+          "date": "2018-08-10",
+          "publisher": "TechCrunch",
+          "title": "Federacy wants to put bug bounty programs in reach of every startup",
+          "url": "https://techcrunch.com/2018/08/10/federacy-wants-to-put-bug-bounty-programs-in-reach-of-every-startup/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -28,
+      "growthScore": 2,
+      "heatChange90Days": -8,
+      "heatScore": 48
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 7.89,
+        "timingEstimatePercent": {
+          "within6Months": 14.47,
+          "months6To11": 12.38,
+          "months12To24": 19.64,
+          "beyond24Months": 24.88
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 35.76
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Bugcrowd is a cybersecurity company that operates as a platform for crowdsourced security testing.",
+          "employeeRange": "251-500",
+          "name": "Bugcrowd",
+          "sharedCategories": [
+            "Cyber Security",
+            "Security"
+          ],
+          "sharedSpecialties": [
+            "Red Teaming and Adversary Simulation",
+            "Web Security",
+            "Attack Surface Management",
+            "Incident Response",
+            "API Security",
+            "Vulnerability Assessment and Management",
+            "Application Security Testing",
+            "Security Consulting"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "A global leader in Continuous Threat Exposure Management—uniting AI and human intelligence to find, validate, and eliminate vulnerabilities.",
+          "employeeRange": "251-500",
+          "name": "HackerOne",
+          "sharedCategories": [
+            "Internet",
+            "Cyber Security"
+          ],
+          "sharedSpecialties": [
+            "Red Teaming and Adversary Simulation",
+            "Attack Surface Management",
+            "Incident Response",
+            "Vulnerability Assessment and Management",
+            "Application Security Testing",
+            "Security Consulting"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Intigriti enables clients to launch managed security testing at scale and accurately assess risk to prioritize remediation.",
+          "employeeRange": "101-250",
+          "name": "intigriti",
+          "sharedCategories": [
+            "Cyber Security",
+            "Security"
+          ],
+          "sharedSpecialties": [
+            "Red Teaming and Adversary Simulation",
+            "Attack Surface Management",
+            "Vulnerability Assessment and Management",
+            "Application Security Testing",
+            "Security Consulting"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Offensive Security & Exposure Management Platform",
+          "employeeRange": "101-250",
+          "name": "YesWeHack",
+          "sharedCategories": [
+            "Cyber Security",
+            "Security"
+          ],
+          "sharedSpecialties": [
+            "Red Teaming and Adversary Simulation",
+            "Attack Surface Management",
+            "Incident Response",
+            "Vulnerability Assessment and Management",
+            "Application Security Testing",
+            "Security Consulting"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Free Bug Bounty Program and Coordinated Vulnerability Disclosure Platform",
+          "employeeRange": "1-10",
+          "name": "Open Bug Bounty",
+          "sharedCategories": [
+            "Cyber Security"
+          ],
+          "sharedSpecialties": [
+            "Attack Surface Management",
+            "API Security",
+            "Application Security Testing",
+            "Threat Intelligence"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $120,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $2,445,527 to $2,445,527, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 2 (-28 over 90 days) and market heat at 48 (-8).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Bugcrowd, HackerOne, intigriti.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

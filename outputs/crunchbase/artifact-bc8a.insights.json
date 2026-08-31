@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:06:13.766Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:06:13.717Z",
+    "url": "https://www.crunchbase.com/organization/artifact-bc8a"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Artifact",
+      "shortDescription": "Artifact engages in accelerating impact with data science.",
+      "description": "Artifact engages in accelerating impact with data science.",
+      "website": "https://www.artifact.swiss/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Lausanne, Vaud, Switzerland",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Analytics",
+        "Artificial Intelligence (AI)",
+        "Information Technology"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Services to integrate AI solutions into organizational strategies, focusing on scalable and adaptable AI systems.",
+        "name": "AI Implementation Services"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2024-02-07",
+      "lastFundingType": "Non Equity Assistance",
+      "rounds": [
+        {
+          "announcedDate": "2024-02-07",
+          "investorCount": 1,
+          "leadInvestors": [
+            "Innovaud"
+          ],
+          "type": "Non Equity Assistance"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Innovaud",
+            "rounds": [
+              "Non Equity Assistance"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2024-02-07",
+          "title": "Non Equity Assistance - Artifact"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -20,
+      "heatScore": 43
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 5
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 98.09
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Fractal is an AI firm with the aspiration to power every human decision in theenterprise.",
+          "employeeRange": "5,001-10,000",
+          "name": "Fractal",
+          "sharedCategories": [
+            "Analytics",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "MLOps"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Tiger Analytics offers data analytics and predictive modeling solutions for retail, social media, and online advertising sectors.",
+          "employeeRange": "1,001-5,000",
+          "name": "Tiger Analytics",
+          "sharedCategories": [
+            "Analytics"
+          ],
+          "sharedSpecialties": [
+            "Data Science",
+            "AI Governance",
+            "Data Engineering",
+            "Data and Analytics Consulting",
+            "MLOps",
+            "Data Pipelines"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Dataiku operates as an enterprise artificial intelligence and machine-learning platform.",
+          "employeeRange": "1,001-5,000",
+          "name": "Dataiku",
+          "sharedCategories": [
+            "Analytics",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "AI Governance",
+            "Data Engineering",
+            "MLOps",
+            "Data Quality and Observability",
+            "AI Model Evaluation",
+            "Data Pipelines"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Tredence is a data science solutions provider that offers AI-enabled data strategy solutions.",
+          "employeeRange": "1,001-5,000",
+          "name": "Tredence",
+          "sharedCategories": [
+            "Analytics",
+            "Artificial Intelligence (AI)",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Data Science",
+            "AI Governance",
+            "Data Engineering",
+            "Data and Analytics Consulting",
+            "MLOps",
+            "Data Quality and Observability"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Zühlke Group is a strategy consulting and technology company that specializes in software, cybersecurity, AI, and connected devices.",
+          "employeeRange": "1,001-5,000",
+          "name": "Zühlke Group",
+          "similarityScore": 86
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Fractal, Tiger Analytics, Dataiku.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

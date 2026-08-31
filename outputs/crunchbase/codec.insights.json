@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:22:40.818Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:22:40.756Z",
+    "url": "https://www.crunchbase.com/organization/codec"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "colaborativo",
+      "shortDescription": "Investing in Latin America Sustainable Development",
+      "description": "Colaborativo is an impact investment firm",
+      "website": "https://www.colaborativo.vc/",
+      "foundedYear": 2018,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "employeeRange": "11-50",
+      "headquarters": "Mexico City, Distrito Federal, Mexico",
+      "geographicRegions": [
+        "Latin America"
+      ],
+      "industries": [
+        "Impact Investing",
+        "Social Impact",
+        "Venture Capital"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Lending and Investments",
+        "Social Impact"
+      ],
+      "founders": [
+        "Alfredo Montoya"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 4,
+      "includedUniqueCount": 4,
+      "items": [
+        {
+          "date": "2025-05-01",
+          "title": "COLABORATIVO_MSFLATAM"
+        },
+        {
+          "date": "2025-01-01",
+          "title": "COLABORATIVO _ Student Success & Employability"
+        },
+        {
+          "date": "2024-12-01",
+          "title": "COLABORATIVO _ Sustainable Waste Management"
+        },
+        {
+          "title": "COLABORATIVOx"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -2,
+      "growthScore": 81,
+      "heatChange90Days": 2,
+      "heatScore": 75
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "New Ventures is a training company that provides vocational workforce development programs and services.",
+          "employeeRange": "51-100",
+          "name": "New Ventures",
+          "similarityScore": 97
+        },
+        {
+          "description": "Fundación Avina is a non-profit consulting firm promoting sustainability and green hydrogen transition in transportation.",
+          "employeeRange": "51-100",
+          "name": "Fundación Avina",
+          "similarityScore": 95
+        },
+        {
+          "description": "IDB Lab is the innovation laboratory of the Inter-American Development Bank Group (IDB) Group.",
+          "employeeRange": "101-250",
+          "name": "IDB Lab",
+          "similarityScore": 93
+        },
+        {
+          "description": "We foster a world where businesses drive positive social and environmental transformation.",
+          "employeeRange": "11-50",
+          "name": "Vox Capital",
+          "sharedCategories": [
+            "Impact Investing",
+            "Venture Capital"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Alive Ventures is a startup studio that imagines and builds companies, products and services that help older adults live, work and love.",
+          "employeeRange": "1-10",
+          "name": "Alive Ventures",
+          "sharedCategories": [
+            "Venture Capital"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 81 (-2 over 90 days) and market heat at 75 (+2).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include New Ventures, Fundación Avina, IDB Lab.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

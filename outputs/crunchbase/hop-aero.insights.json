@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:56:28.202Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:56:28.148Z",
+    "url": "https://www.crunchbase.com/organization/hop-aero"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Hop Aero",
+      "shortDescription": "Hop Aero develops hypersonic rocket cargo systems for rapid point-to-point delivery in contested environments.",
+      "description": "Hop Aero develops hypersonic rocket cargo systems that provide rapid point-to-point delivery across long distances. The company focuses on rocket cargo vehicles designed to transport supplies to austere and contested locations within minutes. Its systems aim to support logistics operations that require fast response times and resilient supply chains. Hop Aero positions its technology as part of a broader physical internet concept, enabling high-speed movement of physical goods similar to data on the internet. The company targets users that need time-critical delivery capabilities in challenging operational environments.",
+      "website": "https://hop-aero.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "industries": [
+        "Advanced Materials",
+        "Aerospace",
+        "Logistics",
+        "Military",
+        "Supply Chain Management",
+        "Transportation"
+      ],
+      "sectors": [
+        "Government and Military",
+        "Manufacturing",
+        "Science and Engineering",
+        "Transportation"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Hypersonic rocket vehicles for rapid point-to-point cargo delivery to austere and contested locations.",
+        "name": "Hop Aero rocket cargo systems"
+      },
+      {
+        "description": "Rocket-enabled logistics service concept for high-speed physical goods movement similar to data on the internet.",
+        "name": "Physical internet logistics platform"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 90,
+      "heatScore": 91
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

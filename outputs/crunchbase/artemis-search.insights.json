@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:05:47.517Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:05:47.461Z",
+    "url": "https://www.crunchbase.com/organization/artemis-search"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Artemis Search",
+      "shortDescription": "Artemis Search is a software company that develops AI-based sales prospecting and vector search software for B2B lead generation.",
+      "description": "Artemis Search develops artificial intelligence software for sales prospecting and vector-based information retrieval. The company provides an application that connects to LinkedIn Sales Navigator to automate account-based prospecting and assemble context-specific decision-maker lists. Its platform uses deep learning ranking models and vector search to evaluate how well underlying data matches the intent of a query, rather than relying only on keyword similarity. Artemis Search offers infrastructure and developer tools that expose its task-specialized ranking architectures and vector search technology through APIs and control environments. These tools are designed for B2B teams that need targeted contact discovery and more precise search behavior across professional data sources. The company focuses on reducing manual list building and improving the relevance of leads produced by enterprise search workflows.",
+      "website": "https://search-artemis.com/",
+      "foundedYear": 2021,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "B2B",
+        "Data Integration",
+        "Developer Tools",
+        "Enterprise Software",
+        "Lead Generation",
+        "Machine Learning",
+        "Sales Automation",
+        "Search Engine",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Internet Services",
+        "Other",
+        "Sales and Marketing",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Austin McCoy",
+        "Manvir Singh"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "AI-based application that integrates with LinkedIn Sales Navigator to automate targeted B2B sales prospecting.",
+        "name": "Artemis Search Extension / Application"
+      },
+      {
+        "description": "Task-specialized deep-learning ranking and vector search infrastructure for intent-based query matching.",
+        "name": "Artemis Vector Search Technology"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2022-06-01",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2022-06-01",
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 4987465,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2022-06-01",
+          "title": "Pre Seed Round - Artemis Search"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 9,
+      "growthScore": 91,
+      "heatChange90Days": 85,
+      "heatScore": 91
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 46.08
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 23.7,
+        "timingEstimatePercent": {
+          "within6Months": 15.46,
+          "months6To11": 13.07,
+          "months12To24": 20.39,
+          "beyond24Months": 24.99
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 66.47
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 32.18
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $4,987,465 to $4,987,465, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 91 (+9 over 90 days) and market heat at 91 (+85).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

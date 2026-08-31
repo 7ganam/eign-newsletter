@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:27:10.620Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:27:10.556Z",
+    "url": "https://www.crunchbase.com/organization/coloop"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Coloop",
+      "shortDescription": "CoLoop offers an AI platform for qualitative research analysis, enabling faster transcription, analysis, and summarization of data.",
+      "website": "https://www.coloop.ai/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "London, England, United Kingdom",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Analytics",
+        "Artificial Intelligence (AI)",
+        "Information Technology",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Adrien Wald"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An AI-powered platform for qualitative research analysis that automates transcription, translation, coding, and thematic analysis of qualitative data.",
+        "name": "CoLoop AI Platform"
+      },
+      {
+        "description": "A tool within CoLoop that generates customizable grids to organize and analyze qualitative data by participant, segment, or group.",
+        "name": "Analysis Grids"
+      },
+      {
+        "description": "A feature that enables users to select and extract audio or video snippets from transcripts for use in presentations or editing.",
+        "name": "Clip Creation Tool"
+      },
+      {
+        "description": "An interactive chat feature that answers questions about uploaded qualitative research files, segments, and tasks with full source transparency.",
+        "name": "AI Chat Interface"
+      },
+      {
+        "description": "Functionality that allows multiple users to access, manage, and collaborate on qualitative research projects in real time within CoLoop.",
+        "name": "Team Collaboration Features"
+      },
+      {
+        "description": "A data integration feature that allows seamless export of qualitative data collected via Incling into CoLoop for AI-driven analysis.",
+        "name": "Integration with Incling"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -17,
+      "heatScore": 66
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 88.77
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Dovetail is the only AI-first insights hub that automatically centralizes and transforms customer feedback into insights.",
+          "employeeRange": "101-250",
+          "name": "Dovetail",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Text Classification",
+            "Sentiment Analysis",
+            "Data Storytelling Software"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Condens is a software tool that makes storing, analyzing and sharing user research data easier, faster and more enjoyable.",
+          "employeeRange": "11-50",
+          "name": "Condens",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Data Storytelling Software"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Tag, Analyze, Search and Share All Your UX Research in One Place",
+          "employeeRange": "11-50",
+          "name": "Aurelius",
+          "sharedCategories": [
+            "Analytics",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Knowledge Capture Services",
+            "Market Research Data Collection"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "ATLAS.ti is a qualitative analysis software, creates visual structures from information stored on your computer, networks, or the Web.",
+          "employeeRange": "51-100",
+          "name": "ATLAS.ti",
+          "sharedCategories": [
+            "Analytics",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Transcription Services",
+            "Text Classification",
+            "Sentiment Analysis",
+            "Data Storytelling Software"
+          ],
+          "similarityScore": 85
+        },
+        {
+          "description": "MAXQDA is a software package for qualitative and mixed methods research.",
+          "employeeRange": "11-50",
+          "name": "MAXQDA",
+          "sharedCategories": [
+            "Software",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Transcription Services",
+            "Focus Groups and Qualitative Research",
+            "Market Research Data Collection",
+            "Data Storytelling Software"
+          ],
+          "similarityScore": 83
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Dovetail, Condens, Aurelius.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

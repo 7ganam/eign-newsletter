@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:54:54.378Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:54:54.319Z",
+    "url": "https://www.crunchbase.com/organization/layer-by-layer"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Layer by Layer",
+      "shortDescription": "Layer By Layer is a California-based 3D printing technology start-up.",
+      "description": "Layer By Layer sells 3D prints—not files, templates, or designs. They are a new kind of marketplace—the kind that wants to give you great 3D printable products without the all the hassle of downloading and slicing files on your computer. The kind that thinks designers should be rewarded for their work so that they can keep working. The kind that believes in a future where everyone uses 3D printers.",
+      "website": "https://layerbylayer.us/",
+      "foundedYear": 2012,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Mountain View, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "3D Printing",
+        "3D Technology",
+        "Marketplace",
+        "Printing"
+      ],
+      "sectors": [
+        "Commerce and Shopping",
+        "Content and Publishing",
+        "Hardware",
+        "Manufacturing",
+        "Media and Entertainment",
+        "Software"
+      ],
+      "founders": [
+        "Jonathan Schwartz",
+        "Max Friefeld",
+        "Oliver Ortlieb"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2013-08-20",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2013-08-20",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2026-08-06",
+          "publisher": "Crunchbase News",
+          "title": "The Return Of The Repeat Founder: Inside YC’s Growing Class Of Second-Timers",
+          "url": "https://news.crunchbase.com/venture/y-combinator-repeat-founders-numbers-grow-epstein-callaway/"
+        },
+        {
+          "date": "2014-11-13",
+          "title": "Layer by Layer acquired by MakerBot Industries"
+        },
+        {
+          "date": "2013-08-20",
+          "title": "Seed Round - Layer by Layer"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 16,
+      "heatScore": 31
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2025-08-02",
+        "probabilityPercent": 84.72
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Formlabs develops and manufactures 3D printers and software for the industrial sector.",
+          "employeeRange": "501-1,000",
+          "name": "Formlabs",
+          "sharedCategories": [
+            "3D Technology",
+            "3D Printing"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Ever since Ultimaker started shipping its first Ultimaker 3D printers in May 2011, the company took a prominent position within the",
+          "employeeRange": "101-250",
+          "name": "Ultimaker",
+          "sharedCategories": [
+            "3D Printing"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Prusa Research s.r.o. is a Czech 3D printing company.",
+          "employeeRange": "51-100",
+          "name": "Prusa Research",
+          "sharedCategories": [
+            "3D Printing"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Raise3D is a professional designer and manufacturer of 3D printers in the world.",
+          "employeeRange": "51-100",
+          "name": "Raise3D",
+          "sharedCategories": [
+            "3D Printing"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Bambu Lab manufactures 3D printers, focusing on desktop models and offering multi-color, high-speed printing solutions.",
+          "employeeRange": "101-250",
+          "name": "Bambu Lab",
+          "sharedCategories": [
+            "3D Printing"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $120,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Formlabs, Ultimaker, Prusa Research.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

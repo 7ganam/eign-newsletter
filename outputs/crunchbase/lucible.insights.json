@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:09:10.393Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:09:10.338Z",
+    "url": "https://www.crunchbase.com/organization/lucible"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Lucible",
+      "shortDescription": "Lucible offers a combined checking and investment account that automates investing and on-demand margin-backed spending.",
+      "description": "Lucible operates a consumer financial platform that combines checking and investing in a single account. The company enables users to connect existing bank accounts and have idle balances automatically invested in an S&P 500 index. When users make purchases or transfers, Lucible issues margin loans in real time using the investment portfolio as collateral to fund the transaction. This structure is designed to maintain market exposure while preserving day-to-day spending access. Lucible charges a transparent subscription fee and applies interest on margin lending instead of taking spreads on deposited cash. The service targets retail investors seeking to apply strategies traditionally used by high net worth investors to everyday finances.",
+      "website": "https://luciblefi.com/",
+      "foundedYear": 2024,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Banking",
+        "Consumer",
+        "Financial Services",
+        "FinTech",
+        "Personal Finance",
+        "Retail",
+        "Wealth Management"
+      ],
+      "sectors": [
+        "Commerce and Shopping",
+        "Financial Services",
+        "Lending and Investments",
+        "Other"
+      ],
+      "founders": [
+        "Toby Hirsch",
+        "Victor Lin"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A combined checking and investment account that auto-invests deposits and uses margin loans for spending while preserving market exposure.",
+        "name": "Lucible Combined Account"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2024-01-01",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2024-01-01",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 5858078,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2024-01-01",
+          "title": "Pre Seed Round - Lucible"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 41,
+      "heatScore": 70
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 74.11
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 53.48,
+        "timingEstimatePercent": {
+          "within6Months": 7.86,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 92.14
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 55.26
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 3.93
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $5,858,078 to $5,858,078, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

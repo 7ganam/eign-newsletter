@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:08:52.210Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:08:52.149Z",
+    "url": "https://www.crunchbase.com/organization/chatter-3de8"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Chatter",
+      "shortDescription": "Chatter is an online platform for LLM testing and iteration.",
+      "website": "https://www.trychatter.ai/",
+      "foundedYear": 2023,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Philadelphia, Pennsylvania, United States",
+      "geographicRegions": [
+        "Greater Philadelphia Area",
+        "Great Lakes",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Information Technology",
+        "Online Portals",
+        "Service Industry"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Internet Services",
+        "Other"
+      ],
+      "founders": [
+        "Anish Agrawal",
+        "Kasyap Chakra"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A platform to build, evaluate, version, and deploy large language model (LLM) workflows with support for complex chains, automatic evaluations, and collaboration.",
+        "name": "Chatter LLM Testing Platform"
+      },
+      {
+        "description": "An interface to create and manage a library of function calls for use within LLM chains, with configurable API call settings.",
+        "name": "Function Builder"
+      },
+      {
+        "description": "A system to manage complex routing flows involving multiple functions and system prompts for a single query within LLM chains.",
+        "name": "Routing"
+      },
+      {
+        "description": "A tool to test chat interactions with support for multiple roles, chat import, and evaluation of specific messages within conversations.",
+        "name": "Chat Testing"
+      },
+      {
+        "description": "A feature to quickly establish RAG pipelines using vector databases or other data sources for document retrieval and generation.",
+        "name": "Retrieval Augmented Generation (RAG) Setup"
+      },
+      {
+        "description": "A centralized storage system for managing LLM API keys, token usage, and cost tracking per call or over time.",
+        "name": "API Key Vault"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2023-09-06",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2023-09-06",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "Eight Capital",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2025-05-28",
+          "publisher": "Hypepotamus",
+          "title": "Machining Startup Toolpath Scales Up with Industry Support and Key Acquisitions",
+          "url": "https://hypepotamus.com/news/toolpath-secures-strategic-investment-cam-ai/"
+        },
+        {
+          "date": "2023-09-06",
+          "title": "Pre Seed Round - Chatter"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -13,
+      "heatScore": 46
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Braintrust is an AI-native observability startup that helps teams measure, evaluate, and improve AI models and products.",
+          "employeeRange": "101-250",
+          "name": "Braintrust",
+          "similarityScore": 95
+        },
+        {
+          "description": "Open source observability & analytics for LLM apps",
+          "employeeRange": "1-10",
+          "name": "Langfuse",
+          "similarityScore": 93
+        },
+        {
+          "description": "Promptfoo develops software tools that support testing, evaluation, and security analysis of applications built with language models.",
+          "employeeRange": "1-10",
+          "name": "Promptfoo",
+          "sharedCategories": [
+            "Information Technology"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Galileo.ai is the leading agent observability platform",
+          "employeeRange": "101-250",
+          "name": "Galileo (Acq by Cisco)",
+          "sharedCategories": [
+            "Information Technology"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Weights & Biases is a developer-first MLOps platform that builds machine learning performance visualization tools.",
+          "employeeRange": "251-500",
+          "name": "Weights & Biases",
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $500,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Braintrust, Langfuse, Promptfoo.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

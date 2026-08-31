@@ -1,0 +1,289 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:05:23.640Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:05:23.601Z",
+    "url": "https://www.crunchbase.com/organization/celest-c0f3"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Celest",
+      "shortDescription": "Celest is a managed cloud based backend-as-a-service for Flutter and Dart developers",
+      "description": "Celest is a backend-as-a-service for Flutter and Dart developers which enables Flutter developers with the tools and capabilities they need to become full-stack developers",
+      "website": "https://celest.dev/",
+      "foundedYear": 2023,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Cloud Computing",
+        "Developer Tools",
+        "SaaS"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Internet Services",
+        "Software"
+      ],
+      "founders": [
+        "Dillon Nys"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A system to create serverless backend functions in Dart by annotating Dart functions with @cloud for deployment.",
+        "name": "Celest Cloud Functions"
+      },
+      {
+        "description": "Automatic database creation and management based on Drift schema definitions for backend data storage.",
+        "name": "Celest Database Integration"
+      },
+      {
+        "description": "A command-line tool to deploy Dart backend projects to the Celest cloud platform with a single command.",
+        "name": "Celest Deployment CLI"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2024-04-03",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2024-04-03",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 6150454,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2024-04-03",
+          "title": "Pre Seed Round - Celest"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -4,
+      "growthScore": 64,
+      "heatChange90Days": -20,
+      "heatScore": 33
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 83.76
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 61.73,
+        "timingEstimatePercent": {
+          "within6Months": 39.12,
+          "months6To11": 0.03,
+          "months12To24": 0,
+          "beyond24Months": 60.85
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 37.66
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 3.92
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Firebase is Google's mobile platform that develops apps that grow users base on iOS, Android, or the Web.",
+          "employeeRange": "251-500",
+          "name": "Firebase",
+          "sharedCategories": [
+            "Developer Tools"
+          ],
+          "sharedSpecialties": [
+            "Function as a Service (FaaS)",
+            "Database Platform Services"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Appwrite is a secure end-to-end BaaS for Web, Mobile, and Flutter developers",
+          "employeeRange": "11-50",
+          "name": "Appwrite",
+          "sharedCategories": [
+            "Developer Tools"
+          ],
+          "sharedSpecialties": [
+            "Function as a Service (FaaS)",
+            "Database Platform Services",
+            "API Management"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Supabase offers an open source backend platform for app development built around a managed PostgreSQL database and tools.",
+          "employeeRange": "251-500",
+          "name": "Supabase",
+          "sharedSpecialties": [
+            "Function as a Service (FaaS)",
+            "Database Administration Services",
+            "Database Platform Services",
+            "Backend Development",
+            "API Management"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "Parse Open Source Community builds applications with file storage, user authentication, push notifications, and a dashboard.",
+          "employeeRange": "51-100",
+          "name": "Parse Open Source Community",
+          "sharedSpecialties": [
+            "Application Runtime Platforms",
+            "Backend Development",
+            "API Management"
+          ],
+          "similarityScore": 86
+        },
+        {
+          "description": "Convex provides a backend platform with a reactive database, serverless functions, and real-time data synchronization for web apps",
+          "employeeRange": "11-50",
+          "name": "Convex",
+          "sharedCategories": [
+            "SaaS",
+            "Developer Tools"
+          ],
+          "sharedSpecialties": [
+            "Function as a Service (FaaS)",
+            "Cloud Hosting",
+            "Database Platform Services",
+            "Serverless Computing",
+            "Backend Development",
+            "API Management"
+          ],
+          "similarityScore": 84
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $500,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $6,150,454 to $6,150,454, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 64 (-4 over 90 days) and market heat at 33 (-20).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Firebase, Appwrite, Supabase.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

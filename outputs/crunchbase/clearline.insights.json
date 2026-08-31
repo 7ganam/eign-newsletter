@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:17:36.728Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:17:36.668Z",
+    "url": "https://www.crunchbase.com/organization/clearline"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Clearline",
+      "shortDescription": "AI native revenue engine for automotive",
+      "website": "https://useclearline.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "industries": [
+        "Software"
+      ],
+      "sectors": [
+        "Software"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2026-07-23",
+          "publisher": "HousingWire.com",
+          "title": "The silence after the breach is the part you control",
+          "url": "https://www.housingwire.com/articles/mortgage-breach-notification-delays/"
+        },
+        {
+          "date": "2026-05-08",
+          "publisher": "HousingWire.com",
+          "title": "Mortgage’s AI crisis is coming. The industry isn’t ready to talk about it.",
+          "url": "https://www.housingwire.com/articles/mortgages-ai-crisis-is-coming-the-industry-isnt-ready-to-talk-about-it/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 33,
+      "growthScore": 61,
+      "heatChange90Days": 1,
+      "heatScore": 79
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 5
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 94.99
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Truvideo offers a proprietary video, texting and communication platform that helps businesses communicate with their customers.",
+          "employeeRange": "11-50",
+          "name": "Truvideo",
+          "similarityScore": 97
+        },
+        {
+          "description": "CallRevu is an automotive company that offers phone process measurement services.",
+          "employeeRange": "101-250",
+          "name": "CallRevu",
+          "similarityScore": 95
+        },
+        {
+          "description": "Impel offers a digital engagement platform for vehicle retailers or every type and size.",
+          "employeeRange": "501-1,000",
+          "name": "Impel",
+          "similarityScore": 93
+        },
+        {
+          "description": "AutoAlert is a data-mining and trade-cycle management platform that provides a marketplace for modern automotive dealership.",
+          "employeeRange": "251-500",
+          "name": "AutoAlert",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Fullpath is an AI-powered customer data and marketing platform for automotive dealerships.",
+          "employeeRange": "101-250",
+          "name": "Fullpath",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 61 (+33 over 90 days) and market heat at 79 (+1).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Truvideo, CallRevu, Impel.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:51:46.233Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:51:46.179Z",
+    "url": "https://www.crunchbase.com/organization/exa"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "EXA",
+      "shortDescription": "EXA is a Slick Designs, Gorgeous Layouts, On Screen, In Print And On Time.",
+      "description": "EXA offers Growing amazing brands  of one graphic .",
+      "website": "http://exa.co.ke/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "estimatedRevenueRange": "$1M-$10M",
+      "industries": [
+        "Printing",
+        "Web Design"
+      ],
+      "sectors": [
+        "Content and Publishing",
+        "Design",
+        "Media and Entertainment"
+      ],
+      "founders": [
+        "Anas Mohammad"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 16,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2024-07-27",
+          "publisher": "Pulse 2.0",
+          "title": "Exa: Search-Focused AI Company Secures $22 Million",
+          "url": "https://pulse2.com/exa-search-focused-ai-company-secures-22-million/"
+        },
+        {
+          "date": "2024-07-17",
+          "publisher": "The SaaS News",
+          "title": "Exa Raises $22 Million in Funding",
+          "url": "https://www.thesaasnews.com/news/exa-raises-22-million-in-funding"
+        },
+        {
+          "date": "2024-07-16",
+          "publisher": "Business Wire",
+          "title": "Exa Raises $22MM to Build the Search Engine for AI",
+          "url": "https://www.businesswire.com/news/home/20240716151157/en/Exa-Raises-22MM-to-Build-the-Search-Engine-for-AI"
+        },
+        {
+          "date": "2024-01-23",
+          "publisher": "Computer Weekly",
+          "title": "EXA bolsters transatlantic cable presence",
+          "url": "https://www.computerweekly.com/news/366567254/EXA-bolsters-transatlantic-cable-presence"
+        },
+        {
+          "date": "2023-11-26",
+          "publisher": "TradingView",
+          "title": "Cloud-Based Automated Revenue Collection and Prior-Authorization Workflow Solutions for Exa Platform Launched at RSNA 2023",
+          "url": "https://www.tradingview.com/news/reuters.com,2023-11-26:newsml_GNX5rWX8T:0-cloud-based-automated-revenue-collection-and-prior-authorization-workflow-solutions-for-exa-platform-launched-at-rsna-2023/"
+        },
+        {
+          "date": "2023-11-23",
+          "publisher": "MarketScreener",
+          "title": "PEXA GROUP LIMITED",
+          "url": "https://www.marketscreener.com/quote/stock/PEXA-GROUP-LIMITED-124598256/news/Transcript-PEXA-Group-Limited-Shareholder-Analyst-Call-45429234/"
+        },
+        {
+          "date": "2022-04-27",
+          "publisher": "Canadian News Wire",
+          "title": "OCR CANADA LTD ANNOUNCES THE AQUISITION OF EXA SYSTÈMES INC",
+          "url": "https://www.newswire.ca/news-releases/ocr-canada-ltd-announces-the-aquisition-of-exa-systemes-inc-863814887.html"
+        },
+        {
+          "date": "2022-04-19",
+          "publisher": "NewsBTC",
+          "title": "LBank Exchange Will List EXA TOKEN (EXA) on April 19, 2022",
+          "url": "https://www.newsbtc.com/press-releases/lbank-exchange-will-list-exa-token-exa-on-april-19-2022"
+        },
+        {
+          "date": "2022-04-05",
+          "publisher": "ComputerWeekly.com",
+          "title": "London Stock Exchange datacentre migration project secures low-latency network support from EXA",
+          "url": "https://bit.ly/3u8pela"
+        },
+        {
+          "date": "2022-03-14",
+          "publisher": "Biospace",
+          "title": "Konica Minolta Healthcare Highlights Automated Features in Exa Platform that Enhance Productivity at Annual HIMSS Meeting",
+          "url": "https://www.biospace.com/article/releases/konica-minolta-healthcare-highlights-automated-features-in-exa-platform-that-enhance-productivity-at-annual-himss-meeting/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 7,
+      "heatScore": 50
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 89.59
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 16 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

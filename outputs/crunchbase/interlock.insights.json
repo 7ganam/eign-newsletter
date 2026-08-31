@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:17:31.727Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:17:31.674Z",
+    "url": "https://www.crunchbase.com/organization/interlock"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Interlock Medizintechnik",
+      "shortDescription": "Interlock is a premier provider of products to the central sterile supply department (CSSD) of hospitals throughout Europe.",
+      "description": "Interlock is a premier provider of products to the central sterile supply department (CSSD) of hospitals throughout Europe.",
+      "website": "https://www.interlockmed.com/",
+      "foundedYear": 1978,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "101-250",
+      "headquarters": "Lensahn, Schleswig-Holstein, Germany",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2018-07-11",
+          "publisher": "PRNewswire",
+          "title": "Key Surgical Announces Acquisition To Expand Product Offering",
+          "url": "https://www.prnewswire.com/news-releases/key-surgical-announces-acquisition-to-expand-product-offering-300678899.html"
+        },
+        {
+          "date": "2017-06-07",
+          "title": "Interlock Medizintechnik acquired by Key Surgical"
+        },
+        {
+          "date": "2016-11-01",
+          "title": "Clinipak acquired by Interlock Medizintechnik"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -10,
+      "heatScore": 31
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

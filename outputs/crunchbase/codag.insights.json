@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:22:21.000Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:22:20.939Z",
+    "url": "https://www.crunchbase.com/organization/codag"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Codag",
+      "shortDescription": "Codag provides tools that compress infrastructure logs into compact, cited text for debugging with AI agents.",
+      "description": "Codag provides developer tools that compress infrastructure log data into compact, structured text that AI agents can process. The platform groups similar log lines into templates, ranks patterns, and preserves surrounding context with references to real line numbers. Codag offers a hosted service, CLI, SDKs, and MCP integrations that sit in front of large language model agents. Developers can wrap existing log commands so that agents receive compact text instead of raw log streams. The system supports line-oriented formats such as JSON logs, syslog, Kubernetes logs, and other application logs with preprocessing and redaction. Codag is used to help agents debug distributed systems by turning high-volume logs into cited evidence within token limits.",
+      "website": "https://codag.ai/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Cloud Computing",
+        "Data Collection and Labeling",
+        "Developer Tools",
+        "Enterprise Software",
+        "IT Infrastructure",
+        "Machine Learning",
+        "Productivity Tools",
+        "Software",
+        "Software Engineering"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Internet Services",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Codag Pro is a hosted service that compresses large infrastructure log windows into compact, cited text for use by AI agents.",
+        "name": "Codag Pro"
+      },
+      {
+        "description": "Codag Free is an open-source and hosted deterministic log compaction path based on codag-drain for smaller or low-cost workloads.",
+        "name": "Codag Free"
+      },
+      {
+        "description": "codag-drain is an open-source Rust log templating engine that groups raw log lines into deterministic template clusters.",
+        "name": "codag-drain"
+      },
+      {
+        "description": "codag-cli is an open-source Go command-line client and MCP server that wraps log commands and sends them to Codag for compaction.",
+        "name": "codag-cli"
+      },
+      {
+        "description": "codag-visualizer is a VS Code extension that displays AI workflows as live diagrams linked to source code.",
+        "name": "codag-visualizer"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 78,
+      "heatScore": 79
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 52.29
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

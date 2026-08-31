@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T09:43:06.200Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T09:43:06.147Z",
+    "url": "https://www.crunchbase.com/organization/alpha-research"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Alpha Research",
+      "shortDescription": "Alpha Research is a marketing agency that provides consulting, social, and market research services.",
+      "website": "https://alpharesearch.bg/",
+      "foundedYear": 1997,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Sofia, Grad Sofiya, Bulgaria",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Consulting",
+        "Marketing",
+        "Market Research"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Design",
+        "Professional Services",
+        "Sales and Marketing"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Research methods that use statistical data to measure characteristics such as awareness, satisfaction, loyalty, and impact for policies or businesses.",
+        "name": "Quantitative Research Services"
+      },
+      {
+        "description": "Research methods focused on understanding motivations, emotions, and reasons behind behaviors without relying on numerical data.",
+        "name": "Qualitative Research Services"
+      },
+      {
+        "description": "Advisory services that help clients select appropriate research methods and interpret findings for informed decision-making.",
+        "name": "Consulting Services"
+      },
+      {
+        "description": "A series of indices measuring economic conditions and trends across countries, sectors, and topics for decision-making purposes.",
+        "name": "Comparative Economic Indices Product"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 0,
+      "growthScore": 82,
+      "heatChange90Days": -4,
+      "heatScore": 41
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 89.25
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Ipsos operates is a global market research and consulting firm that provides data and insights regarding society, markets, and people.",
+          "employeeRange": "10,001+",
+          "name": "Ipsos",
+          "sharedCategories": [
+            "Market Research",
+            "Consulting"
+          ],
+          "sharedSpecialties": [
+            "Customer Experience Research",
+            "Survey Platforms",
+            "Focus Groups and Qualitative Research",
+            "Quantitative Research",
+            "Market Research Data Collection",
+            "Market Intelligence"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Kantar is the data investment management division of WPP, is a global insight, information, and consultancy network.",
+          "employeeRange": "10,001+",
+          "name": "Kantar",
+          "sharedCategories": [
+            "Market Research",
+            "Marketing",
+            "Consulting"
+          ],
+          "sharedSpecialties": [
+            "Customer Experience Research",
+            "Survey Platforms",
+            "Participant Recruitment and Panel Management",
+            "Market Research Data Collection",
+            "Market Intelligence"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "NielsenIQ is a consumer intelligence company that offers retailers and consumer goods manufactures.",
+          "employeeRange": "10,001+",
+          "name": "NielsenIQ",
+          "sharedSpecialties": [
+            "Quantitative Research",
+            "Market Research Data Collection",
+            "Market Intelligence"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Mercer is a human resource consulting service that includes compensation, employee benefits, communications, and investment consulting.",
+          "employeeRange": "10,001+",
+          "name": "Mercer",
+          "sharedCategories": [
+            "Consulting"
+          ],
+          "similarityScore": 83
+        },
+        {
+          "description": "YouGov is a data and analytics group that enables companies to explore, plan, activate, and track marketing activities.",
+          "employeeRange": "1,001-5,000",
+          "name": "YouGov",
+          "sharedCategories": [
+            "Market Research"
+          ],
+          "sharedSpecialties": [
+            "Customer Experience Research",
+            "Survey Platforms",
+            "Participant Recruitment and Panel Management",
+            "Quantitative Research",
+            "Market Intelligence"
+          ],
+          "similarityScore": 82
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 82 (+0 over 90 days) and market heat at 41 (-4).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Ipsos, Kantar, NielsenIQ.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

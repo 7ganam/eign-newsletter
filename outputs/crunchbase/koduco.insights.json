@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:45:38.779Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:45:38.731Z",
+    "url": "https://www.crunchbase.com/organization/koduco"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Koduco",
+      "shortDescription": "Koduco provided iPad games for multiplayer collaboration on the same device.",
+      "description": "Koduco makes iPad games that focus on multiplayer collaboration on the same device.",
+      "website": "http://www.koduco.com/",
+      "foundedYear": 2010,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Collaboration",
+        "Gamification",
+        "Gaming"
+      ],
+      "sectors": [
+        "Gaming",
+        "Other"
+      ],
+      "founders": [
+        "Jonathan Beilin"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2010-08-23",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2010-08-23",
+          "investorCount": 2,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "Eniac Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2010-09-30",
+          "publisher": "Tech Zulu",
+          "title": "TechZulu • The Startup Guide To SXSW Panel Picking",
+          "url": "http://techzulu.com/the-startup-guide-to-sxsw-panel-picking/"
+        },
+        {
+          "date": "2010-08-23",
+          "publisher": "TechCrunch",
+          "title": "YC-Funded Koduco Is Bringing Old-School Fun To Multiplayer iPad Games | TechCrunch",
+          "url": "http://techcrunch.com/2010/08/23/koduco-ipad-games/"
+        },
+        {
+          "date": "2010-08-23",
+          "title": "Seed Round - Koduco"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -20,
+      "heatScore": 22
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

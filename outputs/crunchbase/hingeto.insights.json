@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:53:30.802Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:53:30.752Z",
+    "url": "https://www.crunchbase.com/organization/hingeto"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Hingeto",
+      "shortDescription": "Hingeto build powerful crowd funding stores for great brands.",
+      "description": "Hingeto builds powerful crowd funding stores for brands. It develops and operates crowdfunding sites that let fashion brands test demand for new designs without having to produce them upfront. Payment methods such as Visa, MasterCard, Discover, and American Express are accepted at checkout. It provides products such as caps, ties, dresses, jackets, hoodies, accessories, and pillows.\n\nHingeto was founded in 2015.",
+      "website": "https://www.hingeto.com/",
+      "foundedYear": 2015,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Oakland, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Crowdfunding",
+        "Fashion",
+        "Finance",
+        "Financial Services"
+      ],
+      "sectors": [
+        "Clothing and Apparel",
+        "Design",
+        "Financial Services"
+      ],
+      "founders": [
+        "Akintunde Ismail Maiyegun",
+        "Leandrew Robinson",
+        "Yaw Owusu Barimah"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2018-08-15",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2018-08-15",
+          "investorCount": 3,
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2016-03-22",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 6,
+          "leadInvestors": [
+            "MaC Venture Capital",
+            "Y Combinator"
+          ],
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 8,
+        "visibleNames": [
+          {
+            "name": "Alumni Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Base Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "CSC Upshot",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "Kapor Capital",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "MaC Venture Capital",
+            "rounds": [
+              "Seed Round",
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "Precursor Ventures",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "StartX (Stanford-StartX Fund)",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2018-08-15",
+          "title": "Seed Round - Hingeto"
+        },
+        {
+          "date": "2016-03-22",
+          "title": "Pre Seed Round - Hingeto"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 4,
+      "heatScore": 16
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

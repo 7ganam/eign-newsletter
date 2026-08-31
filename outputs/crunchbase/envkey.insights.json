@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:48:06.339Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:48:06.293Z",
+    "url": "https://www.crunchbase.com/organization/envkey"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "EnvKey",
+      "shortDescription": "Envkey is an end-to-end encrypted repository for configuration, api keys, and application secrets.",
+      "description": "EnvKey solves these problems without getting in the way. It's like a password manager for API keys and application config. Using end-to-end encryption built on the OpenPGP standard, EnvKey makes it easy to grant secure, always in-sync access to the developers and servers that need it, all from a user-friendly UI. Using EnvKey ensures that no 3rd party, including EnvKey itself, ever has access to your secrets. It takes a part of your system that is error-prone and insecure and makes it just work.",
+      "website": "https://www.envkey.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Cyber Security",
+        "Developer APIs",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Privacy and Security",
+        "Software"
+      ],
+      "founders": [
+        "Dane Schneider"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An end-to-end encrypted configuration and secrets manager that securely stores and synchronizes API keys, credentials, and environment variables across development and server environments.",
+        "name": "EnvKey"
+      },
+      {
+        "description": "A VS Code extension that provides autocomplete, type checking, and real-time updates for environment variables managed by EnvKey across 46 programming languages.",
+        "name": "EnvKey for VS Code"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2018-01-04",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2018-01-04",
+          "investorCount": 2,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 6634416,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "FundersClub",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2018-03-21",
+          "publisher": "TechCrunch",
+          "title": "These are the 64 startups unveiled at Y Combinator W18 Demo Day 2",
+          "url": "https://techcrunch.com/2018/03/20/these-are-the-64-startups-unveiled-at-y-combinator-w18-demo-day-2/"
+        },
+        {
+          "date": "2018-02-27",
+          "publisher": "TechCrunch",
+          "title": "EnvKey wants to create a smarter place to store a company’s API keys and credentials",
+          "url": "https://techcrunch.com/2018/02/27/envkey-wants-to-create-a-smarter-place-to-store-a-companys-api-keys-and-credentials/"
+        },
+        {
+          "date": "2018-01-04",
+          "title": "Seed Round - EnvKey"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -2,
+      "growthScore": 83,
+      "heatChange90Days": -13,
+      "heatScore": 31
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 21.13
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 6.23,
+        "timingEstimatePercent": {
+          "within6Months": 14.66,
+          "months6To11": 12.51,
+          "months12To24": 19.79,
+          "beyond24Months": 24.91
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 69.81
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 8.62
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Doppler’s developer-first security platform empowers teams to seamlessly manage, orchestrate, & govern secrets at scale.",
+          "employeeRange": "11-50",
+          "name": "Doppler",
+          "sharedCategories": [
+            "Cyber Security",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Data Protection",
+            "API Security",
+            "Privileged Access Management",
+            "Password Management"
+          ],
+          "similarityScore": 96
+        },
+        {
+          "description": "HashiCorp is a remote-first company that solves development, security, and operations challenges in infrastructure.",
+          "employeeRange": "1,001-5,000",
+          "name": "HashiCorp",
+          "sharedCategories": [
+            "Cyber Security",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "CI/CD Platform",
+            "Infrastructure as Code",
+            "Privileged Access Management"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Infisical is an open-source secrets manager that secures and syncs app configs and credentials across teams with end-to-end encryption.",
+          "employeeRange": "51-100",
+          "name": "Infisical",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Data Protection",
+            "Security Information and Event Management (SIEM)",
+            "Secure File Sync and Sharing",
+            "Privileged Access Management",
+            "Password Management"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "Unified platform to protect credentials, certificates, keys and manage the entire machine identity lifecycle.",
+          "employeeRange": "51-100",
+          "name": "Akeyless Security",
+          "sharedCategories": [
+            "Cyber Security",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Data Protection",
+            "API Security",
+            "CI/CD Platform",
+            "Privileged Access Management",
+            "Password Management",
+            "User Authentication and Single Sign-On"
+          ],
+          "similarityScore": 86
+        },
+        {
+          "description": "Amazon Web Services provides information technology infrastructure services to businesses in the form of web services.",
+          "employeeRange": "10,001+",
+          "name": "Amazon Web Services",
+          "sharedSpecialties": [
+            "Infrastructure as Code",
+            "User Authentication and Single Sign-On"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $6,634,416 to $6,634,416, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 83 (-2 over 90 days) and market heat at 31 (-13).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Doppler, HashiCorp, Infisical.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

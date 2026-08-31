@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:05:34.946Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:05:34.889Z",
+    "url": "https://www.crunchbase.com/organization/lively-3de7"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Lively",
+      "shortDescription": "Lively is a striking example of how people will live in the future's \"third age\": modern, networked, and design-oriented.",
+      "description": "Lively is a striking example of how people will live in the future's \"third age\": modern, networked, and design-oriented. The founders are unique in their ability to understand life in old age holistically and from a completely fresh perspective in order to produce novel living solutions.",
+      "website": "https://www.lively.de/",
+      "foundedYear": 2020,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Hamburg, Germany",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Rental"
+      ],
+      "sectors": [
+        "Commerce and Shopping"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Barrier-free residential apartments designed for seniors, featuring modern amenities and access to shared community spaces.",
+        "name": "LIVELY Apartments"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2023-06-20",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2023-06-20",
+          "investorCount": 4,
+          "postMoneyValuation": {
+            "amount": 4561116,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 4,
+        "visibleNames": [
+          {
+            "name": "Ambros Gleissner",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Lars Kilchert",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Michael Maas",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Neworld",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2023-06-20",
+          "title": "Seed Round - Lively"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -20,
+      "heatScore": 41
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 38.44,
+        "timingEstimatePercent": {
+          "within6Months": 13.8,
+          "months6To11": 11.89,
+          "months12To24": 19.09,
+          "beyond24Months": 24.73
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 71.77
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Vereinigte Bonner Wohnungsbau is a municipal real estate company that engages in residential property development and maintenance services.",
+          "employeeRange": "101-250",
+          "name": "Vereinigte Bonner Wohnungsbau",
+          "sharedSpecialties": [
+            "Apartment Rentals"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Haus Edelberg Senioren-Zentren offers assisted living, inpatient care, palliative care, physiotherapy and occupational therapy services.",
+          "employeeRange": "501-1,000",
+          "name": "Haus Edelberg Senioren-Zentren",
+          "sharedSpecialties": [
+            "Independent Living"
+          ],
+          "similarityScore": 95.217
+        },
+        {
+          "description": "Taunus is a modern care facility with a long tradition, they offer our residents services at the highest level.",
+          "employeeRange": "101-250",
+          "name": "Taunus-Residenzen",
+          "sharedSpecialties": [
+            "Independent Living",
+            "Senior Housing"
+          ],
+          "similarityScore": 90.429
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $4,561,116 to $4,561,116, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Vereinigte Bonner Wohnungsbau, Haus Edelberg Senioren-Zentren, Taunus-Residenzen.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

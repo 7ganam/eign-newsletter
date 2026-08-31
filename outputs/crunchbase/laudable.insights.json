@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:54:03.676Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:54:03.629Z",
+    "url": "https://www.crunchbase.com/organization/laudable"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Laudable",
+      "shortDescription": "Laudable is an app that brings together several online fashion and style stores in South Africa into a single social platform.",
+      "description": "Laudable is an app that brings together several online fashion and style stores in South Africa into a single social platform. It enables users to discover socially curated products and deals, and create and share collections of what they like.",
+      "website": "https://www.laudable.co.za/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Johannesburg, NA - South Africa, South Africa",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "E-Commerce",
+        "Shopping",
+        "Social Media Management"
+      ],
+      "sectors": [
+        "Commerce and Shopping",
+        "Internet Services",
+        "Sales and Marketing"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An app that aggregates products from multiple South African online fashion and design stores into a single social platform for discovery and sharing.",
+        "name": "Laudable Social Shopping Platform"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2019-08-07",
+          "publisher": "Tech Moran",
+          "title": "CEO Weekends: Laudable.co.za’s Ian Marvin & Haydn Von Maltitz Want To Simplify Social Shopping In Africa",
+          "url": "https://techmoran.com/2013/07/26/ceo-weekends-laudable-co-zas-ian-marvin-haydn-von-maltitz-want-to-simplify-social-shopping-in-africa/"
+        },
+        {
+          "date": "2019-07-29",
+          "publisher": "Tech Moran",
+          "title": "Laudable Launches In South Africa To Disrupt Social Shopping",
+          "url": "https://techmoran.com/2013/07/16/laudable-launches-in-south-africa-to/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -13,
+      "heatScore": 44
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 4.62
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Superbalist expertly curates the some of the worlds finest design, art and style.",
+          "employeeRange": "51-100",
+          "name": "Superbalist",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "sharedSpecialties": [
+            "E-Commerce Mobile Apps"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Zando is an e-commerce retailer offering footwear and fashion brands.",
+          "employeeRange": "101-250",
+          "name": "Zando",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Bash is a fashion and lifestyle shopping platform that provides clothes, jewelry, and shoes.",
+          "employeeRange": "101-250",
+          "name": "Bash",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "sharedSpecialties": [
+            "E-Commerce Mobile Apps"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Happy Pay is a payment platform that delivers merchants, shoppers, and the planet.",
+          "employeeRange": "11-50",
+          "name": "Happy Pay",
+          "sharedCategories": [
+            "Shopping"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "Cotton On Singapore operates Cotton On Group retail stores and an e-commerce site for clothing, accessories, and lifestyle products.",
+          "employeeRange": "1-10",
+          "name": "Cotton On Singapore",
+          "sharedCategories": [
+            "E-Commerce",
+            "Shopping"
+          ],
+          "sharedSpecialties": [
+            "E-Commerce Mobile Apps"
+          ],
+          "similarityScore": 84
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Superbalist, Zando, Bash.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

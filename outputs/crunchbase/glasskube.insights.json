@@ -1,0 +1,308 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:28:33.886Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:28:33.831Z",
+    "url": "https://www.crunchbase.com/organization/glasskube"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Glasskube",
+      "shortDescription": "Software Distribution Platform for on-prem, BYOC and customer controlled environment",
+      "description": "Distr is a software distribution platform that helps software vendors deploy and manage their applications in enterprise customers' self-managed, BYOC, and air-gapped environments.",
+      "website": "https://distr.sh/",
+      "foundedYear": 2023,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Vienna, Wien, Austria",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Cyber Security",
+        "Developer APIs",
+        "Developer Platform",
+        "Developer Tools",
+        "DevOps",
+        "IaaS",
+        "Open Source",
+        "PaaS",
+        "Privacy"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Privacy and Security",
+        "Software"
+      ],
+      "founders": [
+        "Louis Weston",
+        "Philip Miglinci"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An open source platform to manage and distribute software to self-managed, BYOC, and on-premises customer environments.",
+        "name": "Distr Software Distribution Platform"
+      },
+      {
+        "description": "An OCI-compliant container and artifact registry integrated into Distr for managing and distributing software artifacts with license-based access control.",
+        "name": "Distr Artifact Registry"
+      },
+      {
+        "description": "Optional Docker Compose and Helm agents that manage application deployments, collect logs and metrics, and enable remote troubleshooting.",
+        "name": "Distr Deployment Agents"
+      },
+      {
+        "description": "A web portal for customers to simplify installation, download artifacts, and monitor deployments and security vulnerabilities.",
+        "name": "Distr Customer Portal"
+      },
+      {
+        "description": "A management interface for software vendors to administer customers, licenses, deployments, and access policies.",
+        "name": "Distr Vendor Portal"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2024-08-28",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2024-08-28",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 4785422,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "Pioneer Fund",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2024-08-28",
+          "title": "Pre Seed Round - Glasskube"
+        },
+        {
+          "date": "2023-11-25",
+          "publisher": "der KURIER",
+          "title": "Websummit: Wie österreichische Start-ups das Festival für sich nutzten",
+          "url": "https://kurier.at/wirtschaft/websummit-start-up-festival-oesterreichische-start-ups-uptraded-ada-growth-glasskube-kamarg-wko/402674380"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2023-12-25",
+      "growthChange90Days": -3,
+      "growthScore": 54,
+      "heatChange90Days": -5,
+      "heatScore": 70,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 65.46
+      },
+      "funding": {
+        "generatedDate": "2025-10-04",
+        "probabilityPercent": 94.75,
+        "timingEstimatePercent": {
+          "within6Months": 100,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2025-05-11",
+        "probabilityPercent": 95.71
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 3.8
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Replicated provides a platform for delivering and managing Kubernetes applications in any environment.",
+          "employeeRange": "51-100",
+          "name": "Replicated",
+          "sharedCategories": [
+            "Developer Tools"
+          ],
+          "sharedSpecialties": [
+            "Container and Kubernetes Platform Services",
+            "Log Management",
+            "Software License Management",
+            "On-Premise Private Cloud"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Portainer is a container management platform to accelerate container adoption across cloud, datacenter, edge, and Industrial IoT use cases.",
+          "employeeRange": "51-100",
+          "name": "Portainer",
+          "sharedSpecialties": [
+            "Container and Kubernetes Platform Services",
+            "On-Premise Private Cloud",
+            "Developer Portals"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Harness provides a software delivery platform that helps engineering teams build, deploy, and operate applications through a set of tools.",
+          "employeeRange": "1,001-5,000",
+          "name": "Harness",
+          "sharedCategories": [
+            "Developer Tools",
+            "DevOps"
+          ],
+          "sharedSpecialties": [
+            "Supply Chain Security",
+            "CI/CD (Continuous Integration / Continuous Delivery)"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Nutanix is a cloud software company that provides infrastructure and management platforms for private, hybrid, and multi-cloud environments.",
+          "employeeRange": "5,001-10,000",
+          "name": "Nutanix",
+          "sharedSpecialties": [
+            "Container and Kubernetes Platform Services"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Red Hat Ansible is an automation engine that makes systems and applications simple to deploy.",
+          "employeeRange": "11-50",
+          "name": "Red Hat Ansible",
+          "sharedSpecialties": [
+            "CI/CD (Continuous Integration / Continuous Delivery)",
+            "Container and Kubernetes Platform Services"
+          ],
+          "similarityScore": 86
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $500,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $4,785,422 to $4,785,422, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 54 (-3 over 90 days) and market heat at 70 (-5).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Replicated, Portainer, Harness.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

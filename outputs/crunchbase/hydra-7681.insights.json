@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:59:38.836Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:59:38.778Z",
+    "url": "https://www.crunchbase.com/organization/hydra-7681"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Hydra",
+      "shortDescription": "Hydra is an open source Snowflake alternative. We transform Postgres into a fast, scalable data warehouse.",
+      "description": "Hydra is an open source Snowflake alternative that transforms Postgres into a fast, scalable data warehouse. With Hydra, engineers can standardize both transactional and analytics workloads around the familiar Postgres syntax, tools, and ecosystem without app code changes. Hydra offers a fully managed cloud instance with columnar storage and high throughput writes.\n\nIn addition, Hydra decouples Postgres' query layer from compute and storage to enable developers to run Postgres queries across any database. Hydra's mission is to end vendor lock-in and standardize on developers' favorite open-source database, Postgres.",
+      "website": "https://www.hydras.io/",
+      "foundedYear": 2021,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Business Intelligence",
+        "Cloud Data Services",
+        "Database",
+        "Information Technology",
+        "Software"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Information Technology",
+        "Internet Services",
+        "Software"
+      ],
+      "founders": [
+        "Jonathan Dance",
+        "Joseph Sciarrino"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An open source platform that transforms Postgres into a scalable data warehouse alternative to Snowflake.",
+        "name": "Hydra Platform"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2022-04-01",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2022-04-01",
+          "investorCount": 4,
+          "postMoneyValuation": {
+            "amount": 8625569,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 4,
+        "visibleNames": [
+          {
+            "name": "Lombardstreet Ventures",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "Pioneer Fund",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "Vishal Rao",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2022-04-01",
+          "title": "Pre Seed Round - Hydra"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 91,
+      "growthScore": 91,
+      "heatChange90Days": -15,
+      "heatScore": 39
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 44.68
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 22.86,
+        "timingEstimatePercent": {
+          "within6Months": 15.26,
+          "months6To11": 12.93,
+          "months12To24": 20.25,
+          "beyond24Months": 24.98
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 74.48
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 30.75
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Firebolt is a cloud data warehousing platform that allows users to streamline their analytics and access to insights.",
+          "employeeRange": "101-250",
+          "name": "Firebolt",
+          "sharedCategories": [
+            "Cloud Data Services"
+          ],
+          "sharedSpecialties": [
+            "Extract Transform Load (ETL)",
+            "Data Engineering",
+            "Database Platform Services",
+            "Data Cataloging",
+            "Data Quality and Observability",
+            "Metadata Management",
+            "Data Warehousing",
+            "Data Pipelines"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Crunchy Data is a provider of enterprise PostgreSQL services, tools, and Kubernetes-based database solutions.",
+          "employeeRange": "101-250",
+          "name": "Crunchy Data",
+          "sharedCategories": [
+            "Software",
+            "Database",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Data Engineering",
+            "Database Platform Services",
+            "Data Quality and Observability",
+            "Data Replication",
+            "Data Warehousing",
+            "Change Data Capture"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "ClickHouse provides an open-source database system for real-time analytical reporting.",
+          "employeeRange": "251-500",
+          "name": "ClickHouse",
+          "sharedCategories": [
+            "Software",
+            "Database"
+          ],
+          "sharedSpecialties": [
+            "Extract Transform Load (ETL)",
+            "Data Engineering",
+            "Database Platform Services",
+            "Data Warehousing",
+            "Big Data Infrastructure",
+            "Data Pipelines"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Dremio is the pioneer of The Agentic Lakehouse—the only data platform built for agents, managed by agents.",
+          "employeeRange": "251-500",
+          "name": "Dremio",
+          "sharedCategories": [
+            "Business Intelligence",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Data Engineering",
+            "Data Cataloging",
+            "Data Quality and Observability",
+            "Metadata Management",
+            "Data Warehousing",
+            "Data Pipelines"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Grow your business with 3X greater analytics performance powered by StarRocks and backed by the enterprise support and features of CelerData",
+          "employeeRange": "51-100",
+          "name": "PhoenixAI",
+          "sharedCategories": [
+            "Software",
+            "Database",
+            "Cloud Data Services"
+          ],
+          "sharedSpecialties": [
+            "Data Engineering",
+            "Database Platform Services",
+            "Data Warehousing",
+            "Data Pipelines"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $8,625,569 to $8,625,569, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 91 (+91 over 90 days) and market heat at 39 (-15).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Firebolt, Crunchy Data, ClickHouse.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:08:05.321Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:08:05.249Z",
+    "url": "https://www.crunchbase.com/organization/illume-labs"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Illume Labs",
+      "shortDescription": "Illume Labs is developing technologies to assist those who have trouble knowing when to use the washroom.",
+      "description": "Illume Labs is creating tools to help those who struggle to know when to use the bathroom. All people put up with the unpleasant difficulty of not knowing when to go to the bathroom, including seniors, children in the toilet-training process, and those with neurological conditions.",
+      "website": "https://www.illumelabs.com/",
+      "foundedYear": 2020,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Hamilton, Ontario, Canada",
+      "geographicRegions": [
+        "Great Lakes"
+      ],
+      "industries": [
+        "Electronics",
+        "Information Technology",
+        "Product Design"
+      ],
+      "sectors": [
+        "Design",
+        "Hardware",
+        "Information Technology"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 34,
+      "heatScore": 85
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 49.65
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 66.71
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 32.14
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Avation Medical develops medical devices focused on treating gastrointestinal disorders through non-invasive neuromodulation technology.",
+          "employeeRange": "101-250",
+          "name": "Avation Medical",
+          "similarityScore": 93
+        },
+        {
+          "description": "Triple W Japan makes the world's first toilet timing predicting device.",
+          "employeeRange": "11-50",
+          "name": "Triple W Japan",
+          "similarityScore": 89
+        },
+        {
+          "description": "Zealacare offers a Smart Sensor for real-time incontinence data.",
+          "employeeRange": "1-10",
+          "name": "Zealacare",
+          "similarityScore": 87
+        },
+        {
+          "description": "Medline Industries is a medical supply company, manufacturer and distributor.",
+          "employeeRange": "10,001+",
+          "name": "Medline Industries",
+          "similarityScore": 86
+        },
+        {
+          "description": "Elidah's ELITONE is a medical device that allows women to be boss of their bladders, whether stress or urge incontinence.",
+          "employeeRange": "11-50",
+          "name": "Elidah",
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Avation Medical, Triple W Japan, Zealacare.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

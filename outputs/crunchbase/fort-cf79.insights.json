@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:15:26.542Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:15:26.485Z",
+    "url": "https://www.crunchbase.com/organization/fort-cf79"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Fort",
+      "shortDescription": "Fort is a media production company that offers advertising and digital content production services.",
+      "website": "https://www.fort.co/",
+      "foundedYear": 2006,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Johannesburg, NA - South Africa, South Africa",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Advertising",
+        "Commercial",
+        "Digital Media",
+        "Film Production"
+      ],
+      "sectors": [
+        "Advertising",
+        "Media and Entertainment",
+        "Other",
+        "Sales and Marketing",
+        "Video"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Production of advertising materials and campaigns, including creative development, filming, editing, and delivery for brands and marketing teams.",
+        "name": "Advertising Production"
+      },
+      {
+        "description": "Creation of digital media assets such as branded videos, social media content, and other visual materials for online distribution.",
+        "name": "Digital Content Production"
+      },
+      {
+        "description": "End-to-end creation of video content, from production planning and filming through editing and post-production.",
+        "name": "Video Production"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2026-02-19",
+          "publisher": "Stuff.co.za",
+          "title": "Fort-ean times – Former Tesla engineers are working on a strength training-focused fitness band",
+          "url": "https://stuff.co.za/2026/02/20/fort-ean-tesla-strength-fitness-band/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -14,
+      "heatScore": 30
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 44.87
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Psyop is a studio specializing in emotive, visually storytelling for the advertising, video gaming, broadcast and music video industries.",
+          "employeeRange": "101-250",
+          "name": "Psyop",
+          "sharedCategories": [
+            "Advertising"
+          ],
+          "sharedSpecialties": [
+            "Explainer and Motion Graphics",
+            "Audio Post-Production",
+            "Post-Production and Editing",
+            "Television Commercial Production"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Hungry Man is an entertainment company specializing in commercial and music video production services.",
+          "employeeRange": "101-250",
+          "name": "Hungry Man",
+          "sharedSpecialties": [
+            "Social Video Production",
+            "Explainer and Motion Graphics",
+            "Video Production",
+            "Audio Post-Production",
+            "Post-Production and Editing",
+            "Television Commercial Production"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Mæ is an architecture company for urban design and social infrastructure sectors.",
+          "employeeRange": "11-50",
+          "name": "Mæ",
+          "similarityScore": 92
+        },
+        {
+          "description": "Anonymous Content is a production and management company dealing in entertainment industry.",
+          "employeeRange": "101-250",
+          "name": "Anonymous Content",
+          "sharedSpecialties": [
+            "Video Production",
+            "Post-Production and Editing",
+            "Television Commercial Production"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "A global studio that creates some of the world’s most innovative content across all platforms of media.",
+          "employeeRange": "251-500",
+          "name": "RadicalMedia LLC",
+          "sharedSpecialties": [
+            "Enterprise Content Operations",
+            "Video Production",
+            "Post-Production and Editing",
+            "Television Commercial Production"
+          ],
+          "similarityScore": 84
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Psyop, Hungry Man, Mæ.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

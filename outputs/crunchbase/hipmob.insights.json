@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:53:39.787Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:53:39.754Z",
+    "url": "https://www.crunchbase.com/organization/hipmob"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Hipmob",
+      "shortDescription": "Hipmob brings easy-to-use live chat, helpdesk, feedback, and customer engagement tools to mobile and tablet businesses.",
+      "description": "Hipmob brings easy-to-use live chat, helpdesk, feedback, and customer engagement tools to mobile and tablet businesses. It serves from mobile-native startups to small businesses to large public companies with tools to increase sales and transform customer support.\n\nHipmob provides its clients with real-time contextual information about their customers, including devices, apps, operating systems, geographic info, and more. It was founded in 2012 by [Ayo Omojola](https://www.crunchbase.com/person/ayo-omojola) and is based in Palo Alto, C.A.",
+      "website": "http://www.hipmob.com/",
+      "foundedYear": 2012,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Palo Alto, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Customer Service",
+        "Mobile",
+        "Software"
+      ],
+      "sectors": [
+        "Mobile",
+        "Professional Services",
+        "Software"
+      ],
+      "founders": [
+        "Ayo Omojola"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2012-03-28",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2012-03-28",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 5,
+      "includedUniqueCount": 5,
+      "items": [
+        {
+          "date": "2017-03-21",
+          "title": "Hipmob acquired by Conversocial"
+        },
+        {
+          "date": "2015-02-27",
+          "title": "Quantified Mobile",
+          "url": "http://blog.hipmob.com/"
+        },
+        {
+          "date": "2013-12-19",
+          "publisher": "Venture Beat",
+          "title": "Why mobile retailers should ditch credit cards | VentureBeat | Mobile | by Devindra Hardawar",
+          "url": "http://venturebeat.com/2013/12/19/why-mobile-retailers-should-ditch-credit-cards/"
+        },
+        {
+          "date": "2013-01-31",
+          "publisher": "TechCrunch",
+          "title": "YC-Backed Hipmob Wants To Become The Premier In-App Customer Service Tool",
+          "url": "http://techcrunch.com/2013/01/31/yc-backed-hipmob-wants-to-become-the-premier-in-app-customer-service-tool/"
+        },
+        {
+          "date": "2012-03-28",
+          "title": "Seed Round - Hipmob"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -12,
+      "heatScore": 35
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Fin is an artificial intelligence software company that develops AI-powered customer experience and customer service agents for businesses.",
+          "employeeRange": "1,001-5,000",
+          "name": "Fin",
+          "sharedCategories": [
+            "Software",
+            "Customer Service"
+          ],
+          "similarityScore": 96
+        },
+        {
+          "description": "The all-in-one business messaging platform that gathers teams, conversations, data and knowledge, around one place.",
+          "employeeRange": "11-50",
+          "name": "Crisp",
+          "sharedCategories": [
+            "Software",
+            "Customer Service"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Zendesk is a cloud platform that combines AI support agents, ticket management, messaging, and CRM tools for seamless customer service.",
+          "employeeRange": "5,001-10,000",
+          "name": "Zendesk",
+          "similarityScore": 91
+        },
+        {
+          "description": "SaaS",
+          "employeeRange": "101-250",
+          "name": "LiveAgent",
+          "sharedCategories": [
+            "Software",
+            "Customer Service"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Freshworks is building and delivering online cloud-based software-as-a-service that provides helpdesk support with automation solutions.",
+          "employeeRange": "1,001-5,000",
+          "name": "Freshworks",
+          "sharedCategories": [
+            "Software",
+            "Customer Service"
+          ],
+          "similarityScore": 88
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Fin, Crisp, Zendesk.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

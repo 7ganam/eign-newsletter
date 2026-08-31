@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:58:58.123Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:58:58.069Z",
+    "url": "https://www.crunchbase.com/organization/levocred-ai"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Levocred AI",
+      "shortDescription": "Levocred AI provides an AI-native operating system that automates structured credit workflows for funds and originators.",
+      "description": "Levocred AI provides an AI-native operating system that supports structured credit teams across the full facility lifecycle. The platform connects to loan tapes, credit agreements, servicer reports, and bank feeds to centralize data in a single workspace. It automates borrowing base reports, covenant monitoring, credit analysis, and investment committee memos. Levocred AI also generates lender packages and provides live treasury and cash visibility across facilities. The system is designed for credit funds, lenders, and originators who need audit-ready outputs and deterministic calculations. Its tools aim to replace spreadsheet-based workflows with a centralized system of record for credit operations.",
+      "website": "https://www.levocred.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "industries": [
+        "Analytics",
+        "Artificial Intelligence (AI)",
+        "Credit",
+        "Data Integration",
+        "Enterprise Software",
+        "Financial Services",
+        "FinTech",
+        "Productivity Tools",
+        "Risk Management",
+        "SaaS"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Financial Services",
+        "Information Technology",
+        "Lending and Investments",
+        "Professional Services",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "AI-native operating system that centralizes credit data and automates structured credit workflows for funds and originators.",
+        "name": "Levocred AI Platform"
+      },
+      {
+        "description": "Service that transforms raw loan tapes into lender-ready borrowing base report PDFs.",
+        "name": "Borrowing Base Reports"
+      },
+      {
+        "description": "Automated monitoring that tracks credit covenants and flags breaches as they occur.",
+        "name": "Covenant Monitoring"
+      },
+      {
+        "description": "Tool that converts deal tapes into structured credit analyses and investment committee memos.",
+        "name": "Credit Analysis and IC Memos"
+      },
+      {
+        "description": "Workflow that assembles facility and portfolio information into shareable lender-ready document packages.",
+        "name": "Lender Packages"
+      },
+      {
+        "description": "Dashboard that provides live, cross-facility views of cash positions and movements.",
+        "name": "Treasury and Cash Visibility"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 36,
+      "growthScore": 91,
+      "heatChange90Days": 89,
+      "heatScore": 90
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.17
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 91 (+36 over 90 days) and market heat at 90 (+89).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

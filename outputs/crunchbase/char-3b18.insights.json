@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:07:26.987Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:07:26.944Z",
+    "url": "https://www.crunchbase.com/organization/char-3b18"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "CHAr",
+      "shortDescription": "CHAr is a nonprofit architectural organization that designs housing and urban environments through integrated research and practice.",
+      "description": "CHAr is a nonprofit architectural organization that focuses on housing, architecture, and urban environments through integrated design and research. The organization works on projects ranging from small-scale renovations such as handrails to larger urban planning and housing models. CHAr develops and implements new residential environment models that respond to contemporary social conditions and community needs. It engages in architectural design, consulting, and planning for real estate and neighborhood revitalization projects. CHAr also produces and supervises written and media content related to housing, architecture, and urban development as part of its practice.",
+      "website": "https://www.studiochar.jp/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "Nonprofit",
+      "headquarters": "Tokyo, Japan",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)"
+      ],
+      "industries": [
+        "Architecture",
+        "Building Material",
+        "Construction",
+        "Consulting",
+        "Environmental Consulting",
+        "Interior Design",
+        "Non Profit",
+        "Publishing",
+        "Real Estate",
+        "Social Impact"
+      ],
+      "sectors": [
+        "Content and Publishing",
+        "Design",
+        "Media and Entertainment",
+        "Professional Services",
+        "Real Estate",
+        "Social Impact"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Architectural design service for housing and residential environments integrating spatial design with research.",
+        "name": "Architectural and Housing Design"
+      },
+      {
+        "description": "Planning and design service for urban spaces and neighborhoods with a focus on housing and community environments.",
+        "name": "Urban and Community Planning"
+      },
+      {
+        "description": "Research and consulting service on housing models, built environment, and community-based real estate strategies.",
+        "name": "Housing Research and Consulting"
+      },
+      {
+        "description": "Editorial and supervision service for media content on housing, architecture, and urban development topics.",
+        "name": "Editorial and Media Production on Housing and Architecture"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 10,
+      "growthScore": 91,
+      "heatChange90Days": 86,
+      "heatScore": 89
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.72
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 91 (+10 over 90 days) and market heat at 89 (+86).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

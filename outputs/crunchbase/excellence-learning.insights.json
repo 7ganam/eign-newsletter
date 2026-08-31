@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:52:01.217Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:52:01.161Z",
+    "url": "https://www.crunchbase.com/organization/excellence-learning"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Excellence Learning",
+      "shortDescription": "Excellence Learning is a management consulting company that offers application programs and administrative training services.",
+      "website": "https://www.excellencelrn.com/",
+      "foundedYear": 2012,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Riyadh, Ar Riyad, Saudi Arabia",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)",
+        "Gulf Cooperation Council (GCC)",
+        "Middle East",
+        "Middle East and North Africa (MENA)"
+      ],
+      "industries": [
+        "Business Development",
+        "Management Consulting",
+        "Training"
+      ],
+      "sectors": [
+        "Education",
+        "Professional Services"
+      ],
+      "founders": [
+        "Abdurazaq Attuwaijri"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A course designed to prepare participants for the PMP certification, offering training and support to help them pass the exam.",
+        "name": "Project Management Professional (PMP)®"
+      },
+      {
+        "description": "A program focused on equipping participants with skills to manage organizational change effectively, aligned with global standards.",
+        "name": "Change Management Professional (CCMP)"
+      },
+      {
+        "description": "A course providing insights into strategic planning, helping organizations assess their current status and plan future directions.",
+        "name": "Strategic Planning Professional (SPP)"
+      },
+      {
+        "description": "Training that covers skills and practices necessary for managing programs to achieve strategic benefits.",
+        "name": "Program Management Professional (PgMP)®"
+      },
+      {
+        "description": "A program that teaches skills for managing portfolios to align with organizational strategic goals.",
+        "name": "Portfolio Management Professional (PfMP)®"
+      },
+      {
+        "description": "A course on Lean management and Six Sigma methodologies, preparing participants for the Green Belt certification.",
+        "name": "Lean Six Sigma Green Belt"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -2,
+      "growthScore": 83,
+      "heatChange90Days": -24,
+      "heatScore": 49
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.07
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Project Management Academy is a company providing project management training and certification.",
+          "employeeRange": "51-100",
+          "name": "Project Management Academy",
+          "sharedSpecialties": [
+            "Lean Six Sigma Training",
+            "Agile and Scrum Training"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "RMC Learning Solutions is a company providing project management, business analysis, and agile training and development services.",
+          "employeeRange": "11-50",
+          "name": "RMC Learning Solutions",
+          "sharedCategories": [
+            "Training"
+          ],
+          "sharedSpecialties": [
+            "Agile and Scrum Training"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Project Management Institute a non-profit membership association for the project, program, and portfolio management profession.",
+          "employeeRange": "501-1,000",
+          "name": "Project Management Institute",
+          "similarityScore": 91
+        },
+        {
+          "description": "Simplilearn is an online learning platform that offers professional certification and training courses in various fields.",
+          "employeeRange": "1,001-5,000",
+          "name": "Simplilearn",
+          "sharedCategories": [
+            "Training"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Brain Sensei is an e-learning company that focuses on project management and preparing for the project management professional exam.",
+          "employeeRange": "1-10",
+          "name": "Brain Sensei",
+          "sharedSpecialties": [
+            "Agile and Scrum Training"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 83 (-2 over 90 days) and market heat at 49 (-24).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Project Management Academy, RMC Learning Solutions, Project Management Institute.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

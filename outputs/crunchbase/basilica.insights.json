@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:25:49.677Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:25:49.625Z",
+    "url": "https://www.crunchbase.com/organization/basilica"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Basilica",
+      "shortDescription": "Basilica is an API that embeds high-dimensional data like images and text.",
+      "website": "https://www.basilica.ai/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Developer APIs"
+      ],
+      "sectors": [
+        "Software"
+      ],
+      "founders": [
+        "Eric Fung",
+        "Jorge Silva",
+        "Michael Lucy"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2019-03-18",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2019-03-18",
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2026-04-24",
+          "publisher": "Star Tribune",
+          "title": "8 reasons the bells tolled for the Basilica Block Party",
+          "url": "https://www.startribune.com/8-reasons-the-bells-tolled-for-basilica-block-party/601791930"
+        },
+        {
+          "date": "2020-03-03",
+          "publisher": "Michigan",
+          "title": "Pope Francis designates Detroit church as a basilica",
+          "url": "https://www.mlive.com/life/2020/03/pope-francis-designates-detroit-church-as-a-basilica.html"
+        },
+        {
+          "date": "2019-03-18",
+          "title": "Pre Seed Round - Basilica"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -21,
+      "heatScore": 15
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Pinecone develops a vector database that makes it easy to connect company data with generative AI models.",
+          "employeeRange": "101-250",
+          "name": "Pinecone",
+          "similarityScore": 97
+        },
+        {
+          "description": "Weaviate powers semantic search, RAG, and intelligent agents in one AI-native vector database platform",
+          "employeeRange": "51-100",
+          "name": "Weaviate",
+          "similarityScore": 95
+        },
+        {
+          "description": "Qdrant is an open-source vector search engine and database for next-generation AI applications.",
+          "employeeRange": "101-250",
+          "name": "Qdrant",
+          "similarityScore": 93
+        },
+        {
+          "description": "Milvus is an open-source vector database designed to facilitate vector embedding, efficient similarity search, and AI applications.",
+          "employeeRange": "51-100",
+          "name": "Milvus",
+          "similarityScore": 91
+        },
+        {
+          "description": "Chroma operates as an AI-native open-source embedding database.",
+          "employeeRange": "1-10",
+          "name": "Chroma",
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Pinecone, Weaviate, Qdrant.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

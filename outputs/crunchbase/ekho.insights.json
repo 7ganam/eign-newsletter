@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:39:50.989Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:39:50.935Z",
+    "url": "https://www.crunchbase.com/organization/ekho"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Ekho",
+      "shortDescription": "Ekho is an education technology company that provides AI-driven career coaching tools and on-demand simulations for career skills trainning.",
+      "website": "https://ekho.academy/",
+      "foundedYear": 2025,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Miami Beach, Florida, United States",
+      "geographicRegions": [
+        "Greater Miami Area",
+        "East Coast",
+        "Southern US"
+      ],
+      "industries": [
+        "Career Planning",
+        "CRM",
+        "EdTech",
+        "Training"
+      ],
+      "sectors": [
+        "Education",
+        "Professional Services",
+        "Sales and Marketing",
+        "Software"
+      ],
+      "founders": [
+        "Alejandro Fernandez"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -12,
+      "heatScore": 56
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 33.54
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 81.72
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 68.02
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Handshake is a college career network that helps students and recent graduates find their next opportunity.",
+          "employeeRange": "501-1,000",
+          "name": "Handshake",
+          "similarityScore": 97
+        },
+        {
+          "description": "Forage works with the world’s top employers to create job simulations for students to build career skills, visibility, and confidence.",
+          "employeeRange": "51-100",
+          "name": "Forage",
+          "similarityScore": 95
+        },
+        {
+          "description": "Pathrise is an online mentorship program for tech professionals that provides training, and advice to help in landing the next job.",
+          "employeeRange": "51-100",
+          "name": "Pathrise",
+          "sharedCategories": [
+            "Career Planning"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Springboard is an e-learning platform that prepares people for modern careers through innovative curriculum and mentor guidance.",
+          "employeeRange": "101-250",
+          "name": "Springboard",
+          "sharedCategories": [
+            "EdTech"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Big Interview offers an AI-powered job interview training and resume building platform.",
+          "employeeRange": "11-50",
+          "name": "Big Interview",
+          "sharedCategories": [
+            "EdTech",
+            "Career Planning",
+            "Training"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Handshake, Forage, Pathrise.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

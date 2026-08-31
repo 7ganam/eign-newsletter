@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:18:25.079Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:18:25.026Z",
+    "url": "https://www.crunchbase.com/organization/clew"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Clew",
+      "shortDescription": "Clew is a consulting firm that partners with some of the most successful companies in the world.",
+      "description": "Clew is a consulting firm that partners with some of the most successful companies in the world. We research and analyze organizations, markets, products, services, plans and people to inform the business decision making process.\n\nClew supports management disciplines ranging from HR, finance and legal to sales, marketing, operations and general management. Clew provides comprehensive consulting services through core Clew practices as well as on demand research services through ClewRaRE™.\n\nClew also provides specialized training services in support of both primary and secondary research skills development. Please visit the links above to learn more about Clew and our services.\n\nOver the years, Clew has partnered with global leaders like Fidelity, Microsoft, Koch, TEPCO, T-Mobile, HP, Mitsubishi and St. Gobain, leading consulting firms including Fuld, IDC and McKinsey, startup juggernauts such as Kana, Millennial Net, RSA and SupplierMarket.com, NFP's like the Gates Foundation, the UAHC and NFTE as well as VC firms, PE funds and M&A advisors.\n\nClew has been recognized for its expertise by dozens of publications including The Wall Street Journal, Wired, Fortune Magazine, The Boston Globe, The New York Times, The Economist Group/CFO.com, USA Today, The Journal of New England Technology, Inc. Magazine, Competitive Intelligence Magazine, Chronicle of Philanthropy, Monster.com, and many others.",
+      "website": "http://www.clewllc.com/",
+      "foundedYear": 2001,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Lexington, Massachusetts, United States",
+      "geographicRegions": [
+        "Greater Boston Area",
+        "East Coast",
+        "New England",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Consulting",
+        "Information Technology",
+        "Legal",
+        "Market Research"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Design",
+        "Information Technology",
+        "Professional Services"
+      ],
+      "founders": [
+        "David Carpe"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2001-01-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2001-01-01",
+          "type": "Seed"
+        }
+      ]
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2020-04-09",
+          "publisher": "Jerusalem Post",
+          "title": "HILLEL’S TECH CORNER: Clues to the COVID-19 mystery",
+          "url": "https://www.jpost.com/opinion/hillels-tech-corner-clues-to-the-covid-19-mystery-624190"
+        },
+        {
+          "date": "2020-01-15",
+          "publisher": "Globes",
+          "title": "AI healthcare analytics platform Clew raises $10m",
+          "url": "https://en.globes.co.il/en/article-ai-healthcare-analytics-platform-clew-raises-10m-1001314999"
+        },
+        {
+          "date": "2001-01-01",
+          "title": "Seed Round - Clew"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -11,
+      "heatScore": 37
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Fuld & Company is a the global leader in competitive intelligence, delivers customized research and analysis.",
+          "employeeRange": "51-100",
+          "name": "Fuld & Company",
+          "similarityScore": 93
+        },
+        {
+          "description": "M-Brain is a global information, technology and consulting services company.",
+          "employeeRange": "101-250",
+          "name": "M-Brain",
+          "sharedCategories": [
+            "Consulting",
+            "Information Technology"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "Dun & Bradstreet offers business intelligence and data analytics solutions to support risk management, compliance, and growth strategies.",
+          "employeeRange": "5,001-10,000",
+          "name": "Dun & Bradstreet",
+          "similarityScore": 88
+        },
+        {
+          "description": "SBR Consulting specializes in sales transformation, sales enablement, sales force strategies, performance, and consultant services.",
+          "employeeRange": "11-50",
+          "name": "SBR Consulting",
+          "sharedCategories": [
+            "Consulting"
+          ],
+          "similarityScore": 86
+        },
+        {
+          "description": "Bain & Company is a global management consulting firm, a top advisor to the world's leading private, public and non-profit organizations.",
+          "employeeRange": "10,001+",
+          "name": "Bain & Company Inc.",
+          "sharedCategories": [
+            "Consulting",
+            "Information Technology"
+          ],
+          "similarityScore": 86
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Fuld & Company, M-Brain, Dun & Bradstreet.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

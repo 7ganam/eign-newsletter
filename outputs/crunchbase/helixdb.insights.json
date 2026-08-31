@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:47:03.858Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:47:03.800Z",
+    "url": "https://www.crunchbase.com/organization/helixdb"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "HelixDB",
+      "shortDescription": "HelixDB is an AI company that develops unified graph-vector database for AI retrieval and streamlined data infrastructure.",
+      "website": "https://www.helix-db.com/",
+      "foundedYear": 2025,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Analytics",
+        "Artificial Intelligence (AI)",
+        "Database"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "George Curtis",
+        "Xavier Cochran"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2025-06-09",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2025-06-09",
+          "investorCount": 2,
+          "postMoneyValuation": {
+            "amount": 12324827,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "Pioneer Fund",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2025-06-09",
+          "title": "Seed Round - HelixDB"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 12,
+      "growthScore": 12,
+      "heatChange90Days": -3,
+      "heatScore": 77
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 82.44
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 88.93,
+        "timingEstimatePercent": {
+          "within6Months": 99.96,
+          "months6To11": 0.02,
+          "months12To24": 0,
+          "beyond24Months": 0.01
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 80.84
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 3.95
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Neo4j helps organizations find hidden patterns and relationships across billions of data connections deeply, easily, and quickly.",
+          "employeeRange": "1,001-5,000",
+          "name": "Neo4j",
+          "sharedCategories": [
+            "Analytics",
+            "Artificial Intelligence (AI)",
+            "Database"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "TigerGraph supports advanced analytics and machine learning platforms through its distributed native graph database.",
+          "employeeRange": "101-250",
+          "name": "TigerGraph",
+          "sharedCategories": [
+            "Analytics",
+            "Database"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Amazon Web Services provides information technology infrastructure services to businesses in the form of web services.",
+          "employeeRange": "10,001+",
+          "name": "Amazon Web Services",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Memgraph is a high-performance, in-memory graph database that powers real-time AI context and graph analytics at scale.",
+          "employeeRange": "11-50",
+          "name": "Memgraph",
+          "sharedCategories": [
+            "Database"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "DataStax is a real-time data company for Gen AI applications.",
+          "employeeRange": "501-1,000",
+          "name": "DataStax",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "similarityScore": 86
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $12,324,827 to $12,324,827, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 12 (+12 over 90 days) and market heat at 77 (-3).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Neo4j, TigerGraph, Amazon Web Services.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

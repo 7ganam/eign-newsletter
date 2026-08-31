@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:10:47.527Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:10:47.472Z",
+    "url": "https://www.crunchbase.com/organization/luminist"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Luminist",
+      "shortDescription": "Developing a novel diagnostic platform for early detection and diagnosis of liver disease.",
+      "description": "Luminist is developing a rapidly scalable, low-cost platform to screen for many diseases.",
+      "website": "http://luministlabs.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Newark, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Biotechnology",
+        "Health Care",
+        "Health Diagnostics"
+      ],
+      "sectors": [
+        "Biotechnology",
+        "Health Care",
+        "Science and Engineering"
+      ],
+      "founders": [
+        "Samantha Friedman",
+        "Storm Stillman",
+        "Will Olsen"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2016-03-22",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2016-03-22",
+          "investorCount": 7,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 7,
+        "visibleNames": [
+          {
+            "name": "Allison Bhusri",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "AME Cloud Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Farzad Nazem",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Khosla Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Morado Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Paul Buchheit",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2016-03-22",
+          "title": "Seed Round - Luminist"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -11,
+      "heatScore": 54
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "HepQuant develops minimally invasive diagnostics for liver function.",
+          "employeeRange": "11-50",
+          "name": "HepQuant",
+          "sharedCategories": [
+            "Health Care",
+            "Biotechnology",
+            "Health Diagnostics"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Exalenz Bioscience commercializes the BreathID System which extracts vital information for diagnostics.",
+          "employeeRange": "11-50",
+          "name": "Exalenz Bioscience",
+          "sharedCategories": [
+            "Health Diagnostics"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Hisky focuses on non-invasive disease diagnosis technologies and develops FibroTouch.",
+          "employeeRange": "51-100",
+          "name": "Hisky Medical",
+          "sharedCategories": [
+            "Health Care",
+            "Health Diagnostics"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Lucid Diagnostics develops a non-invasive, office based diagnostic test for biomarkers to esophageal cancer.",
+          "employeeRange": "101-250",
+          "name": "LUCID DIAGNOSTICS INC.",
+          "sharedCategories": [
+            "Health Care",
+            "Biotechnology",
+            "Health Diagnostics"
+          ],
+          "similarityScore": 78
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include HepQuant, Exalenz Bioscience, Hisky Medical.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

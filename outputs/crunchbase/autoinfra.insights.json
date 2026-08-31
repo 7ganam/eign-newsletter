@@ -1,0 +1,311 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:16:22.197Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:16:22.146Z",
+    "url": "https://www.crunchbase.com/organization/autoinfra"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Morph",
+      "shortDescription": "Inference optimized for coding agents",
+      "description": "Inference optimized for coding agents. Run fast open-source models, search with WarpGrep, apply edits with Fast Apply, and compact context.",
+      "website": "https://www.morphllm.com/",
+      "foundedYear": 2025,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "AI Infrastructure",
+        "Artificial Intelligence (AI)",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Tejas Bhakta"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A specialized AI model that applies code changes suggested by frontier AI models to existing code files at over 2000 tokens per second.",
+        "name": "Morph Apply"
+      },
+      {
+        "description": "A code embedding model trained on millions of commits to enable high-precision code search and retrieval.",
+        "name": "Morph Embeddings"
+      },
+      {
+        "description": "A reranking model trained on millions of code examples to prioritize the most relevant code snippets for prompt construction.",
+        "name": "Morph Reranking"
+      },
+      {
+        "description": "Inference optimizations and speculative decoding techniques to accelerate code edit application.",
+        "name": "Morph Speculative Edits"
+      },
+      {
+        "description": "An option to deploy Morph models and services within a company’s own cloud or infrastructure for security and control.",
+        "name": "Morph Self-Hosting Deployment"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2026-05-31",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2026-05-31",
+          "postMoneyValuation": {
+            "amount": 12001726,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2023-06-01",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 7424003,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2026-05-31",
+          "title": "Seed Round - Morph"
+        },
+        {
+          "date": "2023-06-01",
+          "title": "Pre Seed Round - Morph"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1.62
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -2,
+      "growthScore": 28,
+      "heatChange90Days": -30,
+      "heatScore": 58
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 65.13
+      },
+      "funding": {
+        "generatedDate": "2026-06-20",
+        "probabilityPercent": 94.09,
+        "timingEstimatePercent": {
+          "within6Months": 99.95,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0.05
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.73
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 4.62
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Continue delivers an open-source AI coding assistant that integrates with popular IDEs such as VS Code and JetBrains.",
+          "employeeRange": "1-10",
+          "name": "Continue",
+          "sharedCategories": [
+            "Software",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Source Code Repositories",
+            "Coding Agents",
+            "LLMOps",
+            "Code Editors and Integrated Development Environments (IDEs)",
+            "Code Generation",
+            "Prompt Management"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Cline is a developer of an open‑source AI coding agent that automates software creation tasks within integrated development environments.",
+          "employeeRange": "11-50",
+          "name": "Cline",
+          "sharedCategories": [
+            "Software",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Source Code Repositories",
+            "Coding Agents",
+            "LLMOps",
+            "Code Editors and Integrated Development Environments (IDEs)",
+            "Code Generation",
+            "Prompt Management"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "GitHub is a software company that offers code hosting services that allow developers to build software for open-source and private projects.",
+          "employeeRange": "1,001-5,000",
+          "name": "GitHub",
+          "sharedCategories": [
+            "Software",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Source Code Repositories",
+            "Coding Agents",
+            "Code Generation"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "Windsurf provides an AI coding assistant and an integrated development environment for developers.",
+          "employeeRange": "101-250",
+          "name": "Windsurf",
+          "sharedCategories": [
+            "Software",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Coding Agents",
+            "LLMOps",
+            "Code Editors and Integrated Development Environments (IDEs)",
+            "Code Generation",
+            "Prompt Management"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Replit provides a cloud-based development platform that enables users to write, run, and deploy applications in browsers.",
+          "employeeRange": "101-250",
+          "name": "Replit",
+          "sharedCategories": [
+            "Software",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Code Editors and Integrated Development Environments (IDEs)",
+            "Code Generation"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $7,424,003 to $12,001,726, a 1.62x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 28 (-2 over 90 days) and market heat at 58 (-30).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Continue, Cline, GitHub.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

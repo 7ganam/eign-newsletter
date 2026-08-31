@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:03:57.616Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:03:57.579Z",
+    "url": "https://www.crunchbase.com/organization/argovox"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Argovox",
+      "shortDescription": "Argovox is an artificial intelligence platform that manages phone conversations within the financial services industry.",
+      "website": "https://www.argovox.com/",
+      "foundedYear": 2022,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Financial Services",
+        "Service Industry"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Financial Services",
+        "Other",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Luis.R Pellerano",
+        "Nelson Munoz"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An AI-powered solution designed to help healthcare providers improve profitability and cash flow by simplifying patient billing and collections processes.",
+        "name": "Patient Billing & Collections"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2022-09-07",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2022-09-07",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2022-09-07",
+          "title": "Pre Seed Round - Argovox"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -17,
+      "heatScore": 50
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2025-09-22",
+        "probabilityPercent": 2.52
+      },
+      "funding": {
+        "generatedDate": "2025-12-02",
+        "probabilityPercent": 29.88,
+        "timingEstimatePercent": {
+          "within6Months": 16.85,
+          "months6To11": 14.01,
+          "months12To24": 21.34,
+          "beyond24Months": 24.95
+        }
+      },
+      "growth": {
+        "generatedDate": "2025-12-02",
+        "probabilityPercent": 66.89
+      },
+      "ipo": {
+        "generatedDate": "2025-09-22",
+        "probabilityPercent": 0.23
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Luron AI provides always-on voice agents that handle calls, support customers, book appointments, and operate in multiple languages 24/7.",
+          "employeeRange": "1-10",
+          "name": "Luron AI",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Human-like AI voice agents for business calls.",
+          "employeeRange": "1-10",
+          "name": "Salesix Ai",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "similarityScore": 86
+        },
+        {
+          "description": "Replicant is a contact center automation software that helps companies automate their most common customer service requests.",
+          "employeeRange": "101-250",
+          "name": "Replicant",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "similarityScore": 85
+        },
+        {
+          "description": "Cognigy is an enterprise conversational AI platform designed to automate customer and employee support processes.",
+          "employeeRange": "251-500",
+          "name": "Cognigy",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "similarityScore": 83
+        },
+        {
+          "description": "Nice provides software solutions that help organizations deliver customer service, ensure compliance, combat fraud, and safeguard citizens.",
+          "employeeRange": "5,001-10,000",
+          "name": "NICE",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "similarityScore": 81
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $500,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Luron AI, Salesix Ai, Replicant.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

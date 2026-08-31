@@ -1,0 +1,331 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:15:28.191Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:15:28.132Z",
+    "url": "https://www.crunchbase.com/organization/maitai-fbf8"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Maitai",
+      "shortDescription": "Maitai is a reliable and self-improving enterprise AI, ready to enhance the business efficiency.",
+      "description": "Maitai solves LLM output reliability with real-time autocorrections, then automatically builds self-improving, application-specific models. The result is a fully managed model stack through a simple integration, with inference that passively gets better, faster, and cheaper over time.",
+      "website": "https://trymaitai.ai/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Developer Tools",
+        "Information Technology",
+        "SaaS"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Christian DalSanto",
+        "Ian Hoegen"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Custom large language models tailored to specific enterprise applications, improving accuracy and performance over time through continuous learning from production data.",
+        "name": "Enterprise-grade Large Language Models (LLMs)"
+      },
+      {
+        "description": "A platform providing fast and efficient AI model inference by leveraging partnerships with advanced hardware providers to minimize latency and maximize throughput.",
+        "name": "Low-latency AI Inference Platform"
+      },
+      {
+        "description": "A system that detects and corrects faults in AI model outputs in real-time, applying application-specific guardrails to ensure output quality and consistency.",
+        "name": "LLM Autocorrection and Output Guardrails"
+      },
+      {
+        "description": "A hosting service that allows customers to deploy their own LoRA (Low-Rank Adaptation) models on dedicated high-performance hardware without large upfront investments.",
+        "name": "Bring Your Own LoRA Hosting Service"
+      },
+      {
+        "description": "Services facilitating easy integration of Maitai’s AI solutions into existing workflows, including API access, key management, and enterprise-grade support.",
+        "name": "Enterprise AI Integration and Support Services"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2024-09-11",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2024-09-11",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 10707132,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2024-05-01",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 5234021,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "Pioneer Fund",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2025-06-03",
+          "publisher": "Venturebeat",
+          "title": "Phonely’s new AI agents hit 99% accuracy—and customers can’t tell they’re not human",
+          "url": "https://venturebeat.com/ai/phonelys-new-ai-agents-hit-99-accuracy-and-customers-cant-tell-theyre-not-human/"
+        },
+        {
+          "date": "2024-09-11",
+          "title": "Seed Round - Maitai"
+        },
+        {
+          "date": "2024-05-01",
+          "title": "Pre Seed Round - Maitai"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestToEarliestKnownValuationMultiple": 2.05
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -3,
+      "growthScore": 76,
+      "heatChange90Days": 2,
+      "heatScore": 68
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.12
+      },
+      "funding": {
+        "generatedDate": "2026-06-20",
+        "probabilityPercent": 80.38,
+        "timingEstimatePercent": {
+          "within6Months": 99.93,
+          "months6To11": 0,
+          "months12To24": 0.03,
+          "beyond24Months": 0.04
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 75.32
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 3.92
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Baseten provides the necessary infrastructure, tooling, and expertise to integrate AI into business operations.",
+          "employeeRange": "251-500",
+          "name": "Baseten",
+          "sharedCategories": [
+            "Developer Tools",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "MLOps",
+            "LLMOps",
+            "AI Inference",
+            "Model Fine-Tuning"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Fireworks AI is an advanced platform that enables users to build, tune, and scale AI applications using open-source models",
+          "employeeRange": "101-250",
+          "name": "Fireworks AI",
+          "sharedCategories": [
+            "SaaS",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "GPU and AI Infrastructure",
+            "MLOps",
+            "LLMOps",
+            "AI Inference",
+            "AI Model Evaluation",
+            "Model Fine-Tuning",
+            "Text-to-Speech and Voice Synthesis",
+            "Prompt Management"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Anyscale develops a distributed computing platform that enables organizations to manage distributed workloads at scale.",
+          "employeeRange": "251-500",
+          "name": "Anyscale",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "AI Governance",
+            "MLOps",
+            "LLMOps",
+            "AI Inference",
+            "AI Model Evaluation",
+            "Model Fine-Tuning"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Together AI provides a cloud platform for developing, training, fine-tuning, and deploying generative AI models.",
+          "employeeRange": "251-500",
+          "name": "Together AI",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "MLOps",
+            "LLMOps",
+            "AI Inference",
+            "Model Fine-Tuning",
+            "Prompt Management"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Replicate provides a platform for open source machine learning models that enables users to run and refine open-source models with an API.",
+          "employeeRange": "11-50",
+          "name": "Replicate",
+          "sharedCategories": [
+            "Developer Tools",
+            "Artificial Intelligence (AI)",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "MLOps",
+            "LLMOps",
+            "AI Inference",
+            "Model Fine-Tuning"
+          ],
+          "similarityScore": 83
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $5,234,021 to $10,707,132, a 2.05x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 76 (-3 over 90 days) and market heat at 68 (+2).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Baseten, Fireworks AI, Anyscale.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

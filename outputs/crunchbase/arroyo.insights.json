@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:05:41.202Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:05:41.150Z",
+    "url": "https://www.crunchbase.com/organization/arroyo"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Arroyo",
+      "shortDescription": "Arroyo is a serverless stream processing platform to run SQL queries against your real-time data in Kafka.",
+      "website": "https://www.arroyo.dev/",
+      "foundedYear": 2022,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Berkeley, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Information Technology",
+        "Real Time",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Other",
+        "Software"
+      ],
+      "founders": [
+        "Jackson Newhouse",
+        "Micah Wylde"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A cloud-native stream processing platform that runs SQL queries on real-time data streams with sub-second latency, supporting stateful computations and exactly-once processing.",
+        "name": "Arroyo Streaming Engine"
+      },
+      {
+        "description": "A feature allowing users to extend Arroyo SQL with custom logic by writing functions in Rust, enabling parsing of custom data formats and complex computations within streaming queries.",
+        "name": "User-Defined Functions (UDFs)"
+      },
+      {
+        "description": "A web-based interface for managing connections, developing and testing SQL queries, and monitoring streaming pipelines in Arroyo.",
+        "name": "Arroyo Web UI"
+      },
+      {
+        "description": "An API that enables declarative creation, operation, and management of streaming pipelines at scale within Arroyo.",
+        "name": "REST API for Pipeline Management"
+      },
+      {
+        "description": "A collection of source and sink connectors enabling Arroyo to integrate with various data systems like Kafka, MQTT, Redis, Delta Lake, and HTTP endpoints.",
+        "name": "Connectors for Data Integration"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2023-04-05",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2023-04-05",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 6035700,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 4,
+      "includedUniqueCount": 4,
+      "items": [
+        {
+          "date": "2025-07-22",
+          "publisher": "The New Stack",
+          "title": "Why Startups Are Betting Everything on Apache DataFusion",
+          "url": "https://thenewstack.io/why-startups-are-betting-everything-on-apache-datafusion/"
+        },
+        {
+          "date": "2025-04-17",
+          "publisher": "Seattle TechFlash",
+          "title": "Business Journal",
+          "url": "https://www.bizjournals.com/austin/news/2025/04/17/el-arroyo-sign-austin-icons-gruene-restaurant.html"
+        },
+        {
+          "date": "2024-09-10",
+          "publisher": "Business Wire",
+          "title": "Fermaca Networks and Arroyo Investors Join Forces to Pioneer Mexico’s Digital Infrastructure Growth",
+          "url": "https://www.businesswire.com/news/home/20240910342395/en/Fermaca-Networks-and-Arroyo-Investors-Join-Forces-to-Pioneer-Mexico%E2%80%99s-Digital-Infrastructure-Growth"
+        },
+        {
+          "date": "2023-04-05",
+          "title": "Pre Seed Round - Arroyo"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2025-04-21",
+      "growthChange90Days": 1,
+      "growthScore": 44,
+      "heatChange90Days": -14,
+      "heatScore": 35,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2025-07-12",
+        "probabilityPercent": 98.16
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 31.38,
+        "timingEstimatePercent": {
+          "within6Months": 15.54,
+          "months6To11": 13.13,
+          "months12To24": 20.45,
+          "beyond24Months": 24.99
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 70.64
+      },
+      "ipo": {
+        "generatedDate": "2025-07-12",
+        "probabilityPercent": 0.36
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Materialize is a streaming SQL database company that simplifies the application development for developers.",
+          "employeeRange": "51-100",
+          "name": "Materialize",
+          "sharedCategories": [
+            "Real Time",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Distributed Data Processing",
+            "Data Engineering",
+            "Real-Time Big Data Processing",
+            "Data Quality and Observability",
+            "Change Data Capture",
+            "Data Pipelines"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Decodable is a serverless data integration and engineering platform for streaming data.",
+          "employeeRange": "11-50",
+          "name": "Decodable",
+          "sharedCategories": [
+            "Software",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Extract Transform Load (ETL)",
+            "Distributed Data Processing",
+            "Data Engineering",
+            "Real-Time Big Data Processing",
+            "Serverless Computing",
+            "Data Quality and Observability",
+            "Change Data Capture",
+            "Data Pipelines"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "RisingWave Labs is a company developing a stream processing platform for modern real-time applications.",
+          "employeeRange": "51-100",
+          "name": "RisingWave Labs",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Extract Transform Load (ETL)",
+            "Distributed Data Processing",
+            "Container and Kubernetes Platform Services",
+            "Real-Time Big Data Processing",
+            "Data Quality and Observability",
+            "Data Lake Platforms",
+            "Change Data Capture",
+            "Data Pipelines"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Apache Flink is an open-source framework and distributed processing engine for stateful computations for unbounded and bounded data streams.",
+          "name": "Apache Flink",
+          "sharedCategories": [
+            "Software",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Extract Transform Load (ETL)",
+            "Distributed Data Processing",
+            "Data Engineering",
+            "Real-Time Big Data Processing",
+            "Data Quality and Observability",
+            "Data Lake Platforms",
+            "Change Data Capture",
+            "Data Pipelines"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Confluent offers a streaming platform based on Apache Kafka that enables companies to easily access data as real-time streams.",
+          "employeeRange": "1,001-5,000",
+          "name": "Confluent",
+          "sharedCategories": [
+            "Real Time",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Extract Transform Load (ETL)",
+            "Distributed Data Processing",
+            "Data Engineering",
+            "Real-Time Big Data Processing",
+            "Serverless Computing",
+            "Data Quality and Observability",
+            "Change Data Capture",
+            "Data Pipelines"
+          ],
+          "similarityScore": 88
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $500,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $6,035,700 to $6,035,700, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 44 (+1 over 90 days) and market heat at 35 (-14).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Materialize, Decodable, RisingWave Labs.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

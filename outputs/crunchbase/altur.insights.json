@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T09:44:27.384Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T09:44:27.329Z",
+    "url": "https://www.crunchbase.com/organization/altur"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Altur",
+      "shortDescription": "Altur is a machinery manufacturer of motor pistons and aluminum alloy castings that serves mainly in the automotive industry.",
+      "description": "Altur is a machinery manufacturer of motor pistons and aluminum alloy castings that serves mainly in the automotive industry.\n\n\n\n\n\n\nThe Company produces motor pistons and motor kits made of aluminum alloys for cars, tractors, trucks, and buses. Altur serves passenger transport, field vehicle, and agricultural machinery industries.",
+      "website": "http://www.altursa.ro/",
+      "foundedYear": 1991,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Public",
+      "companyType": "For profit",
+      "employeeRange": "251-500",
+      "estimatedRevenueRange": "$10M-$50M",
+      "headquarters": "Slatina, Olt, Romania",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Automotive",
+        "Machinery Manufacturing",
+        "Manufacturing"
+      ],
+      "sectors": [
+        "Manufacturing",
+        "Transportation"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Manufacture of aluminum alloy cast components using gravity and pressure die casting methods for automotive and other industries.",
+        "name": "Aluminum Alloy Castings"
+      },
+      {
+        "description": "Production of motor pistons made from aluminum alloys for use in automotive engines and related machinery.",
+        "name": "Motor Pistons"
+      },
+      {
+        "description": "Mechanical processing of cast aluminum parts to achieve required dimensions and quality standards for automotive and industrial applications.",
+        "name": "Machining Services for Cast Components"
+      },
+      {
+        "description": "In-house laboratory services for research, testing, and quality evaluation of aluminum alloys and cast products.",
+        "name": "Laboratory Testing and Quality Control"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 4,
+      "includedUniqueCount": 4,
+      "items": [
+        {
+          "date": "2024-02-09",
+          "publisher": "MarketScreener",
+          "title": "Altur Invest: nearly 360,000 shares tendered to the OPAS",
+          "url": "https://www.marketscreener.com/quote/stock/ALTUR-INVESTISSEMENT-22468113/news/Altur-Invest-nearly-360-000-shares-tendered-to-the-OPAS-45923916/"
+        },
+        {
+          "date": "2024-01-24",
+          "publisher": "MarketScreener",
+          "title": "Altur Investissement: OPAS opens on January 26",
+          "url": "https://www.marketscreener.com/quote/stock/ALTUR-INVESTISSEMENT-22468113/news/Altur-Investissement-OPAS-opens-on-January-26-45803621/"
+        },
+        {
+          "date": "2023-11-27",
+          "publisher": "MarketScreener",
+          "title": "Altur Invest: Suffren Holding strengthens its position ahead of the public stock buyback tender offer",
+          "url": "https://www.marketscreener.com/quote/stock/ALTUR-INVESTISSEMENT-22468113/news/Altur-Invest-Suffren-Holding-strengthens-its-position-ahead-of-the-public-stock-buyback-tender-offe-45439839/"
+        },
+        {
+          "date": "2004-12-03",
+          "title": "ALT"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 6,
+      "growthScore": 86,
+      "heatChange90Days": 20,
+      "heatScore": 73
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Stoeferle designs and produces engine and transmission components for vehicles.",
+          "employeeRange": "11-50",
+          "name": "Stoeferle",
+          "sharedCategories": [
+            "Automotive",
+            "Manufacturing"
+          ],
+          "sharedSpecialties": [
+            "Precision Machining",
+            "Surface Treatment",
+            "Aluminum Fabrication"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Motorservice Group is the sales organization for the global aftermarket activities of Rheinmetall.",
+          "employeeRange": "51-100",
+          "name": "Motorservice Group",
+          "similarityScore": 95.167
+        },
+        {
+          "description": "Koneks manufactures pistons, liners, and rings for diesel and gasoline engines.",
+          "employeeRange": "11-50",
+          "name": "Koneks",
+          "sharedCategories": [
+            "Automotive",
+            "Manufacturing"
+          ],
+          "sharedSpecialties": [
+            "Precision Machining",
+            "Aluminum Fabrication",
+            "Non-Ferrous Metals"
+          ],
+          "similarityScore": 89.366
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 86 (+6 over 90 days) and market heat at 73 (+20).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Stoeferle, Motorservice Group, Koneks.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

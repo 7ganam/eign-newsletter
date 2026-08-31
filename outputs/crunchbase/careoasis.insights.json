@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:00:14.113Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:00:14.077Z",
+    "url": "https://www.crunchbase.com/organization/careoasis"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "CareOasis",
+      "shortDescription": "CareOasis is a medical and wellness firm offering essential support for caregiving roles in families.",
+      "website": "https://www.thecareoasis.com/",
+      "foundedYear": 2023,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Cincinnati, Ohio, United States",
+      "geographicRegions": [
+        "Great Lakes",
+        "Midwestern US"
+      ],
+      "industries": [
+        "Health Care",
+        "Hospitality",
+        "Wellness"
+      ],
+      "sectors": [
+        "Health Care",
+        "Travel and Tourism"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A service that helps family caregivers get certified and enrolled to receive payment for caregiving through state and federal programs.",
+        "name": "Caregiver Compensation Program"
+      },
+      {
+        "description": "A free 30-hour training course that meets state requirements for Personal Care Aides, covering practical caregiving skills and knowledge.",
+        "name": "Caregiver Essentials Training Program"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2023-09-18",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2023-09-18",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 3737958,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "SBXi",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2023-09-18",
+          "title": "Pre Seed Round - CareOasis"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -15,
+      "heatScore": 68
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.03
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 5.09,
+        "timingEstimatePercent": {
+          "within6Months": 0.18,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 99.81
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-06-13",
+        "probabilityPercent": 93.89
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 4.61
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Arizona Caregiver Coalition offers advocacy, resources, and support for Arizona caregivers.",
+          "employeeRange": "11-50",
+          "name": "Arizona Caregiver Coalition",
+          "sharedCategories": [
+            "Health Care",
+            "Wellness"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Center for Caregiver Advancement is an organization that provides caregiving services.",
+          "employeeRange": "11-50",
+          "name": "Center for Caregiver Advancement",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "sharedSpecialties": [
+            "Health Care Compliance Training"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "RubyWell is an intelligent and automated guide that helps family caregivers regain financial stability.",
+          "employeeRange": "1-10",
+          "name": "RubyWell",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "sharedSpecialties": [
+            "Health Education and Training",
+            "Senior Services",
+            "In-Home Personal Care",
+            "Carer Support Services",
+            "Respite Care",
+            "Case Management",
+            "Home Health Aide Services"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Family Caregiver Alliance provides long-term care, in-home care and adult day services to adults with physical and cognitive impairments.",
+          "employeeRange": "11-50",
+          "name": "Family Caregiver Alliance",
+          "sharedCategories": [
+            "Health Care",
+            "Wellness"
+          ],
+          "similarityScore": 79
+        },
+        {
+          "description": "AARP is leading a revolution in the way people view and live life after 50.",
+          "employeeRange": "1,001-5,000",
+          "name": "AARP",
+          "sharedSpecialties": [
+            "Senior Services"
+          ],
+          "similarityScore": 78
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $3,737,958 to $3,737,958, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Arizona Caregiver Coalition, Center for Caregiver Advancement, RubyWell.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

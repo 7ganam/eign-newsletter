@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:59:57.363Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:59:57.304Z",
+    "url": "https://www.crunchbase.com/organization/careforce"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Careforce",
+      "shortDescription": "Careforce is a human resources and Sales Service Solutions for the healthcare sector.",
+      "description": "Careforce is a human resources and Sales Service Solutions for the healthcare sector.",
+      "website": "https://www.careforce.de/en/",
+      "foundedYear": 2000,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "501-1,000",
+      "headquarters": "Köln, Nordrhein-Westfalen, Germany",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Health Care",
+        "Human Resources"
+      ],
+      "sectors": [
+        "Administrative Services",
+        "Health Care"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Recruitment and placement services for professionals in the pharmaceutical and healthcare sectors, including direct placement and project-based roles.",
+        "name": "Pharma and Healthcare Recruitment Services"
+      },
+      {
+        "description": "Staffing solutions for pharmaceutical sales and marketing positions including field sales, key account management, and product marketing roles.",
+        "name": "Pharmaceutical Sales and Marketing Staffing"
+      },
+      {
+        "description": "Recruitment services for medical affairs roles including Medical Science Liaison, Medical Advisor, and Medical Writer positions.",
+        "name": "Medical Affairs and Scientific Liaison Staffing"
+      },
+      {
+        "description": "Staffing services for healthcare professionals such as nurses and medical assistants in homecare and patient-facing roles.",
+        "name": "Healthcare Professional Staffing for Homecare and Patient Communication"
+      },
+      {
+        "description": "Career advisory and support services for candidates seeking employment in the pharmaceutical and healthcare sectors.",
+        "name": "Career Consulting and Candidate Support Services"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2021-06-03",
+          "publisher": "Demium",
+          "title": "MyCareforce Raises €100K Pre-seed Investment Round from Think Bigger Capital",
+          "url": "https://bit.ly/3fMzbgV"
+        },
+        {
+          "date": "2018-08-29",
+          "title": "Careforce acquired by Findos Investor"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -2,
+      "growthScore": 78,
+      "heatChange90Days": -24,
+      "heatScore": 51
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 89.91
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Hays is a leading global professional recruiting group, they are expert at recruiting qualified, professional and skilled people worldwide.",
+          "employeeRange": "10,001+",
+          "name": "Hays",
+          "sharedSpecialties": [
+            "Permanent Recruitment",
+            "Temporary Staffing",
+            "Contract Staffing"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "ManpowerGroup is a human resource consulting firm that provides recruitment, assessment, training, and development services.",
+          "employeeRange": "10,001+",
+          "name": "ManpowerGroup",
+          "sharedCategories": [
+            "Human Resources"
+          ],
+          "sharedSpecialties": [
+            "Talent Acquisition Consulting",
+            "Temporary Staffing",
+            "Contract Staffing"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Randstad is a solutions provider in staffing and recruitment consultancy and placing talent in permanent and temporary job positions.",
+          "employeeRange": "10,001+",
+          "name": "Randstad",
+          "sharedCategories": [
+            "Human Resources"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Kelly Services is a global workforce solutions provider that connects job seekers with employers and organizations.",
+          "employeeRange": "10,001+",
+          "name": "Kelly Services",
+          "sharedSpecialties": [
+            "Temporary Staffing"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Piening is one of the leading personnel service providers in Germany.",
+          "employeeRange": "1,001-5,000",
+          "name": "Piening GmbH",
+          "sharedSpecialties": [
+            "Permanent Recruitment",
+            "Temporary Staffing"
+          ],
+          "similarityScore": 86
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 78 (-2 over 90 days) and market heat at 51 (-24).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Hays, ManpowerGroup, Randstad.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

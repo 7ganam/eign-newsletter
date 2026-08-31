@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:31:44.927Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:31:44.888Z",
+    "url": "https://www.crunchbase.com/organization/bicycle-ai"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Bicycle AI",
+      "shortDescription": "Bicycle is a full-stack customer support service provider.",
+      "description": "Bicycle AI use the best of machine intelligence with human supervision to provide an exceptional customer service experience.\r\nBicycle AI believes AI is the greatest tool that will enable people to do a better job. By taking over repetitive, simpler tasks AI can free their minds to solve problems that will have greater impacts. AI could also enhance their abilities to deal with complex problems by aiding in tasks that machines do better than us. They say let people do what they are best at and leave the rest to machines. They believe that AI is the bicycle for the mind for the future.",
+      "website": "http://bicycleai.com/",
+      "foundedYear": 2016,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Bangalore, Karnataka, India",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Consulting",
+        "Internet",
+        "Machine Learning",
+        "Outsourcing"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Professional Services",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Abhishek Nayak",
+        "Arpit Mohan",
+        "Arvind Singh"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2017-03-20",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2017-03-20",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2017-03-20",
+          "title": "Seed Round - Bicycle AI"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -3,
+      "heatScore": 55
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Support-as-a-Service company that provides secure technical, customer support and CX services to growing companies.",
+          "employeeRange": "1,001-5,000",
+          "name": "SupportYourApp",
+          "sharedCategories": [
+            "Outsourcing"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "TaskUs is a customer care and back office support company that helps companies provide exceptional experiences for their customers.",
+          "employeeRange": "10,001+",
+          "name": "TaskUs",
+          "sharedCategories": [
+            "Outsourcing",
+            "Artificial Intelligence (AI)"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "We are the worldwide leader in outsourced omnichannel customer experience management.",
+          "name": "Teleperformance Switzerland (SCMG AG)",
+          "similarityScore": 92
+        },
+        {
+          "description": "Alorica is a BPO company that provides outsourcing customer experience services for all customer interactions.",
+          "employeeRange": "10,001+",
+          "name": "Alorica",
+          "sharedCategories": [
+            "Outsourcing"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "SupportNinja is an outsourcing solutions for the worlds leading startups.",
+          "employeeRange": "1,001-5,000",
+          "name": "SupportNinja",
+          "sharedCategories": [
+            "Outsourcing"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include SupportYourApp, TaskUs, Teleperformance Switzerland (SCMG AG).",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:06:00.789Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:06:00.739Z",
+    "url": "https://www.crunchbase.com/organization/central"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Central",
+      "shortDescription": "Central helps Belgian and international companies design and optimize digital products.",
+      "website": "http://central.team/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$10M-$50M",
+      "headquarters": "Brussels, Brussels Hoofdstedelijk Gewest, Belgium",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Digital Media",
+        "Social Media",
+        "Social Network"
+      ],
+      "sectors": [
+        "Internet Services",
+        "Media and Entertainment"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 56,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2021-01-30",
+          "publisher": "Portland Tribute",
+          "title": "Tales of the Hardin and Riley cattle operations",
+          "url": "https://pamplinmedia.com/ceo/162-news/495855-397387-tales-of-the-hardin-and-riley-cattle-operations"
+        },
+        {
+          "date": "2021-01-28",
+          "publisher": "Coinspeaker",
+          "title": "BIS Survey: Central Banks Could Issue Digital Currencies in 3 Years",
+          "url": "https://www.coinspeaker.com/bis-central-banks-digital-currencies/"
+        },
+        {
+          "date": "2021-01-27",
+          "publisher": "PRWeb",
+          "title": "University of Central Oklahoma Announces Launch of LX Studio",
+          "url": "https://www.prweb.com/releases/university_of_central_oklahoma_announces_launch_of_lx_studio/prweb17688338.htm"
+        },
+        {
+          "date": "2021-01-26",
+          "publisher": "Chicago Sun Times",
+          "title": "One Central developer reworks $20 billion plan",
+          "url": "https://chicago.suntimes.com/2021/1/25/22249450/one-central-developer-reworks-20-billion-plan"
+        },
+        {
+          "date": "2021-01-22",
+          "publisher": "Geeky Gadgets",
+          "title": "Samsung expands its 5G technology with fully virtualized 5G RAN",
+          "url": "http://dlvr.it/Rr5fjj"
+        },
+        {
+          "date": "2021-01-08",
+          "publisher": "Business Up North",
+          "title": "Central wins IT support contract with Clothes2Order",
+          "url": "https://www.businessupnorth.co.uk/?p=62585"
+        },
+        {
+          "date": "2021-01-07",
+          "publisher": "Emerging Europe",
+          "title": "CEE’s path to green recovery threatened by lack of transparency",
+          "url": "https://emerging-europe.com/news/cees-path-to-green-recovery-threatened-by-lack-of-transparency/"
+        },
+        {
+          "date": "2021-01-04",
+          "publisher": "orrick.com",
+          "title": "Orrick Is Advising Central Garden & Pet on $532 Acquisition of Green Garden",
+          "url": "http://ow.ly/o0L450CZD0S"
+        },
+        {
+          "date": "2020-12-24",
+          "publisher": "American Banker",
+          "title": "Small Baltimore credit unions to join forces",
+          "url": "https://www.americanbanker.com/creditunions/news/small-baltimore-credit-unions-to-join-forces"
+        },
+        {
+          "date": "2020-12-22",
+          "publisher": "WSJ Pro - Venture Capital",
+          "title": "Investors Turn to Far-Flung Bonds for Juicy Returns",
+          "url": "https://www.wsj.com/articles/investors-turn-to-far-flung-bonds-for-juicy-returns-11608638400"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -6,
+      "heatScore": 44
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 80.53
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 56 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

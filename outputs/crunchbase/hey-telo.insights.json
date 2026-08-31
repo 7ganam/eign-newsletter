@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:51:59.686Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:51:59.632Z",
+    "url": "https://www.crunchbase.com/organization/hey-telo"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Hey Telo",
+      "shortDescription": "Hey Telo provides a voice AI telephone assistant that answers calls and structures customer data for building services trades.",
+      "description": "Hey Telo develops a voice AI telephone assistant for trades and building services businesses. The platform answers incoming calls via call forwarding and handles routine scenarios such as fault reports, maintenance requests, and general customer inquiries. It filters spam, coordinates emergency call handling, and forwards urgent cases to responsible staff. During active periods, breaks, or after-hours, the assistant captures caller details including names, issues, billing information, and callback numbers. Hey Telo structures this information and passes it into connected trade and business software systems used by home services and building technology firms. The service is intended for contractors, HVAC and home technology providers who want to maintain phone availability while reducing manual administrative work.",
+      "website": "https://www.heytelo.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Munich, Bayern, Germany",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Building Maintenance",
+        "Business Process Automation (BPA)",
+        "Call Center",
+        "Customer Service",
+        "Home and Garden",
+        "Telecommunications"
+      ],
+      "sectors": [
+        "Administrative Services",
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Messaging and Telecommunications",
+        "Professional Services",
+        "Real Estate",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Hey Telo Telephone AI is a voice assistant that answers forwarded calls for building services firms and records structured customer information.",
+        "name": "Hey Telo Telephone AI"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatScore": 70
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 5
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.09
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

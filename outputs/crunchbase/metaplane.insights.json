@@ -1,0 +1,508 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:31:45.079Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:31:45.019Z",
+    "url": "https://www.crunchbase.com/organization/metaplane"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Metaplane",
+      "shortDescription": "Metaplane ensures everyone trusts your business' data with automatic anomaly detection, column-level lineage, and incident prevention.",
+      "description": "Metaplane offers data observability products to enable organizations to trust their data. Data teams from companies like Bose, Sotheby's, Hightouch, GoFundMe, and Ramp use its observability platform to save engineering time and increase trust in data by understanding when things break, what went wrong, and how to fix it — before an executive messages them.\n\nThey do this by automatically monitoring modern data stacks from warehouses to BI dashboards, identifying normal behavior (e.g. lineage, volumes, distributions, freshness), then alerting the right people when things go wrong.\n\nThe company is founded by MIT + HubSpot alums and backed by leading investors including Y Combinator, Flybridge, and the founders of Okta, HubSpot, Lookout, Drift, and Clearbit.",
+      "website": "https://metaplane.dev/",
+      "foundedYear": 2019,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "101-250",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Boston, Massachusetts, United States",
+      "geographicRegions": [
+        "Greater Boston Area",
+        "East Coast",
+        "New England",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Analytics",
+        "Customer Service",
+        "Data Integration",
+        "Data Management",
+        "Developer APIs",
+        "Machine Learning",
+        "Productivity Tools",
+        "SaaS"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Professional Services",
+        "Software"
+      ],
+      "founders": [
+        "Guru Mahendran",
+        "Kevin Hu",
+        "Peter Casinelli"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An automated platform that monitors data quality across the entire data stack, detects anomalies, and prevents incidents before they impact business operations.",
+        "name": "Data Observability Platform"
+      },
+      {
+        "description": "A tool that integrates with version control to run automated regression and impact tests on data changes before merging pull requests.",
+        "name": "Data CI/CD"
+      },
+      {
+        "description": "A notification system that sends targeted alerts with context to help teams quickly identify and resolve data quality issues.",
+        "name": "Automated Alerts"
+      },
+      {
+        "description": "A feature that automatically generates detailed lineage mapping of data columns across the entire data stack without manual configuration.",
+        "name": "End-to-End Column-Level Lineage"
+      },
+      {
+        "description": "A tool that analyzes data usage patterns to optimize data assets and reduce unnecessary queries.",
+        "name": "Data Insights"
+      },
+      {
+        "description": "A monitoring tool that notifies users when databases, schemas, tables, or columns are added, renamed, or removed.",
+        "name": "Schema Change Tracker"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 24749999,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 7,
+      "detailedRoundCount": 7,
+      "lastFundingDate": "2024-05-15",
+      "lastFundingType": "Venture round",
+      "rounds": [
+        {
+          "announcedDate": "2024-05-15",
+          "investorCount": 1,
+          "leadInvestors": [
+            "Snowflake Ventures"
+          ],
+          "postMoneyValuation": {
+            "amount": 168201337,
+            "currency": "USD"
+          },
+          "type": "Venture round"
+        },
+        {
+          "announcedDate": "2024-03-05",
+          "amount": {
+            "amount": 15600000,
+            "currency": "USD"
+          },
+          "investorCount": 7,
+          "leadInvestors": [
+            "Felicis"
+          ],
+          "postMoneyValuation": {
+            "amount": 98931845,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2023-01-10",
+          "amount": {
+            "amount": 8400000,
+            "currency": "USD"
+          },
+          "investorCount": 7,
+          "leadInvestors": [
+            "Khosla Ventures"
+          ],
+          "postMoneyValuation": {
+            "amount": 30091220,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2022-02-08",
+          "amount": {
+            "amount": 749999,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 6794432,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        },
+        {
+          "announcedDate": "2021-01-30",
+          "investorCount": 8,
+          "leadInvestors": [
+            "Flybridge"
+          ],
+          "postMoneyValuation": {
+            "amount": 4115996,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        },
+        {
+          "announcedDate": "2020-03-22",
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 3302608,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        },
+        {
+          "announcedDate": "2019-09-06",
+          "investorCount": 1,
+          "leadInvestors": [
+            "MIT delta v"
+          ],
+          "type": "Non Equity Assistance"
+        }
+      ],
+      "investors": {
+        "reportedCount": 17,
+        "visibleNames": [
+          {
+            "name": "B37 Ventures",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Dharmesh Shah",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Felicis",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Flybridge",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Khosla Ventures",
+            "rounds": [
+              "Series A",
+              "Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Snowflake Ventures",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "SNR.vc",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Stage 2 Capital",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Series A"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 53,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-04-09",
+          "publisher": "EIN Presswire",
+          "title": "Unified Monitoring Market to Hit USD 58.2 Bn by 2032 at 19.56% CAGR, Driven by AI Observability",
+          "url": "https://www.einpresswire.com/article/904700078/unified-monitoring-market-to-hit-usd-58-2-bn-by-2032-at-19-56-cagr-driven-by-ai-observability"
+        },
+        {
+          "date": "2026-03-12",
+          "publisher": "Coinspeaker",
+          "title": "Bitcoin Price Outlook: Metaplanet Establishes Two Subsidiaries to Accelerate Bitcoin USD Integration",
+          "url": "https://www.coinspeaker.com/metaplanet-establishes-two-subsidiaries-bitcoin-usd-integration/"
+        },
+        {
+          "date": "2025-12-18",
+          "publisher": "CRN",
+          "title": "The 10 Biggest Tech M&A Deals Of 2025",
+          "url": "https://www.crn.com/news/channel-news/2025/the-10-biggest-tech-m-a-deals-of-2025"
+        },
+        {
+          "date": "2025-04-25",
+          "publisher": "SiliconANGLE",
+          "title": "Big Tech escapes tariffs’ impact for now, but investors are wary — and should be",
+          "url": "https://siliconangle.com/2025/04/25/big-tech-escapes-tariffs-impact-now-investors-wary/"
+        },
+        {
+          "date": "2025-04-24",
+          "publisher": "Latest News",
+          "title": "Datadog Brings Observability to Data Teams by Acquiring Metaplane",
+          "url": "http://itwire.com/deals/datadog-brings-observability-to-data-teams-by-acquiring-metaplane.html"
+        },
+        {
+          "date": "2025-04-24",
+          "publisher": "Built In",
+          "title": "Datadog Enhances Observability Platform With Metaplane Acquisition",
+          "url": "https://www.builtinnyc.com/articles/datadog-acquires-metaplane-20250424"
+        },
+        {
+          "date": "2025-04-24",
+          "publisher": "IT Brief New Zealand",
+          "title": "Datadog acquires Metaplane to boost AI-ready data monitoring",
+          "url": "https://itbrief.co.nz/story/datadog-acquires-metaplane-to-boost-ai-ready-data-monitoring"
+        },
+        {
+          "date": "2025-04-23",
+          "title": "Metaplane acquired by Datadog"
+        },
+        {
+          "date": "2025-04-23",
+          "publisher": "TechTarget",
+          "title": "Datadog sees data observability join DevOps, adds Metaplane",
+          "url": "https://www.techtarget.com/searchitoperations/news/366622986/Datadog-sees-data-observability-join-DevOps-adds-Metaplane"
+        },
+        {
+          "date": "2024-11-11",
+          "publisher": "Business Wire",
+          "title": "Metaplane Launches Snowflake Native App on Snowflake Marketplace for Comprehensive Data Observability",
+          "url": "https://www.businesswire.com/news/home/20241106221281/en/Metaplane-Launches-Snowflake-Native-App-on-Snowflake-Marketplace-for-Comprehensive-Data-Observability"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 3,
+    "knownDetailedFundingAmount": {
+      "amount": 24749999,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestToEarliestKnownValuationMultiple": 50.93
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2024-07-24",
+      "growthChange90Days": -1,
+      "growthScore": 44,
+      "heatChange90Days": -3,
+      "heatScore": 60,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2025-04-20",
+        "probabilityPercent": 65.05
+      },
+      "funding": {
+        "generatedDate": "2025-10-11",
+        "probabilityPercent": 86.06,
+        "timingEstimatePercent": {
+          "within6Months": 100,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2025-10-25",
+        "probabilityPercent": 86
+      },
+      "ipo": {
+        "generatedDate": "2025-05-07",
+        "probabilityPercent": 1.65
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Statsig provides tools for A/B testing, feature management, and product analytics to help teams optimize product development.",
+          "employeeRange": "101-250",
+          "name": "Statsig",
+          "sharedCategories": [
+            "SaaS",
+            "Analytics"
+          ],
+          "sharedSpecialties": [
+            "Data Warehousing",
+            "Data Pipelines"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Fivetran is a technology company that automates replicating data into a cloud data platforms.",
+          "employeeRange": "1,001-5,000",
+          "name": "Fivetran",
+          "sharedCategories": [
+            "Data Integration",
+            "Data Management",
+            "Analytics"
+          ],
+          "sharedSpecialties": [
+            "Data Lineage Management",
+            "Data Engineering",
+            "Data Cataloging",
+            "Data Quality and Observability",
+            "Data Warehousing",
+            "Change Data Capture",
+            "Data Pipelines"
+          ],
+          "similarityScore": 94.736
+        },
+        {
+          "description": "Snowflake is a cloud data platform that provides a data warehouse as a service designed for the cloud.",
+          "employeeRange": "10,001+",
+          "name": "Snowflake",
+          "sharedCategories": [
+            "Data Integration",
+            "Machine Learning",
+            "Data Management",
+            "Analytics"
+          ],
+          "sharedSpecialties": [
+            "Data Engineering",
+            "Data Cataloging",
+            "Data Quality and Observability",
+            "Metadata Management",
+            "Data Warehousing",
+            "Change Data Capture",
+            "Data Pipelines"
+          ],
+          "similarityScore": 89.604
+        },
+        {
+          "description": "Pantomath is an automated data operations platform that detects and resolves data issues in real time.",
+          "employeeRange": "11-50",
+          "name": "Pantomath",
+          "sharedCategories": [
+            "Data Management",
+            "Analytics",
+            "Productivity Tools"
+          ],
+          "sharedSpecialties": [
+            "Data Lineage Management",
+            "Data Engineering",
+            "Data Cataloging",
+            "Data Quality and Observability",
+            "Metadata Management",
+            "Change Data Capture",
+            "Data Pipelines"
+          ],
+          "similarityScore": 83.915
+        },
+        {
+          "description": "ONUM develops data pipeline platform that collects, filters, routes, and enriches telemetry and data for security and observability teams.",
+          "employeeRange": "11-50",
+          "name": "ONUM",
+          "sharedCategories": [
+            "Data Management"
+          ],
+          "sharedSpecialties": [
+            "Data Engineering",
+            "Log Management",
+            "Data Quality and Observability",
+            "Data Pipelines"
+          ],
+          "similarityScore": 79.117
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $3,302,608 to $168,201,337, a 50.93x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 44 (-1 over 90 days) and market heat at 60 (-3).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Statsig, Fivetran, Snowflake.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 53 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

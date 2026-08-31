@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:45:28.136Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:45:28.093Z",
+    "url": "https://www.crunchbase.com/organization/datacurve"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Datacurve",
+      "shortDescription": "DataCurve helps sales and marketing team works efficiently by providing accurate Business Contacts.",
+      "description": "DataCurve  aims to provide a multi-lingual online B2B global directory of business contacts and company information. Its unique model combines three disparate approaches crowd sourcing, online vertical search/mash-up and offline data aggregation.\r\n\r\nDataCurve incentive-based crowd-sourcing model allow members to add their contact lists to its library. In return they will be entitled to get Credits which can be either used as commissions on all future sales (as long as they keep the data current) or can be used to get other business contacts.",
+      "website": "http://datacurve.net/",
+      "foundedYear": 2012,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Hyderabad, Telangana, India",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)"
+      ],
+      "industries": [
+        "Advertising",
+        "Information Technology",
+        "Internet",
+        "Internet of Things",
+        "Software"
+      ],
+      "sectors": [
+        "Advertising",
+        "Information Technology",
+        "Internet Services",
+        "Sales and Marketing",
+        "Software"
+      ],
+      "founders": [
+        "Karan Singh"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -5,
+      "heatScore": 29
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

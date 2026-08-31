@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:31:24.029Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:31:23.977Z",
+    "url": "https://www.crunchbase.com/organization/jamsocket"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Jamsocket",
+      "shortDescription": "Jamsocket provide developers a infrastructural platform to build browser enabled applications.",
+      "website": "https://jamsocket.com/",
+      "foundedYear": 2021,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "New York, United States",
+      "geographicRegions": [
+        "Greater New York Area",
+        "East Coast",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Apps",
+        "Developer APIs",
+        "Developer Platform",
+        "Software"
+      ],
+      "sectors": [
+        "Apps",
+        "Software"
+      ],
+      "founders": [
+        "Paul Butler",
+        "Taylor Baldwin"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A platform for running and scaling session backends that manage real-time synchronization for browser-enabled applications.",
+        "name": "Jamsocket Platform"
+      },
+      {
+        "description": "An open-source Yjs server with built-in persistence for enabling real-time collaborative applications.",
+        "name": "Y-Sweet"
+      },
+      {
+        "description": "An open-source distributed system providing an API to run ephemeral backend processes with routing, locking, and authorization features.",
+        "name": "Plane"
+      },
+      {
+        "description": "A GitHub Action that automates deployment of backend code to Jamsocket with linked git commit metadata.",
+        "name": "Jamsocket Deploy GitHub Action"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2025-07-10",
+          "publisher": "The New Stack",
+          "title": "Jamsocket’s Session-Lived Infra Gets a New Home with Modal",
+          "url": "https://thenewstack.io/jamsockets-session-lived-infra-gets-a-new-home-with-modal/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -16,
+      "heatScore": 37
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 54.23
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 85.61
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 36.42
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Liveblocks provides real-time infrastructure for building collaborative applications for multiplayer experiences and AI agent interactions.",
+          "employeeRange": "11-50",
+          "name": "Liveblocks",
+          "sharedCategories": [
+            "Developer APIs",
+            "Developer Platform"
+          ],
+          "sharedSpecialties": [
+            "API Integration",
+            "SDK Management"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "PartyKit is an open source deployment platform for AI agents.",
+          "employeeRange": "1-10",
+          "name": "PartyKit",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Application Runtime Platforms"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Convex provides a backend platform with a reactive database, serverless functions, and real-time data synchronization for web apps",
+          "employeeRange": "11-50",
+          "name": "Convex",
+          "sharedCategories": [
+            "Developer Platform"
+          ],
+          "sharedSpecialties": [
+            "API Integration",
+            "Function as a Service (FaaS)"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "The definitive realtime experience platform of the internet. Built for scale.",
+          "employeeRange": "101-250",
+          "name": "Ably Realtime",
+          "sharedSpecialties": [
+            "API Integration",
+            "Data Synchronization"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "Supabase offers an open source backend platform for app development built around a managed PostgreSQL database and tools.",
+          "employeeRange": "251-500",
+          "name": "Supabase",
+          "sharedCategories": [
+            "Software",
+            "Developer Platform"
+          ],
+          "sharedSpecialties": [
+            "API Integration",
+            "Data Synchronization",
+            "Function as a Service (FaaS)",
+            "Object Storage",
+            "API Gateway",
+            "Internal Developer Platforms"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Liveblocks, PartyKit, Convex.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

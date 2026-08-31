@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:19:26.926Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:19:26.871Z",
+    "url": "https://www.crunchbase.com/organization/clodo"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Clodo",
+      "shortDescription": "Clodo is an IT solutions provider that expertise in rendering cloud hosting and cloud technologies services.",
+      "website": "https://www.clodo.ru/",
+      "foundedYear": 2010,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Saint Petersburg, Saint Petersburg City, Russian Federation",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Cloud Computing",
+        "Information Technology",
+        "Software",
+        "Web Hosting"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Internet Services",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A cloud-based virtual server service that provides a flexible alternative to physical servers with customizable resources and unlimited traffic options.",
+        "name": "Virtual Server VDS/VPS"
+      },
+      {
+        "description": "A virtual server pre-configured with the 1C-Bitrix content management system optimized for business websites and online stores.",
+        "name": "Bitrix Server"
+      },
+      {
+        "description": "A service where Clodo manages and operates clients' servers on their behalf, handling server administration tasks.",
+        "name": "IT Outsourcing Service"
+      },
+      {
+        "description": "A service that transfers websites from foreign hosting providers to Clodo's cloud infrastructure at no cost to the client.",
+        "name": "Website Migration Service"
+      },
+      {
+        "description": "A hosting package that includes 4GB RAM, 60GB SSD storage, unlimited traffic, and continuous technical support.",
+        "name": "All-Inclusive Hosting Plan"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -7,
+      "heatScore": 60
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 13.93
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 74.72
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 7.74
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Beget offers web hosting, domain registration, website transfer, and VPS services.",
+          "employeeRange": "51-100",
+          "name": "Beget",
+          "sharedCategories": [
+            "Web Hosting"
+          ],
+          "sharedSpecialties": [
+            "DNS Management",
+            "Server Management",
+            "Virtual Private Server (VPS) Hosting",
+            "Website Migration",
+            "Website Hosting and Maintenance",
+            "Managed Hosting"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "The REG.RU domain name registrar is the largest Russian accredited registrar which has been operating since 2006.",
+          "employeeRange": "501-1,000",
+          "name": "REG.RU",
+          "sharedSpecialties": [
+            "Cloud Hosting",
+            "Website Hosting and Maintenance"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "SberCloud creates products that enable cloud-based IT services concerning infrastructure, backup, migration and AI cloud.",
+          "employeeRange": "251-500",
+          "name": "SberCloud",
+          "sharedCategories": [
+            "Information Technology"
+          ],
+          "similarityScore": 85
+        },
+        {
+          "description": "mail.ua is a provider of Free email services.",
+          "employeeRange": "11-50",
+          "name": "mail.ua",
+          "sharedSpecialties": [
+            "DNS Management"
+          ],
+          "similarityScore": 85
+        },
+        {
+          "description": "VK Cloud Solutions helps companies get high-quality cloud services, build their business on them, accelerate development, and save.",
+          "employeeRange": "501-1,000",
+          "name": "VK Cloud Solutions",
+          "sharedCategories": [
+            "Cloud Computing",
+            "Information Technology"
+          ],
+          "similarityScore": 84
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Beget, REG.RU, SberCloud.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

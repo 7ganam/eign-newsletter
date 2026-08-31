@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:38:47.958Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:38:47.917Z",
+    "url": "https://www.crunchbase.com/organization/edviro"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Edviro",
+      "shortDescription": "Edviro develops artificial intelligence software for building operations and energy management.",
+      "description": "Edviro develops artificial intelligence software for building operations and energy management. Its platform connects utility bills, meters, building management systems, and work order data to detect energy waste, automate operational tasks, verify energy savings, and support maintenance workflows. The company also provides digital twin capabilities for capital planning, project evaluation, and measurement and verification reporting.",
+      "website": "https://edviroenergy.com/",
+      "foundedYear": 2025,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Energy Management",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Energy",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Hursh Shah",
+        "Tanuj Siripurapu"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "AI-driven platform that ingests building data to detect waste, execute fixes, and verify energy savings.",
+        "name": "Edviro Building Operations Platform"
+      },
+      {
+        "description": "Digital twin-based tool to simulate interventions and rank building capital projects by modeled payback.",
+        "name": "Edviro Capital Planning and Intervention Simulation"
+      },
+      {
+        "description": "Automated measurement and verification service that learns baselines and reports verified energy savings.",
+        "name": "Edviro Measurement and Verification"
+      },
+      {
+        "description": "Energy management solution for K-12 facilities teams with continuous audits, fault detection, and guided fixes.",
+        "name": "Edviro Energy Management for Schools"
+      },
+      {
+        "description": "Occupancy-aware energy management for commercial buildings using existing BMS, meters, and WiFi data.",
+        "name": "Edviro Energy Management for Real Estate and Offices"
+      },
+      {
+        "description": "Independent energy baselining and continuous M&V service for construction and fit-out projects.",
+        "name": "Edviro Baselining and M&V for Construction"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 64,
+      "growthScore": 90,
+      "heatScore": 92
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 5
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.05
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

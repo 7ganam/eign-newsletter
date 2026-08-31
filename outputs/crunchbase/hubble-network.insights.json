@@ -1,0 +1,554 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:57:31.799Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:57:31.747Z",
+    "url": "https://www.crunchbase.com/organization/hubble-network"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Hubble Network",
+      "shortDescription": "Hubble Network is a developer of a satellite-powered Bluetooth network that enables devices to connect regardless of cellular reception.",
+      "description": "Hubble Network offers a platform that enables device tracking and data transmission using Bluetooth chips, without requiring additional infrastructure or custom hardware. It delivers a terrestrial network of tens of millions of access points that cover indoor, urban, and in-transit environments, with plans to expand via satellite to reach remote locations. It provides visibility into asset location and condition for a variety of use cases, including cold chain monitoring, rental equipment recovery, warehouse and yard operations, secure item movement, and intermodal logistics. Integration is supported via APIs and SDKs, and data is encrypted end-to-end using AES. The system works with existing off-the-shelf Bluetooth chips, avoiding hardware lock-in.",
+      "website": "https://hubble.com/",
+      "foundedYear": 2021,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Seattle, Washington, United States",
+      "geographicRegions": [
+        "Greater Seattle Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Internet of Things",
+        "Machinery Manufacturing",
+        "Satellite Communication",
+        "Wireless"
+      ],
+      "sectors": [
+        "Hardware",
+        "Information Technology",
+        "Internet Services",
+        "Manufacturing",
+        "Mobile"
+      ],
+      "founders": [
+        "Alex Haro",
+        "Ben Wild",
+        "John Kim",
+        "Josh Barnes"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A Bluetooth Low Energy connectivity network that collects data from compatible devices through more than 100 million scanning gateways and delivers it to customer systems.",
+        "name": "Hubble Terrestrial Network"
+      },
+      {
+        "description": "A software development kit for integrating Hubble connectivity into devices that use compatible Bluetooth Low Energy chips or microcontrollers.",
+        "name": "Hubble Device SDK"
+      },
+      {
+        "description": "A RESTful cloud API for registering and managing devices, retrieving Bluetooth packet data, configuring webhooks, and accessing organization and platform information.",
+        "name": "Hubble Platform Cloud API"
+      },
+      {
+        "description": "A free development environment for testing Hubble-connected devices through the Hubble Connect mobile app, with API, SDK, documentation, and reference application access.",
+        "name": "Hubble Sandbox"
+      },
+      {
+        "description": "A production connectivity service that provides access to Hubble’s terrestrial Bluetooth network for deployed devices and operational IoT fleets.",
+        "name": "Hubble Live"
+      },
+      {
+        "description": "A planned low Earth orbit satellite connectivity service intended to receive Bluetooth data from compatible devices in remote and off-grid locations.",
+        "name": "Hubble Satellite Network"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 120500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 5,
+      "detailedRoundCount": 5,
+      "lastFundingDate": "2026-08-18",
+      "lastFundingType": "Venture round",
+      "rounds": [
+        {
+          "announcedDate": "2026-08-18",
+          "amount": {
+            "amount": 30000000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Seraphim Space"
+          ],
+          "postMoneyValuation": {
+            "amount": 504449199,
+            "currency": "USD"
+          },
+          "type": "Venture round"
+        },
+        {
+          "announcedDate": "2025-09-17",
+          "amount": {
+            "amount": 70000000,
+            "currency": "USD"
+          },
+          "investorCount": 8,
+          "leadInvestors": [
+            "Ryan Swagar"
+          ],
+          "postMoneyValuation": {
+            "amount": 523981937,
+            "currency": "USD"
+          },
+          "type": "Series B"
+        },
+        {
+          "announcedDate": "2024-06-04",
+          "investorCount": 1,
+          "leadInvestors": [
+            "MassChallenge"
+          ],
+          "type": "Non Equity Assistance"
+        },
+        {
+          "announcedDate": "2023-05-29",
+          "amount": {
+            "amount": 20000000,
+            "currency": "USD"
+          },
+          "investorCount": 16,
+          "leadInvestors": [
+            "Transpose Platform Management"
+          ],
+          "postMoneyValuation": {
+            "amount": 105891892,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2022-05-12",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 6,
+          "postMoneyValuation": {
+            "amount": 10659765,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 26,
+        "visibleNames": [
+          {
+            "name": "Gaingels",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Infinite Capital",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Marc Weiser",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "MassChallenge",
+            "rounds": [
+              "Non Equity Assistance"
+            ]
+          },
+          {
+            "name": "Mike Farley",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Pioneer Fund"
+          },
+          {
+            "isLead": true,
+            "name": "Ryan Swagar",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Seraphim Space",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "Soma Capital"
+          },
+          {
+            "name": "Tom Gonser",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Transpose Platform Management"
+          },
+          {
+            "name": "Tuff Yen",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Series B"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 82,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-08-18",
+          "title": "Venture Round - Hubble Network"
+        },
+        {
+          "date": "2026-08-18",
+          "publisher": "QuotedData",
+          "title": "Seraphim Space invests £22m in Bluetooth network founder Hubble",
+          "url": "https://quoteddata.com/2026/08/seraphim-space-invests-22m-in-bluetooth-network-founder-hubble/"
+        },
+        {
+          "date": "2026-08-18",
+          "publisher": "Satellite Today",
+          "title": "Seraphim Space Makes Hubble Investment",
+          "url": "https://www.satellitetoday.com/finance/2026/08/18/seraphim-space-makes-hubble-investment/"
+        },
+        {
+          "date": "2026-08-18",
+          "publisher": "MarketScreener",
+          "title": "Seraphim Space Investment Trust invests in Hubble Network",
+          "url": "https://www.marketscreener.com/news/seraphim-space-investment-trust-invests-in-hubble-network-ce7859dcd18bf62c"
+        },
+        {
+          "date": "2026-08-18",
+          "publisher": "MarketScreener",
+          "title": "Seraphim Space Investment Trust Injects $30 Million in Hubble Network",
+          "url": "https://www.marketscreener.com/news/seraphim-space-investment-trust-injects-30-million-in-hubble-network-ce7859dcde8ef424"
+        },
+        {
+          "date": "2026-06-26",
+          "publisher": "Bloomberg.com",
+          "title": "Hubble Pushes Satellite Network For Long-Range Bluetooth",
+          "url": "https://www.bloomberg.com/news/videos/2026-06-26/hubble-pushes-satellite-for-long-range-bluetooth-video"
+        },
+        {
+          "date": "2026-05-06",
+          "publisher": "PR Newswire",
+          "title": "InPlay Expands Partnership with Hubble Network to Enable Global Smart Labels and Wireless Sensors Powered by IN120",
+          "url": "https://www.prnewswire.com/news-releases/inplay-expands-partnership-with-hubble-network-to-enable-global-smart-labels-and-wireless-sensors-powered-by-in120-302763594.html"
+        },
+        {
+          "date": "2026-04-28",
+          "publisher": "Business Wire",
+          "title": "Smartpin Rebrands as Band24, Advancing a Ground-to-Orbit Platform for Global Field Intelligence",
+          "url": "https://www.businesswire.com/news/home/20260428045013/en/Smartpin-Rebrands-as-Band24-Advancing-a-Ground-to-Orbit-Platform-for-Global-Field-Intelligence"
+        },
+        {
+          "date": "2026-04-16",
+          "publisher": "PR Newswire",
+          "title": "Hubble Network and InPlay Inc. Partner to Bring Sub-$1 Global Tracking Without RFID",
+          "url": "https://www.prnewswire.com/news-releases/hubble-network-and-inplay-inc-partner-to-bring-sub-1-global-tracking-without-rfid-302744581.html"
+        },
+        {
+          "date": "2026-04-03",
+          "publisher": "Vietnam Insider",
+          "title": "In the 6G era, distance won’t protect your devices anymore",
+          "url": "https://vietnaminsiders.com/in-the-6g-era-distance-wont-protect-your-devices-anymore/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 4,
+    "knownDetailedFundingAmount": {
+      "amount": 120500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 24.9,
+    "latestToEarliestKnownValuationMultiple": 47.32
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "reportedPartnerships": {
+      "note": "Provider event summaries with linked sources; not independently verified.",
+      "items": [
+        {
+          "date": "2026-04-16",
+          "description": "Hubble Network and InPlay formed a partnership to pair InPlay's sub-$1 IN100 NanoBeacon chip with Hubble's satellite-powered Bluetooth network, enabling low-cost, global asset tracking and joint go-to-market across logistics and IoT use cases.",
+          "sources": [
+            {
+              "date": "2026-04-16",
+              "publisher": "PR Newswire",
+              "title": "Hubble Network and InPlay Inc. Partner to Bring Sub-$1 Global Tracking Without RFID",
+              "url": "https://www.prnewswire.com/news-releases/hubble-network-and-inplay-inc-partner-to-bring-sub-1-global-tracking-without-rfid-302744581.html"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-06",
+          "description": "Hubble Network announced a strategic commercial collaboration with Texas Instruments to integrate Hubble’s satellite-powered Bluetooth connectivity into select TI Bluetooth Low Energy microcontrollers for global IoT coverage.",
+          "sources": [
+            {
+              "date": "2026-01-06",
+              "publisher": "PR Newswire",
+              "title": "Hubble Network Announces Collaboration with Texas Instruments to Expand Global Bluetooth® Connectivity",
+              "url": "https://www.prnewswire.com/news-releases/hubble-network-announces-collaboration-with-texas-instruments-to-expand-global-bluetooth-connectivity-302653623.html"
+            }
+          ]
+        },
+        {
+          "date": "2025-08-07",
+          "description": "Hubble Network announced a partnership with Muon to use Muon's new XL satellite bus for a major upgrade of its satellite-enabled Bluetooth network.",
+          "sources": [
+            {
+              "date": "2025-08-07",
+              "publisher": "TechCrunch",
+              "title": "Hubble Network plans massive satellite upgrade to create global Bluetooth layer",
+              "url": "https://techcrunch.com/2025/08/07/hubble-taps-muons-new-xl-satellites-to-build-a-bluetooth-layer-around-earth/"
+            }
+          ]
+        }
+      ]
+    },
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2025-11-17",
+      "growthChange90Days": -6,
+      "growthScore": 55,
+      "heatChange90Days": 8,
+      "heatScore": 75,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 78.47
+      },
+      "funding": {
+        "generatedDate": "2026-03-28",
+        "probabilityPercent": 43.9,
+        "timingEstimatePercent": {
+          "within6Months": 100,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-13",
+        "probabilityPercent": 95.23
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 26.91
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Skylo is a global non-terrestrial service provider that allows smartphone and IoT cellular devices to connect directly over satellites.",
+          "employeeRange": "51-100",
+          "name": "Skylo",
+          "sharedCategories": [
+            "Satellite Communication",
+            "Wireless",
+            "Internet of Things"
+          ],
+          "sharedSpecialties": [
+            "Asset Tracking",
+            "Satellite Ground Segments",
+            "IoT Device and Gateway Management",
+            "Satellite and Space-Based Connectivity",
+            "Maritime Connectivity Services",
+            "Fleet Telematics and GPS Tracking",
+            "Satellite Communications"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Lynk Global is a mobile network technology company that offers universal connectivity for mobile phones.",
+          "employeeRange": "11-50",
+          "name": "Lynk Global",
+          "sharedCategories": [
+            "Satellite Communication",
+            "Internet of Things"
+          ],
+          "sharedSpecialties": [
+            "Satellite Ground Segments",
+            "Satellite Terminals",
+            "Satellite and Space-Based Connectivity",
+            "Satellite Communications"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "AST SpaceMobile is a space-based broadband cellular network company for unmodified mobile devices.",
+          "employeeRange": "501-1,000",
+          "name": "AST SpaceMobile",
+          "sharedCategories": [
+            "Satellite Communication"
+          ],
+          "sharedSpecialties": [
+            "Satellite Ground Segments",
+            "Satellite Terminals",
+            "Satellite and Space-Based Connectivity",
+            "Maritime Connectivity Services",
+            "Satellite Communications"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "ORBCOMM is a global provider of Machine-to-Machine (M2M) and Internet of Things (IoT) solutions.",
+          "employeeRange": "501-1,000",
+          "name": "ORBCOMM",
+          "sharedCategories": [
+            "Satellite Communication"
+          ],
+          "sharedSpecialties": [
+            "Asset Tracking",
+            "Satellite Terminals",
+            "IoT Device and Gateway Management",
+            "Maritime Connectivity Services",
+            "Fleet Telematics and GPS Tracking",
+            "Satellite Communications",
+            "IoT Analytics"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Iridium provides satellite-based voice, data, and positioning services through a global low Earth orbit satellite network.",
+          "employeeRange": "1,001-5,000",
+          "name": "Iridium",
+          "sharedCategories": [
+            "Satellite Communication",
+            "Wireless"
+          ],
+          "sharedSpecialties": [
+            "Asset Tracking",
+            "Satellite Ground Segments",
+            "Satellite Terminals",
+            "IoT Device and Gateway Management",
+            "Satellite and Space-Based Connectivity",
+            "Maritime Connectivity Services",
+            "Fleet Telematics and GPS Tracking",
+            "Satellite Communications"
+          ],
+          "similarityScore": 88
+        }
+      ]
+    },
+    "aiResearchSummary": {
+      "notFact": true,
+      "text": "Hubble Network is researching methods for connecting Bluetooth-enabled devices via satellite networks, focusing on location determination using angle-of-arrival and time-of-flight, communication with multiple satellite networks, and position determination using antenna arrays. Their work includes multi spoke beamforming for low power wide area satellite and terrestrial communication, enabling endpoint devices to communicate and be located even without cellular reception."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Venture round round raised $30,000,000, or 24.9% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $10,659,765 to $504,449,199, a 47.32x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 55 (-6 over 90 days) and market heat at 75 (+8).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Skylo, Lynk Global, AST SpaceMobile.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 82 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

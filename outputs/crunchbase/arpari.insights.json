@@ -1,0 +1,257 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:04:53.704Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:04:53.642Z",
+    "url": "https://www.crunchbase.com/organization/arpari"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Arpari",
+      "shortDescription": "Arpari is a commercial real estate financial management platform.",
+      "description": "Arpari is a financial management platform built for commercial real estate. They provide CRE with treasury management, payment, and deposit account services. They offer a centralized and user-friendly treasury platform. They are able to implement better processes for tracking and managing finances.",
+      "website": "https://www.arpari.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "New York, United States",
+      "geographicRegions": [
+        "Greater New York Area",
+        "East Coast",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Commercial Real Estate",
+        "Financial Services",
+        "Real Estate Brokerage"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Real Estate"
+      ],
+      "founders": [
+        "Alexandra Zwiener",
+        "Toby Edward"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A cloud-based platform that centralizes bank data, automates cash reporting, and manages payments across multiple banks in real time.",
+        "name": "Arpari Treasury Management Platform"
+      },
+      {
+        "description": "A payment processing service that enables users to initiate and approve payments across multiple bank accounts from a single dashboard with uniform approval workflows.",
+        "name": "Multibank Payments"
+      },
+      {
+        "description": "A connectivity service that integrates bank data into the platform using real-time APIs or secure file transfers to cover all US banks.",
+        "name": "Bank Connectivity via API and Secure File Transfer"
+      },
+      {
+        "description": "A feature that automates invoice issuance, payment, and reconciliation with bank transactions to reduce manual effort in AP and AR processes.",
+        "name": "Automated Accounts Payable and Accounts Receivable (AP/AR)"
+      },
+      {
+        "description": "Tools to create tailored cash reports and enhance transaction data with customizable tags for improved cash flow analysis and general ledger coding.",
+        "name": "Custom Reporting and Transaction Tagging"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2022-03-22",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2022-03-22",
+          "investorCount": 2,
+          "postMoneyValuation": {
+            "amount": 6217562,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "Liquid 2 Ventures",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2022-03-22",
+          "title": "Pre Seed Round - Arpari"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -2,
+      "growthScore": 80,
+      "heatChange90Days": -15,
+      "heatScore": 57
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 21.37,
+        "timingEstimatePercent": {
+          "within6Months": 15.81,
+          "months6To11": 13.31,
+          "months12To24": 20.64,
+          "beyond24Months": 25
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 66.42
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Yardi Systems is an IT company that provides end-to-end property and investment management software and services to the real estate sector.",
+          "employeeRange": "5,001-10,000",
+          "name": "Yardi",
+          "sharedSpecialties": [
+            "Property Management Software"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "MRI Software is a provider of innovative real estate software applications and hosted solutions.",
+          "employeeRange": "1,001-5,000",
+          "name": "MRI Software",
+          "sharedSpecialties": [
+            "Property Management Software"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "AvidXchange is a payments firm that specializes in AP automation software and payment solutions for mid-sized companies and their suppliers.",
+          "employeeRange": "1,001-5,000",
+          "name": "AvidXchange",
+          "sharedSpecialties": [
+            "Property Management Software",
+            "ACH and Bank Transfer Services",
+            "Payment Processing",
+            "Payment Orchestration Platforms",
+            "Payment Analytics and Dashboard"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "RealPage is a provider of cloud-based software for managing multi-family real estate.",
+          "employeeRange": "1,001-5,000",
+          "name": "RealPage",
+          "sharedCategories": [
+            "Commercial Real Estate"
+          ],
+          "sharedSpecialties": [
+            "Property Management Software"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Entrata is a property management software company that provides a comprehensive platform for the multifamily housing industry.",
+          "employeeRange": "1,001-5,000",
+          "name": "Entrata",
+          "sharedSpecialties": [
+            "Property Management Software"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $6,217,562 to $6,217,562, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 80 (-2 over 90 days) and market heat at 57 (-15).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Yardi, MRI Software, AvidXchange.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

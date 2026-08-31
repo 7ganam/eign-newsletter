@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:20:16.902Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:20:16.849Z",
+    "url": "https://www.crunchbase.com/organization/fuchsia"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Fuchsia",
+      "shortDescription": "Fuchsia.",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit"
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 4,
+      "includedUniqueCount": 4,
+      "items": [
+        {
+          "date": "2020-08-12",
+          "publisher": "9to5Google",
+          "title": "Google certifies Fuchsia OS’s ‘Sapphire’ through Bluetooth SIG",
+          "url": "https://9to5google.com/2020/08/12/google-fuchsia-os-sapphire-bluetooth-sig/"
+        },
+        {
+          "date": "2020-08-06",
+          "publisher": "The Register",
+          "title": "Mate, have a Flutter on the Darts: Google's mobe app toolkit for Fuchsia, others emerges",
+          "url": "https://www.theregister.com/2018/06/21/google_flutter_preview_release/"
+        },
+        {
+          "date": "2020-07-08",
+          "publisher": "The Register",
+          "title": "Google's Fuchsia OS Flutters into view: We're just trying out some new concepts, claims exec",
+          "url": "https://www.theregister.com/2019/07/03/googles_fuchsia_os_flutters_into_view/"
+        },
+        {
+          "date": "2020-07-04",
+          "publisher": "ITWire",
+          "title": "Whither Fuchsia? Will the new OS be Google's way to avoid sharing Linux code? Featured",
+          "url": "https://www.itwire.com/open-sauce/whither-fuchsia-will-the-new-os-be-google-s-way-to-avoid-sharing-linux-code.html"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -21,
+      "heatScore": 13
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2025-01-11",
+        "probabilityPercent": 96.12
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

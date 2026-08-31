@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:26:44.585Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:26:44.524Z",
+    "url": "https://www.crunchbase.com/organization/collar"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Collar",
+      "shortDescription": "Collar provides an all-in-one collaboration platform for professionals and their clients.",
+      "description": "Collar is a software platform which aims to help professionals deliver better, more holistic advice to their clients.\n\nThe platform provides a secure place for professionals and their clients to easily track tasks, communicate and share files. Most importantly, Collar empowers professionals to collaborate directly with professionals from different organizations regarding a shared client. Collar was founded in 2017 and is based in New Jersey.",
+      "website": "https://collar-technologies.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Caldwell, New Jersey, United States",
+      "geographicRegions": [
+        "Greater New York Area",
+        "East Coast",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Collaboration",
+        "Enterprise Software"
+      ],
+      "sectors": [
+        "Other",
+        "Software"
+      ],
+      "founders": [
+        "Andrew Eckart",
+        "Justin Bobo"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2018-05-25",
+          "publisher": "ROI-NJ",
+          "title": "Seeking feedback, client services platform developers go straight to their target audience — fellow young professionals",
+          "url": "https://www.roi-nj.com/2018/05/25/tech/seeking-feedback-client-services-platform-developers-go-straight-to-their-target-audience-fellow-young-professionals/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 13,
+      "heatScore": 30
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

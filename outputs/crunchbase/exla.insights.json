@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:52:30.316Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:52:30.262Z",
+    "url": "https://www.crunchbase.com/organization/exla"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Exla",
+      "shortDescription": "Exla is a reusable packaging company that offers custom-made reusable packaging solutions for the protection of delicate components.",
+      "website": "https://www.exla.es/",
+      "foundedYear": 2010,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "51-100",
+      "estimatedRevenueRange": "$10M-$50M",
+      "headquarters": "Tameiga, Galicia, Spain",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Industrial",
+        "Manufacturing",
+        "Packaging Services",
+        "Retail"
+      ],
+      "sectors": [
+        "Administrative Services",
+        "Commerce and Shopping",
+        "Manufacturing"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Exla offers custom-made reusable packaging solutions designed to protect delicate components using materials like metal, plastic, and textile.",
+        "name": "Reusable Packaging"
+      },
+      {
+        "description": "Exla provides solutions to streamline processes, reduce time, and improve ergonomics and stock controls in manufacturing operations.",
+        "name": "Lean Manufacturing"
+      },
+      {
+        "description": "Exla designs tailored packaging solutions by combining various materials and technologies to meet specific client needs.",
+        "name": "Customized Solutions"
+      },
+      {
+        "description": "Exla manufactures steel containers for logistics solutions, focusing on optimizing customer processes.",
+        "name": "Steel Containers"
+      },
+      {
+        "description": "Exla's transport trolleys facilitate the movement of goods over short distances, enhancing efficiency and storage.",
+        "name": "Transport Trolleys"
+      },
+      {
+        "description": "Exla produces plastic boxes for internal and external movement of parts, known for their fast manufacturing and durability.",
+        "name": "Plastic Boxes"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2025-03-14",
+          "publisher": "Medium",
+          "title": "My Day at Y Combinator Demo Day: A Glimpse into Silicon Valley’s AI Trends",
+          "url": "https://medium.com/@tiancaixinxin/my-day-at-y-combinator-demo-day-a-glimpse-into-silicon-valleys-ai-trends-426ea732dd92?source=topic_portal---recommended_stories---venture_capital---3-84--------------------b0b2ad13_63a3_481a_9a88_c42f01997f5a--------------"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -6,
+      "heatScore": 29
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 79.69
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

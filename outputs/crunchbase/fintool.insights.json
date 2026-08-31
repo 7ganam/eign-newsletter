@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:04:50.144Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:04:50.089Z",
+    "url": "https://www.crunchbase.com/organization/fintool"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Fintool",
+      "shortDescription": "Fintool offers investment, business and finance knowledge in a compact form.",
+      "website": "https://fintool.ch/",
+      "foundedYear": 2013,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Zürich, Zurich, Switzerland",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Financial Services",
+        "Internet",
+        "Video"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Information Technology",
+        "Media and Entertainment",
+        "Video"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Provides compact information on investment concepts, categories, and strategies.",
+        "name": "Investment Knowledge Content"
+      },
+      {
+        "description": "Delivers compact business and finance knowledge for learning and reference.",
+        "name": "Business and Finance Educational Resources"
+      },
+      {
+        "description": "Offers services related to asset management and financial advisory.",
+        "name": "Financial Advisory and Asset Management Services"
+      },
+      {
+        "description": "Produces video content related to finance and investment topics.",
+        "name": "Video Atelier (Video Content Production)"
+      },
+      {
+        "description": "Provides a platform for purchasing books on finance and investment topics.",
+        "name": "Bookshop (Financial Literature Sales)"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -1,
+      "growthScore": 84,
+      "heatChange90Days": -15,
+      "heatScore": 56
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 23.05
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 97.95
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 9.4
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Economiafinanzas.com es una web dedicada al mundo de las finanzas y la economía. Bolsa, inversiones, economía en general y mucho más.",
+          "employeeRange": "1-10",
+          "name": "Economia Finanzas",
+          "sharedSpecialties": [
+            "Financial Education",
+            "Personal Finance Education"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Finance Heroes is a group of financial superheroes who assist in making good financial decisions.",
+          "employeeRange": "1-10",
+          "name": "Finance Héros",
+          "sharedCategories": [
+            "Financial Services"
+          ],
+          "sharedSpecialties": [
+            "Financial Education",
+            "Personal Finance Education"
+          ],
+          "similarityScore": 93.955
+        },
+        {
+          "description": "BHCInvestimentos is an investment management tool focused on helping users increase their ROI.",
+          "employeeRange": "1-10",
+          "name": "BHCInvestimentos",
+          "sharedSpecialties": [
+            "Financial Education",
+            "Personal Finance Education",
+            "Investment Management"
+          ],
+          "similarityScore": 88.076
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 84 (-1 over 90 days) and market heat at 56 (-15).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Economia Finanzas, Finance Héros, BHCInvestimentos.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

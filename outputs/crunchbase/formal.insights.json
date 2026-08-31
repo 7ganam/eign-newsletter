@@ -1,0 +1,384 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:15:12.144Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:15:12.086Z",
+    "url": "https://www.crunchbase.com/organization/formal"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Formal",
+      "shortDescription": "Formal is a SaaS technology startup that builds operating system for data of the modern company.",
+      "description": "Formal is a venture-backed startup building the operating system for data of the modern company. Formal is a SaaS technology startup founded in July 2021 which launched its SaaS product in Dec 2021.",
+      "website": "https://joinformal.com/",
+      "foundedYear": 2022,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Cloud Data Services",
+        "Operating Systems",
+        "SaaS"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Internet Services",
+        "Platforms",
+        "Software"
+      ],
+      "founders": [
+        "Mokhtar Bacha"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A system that dynamically learns data flows, classifies data, and recommends and enforces least-privilege access policies in real time.",
+        "name": "Formal Data Graph"
+      },
+      {
+        "description": "A reverse-proxy deployed in the customer’s VPC that monitors and controls data access to datastores and APIs without being in the data flow.",
+        "name": "Formal Proxy (Protocol-aware Reverse-Proxy)"
+      },
+      {
+        "description": "An API-first, code-driven approach to integrate Formal’s data security controls into infrastructure as code workflows using Terraform, Pulumi, TypeScript, and Python.",
+        "name": "Data Security as Code"
+      },
+      {
+        "description": "Techniques to dynamically mask or filter sensitive data in real time based on access policies to limit data exposure.",
+        "name": "Dynamic Data Masking and Filtering"
+      },
+      {
+        "description": "A suite of access control mechanisms including role-based and attribute-based access control, multi-factor authentication, device trust, and secret-less authentication.",
+        "name": "Access Control Features (RBAC/ABAC, MFA, Device Trust, Secret-less Auth)"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 6800000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2023-12-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2023-12-01",
+          "amount": {
+            "amount": 6800000,
+            "currency": "USD"
+          },
+          "investorCount": 10,
+          "leadInvestors": [
+            "Thrive Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 35415933,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2020-08-22",
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 5642651,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 10,
+        "visibleNames": [
+          {
+            "name": "Aaron Katz",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Abstract",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Alexis Le-Quoc",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Charles Gorintin",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Charles Macinnis",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Jean-Denis Greze",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Kima Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Mathilde Collin",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Thrive Capital",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2023-12-01",
+          "title": "Seed Round - Formal"
+        },
+        {
+          "date": "2020-08-22",
+          "title": "Pre Seed Round - Formal"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 6800000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 6.28
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -3,
+      "growthScore": 72,
+      "heatChange90Days": -4,
+      "heatScore": 79
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.21
+      },
+      "funding": {
+        "generatedDate": "2026-08-13",
+        "probabilityPercent": 55.99,
+        "timingEstimatePercent": {
+          "within6Months": 50.24,
+          "months6To11": 0.04,
+          "months12To24": 0,
+          "beyond24Months": 49.72
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 67.27
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 3.99
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "The Immuta Data Security Platform provides sensitive data discovery, security and access control, and data activity monitoring.",
+          "employeeRange": "101-250",
+          "name": "Immuta",
+          "sharedCategories": [
+            "Cloud Data Services"
+          ],
+          "sharedSpecialties": [
+            "Data Lineage Management",
+            "Data Privacy Management",
+            "Data Protection",
+            "Data Cataloging",
+            "Identity Governance and Administration (IGA)",
+            "Metadata Management",
+            "Operational Data Governance",
+            "Data Policy Management"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Concentric AI delivers data risk assessment, monitoring, and protection for corporate data.",
+          "employeeRange": "101-250",
+          "name": "Concentric AI",
+          "sharedSpecialties": [
+            "Data Lineage Management",
+            "Data Privacy Management",
+            "Data Protection",
+            "Data Cataloging",
+            "Data Loss Prevention (DLP)",
+            "Metadata Management",
+            "Operational Data Governance",
+            "Data Policy Management"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Privacera is a SaaS-based data security and governance platform that offers data sharing without compromising regulatory compliance.",
+          "employeeRange": "101-250",
+          "name": "Privacera",
+          "sharedCategories": [
+            "SaaS"
+          ],
+          "sharedSpecialties": [
+            "Data Lineage Management",
+            "Data Privacy Management",
+            "Data Protection",
+            "Data Cataloging",
+            "Data Loss Prevention (DLP)",
+            "Identity Governance and Administration (IGA)",
+            "Metadata Management",
+            "Cloud Access Security Broker (CASB)",
+            "Operational Data Governance",
+            "Data Policy Management"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Skyflow provides a data privacy vault with an API interface.",
+          "employeeRange": "101-250",
+          "name": "Skyflow",
+          "sharedSpecialties": [
+            "Data Privacy Management",
+            "Data Protection",
+            "API Security",
+            "Data Loss Prevention (DLP)",
+            "Data Policy Management"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "BigID is a data intelligence company that helps organizations discover, manage, and protect sensitive information.",
+          "employeeRange": "501-1,000",
+          "name": "BigID",
+          "sharedSpecialties": [
+            "Data Lineage Management",
+            "Data Privacy Management",
+            "Data Protection",
+            "Data Cataloging",
+            "Data Loss Prevention (DLP)",
+            "Identity Governance and Administration (IGA)",
+            "Metadata Management",
+            "Operational Data Governance"
+          ],
+          "similarityScore": 88
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $6,800,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $5,642,651 to $35,415,933, a 6.28x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 72 (-3 over 90 days) and market heat at 79 (-4).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Immuta, Concentric AI, Privacera.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

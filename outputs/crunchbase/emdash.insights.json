@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:42:41.974Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:42:41.933Z",
+    "url": "https://www.crunchbase.com/organization/emdash"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Emdash",
+      "shortDescription": "Emdash is a software company that simplifies and manages the deployment and configuration of complex applications for the process.",
+      "website": "https://emdash.co.uk/",
+      "foundedYear": 2006,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "London, England, United Kingdom",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Application Performance Management",
+        "Enterprise Software",
+        "Software"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A service that simplifies setup, configuration, and ongoing management of ETRM/CTRM applications and environments to reduce manual effort and errors.",
+        "name": "Complex Application Management Service"
+      },
+      {
+        "description": "A proprietary automation tool that handles routine tasks like environment setup, updates, monitoring, and scaling for ETRM/CTRM applications.",
+        "name": "Automation Tool for ETRM/CTRM Operations"
+      },
+      {
+        "description": "A service providing continuous monitoring and real-time alerts to detect and resolve issues in ETRM/CTRM environments before they impact operations.",
+        "name": "Proactive Monitoring and Support Service"
+      },
+      {
+        "description": "On-demand expert guidance and troubleshooting support for managing complex ETRM/CTRM application environments.",
+        "name": "Expert Consulting and Support"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -26,
+      "heatScore": 59
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 62
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "ION Group provides solutions for electronic trading, position management, pricing, risk management, and downstream processing for clients.",
+          "employeeRange": "1,001-5,000",
+          "name": "ION",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Commodity Trading and Risk Management",
+            "Trading APIs and FIX Tools",
+            "Energy Marketplaces and Trading",
+            "Risk and Margin Management Platforms"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Wolters Kluwer is an information services company specializing in software solutions and services for the healthcare and legal sectors.",
+          "employeeRange": "10,001+",
+          "name": "Wolters Kluwer",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Allegro provides energy provides trading and risk management solutions.",
+          "employeeRange": "501-1,000",
+          "name": "Allegro Development",
+          "sharedCategories": [
+            "Enterprise Software"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "Since 1986, Murex has played a key role in proposing effective technology as a catalyst for growth and innovation in capital markets",
+          "employeeRange": "1,001-5,000",
+          "name": "Murex",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Trading APIs and FIX Tools",
+            "Risk and Margin Management Platforms"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Fendahl is a specialist provider of consulting services and CTRM software solutions to commodity trading organizations.",
+          "employeeRange": "51-100",
+          "name": "Fendahl Technology",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Commodity Trading and Risk Management",
+            "Energy Marketplaces and Trading",
+            "Risk and Margin Management Platforms"
+          ],
+          "similarityScore": 86
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include ION, Wolters Kluwer, Allegro Development.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

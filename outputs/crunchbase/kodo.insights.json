@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:45:33.549Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:45:33.493Z",
+    "url": "https://www.crunchbase.com/organization/kodo"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Kodo",
+      "shortDescription": "Apartment & Condo Building, Apartment Building",
+      "description": "Kodo is a new apartment building in the heart of Adelaide CBD on Angas Street. Kodo fuses functional urban living with a vibrant city environment.",
+      "website": "http://www.kodoliving.com.au/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Adelaide, South Australia, Australia",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)",
+        "Australasia"
+      ],
+      "industries": [
+        "Real Estate"
+      ],
+      "sectors": [
+        "Real Estate"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Fully furnished apartments available for lease, offering residential amenities such as kitchen, bedroom, and bathroom for short or long stays.",
+        "name": "Serviced Apartments"
+      },
+      {
+        "description": "Portable, foldable outdoor shelters that provide shade and can be customized for various residential or commercial uses.",
+        "name": "Marquee Gazebos"
+      },
+      {
+        "description": "Tailored window coverings designed to fit specific dimensions and aesthetic preferences, including various linings for functionality.",
+        "name": "Custom-Made Curtains"
+      },
+      {
+        "description": "Surveillance camera systems for monitoring properties, available in wired or wireless configurations with recording options.",
+        "name": "CCTV Security Systems"
+      },
+      {
+        "description": "Information and guidance on starting and managing apprenticeship programs, including benefits, challenges, and payment structures.",
+        "name": "Apprenticeship Program Support"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2019-11-05",
+          "publisher": "Los Angeles Business Journal",
+          "title": "Koreatown Multifamily Property Sells for $29 Million",
+          "url": "https://labusinessjournal.com/news/2019/nov/05/koreatown-multifamily-property-sells-29-million/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -18,
+      "heatScore": 53
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 4.94
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Quest Apartment Hotels",
+          "employeeRange": "1,001-5,000",
+          "name": "Quest Apartment Hotels",
+          "sharedCategories": [
+            "Real Estate"
+          ],
+          "sharedSpecialties": [
+            "Coliving and Serviced Residences",
+            "Apartment Rentals",
+            "Residential Lettings",
+            "Rental Management"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Adina Hotels is a hotel apartment that offers spacious apartments, a travelling landscape with studios, and service.",
+          "employeeRange": "501-1,000",
+          "name": "Adina Hotels",
+          "sharedSpecialties": [
+            "Coliving and Serviced Residences",
+            "Apartment Rentals"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Mantra Group is providing holiday accommodation in hotels, restaurants, and apartments.",
+          "employeeRange": "1,001-5,000",
+          "name": "Mantra Group",
+          "similarityScore": 87
+        },
+        {
+          "description": "Oaks Hotels, Resorts and Suites offers superb hotel, serviced apartment and resort accommodation options for business & leisure travellers.",
+          "employeeRange": "501-1,000",
+          "name": "Oaks Hotels, Resorts and Suites",
+          "sharedSpecialties": [
+            "Coliving and Serviced Residences"
+          ],
+          "similarityScore": 85
+        },
+        {
+          "description": "ERA specializes in education and testing services for athletes, allied health, and sport science.",
+          "employeeRange": "11-50",
+          "name": "ERA",
+          "similarityScore": 82
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Quest Apartment Hotels, Adina Hotels, Mantra Group.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

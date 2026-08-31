@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:10:16.587Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:10:16.541Z",
+    "url": "https://www.crunchbase.com/organization/indivio"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Indivio",
+      "shortDescription": "Indivio enables brands, and retailers of all sizes to create, test, and optimize Facebook ads using video.",
+      "description": "Indivio enables brands and retailers of all sizes to easily create, test, and optimize Facebook ads using video. It automates video marketing on Facebook and Instagram.",
+      "website": "https://indiv.io/",
+      "foundedYear": 2017,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Redwood City, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Advertising",
+        "Digital Marketing",
+        "Facebook",
+        "Social Media Marketing"
+      ],
+      "sectors": [
+        "Advertising",
+        "Platforms",
+        "Sales and Marketing"
+      ],
+      "founders": [
+        "Josh Dorward"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2017-08-21",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2017-08-21",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2022-01-10",
+          "title": "Indivio acquired by Cloudinary"
+        },
+        {
+          "date": "2022-01-10",
+          "publisher": "AiThority",
+          "title": "Cloudinary Extends Video Capabilities With Indivio Acquisition",
+          "url": "https://aithority.com/technology/native-and-programmatic-advertising/cloudinary-extends-video-capabilities-with-indivio-acquisition/"
+        },
+        {
+          "date": "2017-08-21",
+          "title": "Seed Round - Indivio"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -7,
+      "heatScore": 51
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Motion creates platform that combines visual content with performance metrics to help growth teams improve their creative strategy.",
+          "employeeRange": "51-100",
+          "name": "Motion",
+          "similarityScore": 97
+        },
+        {
+          "description": "Marpipe is a martech platform that automates the creative testing process for brands and agencies.",
+          "employeeRange": "1-10",
+          "name": "Marpipe",
+          "sharedCategories": [
+            "Advertising"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "AdCreative.ai is a Saas platform that allows businesses to generate conversion focused ad creatives and social media posts using AI.",
+          "employeeRange": "101-250",
+          "name": "AdCreative.ai",
+          "sharedCategories": [
+            "Advertising"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "VidMob develops an AI-powered advertising platform that analyzes campaign performance and delivers insights to improve marketing outcomes.",
+          "employeeRange": "101-250",
+          "name": "VidMob",
+          "similarityScore": 91
+        },
+        {
+          "description": "Triple Whale is the eCommerce operating system for Shopify brands.",
+          "employeeRange": "101-250",
+          "name": "Triple Whale",
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $120,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Motion, Marpipe, AdCreative.ai.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

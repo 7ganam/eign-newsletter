@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:43:15.340Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:43:15.298Z",
+    "url": "https://www.crunchbase.com/organization/boundo"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Boundo",
+      "shortDescription": "Boundo provides an AI-driven outbound sales platform that automates lead generation, multichannel outreach, and intent-based lead scoring.",
+      "description": "Boundo provides an AI-driven outbound sales platform that automates the core workflows of sales development representatives. The platform allows users to define their ideal customer profile and search across a large B2B lead database sourced from multiple third-party providers. It runs multichannel outbound campaigns over LinkedIn and email, generating and sending personalized messages, handling connection requests, and reacting to prospect activity. Boundo includes deliverability controls such as dispatch throttling, spam word filtering, and multi-step contact verification to protect sender reputation. An integrated intent-scoring system tracks engagement signals and ranks prospects to surface leads that are more likely to convert. The platform integrates with major CRM systems to sync contacts, log activity, and keep pipeline data current. Boundo is designed for B2B teams that want to systematize lead generation, outbound outreach, and qualification with minimal manual effort.",
+      "website": "https://boundo.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Milpitas, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "B2B",
+        "Lead Generation",
+        "Marketing Automation",
+        "Productivity Tools",
+        "Sales Automation",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Other",
+        "Sales and Marketing",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An AI-driven outbound sales platform that automates B2B lead generation, multichannel outreach, and CRM-synced pipeline management.",
+        "name": "boundo"
+      },
+      {
+        "description": "An AI-based intent tracking and lead scoring module that ranks prospects by engagement and optimizes outbound messaging.",
+        "name": "boundo IQ"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2024-01-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2024-01-01",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Spice Capital",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2024-01-01",
+          "title": "Seed Round - Boundo"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 11,
+      "growthScore": 91,
+      "heatChange90Days": 69,
+      "heatScore": 91
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.22
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 91 (+11 over 90 days) and market heat at 91 (+69).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

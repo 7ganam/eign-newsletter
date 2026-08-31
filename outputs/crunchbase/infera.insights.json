@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:10:50.120Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:10:50.062Z",
+    "url": "https://www.crunchbase.com/organization/infera"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Infera",
+      "shortDescription": "Infera is an AI and digital transformation company that develops machine learning engines for industries and businesses.",
+      "website": "https://infera.ai/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Toronto, Ontario, Canada",
+      "geographicRegions": [
+        "Great Lakes"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Business Intelligence",
+        "Machine Learning",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A platform that uses machine learning to create probabilistic digital twins for system and process optimization, accounting for real-world uncertainties.",
+        "name": "Optimizer Platform"
+      },
+      {
+        "description": "Services that integrate machine learning with chemical and biological models to optimize industrial processes, offering predictive maintenance and quality assessment.",
+        "name": "Process Optimization Services"
+      },
+      {
+        "description": "A module for cleaning and managing data, facilitating experiment design to generate data for AI model refinement.",
+        "name": "Data Management Module"
+      },
+      {
+        "description": "A module that automates the selection and construction of AI models using machine learning algorithms, providing predictions with calibrated error bars.",
+        "name": "AI Model Construction"
+      },
+      {
+        "description": "A system using probabilistic inference to manage uncertainties in metrology, enhancing prediction accuracy and supporting root-cause analysis.",
+        "name": "Virtual Metrology"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 0,
+      "heatScore": 87
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 79.48
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Intelimek Systems offers AI-based manufacturing solutions that enhance productivity, safety, and quality for companies during manufacturing.",
+          "employeeRange": "1-10",
+          "name": "Intelimek Systems",
+          "sharedCategories": [
+            "Machine Learning",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Industrial Digital Twins",
+            "Smart Manufacturing Analytics",
+            "AutoML",
+            "Process Intelligence"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "The #1 platform to plan, track and optimize your maintenance for Industry",
+          "employeeRange": "51-100",
+          "name": "iFactory",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Industrial Digital Twins",
+            "Smart Manufacturing Analytics"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "INPROCESS TECHNOLOGY AND CONSULTING GROUP S L is an independent process simulation services and consulting company.",
+          "employeeRange": "101-250",
+          "name": "Inprocess Technology and Consulting Group",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Industrial Digital Twins"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Seeq is a software company that accelerates industrial process analytics for process manufacturing data.",
+          "employeeRange": "51-100",
+          "name": "Seeq",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Industrial Digital Twins",
+            "Smart Manufacturing Analytics",
+            "Process Intelligence",
+            "Data Engineering",
+            "Data Quality and Observability"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Aspen Technology is a global leader in industrial software.",
+          "employeeRange": "1,001-5,000",
+          "name": "Aspen Technology",
+          "sharedCategories": [
+            "Software",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Industrial Digital Twins",
+            "Smart Manufacturing Analytics",
+            "Process Intelligence"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Hybrid therapeutic platform",
+      "statement": "Infera combines Process Optimization Services with Data Management Module.",
+      "implication": "The company is positioned as a biotechnology platform with both a physical therapeutic-delivery modality and an AI-assisted discovery layer, rather than as a standalone AI software vendor.",
+      "confidence": "high",
+      "evidence": [
+        "facts.company.description",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Product descriptions are profile claims and do not establish clinical efficacy."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Intelimek Systems, iFactory, Inprocess Technology and Consulting Group.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

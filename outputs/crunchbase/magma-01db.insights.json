@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:14:24.087Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:14:24.035Z",
+    "url": "https://www.crunchbase.com/organization/magma-01db"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Magma",
+      "shortDescription": "Magma is a software tool for learning mathematics in primary and secondary schools.",
+      "website": "https://www.magma.se/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Stockholm, Stockholms Lan, Sweden",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Nordic Countries",
+        "Scandinavia",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "E-Learning",
+        "Internet",
+        "Software"
+      ],
+      "sectors": [
+        "Education",
+        "Information Technology",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A digital platform for teaching and learning mathematics in primary and secondary schools, enabling teachers to assign exercises, track student progress, and analyze handwritten student solutions.",
+        "name": "Magma Platform"
+      },
+      {
+        "description": "Tools within Magma to create, customize, and distribute math exercises and assignments to individual students, groups, or entire classes.",
+        "name": "Exercise and Assignment Creation"
+      },
+      {
+        "description": "Features that provide teachers with real-time insights into student performance, including detailed result matrices and skill reports.",
+        "name": "Student Progress Tracking and Analytics"
+      },
+      {
+        "description": "A feature that captures students' handwritten calculations digitally, allowing teachers to review and analyze problem-solving processes.",
+        "name": "Handwritten Solution Capture and Review"
+      },
+      {
+        "description": "Tools to conduct diagnostic tests and screenings to assess students' mathematical knowledge and identify learning gaps.",
+        "name": "Pre-assessments and Diagnostics"
+      },
+      {
+        "description": "Capabilities to assign and manage math exercises for homework or distance learning, with real-time progress monitoring and support features.",
+        "name": "Support for Homework and Remote Learning"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -10,
+      "heatScore": 62
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 45.26
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Mathletics is an online resource that provides mathematics learning programs for students.",
+          "employeeRange": "1-10",
+          "name": "Mathletics",
+          "sharedCategories": [
+            "E-Learning"
+          ],
+          "sharedSpecialties": [
+            "K-12 Study Materials",
+            "Educational Portals",
+            "Classroom Management Software",
+            "K-12 Curriculum and School Programs",
+            "Learning Management Systems (LMS)",
+            "Learning Analytics and Training Evaluation",
+            "Online Assessment Platforms"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Desmos is software for developing and sharing educational content.",
+          "employeeRange": "11-50",
+          "name": "Desmos",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "K-12 Study Materials",
+            "Educational Portals",
+            "Classroom Management Software",
+            "Digital Textbooks",
+            "Learning Analytics and Training Evaluation",
+            "Online Assessment Platforms"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "The only curriculum top-rated by EdReports that unites hands-on instruction and immersive digital learning.",
+          "employeeRange": "101-250",
+          "name": "ZEARN",
+          "sharedSpecialties": [
+            "K-12 Study Materials",
+            "Educational Portals",
+            "Digital Textbooks",
+            "K-12 Curriculum and School Programs",
+            "Learning Management Systems (LMS)",
+            "Learning Analytics and Training Evaluation",
+            "Online Assessment Platforms"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "The Assistments Platform assists students in learning while it gives teachers assessMENT of their students' progress.",
+          "employeeRange": "11-50",
+          "name": "Assistments",
+          "sharedSpecialties": [
+            "K-12 Study Materials",
+            "Educational Portals",
+            "K-12 Curriculum and School Programs",
+            "Learning Analytics and Training Evaluation",
+            "Online Assessment Platforms"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "GeoGebra is dynamic mathematics software.",
+          "employeeRange": "11-50",
+          "name": "GeoGebra",
+          "sharedCategories": [
+            "Software",
+            "E-Learning"
+          ],
+          "sharedSpecialties": [
+            "K-12 Study Materials",
+            "Educational Portals",
+            "Classroom Management Software",
+            "K-12 Curriculum and School Programs",
+            "Learning Management Systems (LMS)",
+            "Learning Analytics and Training Evaluation",
+            "Online Assessment Platforms"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Mathletics, Desmos, ZEARN.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

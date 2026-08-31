@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:53:36.402Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:53:36.346Z",
+    "url": "https://www.crunchbase.com/organization/extern-labs"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Extern Labs",
+      "shortDescription": "Extern Labs is a trusted marketplace for companies looking for building and shipping software solutions.",
+      "description": "We deliver world-class digital services and consultation by passionate experts with over 15 years of experience in the IT Industry. We are a team of dedicated professionals who are on the lookout for a quality experience in working for large multinational corporations. We believe in going beyond the role of a solutions provider to our clients and use technology as a way to empower our clients by providing user-friendly solutions to boost their productivity. Extern Labs is a service-based company. Services, we provide IoT System, Web Application, Mobile Application and Desktop Application",
+      "website": "https://externlabs.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Sheridan, Wyoming, United States",
+      "geographicRegions": [
+        "Western US"
+      ],
+      "industries": [
+        "Education",
+        "Electronics",
+        "Information Technology",
+        "Software"
+      ],
+      "sectors": [
+        "Education",
+        "Hardware",
+        "Information Technology",
+        "Software"
+      ],
+      "founders": [
+        "Aniruddh Agarwal"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Development of tailored software applications to meet specific business requirements across various industries.",
+        "name": "Custom Software Development"
+      },
+      {
+        "description": "Design and development of mobile applications for Android and cross-platform environments with focus on UI/UX and performance.",
+        "name": "Mobile Application Development"
+      },
+      {
+        "description": "Design and development of embedded systems and firmware for hardware devices across various industries.",
+        "name": "Embedded System Development"
+      },
+      {
+        "description": "Strategic digital marketing including SEO, social media management, paid advertising, content marketing, and lead generation.",
+        "name": "Digital Marketing Services"
+      },
+      {
+        "description": "End-to-end development of custom web applications with responsive design, SEO optimization, and third-party integrations.",
+        "name": "Custom Web Development"
+      },
+      {
+        "description": "Development of AR and VR applications for iOS and Android platforms to create immersive user experiences.",
+        "name": "Augmented and Virtual Reality Development"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -23,
+      "heatScore": 30
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 46.01
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 75.89
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 27.77
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Toptal is a network of talent in business, design, and technology that enables companies to scale their teams, on demand.",
+          "employeeRange": "1,001-5,000",
+          "name": "Toptal",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "BairesDev is your partner for precise, rapid outsourced software development.",
+          "employeeRange": "1,001-5,000",
+          "name": "BairesDev LLC",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Frontend Development",
+            "Custom Software Development",
+            "Backend Development"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Netguru offers digital acceleration services - consulting, design, development - to well-founded startups and corporates.",
+          "employeeRange": "1-10",
+          "name": "Netguru",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "EPAM leverages its core engineering expertise as a leading global product development and digital platform engineering services company.",
+          "employeeRange": "10,001+",
+          "name": "EPAM Systems",
+          "sharedCategories": [
+            "Software",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Custom Software Development"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Thoughtworks is a technological firm that combines strategy, design, and software engineering.",
+          "employeeRange": "10,001+",
+          "name": "Thoughtworks",
+          "sharedCategories": [
+            "Software",
+            "Information Technology"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Toptal, BairesDev LLC, Netguru.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:56:32.581Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:56:32.542Z",
+    "url": "https://www.crunchbase.com/organization/fathomdb"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "FathomDB",
+      "shortDescription": "FathomDB is a DBaaS-based platform supporting the management of day-to-day tasks of databases.",
+      "description": "FathomDB offers databases as a service, taking care of many of the day-to-day tasks database administrators have to deal with and letting them focus on more complex issues.",
+      "website": "http://www.fathomdb.com/",
+      "foundedYear": 2008,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Enterprise Software",
+        "Software"
+      ],
+      "sectors": [
+        "Software"
+      ],
+      "founders": [
+        "Justin Santa Barbara"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2009-01-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2009-01-01",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 13,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2015-06-26",
+          "publisher": "TechCrunch",
+          "title": "Meteor Launches Paid Developer Support Subscriptions For Its JavaScript App Platform",
+          "url": "http://techcrunch.com/2015/06/26/meteor-launches-paid-developer-support-subscriptions-for-its-javascript-app-platform/"
+        },
+        {
+          "date": "2014-10-07",
+          "publisher": "TechCrunch",
+          "title": "Heavybit Company Meteor Acquires YC Alum FathomDB For Its Development Platform | TechCrunch",
+          "url": "http://techcrunch.com/2014/10/07/meteor-acquires-yc-alum-fathomdb-for-its-web-development-platform/"
+        },
+        {
+          "date": "2014-10-07",
+          "title": "FathomDB acquired by Apollo GraphQL"
+        },
+        {
+          "date": "2011-04-24",
+          "publisher": "ZD Net",
+          "title": "Seven lessons to learn from Amazon's outage | ZDNet",
+          "url": "http://www.zdnet.com/article/seven-lessons-to-learn-from-amazons-outage/"
+        },
+        {
+          "date": "2011-01-14",
+          "publisher": "ZD Net",
+          "title": "Database.com: nice name, shame about the platform | ZDNet",
+          "url": "http://www.zdnet.com/article/database-com-nice-name-shame-about-the-platform/"
+        },
+        {
+          "date": "2010-03-23",
+          "publisher": "ZD Net",
+          "title": "Mobile tech blooms at Demo Spring | ZDNet",
+          "url": "http://www.zdnet.com/article/mobile-tech-blooms-at-demo-spring/"
+        },
+        {
+          "date": "2010-03-22",
+          "publisher": "Venture Beat",
+          "title": "DEMO: FathomDB launches a database that scales in the cloud | VentureBeat | Business | by Anthony Ha",
+          "url": "http://venturebeat.com/2010/03/22/fathomdb/"
+        },
+        {
+          "date": "2009-12-17",
+          "publisher": "Gigaom",
+          "title": "Will Rackspace Partnership Save FathomDB?",
+          "url": "https://gigaom.com/2009/12/17/will-rackspace-partnership-save-fathomdb/"
+        },
+        {
+          "date": "2009-03-16",
+          "publisher": "TechCrunch",
+          "title": "Y Combinator's FathomDB Takes The Hassle Out Of Managing Your Database | TechCrunch",
+          "url": "http://techcrunch.com/2009/02/27/y-combinators-fathomdb-takes-the-hassle-out-of-managing-your-database/"
+        },
+        {
+          "date": "2009-03-02",
+          "publisher": "Techworld",
+          "title": "FathomDB launches cloud database",
+          "url": "http://www.techworld.com/news/apps/fathomdb-launches-cloud-database-111620"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -15,
+      "heatScore": 23
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 13 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

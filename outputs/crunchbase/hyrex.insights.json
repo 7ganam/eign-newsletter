@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:01:43.049Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:01:42.997Z",
+    "url": "https://www.crunchbase.com/organization/hyrex"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Hyrex",
+      "shortDescription": "Hyrex is a scaffolding company.",
+      "description": "Hyrex AB is today one of the market scaffolding companies. Hyrex is a player in the market to be reckoned with. The workforce consists of people who work in different ways to ensure that their project is carried out safely. They provide services like weather protection, building elevators, security, industry and construction.",
+      "website": "http://www.hyrex.nu/",
+      "foundedYear": 1979,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "101-250",
+      "estimatedRevenueRange": "$50M-$100M",
+      "headquarters": "Norsborg, Stockholms Lan, Sweden",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Nordic Countries",
+        "Scandinavia",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Building Material",
+        "Construction",
+        "Security"
+      ],
+      "sectors": [
+        "Privacy and Security",
+        "Real Estate"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Temporary scaffolding structures erected on building exteriors to provide access and support during construction or maintenance.",
+        "name": "Fasadställningar (Facade Scaffolding)"
+      },
+      {
+        "description": "Mechanical lifts used to transport workers and materials vertically between floors on construction sites.",
+        "name": "Bygghissar (Construction Hoists)"
+      },
+      {
+        "description": "Temporary coverings that shield construction or scaffolding areas from adverse weather conditions to protect work progress and materials.",
+        "name": "Väderskydd (Weather Protection)"
+      },
+      {
+        "description": "Custom scaffolding solutions designed for industrial environments with space constraints and specific technical requirements.",
+        "name": "Industriella Ställningar (Industrial Scaffolding)"
+      },
+      {
+        "description": "Custom-built scaffolding structures for unique project requirements such as walkways, emergency stairs, or suspended scaffolds.",
+        "name": "Specialställningar (Special Scaffolding)"
+      },
+      {
+        "description": "Project management services focusing on quality, environmental, and safety compliance, including scaffold design using CAD and 3D modeling.",
+        "name": "KMA & Konstruktion (Quality, Environment, Safety & Design)"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -25,
+      "heatScore": 31
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 70.82
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Libergs Sweden is a supplier of scaffolding, weather protection and lifts.",
+          "employeeRange": "251-500",
+          "name": "Libergs Sweden",
+          "sharedCategories": [
+            "Building Material",
+            "Construction"
+          ],
+          "sharedSpecialties": [
+            "Fall Protection and Height Safety",
+            "Scaffolding and Access Equipment",
+            "Equipment Rental Software",
+            "Aerial and Access Lifts",
+            "Ground Protection and Access Matting",
+            "Scaffolding Services"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Highcon offers building scaffolding, weatherproofing, industrial scaffolding and trainings.",
+          "employeeRange": "11-50",
+          "name": "Highcon",
+          "sharedSpecialties": [
+            "Fall Protection and Height Safety",
+            "Scaffolding and Access Equipment",
+            "Equipment Rental Software",
+            "Temporary Site and Modular Facilities",
+            "Lifting and Rigging Inspection and Certification",
+            "Scaffolding Services"
+          ],
+          "similarityScore": 93.309
+        },
+        {
+          "description": "Scaffolding Projects is a supplier of facades for the construction sector.",
+          "employeeRange": "11-50",
+          "name": "Scaffolding Projects",
+          "sharedCategories": [
+            "Building Material",
+            "Construction"
+          ],
+          "sharedSpecialties": [
+            "Fall Protection and Height Safety",
+            "Scaffolding and Access Equipment",
+            "Equipment Rental Software",
+            "Temporary Site and Modular Facilities",
+            "Ground Protection and Access Matting",
+            "Scaffolding Services"
+          ],
+          "similarityScore": 87.958
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Libergs Sweden, Highcon, Scaffolding Projects.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

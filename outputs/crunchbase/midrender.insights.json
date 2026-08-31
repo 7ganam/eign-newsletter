@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:33:41.215Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:33:41.163Z",
+    "url": "https://www.crunchbase.com/organization/midrender"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Midrender",
+      "shortDescription": "Midrender provides an AI-powered visual editor and motion graphics framework for software teams and developers.",
+      "description": "Midrender provides an AI-powered visual editor and motion graphics framework for software teams and developers. The platform connects to a codebase, analyzes components, layouts, and styles, and uses this context to generate animated product feature walkthroughs and launch videos. Its visual editor offers a timeline, keyframes, properties, and layout tools for refining scenes created by the AI assistant. Midrender is built on Revideo, an open-source TypeScript framework for programmatic video creation that supports headless rendering, audio, and server-driven workflows. The product integrates with Model Context Protocol, enabling agents in tools like AI code editors to trigger motion content generation from the terminal. Midrender serves application developers and product teams who need programmatic and AI-assisted video automation embedded into their development workflows.",
+      "website": "https://midrender.com/",
+      "foundedYear": 2023,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Animation",
+        "Artificial Intelligence (AI)",
+        "Developer Tools",
+        "Enterprise Software",
+        "Machine Learning",
+        "Software",
+        "Video",
+        "Video Editing",
+        "Video Streaming"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Content and Publishing",
+        "Data and Analytics",
+        "Media and Entertainment",
+        "Science and Engineering",
+        "Software",
+        "Video"
+      ],
+      "founders": [
+        "Konstantin Hohr"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Midrender Visual Editor is an AI-assisted motion graphics editor that turns software features into animated product videos.",
+        "name": "Midrender Visual Editor"
+      },
+      {
+        "description": "Revideo Framework is an open-source TypeScript engine for programmatic video creation and headless rendering.",
+        "name": "Revideo Framework"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 78,
+      "heatScore": 78
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 67.52
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 51.48
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 52.3
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

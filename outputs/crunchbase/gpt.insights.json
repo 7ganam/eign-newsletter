@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:36:12.778Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:36:12.727Z",
+    "url": "https://www.crunchbase.com/organization/gpt"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "GPT",
+      "shortDescription": "Telecoms in Coventry. Now called Marconi",
+      "website": "http://www.telephoneworks.co.uk/",
+      "foundedYear": 1988,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "estimatedRevenueRange": "$10M-$50M"
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 148,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-03-09",
+          "publisher": "FinSMEs",
+          "title": "Silverflow Raises $40M in Series B Funding",
+          "url": "https://www.finsmes.com/2026/03/silverflow-raises-40m-in-series-b-funding.html"
+        },
+        {
+          "date": "2026-03-07",
+          "publisher": "Pulse 2.0",
+          "title": "Silverflow: $40 Million Series B Raised For Cloud-Native Payments Processing Platform",
+          "url": "https://pulse2.com/silverflow-40-million-series-b-raised-for-cloud-native-payments-processing-platform/"
+        },
+        {
+          "date": "2026-03-06",
+          "publisher": "PANews",
+          "title": "Silverflow获4000万美元B轮融资扩张全球支付网络"
+        },
+        {
+          "date": "2026-03-05",
+          "publisher": "Financial IT",
+          "title": "Silverflow Closes $40 Million Series B As It Nears One Billion Transactions Annually",
+          "url": "https://financialit.net/news/fundraising-news/silverflow-closes-40-million-series-b-it-nears-one-billion-transactions"
+        },
+        {
+          "date": "2026-03-05",
+          "publisher": "EU-Startups",
+          "title": "Dutch payments technology firm Silverflow closes €37 million Series B; plans to grow workforce by over 50%",
+          "url": "https://www.eu-startups.com/2026/03/amsterdams-cloud-native-payment-company-silverflow-closes-e37-million-series-b-plans-to-grow-workforce-by-over-50/"
+        },
+        {
+          "date": "2026-03-05",
+          "publisher": "FoundersToday",
+          "title": "Silverflow secures €37M Series B to expand global payments infrastructure",
+          "url": "https://www.founderstoday.news/silverflow-secures-37m-series-b-to-expand/"
+        },
+        {
+          "date": "2026-03-05",
+          "publisher": "Electronic Payments International",
+          "title": "Silverflow raises $40m Series B to scale cloud payment processing",
+          "url": "https://www.electronicpaymentsinternational.com/news/silverflow-series-b/"
+        },
+        {
+          "date": "2024-09-06",
+          "publisher": "KrAsia",
+          "title": "Zhipu AI brings GPT-4o-like model to China with “video call” integration",
+          "url": "https://kr-asia.com/zhipu-ai-brings-gpt-4o-like-model-to-china-with-video-call-integration"
+        },
+        {
+          "date": "2024-08-23",
+          "publisher": "Finovate",
+          "title": "Finovate Global Spain: Talking AI and Wealth Management with GPTadvisor",
+          "url": "https://finovate.com/finovate-global-spain-talking-ai-and-wealth-management-with-gptadvisor/"
+        },
+        {
+          "date": "2024-08-23",
+          "publisher": "MarketScreener",
+          "title": "GPT Infraprojects Limited Bags Order Valued at INR 130 Million",
+          "url": "https://www.marketscreener.com/quote/stock/GPT-INFRAPROJECTS-LIMITED-29444963/news/GPT-Infraprojects-Limited-Bags-Order-Valued-at-INR-130-Million-47720446/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -11,
+      "heatScore": 25
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2025-01-11",
+        "probabilityPercent": 96.15
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 148 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

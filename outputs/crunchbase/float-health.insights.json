@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:09:04.225Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:09:04.170Z",
+    "url": "https://www.crunchbase.com/organization/float-health"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Float Health",
+      "shortDescription": "Float Health is a digital advertising agency for healthcare and pharmaceuticals.",
+      "description": "Float Health is a digital advertising agency in healthcare. Their services are advertising, medical education, health marketing, patient adherence, patient education, social media, digital strategy, and events. The pharmaceutical industry uses its advertising and marketing services.",
+      "website": "https://float.pt/",
+      "foundedYear": 2003,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "101-250",
+      "headquarters": "Lisbon, Lisboa, Portugal",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Advertising",
+        "Consulting",
+        "Creative Agency",
+        "Digital Marketing",
+        "Health Care",
+        "Marketing",
+        "Pharmaceutical",
+        "Social Media Marketing"
+      ],
+      "sectors": [
+        "Advertising",
+        "Content and Publishing",
+        "Health Care",
+        "Media and Entertainment",
+        "Professional Services",
+        "Sales and Marketing"
+      ],
+      "founders": [
+        "Pedro Joel"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Provides expert advice and strategic guidance on medical and healthcare-related projects for pharmaceutical and healthcare clients.",
+        "name": "Medical Consulting"
+      },
+      {
+        "description": "Development of scientifically accurate medical and healthcare content for various communication channels and audiences.",
+        "name": "Medical Content"
+      },
+      {
+        "description": "Creation and execution of advertising campaigns targeting healthcare and pharmaceutical audiences across multiple media channels.",
+        "name": "Advertising"
+      },
+      {
+        "description": "Development of strategic plans for digital health initiatives, integrating technology and data to support healthcare communication and engagement.",
+        "name": "Digital Health Strategy"
+      },
+      {
+        "description": "Communication consulting focused on media relations, strategic messaging, and stakeholder engagement for healthcare brands and organizations.",
+        "name": "Public Relations & Public Affairs"
+      },
+      {
+        "description": "Planning and management of healthcare-related events, including in-person and virtual formats, targeting diverse healthcare audiences.",
+        "name": "Medical Events"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -8,
+      "heatScore": 26
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 8.45
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 89.44
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 3.53
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Ogilvy Health is a marketing and advertising agency that specializes in the health care industry.",
+          "employeeRange": "251-500",
+          "name": "Ogilvy Health",
+          "sharedCategories": [
+            "Pharmaceutical",
+            "Marketing",
+            "Health Care",
+            "Advertising"
+          ],
+          "sharedSpecialties": [
+            "Marketing Strategy",
+            "Medical Communications",
+            "Healthcare and Rehab Marketing"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Real Chemistry is a health innovation company dedicated to making the world a healthier place for everyone",
+          "employeeRange": "1,001-5,000",
+          "name": "Real Chemistry",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Intouch Solutions is a pharmaceutical marketing agency.",
+          "employeeRange": "501-1,000",
+          "name": "Intouch Solutions",
+          "sharedCategories": [
+            "Pharmaceutical",
+            "Advertising"
+          ],
+          "similarityScore": 83
+        },
+        {
+          "description": "Syneos Health, the only fully integrated end-to-end clinical and commercial solution organization.",
+          "employeeRange": "10,001+",
+          "name": "Syneos Health",
+          "sharedCategories": [
+            "Pharmaceutical",
+            "Health Care"
+          ],
+          "sharedSpecialties": [
+            "Medical Communications",
+            "Go-to-Market and Launch Services"
+          ],
+          "similarityScore": 82
+        },
+        {
+          "description": "Indegene enables global health care organizations address complex challenges and drive better health and business outcomes.",
+          "employeeRange": "1,001-5,000",
+          "name": "Indegene",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "sharedSpecialties": [
+            "Medical Communications",
+            "Go-to-Market and Launch Services"
+          ],
+          "similarityScore": 79
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Ogilvy Health, Real Chemistry, Intouch Solutions.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

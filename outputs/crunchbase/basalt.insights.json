@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:25:04.946Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:25:04.889Z",
+    "url": "https://www.crunchbase.com/organization/basalt"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Basalt",
+      "shortDescription": "Basalt is a research and development firm that is involved in the research and development of basalt fiber and improving the basalt fiber.",
+      "description": "Basalt creates a public interest industry for a secure and affluent future society. The company conducts research on characteristics of minerals and contribute to the development of human society through the development of environmentally friendly new materials. The company focuses on research and development of basalt fiber and the importing and sale of basalt primary processed products.\n\nBasalt was founded in November 2014 and is headquartered in Tokyo, Japan.",
+      "website": "http://basalt.co.jp/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "Tokyo, Japan",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)"
+      ],
+      "industries": [
+        "Market Research",
+        "Product Management",
+        "Product Research"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Design",
+        "Software"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2021-07-09",
+          "publisher": "VentureBeat",
+          "title": "BASALT Minecraft competition aims to advance reinforcement learning",
+          "url": "https://buff.ly/3hs8uis"
+        },
+        {
+          "date": "2021-01-07",
+          "publisher": "Tech in Africa",
+          "title": "Basalt Establishes Team Finder for Access to on-demand Technology Skill",
+          "url": "https://www.techinafrica.com/basalt-establishes-team-finder-for-access-to-on-demand-technology-skill/"
+        },
+        {
+          "date": "2020-08-23",
+          "publisher": "Hawaii Star Advertiser",
+          "title": "Restaurant Insider with Anne Lee: Duke’s Lane Market & Eatery",
+          "url": "https://dining.staradvertiser.com/2020/08/columns/restaurant-insider-with-anne-lee/dukes-lane-market-eatery/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 2,
+      "growthScore": 87,
+      "heatChange90Days": 1,
+      "heatScore": 70
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 25.48
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.26
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 17.19
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Basaltex is a manufacturer of woven fabrics, meshes, geogrids, fibers and ropes.",
+          "employeeRange": "1-10",
+          "name": "Basaltex",
+          "similarityScore": 97
+        },
+        {
+          "description": "Sudaglass Fiber Technology is a manufacturing company that produces acid, moisture, and solvent resistance mineral and synthetic fibers.",
+          "employeeRange": "51-100",
+          "name": "Sudaglass Fiber Technology",
+          "similarityScore": 95
+        },
+        {
+          "description": "Shenzhen Capital Group is a venture capital company focused on cultivating national industries and shaping national brands.",
+          "employeeRange": "11-50",
+          "name": "Shenzhen Capital Group",
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 87 (+2 over 90 days) and market heat at 70 (+1).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Basaltex, Sudaglass Fiber Technology, Shenzhen Capital Group.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

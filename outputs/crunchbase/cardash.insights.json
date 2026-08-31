@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:58:48.745Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:58:48.686Z",
+    "url": "https://www.crunchbase.com/organization/cardash"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "CarDash",
+      "shortDescription": "CarDash offers services for the automotive industry.",
+      "description": "CarDash uses technology to make auto care transparent and convenient. We offer complete consumer and fleet services for the automotive industry, including scheduled maintenance, oil changes, tires and more! CarDash is headquartered in Menlo Park, California.",
+      "website": "https://www.cardash.com/",
+      "foundedYear": 2016,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Menlo Park, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Automotive",
+        "Customer Service",
+        "Service Industry"
+      ],
+      "sectors": [
+        "Other",
+        "Professional Services",
+        "Transportation"
+      ],
+      "founders": [
+        "Sam Corcos",
+        "Todd Opalski",
+        "Yinon Weiss"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 5300000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2017-08-08",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2017-08-08",
+          "amount": {
+            "amount": 5300000,
+            "currency": "USD"
+          },
+          "investorCount": 10,
+          "leadInvestors": [
+            "Felicis",
+            "Index Ventures"
+          ],
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2017-01-01",
+          "investorCount": 1,
+          "leadInvestors": [
+            "Afore Capital"
+          ],
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 10,
+        "visibleNames": [
+          {
+            "name": "Afore Capital",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Felicis",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Global Founders Capital",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Index Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Justin Waldron",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Louis Beryl",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "NextGen Venture Partners",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "NextView Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Pragma Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 5,
+      "includedUniqueCount": 5,
+      "items": [
+        {
+          "date": "2020-02-26",
+          "publisher": "PR Newswire",
+          "title": "RepairSmith Announces Acquisition of CarDash",
+          "url": "https://www.prnewswire.com/news-releases/repairsmith-announces-acquisition-of-cardash-301011260.html"
+        },
+        {
+          "date": "2020-02-26",
+          "title": "CarDash acquired by RepairSmith"
+        },
+        {
+          "date": "2017-08-23",
+          "publisher": "TechCrunch",
+          "title": "All the companies from Y Combinator’s Summer 2017 Demo Day (Day 2)",
+          "url": "https://techcrunch.com/2017/08/22/yc-demo-day-s17-day-2/"
+        },
+        {
+          "date": "2017-08-08",
+          "title": "Seed Round - CarDash"
+        },
+        {
+          "date": "2017-01-01",
+          "title": "Pre Seed Round - CarDash"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 5300000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -4,
+      "heatScore": 48
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $5,300,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

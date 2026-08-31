@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:33:01.728Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:33:01.671Z",
+    "url": "https://www.crunchbase.com/organization/jeugene"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "jEugene",
+      "shortDescription": "jEugene offers tools that assist lawyers to review and manage documents by highlighting terms and definitions, and creating notes.",
+      "description": "jEugene jumpstarts definitions checks. In seconds, it highlights undefined terms and unused definitions right in the text of documents, so that lawyers can focus on harder problems. Not so long ago, a corporate associate experienced firsthand the stress of definitions checking. Catching all undefined terms and unused definitions is hard, especially when time is short and terms complex.",
+      "website": "https://jeugene.com/",
+      "foundedYear": 2015,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "New York, United States",
+      "geographicRegions": [
+        "Greater New York Area",
+        "East Coast",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Developer Tools",
+        "Law Enforcement",
+        "Legal",
+        "Legal Tech"
+      ],
+      "sectors": [
+        "Government and Military",
+        "Privacy and Security",
+        "Professional Services",
+        "Software"
+      ],
+      "founders": [
+        "Harry Zhou"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2015-08-18",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2015-08-18",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2016-09-27",
+          "publisher": "PRWeb Sitemap",
+          "title": "jEugene Announces Quality Assurance Solution for Law Firms",
+          "url": "http://www.prweb.com/releases/2016/09/prweb13711846.htm"
+        },
+        {
+          "date": "2015-08-18",
+          "title": "Seed Round - jEugene"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -14,
+      "heatScore": 12
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Lawgeex is a legal tech startup developing an AI-powered contract review platform.",
+          "employeeRange": "51-100",
+          "name": "Lawgeex",
+          "sharedCategories": [
+            "Legal Tech",
+            "Legal"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "LegalOn Technologies is an AI platform helping lawyers improve corporate legal operations efficiency with advanced legal AI tools.",
+          "employeeRange": "501-1,000",
+          "name": "LegalOn Technologies",
+          "sharedCategories": [
+            "Legal Tech",
+            "Legal"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Litera is a legaltech firm that provides of document lifecycle and transaction management solutions.",
+          "employeeRange": "501-1,000",
+          "name": "Litera",
+          "sharedCategories": [
+            "Legal Tech",
+            "Legal"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "Evisort is an AI-powered platform for managing contracts through their lifecycle, including creation, analysis, and reporting.",
+          "employeeRange": "251-500",
+          "name": "Evisort",
+          "sharedCategories": [
+            "Legal Tech"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "Ironclad is a contract lifecycle management platform used by companies to handle every type of contract workflow.",
+          "employeeRange": "501-1,000",
+          "name": "Ironclad",
+          "sharedCategories": [
+            "Legal Tech"
+          ],
+          "similarityScore": 86
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $120,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Lawgeex, LegalOn Technologies, Litera.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

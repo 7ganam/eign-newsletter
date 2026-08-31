@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:09:24.494Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:09:24.437Z",
+    "url": "https://www.crunchbase.com/organization/flok"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Flok",
+      "shortDescription": "Flok provides digital marketing services.",
+      "website": "https://www.flok.co/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Bedok, East Region, Singapore",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)",
+        "Association of Southeast Asian Nations (ASEAN)",
+        "Southeast Asia"
+      ],
+      "industries": [
+        "Advertising",
+        "Content Creators",
+        "Digital Marketing"
+      ],
+      "sectors": [
+        "Advertising",
+        "Content and Publishing",
+        "Media and Entertainment",
+        "Sales and Marketing"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -3,
+      "growthScore": 85,
+      "heatChange90Days": -20,
+      "heatScore": 55
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 81.67
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Wpromote is an online marketing firm specializing in digital marketing and customer acquisition.",
+          "employeeRange": "501-1,000",
+          "name": "Wpromote",
+          "sharedCategories": [
+            "Advertising",
+            "Digital Marketing"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "SmartSites provides digital marketing services including web design, SEO, PPC, and social media management.",
+          "employeeRange": "251-500",
+          "name": "SmartSites",
+          "sharedCategories": [
+            "Digital Marketing"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "Disruptive Advertising helps businesses advertise profitably on Google and Facebook with our proprietary software and team of marketers.",
+          "employeeRange": "51-100",
+          "name": "Disruptive Advertising",
+          "sharedCategories": [
+            "Advertising",
+            "Digital Marketing"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Edelman, a public relations firm, offers analysis, advertising, marketing, branding, and content and strategy management services.",
+          "employeeRange": "5,001-10,000",
+          "name": "Edelman",
+          "sharedCategories": [
+            "Advertising"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "WebFX is a tech-enabled digital marketing agency that drives measurable growth from AI search and SEO, paid advertising, and more.",
+          "employeeRange": "501-1,000",
+          "name": "WebFX",
+          "sharedCategories": [
+            "Advertising",
+            "Digital Marketing"
+          ],
+          "similarityScore": 91
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 85 (-3 over 90 days) and market heat at 55 (-20).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Wpromote, SmartSites, Disruptive Advertising.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

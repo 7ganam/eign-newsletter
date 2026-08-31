@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T09:44:19.698Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T09:44:19.644Z",
+    "url": "https://www.crunchbase.com/organization/altrina-ltd"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "ALTRINA",
+      "shortDescription": "Altrina develops AI agents and an SOP automation platform for complex enterprise workflows in regulated industries.",
+      "description": "Altrina develops enterprise software that uses autonomous AI agents to automate complex, multi-step workflows and standard operating procedures in regulated industries. The company focuses on back-office operations such as claims processing, prior authorizations, contract review, legal filings, and support ticket handling. Its platform connects via APIs and autonomous browser access to thousands of enterprise systems, including healthcare, legal, and financial applications. Altrina allows operations, finance, legal, and healthcare teams to define workflows in plain language and run them at scale across fragmented technology stacks. The software records each agent action for auditability and is designed to operate within existing legal, compliance, and security controls. It targets organizations seeking to reduce manual workload while maintaining strict regulatory and data protection requirements.",
+      "website": "https://www.altrina.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "London, England, United Kingdom",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Compliance",
+        "Enterprise Software",
+        "Financial Services",
+        "Health Care",
+        "Legal Tech",
+        "Robotic Process Automation (RPA)",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Financial Services",
+        "Health Care",
+        "Professional Services",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Altrina SOP Automation Platform provides AI agents that execute text-defined workflows across enterprise systems for regulated operations.",
+        "name": "Altrina SOP Automation Platform"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2026-07-20",
+          "title": "ALTRINA acquired by Abridge"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 80,
+      "growthScore": 89,
+      "heatChange90Days": 82,
+      "heatScore": 82
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-06-27",
+        "probabilityPercent": 35
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 85.96
+      },
+      "ipo": {
+        "generatedDate": "2026-06-27",
+        "probabilityPercent": 35
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 89 (+80 over 90 days) and market heat at 82 (+82).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}
