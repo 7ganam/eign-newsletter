@@ -14,7 +14,9 @@ import {
 } from '../src/linkedinFollowerData'
 
 const API_PORT = Number(process.env.API_PORT ?? 18321)
-const PROJECT_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
+const PROJECT_ROOT = process.env.VERCEL
+  ? process.cwd()
+  : resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const DATA_FILES = {
   companies: resolve(PROJECT_ROOT, 'eign_index.companies.json'),
   rounds: resolve(PROJECT_ROOT, 'eign_index.rounds.json'),
@@ -246,7 +248,7 @@ const saveJsonCell = async (collection: JsonCollection, recordId: string, field:
   return operation
 }
 
-const app = new Hono()
+export const app = new Hono()
 const escapeRegex = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 const hasOwn = (record: DataRecord, field: string) => Object.prototype.hasOwnProperty.call(record, field)
 const asNumber = (value: unknown) => typeof value === 'number' && Number.isFinite(value) ? value : 0
@@ -1419,24 +1421,26 @@ app.onError((error, context) => {
   return context.json({ error: 'The local file data service could not complete this request.' }, 500)
 })
 
-if (process.env.NODE_ENV === 'production') {
-  app.use('/*', serveStatic({ root: './dist' }))
-  app.get('*', serveStatic({ path: './dist/index.html' }))
+if (!process.env.VERCEL) {
+  if (process.env.NODE_ENV === 'production') {
+    app.use('/*', serveStatic({ root: './dist' }))
+    app.get('*', serveStatic({ path: './dist/index.html' }))
+  }
+
+  const server = serve({
+    fetch: app.fetch,
+    hostname: '127.0.0.1',
+    port: API_PORT,
+  })
+
+  console.log(`EIGN file data server listening at http://127.0.0.1:${API_PORT}`)
+  console.log(`Loaded ${companyRecords.length.toLocaleString()} companies and ${roundRecords.length.toLocaleString()} rounds from JSON files`)
+
+  const shutdown = () => {
+    server.close()
+    process.exit(0)
+  }
+
+  process.on('SIGINT', shutdown)
+  process.on('SIGTERM', shutdown)
 }
-
-const server = serve({
-  fetch: app.fetch,
-  hostname: '127.0.0.1',
-  port: API_PORT,
-})
-
-console.log(`EIGN file data server listening at http://127.0.0.1:${API_PORT}`)
-console.log(`Loaded ${companyRecords.length.toLocaleString()} companies and ${roundRecords.length.toLocaleString()} rounds from JSON files`)
-
-const shutdown = () => {
-  server.close()
-  process.exit(0)
-}
-
-process.on('SIGINT', shutdown)
-process.on('SIGTERM', shutdown)
