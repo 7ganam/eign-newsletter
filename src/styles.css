@@ -2960,6 +2960,15 @@ a {
   outline-offset: -2px;
 }
 
+.software-cell--link a {
+  min-width: 0;
+  overflow: hidden;
+  color: inherit;
+  text-overflow: ellipsis;
+  text-decoration: inherit;
+  white-space: nowrap;
+}
+
 .software-source {
   display: inline-flex;
   height: 19px;

@@ -284,6 +284,55 @@ const saveSoftwareCompanyCell = async (rowKey: string, field: string, value: str
   return operation
 }
 
+const VALID_LINKS_FILE = resolve(PROJECT_ROOT, 'valid links.json')
+
+const crunchbasePermalinkFromUrl = (url: string) => {
+  try {
+    const parsed = new URL(url)
+    if (!parsed.hostname.endsWith('crunchbase.com')) return ''
+    const match = parsed.pathname.match(/^\/organization\/([^/]+)\/?$/i)
+    return match ? decodeURIComponent(match[1]) : ''
+  } catch {
+    return ''
+  }
+}
+
+const organizationLabelFromPermalink = (permalink: string) => {
+  if (!permalink) return ''
+  return permalink
+    .split(/[-_]+/)
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(' ')
+}
+
+const loadValidLinks = async () => {
+  const parsed: unknown = JSON.parse(await readFile(VALID_LINKS_FILE, 'utf8'))
+  if (!Array.isArray(parsed)) throw new Error('Expected a JSON array in valid links.json')
+
+  const items = parsed.flatMap((value, index) => {
+    if (typeof value !== 'string') return []
+    const url = value.trim()
+    if (!url) return []
+    const permalink = crunchbasePermalinkFromUrl(url)
+    return [{
+      __rowId: String(index),
+      organization: organizationLabelFromPermalink(permalink) || permalink || url,
+      permalink,
+      url,
+    }]
+  })
+
+  return {
+    items,
+    summary: {
+      total: items.length,
+      unique: new Set(items.map((item) => item.url)).size,
+    },
+    source: 'valid links.json',
+  }
+}
+
 const NEWSLETTER_RESEARCH_FILE = resolve(PROJECT_ROOT, 'assets/newsletter-research.csv')
 const NEWSLETTER_FIELD_COLUMNS = {
   newsletter: 'Newsletter',
@@ -839,6 +888,14 @@ app.patch('/api/influencers/:rowId', async (context) => {
     return context.json({ item })
   } catch (error) {
     return context.json({ error: error instanceof Error ? error.message : 'The influencer cell could not be saved.' }, 400)
+  }
+})
+
+app.get('/api/valid-links', async (context) => {
+  try {
+    return context.json(await loadValidLinks())
+  } catch (error) {
+    return context.json({ error: error instanceof Error ? error.message : 'Unable to load valid links.json.' }, 500)
   }
 })
 
