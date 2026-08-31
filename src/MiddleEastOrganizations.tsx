@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import entityData from '../assets/riseup-summit-2026-entities.json'
 import { ResizableDataTable } from './resizableColumns'
+import { WorkspaceNav } from './WorkspaceNav'
 
 type Organization = {
   id: string
@@ -41,15 +42,7 @@ export function MiddleEastOrganizations() {
       <header className="workspace-header">
         <a className="workspace-brand" href="/">EI</a>
         <div className="workspace-title"><strong>EIGN data workspace</strong><span>Companies, capital, and ecosystem people</span></div>
-        <nav aria-label="Primary navigation">
-          <a href="/">Dashboard</a>
-          <a href="/software-companies">Software companies</a>
-          <a href="/influencers">Influencers</a>
-          <a href="/research">Startups</a>
-          <a href="/newsletters">Newsletters</a>
-          <a href="/posts">Posts</a>
-          <a href="/in-progress" aria-current="page">In progress</a>
-        </nav>
+        <WorkspaceNav active="in-progress" />
       </header>
 
       <main className="middle-east-organizations-main">

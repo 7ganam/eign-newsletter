@@ -7,6 +7,7 @@ import webSearchPeopleUrl from '../assets/people/web-search-people.json?url'
 import { ColumnResizeHandle, useResizableColumns } from './resizableColumns'
 import { usePersistedSort } from './tablePreferences'
 import type { UnifiedPeopleFile, UnifiedPeopleSourceId, UnifiedPerson } from './unifiedPeopleTypes'
+import { WorkspaceNav } from './WorkspaceNav'
 
 type PeopleColumn = 'person' | 'role' | 'organization' | 'market' | 'lane' | 'linkedin' | 'followers' | 'profile' | 'events' | 'signals' | 'sources'
 type SourceFilter = 'all' | UnifiedPeopleSourceId | 'multi-source'
@@ -75,7 +76,7 @@ const sortValue = (person: UnifiedPerson, column: PeopleColumn): string | number
   if (column === 'followers') return followerCount(person) ?? -1
   if (column === 'profile') return person.biography ?? person.specialties.join(' ')
   if (column === 'events') return person.event_appearances.length * 10_000 + sessionCount(person)
-  if (column === 'signals') return Number(person.influence.priority) * 4 + Number(person.influence.arabic_or_bilingual) * 2 + Number(person.influence.middle_eastern.value)
+  if (column === 'signals') return Number(person.influence.priority) * 2 + Number(person.influence.middle_eastern.value)
   return person.source_ids.length
 }
 
@@ -257,45 +258,38 @@ export function UnifiedPeople() {
       <header className="workspace-header">
         <a className="workspace-brand" href="/">EI</a>
         <div className="workspace-title"><strong>EIGN data workspace</strong><span>Unified people and source provenance</span></div>
-        <nav aria-label="Primary navigation">
-          <a href="/">Dashboard</a>
-          <a href="/software-companies">Software companies</a>
-          <a href="/influencers">Influencers</a>
-          <a href="/research">Startups</a>
-          <a href="/newsletters">Newsletters</a>
-          <a href="/posts">Posts</a>
-          <a href="/people" aria-current="page">Unified people</a>
-        </nav>
+        <WorkspaceNav active="in-progress" />
       </header>
 
       <main className="unified-people-main">
-        <section className="unified-people-hero" aria-labelledby="unified-people-title">
-          <div className="unified-people-hero__copy">
-            <span className="unified-people-eyebrow">PEOPLE / NORMALIZED / V1</span>
-            <h1 id="unified-people-title">One register.<br />Every source intact.</h1>
-            <p>LEAP, RiseUp, and web research reconciled into a shared people schema. Original records remain embedded as provenance.</p>
+        <section className="unified-people-summary" aria-labelledby="unified-people-title">
+          <div className="unified-people-summary__header">
+            <div>
+              <h1 id="unified-people-title">Unified people</h1>
+              <p>LEAP, RiseUp, and web-search records in one table.</p>
+            </div>
+            <span>{data ? `Generated ${formatDate(data.generated_at)}` : 'Loading data…'}</span>
           </div>
-          <div className="unified-people-metrics" aria-label="Unified people summary">
-            <span><small>Unique people</small><strong>{data?.stats.unique_people.toLocaleString() ?? '—'}</strong></span>
-            <span><small>Source records</small><strong>{data?.stats.source_records.toLocaleString() ?? '—'}</strong></span>
-            <span><small>Multi-source</small><strong>{data?.stats.multi_source_people.toLocaleString() ?? '—'}</strong></span>
-            <span><small>Schema</small><strong>{data?.schema_version ?? 'people.v1'}</strong></span>
-          </div>
-          <div className="unified-people-files" aria-label="Generated JSON files">
-            <a href={unifiedPeopleUrl} download>Unified JSON <span>↓</span></a>
-            <a href={leapPeopleUrl} download>LEAP JSON <span>↓</span></a>
-            <a href={riseUpPeopleUrl} download>RiseUp JSON <span>↓</span></a>
-            <a href={webSearchPeopleUrl} download>Web JSON <span>↓</span></a>
+          <div className="unified-people-summary__body">
+            <dl className="unified-people-metrics" aria-label="Dataset summary">
+              <div><dt>People</dt><dd>{data?.stats.unique_people.toLocaleString() ?? '—'}</dd></div>
+              <div><dt>Source records</dt><dd>{data?.stats.source_records.toLocaleString() ?? '—'}</dd></div>
+              <div><dt>Multi-source</dt><dd>{data?.stats.multi_source_people.toLocaleString() ?? '—'}</dd></div>
+              <div><dt>Schema</dt><dd>{data?.schema_version ?? 'people.v1'}</dd></div>
+            </dl>
+            <div className="unified-people-files" aria-label="Download generated JSON files">
+              <span>Download JSON</span>
+              <a href={unifiedPeopleUrl} download>Unified</a>
+              <a href={leapPeopleUrl} download>LEAP</a>
+              <a href={riseUpPeopleUrl} download>RiseUp</a>
+              <a href={webSearchPeopleUrl} download>Web search</a>
+            </div>
           </div>
         </section>
 
         <section className="unified-register" aria-labelledby="unified-register-title">
           <header className="unified-register__header">
-            <div>
-              <span>REGISTER 01</span>
-              <h2 id="unified-register-title">Unified people table</h2>
-            </div>
-            <p>{data ? `Generated ${formatDate(data.generated_at)}` : 'Loading generated file…'}</p>
+            <h2 id="unified-register-title">People table</h2>
           </header>
 
           <div className="unified-people-toolbar">
@@ -365,7 +359,7 @@ export function UnifiedPeople() {
                       <td>{followers === null ? <span className="unified-empty">—</span> : <span className="unified-follower"><strong>{formatFollowers(followers)}</strong><small>{linkedIn?.followers?.precision ?? 'observed'}</small></span>}</td>
                       <td>{person.biography || person.specialties.length ? <details className="unified-profile-notes"><summary>{person.specialties.join(' · ') || person.biography}</summary>{person.specialties.length > 0 && <strong>{person.specialties.join(' · ')}</strong>}{person.biography && <p>{person.biography}</p>}</details> : <span className="unified-empty">—</span>}</td>
                       <td>{person.event_appearances.length ? <div className="unified-events">{person.event_appearances.map((appearance, appearanceIndex) => <span key={`${person.id}-${appearance.event_id}-${appearance.speaker_id ?? appearance.profile_url ?? appearanceIndex}`}><b>{SOURCE_SHORT_LABELS[appearance.event_id]}</b>{appearance.profile_url ? <a href={appearance.profile_url} target="_blank" rel="noreferrer">Profile ↗</a> : <small>{appearance.speaker_id ? `Speaker ${appearance.speaker_id}` : 'Appearance'}</small>}</span>)}{sessions > 0 && <em>{sessions} {sessions === 1 ? 'session' : 'sessions'}</em>}</div> : <span className="unified-empty">—</span>}</td>
-                      <td><div className="unified-signals">{person.influence.priority && <span className="is-priority">Priority</span>}{person.influence.arabic_or_bilingual && <span>AR / EN</span>}{person.influence.middle_eastern.value && <span>Middle Eastern</span>}{!person.influence.priority && !person.influence.arabic_or_bilingual && !person.influence.middle_eastern.value && <span className="unified-empty">—</span>}</div></td>
+                      <td><div className="unified-signals">{person.influence.priority && <span className="is-priority">Priority</span>}{person.influence.middle_eastern.value && <span>Middle Eastern</span>}{!person.influence.priority && !person.influence.middle_eastern.value && <span className="unified-empty">—</span>}</div></td>
                       <td><SourceBadges sourceIds={person.source_ids} /><small className="unified-cell-note">{person.source_records.length} source {person.source_records.length === 1 ? 'record' : 'records'}</small></td>
                     </tr>
                   )

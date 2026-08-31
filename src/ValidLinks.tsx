@@ -3,6 +3,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import type { CSSProperties } from 'react'
 import { ColumnResizeHandle, useResizableColumns } from './resizableColumns'
 import { usePersistedSort } from './tablePreferences'
+import { WorkspaceNav } from './WorkspaceNav'
 
 type ValidLinkRecord = {
   __rowId: string
@@ -136,15 +137,7 @@ export function ValidLinks() {
       <header className="workspace-header">
         <a className="workspace-brand" href="/">EI</a>
         <div className="workspace-title"><strong>EIGN data workspace</strong><span>Companies, capital, and ecosystem directories</span></div>
-        <nav aria-label="Primary navigation">
-          <a href="/">Dashboard</a>
-          <a href="/software-companies">Software companies</a>
-          <a href="/influencers">Influencers</a>
-          <a href="/research">Startups</a>
-          <a href="/newsletters">Newsletters</a>
-          <a href="/posts">Posts</a>
-          <a href="/in-progress" aria-current="page">In progress</a>
-        </nav>
+        <WorkspaceNav active="in-progress" />
       </header>
 
       <main className="software-main">

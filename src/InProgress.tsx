@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { WorkspaceNav } from './WorkspaceNav'
 
 export function InProgress() {
   useEffect(() => {
@@ -12,24 +13,21 @@ export function InProgress() {
       <header className="workspace-header">
         <a className="workspace-brand" href="/">EI</a>
         <div className="workspace-title"><strong>EIGN data workspace</strong><span>Active research and editorial work</span></div>
-        <nav aria-label="Primary navigation">
-          <a href="/">Dashboard</a>
-          <a href="/software-companies">Software companies</a>
-          <a href="/influencers">Influencers</a>
-          <a href="/research">Startups</a>
-          <a href="/newsletters">Newsletters</a>
-          <a href="/posts">Posts</a>
-          <a href="/in-progress" aria-current="page">In progress</a>
-        </nav>
+        <WorkspaceNav active="in-progress" />
       </header>
 
       <main className="in-progress-main">
         <header className="posts-heading">
           <div><h1>In progress</h1><p>Active research, analysis, and editorial work.</p></div>
-          <span>4 items</span>
+          <span>5 items</span>
         </header>
 
         <section className="in-progress-list" aria-label="In-progress items">
+          <a className="in-progress-item" href="/people">
+            <span className="in-progress-item__status" aria-hidden="true" />
+            <strong>Unified People</strong>
+            <span className="in-progress-item__action">Open <b aria-hidden="true">→</b></span>
+          </a>
           <a className="in-progress-item" href="/influncers-2">
             <span className="in-progress-item__status" aria-hidden="true" />
             <strong>RiseUp Data</strong>

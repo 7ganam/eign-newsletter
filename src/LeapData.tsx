@@ -1,8 +1,10 @@
 import { useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
 import type { CSSProperties, DragEvent as ReactDragEvent, PointerEvent as ReactPointerEvent } from 'react'
-import leapData from '../assets/leap-2026-speakers.json'
+import leapPeopleUrl from '../assets/people/leap-2026-people.json?url'
 import { ColumnResizeHandle, useResizableColumns } from './resizableColumns'
 import { usePersistedSort } from './tablePreferences'
+import type { UnifiedPeopleSourceFile } from './unifiedPeopleTypes'
+import { WorkspaceNav } from './WorkspaceNav'
 
 type LeapSpeaker = {
   name: string
@@ -239,7 +241,17 @@ const CAMPAIGN_SIGNAL_LABEL: Record<CampaignSignal, string> = {
   uncertain: 'No current signal',
 }
 
-const speakers = (leapData as LeapSpeaker[]).map((speaker, sourceIndex): IndexedLeapSpeaker => {
+const convertedLeapSpeakers = (data: UnifiedPeopleSourceFile) => data.people.map((person, sourceIndex): IndexedLeapSpeaker => {
+  const appearance = person.event_appearances.find((item) => item.event_id === 'leap-2026')
+  const sourceRecord = person.source_records.find((item) => item.source_id === 'leap-2026')
+  const speaker: LeapSpeaker = {
+    name: person.name.display,
+    title: person.current_role.title,
+    organization: person.current_role.organization,
+    profile_url: appearance?.profile_url ?? sourceRecord?.source_url ?? '',
+    image_src: person.image.source_path ?? person.image.url ?? '',
+    image_alt: person.image.alt ?? person.name.display,
+  }
   const explicitRegionSignal = hasMiddleEastRegionSignal(speaker)
   const nameSignal = arabicNameSignal(speaker.name)
   const automaticMiddleEastNameMatch = hasAutomaticMiddleEastNameMatch(speaker.name)
@@ -372,6 +384,8 @@ function LeapSpeakerCell({
 }
 
 export function LeapData() {
+  const [speakers, setSpeakers] = useState<IndexedLeapSpeaker[]>([])
+  const [loadError, setLoadError] = useState('')
   const [query, setQuery] = useState('')
   const [completeness, setCompleteness] = useState<CompletenessFilter>('all')
   const [campaignFilter, setCampaignFilter] = useState<CampaignFilter>('all')
@@ -433,11 +447,11 @@ export function LeapData() {
         const comparison = leftValue.localeCompare(rightValue, undefined, { numeric: true, sensitivity: 'base' })
         return (sortDirection === 'asc' ? comparison : -comparison) || left.sourceIndex - right.sourceIndex
       })
-  }, [campaignOverrides, completeness, campaignFilter, deferredQuery, sortDirection, sortField])
+  }, [campaignOverrides, completeness, campaignFilter, deferredQuery, sortDirection, sortField, speakers])
 
   const checkedTargetCount = useMemo(
     () => speakers.reduce((total, speaker) => total + Number(isCampaignChecked(speaker, campaignOverrides)), 0),
-    [campaignOverrides],
+    [campaignOverrides, speakers],
   )
 
   const pageCount = Math.max(1, Math.ceil(results.length / PAGE_SIZE))
@@ -449,8 +463,22 @@ export function LeapData() {
 
   useEffect(() => {
     const previousTitle = document.title
+    const controller = new AbortController()
     document.title = 'LEAP 2026 speaker data · EIGN Data Workspace'
+
+    fetch(leapPeopleUrl, { signal: controller.signal })
+      .then((response) => {
+        if (!response.ok) throw new Error(`The converted LEAP people file returned ${response.status}.`)
+        return response.json() as Promise<UnifiedPeopleSourceFile>
+      })
+      .then((data) => setSpeakers(convertedLeapSpeakers(data)))
+      .catch((error) => {
+        if (controller.signal.aborted) return
+        setLoadError(error instanceof Error ? error.message : 'Unable to load the converted LEAP people file.')
+      })
+
     return () => {
+      controller.abort()
       pointerDragCleanup.current?.()
       document.title = previousTitle
     }
@@ -586,15 +614,7 @@ export function LeapData() {
       <header className="workspace-header">
         <a className="workspace-brand" href="/">EI</a>
         <div className="workspace-title"><strong>EIGN data workspace</strong><span>Companies, capital, and ecosystem people</span></div>
-        <nav aria-label="Primary navigation">
-          <a href="/">Dashboard</a>
-          <a href="/software-companies">Software companies</a>
-          <a href="/influencers">Influencers</a>
-          <a href="/research">Startups</a>
-          <a href="/newsletters">Newsletters</a>
-          <a href="/posts">Posts</a>
-          <a href="/in-progress" aria-current="page">In progress</a>
-        </nav>
+        <WorkspaceNav active="in-progress" />
       </header>
 
       <main className="riseup-speakers-main leap-data-main">
@@ -726,7 +746,11 @@ export function LeapData() {
                 ))}
               </tbody>
             </table>
-            {!results.length && <div className="empty-results">No LEAP speakers match the current filters.</div>}
+            {!results.length && (
+              <div className="empty-results">
+                {loadError || (speakers.length ? 'No LEAP speakers match the current filters.' : 'Loading converted LEAP speakers…')}
+              </div>
+            )}
           </div>
 
           <footer className="leap-data-pager">

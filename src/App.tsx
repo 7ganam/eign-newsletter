@@ -5,6 +5,7 @@ import { dateEditorValue, InlineEdit } from './editableCells'
 import { displayList, formatDate, formatMoney, formatNumber, initials, truncateLabel } from './lib'
 import { ResizableDataTable } from './resizableColumns'
 import { restoreStoredChoice, saveStoredChoice } from './tablePreferences'
+import { WorkspaceNav } from './WorkspaceNav'
 import type {
   CompanyDetailResponse,
   CompanyListResponse,
@@ -443,15 +444,7 @@ export function App() {
       <header className="workspace-header">
         <a className="workspace-brand" href="/">EI</a>
         <div className="workspace-title"><strong>EIGN data workspace</strong><span>Companies and funding records</span></div>
-        <nav aria-label="Primary navigation">
-          <a href="/" aria-current="page">Dashboard</a>
-          <a href="/software-companies">Software companies</a>
-          <a href="/influencers">Influencers</a>
-          <a href="/research">Startups</a>
-          <a href="/newsletters">Newsletters</a>
-          <a href="/posts">Posts</a>
-          <a href="/in-progress">In progress</a>
-        </nav>
+        <WorkspaceNav active="dashboard" />
       </header>
 
       <main className="dashboard-main">

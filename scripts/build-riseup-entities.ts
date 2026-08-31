@@ -1,8 +1,9 @@
 import { createHash } from 'node:crypto'
 import { readFile, rename, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
+import type { UnifiedPeopleSourceFile } from '../src/unifiedPeopleTypes'
 
-const SPEAKERS_PATH = resolve(process.cwd(), 'assets/riseup-summit-2026-speakers.json')
+const PEOPLE_PATH = resolve(process.cwd(), 'assets/people/riseup-2026-people.json')
 const COMPANIES_PATH = resolve(process.cwd(), 'eign_index.companies.json')
 const OUTPUT_PATH = resolve(process.cwd(), 'assets/riseup-summit-2026-entities.json')
 const NON_ORGANIZATION_VALUES = new Set(['-', 'n/a', 'na'])
@@ -12,13 +13,6 @@ type SourceSpeaker = {
   attendee_id: number
   passport_name: string
   institute: string | null
-}
-
-type SourceData = {
-  event: string
-  source: string
-  source_data_updated_at: string | null
-  speakers: SourceSpeaker[]
 }
 
 type Company = {
@@ -61,7 +55,21 @@ const readExistingEntities = async (): Promise<ExistingEntityData> => {
   }
 }
 
-const source = JSON.parse(await readFile(SPEAKERS_PATH, 'utf8')) as SourceData
+const converted = JSON.parse(await readFile(PEOPLE_PATH, 'utf8')) as UnifiedPeopleSourceFile
+const source = {
+  event: 'RiseUp Summit 2026 — Egypt',
+  source: converted.source.url,
+  source_data_updated_at: converted.source.observed_at,
+  speakers: converted.people.map((person): SourceSpeaker => {
+    const appearance = person.event_appearances.find((item) => item.event_id === 'riseup-2026')
+    return {
+      id: Number(appearance?.speaker_id),
+      attendee_id: Number(appearance?.attendee_id),
+      passport_name: person.name.passport ?? person.name.display,
+      institute: person.current_role.organization,
+    }
+  }),
+}
 const companies = JSON.parse(await readFile(COMPANIES_PATH, 'utf8')) as Company[]
 const existing = await readExistingEntities()
 

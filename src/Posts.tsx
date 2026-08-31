@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { WorkspaceNav } from './WorkspaceNav'
 
 export function Posts() {
   useEffect(() => {
@@ -12,15 +13,7 @@ export function Posts() {
       <header className="workspace-header">
         <a className="workspace-brand" href="/">EI</a>
         <div className="workspace-title"><strong>EIGN data workspace</strong><span>Saved analytical views from local datasets</span></div>
-        <nav aria-label="Primary navigation">
-          <a href="/">Dashboard</a>
-          <a href="/software-companies">Software companies</a>
-          <a href="/influencers">Influencers</a>
-          <a href="/research">Startups</a>
-          <a href="/newsletters">Newsletters</a>
-          <a href="/posts" aria-current="page">Posts</a>
-          <a href="/in-progress">In progress</a>
-        </nav>
+        <WorkspaceNav active="posts" />
       </header>
 
       <main className="posts-main">

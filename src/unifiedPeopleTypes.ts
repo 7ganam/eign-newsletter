@@ -1,5 +1,40 @@
 export type UnifiedPeopleSourceId = 'leap-2026' | 'riseup-2026' | 'web-search'
 
+export type InfluencerCountry =
+  | 'Egypt'
+  | 'Saudi Arabia'
+  | 'United Arab Emirates'
+  | 'Qatar'
+  | 'Bahrain'
+  | 'Kuwait'
+  | 'Oman'
+  | 'Regional'
+
+export type InfluencerLane =
+  | 'Founder'
+  | 'Investor'
+  | 'Ecosystem'
+  | 'Policy'
+  | 'Media & Research'
+
+export type Influencer = {
+  name: string
+  country: InfluencerCountry
+  lane: InfluencerLane
+  organisation: string
+  linkedinUrl: string
+  priority: boolean
+  arabicOrBilingual: boolean
+}
+
+export type LinkedInFollowerSnapshot = {
+  count: number | null
+  observedAt: string | null
+  status: 'observed' | 'not-verified'
+  precision?: 'exact' | 'rounded'
+  source?: 'linkedin-profile' | 'search-index'
+}
+
 export type UnifiedPeopleSource = {
   id: UnifiedPeopleSourceId
   name: string
@@ -77,7 +112,6 @@ export type UnifiedPerson = {
   influence: {
     lane: string | null
     priority: boolean | null
-    arabic_or_bilingual: boolean | null
     middle_eastern: {
       value: boolean | null
       method: string | null

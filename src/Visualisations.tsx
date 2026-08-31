@@ -2,6 +2,7 @@ import * as d3 from 'd3'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { voronoiTreemap } from 'd3-voronoi-treemap'
 import { formatMoney, formatNumber, initials } from './lib'
+import { WorkspaceNav } from './WorkspaceNav'
 import type {
   FundingLandscapeCompany,
   FundingLandscapeResponse,
@@ -865,15 +866,7 @@ export function Visualisations() {
       <header className="workspace-header">
         <a className="workspace-brand" href="/">EI</a>
         <div className="workspace-title"><strong>EIGN data workspace</strong><span>Companies and funding records</span></div>
-        <nav aria-label="Primary navigation">
-          <a href="/">Dashboard</a>
-          <a href="/software-companies">Software companies</a>
-          <a href="/influencers">Influencers</a>
-          <a href="/research">Startups</a>
-          <a href="/newsletters">Newsletters</a>
-          <a href="/posts" aria-current="page">Posts</a>
-          <a href="/in-progress">In progress</a>
-        </nav>
+        <WorkspaceNav active="posts" />
       </header>
 
       <main id="top" className="visualisations-main">

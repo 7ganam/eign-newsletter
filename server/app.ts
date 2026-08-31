@@ -4,12 +4,14 @@ import { fileURLToPath } from 'node:url'
 import { csvFormat, csvParse } from 'd3'
 import { Hono } from 'hono'
 import { logger } from 'hono/logger'
-import { INFLUENCERS, INFLUENCERS_VERIFIED_AT, type Influencer } from '../src/influencerData'
-import {
-  LINKEDIN_FOLLOWERS,
-  LINKEDIN_FOLLOWERS_UPDATED_AT,
-  type LinkedInFollowerSnapshot,
-} from '../src/linkedinFollowerData'
+import webSearchPeopleData from '../assets/people/web-search-people.json'
+import type {
+  Influencer,
+  LinkedInFollowerSnapshot,
+  UnifiedFollowerSnapshot,
+  UnifiedPeopleSourceFile,
+  UnifiedPerson,
+} from '../src/unifiedPeopleTypes'
 
 const PROJECT_ROOT = process.env.VERCEL
   ? process.cwd()
@@ -19,10 +21,7 @@ const DATA_FILES = {
   rounds: resolve(PROJECT_ROOT, 'eign_index.rounds.json'),
 } as const
 const TABLE_PREFERENCES_FILE = resolve(PROJECT_ROOT, 'assets/table-preferences.json')
-const INFLUENCER_FILES = {
-  directory: resolve(PROJECT_ROOT, 'src/influencerData.ts'),
-  followers: resolve(PROJECT_ROOT, 'src/linkedinFollowerData.ts'),
-} as const
+const WEB_SEARCH_PEOPLE_FILE = resolve(PROJECT_ROOT, 'assets/people/web-search-people.json')
 
 class FileObjectId {
   constructor(readonly value: string) {}
@@ -530,15 +529,54 @@ const saveNewsletterCell = async (rowId: string, field: NewsletterField, value: 
   return operation
 }
 
-type InfluencerRow = Influencer & {
+type ActiveInfluencer = Pick<Influencer, 'name' | 'country' | 'lane' | 'organisation' | 'linkedinUrl' | 'priority'>
+
+type InfluencerRow = ActiveInfluencer & {
   __rowId: string
   follower: LinkedInFollowerSnapshot
 }
 
-const influencerRecords = INFLUENCERS.map((influencer) => ({ ...influencer }))
-const influencerFollowerSnapshots = INFLUENCERS.map((influencer) => ({
-  ...(LINKEDIN_FOLLOWERS[influencer.linkedinUrl] ?? { count: null, observedAt: null, status: 'not-verified' as const }),
-}))
+type WebSearchRawRecord = {
+  directory: Influencer
+  follower: UnifiedFollowerSnapshot
+  followers_updated_at: string
+}
+
+const webSearchPeopleFile = structuredClone(webSearchPeopleData) as UnifiedPeopleSourceFile
+
+const webSearchRawRecord = (person: UnifiedPerson) =>
+  person.source_records.find((record) => record.source_id === 'web-search')?.raw as WebSearchRawRecord | undefined
+
+const influencerFromPerson = (person: UnifiedPerson): ActiveInfluencer => {
+  const rawDirectory = webSearchRawRecord(person)?.directory
+  const linkedIn = person.profiles.find((profile) => profile.platform === 'linkedin')
+  return {
+    name: person.name.display,
+    country: rawDirectory?.country ?? person.location.country as Influencer['country'] ?? 'Regional',
+    lane: person.influence.lane as Influencer['lane'] ?? rawDirectory?.lane ?? 'Ecosystem',
+    organisation: person.current_role.organization ?? rawDirectory?.organisation ?? 'Unknown',
+    linkedinUrl: linkedIn?.url ?? rawDirectory?.linkedinUrl ?? '',
+    priority: person.influence.priority ?? rawDirectory?.priority ?? false,
+  }
+}
+
+const followerFromPerson = (person: UnifiedPerson): LinkedInFollowerSnapshot => {
+  const follower = person.profiles.find((profile) => profile.platform === 'linkedin')?.followers
+  return follower ? {
+    count: follower.count,
+    observedAt: follower.observed_at,
+    status: follower.status,
+    precision: follower.precision ?? undefined,
+    source: follower.source ?? undefined,
+  } : {
+    count: null,
+    observedAt: null,
+    status: 'not-verified',
+  }
+}
+
+const influencerRecords = webSearchPeopleFile.people.map(influencerFromPerson)
+const influencerFollowerSnapshots = webSearchPeopleFile.people.map(followerFromPerson)
 let influencerWriteQueue = Promise.resolve()
 
 const influencerRow = (index: number): InfluencerRow => ({
@@ -547,126 +585,76 @@ const influencerRow = (index: number): InfluencerRow => ({
   follower: influencerFollowerSnapshots[index],
 })
 
-const findArrayObjectBounds = (source: string, marker: string, targetIndex: number) => {
-  const markerIndex = source.indexOf(marker)
-  const assignmentIndex = markerIndex >= 0 ? source.indexOf('= [', markerIndex + marker.length) : -1
-  const arrayStart = assignmentIndex >= 0 ? source.indexOf('[', assignmentIndex) : -1
-  if (arrayStart < 0) return null
-
-  let quote = ''
-  let escaped = false
-  let lineComment = false
-  let blockComment = false
-  let depth = 0
-  let objectStart = -1
-  let objectIndex = -1
-
-  for (let index = arrayStart + 1; index < source.length; index += 1) {
-    const character = source[index]
-    const next = source[index + 1]
-    if (lineComment) {
-      if (character === '\n') lineComment = false
-      continue
-    }
-    if (blockComment) {
-      if (character === '*' && next === '/') {
-        blockComment = false
-        index += 1
-      }
-      continue
-    }
-    if (quote) {
-      if (escaped) escaped = false
-      else if (character === '\\') escaped = true
-      else if (character === quote) quote = ''
-      continue
-    }
-    if (character === '/' && next === '/') {
-      lineComment = true
-      index += 1
-      continue
-    }
-    if (character === '/' && next === '*') {
-      blockComment = true
-      index += 1
-      continue
-    }
-    if (character === "'" || character === '"' || character === '`') {
-      quote = character
-      continue
-    }
-    if (character === '{') {
-      if (depth === 0) {
-        objectStart = index
-        objectIndex += 1
-      }
-      depth += 1
-      continue
-    }
-    if (character === '}') {
-      depth -= 1
-      if (depth === 0 && objectIndex === targetIndex) return { start: objectStart, end: index + 1 }
-      continue
-    }
-    if (character === ']' && depth === 0) break
-  }
-  return null
-}
-
-const formatInfluencerRecord = (record: Influencer) => [
-  '{',
-  `    name: ${JSON.stringify(record.name)},`,
-  `    country: ${JSON.stringify(record.country)},`,
-  `    lane: ${JSON.stringify(record.lane)},`,
-  `    organisation: ${JSON.stringify(record.organisation)},`,
-  `    linkedinUrl: ${JSON.stringify(record.linkedinUrl)},`,
-  `    priority: ${record.priority},`,
-  `    arabicOrBilingual: ${record.arabicOrBilingual},`,
-  '  }',
-].join('\n')
-
-const saveInfluencerRecord = async (index: number, record: Influencer) => {
-  const source = await readFile(INFLUENCER_FILES.directory, 'utf8')
-  const bounds = findArrayObjectBounds(source, 'export const INFLUENCERS', index)
-  if (!bounds) throw new Error('The influencer row could not be located in src/influencerData.ts.')
-  const tempPath = `${INFLUENCER_FILES.directory}.${process.pid}.tmp`
-  const output = `${source.slice(0, bounds.start)}${formatInfluencerRecord(record)}${source.slice(bounds.end)}`
+const saveWebSearchPeopleFile = async () => {
+  const tempPath = `${WEB_SEARCH_PEOPLE_FILE}.${process.pid}.tmp`
   try {
-    await writeFile(tempPath, output, 'utf8')
-    await rename(tempPath, INFLUENCER_FILES.directory)
+    await writeFile(tempPath, `${JSON.stringify(webSearchPeopleFile, null, 2)}\n`, 'utf8')
+    await rename(tempPath, WEB_SEARCH_PEOPLE_FILE)
   } catch (error) {
     await unlink(tempPath).catch(() => undefined)
     throw error
   }
+}
+
+const COUNTRY_CODES: Partial<Record<Influencer['country'], string>> = {
+  Bahrain: 'BH',
+  Egypt: 'EG',
+  Kuwait: 'KW',
+  Oman: 'OM',
+  Qatar: 'QA',
+  'Saudi Arabia': 'SA',
+  'United Arab Emirates': 'AE',
+}
+
+const saveInfluencerRecord = async (index: number, record: ActiveInfluencer) => {
+  const person = webSearchPeopleFile.people[index]
+  if (!person) throw new Error('The influencer row could not be located in assets/people/web-search-people.json.')
+  const linkedIn = person.profiles.find((profile) => profile.platform === 'linkedin')
+  const sourceRecord = person.source_records.find((source) => source.source_id === 'web-search')
+  const rawRecord = webSearchRawRecord(person)
+
+  person.name.display = record.name
+  person.current_role.organization = record.organisation
+  person.location.country = record.country === 'Regional' ? null : record.country
+  person.location.country_code = COUNTRY_CODES[record.country] ?? null
+  person.influence.lane = record.lane
+  person.influence.priority = record.priority
+  if (linkedIn) linkedIn.url = record.linkedinUrl
+  if (sourceRecord) sourceRecord.source_url = record.linkedinUrl
+  if (rawRecord) rawRecord.directory = { ...rawRecord.directory, ...structuredClone(record) }
+  await saveWebSearchPeopleFile()
 }
 
 const saveFollowerCount = async (index: number, count: number | null) => {
-  const source = await readFile(INFLUENCER_FILES.followers, 'utf8')
-  const markerIndex = source.indexOf('const FOLLOWER_COUNTS = [')
-  const arrayStart = markerIndex >= 0 ? source.indexOf('[', markerIndex) : -1
-  const arrayEnd = arrayStart >= 0 ? source.indexOf('] as const satisfies', arrayStart) : -1
-  if (arrayStart < 0 || arrayEnd < 0) throw new Error('The follower array could not be located in src/linkedinFollowerData.ts.')
-  const arraySource = source.slice(arrayStart + 1, arrayEnd)
-  const matches = [...arraySource.matchAll(/\b(?:null|\d+)\b/g)]
-  const match = matches[index]
-  if (!match || match.index === undefined) throw new Error('The follower row could not be located in src/linkedinFollowerData.ts.')
-  const valueStart = arrayStart + 1 + match.index
-  const valueEnd = valueStart + match[0].length
+  const person = webSearchPeopleFile.people[index]
+  if (!person) throw new Error('The follower row could not be located in assets/people/web-search-people.json.')
+  const linkedIn = person.profiles.find((profile) => profile.platform === 'linkedin')
+  if (!linkedIn) throw new Error('The converted influencer record has no LinkedIn profile.')
   const today = new Date().toISOString().slice(0, 10)
-  const nextSource = `${source.slice(0, valueStart)}${count ?? 'null'}${source.slice(valueEnd)}`
-    .replace(/export const LINKEDIN_FOLLOWERS_UPDATED_AT = '[^']+' as const/, `export const LINKEDIN_FOLLOWERS_UPDATED_AT = '${today}' as const`)
-  const tempPath = `${INFLUENCER_FILES.followers}.${process.pid}.tmp`
-  try {
-    await writeFile(tempPath, nextSource, 'utf8')
-    await rename(tempPath, INFLUENCER_FILES.followers)
-  } catch (error) {
-    await unlink(tempPath).catch(() => undefined)
-    throw error
+  const snapshot: UnifiedFollowerSnapshot = count === null ? {
+    count: null,
+    observed_at: null,
+    status: 'not-verified',
+    precision: null,
+    source: null,
+  } : {
+    count,
+    observed_at: today,
+    status: 'observed',
+    precision: 'exact',
+    source: 'linkedin-profile',
   }
+  linkedIn.followers = snapshot
+  const rawRecord = webSearchRawRecord(person)
+  if (rawRecord) {
+    rawRecord.follower = structuredClone(snapshot)
+    rawRecord.followers_updated_at = today
+  }
+  await saveWebSearchPeopleFile()
 }
 
-const INFLUENCER_COUNTRIES = new Set(INFLUENCERS.map((influencer) => influencer.country))
-const INFLUENCER_LANES = new Set(INFLUENCERS.map((influencer) => influencer.lane))
+const INFLUENCER_COUNTRIES = new Set(influencerRecords.map((influencer) => influencer.country))
+const INFLUENCER_LANES = new Set(influencerRecords.map((influencer) => influencer.lane))
 
 const saveInfluencerCell = async (rowId: string, field: string, value: unknown) => {
   const operation = influencerWriteQueue.then(async () => {
@@ -691,9 +679,9 @@ const saveInfluencerCell = async (rowId: string, field: string, value: unknown) 
     } else if (field === 'lane') {
       if (typeof value !== 'string' || !INFLUENCER_LANES.has(value as Influencer['lane'])) throw new Error('Choose a supported influence lane.')
       next.lane = value as Influencer['lane']
-    } else if (field === 'priority' || field === 'arabicOrBilingual') {
+    } else if (field === 'priority') {
       if (typeof value !== 'boolean') throw new Error('Expected true or false.')
-      next[field] = value
+      next.priority = value
     } else if (['name', 'organisation', 'linkedinUrl'].includes(field)) {
       if (typeof value !== 'string' || !value.trim()) throw new Error('This value cannot be empty.')
       next[field as 'name' | 'organisation' | 'linkedinUrl'] = value.trim()
@@ -1002,10 +990,10 @@ app.patch('/api/software-companies/cell', async (context) => {
 app.get('/api/influencers', (context) => context.json({
   items: influencerRecords.map((_, index) => influencerRow(index)),
   meta: {
-    source: 'src/influencerData.ts',
-    followerSource: 'src/linkedinFollowerData.ts',
-    verifiedAt: INFLUENCERS_VERIFIED_AT,
-    followersUpdatedAt: LINKEDIN_FOLLOWERS_UPDATED_AT,
+    source: 'assets/people/web-search-people.json',
+    followerSource: 'assets/people/web-search-people.json · profiles[].followers',
+    verifiedAt: webSearchPeopleFile.source.observed_at ?? webSearchPeopleFile.generated_at.slice(0, 10),
+    followersUpdatedAt: webSearchPeopleFile.people.map(webSearchRawRecord).find(Boolean)?.followers_updated_at ?? webSearchPeopleFile.generated_at.slice(0, 10),
   },
 }))
 
@@ -1458,4 +1446,3 @@ app.onError((error, context) => {
   console.error(error)
   return context.json({ error: 'The local file data service could not complete this request.' }, 500)
 })
-

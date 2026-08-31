@@ -4,6 +4,7 @@ import type { CSSProperties, DragEvent as ReactDragEvent } from 'react'
 import { InlineEdit } from './editableCells'
 import { ColumnResizeHandle, useResizableColumns } from './resizableColumns'
 import { usePersistedSort } from './tablePreferences'
+import { WorkspaceNav } from './WorkspaceNav'
 
 type SoftwareSource = 'linkedin' | 'kattch'
 type SoftwareCompanyRow = Record<string, string> & { source: SoftwareSource }
@@ -363,15 +364,7 @@ export function SoftwareCompanies() {
       <header className="workspace-header">
         <a className="workspace-brand" href="/">EI</a>
         <div className="workspace-title"><strong>EIGN data workspace</strong><span>Companies, capital, and ecosystem directories</span></div>
-        <nav aria-label="Primary navigation">
-          <a href="/">Dashboard</a>
-          <a href="/software-companies" aria-current="page">Software companies</a>
-          <a href="/influencers">Influencers</a>
-          <a href="/research">Startups</a>
-          <a href="/newsletters">Newsletters</a>
-          <a href="/posts">Posts</a>
-          <a href="/in-progress">In progress</a>
-        </nav>
+        <WorkspaceNav active="software-companies" />
       </header>
 
       <main className="software-main">

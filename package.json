@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "start": "concurrently -k -n api,web -c yellow,green \"pnpm dev:api\" \"pnpm dev:web\"",
-    "dev:api": "tsx watch --include 'eign_index.*.json' --include 'assets/companies/*.csv' --include 'assets/newsletter-research.csv' --include 'valid links.json' server/index.ts",
+    "dev:api": "tsx watch --include 'eign_index.*.json' --include 'assets/companies/*.csv' --include 'assets/people/*.json' --include 'assets/newsletter-research.csv' --include 'valid links.json' server/index.ts",
     "dev:web": "vite",
     "build": "tsc --noEmit && vite build",
     "build:vercel-api": "pnpm exec esbuild api/vercel-handler.ts --bundle --platform=node --format=esm --packages=external --outfile='api/[[...route]].js'",

@@ -3,6 +3,7 @@ import type { CSSProperties, DragEvent as ReactDragEvent, KeyboardEvent as React
 import { InlineEdit } from './editableCells'
 import { ColumnResizeHandle, useResizableColumns } from './resizableColumns'
 import { usePersistedSort } from './tablePreferences'
+import { WorkspaceNav } from './WorkspaceNav'
 import './research.css'
 
 type NewsletterRecord = {
@@ -334,15 +335,7 @@ export function Newsletters() {
       <header className="workspace-header sheet-workspace-header">
         <a className="workspace-brand" href="/">EI</a>
         <div className="workspace-title"><strong>EIGN data workspace</strong><span>Companies, capital, and ecosystem directories</span></div>
-        <nav aria-label="Primary navigation">
-          <a href="/">Dashboard</a>
-          <a href="/software-companies">Software companies</a>
-          <a href="/influencers">Influencers</a>
-          <a href="/research">Startups</a>
-          <a href="/newsletters" aria-current="page">Newsletters</a>
-          <a href="/posts">Posts</a>
-          <a href="/in-progress">In progress</a>
-        </nav>
+        <WorkspaceNav active="newsletters" />
       </header>
 
       <header className="sheet-titlebar">

@@ -1,16 +1,17 @@
 import { useEffect, useMemo, useState } from 'react'
 import type { ComponentProps, CSSProperties, DragEvent as ReactDragEvent } from 'react'
 import { InlineEdit } from './editableCells'
-import type { Influencer } from './influencerData'
-import type { LinkedInFollowerSnapshot } from './linkedinFollowerData'
 import { ColumnResizeHandle, useResizableColumns } from './resizableColumns'
 import { usePersistedSort, type SortDirection } from './tablePreferences'
+import type { Influencer, LinkedInFollowerSnapshot } from './unifiedPeopleTypes'
+import { WorkspaceNav } from './WorkspaceNav'
 
 type SortKey = 'priority' | 'followers' | 'name' | 'country' | 'lane' | 'organisation'
 type SortPreset = 'priority' | 'followers' | 'name' | 'country' | 'custom'
 type InfluencerColumnKey = 'person' | 'market' | 'lane' | 'platform' | 'followers' | 'source' | 'signals' | 'linkedin'
 type ColumnDrop = { column: InfluencerColumnKey; position: 'before' | 'after' }
-type InfluencerRow = Influencer & { __rowId: string; follower: LinkedInFollowerSnapshot }
+type ActiveInfluencer = Pick<Influencer, 'name' | 'country' | 'lane' | 'organisation' | 'linkedinUrl' | 'priority'>
+type InfluencerRow = ActiveInfluencer & { __rowId: string; follower: LinkedInFollowerSnapshot }
 type InfluencerResponse = {
   items: InfluencerRow[]
   meta: {
@@ -50,7 +51,7 @@ const INFLUENCER_COLUMNS: Array<{
   { key: 'platform', label: 'Current platform', className: 'influencer-cell--platform', defaultWidth: 290, sortKey: 'organisation' },
   { key: 'followers', label: 'LinkedIn followers', className: 'influencer-cell--followers', defaultWidth: 165, sortKey: 'followers' },
   { key: 'source', label: 'Source', className: 'influencer-cell--source', defaultWidth: 120, sortKey: null },
-  { key: 'signals', label: 'Signals', className: 'influencer-cell--signals', defaultWidth: 190, sortKey: 'priority' },
+  { key: 'signals', label: 'Signals', className: 'influencer-cell--signals', defaultWidth: 130, sortKey: 'priority' },
   { key: 'linkedin', label: 'LinkedIn', className: 'influencer-cell--link', defaultWidth: 74, sortKey: null },
 ]
 
@@ -218,7 +219,6 @@ export function Influencers() {
   const [country, setCountry] = useState<Influencer['country'] | 'all'>('all')
   const [lane, setLane] = useState<Influencer['lane'] | 'all'>('all')
   const [priorityOnly, setPriorityOnly] = useState(false)
-  const [arabicOnly, setArabicOnly] = useState(false)
   const {
     resetSort,
     setSortDirection,
@@ -272,7 +272,6 @@ export function Influencers() {
       .filter((influencer) => country === 'all' || influencer.country === country)
       .filter((influencer) => lane === 'all' || influencer.lane === lane)
       .filter((influencer) => !priorityOnly || influencer.priority)
-      .filter((influencer) => !arabicOnly || influencer.arabicOrBilingual)
       .filter((influencer) => !normalizedQuery || [
         influencer.name,
         influencer.country,
@@ -305,7 +304,7 @@ export function Influencers() {
           || (sortKey === 'priority' ? COUNTRY_ORDER.indexOf(left.country) - COUNTRY_ORDER.indexOf(right.country) : 0)
           || left.name.localeCompare(right.name)
       })
-  }, [arabicOnly, country, influencers, lane, priorityOnly, query, sortDirection, sortKey])
+  }, [country, influencers, lane, priorityOnly, query, sortDirection, sortKey])
 
   const sortPreset: SortPreset = sortKey === 'priority' && sortDirection === 'desc'
     ? 'priority'
@@ -317,7 +316,7 @@ export function Influencers() {
           ? 'name'
           : 'custom'
 
-  const filtersActive = Boolean(query || country !== 'all' || lane !== 'all' || priorityOnly || arabicOnly || sortKey !== 'priority' || sortDirection !== 'desc')
+  const filtersActive = Boolean(query || country !== 'all' || lane !== 'all' || priorityOnly || sortKey !== 'priority' || sortDirection !== 'desc')
 
   const applySortPreset = (preset: Exclude<SortPreset, 'custom'>) => {
     setSortKey(preset)
@@ -338,7 +337,6 @@ export function Influencers() {
     setCountry('all')
     setLane('all')
     setPriorityOnly(false)
-    setArabicOnly(false)
     resetSort()
   }
 
@@ -401,7 +399,7 @@ export function Influencers() {
     } : current)
   }
 
-  const saveSignal = async (influencer: InfluencerRow, field: 'priority' | 'arabicOrBilingual', checked: boolean) => {
+  const saveSignal = async (influencer: InfluencerRow, field: 'priority', checked: boolean) => {
     const savingKey = `${influencer.__rowId}:${field}`
     if (savingSignals.has(savingKey)) return
     setSavingSignals((current) => new Set(current).add(savingKey))
@@ -423,15 +421,7 @@ export function Influencers() {
       <header className="workspace-header">
         <a className="workspace-brand" href="/">EI</a>
         <div className="workspace-title"><strong>EIGN data workspace</strong><span>Companies, capital, and ecosystem people</span></div>
-        <nav aria-label="Primary navigation">
-          <a href="/">Dashboard</a>
-          <a href="/software-companies">Software companies</a>
-          <a href="/influencers" aria-current="page">Influencers</a>
-          <a href="/research">Startups</a>
-          <a href="/newsletters">Newsletters</a>
-          <a href="/posts">Posts</a>
-          <a href="/in-progress">In progress</a>
-        </nav>
+        <WorkspaceNav active="influencers" />
       </header>
 
       <main className="influencers-main">
@@ -497,7 +487,6 @@ export function Influencers() {
             </label>
             <div className="influencer-filter-toggles" aria-label="Quick filters">
               <button className={priorityOnly ? 'is-active' : ''} aria-pressed={priorityOnly} onClick={() => setPriorityOnly((current) => !current)}>Priority</button>
-              <button className={arabicOnly ? 'is-active' : ''} aria-pressed={arabicOnly} onClick={() => setArabicOnly((current) => !current)}>Arabic / bilingual</button>
               {filtersActive && <button className="influencer-clear" onClick={clearFilters}>Clear</button>}
             </div>
           </div>
@@ -583,7 +572,6 @@ export function Influencers() {
                         <td className="influencer-cell--signals" key={column}>
                           <div className="influencer-signal-editors">
                             <label title="Priority"><input type="checkbox" checked={influencer.priority} disabled={savingSignals.has(`${influencer.__rowId}:priority`)} onChange={(event) => void saveSignal(influencer, 'priority', event.target.checked)} /><span>Priority</span></label>
-                            <label title="Arabic or bilingual"><input type="checkbox" checked={influencer.arabicOrBilingual} disabled={savingSignals.has(`${influencer.__rowId}:arabicOrBilingual`)} onChange={(event) => void saveSignal(influencer, 'arabicOrBilingual', event.target.checked)} /><span>AR / EN</span></label>
                           </div>
                         </td>
                       )

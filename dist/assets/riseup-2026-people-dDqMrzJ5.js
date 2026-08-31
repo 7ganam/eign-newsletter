@@ -1,0 +1,1 @@
+var e=`/assets/riseup-2026-people-BkwtNiKZ.json`;export{e as t};
