@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:58:20.798Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:58:20.740Z",
+    "url": "https://www.crunchbase.com/organization/capy"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Capy",
+      "shortDescription": "Capy is a software company that offers SaaS-based security solutions for websites from bots and humans via authentication and CAPTCHA.",
+      "website": "https://corp.capy.me/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Tokyo, Japan",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)"
+      ],
+      "industries": [
+        "Consulting",
+        "Cyber Security",
+        "Network Security",
+        "Risk Management",
+        "SaaS"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Privacy and Security",
+        "Professional Services",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A SaaS-based security solution that protects websites from bot and human threats using authentication and CAPTCHA mechanisms.",
+        "name": "Capy Security Platform"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2026-07-24",
+          "publisher": "PEdaily.cn",
+          "title": "AI能拿菲尔兹了？Grok摸鱼8分钟，破解30年数学猜想",
+          "url": "https://news.pedaily.cn/202607/566796.shtml"
+        },
+        {
+          "date": "2021-03-25",
+          "publisher": "Google Patent",
+          "title": "Authentication system, authentication method and authentication apparatus",
+          "url": "https://patents.google.com/patent/US20210234858A1/en"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -3,
+      "growthScore": 84,
+      "heatChange90Days": -9,
+      "heatScore": 72
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 35.09
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.6
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 25.95
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "hCaptcha is a Software as a Service that pays websites for the captchas their users complete.",
+          "employeeRange": "11-50",
+          "name": "hCaptcha",
+          "sharedSpecialties": [
+            "Web Security",
+            "Behavioral Biometrics",
+            "API Security",
+            "API and Bot Protection",
+            "Fraud Prevention"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Friendly Captcha specializes in protecting websites and online services from spam and abuse.",
+          "employeeRange": "11-50",
+          "name": "Friendly Captcha",
+          "sharedSpecialties": [
+            "Web Security",
+            "API and Bot Protection",
+            "Fraud Prevention",
+            "API Management"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Cloudflare is a web performance and security company that provides online services to protect and accelerate websites online.",
+          "employeeRange": "5,001-10,000",
+          "name": "Cloudflare",
+          "sharedCategories": [
+            "Cyber Security"
+          ],
+          "sharedSpecialties": [
+            "Web Security",
+            "DDoS Protection",
+            "API and Bot Protection"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "Arkose Labs protects enterprises from cybercrime and abuse.",
+          "employeeRange": "101-250",
+          "name": "Arkose Labs",
+          "sharedCategories": [
+            "Network Security",
+            "Cyber Security"
+          ],
+          "sharedSpecialties": [
+            "Web Security",
+            "Behavioral Biometrics",
+            "API Security",
+            "API and Bot Protection",
+            "Fraud Prevention"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Google Cloud focuses on business challenges that head-on with cloud computing services from Google.",
+          "employeeRange": "10,001+",
+          "name": "Google Cloud",
+          "sharedCategories": [
+            "Cyber Security"
+          ],
+          "sharedSpecialties": [
+            "API Management"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    },
+    "aiResearchSummary": {
+      "notFact": true,
+      "text": "Capy is focused on developing an authentication system that enhances security through biometric authentication. The system involves an application server that sends biometric authentication requests to an authentication server, aiming to improve user verification processes. This aligns with Capy's mission to provide SaaS-based security solutions, particularly in the realm of authentication and CAPTCHA technologies."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 84 (-3 over 90 days) and market heat at 72 (-9).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include hCaptcha, Friendly Captcha, Cloudflare.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

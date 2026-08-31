@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:07:25.308Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:07:25.253Z",
+    "url": "https://www.crunchbase.com/organization/fleetline"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Fleetline",
+      "shortDescription": "Fleetline specializes in the manufacturing of OEM products like fenders, mounting kits, and hanger brackets for the trucking industry.",
+      "website": "https://www.fleetlineproducts.com/",
+      "foundedYear": 1973,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Springfield, Tennessee, United States",
+      "geographicRegions": [
+        "Southern US"
+      ],
+      "industries": [
+        "Automotive",
+        "Manufacturing",
+        "Transportation",
+        "Wholesale"
+      ],
+      "sectors": [
+        "Commerce and Shopping",
+        "Manufacturing",
+        "Transportation"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A pair of polyethylene fenders designed for half tandem axles, measuring 26 inches in width and weighing 26 lbs per pair.",
+        "name": "Poly Half Tandem Fender 5325-66"
+      },
+      {
+        "description": "A pair of polyethylene fenders for half tandem axles with wide base tires, 19 inches wide and weighing 23 lbs per pair.",
+        "name": "Poly Half Tandem Wide Base Tire Fender 5020-66"
+      },
+      {
+        "description": "A mounting kit for half tandem fenders including painted tubes, post mounts, clamps, end caps, rear mounts, and hardware with U-bolts.",
+        "name": "Half Tandem Fender Mounting Kit 4235-X"
+      },
+      {
+        "description": "A mounting kit for half tandem fenders featuring painted tubes, post mounts, clamps, end caps, and poly mounting brackets.",
+        "name": "Half Tandem Fender Mounting Kit 4255"
+      },
+      {
+        "description": "A mounting kit for half tandem fenders with painted tubes, post mounts, clamps, end caps, rear mounts, and poly mounting brackets.",
+        "name": "Half Tandem Fender Mounting Kit 4255-X"
+      },
+      {
+        "description": "An 8-inch powder coated post mount designed for use with 5/8-inch bolts to support mounting components.",
+        "name": "Powder Coated Post Mount 1600-18M"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -23,
+      "heatScore": 50
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 75.39
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Minimizer is the aftermarket solution for the heavy truck industry.",
+          "employeeRange": "101-250",
+          "name": "Minimizer",
+          "sharedCategories": [
+            "Transportation",
+            "Manufacturing"
+          ],
+          "sharedSpecialties": [
+            "Truck Bodies and Flatbeds",
+            "Vehicle Upfitting and Customization"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Buyers Products is a product manufacturer for the mobile equipment industry.",
+          "employeeRange": "251-500",
+          "name": "Buyers Products",
+          "sharedCategories": [
+            "Manufacturing"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Automann is a global distributor of aftermarket truck and trailer chassis and brake components.",
+          "employeeRange": "251-500",
+          "name": "Automann",
+          "sharedCategories": [
+            "Automotive",
+            "Manufacturing"
+          ],
+          "sharedSpecialties": [
+            "Automotive Parts and Accessories",
+            "Trailer Repair and Maintenance"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Hendrickson is a designer and manufacturer of suspension systems and components for heavy-duty trucks.",
+          "employeeRange": "1,001-5,000",
+          "name": "Hendrickson",
+          "sharedCategories": [
+            "Automotive",
+            "Manufacturing"
+          ],
+          "sharedSpecialties": [
+            "Vehicle Upfitting and Customization"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "DuraClass is a manufacturer of dump bodies, dump trucks, and hoists.",
+          "employeeRange": "101-250",
+          "name": "Dura Class",
+          "sharedCategories": [
+            "Transportation",
+            "Automotive",
+            "Manufacturing"
+          ],
+          "sharedSpecialties": [
+            "Truck Bodies and Flatbeds",
+            "Vehicle Upfitting and Customization"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Minimizer, Buyers Products, Automann.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:45:53.640Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:45:53.593Z",
+    "url": "https://www.crunchbase.com/organization/dataleap"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "DataLeap",
+      "shortDescription": "DataLeap is an IT consulting company that provides data science, machine learning, and artificial intelligence products and services.",
+      "website": "https://www.dataleap.co/",
+      "foundedYear": 2020,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Singapore, Central Region",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)",
+        "Association of Southeast Asian Nations (ASEAN)",
+        "Southeast Asia"
+      ],
+      "industries": [
+        "Consulting",
+        "Information Technology",
+        "Machine Learning"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Professional Services",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Consulting services to help organizations extract value from their data using machine learning techniques.",
+        "name": "Machine Learning Consulting"
+      },
+      {
+        "description": "Development of customized AI models and automation solutions to enhance business intelligence and processes.",
+        "name": "Generative AI Services"
+      },
+      {
+        "description": "Design and implementation of data warehousing, integration, and big data solutions for efficient data management and analysis.",
+        "name": "Data Engineering Services"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -5,
+      "growthScore": 82,
+      "heatChange90Days": -20,
+      "heatScore": 33
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 91.77
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Sigmoid is a Data Solutions company offering best-in-class services in Data Engineering and Data Science",
+          "employeeRange": "501-1,000",
+          "name": "Sigmoid",
+          "sharedCategories": [
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Data Science",
+            "Extract Transform Load (ETL)",
+            "Data Engineering",
+            "MLOps",
+            "Data Quality and Observability",
+            "Data Warehousing",
+            "Data Pipelines"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Software R&D Engineering Company.",
+          "employeeRange": "251-500",
+          "name": "AltexSoft",
+          "sharedCategories": [
+            "Consulting"
+          ],
+          "sharedSpecialties": [
+            "Data Science",
+            "Extract Transform Load (ETL)",
+            "Data Engineering",
+            "Big Data Analytics",
+            "Data Pipelines"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "phData Premier provider of Big Data managed services and architecture, engineering, and data science consulting.",
+          "employeeRange": "501-1,000",
+          "name": "phData",
+          "sharedCategories": [
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Data Engineering",
+            "Data and Analytics Consulting",
+            "MLOps",
+            "Data Quality and Observability",
+            "Data Warehousing",
+            "Data Pipelines"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Dataiku operates as an enterprise artificial intelligence and machine-learning platform.",
+          "employeeRange": "1,001-5,000",
+          "name": "Dataiku",
+          "sharedCategories": [
+            "Machine Learning"
+          ],
+          "sharedSpecialties": [
+            "Data Engineering",
+            "MLOps",
+            "LLMOps",
+            "Data Quality and Observability",
+            "AI Model Evaluation",
+            "Data Pipelines"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Optima AI Inc offers AI, Data Science, and Machine Learning consulting and application development services.",
+          "employeeRange": "1-10",
+          "name": "Optima AI",
+          "sharedCategories": [
+            "Machine Learning",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Data and Analytics Consulting",
+            "MLOps",
+            "Model Fine-Tuning"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 82 (-5 over 90 days) and market heat at 33 (-20).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Sigmoid, AltexSoft, phData.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

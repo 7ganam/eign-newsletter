@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:36:38.756Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:36:38.699Z",
+    "url": "https://www.crunchbase.com/organization/cradle"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "CRADLE",
+      "shortDescription": "CRADLE is a Center for Robotic-Augmented Design in Living Experiences",
+      "description": "Center for Robotic-Augmented Design in Living Experiences.They believe in the relentless pursuit of better mobility for the individual. The greater a person’s ability to travel and to move, the greater the quality of life. They are interested in working with pioneers of robotic technologies to create mobility solutions for not just the few but for all.",
+      "website": "https://www.cradleinc.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "employeeRange": "51-100",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Menlo Park, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Augmented Reality",
+        "Robotics",
+        "Travel"
+      ],
+      "sectors": [
+        "Hardware",
+        "Science and Engineering",
+        "Software",
+        "Travel and Tourism"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 6,
+      "includedUniqueCount": 6,
+      "items": [
+        {
+          "date": "2024-10-01",
+          "title": "Venture Round - Xnergy Autonomous Power Technologies"
+        },
+        {
+          "date": "2020-10-13",
+          "title": "Series A - Solid Power"
+        },
+        {
+          "date": "2020-03-30",
+          "publisher": "The Guardian",
+          "title": "'Cradle of disease': Asos warehouse staff reveal coronavirus fears",
+          "url": "https://www.theguardian.com/global/2020/mar/30/asos-workers-coronavirus-fears-online-fashion-safety-barnsley-warehouse"
+        },
+        {
+          "date": "2019-11-25",
+          "publisher": "Digital News Asia",
+          "title": "Cradle to crank it up, looking for more hard tech startups",
+          "url": "https://www.digitalnewsasia.com/insights/cradle-crank-it-looking-more-hard-tech-startups"
+        },
+        {
+          "date": "2018-09-10",
+          "title": "Series A - Solid Power"
+        },
+        {
+          "date": "2018-09-10",
+          "title": "Series A - Migo, Inc."
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -7,
+      "growthScore": 6,
+      "heatChange90Days": 1,
+      "heatScore": 35
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "UP Partners is an early stage venture capital fund dedicated to supporting companies that are transforming the moving world.",
+          "employeeRange": "1-10",
+          "name": "UP Partners",
+          "similarityScore": 100
+        },
+        {
+          "description": "Mobitas advises strategics and early/mid-stage companies in the mobility space on how to win in this new era.",
+          "employeeRange": "1-10",
+          "name": "Mobitas Advisors",
+          "similarityScore": 94.181
+        },
+        {
+          "description": "Mobility Impact Partners is a Collaborative Strategic Investment Platform.",
+          "employeeRange": "1-10",
+          "name": "Mobility Impact Partners",
+          "similarityScore": 88.791
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 6 (-7 over 90 days) and market heat at 35 (+1).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include UP Partners, Mobitas Advisors, Mobility Impact Partners.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

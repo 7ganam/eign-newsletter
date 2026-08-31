@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:00:36.249Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:00:36.211Z",
+    "url": "https://www.crunchbase.com/organization/hyperbrowser"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Hyperbrowser",
+      "shortDescription": "Hyperbrowser provides serverless cloud browser infrastructure for AI agents, web scraping, and automated browser-based workflows.",
+      "description": "Hyperbrowser provides serverless cloud browser infrastructure designed for AI agents, automated web scraping, and browser-based testing workflows. The platform offers an API-driven headless browser grid with integrated residential proxy rotation, fingerprint management, and CAPTCHA solving to reduce anti-bot detection issues. Hyperbrowser supports frameworks such as Playwright, Puppeteer, and Selenium, enabling teams to migrate existing scripts with minimal changes. Its tooling includes collaborative remote debugging, trace viewing, and credit-based pricing that separates browser compute from proxy data usage. Hyperbrowser also offers open-source and sandboxed runtimes that give AI agents controlled access to terminal and filesystem environments. Customers use the platform to run large numbers of concurrent browser sessions for data extraction, regression testing, and complex multi-step automation tasks.",
+      "website": "https://hyperbrowser.ai/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Browser Extensions",
+        "Cloud Computing",
+        "Cloud Infrastructure",
+        "Data Collection and Labeling",
+        "Developer Tools",
+        "Enterprise Software",
+        "Robotics",
+        "Software",
+        "Web Development"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Hardware",
+        "Information Technology",
+        "Internet Services",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Akshay Shekhawat",
+        "Shri Sukhani"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A serverless cloud browser platform providing API-driven headless browsers with integrated proxies, stealth, and CAPTCHA solving.",
+        "name": "Hyperbrowser Cloud Infrastructure"
+      },
+      {
+        "description": "An open-source framework that adds an AI control layer to Playwright, mapping natural language tasks to browser actions.",
+        "name": "HyperAgent"
+      },
+      {
+        "description": "A zero-code environment for experimenting with AI browser agents such as OpenAI and Claude computer use models.",
+        "name": "HyperPilot"
+      },
+      {
+        "description": "Secure sandboxed runtimes that give AI agents controlled access to a micro-computer with filesystem and terminal APIs.",
+        "name": "Hyperbrowser Sandboxes"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 79,
+      "heatScore": 91
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 5
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 68.3
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

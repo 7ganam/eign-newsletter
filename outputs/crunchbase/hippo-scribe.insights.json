@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:53:49.686Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:53:49.631Z",
+    "url": "https://www.crunchbase.com/organization/hippo-scribe"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "hippo scribe",
+      "shortDescription": "Hippo Scribe provides AI-assisted clinical documentation software for healthcare clinicians.",
+      "description": "Hippo Scribe provides software for AI-assisted clinical documentation. The platform records patient visits or dictated notes and generates draft clinical notes. It supports customizable templates for physical therapists, pediatric speech-language pathologists, and pelvic health practitioners. The service integrates with web-based electronic medical record systems and is available through a browser extension. It offers individual and group plans with features such as unlimited visits, shared templates, and EMR integration.",
+      "website": "https://gethipposcribe.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Cloud Computing",
+        "Health Care",
+        "Medical",
+        "Productivity Tools",
+        "Software",
+        "Telehealth"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Health Care",
+        "Information Technology",
+        "Internet Services",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "AI-assisted clinical documentation software that records patient visits, drafts notes, and connects with web-based electronic medical records.",
+        "name": "AI-Assisted Clinical Documentation"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 49,
+      "heatScore": 49
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

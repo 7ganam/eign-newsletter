@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:32:20.756Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:32:20.704Z",
+    "url": "https://www.crunchbase.com/organization/metofico"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Metofico",
+      "shortDescription": "Metofico provides a no-code analysis platform for life science research.",
+      "description": "Metofico offers a no-code data analysis solution specifically designed for the life sciences. Our technology enables life scientists to examine complex/massive datasets and derive relevant insights without the need for significant programming skills.",
+      "website": "https://www.metofico.com/",
+      "foundedYear": 2021,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "London, England, United Kingdom",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Biotechnology",
+        "Neuroscience",
+        "Software"
+      ],
+      "sectors": [
+        "Biotechnology",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Mehdi Boudjadja",
+        "Salah Boudjadja"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A tool for importing and processing large data sets with up to 4 light channels, featuring digital filtering, event management, normalization pipelines, and built-in plotting for data exploration.",
+        "name": "Fibre Photometry Analyser"
+      },
+      {
+        "description": "A system for live and offline rodent segmentation, custom behavior scoring, and automated generalization, providing key metrics such as velocity, direction, and ROI statistics.",
+        "name": "AI-Based Rodent Tracker"
+      },
+      {
+        "description": "An analysis tool for meal patterns using weighted hoppers or pellets and lick microstructure analysis, offering more than 15 variables to explore.",
+        "name": "Advanced Feeding Patterns"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2024-02-27",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2024-02-27",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 4524969,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "Eight Capital",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2024-02-27",
+          "title": "Pre Seed Round - Metofico"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -3,
+      "growthScore": 51,
+      "heatChange90Days": -19,
+      "heatScore": 50
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 30.44
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 48.84,
+        "timingEstimatePercent": {
+          "within6Months": 26.3,
+          "months6To11": 0.04,
+          "months12To24": 0,
+          "beyond24Months": 73.66
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-06-22",
+        "probabilityPercent": 73.35
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 3.87
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Benchling is an IT company that provides a cloud-based software platform for biology researchers and research and development organizations.",
+          "employeeRange": "501-1,000",
+          "name": "Benchling",
+          "sharedCategories": [
+            "Biotechnology",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Data Pipelines"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Dotmatics is an R&D scientific software connecting science, data, and decision-making.",
+          "employeeRange": "501-1,000",
+          "name": "Dotmatics",
+          "sharedCategories": [
+            "Biotechnology"
+          ],
+          "sharedSpecialties": [
+            "Bioimage Informatics",
+            "Bioanalytics",
+            "Data Pipelines"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Genedata develops sophisticated computational solutions for drug discovery and related research processes in the life sciences.",
+          "employeeRange": "251-500",
+          "name": "Genedata",
+          "sharedCategories": [
+            "Biotechnology",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Bioanalytics"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Certara transforms drug discovery and development for good, helping scientists and clinical teams generate regulatory-grade evidence faster.",
+          "employeeRange": "1,001-5,000",
+          "name": "Certara",
+          "sharedCategories": [
+            "Biotechnology",
+            "Software"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Collaborative Drug Discovery is a hosted biological and chemical database that manages private and external data.",
+          "employeeRange": "51-100",
+          "name": "Collaborative Drug Discovery",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Bioanalytics",
+            "Data Pipelines"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $500,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $4,524,969 to $4,524,969, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 51 (-3 over 90 days) and market heat at 50 (-19).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Benchling, Dotmatics, Genedata.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

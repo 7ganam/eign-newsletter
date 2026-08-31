@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:56:32.886Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:56:32.830Z",
+    "url": "https://www.crunchbase.com/organization/hoplite-dataroom"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Hoplite Dataroom",
+      "shortDescription": "Hoplite Dataroom provides a secure online dataroom platform for storing, organizing, and sharing confidential documents.",
+      "description": "Hoplite Dataroom provides a secure online dataroom platform for organizations that need to store, organize, and share sensitive documents. The platform supports creating and managing multiple datarooms, defining folder structures, and controlling guest access rights for viewing and downloading files. It includes administrative tools for tracking document consultation, sending alerts when new documents are available, and managing user groups. The service offers different pricing plans with defined storage limits, numbers of active datarooms, and administrator accounts, as well as custom offers. Hoplite Dataroom focuses on document exchange workflows for entities such as local authorities, small and medium-sized enterprises, social and solidarity economy organizations, regulated liberal professions, and business clubs.",
+      "website": "https://hoplitedataroom.fr/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "industries": [
+        "Business Process Automation (BPA)",
+        "Cloud Storage",
+        "Data Storage",
+        "Document Management",
+        "Enterprise Software",
+        "Security",
+        "Software"
+      ],
+      "sectors": [
+        "Hardware",
+        "Information Technology",
+        "Internet Services",
+        "Privacy and Security",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A secure online dataroom service for creating, managing, and sharing confidential documents with controlled guest access.",
+        "name": "Hoplite Dataroom platform"
+      },
+      {
+        "description": "A subscription plan offering limited storage and active datarooms for secure document sharing needs.",
+        "name": "Hoplite Dataroom Standard plan"
+      },
+      {
+        "description": "A higher-capacity subscription plan with expanded storage, more active datarooms, and additional administrator accounts.",
+        "name": "Hoplite Dataroom Premium plan"
+      },
+      {
+        "description": "A customized dataroom subscription tailored to specific storage, access, and administration requirements.",
+        "name": "Hoplite Dataroom Sur-Mesure plan"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 32,
+      "growthScore": 91,
+      "heatChange90Days": 79,
+      "heatScore": 87
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.2
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 91 (+32 over 90 days) and market heat at 87 (+79).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

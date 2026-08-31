@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:55:21.810Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:55:21.755Z",
+    "url": "https://www.crunchbase.com/organization/cambla"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Cambla",
+      "shortDescription": "Cambla offers project planning services for energy industry.",
+      "description": "Cambla offers collaboration through mapping out schedules and building productive relationships from the outset for the oil and gas industry. They also provide coaching to existing planners, short term assignments to fill gaps between resignation and finding the next employee.",
+      "website": "https://www.cambla.co.uk/",
+      "foundedYear": 2013,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Aberdeen, Aberdeen City, United Kingdom",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Consulting",
+        "Energy",
+        "Energy Management",
+        "Project Management"
+      ],
+      "sectors": [
+        "Administrative Services",
+        "Energy",
+        "Professional Services"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Software that creates a visual model of an asset and integrates work schedules to identify conflicts and manage work execution safely and on time.",
+        "name": "SAT Process"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -16,
+      "heatScore": 61
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 4.87
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Aker Solutions ASA, through its subsidiaries and affiliates (Aker Solutions), is a leading global oil services company.",
+          "employeeRange": "10,001+",
+          "name": "Aker Solutions",
+          "sharedCategories": [
+            "Energy"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "An award-winning multi-national specialist in the engineering, installation and maintenance of engine-based power plants.",
+          "employeeRange": "1,001-5,000",
+          "name": "Clarke Energy",
+          "sharedCategories": [
+            "Energy"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Wood is an engineering and consulting provider that delivers a range of environmental, infrastructure, and asset lifecycle solutions.",
+          "employeeRange": "10,001+",
+          "name": "Wood - Environment & Infrastructure business",
+          "sharedCategories": [
+            "Energy",
+            "Consulting"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Petrofac is a provider of oilfield services to the international oil and gas industry. It is registered in Jersey, with its main corporate",
+          "employeeRange": "5,001-10,000",
+          "name": "Petrofac",
+          "sharedCategories": [
+            "Energy"
+          ],
+          "sharedSpecialties": [
+            "Project and Program Management"
+          ],
+          "similarityScore": 85
+        },
+        {
+          "description": "Worley is a leading global provider of professional project and asset services in the energy, chemicals and resources sectors.",
+          "employeeRange": "10,001+",
+          "name": "Worley",
+          "sharedCategories": [
+            "Energy"
+          ],
+          "sharedSpecialties": [
+            "Project and Program Management"
+          ],
+          "similarityScore": 83
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Aker Solutions, Clarke Energy, Wood - Environment & Infrastructure business.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

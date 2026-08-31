@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:29:07.318Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:29:07.274Z",
+    "url": "https://www.crunchbase.com/organization/glider-io"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Glider.io",
+      "shortDescription": "Glider.io provides email filtration solutions enabling users to save time and energy.",
+      "description": "The abuse of the inbox by commercial email senders is a problem that can be remedied, so we created Glider, a service that filters commercial emails away from your inbox. \r\n\r\nWe believe one of the greatest challenges faced by the growing population of knowledge workers in the modern workforce is to combine the advantages of email used for conversational and commercial purposes.",
+      "website": "http://www.glider.io/",
+      "foundedYear": 2012,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Seattle, Washington, United States",
+      "geographicRegions": [
+        "Greater Seattle Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Email",
+        "Messaging"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Internet Services",
+        "Messaging and Telecommunications"
+      ],
+      "founders": [
+        "John Marbach",
+        "Kevin Bellinger"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 100000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2012-03-22",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2012-03-22",
+          "amount": {
+            "amount": 100000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2013-11-17",
+          "publisher": "BBC",
+          "url": "http://www.bbc.co.uk/news/technology-21830739"
+        },
+        {
+          "date": "2012-03-22",
+          "title": "Seed Round - Glider.io"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 100000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -6,
+      "heatScore": 7
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "SaneBox is a cloud-based service that allows users to filter and manage their emails.",
+          "employeeRange": "11-50",
+          "name": "SaneBox",
+          "sharedCategories": [
+            "Email"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Mailstrom is a tool for deleting, archiving and cleaning email inbox services.",
+          "employeeRange": "1-10",
+          "name": "Mailstrom",
+          "sharedCategories": [
+            "Email"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Unroll.Me is an email subscription management service helping users manage their junk email and subscriptions.",
+          "employeeRange": "1-10",
+          "name": "Unroll Me",
+          "sharedCategories": [
+            "Email"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Clean Email provides tools to organize inboxes by managing subscriptions, filters, and bulk email actions.",
+          "employeeRange": "11-50",
+          "name": "Clean Email, LLC",
+          "similarityScore": 88
+        },
+        {
+          "description": "Mailbutler offers elegant solutions for modern problems by creating highly efficient software.",
+          "employeeRange": "11-50",
+          "name": "Mailbutler GmbH",
+          "similarityScore": 86
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $100,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include SaneBox, Mailstrom, Unroll Me.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

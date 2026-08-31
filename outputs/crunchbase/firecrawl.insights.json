@@ -1,0 +1,433 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:05:17.763Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:05:17.706Z",
+    "url": "https://www.crunchbase.com/organization/firecrawl"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Firecrawl",
+      "shortDescription": "Firecrawl is an API service that designs structured data for integration.",
+      "description": "Firecrawl converts websites into clean, AI-ready data through a unified API. It provides functionality to crawl entire websites or scrape individual pages, returning outputs in markdown, structured data (JSON), HTML, screenshots, and more. It handles dynamic content, JavaScript-rendered pages, proxies, rate limits, and caching behind the scenes to simplify integration for developers. It supports integrations with popular AI frameworks and tools, including LangChain, LlamaIndex, and Zapier, offering flexible usage across different environments.",
+      "website": "https://www.firecrawl.dev/",
+      "foundedYear": 2022,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Developer APIs",
+        "SaaS",
+        "Web Development"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Caleb Peffer",
+        "Eric Ciarla",
+        "Nicolas Camara"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An API that extracts clean, LLM-ready data from individual web pages in formats like Markdown, JSON, and screenshots.",
+        "name": "Scrape API"
+      },
+      {
+        "description": "An API that collects data from all accessible pages of a website, even without a sitemap, providing structured data for each page.",
+        "name": "Crawl API"
+      },
+      {
+        "description": "An API that searches the web and scrapes full content from search results with a single call.",
+        "name": "Search API"
+      },
+      {
+        "description": "An API endpoint for structured extraction of specific data elements from web content, priced separately from scraping and crawling.",
+        "name": "Extract API"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 14500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 3,
+      "detailedRoundCount": 3,
+      "lastFundingDate": "2025-08-19",
+      "lastFundingType": "Series A",
+      "rounds": [
+        {
+          "announcedDate": "2025-08-19",
+          "amount": {
+            "amount": 14500000,
+            "currency": "USD"
+          },
+          "investorCount": 6,
+          "leadInvestors": [
+            "Nexus Venture Partners"
+          ],
+          "postMoneyValuation": {
+            "amount": 85998580,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2024-01-04",
+          "postMoneyValuation": {
+            "amount": 9531751,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        },
+        {
+          "announcedDate": "2022-06-03",
+          "postMoneyValuation": {
+            "amount": 4496882,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 6,
+        "visibleNames": [
+          {
+            "name": "Abhinav Asthana",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Matt McClure",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Nexus Venture Partners",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Tobias Lutke",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Zapier",
+            "rounds": [
+              "Series A"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 41,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-04-07",
+          "publisher": "Geeky Gadgets",
+          "title": "How Claude Code & Firecrawl Let AI Agents Browse the Web Exactly Like Humans",
+          "url": "https://www.geeky-gadgets.com/claude-code-firecrawl/"
+        },
+        {
+          "date": "2026-02-24",
+          "publisher": "SalesTech Star",
+          "title": "Fingerprint Reports 65% ARR Growth, Surpasses 1 Billion Device Identifications Per Month as Enterprises Adopt Device Intelligence to Combat AI-Driven Fraud",
+          "url": "https://salestechstar.com/price-optimization-revenue-management/fingerprint-reports-65-arr-growth-surpasses-1-billion-device-identifications-per-month-as-enterprises-adopt-device-intelligence-to-combat-ai-driven-fraud/"
+        },
+        {
+          "date": "2026-02-24",
+          "publisher": "Business Wire",
+          "title": "Fingerprint Reports 65% ARR Growth, Surpasses 1 Billion Device Identifications Per Month as Enterprises Adopt Device Intelligence to Combat AI-Driven Fraud",
+          "url": "https://www.businesswire.com/news/home/20260224743088/en/Fingerprint-Reports-65-ARR-Growth-Surpasses-1-Billion-Device-Identifications-Per-Month-as-Enterprises-Adopt-Device-Intelligence-to-Combat-AI-Driven-Fraud"
+        },
+        {
+          "date": "2026-01-08",
+          "publisher": "Geeky Gadgets",
+          "title": "Combine Firecrawl & Gemini 3 to Build Beautiful Websites & Apps in Minutes",
+          "url": "https://www.geeky-gadgets.com/gemini-3-build-web-sites/"
+        },
+        {
+          "date": "2025-10-28",
+          "publisher": "KDnuggets",
+          "title": "7 Free Remote MCPs You Must Use As A Developer",
+          "url": "https://www.kdnuggets.com/7-free-remote-mcps-you-must-use-as-a-developer"
+        },
+        {
+          "date": "2025-09-22",
+          "publisher": "Geeky Gadgets",
+          "title": "OpenLovable Open Source AI : Build Apps With Ease Without Coding",
+          "url": "https://www.geeky-gadgets.com/openlovable-app-development-platform/"
+        },
+        {
+          "date": "2025-08-29",
+          "publisher": "Tech Startups - Startups and Technology news",
+          "title": "Ethereum-Based Meme Project Pepeto ($PEPETO) Surges Past $6.5M in Presale",
+          "url": "https://techstartups.com/2025/08/29/ethereum-based-meme-project-pepeto-pepeto-surges-past-6-5m-in-presale/"
+        },
+        {
+          "date": "2025-08-29",
+          "publisher": "Tech Startups - Startups and Technology news",
+          "title": "Top Startup and Tech Funding News Roundup – Week Ending August 29, 2025",
+          "url": "https://techstartups.com/2025/08/29/top-startup-and-tech-funding-news-roundup-week-ending-august-29-2025/"
+        },
+        {
+          "date": "2025-08-27",
+          "publisher": "Sourcery",
+          "title": "ICYMI: MIT AI Report",
+          "url": "https://www.sourcery.vc/p/icymi-mit-ai-report"
+        },
+        {
+          "date": "2025-08-25",
+          "publisher": "Tech Startups - Startups and Technology news",
+          "title": "Thoma Bravo to acquire Verint in $2 billion deal as private equity bets on AI",
+          "url": "https://techstartups.com/2025/08/25/thoma-bravo-to-acquire-verint-in-2-billion-deal-as-private-equity-bets-on-ai/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 14500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 19.12
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "reportedPartnerships": {
+      "note": "Provider event summaries with linked sources; not independently verified.",
+      "items": [
+        {
+          "date": "2026-01-08",
+          "description": "The article highlights a new collaboration between Firecrawl and Gemini 3.0, where Firecrawl extracts structured branding data and Gemini 3.0 converts it into clean front-end code to rapidly create websites and apps.",
+          "sources": [
+            {
+              "date": "2026-01-08",
+              "publisher": "Geeky Gadgets",
+              "title": "Combine Firecrawl & Gemini 3 to Build Beautiful Websites & Apps in Minutes",
+              "url": "https://www.geeky-gadgets.com/gemini-3-build-web-sites/"
+            }
+          ]
+        }
+      ]
+    },
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2025-09-01",
+      "growthChange90Days": 11,
+      "growthScore": 89,
+      "heatChange90Days": -6,
+      "heatScore": 66,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2025-11-15",
+        "probabilityPercent": 76.36
+      },
+      "funding": {
+        "generatedDate": "2025-10-25",
+        "probabilityPercent": 94.3,
+        "timingEstimatePercent": {
+          "within6Months": 99.99,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 91.02
+      },
+      "ipo": {
+        "generatedDate": "2025-11-15",
+        "probabilityPercent": 3.85
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Apify is the largest marketplace of tools for AI. Thousands of Actors get web data and automate tasks.",
+          "employeeRange": "101-250",
+          "name": "Apify",
+          "sharedCategories": [
+            "Developer APIs"
+          ],
+          "sharedSpecialties": [
+            "API Integration",
+            "Extract Transform Load (ETL)",
+            "Data Collection and Processing",
+            "Content Aggregation Services",
+            "Data Pipelines"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "We offer reliable web data extraction with an array of products, including proxy management, data APIs, data services, and developer tools.",
+          "employeeRange": "101-250",
+          "name": "Zyte",
+          "sharedCategories": [
+            "SaaS"
+          ],
+          "sharedSpecialties": [
+            "API Integration",
+            "Extract Transform Load (ETL)",
+            "Data Collection and Processing",
+            "Content Aggregation Services",
+            "Data Pipelines"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "ScrapingBee is a software company that offers a web scraping API that handles headless browsers.",
+          "employeeRange": "1-10",
+          "name": "ScrapingBee",
+          "sharedCategories": [
+            "Developer APIs"
+          ],
+          "sharedSpecialties": [
+            "Extract Transform Load (ETL)",
+            "Data Collection and Processing",
+            "Content Aggregation Services",
+            "Data Pipelines"
+          ],
+          "similarityScore": 97.66
+        },
+        {
+          "description": "Scraper API handles proxies, browsers, and CAPTCHAs, so customers can get the HTML from any web page with a simple API call.",
+          "employeeRange": "1-10",
+          "name": "Scraper API",
+          "sharedCategories": [
+            "Developer APIs"
+          ],
+          "sharedSpecialties": [
+            "Extract Transform Load (ETL)",
+            "Data Collection and Processing",
+            "Content Aggregation Services",
+            "Data Pipelines"
+          ],
+          "similarityScore": 96.48
+        },
+        {
+          "description": "Simple but powerful Web Scraping API",
+          "employeeRange": "1-10",
+          "name": "Scrapfly",
+          "sharedCategories": [
+            "Developer APIs",
+            "SaaS"
+          ],
+          "sharedSpecialties": [
+            "Extract Transform Load (ETL)",
+            "Data Collection and Processing",
+            "Data Pipelines"
+          ],
+          "similarityScore": 95.55
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Series A round raised $14,500,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $4,496,882 to $85,998,580, a 19.12x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 89 (+11 over 90 days) and market heat at 66 (-6).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Apify, Zyte, ScrapingBee.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 41 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:21:19.273Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:21:19.219Z",
+    "url": "https://www.crunchbase.com/organization/futura-4c93"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Futura",
+      "shortDescription": "Futura has earned a reputation for technical leadership in Tissue Converting technology.",
+      "description": "Futura's has its headquarters in Lucca, Italy, which is also home to FuturaLab - the company's beating heart of innovation and research. Futura is also located in Alpharetta, USA and Joinville, Brazil. Installation and complete service support is provided by the Procare division, offering a dedicated suite of on site and remote services and the latest diagnostic technology.",
+      "website": "https://www.futuraconverting.com/",
+      "foundedYear": 2002,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Alpharetta, Georgia, United States",
+      "geographicRegions": [
+        "Greater Atlanta Area",
+        "East Coast",
+        "Southern US"
+      ],
+      "industries": [
+        "Consulting",
+        "Innovation Management",
+        "Machinery Manufacturing"
+      ],
+      "sectors": [
+        "Manufacturing",
+        "Professional Services"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Manufacturing lines designed for converting tissue paper products for consumer and away-from-home markets.",
+        "name": "Futura Converting Lines"
+      },
+      {
+        "description": "An innovation laboratory focused on designing and developing new tissue converting technologies and solutions.",
+        "name": "FuturaLab"
+      },
+      {
+        "description": "A service program offering maintenance, support, training, and performance improvement for tissue converting machinery.",
+        "name": "Futura ProCare"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -23,
+      "heatScore": 55
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 6.76
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 70.39
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 1.17
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Körber Tissue provides solutions for the paper manufacturing sector.",
+          "employeeRange": "1,001-5,000",
+          "name": "Körber Tissue",
+          "sharedCategories": [
+            "Machinery Manufacturing"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Valmet is a global developer and supplier of technologies, automation, and services for the pulp, paper, and energy industries.",
+          "employeeRange": "10,001+",
+          "name": "Valmet",
+          "sharedSpecialties": [
+            "Paper and Pulp Machinery"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "PCMC offer machinery for a variety of industries including tissue converting and packaging, flexographic printing and nonwovens.",
+          "employeeRange": "501-1,000",
+          "name": "Paper Converting Machine Company",
+          "sharedCategories": [
+            "Machinery Manufacturing"
+          ],
+          "sharedSpecialties": [
+            "Conveyor and Material Handling Systems",
+            "Print Machinery",
+            "Paper and Pulp Machinery",
+            "Flexible Packaging Films",
+            "Custom Machine Manufacturing",
+            "Packaging and Filling Machinery"
+          ],
+          "similarityScore": 83
+        },
+        {
+          "description": "Baosuo Paper Machinery Manufacture Co. is a manufacturer and supplier of paper machines, tissue conversion machines, and packing machines.",
+          "employeeRange": "501-1,000",
+          "name": "Baosuo Paper Machinery Manufacture Co.",
+          "sharedSpecialties": [
+            "Conveyor and Material Handling Systems",
+            "Paper Cores and Tubes",
+            "Paper and Pulp Machinery",
+            "Custom Machine Manufacturing",
+            "Packaging and Filling Machinery"
+          ],
+          "similarityScore": 77
+        },
+        {
+          "description": "R.W. Hartnett Company is a manufacturer of pharmaceutical and confectionary printing machines.",
+          "employeeRange": "11-50",
+          "name": "R.W. Hartnett Company",
+          "sharedSpecialties": [
+            "Conveyor and Material Handling Systems",
+            "Print Machinery",
+            "Packaging and Filling Machinery"
+          ],
+          "similarityScore": 72
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Körber Tissue, Valmet, Paper Converting Machine Company.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

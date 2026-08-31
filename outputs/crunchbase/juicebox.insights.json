@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:34:49.394Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:34:49.337Z",
+    "url": "https://www.crunchbase.com/organization/juicebox"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Juicebox",
+      "shortDescription": "Juicebox is a music video channel devoted to kids featuring parent-approved videos from today's biggest stars, 24-7.",
+      "description": "Juicebox is a music video channel devoted to kids; it features parent-approved videos from today’s biggest stars, 24-7.\r\n\r\nJuicebox is a commercial-free service that broadcasts music videos aimed at kids, specifically, pre-teens. The videos are approved by a committee consisting of parents and Bell Media employees, who determine the appropriateness of a specific video for the channel's target audience.",
+      "website": "http://www.juiceboxtv.ca/",
+      "foundedYear": 2001,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "Toronto, Ontario, Canada",
+      "geographicRegions": [
+        "Great Lakes"
+      ],
+      "industries": [
+        "Media and Entertainment",
+        "Music",
+        "Video"
+      ],
+      "sectors": [
+        "Media and Entertainment",
+        "Music and Audio",
+        "Video"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 4,
+      "includedUniqueCount": 4,
+      "items": [
+        {
+          "date": "2019-06-26",
+          "publisher": "Forbes",
+          "title": "Brianna Rader Talks Juicebox, Her Revolutionary Sexual Wellness App",
+          "url": "https://www.forbes.com/sites/mollysprayregen/2019/06/26/brianna-rader-talks-juicebox-her-revolutionary-sexual-wellness-app/"
+        },
+        {
+          "date": "2019-05-20",
+          "publisher": "New York Times (NYT)",
+          "title": "Talk Dirty With Machine",
+          "url": "https://www.nytimes.com/2019/05/20/fashion/dating-bots-flirttech.html"
+        },
+        {
+          "date": "2016-12-07",
+          "publisher": "TechCrunch",
+          "title": "AeroVironment: official charger of the Chevy Bolt",
+          "url": "https://techcrunch.com/2016/12/06/aerovironment-official-charger-of-the-chevy-bolt/"
+        },
+        {
+          "date": "2016-06-21",
+          "title": "Juicebox acquired by Stingray"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 0,
+      "growthScore": 85,
+      "heatChange90Days": -6,
+      "heatScore": 70
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 47.88
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Music Choice is a company that programms music and produces music related content for digital products.",
+          "employeeRange": "51-100",
+          "name": "Music Choice",
+          "sharedCategories": [
+            "Music"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "BabyFirstTV is an online platform offering satellite TV, games, and smartphone apps for infants, toddlers, and parents.",
+          "employeeRange": "11-50",
+          "name": "BabyFirstTV",
+          "similarityScore": 86
+        },
+        {
+          "description": "CoComelon specializes in 3D animation videos.",
+          "employeeRange": "11-50",
+          "name": "CoComelon",
+          "sharedCategories": [
+            "Video"
+          ],
+          "similarityScore": 85
+        },
+        {
+          "description": "Disney Interactive develops and distributes multi-platform video games.",
+          "employeeRange": "501-1,000",
+          "name": "Disney Interactive",
+          "similarityScore": 85
+        },
+        {
+          "description": "Moonbug is a global digital-first entertainment company for kids.",
+          "employeeRange": "501-1,000",
+          "name": "Moonbug",
+          "sharedCategories": [
+            "Media and Entertainment"
+          ],
+          "similarityScore": 84
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 85 (+0 over 90 days) and market heat at 70 (-6).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Music Choice, BabyFirstTV, CoComelon.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

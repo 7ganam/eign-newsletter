@@ -1,0 +1,436 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:15:48.865Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:15:48.817Z",
+    "url": "https://www.crunchbase.com/organization/authzed"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "AuthZed",
+      "shortDescription": "AuthZed is a permissions systems provider that helps organizations build fast, secure, and scalable authorization services for applications.",
+      "description": "AuthZed is a company focused on providing solutions for building fine-grained authorization services. The company offers a managed service called AuthZed Dedicated, which provides a production-ready version of its open-source project SpiceDB, designed to deliver highly available, consistent, and performant authorization at global scale. AuthZed also licenses the SpiceDB Enterprise package, which includes additional enterprise functionality for self-hosted deployments.",
+      "website": "https://authzed.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "New York, United States",
+      "geographicRegions": [
+        "Greater New York Area",
+        "East Coast",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Database",
+        "Information Technology",
+        "Software"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Information Technology",
+        "Software"
+      ],
+      "founders": [
+        "Jake Moshenko",
+        "Jimmy Zelinskie",
+        "Joseph Schorr"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A scalable, consistent database inspired by Google Zanzibar for storing and computing fine-grained authorization data.",
+        "name": "SpiceDB"
+      },
+      {
+        "description": "A dedicated cloud platform providing isolated, reserved compute resources for deploying SpiceDB with private networking and regional control.",
+        "name": "AuthZed Dedicated"
+      },
+      {
+        "description": "A shared control plane cloud service for managing SpiceDB deployments with self-service provisioning and API access.",
+        "name": "AuthZed Cloud (Preview)"
+      },
+      {
+        "description": "A Kubernetes controller for managing SpiceDB clusters, enabling deployment, scaling, and zero-downtime migrations.",
+        "name": "SpiceDB Operator"
+      },
+      {
+        "description": "A RESTful JSON API for managing AuthZed Dedicated Cloud infrastructure and permissions systems programmatically.",
+        "name": "AuthZed Cloud API"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 15900000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2024-06-27",
+      "lastFundingType": "Series A",
+      "rounds": [
+        {
+          "announcedDate": "2024-06-27",
+          "amount": {
+            "amount": 12000000,
+            "currency": "USD"
+          },
+          "investorCount": 4,
+          "leadInvestors": [
+            "General Catalyst"
+          ],
+          "postMoneyValuation": {
+            "amount": 64187334,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2021-04-21",
+          "amount": {
+            "amount": 3900000,
+            "currency": "USD"
+          },
+          "investorCount": 14,
+          "leadInvestors": [
+            "Work-Bench"
+          ],
+          "postMoneyValuation": {
+            "amount": 17789924,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 15,
+        "visibleNames": [
+          {
+            "name": "Amplify Partners",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "General Catalyst",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Gokul Rajaram",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Jacob Smith",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Spencer Kimball",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Tobias Boelter",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Work-Bench",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Series A",
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Zachary Smith",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 27,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2025-08-21",
+          "publisher": "SiliconANGLE",
+          "title": "Investors worry about an AI bubble, but the money keeps flowing",
+          "url": "https://siliconangle.com/2025/08/21/investors-worry-ai-bubble-money-keeps-flowing/"
+        },
+        {
+          "date": "2025-06-14",
+          "publisher": "PR.com",
+          "title": "AuthZed Launches Authorization Infrastructure for AI, Providing Official Support for RAG and Agentic AI",
+          "url": "https://www.pr.com/press-release/940901"
+        },
+        {
+          "date": "2025-06-12",
+          "publisher": "PR Newswire",
+          "title": "Cockroach Labs Expands Ecosystem with ISV Partner Program to Deliver Resilient Solutions on Modern Enterprise Platforms",
+          "url": "https://www.prnewswire.com/news-releases/cockroach-labs-expands-ecosystem-with-isv-partner-program-to-deliver-resilient-solutions-on-modern-enterprise-platforms-302478670.html"
+        },
+        {
+          "date": "2025-02-27",
+          "publisher": "The New Stack",
+          "title": "OAuth Works for AI Agents, but Scaling Is Another Question",
+          "url": "https://thenewstack.io/oauth-works-for-ai-agents-but-scaling-is-another-question/"
+        },
+        {
+          "date": "2025-02-14",
+          "publisher": "PR.com",
+          "title": "AuthZed, the Authorization Platform, Leads the Industry Forward by Launching Expiring Relationships for Time-Bound Permissions",
+          "url": "https://www.pr.com/press-release/931467"
+        },
+        {
+          "date": "2024-07-03",
+          "publisher": "Business Wire",
+          "title": "AuthZed Raises $12 Million to Accelerate Permissions Systems in Series A Funding",
+          "url": "https://www.businesswire.com/news/home/20240627642567/en/AuthZed-Raises-12-Million-to-Accelerate-Permissions-Systems-in-Series-A-Funding"
+        },
+        {
+          "date": "2024-07-03",
+          "publisher": "FinSMEs",
+          "title": "AuthZed Raises $12M in Series A Funding",
+          "url": "https://www.finsmes.com/2024/06/authzed-raises-12m-in-series-a-funding.html"
+        },
+        {
+          "date": "2024-07-03",
+          "publisher": "SecurityWeek",
+          "title": "AuthZed Raises $12 Million for Permissions Management Technology",
+          "url": "https://www.securityweek.com/authzed-raises-12-million-for-permissions-management-technology/"
+        },
+        {
+          "date": "2024-07-03",
+          "publisher": "SiliconANGLE",
+          "title": "Permissions management startup AuthZed raises $12M to accelerate its strategic expansion",
+          "url": "https://siliconangle.com/2024/06/27/permissions-management-startup-authzed-raises-12m-accelerate-strategic-expansion/"
+        },
+        {
+          "date": "2024-07-03",
+          "publisher": "FinTech Global",
+          "title": "AuthZed secures $12m in Series A to expand permission management services",
+          "url": "https://fintech.global/2024/06/28/authzed-secures-12m-in-series-a-to-expand-permission-management-services/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 2,
+    "knownDetailedFundingAmount": {
+      "amount": 15900000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 75.47,
+    "latestToEarliestKnownValuationMultiple": 3.61
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2024-07-24",
+      "growthChange90Days": -5,
+      "growthScore": 45,
+      "heatChange90Days": -2,
+      "heatScore": 58,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 93.28
+      },
+      "funding": {
+        "generatedDate": "2025-10-04",
+        "probabilityPercent": 93.38,
+        "timingEstimatePercent": {
+          "within6Months": 100,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2025-05-11",
+        "probabilityPercent": 95.21
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 3.86
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Oso is authorization as a service",
+          "employeeRange": "11-50",
+          "name": "Oso",
+          "sharedCategories": [
+            "Software",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Zero Trust Security",
+            "API Security",
+            "Identity Governance and Administration (IGA)",
+            "API Management"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Permit.io empowers developers to bake in permissions and access-control into product in minutes and takes away the pain of rebuilding them.",
+          "employeeRange": "11-50",
+          "name": "Permit.io",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Cloud Infrastructure Entitlement Management (CIEM)",
+            "Identity Governance and Administration (IGA)",
+            "Developer Portals"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Cerbos offers an open-source authorization layer for products making user permissions and authorization simple to implement and manage.",
+          "employeeRange": "11-50",
+          "name": "Cerbos",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Zero Trust Security",
+            "API Security",
+            "Identity Governance and Administration (IGA)",
+            "API Gateway",
+            "API Management",
+            "Developer Portals"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Warrant develops APIs and infrastructure to help developers add authorization and access control to their apps.",
+          "employeeRange": "1-10",
+          "name": "Warrant",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Zero Trust Security",
+            "API Security",
+            "Identity Governance and Administration (IGA)",
+            "Developer Portals"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Aserto enables SaaS application developers to roll out enterprise-ready permissions and RBAC through its modern authorization platform.",
+          "employeeRange": "11-50",
+          "name": "Aserto",
+          "sharedSpecialties": [
+            "Zero Trust Security",
+            "Container and Kubernetes Platform Services",
+            "API Security",
+            "Identity Governance and Administration (IGA)",
+            "API Gateway",
+            "API Management"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Series A round raised $12,000,000, or 75.47% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $17,789,924 to $64,187,334, a 3.61x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 45 (-5 over 90 days) and market heat at 58 (-2).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Oso, Permit.io, Cerbos.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 27 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

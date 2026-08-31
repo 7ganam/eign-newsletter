@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:08:23.704Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:08:23.658Z",
+    "url": "https://www.crunchbase.com/organization/imgfave"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "imgfave",
+      "shortDescription": "Discover and share amazing images.",
+      "description": "imgfave is a place to discover and share images. They allow users to collect favorite images and organize them into fun collections like humor, art, photography, fashion, weddings and more.",
+      "website": "http://imgfave.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "E-Commerce",
+        "Fashion",
+        "Internet of Things",
+        "Lifestyle",
+        "Photography",
+        "Photo Sharing",
+        "Web Design"
+      ],
+      "sectors": [
+        "Clothing and Apparel",
+        "Commerce and Shopping",
+        "Community and Lifestyle",
+        "Content and Publishing",
+        "Design",
+        "Information Technology",
+        "Internet Services",
+        "Media and Entertainment"
+      ],
+      "founders": [
+        "Gabe Ragland"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2012-08-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2012-08-01",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 2726848,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2013-05-22",
+          "publisher": "TechCrunch",
+          "title": "Y Combinator S12 Demo Day Batch 1: Meet 9GAG, Double Robotics, Hubchilla, SmartAsset And More | TechCrunch",
+          "url": "http://techcrunch.com/2012/08/21/yc-demo-day-s12/"
+        },
+        {
+          "date": "2012-08-01",
+          "publisher": "TechCrunch",
+          "title": "Can A YC, Mobile-Rookie Founder Crack The Image Sharing Space With Imgfave?",
+          "url": "http://techcrunch.com/2012/08/01/can-a-yc-mobile-rookie-founder-crack-the-photo-sharing-space-with-imgfave/"
+        },
+        {
+          "date": "2012-08-01",
+          "title": "Seed Round - imgfave"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -4,
+      "heatScore": 37
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 7.92
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 2.02,
+        "timingEstimatePercent": {
+          "within6Months": 12.78,
+          "months6To11": 11.15,
+          "months12To24": 18.21,
+          "beyond24Months": 24.38
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 24.84
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 1.84
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $2,726,848 to $2,726,848, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:50:40.591Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:50:40.554Z",
+    "url": "https://www.crunchbase.com/organization/degrees-of-freedom"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Degrees of Freedom",
+      "shortDescription": "Degrees of Freedom develops innovative consumer-facing products which draw from the fields of aerospace, origami, and mathematics.",
+      "website": "http://www.enjoydof.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Los Angeles, California, United States",
+      "geographicRegions": [
+        "Greater Los Angeles Area",
+        "West Coast",
+        "Western US"
+      ],
+      "founders": [
+        "Brian Ignaut"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A ring box with a patented mobius kaleidocycle mechanism that transforms fluidly to reveal its contents, securing rings with a silk or velvet-wrapped foam insert.",
+        "name": "Kinetacube Ring Box"
+      },
+      {
+        "description": "A titanium lattice sphere designed as a kinetic toy and mathematical sculpture that compresses and rebounds with a unique tactile and auditory experience.",
+        "name": "V1 Vixiv Invixiball — Titanium Spherical Lattice"
+      },
+      {
+        "description": "A chess set featuring heavy, well-built pieces made from premium materials, designed for users who appreciate mechanical craftsmanship in games.",
+        "name": "Kinetic Chess Set - Second Limited Edition"
+      },
+      {
+        "description": "A titanium and brass fidget toy based on Buckminster Fuller’s Jitterbug mechanism, offering smooth expansion and contraction with a single degree of freedom.",
+        "name": "First Limited Edition Titan Jitterbug"
+      },
+      {
+        "description": "A carbon fiber-filled nylon stand designed to hold and showcase Kinetacube Ring Boxes, featuring a rubber base and a tray for daily wear jewelry.",
+        "name": "Kinetacube Display Stand"
+      },
+      {
+        "description": "A red polyester insert accessory for the Kinetacube Ring Box, inspired by aerospace 'Remove Before Flight' tags, providing a removable cover for the box’s opening.",
+        "name": "Kinetacube Remove Before Flight"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -8,
+      "heatScore": 44
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2025-01-11",
+        "probabilityPercent": 89.74
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Chess Store And Manufacturer",
+          "employeeRange": "1-10",
+          "name": "My Chess Sets",
+          "sharedSpecialties": [
+            "Collectible Figures",
+            "Collectible Storage and Supplies"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Kaoori offers chess sets, boards, pieces, and accessories for casual and competitive players.",
+          "employeeRange": "251-500",
+          "name": "Kaoori",
+          "sharedSpecialties": [
+            "Toys and Educational Play",
+            "Collectible Figures",
+            "Collectible Storage and Supplies"
+          ],
+          "similarityScore": 92.821
+        },
+        {
+          "description": "Shop for Luxury Watch Winders & Safes. Expertly crafted with premium materials & design for your valuables.",
+          "employeeRange": "11-50",
+          "name": "watch winder",
+          "sharedSpecialties": [
+            "Watches",
+            "Collectible Storage and Supplies"
+          ],
+          "similarityScore": 87.462
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include My Chess Sets, Kaoori, watch winder.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

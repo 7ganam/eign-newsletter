@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:47:16.011Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:47:15.961Z",
+    "url": "https://www.crunchbase.com/organization/bron"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Bron",
+      "shortDescription": "Bron provides specialty, construction machinery through specialization in design, manufacture, and service.",
+      "website": "https://www.bronrwf.com/",
+      "foundedYear": 1974,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Woodstock, Ontario, Canada",
+      "geographicRegions": [
+        "Great Lakes"
+      ],
+      "industries": [
+        "Construction",
+        "Machinery Manufacturing",
+        "Manufacturing"
+      ],
+      "sectors": [
+        "Manufacturing",
+        "Real Estate"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A 225 hp self-propelled machine designed for installing drainage tile and managing drainage projects.",
+        "name": "BRON 150 Drainage Plow"
+      },
+      {
+        "description": "A self-propelled drainage plow combining features of larger models with lighter road weight for drainage tile installation.",
+        "name": "BRON 385 Drainage Plow"
+      },
+      {
+        "description": "A redesigned self-propelled drainage plow offering enhanced comfort and power for drainage tile installation.",
+        "name": "BRON 585 Drainage Plow"
+      },
+      {
+        "description": "Add-on drainage plows certified to maintain grade during drainage tile installation, mountable on rubber tire and other equipment.",
+        "name": "BRON Add-On Drainage Plows (DL375, DL400, DL750, RC750)"
+      },
+      {
+        "description": "A wheel trencher designed for gasline and utility installations, offering maneuverability and speed.",
+        "name": "BRON TR450 Wheel Trencher"
+      },
+      {
+        "description": "A mulching machine sized for small to moderate clearing jobs such as right-of-way maintenance.",
+        "name": "BRON 310 Mulcher"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -8,
+      "heatScore": 46
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 28.16
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Mastenbroek is engaged in the design and manufacturer of of self propelled trenchers, plows, and subsea machinery.",
+          "employeeRange": "11-50",
+          "name": "Mastenbroek",
+          "sharedCategories": [
+            "Machinery Manufacturing",
+            "Manufacturing"
+          ],
+          "sharedSpecialties": [
+            "Underground Utilities Installation",
+            "Tillage Implements",
+            "Farm Machinery",
+            "Construction Equipment",
+            "Site Preparation and Earthworks",
+            "Dewatering and Groundwater Control",
+            "Heavy Equipment Attachments"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Ditch Witch designs and manufactures underground construction equipment",
+          "employeeRange": "1,001-5,000",
+          "name": "Ditch Witch",
+          "sharedCategories": [
+            "Machinery Manufacturing",
+            "Manufacturing"
+          ],
+          "sharedSpecialties": [
+            "Underground Utilities Installation",
+            "Construction Equipment",
+            "Site Preparation and Earthworks",
+            "Heavy Equipment Attachments"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "TESMEC is a machinery company offering railway and oil field equipment.",
+          "employeeRange": "501-1,000",
+          "name": "TESMEC",
+          "sharedCategories": [
+            "Machinery Manufacturing"
+          ],
+          "sharedSpecialties": [
+            "Underground Utilities Installation",
+            "Construction Equipment"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "A Winn, Mich.-based maker of wood chippers and deforestation equipment.",
+          "employeeRange": "251-500",
+          "name": "Morbark",
+          "sharedCategories": [
+            "Manufacturing"
+          ],
+          "sharedSpecialties": [
+            "Forestry Machinery"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "PRINOTH is manufacturer of snow groomers and tracked utility vehicles.",
+          "employeeRange": "1,001-5,000",
+          "name": "PRINOTH",
+          "sharedCategories": [
+            "Manufacturing"
+          ],
+          "sharedSpecialties": [
+            "Land Clearing",
+            "Forestry Machinery",
+            "Heavy Equipment Attachments"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Mastenbroek, Ditch Witch, TESMEC.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

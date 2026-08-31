@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:58:47.960Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:58:47.902Z",
+    "url": "https://www.crunchbase.com/organization/levers"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Levers",
+      "shortDescription": "Predictive Analytics Tools for Digital Marketing",
+      "description": "Levers is a San Francisco based company using predictive analytics and statistical modeling to help people make smarter decisions about digital marketing. \r\n\r\nBy providing tools to CMOs and Marketers only previously available to data scientists and statisticians, Levers helps businesses to better understand their data by developing metric relationships, identify growth opportunities, and simulate changes to their marketing strategies.",
+      "website": "https://leve.rs/",
+      "foundedYear": 2013,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Analytics",
+        "Big Data",
+        "Business Intelligence",
+        "Predictive Analytics",
+        "Social Media Marketing",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Sales and Marketing",
+        "Software"
+      ],
+      "founders": [
+        "Andrew Ryno",
+        "Chris Conrey",
+        "Chuck Reynolds",
+        "Jonathan Kressaty"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 4,
+      "includedUniqueCount": 4,
+      "items": [
+        {
+          "date": "2021-06-07",
+          "publisher": "Wamda News",
+          "title": "Red Sea Farms raises $10 million to expand across Saudi",
+          "url": "https://www.wamda.com/en/2021/06/red-sea-farms-raises-10-million-expand-saudi"
+        },
+        {
+          "date": "2021-04-20",
+          "publisher": "techstars.com",
+          "title": "Make Your Startup Metrics-Driven for Repeatable Success",
+          "url": "http://tsta.rs/r9VQ50EtmI7"
+        },
+        {
+          "date": "2018-04-06",
+          "publisher": "Wall Street Journal",
+          "title": "How Boards Can Protect and Enhance Reputation with the Right Levers",
+          "url": "http://deloitte.wsj.com/cfo/2018/04/06/how-boards-can-protect-and-enhance-reputation-with-the-right-levers-2/"
+        },
+        {
+          "date": "2018-03-07",
+          "publisher": "Wall Street Journal",
+          "title": "How Boards Can Protect and Enhance Reputation with the Right Levers",
+          "url": "http://deloitte.wsj.com/riskandcompliance/2018/03/07/how-boards-can-protect-and-enhance-reputation-with-the-right-levers/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -2,
+      "heatScore": 58
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "The SuperApp for Meta Advertisers",
+          "employeeRange": "11-50",
+          "name": "Madgicx",
+          "sharedCategories": [
+            "Analytics",
+            "Software"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Professional ads automation tool",
+          "employeeRange": "11-50",
+          "name": "Revealbot",
+          "similarityScore": 95
+        },
+        {
+          "description": "Adverity is an integrated data platform for the modern marketer, helping them to connect, manage and use data at scale.",
+          "employeeRange": "251-500",
+          "name": "Adverity",
+          "sharedCategories": [
+            "Analytics",
+            "Big Data"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Funnel designs and develops software/platforms that help marketers automate their data collection for reporting and analysis.",
+          "employeeRange": "251-500",
+          "name": "Funnel",
+          "sharedCategories": [
+            "Analytics",
+            "Software",
+            "Big Data"
+          ],
+          "similarityScore": 85
+        },
+        {
+          "description": "Skai is an AI-powered platform that offers consumer and market insights, and omni-channel media activation services.",
+          "employeeRange": "501-1,000",
+          "name": "Skai",
+          "sharedCategories": [
+            "Software",
+            "Predictive Analytics"
+          ],
+          "similarityScore": 83
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Madgicx, Revealbot, Adverity.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

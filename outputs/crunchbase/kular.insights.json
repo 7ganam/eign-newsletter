@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:47:34.639Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:47:34.587Z",
+    "url": "https://www.crunchbase.com/organization/kular"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "KULAR",
+      "shortDescription": "KULAR is a clean technology company which operates a combustion platform that enables scalable carbon-negative combustion.",
+      "description": "KULAR is a clean technology company that develops carbon-negative combustion platforms that are scalable. The goal of the company is to enhance efficient combustion into as many “burner applications” as possible and in doing so, to displace inefficient and polluting burners currently utilizing fossil fuels. The company empowers individuals to change the world by giving them the technology to effect positive change.",
+      "website": "https://www.kulartech.com/airstove-one/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Kingston, Ontario, Canada",
+      "geographicRegions": [
+        "Great Lakes"
+      ],
+      "industries": [
+        "CleanTech",
+        "Sustainability"
+      ],
+      "sectors": [
+        "Sustainability"
+      ],
+      "founders": [
+        "Andrew Kular"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A rechargeable plasma lighter system that uses a solar panel charger via USB to ignite organic substances without fuel or chemicals.",
+        "name": "KULAR Plasma Lighter System"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -35,
+      "heatScore": 26
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 74.37
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "JJ Trading is an online store that sells health supplies, accessories, consumer electronics, and goods.",
+          "employeeRange": "1-10",
+          "name": "JJ Trading",
+          "sharedSpecialties": [
+            "Lighters and Matches"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "The Imagination Group is a retail company that offers ceremonial tobacco, traditional blankets, lighters, tumblers, buffs, and journals.",
+          "employeeRange": "1-10",
+          "name": "The Imagination Group",
+          "sharedSpecialties": [
+            "Lighters and Matches"
+          ],
+          "similarityScore": 95.11
+        },
+        {
+          "description": "Cricket Lighters is a manufacturing company that produces disposable and long-lasting lighters that can light up to 2000 times.",
+          "employeeRange": "501-1,000",
+          "name": "Cricket Lighters",
+          "sharedSpecialties": [
+            "Lighters and Matches"
+          ],
+          "similarityScore": 90.452
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include JJ Trading, The Imagination Group, Cricket Lighters.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

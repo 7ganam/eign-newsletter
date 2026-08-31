@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:41:14.141Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:41:14.082Z",
+    "url": "https://www.crunchbase.com/organization/booko"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Booko",
+      "shortDescription": "Booko is a shopping site with a very simple goal - to find the cheapest place to buy books & DVDs.",
+      "website": "https://booko.com.au/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Melbourne, Victoria, Australia",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)",
+        "Australasia"
+      ],
+      "industries": [
+        "Books",
+        "EBooks",
+        "E-Commerce",
+        "Internet",
+        "Knowledge Management",
+        "Sales",
+        "Shopping"
+      ],
+      "sectors": [
+        "Administrative Services",
+        "Commerce and Shopping",
+        "Content and Publishing",
+        "Information Technology",
+        "Media and Entertainment",
+        "Sales and Marketing"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An online platform that helps users find the cheapest prices for books and DVDs by comparing offers from various retailers.",
+        "name": "Booko Shopping Site"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -22,
+      "heatScore": 66
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 10.9
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Social platform around books. Track what you're reading, follow friends, join clubs and discover your next favourite book.",
+          "employeeRange": "1-10",
+          "name": "Literal",
+          "sharedCategories": [
+            "Internet"
+          ],
+          "sharedSpecialties": [
+            "Bookstores"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Online platform to buy, sell, or donate old, second-hand books in India",
+          "employeeRange": "1-10",
+          "name": "BookMandee",
+          "sharedCategories": [
+            "Books"
+          ],
+          "sharedSpecialties": [
+            "Bookstores"
+          ],
+          "similarityScore": 95.44
+        },
+        {
+          "description": "GNOD is a self-learning system that enables users to discover and discuss new music, books, products, art, and movies.",
+          "employeeRange": "1-10",
+          "name": "GNOD",
+          "sharedSpecialties": [
+            "E-Book Retail and Distribution"
+          ],
+          "similarityScore": 90.871
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Literal, BookMandee, GNOD.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

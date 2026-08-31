@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:48:26.303Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:48:26.253Z",
+    "url": "https://www.crunchbase.com/organization/debteye"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Debteye",
+      "shortDescription": "New Twitter Page, follow us @SpringCoin",
+      "description": "New Twitter Page, follow us @SpringCoin",
+      "website": "http://www.debteye.com/",
+      "foundedYear": 2010,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Chicago, Illinois, United States",
+      "geographicRegions": [
+        "Greater Chicago Area",
+        "Great Lakes",
+        "Midwestern US"
+      ],
+      "industries": [
+        "Software"
+      ],
+      "sectors": [
+        "Software"
+      ],
+      "founders": [
+        "John Sun",
+        "Paul Zhang"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2011-08-02",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2011-08-02",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 8,
+      "includedUniqueCount": 8,
+      "items": [
+        {
+          "date": "2015-05-07",
+          "publisher": "Inc.com",
+          "title": "Where the Jobs Are (and Aren't) May Just Surprise You",
+          "url": "http://www.inc.com/jeremy-quittner/the-outsize-influence-of-startups-on-the-economy.html"
+        },
+        {
+          "date": "2015-04-22",
+          "publisher": "Inc.com",
+          "title": "Building a Startup, One Loan at a Time",
+          "url": "http://www.inc.com/jeremy-quittner/2015-30-under-30-avant.html"
+        },
+        {
+          "date": "2014-08-23",
+          "publisher": "Tech.Co",
+          "title": "Y Combinator Launches 63 More Startups, 31 Showcased At Demo Day",
+          "url": "http://tech.co/y-combinator-launches-63-startup-class-2011-08"
+        },
+        {
+          "date": "2013-08-14",
+          "publisher": "Venture Beat",
+          "title": "AvantCredit secures $20M to make financial loans more accessible with big data | VentureBeat | Deals | by Rebecca Grant",
+          "url": "http://venturebeat.com/2013/08/14/avantcredit-secures-20m-to-make-financial-loans-more-accessible-with-big-data/"
+        },
+        {
+          "date": "2011-08-29",
+          "publisher": "Mashable",
+          "url": "http://mashable.com/2011/08/24/yc-startups-summer-11/"
+        },
+        {
+          "date": "2011-08-29",
+          "publisher": "The Next Web",
+          "url": "http://thenextweb.com/insider/2011/08/25/our-favorite-startups-from-y-combinator-demo-day/"
+        },
+        {
+          "date": "2011-08-02",
+          "title": "Seed Round - Debteye"
+        },
+        {
+          "date": "2011-07-26",
+          "publisher": "TechCrunch",
+          "title": "YC-Funded Debteye Wants To Be Your (Much Cheaper) Credit Counselor",
+          "url": "http://techcrunch.com/2011/07/26/yc-funded-debteye-wants-to-be-your-much-cheaper-credit-counselor/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -1,
+      "heatScore": 33
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

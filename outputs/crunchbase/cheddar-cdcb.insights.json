@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:09:14.056Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:09:13.998Z",
+    "url": "https://www.crunchbase.com/organization/cheddar-cdcb"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Cheddar",
+      "shortDescription": "Instant payments and cashback you can bank on. Get cash back from brands, and get back cash from friends.",
+      "description": "Cheddar is a free bank account-enabled payments platform.",
+      "website": "https://www.cheddar.me/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Amsterdam, Noord-Holland, The Netherlands",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Payments"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Payments"
+      ],
+      "founders": [
+        "Luke Ladyman",
+        "Tariq Zaid"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A mobile app that enables users to make instant person-to-person payments and earn cashback by purchasing gift cards from various retailers.",
+        "name": "Cheddar App"
+      },
+      {
+        "description": "Digital gift cards for major UK retailers that can be topped up repeatedly and used for in-store or online purchases.",
+        "name": "Reloadable Gift Cards"
+      },
+      {
+        "description": "A service that provides instant cashback rewards when users buy gift cards through the Cheddar app for various retailers.",
+        "name": "Cashback on Gift Card Purchases"
+      },
+      {
+        "description": "A marketing service that uses real bank transaction data to help brands target customers with personalized cashback offers based on actual spending habits.",
+        "name": "Open Banking-Based Customer Targeting for Brands"
+      },
+      {
+        "description": "A forthcoming product designed to provide a financial wellness score based on detailed synthetic banking data to support consumers and small businesses.",
+        "name": "Debit Score® (Upcoming Product)"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2022-03-01",
+          "title": "Upside Saving acquired by Cheddar"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 0,
+      "growthScore": 83,
+      "heatChange90Days": -15,
+      "heatScore": 20
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 53.23
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 82.02
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 35.04
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Cash App enables users to send and receive money, access a customizable debit card, invest in stocks and bitcoin.",
+          "employeeRange": "1,001-5,000",
+          "name": "CashApp",
+          "sharedSpecialties": [
+            "Peer-to-Peer (P2P) Payment Services"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Venmo offers an app that allows users to share and make payments with friends for a variety of services.",
+          "employeeRange": "51-100",
+          "name": "Venmo",
+          "sharedCategories": [
+            "Payments"
+          ],
+          "sharedSpecialties": [
+            "Peer-to-Peer (P2P) Payment Services"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Revolut is a financial technology company that offers banking services, money transfers, foreign exchange, and spending analytics.",
+          "employeeRange": "10,001+",
+          "name": "Revolut",
+          "sharedSpecialties": [
+            "Payment Analytics and Dashboard"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Monzo is a digital bank that provides a user-friendly mobile app, innovative features, and a transparent approach to banking.",
+          "employeeRange": "1,001-5,000",
+          "name": "Monzo",
+          "sharedSpecialties": [
+            "Peer-to-Peer (P2P) Payment Services",
+            "Personal Finance Management (PFM) Platforms"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "PayPal is a financial service company that provides online payment solutions to its users worldwide.",
+          "employeeRange": "10,001+",
+          "name": "PayPal",
+          "sharedCategories": [
+            "Payments"
+          ],
+          "similarityScore": 88
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 83 (+0 over 90 days) and market heat at 20 (-15).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include CashApp, Venmo, Revolut.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

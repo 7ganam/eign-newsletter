@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:18:44.732Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:18:44.672Z",
+    "url": "https://www.crunchbase.com/organization/clickpe"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "ClickPe",
+      "shortDescription": "ClickPe operates a fintech marketplace that connects consumers and small businesses with loans, credit cards, and savings accounts.",
+      "description": "ClickPe operates a financial technology marketplace that connects consumers and small businesses with regulated lenders and banks. The company provides a digital platform and mobile app through which users can discover and compare loans, credit cards, savings accounts, and other credit products. Its infrastructure supports paperless onboarding, automated eligibility checks, and digital application flows that reduce manual documentation. For micro and small merchants, ClickPe offers access to SME business loans and daily repayment structures integrated with digital wallets. It also aggregates credit card offers, savings account products, and secured lending such as loans against property. The platform works with RBI-registered NBFCs, cooperative banks, and other financial institutions to route applications and manage disbursement. ClickPe focuses on streamlining credit discovery, loan aggregation, and repayment management for underserved retail and SME segments.",
+      "website": "https://clickpe.ai/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "industries": [
+        "Banking",
+        "Consumer Lending",
+        "Credit Cards",
+        "Financial Services",
+        "FinTech",
+        "Marketplace",
+        "Mobile Payments",
+        "Small and Medium Businesses",
+        "SMS"
+      ],
+      "sectors": [
+        "Commerce and Shopping",
+        "Financial Services",
+        "Internet Services",
+        "Lending and Investments",
+        "Messaging and Telecommunications",
+        "Mobile",
+        "Other",
+        "Payments",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "SME Business Loans provides daily-repayment loans tailored to micro and small merchants through a digital lending marketplace.",
+        "name": "SME Business Loans"
+      },
+      {
+        "description": "Credit Cards Discovery aggregates and compares multiple credit card offers and enables digital applications in one platform.",
+        "name": "Credit Cards Discovery"
+      },
+      {
+        "description": "Savings Accounts enables users to compare and open digital savings accounts from multiple partner banks through ClickPe.",
+        "name": "Savings Accounts"
+      },
+      {
+        "description": "Loan Against Property matches pre-qualified borrowers with secured loan offers backed by real estate or other fixed property.",
+        "name": "Loan Against Property"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 10,
+      "growthScore": 90,
+      "heatChange90Days": 74,
+      "heatScore": 86
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 94.46
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 90 (+10 over 90 days) and market heat at 86 (+74).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

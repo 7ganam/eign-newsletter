@@ -1,0 +1,349 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:54:59.077Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:54:59.019Z",
+    "url": "https://www.crunchbase.com/organization/layerci"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "webapp.io",
+      "shortDescription": "webapp.io is a code review automation platform that offers on-demand review environments for full stack web applications.",
+      "description": "Webapp.io is a Y Combinator-backed developer tools company that helps developers build next generation web applications. They’ve built an extremely performant custom hypervisor that makes webapp development 10x faster by automating repetitive code review steps.",
+      "website": "https://webapp.io/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Toronto, Ontario, Canada",
+      "geographicRegions": [
+        "Great Lakes"
+      ],
+      "industries": [
+        "Developer Tools",
+        "SaaS",
+        "Software"
+      ],
+      "sectors": [
+        "Software"
+      ],
+      "founders": [
+        "Colin Chartier",
+        "Lyn Chen"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Layerfiles define build steps and deployment configurations for VMs, similar to Dockerfiles but for virtual machines.",
+        "name": "Layerfiles"
+      },
+      {
+        "description": "Generates auto-hibernating full stack previews of code changes for every commit, facilitating easier review and testing.",
+        "name": "Preview Environments"
+      },
+      {
+        "description": "Allows creation of multiple VM copies to run acceptance tests in parallel, speeding up the development process.",
+        "name": "E2E Testing Automation"
+      },
+      {
+        "description": "Enables the combination of pipelines into efficient workflows for acceptance testing, improving CI efficiency.",
+        "name": "Continuous Integration"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 1123476,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 4,
+      "detailedRoundCount": 4,
+      "lastFundingDate": "2020-08-20",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2020-08-20",
+          "amount": {
+            "amount": 945000,
+            "currency": "USD"
+          },
+          "investorCount": 3,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "type": "Pre Seed"
+        },
+        {
+          "announcedDate": "2020-08-14",
+          "amount": {
+            "amount": 150000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 2292857,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        },
+        {
+          "announcedDate": "2020-05-19",
+          "amount": {
+            "amount": 7174,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Accelerator Centre"
+          ],
+          "type": "Non Equity Assistance"
+        },
+        {
+          "announcedDate": "2020-05-12",
+          "amount": {
+            "amount": 21302,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Accelerator Centre"
+          ],
+          "type": "Grant"
+        }
+      ],
+      "investors": {
+        "reportedCount": 4,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Accelerator Centre",
+            "rounds": [
+              "Non Equity Assistance",
+              "Grant"
+            ]
+          },
+          {
+            "name": "FundersClub",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "Good News Ventures",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 6,
+      "includedUniqueCount": 6,
+      "items": [
+        {
+          "date": "2025-02-12",
+          "title": "webapp.io acquired by Harness"
+        },
+        {
+          "date": "2025-02-11",
+          "publisher": "Webapp.io Blog",
+          "title": "Webapp.io is shutting down",
+          "url": "https://webapp.io/blog/webapp-io-is-shutting-down/"
+        },
+        {
+          "date": "2020-08-20",
+          "title": "Pre Seed Round - webapp.io"
+        },
+        {
+          "date": "2020-08-14",
+          "title": "Pre Seed Round - webapp.io"
+        },
+        {
+          "date": "2020-05-19",
+          "title": "Non Equity Assistance - webapp.io"
+        },
+        {
+          "date": "2020-05-12",
+          "title": "Grant - webapp.io"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 4,
+    "knownDetailedFundingAmount": {
+      "amount": 1123476,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 84.11,
+    "grantFunding": {
+      "amount": {
+        "amount": 21302,
+        "currency": "USD"
+      },
+      "disclosedRoundCount": 1,
+      "shareOfTotalPercent": 1.9
+    },
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -2,
+      "heatScore": 63
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2025-02-07",
+        "probabilityPercent": 62.31
+      },
+      "funding": {
+        "generatedDate": "2025-05-11",
+        "probabilityPercent": 20.16,
+        "timingEstimatePercent": {
+          "within6Months": 15.4,
+          "months6To11": 13.03,
+          "months12To24": 20.35,
+          "beyond24Months": 24.98
+        }
+      },
+      "growth": {
+        "generatedDate": "2025-05-11",
+        "probabilityPercent": 57.75
+      },
+      "ipo": {
+        "generatedDate": "2025-04-27",
+        "probabilityPercent": 0.29
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Depot is a build acceleration and developer productivity platform that speeds up container builds and GitHub Actions runners by up to 40x.",
+          "employeeRange": "1-10",
+          "name": "Depot",
+          "sharedCategories": [
+            "Developer Tools",
+            "Software"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Release simplifies development by making the creation of environments easy.",
+          "employeeRange": "11-50",
+          "name": "Release",
+          "sharedCategories": [
+            "Developer Tools",
+            "Software"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Northflank is a developer platform that automates deployments across cloud infrastructures.",
+          "employeeRange": "11-50",
+          "name": "Northflank",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Qovery provides a DevOps automation platform that enables engineering teams to deploy, observe, secure, and optimize cloud infrastructure.",
+          "employeeRange": "11-50",
+          "name": "Qovery",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Vercel is a developer platform that provides cloud infrastructure services for the web.",
+          "employeeRange": "1,001-5,000",
+          "name": "Vercel",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $945,000, or 84.11% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Meaningful non-dilutive funding",
+      "statement": "1 disclosed grants total $21,302, representing 1.9% of reported funding.",
+      "implication": "The grants reduce the share of reported financing attributed to equity or notes, although their restrictions and milestone requirements need separate verification.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.grantFunding"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $2,292,857 to $2,292,857, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Depot, Release, Northflank.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

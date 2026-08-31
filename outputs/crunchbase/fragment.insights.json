@@ -1,0 +1,384 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:17:29.509Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:17:29.459Z",
+    "url": "https://www.crunchbase.com/organization/fragment"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Fragment",
+      "shortDescription": "The database for money.",
+      "description": "The database for money",
+      "website": "https://fragment.dev/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Seattle, Washington, United States",
+      "geographicRegions": [
+        "Greater Seattle Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Database",
+        "Financial Services"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Financial Services",
+        "Software"
+      ],
+      "founders": [
+        "Omi Reza Chowdhury",
+        "Thomas Neckel"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An API that provides a real-time, double-entry ledger system for tracking and managing financial transactions and balances.",
+        "name": "Ledger API"
+      },
+      {
+        "description": "A declarative schema system and dashboard tool for designing, modeling, and managing ledger accounts and entries.",
+        "name": "Ledger Schema and Ledger Designer"
+      },
+      {
+        "description": "Software development kits and command-line interface tools for interacting with the Ledger API and managing ledger schemas and entries.",
+        "name": "SDKs and CLI Tools"
+      },
+      {
+        "description": "A service to export ledger data to AWS S3 for analytics, compliance, and integration with third-party systems.",
+        "name": "Data Export to AWS S3"
+      },
+      {
+        "description": "APIs to generate common financial reports such as balance sheets, income statements, account statements, and journal exports.",
+        "name": "Financial Reporting Queries"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 10500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2023-01-05",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2023-01-05",
+          "amount": {
+            "amount": 9000000,
+            "currency": "USD"
+          },
+          "investorCount": 12,
+          "leadInvestors": [
+            "BoxGroup",
+            "Stripe"
+          ],
+          "postMoneyValuation": {
+            "amount": 38342143,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2021-06-01",
+          "amount": {
+            "amount": 1500000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "leadInvestors": [
+            "Gradient"
+          ],
+          "postMoneyValuation": {
+            "amount": 9725184,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 13,
+        "visibleNames": [
+          {
+            "name": "Avid Ventures"
+          },
+          {
+            "isLead": true,
+            "name": "BoxGroup",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Cristina Cordova",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Dara Khosrowshahi",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Emilie Choi",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "FirstMark",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Gokul Rajaram",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Gradient"
+          },
+          {
+            "name": "Jack Altman",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Scott Belsky",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Stripe"
+          },
+          {
+            "name": "The Fintech Fund",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Zachary Perret",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 4,
+      "includedUniqueCount": 4,
+      "items": [
+        {
+          "date": "2026-03-12",
+          "publisher": "Footwear News",
+          "title": "Fragment Is Collaborating on Three Mind Shoes and the Newest Air Max Sneaker for a Quick Succession of Releases",
+          "url": "https://wwd.com/footwear-news/sneaker-news/fragment-nike-mind-001-002-air-liquid-max-release-dates-1238672638/"
+        },
+        {
+          "date": "2026-03-11",
+          "publisher": "Footwear News",
+          "title": "Nike’s New Futuristic Air Max Sneaker Is Getting Its First Limited-Edition Collaboration",
+          "url": "https://wwd.com/footwear-news/sneaker-news/fragment-design-nike-air-liquid-max-release-date-iq8601-001-1238665313/"
+        },
+        {
+          "date": "2023-01-05",
+          "title": "Seed Round - Fragment"
+        },
+        {
+          "date": "2021-06-01",
+          "title": "Pre Seed Round - Fragment"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 2,
+    "knownDetailedFundingAmount": {
+      "amount": 10500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 85.71,
+    "latestToEarliestKnownValuationMultiple": 3.94
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 0,
+      "growthScore": 23,
+      "heatChange90Days": -3,
+      "heatScore": 69
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 52.26
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 29.65,
+        "timingEstimatePercent": {
+          "within6Months": 15.22,
+          "months6To11": 12.91,
+          "months12To24": 20.22,
+          "beyond24Months": 24.97
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 89.43
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 35.95
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Modern Treasury offers a payment operations platform to simplify and modernize business payments.",
+          "employeeRange": "101-250",
+          "name": "Modern Treasury",
+          "sharedSpecialties": [
+            "Bank Reconciliation"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Open Ledger embeds automated accounting software into products for small businesses.",
+          "employeeRange": "1-10",
+          "name": "Open Ledger",
+          "sharedSpecialties": [
+            "API Integration",
+            "Reconciliation Services",
+            "Bank Reconciliation",
+            "Accounting Software"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Twisp helps fintech companies scale their financial data infrastructure.",
+          "employeeRange": "11-50",
+          "name": "Twisp",
+          "sharedCategories": [
+            "Financial Services",
+            "Database"
+          ],
+          "sharedSpecialties": [
+            "International and Multi-Currency Accounts",
+            "Bank Reconciliation",
+            "Accounting Software"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Routefusion is a financial infrastructure company that specializes in cross-border payments and remittances.",
+          "employeeRange": "11-50",
+          "name": "Routefusion",
+          "sharedCategories": [
+            "Financial Services"
+          ],
+          "sharedSpecialties": [
+            "International and Multi-Currency Accounts"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Middesk is an identity platform that automates business verification and underwrites decisions.",
+          "employeeRange": "101-250",
+          "name": "Middesk",
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $9,000,000, or 85.71% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $9,725,184 to $38,342,143, a 3.94x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 23 (+0 over 90 days) and market heat at 69 (-3).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Modern Treasury, Open Ledger, Twisp.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "13 investors are named, but detailed round attribution is available for only 10.",
+        "impact": "Unattributed investors remain listed without an inferred round relationship."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

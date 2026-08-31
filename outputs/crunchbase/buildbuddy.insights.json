@@ -1,0 +1,370 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:48:46.012Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:48:45.951Z",
+    "url": "https://www.crunchbase.com/organization/buildbuddy"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "BuildBuddy",
+      "shortDescription": "BuildBuddy provides enterprise features for Bazel, an open-source build system that allows companies to build and test software faster.",
+      "description": "BuildBuddy provides enterprise features for Bazel, an open-source build system that allows users to build and test software. It captures build logs, invocation details, target information, and artifacts so users get a complete picture of each build. \n\nThe company was founded by Siggi Simonarson and is headquartered in Palo Alto, California.",
+      "website": "https://buildbuddy.io/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Palo Alto, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Enterprise Software",
+        "Open Source",
+        "Software"
+      ],
+      "sectors": [
+        "Software"
+      ],
+      "founders": [
+        "Siggi Simonarson",
+        "Tyler Williams"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A cloud service that runs build and test actions in parallel across thousands of worker nodes to speed up software builds.",
+        "name": "Remote Build Execution (RBE)"
+      },
+      {
+        "description": "A scalable, globally distributed cache that stores build artifacts to speed up subsequent builds by avoiding redundant work.",
+        "name": "Remote Build Cache"
+      },
+      {
+        "description": "A user interface that provides visibility into build and test results, including logs, invocation details, and performance metrics.",
+        "name": "Build & Test UI"
+      },
+      {
+        "description": "A command-line interface built on Bazelisk that supports plugins, authentication, and handles flaky network conditions for Bazel builds.",
+        "name": "BuildBuddy CLI"
+      },
+      {
+        "description": "A continuous integration system designed specifically for Bazel to provide fast CI runs by maintaining warm Bazel instances.",
+        "name": "Workflows"
+      },
+      {
+        "description": "A feature allowing customers to provide their own encryption keys to secure build cache data stored by BuildBuddy.",
+        "name": "Customer Managed Encryption Keys"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 3300000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2020-12-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2020-12-01",
+          "amount": {
+            "amount": 3150000,
+            "currency": "USD"
+          },
+          "investorCount": 7,
+          "postMoneyValuation": {
+            "amount": 15573205,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2020-03-16",
+          "amount": {
+            "amount": 150000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 3119370,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 7,
+        "visibleNames": [
+          {
+            "name": "Addition",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "E14 Fund",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Scribble Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Switch Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "TwentyTwo VC",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Village Global",
+            "rounds": [
+              "Seed Round",
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round",
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 4,
+      "includedUniqueCount": 4,
+      "items": [
+        {
+          "date": "2024-05-04",
+          "publisher": "Daily Telegraph",
+          "title": "Start-up to replace builders with an app",
+          "url": "https://www.dailytelegraph.com.au/newslocal/penrith-press/home-building-startup-buildbuddy-rolls-out-pilot-program-in-sydneys-west/news-story/8c89b7761fcd05898f8adeab3c049e29"
+        },
+        {
+          "date": "2020-12-01",
+          "publisher": "TechCrunch",
+          "title": "YC-backed BuildBuddy raises $3.15M to help developers build software more quickly | TechCrunch",
+          "url": "https://techcrunch.com/2020/12/01/yc-backed-buildbuddy-raises-3-15m-to-help-developers-build-software-more-quickly/"
+        },
+        {
+          "date": "2020-12-01",
+          "title": "Seed Round - BuildBuddy"
+        },
+        {
+          "date": "2020-03-16",
+          "title": "Pre Seed Round - BuildBuddy"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 2,
+    "knownDetailedFundingAmount": {
+      "amount": 3300000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 95.45,
+    "latestToEarliestKnownValuationMultiple": 4.99
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2024-05-18",
+      "growthChange90Days": 0,
+      "growthScore": 61,
+      "heatChange90Days": -4,
+      "heatScore": 60,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 16.87,
+        "timingEstimatePercent": {
+          "within6Months": 14.21,
+          "months6To11": 12.19,
+          "months12To24": 19.43,
+          "beyond24Months": 24.83
+        }
+      },
+      "growth": {
+        "generatedDate": "2025-05-07",
+        "probabilityPercent": 95.47
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "EngFlow helps engineers from startups to Fortune 500 companies accelerate developer productivity and positively impact engineering culture.",
+          "employeeRange": "51-100",
+          "name": "EngFlow",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Developer Analytics",
+            "Workload Automation",
+            "Software Testing",
+            "Internal Developer Platforms",
+            "Test Automation Platforms"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Google Cloud focuses on business challenges that head-on with cloud computing services from Google.",
+          "employeeRange": "10,001+",
+          "name": "Google Cloud",
+          "sharedSpecialties": [
+            "Object Storage",
+            "API Management"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "The Developer Platform for Monorepos",
+          "employeeRange": "11-50",
+          "name": "Aspect Build",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Developer Analytics",
+            "Workload Automation",
+            "CI/CD Platform",
+            "Internal Developer Platforms"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "GitHub is a software company that offers code hosting services that allow developers to build software for open-source and private projects.",
+          "employeeRange": "1,001-5,000",
+          "name": "GitHub",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Internal Developer Platforms",
+            "Test Automation Platforms"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "CircleCI is a continuous integration and delivery platform that automates development workflows and IT operations.",
+          "employeeRange": "251-500",
+          "name": "CircleCI",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Developer Analytics",
+            "CI/CD Platform",
+            "Internal Developer Platforms",
+            "Test Automation Platforms"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $3,150,000, or 95.45% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $3,119,370 to $15,573,205, a 4.99x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 61 (+0 over 90 days) and market heat at 60 (-4).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include EngFlow, Google Cloud, Aspect Build.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

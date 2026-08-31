@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:43:30.401Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:43:30.351Z",
+    "url": "https://www.crunchbase.com/organization/daedalus-fea6"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Daedalus",
+      "shortDescription": "Daedalus offers research, design, engineering, and manufacturing services for industrial companies.",
+      "website": "https://www.daed.com/",
+      "foundedYear": 1979,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Pittsburgh, Pennsylvania, United States",
+      "geographicRegions": [
+        "Great Lakes",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Manufacturing",
+        "Product Design",
+        "Product Management"
+      ],
+      "sectors": [
+        "Design",
+        "Manufacturing",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Provides ethnographic and user research to understand user needs and behaviors for product development.",
+        "name": "Research Services"
+      },
+      {
+        "description": "Creates product designs focusing on form, function, and user experience for industrial applications.",
+        "name": "Industrial Design"
+      },
+      {
+        "description": "Develops mechanical systems and components for product functionality and manufacturability.",
+        "name": "Mechanical Engineering"
+      },
+      {
+        "description": "Designs and develops electrical systems and circuitry for product operation and integration.",
+        "name": "Electrical Engineering"
+      },
+      {
+        "description": "Develops software and firmware to control and enhance product functionality and user interfaces.",
+        "name": "Software Engineering"
+      },
+      {
+        "description": "Analyzes and optimizes product usability and safety by studying human interaction with products.",
+        "name": "Human Factors Engineering"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -6,
+      "heatScore": 62
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 78
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "RKS Design is a design firm and innovation studio specializing in product design and development. RKS has over 40 years of experience.",
+          "employeeRange": "51-100",
+          "name": "RKS Design",
+          "sharedSpecialties": [
+            "Product Strategy and Design",
+            "Ergonomic Design",
+            "Product Design and Engineering",
+            "UX Research"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "frog is a global creative consultancy, part of Capgemini Invent.",
+          "employeeRange": "1,001-5,000",
+          "name": "Frog",
+          "sharedSpecialties": [
+            "Product Strategy and Design",
+            "Product Design and Engineering"
+          ],
+          "similarityScore": 85
+        },
+        {
+          "description": "Whipsaw is an Industrial Design & Engineering consulting firm located in San Francisco, California.",
+          "employeeRange": "11-50",
+          "name": "Whipsaw Inc.",
+          "sharedCategories": [
+            "Product Design"
+          ],
+          "sharedSpecialties": [
+            "Prototype Testing",
+            "Product Strategy and Design",
+            "Prototyping and CAD/CAM Services",
+            "Product Design and Engineering",
+            "UX Research"
+          ],
+          "similarityScore": 84
+        },
+        {
+          "description": "Ziba is a design consultancy firm that offers branding and marketing services through physical and digital products.",
+          "employeeRange": "51-100",
+          "name": "Ziba Design",
+          "sharedCategories": [
+            "Product Design"
+          ],
+          "sharedSpecialties": [
+            "Prototype Testing",
+            "Product Strategy and Design",
+            "Product Design and Engineering",
+            "UX Research"
+          ],
+          "similarityScore": 83
+        },
+        {
+          "description": "Smart Design is a design and innovation consultancy.",
+          "employeeRange": "51-100",
+          "name": "Smart Design",
+          "sharedCategories": [
+            "Product Design"
+          ],
+          "sharedSpecialties": [
+            "Prototype Testing",
+            "Product Strategy and Design",
+            "Prototyping and CAD/CAM Services",
+            "Medical Device Software",
+            "Product Design and Engineering",
+            "UX Research"
+          ],
+          "similarityScore": 81
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include RKS Design, Frog, Whipsaw Inc..",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

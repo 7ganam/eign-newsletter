@@ -1,0 +1,379 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:33:36.935Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:33:36.877Z",
+    "url": "https://www.crunchbase.com/organization/coreos"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "CoreOS",
+      "shortDescription": "CoreOS builds industry-leading infrastructure software to securely run application containers anywhere.",
+      "description": "CoreOS is a leader in the Kubernetes community and creator of Tectonic, a secure and complete platform that extends Kubernetes with key enterprise features that ease container orchestration. \n\nCoreOS creates and delivers critical components, such as the Quay private image registry, that are helping fuel broad adoption of a secure, scalable, and resilient infrastructure inspired by hyperscale providers. They maintain several open source projects, including CoreOS Linux: the first micro-OS; etcd, the distributed data store for Kubernetes; and rkt, the security-focused container runtime engine.\n\nThe CoreOS team is comprised of experts in container management and distributed systems from cloud-scale pioneers like Google, Twitter, and Rackspace.",
+      "website": "http://coreos.com/",
+      "foundedYear": 2013,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "51-100",
+      "estimatedRevenueRange": "$10M-$50M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Cloud Computing",
+        "Linux",
+        "SaaS",
+        "Security",
+        "Software",
+        "Web Hosting"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Internet Services",
+        "Platforms",
+        "Privacy and Security",
+        "Software"
+      ],
+      "founders": [
+        "Alex Polvi",
+        "Brandon Philips",
+        "Jake Moshenko"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A hybrid cloud application platform powered by Kubernetes, enabling the development, deployment, and management of applications across various environments.",
+        "name": "Red Hat OpenShift"
+      },
+      {
+        "description": "A platform for creating and delivering AI-enabled applications at scale across hybrid cloud environments, supporting AI/ML workflows.",
+        "name": "Red Hat OpenShift AI"
+      },
+      {
+        "description": "A feature that allows organizations to run and deploy virtual machine workloads on the OpenShift platform, facilitating easy migration and management.",
+        "name": "Red Hat OpenShift Virtualization"
+      },
+      {
+        "description": "A fully managed application platform on AWS, simplifying infrastructure and app management with integrated support and billing.",
+        "name": "Red Hat OpenShift Service on AWS (ROSA)"
+      },
+      {
+        "description": "A fully managed application platform on Azure, providing a consistent OpenShift experience with integrated Azure services and support.",
+        "name": "Microsoft Azure Red Hat OpenShift"
+      },
+      {
+        "description": "A managed OpenShift offering on Google Cloud Platform, providing an application platform to reduce operational complexity and leverage native Google Cloud services.",
+        "name": "Red Hat OpenShift Dedicated"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 48120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 5,
+      "detailedRoundCount": 5,
+      "lastFundingDate": "2016-05-09",
+      "lastFundingType": "Series B",
+      "rounds": [
+        {
+          "announcedDate": "2016-05-09",
+          "amount": {
+            "amount": 28000000,
+            "currency": "USD"
+          },
+          "investorCount": 7,
+          "leadInvestors": [
+            "Google Ventures"
+          ],
+          "type": "Series B"
+        },
+        {
+          "announcedDate": "2015-04-06",
+          "amount": {
+            "amount": 12000000,
+            "currency": "USD"
+          },
+          "investorCount": 4,
+          "leadInvestors": [
+            "Google Ventures"
+          ],
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2014-06-30",
+          "amount": {
+            "amount": 8000000,
+            "currency": "USD"
+          },
+          "investorCount": 3,
+          "leadInvestors": [
+            "Kleiner Perkins"
+          ],
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2013-10-09",
+          "investorCount": 3,
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2013-03-01",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 9,
+        "visibleNames": [
+          {
+            "name": "Accel",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Andreessen Horowitz"
+          },
+          {
+            "name": "Fuel Capital",
+            "rounds": [
+              "Series B",
+              "Series A"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Google Ventures",
+            "rounds": [
+              "Series B",
+              "Series A"
+            ]
+          },
+          {
+            "name": "Intel Capital",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Kleiner Perkins",
+            "rounds": [
+              "Series B",
+              "Series A"
+            ]
+          },
+          {
+            "name": "Sequoia Capital"
+          },
+          {
+            "name": "Work-Bench",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Series B"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 525,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2024-10-31",
+          "publisher": "The New Stack",
+          "title": "Flatcar Container Linux Hitches onto the CNCF",
+          "url": "https://thenewstack.io/flatcar-container-linux-hitches-a-ride-with-the-cncf/"
+        },
+        {
+          "date": "2021-09-12",
+          "publisher": "Sacramento Business Journal",
+          "title": "2021 Best Real Estate Projects: Corcos Square",
+          "url": "https://www.bizjournals.com/sacramento/news/2021/09/12/2021-best-real-estate-projects-corcos-square.html"
+        },
+        {
+          "date": "2021-06-18",
+          "publisher": "WinBeta",
+          "title": "To sell Windows 11, Microsoft needs to come clean",
+          "url": "https://www.onmsft.com/editorial/to-sell-windows-11-microsoft-needs-to-come-clean"
+        },
+        {
+          "date": "2019-11-07",
+          "publisher": "PRWeb",
+          "title": "Kinvolk Announces Commercial Support and Update Service for Flatcar Container Linux",
+          "url": "https://www.prweb.com/releases/kinvolk_announces_commercial_support_and_update_service_for_flatcar_container_linux/prweb16699576.htm"
+        },
+        {
+          "date": "2019-07-24",
+          "publisher": "Tech Republic (Australia)",
+          "title": "First preview of container platform Fedora CoreOS released",
+          "url": "https://www.techrepublic.com/article/first-preview-of-container-platform-fedora-coreos-released/"
+        },
+        {
+          "date": "2019-05-15",
+          "publisher": "Info World",
+          "title": "10 Kubernetes distributions leading the container revolution",
+          "url": "https://www.infoworld.com/article/3265059/10-kubernetes-distributions-leading-the-container-revolution.html"
+        },
+        {
+          "date": "2018-07-18",
+          "publisher": "Work-Bench",
+          "title": "Top 3 Infrastructure Trends To Watch at Google Cloud Next ’18",
+          "url": "https://medium.com/@v1p1n/top-3-infrastructure-trends-to-watch-at-google-cloud-next-18-e854f6e70b5a"
+        },
+        {
+          "date": "2018-07-17",
+          "publisher": "Business Wire",
+          "title": "Alert Logic Transforms Container Security with Industry’s First Network Intrusion Detection for Containers",
+          "url": "https://www.businesswire.com/news/home/20180717005273/en/Alert-Logic-Transforms-Container-Security-Industry%E2%80%99s-Network"
+        },
+        {
+          "date": "2018-05-18",
+          "publisher": "Silicon Angle",
+          "title": "Red Hat and CoreOS put Kubernetes on autopilot",
+          "url": "https://siliconangle.com/blog/2018/05/18/red-hat-and-coreos-put-kubernetes-on-autopilot-rhsummit/"
+        },
+        {
+          "date": "2018-05-10",
+          "publisher": "Silicon Angle",
+          "title": "Red Hat explains how it’s going to integrate CoreOS with its container software",
+          "url": "https://siliconangle.com/blog/2018/05/10/red-hat-explains-going-integrate-coreos-container-software-stack/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 4,
+    "knownDetailedFundingAmount": {
+      "amount": 48120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 58.19
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -1,
+      "heatScore": 3
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Docker’s platform helps millions of developers efficiently and collaboratively build, share, and run applications.",
+          "employeeRange": "1,001-5,000",
+          "name": "Docker",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Mirantis develops cloud infrastructure and container management software for organizations to build, operate, and scale applications.",
+          "employeeRange": "501-1,000",
+          "name": "Mirantis",
+          "sharedCategories": [
+            "Cloud Computing"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Rancher Labs provides an open-source container management software for enterprises.",
+          "employeeRange": "1,001-5,000",
+          "name": "Rancher Labs",
+          "sharedCategories": [
+            "Cloud Computing",
+            "Software"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Canonical, the publisher of Ubuntu, delivers trusted open source for everyone and provides security, support and services to enterprises.",
+          "employeeRange": "1,001-5,000",
+          "name": "Canonical",
+          "sharedCategories": [
+            "Security",
+            "Cloud Computing",
+            "Software"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Google Cloud focuses on business challenges that head-on with cloud computing services from Google.",
+          "employeeRange": "10,001+",
+          "name": "Google Cloud",
+          "similarityScore": 88
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Series B round raised $28,000,000, or 58.19% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Docker, Mirantis, Rancher Labs.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "9 investors are named, but detailed round attribution is available for only 7.",
+        "impact": "Unattributed investors remain listed without an inferred round relationship."
+      },
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 525 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

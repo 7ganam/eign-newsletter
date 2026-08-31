@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:38:09.859Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:38:09.825Z",
+    "url": "https://www.crunchbase.com/organization/bloom-ai"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "bloom.ai",
+      "shortDescription": "An Artificial Intelligence company based in London, England",
+      "website": "http://bloom.ai/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "San Diego, California, United States",
+      "geographicRegions": [
+        "Greater San Diego Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Machine Learning",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A service that automatically tests and serves the highest-converting product photos and videos on product detail pages to improve e-commerce conversion rates.",
+        "name": "Bloom AI Dynamic Product Photo Optimization"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2021-11-30",
+          "publisher": "Business Journals",
+          "title": "How Lighthouse Labs helped local startup bloomRail evolve",
+          "url": "https://www.bizjournals.com/richmond/inno/stories/profiles/2021/11/30/bloomrail-participates-in-lighthouse-labs.html"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -4,
+      "heatScore": 67
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 30.5
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 81.33
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 14.09
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Nosto is a Commerce Experience Platform offering tools to boost online revenue through end-to-end commerce experience management.",
+          "employeeRange": "251-500",
+          "name": "Nosto",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Conversion Rate Optimization",
+            "Product Analytics",
+            "Recommendation Engines",
+            "E-Commerce Marketing"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Octane AI provides an all-in-one platform for engaging quizzes, data collection, and personalized Facebook Messenger and SMS automation.",
+          "employeeRange": "11-50",
+          "name": "Octane AI",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Recommendation Engines",
+            "E-Commerce Marketing"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Dynamic Yield helps companies quickly deliver and test personalized, optimized, and synchronized digital customer interactions.",
+          "employeeRange": "501-1,000",
+          "name": "Dynamic Yield",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Conversion Rate Optimization",
+            "Product Analytics",
+            "Recommendation Engines",
+            "Experimentation Analytics",
+            "E-Commerce Marketing"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Monetate is a personalization platform built to deliver unforgettable CX to drive revenue for business.",
+          "employeeRange": "101-250",
+          "name": "Monetate",
+          "sharedSpecialties": [
+            "Conversion Rate Optimization",
+            "Product Analytics",
+            "Multivariate Testing",
+            "Recommendation Engines",
+            "Experimentation Analytics",
+            "E-Commerce Marketing"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Criteo is a global technology company that serves personalized online display advertisements to consumers on behalf of e-commerce companies.",
+          "employeeRange": "1,001-5,000",
+          "name": "Criteo",
+          "sharedSpecialties": [
+            "Recommendation Engines"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Nosto, Octane AI, Dynamic Yield.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

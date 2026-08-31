@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:47:56.018Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:47:55.985Z",
+    "url": "https://www.crunchbase.com/organization/envelope"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "envelope",
+      "shortDescription": "Envelope is a retail tech startup that automates product monitoring and avoiding OOS (out-of-stock) scenarios.",
+      "description": "Envelope is a retail tech startup that helps supermarket chains and FMCG companies achieve 100% OSA (on-shelf availability) by automating product monitoring and avoiding OOS (out-of-stock) scenarios.\n\nIts flagship product, EnRetail, uses cameras, and computer vision to eliminate the need for manual shelf audits. It also allows users to securely share this information with all stakeholders. Users of the platform report up to a 4% increase in revenue and over a 20% boost in employee productivity.",
+      "website": "https://envelope.vision/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Tallinn, Harjumaa, Estonia",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Retail Technology"
+      ],
+      "sectors": [
+        "Commerce and Shopping",
+        "Hardware",
+        "Software"
+      ],
+      "founders": [
+        "Khuldoon Bukhari",
+        "Taras Maslych",
+        "Tengiz Pataraia",
+        "Vladimir Kuts"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A computer vision platform that monitors retail shelves in real time to track stock levels and provide restocking alerts.",
+        "name": "enRetail"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 513119,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2022-08-01",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2022-08-01",
+          "amount": {
+            "amount": 513119,
+            "currency": "USD"
+          },
+          "postMoneyValuation": {
+            "amount": 2565597,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ]
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2022-08-01",
+          "title": "Pre Seed Round - envelope"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 513119,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -3,
+      "growthScore": 74,
+      "heatChange90Days": -12,
+      "heatScore": 72
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 45.04
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 26.23,
+        "timingEstimatePercent": {
+          "within6Months": 15,
+          "months6To11": 12.75,
+          "months12To24": 20.05,
+          "beyond24Months": 24.95
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 77.1
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 46.16
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Trax provides in-store execution tools, market measurement services, and data science solutions for retail.",
+          "employeeRange": "501-1,000",
+          "name": "Trax",
+          "sharedCategories": [
+            "Retail Technology"
+          ],
+          "sharedSpecialties": [
+            "Object Detection",
+            "Supply Chain Visibility Platforms",
+            "Retail Merchandising Services",
+            "Product Recognition",
+            "Retail Workforce Management",
+            "Video Analytics"
+          ],
+          "similarityScore": 96
+        },
+        {
+          "description": "The Source of Truth for the Retail Shelf",
+          "employeeRange": "101-250",
+          "name": "Pensa Systems",
+          "sharedCategories": [
+            "Retail Technology"
+          ],
+          "sharedSpecialties": [
+            "Object Detection",
+            "Order and Inventory Management",
+            "Supply Chain Visibility Platforms",
+            "Retail Merchandising Services",
+            "Product Recognition",
+            "Video Analytics"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Simbe Robotics builds automation solutions for shelf auditing and analytics.",
+          "employeeRange": "51-100",
+          "name": "Simbe Robotics",
+          "sharedCategories": [
+            "Retail Technology"
+          ],
+          "sharedSpecialties": [
+            "AI Video Surveillance",
+            "Order and Inventory Management",
+            "Supply Chain Visibility Platforms",
+            "Retail Merchandising Services",
+            "Retail Workforce Management",
+            "Video Analytics"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "NVIDIA designs graphics processing units and accelerated computing hardware for AI and high-performance computing applications.",
+          "employeeRange": "10,001+",
+          "name": "NVIDIA",
+          "similarityScore": 86
+        },
+        {
+          "description": "Everseen provides visual AI solutions to improve retail business processes and prevent theft.",
+          "employeeRange": "1,001-5,000",
+          "name": "Everseen",
+          "sharedSpecialties": [
+            "AI Video Surveillance",
+            "Order and Inventory Management",
+            "Supply Chain Visibility Platforms",
+            "Product Recognition",
+            "Video Analytics"
+          ],
+          "similarityScore": 82
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $513,119, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $2,565,597 to $2,565,597, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 74 (-3 over 90 days) and market heat at 72 (-12).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Trax, Pensa Systems, Simbe Robotics.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

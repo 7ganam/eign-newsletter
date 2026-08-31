@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:36:08.782Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:36:08.733Z",
+    "url": "https://www.crunchbase.com/organization/justai"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "JustAI",
+      "shortDescription": "JustAI develops conversational AI solutions like chatbots and voice assistants.",
+      "description": "JustAI specializes in developing conversational AI solutions, including chatbots and voice assistants. The company focuses on creating tools that enhance customer interactions and streamline business processes through natural language understanding and machine learning technologies.",
+      "website": "https://www.justai.co/",
+      "foundedYear": 2020,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Évreux, Alsace, France",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Chatbot",
+        "Consulting",
+        "Project Management"
+      ],
+      "sectors": [
+        "Administrative Services",
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Professional Services",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2025-09-25",
+          "publisher": "Entrackr",
+          "title": "Peak XV’s Surge 11 features 23 startups across AI, fintech, and consumer tech",
+          "url": "https://entrackr.com/snippets/peak-xvs-surge-11-features-23-startups-across-ai-fintech-and-consumer-tech-10500950"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 6,
+      "growthScore": 86,
+      "heatChange90Days": 10,
+      "heatScore": 76
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.47
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Yellow.ai is a conversational AI platform, enabling enterprises to unlock business potential at scale.",
+          "employeeRange": "501-1,000",
+          "name": "Yellow.ai",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Haptik helps brands acquire, convert, engage, and delight users with AI-driven.",
+          "employeeRange": "251-500",
+          "name": "Haptik",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Cognigy is an enterprise conversational AI platform designed to automate customer and employee support processes.",
+          "employeeRange": "251-500",
+          "name": "Cognigy",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)",
+            "Chatbot"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Omilia provides AI-powered customer service automation through voice, chat, authentication, and workforce AI solutions.",
+          "employeeRange": "501-1,000",
+          "name": "Omilia",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)",
+            "Chatbot"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Ada is an automated customer experience company that provides chat bots used in customer support.",
+          "employeeRange": "251-500",
+          "name": "Ada",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)",
+            "Chatbot"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 86 (+6 over 90 days) and market heat at 76 (+10).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Yellow.ai, Haptik, Cognigy.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

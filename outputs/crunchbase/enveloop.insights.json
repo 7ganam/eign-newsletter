@@ -1,0 +1,269 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:47:50.671Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:47:50.613Z",
+    "url": "https://www.crunchbase.com/organization/enveloop"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Enveloop",
+      "shortDescription": "Enveloop helps developers build and send well-crafted emails and texts from their apps using a single API.",
+      "description": "Enveloop is a software development company that helps developers build and send well-crafted emails and texts from their apps using a single API. The company also provides a message builder, a template library, and integrations with leading providers such as SendGrid, Mailgun, and Twilio. Enveloop was founded in 2021 and is based in Birmingham, Alabama.",
+      "website": "https://www.enveloop.com/",
+      "foundedYear": 2020,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Birmingham, Alabama, United States",
+      "geographicRegions": [
+        "Southern US"
+      ],
+      "industries": [
+        "Developer Tools",
+        "Information Technology",
+        "Messaging",
+        "SaaS",
+        "SMS",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Internet Services",
+        "Messaging and Telecommunications",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An API that enables developers to design, host, and send emails and texts from their applications using a single interface.",
+        "name": "Enveloop API"
+      },
+      {
+        "description": "A visual UI for creating and editing email and SMS message templates with pre-designed components and dynamic content support.",
+        "name": "Email and SMS Design Interface"
+      },
+      {
+        "description": "A platform to organize, send, and track email and SMS messages with centralized content management and team collaboration features.",
+        "name": "Message Sending and Management Platform"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2020-03-22",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2020-03-22",
+          "investorCount": 2,
+          "postMoneyValuation": {
+            "amount": 3507523,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "Liquid 2 Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2020-03-22",
+          "title": "Seed Round - Enveloop"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 0,
+      "growthScore": 85,
+      "heatChange90Days": -6,
+      "heatScore": 66
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 31.28
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 14.71,
+        "timingEstimatePercent": {
+          "within6Months": 13.68,
+          "months6To11": 11.81,
+          "months12To24": 19,
+          "beyond24Months": 24.7
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 66.98
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 16.01
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Customer.io enables users to send newsletters to selected segments of customers using their website data.",
+          "employeeRange": "251-500",
+          "name": "Customer.io",
+          "sharedCategories": [
+            "SaaS",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Transactional Email Services"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Twilio is a cloud communication company that enables users to use standard web languages to build voice, VoIP, and SMS apps via a web API.",
+          "employeeRange": "5,001-10,000",
+          "name": "Twilio",
+          "sharedCategories": [
+            "SMS",
+            "Messaging",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Transactional Email Services",
+            "Communication Platform as a Service (CPaaS)",
+            "SMS and MMS APIs",
+            "SMS Gateway Services"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Braze is a customer engagement platform that enables customer-centric interactions between brands and consumers.",
+          "employeeRange": "1,001-5,000",
+          "name": "Braze",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Transactional Email Services",
+            "SMS and MMS APIs"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "The email delivery service that people actually like. Stop worrying if your emails were delivered, and get back to building great products.",
+          "employeeRange": "11-50",
+          "name": "ActiveCampaign Postmark",
+          "sharedCategories": [
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Transactional Email Services",
+            "Communication Platform as a Service (CPaaS)",
+            "Email Deliverability",
+            "Email Authentication Services"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "Mailgun offers APIs that allow users to send, receive and track emails.",
+          "employeeRange": "101-250",
+          "name": "Mailgun",
+          "sharedCategories": [
+            "Messaging",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Transactional Email Services",
+            "Email Deliverability",
+            "Email Authentication Services"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $3,507,523 to $3,507,523, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 85 (+0 over 90 days) and market heat at 66 (-6).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Customer.io, Twilio, Braze.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

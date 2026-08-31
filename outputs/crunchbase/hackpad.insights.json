@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:41:17.406Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:41:17.352Z",
+    "url": "https://www.crunchbase.com/organization/hackpad"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "HackPad",
+      "shortDescription": "Smart collaborative documents. Company wiki. Personal notes. Event planning. Classroom collaboration.",
+      "description": "Smart collaborative documents. Company wiki. Personal notes. Event planning. Classroom collaboration.",
+      "website": "http://hackpad.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Document Management",
+        "Events",
+        "Service Industry"
+      ],
+      "sectors": [
+        "Events",
+        "Information Technology",
+        "Other",
+        "Software"
+      ],
+      "founders": [
+        "Alex Graveley",
+        "Igor Kofman"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2013-07-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2013-07-01",
+          "investorCount": 1,
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2012-03-01",
+          "investorCount": 2,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 3,
+        "visibleNames": [
+          {
+            "name": "Acequia Capital (AceCap)",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Auren Hoffman",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 8,
+      "includedUniqueCount": 8,
+      "items": [
+        {
+          "date": "2017-04-26",
+          "publisher": "TechCrunch",
+          "title": "Dropbox is shuttering Hackpad, the collaborative document service it bought in 2014",
+          "url": "https://techcrunch.com/2017/04/26/dropbox-is-closing-down-hackpad/"
+        },
+        {
+          "date": "2015-07-31",
+          "publisher": "A VC",
+          "title": "Feature Friday: Document Sharing In Slack – AVC",
+          "url": "http://avc.com/2015/07/feature-friday-document-sharing-in-slack/"
+        },
+        {
+          "date": "2015-06-05",
+          "title": "14 essential social media collaboration tools",
+          "url": "https://blog.bufferapp.com/social-media-collaboration-tools"
+        },
+        {
+          "date": "2015-04-23",
+          "publisher": "TechCrunch",
+          "title": "Airbnb Hires Former Dropbox Exec Sara Adler As Its Head Of Corporate Development",
+          "url": "http://techcrunch.com/2015/04/23/airbnb-sara-adler/"
+        },
+        {
+          "date": "2015-04-23",
+          "publisher": "TechCrunch",
+          "title": "Dropbox’s Collaborative Note-Taking Service, Dropbox Notes, Heads Into Beta Testing",
+          "url": "http://techcrunch.com/2015/04/23/dropboxs-collaborative-note-taking-service-dropbox-notes-heads-into-beta-testing/"
+        },
+        {
+          "date": "2014-04-17",
+          "title": "HackPad acquired by Dropbox"
+        },
+        {
+          "date": "2013-07-01",
+          "title": "Seed Round - HackPad"
+        },
+        {
+          "date": "2012-03-01",
+          "title": "Seed Round - HackPad"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -5,
+      "heatScore": 32
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

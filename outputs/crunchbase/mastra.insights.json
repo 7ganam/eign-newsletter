@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:23:50.744Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:23:50.713Z",
+    "url": "https://www.crunchbase.com/organization/mastra"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "mastra",
+      "shortDescription": "mastra provides building management and maintenance services.",
+      "website": "https://mastra.de/",
+      "foundedYear": 1980,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "51-100",
+      "estimatedRevenueRange": "$10M-$50M",
+      "headquarters": "Frankfurt, Hessen, Germany",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Information Technology"
+      ],
+      "sectors": [
+        "Information Technology"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Services including office cleaning, stairwell cleaning, practice cleaning, and general building cleaning to maintain hygiene and cleanliness in various facilities.",
+        "name": "Building Cleaning Services"
+      },
+      {
+        "description": "Services related to interior construction including dry construction, shop interior fit-outs, and room renovations for commercial and private spaces.",
+        "name": "Interior Construction and Fit-Out"
+      },
+      {
+        "description": "Facade maintenance and repair services to preserve and restore building exteriors.",
+        "name": "Facade Work"
+      },
+      {
+        "description": "Services including caretaker duties, green area maintenance, and winter services to support building and grounds upkeep.",
+        "name": "Property Maintenance Services"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 3,
+      "growthScore": 89,
+      "heatChange90Days": 1,
+      "heatScore": 77
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 77.31
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Apleona provides integrated real estate services and facility management in the DACH region.",
+          "employeeRange": "10,001+",
+          "name": "Apleona",
+          "sharedSpecialties": [
+            "Facilities Maintenance"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "CBRE provides real estate services.",
+          "employeeRange": "10,001+",
+          "name": "CBRE",
+          "similarityScore": 90
+        },
+        {
+          "description": "Wisag is a specialist in the maintenance and servicing of industrial plants.",
+          "employeeRange": "10,001+",
+          "name": "Wisag",
+          "sharedSpecialties": [
+            "Facilities Maintenance"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Piepenbrock is a service company from Osnabrück, which relieves its customers with a wide range of building services.",
+          "employeeRange": "10,001+",
+          "name": "Piepenbrock",
+          "sharedSpecialties": [
+            "Winter and Snow Removal Services",
+            "Facilities Maintenance",
+            "Janitorial and Commercial Cleaning Services"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Dussmann offers commercial facility management, technical, transport & logistics, and education services.",
+          "employeeRange": "10,001+",
+          "name": "Dussmann",
+          "sharedSpecialties": [
+            "Office Cleaning",
+            "Facilities Maintenance",
+            "Janitorial and Commercial Cleaning Services"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 89 (+3 over 90 days) and market heat at 77 (+1).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Apleona, CBRE, Wisag.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

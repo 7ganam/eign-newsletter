@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:51:27.672Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:51:27.618Z",
+    "url": "https://www.crunchbase.com/organization/hessian"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Hessian",
+      "shortDescription": "Hessian provides construction and engineering services, specializing in prefabricated and modular building solutions.",
+      "website": "https://www.hooshmandsazeh.com/",
+      "foundedYear": 2005,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "251-500",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Tehran, Iran",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)",
+        "Middle East",
+        "Middle East and North Africa (MENA)"
+      ],
+      "industries": [
+        "Building Material",
+        "Commercial",
+        "Construction",
+        "Industrial"
+      ],
+      "sectors": [
+        "Manufacturing",
+        "Other",
+        "Real Estate"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Construction of building components manufactured off-site for assembly on-site, aimed at reducing construction time and improving quality control.",
+        "name": "Prefabricated Building Solutions"
+      },
+      {
+        "description": "Complete modular buildings constructed from factory-made modules that are transported and assembled on-site to form finished structures.",
+        "name": "Modular Building Solutions"
+      },
+      {
+        "description": "On-site construction management and execution services for assembling prefabricated and modular building components into finished structures.",
+        "name": "Construction Services"
+      },
+      {
+        "description": "Engineering design and consulting services supporting the development of prefabricated and modular building projects.",
+        "name": "Engineering Services"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -6,
+      "growthScore": 84,
+      "heatChange90Days": -33,
+      "heatScore": 44
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 69.53
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Bespoke Modular Solutions is a new level of modular and prefabricated turnkey solutions in innovative real estate development.",
+          "name": "Bespoke Modular Solutions",
+          "sharedSpecialties": [
+            "BIM and Modeling Services",
+            "Modular and Portable Buildings",
+            "Temporary Site and Modular Facilities",
+            "Prefabricated Structural Systems",
+            "Modular and Prefabricated Buildings"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "TOM is an engineering contractor that specialises in DFMA, prefabricated, and modularization solutions for the construction sectors.",
+          "employeeRange": "501-1,000",
+          "name": "Tech Offshore Marine",
+          "sharedCategories": [
+            "Construction"
+          ],
+          "sharedSpecialties": [
+            "BIM and Modeling Services",
+            "Modular and Portable Buildings",
+            "Temporary Site and Modular Facilities",
+            "Prefabricated Structural Systems",
+            "MEP (Mechanical, Electrical and Plumbing) Design and Engineering",
+            "Modular and Prefabricated Buildings"
+          ],
+          "similarityScore": 94.204
+        },
+        {
+          "description": "ACE Modular Construction is a knowledge enterprise with a comprehensive understanding of the global Off-Site Manufacture.",
+          "employeeRange": "1-10",
+          "name": "ACE Modular Construction",
+          "sharedCategories": [
+            "Construction"
+          ],
+          "sharedSpecialties": [
+            "Procurement and Supply Services",
+            "BIM and Modeling Services",
+            "Temporary Site and Modular Facilities",
+            "Prefabricated Structural Systems",
+            "Modular and Prefabricated Buildings"
+          ],
+          "similarityScore": 83
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 84 (-6 over 90 days) and market heat at 44 (-33).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Bespoke Modular Solutions, Tech Offshore Marine, ACE Modular Construction.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:25:37.143Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:25:37.087Z",
+    "url": "https://www.crunchbase.com/organization/mayflower"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Mayflower",
+      "shortDescription": "Venture Capital Firm",
+      "description": "The Mayflower Group, Ltd. is an investment-banking firm that offers financial advisory services. The firm is based in Boston, Massachusetts.",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "Boston, Massachusetts, United States",
+      "geographicRegions": [
+        "Greater Boston Area",
+        "East Coast",
+        "New England",
+        "Northeastern US"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 22,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2025-12-05",
+          "publisher": "MarketScreener",
+          "title": "Mayflower completes initial public offering",
+          "url": "https://www.marketscreener.com/news/mayflower-completes-initial-public-offering-ce7d51dcdb81f02d"
+        },
+        {
+          "date": "2021-01-11",
+          "title": "Series A - Ryte"
+        },
+        {
+          "date": "2019-06-19",
+          "title": "Venture Round - IXX.com"
+        },
+        {
+          "date": "2018-07-21",
+          "publisher": "Toronto Sun",
+          "title": "GIFFORD-JONES: Fatty liver disease on the rise",
+          "url": "https://torontosun.com/health/diet-fitness/gifford-jones-fatty-liver-disease-on-the-rise"
+        },
+        {
+          "date": "2018-07-19",
+          "publisher": "PRNewswire",
+          "title": "Mayflower Medicinals Opens Flagship Cannabis Dispensary in Boston",
+          "url": "https://www.prnewswire.com/news-releases/mayflower-medicinals-opens-flagship-cannabis-dispensary-in-boston-300683411.html"
+        },
+        {
+          "date": "2018-07-15",
+          "publisher": "The New Yorker",
+          "title": "Mayflower Cistern I Feel My Pilgrim Worry",
+          "url": "https://www.newyorker.com/magazine/2018/07/23/mayflower-cistern-i-feel-my-pilgrim-worry"
+        },
+        {
+          "date": "2018-06-20",
+          "publisher": "cleveland.com",
+          "title": "My relatives were on the Mayflower - and I sued to strike down the unconstitutional Muslim travel ban: Julia A. Shearson (Opinion)",
+          "url": "https://www.cleveland.com/opinion/index.ssf/2018/06/us_high_court_must_strike_down.html"
+        },
+        {
+          "date": "2018-06-13",
+          "publisher": "Miami Herald",
+          "title": "Genealogies of Mayflower passengers helps find descendants",
+          "url": "http://www.miamiherald.com/news/business/article213095109.html"
+        },
+        {
+          "date": "2018-06-12",
+          "publisher": "PRNewswire",
+          "title": "iAnthus Capital Holdings, Inc. Signs Host Community Agreement for Massachusetts Medical Marijuana Treatment Center",
+          "url": "https://www.prnewswire.com/news-releases/ianthus-capital-holdings-inc-signs-host-community-agreement-for-massachusetts-medical-marijuana-treatment-center-300664599.html"
+        },
+        {
+          "date": "2018-05-20",
+          "publisher": "CNBC",
+          "title": "Rising inflation will help produce a 'new paradigm' in markets, Mayflower's Larry Glazer says",
+          "url": "https://www.cnbc.com/2018/05/20/2-point-5b-fund-manager-predicts-major-stock-shift-as-inflation-rises.html"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2025-12-21",
+      "growthChange90Days": -8,
+      "growthScore": 3,
+      "heatChange90Days": -8,
+      "heatScore": 33,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2025-01-11",
+        "probabilityPercent": 95.56
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 3 (-8 over 90 days) and market heat at 33 (-8).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 22 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

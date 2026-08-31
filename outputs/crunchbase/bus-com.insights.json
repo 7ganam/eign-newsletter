@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:50:50.110Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:50:50.056Z",
+    "url": "https://www.crunchbase.com/organization/bus-com"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Bus.com",
+      "shortDescription": "Bus.com is a travel agency focused on selling bus travel tickets for major bus operators in Nigeria.",
+      "description": "Bus.com is a travel agency focused on selling bus travel tickets for major bus operators in Nigeria. It provides its customers with the convenience of pre-booking bus travel tickets through the internet and telephones to travel across Nigerian cities.\n\nBus.com’s mission is to make traveling easier for commuters; drive more customers to bus operators; and improve bus transportation services in Nigeria.\n\nBus.com is based in Lagos, Nigeria.",
+      "website": "http://bus.com.ng/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "Lagos, Nigeria",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Tourism",
+        "Travel"
+      ],
+      "sectors": [
+        "Travel and Tourism"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2016-01-06",
+          "publisher": "Tech Moran",
+          "title": "Q&A: How The New Carmudi Nigeria MD Aims to Grow it into a ‘Household Name’",
+          "url": "http://techmoran.com/carmudi-nigeria"
+        },
+        {
+          "date": "2015-03-13",
+          "publisher": "TechCabal",
+          "title": "Tiketmobile Rises From The Dead. Naturally, We Have Questions",
+          "url": "http://techcabal.com/2015/03/13/tiketmobile-rises-dead-naturally-questions/"
+        },
+        {
+          "date": "2014-02-24",
+          "publisher": "VentureBurn",
+          "title": "Bus.com.ng now takes Nigerians to over 200 destinations, compatible with PAGA",
+          "url": "http://ventureburn.com/2014/02/bus-com-ng-now-takes-nigerians-to-over-200-destinations-compatible-with-paga/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 11,
+      "heatScore": 47
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:39:43.311Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:39:43.253Z",
+    "url": "https://www.crunchbase.com/organization/blueloop-162e"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Blueloop",
+      "shortDescription": "Blueloop is a software development company that develops fintech software.",
+      "description": "Blueloop develops software for financial service applications. Their software products include swapmonkey and flux. Swapmonkey is a peer to peer cryptocurrency platform. Swapmonkey allows trading cryptocurrencies. Flux is a platform that offers a secure solution to send money between countries using blockchain technology to power payments.",
+      "website": "https://blueloop.app/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Port Harcourt, Rivers, Nigeria",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Enterprise Applications",
+        "Enterprise Software",
+        "Internet",
+        "Mobile Apps",
+        "Software"
+      ],
+      "sectors": [
+        "Apps",
+        "Information Technology",
+        "Mobile",
+        "Software"
+      ],
+      "founders": [
+        "Ayomide Lasaki",
+        "Ben Eluan"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 77000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2020-12-14",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2020-12-14",
+          "amount": {
+            "amount": 77000,
+            "currency": "USD"
+          },
+          "investorCount": 3,
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 3,
+        "visibleNames": [
+          {
+            "name": "Hustle Fund",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "Mozilla",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "Pioneer",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2020-12-14",
+          "title": "Pre Seed Round - Blueloop"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 77000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -2,
+      "heatScore": 60
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Unlocking the potential of Africa's financial system.",
+          "employeeRange": "11-50",
+          "name": "Mono",
+          "similarityScore": 97
+        },
+        {
+          "description": "OnePipe builds and maintains APIs that enable banks to partner with modern digital services and fintech.",
+          "employeeRange": "11-50",
+          "name": "OnePipe",
+          "similarityScore": 95
+        },
+        {
+          "description": "Paystack fintech company that facilitates online and offline payments for businesses across Africa.",
+          "employeeRange": "101-250",
+          "name": "Paystack",
+          "sharedCategories": [
+            "Internet"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Flutterwave is a fintech company that offers payment infrastructure to global merchants and payment service providers.",
+          "employeeRange": "251-500",
+          "name": "Flutterwave",
+          "similarityScore": 91
+        },
+        {
+          "description": "Interswitch is an integrated digital payments and commerce company designed to make payments an easy and enjoyable experience.",
+          "employeeRange": "101-250",
+          "name": "Interswitch",
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $77,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Mono, OnePipe, Paystack.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

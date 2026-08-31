@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:31:58.565Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:31:58.534Z",
+    "url": "https://www.crunchbase.com/organization/godhands-private-limited"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "GODHANDS",
+      "shortDescription": "GodHands develops a deterministic automation API and infrastructure for AI agents to control desktop and web applications.",
+      "description": "GodHands develops developer tools and infrastructure that provide deterministic action and computer use frameworks for AI agents. The company focuses on overcoming the fragility of standard UI automation when agents interact with modern web, legacy desktop, and non-API software environments. GodHands offers a unified automation API for desktop operating systems and web systems so agents can execute tasks with consistent, human-like interaction patterns. Its technology is intended for builders of enterprise and B2B software agents that must operate reliably across tools such as spreadsheets, email clients, CRM platforms, and other business applications. By abstracting away per-application integrations, GodHands enables engineering teams to design robust automated workflows that remain stable even as visual interfaces and deep workflows change over time.",
+      "website": "http://godhands.dev/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Uppal, Telangana, India",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "B2B",
+        "Business Process Automation (BPA)",
+        "Cloud Computing",
+        "Developer Tools",
+        "Enterprise Software",
+        "Machine Learning",
+        "Robotic Process Automation (RPA)",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Internet Services",
+        "Other",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "GodHands Automation API provides a deterministic computer use and system-wide automation layer that lets AI agents operate desktop and web applications.",
+        "name": "GodHands Automation API"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 68,
+      "heatScore": 91
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 5
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 78.18
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

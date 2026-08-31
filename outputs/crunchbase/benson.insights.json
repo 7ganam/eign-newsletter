@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:29:42.404Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:29:42.367Z",
+    "url": "https://www.crunchbase.com/organization/benson"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Benson",
+      "shortDescription": "Benson manufactures a wide range of solenoids, DC latching, and electromagnets for the commercial and industrial sectors.",
+      "website": "https://bensonsolenoids.co.uk/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Newmarket, Suffolk, United Kingdom",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Commercial",
+        "Electronics",
+        "Industrial",
+        "Manufacturing"
+      ],
+      "sectors": [
+        "Hardware",
+        "Manufacturing",
+        "Other"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -5,
+      "heatScore": 67
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 31.34
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "MAGNET-SCHULTZ is an electromagnetic actuator, sensors, and valve technology specialist company.",
+          "employeeRange": "51-100",
+          "name": "MAGNET-SCHULTZ",
+          "sharedCategories": [
+            "Electronics",
+            "Manufacturing"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Kendrion develops, manufactures and markets high-quality electromagnetic systems and components for industrial and automotive applications.",
+          "employeeRange": "1,001-5,000",
+          "name": "Kendrion",
+          "sharedCategories": [
+            "Manufacturing"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "CIT Relay & Switch is an electronics manufacturing company that produces sockets, audio thru-hole, electromechanical relays, and switches.",
+          "employeeRange": "501-1,000",
+          "name": "CIT Relay & Switch",
+          "sharedCategories": [
+            "Electronics",
+            "Manufacturing"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Takano is a manufacturer and seller of office furniture and exterior products.",
+          "employeeRange": "501-1,000",
+          "name": "Takano",
+          "sharedCategories": [
+            "Manufacturing"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "TLX Technologies designs and manufactures custom electromagnetic solenoids, actuators, and valves as well as electronic solenoids.",
+          "employeeRange": "51-100",
+          "name": "TLX Technologies",
+          "sharedCategories": [
+            "Electronics",
+            "Manufacturing"
+          ],
+          "similarityScore": 83
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include MAGNET-SCHULTZ, Kendrion, CIT Relay & Switch.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

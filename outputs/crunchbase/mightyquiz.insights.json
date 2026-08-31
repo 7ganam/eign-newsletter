@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:34:08.314Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:34:08.263Z",
+    "url": "https://www.crunchbase.com/organization/mightyquiz"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "MightyQuiz",
+      "shortDescription": "MightyQuiz, an online collection of user-generated quizzes, enables users to answer and rate quizzes via a distributable widget and the web.",
+      "description": "MightyQuiz powers a collection of user generated quiz questions that can be answered and rated on-site or through a distributable widget.",
+      "website": "http://mightyquiz.com/",
+      "foundedYear": 2008,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Content",
+        "Developer Tools"
+      ],
+      "sectors": [
+        "Media and Entertainment",
+        "Software"
+      ],
+      "founders": [
+        "Altay Guvench"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2008-01-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2008-01-01",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 5,
+      "includedUniqueCount": 5,
+      "items": [
+        {
+          "date": "2009-09-30",
+          "title": "ARTISTdirect.com Launches MightyQuiz",
+          "url": "http://www.artistdirect.com/entertainment-news/article/artistdirect-com-launches-mighty-quiz/6101021"
+        },
+        {
+          "date": "2008-06-18",
+          "publisher": "TechCrunch",
+          "title": "OKCupid Spins Off Quiz Engine, HelloQuizzy",
+          "url": "http://www.techcrunch.com/2008/06/18/okcupid-spins-off-quiz-engine-helloquizzy/"
+        },
+        {
+          "date": "2008-03-14",
+          "publisher": "TechCrunch",
+          "title": "Y Combinator Demo Day Roundup for Spring 2008",
+          "url": "http://www.techcrunch.com/2008/03/14/y-combinator-demo-day-roundup-for-spring-2008/"
+        },
+        {
+          "date": "2008-03-10",
+          "publisher": "TechCrunch",
+          "title": "MightyQuiz: Stump Strangers with Your Arcane Knowledge",
+          "url": "http://www.techcrunch.com/2008/03/10/mightyquiz-stump-strangers-with-your-arcane-knowledge/"
+        },
+        {
+          "date": "2008-01-01",
+          "title": "Seed Round - MightyQuiz"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -20,
+      "heatScore": 43
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Sporcle is a web site and mobile application suite that provides fun and addictive diversions.",
+          "employeeRange": "51-100",
+          "name": "Sporcle",
+          "similarityScore": 97
+        },
+        {
+          "description": "Kahoot! is a game-based learning platform that makes it easy to create, share, and play fun learning games and trivia quizzes.",
+          "employeeRange": "501-1,000",
+          "name": "Kahoot!",
+          "similarityScore": 95
+        },
+        {
+          "description": "Quizlet is a learning platform that uses activities and games to help students practice and master what they’re learning.",
+          "employeeRange": "251-500",
+          "name": "Quizlet",
+          "similarityScore": 89
+        },
+        {
+          "description": "Create interactive quizzes with AI, live games, and real-time analytics. No app downloads required.",
+          "employeeRange": "1-10",
+          "name": "TriviaMaker",
+          "similarityScore": 85
+        },
+        {
+          "description": "Outgrow's platform lets marketers build & launch interactive calculators that boost customer engagement and lead to higher conversion!",
+          "employeeRange": "51-100",
+          "name": "Outgrow",
+          "similarityScore": 81
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Sporcle, Kahoot!, Quizlet.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:59:06.997Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:59:06.943Z",
+    "url": "https://www.crunchbase.com/organization/cardinal"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Cardinal Media Technologies",
+      "shortDescription": "Cardinal Media Technologies was a music sharing platform and analytics engine for consumers to access music, and artists to gain insights.",
+      "description": "Cardinal is a music sharing platform and analytics engine thatmakes it easy for consumers to preview and purchase music while providing artists, labels, and media companies deep analytics into what's trending, who's sharing, and what the next big thing will be.\r\n\r\nCardinal is a bit like FourSquare meets Google Analytics for music makers and music tastemakers.",
+      "website": "http://www.cardinalpower.it/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Calgary, Alberta, Canada",
+      "industries": [
+        "Ediscovery",
+        "Mobile",
+        "Music"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Media and Entertainment",
+        "Mobile",
+        "Music and Audio",
+        "Professional Services"
+      ],
+      "founders": [
+        "Cory Smith",
+        "Rick Cotter",
+        "Victoria MacLean"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 63981,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2010-11-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2010-11-01",
+          "amount": {
+            "amount": 63981,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ]
+    },
+    "recentNews": {
+      "reportedCount": 4,
+      "includedUniqueCount": 4,
+      "items": [
+        {
+          "date": "2011-09-07",
+          "publisher": "Tech Vibes",
+          "title": "Techvibes TV: Cardinal's Cory Smith and Takin’ VC Money (Money Cash IPOs)",
+          "url": "http://www.techvibes.com/blog/techvibes-tv-cardinals-cory-smith-and-takin-vc-money-money-cash-ipos-2011-09-07"
+        },
+        {
+          "date": "2011-06-03",
+          "publisher": "Cult of Mac",
+          "title": "Here's the (Un)Official WWDC 2011 Song | Cult of Mac",
+          "url": "http://www.cultofmac.com/98338/heres-the-unofficial-wwdc-2011-song/"
+        },
+        {
+          "date": "2011-06-02",
+          "publisher": "TechCrunch",
+          "title": "One More Thing, The Rap&nbsp;Song",
+          "url": "http://techcrunch.com/2011/06/02/one-more-thing-the-rap-song/"
+        },
+        {
+          "date": "2010-11-01",
+          "title": "Seed Round - Cardinal Media Technologies"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 63981,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 13,
+      "heatScore": 46
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Spotify is a commercial music streaming service that provides restricted digital content from a range of record labels and artists.",
+          "employeeRange": "1-10",
+          "name": "Spotify",
+          "sharedCategories": [
+            "Music"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "SoundCloud is a social sound platform where anyone can create and share sounds.",
+          "employeeRange": "251-500",
+          "name": "SoundCloud",
+          "sharedCategories": [
+            "Music"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "Apple is a technology company that designs, manufactures, and markets consumer electronics, personal computers, and software.",
+          "employeeRange": "1-10",
+          "name": "Apple",
+          "similarityScore": 90
+        },
+        {
+          "description": "YouTube is a platform for sharing and watching videos, including movies, music clips, and amateur content.",
+          "employeeRange": "5,001-10,000",
+          "name": "YouTube",
+          "sharedCategories": [
+            "Music"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "Bandcamp is an online music store and a promotion platform for independent artists.",
+          "employeeRange": "1-10",
+          "name": "Bandcamp",
+          "sharedCategories": [
+            "Music"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $63,981, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Spotify, SoundCloud, Apple.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

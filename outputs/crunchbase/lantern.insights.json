@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:52:50.456Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:52:50.403Z",
+    "url": "https://www.crunchbase.com/organization/lantern"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Lantern Studios, Inc.",
+      "shortDescription": "Lantern Studios, Inc. is a gaming club designed for gaming enthusiasts to share tips, tricks, and also rate and review products.",
+      "description": "Based in Los Angeles, Lantern brings together top tier talent from video games, film and television to develop original games that we'd love to play. Lantern's first game, Frost Wars: The Rise of Fatty Sparkles, is in production and slated to launch in early 2012.",
+      "website": "http://lanternla.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Los Angeles, California, United States",
+      "geographicRegions": [
+        "Greater Los Angeles Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Gaming",
+        "Mobile",
+        "Video Games"
+      ],
+      "sectors": [
+        "Gaming",
+        "Mobile"
+      ],
+      "founders": [
+        "Austin Hice",
+        "Carlo Eugster"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -6,
+      "heatScore": 71
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "GameSpot is an online portal that offers news, reviews, previews, forums, and other content on video games.",
+          "employeeRange": "1-10",
+          "name": "GameSpot",
+          "sharedCategories": [
+            "Video Games"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Metacritic provides reviews on films, music, books and game genres to help consumers make entertainment-related decisions.",
+          "employeeRange": "11-50",
+          "name": "MetaCritic",
+          "similarityScore": 93
+        },
+        {
+          "description": "TrueAchievements is the home of Xbox and Windows news, reviews, achievement guides, and leaderboards.",
+          "employeeRange": "1-10",
+          "name": "TrueAchievements",
+          "similarityScore": 89
+        },
+        {
+          "description": "Steam offers a community-based platform that enables gamers to connect, play, and create and share content with other players.",
+          "employeeRange": "1-10",
+          "name": "Steam",
+          "sharedCategories": [
+            "Video Games",
+            "Gaming"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "HowLongtoBeat is an online website that lets videogame players track the playtimes of their games.",
+          "name": "HowLongtoBeat",
+          "sharedCategories": [
+            "Video Games"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include GameSpot, MetaCritic, TrueAchievements.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

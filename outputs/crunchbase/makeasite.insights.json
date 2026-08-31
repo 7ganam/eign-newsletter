@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:15:49.087Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:15:49.033Z",
+    "url": "https://www.crunchbase.com/organization/makeasite"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Makeasite",
+      "shortDescription": "Makeasite provides an AI-driven platform for creating and launching SaaS websites from natural language prompts.",
+      "description": "Makeasite provides an AI-driven platform that helps users create and launch SaaS websites from natural language prompts. The service offers a functional Next.js SaaS template with preconfigured integrations such as Supabase, PostHog, Stripe, and Google authentication. Users can generate site structure and content, then share the resulting website with a single click. Makeasite also includes an AI assistant that can edit project files, generate and update code, and manage database migrations and queries through chat. The assistant helps debug issues by surfacing frontend errors and tracing problems without manual log inspection. It supports searching across the codebase, pulling in external web context, and tracking changes with built-in versioning and rollback. The platform is intended for developers and product builders who want to focus on application logic rather than boilerplate infrastructure.",
+      "website": "https://makeasite.io/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "industries": [
+        "Application Performance Management",
+        "Artificial Intelligence (AI)",
+        "Cloud Computing",
+        "Database",
+        "Developer Platform",
+        "Developer Tools",
+        "Productivity Tools",
+        "SaaS",
+        "Software",
+        "Software Engineering"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Internet Services",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An AI-driven platform for generating and launching SaaS websites from prompts with a preconfigured Next.js template and integrations.",
+        "name": "Makeasite platform"
+      },
+      {
+        "description": "An integrated AI assistant that edits code, manages databases, debugs issues, searches projects, and pulls external context in chat.",
+        "name": "Makeasite AI assistant"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 48,
+      "growthScore": 75,
+      "heatChange90Days": 54,
+      "heatScore": 84
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 94.22
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 75 (+48 over 90 days) and market heat at 84 (+54).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

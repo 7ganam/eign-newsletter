@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:39:01.437Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:39:01.399Z",
+    "url": "https://www.crunchbase.com/organization/karoo"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "KAROO",
+      "shortDescription": "KAROO provides integration of salesforce solutions, CRM, cloud computing and bilingual offshore development center.",
+      "website": "https://www.karoo.fr/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "51-100",
+      "headquarters": "Boulogne-billancourt, Ile-de-France, France",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "CRM",
+        "Information Technology"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Sales and Marketing",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Integration services for Salesforce CRM to streamline business processes and data management.",
+        "name": "Salesforce Solutions Integration"
+      },
+      {
+        "description": "Implementation and support services for customer relationship management systems to improve client interactions and data handling.",
+        "name": "CRM Services"
+      },
+      {
+        "description": "Provision and management of cloud-based infrastructure and applications to support business operations and scalability.",
+        "name": "Cloud Computing Services"
+      },
+      {
+        "description": "An offshore software development center providing bilingual programming and IT services to support global business needs.",
+        "name": "Bilingual Offshore Development Center"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2025-03-14",
+          "publisher": "Medium",
+          "title": "My Day at Y Combinator Demo Day: A Glimpse into Silicon Valley’s AI Trends",
+          "url": "https://medium.com/@tiancaixinxin/my-day-at-y-combinator-demo-day-a-glimpse-into-silicon-valleys-ai-trends-426ea732dd92?source=topic_portal---recommended_stories---venture_capital---3-84--------------------b0b2ad13_63a3_481a_9a88_c42f01997f5a--------------"
+        },
+        {
+          "date": "2022-10-14",
+          "publisher": "Moneyweb",
+          "title": "Karooooo sees 7% drop in client miles driven as economy bites",
+          "url": "https://www.moneyweb.co.za/moneyweb-podcasts/moneyweb-now/karooooo-sees-a-7-decrease-in-client-miles-driven-as-the-economy-bites/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -11,
+      "heatScore": 48
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 14.66
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 83.21
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 6.78
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:04:25.212Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:04:25.155Z",
+    "url": "https://www.crunchbase.com/organization/finosu"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Finosu",
+      "shortDescription": "Finsou builds software to make lending more accessible through outsourced licensing and automated loan management systems.",
+      "website": "https://www.finosu.com/",
+      "foundedYear": 2024,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "B2B",
+        "FinTech",
+        "Lending"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Other"
+      ],
+      "founders": [
+        "Gabriel Vincent Kho",
+        "Mark Ricciardi"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A loan servicing platform that integrates personalized communication channels with payment processing and default compliance management.",
+        "name": "AI Native Loan Servicer"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2026-01-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2026-01-01",
+          "investorCount": 2,
+          "postMoneyValuation": {
+            "amount": 12238365,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2024-09-25",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 8006399,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 3,
+        "visibleNames": [
+          {
+            "name": "Palm Drive Capital",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Soma Capital",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2026-01-01",
+          "title": "Seed Round - Finosu"
+        },
+        {
+          "date": "2024-09-25",
+          "title": "Pre Seed Round - Finosu"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1.53
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 27,
+      "growthScore": 93,
+      "heatChange90Days": 1,
+      "heatScore": 81
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 30.55
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 64.99,
+        "timingEstimatePercent": {
+          "within6Months": 99.89,
+          "months6To11": 0.11,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 94.98
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 3.85
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Tala is a digital financial services company that provides access to credit, payments, savings, and transfer services.",
+          "employeeRange": "501-1,000",
+          "name": "Tala",
+          "sharedCategories": [
+            "FinTech"
+          ],
+          "sharedSpecialties": [
+            "ACH and Bank Transfer Services",
+            "Loan Management Systems",
+            "KYC Automation"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "LoanPro is the marketing-leading lending and credit platform built to innovate the future of finance.",
+          "employeeRange": "101-250",
+          "name": "LoanPro",
+          "sharedCategories": [
+            "FinTech"
+          ],
+          "sharedSpecialties": [
+            "Compliance Automation",
+            "Loan Management Systems",
+            "KYC Automation",
+            "Loan Payment Services"
+          ],
+          "similarityScore": 96
+        },
+        {
+          "description": "Loan management and loan servicing software company based out of California.",
+          "employeeRange": "11-50",
+          "name": "Nortridge Software",
+          "sharedSpecialties": [
+            "ACH and Bank Transfer Services",
+            "Payment Processing",
+            "Loan Management Systems",
+            "KYC Automation",
+            "Loan Payment Services"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "LOAN SERVICING SOFT is a loan servicing software platform, designed from the ground up to increase lending and loan servicing efficiencies.",
+          "employeeRange": "1-10",
+          "name": "LOAN SERVICING SOFT",
+          "sharedSpecialties": [
+            "Foreclosure and Default Management",
+            "Regulatory Reporting",
+            "Compliance Automation",
+            "Loan Management Systems",
+            "Loan Payment Services"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "Turnkey Lender provides a cloud-based, AI-powered lending automation platform that enables lenders to digitize the loan lifecycle.",
+          "employeeRange": "101-250",
+          "name": "Turnkey Lender",
+          "sharedCategories": [
+            "Lending",
+            "B2B",
+            "FinTech"
+          ],
+          "sharedSpecialties": [
+            "Foreclosure and Default Management",
+            "Regulatory Reporting",
+            "Payment Processing",
+            "Loan Management Systems",
+            "KYC Automation",
+            "Loan Payment Services"
+          ],
+          "similarityScore": 89.281
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $8,006,399 to $12,238,365, a 1.53x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 93 (+27 over 90 days) and market heat at 81 (+1).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Tala, LoanPro, Nortridge Software.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:50:33.176Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:50:33.122Z",
+    "url": "https://www.crunchbase.com/organization/bur%C3%B3-de-ingresos"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Buró de Ingresos",
+      "shortDescription": "Buró de Ingresos provides an API platform that verifies income, employment and economic activity data for individuals and businesses.",
+      "description": "Buró de Ingresos provides an API-based infrastructure for income verification tailored to financial institutions and other organizations that need to assess income for credit, underwriting or risk decisions. The platform connects to fiscal and payroll data sources to deliver verified information on income, employment and economic activity for both individuals and businesses. For individuals, it returns verified monthly income, payroll history, income type, invoices and stability metrics. For businesses and SMEs, it exposes billing volumes from CFDI invoices, customer concentration, revenue recurrence and invoicing trends. Customers integrate the REST API into their onboarding and credit workflows, using JSON responses and a sandbox environment for testing. Buró de Ingresos emphasizes compliance with Mexican data protection law and requires explicit consent for each verification.",
+      "website": "https://www.burodeingresos.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "Azcapotzalco, Distrito Federal, Mexico",
+      "geographicRegions": [
+        "Latin America"
+      ],
+      "industries": [
+        "Cloud Computing",
+        "Compliance",
+        "Credit",
+        "Data Integration",
+        "Data Management",
+        "Developer APIs",
+        "Financial Services",
+        "Fraud Detection",
+        "Software"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Financial Services",
+        "Information Technology",
+        "Internet Services",
+        "Lending and Investments",
+        "Privacy and Security",
+        "Professional Services",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Verificación de Ingresos para Personas Físicas provides API-based income and payroll verification for individual borrowers in Mexico.",
+        "name": "Verification for Individuals"
+      },
+      {
+        "description": "Verificación de Ingresos para Personas Morales provides API-based verification of billing, fiscal activity and revenue trends for companies in Mexico.",
+        "name": "Verification for Businesses"
+      },
+      {
+        "description": "Income Verification API is a REST API that delivers verified income, employment and economic activity data in JSON format.",
+        "name": "Income Verification API"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatScore": 48
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 76.81
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

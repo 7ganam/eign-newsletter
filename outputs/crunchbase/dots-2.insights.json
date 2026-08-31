@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:01:06.337Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:01:06.256Z",
+    "url": "https://www.crunchbase.com/organization/dots-2"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Dots",
+      "shortDescription": "Dots is a social media application that converts Facebook followers into paying customers.",
+      "description": "Dots makes it easy for organisations to convert followers on their Facebook pages from Likes to engaging and paying customers by having their followers recommend what they offer to a selection of their friends who they think are most likely to be interested. And the best part is that the marketing campaigns never will be perceived as advertising, but as a personal recommendation from a friend.",
+      "website": "http://dotsapp.io/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "Oslo, Norway",
+      "geographicRegions": [
+        "Nordic Countries",
+        "Scandinavia",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Advertising Platforms",
+        "Marketing Automation",
+        "Social Media"
+      ],
+      "sectors": [
+        "Advertising",
+        "Internet Services",
+        "Media and Entertainment",
+        "Sales and Marketing",
+        "Software"
+      ],
+      "founders": [
+        "Christian Wick",
+        "Patrick Bjurquist"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2020-04-11",
+          "publisher": "Recode",
+          "title": "10 great mobile games to play solo, with friends, or both",
+          "url": "https://www.vox.com/culture/2020/4/11/21202949/mobile-games-best-2020-list-recommendations"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -11,
+      "heatScore": 39
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 88.59
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

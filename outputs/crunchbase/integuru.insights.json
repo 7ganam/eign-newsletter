@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:17:05.993Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:17:05.939Z",
+    "url": "https://www.crunchbase.com/organization/integuru"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Integuru",
+      "shortDescription": "Integuru provides an API generation platform that turns websites and web systems into production-ready HTTP APIs.",
+      "description": "Integuru provides an API generation platform that converts websites and web systems into production-ready HTTP APIs. The service analyzes network requests of target platforms to reverse-engineer their underlying backend structure and generate direct HTTP integrations, without relying on browser automation or traditional RPA. It handles authentication flows, including cookies and multi-factor verification, and produces complete API schemas with documentation for requests and responses. Integuru also manages edge cases, branching logic, and auto-healing to keep integrations operational as target systems change. The platform supports self-serve usage with tiered plans and add-ons for higher volumes, and is used across sectors such as healthcare, logistics, finance, real estate, legal, government, and AI agents. Customers use Integuru to build read and write workflows that integrate with existing tools and portals.",
+      "website": "https://www.integuru.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Application Performance Management",
+        "Artificial Intelligence (AI)",
+        "Cloud Computing",
+        "Developer APIs",
+        "Enterprise Software",
+        "Financial Services",
+        "Government",
+        "Health Care",
+        "Logistics",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Financial Services",
+        "Government and Military",
+        "Health Care",
+        "Information Technology",
+        "Internet Services",
+        "Science and Engineering",
+        "Software",
+        "Transportation"
+      ],
+      "founders": [
+        "Richard Zhang"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An API generation platform that reverse-engineers website network requests to create direct HTTP APIs for arbitrary web systems.",
+        "name": "Integuru API Generator Platform"
+      },
+      {
+        "description": "An open-source integration agent that runs permissionless, code-based reverse-engineered integrations against target websites.",
+        "name": "Open-Source Integration Agent"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 45,
+      "heatScore": 89
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 5
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:08:23.534Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:08:23.474Z",
+    "url": "https://www.crunchbase.com/organization/askmyclass"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "askMyClass",
+      "shortDescription": "askMyClass helps teachers save time with frequent daily tasks in the classroom with a voice helper, that runs on Alexa.",
+      "description": "askMyClass helps teachers save time with frequent daily tasks in the classroom with a voice helper, that runs on Alexa.\n\naskMyClass helps teachers in running a smoother classroom with quick ask-and-get guided activities for classroom management and SEL.",
+      "website": "https://goaskmyclass.com/",
+      "foundedYear": 2017,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Menlo Park, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Consumer Electronics",
+        "EdTech",
+        "Software"
+      ],
+      "sectors": [
+        "Consumer Electronics",
+        "Education",
+        "Hardware",
+        "Software"
+      ],
+      "founders": [
+        "Aparna Ramanathan"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2018-08-22",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2018-08-22",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2018-08-22",
+          "title": "Seed Round - askMyClass"
+        },
+        {
+          "date": "2018-08-21",
+          "publisher": "TechCrunch",
+          "title": "Here are the 63 startups that launched today at Y Combinator’s S18 Demo Day 1",
+          "url": "https://techcrunch.com/2018/08/20/here-are-the-63-startups-that-launched-today-at-y-combinators-s18-demo-day-1/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 1,
+      "heatScore": 52
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Merlyn Mind is a technology company that provides AI-based solutions to various industries.",
+          "employeeRange": "101-250",
+          "name": "Merlyn Mind",
+          "similarityScore": 94
+        },
+        {
+          "description": "Amazon is a tech firm with a focus on e-commerce, cloud computing, digital streaming, and AI infrastructure.",
+          "employeeRange": "10,001+",
+          "name": "Amazon",
+          "sharedCategories": [
+            "Consumer Electronics"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "ClassDojo is a school communication platform that teachers, students, and families use to build close-knit communities.",
+          "employeeRange": "101-250",
+          "name": "ClassDojo",
+          "sharedCategories": [
+            "EdTech",
+            "Software"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "The mission of the Alumni Association is to enhance the Utah State University experience through lifelong engagement. facebook.",
+          "employeeRange": "10,001+",
+          "name": "Utah State University",
+          "similarityScore": 89
+        },
+        {
+          "description": "Nearpod is a provider of edtech platform for K-12 teachers to create interactive slides filled with videos, quizzes, and other activities.",
+          "employeeRange": "251-500",
+          "name": "Nearpod",
+          "sharedCategories": [
+            "EdTech",
+            "Software"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $120,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Merlyn Mind, Amazon, ClassDojo.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

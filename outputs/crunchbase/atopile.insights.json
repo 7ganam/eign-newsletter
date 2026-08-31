@@ -1,0 +1,306 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:13:17.183Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:13:17.126Z",
+    "url": "https://www.crunchbase.com/organization/atopile"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Atopile",
+      "shortDescription": "Atopile is a software company that develops tools for crafting electronic circuit board designs using code.",
+      "description": "Atopile develops tools for crafting electronic circuit board designs using code. By replacing the traditional point-and-click schematic interface with code, they bring software development methodologies such as reuse, validation, and automation into the realm of electronics.",
+      "website": "https://atopile.io/",
+      "foundedYear": 2023,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Electronics",
+        "Information Technology",
+        "Manufacturing"
+      ],
+      "sectors": [
+        "Hardware",
+        "Information Technology",
+        "Manufacturing"
+      ],
+      "founders": [
+        "Ioannis Papamanoglou",
+        "Narayan Powderly"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A domain-specific language for describing electronic circuit designs with code, including components, interfaces, units, tolerances, and constraints.",
+        "name": "ato Language"
+      },
+      {
+        "description": "A command-line tool that compiles ato code to update PCB designs, manage dependencies, and generate manufacturing files.",
+        "name": "ato Compiler"
+      },
+      {
+        "description": "An embedded tool to generate ato code templates for electronic components, supporting JLCPCB parts and manufacturer data.",
+        "name": "Component Creation Tool"
+      },
+      {
+        "description": "A system to find, install, manage, and synchronize reusable ato code modules and dependencies for circuit design projects.",
+        "name": "Package Management System"
+      },
+      {
+        "description": "Integration with KiCad to generate, open, and synchronize PCB layout files from ato code, including a KiCad plugin for layout assistance.",
+        "name": "Layout Integration with KiCad"
+      },
+      {
+        "description": "Guidance and tools for using git version control and CI pipelines to manage, build, test, and validate circuit design projects.",
+        "name": "Version Control and Continuous Integration Support"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 125000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2024-04-03",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2024-04-03",
+          "amount": {
+            "amount": 125000,
+            "currency": "USD"
+          },
+          "investorCount": 4,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 3770392,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 4,
+        "visibleNames": [
+          {
+            "name": "10 BOND",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "Lombardstreet Ventures",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "Tarek Alaruri",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2024-04-03",
+          "title": "Pre Seed Round - Atopile"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 125000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -2,
+      "growthScore": 84,
+      "heatChange90Days": -4,
+      "heatScore": 76
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 31.44
+      },
+      "funding": {
+        "generatedDate": "2026-06-20",
+        "probabilityPercent": 93.78,
+        "timingEstimatePercent": {
+          "within6Months": 99.55,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0.45
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 52.9
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 4.03
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "JITX provides electronic design as a service.",
+          "employeeRange": "11-50",
+          "name": "JITX",
+          "sharedSpecialties": [
+            "Electronic Contract Manufacturing (PCBA)",
+            "Integrated Circuit Layout",
+            "Electronics Assembly"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Circuit Mind is a technology company that develops electronic circuits from concept to prototype or production based on AI platform.",
+          "employeeRange": "11-50",
+          "name": "Circuit Mind",
+          "sharedSpecialties": [
+            "Electronic Contract Manufacturing (PCBA)",
+            "CAD File Conversion",
+            "CAD/CAM Engineering",
+            "Electronics Assembly"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Engineering platform to automate the development of electronics",
+          "employeeRange": "51-100",
+          "name": "CELUS",
+          "sharedSpecialties": [
+            "Electronic Contract Manufacturing (PCBA)",
+            "Electronics Assembly"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "X Engineering Software Systems offers programmable logic development tools and FPGA development boards.",
+          "name": "X Engineering Software Systems",
+          "sharedCategories": [
+            "Information Technology"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "A global EDA company specialising in Schematic Capture and PCB design software.",
+          "employeeRange": "11-50",
+          "name": "Pulsonix",
+          "sharedCategories": [
+            "Manufacturing"
+          ],
+          "sharedSpecialties": [
+            "Electronic Contract Manufacturing (PCBA)",
+            "CAD File Conversion",
+            "Integrated Circuit Layout"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $125,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $3,770,392 to $3,770,392, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 84 (-2 over 90 days) and market heat at 76 (-4).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include JITX, Circuit Mind, CELUS.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

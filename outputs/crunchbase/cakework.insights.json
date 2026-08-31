@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:54:31.178Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:54:31.125Z",
+    "url": "https://www.crunchbase.com/organization/cakework"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Cakework",
+      "shortDescription": "Cakework enables you to create serverless long-running tasks without the need for infrastructure management.",
+      "description": "Cakework enables you to create serverless long-running tasks without the need for infrastructure management.",
+      "website": "https://www.cakework.com/",
+      "foundedYear": 2022,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Seattle, Washington, United States",
+      "geographicRegions": [
+        "Greater Seattle Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "B2B",
+        "Developer Tools",
+        "Infrastructure",
+        "Software",
+        "Web Development"
+      ],
+      "sectors": [
+        "Other",
+        "Software"
+      ],
+      "founders": [
+        "Eric Chen",
+        "Jessie Young",
+        "Selvan Senthivel"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A platform feature that allows users to write and manage custom functions without infrastructure management, accessible via GUI and CLI.",
+        "name": "Custom User Functions"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2023-04-05",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2023-04-05",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 5424626,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2023-04-05",
+          "title": "Pre Seed Round - Cakework"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -1,
+      "growthScore": 25,
+      "heatChange90Days": -13,
+      "heatScore": 64
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 30.8,
+        "timingEstimatePercent": {
+          "within6Months": 15.77,
+          "months6To11": 13.28,
+          "months12To24": 20.61,
+          "beyond24Months": 25
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 70.01
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Temporal Technologies is an open-source platform that simplifies building and managing complex, long-running workflows and microservices.",
+          "employeeRange": "501-1,000",
+          "name": "Temporal Technologies",
+          "sharedCategories": [
+            "Developer Tools",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Application Runtime Platforms",
+            "Workflow Automation",
+            "Process Orchestration",
+            "Workload Automation",
+            "Serverless Computing",
+            "Integration Platforms",
+            "SDK Management",
+            "Internal Developer Platforms"
+          ],
+          "similarityScore": 96
+        },
+        {
+          "description": "Inngest is the developer platform for easily building reliable workflows with zero infrastructure.",
+          "employeeRange": "11-50",
+          "name": "Inngest",
+          "sharedSpecialties": [
+            "Function as a Service (FaaS)",
+            "Workflow Automation",
+            "Process Orchestration",
+            "Workload Automation",
+            "Serverless Computing",
+            "Internal Developer Platforms"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Amazon Web Services provides information technology infrastructure services to businesses in the form of web services.",
+          "employeeRange": "10,001+",
+          "name": "Amazon Web Services",
+          "sharedSpecialties": [
+            "Serverless Computing",
+            "API Management"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Trigger.dev provides a developer platform for building and managing background jobs and workflows in web applications.",
+          "employeeRange": "11-50",
+          "name": "Trigger.dev",
+          "sharedCategories": [
+            "Developer Tools",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Workflow Automation",
+            "Process Orchestration",
+            "Workload Automation",
+            "Internal Developer Platforms"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Cloudflare is a web performance and security company that provides online services to protect and accelerate websites online.",
+          "employeeRange": "5,001-10,000",
+          "name": "Cloudflare",
+          "sharedCategories": [
+            "Developer Tools"
+          ],
+          "sharedSpecialties": [
+            "Function as a Service (FaaS)"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $500,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $5,424,626 to $5,424,626, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 25 (-1 over 90 days) and market heat at 64 (-13).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Temporal Technologies, Inngest, Amazon Web Services.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,2 +1,6 @@
 # Dependencies (any directory, including nested copies under .codex-artifacts)
 node_modules/
+
+# Browser profiles contain cookies, OAuth tokens, and local storage
+outputs/crunchbase/brave-profile/
+**/brave-profile/

@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:11:53.903Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:11:53.847Z",
+    "url": "https://www.crunchbase.com/organization/infoharmoni"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Infoharmoni",
+      "shortDescription": "Inforharmoni is a data visualization company that visualizes real-time social web and aggregates content.",
+      "description": "Infoharmoni is a data visualization startup founded by Kovas Boguta.",
+      "website": "http://www.infoharmoni.com/",
+      "foundedYear": 2009,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Big Data",
+        "Social Media",
+        "Software"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Internet Services",
+        "Media and Entertainment",
+        "Software"
+      ],
+      "founders": [
+        "Kovas Boguta"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2010-03-02",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2010-03-02",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 5,
+      "includedUniqueCount": 5,
+      "items": [
+        {
+          "date": "2011-02-10",
+          "publisher": "Venture Beat",
+          "title": "Y Combinator presents 26 new startups",
+          "url": "http://venturebeat.com/2010/03/23/y-combinator/"
+        },
+        {
+          "date": "2010-03-25",
+          "publisher": "TechCrunch",
+          "title": "Startups And Top Investors Unite At Y Combinator's Tenth Demo Day | TechCrunch",
+          "url": "http://techcrunch.com/2010/03/23/y-combinator-demo-day/"
+        },
+        {
+          "date": "2010-03-02",
+          "title": "Seed Round - Infoharmoni"
+        },
+        {
+          "date": "2009-09-22",
+          "publisher": "TechCrunch",
+          "title": "TechCrunch50: Visualizing Real-Time Social Structures",
+          "url": "http://techcrunch.com/2009/09/22/techcrunch50-visualizing-real-time-social-structures/"
+        },
+        {
+          "date": "2009-09-22",
+          "publisher": "TechCrunch",
+          "title": "TechCrunch50: Visualizing Real-Time Social Structures",
+          "url": "http://www.techcrunch.com/2009/09/22/techcrunch50-visualizing-real-time-social-structures/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -12,
+      "heatScore": 53
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Meltwater is a social listening platform that offers businesses insights into online reputation, industry trends, and customer behavior.",
+          "employeeRange": "1,001-5,000",
+          "name": "Meltwater",
+          "sharedCategories": [
+            "Social Media",
+            "Software"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "Sprinklr provides enterprise software for customer experience management.",
+          "employeeRange": "1,001-5,000",
+          "name": "Sprinklr",
+          "sharedCategories": [
+            "Social Media",
+            "Software"
+          ],
+          "similarityScore": 86
+        },
+        {
+          "description": "Brandwatch is the world’s premier social suite, empowering over 7,500 of the world’s most admired companies.",
+          "employeeRange": "501-1,000",
+          "name": "Brandwatch",
+          "sharedCategories": [
+            "Social Media",
+            "Software"
+          ],
+          "similarityScore": 84
+        },
+        {
+          "description": "Talkwalker is a listening and analytics company that empowers over 1,000 brands to optimize the impact of their communication efforts.",
+          "employeeRange": "101-250",
+          "name": "Talkwalker",
+          "similarityScore": 82
+        },
+        {
+          "description": "BuzzSumo is a content marketing and influencer identification platform.",
+          "employeeRange": "11-50",
+          "name": "BuzzSumo",
+          "similarityScore": 80
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Meltwater, Sprinklr, Brandwatch.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

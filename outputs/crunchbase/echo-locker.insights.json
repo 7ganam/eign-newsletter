@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:37:06.465Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:37:06.426Z",
+    "url": "https://www.crunchbase.com/organization/echo-locker"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Echo Locker",
+      "shortDescription": "Echo Lockscreen is a lock screen that allows you to conveniently and easily view and manage all of the notifications on your Android device.",
+      "description": "Echo Lockscreen is a lock screen that allows you to conveniently and easily view and manage all of the notifications on your Android device.",
+      "website": "http://echolocker.com/",
+      "foundedYear": 2013,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Palo Alto, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Android",
+        "Apps",
+        "Messaging",
+        "Mobile"
+      ],
+      "sectors": [
+        "Apps",
+        "Information Technology",
+        "Internet Services",
+        "Messaging and Telecommunications",
+        "Mobile",
+        "Platforms",
+        "Software"
+      ],
+      "founders": [
+        "Xuwen Cao"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An Android lock screen app that allows users to view and manage all notifications conveniently from the lock screen.",
+        "name": "Echo Lockscreen"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2013-08-20",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2013-08-20",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2015-09-14",
+          "title": "Echo Locker acquired by Microsoft"
+        },
+        {
+          "date": "2014-07-17",
+          "publisher": "TechCrunch",
+          "title": "With Echo, The Team Behind Laundry Startup Prim Fights Push Notification Overload | TechCrunch",
+          "url": "http://techcrunch.com/2014/07/17/with-echo-the-team-behind-laundry-startup-prim-fights-push-notification-overload/"
+        },
+        {
+          "date": "2013-08-20",
+          "title": "Seed Round - Echo Locker"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2025-08-09",
+        "probabilityPercent": 88.27
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $120,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:51:05.832Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:51:05.779Z",
+    "url": "https://www.crunchbase.com/organization/everyday-me"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Everyday.me",
+      "shortDescription": "Everyday.me is an automatic journal that helps you to record your life and store it forever.",
+      "description": "Everyday.me is an automatic journal that helps you to record your life and store it forever.",
+      "website": "http://everyday.me/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Facebook",
+        "Mobile Apps",
+        "Social Media"
+      ],
+      "sectors": [
+        "Apps",
+        "Internet Services",
+        "Media and Entertainment",
+        "Mobile",
+        "Platforms",
+        "Software"
+      ],
+      "founders": [
+        "Yu-Kuan Lin"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2012-08-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2012-08-01",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2012-08-01",
+          "title": "Seed Round - Everyday.me"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -25,
+      "heatScore": 45
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Day One is a personal journaling app, with location, metadata, tracking, self-improvement, and end-to-end encryption to multiple platforms.",
+          "employeeRange": "11-50",
+          "name": "Day One",
+          "similarityScore": 97
+        },
+        {
+          "description": "Your personal journal in the cloud",
+          "employeeRange": "1-10",
+          "name": "Penzu",
+          "similarityScore": 93
+        },
+        {
+          "description": "Momento App is an IT company that offers app to collect photos, videos, daily activities and form as a journal services.",
+          "employeeRange": "1-10",
+          "name": "Momento App",
+          "similarityScore": 86
+        },
+        {
+          "description": "Reflectly is a beautiful mindfulness app driven by AI - Your personal mindfulness companion.",
+          "employeeRange": "1-10",
+          "name": "Reflectly",
+          "similarityScore": 83
+        },
+        {
+          "description": "Daylio is a journaling app that tracks moods and activities, integrates goal-setting, and ensures privacy with a lock feature.",
+          "employeeRange": "11-50",
+          "name": "Daylio",
+          "similarityScore": 79
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Day One, Penzu, Momento App.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

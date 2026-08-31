@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:35:36.466Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:35:36.409Z",
+    "url": "https://www.crunchbase.com/organization/goscale"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "GoScale",
+      "shortDescription": "Real-time scalability through web scale servers.",
+      "description": "Real-time scalability through web scale servers.\n\n In the web world, traffic can grow and fall faster than you can respond, so why shouldn't your hosting?\n\n With GoScale, increasing or decreasing your memory, disk space or processor happens instantly, without restart.",
+      "website": "http://goscale.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Sunnyvale, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Web Hosting"
+      ],
+      "sectors": [
+        "Internet Services"
+      ],
+      "founders": [
+        "Colin Hayhurst",
+        "James Cunningham"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2012-08-21",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2012-08-21",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2012-08-21",
+          "title": "Seed Round - GoScale"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -15,
+      "heatScore": 35
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Webscale is powering modern commerce with its SaaS platform delivering performance, security, availability and compliance for global brands.",
+          "employeeRange": "51-100",
+          "name": "Webscale",
+          "sharedCategories": [
+            "Web Hosting"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Cloudflare is a web performance and security company that provides online services to protect and accelerate websites online.",
+          "employeeRange": "5,001-10,000",
+          "name": "Cloudflare",
+          "sharedCategories": [
+            "Web Hosting"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Fastly helps digital businesses keep pace with their customer expectations by delivering secure and online experiences.",
+          "employeeRange": "1,001-5,000",
+          "name": "Fastly",
+          "similarityScore": 93
+        },
+        {
+          "description": "Imperva provides activity monitoring, real-time protection, and risk management solutions for business data and applications.",
+          "employeeRange": "10,001+",
+          "name": "Imperva",
+          "similarityScore": 89
+        },
+        {
+          "description": "Akamai is a provider of cloud services that help enterprises provide secure, high-performing user experiences on any device.",
+          "employeeRange": "10,001+",
+          "name": "Akamai",
+          "similarityScore": 88
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Webscale, Cloudflare, Fastly.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:53:07.564Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:53:07.528Z",
+    "url": "https://www.crunchbase.com/organization/experiential-labs"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Experiential Labs",
+      "shortDescription": "Experiential Labs trains and serves AI models for agents using production traces and workflow simulations.",
+      "description": "Experiential Labs provides model endpoints for AI agents and trains smaller models using production traces. Its system converts logged agent activity into simulations of company tasks, constraints, and edge cases. The company uses these simulations to train and evaluate models against operational workflows. Its service includes continuous retraining, model routing, supervised fine-tuning, reinforcement learning, distillation, and token compression. Experiential Labs offers an OpenAI-compatible API and supports connections to sources such as Arize, Braintrust, LangChain, and customer databases. The company also develops the open-source World Model Optimizer for evaluating agent behavior in simulated environments.",
+      "website": "https://experientiallabs.ai/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "industries": [
+        "Agentic AI",
+        "AI Infrastructure",
+        "Artificial Intelligence (AI)",
+        "Developer APIs",
+        "Developer Tools",
+        "Generative AI",
+        "Machine Learning",
+        "SaaS",
+        "Simulation"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A model-serving and training service that uses production traces to improve agent-specific models and reduce inference costs.",
+        "name": "Experiential Labs model endpoints"
+      },
+      {
+        "description": "An open-source tool for building simulations from agent traces and evaluating model behavior in closed-loop task environments.",
+        "name": "World Model Optimizer"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatScore": 89
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 92.34
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

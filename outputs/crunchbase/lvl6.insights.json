@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:11:48.927Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:11:48.869Z",
+    "url": "https://www.crunchbase.com/organization/lvl6"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "LVL6",
+      "shortDescription": "LVL6 develops social mobile games for Android and iOS platforms.",
+      "description": "LVL6 creates social mobile games on Android and iOS.",
+      "website": "http://www.lvl6.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Palo Alto, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Android",
+        "Social",
+        "Video Games"
+      ],
+      "sectors": [
+        "Community and Lifestyle",
+        "Gaming",
+        "Mobile",
+        "Platforms",
+        "Software"
+      ],
+      "founders": [
+        "Alex Lin"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2012-03-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2012-03-01",
+          "investorCount": 2,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "Great Oaks Venture Capital",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2012-03-01",
+          "title": "Seed Round - LVL6"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -10,
+      "heatScore": 31
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Zynga is a mobile game developer that creates and operates social games as live services played on the Internet.",
+          "employeeRange": "1,001-5,000",
+          "name": "Zynga",
+          "similarityScore": 97
+        },
+        {
+          "description": "Wooga make games with thoughtful, compelling stories at their core.",
+          "employeeRange": "101-250",
+          "name": "Wooga",
+          "similarityScore": 95
+        },
+        {
+          "description": "Storm8 is the leading mobile game network for iOS and Android.",
+          "employeeRange": "101-250",
+          "name": "Storm8",
+          "similarityScore": 93
+        },
+        {
+          "description": "Playtika is a game developer that creates disruptive gaming to reshape the gaming landscape.",
+          "employeeRange": "1,001-5,000",
+          "name": "Playtika",
+          "similarityScore": 91
+        },
+        {
+          "description": "Voodoo is a leading tech company that creates mobile games and apps.",
+          "employeeRange": "501-1,000",
+          "name": "Voodoo",
+          "sharedCategories": [
+            "Video Games"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Zynga, Wooga, Storm8.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

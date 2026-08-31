@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:23:56.984Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:23:56.930Z",
+    "url": "https://www.crunchbase.com/organization/gauge-ddb7"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Gauge",
+      "shortDescription": "Gauge combines marketing and technology to offers a variety of services that help connect people, create experiences and boost businesses.",
+      "description": "Gauge Digital Communication helps in generating insights and directing communication for brands and products. They engage the user and improve the experience through testing, data and behavior analysis. They use data intelligence to power businesses, connect people and create experiences.",
+      "website": "https://www.gauge.digital/",
+      "foundedYear": 2009,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "101-250",
+      "headquarters": "São Paulo, Sao Paulo, Brazil",
+      "geographicRegions": [
+        "Latin America"
+      ],
+      "industries": [
+        "Advertising",
+        "Business Development",
+        "Consulting",
+        "Digital Marketing",
+        "Marketing",
+        "Market Research",
+        "UX Design"
+      ],
+      "sectors": [
+        "Advertising",
+        "Data and Analytics",
+        "Design",
+        "Professional Services",
+        "Sales and Marketing"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2020-06-04",
+      "lastFundingType": "Venture round",
+      "rounds": [
+        {
+          "announcedDate": "2020-06-04",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 10172430,
+            "currency": "USD"
+          },
+          "type": "Venture round"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Bossa Invest",
+            "rounds": [
+              "Venture round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2020-06-04",
+          "title": "Venture Round - Gauge"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 4,
+      "growthScore": 83,
+      "heatChange90Days": 0,
+      "heatScore": 59
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 33
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 16.71,
+        "timingEstimatePercent": {
+          "within6Months": 13.23,
+          "months6To11": 11.48,
+          "months12To24": 18.6,
+          "beyond24Months": 24.55
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 79.56
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 24.22
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "WebFX is a tech-enabled digital marketing agency that drives measurable growth from AI search and SEO, paid advertising, and more.",
+          "employeeRange": "501-1,000",
+          "name": "WebFX",
+          "sharedCategories": [
+            "Advertising",
+            "Digital Marketing"
+          ],
+          "similarityScore": 96
+        },
+        {
+          "description": "SmartSites provides digital marketing services including web design, SEO, PPC, and social media management.",
+          "employeeRange": "251-500",
+          "name": "SmartSites",
+          "sharedCategories": [
+            "Digital Marketing"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "Gauge Digital Media is a digital marketing agency.",
+          "employeeRange": "1-10",
+          "name": "Gauge Digital Media",
+          "sharedCategories": [
+            "Digital Marketing"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Ignite Visibility is dedicated to increasing business visibility through digital marketing.",
+          "employeeRange": "251-500",
+          "name": "Ignite Visibility",
+          "sharedCategories": [
+            "Advertising"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Thrive Internet Marketing Agency boosts online presence with full-service digital marketing.",
+          "employeeRange": "51-100",
+          "name": "Thrive Internet Marketing Agency",
+          "sharedCategories": [
+            "Digital Marketing"
+          ],
+          "similarityScore": 90
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $10,172,430 to $10,172,430, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 83 (+4 over 90 days) and market heat at 59 (+0).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include WebFX, SmartSites, Gauge Digital Media.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

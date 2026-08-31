@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:22:30.718Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:22:30.673Z",
+    "url": "https://www.crunchbase.com/organization/code-four"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Code Four",
+      "shortDescription": "Code Four is a digital marketing company that also offers graphic design, event management, media design, VR, video, and printmaking.",
+      "website": "https://www.codefour.com/",
+      "foundedYear": 2007,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "101-250",
+      "estimatedRevenueRange": "$10M-$50M",
+      "headquarters": "Huntington Beach, California, United States",
+      "geographicRegions": [
+        "Greater Los Angeles Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Advertising",
+        "Digital Marketing",
+        "Event Management",
+        "Graphic Design",
+        "Video",
+        "Virtual Reality"
+      ],
+      "sectors": [
+        "Advertising",
+        "Design",
+        "Events",
+        "Hardware",
+        "Media and Entertainment",
+        "Sales and Marketing",
+        "Software",
+        "Video"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2025-05-30",
+          "publisher": "Morningstar.com",
+          "title": "Nationwide Coalition Unites in “Operation Coast to Coast” to Combat Human Trafficking",
+          "url": "https://www.morningstar.com/news/globe-newswire/9460821/nationwide-coalition-unites-in-operation-coast-to-coast-to-combat-human-trafficking"
+        },
+        {
+          "date": "2025-05-30",
+          "publisher": "Flock Safety",
+          "title": "Nationwide Coalition Unites in “Operation Coast to Coast” to Combat Human Trafficking",
+          "url": "https://www.globenewswire.com/news-release/2025/05/30/3091246/0/en/Nationwide-Coalition-Unites-in-Operation-Coast-to-Coast-to-Combat-Human-Trafficking.html"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -1,
+      "growthScore": 84,
+      "heatChange90Days": -16,
+      "heatScore": 51
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 93.49
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "George P. Johnson is an event and experiential marketing agency.",
+          "employeeRange": "51-100",
+          "name": "George P. Johnson",
+          "sharedCategories": [
+            "Advertising",
+            "Digital Marketing"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "inVNT is a brand communications agency that offers events, meetings, and digital and media platforms to its clients.",
+          "employeeRange": "51-100",
+          "name": "inVNT",
+          "sharedCategories": [
+            "Advertising"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Freeman is a provider of integrated services for face-to-face marketing events.",
+          "employeeRange": "10,001+",
+          "name": "Freeman",
+          "sharedCategories": [
+            "Event Management"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "BRC Imagination Arts is an entertainment company providing production and destination planning services.",
+          "employeeRange": "51-100",
+          "name": "BRC Imagination Arts",
+          "similarityScore": 89
+        },
+        {
+          "description": "Jack Morton Worldwide is a multinational brand experience agency that offers event marketing, broadcast design, and sponsorship activation.",
+          "employeeRange": "501-1,000",
+          "name": "Jack Morton Worldwide",
+          "sharedCategories": [
+            "Advertising",
+            "Digital Marketing"
+          ],
+          "similarityScore": 86
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 84 (-1 over 90 days) and market heat at 51 (-16).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include George P. Johnson, inVNT, Freeman.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

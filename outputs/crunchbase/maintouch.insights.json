@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:15:24.021Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:15:23.969Z",
+    "url": "https://www.crunchbase.com/organization/maintouch"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Maintouch",
+      "shortDescription": "Maintouch provides an AI-driven platform that automates SEO, AI search optimization, content, backlinks, and ads management.",
+      "description": "Maintouch provides an AI-driven platform for managing SEO and AI search across strategy, content, links, and paid acquisition. The platform uses autonomous marketing agents that operate on a shared intelligence layer connected to analytics, CMS, CRM, and knowledge tools. Maintouch handles keyword research, content planning, drafting, optimization, and publishing across connected content systems. It monitors and refreshes existing pages, fixes technical SEO issues, and manages backlink discovery, outreach, placement, and tracking. The product also includes agents that optimize Google Ads campaigns using business and performance data. Maintouch is used by marketing and growth teams that want to coordinate organic and paid search execution from one system.",
+      "website": "https://maintouch.com/",
+      "foundedYear": 2025,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "industries": [
+        "Advertising Platforms",
+        "Analytics",
+        "Artificial Intelligence (AI)",
+        "Business Intelligence",
+        "Content Marketing",
+        "Marketing",
+        "SaaS",
+        "Search Engine",
+        "SEO",
+        "Software"
+      ],
+      "sectors": [
+        "Advertising",
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Internet Services",
+        "Sales and Marketing",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An AI-driven SEO and AI search platform that automates strategy, content, backlinks, technical fixes, and ads from one system.",
+        "name": "Maintouch Platform"
+      },
+      {
+        "description": "A content engine that turns search signals and knowledge base data into drafted, optimized, and published articles.",
+        "name": "Automated Content"
+      },
+      {
+        "description": "An AI-assisted editor where writers and agents co-create and optimize SEO content with real-time collaboration.",
+        "name": "Collaborative Agentic Editor"
+      },
+      {
+        "description": "A content engine that ingests first-party data to maintain an auto-updating knowledge base for grounded content generation.",
+        "name": "Self-Learning Content Engine"
+      },
+      {
+        "description": "A shared intelligence layer that aggregates business signals and powers all autonomous agents across the platform.",
+        "name": "Maintouch Intelligence"
+      },
+      {
+        "description": "A backlink automation product that discovers prospects, runs outreach, negotiates placements, and monitors links.",
+        "name": "Automated Backlinks"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 28,
+      "growthScore": 28,
+      "heatChange90Days": 66,
+      "heatScore": 78
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 5
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 94.26
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 28 (+28 over 90 days) and market heat at 78 (+66).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

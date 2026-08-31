@@ -1,0 +1,2139 @@
+{
+  "sourceUrl": "https://www.crunchbase.com/organization/carrot-labs",
+  "pageTitle": "Carrot Labs - Crunchbase Company Profile & Funding",
+  "scrapedAt": "2026-08-31T11:01:03.657Z",
+  "extraction": {
+    "method": "brave-apple-events-ng-state",
+    "authenticated": true
+  },
+  "organization": {
+    "properties": {
+      "facet_ids": [
+        "bombora",
+        "builtwith",
+        "company",
+        "rank"
+      ],
+      "identifier": {
+        "uuid": "5b97d03a-614d-4c02-abe1-d6daa471017d",
+        "value": "Carrot Labs",
+        "image_id": "sqadgllkdrkulqmuv3f6",
+        "permalink": "carrot-labs",
+        "entity_def_id": "organization"
+      },
+      "short_description": "on device Personal Finance Management",
+      "rank_delta_d90": 2.9,
+      "title": "Carrot Labs"
+    },
+    "cards": {
+      "semrush_summary": {
+        "identifier": {
+          "uuid": "5b97d03a-614d-4c02-abe1-d6daa471017d",
+          "value": "Carrot Labs",
+          "image_id": "sqadgllkdrkulqmuv3f6",
+          "permalink": "carrot-labs",
+          "entity_def_id": "organization"
+        }
+      },
+      "key_employee_change_list": [],
+      "apptopia_attribution": {},
+      "diversity_spotlight_investments_headline": {},
+      "apptopia_app_rating_list": [],
+      "funds_summary": {
+        "identifier": {
+          "uuid": "5b97d03a-614d-4c02-abe1-d6daa471017d",
+          "value": "Carrot Labs",
+          "image_id": "sqadgllkdrkulqmuv3f6",
+          "permalink": "carrot-labs",
+          "entity_def_id": "organization"
+        }
+      },
+      "funding_prediction": [],
+      "company_about_fields1": {},
+      "current_advisors_image_list": [],
+      "recommended_search": [
+        {
+          "identifier": {
+            "permalink": "closed-switzerland-companies",
+            "image_id": "z2w6yfixt9wpjzsmxkx8",
+            "uuid": "5b67b85c-17ce-49e3-b0f6-f63c2638f9e0",
+            "entity_def_id": "hub",
+            "value": "Closed Switzerland Companies"
+          },
+          "org_identifiers": [
+            {
+              "permalink": "holcim",
+              "image_id": "z2w6yfixt9wpjzsmxkx8",
+              "uuid": "f5520db1-05b6-2b2a-259c-3892ad6fed0a",
+              "entity_def_id": "organization",
+              "value": "Holcim"
+            },
+            {
+              "permalink": "mindmaze",
+              "image_id": "pzpihnjlqbsjd8l6mtsj",
+              "uuid": "e2831c5a-9c5a-e86d-8986-1140d3289663",
+              "entity_def_id": "organization",
+              "value": "MindMaze Group (Legacy)"
+            },
+            {
+              "permalink": "beekeeper",
+              "image_id": "8613324495a246b9a772135183dbb3c5",
+              "uuid": "b1cccb2b-c341-1494-1a61-7d1d7e55f0dc",
+              "entity_def_id": "organization",
+              "value": "Beekeeper"
+            },
+            {
+              "permalink": "daedalean-ag",
+              "image_id": "n1pjinbfmnacdndscyp5",
+              "uuid": "c2e67ce9-32d7-50d4-2592-ed2e5acfa3f9",
+              "entity_def_id": "organization",
+              "value": "Daedalean"
+            },
+            {
+              "permalink": "yokoy",
+              "image_id": "0dd4b6d4653444c3a334200eece2c8e2",
+              "uuid": "c13bf1a8-4de8-4035-abd5-5d454860a613",
+              "entity_def_id": "organization",
+              "value": "Yokoy"
+            },
+            {
+              "permalink": "polariton-technologies",
+              "image_id": "jdbal2solewl192qxakm",
+              "uuid": "02fe5144-73ef-402d-8e38-9eb8582af2b9",
+              "entity_def_id": "organization",
+              "value": "Polariton Technologies"
+            },
+            {
+              "permalink": "feedbacknow",
+              "image_id": "pkpx4wg7pdr5w4nrcnsq",
+              "uuid": "2f9f71f4-901d-4041-8043-54cbe19f25c2",
+              "entity_def_id": "organization",
+              "value": "FeedbackNow"
+            },
+            {
+              "permalink": "alaya",
+              "image_id": "dwqbzaqrblrbjqvby9e3",
+              "uuid": "5293e724-2971-4adf-8bea-32e54a05148c",
+              "entity_def_id": "organization",
+              "value": "Alaya"
+            }
+          ],
+          "org_funding_total": {
+            "currency": "USD",
+            "value": 4257710290,
+            "value_usd": 4257710290
+          },
+          "org_num_investors": 1023,
+          "org_num": 2071,
+          "queries": {
+            "event": [
+              {
+                "field_id": "location_identifiers",
+                "operator_id": "includes",
+                "values": [
+                  "078d9679-a862-02a2-57c8-8337e9a1eec8"
+                ],
+                "type": "predicate"
+              },
+              {
+                "collection_id": "principal.has_event.forward",
+                "query": [
+                  {
+                    "field_id": "facet_ids",
+                    "operator_id": "includes",
+                    "values": [
+                      "company"
+                    ],
+                    "type": "predicate"
+                  },
+                  {
+                    "field_id": "operating_status",
+                    "operator_id": "eq",
+                    "values": [
+                      "closed"
+                    ],
+                    "type": "predicate"
+                  }
+                ],
+                "type": "sub_query"
+              }
+            ],
+            "organization": [
+              {
+                "field_id": "facet_ids",
+                "operator_id": "includes",
+                "values": [
+                  "company"
+                ],
+                "type": "predicate"
+              },
+              {
+                "field_id": "location_identifiers",
+                "operator_id": "includes",
+                "values": [
+                  "078d9679-a862-02a2-57c8-8337e9a1eec8"
+                ],
+                "type": "predicate"
+              },
+              {
+                "field_id": "operating_status",
+                "operator_id": "eq",
+                "values": [
+                  "closed"
+                ],
+                "type": "predicate"
+              }
+            ],
+            "person": [
+              {
+                "field_id": "location_identifiers",
+                "operator_id": "includes",
+                "values": [
+                  "078d9679-a862-02a2-57c8-8337e9a1eec8"
+                ],
+                "type": "predicate"
+              },
+              {
+                "collection_id": "organization.has_primary_organization.forward",
+                "query": [
+                  {
+                    "field_id": "facet_ids",
+                    "operator_id": "includes",
+                    "values": [
+                      "company"
+                    ],
+                    "type": "predicate"
+                  },
+                  {
+                    "field_id": "location_identifiers",
+                    "operator_id": "includes",
+                    "values": [
+                      "078d9679-a862-02a2-57c8-8337e9a1eec8"
+                    ],
+                    "type": "predicate"
+                  },
+                  {
+                    "field_id": "operating_status",
+                    "operator_id": "eq",
+                    "values": [
+                      "closed"
+                    ],
+                    "type": "predicate"
+                  }
+                ],
+                "type": "sub_query"
+              }
+            ]
+          }
+        },
+        {
+          "identifier": {
+            "permalink": "closed-zug-companies",
+            "image_id": "v1448416499/v15ekg4ukgdwm82a5yfm.png",
+            "uuid": "d5086149-1617-4e90-93f8-bf5e0699c44d",
+            "entity_def_id": "hub",
+            "value": "Closed Zug Companies"
+          },
+          "org_identifiers": [
+            {
+              "permalink": "aeris-cleantec-ag",
+              "image_id": "v1448416499/v15ekg4ukgdwm82a5yfm.png",
+              "uuid": "2ea94f79-6615-a711-fb27-36bbeade2d7b",
+              "entity_def_id": "organization",
+              "value": "Aeris Health"
+            },
+            {
+              "permalink": "jur",
+              "image_id": "vfitviqelpczkubnihgk",
+              "uuid": "4865ac69-f0f2-4165-9cb8-ec23e4b761e7",
+              "entity_def_id": "organization",
+              "value": "Jur"
+            },
+            {
+              "permalink": "lipa-a043",
+              "image_id": "mst4hlhhpxrnbpmoh2yb",
+              "uuid": "92ef1a3d-f0d3-441c-8c96-6a35964ba043",
+              "entity_def_id": "organization",
+              "value": "lipa"
+            },
+            {
+              "permalink": "grn-grid",
+              "image_id": "yrjlugmepwsmfxsia0sw",
+              "uuid": "4851baae-8c96-464a-9c0d-51e0a33d9cb5",
+              "entity_def_id": "organization",
+              "value": "GRN GRID"
+            },
+            {
+              "permalink": "housecat",
+              "image_id": "accq0gx4b8tubbjt0vk1",
+              "uuid": "978b6e86-26fd-45ee-8532-aea309dcd3d0",
+              "entity_def_id": "organization",
+              "value": "Housecat"
+            },
+            {
+              "permalink": "envion",
+              "image_id": "xrdsvvx2rrwmv7hcm3kw",
+              "uuid": "9880a952-4133-4155-9bdb-08c223c265d5",
+              "entity_def_id": "organization",
+              "value": "Envion"
+            },
+            {
+              "permalink": "aximetria",
+              "image_id": "az3rwmpmxjg6wssjkwsb",
+              "uuid": "f012f1e5-4051-49d9-9593-c37071840505",
+              "entity_def_id": "organization",
+              "value": "Aximetria"
+            },
+            {
+              "permalink": "gogo-protocol",
+              "image_id": "bm1jdncwtqurmdbmppng",
+              "uuid": "2bc0e2e8-c95f-48f2-82db-26dc40a6f194",
+              "entity_def_id": "organization",
+              "value": "GOGO Protocol"
+            }
+          ],
+          "org_funding_total": {
+            "currency": "USD",
+            "value": 276657838,
+            "value_usd": 276657838
+          },
+          "org_num_investors": 49,
+          "org_num": 190,
+          "queries": {
+            "event": [
+              {
+                "field_id": "location_identifiers",
+                "operator_id": "includes",
+                "values": [
+                  "efdf04ff-fcb7-742c-ad0d-b2be1dae0683"
+                ],
+                "type": "predicate"
+              },
+              {
+                "collection_id": "principal.has_event.forward",
+                "query": [
+                  {
+                    "field_id": "facet_ids",
+                    "operator_id": "includes",
+                    "values": [
+                      "company"
+                    ],
+                    "type": "predicate"
+                  },
+                  {
+                    "field_id": "operating_status",
+                    "operator_id": "eq",
+                    "values": [
+                      "closed"
+                    ],
+                    "type": "predicate"
+                  }
+                ],
+                "type": "sub_query"
+              }
+            ],
+            "organization": [
+              {
+                "field_id": "facet_ids",
+                "operator_id": "includes",
+                "values": [
+                  "company"
+                ],
+                "type": "predicate"
+              },
+              {
+                "field_id": "location_identifiers",
+                "operator_id": "includes",
+                "values": [
+                  "efdf04ff-fcb7-742c-ad0d-b2be1dae0683"
+                ],
+                "type": "predicate"
+              },
+              {
+                "field_id": "operating_status",
+                "operator_id": "eq",
+                "values": [
+                  "closed"
+                ],
+                "type": "predicate"
+              }
+            ],
+            "person": [
+              {
+                "field_id": "location_identifiers",
+                "operator_id": "includes",
+                "values": [
+                  "efdf04ff-fcb7-742c-ad0d-b2be1dae0683"
+                ],
+                "type": "predicate"
+              },
+              {
+                "collection_id": "organization.has_primary_organization.forward",
+                "query": [
+                  {
+                    "field_id": "facet_ids",
+                    "operator_id": "includes",
+                    "values": [
+                      "company"
+                    ],
+                    "type": "predicate"
+                  },
+                  {
+                    "field_id": "location_identifiers",
+                    "operator_id": "includes",
+                    "values": [
+                      "efdf04ff-fcb7-742c-ad0d-b2be1dae0683"
+                    ],
+                    "type": "predicate"
+                  },
+                  {
+                    "field_id": "operating_status",
+                    "operator_id": "eq",
+                    "values": [
+                      "closed"
+                    ],
+                    "type": "predicate"
+                  }
+                ],
+                "type": "sub_query"
+              }
+            ]
+          }
+        }
+      ],
+      "org_similarity_org_list": [],
+      "investors_summary": {
+        "identifier": {
+          "uuid": "5b97d03a-614d-4c02-abe1-d6daa471017d",
+          "value": "Carrot Labs",
+          "image_id": "sqadgllkdrkulqmuv3f6",
+          "permalink": "carrot-labs",
+          "entity_def_id": "organization"
+        }
+      },
+      "funds_list": [],
+      "alumni_image_list": [],
+      "semrush_overview_headline": {},
+      "frequently_asked_questions_total_funding": {
+        "identifier": {
+          "uuid": "5b97d03a-614d-4c02-abe1-d6daa471017d",
+          "value": "Carrot Labs",
+          "image_id": "sqadgllkdrkulqmuv3f6",
+          "permalink": "carrot-labs",
+          "entity_def_id": "organization"
+        }
+      },
+      "exits_summary": {
+        "identifier": {
+          "uuid": "5b97d03a-614d-4c02-abe1-d6daa471017d",
+          "value": "Carrot Labs",
+          "image_id": "sqadgllkdrkulqmuv3f6",
+          "permalink": "carrot-labs",
+          "entity_def_id": "organization"
+        }
+      },
+      "partnership_announcements": [],
+      "bombora_surge_list": [],
+      "diversity_spotlight_investments_list": [],
+      "builtwith_tech_used_list": [
+        {
+          "identifier": {
+            "uuid": "e7481a04-b4f0-488e-b2a0-a7add8cb1a11",
+            "value": "PayPal",
+            "entity_def_id": "builtwith_technology"
+          },
+          "technology_category": [
+            "payment"
+          ],
+          "num_companies_using": 348766
+        },
+        {
+          "identifier": {
+            "uuid": "f7d688c9-afab-4a1c-9d65-315f329a748a",
+            "value": "Stripe",
+            "entity_def_id": "builtwith_technology"
+          },
+          "technology_category": [
+            "payment"
+          ],
+          "num_companies_using": 92561
+        },
+        {
+          "identifier": {
+            "uuid": "49911771-cea5-497c-91d1-28301e51d096",
+            "value": "Authorize.net",
+            "entity_def_id": "builtwith_technology"
+          },
+          "technology_category": [
+            "widgets"
+          ],
+          "num_companies_using": 27956
+        },
+        {
+          "identifier": {
+            "uuid": "b52f8582-a20a-457e-aec7-30cc118d8738",
+            "value": "Braintree",
+            "entity_def_id": "builtwith_technology"
+          },
+          "technology_category": [
+            "payment"
+          ],
+          "num_companies_using": 12128
+        },
+        {
+          "identifier": {
+            "uuid": "02636cd9-457d-461f-8d34-62df08f23f41",
+            "value": "Square",
+            "entity_def_id": "builtwith_technology"
+          },
+          "technology_category": [
+            "payment"
+          ],
+          "num_companies_using": 5437
+        },
+        {
+          "identifier": {
+            "uuid": "c63424d8-404b-45f1-8522-7f7481fca45f",
+            "value": "Worldpay",
+            "entity_def_id": "builtwith_technology"
+          },
+          "technology_category": [
+            "payment"
+          ],
+          "num_companies_using": 1873
+        },
+        {
+          "identifier": {
+            "uuid": "2a25f76f-33a1-46d7-b9be-aedfd709d8f4",
+            "value": "2Checkout",
+            "entity_def_id": "builtwith_technology"
+          },
+          "technology_category": [
+            "payment"
+          ],
+          "num_companies_using": 345
+        },
+        {
+          "identifier": {
+            "uuid": "4b8b5111-ffb7-4420-84ac-1544c11c98a6",
+            "value": "GoCardLess",
+            "entity_def_id": "builtwith_technology"
+          },
+          "technology_category": [
+            "payment"
+          ],
+          "num_companies_using": 334
+        },
+        {
+          "identifier": {
+            "uuid": "81972ff8-6981-482c-ad7e-a84e61edaf18",
+            "value": "Moneris",
+            "entity_def_id": "builtwith_technology"
+          },
+          "technology_category": [
+            "payment"
+          ],
+          "num_companies_using": 271
+        },
+        {
+          "identifier": {
+            "uuid": "4feabe13-ad6c-4365-a4a1-447c125c4c20",
+            "value": "Elavon",
+            "entity_def_id": "builtwith_technology"
+          },
+          "technology_category": [
+            "payment"
+          ],
+          "num_companies_using": 128
+        }
+      ],
+      "funding_rounds_summary": {
+        "identifier": {
+          "uuid": "5b97d03a-614d-4c02-abe1-d6daa471017d",
+          "value": "Carrot Labs",
+          "image_id": "sqadgllkdrkulqmuv3f6",
+          "permalink": "carrot-labs",
+          "entity_def_id": "organization"
+        }
+      },
+      "org_similarity_list": [],
+      "ipo_prediction": [],
+      "acquisitions_summary": {
+        "identifier": {
+          "uuid": "5b97d03a-614d-4c02-abe1-d6daa471017d",
+          "value": "Carrot Labs",
+          "image_id": "sqadgllkdrkulqmuv3f6",
+          "permalink": "carrot-labs",
+          "entity_def_id": "organization"
+        }
+      },
+      "advisors_summary": {
+        "identifier": {
+          "uuid": "5b97d03a-614d-4c02-abe1-d6daa471017d",
+          "value": "Carrot Labs",
+          "image_id": "sqadgllkdrkulqmuv3f6",
+          "permalink": "carrot-labs",
+          "entity_def_id": "organization"
+        }
+      },
+      "acquisitions_list": [],
+      "exits_headline": {},
+      "investments_summary": {
+        "identifier": {
+          "uuid": "5b97d03a-614d-4c02-abe1-d6daa471017d",
+          "value": "Carrot Labs",
+          "image_id": "sqadgllkdrkulqmuv3f6",
+          "permalink": "carrot-labs",
+          "entity_def_id": "organization"
+        }
+      },
+      "acquired_by_fields": {},
+      "research_insight_text_link": {},
+      "acquisition_prediction": [],
+      "sub_organizations_headline": {},
+      "layoff_list": [],
+      "growth_and_heat": {
+        "heat_score": 26,
+        "heat_score_delta_d90": 20,
+        "heat_score_history": {
+          "periods": {
+            "i1": {
+              "values": [
+                26,
+                26,
+                27,
+                27,
+                28,
+                28,
+                28,
+                29,
+                29,
+                30,
+                30,
+                31,
+                31,
+                31,
+                32,
+                32,
+                33,
+                33,
+                33,
+                34,
+                34,
+                35,
+                35,
+                9,
+                9,
+                9,
+                10,
+                10,
+                10,
+                11,
+                11,
+                11,
+                12,
+                12,
+                12,
+                12,
+                13,
+                13,
+                13,
+                14,
+                14,
+                14,
+                15,
+                15,
+                15,
+                15,
+                16,
+                16,
+                16,
+                17,
+                17,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6
+              ],
+              "interval": 1
+            },
+            "i2": {
+              "values": [
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                31,
+                32,
+                33,
+                34,
+                35,
+                22,
+                9,
+                10,
+                11,
+                11,
+                12,
+                12,
+                13,
+                14,
+                14,
+                15,
+                15,
+                16,
+                17,
+                10,
+                2,
+                2,
+                2,
+                3,
+                3,
+                3,
+                3,
+                4,
+                4,
+                4,
+                5,
+                5,
+                5,
+                5,
+                6,
+                6,
+                6,
+                6,
+                6,
+                7,
+                7,
+                7,
+                7,
+                8,
+                8,
+                8,
+                8,
+                9,
+                9,
+                9,
+                9,
+                9,
+                10,
+                10,
+                10,
+                10,
+                11,
+                11,
+                11,
+                11,
+                12,
+                13,
+                13,
+                14,
+                16,
+                18,
+                19,
+                21,
+                23,
+                25,
+                27,
+                28,
+                29,
+                31,
+                32,
+                33,
+                34,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                41,
+                42
+              ],
+              "interval": 2
+            },
+            "i4": {
+              "values": [
+                26,
+                28,
+                30,
+                32,
+                33,
+                28,
+                10,
+                11,
+                12,
+                13,
+                15,
+                16,
+                13,
+                2,
+                3,
+                3,
+                4,
+                4,
+                5,
+                5,
+                6,
+                6,
+                7,
+                7,
+                8,
+                8,
+                8,
+                9,
+                9,
+                10,
+                10,
+                11,
+                11,
+                12,
+                14,
+                17,
+                20,
+                24,
+                27,
+                30,
+                32,
+                35,
+                37,
+                39,
+                41,
+                43,
+                44,
+                46,
+                43,
+                43,
+                32,
+                20,
+                16,
+                16,
+                17,
+                18,
+                19,
+                21,
+                22,
+                23,
+                24,
+                26,
+                27,
+                29,
+                31,
+                33,
+                35,
+                37,
+                40,
+                43,
+                41,
+                43,
+                47,
+                50,
+                53,
+                55,
+                58,
+                58,
+                59,
+                61,
+                62,
+                61,
+                60,
+                59,
+                55,
+                51,
+                47,
+                43,
+                46,
+                48,
+                46,
+                47
+              ],
+              "interval": 4
+            },
+            "i7": {
+              "values": [
+                26,
+                30,
+                33,
+                17,
+                11,
+                13,
+                15,
+                6,
+                3,
+                4,
+                5,
+                5,
+                6,
+                7,
+                8,
+                9,
+                9,
+                10,
+                11,
+                13,
+                18,
+                24,
+                29,
+                34,
+                38,
+                41,
+                44,
+                44,
+                38,
+                20,
+                16,
+                17,
+                20,
+                22,
+                24,
+                26,
+                30,
+                33,
+                37,
+                42,
+                42,
+                47,
+                52,
+                57,
+                58,
+                61,
+                61,
+                59,
+                53,
+                46,
+                45,
+                47,
+                49,
+                50,
+                49,
+                46,
+                50,
+                54,
+                56,
+                51,
+                48,
+                53,
+                55,
+                54,
+                53,
+                58,
+                62,
+                61,
+                56,
+                59,
+                63,
+                66,
+                63,
+                59,
+                58,
+                60,
+                57,
+                58,
+                61,
+                44,
+                37,
+                36,
+                40,
+                44,
+                48,
+                53,
+                52,
+                54,
+                58,
+                57,
+                52,
+                56,
+                56,
+                53,
+                49,
+                53,
+                49,
+                52,
+                58,
+                64,
+                68,
+                69,
+                73,
+                77,
+                80
+              ],
+              "interval": 7
+            },
+            "i18": {
+              "values": [
+                26,
+                17,
+                13,
+                3,
+                5,
+                8,
+                10,
+                13,
+                26,
+                37,
+                44,
+                23,
+                19,
+                25,
+                32,
+                41,
+                52,
+                60,
+                58,
+                46,
+                49,
+                48,
+                55,
+                50,
+                54,
+                58,
+                58,
+                63,
+                60,
+                58,
+                55,
+                37,
+                45,
+                52,
+                57,
+                55,
+                51,
+                51,
+                61,
+                70,
+                78,
+                80,
+                87,
+                79,
+                60,
+                54,
+                58,
+                58,
+                62,
+                63,
+                65,
+                66,
+                71,
+                76,
+                76,
+                69,
+                68,
+                67,
+                59,
+                51,
+                53,
+                61,
+                63,
+                63,
+                58,
+                59,
+                62,
+                57,
+                56,
+                56,
+                63,
+                68,
+                76,
+                73,
+                71,
+                63,
+                56,
+                66,
+                66,
+                71,
+                62,
+                49,
+                48,
+                53,
+                45,
+                45,
+                42,
+                44,
+                46,
+                52,
+                57,
+                50,
+                42,
+                32,
+                29,
+                24,
+                23,
+                13,
+                19,
+                25,
+                33,
+                35
+              ],
+              "interval": 18
+            },
+            "i36": {
+              "values": [
+                26,
+                8,
+                7,
+                11,
+                32,
+                34,
+                22,
+                37,
+                56,
+                52,
+                48,
+                52,
+                56,
+                61,
+                59,
+                46,
+                48,
+                56,
+                51,
+                66,
+                79,
+                83,
+                57,
+                58,
+                62,
+                65,
+                74,
+                73,
+                68,
+                55,
+                57,
+                63,
+                58,
+                59,
+                56,
+                66,
+                75,
+                67,
+                61,
+                69,
+                55,
+                51,
+                45,
+                43,
+                49,
+                53,
+                37,
+                27,
+                18,
+                22,
+                34,
+                52,
+                66,
+                58,
+                52,
+                64,
+                65,
+                67,
+                64,
+                71,
+                65,
+                50,
+                52,
+                64,
+                65,
+                56,
+                21
+              ],
+              "interval": 36
+            }
+          }
+        },
+        "heat_trend_365": {
+          "periods": {
+            "i1": {
+              "values": [
+                -28,
+                -28,
+                -28,
+                -28,
+                -28,
+                -28,
+                -28,
+                -28,
+                -28,
+                -24,
+                -24,
+                -24,
+                -24,
+                -24,
+                -24,
+                -24,
+                -19,
+                -19,
+                -19,
+                -19,
+                -13,
+                -13,
+                -14,
+                -50,
+                -50,
+                -50,
+                -50,
+                -50,
+                -50,
+                -50,
+                -50,
+                -50,
+                -50,
+                -50,
+                -50,
+                -50,
+                -50,
+                -50,
+                -50,
+                -50,
+                -50,
+                -50,
+                -50,
+                -50,
+                -50,
+                -47,
+                -47,
+                -47,
+                -47,
+                -47,
+                -47,
+                -61,
+                -61,
+                -59,
+                -59,
+                -59,
+                -59,
+                -60,
+                -60,
+                -60,
+                -60,
+                -61,
+                -61,
+                -61,
+                -61,
+                -61,
+                -61,
+                -61,
+                -61,
+                -62,
+                -62,
+                -62,
+                -60,
+                -60,
+                -60,
+                -60,
+                -60,
+                -61,
+                -61,
+                -61,
+                -59,
+                -59,
+                -57,
+                -57,
+                -57,
+                -57,
+                -58,
+                -58,
+                -58,
+                -58
+              ],
+              "interval": 1
+            },
+            "i2": {
+              "values": [
+                -28,
+                -28,
+                -28,
+                -28,
+                -26,
+                -24,
+                -24,
+                -24,
+                -19,
+                -19,
+                -13,
+                -32,
+                -50,
+                -50,
+                -50,
+                -50,
+                -50,
+                -50,
+                -50,
+                -50,
+                -50,
+                -50,
+                -48,
+                -47,
+                -47,
+                -54,
+                -60,
+                -59,
+                -59,
+                -60,
+                -60,
+                -61,
+                -61,
+                -61,
+                -61,
+                -62,
+                -60,
+                -60,
+                -60,
+                -61,
+                -59,
+                -57,
+                -57,
+                -58,
+                -58,
+                -59,
+                -59,
+                -60,
+                -60,
+                -60,
+                -61,
+                -60,
+                -59,
+                -59,
+                -59,
+                -58,
+                -55,
+                -54,
+                -55,
+                -55,
+                -56,
+                -56,
+                -57,
+                -57,
+                -57,
+                -58,
+                -58,
+                -57,
+                -56,
+                -56,
+                -52,
+                -49,
+                -47,
+                -44,
+                -42,
+                -39,
+                -37,
+                -36,
+                -32,
+                -31,
+                -31,
+                -30,
+                -30,
+                -29,
+                -25,
+                -21,
+                -21,
+                -21,
+                -20,
+                -20,
+                -20
+              ],
+              "interval": 2
+            },
+            "i4": {
+              "values": [
+                -28,
+                -28,
+                -25,
+                -24,
+                -19,
+                -22,
+                -50,
+                -50,
+                -50,
+                -50,
+                -50,
+                -48,
+                -50,
+                -59,
+                -60,
+                -61,
+                -61,
+                -62,
+                -60,
+                -61,
+                -58,
+                -57,
+                -58,
+                -59,
+                -60,
+                -60,
+                -59,
+                -58,
+                -55,
+                -55,
+                -56,
+                -57,
+                -57,
+                -57,
+                -56,
+                -51,
+                -46,
+                -41,
+                -36,
+                -32,
+                -30,
+                -30,
+                -23,
+                -21,
+                -20,
+                -20,
+                -18,
+                1,
+                3,
+                10,
+                -3,
+                -26,
+                -34,
+                -35,
+                -37,
+                -38,
+                -38,
+                -38,
+                -39,
+                -38,
+                -34,
+                -34,
+                -34,
+                -34,
+                -33,
+                -29,
+                -21,
+                -20,
+                -18,
+                -16,
+                -18,
+                -12,
+                -10,
+                3,
+                4,
+                5,
+                5,
+                13,
+                12,
+                11,
+                8,
+                2,
+                -4,
+                -9,
+                -15,
+                -17,
+                -23,
+                -29,
+                -28,
+                -28,
+                -30,
+                -31
+              ],
+              "interval": 4
+            },
+            "i7": {
+              "values": [
+                -28,
+                -25,
+                -20,
+                -40,
+                -50,
+                -50,
+                -48,
+                -56,
+                -60,
+                -61,
+                -61,
+                -59,
+                -58,
+                -60,
+                -60,
+                -59,
+                -55,
+                -56,
+                -57,
+                -57,
+                -49,
+                -40,
+                -33,
+                -30,
+                -22,
+                -20,
+                -18,
+                4,
+                5,
+                -26,
+                -35,
+                -38,
+                -38,
+                -39,
+                -35,
+                -34,
+                -33,
+                -27,
+                -20,
+                -17,
+                -16,
+                -7,
+                4,
+                5,
+                13,
+                10,
+                2,
+                -7,
+                -16,
+                -24,
+                -28,
+                -29,
+                -29,
+                -27,
+                -29,
+                -32,
+                -30,
+                -29,
+                -29,
+                -32,
+                -17,
+                -14,
+                -3,
+                -3,
+                -2,
+                8,
+                9,
+                2,
+                -2,
+                2,
+                4,
+                5,
+                3,
+                -6,
+                -5,
+                -2,
+                -7,
+                -7,
+                -5,
+                -23,
+                -32,
+                -32,
+                -30,
+                -29,
+                -26,
+                -23,
+                -24,
+                -22,
+                -16,
+                -14,
+                -17,
+                -13,
+                -14,
+                -16,
+                -17,
+                -15,
+                -20,
+                -11,
+                -1,
+                14,
+                20,
+                26,
+                32,
+                30,
+                27
+              ],
+              "interval": 7
+            },
+            "i18": {
+              "values": [
+                -28,
+                -40,
+                -51,
+                -61,
+                -59,
+                -60,
+                -56,
+                -56,
+                -38,
+                -24,
+                -8,
+                -20,
+                -38,
+                -35,
+                -28,
+                -16,
+                1,
+                10,
+                -8,
+                -26,
+                -28,
+                -30,
+                -29,
+                -21,
+                -4,
+                6,
+                0,
+                4,
+                -2,
+                -5,
+                -10,
+                -31,
+                -28,
+                -24,
+                -17,
+                -14,
+                -17,
+                -16,
+                7,
+                27,
+                26,
+                21,
+                23,
+                21,
+                4,
+                -7,
+                -4,
+                4,
+                10,
+                5,
+                0,
+                -4,
+                -4,
+                3,
+                8,
+                12,
+                11,
+                1,
+                -9,
+                -20,
+                -5,
+                17,
+                19,
+                15,
+                16,
+                22,
+                28,
+                17,
+                10,
+                3,
+                7,
+                30,
+                54,
+                78,
+                75,
+                79,
+                71,
+                100,
+                93,
+                80,
+                44,
+                19,
+                -1,
+                -7,
+                -21,
+                -25,
+                -20,
+                -7,
+                -7,
+                -4,
+                -6,
+                -19,
+                -25,
+                -36,
+                -41,
+                -45,
+                -44,
+                -55,
+                -53,
+                -47,
+                -35,
+                -32
+              ],
+              "interval": 18
+            },
+            "i36": {
+              "values": [
+                -28,
+                -56,
+                -59,
+                -56,
+                -31,
+                -14,
+                -37,
+                -22,
+                5,
+                -17,
+                -29,
+                -25,
+                1,
+                2,
+                -4,
+                -21,
+                -26,
+                -15,
+                -17,
+                17,
+                24,
+                22,
+                -2,
+                0,
+                7,
+                -2,
+                -1,
+                10,
+                6,
+                -15,
+                6,
+                17,
+                19,
+                23,
+                7,
+                19,
+                66,
+                77,
+                85,
+                87,
+                31,
+                -4,
+                -23,
+                -13,
+                -5,
+                -13,
+                -30,
+                -43,
+                -50,
+                -50,
+                -31,
+                3,
+                17,
+                -8,
+                -13,
+                24,
+                92,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                100,
+                99,
+                70
+              ],
+              "interval": 36
+            }
+          }
+        }
+      },
+      "bombora_summary": {
+        "identifier": {
+          "uuid": "5b97d03a-614d-4c02-abe1-d6daa471017d",
+          "value": "Carrot Labs",
+          "image_id": "sqadgllkdrkulqmuv3f6",
+          "permalink": "carrot-labs",
+          "entity_def_id": "organization"
+        }
+      },
+      "semrush_rank_headline": {},
+      "frequently_asked_questions_latest_funding_round": {
+        "identifier": {
+          "uuid": "5b97d03a-614d-4c02-abe1-d6daa471017d",
+          "value": "Carrot Labs",
+          "image_id": "sqadgllkdrkulqmuv3f6",
+          "permalink": "carrot-labs",
+          "entity_def_id": "organization"
+        }
+      },
+      "apptopia_app_overview_list_free": [],
+      "contacts": {},
+      "product_launches": [],
+      "alumni_summary": {
+        "identifier": {
+          "uuid": "5b97d03a-614d-4c02-abe1-d6daa471017d",
+          "value": "Carrot Labs",
+          "image_id": "sqadgllkdrkulqmuv3f6",
+          "permalink": "carrot-labs",
+          "entity_def_id": "organization"
+        }
+      },
+      "apptopia_summary": {
+        "identifier": {
+          "uuid": "5b97d03a-614d-4c02-abe1-d6daa471017d",
+          "value": "Carrot Labs",
+          "image_id": "sqadgllkdrkulqmuv3f6",
+          "permalink": "carrot-labs",
+          "entity_def_id": "organization"
+        }
+      },
+      "product_similarity_target_org_list": [],
+      "social_fields": {
+        "linkedin": {
+          "value": "https://www.linkedin.com/company/carrot-labs/?viewAsMember=true"
+        }
+      },
+      "investments_headline": {},
+      "investment_thesis": {
+        "lookup": [],
+        "properties": {
+          "identifier": {
+            "uuid": "5b97d03a-614d-4c02-abe1-d6daa471017d",
+            "value": "Carrot Labs",
+            "image_id": "sqadgllkdrkulqmuv3f6",
+            "permalink": "carrot-labs",
+            "entity_def_id": "organization"
+          }
+        },
+        "data": []
+      },
+      "diversity_spotlight_investments_summary": {
+        "identifier": {
+          "uuid": "5b97d03a-614d-4c02-abe1-d6daa471017d",
+          "value": "Carrot Labs",
+          "image_id": "sqadgllkdrkulqmuv3f6",
+          "permalink": "carrot-labs",
+          "entity_def_id": "organization"
+        }
+      },
+      "contact_fields": {
+        "contact_email": "info@carrotlabs.tech"
+      },
+      "growth_prediction": [],
+      "sub_organizations_summary": {
+        "identifier": {
+          "uuid": "5b97d03a-614d-4c02-abe1-d6daa471017d",
+          "value": "Carrot Labs",
+          "image_id": "sqadgllkdrkulqmuv3f6",
+          "permalink": "carrot-labs",
+          "entity_def_id": "organization"
+        }
+      },
+      "overview_description": {},
+      "current_employees_featured_order_field": [
+        {
+          "person_identifier": {
+            "uuid": "f60e8b2f-4774-4632-a39c-bcea7e6c4f6f",
+            "value": "Rahul Kaushik",
+            "image_id": "svfwapiqdmnkg3fbmdcv",
+            "permalink": "rahul-kaushik-4f6f",
+            "entity_def_id": "person"
+          },
+          "identifier": {
+            "uuid": "432cb0fd-21bd-474a-af8d-75045ea89407",
+            "value": "Rahul Kaushik CEO & Chairman of the Board @ Carrot Labs",
+            "permalink": "rahul-kaushik-4f6f-executive-carrot-labs--432cb0fd",
+            "entity_def_id": "job"
+          },
+          "started_on": {
+            "value": "2020-01-15",
+            "precision": "day"
+          },
+          "title": "CEO & Chairman of the Board"
+        }
+      ],
+      "company_about_fields2": {
+        "website": {
+          "value": "http://carrotlabs.tech"
+        },
+        "ipo_status": "private",
+        "num_employees_enum": "c_00001_00010",
+        "location_identifiers": [
+          {
+            "uuid": "2374ed28-a853-bac0-6dff-80911f10dcd1",
+            "value": "Zug",
+            "permalink": "zug-zug",
+            "entity_def_id": "location",
+            "location_type": "city"
+          },
+          {
+            "uuid": "efdf04ff-fcb7-742c-ad0d-b2be1dae0683",
+            "value": "Zug",
+            "permalink": "zug-switzerland",
+            "entity_def_id": "location",
+            "location_type": "region"
+          },
+          {
+            "uuid": "078d9679-a862-02a2-57c8-8337e9a1eec8",
+            "value": "Switzerland",
+            "permalink": "switzerland",
+            "entity_def_id": "location",
+            "location_type": "country"
+          },
+          {
+            "uuid": "6106f5dc-823e-5da8-40d7-51612c0b2c4e",
+            "value": "Europe",
+            "permalink": "europe",
+            "entity_def_id": "location",
+            "location_type": "continent"
+          }
+        ],
+        "rank_org_company": 3361775
+      },
+      "sub_organizations_image_list": [],
+      "frequently_asked_questions_headquarters_location": {
+        "identifier": {
+          "uuid": "5b97d03a-614d-4c02-abe1-d6daa471017d",
+          "value": "Carrot Labs",
+          "image_id": "sqadgllkdrkulqmuv3f6",
+          "permalink": "carrot-labs",
+          "entity_def_id": "organization"
+        },
+        "location_identifiers": [
+          {
+            "uuid": "2374ed28-a853-bac0-6dff-80911f10dcd1",
+            "value": "Zug",
+            "permalink": "zug-zug",
+            "entity_def_id": "location",
+            "location_type": "city"
+          },
+          {
+            "uuid": "efdf04ff-fcb7-742c-ad0d-b2be1dae0683",
+            "value": "Zug",
+            "permalink": "zug-switzerland",
+            "entity_def_id": "location",
+            "location_type": "region"
+          },
+          {
+            "uuid": "078d9679-a862-02a2-57c8-8337e9a1eec8",
+            "value": "Switzerland",
+            "permalink": "switzerland",
+            "entity_def_id": "location",
+            "location_type": "country"
+          },
+          {
+            "uuid": "6106f5dc-823e-5da8-40d7-51612c0b2c4e",
+            "value": "Europe",
+            "permalink": "europe",
+            "entity_def_id": "location",
+            "location_type": "continent"
+          }
+        ]
+      },
+      "investors_headline": {},
+      "ipo_summary": {
+        "identifier": {
+          "uuid": "5b97d03a-614d-4c02-abe1-d6daa471017d",
+          "value": "Carrot Labs",
+          "image_id": "sqadgllkdrkulqmuv3f6",
+          "permalink": "carrot-labs",
+          "entity_def_id": "organization"
+        }
+      },
+      "ipqwery_summary": {
+        "identifier": {
+          "uuid": "5b97d03a-614d-4c02-abe1-d6daa471017d",
+          "value": "Carrot Labs",
+          "image_id": "sqadgllkdrkulqmuv3f6",
+          "permalink": "carrot-labs",
+          "entity_def_id": "organization"
+        }
+      },
+      "awards": [],
+      "siftery_product_list": [],
+      "competitors_list": [],
+      "growth_knowledge": {
+        "lookup": [],
+        "properties": {
+          "identifier": {
+            "uuid": "5b97d03a-614d-4c02-abe1-d6daa471017d",
+            "value": "Carrot Labs",
+            "image_id": "sqadgllkdrkulqmuv3f6",
+            "permalink": "carrot-labs",
+            "entity_def_id": "organization"
+          }
+        },
+        "data": []
+      },
+      "overview_fields_extended": {
+        "founded_on": {
+          "value": "2020-01-15",
+          "precision": "day"
+        },
+        "founder_identifiers": [
+          {
+            "uuid": "f60e8b2f-4774-4632-a39c-bcea7e6c4f6f",
+            "value": "Rahul Kaushik",
+            "image_id": "svfwapiqdmnkg3fbmdcv",
+            "permalink": "rahul-kaushik-4f6f",
+            "entity_def_id": "person"
+          }
+        ],
+        "operating_status": "closed",
+        "closed_on": {
+          "value": "2023-11-13",
+          "precision": "day"
+        },
+        "legal_name": "Carrot Labs GmbH",
+        "location_group_identifiers": [
+          {
+            "uuid": "4e8be435-c63a-4aff-8a2f-44a880d9c341",
+            "value": "Europe, Middle East, and Africa (EMEA)",
+            "permalink": "europe-middle-east-africa-emea",
+            "entity_def_id": "location",
+            "location_type": "group"
+          }
+        ],
+        "aliases": [
+          "Financial Fitness as an SDK, an Edge AI company"
+        ]
+      },
+      "overview_investor_fields": {},
+      "bombora_attribution": {
+        "bombora_last_updated": "2026-08-23"
+      },
+      "semrush_location_list": [],
+      "investors_list": [],
+      "siftery_summary": {
+        "identifier": {
+          "uuid": "5b97d03a-614d-4c02-abe1-d6daa471017d",
+          "value": "Carrot Labs",
+          "image_id": "sqadgllkdrkulqmuv3f6",
+          "permalink": "carrot-labs",
+          "entity_def_id": "organization"
+        }
+      },
+      "acquired_by_summary": {
+        "identifier": {
+          "uuid": "5b97d03a-614d-4c02-abe1-d6daa471017d",
+          "value": "Carrot Labs",
+          "image_id": "sqadgllkdrkulqmuv3f6",
+          "permalink": "carrot-labs",
+          "entity_def_id": "organization"
+        }
+      },
+      "ipo_fields": {},
+      "apptopia_app_overview_list_public": [],
+      "apptopia_sdk_list": [],
+      "trading_view": {},
+      "current_employees_image_list": [
+        {
+          "identifier": {
+            "uuid": "432cb0fd-21bd-474a-af8d-75045ea89407",
+            "value": "Rahul Kaushik CEO & Chairman of the Board @ Carrot Labs",
+            "permalink": "rahul-kaushik-4f6f-executive-carrot-labs--432cb0fd",
+            "entity_def_id": "job"
+          },
+          "person_identifier": {
+            "uuid": "f60e8b2f-4774-4632-a39c-bcea7e6c4f6f",
+            "value": "Rahul Kaushik",
+            "image_id": "svfwapiqdmnkg3fbmdcv",
+            "permalink": "rahul-kaushik-4f6f",
+            "entity_def_id": "person"
+          },
+          "title": "CEO & Chairman of the Board"
+        }
+      ],
+      "frequently_asked_questions_investors": {
+        "identifier": {
+          "uuid": "5b97d03a-614d-4c02-abe1-d6daa471017d",
+          "value": "Carrot Labs",
+          "image_id": "sqadgllkdrkulqmuv3f6",
+          "permalink": "carrot-labs",
+          "entity_def_id": "organization"
+        }
+      },
+      "funding_rounds_list": [],
+      "technology_highlights": {
+        "builtwith_num_technologies_used": 10
+      },
+      "funding_rounds_headline": {},
+      "investments_list": [],
+      "exits_image_list": [],
+      "funds_headline": {},
+      "people_highlights": {
+        "num_current_positions": 1
+      },
+      "semrush_attribution": {},
+      "frequently_asked_questions_similar_companies": {
+        "identifier": {
+          "uuid": "5b97d03a-614d-4c02-abe1-d6daa471017d",
+          "value": "Carrot Labs",
+          "image_id": "sqadgllkdrkulqmuv3f6",
+          "permalink": "carrot-labs",
+          "entity_def_id": "organization"
+        }
+      },
+      "semrush_overview": {},
+      "org_category_ranks": {},
+      "current_valuation": [],
+      "legal_proceedings": [],
+      "current_employees_summary": {
+        "identifier": {
+          "uuid": "5b97d03a-614d-4c02-abe1-d6daa471017d",
+          "value": "Carrot Labs",
+          "image_id": "sqadgllkdrkulqmuv3f6",
+          "permalink": "carrot-labs",
+          "entity_def_id": "organization"
+        },
+        "num_current_positions": 1
+      },
+      "aberdeen_summary": {
+        "identifier": {
+          "uuid": "5b97d03a-614d-4c02-abe1-d6daa471017d",
+          "value": "Carrot Labs",
+          "image_id": "sqadgllkdrkulqmuv3f6",
+          "permalink": "carrot-labs",
+          "entity_def_id": "organization"
+        }
+      },
+      "offices": [],
+      "overview_timeline": {
+        "count": 0,
+        "entities": []
+      },
+      "company_financials_highlights": {},
+      "overview_company_fields": {
+        "company_type": "for_profit"
+      },
+      "private_tags_pill_list": [],
+      "acquisitions_headline": {},
+      "builtwith_summary": {
+        "builtwith_num_technologies_used": 10,
+        "identifier": {
+          "uuid": "5b97d03a-614d-4c02-abe1-d6daa471017d",
+          "value": "Carrot Labs",
+          "image_id": "sqadgllkdrkulqmuv3f6",
+          "permalink": "carrot-labs",
+          "entity_def_id": "organization"
+        }
+      },
+      "about_short_description": {
+        "short_description": "on device Personal Finance Management"
+      },
+      "product": [],
+      "apptopia_app_headline": {}
+    }
+  }
+}

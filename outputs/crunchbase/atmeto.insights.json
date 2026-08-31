@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:12:12.207Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:12:12.152Z",
+    "url": "https://www.crunchbase.com/organization/atmeto"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Atmeto",
+      "shortDescription": "Atmeto develops machine learning software to optimize grid-scale battery storage operations and energy trading.",
+      "description": "Atmeto develops machine learning software for grid-scale battery storage and clean energy systems. The company focuses on algorithms that control charging, discharging, and power scheduling for large battery assets. Its software uses reinforcement learning and other AI techniques to improve energy storage efficiency and reliability. Atmeto also provides tools for automated energy bidding and trading in electricity markets, including the California Independent System Operator market. Its products are designed for utilities, energy traders, and owners or operators of battery storage facilities seeking to improve operational and financial performance.",
+      "website": "https://www.atmeto.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Battery",
+        "Clean Energy",
+        "Electric Vehicle",
+        "Energy Management",
+        "Energy Storage",
+        "Financial Services",
+        "FinTech",
+        "Machine Learning",
+        "Renewable Energy"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Energy",
+        "Financial Services",
+        "Science and Engineering",
+        "Software",
+        "Sustainability",
+        "Transportation"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Battery Optimization Software uses machine learning to improve grid-scale energy storage operations and scheduling.",
+        "name": "Battery Optimization Software"
+      },
+      {
+        "description": "CAISO Energy Bidding and Trading Platform automates algorithmic energy bids for battery assets in the CAISO market.",
+        "name": "CAISO Energy Bidding and Trading Platform"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 13,
+      "growthScore": 87,
+      "heatScore": 67
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.16
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

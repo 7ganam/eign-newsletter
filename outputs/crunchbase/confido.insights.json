@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:30:07.267Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:30:07.208Z",
+    "url": "https://www.crunchbase.com/organization/confido"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Confido",
+      "shortDescription": "Confido is a payment solution developed to be used by both businesses and individuals.",
+      "description": "Confido is a payment solution developed to be used by both businesses and individuals. It provides secure escrow payments using smart contracts, without relying on a third party to control the money. The unique thing about Confido is its shipment tracking feature. Confido will track a package up to the point that it gets delivered, and will only then release the funds. This is all done in a trustless and decentralised fashion using smart contracts on the Ethereum blockchain.",
+      "website": "http://confido.io/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Berlin, Germany",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Financial Services",
+        "FinTech",
+        "Payments"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Payments"
+      ],
+      "founders": [
+        "Joost van Doorn"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 375000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2017-11-21",
+      "lastFundingType": "Initial Coin Offering",
+      "rounds": [
+        {
+          "announcedDate": "2017-11-21",
+          "amount": {
+            "amount": 375000,
+            "currency": "USD"
+          },
+          "type": "Initial Coin Offering"
+        }
+      ]
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2018-06-07",
+          "publisher": "FinSMEs",
+          "title": "3 Times When an ICO Listing and Rating System Could Have Protected Investors",
+          "url": "http://www.finsmes.com/2018/06/3-times-when-an-ico-listing-and-rating-system-could-have-protected-investors.html"
+        },
+        {
+          "date": "2017-11-21",
+          "title": "Initial Coin Offering - Confido"
+        },
+        {
+          "date": "2017-11-21",
+          "publisher": "TechCrunch",
+          "title": "Company raises $347K ICO, vanishes",
+          "url": "https://techcrunch.com/2017/11/21/company-raises-347k-ico-vanishes/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 375000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 3,
+      "heatScore": 14
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Initial Coin Offering round raised $375,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Strategic repositioning and listing coverage shape the current narrative",
+      "statement": "Confido has a recent strategic-positioning change; 1 recent unique news titles explicitly contain the English terms IPO or listing.",
+      "implication": "Their timing coincides with increased visibility in the loaded news and Crunchbase momentum signals, but the data does not establish causation.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.company.formerName",
+        "facts.recentNews",
+        "providerSignals.crunchbaseMomentum"
+      ],
+      "caveats": [
+        "The causal link to Crunchbase momentum is an inference from timing, not a disclosed company metric."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:46:48.869Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:46:48.818Z",
+    "url": "https://www.crunchbase.com/organization/datanitro"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "DataNitro",
+      "shortDescription": "DataNitro integrates Excel with Python. It's the easiest way to get data in to and out of Excel, to automate your workflow, and to run",
+      "description": "DataNitro integrates Excel with Python. \r\n\r\nIt's the easiest way to get data in to and out of Excel, to automate your workflow, and to run sophisticated mathematical, statistical, or financial calculations in your spreadsheet.",
+      "website": "http://www.datanitro.com/",
+      "foundedYear": 2012,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "New York, United States",
+      "geographicRegions": [
+        "Greater New York Area",
+        "East Coast",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Finance",
+        "Software"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Software"
+      ],
+      "founders": [
+        "Benjamin Lerner",
+        "Victor Jakubiuk"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2012-08-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2012-08-01",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 4,
+      "includedUniqueCount": 4,
+      "items": [
+        {
+          "date": "2012-08-22",
+          "publisher": "Venture Beat",
+          "title": "What Silicon Valley really thinks about Y Combinator's Demo Day | VentureBeat | News | by Christina Farr",
+          "url": "http://venturebeat.com/2012/08/22/ycombinator-roundup-startups/"
+        },
+        {
+          "date": "2012-08-21",
+          "publisher": "TechCrunch",
+          "title": "Y Combinator S12 Demo Day, Batch Three: Dreamforge, BigCalc, Tracks.by, And More",
+          "url": "http://techcrunch.com/2012/08/21/y-combinator-s12-demo-day-batch-three-getgoing-bigcalc-tracksby-and-more/"
+        },
+        {
+          "date": "2012-08-21",
+          "publisher": "TechCrunch",
+          "title": "A Notable Absence From Y Combinator&#8217;s Latest Demo Day: The Funding Slide",
+          "url": "http://techcrunch.com/2012/08/21/yc-funding-slide-demos-summer-2012/"
+        },
+        {
+          "date": "2012-08-01",
+          "title": "Seed Round - DataNitro"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -2,
+      "heatScore": 30
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Excel integration for Python and Java",
+          "employeeRange": "1-10",
+          "name": "PyXLL",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 96
+        },
+        {
+          "description": "Microsoft provides computer software, consumer electronics, cloud computing platforms, and digital enterprise systems.",
+          "employeeRange": "11-50",
+          "name": "Microsoft",
+          "similarityScore": 90
+        },
+        {
+          "description": "PyData is a community for developers and users of Python data tools to share ideas and learn about how to apply its language and more.",
+          "employeeRange": "1-10",
+          "name": "PyData",
+          "similarityScore": 88
+        },
+        {
+          "description": "Airbyte is an open-source data integration engine that helps to sync data from applications to warehouses.",
+          "employeeRange": "101-250",
+          "name": "Airbyte",
+          "similarityScore": 86
+        },
+        {
+          "description": "Alteryx is a leading provider of an end to end data science & analytics platform for the enterprise",
+          "employeeRange": "1,001-5,000",
+          "name": "Alteryx",
+          "similarityScore": 84
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include PyXLL, Microsoft, PyData.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

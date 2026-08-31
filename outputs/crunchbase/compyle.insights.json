@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:29:10.951Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:29:10.891Z",
+    "url": "https://www.crunchbase.com/organization/compyle"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Compyle",
+      "shortDescription": "Compyle connects businesses to buy and sell products and services",
+      "description": "Compyle assists brands, manufacturers, retailers, hotels, and restaurants in streamlining their purchasing and distribution processes. Almost everything is purchased online via e-commerce websites, while B2B purchasing and sales remain predominantly offline. Compyle was created to make B2B shopping as simple as ordering. They want to make it easier for qualified firms to identify and purchase products from authorized suppliers. Their team has decades of collective experience in manufacturing, procurement, and brand creation.",
+      "website": "https://compyle.io/",
+      "foundedYear": 2019,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "B2B",
+        "Direct Sales",
+        "E-Commerce",
+        "Sales"
+      ],
+      "sectors": [
+        "Commerce and Shopping",
+        "Other",
+        "Sales and Marketing"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -12,
+      "heatScore": 60
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 43.56
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 65.36
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 25.37
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Acquire.com (formerly MicroAcquire) is the world's largest startup acquisition marketplace that helps startups find buyers and get acquired.",
+          "employeeRange": "11-50",
+          "name": "Acquire.com",
+          "similarityScore": 95
+        },
+        {
+          "description": "Empire Flippers is a marketplace for buying and selling established, profitable websites and online businesses.",
+          "employeeRange": "51-100",
+          "name": "Empire Flippers",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Where businesses are bought and sold",
+          "employeeRange": "51-100",
+          "name": "Flippa",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "FE International provides M&A advisory services for mid-market SaaS, e-commerce and content businesses.",
+          "employeeRange": "51-100",
+          "name": "FE International",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "WebsiteClosers is a knowledgeable and experienced brokerage services company located in Tampa.",
+          "employeeRange": "1-10",
+          "name": "WebsiteClosers",
+          "similarityScore": 83
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Acquire.com, Empire Flippers, Flippa.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

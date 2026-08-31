@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:11:06.461Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:11:06.407Z",
+    "url": "https://www.crunchbase.com/organization/flowtel"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Flowtel",
+      "shortDescription": "Flowtel provides AI voice and chat agents that manage guest interactions and routine requests for hotels.",
+      "description": "Flowtel provides AI-powered voice and chat agents that manage guest interactions and routine requests for hotels. The platform handles tasks such as reservations, room bookings, room service, dining, and service requests through natural language conversations. Its agents answer guest calls and web chats and can complete common workflows without staff intervention. Flowtel connects guests, staff, and hotel systems so that information flows automatically between front desk, operations, and property management tools. Hotel operators use Flowtel to streamline communication, reduce repetitive work for staff, and maintain consistent service across channels. The service targets hospitality businesses that want to automate routine guest communication while keeping human staff available for higher-value interactions.",
+      "website": "https://flowtel.ai/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Chatbot",
+        "Communication Hardware",
+        "Customer Service",
+        "Enterprise Software",
+        "Hospitality",
+        "Natural Language Processing",
+        "SaaS",
+        "Virtual Assistant"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Hardware",
+        "Professional Services",
+        "Science and Engineering",
+        "Software",
+        "Travel and Tourism"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An AI-powered voice and chat service that automates guest communication and routine requests for hotels.",
+        "name": "Flowtel AI voice and chat service"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 16,
+      "growthScore": 89,
+      "heatScore": 81
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 93.97
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

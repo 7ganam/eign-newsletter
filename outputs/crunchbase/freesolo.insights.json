@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:19:00.471Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:19:00.416Z",
+    "url": "https://www.crunchbase.com/organization/freesolo"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Freesolo",
+      "shortDescription": "Freesolo provides tools and infrastructure for companies to train, deploy, and monitor specialized product-native AI models.",
+      "description": "Freesolo provides an artificial intelligence platform that helps companies build product-native language models tailored to specific tasks. The company offers tools for training small, specialized models using reinforcement learning, along with feature instrumentation and model evaluation. Its platform supports workflow analysis, automated feedback metrics, and production monitoring so models can be integrated into live product experiences. Freesolo focuses on encoding user-trajectory knowledge and post-training capabilities to transform generic models into application-specific systems. It serves engineering and product teams that need to move from experimental AI prototypes to stable production infrastructure. Freesolo also develops open-source components that let AI agents connect to search and corporate workflow systems.",
+      "website": "https://freesolo.co/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "industries": [
+        "Application Performance Management",
+        "Artificial Intelligence (AI)",
+        "Data Integration",
+        "Enterprise Software",
+        "Machine Learning",
+        "Productivity Tools",
+        "Search Engine",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Internet Services",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Clado Atlas is a semantic people search and enrichment engine that finds candidates from large profile datasets using natural language queries.",
+        "name": "Clado Atlas"
+      },
+      {
+        "description": "Search-MCP is an open-source MCP server that connects AI agents to search systems and corporate workflows.",
+        "name": "Search-MCP"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 38,
+      "growthScore": 56,
+      "heatScore": 90
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 5
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.01
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

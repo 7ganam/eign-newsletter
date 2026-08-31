@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:16:19.939Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:16:19.889Z",
+    "url": "https://www.crunchbase.com/organization/instaplay"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Instaplay",
+      "shortDescription": "Instaplay is a lifestyle brand that deals in fashionable consumer electronics.",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "New Delhi, Delhi, India",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)"
+      ],
+      "industries": [
+        "Consumer Electronics",
+        "E-Commerce",
+        "Electronics",
+        "Lifestyle"
+      ],
+      "sectors": [
+        "Commerce and Shopping",
+        "Community and Lifestyle",
+        "Consumer Electronics",
+        "Hardware"
+      ],
+      "founders": [
+        "Anika Singal"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A power backup device providing uninterrupted power supply to 12V/2A WiFi routers.",
+        "name": "Insta UPS for WiFi Router"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2022-08-18",
+          "publisher": "FinTech Futures",
+          "title": "Flexia Launches InstaPlay® Registration and Integrated Onboarding Module of Its Cashless Gaming Solution",
+          "url": "https://www.fintechfutures.com/techwire/flexia-launches-instaplay-registration-and-integrated-onboarding-module-of-its-cashless-gaming-solution/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 18,
+      "heatScore": 75
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 32.21
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 83.18
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 33.05
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Starwatt Technologies manufactures DC UPS, including mini UPS and WiFi router UPS, for uninterrupted online connectivity.",
+          "employeeRange": "11-50",
+          "name": "Starwatt Technologies",
+          "sharedCategories": [
+            "E-Commerce",
+            "Electronics"
+          ],
+          "sharedSpecialties": [
+            "Power Protection Devices",
+            "Uninterruptible Power Supplies (UPS)",
+            "Portable Power Stations",
+            "Power Cables"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Ahoy Systems is an IT company that provides ATM e-surveillance and IoT solutions.",
+          "employeeRange": "11-50",
+          "name": "Ahoy Systems",
+          "similarityScore": 93.211
+        },
+        {
+          "description": "MRE manufactures a range of power supplies and adapters, including CCTV camera power supplies and POE Injectors.",
+          "employeeRange": "51-100",
+          "name": "MRE",
+          "sharedCategories": [
+            "Electronics"
+          ],
+          "sharedSpecialties": [
+            "Power Protection Devices",
+            "Uninterruptible Power Supplies (UPS)"
+          ],
+          "similarityScore": 86.978
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Starwatt Technologies, Ahoy Systems, MRE.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

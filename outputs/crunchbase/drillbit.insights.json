@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:33:43.336Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:33:43.281Z",
+    "url": "https://www.crunchbase.com/organization/drillbit"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "DrillBit",
+      "shortDescription": "DrillBit is a software development firm.",
+      "website": "http://www.drillbitplagiarism.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Bangalore, Karnataka, India",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)"
+      ],
+      "industries": [
+        "Information Technology",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Software"
+      ],
+      "founders": [
+        "Prashanth Kumar H M"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A software tool designed to detect plagiarism by scanning documents and identifying text similarities.",
+        "name": "DrillBit - Plagiarism Detection Software"
+      },
+      {
+        "description": "A plagiarism detection solution tailored for use by organizations to ensure content originality.",
+        "name": "Organization"
+      },
+      {
+        "description": "A plagiarism detection solution designed for educational institutions to maintain academic integrity.",
+        "name": "Institutions"
+      },
+      {
+        "description": "A plagiarism detection solution for individual users to check their own work for originality.",
+        "name": "Personal"
+      },
+      {
+        "description": "Support for plagiarism detection in multiple regional languages.",
+        "name": "Regional Languages"
+      },
+      {
+        "description": "A feature that uses artificial intelligence to detect sophisticated forms of plagiarism.",
+        "name": "AI Detection"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -23,
+      "heatScore": 44
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 28.31
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 63.42
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 29.13
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Academic integrity starts here.",
+          "employeeRange": "501-1,000",
+          "name": "Turnitin",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Academic Integrity Tools",
+            "Text Classification",
+            "Digital Credentialing"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "iThenticate focuses on the development of web-based content verification technology solutions and offers plagiarism software.",
+          "employeeRange": "51-100",
+          "name": "iThenticate",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Document Management Systems",
+            "Academic Integrity Tools",
+            "Document Review Services"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Copyleaks offers AI tools for plagiarism detection, content authenticity, and IP protection across education and enterprise.",
+          "employeeRange": "51-100",
+          "name": "Copyleaks",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Academic Integrity Tools"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "PlagScan compares your document with billions of others and highlights relevant correlations between them.",
+          "employeeRange": "11-50",
+          "name": "PlagScan",
+          "sharedCategories": [
+            "Software",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Document Management Systems",
+            "Academic Integrity Tools",
+            "Text Classification",
+            "Digital Evidence Management"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Quetext is a leading plagiarism-detection software, providing services to over 2 million teachers, students, and professionals worldwide.",
+          "employeeRange": "1-10",
+          "name": "Quetext",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Academic Integrity Tools",
+            "Text Classification"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Turnitin, iThenticate, Copyleaks.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

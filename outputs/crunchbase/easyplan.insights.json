@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:36:26.266Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:36:26.212Z",
+    "url": "https://www.crunchbase.com/organization/easyplan"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Easyplan",
+      "shortDescription": "Easyplan develops a financial application that helps young people to easily save money.",
+      "description": "Easyplan develops a financial application that helps young people to easily save money. Easyplan's application transfers user's target savings from their salary account to a low-risk, debt (non-equity) liquid mutual fund, allowing users to save for their goals and achieve financial health.",
+      "website": "https://easyplan.in/",
+      "foundedYear": 2017,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Mumbai, Maharashtra, India",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)"
+      ],
+      "industries": [
+        "Financial Services",
+        "FinTech",
+        "Personal Finance",
+        "Software"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Software"
+      ],
+      "founders": [
+        "Manisha Pandita",
+        "Sanjay Gandhi"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 150000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2020-03-16",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2020-03-16",
+          "amount": {
+            "amount": 150000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 1936653,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        },
+        {
+          "announcedDate": "2018-10-24",
+          "investorCount": 1,
+          "leadInvestors": [
+            "Bharat Inclusion Seed Fund"
+          ],
+          "postMoneyValuation": {
+            "amount": 1765860,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 3,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Bharat Inclusion Seed Fund",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Soma Capital",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 4,
+      "includedUniqueCount": 4,
+      "items": [
+        {
+          "date": "2021-06-28",
+          "publisher": "Inc42 Media",
+          "title": "Jitendra Gupta’s Jupiter Acquires Y Combinator Backed Easyplan",
+          "url": "https://inc42.com/buzz/y-combinator-backed-easyplan-acquired-by-neobanking-startup-jupiter/"
+        },
+        {
+          "date": "2021-06-28",
+          "title": "Easyplan acquired by Jupiter"
+        },
+        {
+          "date": "2020-03-16",
+          "title": "Pre Seed Round - Easyplan"
+        },
+        {
+          "date": "2018-10-24",
+          "title": "Seed Round - Easyplan"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 150000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1.1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -8,
+      "heatScore": 42
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2025-03-16",
+        "probabilityPercent": 47.07
+      },
+      "growth": {
+        "generatedDate": "2026-05-30",
+        "probabilityPercent": 78.72
+      },
+      "ipo": {
+        "generatedDate": "2025-03-16",
+        "probabilityPercent": 0.7
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $150,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $1,765,860 to $1,936,653, a 1.1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

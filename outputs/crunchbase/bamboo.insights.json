@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:24:26.445Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:24:26.391Z",
+    "url": "https://www.crunchbase.com/organization/bamboo"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Bamboo",
+      "shortDescription": "The social way for busy people to order pick-up meals from great restaurants around your office.",
+      "description": "Bamboo is a mobile payments app for cafes and restaurants in Dublin. Bamboo allows its users to preorder and prepay in advance and receive real-time notifications on the status of their orders - from when it's being prepared to when it is ready to collect.\n\nBamboo users automatically earn loyalty points with every order.",
+      "website": "https://bamboo.app/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$10M-$50M",
+      "headquarters": "Dublin, Ireland",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Mobile Apps",
+        "Mobile Payments",
+        "Payments"
+      ],
+      "sectors": [
+        "Apps",
+        "Financial Services",
+        "Mobile",
+        "Payments",
+        "Software"
+      ],
+      "founders": [
+        "Alan Haverty",
+        "Luke Mackey"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A platform that enables creators to earn commissions by promoting premium brand products redeemed by their followers in real life.",
+        "name": "Bamboo Creator Platform"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 615121,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2018-03-29",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2018-03-29",
+          "amount": {
+            "amount": 615121,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Enterprise Ireland"
+          ],
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Enterprise Ireland",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 6,
+      "includedUniqueCount": 6,
+      "items": [
+        {
+          "date": "2021-01-10",
+          "title": "Bamboo acquired by Fetch"
+        },
+        {
+          "date": "2021-01-10",
+          "publisher": "independent",
+          "title": "Dublin-based food order app Bamboo acquired by company behind Fetch",
+          "url": "https://www.independent.ie/business/irish/dublin-based-food-order-app-bamboo-acquired-by-company-behind-fetch-39946451.html"
+        },
+        {
+          "date": "2019-08-22",
+          "publisher": "DublinLive",
+          "title": "Made In Dublin: Coffee collection app Bamboo is reaching new heights",
+          "url": "https://www.dublinlive.ie/news/business/made-dublin-bamboo-collection-app-16790981"
+        },
+        {
+          "date": "2018-07-22",
+          "publisher": "Business Post",
+          "title": "Bamboo pumps up the base",
+          "url": "https://www.businesspost.ie/more-tech/bamboo-pumps-up-the-base/"
+        },
+        {
+          "date": "2018-03-29",
+          "title": "Seed Round - Bamboo"
+        },
+        {
+          "date": "2017-05-22",
+          "publisher": "Silicon Republic",
+          "title": "Bamboo wants to be the app you use to get your morning coffee or lunch",
+          "url": "https://www.siliconrepublic.com/start-ups/bamboo-food-ordering-app"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 615121,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -2,
+      "heatScore": 46
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2025-08-09",
+        "probabilityPercent": 69.48
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $615,121, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

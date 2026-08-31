@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:01:26.850Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:01:26.805Z",
+    "url": "https://www.crunchbase.com/organization/cartpanda"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "CartPanda",
+      "shortDescription": "CartPanda is an e commerce platform focused on high conversion for business.",
+      "description": "Cartpanda is a digital commerce platform that provides tools to start and scale an internet business. It makes creating and managing an internet commerce store extremely simple. It also provides services in store, checkout and payment solutions.",
+      "website": "https://www.cartx.com.br/",
+      "foundedYear": 2019,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Cutia, Sao Paulo, Brazil",
+      "geographicRegions": [
+        "Latin America"
+      ],
+      "industries": [
+        "E-Commerce",
+        "Sales",
+        "Software"
+      ],
+      "sectors": [
+        "Commerce and Shopping",
+        "Sales and Marketing",
+        "Software"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -4,
+      "heatScore": 62
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 42.78
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 86.51
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 32.09
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Yampi daily challenge is to redefine and improve the online buying and selling processes.",
+          "employeeRange": "51-100",
+          "name": "Yampi",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Nuvemshop is the all-in-one D2C platform for Latin America — payments, logistics, marketing, banking, POS, and AI, all built in-house.",
+          "employeeRange": "1,001-5,000",
+          "name": "Nuvemshop",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "A Tray é uma plataforma de e-commerce com a missão de facilitar o dia a dia do lojista que quer vender online.",
+          "employeeRange": "251-500",
+          "name": "Tray",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "VTEX focuses on e-commerce strategies for major retailers and consumer brands.",
+          "employeeRange": "1,001-5,000",
+          "name": "VTEX",
+          "sharedCategories": [
+            "E-Commerce",
+            "Software"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Shopify is a commerce platform that provides tools for businesses to build, manage, and grow online and offline stores.",
+          "employeeRange": "5,001-10,000",
+          "name": "Shopify",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Yampi, Nuvemshop, Tray.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

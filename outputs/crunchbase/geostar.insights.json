@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:25:44.385Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:25:44.336Z",
+    "url": "https://www.crunchbase.com/organization/geostar"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "GeoStar",
+      "shortDescription": "GeoStar is a travel and tourism service provider company.",
+      "website": "https://www.geostar.pt/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "251-500",
+      "headquarters": "Lisboa, Portugal",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Leisure",
+        "Tourism",
+        "Travel"
+      ],
+      "sectors": [
+        "Community and Lifestyle",
+        "Travel and Tourism"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2024-05-15",
+          "publisher": "Business Wire",
+          "title": "Terran Orbital’s GEOStare SV2 Captures 3 Years of Success in High-Resolution Imaging",
+          "url": "https://www.businesswire.com/news/home/20240515241471/en/Terran-Orbital%E2%80%99s-GEOStare-SV2-Captures-3-Years-of-Success-in-High-Resolution-Imaging"
+        },
+        {
+          "date": "2021-08-18",
+          "publisher": "WSJ",
+          "title": "ATL Partners Backs Space Technology Provider Geost",
+          "url": "https://www.wsj.com/articles/atl-partners-backs-space-technology-provider-geost-11629326724"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -3,
+      "growthScore": 83,
+      "heatChange90Days": -21,
+      "heatScore": 55
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 15.84
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 73.22
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 8.26
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "BCD Travel is a Leisure company.",
+          "employeeRange": "10,001+",
+          "name": "BCD Travel",
+          "sharedCategories": [
+            "Leisure"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "American Express Global Business Travel is a travel management company offering comprehensive solutions for businesses of all sizes.",
+          "employeeRange": "10,001+",
+          "name": "American Express Global Business Travel",
+          "sharedCategories": [
+            "Travel"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "CWT is a business travel management company that provides services to optimize travel, meetings, and events management.",
+          "employeeRange": "10,001+",
+          "name": "CWT",
+          "sharedCategories": [
+            "Tourism",
+            "Travel",
+            "Leisure"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Egencia is on a mission to transform business travel by revolutionizing travel technology and service.",
+          "employeeRange": "5,001-10,000",
+          "name": "Egencia",
+          "sharedCategories": [
+            "Tourism",
+            "Travel",
+            "Leisure"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Navan provides travel, expense, and corporate card management to automate manual processes and drive spend visibility.",
+          "employeeRange": "1,001-5,000",
+          "name": "Navan",
+          "sharedCategories": [
+            "Travel"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 83 (-3 over 90 days) and market heat at 55 (-21).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include BCD Travel, American Express Global Business Travel, CWT.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

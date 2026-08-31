@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:54:45.882Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:54:45.844Z",
+    "url": "https://www.crunchbase.com/organization/factiq"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "FactIQ",
+      "shortDescription": "FactIQ provides an AI-powered platform to search, analyze, and visualize official economic and financial data.",
+      "description": "FactIQ provides an AI-powered platform for searching, analyzing, and visualizing official economic and financial data. The platform aggregates millions of data series from government agencies and global institutions into a searchable interface. Users can ask questions in plain English and receive sourced answers with charts, tables, and narrative reports. FactIQ generates publication-ready articles and scheduled research reports using time series from labor, trade, prices, productivity, markets, and other indicators. The product supports dashboards, live charts, and exports to formats such as PNG and CSV. It is designed for analysts, journalists, policy professionals, and business users who work with public economic data and need transparent methods and citations for their analysis.",
+      "website": "https://factiq.com/",
+      "foundedYear": 2023,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Singapore, Central Region",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)",
+        "Association of Southeast Asian Nations (ASEAN)",
+        "Southeast Asia"
+      ],
+      "industries": [
+        "Analytics",
+        "Artificial Intelligence (AI)",
+        "Business Intelligence",
+        "Data Visualization",
+        "Financial Services",
+        "Government",
+        "Market Research",
+        "SaaS",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Design",
+        "Financial Services",
+        "Government and Military",
+        "Information Technology",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Medha Basu",
+        "Rishabh Srivastava"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An AI-powered platform to search, analyze, and visualize official economic and financial data with transparent sourcing.",
+        "name": "FactIQ Platform"
+      },
+      {
+        "description": "An automated report generation service that turns data queries into narrative economic analysis with charts and tables.",
+        "name": "FactIQ AI Analyst and Reports"
+      },
+      {
+        "description": "A scheduling feature that monitors selected topics and delivers recurring economic reports by email.",
+        "name": "Scheduled Reports"
+      },
+      {
+        "description": "Prebuilt dashboards that surface key U.S. economic indicators with interactive charts and tables.",
+        "name": "Economic Dashboards"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 81,
+      "heatScore": 82
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 65.63
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 54.88
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

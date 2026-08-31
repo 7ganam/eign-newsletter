@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:19:48.580Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:19:48.528Z",
+    "url": "https://www.crunchbase.com/organization/avoca-systems"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Avoca Systems",
+      "shortDescription": "Avoca Systems provides AI software that automates radiology scheduling, referrals, calls, and patient communications.",
+      "description": "Avoca Systems provides AI software for radiology networks. Its platform automates calls, online scheduling, e-referrals, appointment confirmations, reminders, preparation instructions, results delivery, and follow-up communications. The platform also encodes clinic rules, clinical protocols, and operational workflows so they can guide patient interactions and scheduling. It integrates with radiology information systems, electronic health records, practice-management systems, and telephony infrastructure.",
+      "website": "https://www.avocasystems.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "Darlinghurst, New South Wales, Australia",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)",
+        "Australasia"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Business Process Automation (BPA)",
+        "Customer Service",
+        "Enterprise Software",
+        "Health Care",
+        "Medical",
+        "SaaS",
+        "Scheduling"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Health Care",
+        "Professional Services",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A booking system that automates radiology appointments through calls, online scheduling, and electronic referrals.",
+        "name": "Booking engine"
+      },
+      {
+        "description": "A patient communication service that manages confirmations, reminders, preparation, results, and follow-up imaging.",
+        "name": "Patient experience"
+      },
+      {
+        "description": "A workflow system that stores clinic rules, protocols, and operational knowledge for radiology networks.",
+        "name": "Operational intelligence"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatScore": 91
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 53.2
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

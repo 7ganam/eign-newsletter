@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:05:44.705Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:05:44.648Z",
+    "url": "https://www.crunchbase.com/organization/cenote-c275"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Cenote",
+      "shortDescription": "Cenote develops Atlassian Confluence apps for document locking and controlled change management workflows.",
+      "description": "Cenote develops software that extends Atlassian Confluence with document locking and controlled change management capabilities. The company focuses on building native Confluence integrations that manage attachment check-in and check-out workflows to prevent overlapping edits. Its primary product, Cenote Lockpoint, enables exclusive document access, attachment locking, and automated unlock behaviors across Confluence Cloud and Data Center environments. Lockpoint integrates with core Confluence features such as the Attachments macro and Edit in App, and supports collaboration with tools like Microsoft Office, Gliffy, and other compatible apps. The software provides configurable notifications, automatic unlock timeouts, and localized interfaces to support distributed teams. Cenote serves enterprises that rely on Confluence to maintain content integrity and protect mission-critical knowledge bases.",
+      "website": "http://www.cenotelabs.com/",
+      "foundedYear": 2018,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "employeeRange": "1-10",
+      "headquarters": "Montréal, Quebec, Canada",
+      "industries": [
+        "Business Process Automation (BPA)",
+        "Cloud Computing",
+        "Collaboration",
+        "Content",
+        "Enterprise Software",
+        "Information Technology",
+        "Knowledge Management",
+        "Productivity Tools",
+        "Software"
+      ],
+      "sectors": [
+        "Administrative Services",
+        "Information Technology",
+        "Internet Services",
+        "Media and Entertainment",
+        "Other",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Cenote Lockpoint is a Confluence app that provides document locking and check-in/check-out workflows for controlled attachment editing.",
+        "name": "Cenote Lockpoint"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 41,
+      "heatScore": 56
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 72.1
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

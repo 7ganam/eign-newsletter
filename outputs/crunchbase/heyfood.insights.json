@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:52:19.120Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:52:19.079Z",
+    "url": "https://www.crunchbase.com/organization/heyfood"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Heyfood",
+      "shortDescription": "Local Food Exchange Network",
+      "description": "Heyfood.org organizes local food exchange groups of all sizes where hundreds of people meet to exchange home made food. \r\n\r\nPeople can plan who they will exchange food with in advance on heyfood.org so when the exchange day arrives then know how many portions they will need to make and what food they will be receiving. Everyone brings once recipe in bulk and returns home with a variety of home made meals ready to eat the following week.\r\n\r\nThis food system offers modern society a convenient and healthy way to eat home made food every night without spending time cooking every night or spending a lot of money eating out every night. This will open people up to new recopies so they don't eat the same things over and over again. People can build a history of food exchanges and create demand for their food.",
+      "website": "http://www.heyfood.org/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "industries": [
+        "Communities",
+        "Finance",
+        "Food and Beverage",
+        "Health Care",
+        "Local",
+        "Organic",
+        "Public Relations"
+      ],
+      "sectors": [
+        "Community and Lifestyle",
+        "Financial Services",
+        "Food and Beverage",
+        "Health Care",
+        "Sales and Marketing",
+        "Sustainability"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -14,
+      "heatScore": 16
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

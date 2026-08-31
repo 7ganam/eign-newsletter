@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:26:57.012Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:26:56.956Z",
+    "url": "https://www.crunchbase.com/organization/medium-biosciences"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Medium Biosciences",
+      "shortDescription": "Medium Biosciences is a software platform that makes it really easy for industrial biotechnology companies.",
+      "description": "Medium Biosciences is a software platform that makes it really easy for industrial biotechnology companies to interface with machine learning models for enzyme engineering. Enzymes power most chemical reactions in nature but usually need engineering to work at an industrial scale. Our models can be used to suggest high-performing sequences that would have typically taken months of wet lab work to identify.",
+      "website": "http://medium.bio/",
+      "foundedYear": 2021,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Boston, Massachusetts, United States",
+      "geographicRegions": [
+        "Greater Boston Area",
+        "East Coast",
+        "New England",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Biotechnology",
+        "Software"
+      ],
+      "sectors": [
+        "Biotechnology",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Adil Yusuf",
+        "Mohamed Hassan Kane"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "AI models designed to facilitate the creation and optimization of biomolecules for industrial biotechnology applications.",
+        "name": "Foundational AI Models for Biomolecule Design"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2021-08-22",
+      "lastFundingType": "Venture round",
+      "rounds": [
+        {
+          "announcedDate": "2021-08-22",
+          "investorCount": 2,
+          "postMoneyValuation": {
+            "amount": 33053384,
+            "currency": "USD"
+          },
+          "type": "Venture round"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "SBXi",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Venture round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2021-08-22",
+          "title": "Venture Round - Medium Biosciences"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 84,
+      "growthScore": 91,
+      "heatChange90Days": -12,
+      "heatScore": 72
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 20.34,
+        "timingEstimatePercent": {
+          "within6Months": 14.53,
+          "months6To11": 12.42,
+          "months12To24": 19.69,
+          "beyond24Months": 24.89
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 83.02
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Cradle is a biotech company that uses prediction algorithms and AI design recommendations to assist biologists in designing proteins.",
+          "employeeRange": "51-100",
+          "name": "Cradle",
+          "sharedCategories": [
+            "Biotechnology"
+          ],
+          "sharedSpecialties": [
+            "Synthetic Biology",
+            "Research Models and Assays",
+            "Bioprocessing and Enzyme Technologies",
+            "Omics Data Integration",
+            "Protein Expression Services"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Profluent Bio is an AI-first protein design company creating new proteins and gene-editing tools for medicine, agriculture, and science.",
+          "employeeRange": "11-50",
+          "name": "Profluent Bio",
+          "sharedCategories": [
+            "Biotechnology"
+          ],
+          "sharedSpecialties": [
+            "Synthetic Biology",
+            "Research Models and Assays",
+            "Bioprocessing and Enzyme Technologies",
+            "Bioprocess Development",
+            "Protein Expression Services",
+            "Structural Bioinformatics",
+            "Gene and Plasmid Services"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "Generate Biomedicines is a biotech company that combines biology, machine learning, and biological engineering to create biomedicines.",
+          "employeeRange": "251-500",
+          "name": "Generate Biomedicines",
+          "sharedCategories": [
+            "Biotechnology"
+          ],
+          "sharedSpecialties": [
+            "Synthetic Biology",
+            "Systems Biology Modeling",
+            "Bioprocessing and Enzyme Technologies",
+            "Bioprocess Development",
+            "Protein Expression Services",
+            "Structural Bioinformatics",
+            "Gene and Plasmid Services"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "LabGenius uses a machine learning-driven evolution engine to develop protein therapeutics.",
+          "employeeRange": "51-100",
+          "name": "LabGenius",
+          "sharedCategories": [
+            "Biotechnology"
+          ],
+          "sharedSpecialties": [
+            "Research Models and Assays",
+            "Protein Expression Services",
+            "Bioanalytics"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Insitro is a drug discovery and development startup that utilizes machine learning and biology to transform drug discovery.",
+          "employeeRange": "251-500",
+          "name": "Insitro",
+          "sharedCategories": [
+            "Biotechnology"
+          ],
+          "sharedSpecialties": [
+            "Systems Biology Modeling",
+            "Research Models and Assays",
+            "Omics Data Integration",
+            "Bioanalytics"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $33,053,384 to $33,053,384, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 91 (+84 over 90 days) and market heat at 72 (-12).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Cradle, Profluent Bio, Generate Biomedicines.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}
