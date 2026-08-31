@@ -4,7 +4,7 @@ declare module 'd3-voronoi-treemap' {
   type Point = [number, number]
 
   type VoronoiTreemapLayout = {
-    (root: HierarchyNode<unknown>): void
+    <Datum>(root: HierarchyNode<Datum>): void
     clip(points: Point[]): VoronoiTreemapLayout
     convergenceRatio(value: number): VoronoiTreemapLayout
     maxIterationCount(value: number): VoronoiTreemapLayout
