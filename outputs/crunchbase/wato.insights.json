@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:14:08.727Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:14:08.675Z",
+    "url": "https://www.crunchbase.com/organization/wato"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "WATO",
+      "shortDescription": "WATO is an industrial machinery manufacturing company that offers active leakage control, hydraulic valves, metering and control.",
+      "website": "https://www.takagi.co.jp/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Kazanlak, Stara Zagora, Bulgaria",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Industrial Engineering",
+        "Industrial Manufacturing",
+        "Manufacturing",
+        "Water",
+        "Water Purification",
+        "Water Transportation"
+      ],
+      "sectors": [
+        "Manufacturing",
+        "Natural Resources",
+        "Science and Engineering",
+        "Sustainability",
+        "Transportation"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Systems for detecting, monitoring, and reducing water-network leakage by regulating pressure and identifying abnormal flow conditions.",
+        "name": "Active Leakage Control Systems"
+      },
+      {
+        "description": "Hydraulic valves for controlling water flow, pressure, and distribution in industrial and utility systems.",
+        "name": "Hydraulic Valves"
+      },
+      {
+        "description": "Equipment and solutions for measuring fluid flow and consumption in water and hydraulic networks.",
+        "name": "Metering Solutions"
+      },
+      {
+        "description": "Control equipment and integrated solutions for managing pressure, flow, and hydraulic-system operation.",
+        "name": "Hydraulic Control Systems"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -36,
+      "heatScore": 50
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 70.69
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "KITZ Corporation is a manufacturing company that provides resistant materials, valves, building, and mechanical equipments.",
+          "employeeRange": "11-50",
+          "name": "KITZ",
+          "sharedCategories": [
+            "Manufacturing"
+          ],
+          "sharedSpecialties": [
+            "Valves and Actuation",
+            "Filters and Filtration Systems"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "TLV Company is a manufacturer that offers steam traps, filters, air vents, cyclone separators, control valves and steam management services.",
+          "employeeRange": "251-500",
+          "name": "TLV Company",
+          "sharedCategories": [
+            "Industrial Manufacturing",
+            "Manufacturing"
+          ],
+          "sharedSpecialties": [
+            "Valves and Actuation",
+            "Filters and Filtration Systems"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Bray is a manufacturer and supplier of valves, actuators, and automation products for industrial and commercial applications.",
+          "employeeRange": "1,001-5,000",
+          "name": "Bray",
+          "sharedCategories": [
+            "Water Transportation",
+            "Manufacturing"
+          ],
+          "sharedSpecialties": [
+            "Valves and Actuation"
+          ],
+          "similarityScore": 86
+        },
+        {
+          "description": "Spirax Sarco is a provider of steam system solutions.",
+          "employeeRange": "1,001-5,000",
+          "name": "Spirax Sarco",
+          "sharedCategories": [
+            "Industrial Engineering"
+          ],
+          "sharedSpecialties": [
+            "Valves and Actuation"
+          ],
+          "similarityScore": 85
+        },
+        {
+          "description": "AVK’s core business is the production of valves, hydrants for the water & gas distribution network and wastewater treatment.",
+          "employeeRange": "101-250",
+          "name": "AVK Holding",
+          "sharedCategories": [
+            "Industrial Engineering",
+            "Water Purification",
+            "Manufacturing"
+          ],
+          "sharedSpecialties": [
+            "Valves and Actuation"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include KITZ, TLV Company, Bray.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

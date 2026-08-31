@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:56:44.058Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:56:44.007Z",
+    "url": "https://www.crunchbase.com/organization/strideq"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "StrideQ",
+      "shortDescription": "StrideQ is a technology company that specialising in automation solutions for the restaurant industry.",
+      "website": "https://www.strideq.com/",
+      "foundedYear": 2021,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Mountain View, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Information Technology",
+        "Marketing Automation",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Sales and Marketing",
+        "Software"
+      ],
+      "founders": [
+        "Shreyansh Gandhi",
+        "Sreehari Pulikkal Sivadasan"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -12,
+      "heatScore": 69
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 54.23
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 73.85
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 36.42
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "ConverseNow develops a personalized and natural two-way conversation platform for the restaurant ordering experience.",
+          "employeeRange": "51-100",
+          "name": "ConverseNow",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "SoundHound AI provides voice AI solutions for brands and products.",
+          "employeeRange": "501-1,000",
+          "name": "SoundHound",
+          "similarityScore": 94
+        },
+        {
+          "description": "Presto is a software company that provides AI and automation solutions to the restaurant industry.",
+          "employeeRange": "251-500",
+          "name": "Presto",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "VoicePlug AI offers AI-based solutions for restaurants to manage ordering and customer interactions.",
+          "employeeRange": "11-50",
+          "name": "VoicePlug AI",
+          "similarityScore": 90
+        },
+        {
+          "description": "HungerRush is an innovation for the hospitality industry with its advanced restaurant management system (RMS).",
+          "employeeRange": "251-500",
+          "name": "HungerRush",
+          "sharedCategories": [
+            "Software",
+            "Information Technology"
+          ],
+          "similarityScore": 86
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include ConverseNow, SoundHound, Presto.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

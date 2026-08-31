@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:19:16.167Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:19:16.108Z",
+    "url": "https://www.crunchbase.com/organization/nuanced-e5d3"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Nuanced",
+      "shortDescription": "Nuanced uses static analysis to provide accurate code context for your AI coding assistant, reducing hallucinations and token usage.",
+      "description": "AI coding tools can write and refactor code, but drop them into a complex repo and they struggle. The result is often hallucinated helpers that don't exist, tests that pass yet break in prod, and hard-to-follow edits scattered across files with no clean code separation. The issue isn’t a lack of model horsepower, it’s context. Code isn’t just text,it’s the source of truth for how a system actually behaves. At runtime that truth lives as a graph of calls, types, and side-effects, yet today’s LLMs still see it as a flat wall of tokens.\n\nNuanced fixes this context gap. We give AI coding tools an on-demand, compiler-grade map of the codebase: calls, types, and side-effects—so they always know what’s safe to read, write, or refactor. We’re tackling this because AI coding won’t scale until models can reference the codebase’s ground truth as confidently as a compiler does. Probabilistic guesses are fine for drafts, but production systems need deterministic answers: *Which function really owns this side-effect? What breaks if I rename this type?* Nuanced answers those questions by generating and feeding that map into any SWE agent, review bot, IDE plug-in, or CI auto-fixer, letting them reason and modify code against the real structure instead of guesses. As context windows grow, this structural map becomes even more critical: bigger prompts still need the *right* information, grounded in the canonical source of truth.\n\nThe result: AI coding agents that stay grounded, stop hallucinating, and safely handle the complexity of modern codebases.",
+      "website": "https://www.nuanced.dev/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Developer APIs",
+        "Enterprise Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Ayman Nadeem",
+        "Dylan John Drover"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A tool that combines static code analysis with AI to extract semantic understanding of codebases for improved code behavior and context comprehension.",
+        "name": "Nuanced Semantic Analysis"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2024-04-03",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2024-04-03",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 3,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 10924911,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 3,
+        "visibleNames": [
+          {
+            "name": "Alumni Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Eight Capital",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2024-04-03",
+          "title": "Seed Round - Nuanced"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -3,
+      "growthScore": 65,
+      "heatChange90Days": -5,
+      "heatScore": 66
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.12
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 60.34,
+        "timingEstimatePercent": {
+          "within6Months": 65.34,
+          "months6To11": 0.03,
+          "months12To24": 0,
+          "beyond24Months": 34.63
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-13",
+        "probabilityPercent": 80.39
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 3.95
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "The complete AI SDLC platform where devs can compose code, contextualize knowledge, and catalyze delivery.",
+          "employeeRange": "101-250",
+          "name": "Sourcegraph",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Source Code Repositories",
+            "Vector Search",
+            "Developer Documentation Platforms",
+            "Coding Agents",
+            "Code Editors and Integrated Development Environments (IDEs)",
+            "Code Generation",
+            "Version Control Systems"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Continue delivers an open-source AI coding assistant that integrates with popular IDEs such as VS Code and JetBrains.",
+          "employeeRange": "1-10",
+          "name": "Continue",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Knowledge Management",
+            "Source Code Repositories",
+            "Developer Documentation Platforms",
+            "Coding Agents",
+            "Code Editors and Integrated Development Environments (IDEs)",
+            "Code Generation"
+          ],
+          "similarityScore": 86
+        },
+        {
+          "description": "JetBrains is a global software company that creates professional software development tools and advanced collaboration solutions.",
+          "employeeRange": "1,001-5,000",
+          "name": "JetBrains",
+          "sharedCategories": [
+            "Enterprise Software"
+          ],
+          "sharedSpecialties": [
+            "Source Code Repositories",
+            "Developer Documentation Platforms",
+            "Code Editors and Integrated Development Environments (IDEs)",
+            "Version Control Systems"
+          ],
+          "similarityScore": 84
+        },
+        {
+          "description": "GitHub is a software company that offers code hosting services that allow developers to build software for open-source and private projects.",
+          "employeeRange": "1,001-5,000",
+          "name": "GitHub",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Source Code Repositories",
+            "Developer Documentation Platforms",
+            "Coding Agents",
+            "Application Security Testing",
+            "Code Generation",
+            "Version Control Systems"
+          ],
+          "similarityScore": 84
+        },
+        {
+          "description": "Tabnine is an AI coding assistant that accelerates and simplifies the software development process without sacrificing privacy and security.",
+          "employeeRange": "51-100",
+          "name": "Tabnine",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Source Code Repositories",
+            "Coding Agents",
+            "Code Editors and Integrated Development Environments (IDEs)",
+            "Code Generation",
+            "Model Fine-Tuning"
+          ],
+          "similarityScore": 82
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $500,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $10,924,911 to $10,924,911, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 65 (-3 over 90 days) and market heat at 66 (-5).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Sourcegraph, Continue, JetBrains.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

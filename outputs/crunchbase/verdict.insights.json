@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:02:27.422Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:02:27.364Z",
+    "url": "https://www.crunchbase.com/organization/verdict"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Verdict",
+      "shortDescription": "Verdict is an iPhone app that lets people give and get opinions anonymously.",
+      "description": "Verdict is an iPhone app that lets people give and get opinions anonymously. It works by allowing people to send an image and a description to their friends anonymously (ie ‘What do you think of my watch?’). Other users can then vote the image up or down and the initial user can see the feedback.",
+      "website": "http://verdict.io/",
+      "foundedYear": 2013,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Philadelphia, Pennsylvania, United States",
+      "geographicRegions": [
+        "Greater Philadelphia Area",
+        "Great Lakes",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Identity Management",
+        "Market Research",
+        "Social Media",
+        "Software"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Design",
+        "Information Technology",
+        "Internet Services",
+        "Media and Entertainment",
+        "Privacy and Security",
+        "Software"
+      ],
+      "founders": [
+        "Harry Elliott",
+        "Reid Jackson"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 17,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2021-05-27",
+          "publisher": "Verdict",
+          "title": "JP Morgan: Our important bitcoin client Coinbase is going to be fine",
+          "url": "https://buff.ly/3p052h5"
+        },
+        {
+          "date": "2021-05-20",
+          "publisher": "Slashdot",
+          "title": "Taiwan's TSMC Claims Breakthrough On 1nm Chips (taiwannews.com.tw) 50",
+          "url": "https://bit.ly/342zptO"
+        },
+        {
+          "date": "2020-08-10",
+          "publisher": "Paypers",
+          "title": "credit.ai launches its credit card",
+          "url": "https://thepaypers.com/cards/creditai-launches-its-credit-card--1244015"
+        },
+        {
+          "date": "2020-06-23",
+          "publisher": "Verdict",
+          "title": "Biggest influencers in big data: The top ten in May 2020",
+          "url": "https://buff.ly/2BtyFmr"
+        },
+        {
+          "date": "2020-06-12",
+          "publisher": "Verdict",
+          "title": "Bank of England pitched blockchain operating system for digital currencies – but will it use it?",
+          "url": "https://buff.ly/37qIVaE"
+        },
+        {
+          "date": "2020-05-19",
+          "publisher": "Verdict",
+          "title": "Biggest influencers in AI in Q1 2020: The top companies and individuals to follow",
+          "url": "https://buff.ly/2ABkeMq"
+        },
+        {
+          "date": "2019-09-26",
+          "publisher": "Lehigh Morning Call",
+          "title": "Deputy acquitted of lying about head-slamming arrest of teenager DeLucca Rolle",
+          "url": "https://www.sun-sentinel.com/news/crime/fl-ne-delucca-rolle-first-trial-day-2-20190926-sy2k7iq3tnbwlfan25u4vfafqu-story.html"
+        },
+        {
+          "date": "2019-08-17",
+          "publisher": "The Mirror",
+          "title": "Online personal stylists that don't cost fortune tested to see if they work",
+          "url": "https://www.mirror.co.uk/lifestyle/can-cyber-personal-stylist-overhaul-18953105"
+        },
+        {
+          "date": "2018-08-27",
+          "publisher": "The Journal.ie",
+          "title": "Poll: How much sleep do you usually get every night?",
+          "url": "http://www.thejournal.ie/sleep-poll-regular-4203518-Aug2018/"
+        },
+        {
+          "date": "2016-06-03",
+          "publisher": "Business Insider Australia",
+          "title": "Donald Trump brags about his lawsuit record after USA Today scrutinizes 'unprecedented' legal skirmishes",
+          "url": "http://www.businessinsider.com.au/donald-trump-lawsuits-2016-6"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -11,
+      "heatScore": 35
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 17 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

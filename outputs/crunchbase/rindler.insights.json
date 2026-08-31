@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:53:51.996Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:53:51.947Z",
+    "url": "https://www.crunchbase.com/organization/rindler"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Rindler",
+      "shortDescription": "Rindler develops a Model Context Protocol (MCP) platform enabling AI agents to interact reliably with websites that lack APIs.",
+      "description": "Rindler is an AI infrastructure company that develops an MCP (Model Context Protocol) platform enabling AI agents to interact reliably with websites that lack APIs. The company's platform maps websites into structured, deterministic tools, allowing AI agents to search, retrieve data, complete forms, execute transactions, and navigate authenticated websites without relying on web scraping or brittle browser automation.\n\nIts platform provides website-to-API translation, MCP server infrastructure, authenticated session management, structured data extraction, workflow automation, bot detection handling, and deterministic web interactions. Rindler automatically maps websites into typed endpoints that AI agents can use to browse, search, fill forms, add items to carts, complete multi-step workflows, and access authenticated content through persistent sessions, eliminating the need for custom integrations or website-specific automation.\n\nRindler primarily serves AI developers, enterprise engineering teams, and organizations building autonomous AI agents. Its infrastructure enables developers to extend AI agents with reliable access to web applications and online services, allowing them to automate workflows across websites while maintaining consistent, structured interactions regardless of changes to website interfaces.",
+      "website": "https://www.rindler.ai/",
+      "foundedYear": 2024,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "Boston, Massachusetts, United States",
+      "geographicRegions": [
+        "Greater Boston Area",
+        "East Coast",
+        "New England",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Cloud Computing",
+        "Data Integration",
+        "Enterprise Software",
+        "Financial Services",
+        "Procurement"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Financial Services",
+        "Information Technology",
+        "Internet Services",
+        "Science and Engineering",
+        "Software",
+        "Transportation"
+      ],
+      "founders": [
+        "Arthur De Los Santos",
+        "Michael Serrano"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An MCP server and hosted browser infrastructure that turns websites into structured, deterministic tools for AI agents.",
+        "name": "Rindler MCP Server"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatScore": 88
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 5
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 86.15
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

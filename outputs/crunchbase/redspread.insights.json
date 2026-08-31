@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:40:32.083Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:40:32.029Z",
+    "url": "https://www.crunchbase.com/organization/redspread"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Redspread",
+      "shortDescription": "Redspread is a collaborative deployment tool for managing environments from development to production.",
+      "description": "Redspread is a collaborative deployment tool for managing environments from development to production. It enables the deployment of Docker projects to a Kubernetes cluster using a single command.\n\nRedspread was launched in 2015 and is based in San Francisco, California.",
+      "website": "https://redspread.com/",
+      "foundedYear": 2015,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Mountain View, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Apps",
+        "Developer APIs",
+        "Developer Platform",
+        "Software"
+      ],
+      "sectors": [
+        "Apps",
+        "Software"
+      ],
+      "founders": [
+        "Dan Gillespie",
+        "Mackenzie Burnett"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 240000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2016-03-22",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2016-03-22",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "type": "Pre Seed"
+        },
+        {
+          "announcedDate": "2015-01-11",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "Investo",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2016-10-17",
+          "title": "Redspread acquired by CoreOS"
+        },
+        {
+          "date": "2016-03-22",
+          "title": "Pre Seed Round - Redspread"
+        },
+        {
+          "date": "2015-01-11",
+          "title": "Pre Seed Round - Redspread"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 2,
+    "knownDetailedFundingAmount": {
+      "amount": 240000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 50
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -6,
+      "heatScore": 1
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Accelerate software delivery with repeatable deployments.",
+          "employeeRange": "251-500",
+          "name": "Octopus Deploy",
+          "sharedCategories": [
+            "Developer APIs",
+            "Software"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Harness provides a software delivery platform that helps engineering teams build, deploy, and operate applications through a set of tools.",
+          "employeeRange": "1,001-5,000",
+          "name": "Harness",
+          "similarityScore": 95
+        },
+        {
+          "description": "Spinnaker is an open source, multi-cloud continuous delivery platform for releasing software changes with high velocity and confidence.",
+          "employeeRange": "1-10",
+          "name": "Spinnaker",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Codefresh is a trusted platform for cloud-native apps.",
+          "employeeRange": "101-250",
+          "name": "Codefresh",
+          "sharedCategories": [
+            "Apps",
+            "Software"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "CircleCI is a continuous integration and delivery platform that automates development workflows and IT operations.",
+          "employeeRange": "251-500",
+          "name": "CircleCI",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $120,000, or 50% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Octopus Deploy, Harness, Spinnaker.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

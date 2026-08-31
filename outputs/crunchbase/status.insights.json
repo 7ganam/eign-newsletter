@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:52:21.276Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:52:21.222Z",
+    "url": "https://www.crunchbase.com/organization/status"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Status",
+      "shortDescription": "Status offers communication solutions that enable individuals to keep track of where their friends are and what they are doing.",
+      "description": "Status is part of a new trend of LIGHTER communication tools. When you need to get up to date with your group, a single screen shows what everyone is doing and where they are. This means you can stay in touch on your own terms, without using heavy attention-stealing tools like email.",
+      "website": "http://statushq.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Vestöl, Aust-Agder, Norway",
+      "geographicRegions": [
+        "Nordic Countries",
+        "Scandinavia",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Developer Tools",
+        "Machine Learning"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 5,
+      "includedUniqueCount": 5,
+      "items": [
+        {
+          "date": "2020-02-25",
+          "publisher": "Markets Insider",
+          "title": "Status, an Ethereum Private Messenger Goes Waku on Telegram",
+          "url": "https://markets.businessinsider.com/currencies/news/status--an-ethereum-private-messenger-goes-waku-on-telegram-8550369"
+        },
+        {
+          "date": "2015-08-04",
+          "publisher": "BGR Boy Genius Report",
+          "title": "8 awesome iPhone and iPad apps on sale for free for a limited time",
+          "url": "http://bgr.com/2015/08/04/best-free-iphone-apps-ipad-aug-4/"
+        },
+        {
+          "date": "2013-07-16",
+          "publisher": "TechCrunch",
+          "title": "StatusPage Lets Anyone Communicate With Customers About Errors And Outages",
+          "url": "http://techcrunch.com/2013/07/16/statuspage-lets-anyone-communicate-with-customers-about-errors-and-outages/"
+        },
+        {
+          "date": "2013-04-10",
+          "publisher": "The Next Web",
+          "title": "Status Board For iPad Gives You A Gorgeous, Customizable Display, Just Like A Startup",
+          "url": "http://thenextweb.com/apps/2013/04/10/panics-status-board-for-ipad-is-a-gorgeous-customizable-heads-up-display-for-your-site-data-or-social-feeds/"
+        },
+        {
+          "date": "2008-11-04",
+          "publisher": "TechCrunch",
+          "title": "Yammer goes down, companies all over go silent",
+          "url": "http://techcrunch.com/2008/11/04/yammer-goes-down/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -2,
+      "heatScore": 53
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Life360 creates a mobile app for families that helps families feel closer together.",
+          "employeeRange": "251-500",
+          "name": "Life360",
+          "similarityScore": 97
+        },
+        {
+          "description": "Apple is a technology company that designs, manufactures, and markets consumer electronics, personal computers, and software.",
+          "employeeRange": "1-10",
+          "name": "Apple",
+          "similarityScore": 90
+        },
+        {
+          "description": "Watch video tours. Rent your apartment online.",
+          "employeeRange": "1-10",
+          "name": "Zenly",
+          "similarityScore": 89
+        },
+        {
+          "description": "Google specializes in internet-related services and products, including search, advertising, and software.",
+          "employeeRange": "10,001+",
+          "name": "Google",
+          "similarityScore": 88
+        },
+        {
+          "description": "WhatsApp is a messaging and voice-over-IP service that enables users to securely send messages, make calls, and share files.",
+          "employeeRange": "501-1,000",
+          "name": "WhatsApp",
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Life360, Apple, Zenly.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:59:53.117Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:59:53.066Z",
+    "url": "https://www.crunchbase.com/organization/ronanrx"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "RonanRx",
+      "shortDescription": "RonanRx provides care-coordination software for doctor-led, patient-specific medicine.",
+      "description": "RonanRx provides a health technology platform for doctor-led, patient-specific medicine. Its software supports patient intake, records, scheduling, payments, doctor review, pharmacy workflows, patient communication, shipping coordination, and refill continuity. RonanRx also supports personalized GLP-1 care in which a physician determines the prescription and a selected pharmacy reviews, prepares, and dispenses medication. The platform does not prescribe or operate as a pharmacy.",
+      "website": "https://www.ronanrx.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "Elgin, Texas, United States",
+      "geographicRegions": [
+        "Southern US"
+      ],
+      "industries": [
+        "Electronic Health Record (EHR)",
+        "Health Care",
+        "mHealth",
+        "Personal Health",
+        "SaaS",
+        "Scheduling",
+        "Software",
+        "Telehealth"
+      ],
+      "sectors": [
+        "Health Care",
+        "Mobile",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "RonanRx's care-coordination platform supports doctor-led, patient-specific medicine workflows.",
+        "name": "RonanRx Care-Coordination Platform"
+      },
+      {
+        "description": "RonanRx provides physician-reviewed GLP-1 care with individualized dosing and pharmacy coordination.",
+        "name": "RonanRx Personalized GLP-1 Care"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatScore": 90
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 48.9
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

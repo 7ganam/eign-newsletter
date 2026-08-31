@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:55:38.051Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:55:37.997Z",
+    "url": "https://www.crunchbase.com/organization/pengram"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Pengram",
+      "shortDescription": "Pengram provides indoor navigation to guide anyone in large buildings",
+      "description": "Pengram allows users create indoor waypoints with only an iOS device and share those waypoints with others with a single tap.",
+      "website": "https://www.pengramar.com/",
+      "foundedYear": 2018,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Berkeley, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Augmented Reality",
+        "Computer Vision",
+        "iOS",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Hardware",
+        "Mobile",
+        "Platforms",
+        "Software"
+      ],
+      "founders": [
+        "Bill Zhou",
+        "Will Huang"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 150000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2019-08-19",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2019-08-19",
+          "amount": {
+            "amount": 150000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "type": "Pre Seed"
+        },
+        {
+          "announcedDate": "2018-03-01",
+          "investorCount": 1,
+          "type": "Non Equity Assistance"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "SkyDeck Berkeley",
+            "rounds": [
+              "Non Equity Assistance"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2019-08-19",
+          "title": "Pre Seed Round - Pengram"
+        },
+        {
+          "date": "2018-03-01",
+          "title": "Non Equity Assistance - Pengram"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 150000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -5,
+      "heatScore": 51
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Mappedin creates digital maps that turn indoor spaces into interactive maps for web, mobile, and kiosks.",
+          "employeeRange": "101-250",
+          "name": "Mappedin",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "MapsPeople develops a cloud-based SaaS indoor navigation platform that allows end-users to easily navigate large and complex buildings.",
+          "employeeRange": "101-250",
+          "name": "MapsPeople",
+          "sharedCategories": [
+            "Augmented Reality",
+            "Software"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "IndoorAtlas offers solutions to developers in building location based apps.",
+          "employeeRange": "11-50",
+          "name": "IndoorAtlas",
+          "similarityScore": 93
+        },
+        {
+          "description": "Software platform for precise positioning and online-to-offline attribution.",
+          "employeeRange": "11-50",
+          "name": "Navigine",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Situm provides indoor positioning and navigation technology with the minimal infrastructure.",
+          "employeeRange": "11-50",
+          "name": "Situm",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $150,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Mappedin, MapsPeople, IndoorAtlas.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

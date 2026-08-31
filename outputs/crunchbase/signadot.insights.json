@@ -1,0 +1,455 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:26:11.995Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:26:11.936Z",
+    "url": "https://www.crunchbase.com/organization/signadot"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Signadot",
+      "shortDescription": "Signadot is a K8s-native ephemeral environment and validation platform built for agentic workflows at scale.",
+      "description": "Signadot is a K8s-native platform for agentic validation that combines scalable ephemeral environments with a validation framework built for distributed systems to turn high-velocity agent code generation into safely merged pull requests.",
+      "website": "https://www.signadot.com/",
+      "foundedYear": 2020,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "San Mateo, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Information Services",
+        "Software",
+        "Software Engineering"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Anirudh Ramanathan",
+        "Arjun Iyer"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A Kubernetes-native platform for creating request-isolated sandboxes and validating microservice changes against real dependencies in existing clusters.",
+        "name": "Signadot Platform"
+      },
+      {
+        "description": "Lightweight, isolated Kubernetes environments that run changed services against shared, production-like dependencies for development, previews, and testing.",
+        "name": "Signadot Sandboxes"
+      },
+      {
+        "description": "Managed API validation that compares sandbox and baseline behavior to identify meaningful regressions, breaking changes, and contract violations.",
+        "name": "Signadot Smart Tests"
+      },
+      {
+        "description": "Kubernetes-native execution infrastructure for running existing Playwright, Cypress, Postman, k6, Selenium, or custom test suites against sandboxes.",
+        "name": "Signadot Jobs"
+      },
+      {
+        "description": "Reusable validation workflows that combine test and automation actions into deterministic, agent-invokable checks for code changes.",
+        "name": "Signadot Plans"
+      },
+      {
+        "description": "A workflow for running services on a developer workstation while routing requests to real dependencies in a remote Kubernetes cluster.",
+        "name": "Local Development"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 4150000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 4,
+      "detailedRoundCount": 4,
+      "lastFundingDate": "2025-04-21",
+      "lastFundingType": "Venture round",
+      "rounds": [
+        {
+          "announcedDate": "2025-04-21",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 39296674,
+            "currency": "USD"
+          },
+          "type": "Venture round"
+        },
+        {
+          "announcedDate": "2022-02-23",
+          "amount": {
+            "amount": 4000000,
+            "currency": "USD"
+          },
+          "investorCount": 9,
+          "leadInvestors": [
+            "Redpoint"
+          ],
+          "postMoneyValuation": {
+            "amount": 19826095,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2020-10-01",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 6574259,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2020-03-16",
+          "amount": {
+            "amount": 150000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 2798524,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 11,
+        "visibleNames": [
+          {
+            "name": "Adam Gross",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Bossa Invest"
+          },
+          {
+            "name": "Charles Zedlewski",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Christopher Golda",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Jason Warner",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "John Kodumal",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Pacific Alliance Ventures",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Redpoint",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Sebastien Pahl",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Timothy Chen",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 39,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-06-11",
+          "publisher": "The New Stack",
+          "title": "Agentic development hinges on verification. For cloud-native software, that is a runtime problem.",
+          "url": "https://thenewstack.io/verifying-async-ai-agents/"
+        },
+        {
+          "date": "2026-06-04",
+          "publisher": "DevOps.com",
+          "title": "Signadot Launches Plans, Bringing Governed, Inner-Loop Validation to Coding Agents Working on Microservices",
+          "url": "https://devops.com/signadot-launches-plans-bringing-governed-inner-loop-validation-to-coding-agents-working-on-microservices/"
+        },
+        {
+          "date": "2026-05-21",
+          "publisher": "The New Stack",
+          "title": "CI wasn’t built for coding agents. Here’s what comes next.",
+          "url": "https://thenewstack.io/ci-for-coding-agents/"
+        },
+        {
+          "date": "2026-05-13",
+          "publisher": "SD Times",
+          "title": "News Roundup: May 13, 2026 — AWS Kiro, UiPath, Signadot",
+          "url": "https://sdtimes.com/ai/news-roundup-may-13-2026-aws-kiro-uipath-signadot/"
+        },
+        {
+          "date": "2026-04-01",
+          "publisher": "DZone",
+          "title": "AI Coding Agents Have Created a New Problem: The Validation Bottleneck",
+          "url": "https://dzone.com/articles/ai-agents-validation-bottleneck"
+        },
+        {
+          "date": "2026-03-26",
+          "publisher": "The New Stack",
+          "title": "Enterprise dev teams are about to hit a wall. And CI pipelines can’t save them.",
+          "url": "https://thenewstack.io/ai-agent-validation-bottleneck/"
+        },
+        {
+          "date": "2026-02-19",
+          "publisher": "DevOps.com",
+          "title": "Signadot Unveils Kubernetes-Native Developer Platform to Scale Agentic Development",
+          "url": "https://devops.com/signadot-unveils-kubernetes-native-developer-platform-to-scale-agentic-development/"
+        },
+        {
+          "date": "2026-02-19",
+          "publisher": "Morningstar.com",
+          "title": "Signadot Unveils Kubernetes-Native Developer Platform to Scale Agentic Development",
+          "url": "https://www.morningstar.com/news/business-wire/20260219007044/signadot-unveils-kubernetes-native-developer-platform-to-scale-agentic-development"
+        },
+        {
+          "date": "2025-10-28",
+          "publisher": "The New Stack",
+          "title": "The Great AWS Outage: The $11 Billion Argument for Kubernetes",
+          "url": "https://thenewstack.io/the-great-aws-outage-the-11-billion-argument-for-kubernetes/"
+        },
+        {
+          "date": "2025-08-07",
+          "publisher": "The New Stack",
+          "title": "Your CI/CD Pipeline Wasn’t Built for Microservices",
+          "url": "https://thenewstack.io/your-ci-cd-pipeline-wasnt-built-for-microservices/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 2,
+    "knownDetailedFundingAmount": {
+      "amount": 4150000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestToEarliestKnownValuationMultiple": 14.04
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2024-01-18",
+      "growthChange90Days": -11,
+      "growthScore": 32,
+      "heatChange90Days": -25,
+      "heatScore": 51,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.04
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 64.67,
+        "timingEstimatePercent": {
+          "within6Months": 99.97,
+          "months6To11": 0.03,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2025-05-19",
+        "probabilityPercent": 86.42
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 12.59
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Qovery provides a DevOps automation platform that enables engineering teams to deploy, observe, secure, and optimize cloud infrastructure.",
+          "employeeRange": "11-50",
+          "name": "Qovery",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Container and Kubernetes Platform Services",
+            "CI/CD Platform",
+            "Infrastructure as Code",
+            "Internal Developer Platforms"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Release simplifies development by making the creation of environments easy.",
+          "employeeRange": "11-50",
+          "name": "Release",
+          "sharedCategories": [
+            "Software Engineering",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "CI/CD (Continuous Integration / Continuous Delivery)",
+            "Container and Kubernetes Platform Services",
+            "Infrastructure as Code",
+            "Internal Developer Platforms",
+            "Test Automation Platforms"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Rerun builds open source visualization infrastructure for computer vision and robotics.",
+          "employeeRange": "1-10",
+          "name": "Rerun",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Bunnyshell provides a DevOps platform that automates the creation, management, and scaling of cloud, testing, and production environments.",
+          "employeeRange": "11-50",
+          "name": "Bunnyshell",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "CI/CD (Continuous Integration / Continuous Delivery)",
+            "Container and Kubernetes Platform Services",
+            "Infrastructure as Code",
+            "Internal Developer Platforms",
+            "Test Automation Platforms"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Testkube is a Kubernetes-native testing framework for automating test executions.",
+          "employeeRange": "11-50",
+          "name": "Testkube",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "CI/CD (Continuous Integration / Continuous Delivery)",
+            "Container and Kubernetes Platform Services",
+            "API Design and Testing",
+            "Software Testing",
+            "Internal Developer Platforms",
+            "Test Automation Platforms"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $2,798,524 to $39,296,674, a 14.04x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 32 (-11 over 90 days) and market heat at 51 (-25).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Qovery, Release, Rerun.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "11 investors are named, but detailed round attribution is available for only 10.",
+        "impact": "Unattributed investors remain listed without an inferred round relationship."
+      },
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 39 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

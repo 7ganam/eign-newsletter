@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:45:26.832Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:45:26.794Z",
+    "url": "https://www.crunchbase.com/organization/panoptive"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Panoptive",
+      "shortDescription": "A digital assistant for your company's data.  Curated and trusted.",
+      "description": "Panoptive is a SaaS analytic solution that dramatically simplifies the ability to get complete answers to executive questions.\n\nIncludes full automation of the entire process for organizations to build and report Key Performance Indicators within Scorecards, drill down, and view that data in the context of their own business events.\n\nBy \"automating the automation,\"​ Panoptive accelerates the cycle to add metrics, so organizations can see more of their business than ever (thousands of metrics), while allowing the platform to detect anomalies in the background.",
+      "website": "http://www.panoptive.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "St Louis, Missouri, United States",
+      "geographicRegions": [
+        "Midwestern US"
+      ],
+      "industries": [
+        "Analytics",
+        "Big Data",
+        "Business Intelligence",
+        "Cloud Data Services",
+        "Data Integration",
+        "Enterprise Software",
+        "Information Technology",
+        "SaaS"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Information Technology",
+        "Internet Services",
+        "Software"
+      ],
+      "founders": [
+        "Brandon Clyburn",
+        "Matt Dewig"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2019-02-08",
+          "publisher": "Silicon Prarie News",
+          "title": "Master your Metrics with Panoptive",
+          "url": "http://siliconprairienews.com/2019/02/master-your-metrics-with-panoptive/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -12,
+      "heatScore": 75
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 78.04
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "OpenAI is an AI research and deployment company that develops advanced AI models, including ChatGPT.",
+          "employeeRange": "10,001+",
+          "name": "OpenAI",
+          "sharedCategories": [
+            "SaaS",
+            "Information Technology"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Glean develops an AI-based search engine software that connects enterprise data and generates answers to improve workplace efficiency.",
+          "employeeRange": "501-1,000",
+          "name": "Glean",
+          "sharedCategories": [
+            "Enterprise Software"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Moveworks offers an AI-powered assistant designed to enhance workflows and automate tasks within enterprises.",
+          "employeeRange": "501-1,000",
+          "name": "Moveworks",
+          "sharedCategories": [
+            "Information Technology"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "IBM provides technology and consulting, including software, infrastructure systems, and cloud-based solutions.",
+          "employeeRange": "10,001+",
+          "name": "IBM",
+          "sharedCategories": [
+            "Enterprise Software"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "Microsoft provides computer software, consumer electronics, cloud computing platforms, and digital enterprise systems.",
+          "employeeRange": "11-50",
+          "name": "Microsoft",
+          "similarityScore": 86
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include OpenAI, Glean, Moveworks.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

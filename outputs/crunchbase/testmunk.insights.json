@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:23:24.743Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:23:24.686Z",
+    "url": "https://www.crunchbase.com/organization/testmunk"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Testmunk",
+      "shortDescription": "Testmunk automates mobile testing",
+      "description": "Test your app on a large pool of Android and iOS versions and devices. No need to constantly buy and upgrade your devices. Testmunk ensures complete device and OS coverage currently available on the market. Devices are non-jailbroken. We support native and hybrid apps.",
+      "website": "http://testmunk.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Cupertino, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Mobile",
+        "Software"
+      ],
+      "sectors": [
+        "Mobile",
+        "Software"
+      ],
+      "founders": [
+        "Martin Poschenrieder"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2012-08-21",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2012-08-21",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2012-08-21",
+          "title": "Seed Round - Testmunk"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -23,
+      "heatScore": 23
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "BrowserStack is a technology-based platform that specializes in powering web and app testing such as testing iOS and Android mobile apps.",
+          "employeeRange": "1,001-5,000",
+          "name": "BrowserStack",
+          "similarityScore": 97
+        },
+        {
+          "description": "Sauce Labs provides cloud-based testing for mobile and web applications.",
+          "employeeRange": "251-500",
+          "name": "Sauce Labs",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Kobiton is a mobile testing platform that accelerates the delivery and testing of mobile apps.",
+          "employeeRange": "51-100",
+          "name": "Kobiton",
+          "sharedCategories": [
+            "Mobile"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "Perfecto is a software system helping users strengthen their digital interaction with quality-first approach to create web and native apps.",
+          "employeeRange": "251-500",
+          "name": "Perfecto Mobile",
+          "sharedCategories": [
+            "Software",
+            "Mobile"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "TestMu AI develops an AI-native software testing and quality engineering platform that supports automated testing.",
+          "employeeRange": "251-500",
+          "name": "TestMu AI",
+          "similarityScore": 90
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include BrowserStack, Sauce Labs, Kobiton.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

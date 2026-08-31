@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:58:18.651Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:58:18.598Z",
+    "url": "https://www.crunchbase.com/organization/moonset-health-ltd"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "MOONSET HEALTH",
+      "shortDescription": "Moonset Health develops AI-powered clinical scribe software for hospice and post-acute care documentation.",
+      "description": "Moonset Health develops healthcare software that uses artificial intelligence to automate charting and documentation for hospice and post-acute care teams. Its platform functions as an ambient digital scribe that records nurse and care team encounters, transcribes audio, and generates clinical-grade visit and interdisciplinary group notes. The system is tuned to hospice and post-acute regulatory frameworks, incorporating LCD and CMS requirements to surface clinical eligibility indicators and highlight documentation gaps. Moonset Health integrates with electronic health record systems so notes and patient data stay synchronized across existing workflows. The software is intended for nurses and multidisciplinary care staff in hospice, home health, and skilled nursing settings who need to reduce manual documentation time while maintaining detailed, compliant records. Organizations use the platform to streamline visit documentation, support audit readiness, and standardize chart quality across teams.",
+      "website": "https://www.moonsethealth.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "headquarters": "Seattle, Washington, United States",
+      "geographicRegions": [
+        "Greater Seattle Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Electronic Health Record (EHR)",
+        "Enterprise Software",
+        "Health Care",
+        "Hospital",
+        "Medical",
+        "Nursing and Residential Care",
+        "Software",
+        "Telehealth"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Health Care",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Moonset AI Scribe is an ambient AI documentation tool for hospice and post-acute care that generates compliant clinical notes from recorded visits.",
+        "name": "Moonset AI Scribe"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 10,
+      "growthScore": 91,
+      "heatChange90Days": 55,
+      "heatScore": 88
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 61.74
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 91 (+10 over 90 days) and market heat at 88 (+55).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

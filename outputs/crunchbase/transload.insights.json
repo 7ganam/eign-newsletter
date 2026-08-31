@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:38:49.117Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:38:49.064Z",
+    "url": "https://www.crunchbase.com/organization/transload"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Transload",
+      "shortDescription": "Transload is a transportation company that offers temperature-controlled semi-trailer services.",
+      "website": "https://www.transload.pt/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Várzea, Santarem, Portugal",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Fleet Management",
+        "Logistics",
+        "Transportation"
+      ],
+      "sectors": [
+        "Transportation"
+      ],
+      "founders": [
+        "Alina Paredes",
+        "Vânia Paredes"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Transportation service using semi-trailers equipped to maintain specific temperature conditions for cargo.",
+        "name": "Temperature-Controlled Semi-Trailer Transportation"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -1,
+      "growthScore": 86,
+      "heatChange90Days": -1,
+      "heatScore": 59
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 78.76
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Germanetti Benelux B.V. offers international transport and logistics, focusing on Europe-North Africa routes and Italian trade.",
+          "employeeRange": "1-10",
+          "name": "Germanetti Benelux",
+          "sharedCategories": [
+            "Transportation",
+            "Logistics"
+          ],
+          "sharedSpecialties": [
+            "Chemical Logistics",
+            "Truckload (TL) Services",
+            "Refrigerated and Temperature-Controlled Transport"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Dimetra offers transport, storage, transshipment, and customs brokerage for freight and logistics operations.",
+          "employeeRange": "51-100",
+          "name": "Dimetra",
+          "sharedCategories": [
+            "Transportation",
+            "Logistics"
+          ],
+          "sharedSpecialties": [
+            "Truckload (TL) Services",
+            "Refrigerated and Temperature-Controlled Transport"
+          ],
+          "similarityScore": 95.067
+        },
+        {
+          "description": "Daniel Gustafsson International Transports offers express solutions, box trailers, and thermal transport services.",
+          "employeeRange": "11-50",
+          "name": "Daniel Gustafsson International Transports",
+          "sharedCategories": [
+            "Transportation",
+            "Logistics"
+          ],
+          "sharedSpecialties": [
+            "Truckload (TL) Services",
+            "National and Regional Linehaul Services",
+            "Cold Chain Equipment and Services",
+            "Refrigerated and Temperature-Controlled Transport",
+            "Refrigerated Transport Equipment"
+          ],
+          "similarityScore": 90.178
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 86 (-1 over 90 days) and market heat at 59 (-1).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Germanetti Benelux, Dimetra, Daniel Gustafsson International Transports.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

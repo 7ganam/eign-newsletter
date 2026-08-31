@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:30:24.584Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:30:24.539Z",
+    "url": "https://www.crunchbase.com/organization/zage-0aed"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Zage",
+      "shortDescription": "Zage is a financial technology company.",
+      "description": "Zage operates as a financial company. They make the exchange of value seamless for everyone. They offer fraud protection, bank-level security, and identity theft protection services.",
+      "website": "https://tryzage.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Apps",
+        "Financial Services",
+        "FinTech"
+      ],
+      "sectors": [
+        "Apps",
+        "Financial Services",
+        "Software"
+      ],
+      "founders": [
+        "Arsh Shah Dilbagi",
+        "Cole Bransford",
+        "Ryan Ozminkowski"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2021-08-22",
+      "lastFundingType": "Venture round",
+      "rounds": [
+        {
+          "announcedDate": "2021-08-22",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 25811776,
+            "currency": "USD"
+          },
+          "type": "Venture round"
+        },
+        {
+          "announcedDate": "2021-06-18",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 12618570,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "MPG Fund",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Venture round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 5,
+      "includedUniqueCount": 5,
+      "items": [
+        {
+          "date": "2025-09-20",
+          "publisher": "9to5mac",
+          "title": "All of the best iPhone 17 and iPhone Air cases [Update #4]",
+          "url": "https://9to5mac.com/2025/09/20/best-iphone-17-cases/"
+        },
+        {
+          "date": "2025-09-12",
+          "publisher": "Business Insider",
+          "title": "The best iPhone 17 cases 2025: How to protect your new smartphone",
+          "url": "https://www.businessinsider.com/guides/tech/best-iphone-17-cases"
+        },
+        {
+          "date": "2025-08-22",
+          "publisher": "9to5Google",
+          "title": "Google starts selling magnetic Pixel 10 accessories, including this 2-in-1 dock [Gallery]",
+          "url": "https://9to5google.com/2025/08/22/pixel-10-magnetic-accessories-2-in-1-dock/"
+        },
+        {
+          "date": "2021-08-22",
+          "title": "Venture Round - Zage"
+        },
+        {
+          "date": "2021-06-18",
+          "title": "Seed Round - Zage"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 2.05
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 52,
+      "growthScore": 85,
+      "heatChange90Days": -17,
+      "heatScore": 34
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 21.39,
+        "timingEstimatePercent": {
+          "within6Months": 14.1,
+          "months6To11": 12.12,
+          "months12To24": 19.35,
+          "beyond24Months": 24.8
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 94.22
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $12,618,570 to $25,811,776, a 2.05x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 85 (+52 over 90 days) and market heat at 34 (-17).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

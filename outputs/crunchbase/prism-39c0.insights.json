@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:18:01.086Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:18:01.032Z",
+    "url": "https://www.crunchbase.com/organization/prism-39c0"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Prism",
+      "shortDescription": "Prism is a marketplace that provides liquidity for startup founders, employees, and investors.",
+      "website": "https://prism.co/",
+      "foundedYear": 2021,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Los Angeles, California, United States",
+      "geographicRegions": [
+        "Greater Los Angeles Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Financial Services",
+        "FinTech",
+        "Lending"
+      ],
+      "sectors": [
+        "Financial Services"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A loan product that provides liquidity to startup founders, employees, and investors by using their private company shares as collateral without requiring personal guarantees.",
+        "name": "Loans Secured by Startup Shares"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2023-01-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2023-01-01",
+          "investorCount": 2,
+          "postMoneyValuation": {
+            "amount": 13198685,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "Ethos VC",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Soma Capital",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2026-06-02",
+          "publisher": "IndiaTimes",
+          "title": "Oyo parent Prism gets Sebi nod for Rs 6,650 crore IPO",
+          "url": "https://timesofindia.indiatimes.com/business/india-business/oyo-parent-prism-gets-sebi-nod-for-rs-6650-crore-ipo/articleshow/131466699.cms"
+        },
+        {
+          "date": "2026-06-02",
+          "publisher": "Business Standard India",
+          "title": "Oyo's parent Prism gets Sebi nod for ₹6,650-crore public listing: Report",
+          "url": "https://www.business-standard.com/markets/ipo/oyo-s-parent-prism-gets-sebi-nod-for-6-650-crore-public-listing-report-126060200916_1.html"
+        },
+        {
+          "date": "2023-01-01",
+          "title": "Seed Round - Prism"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2026-06-14",
+      "growthChange90Days": -10,
+      "growthScore": 79,
+      "heatChange90Days": -23,
+      "heatScore": 69,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 31.24,
+        "timingEstimatePercent": {
+          "within6Months": 14.58,
+          "months6To11": 12.45,
+          "months12To24": 19.72,
+          "beyond24Months": 24.89
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 65.68
+      },
+      "ipo": {
+        "generatedDate": "2026-05-30",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Secfi works with startup employees and founders to provide equity planning and stock option financing.",
+          "employeeRange": "11-50",
+          "name": "Secfi",
+          "sharedCategories": [
+            "Financial Services",
+            "FinTech"
+          ],
+          "sharedSpecialties": [
+            "Share-Secured Loans",
+            "Secondary Markets for Private Shares"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "EquityZen is a marketplace that connects buyers and sellers of private company shares.",
+          "employeeRange": "101-250",
+          "name": "EquityZen",
+          "sharedCategories": [
+            "Financial Services",
+            "FinTech"
+          ],
+          "sharedSpecialties": [
+            "Alternative Investments",
+            "Secondary Markets for Private Shares",
+            "Marketplace Management"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "NPM brings together global private companies, banks and brokers, stakeholders, and investors together to transact in one marketplace.",
+          "employeeRange": "51-100",
+          "name": "Nasdaq Private Market",
+          "sharedCategories": [
+            "Financial Services",
+            "FinTech"
+          ],
+          "sharedSpecialties": [
+            "Secondary Markets for Private Shares",
+            "Fundraising and Capital Placement",
+            "Marketplace Management"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Forge is a global private securities marketplace creating an accessible, liquid, and transparent private market.",
+          "employeeRange": "251-500",
+          "name": "Forge",
+          "sharedCategories": [
+            "Financial Services",
+            "FinTech"
+          ],
+          "sharedSpecialties": [
+            "Alternative Investments",
+            "Secondary Markets for Private Shares"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "ESO Fund provides non-recourse funding to employees at venture backed companies for their exercising stock options.",
+          "employeeRange": "11-50",
+          "name": "ESO Fund",
+          "sharedCategories": [
+            "FinTech"
+          ],
+          "sharedSpecialties": [
+            "Share-Secured Loans",
+            "Alternative Investments",
+            "Secondary Markets for Private Shares"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $13,198,685 to $13,198,685, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 79 (-10 over 90 days) and market heat at 69 (-23).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Strategic repositioning and listing coverage shape the current narrative",
+      "statement": "Prism has a recent strategic-positioning change; 2 recent unique news titles explicitly contain the English terms IPO or listing.",
+      "implication": "Their timing coincides with increased visibility in the loaded news and Crunchbase momentum signals, but the data does not establish causation.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.company.formerName",
+        "facts.recentNews",
+        "providerSignals.crunchbaseMomentum"
+      ],
+      "caveats": [
+        "The causal link to Crunchbase momentum is an inference from timing, not a disclosed company metric."
+      ]
+    },
+    {
+      "title": "IPO intent and modeled likelihood conflict",
+      "statement": "Recent headline metadata discusses an IPO or listing, while Crunchbase’s model assigns a 0% IPO probability.",
+      "implication": "Publicly discussed intent should not be treated as proof of execution; the conflict is a useful diligence flag for verifying filing status, timing, and exchange readiness.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.recentNews",
+        "providerSignals.modelPredictions.ipo"
+      ],
+      "caveats": [
+        "The prediction is an opaque model output and may lag current company plans."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Secfi, EquityZen, Nasdaq Private Market.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

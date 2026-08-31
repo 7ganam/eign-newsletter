@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:14:42.384Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:14:42.332Z",
+    "url": "https://www.crunchbase.com/organization/poth-labs"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Poth Labs",
+      "shortDescription": "Poth Labs provides an AI-native customer research platform that unifies feedback and data into prioritized customer insights.",
+      "description": "Poth Labs provides an AI-native customer research platform that unifies conversations, feedback, and customer data into a single system of insight. The platform ingests inputs such as calls, tickets, CRM notes, surveys, in-app chats, documents, and product analytics to create a searchable customer brain. It uses adaptive LLM-powered surveys that tailor questions in real time to explore emerging themes. Responses are stored in a knowledge graph so AI agents can detect patterns, run thematic analysis, and perform hypothesis-driven root cause investigation. The system generates prioritized insights with supporting evidence and suggested actions. Poth Labs also creates targeted follow-up questions and surveys to close data gaps and validate hypotheses.",
+      "website": "https://www.pothlabs.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "industries": [
+        "Analytics",
+        "Artificial Intelligence (AI)",
+        "Business Intelligence",
+        "CRM",
+        "Customer Service",
+        "Knowledge Management",
+        "Machine Learning",
+        "Market Research",
+        "SaaS",
+        "Software"
+      ],
+      "sectors": [
+        "Administrative Services",
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Design",
+        "Professional Services",
+        "Sales and Marketing",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An AI-native customer research platform that unifies feedback and data into prioritized customer insights.",
+        "name": "Poth AI-Native Customer Research Platform"
+      },
+      {
+        "description": "An interactive demo environment that showcases intelligent surveys and real-time hypothesis testing.",
+        "name": "Poth Interactive Demo"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 26,
+      "growthScore": 91,
+      "heatScore": 87
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 93.69
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

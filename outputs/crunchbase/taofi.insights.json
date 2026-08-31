@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:13:07.626Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:13:07.570Z",
+    "url": "https://www.crunchbase.com/organization/taofi"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "TaoFi",
+      "shortDescription": "TaoFi is an AI-driven decentralized social-fi platform.",
+      "description": "TaoFi is an AI-driven decentralized social-fi platform",
+      "website": "https://taofi.xyz/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "industries": [
+        "Blockchain",
+        "Decentralized Finance (DeFi)",
+        "Generative AI"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Blockchain and Cryptocurrency"
+      ],
+      "founders": [
+        "Sam Forman"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2025-02-11",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2025-02-11",
+          "investorCount": 4,
+          "leadInvestors": [
+            "Digital Currency Group"
+          ],
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 4,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Digital Currency Group",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Lyrik Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Pantera Capital",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Taostats",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2025-02-11",
+          "title": "Seed Round - TaoFi"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -7,
+      "growthScore": 3,
+      "heatChange90Days": -13,
+      "heatScore": 33
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 31.82
+      },
+      "growth": {
+        "generatedDate": "2026-06-22",
+        "probabilityPercent": 90.53
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 59.65
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Friend.tech is a decentralized social media app that allows users to tokenize their friends.",
+          "employeeRange": "11-50",
+          "name": "Friend.Tech",
+          "sharedCategories": [
+            "Blockchain"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Towns is an on-chain messaging platform co-founded by the creator of Houseparty and Meerkat.",
+          "employeeRange": "11-50",
+          "name": "Towns",
+          "similarityScore": 89
+        },
+        {
+          "description": "Farcaster is a social network that helps coders, fitness enthusiasts, and meme makers find people based on their interests.",
+          "employeeRange": "1-10",
+          "name": "Farcaster",
+          "sharedCategories": [
+            "Blockchain"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Lens Protocol is a composable and decentralized social network serving the Web3 community.",
+          "employeeRange": "101-250",
+          "name": "Lens Protocol",
+          "similarityScore": 85
+        },
+        {
+          "description": "Nostr is an open protocol that facilitate global, decentralized, and censorship-resistant social media.",
+          "name": "Nostr",
+          "sharedCategories": [
+            "Blockchain"
+          ],
+          "similarityScore": 83
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 3 (-7 over 90 days) and market heat at 33 (-13).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Friend.Tech, Towns, Farcaster.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

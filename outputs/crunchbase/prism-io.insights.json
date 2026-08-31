@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:18:06.453Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:18:06.417Z",
+    "url": "https://www.crunchbase.com/organization/prism-io"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Prism Labs",
+      "shortDescription": "Prism Labs is a community development platform for the blockchain economy.",
+      "website": "https://prism.co/",
+      "foundedYear": 2016,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Apps",
+        "Information Technology",
+        "Internet"
+      ],
+      "sectors": [
+        "Apps",
+        "Information Technology",
+        "Software"
+      ],
+      "founders": [
+        "Adam Breckler",
+        "Ryan Breslow"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A loan service secured by private startup shares, providing liquidity to shareholders without requiring personal guarantees or selling shares.",
+        "name": "Prism Loans"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 3,
+      "detailedRoundCount": 3,
+      "lastFundingDate": "2023-04-06",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2023-04-06",
+          "investorCount": 2,
+          "leadInvestors": [
+            "Human Capital",
+            "Pantera Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 10913002,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2023-04-06",
+          "investorCount": 2,
+          "leadInvestors": [
+            "Pantera Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 10454702,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2017-08-21",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 2130297,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 3,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Human Capital",
+            "rounds": [
+              "Seed Round",
+              "Series A"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Pantera Capital",
+            "rounds": [
+              "Series A",
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2023-04-06",
+          "title": "Seed Round - Prism Labs"
+        },
+        {
+          "date": "2023-04-06",
+          "title": "Series A - Prism Labs"
+        },
+        {
+          "date": "2017-08-21",
+          "title": "Seed Round - Prism Labs"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestToEarliestKnownValuationMultiple": 4.91
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -18,
+      "heatScore": 2
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 34.14,
+        "timingEstimatePercent": {
+          "within6Months": 14.51,
+          "months6To11": 12.41,
+          "months12To24": 19.67,
+          "beyond24Months": 24.88
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 64.39
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Get funding to exercise your options, plus an upfront payment, all while retaining ownership.",
+          "employeeRange": "51-100",
+          "name": "Equitybee",
+          "sharedSpecialties": [
+            "Secondary Markets for Private Shares"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Secfi works with startup employees and founders to provide equity planning and stock option financing.",
+          "employeeRange": "11-50",
+          "name": "Secfi",
+          "sharedSpecialties": [
+            "Share-Secured Loans",
+            "Secondary Markets for Private Shares"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Securities-based lending services for businesses and individual investors.",
+          "employeeRange": "11-50",
+          "name": "EquitiesFirst",
+          "sharedSpecialties": [
+            "Share-Secured Loans"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Compound Planning offers wealth advisory focusing on alternative assets and AI-powered tools.",
+          "employeeRange": "51-100",
+          "name": "Compound Planning",
+          "similarityScore": 89
+        },
+        {
+          "description": "Troy Capital is a debt buyer firm that provides debt collection services.",
+          "employeeRange": "11-50",
+          "name": "Troy Capital",
+          "similarityScore": 88
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $2,130,297 to $10,454,702, a 4.91x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Equitybee, Secfi, EquitiesFirst.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

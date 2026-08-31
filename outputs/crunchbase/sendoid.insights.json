@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:17:15.462Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:17:15.407Z",
+    "url": "https://www.crunchbase.com/organization/sendoid"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Sendoid",
+      "shortDescription": "Sendoid is an on-demand peer-to-peer file transfer system enabling users to transfer files with no size restrictions.",
+      "description": "Sendoid is an on-demand peer to peer transfer system. It makes transferring any size file between two people as simple as clicking a link!",
+      "website": "http://sendoid.com/",
+      "foundedYear": 2011,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Apps",
+        "Computer",
+        "File Sharing"
+      ],
+      "sectors": [
+        "Apps",
+        "Consumer Electronics",
+        "Hardware",
+        "Software"
+      ],
+      "founders": [
+        "John Egan",
+        "Zac Morris"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2011-03-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2011-03-01",
+          "investorCount": 2,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "Salesforce Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 7,
+      "includedUniqueCount": 7,
+      "items": [
+        {
+          "date": "2012-04-04",
+          "publisher": "Venture Beat",
+          "title": "Facebook acquires team behind YC alum Caffeinated Mind",
+          "url": "http://venturebeat.com/2012/02/29/facebook-caffeinated-mind/"
+        },
+        {
+          "date": "2012-02-29",
+          "publisher": "ZD Net",
+          "title": "Facebook acquires file transfer startup Caffeinated Mind | ZDNet",
+          "url": "http://www.zdnet.com/article/facebook-acquires-file-transfer-startup-caffeinated-mind/"
+        },
+        {
+          "date": "2012-02-29",
+          "title": "Sendoid acquired by Meta"
+        },
+        {
+          "date": "2011-08-08",
+          "publisher": "TechCrunch",
+          "title": "Y Combinator-Backed Kicksend Launches In Beta To Make Sharing Big Files A&nbsp;Breeze",
+          "url": "http://techcrunch.com/2011/08/08/y-combinator-backed-kicksend-launches-in-beta-to-make-sharing-big-files-a-breeze/"
+        },
+        {
+          "date": "2011-08-04",
+          "publisher": "TechCrunch",
+          "title": "Minus Raises $1 Million From IDG Capital To Simplify File Sharing | TechCrunch",
+          "url": "http://techcrunch.com/2011/08/02/minus-raises-1-million-from-idg-capital-to-simplify-file-sharing/"
+        },
+        {
+          "date": "2011-03-21",
+          "publisher": "TechCrunch",
+          "title": "Sendoid: Finally, Sharing Big Files Isn&#8217;t A Huge&nbsp;Pain",
+          "url": "http://techcrunch.com/2011/03/21/sendoid-finally-sharing-big-files-isnt-a-huge-pain/"
+        },
+        {
+          "date": "2011-03-01",
+          "title": "Seed Round - Sendoid"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 0,
+      "heatScore": 37
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

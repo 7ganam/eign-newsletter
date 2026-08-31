@@ -1,0 +1,289 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:41:32.503Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:41:32.447Z",
+    "url": "https://www.crunchbase.com/organization/trident-bioscience"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Trident Bioscience",
+      "shortDescription": "Trident Bioscience is a biotech company that stays abreast of the latest technological trends in leading protein structure.",
+      "description": "Trident Bioscience is a biotech company that stays abreast of the latest technological trends in leading protein structure.",
+      "website": "https://www.trident.bio/",
+      "foundedYear": 2020,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Mountain View, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Biotechnology",
+        "Life Science",
+        "Therapeutics"
+      ],
+      "sectors": [
+        "Biotechnology",
+        "Health Care",
+        "Science and Engineering"
+      ],
+      "founders": [
+        "Tyler Shimko"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An open-source toolkit for chemists and ML engineers to input, analyze, and split chemical data sets.",
+        "name": "Trident Chemwidgets"
+      },
+      {
+        "description": "A machine learning operations platform tailored for biotechnology to design, implement, debug, and deploy models on biochemical data.",
+        "name": "Trident Bioscience MLOps Platform"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 125000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2020-08-25",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2020-08-25",
+          "amount": {
+            "amount": 125000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 2891413,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2020-08-25",
+          "title": "Seed Round - Trident Bioscience"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 125000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 35,
+      "growthScore": 71,
+      "heatChange90Days": -25,
+      "heatScore": 9
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 14.04,
+        "timingEstimatePercent": {
+          "within6Months": 14.91,
+          "months6To11": 12.69,
+          "months12To24": 19.98,
+          "beyond24Months": 24.94
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 68.38
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Cyrus Biotechnology is a developer of Rosetta software platform that solves drug discovery problems.",
+          "employeeRange": "11-50",
+          "name": "Cyrus Biotechnology",
+          "sharedCategories": [
+            "Biotechnology"
+          ],
+          "sharedSpecialties": [
+            "Proteomics Data Analysis",
+            "Drug Discovery Services",
+            "Computational Drug Discovery",
+            "Structural Bioinformatics"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Generate Biomedicines is a biotech company that combines biology, machine learning, and biological engineering to create biomedicines.",
+          "employeeRange": "251-500",
+          "name": "Generate Biomedicines",
+          "sharedCategories": [
+            "Biotechnology"
+          ],
+          "sharedSpecialties": [
+            "Systems Biology Modeling",
+            "Computational Drug Discovery",
+            "Structural Bioinformatics"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Schrödinger is a healthcare-based software company that develops molecular design software for biotech and materials research.",
+          "employeeRange": "501-1,000",
+          "name": "Schrödinger",
+          "sharedCategories": [
+            "Biotechnology"
+          ],
+          "sharedSpecialties": [
+            "Drug Discovery Services",
+            "Computational Drug Discovery",
+            "Structural Bioinformatics",
+            "Computational Chemistry"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Benchling is an IT company that provides a cloud-based software platform for biology researchers and research and development organizations.",
+          "employeeRange": "501-1,000",
+          "name": "Benchling",
+          "sharedCategories": [
+            "Biotechnology",
+            "Life Science"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "OpenEye Scientific is an American software and services company focused on molecular design",
+          "employeeRange": "101-250",
+          "name": "OpenEye Scientific",
+          "sharedCategories": [
+            "Biotechnology",
+            "Life Science"
+          ],
+          "sharedSpecialties": [
+            "Drug Discovery Services",
+            "Computational Drug Discovery",
+            "Omics Data Integration",
+            "Structural Bioinformatics",
+            "Computational Chemistry"
+          ],
+          "similarityScore": 84
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $125,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $2,891,413 to $2,891,413, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 71 (+35 over 90 days) and market heat at 9 (-25).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Cyrus Biotechnology, Generate Biomedicines, Schrödinger.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:29:46.338Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:29:46.285Z",
+    "url": "https://www.crunchbase.com/organization/opearlo"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Opearlo",
+      "shortDescription": "Opearlo's mission is to help companies put Voice First, offering a Voice Analytics platform & Voice App Design & Implementation",
+      "description": "Opearlo's mission is to help companies put Voice First, offering a Voice Analytics platform & Voice App Design & Implementation",
+      "website": "http://www.opearlo.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "London, England, United Kingdom",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Information Technology",
+        "Mobile",
+        "Mobile Apps",
+        "Software"
+      ],
+      "sectors": [
+        "Apps",
+        "Information Technology",
+        "Mobile",
+        "Software"
+      ],
+      "founders": [
+        "Jess Williams"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2017-08-23",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2017-08-23",
+          "investorCount": 2,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "Four Cities Capital",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2021-01-05",
+          "publisher": "Newswire",
+          "title": "House Call App Introduces Rideshare to Reduce Risks of Medical Travel",
+          "url": "https://www.newswire.com/news/house-call-app-introduces-rideshare-to-reduce-risks-of-medical-travel-21286502"
+        },
+        {
+          "date": "2020-11-09",
+          "publisher": "Yahoo News",
+          "title": "Digital Health App Offers Free Exams for First Responders",
+          "url": "https://news.yahoo.com/digital-health-app-offers-free-150000400.html"
+        },
+        {
+          "date": "2017-08-23",
+          "title": "Seed Round - Opearlo"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -16,
+      "heatScore": 9
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:29:52.741Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:29:52.688Z",
+    "url": "https://www.crunchbase.com/organization/singularity"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Singularity",
+      "shortDescription": "Business Process Management solutions",
+      "description": "Singularity is a leading global vendor of Business Process Management (BPM) and workflow solutions. We envision a future in which world-class organizations will profit through business process excellence. Our goal is to help create this future. \r\n\r\nWe help our customers streamline, automate and improve the way their key processes function. We have particular expertise in the... see more",
+      "website": "http://www.singularity.co.uk/",
+      "foundedYear": 1994,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "5,001-10,000",
+      "headquarters": "Derry, United Kingdom",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Consulting",
+        "Information Technology",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Professional Services",
+        "Software"
+      ],
+      "founders": [
+        "Pádraig Canavan",
+        "Tome Cvitan"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 15,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2019-04-02",
+          "publisher": "undertheradarmag.com",
+          "title": "Jon Hopkins on “Singularity”",
+          "url": "https://redef.com/item/5ca38a12febd2724bf41ac9c"
+        },
+        {
+          "date": "2018-02-08",
+          "publisher": "Silicon Angle",
+          "title": "Sylabs launches Singularity Pro, a container platform for HPC environments",
+          "url": "https://siliconangle.com/blog/2018/02/08/sylabs-launches-singularity-pro-container-platform-hpc-environments/"
+        },
+        {
+          "date": "2016-09-02",
+          "publisher": "Silicon Angle",
+          "title": "It’s the end of the world as we know it and AI feels fine",
+          "url": "http://siliconangle.com/blog/2016/09/02/its-the-end-of-the-world-as-we-know-it-and-a-i-feels-fine/"
+        },
+        {
+          "date": "2015-08-03",
+          "publisher": "Ars Technica",
+          "title": "Gamers: It’s safe to upgrade to Windows 10",
+          "url": "http://arstechnica.com/gaming/2015/08/gamers-its-safe-to-upgrade-to-windows-10/"
+        },
+        {
+          "date": "2015-07-30",
+          "publisher": "TechInAsia",
+          "title": "SoftBank CEO: intelligent robots need emotions, compassion",
+          "url": "https://www.techinasia.com/softbank-ceo-intelligent-robots-need-emotions-compassion/"
+        },
+        {
+          "date": "2015-03-17",
+          "publisher": "Tech Radar",
+          "title": "When will Singularity happen – and will it turn Earth into heaven or hell?",
+          "url": "http://www.techradar.com/us/news/world-of-tech/when-will-singularity-happen-and-will-it-turn-earth-into-heaven-or-hell--1287624"
+        },
+        {
+          "date": "2015-03-17",
+          "publisher": "Tech Radar",
+          "title": "When will Singularity happen &ndash; and will it turn Earth into heaven or hell?",
+          "url": "http://www.techradar.com/news/world-of-tech/when-will-singularity-happen-and-will-it-turn-earth-into-heaven-or-hell--1287624"
+        },
+        {
+          "date": "2013-02-16",
+          "publisher": "TechCrunch",
+          "title": "Get Ready To Lose Your Job",
+          "url": "http://techcrunch.com/2013/02/16/this-time-is-different/"
+        },
+        {
+          "date": "2013-01-03",
+          "publisher": "TechCrunch",
+          "title": "Imagining The Future: Ray Kurzweil Has &#8220;Unlimited Resources&#8221; For AI, Language Research At Google",
+          "url": "http://techcrunch.com/2013/01/03/imagining-the-future-ray-kurzweil-has-unlimited-resources-for-ai-language-research-at-google/"
+        },
+        {
+          "date": "2011-12-07",
+          "publisher": "Silicon Ireland",
+          "title": "LDerry's Singlarity sold to Kofax",
+          "url": "http://www.siliconirelandnewswire.com/2011/12/lderrys-singlarity-sold-to-kofax.html"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 4,
+      "heatScore": 50
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2025-08-02",
+        "probabilityPercent": 79.71
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 15 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

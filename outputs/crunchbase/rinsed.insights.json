@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:54:08.032Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:54:07.979Z",
+    "url": "https://www.crunchbase.com/organization/rinsed"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Rinsed",
+      "shortDescription": "Rinsed is a irreverent and charismatic agency that challenges conventions and thinks big.",
+      "website": "http://www.rinsed.net/",
+      "foundedYear": 2008,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Surry Hills, New South Wales, Australia",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)",
+        "Australasia"
+      ],
+      "industries": [
+        "Events"
+      ],
+      "sectors": [
+        "Events"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 4,
+      "includedUniqueCount": 4,
+      "items": [
+        {
+          "date": "2023-05-02",
+          "publisher": "Pulse 2.0",
+          "title": "Rinsed: Car Wash CRM Company Secures $20 Million",
+          "url": "http://dlvr.it/SnP3Xm"
+        },
+        {
+          "date": "2023-04-25",
+          "publisher": "VC News Daily",
+          "title": "Rinsed Nabs $20M Series B Funding Round",
+          "url": "https://vcnewsdaily.com/rinsed/venture-capital-funding/cyzmbzvkmm"
+        },
+        {
+          "date": "2022-05-02",
+          "publisher": "Built in NYC",
+          "title": "Rinsed Raises $12M to Meet Demand for Car Wash Subscriptions",
+          "url": "https://www.builtinnyc.com/2022/05/02/rinsed-raises-12m-series-a-hiring"
+        },
+        {
+          "date": "2022-05-02",
+          "publisher": "PR Newswire",
+          "title": "Rinsed, the car wash CRM, announces $12 Million in Series A financing from Bedrock Capital and Founders Fund",
+          "url": "https://www.prnewswire.com/news-releases/rinsed-the-car-wash-crm-announces-12-million-in-series-a-financing-from-bedrock-capital-and-founders-fund-301536650.html"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -5,
+      "heatScore": 38
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 69.01
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Washify is a Provider of a car wash point of sale software",
+          "employeeRange": "11-50",
+          "name": "Washify",
+          "similarityScore": 95
+        },
+        {
+          "description": "DRB Systems offers car wash POS, wash optimization software, hardware and services.",
+          "employeeRange": "501-1,000",
+          "name": "DRB Systems",
+          "similarityScore": 94
+        },
+        {
+          "description": "Retention Express is an outsourcing company that provides full support, custom CX support, and failed payment recovery services.",
+          "employeeRange": "1-10",
+          "name": "Retention Express",
+          "similarityScore": 93
+        },
+        {
+          "description": "Suds Creative operates as a marketing agency for the car wash industry.",
+          "name": "Suds Creative",
+          "similarityScore": 89
+        },
+        {
+          "description": "Washlink Systems specializes in car wash automation, bulletproof wash equipment controllers, tunnel car wash equipment, and equipment sales.",
+          "employeeRange": "11-50",
+          "name": "Washlink Systems",
+          "similarityScore": 88
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Washify, DRB Systems, Retention Express.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

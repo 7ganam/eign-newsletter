@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:46:37.739Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:46:37.685Z",
+    "url": "https://www.crunchbase.com/organization/splish-app-inc"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Demeanor.co",
+      "shortDescription": "Demeanor.co offers a social application designed for sharing looping videos with friends.",
+      "description": "Demeanor.co offers a social application designed for sharing looping videos with friends. The application makes it easy to capture and edit looping videos giving rad photo effects and a community of creatives, enabling users to share their photos with other platforms in just one tap.\n\nThe company was founded in 2017 and is headquartered in Los Angeles, California.",
+      "website": "https://demeanor.co/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Los Angeles, California, United States",
+      "geographicRegions": [
+        "Greater Los Angeles Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Digital Media",
+        "Mobile Apps",
+        "Video"
+      ],
+      "sectors": [
+        "Apps",
+        "Media and Entertainment",
+        "Mobile",
+        "Software",
+        "Video"
+      ],
+      "founders": [
+        "Alex Pareto",
+        "Drake Rehfeld",
+        "Jackson Berry",
+        "Zachary Denham"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2018-07-21",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2018-07-21",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2018-07-21",
+          "publisher": "TechCrunch",
+          "title": "With its goofy video loops, YC backed Splish wants to be the ‘anti-Instagram’",
+          "url": "https://techcrunch.com/2018/07/21/with-its-goofy-video-loops-yc-backed-splish-wants-to-be-the-anti-instagram/"
+        },
+        {
+          "date": "2018-07-21",
+          "title": "Seed Round - Demeanor.co"
+        },
+        {
+          "date": "2018-07-04",
+          "title": "Visualify acquired by Demeanor.co"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 1,
+      "heatScore": 42
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $120,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

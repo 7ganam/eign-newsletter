@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:37:52.471Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:37:52.415Z",
+    "url": "https://www.crunchbase.com/organization/solidstage"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "SolidStage",
+      "shortDescription": "SolidStage makes deploying, configuring, monitoring, and scaling in the cloud as simple as clicking a button.",
+      "description": "SolidStage makes deploying, configuring, monitoring, and scaling in the cloud as simple as clicking a button.",
+      "website": "http://solidstage.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "industries": [
+        "Information Technology",
+        "Internet",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Software"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2012-03-28",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2012-03-28",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2012-03-28",
+          "title": "Seed Round - SolidStage"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -1,
+      "heatScore": 56
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Harness provides a software delivery platform that helps engineering teams build, deploy, and operate applications through a set of tools.",
+          "employeeRange": "1,001-5,000",
+          "name": "Harness",
+          "similarityScore": 97
+        },
+        {
+          "description": "Accelerate software delivery with repeatable deployments.",
+          "employeeRange": "251-500",
+          "name": "Octopus Deploy",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Spinnaker is an open source, multi-cloud continuous delivery platform for releasing software changes with high velocity and confidence.",
+          "employeeRange": "1-10",
+          "name": "Spinnaker",
+          "sharedCategories": [
+            "Software",
+            "Information Technology"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "GitLab is a web-based Git repository manager that offers a variety of features for software development teams.",
+          "employeeRange": "1,001-5,000",
+          "name": "GitLab",
+          "similarityScore": 91
+        },
+        {
+          "description": "The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project.",
+          "employeeRange": "1,001-5,000",
+          "name": "Jenkins",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Harness, Octopus Deploy, Spinnaker.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

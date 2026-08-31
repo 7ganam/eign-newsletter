@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:44:52.270Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:44:52.215Z",
+    "url": "https://www.crunchbase.com/organization/speko"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Speko",
+      "shortDescription": "Speko is an AI developer tools company that develops a voice AI gateway platform for building and deploying conversational AI agents.",
+      "description": "Speko is an artificial intelligence developer tools company that develops a voice AI gateway platform for building and deploying conversational AI agents. The platform provides a unified API that abstracts the entire voice stack, including speech-to-text (STT), large language models (LLMs), and text-to-speech (TTS), and automatically routes requests to the best-performing providers based on latency, accuracy, cost, and language.\n\nIts platform combines voice AI orchestration, provider routing, speech recognition, text-to-speech synthesis, conversational AI, voice-native retrieval, benchmarking, failover, and deployment tools into a single infrastructure layer. Developers can create voice agents using natural language prompts, test them in real time, and deploy them across phone systems, web applications, mobile applications, and APIs without managing multiple provider integrations. Speko also provides SDKs, APIs, benchmarking tools, and monitoring capabilities for building production-grade voice applications.",
+      "website": "https://speko.ai/",
+      "foundedYear": 1938,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Developer APIs",
+        "Speech Recognition"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A Voice AI infrastructure platform that routes requests among speech-to-text, language, and text-to-speech models through one API.",
+        "name": "Speko"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2026-08-27",
+          "publisher": "UzDaily.uz",
+          "title": "Основатель из Узбекистана запустил Speko на Product Hunt",
+          "url": "https://www.uzdaily.uz/ru/osnovatel-iz-uzbekistana-zapustil-speko-na-product-hunt/"
+        },
+        {
+          "date": "2026-08-27",
+          "publisher": "UzDaily.uz",
+          "title": "Uzbek founder launches Speko on Product Hunt",
+          "url": "https://www.uzdaily.uz/en/uzbek-founder-launches-speko-on-product-hunt/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 27,
+      "growthScore": 92,
+      "heatChange90Days": 91,
+      "heatScore": 92
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 94.76
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 92 (+27 over 90 days) and market heat at 92 (+91).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

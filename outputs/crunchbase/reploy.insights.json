@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:47:30.099Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:47:30.045Z",
+    "url": "https://www.crunchbase.com/organization/reploy"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Reploy",
+      "shortDescription": "Reploy is the easiest way to generate unique production-like environments for every feature, complete with a shareable link.",
+      "description": "Reploy is the easiest way to generate unique production-like environments for every feature, complete with a shareable link. Reploy solves this problem by spinning up ephemeral staging environments on every commit. We're able to do this very quickly by caching previous runs and we handle the garbage collection of environments when they're not being used",
+      "website": "https://getreploy.com/",
+      "foundedYear": 2020,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Developer Tools",
+        "Information Technology",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Software"
+      ],
+      "founders": [
+        "Himank Yadav"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 1100000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2020-08-25",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2020-08-25",
+          "amount": {
+            "amount": 1100000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "leadInvestors": [
+            "Bain Capital Ventures",
+            "Y Combinator"
+          ],
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Bain Capital Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2024-10-18",
+          "publisher": "PR.com",
+          "title": "REPLOY Power Joins TNA as a Founding Member",
+          "url": "https://www.pr.com/press-release/923252"
+        },
+        {
+          "date": "2020-08-25",
+          "title": "Seed Round - Reploy"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 1100000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -2,
+      "heatScore": 64
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Vercel is a developer platform that provides cloud infrastructure services for the web.",
+          "employeeRange": "1,001-5,000",
+          "name": "Vercel",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 96
+        },
+        {
+          "description": "Netlify is the AI-native web development platform where agents and developers build together.",
+          "employeeRange": "101-250",
+          "name": "Netlify",
+          "sharedCategories": [
+            "Developer Tools"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Uffizzi is an open-source engine for creating and managing lightweight, ephemeral preview environments for APIs and full-stack applications.",
+          "employeeRange": "1-10",
+          "name": "Uffizzi",
+          "sharedCategories": [
+            "Software",
+            "Information Technology"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Docker’s platform helps millions of developers efficiently and collaboratively build, share, and run applications.",
+          "employeeRange": "1,001-5,000",
+          "name": "Docker",
+          "sharedCategories": [
+            "Developer Tools",
+            "Software",
+            "Information Technology"
+          ],
+          "similarityScore": 86
+        },
+        {
+          "description": "Qovery provides a DevOps automation platform that enables engineering teams to deploy, observe, secure, and optimize cloud infrastructure.",
+          "employeeRange": "11-50",
+          "name": "Qovery",
+          "sharedCategories": [
+            "Software",
+            "Information Technology"
+          ],
+          "similarityScore": 84
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $1,100,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Vercel, Netlify, Uffizzi.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

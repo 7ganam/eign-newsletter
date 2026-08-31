@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:36:47.605Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:36:47.543Z",
+    "url": "https://www.crunchbase.com/organization/ourmenu"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "OurMenu",
+      "shortDescription": "OurMenu provides an online food ordering service.",
+      "description": "OurMenu provides an online food ordering service. The company replaces ordering from a waiter with ordering from a website.\n\nOurMenu wants to let its users to order from phone instead of talking to a waiter, without downloading an app. Users can scan a QR code on the table, choose their food, order and pay, and then the food is brought tothem.  OurMenu plans to charge restaurants $300 per month for the tech, and will aggregate the menu choice data to sell back to them.",
+      "website": "https://www.ourmenu.io/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Mountain View, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Apps",
+        "B2B",
+        "E-Commerce",
+        "Food and Beverage",
+        "Food Delivery",
+        "Internet",
+        "Service Industry",
+        "Travel"
+      ],
+      "sectors": [
+        "Apps",
+        "Commerce and Shopping",
+        "Food and Beverage",
+        "Information Technology",
+        "Other",
+        "Software",
+        "Transportation",
+        "Travel and Tourism"
+      ],
+      "founders": [
+        "Vicky Su"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2018-01-04",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2018-01-04",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "HIVE Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2018-01-04",
+          "title": "Seed Round - OurMenu"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -15,
+      "heatScore": 38
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "ChowNow helps branded online ordering systems for independent restaurants through the restaurants’ own websites.",
+          "employeeRange": "101-250",
+          "name": "ChowNow",
+          "sharedCategories": [
+            "E-Commerce",
+            "Internet",
+            "Apps"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Olo is a SaaS digital ordering and delivery platform for restaurant brands.",
+          "employeeRange": "501-1,000",
+          "name": "Olo",
+          "sharedCategories": [
+            "E-Commerce",
+            "Food Delivery"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Owner is a technology company that provides tools for local restaurant owners to enhance sales and online presence.",
+          "employeeRange": "101-250",
+          "name": "Owner",
+          "similarityScore": 92
+        },
+        {
+          "description": "GloriaFood is a provider of restaurant menu and food ordering services.",
+          "employeeRange": "11-50",
+          "name": "GloriaFood",
+          "similarityScore": 91
+        },
+        {
+          "description": "Toast is a point-of-sale and restaurant management platform designed for businesses in the food service and hospitality industry.",
+          "employeeRange": "5,001-10,000",
+          "name": "Toast",
+          "sharedCategories": [
+            "Food Delivery"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $120,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include ChowNow, Olo, Owner.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

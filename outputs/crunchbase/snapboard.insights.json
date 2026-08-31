@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:35:40.838Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:35:40.781Z",
+    "url": "https://www.crunchbase.com/organization/snapboard"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Snapboard",
+      "shortDescription": "Snapboard is a cloud-based professional platform where people can organize and share content on the subjects that matter most to them.",
+      "website": "http://www.snapboard.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Bonita, California, United States",
+      "geographicRegions": [
+        "Greater San Diego Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Internet",
+        "Social Media"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Internet Services",
+        "Media and Entertainment"
+      ],
+      "founders": [
+        "Michele Bustamante"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2020-03-10",
+          "publisher": "TechCrunch",
+          "title": "YC-backed Snapboard is a no-code platform for building internal tools",
+          "url": "https://techcrunch.com/2020/03/10/yc-backed-snapboard-is-a-no-code-platform-for-building-internal-tools/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -26,
+      "heatScore": 45
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 84.63
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Wakelet gives you the freedom to organise the web, the way you want it. Save, curate and share all the things you love online.",
+          "employeeRange": "51-100",
+          "name": "Wakelet",
+          "sharedCategories": [
+            "Internet",
+            "Social Media"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Pearltrees lets them organize everything and collaborate with anyone.",
+          "employeeRange": "11-50",
+          "name": "Pearltrees",
+          "similarityScore": 95
+        },
+        {
+          "description": "Scoop.it automates the content marketing process and provides insights on how to generate better results from content.",
+          "employeeRange": "11-50",
+          "name": "Scoop.it",
+          "sharedCategories": [
+            "Social Media"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Building software for a good education.",
+          "employeeRange": "51-100",
+          "name": "Padlet",
+          "similarityScore": 91
+        },
+        {
+          "description": "Flipboard is a developer of a mobile social magazine platform used to collect and share news articles from various news sources.",
+          "employeeRange": "101-250",
+          "name": "Flipboard",
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Wakelet, Pearltrees, Scoop.it.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

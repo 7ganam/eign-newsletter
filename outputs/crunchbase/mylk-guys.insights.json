@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:02:42.948Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:02:42.898Z",
+    "url": "https://www.crunchbase.com/organization/mylk-guys"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Mylk Guys",
+      "shortDescription": "Mylk Guys is an online grocery store.",
+      "description": "Mylk Guys is an online grocery store.",
+      "website": "https://www.mylkguys.com/",
+      "foundedYear": 2018,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "E-Commerce",
+        "Food and Beverage"
+      ],
+      "sectors": [
+        "Commerce and Shopping",
+        "Food and Beverage"
+      ],
+      "founders": [
+        "Gaurav Maken",
+        "Jinesh Shah",
+        "Quentin Rousseau"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 2500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2019-07-19",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2019-07-19",
+          "amount": {
+            "amount": 2500000,
+            "currency": "USD"
+          },
+          "investorCount": 3,
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2018-08-22",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 4,
+        "visibleNames": [
+          {
+            "name": "Fifty Years",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Khosla Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Pear VC",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2019-07-19",
+          "title": "Seed Round - Mylk Guys"
+        },
+        {
+          "date": "2018-08-22",
+          "title": "Seed Round - Mylk Guys"
+        },
+        {
+          "date": "2018-08-21",
+          "publisher": "TechCrunch",
+          "title": "Here are the 63 startups that launched today at Y Combinator’s S18 Demo Day 1",
+          "url": "https://techcrunch.com/2018/08/20/here-are-the-63-startups-that-launched-today-at-y-combinators-s18-demo-day-1/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 2500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -6,
+      "heatScore": 44
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "PlantX provides an online marketplace for vegan foods, supplements, and plant-based personal care products.",
+          "employeeRange": "11-50",
+          "name": "PlantX",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Vegan Essentials offer unparalleled customer service and the highest quality animal-free and cruelty-free products.",
+          "name": "Vegan Essentials",
+          "similarityScore": 93
+        },
+        {
+          "description": "Thrive Market is a membership-based online company that offers natural and organic food products.",
+          "employeeRange": "501-1,000",
+          "name": "Thrive Market",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Good Eggs is an online grocer and meal kit delivery service with a mission to reinvent the food system, for good.",
+          "employeeRange": "501-1,000",
+          "name": "Good Eggs",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Green BEAN Delivery is a consumer services company providing grocery delivery services.",
+          "employeeRange": "101-250",
+          "name": "Green BEAN Delivery",
+          "sharedCategories": [
+            "Food and Beverage",
+            "E-Commerce"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $2,500,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include PlantX, Vegan Essentials, Thrive Market.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:19:38.100Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:19:38.042Z",
+    "url": "https://www.crunchbase.com/organization/nudgepad"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "NudgePad",
+      "shortDescription": "NudgePad is an IDE in your browser",
+      "website": "http://www.nudgepad.com/",
+      "foundedYear": 2009,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Developer Tools"
+      ],
+      "sectors": [
+        "Software"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2009-08-22",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2009-08-22",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2009-08-22",
+          "title": "Seed Round - NudgePad"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -16,
+      "heatScore": 42
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Free, instant, collaborative sandboxes for rapid web development.",
+          "employeeRange": "11-50",
+          "name": "CodeSandbox",
+          "sharedCategories": [
+            "Developer Tools"
+          ],
+          "similarityScore": 96
+        },
+        {
+          "description": "Replit provides a cloud-based development platform that enables users to write, run, and deploy applications in browsers.",
+          "employeeRange": "101-250",
+          "name": "Replit",
+          "sharedCategories": [
+            "Developer Tools"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Amazon Web Services provides information technology infrastructure services to businesses in the form of web services.",
+          "employeeRange": "10,001+",
+          "name": "Amazon Web Services",
+          "similarityScore": 88
+        },
+        {
+          "description": "GitHub is a software company that offers code hosting services that allow developers to build software for open-source and private projects.",
+          "employeeRange": "1,001-5,000",
+          "name": "GitHub",
+          "sharedCategories": [
+            "Developer Tools"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Coder provides open-source tools and an enterprise platform that makes it easier to configure, secure, and scale development environments.",
+          "employeeRange": "101-250",
+          "name": "Coder",
+          "sharedCategories": [
+            "Developer Tools"
+          ],
+          "similarityScore": 82
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include CodeSandbox, Replit, Amazon Web Services.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

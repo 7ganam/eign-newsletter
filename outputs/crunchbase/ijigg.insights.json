@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:53:32.753Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:53:32.722Z",
+    "url": "https://www.crunchbase.com/organization/ijigg"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "iJigg",
+      "shortDescription": "iJigg offers a community-based platform that enables its users to listen, rate, and share songs with the other users.",
+      "description": "iJigg is a social music site that lets users vote on submitted singles using Digg-like voting. The site's home page shows what popular or recent singles the iJigg community is \"jigging.\" Users can rate songs, embed songs on MySpace or find similar music fans.\r\n\r\nCompetitors include Contrastream. Social music competitors include [FineTune](http://www.crunchbase.com/c/finetune), [Last.fm](http://www.crunchbase.com/c/last.fm), [Pandora](http://www.crunchbase.com/c/pandora) and [iLike](http://www.crunchbase.com/c/ilike).",
+      "website": "http://ijigg.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Chapel Hill, North Carolina, United States",
+      "geographicRegions": [
+        "Research Triangle",
+        "East Coast",
+        "Southern US"
+      ],
+      "industries": [
+        "Music",
+        "Music Streaming",
+        "Social Media"
+      ],
+      "sectors": [
+        "Internet Services",
+        "Media and Entertainment",
+        "Music and Audio"
+      ],
+      "founders": [
+        "Bilal Farooqui",
+        "Rodolfo Sikora",
+        "Shadab Farooqui",
+        "Zaid Farooqui"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2007-08-17",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2007-08-17",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 5,
+      "includedUniqueCount": 5,
+      "items": [
+        {
+          "date": "2009-03-09",
+          "publisher": "TechCrunch",
+          "title": "Thesixtyone Is Building a Digg For Indie Music",
+          "url": "http://www.techcrunch.com/2009/03/09/thesixtyone-is-building-a-digg-for-indie-music/"
+        },
+        {
+          "date": "2007-08-27",
+          "publisher": "TechCrunch",
+          "title": "ContraStream To Join Social Music Sites",
+          "url": "http://www.techcrunch.com/2007/08/27/contrastream-to-join-social-music-sites/"
+        },
+        {
+          "date": "2007-08-17",
+          "title": "Seed Round - iJigg"
+        },
+        {
+          "date": "2007-02-05",
+          "publisher": "TechCrunch",
+          "title": "Social Music Overview",
+          "url": "http://www.techcrunch.com/2007/02/05/social-music-overview/"
+        },
+        {
+          "date": "2007-01-18",
+          "publisher": "TechCrunch",
+          "title": "Jigg That Music",
+          "url": "http://www.techcrunch.com/2007/01/18/jigg-that-music/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -14,
+      "heatScore": 40
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "SoundCloud is a social sound platform where anyone can create and share sounds.",
+          "employeeRange": "251-500",
+          "name": "SoundCloud",
+          "sharedCategories": [
+            "Music"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Audiomack is music sharing and discovery made easy.",
+          "employeeRange": "11-50",
+          "name": "Audiomack",
+          "sharedCategories": [
+            "Music"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Last.fm is an online music catalogue providing users with personalized recommendations based on their taste in music.",
+          "employeeRange": "51-100",
+          "name": "Last.fm",
+          "sharedCategories": [
+            "Social Media",
+            "Music"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Bandcamp is an online music store and a promotion platform for independent artists.",
+          "employeeRange": "1-10",
+          "name": "Bandcamp",
+          "sharedCategories": [
+            "Music"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "ReverbNation connects Artists to the Music Industry.",
+          "employeeRange": "51-100",
+          "name": "ReverbNation",
+          "sharedCategories": [
+            "Music"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include SoundCloud, Audiomack, Last.fm.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

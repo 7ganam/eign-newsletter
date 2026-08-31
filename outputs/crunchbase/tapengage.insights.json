@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:13:13.128Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:13:13.070Z",
+    "url": "https://www.crunchbase.com/organization/tapengage"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "TapEngage",
+      "shortDescription": "TapEngage helps to promote your tablet app or site.",
+      "description": "TapEngage is a startup that enables advertisers and publishers to collaborate on tablet-optimized advertising.",
+      "website": "http://www.tapengage.com/",
+      "foundedYear": 2011,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Advertising",
+        "Apps",
+        "Collaboration",
+        "Publishing"
+      ],
+      "sectors": [
+        "Advertising",
+        "Apps",
+        "Content and Publishing",
+        "Media and Entertainment",
+        "Other",
+        "Sales and Marketing",
+        "Software"
+      ],
+      "founders": [
+        "Sean Lynch"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2011-08-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2011-08-01",
+          "investorCount": 3,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 3,
+        "visibleNames": [
+          {
+            "name": "Quotidian Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "TSVC",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 4,
+      "includedUniqueCount": 4,
+      "items": [
+        {
+          "date": "2013-07-17",
+          "title": "TapEngage acquired by Dropbox"
+        },
+        {
+          "date": "2013-03-15",
+          "publisher": "TechCrunch",
+          "title": "Dropbox Bought Mailbox Because It Wants To Be More Than A Cloud Storage Company",
+          "url": "http://techcrunch.com/2013/03/15/dropbox-bought-mailbox-because-it-wants-to-be-more-than-a-cloud-storage-company/"
+        },
+        {
+          "date": "2012-07-17",
+          "publisher": "TechCrunch",
+          "title": "Dropbox Acquires Small Tablet Marketing Company TapEngage",
+          "url": "http://techcrunch.com/2012/07/17/dropbox-acquires-small-tablet-marketing-company-tapengage/"
+        },
+        {
+          "date": "2011-08-01",
+          "title": "Seed Round - TapEngage"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -13,
+      "heatScore": 55
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "AppTap is an application discovery and advertising network.",
+          "employeeRange": "11-50",
+          "name": "AppTap",
+          "sharedCategories": [
+            "Advertising",
+            "Apps"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Tapscape is an online source for the latest in technology news and analysis.",
+          "employeeRange": "1-10",
+          "name": "Tapscape",
+          "similarityScore": 95
+        },
+        {
+          "description": "Taboola is an AI-powered content discovery platform that connects people with content on the web that suits their interests.",
+          "employeeRange": "1,001-5,000",
+          "name": "Taboola",
+          "sharedCategories": [
+            "Advertising"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "NTN Buzztime provides bar and restaurant social entertainment and integrated marketing platform.",
+          "employeeRange": "51-100",
+          "name": "NTN Buzztime",
+          "sharedCategories": [
+            "Advertising"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "Outbrain is a media company that offers an advertising platform to connect advertisers to open web consumers and provide insights.",
+          "employeeRange": "1,001-5,000",
+          "name": "Outbrain",
+          "sharedCategories": [
+            "Advertising"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include AppTap, Tapscape, Taboola.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

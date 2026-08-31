@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:04:35.788Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:04:35.734Z",
+    "url": "https://www.crunchbase.com/organization/vestris"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Vestris",
+      "shortDescription": "Vestris provides AI agents that automate real estate title and closing workflows from contract intake to closing readiness.",
+      "description": "Vestris is a real estate technology and artificial intelligence company that develops an AI-powered title search and real estate transaction automation platform that automates the real estate title and closing workflow. The platform ingests ratified contracts, parses documents, and creates structured addendums. It opens portals for agents, buyers, and sellers, collects required information, and manages related communication. Browser-based agents log into county and tax systems to pull records and support tax, water, and HOA proration. Vestris generates title abstracts, drafts Schedules A and B, and assembles title commitments for underwriter review. It also reconciles settlement statements, balances files, and reviews closing disclosures to assemble lender-ready packages for title and settlement firms.",
+      "website": "https://www.vestris.ai/",
+      "foundedYear": 2026,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Washington, District of Columbia, United States",
+      "geographicRegions": [
+        "Washington DC Metro Area",
+        "Southern US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Document Management",
+        "Enterprise Software",
+        "Mortgage",
+        "PropTech",
+        "Real Estate"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Real Estate",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Aahil Valliani"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Vestris pre-closing automation platform provides AI agents to automate real estate title and closing workflows from contract to closing-ready files.",
+        "name": "Vestris pre-closing automation platform"
+      },
+      {
+        "description": "Vestris title abstract service generates same-day real estate title abstracts using automated agents and county system data.",
+        "name": "Vestris title abstract service"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatScore": 91
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 5
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 69.4
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

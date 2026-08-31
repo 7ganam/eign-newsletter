@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:13:32.320Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:13:32.267Z",
+    "url": "https://www.crunchbase.com/organization/portalform"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Portalform",
+      "shortDescription": "Portalform syncs data from third-party APIs into production databases to build SaaS integrations.",
+      "website": "https://portalform.com/",
+      "foundedYear": 2022,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Database",
+        "Information Technology",
+        "SaaS"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Information Technology",
+        "Software"
+      ],
+      "founders": [
+        "Felipe Aragão"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A service that syncs data from third-party tools into databases or cloud storage, focusing on building product integrations.",
+        "name": "Fiber"
+      },
+      {
+        "description": "An open-source project facilitating OAuth access for over 200 APIs, simplifying developer access to third-party accounts.",
+        "name": "Handshake"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2023-04-05",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2023-04-05",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 5533741,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2023-04-05",
+          "title": "Pre Seed Round - Portalform"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -1,
+      "growthScore": 25,
+      "heatChange90Days": -12,
+      "heatScore": 22
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 53.8
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 30.58,
+        "timingEstimatePercent": {
+          "within6Months": 15.86,
+          "months6To11": 13.34,
+          "months12To24": 20.68,
+          "beyond24Months": 25
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 43.54
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 40.37
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Paragon is an embedded integration platform for SaaS apps, enabling companies to build products that integrate with the SaaS ecosystem.",
+          "employeeRange": "1-10",
+          "name": "Paragon",
+          "sharedCategories": [
+            "SaaS"
+          ],
+          "sharedSpecialties": [
+            "Data Synchronization",
+            "Change Data Capture"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "Codat is a financial platform that builds integrated software for small business customers.",
+          "employeeRange": "101-250",
+          "name": "Codat",
+          "sharedCategories": [
+            "Information Technology"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Merge is one API to add hundreds of integrations to your product",
+          "employeeRange": "101-250",
+          "name": "Merge",
+          "sharedCategories": [
+            "SaaS"
+          ],
+          "sharedSpecialties": [
+            "Data Synchronization",
+            "Developer Portals"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "Nango lets developers build product integrations with AI connecting their product and agents to multiple APIs.",
+          "employeeRange": "11-50",
+          "name": "Nango",
+          "sharedCategories": [
+            "SaaS"
+          ],
+          "sharedSpecialties": [
+            "Data Synchronization",
+            "API Security",
+            "Developer Portals"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "Apideck enables developers to build integrations through a set of Unified APIs, from Accounting to HRIS integrations.",
+          "employeeRange": "11-50",
+          "name": "Apideck",
+          "sharedCategories": [
+            "SaaS",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Developer Documentation Platforms",
+            "API Security",
+            "Developer Portals"
+          ],
+          "similarityScore": 86
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $500,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $5,533,741 to $5,533,741, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 25 (-1 over 90 days) and market heat at 22 (-12).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Paragon, Codat, Merge.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

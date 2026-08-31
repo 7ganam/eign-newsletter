@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:38:09.405Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:38:09.347Z",
+    "url": "https://www.crunchbase.com/organization/solum-health"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Solum Health",
+      "shortDescription": "Solum Health provides AI powered administartive and front office solutions for health care.",
+      "description": "Solum Health operates as a healthcare software company. Available signals suggest a focus on digital tools that support clinical and operational workflows, potentially spanning care coordination, patient communication, and data insights. Specific features, target users, integrations, pricing, and regulatory claims are not explicitly described on open sources reviewed. Prospective buyers typically evaluate items such as EHR connectivity, security certifications, and deployment options when considering vendors in this category. For accurate scope and a current feature list, direct inquiry through official channels is recommended.",
+      "website": "https://www.getsolum.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Clinical Trials",
+        "Data Management",
+        "Digital Marketing",
+        "Enterprise Software",
+        "Health Care",
+        "Health Diagnostics",
+        "Medical",
+        "mHealth",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Health Care",
+        "Mobile",
+        "Sales and Marketing",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Juan Montoya"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -8,
+      "heatScore": 81
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 73.29
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Luma Health offers patient access, revenue cycle management, and patient relationship management.",
+          "employeeRange": "101-250",
+          "name": "Luma Health",
+          "sharedCategories": [
+            "Health Care",
+            "mHealth"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Phreesia is a healthcare centre that provides automated patient check-in processes for personal health.",
+          "employeeRange": "1,001-5,000",
+          "name": "Phreesia",
+          "sharedCategories": [
+            "Health Care",
+            "Medical"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Notable is the AI platform for healthcare operations.",
+          "employeeRange": "251-500",
+          "name": "Notable",
+          "sharedCategories": [
+            "Health Care",
+            "Health Diagnostics",
+            "Artificial Intelligence (AI)"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Artera is a SaaS leader transforming patient experience with AI-powered virtual agents (voice and text)",
+          "employeeRange": "251-500",
+          "name": "Artera",
+          "sharedCategories": [
+            "Health Care",
+            "Artificial Intelligence (AI)",
+            "Enterprise Software"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Inbox Health is a digital healthcare company that designs a tool to automate bills and give patients additional insights into their charges.",
+          "employeeRange": "101-250",
+          "name": "Inbox Health",
+          "sharedCategories": [
+            "Health Care",
+            "Software"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Luma Health, Phreesia, Notable.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

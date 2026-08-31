@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:44:37.750Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:44:37.698Z",
+    "url": "https://www.crunchbase.com/organization/tsumobi"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Tsumobi",
+      "shortDescription": "Tsumobi develops j2me compatible programming language that allows its users to download mobile apps through the URLs.",
+      "description": "Mobile applications have so far been nightmares to implement. It's often hard to gain adoption due to complicated installs and near impossible to get users to upgrade their version once the product has shipped. Tsumobi hopes to solve this problem by creating their own language. The new language will sit on top of J2ME and process applications downloaded (via URL) for Tsumobi enabled sites. This means that developers will be able to change Tsumobi applications on the fly and have Tsumobi enabled phones automatically get the updates just by visiting a link.",
+      "website": "http://tsumobi.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Cambridge, Massachusetts, United States",
+      "geographicRegions": [
+        "Greater Boston Area",
+        "East Coast",
+        "New England",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Mobile",
+        "Software"
+      ],
+      "sectors": [
+        "Mobile",
+        "Software"
+      ],
+      "founders": [
+        "Adam Bouhenguel",
+        "Joshua Wilson"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2008-05-09",
+      "lastFundingType": "Venture round",
+      "rounds": [
+        {
+          "announcedDate": "2008-05-09",
+          "investorCount": 1,
+          "type": "Venture round"
+        },
+        {
+          "announcedDate": "2007-03-09",
+          "investorCount": 2,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "XG Ventures",
+            "rounds": [
+              "Venture round",
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2008-05-09",
+          "title": "Venture Round - Tsumobi"
+        },
+        {
+          "date": "2007-03-09",
+          "title": "Seed Round - Tsumobi"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -6,
+      "heatScore": 26
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

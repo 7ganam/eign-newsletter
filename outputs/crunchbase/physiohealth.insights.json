@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:00:26.612Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:00:26.561Z",
+    "url": "https://www.crunchbase.com/organization/physiohealth"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "PhysioHealth",
+      "shortDescription": "PhysioHealth is an enterprise health and wellness management platform that rewards employees for living healthy.",
+      "description": "PhysioHealth is an enterprise health and wellness management platform that rewards your employees for living healthy and decreases your healthcare costs.\r\nTheir customized platform delivers 5x engagement vs. other corporate wellness programs.",
+      "website": "https://physioh.com/",
+      "foundedYear": 2015,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Palo Alto, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Health Care",
+        "mHealth",
+        "Online Portals"
+      ],
+      "sectors": [
+        "Health Care",
+        "Internet Services",
+        "Mobile"
+      ],
+      "founders": [
+        "Firdevs Abacioglu",
+        "Melike Abacioglu Gunes"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2016-03-22",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2016-03-22",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2025-05-02",
+          "publisher": "Illawarra Mercury",
+          "title": "See who won and who was at the Illawarra Women In Business Awards Day",
+          "url": "https://www.illawarramercury.com.au/story/8956726/illawarra-women-in-business-record-wins-for-physiohealth/"
+        },
+        {
+          "date": "2016-03-22",
+          "title": "Pre Seed Round - PhysioHealth"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -17,
+      "heatScore": 1
+    },
+    "modelPredictions": {
+      "funding": {
+        "generatedDate": "2025-11-15",
+        "probabilityPercent": 4.99,
+        "timingEstimatePercent": {
+          "within6Months": 14.22,
+          "months6To11": 12.2,
+          "months12To24": 19.44,
+          "beyond24Months": 24.83
+        }
+      },
+      "growth": {
+        "generatedDate": "2025-11-15",
+        "probabilityPercent": 28.55
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Employee wellness, reimagined.",
+          "employeeRange": "51-100",
+          "name": "Wellable",
+          "similarityScore": 97
+        },
+        {
+          "description": "TELUS Health specializes in telehomecare, electronic medical records, consumer health, benefits, and pharmacy management.",
+          "employeeRange": "501-1,000",
+          "name": "Telus Health",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Motion uses innovative technology solutions to build healthier cultures across the nation.",
+          "employeeRange": "11-50",
+          "name": "Motion Connected",
+          "similarityScore": 93
+        },
+        {
+          "description": "MoveSpring is a fun, simple, highly engaging health platform enabling employers to educate and motivate employees toward better health.",
+          "employeeRange": "11-50",
+          "name": "MoveSpring (A Reward Gateway Company)",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "similarityScore": 82
+        },
+        {
+          "description": "RedBrick Health, a health engagement and behavior-based technology company, helps organizations optimize their health and wellness programs.",
+          "employeeRange": "251-500",
+          "name": "RedBrick Health",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "similarityScore": 81
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $120,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Wellable, Telus Health, Motion Connected.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

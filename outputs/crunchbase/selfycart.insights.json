@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:15:52.762Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:15:52.706Z",
+    "url": "https://www.crunchbase.com/organization/selfycart"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Selfycart",
+      "shortDescription": "The promise of self-checkout and the reality of self-checkout are two totally different things",
+      "description": "Selfycart is your personal checkout app that allows you to scan product barcodes from store shelves, pay on the phone and go without standing in lines.",
+      "website": "https://www.selfycart.com/",
+      "foundedYear": 2015,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "E-Commerce",
+        "Retail",
+        "Shopping"
+      ],
+      "sectors": [
+        "Commerce and Shopping"
+      ],
+      "founders": [
+        "Erick Lee",
+        "Sahle Hashelit"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 1000000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2016-08-24",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2016-08-24",
+          "amount": {
+            "amount": 1000000,
+            "currency": "USD"
+          },
+          "investorCount": 4,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 4,
+        "visibleNames": [
+          {
+            "name": "BootstrapLabs",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "CSC Upshot",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Sierra Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2016-08-24",
+          "title": "Seed Round - Selfycart"
+        },
+        {
+          "date": "2016-08-01",
+          "publisher": "TechCrunch",
+          "title": "Self-checkout startup Selfycart wants to help you avoid lines at the grocery store",
+          "url": "https://techcrunch.com/2016/08/01/selfycart-launch-y-combinator/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 1000000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -39,
+      "heatScore": 1
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $1,000,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

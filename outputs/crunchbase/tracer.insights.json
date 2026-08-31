@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:35:40.721Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:35:40.654Z",
+    "url": "https://www.crunchbase.com/organization/tracer"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Tracer",
+      "shortDescription": "Tracer is a live event ticketing platform for music promoters and theaters to capitalize on their fans.",
+      "description": "Tracer provides live event ticketing for theaters and sports teams, so music promoters can profit from their fans. They help artists and promoters gain ticket control, returning the money and the data to them.",
+      "website": "https://www.tracerhq.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Madrid, Spain",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Consumer Electronics",
+        "Fitness",
+        "Music",
+        "Sports"
+      ],
+      "sectors": [
+        "Consumer Electronics",
+        "Hardware",
+        "Media and Entertainment",
+        "Music and Audio",
+        "Sports"
+      ],
+      "founders": [
+        "Alberto Martínez Gordo",
+        "Jorge Díaz Largo"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2018-02-05",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2018-02-05",
+          "investorCount": 1,
+          "leadInvestors": [
+            "Techstars"
+          ],
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Techstars",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2020-05-29",
+          "publisher": "TechUK",
+          "title": "Data analysis skills in policing",
+          "url": "https://bit.ly/3eHVkK7"
+        },
+        {
+          "date": "2020-04-02",
+          "publisher": "Finextra",
+          "title": "Non-profit network Toniic launches impact investing platform",
+          "url": "https://www.finextra.com/pressarticle/82020/non-profit-network-toniic-launches-impact-investing-platform"
+        },
+        {
+          "date": "2018-02-05",
+          "title": "Seed Round - Tracer"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -2,
+      "heatScore": 23
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:00:47.329Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:00:47.277Z",
+    "url": "https://www.crunchbase.com/organization/picplum"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Picplum",
+      "shortDescription": "Picplum is a photo printing service that is the perfect addition to any family with young children.",
+      "description": "Picplum is a photo printing service that is the perfect addition to any family with young children. We know parents are too busy to organize their photos, let alone to find the time to print and share them. That's where Picplum comes in - it's the hassle-free way to share your best moments with friends and family.",
+      "website": "http://picplum.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "founders": [
+        "Akshay Dodeja",
+        "Paul Stamatiou"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2011-08-02",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2011-08-02",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 3614701,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 6,
+      "includedUniqueCount": 6,
+      "items": [
+        {
+          "date": "2013-01-14",
+          "publisher": "TechCrunch",
+          "title": "YC-Backed Photo-Sharing Service PicPlum Loses One Co-Founder To Twitter, Development To Continue In Other’s “Spare Time”",
+          "url": "http://techcrunch.com/2013/01/14/yc-backed-photo-sharing-service-picplum-loses-one-co-founder-to-twitter-development-to-continue-in-others-spare-time/"
+        },
+        {
+          "date": "2012-12-04",
+          "publisher": "The Next Web",
+          "title": "Kicksend Updates Mobile App, Adds CVS and Target To Printing Locations",
+          "url": "http://thenextweb.com/apps/2012/12/04/kicksend-has-unlimited-photo-sharing-and-partners-with-cvs-target/"
+        },
+        {
+          "date": "2012-08-16",
+          "publisher": "Xconomy",
+          "title": "Point, Shoot, Print: Picplum Aims to Make Photo Printing Effortless | Xconomy",
+          "url": "http://www.xconomy.com/san-francisco/2012/08/16/point-shoot-print-picplum-aims-to-make-photo-printing-effortless/"
+        },
+        {
+          "date": "2012-08-05",
+          "publisher": "TechCrunch",
+          "title": "First-Time Startup Entrepreneurs: Stop Fucking Around",
+          "url": "http://techcrunch.com/2012/08/05/first-time-startup-entrepreneurs-stop-fucking-around/"
+        },
+        {
+          "date": "2011-08-25",
+          "publisher": "Xconomy",
+          "title": "Y Combinator's Summer 2011 Demo Day: The Definitive Debrief, Part 2 | Xconomy",
+          "url": "http://www.xconomy.com/san-francisco/2011/08/25/y-combinators-summer-2011-demo-day-the-definitive-debrief-part-2/"
+        },
+        {
+          "date": "2011-08-02",
+          "title": "Seed Round - Picplum"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 0,
+      "growthScore": 1,
+      "heatChange90Days": -1,
+      "heatScore": 34
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2025-01-11",
+        "probabilityPercent": 93.81
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $3,614,701 to $3,614,701, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 1 (+0 over 90 days) and market heat at 34 (-1).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

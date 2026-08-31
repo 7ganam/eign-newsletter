@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:50:38.761Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:50:38.710Z",
+    "url": "https://www.crunchbase.com/organization/parley"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Parley",
+      "shortDescription": "Parley's cloud-based application helps enterprise sales and sourcing teams agree faster, by centralizing the contract negotiation process.",
+      "website": "http://www.goparley.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "industries": [
+        "CRM",
+        "Information Technology",
+        "Small and Medium Businesses"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Other",
+        "Sales and Marketing",
+        "Software"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2019-10-28",
+          "publisher": "Forbes",
+          "title": "Katharina Grosse Rides The Wave With Parley For The Oceans",
+          "url": "https://www.forbes.com/sites/barrysamaha/2019/10/28/katharina-grosse-rides-the-wave-with-parley-for-the-oceans/"
+        },
+        {
+          "date": "2017-05-17",
+          "title": "Corona y Parley for the Oceans anuncian alianza global para hacer frente a la contaminación marina por plástico",
+          "url": "http://www.prnewswire.com/news-releases/corona-y-parley-for-the-oceans-anuncian-alianza-global-para-hacer-frente-a-la-contaminacion-marina-por-plastico-622692554.html"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -23,
+      "heatScore": 10
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

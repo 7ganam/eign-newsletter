@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:04:13.235Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:04:13.185Z",
+    "url": "https://www.crunchbase.com/organization/safebase"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Safebase",
+      "shortDescription": "Safebase interprets and analyses large data to improve operations through big data, machine learning and artificial intelligence.",
+      "website": "https://safebase.no/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Trondheim, Sor-Trondelag, Norway",
+      "geographicRegions": [
+        "Nordic Countries",
+        "Scandinavia",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Big Data",
+        "Machine Learning"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 7,
+      "includedUniqueCount": 7,
+      "items": [
+        {
+          "date": "2023-11-15",
+          "publisher": "Newswire",
+          "title": "SafeBase Announces New AI Capabilities to Diminish the Burden of Security Questionnaires",
+          "url": "https://www.newswire.com/news/safebase-announces-new-ai-capabilities-to-diminish-the-burden-of-22172072"
+        },
+        {
+          "date": "2022-05-17",
+          "publisher": "The Harbus -",
+          "title": "HBS Alumni Startup Corner: Spring Funding Update",
+          "url": "https://harbus.org/2022/hbs-alumni-startup-corner-spring-funding-update/"
+        },
+        {
+          "date": "2022-03-10",
+          "publisher": "PR Newswire",
+          "title": "SafeBase, Inc. Raises $18 Million Series A Round to Develop Security Trust Centers for Companies",
+          "url": "https://www.prnewswire.com/news-releases/safebase-inc-raises-18-million-series-a-round-to-develop-security-trust-centers-for-companies-301499643.html"
+        },
+        {
+          "date": "2022-03-10",
+          "publisher": "nea.com",
+          "title": "SafeBase: The elegant Smart Trust Center that revolutionizes security & compliance reviews",
+          "url": "https://www.nea.com/blog/safebase-the-elegant-smart-trust-center-that-revolutionizes-security-compliance-reviews"
+        },
+        {
+          "date": "2022-03-10",
+          "publisher": "VC News Daily",
+          "title": "SafeBase Announces $18M Series A Round",
+          "url": "https://vcnewsdaily.com/safebase/venture-capital-funding/ccmdflwsxs"
+        },
+        {
+          "date": "2022-03-10",
+          "publisher": "TechCrunch",
+          "title": "SafeBase bags $18M Series A to speed up vendor security auditing process",
+          "url": "https://techcrunch.com/2022/03/10/safebase-bags-18m-series-a-to-speed-up-vendor-security-auditing-process/"
+        },
+        {
+          "date": "2021-09-22",
+          "publisher": "PR Newswire",
+          "title": "Deliver Third-Party Risk Updates Straight to Customer Inboxes with SafeBase!",
+          "url": "https://www.prnewswire.com/news-releases/deliver-third-party-risk-updates-straight-to-customer-inboxes-with-safebase-301382026.html"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 0,
+      "growthScore": 83,
+      "heatChange90Days": -4,
+      "heatScore": 35
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 87.44
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 83 (+0 over 90 days) and market heat at 35 (-4).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

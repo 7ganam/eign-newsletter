@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:05:43.193Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:05:43.141Z",
+    "url": "https://www.crunchbase.com/organization/playably"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "PlayAbly",
+      "shortDescription": "PlayAbly provides gamified marketing software that turns ecommerce and B2B touchpoints into playable experiences for acquisition and loyalty",
+      "description": "PlayAbly develops a gamification platform that merges mobile game mechanics with marketing and ecommerce workflows. The company provides a no-code engine for brands to deploy quizzes, match-3 games, swipe interfaces, digital calendars, and other shoppable games across websites, funnels, and campaigns. Its Gamified Rebates system adds conditional refund promotions funded and administered by PlayAbly, while PlayAbly Ads and on-site games extend these experiences into paid media and lifecycle channels. The software is designed to capture email and SMS opt-ins, reveal shopper intent, and collect first-party behavioral data. PlayAbly serves direct-to-consumer retailers, B2B companies, and other brands that want interactive alternatives to static popups, generic forms, and traditional discount offers.",
+      "website": "https://www.playably.ai/",
+      "foundedYear": 2024,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "industries": [
+        "Advertising Platforms",
+        "Customer Service",
+        "Data Collection and Labeling",
+        "Digital Marketing",
+        "E-Commerce Platforms",
+        "Gamification",
+        "Marketing Automation",
+        "Mobile",
+        "SaaS",
+        "Software"
+      ],
+      "sectors": [
+        "Advertising",
+        "Commerce and Shopping",
+        "Data and Analytics",
+        "Gaming",
+        "Internet Services",
+        "Mobile",
+        "Professional Services",
+        "Sales and Marketing",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A gamification platform that lets brands deploy shoppable games, quizzes, and interactive layers across ecommerce and marketing funnels.",
+        "name": "PlayAbly Platform"
+      },
+      {
+        "description": "A promotion system where purchases are tied to conditional refund events funded and administered by PlayAbly.",
+        "name": "Gamified Rebates"
+      },
+      {
+        "description": "A backend engine that manages verification, tracking, and payout of conditional rebate promotions tied to purchases.",
+        "name": "Gamified Rebates System"
+      },
+      {
+        "description": "Configurable calendar-based game experiences that reveal daily rewards or content for seasonal and promotional campaigns.",
+        "name": "Digital Advent Calendars"
+      },
+      {
+        "description": "A playable ad service that turns games into interactive ad units for acquisition and retargeting campaigns.",
+        "name": "PlayAbly Ads"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2026-06-29",
+          "publisher": "PR Newswire",
+          "title": "Forme® Science Becomes the First E-Commerce Brand to Hedge Risk on Kalshi",
+          "url": "https://www.prnewswire.com/news-releases/forme-science-becomes-the-first-e-commerce-brand-to-hedge-risk-on-kalshi-302813604.html"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 70,
+      "heatScore": 70
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 33.8
+      },
+      "growth": {
+        "generatedDate": "2026-06-13",
+        "probabilityPercent": 95.34
+      },
+      "ipo": {
+        "generatedDate": "2026-08-15",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

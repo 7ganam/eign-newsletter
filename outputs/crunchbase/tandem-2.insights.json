@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:12:45.190Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:12:45.132Z",
+    "url": "https://www.crunchbase.com/organization/tandem-2"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Tandem",
+      "shortDescription": "Tandem is a boutique law and business advisory firm for entrepreneurial growth companies.",
+      "website": "http://www.tndm.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$500M-$1B",
+      "headquarters": "Washington, District of Columbia, United States",
+      "geographicRegions": [
+        "Washington DC Metro Area",
+        "Southern US"
+      ],
+      "industries": [
+        "Consulting",
+        "Venture Capital"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Lending and Investments",
+        "Professional Services"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Provides strategic advice to innovative companies aiming to scale their business and accelerate growth.",
+        "name": "Business Advisory"
+      },
+      {
+        "description": "Delivers tailored marketing support to help businesses identify and capitalize on growth opportunities.",
+        "name": "Marketing Services"
+      },
+      {
+        "description": "Offers operational support to optimize business processes and support scaling efforts for growth companies.",
+        "name": "Operations Services"
+      },
+      {
+        "description": "Provides financial advisory and management services to support business growth and scaling strategies.",
+        "name": "Finance Services"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -24,
+      "heatScore": 49
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 78.43
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Kahn is a CPA firm that offers professional accounting, financial consulting and tax services.",
+          "employeeRange": "1-10",
+          "name": "Kahn",
+          "sharedCategories": [
+            "Consulting"
+          ],
+          "sharedSpecialties": [
+            "Fractional CFO Services"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "StrategyDriven Enterprises provides business planning, tactical execution practice, and consulting services.",
+          "employeeRange": "11-50",
+          "name": "StrategyDriven Enterprises",
+          "sharedCategories": [
+            "Consulting"
+          ],
+          "sharedSpecialties": [
+            "Strategy Consulting",
+            "Operational Excellence Consulting"
+          ],
+          "similarityScore": 92.467
+        },
+        {
+          "description": "The Becket Group is a management consulting company that offers business development, financial strategy, and capital-raising services.",
+          "employeeRange": "1-10",
+          "name": "The Becket Group",
+          "sharedCategories": [
+            "Consulting"
+          ],
+          "sharedSpecialties": [
+            "Fractional CFO Services",
+            "Go-to-Market and Launch Services",
+            "Strategy Consulting"
+          ],
+          "similarityScore": 87.511
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Kahn, StrategyDriven Enterprises, The Becket Group.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

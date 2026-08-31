@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:16:51.468Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:16:51.416Z",
+    "url": "https://www.crunchbase.com/organization/prequel"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Prequel",
+      "shortDescription": "Prequel backpack protects your valuables while you are on a mission.",
+      "description": "Prequel backpack protects your valuables while you are on a mission.",
+      "website": "http://safe.prequelbags.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Kyiv, Kyyiv, Ukraine",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Fashion",
+        "Hardware"
+      ],
+      "sectors": [
+        "Clothing and Apparel",
+        "Design",
+        "Hardware"
+      ],
+      "founders": [
+        "Maxim Parkhomenko"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2021-07-06",
+          "publisher": "Tech News | Startups News",
+          "title": "Prequel launches a $100M Venture Studio Program to invest in creators and early-stage tech startups",
+          "url": "https://techstartups.com/2021/07/06/prequel-launches-100-million-venture-studio-program-invest-creators-early-stage-tech-startups-ai-computer-vision-ar-based-visual-art/"
+        },
+        {
+          "date": "2021-04-17",
+          "publisher": "techblogwriter.co.uk",
+          "title": "1551: PREQUEL, The Aesthetic Editor Enhancing Human Creativity",
+          "url": "https://techblogwriter.co.uk/prequel/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 5,
+      "heatScore": 17
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

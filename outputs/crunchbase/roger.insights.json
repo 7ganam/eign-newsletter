@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:59:27.119Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:59:27.065Z",
+    "url": "https://www.crunchbase.com/organization/roger"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Roger",
+      "shortDescription": "Roger is a smartphone application that enables user to exchange information with people they just met.",
+      "description": "Roger is a smartphone application that enables user to exchange information with people they just met. Users can network effectively at events and meetups without the need for business cards, emails, and notes.\n\nRoger is available for download at the Appstore.",
+      "website": "http://meetroger.com/",
+      "foundedYear": 2016,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Antwerp, Antwerpen, Belgium",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Apps",
+        "Information Technology"
+      ],
+      "sectors": [
+        "Apps",
+        "Information Technology",
+        "Software"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 5,
+      "includedUniqueCount": 5,
+      "items": [
+        {
+          "date": "2018-09-07",
+          "publisher": "Hollywood Report",
+          "title": "Toronto: Michael Moore's 'Fahrenheit 11/9' Could Divide Academy's Doc Branch",
+          "url": "https://www.hollywoodreporter.com/race/toronto-michael-moores-fahrenheit-11-9-could-divide-academys-doc-branch-1140752"
+        },
+        {
+          "date": "2018-09-07",
+          "publisher": "Toronto Sun",
+          "title": "Ex claims director Michael Moore owes her boffo bucks",
+          "url": "https://torontosun.com/entertainment/celebrity/ex-claims-director-michael-moore-owes-her-boffo-bucks"
+        },
+        {
+          "date": "2018-09-05",
+          "publisher": "Detroit Free Press",
+          "title": "Michael Moore bringing 'Fahrenheit 11/9' sneak peek to Flint hometown",
+          "url": "https://www.freep.com/story/entertainment/movies/julie-hinds/2018/09/05/michael-moore-fahhrenheit-11-9-flint-trump-movie/1206302002/"
+        },
+        {
+          "date": "2018-09-05",
+          "publisher": "Hollywood Report",
+          "title": "Michael Moore Calls Donald Trump \"One of the Great Performance Artists of Our Time\"",
+          "url": "https://www.hollywoodreporter.com/news/michael-moore-recalls-first-meeting-donald-trump-watch-1139756"
+        },
+        {
+          "date": "2018-05-31",
+          "publisher": "The Guardian",
+          "title": "Michael Moore working on 'secret project' targeting Trump and Roseanne",
+          "url": "https://www.theguardian.com/film/2018/may/30/michael-moore-trump-roseanne-barr-secret-project"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -10,
+      "heatScore": 38
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 77.5
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

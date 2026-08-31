@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:42:50.509Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:42:50.456Z",
+    "url": "https://www.crunchbase.com/organization/reformer-therapeutics"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Perception Biosystems",
+      "shortDescription": "Perception Biosystems accelerates the clinical translation of gene therapies by reinventing their development and manufacturing.",
+      "description": "Perception Biosystems accelerates the clinical translation of gene therapies by reinventing their development and manufacturing. The company develops manufacturing systems that enable production of gene therapies faster and cheaper than the current solution.\n\nPerception Biosystems manufacturing enables faster, higher-quality pre-clinical research, and clinical trials.",
+      "website": "https://perception.bio/",
+      "foundedYear": 2018,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Palo Alto, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Biotechnology",
+        "Medical",
+        "Therapeutics"
+      ],
+      "sectors": [
+        "Biotechnology",
+        "Health Care",
+        "Science and Engineering"
+      ],
+      "founders": [
+        "Elizabeth Iorns",
+        "Omid Karkouti"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2018-08-05",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2018-08-05",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2018-08-05",
+          "title": "Seed Round - Perception Biosystems"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -19,
+      "heatScore": 34
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Forge Biologics is a gene therapy development engine, enabling access to life changing gene therapy programs.",
+          "employeeRange": "251-500",
+          "name": "Forge Biologics",
+          "sharedCategories": [
+            "Therapeutics",
+            "Biotechnology",
+            "Medical"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Oxford BioMedica is a pioneer of gene and cell therapy, with a leading industry position in lentiviral vector and cell therapy research.",
+          "employeeRange": "501-1,000",
+          "name": "Oxford BioMedica",
+          "sharedCategories": [
+            "Therapeutics",
+            "Biotechnology"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Resilience is a biomanufacturing company that provides access to complex medicines and protects biopharmaceutical supply chains.",
+          "employeeRange": "1,001-5,000",
+          "name": "Resilience",
+          "sharedCategories": [
+            "Biotechnology"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Catalent - Blow-Fill-Seal Sterile CDMO Business is focusing on complex clinical to commercial stage formulation and manufacturing.",
+          "employeeRange": "10,001+",
+          "name": "Catalent",
+          "sharedCategories": [
+            "Biotechnology"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "It is a regenerative medicine company.",
+          "employeeRange": "251-500",
+          "name": "BlueRock Therapeutics",
+          "sharedCategories": [
+            "Biotechnology",
+            "Medical"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $120,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Forge Biologics, Oxford BioMedica, Resilience.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

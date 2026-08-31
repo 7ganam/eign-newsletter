@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:03:46.219Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:03:46.159Z",
+    "url": "https://www.crunchbase.com/organization/naive"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Naive",
+      "shortDescription": "Naive offers business consultancy services such as organizational, human capital management, strategic and application consultancy.",
+      "website": "http://naive-cs.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Milano, Lombardia, Italy",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Consulting",
+        "Human Resources",
+        "Management Consulting"
+      ],
+      "sectors": [
+        "Administrative Services",
+        "Professional Services"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Provides organizational, process, and management consulting services focused on human capital management and strategic planning.",
+        "name": "Business Consultancy"
+      },
+      {
+        "description": "Offers consultancy on application systems related to human capital management, including SAP HCM, Oracle Fusion HCM, and SuccessFactors integration.",
+        "name": "Application Consultancy"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 3,
+      "growthScore": 91,
+      "heatChange90Days": 6,
+      "heatScore": 92
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 82.24
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Konk Consulting develops software solutions for HR like SAPHCM, SAP HANA, SAP Portal, BPM, along with mobile apps & system integration.",
+          "employeeRange": "11-50",
+          "name": "Konk Consulting",
+          "sharedCategories": [
+            "Human Resources"
+          ],
+          "sharedSpecialties": [
+            "Human Resource Information Systems",
+            "Human Resources Consulting"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Xpert:is consulting provides SAP consulting solutions.",
+          "employeeRange": "1-10",
+          "name": "Xpert:is consulting",
+          "sharedSpecialties": [
+            "Human Resource Information Systems",
+            "Time and Attendance Management",
+            "Human Resources Consulting",
+            "ERP Consulting"
+          ],
+          "similarityScore": 94.33
+        },
+        {
+          "description": "HR Force engages in human resources and consulting services.",
+          "employeeRange": "11-50",
+          "name": "HR Force",
+          "sharedCategories": [
+            "Human Resources",
+            "Consulting"
+          ],
+          "sharedSpecialties": [
+            "Health Benefits Administration",
+            "Human Resource Information Systems",
+            "Time and Attendance Management",
+            "Compensation and Benefits Consulting",
+            "Human Resources Consulting"
+          ],
+          "similarityScore": 89.744
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 91 (+3 over 90 days) and market heat at 92 (+6).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Konk Consulting, Xpert:is consulting, HR Force.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

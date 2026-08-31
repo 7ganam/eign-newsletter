@@ -1,0 +1,535 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:30:42.905Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:30:42.850Z",
+    "url": "https://www.crunchbase.com/organization/quiknode"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Quicknode",
+      "shortDescription": "#1 Blockchain Infrastructure Platform. Learn, Build, and Scale Onchain.",
+      "description": "QuickNode is a blockchain infrastructure platform that supplies developers and enterprises with tools to build, scale, and maintain Web3 applications. It offers APIs and access endpoints (RPC/REST/WebSocket) across 60+ blockchains and 100+ networks, including full-node and archive-node options depending on the use case. The platform includes developer-friendly features such as Streams for real-time data delivery, Functions (serverless edge code) to respond to on-chain events and transform blockchain data without managing infrastructure, QuickAlerts / Webhooks for being notified of smart contract events, and a Marketplace of add-ons and tools to extend functionality.",
+      "website": "https://www.quicknode.com/",
+      "foundedYear": 2017,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "101-250",
+      "estimatedRevenueRange": "$10M-$50M",
+      "headquarters": "Miami, Florida, United States",
+      "geographicRegions": [
+        "Greater Miami Area",
+        "East Coast",
+        "Southern US"
+      ],
+      "industries": [
+        "Blockchain",
+        "Developer Tools",
+        "Ethereum",
+        "Internet",
+        "Web3"
+      ],
+      "sectors": [
+        "Blockchain and Cryptocurrency",
+        "Information Technology",
+        "Internet Services",
+        "Software"
+      ],
+      "founders": [
+        "Alexander Nabutovsky",
+        "Auston Bunsen",
+        "Dmitry Shklovsky",
+        "Manuel Kreutz"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Managed, low-latency blockchain node access across 83+ chains and 140+ networks, including full and archive data for reading chain state and submitting transactions.",
+        "name": "Core RPC API"
+      },
+      {
+        "description": "Private, isolated blockchain infrastructure for predictable performance, high-throughput workloads, uptime SLAs, and business-critical traffic.",
+        "name": "Dedicated Clusters"
+      },
+      {
+        "description": "A blockchain data pipeline for ingesting live events, applying filters and transformations, handling reorganizations, and delivering historical or real-time data to external destinations.",
+        "name": "Streams"
+      },
+      {
+        "description": "A SQL interface for querying indexed blockchain data, including more than 500 billion rows of Hyperliquid trading data through a dashboard or REST API.",
+        "name": "SQL Explorer"
+      },
+      {
+        "description": "An API for integrating token-swap execution across swap providers, with managed routing and transaction delivery for production trading applications.",
+        "name": "Swap API"
+      },
+      {
+        "description": "A low-latency gRPC service for streaming Solana blockchain data, including transactions and other events for latency-sensitive applications.",
+        "name": "Solana gRPC"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 101900000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 9,
+      "detailedRoundCount": 9,
+      "lastFundingDate": "2024-01-01",
+      "lastFundingType": "Secondary Market",
+      "rounds": [
+        {
+          "announcedDate": "2024-01-01",
+          "investorCount": 1,
+          "type": "Secondary Market"
+        },
+        {
+          "announcedDate": "2023-11-07",
+          "investorCount": 1,
+          "leadInvestors": [
+            "LG Technology Ventures"
+          ],
+          "postMoneyValuation": {
+            "amount": 753418262,
+            "currency": "USD"
+          },
+          "type": "Venture round"
+        },
+        {
+          "announcedDate": "2023-01-24",
+          "amount": {
+            "amount": 60000000,
+            "currency": "USD"
+          },
+          "investorCount": 6,
+          "leadInvestors": [
+            "50T Funds"
+          ],
+          "postMoneyValuation": {
+            "amount": 800000000,
+            "currency": "USD"
+          },
+          "type": "Series B"
+        },
+        {
+          "announcedDate": "2022-05-01",
+          "amount": {
+            "amount": 1100000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2021-10-27",
+          "amount": {
+            "amount": 35000000,
+            "currency": "USD"
+          },
+          "investorCount": 8,
+          "leadInvestors": [
+            "Tiger Global Management"
+          ],
+          "postMoneyValuation": {
+            "amount": 178485667,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2021-05-27",
+          "amount": {
+            "amount": 5300000,
+            "currency": "USD"
+          },
+          "investorCount": 9,
+          "leadInvestors": [
+            "Seven Seven Six"
+          ],
+          "postMoneyValuation": {
+            "amount": 35726034,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2021-01-28",
+          "investorCount": 3,
+          "leadInvestors": [
+            "SoftBank"
+          ],
+          "postMoneyValuation": {
+            "amount": 17355193,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2019-04-11",
+          "amount": {
+            "amount": 250000,
+            "currency": "USD"
+          },
+          "postMoneyValuation": {
+            "amount": 4609611,
+            "currency": "USD"
+          },
+          "type": "Angel"
+        },
+        {
+          "announcedDate": "2018-09-11",
+          "amount": {
+            "amount": 250000,
+            "currency": "USD"
+          },
+          "postMoneyValuation": {
+            "amount": 2728850,
+            "currency": "USD"
+          },
+          "type": "Angel"
+        }
+      ],
+      "investors": {
+        "reportedCount": 22,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "50T Funds",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Antenna Ventures",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "IPOSharks",
+            "rounds": [
+              "Secondary Market"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "LG Technology Ventures",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "Lightspeed Venture Partners"
+          },
+          {
+            "name": "Oldslip",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Protocol Labs",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "QED Investors",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Seven Seven Six",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "The Garage Syndicate",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Tiger Global Management",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Tribe Capital"
+          },
+          {
+            "name": "Y Combinator"
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 61,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-06-23",
+          "publisher": "Benzinga.com",
+          "title": "Quicknode Co-Founder: Blockchain Is The Brawn Behind Agentic AI, Not The Brain",
+          "url": "https://www.benzinga.com/Opinion/26/06/60039242/quicknode-co-founder-blockchain-is-the-brawn-behind-agentic-ai-not-the-brain"
+        },
+        {
+          "date": "2026-04-28",
+          "publisher": "PANews",
+          "title": "OKX Onchain OS 发布 Agent Payments Protocol，推动 AI Agent 商业能力升级"
+        },
+        {
+          "date": "2026-04-20",
+          "publisher": "PANews",
+          "title": "Coinbase孵化的x402协议推出AI代理应用商店Agent.market"
+        },
+        {
+          "date": "2026-02-11",
+          "publisher": "Tech Startups - Tech News, Tech Trends & Startup Funding",
+          "title": "Apptronik raises $520M at $5B valuation to bring humanoid robots to market ahead of Tesla",
+          "url": "https://techstartups.com/2026/02/11/apptronik-raises-520m-at-5b-valuation-to-bring-humanoid-robots-to-market-ahead-of-tesla/"
+        },
+        {
+          "date": "2025-11-25",
+          "publisher": "Cointelegraph",
+          "title": "Three forces reshaping the future of Web3 infra — Interview with Quicknode",
+          "url": "https://cointelegraph.com/news/three-forces-reshaping-the-future-of-web3-infra-interview-with-quicknode"
+        },
+        {
+          "date": "2025-10-28",
+          "publisher": "FoundersToday",
+          "title": "AccessGrid bags $4.4M to bring Digital Key Access to every Door",
+          "url": "https://www.founderstoday.news/accessgrid-bags-over-4m-in-funding/"
+        },
+        {
+          "date": "2025-10-13",
+          "publisher": "Cointelegraph",
+          "title": "Hyperliquid now allows anyone to deploy perpetual futures — for a price",
+          "url": "https://cointelegraph.com/news/hyperliquid-now-allows-builders-to-deploy-perpetual-futures-contracts"
+        },
+        {
+          "date": "2025-09-26",
+          "publisher": "Cointelegraph",
+          "title": "LYS Labs moves beyond data and aims to become the operating system for automated global finance",
+          "url": "https://cointelegraph.com/press-releases/lys-labs-moves-beyond-data-and-aims-to-become-the-operating-system-for-automated-global-finance"
+        },
+        {
+          "date": "2025-09-26",
+          "publisher": "Tech Startups - Startups and Technology news",
+          "title": "LYS Labs Moves Beyond Data and Aims to Become the Operating System for Automated Global Finance",
+          "url": "https://techstartups.com/2025/09/26/lys-labs-moves-beyond-data-and-aims-to-become-the-operating-system-for-automated-global-finance/"
+        },
+        {
+          "date": "2025-09-26",
+          "publisher": "Tech Startups - Startups and Technology news",
+          "title": "Dexari Unveils $1M Cash Prize Trading Competition",
+          "url": "https://techstartups.com/2025/09/26/dexari-unveils-1m-cash-prize-trading-competition/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 6,
+    "knownDetailedFundingAmount": {
+      "amount": 101900000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestToEarliestKnownValuationMultiple": 276.09
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "reportedPartnerships": {
+      "note": "Provider event summaries with linked sources; not independently verified.",
+      "items": [
+        {
+          "date": "2025-02-05",
+          "description": "The partnership involves using QuickNode Rollups and Polygon CDK to enhance transaction processing capabilities and scalability for Fuse Network.",
+          "sources": [
+            {
+              "date": "2025-02-05",
+              "publisher": "Cointelegraph",
+              "title": "QuickNode partners with Fuse to launch the industry's first Layer 2 for businesses powered by Polygon CDK",
+              "url": "https://cointelegraph.com/press-releases/quicknode-partners-with-fuse-to-launch-the-industrys-first-layer-2-for-businesses-powered-by-polygon-cdk"
+            }
+          ]
+        }
+      ]
+    },
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2024-06-25",
+      "growthChange90Days": -4,
+      "growthScore": 32,
+      "heatChange90Days": -6,
+      "heatScore": 53,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.23
+      },
+      "funding": {
+        "generatedDate": "2025-10-04",
+        "probabilityPercent": 89.95,
+        "timingEstimatePercent": {
+          "within6Months": 100,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2025-05-11",
+        "probabilityPercent": 95.29
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 35.61
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Paradigm is a research-driven technology investment firm.",
+          "employeeRange": "101-250",
+          "name": "Paradigm",
+          "sharedCategories": [
+            "Blockchain"
+          ],
+          "sharedSpecialties": [
+            "Ethereum Analytics Platforms"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Chainlink is a web3 services platform that connects people, businesses, and data to the blockchain.",
+          "employeeRange": "501-1,000",
+          "name": "Chainlink",
+          "sharedCategories": [
+            "Blockchain",
+            "Internet",
+            "Web3"
+          ],
+          "sharedSpecialties": [
+            "Blockchain Gaming",
+            "Crypto Custody and Wallets",
+            "Developer Portals"
+          ],
+          "similarityScore": 95.443
+        },
+        {
+          "description": "Polygon is a platform for Ethereum scaling and infrastructure development.",
+          "employeeRange": "1-10",
+          "name": "Polygon",
+          "sharedCategories": [
+            "Blockchain",
+            "Ethereum",
+            "Web3"
+          ],
+          "sharedSpecialties": [
+            "API Integration",
+            "Layer 2 Payment Networks",
+            "Developer Portals"
+          ],
+          "similarityScore": 90.882
+        },
+        {
+          "description": "Stellar Development Foundation supports the development and growth of Stellar, a blockchain network that connects financial infrastructure.",
+          "employeeRange": "101-250",
+          "name": "Stellar Development Foundation",
+          "sharedCategories": [
+            "Blockchain"
+          ],
+          "sharedSpecialties": [
+            "SDK Management"
+          ],
+          "similarityScore": 86.227
+        },
+        {
+          "description": "BlockDAG is a layer1 blockchain company.",
+          "employeeRange": "11-50",
+          "name": "BlockDAG",
+          "sharedCategories": [
+            "Blockchain",
+            "Web3"
+          ],
+          "sharedSpecialties": [
+            "Ethereum Analytics Platforms",
+            "Blockchain Gaming"
+          ],
+          "similarityScore": 81.466
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $2,728,850 to $753,418,262, a 276.09x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 32 (-4 over 90 days) and market heat at 53 (-6).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Paradigm, Chainlink, Polygon.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 61 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

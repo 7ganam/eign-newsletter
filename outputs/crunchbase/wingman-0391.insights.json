@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:22:14.335Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:22:14.290Z",
+    "url": "https://www.crunchbase.com/organization/wingman-0391"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Wingman",
+      "shortDescription": "Wingman offers software solutions for digital marketing and web development, supporting business growth.",
+      "description": "Wingman DX provides strategic digital transformation services, focusing on AI integration, marketing strategies, brand development, and web design. Their approach includes offering fractional executive services such as Chief Digital Officer, Chief AI Officer, Chief Marketing Officer, and Chief Branding Officer to assist businesses in implementing digital tools, automating processes, and enhancing customer engagement. Wingman DX also supports clients in securing government funding to offset planning and execution costs. Their services encompass AI and automation strategies, data analytics, CRM optimization, SEO, content marketing, paid advertising, brand positioning, visual identity, and custom website development. By aligning technology, branding, marketing, and web development, Wingman DX aims to help businesses improve operational efficiency and drive growth.",
+      "website": "https://www.wmdm.ca/",
+      "foundedYear": 2016,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Calgary, Alberta, Canada",
+      "industries": [
+        "Digital Marketing",
+        "Software",
+        "Web Design"
+      ],
+      "sectors": [
+        "Design",
+        "Sales and Marketing",
+        "Software"
+      ],
+      "founders": [
+        "David Daigle"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A consulting service that helps businesses plan and implement AI and digital technologies to transform their operations.",
+        "name": "AI & Digital Transformation Strategy"
+      },
+      {
+        "description": "A service that develops plans to improve marketing and sales efforts to support business growth.",
+        "name": "Marketing & Sales Strategy"
+      },
+      {
+        "description": "A service that helps businesses define and develop their brand identity and positioning.",
+        "name": "Brand & Branding Strategy"
+      },
+      {
+        "description": "A service providing the creation and maintenance of websites to support business objectives.",
+        "name": "Web Design & Development"
+      },
+      {
+        "description": "A service that implements specific marketing activities and campaigns to achieve business goals.",
+        "name": "Marketing Tactics Execution"
+      },
+      {
+        "description": "A service that helps businesses identify and apply for grants and funding opportunities.",
+        "name": "Grants / Funding Assistance"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -20,
+      "heatScore": 34
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 32.45
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 56.41
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 16.13
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "BlueHatMarketing is engaging in website design and development,search engine optimization and online marketing located in Montreal.",
+          "employeeRange": "11-50",
+          "name": "BlueHat Marketing",
+          "sharedCategories": [
+            "Web Design"
+          ],
+          "sharedSpecialties": [
+            "Web Design and Development",
+            "Landing Page Design"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Major Tom is a full services digital agency offering strategy, creative, marketing and development.",
+          "employeeRange": "51-100",
+          "name": "Major Tom",
+          "sharedCategories": [
+            "Digital Marketing",
+            "Web Design"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Friendly Canadian search engine marketers, working with small through enterprise brands.",
+          "employeeRange": "51-100",
+          "name": "Search Engine People",
+          "sharedCategories": [
+            "Web Design"
+          ],
+          "sharedSpecialties": [
+            "Landing Page Design"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Content Creation, Digital Marketing, Viral Promotion, Website Design & Development",
+          "employeeRange": "11-50",
+          "name": "func.media",
+          "sharedCategories": [
+            "Digital Marketing"
+          ],
+          "sharedSpecialties": [
+            "Marketing Strategy"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Digital Main Street is a provider of digital products and services for businesses.",
+          "employeeRange": "11-50",
+          "name": "Digital Main Street",
+          "sharedCategories": [
+            "Digital Marketing"
+          ],
+          "similarityScore": 83
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include BlueHat Marketing, Major Tom, Search Engine People.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

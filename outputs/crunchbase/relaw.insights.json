@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:44:30.899Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:44:30.857Z",
+    "url": "https://www.crunchbase.com/organization/relaw"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "RELAW",
+      "shortDescription": "RELAW is a law firm that provides escrow, brokerage, and real estate agreements, estate planning, and dispute resolution services.",
+      "website": "https://www.relawapc.com/",
+      "foundedYear": 2015,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$10M-$50M",
+      "headquarters": "Westlake Village, California, United States",
+      "geographicRegions": [
+        "Greater Los Angeles Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Consulting",
+        "Legal",
+        "Wealth Management"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Professional Services"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Legal services related to escrow and title for real estate transactions, ensuring proper handling and transfer of property ownership.",
+        "name": "Escrow and Title Services"
+      },
+      {
+        "description": "Legal support for subdivision projects, including regulatory compliance and documentation for land development.",
+        "name": "Subdivision Services"
+      },
+      {
+        "description": "Legal services for estate planning and probate to manage asset distribution and administration after death.",
+        "name": "Estate Planning and Probate Services"
+      },
+      {
+        "description": "Legal representation and resolution services for disputes related to real estate transactions and property rights.",
+        "name": "Real Estate Dispute Resolution"
+      },
+      {
+        "description": "Preparation of legal documents related to real estate transactions and agreements.",
+        "name": "Real Estate Document Preparation"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -6,
+      "heatScore": 55
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 74.32
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Fidelity National Title Group is a provider of real estate insurance services.",
+          "employeeRange": "10,001+",
+          "name": "Fidelity National Title Group",
+          "sharedCategories": [
+            "Legal"
+          ],
+          "sharedSpecialties": [
+            "Notary and Attestation Services",
+            "Title Insurance",
+            "Land Records Management"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "First American provides financial services through its Title Insurance and Services segment and its Specialty Insurance segment.",
+          "employeeRange": "10,001+",
+          "name": "First American",
+          "sharedCategories": [
+            "Wealth Management"
+          ],
+          "sharedSpecialties": [
+            "Title Insurance",
+            "Land Records Management",
+            "Title and Escrow Services"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Provide title insurance policies and related real estate transaction and mortgage lending products and services to individual consumers.",
+          "employeeRange": "1,001-5,000",
+          "name": "Old Republic Title Insurance Group",
+          "sharedSpecialties": [
+            "Notary and Attestation Services",
+            "Title Insurance",
+            "Land Records Management",
+            "Title and Escrow Services"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "Stewart Title is a global real estate services company.",
+          "employeeRange": "5,001-10,000",
+          "name": "Stewart Title",
+          "sharedCategories": [
+            "Legal"
+          ],
+          "sharedSpecialties": [
+            "Notary and Attestation Services",
+            "Title Insurance",
+            "Land Records Management",
+            "Title and Escrow Services"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Doma is an insurtech platform that uses machine intelligence to remove friction from residential real estate transactions.",
+          "employeeRange": "1,001-5,000",
+          "name": "Doma",
+          "sharedSpecialties": [
+            "Title Insurance",
+            "Land Records Management",
+            "Title and Escrow Services"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Fidelity National Title Group, First American, Old Republic Title Insurance Group.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:22:51.333Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:22:51.279Z",
+    "url": "https://www.crunchbase.com/organization/proxino"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Proxino",
+      "shortDescription": "Proxino is a cloud platform for monitoring and debugging client-side JavaScript.",
+      "description": "Proxino is a cloud platform for monitoring and debugging client-side JavaScript.",
+      "website": "http://www.proxino.com/",
+      "foundedYear": 2011,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Menlo Park, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Cloud Infrastructure",
+        "Enterprise Software",
+        "Information Technology",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Internet Services",
+        "Software"
+      ],
+      "founders": [
+        "Ethan Fast",
+        "Muzzammil Zaveri"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2011-08-02",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2011-08-02",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2015-10-13",
+          "publisher": "KPCB",
+          "title": "Welcoming New KPCB Partners",
+          "url": "http://kpcb.com/blog/letter-to-lps"
+        },
+        {
+          "date": "2011-08-22",
+          "publisher": "TechCrunch",
+          "title": "YC-Funded Proxino: Automated Error Reporting For Your Client-Side&nbsp;JavaScript",
+          "url": "http://techcrunch.com/2011/08/22/yc-funded-proxino-automated-error-reporting-for-your-client-side-javascript/"
+        },
+        {
+          "date": "2011-08-02",
+          "title": "Seed Round - Proxino"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -11,
+      "heatScore": 50
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Error tracking and crash reporting for your web applications. We're building a better web.",
+          "employeeRange": "1-10",
+          "name": "TrackJS",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Sentry is a developer of an application monitoring platform that helps developers optimize the performance of their code.",
+          "employeeRange": "251-500",
+          "name": "Sentry",
+          "similarityScore": 95
+        },
+        {
+          "description": "LogRocket is a frontend monitoring and product analytics platform that enables developers to capture granular experience data.",
+          "employeeRange": "101-250",
+          "name": "LogRocket",
+          "sharedCategories": [
+            "Software",
+            "Information Technology"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Code-first observability that connects errors, replays, and releases in one place.",
+          "employeeRange": "11-50",
+          "name": "Rollbar",
+          "similarityScore": 91
+        },
+        {
+          "description": "Bugsnag provides an automated crash detection platform for web and mobile applications.",
+          "employeeRange": "11-50",
+          "name": "Bugsnag",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include TrackJS, Sentry, LogRocket.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

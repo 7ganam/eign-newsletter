@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:55:53.858Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:55:53.807Z",
+    "url": "https://www.crunchbase.com/organization/variant"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Variant, Inc",
+      "shortDescription": "Variant, Inc is a company that licenses the use of its enterprise online experimentation platform with verification analytics.",
+      "description": "Modern enterprises, whose revenue, at least in part, comes from their human-facing software applications, such as eCommerce, depend on online controlled experiments in making key product decisions. Historically, these decisions have been informed by experience and intuition, but in recent years this approach is increasingly replaced with empirical, data-driven validation. \r\n\r\nVariant’s Experiment Server provides enterprises with a platform to conduct sophisticated, full-stack, feature-grained interactive experiments with the goal of enabling empirical verification of new product features via randomized controlled experiments. \r\n\r\nFeatures include: \r\n\r\n  * Instrument any code path for a randomized controlled experiment. \r\n  * Declarative instrumentation. \r\n  * Real time integration with operational data. \r\n  * Full support for concurrent experiments. \r\n  * Highly extensible.",
+      "website": "http://getvariant.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Berkeley, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Analytics",
+        "E-Commerce",
+        "Information Technology",
+        "Internet",
+        "Software"
+      ],
+      "sectors": [
+        "Commerce and Shopping",
+        "Data and Analytics",
+        "Information Technology",
+        "Software"
+      ],
+      "founders": [
+        "Igor Urisman"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 17,
+      "heatScore": 48
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

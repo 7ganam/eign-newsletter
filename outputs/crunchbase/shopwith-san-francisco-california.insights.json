@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:23:38.045Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:23:38.006Z",
+    "url": "https://www.crunchbase.com/organization/shopwith-san-francisco-california"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "ShopWith",
+      "shortDescription": "ShopWith is an online shopping platform that provides fashion shopping services.",
+      "description": "ShopWith is an online shopping platform that provides fashion shopping services. The platform features a wide range of recommended fashion, beauty products, and shop items from influencing brands and creators, enabling shoppers to browse virtual storefronts and aisles alongside their favorite fashion creators and YouTubers. Melody Kim, Aaron Chou, and Lewis Chung founded it in October 2017, with its headquarters in San Francisco in California.",
+      "website": "https://www.shopwith.co/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Los Angeles, California, United States",
+      "geographicRegions": [
+        "Greater Los Angeles Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Customer Service",
+        "E-Commerce",
+        "Fashion",
+        "Marketing",
+        "Marketplace",
+        "Retail",
+        "Sales"
+      ],
+      "sectors": [
+        "Clothing and Apparel",
+        "Commerce and Shopping",
+        "Design",
+        "Professional Services",
+        "Sales and Marketing"
+      ],
+      "founders": [
+        "Aaron Chou",
+        "Lewis Chung",
+        "Melody Kim"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2018-08-04",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2018-08-04",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2018-08-22",
+          "publisher": "TechCrunch",
+          "title": "The top 10 startups from Y Combinator’s Demo Day S18 Day 2",
+          "url": "https://techcrunch.com/2018/08/22/the-top-10-startups-from-y-combinators-demo-day-s18-day-2/"
+        },
+        {
+          "date": "2018-08-04",
+          "title": "Seed Round - ShopWith"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -7,
+      "heatScore": 36
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "ShopStyle is the leading fashion and lifestyle shopping platform for influencers and consumers.",
+          "employeeRange": "101-250",
+          "name": "ShopStyle",
+          "sharedCategories": [
+            "E-Commerce",
+            "Retail",
+            "Fashion"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Myntra operates as an e-commerce platform focused on fashion, lifestyle, and beauty products.",
+          "employeeRange": "1,001-5,000",
+          "name": "Myntra",
+          "sharedCategories": [
+            "E-Commerce",
+            "Fashion"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Pinterest is a visual bookmarking tool for saving and discovering creative ideas.",
+          "employeeRange": "1,001-5,000",
+          "name": "Pinterest",
+          "similarityScore": 91
+        },
+        {
+          "description": "Zalando is a fashion and technology company, currently transforming into a multi-service platform.",
+          "employeeRange": "10,001+",
+          "name": "Zalando",
+          "sharedCategories": [
+            "E-Commerce",
+            "Fashion"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Lyst is a global fashion search platform that allows users to browse through thousands of online fashion stores.",
+          "employeeRange": "101-250",
+          "name": "Lyst",
+          "sharedCategories": [
+            "E-Commerce",
+            "Fashion"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $120,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include ShopStyle, Myntra, Pinterest.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:47:25.384Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:47:25.327Z",
+    "url": "https://www.crunchbase.com/organization/replo"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Replo",
+      "shortDescription": "Replo is a SaaS web application that tracks the performance of Pay-Per-Click campaigns, email campaigns, and banner advertising.",
+      "description": "Replo is a SaaS web application that tracks the performance of Pay-Per-Click campaigns, email campaigns, banner advertising, affiliate links, or any type of web advertising.",
+      "website": "http://www.replo.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Milan, Lombardia, Italy",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Advertising",
+        "Analytics",
+        "SaaS"
+      ],
+      "sectors": [
+        "Advertising",
+        "Data and Analytics",
+        "Sales and Marketing",
+        "Software"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2023-02-09",
+          "publisher": "TechCrunch",
+          "title": "Replo gives businesses a low-code option for creating Shopify landing pages",
+          "url": "https://techcrunch.com/2023/02/09/replo-shopify-low-code/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -2,
+      "growthScore": 82,
+      "heatChange90Days": -12,
+      "heatScore": 36
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 92.38
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Agency Analytics is a client reporting platform designed for agencies and marketing consultants.",
+          "employeeRange": "101-250",
+          "name": "AgencyAnalytics",
+          "sharedCategories": [
+            "SaaS",
+            "Analytics"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Automated reporting and monitoring SaaS for online marketers",
+          "employeeRange": "11-50",
+          "name": "Swydo",
+          "sharedCategories": [
+            "SaaS",
+            "Analytics"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Business Performance Dashboards and Automated Marketing Reports",
+          "employeeRange": "11-50",
+          "name": "OCTOBOARD",
+          "sharedCategories": [
+            "Analytics"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "We help Facebook advertisers profit more from their ads by providing them better ad attribution, analytics, and decision making insights.",
+          "employeeRange": "11-50",
+          "name": "Cometly",
+          "sharedCategories": [
+            "Advertising",
+            "Analytics"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Based on highly intelligent machine learning, the Adzooma platform analyses PPC accounts 24/7 to look for new performance opportunities",
+          "employeeRange": "51-100",
+          "name": "Adzooma",
+          "sharedCategories": [
+            "Advertising"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 82 (-2 over 90 days) and market heat at 36 (-12).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include AgencyAnalytics, Swydo, OCTOBOARD.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

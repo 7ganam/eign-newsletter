@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:25:59.089Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:25:59.034Z",
+    "url": "https://www.crunchbase.com/organization/olive"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Olive Media",
+      "shortDescription": "Olive Media, Inc. designs and develops digital audio systems.",
+      "description": "Olive Media, Inc. designs and develops digital audio systems.",
+      "website": "http://www.olive.us/",
+      "foundedYear": 2005,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Music"
+      ],
+      "sectors": [
+        "Media and Entertainment",
+        "Music and Audio"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2008-09-23",
+      "lastFundingType": "Series A",
+      "rounds": [
+        {
+          "announcedDate": "2008-09-23",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 4632140,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Ridge Ventures",
+            "rounds": [
+              "Series A"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2008-09-23",
+          "title": "Series A - Olive Media"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -6,
+      "growthScore": 3,
+      "heatChange90Days": -16,
+      "heatScore": 47
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0.65,
+        "timingEstimatePercent": {
+          "within6Months": 12.95,
+          "months6To11": 11.27,
+          "months12To24": 18.35,
+          "beyond24Months": 24.45
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 25.65
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Aurender is the brand name of SmartAudio Division of TVLogic.",
+          "employeeRange": "51-100",
+          "name": "Aurender",
+          "sharedCategories": [
+            "Music"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Bluesound is a company that makes a home wireless system into a home theater for music players.",
+          "employeeRange": "11-50",
+          "name": "Bluesound",
+          "sharedCategories": [
+            "Music"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Naim Audio is developing technology that increases the user's listening experience.",
+          "employeeRange": "101-250",
+          "name": "Naim Audio",
+          "similarityScore": 89
+        },
+        {
+          "description": "Innuos is a manufacturing company that specializes in music servers and streamers development.",
+          "employeeRange": "11-50",
+          "name": "Innuos",
+          "sharedCategories": [
+            "Music"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "AURALiC provides music streaming and audio components.",
+          "employeeRange": "11-50",
+          "name": "AURALiC",
+          "sharedCategories": [
+            "Music"
+          ],
+          "similarityScore": 84
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $4,632,140 to $4,632,140, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 3 (-6 over 90 days) and market heat at 47 (-16).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Aurender, Bluesound, Naim Audio.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

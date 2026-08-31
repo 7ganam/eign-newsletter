@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:35:14.499Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:35:14.444Z",
+    "url": "https://www.crunchbase.com/organization/rapidfolio"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Rapidfolio",
+      "shortDescription": "Rapidfolio provides AI workflow automation for compliance and operations in banks and fintechs.",
+      "description": "Rapidfolio provides an AI workflow platform for banks, fintechs, lenders, payment processors, and other regulated businesses. The platform converts documented procedures into AI-agent workflows that can be tested, deployed through APIs or operational triggers, and reviewed through audit records. It supports processes such as KYC and KYB reviews, sanctions screening, loan underwriting, fraud investigations, disputes, reconciliation, and account reviews. Rapidfolio integrates with third-party systems and allows human approval steps within automated procedures. Its services include workflow execution, data connections, automated browsing, documentation, and technical support.",
+      "website": "https://www.rapidfolio.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "industries": [
+        "Agentic AI",
+        "Artificial Intelligence (AI)",
+        "Business Process Automation (BPA)",
+        "Compliance",
+        "Enterprise Software",
+        "FinTech",
+        "Fraud Detection",
+        "SaaS",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Financial Services",
+        "Privacy and Security",
+        "Professional Services",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An AI workflow platform that automates compliance, operations, risk, fraud, and customer-service procedures for regulated businesses.",
+        "name": "Rapidfolio AI workflow platform"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 22,
+      "growthScore": 91,
+      "heatScore": 87
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 90.61
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

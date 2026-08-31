@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:59:24.404Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:59:24.351Z",
+    "url": "https://www.crunchbase.com/organization/mosaic-inc"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Mosaic",
+      "shortDescription": "Mosaic provides curated rental linen and fabric décor collections for weddings, events, and special occasions.",
+      "description": "Mosaic provides curated rental linen and fabric décor collections for weddings, corporate events, and special occasions. The company offers tablecloths, table runners, napkins, chair treatments, aisle runners, drapes, and lounge accents made from fabrics sourced around the world. Mosaic works with event planners, venues, and hosts to select patterns, textures, and colors that suit different event styles. Its catalog includes both basic linens and custom embroidered or artisanal woven options. Mosaic supports clients through galleries and inspiration resources that show how specific fabrics are used in real events. The company also donates surplus fabrics and supports community organizations and industry nonprofits through charitable initiatives and sustainable rental practices.",
+      "website": "https://www.partymosaic.com/",
+      "foundedYear": 2001,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Pittsburgh, Pennsylvania, United States",
+      "geographicRegions": [
+        "Great Lakes",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Event Management",
+        "Fashion",
+        "Home and Garden",
+        "Hospitality",
+        "Rental",
+        "Sustainability"
+      ],
+      "sectors": [
+        "Clothing and Apparel",
+        "Commerce and Shopping",
+        "Design",
+        "Events",
+        "Media and Entertainment",
+        "Real Estate",
+        "Sustainability",
+        "Travel and Tourism"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Curated rental collections of table linens and fabric décor for weddings, corporate events, and special occasions.",
+        "name": "Event Linen Rental Collections"
+      },
+      {
+        "description": "Rental of dinner napkins and cocktail napkins in varied fabrics, patterns, and colors for events.",
+        "name": "Napkin and Cocktail Linen Rental"
+      },
+      {
+        "description": "Rental of table runners and aisle runners to add pattern, color, or texture to event tables and aisles.",
+        "name": "Table Runner and Aisle Runner Rental"
+      },
+      {
+        "description": "Rental of chair covers, sashes, and fabric drapes for event seating areas and backdrops.",
+        "name": "Chair Treatment and Drapery Rental"
+      },
+      {
+        "description": "Rental of decorative pillows, throws, and fabric accents for event lounges and seating areas.",
+        "name": "Lounge Accent and Pillow Rental"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 10,
+      "growthScore": 90,
+      "heatChange90Days": 83,
+      "heatScore": 84
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 6.06
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 67.16
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0.98
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 90 (+10 over 90 days) and market heat at 84 (+83).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

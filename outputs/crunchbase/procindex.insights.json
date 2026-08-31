@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:18:33.617Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:18:33.565Z",
+    "url": "https://www.crunchbase.com/organization/procindex"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "ProcIndex",
+      "shortDescription": "ProcIndex provides AI agents that automate accounts payable, accounts receivable, reconciliation, and month-end close workflows.",
+      "description": "ProcIndex provides an AI-driven platform that functions as an automated accounting team for finance organizations. The company offers specialized agents that run accounts payable, accounts receivable, reconciliation, vendor management, and month-end close directly inside existing ERP systems. Its software connects via APIs to platforms such as NetSuite, SAP, Oracle, Sage Intacct, QuickBooks, and other major ERPs, operating in the background while maintaining full audit trails and human-in-the-loop guardrails. ProcIndex’s agents capture invoices from email and portals, perform three-way matching, GL coding, approvals routing, and payment file preparation for payables. For receivables, they handle invoice delivery, payment tracking, collections outreach, dispute handling, and cash application. Additional agents support bank reconciliation, close checklists, and vendor workflows to reduce manual data entry and exception resolution across finance operations.",
+      "website": "https://www.procindex.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Accounting",
+        "Artificial Intelligence (AI)",
+        "Business Intelligence",
+        "Business Process Automation (BPA)",
+        "Cloud Computing",
+        "Enterprise Software",
+        "Finance",
+        "Financial Services",
+        "Robotic Process Automation (RPA)",
+        "SaaS"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Financial Services",
+        "Information Technology",
+        "Internet Services",
+        "Professional Services",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Akash Thakur",
+        "Neha Suresh"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An AI agent that automates the accounts payable lifecycle from invoice capture through coding, approvals, and ERP sync.",
+        "name": "Autonomous AP Agent"
+      },
+      {
+        "description": "An AI agent that runs accounts receivable, from invoice delivery and tracking to collections, cash application, and ERP updates.",
+        "name": "Autonomous AR Agent"
+      },
+      {
+        "description": "AI agents that automate month-end close tasks, bank and GL reconciliation, and vendor communication workflows.",
+        "name": "Close, Recon, and Vendor Agents"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2025-09-29",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2025-09-29",
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 6263506,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2025-09-29",
+          "title": "Pre Seed Round - ProcIndex"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 46,
+      "growthScore": 46,
+      "heatChange90Days": 64,
+      "heatScore": 85
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 31.17
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 77.84,
+        "timingEstimatePercent": {
+          "within6Months": 99.97,
+          "months6To11": 0.01,
+          "months12To24": 0,
+          "beyond24Months": 0.02
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 86.33
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 4
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $6,263,506 to $6,263,506, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 46 (+46 over 90 days) and market heat at 85 (+64).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

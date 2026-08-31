@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:03:28.921Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:03:28.867Z",
+    "url": "https://www.crunchbase.com/organization/versable"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Versable",
+      "shortDescription": "Versable provides AI-powered tools to clean, enhance, and generate automotive product data and listings.",
+      "description": "Versable provides an AI-powered platform for cleaning, enhancing, and generating automotive product data and online listings. The company focuses on aftermarket auto parts catalog challenges such as messy supplier files, incomplete attributes, and inconsistent formats. Its tools normalize unstructured inputs into ACES and PIES formats, standardize fields, and fill gaps using web data extraction. Versable generates structured titles, descriptions, and specifications from part numbers and other inputs, and includes guardrails to reduce inaccurate content. The platform also offers a web-based workflow for catalog teams to upload files, configure transformations, and export market-ready data. Versable primarily serves manufacturers, retailers, distributors, marketplaces, and other industry partners in the automotive sector.",
+      "website": "https://versable.ai/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Automotive",
+        "Data Integration",
+        "Data Management",
+        "Data Mining",
+        "Data Visualization",
+        "Enterprise Software",
+        "Machine Learning",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Design",
+        "Information Technology",
+        "Science and Engineering",
+        "Software",
+        "Transportation"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "AI-powered platform that cleans, enriches, and structures automotive product data and listings for online sales.",
+        "name": "Versable data enhancement platform"
+      },
+      {
+        "description": "AI-driven web scraping module that extracts and structures automotive parts data from external websites at scale.",
+        "name": "Versable AI data extraction module"
+      },
+      {
+        "description": "Tool that enhances and standardizes automotive fitment data and ACES mappings for aftermarket parts catalogs.",
+        "name": "Fitment and ACES enhancement tool"
+      },
+      {
+        "description": "Service that resizes, improves, and generates automotive parts images to support complete product listings.",
+        "name": "Image enhancement and generation service"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 15,
+      "growthScore": 91,
+      "heatChange90Days": 57,
+      "heatScore": 89
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 86.84
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 91 (+15 over 90 days) and market heat at 89 (+57).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

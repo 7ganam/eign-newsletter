@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:20:04.796Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:20:04.742Z",
+    "url": "https://www.crunchbase.com/organization/numeral"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Numeral",
+      "shortDescription": "Blocks for automatic spatial skills assessment of children to support pedagogical diagnosis for kindergarten teachers and parents.",
+      "website": "http://wenumerals.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Warsaw, Mazowieckie, Poland",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Education"
+      ],
+      "sectors": [
+        "Education"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2021-12-21",
+          "publisher": "Business Insider",
+          "title": "Check out the 15-slide pitch deck Numeral, a fintech trying to automate bank payments, used to raise a $14.6 million seed round",
+          "url": "https://www.businessinsider.com/numeral-payments-software-startup-raises-major-seed-funding-round-2021-12"
+        },
+        {
+          "date": "2017-12-13",
+          "publisher": "Exclusive",
+          "title": "A-ha! Conference unveils #AI 100 list of the most promising companies in #artificialintelligence #technology, Dec. 12-13 2018, San Francisco",
+          "url": "https://www.exclusive.org/?p=3491"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -3,
+      "heatScore": 17
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

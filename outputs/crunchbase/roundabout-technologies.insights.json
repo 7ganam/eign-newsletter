@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:00:48.870Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:00:48.816Z",
+    "url": "https://www.crunchbase.com/organization/roundabout-technologies"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Roundabout Technologies",
+      "shortDescription": "Roundabout Technologies is a security services company that offers information security and cloud solutions.",
+      "website": "https://roundabouttech.com/",
+      "foundedYear": 2012,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Jaipur, Rajasthan, India",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)"
+      ],
+      "industries": [
+        "Cloud Computing",
+        "Infrastructure",
+        "Security"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Internet Services",
+        "Other",
+        "Privacy and Security",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "We help customers identify gaps in their network, websites, and digital assets, and provide end-to-end security audits and penetration testing.",
+        "name": "Information Security"
+      },
+      {
+        "description": "We offer cloud solutions and Linux server installation services to support high-performance computing needs in various fields.",
+        "name": "Cloud Solution and Linux Server Installation"
+      },
+      {
+        "description": "We manage IT operations, including server administration and central monitoring of IT infrastructure.",
+        "name": "Managed Services"
+      },
+      {
+        "description": "We provide server virtualization using hypervisor solutions to maximize server resource utilization.",
+        "name": "Server Virtualization"
+      },
+      {
+        "description": "We offer central authentication, management, and monitoring services for IT infrastructure, including log collection and multi-factor authentication.",
+        "name": "Infrastructure Services"
+      },
+      {
+        "description": "We provide high availability solutions for web servers, applications, physical servers, network devices, and databases to minimize downtime.",
+        "name": "High Availability Services"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 3,
+      "growthScore": 88,
+      "heatChange90Days": -2,
+      "heatScore": 53
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 98.06
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "NCC Group exists to make the world safer and more secure.",
+          "employeeRange": "1,001-5,000",
+          "name": "NCC Group",
+          "sharedSpecialties": [
+            "Red Teaming and Adversary Simulation",
+            "Security Information and Event Management (SIEM)",
+            "Application Security Testing"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "MWR InfoSecurity provide specialist cyber security advice and solutions.",
+          "employeeRange": "101-250",
+          "name": "MWR InfoSecurity",
+          "similarityScore": 95
+        },
+        {
+          "description": "Cognisys is aspires to improve the Cyber Security of every organisation it touches.",
+          "employeeRange": "11-50",
+          "name": "Cognisys Group",
+          "sharedSpecialties": [
+            "Red Teaming and Adversary Simulation",
+            "Application Security Testing"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "Nettitude is a global leader in the delivery of cyber security testing, risk management, compliance and incident response services.",
+          "employeeRange": "51-100",
+          "name": "Nettitude",
+          "sharedCategories": [
+            "Security"
+          ],
+          "sharedSpecialties": [
+            "Red Teaming and Adversary Simulation",
+            "Security Information and Event Management (SIEM)",
+            "Application Security Testing"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Bishop Fox delivers offensive security solutions to protect dynamic attack surfaces.",
+          "employeeRange": "251-500",
+          "name": "Bishop Fox",
+          "sharedSpecialties": [
+            "Red Teaming and Adversary Simulation",
+            "Application Security Testing"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 88 (+3 over 90 days) and market heat at 53 (-2).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include NCC Group, MWR InfoSecurity, Cognisys Group.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

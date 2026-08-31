@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:20:07.236Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:20:07.180Z",
+    "url": "https://www.crunchbase.com/organization/prompt"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Prompt",
+      "shortDescription": "The command line interface for the real world",
+      "description": "Prompt is a command line.  It allows users to send simple text commands to access services, make purchases and control IoT devices via SMS, Slack, and the Web.  It is a text interface to thousands of services, including home automation, commerce, information, and productivity tools.",
+      "website": "http://www.promptapp.io/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "E-Commerce",
+        "Information Technology",
+        "Productivity Tools"
+      ],
+      "sectors": [
+        "Commerce and Shopping",
+        "Information Technology",
+        "Software"
+      ],
+      "founders": [
+        "Tom Hadfield"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2016-03-03",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2016-03-03",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 3,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 3,
+        "visibleNames": [
+          {
+            "name": "Capital Factory",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "Stuart Levinson",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2019-05-17",
+          "publisher": "New York Times (NYT)",
+          "title": "Focus Here",
+          "url": "https://www.nytimes.com/2019/05/17/learning/focus-here.html"
+        },
+        {
+          "date": "2019-05-16",
+          "publisher": "New York Times - Deals",
+          "title": "Game Show Winner",
+          "url": "https://www.nytimes.com/2019/05/16/learning/game-show-winner.html"
+        },
+        {
+          "date": "2016-03-03",
+          "title": "Pre Seed Round - Prompt"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -16,
+      "heatScore": 1
+    },
+    "modelPredictions": {
+      "funding": {
+        "generatedDate": "2025-09-13",
+        "probabilityPercent": 4.21,
+        "timingEstimatePercent": {
+          "within6Months": 15.11,
+          "months6To11": 12.83,
+          "months12To24": 20.13,
+          "beyond24Months": 24.96
+        }
+      },
+      "growth": {
+        "generatedDate": "2025-09-13",
+        "probabilityPercent": 70.44
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Warp is a developer of a Rust-based coding terminal designed to make teams productive at coding and application development.",
+          "employeeRange": "51-100",
+          "name": "Warp",
+          "sharedCategories": [
+            "Information Technology"
+          ],
+          "similarityScore": 96
+        },
+        {
+          "description": "Raycast is a Productivity Tools company that provides a command bar software to assist developers control their tools as well as AI tools.",
+          "employeeRange": "11-50",
+          "name": "Raycast",
+          "sharedCategories": [
+            "Productivity Tools"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "iTerm2 offers a special terminal window that is always available with a single keystroke.",
+          "employeeRange": "11-50",
+          "name": "iTerm2",
+          "similarityScore": 92
+        },
+        {
+          "description": "Termius allows the user to organize hosts into groups, using end-to-end encryption to ensure the data remains safe and secure.",
+          "employeeRange": "11-50",
+          "name": "Termius Corporation",
+          "sharedCategories": [
+            "Information Technology"
+          ],
+          "similarityScore": 84
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $120,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Warp, Raycast, iTerm2.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

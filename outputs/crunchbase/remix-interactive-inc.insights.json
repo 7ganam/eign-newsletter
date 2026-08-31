@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:45:49.932Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:45:49.873Z",
+    "url": "https://www.crunchbase.com/organization/remix-interactive-inc"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Huddlefire",
+      "shortDescription": "Huddlefire helps turbocharge customer acquisition through exclusive SaaS partnerships.",
+      "website": "https://huddlefire.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Palo Alto, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Customer Service",
+        "SaaS",
+        "Software"
+      ],
+      "sectors": [
+        "Professional Services",
+        "Software"
+      ],
+      "founders": [
+        "Ning Zhang",
+        "Simon Sturmer"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2021-03-22",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2021-03-22",
+          "investorCount": 2,
+          "postMoneyValuation": {
+            "amount": 6091198,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "Goodwater Capital",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2021-03-22",
+          "title": "Seed Round - Huddlefire"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 79,
+      "growthScore": 91,
+      "heatChange90Days": -9,
+      "heatScore": 62
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 18.6,
+        "timingEstimatePercent": {
+          "within6Months": 14.19,
+          "months6To11": 12.17,
+          "months12To24": 19.41,
+          "beyond24Months": 24.82
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 90.97
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "PartnerStack enables companies to accelerate growth with partnerships",
+          "employeeRange": "101-250",
+          "name": "PartnerStack",
+          "sharedCategories": [
+            "SaaS",
+            "Software"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Crossbeam is the first and largest Ecosystem-Led Growth platform.",
+          "employeeRange": "51-100",
+          "name": "Crossbeam",
+          "sharedCategories": [
+            "SaaS"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "impact.com, the leading global partnership management platform, has been transforming the way enterprises manage all types of partnerships.",
+          "employeeRange": "1,001-5,000",
+          "name": "impact.com",
+          "sharedCategories": [
+            "SaaS"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "PartnerPortal.io is the only self-serve partner relationship manager.",
+          "employeeRange": "11-50",
+          "name": "PartnerPortal.io, Inc.",
+          "sharedCategories": [
+            "SaaS",
+            "Software"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "Impartner delivers robust SaaS-based partner relationship management and marketing automation platform solutions.",
+          "employeeRange": "101-250",
+          "name": "Impartner",
+          "sharedCategories": [
+            "SaaS",
+            "Software"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $6,091,198 to $6,091,198, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 91 (+79 over 90 days) and market heat at 62 (-9).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include PartnerStack, Crossbeam, impact.com.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

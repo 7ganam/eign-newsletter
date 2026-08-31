@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:18:20.443Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:18:20.403Z",
+    "url": "https://www.crunchbase.com/organization/webcake"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "WebCake",
+      "shortDescription": "WebCake is a landing page builder platform.",
+      "description": "WebCake is a software platform that design an impressive landing page for multi-channel advertising campaigns for growing online business. They offer products for create a landing page such as pancake POS, storecake, and botcake.",
+      "website": "https://webcake.io/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Hanoi, NA - Vietnam, Vietnam",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)",
+        "Association of Southeast Asian Nations (ASEAN)",
+        "Southeast Asia"
+      ],
+      "industries": [
+        "Advertising",
+        "Internet",
+        "Social Media"
+      ],
+      "sectors": [
+        "Advertising",
+        "Information Technology",
+        "Internet Services",
+        "Media and Entertainment",
+        "Sales and Marketing"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A tool to manage sales across social media and e-commerce platforms from a single interface.",
+        "name": "Pancake"
+      },
+      {
+        "description": "A platform to create professional sales websites with standard SEO features.",
+        "name": "Storecake"
+      },
+      {
+        "description": "A sales management system that includes revenue statistics and shipping integration.",
+        "name": "Pancake Pos"
+      },
+      {
+        "description": "A tool to create Messenger chatbots for marketing, sales, and customer support.",
+        "name": "Botcake"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2013-08-20",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2013-08-20",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2013-08-20",
+          "title": "Seed Round - WebCake"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -16,
+      "heatScore": 6
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 29.12
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Unbounce is a drag-and-drop builder that allows users to create and publish customized landing pages.",
+          "employeeRange": "101-250",
+          "name": "Unbounce",
+          "sharedSpecialties": [
+            "Landing Page Design"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Instapage is a landing page platform designed to scale marketing efforts while lowering the costs.",
+          "employeeRange": "101-250",
+          "name": "Instapage",
+          "sharedCategories": [
+            "Advertising"
+          ],
+          "sharedSpecialties": [
+            "Landing Page Design"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Leadpages is a tool that lets you create launch pages, sales pages, pop ups, and other conversion pages.",
+          "employeeRange": "11-50",
+          "name": "Leadpages",
+          "sharedSpecialties": [
+            "SEO Tools",
+            "Landing Page Design"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Landingi provides a SaaS platform for building and publishing landing pages with conversion tools and integrations.",
+          "employeeRange": "11-50",
+          "name": "Landingi",
+          "sharedCategories": [
+            "Advertising"
+          ],
+          "sharedSpecialties": [
+            "Landing Page Design"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "ClickFunnels makes it simple for any entrepreneur to build their own marketing funnels in just minutes.",
+          "employeeRange": "251-500",
+          "name": "ClickFunnels",
+          "sharedSpecialties": [
+            "E-commerce Website Development",
+            "Landing Page Design"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $120,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Unbounce, Instapage, Leadpages.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

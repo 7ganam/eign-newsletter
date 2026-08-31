@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:34:14.590Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:34:14.538Z",
+    "url": "https://www.crunchbase.com/organization/touch-e"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Touch-E",
+      "shortDescription": "Touch-E is an AI software system that specializes in creating and managing interactive and commercial advertising on video.",
+      "website": "https://www.touchetv.com/",
+      "foundedYear": 2020,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Bney-brit, HaZafon, Israel",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)",
+        "Middle East",
+        "Middle East and North Africa (MENA)"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Big Data",
+        "Content",
+        "Information Technology",
+        "Video Streaming"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Content and Publishing",
+        "Data and Analytics",
+        "Information Technology",
+        "Media and Entertainment",
+        "Science and Engineering",
+        "Software",
+        "Video"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 9,
+      "heatScore": 51
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 41.78
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 77.97
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 35.22
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

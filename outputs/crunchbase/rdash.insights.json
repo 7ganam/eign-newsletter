@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:36:54.068Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:36:54.012Z",
+    "url": "https://www.crunchbase.com/organization/rdash"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "RDash",
+      "shortDescription": "RDash is a platform for automating construction management workflows.",
+      "description": "RDash is a construction management platform for developers, contractors, and design studios. It automates workflows to streamline project management. The platform supports collaboration and integrates various project management tasks.",
+      "website": "https://rdash.io/",
+      "foundedYear": 2022,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "101-250",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Haryana, India",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)"
+      ],
+      "industries": [
+        "Construction",
+        "Project Management",
+        "Software"
+      ],
+      "sectors": [
+        "Administrative Services",
+        "Real Estate",
+        "Software"
+      ],
+      "founders": [
+        "Amit Bansal",
+        "Amit Mishra",
+        "Puneet Bansal"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A system to create, import, and automate leads, generate quotations, and track lead execution.",
+        "name": "Lead Management"
+      },
+      {
+        "description": "A platform to manage site surveys, design workflows, BOQs, activity schedules, work progress, and project handover.",
+        "name": "Project Management"
+      },
+      {
+        "description": "A tool to discover, manage, and rate vendors, manage catalogues, rate contracts, and handle orders and payments.",
+        "name": "Vendor Management"
+      },
+      {
+        "description": "A system to automate tasks, set reminders, collaborate contextually, and manage approvals.",
+        "name": "Task Management"
+      },
+      {
+        "description": "A module to schedule project activities, set deadlines, and highlight dependencies with real-time updates.",
+        "name": "Activity Schedule"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -1,
+      "heatScore": 84
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 94.19
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Procore is a cloud-based management software that helps to simplify project execution and management tasks for construction sectors.",
+          "employeeRange": "1-10",
+          "name": "Procore",
+          "sharedCategories": [
+            "Software",
+            "Project Management",
+            "Construction"
+          ],
+          "sharedSpecialties": [
+            "Procurement and Supply Services",
+            "Project Planning",
+            "BIM and Modeling Services",
+            "Construction Management",
+            "Project Financial Management"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Fieldwire is a field management platform that offers a wide range of device-agnostic features for general and specialty contractors.",
+          "employeeRange": "101-250",
+          "name": "Fieldwire",
+          "sharedCategories": [
+            "Project Management",
+            "Construction"
+          ],
+          "sharedSpecialties": [
+            "Project Planning",
+            "Work Management",
+            "Construction Management",
+            "Project Financial Management"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Buildertrend is a construction management software for home builders, contractors, and remodelers.",
+          "employeeRange": "501-1,000",
+          "name": "Buildertrend",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Autodesk develops 3D design software for use in the architecture, engineering, construction, and media industries.",
+          "employeeRange": "10,001+",
+          "name": "Autodesk",
+          "sharedCategories": [
+            "Software",
+            "Construction"
+          ],
+          "sharedSpecialties": [
+            "Construction Management"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "PlanGrid is a provider of cloud-based construction document collaboration platform.",
+          "employeeRange": "251-500",
+          "name": "PlanGrid",
+          "sharedCategories": [
+            "Construction"
+          ],
+          "sharedSpecialties": [
+            "Project Planning",
+            "Work Management",
+            "Construction Management",
+            "Signage Permitting and Site Surveys"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Procore, Fieldwire, Buildertrend.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

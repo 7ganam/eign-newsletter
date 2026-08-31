@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:56:24.407Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:56:24.349Z",
+    "url": "https://www.crunchbase.com/organization/molagri"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Molagri",
+      "shortDescription": "Molagri is an agri biotech company that develops crop protection products.",
+      "description": "Molagri is an agricultural biotechnology company that develops crop protection solutions using biological approaches, focusing on products such as bioinsecticides to help manage pests and support crop health in agriculture.",
+      "website": "https://molagri.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Toronto, Ontario, Canada",
+      "geographicRegions": [
+        "Great Lakes"
+      ],
+      "industries": [
+        "Agriculture",
+        "AgTech",
+        "Biotechnology"
+      ],
+      "sectors": [
+        "Agriculture and Farming",
+        "Biotechnology",
+        "Science and Engineering"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2026-03-31",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2026-03-31",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Julian Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 5785313,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Julian Capital",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2026-03-31",
+          "title": "Pre Seed Round - Molagri"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -2,
+      "growthScore": 91,
+      "heatChange90Days": -8,
+      "heatScore": 72
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 5
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 94.43,
+        "timingEstimatePercent": {
+          "within6Months": 99.9,
+          "months6To11": 0.1,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.1
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Coromandel International manufactures fertiliser, crop protection, and bioproducts for the agriculture sector.",
+          "employeeRange": "10,001+",
+          "name": "Coromandel International",
+          "sharedCategories": [
+            "Agriculture"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Meghmani Organics manufactures pigments and agrochemicals, pesticide intermediates, and formulations.",
+          "employeeRange": "1,001-5,000",
+          "name": "Meghmani Organics",
+          "sharedCategories": [
+            "Agriculture"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Miller Chemical & Fertilizer manufactures and distributes crop protection and nutritional agrichemical products.",
+          "employeeRange": "51-100",
+          "name": "Miller Chemical & Fertilizer",
+          "similarityScore": 88
+        },
+        {
+          "description": "PI Industries is an AgroChemical company in India.",
+          "employeeRange": "1,001-5,000",
+          "name": "PI Industries",
+          "similarityScore": 87
+        },
+        {
+          "description": "UPL is an agro-based company offering nutrition products(fertilizers) to farmers to optimize farm productivity.",
+          "employeeRange": "10,001+",
+          "name": "UPL",
+          "sharedCategories": [
+            "Agriculture"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $500,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $5,785,313 to $5,785,313, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 91 (-2 over 90 days) and market heat at 72 (-8).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Coromandel International, Meghmani Organics, Miller Chemical & Fertilizer.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

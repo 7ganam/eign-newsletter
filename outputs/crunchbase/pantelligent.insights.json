@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:45:48.031Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:45:47.978Z",
+    "url": "https://www.crunchbase.com/organization/pantelligent"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Pantelligent",
+      "shortDescription": "Pantelligent offers a smart frying pan that sends sensor data to smartphones and cooks everything with ease.",
+      "description": "Pantelligent offers a smart frying pan that sends sensor data to smartphones and cooks everything with ease. Its solid die-cast aluminum body gives even heat conduction, and eliminated hot spots.\n\nPantelligent is based in Sunnyvale, California.",
+      "website": "http://www.pantelligent.com/",
+      "foundedYear": 2013,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Sunnyvale, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Cooking",
+        "Internet",
+        "Internet of Things"
+      ],
+      "sectors": [
+        "Food and Beverage",
+        "Information Technology",
+        "Internet Services"
+      ],
+      "founders": [
+        "Humberto Evans",
+        "Mike Robbins"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 83206,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2014-11-18",
+      "lastFundingType": "Product Crowdfunding",
+      "rounds": [
+        {
+          "announcedDate": "2014-11-18",
+          "amount": {
+            "amount": 83206,
+            "currency": "USD"
+          },
+          "type": "Product Crowdfunding"
+        },
+        {
+          "announcedDate": "2013-04-03",
+          "investorCount": 1,
+          "type": "Venture round"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "FundersClub",
+            "rounds": [
+              "Venture round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2016-03-26",
+          "title": "Now Smart-Pan Will Enhance Your Cooking Skills",
+          "url": "http://techstory.in/pantelligent-smartpan-27032016/"
+        },
+        {
+          "date": "2014-11-18",
+          "title": "Product Crowdfunding - Pantelligent"
+        },
+        {
+          "date": "2013-04-03",
+          "title": "Venture Round - Pantelligent"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 83206,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 1,
+      "heatScore": 6
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Product Crowdfunding round raised $83,206, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

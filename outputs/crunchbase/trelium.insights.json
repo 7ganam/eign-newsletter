@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:40:15.065Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:40:15.015Z",
+    "url": "https://www.crunchbase.com/organization/trelium"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Trelium",
+      "shortDescription": "Trelium provides AI agents that automate recurring business workflows across SaaS and back-office systems.",
+      "description": "Trelium develops artificial intelligence software that lets organizations build and deploy AI co-workers to handle repetitive digital work. Its platform allows users to describe workflows in plain English, then automatically generates agents that run those processes across Gmail, Printavo, NetSuite, QuickBooks, Qualia, Shopworks, Salesforce, Slack, and other tools. The agents monitor for triggers such as incoming purchase orders or status changes, extract structured data, update downstream systems, and send notifications or confirmations. Trelium supports different autonomy modes so teams can choose between supervised approvals, guided exception handling, or fully automated runs. Typical use cases include order entry from email, matching purchase orders to invoices, responding to order status queries, and moving files between systems. The software targets B2B operations, finance, and back-office teams seeking to remove manual copy-paste tasks and standardize workflows across their SaaS stack.",
+      "website": "https://www.trelium.com/",
+      "foundedYear": 2025,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "B2B",
+        "Data Integration",
+        "Finance",
+        "Robotic Process Automation (RPA)",
+        "SaaS"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Financial Services",
+        "Information Technology",
+        "Other",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "AI agents that execute recurring workflows across business apps from plain-English instructions.",
+        "name": "Trelium AI Agents"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 83,
+      "growthScore": 86,
+      "heatChange90Days": 91,
+      "heatScore": 91
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 5
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.15
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 86 (+83 over 90 days) and market heat at 91 (+91).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:05:19.085Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:05:19.033Z",
+    "url": "https://www.crunchbase.com/organization/vibe-kanban"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Vibe Kanban",
+      "shortDescription": "Vibe Kanban provides an open-source development workflow tool for planning, orchestrating, and reviewing work done by AI coding agents.",
+      "description": "Vibe Kanban provides an open-source development workflow platform that helps software teams plan, orchestrate, and review work produced by AI coding agents. The platform offers a visual kanban and list interface for managing issues, projects, and backlogs, including tags, assignees, priorities, sub-issues, and customizable status columns. It integrates deeply with coding workspaces and pull requests so that issues can be turned into workspaces, linked across multiple repositories, and automatically updated as work progresses. Vibe Kanban focuses on coordinating multiple agents such as Claude Code, Codex, Gemini CLI, and other tools, using isolated Git worktrees and managed workspaces to avoid conflicts. It supports both local-first usage and self-hosted cloud features, including remote access to coding agents, team collaboration, and integrations with GitHub, Azure Repos, and editor extensions. The project is maintained as a community-driven open-source tool after commercial operations ceased.",
+      "website": "https://vibekanban.com/",
+      "foundedYear": 2021,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "London, England, United Kingdom",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Cloud Computing",
+        "Collaboration",
+        "Developer Tools",
+        "Open Source",
+        "Project Management",
+        "Software",
+        "Software Engineering"
+      ],
+      "sectors": [
+        "Administrative Services",
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Internet Services",
+        "Other",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A local web interface and orchestration layer for planning and managing software tasks executed by multiple AI coding agents in isolated Git worktrees.",
+        "name": "Vibe Kanban Client"
+      },
+      {
+        "description": "A deprecated cloud service for team collaboration, remote access, and synchronized Vibe Kanban projects and agent workspaces.",
+        "name": "Vibe Kanban Cloud"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2021-06-01",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2021-06-01",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 2963112,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2021-06-01",
+          "title": "Pre Seed Round - Vibe Kanban"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 10,
+      "growthScore": 10,
+      "heatChange90Days": 65,
+      "heatScore": 85
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 42.42
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 15.95,
+        "timingEstimatePercent": {
+          "within6Months": 15.9,
+          "months6To11": 13.37,
+          "months12To24": 20.7,
+          "beyond24Months": 25
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 65.41
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 26.41
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $2,963,112 to $2,963,112, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 10 (+10 over 90 days) and market heat at 85 (+65).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

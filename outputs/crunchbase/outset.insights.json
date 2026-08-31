@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:39:51.820Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:39:51.761Z",
+    "url": "https://www.crunchbase.com/organization/outset"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Outset Data Corp",
+      "shortDescription": "Standardized, Automate, Real-Time Data for SaaS Investors",
+      "description": "Outset is changing the way early stage technology investors understand their portfolio and companies.  Through our unique, automated data management process Outset gives investors a real-time view of their investment's performance at the company and portfolio level while allowing investors to view trends, rank order investments and much more all without having to beg their companies for data every 30 - 90 days.  We update everything in real time from Cash Position and Net Burn to Runway to MRR, Churn and much more.  Early stage investors now have access to the best possible data through Outset.",
+      "website": "http://outset.vc/",
+      "foundedYear": 2015,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "Nashville, Tennessee, United States",
+      "geographicRegions": [
+        "Southern US"
+      ],
+      "industries": [
+        "Analytics",
+        "CRM",
+        "Financial Services",
+        "FinTech",
+        "Information Technology",
+        "Internet",
+        "Software"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Financial Services",
+        "Information Technology",
+        "Sales and Marketing",
+        "Software"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -4,
+      "heatScore": 24
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

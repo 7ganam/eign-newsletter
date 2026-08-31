@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:03:39.459Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:03:39.409Z",
+    "url": "https://www.crunchbase.com/organization/pirouette-pharma"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Pirouette Pharma",
+      "shortDescription": "Pirouette Pharma develops auto-injector devices and reformulated injectable medicines for chronic and emergency therapies.",
+      "description": "Pirouette Pharma develops drug-device combination products that pair established injectable medicines with an auto-injector platform. The company focuses on simplifying self-injection for chronic and emergency therapies through a push-button, hidden-needle device. Its OnePush platform is designed for intramuscular and subcutaneous administration and supports use in high-stress situations and at-home care. Pirouette Pharma uses abbreviated U.S. regulatory pathways to develop improved presentations of well-characterized drugs, including a naloxone auto-injector and other chronic disease therapies. It works with pharmaceutical partners to adapt existing and novel injectables to this platform to support consistent dosing and long-term treatment adherence.",
+      "website": "https://www.pirouettepharma.com/",
+      "foundedYear": 2017,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Portsmouth, New Hampshire, United States",
+      "geographicRegions": [
+        "Greater Boston Area",
+        "East Coast",
+        "New England",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Biotechnology",
+        "Health Care",
+        "Medical",
+        "Medical Device",
+        "Pharmaceutical",
+        "Therapeutics"
+      ],
+      "sectors": [
+        "Biotechnology",
+        "Health Care",
+        "Science and Engineering"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A disc-shaped, push-button auto-injector platform for intramuscular and subcutaneous self-injection of injectable medicines.",
+        "name": "OnePush auto-injector platform"
+      },
+      {
+        "description": "An investigational naloxone auto-injector presentation developed on the OnePush platform for opioid overdose rescue.",
+        "name": "Naloxone auto-injector"
+      },
+      {
+        "description": "A pipeline of reformulated injectable drug presentations developed with the OnePush auto-injector via 505(b)(2) and 351(k) pathways.",
+        "name": "Improved presentations of injectable medicines"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2021-10-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2021-10-01",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Helium-3 Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2021-10-01",
+          "title": "Seed Round - Pirouette Pharma"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 23,
+      "growthScore": 91,
+      "heatChange90Days": 90,
+      "heatScore": 90
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 71.18
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 91 (+23 over 90 days) and market heat at 90 (+90).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

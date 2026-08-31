@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:22:01.710Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:22:01.664Z",
+    "url": "https://www.crunchbase.com/organization/octifi"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Octifi",
+      "shortDescription": "Octifi provides innovative and collective digital credit services including installment payment services.",
+      "description": "Octifi provides innovative and collective digital credit services including installment payment services. They use modern technology to reimagine the checkout experience and make it easy for businesses of all sizes to offer responsible credit to their customers.",
+      "website": "https://octifi.com/en/",
+      "foundedYear": 2019,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Singapore, Central Region",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)",
+        "Association of Southeast Asian Nations (ASEAN)",
+        "Southeast Asia"
+      ],
+      "industries": [
+        "Credit",
+        "Finance",
+        "Financial Services"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Lending and Investments"
+      ],
+      "founders": [
+        "Amit Kumar",
+        "Ed Chin"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2021-03-22",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2021-03-22",
+          "investorCount": 2,
+          "postMoneyValuation": {
+            "amount": 7567074,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "2xN",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2021-03-22",
+          "title": "Seed Round - Octifi"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -2,
+      "growthScore": 81,
+      "heatChange90Days": -15,
+      "heatScore": 42
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 15.22,
+        "timingEstimatePercent": {
+          "within6Months": 15.74,
+          "months6To11": 13.26,
+          "months12To24": 20.59,
+          "beyond24Months": 25
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 93.03
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Atome is a fintech platform offering Buy Now, Pay Later services, enabling consumers to split payments into installments.",
+          "employeeRange": "501-1,000",
+          "name": "Atome",
+          "sharedCategories": [
+            "Financial Services"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Kredivo offers an online credit card with payment methods and installments in 30 days or monthly installments.",
+          "employeeRange": "101-250",
+          "name": "Kredivo",
+          "sharedCategories": [
+            "Financial Services"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Zip is an online payments technology provider that offers consumers credit options for online shopping.",
+          "employeeRange": "501-1,000",
+          "name": "Zip",
+          "sharedCategories": [
+            "Financial Services",
+            "Finance"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Grab is a mobile application that provides taxi, payment, lending, and insurance services.",
+          "employeeRange": "10,001+",
+          "name": "Grab",
+          "similarityScore": 90
+        },
+        {
+          "description": "Splitit is a payment method solution enabling customers to pay for purchases with an existing credit card.",
+          "employeeRange": "51-100",
+          "name": "Splitit",
+          "sharedCategories": [
+            "Credit",
+            "Financial Services",
+            "Finance"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $7,567,074 to $7,567,074, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 81 (-2 over 90 days) and market heat at 42 (-15).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Atome, Kredivo, Zip.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

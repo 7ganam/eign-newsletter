@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:52:06.615Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:52:06.564Z",
+    "url": "https://www.crunchbase.com/organization/rex-7255"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Rex",
+      "shortDescription": "Rex is a secure digital financial services platform that provides you with opportunities for a strong financial future",
+      "description": "Rex is a secure digital financial services platform that provides you with opportunities for a strong financial future. \n\nIt was founded in 2021 and is located in Lagos, Lagos, Nigeria.",
+      "website": "https://rexafrica.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Lagos, Nigeria",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Apps",
+        "Finance",
+        "Financial Services",
+        "Payments"
+      ],
+      "sectors": [
+        "Apps",
+        "Financial Services",
+        "Payments",
+        "Software"
+      ],
+      "founders": [
+        "Yinka Odeleye"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 370000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2022-03-31",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2022-03-31",
+          "amount": {
+            "amount": 370000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "postMoneyValuation": {
+            "amount": 3108407,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "ACQ Asset Management",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "Mountain Peak Capital",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2025-06-22",
+          "publisher": "Bloomberg",
+          "title": "Lone Qantas Bear Warns Rally at Risk From $13 Billion Fleet Tab",
+          "url": "https://www.bloomberg.com/news/articles/2025-06-22/qantas-bear-warns-record-stock-rally-at-risk-from-13-billion-fleet-renewal-tab"
+        },
+        {
+          "date": "2022-03-31",
+          "title": "Pre Seed Round - Rex"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 370000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 2,
+      "growthScore": 71,
+      "heatChange90Days": 2,
+      "heatScore": 65
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 41.12
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 21.41,
+        "timingEstimatePercent": {
+          "within6Months": 15.88,
+          "months6To11": 13.36,
+          "months12To24": 20.69,
+          "beyond24Months": 25
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 82.65
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 42.28
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $370,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $3,108,407 to $3,108,407, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 71 (+2 over 90 days) and market heat at 65 (+2).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

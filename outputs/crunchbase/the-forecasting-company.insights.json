@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:24:58.843Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:24:58.787Z",
+    "url": "https://www.crunchbase.com/organization/the-forecasting-company"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "The Forecasting Company",
+      "shortDescription": "The Forecasting Company is a Software Development firm offering foundation models for forecasting.",
+      "website": "https://theforecastingcompany.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "B2B",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Other",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Geoffrey Négiar",
+        "Joachim Fainberg"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A forecasting model designed to generate precise predictions across any time series data for various time horizons.",
+        "name": "t_0"
+      },
+      {
+        "description": "A browser-based forecasting platform that enables users to upload time series data, generate forecasts using t_0, and compare predictions with actual data.",
+        "name": "Retrocast"
+      },
+      {
+        "description": "An API service that provides programmatic access to the t_0 model and other open source forecasting models for integration into business workflows.",
+        "name": "Forecasting API"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2025-01-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2025-01-01",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 13563193,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2024-09-25",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 8795306,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 3,
+        "visibleNames": [
+          {
+            "name": "Benhamou Global Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Davidovs Venture Collective",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2025-01-01",
+          "title": "Seed Round - The Forecasting Company"
+        },
+        {
+          "date": "2024-09-25",
+          "title": "Pre Seed Round - The Forecasting Company"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1.54
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -6,
+      "growthScore": 44,
+      "heatChange90Days": 3,
+      "heatScore": 81
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 92.97
+      },
+      "funding": {
+        "generatedDate": "2026-06-20",
+        "probabilityPercent": 94.16,
+        "timingEstimatePercent": {
+          "within6Months": 99.92,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0.08
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 68.36
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 3.85
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Forecasting & Anomaly Detection Unlock accurate predictions and detect anomalies with Nixtla's industry-leading time series engine.",
+          "employeeRange": "11-50",
+          "name": "Nixtla",
+          "sharedCategories": [
+            "Software",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Demand Planning and Forecasting",
+            "Demand Forecasting Software",
+            "MLOps",
+            "Operational Business Intelligence",
+            "Model Fine-Tuning",
+            "IoT Analytics"
+          ],
+          "similarityScore": 98
+        },
+        {
+          "description": "Amazon Web Services provides information technology infrastructure services to businesses in the form of web services.",
+          "employeeRange": "10,001+",
+          "name": "Amazon Web Services",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "MLOps"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "Almanac Labs is a developer of an IoT platform intended for smart city enablers.",
+          "employeeRange": "11-50",
+          "name": "Almanac Labs",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 86
+        },
+        {
+          "description": "Google Cloud focuses on business challenges that head-on with cloud computing services from Google.",
+          "employeeRange": "10,001+",
+          "name": "Google Cloud",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "MLOps"
+          ],
+          "similarityScore": 84
+        },
+        {
+          "description": "Pecan is an AI platform that offers predictive analytics services for business intelligence, operations, and revenue teams.",
+          "employeeRange": "51-100",
+          "name": "Pecan",
+          "sharedCategories": [
+            "Software",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "AutoML",
+            "Demand Forecasting Software",
+            "MLOps",
+            "Data Pipelines"
+          ],
+          "similarityScore": 84
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $8,795,306 to $13,563,193, a 1.54x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 44 (-6 over 90 days) and market heat at 81 (+3).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Nixtla, Amazon Web Services, Almanac Labs.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:14:40.567Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:14:40.510Z",
+    "url": "https://www.crunchbase.com/organization/nohq"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "NoHQ",
+      "shortDescription": "NoHQ provides guides, tools, and advice to help founders build effective remote strategies.",
+      "description": "NoHQ helps founders build effective remote strategies by providing actionable guides, tools, and advice from remote-first companies. The company offers a curated list of remote work tools designed to make remote working easier and more successful. NoHQ focuses on enriching the remote work experience through additional resources and expert insights, aiming to support businesses in navigating the complexities of remote work environments.",
+      "website": "https://nohq.co/",
+      "foundedYear": 2019,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Marple, Cheshire, United Kingdom",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Advice",
+        "Software",
+        "Software Engineering"
+      ],
+      "sectors": [
+        "Professional Services",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A downloadable PDF checklist with over 20 steps to help companies implement remote-friendly workflows and build a remote-first mindset.",
+        "name": "Remote-First Checklist"
+      },
+      {
+        "description": "A collection of detailed guides and articles offering advice on remote work strategies, management, culture, and best practices.",
+        "name": "Remote Work Guides and Articles"
+      },
+      {
+        "description": "A curated list of nearly 50 hand-picked remote work tools covering areas like communication, collaboration, project management, and HR compliance.",
+        "name": "Remote Work Toolkit"
+      },
+      {
+        "description": "A private, moderated online community for remote founders, managers, employees, and advocates to share knowledge and support each other.",
+        "name": "NoHQ Community"
+      },
+      {
+        "description": "A bi-monthly newsletter delivering curated content on remote work topics, including guides, interviews, and tool recommendations.",
+        "name": "Newsletter Subscription"
+      },
+      {
+        "description": "A guide detailing options and considerations for hiring remote employees globally, including compliance and payroll.",
+        "name": "Remote Hiring Guide"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -33,
+      "heatScore": 32
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 76.33
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Deel offers a unified platform that supports payroll, HR, compliance, and workforce management across global teams.",
+          "employeeRange": "5,001-10,000",
+          "name": "Deel",
+          "similarityScore": 95
+        },
+        {
+          "description": "Remote is an employment, payroll, and HR platform for modern, distributed businesses.",
+          "employeeRange": "1,001-5,000",
+          "name": "Remote",
+          "sharedSpecialties": [
+            "Immigration and Global Mobility"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "Multiplier is a marketing agency that offers experiential marketing, brand activation, and field marketing services.",
+          "employeeRange": "11-50",
+          "name": "Multiplier",
+          "similarityScore": 93
+        },
+        {
+          "description": "Oyster is a distributed HR platform that offers companies to hire, pay, and care for teammates.",
+          "employeeRange": "501-1,000",
+          "name": "Oyster",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Immigration and Global Mobility"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Papaya Global is a fintech platform that provides cloud-based payroll and payments solutions for global workforce management.",
+          "employeeRange": "501-1,000",
+          "name": "Papaya Global",
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Deel, Remote, Multiplier.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:31:14.535Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:31:14.482Z",
+    "url": "https://www.crunchbase.com/organization/quintin-ai"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Quintin AI",
+      "shortDescription": "Quintin provides AI tools that help brands optimise their online product presence for agent-driven search and digital assistants.",
+      "website": "https://quintin.ai/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "industries": [
+        "Software"
+      ],
+      "sectors": [
+        "Software"
+      ],
+      "founders": [
+        "Christien Wong",
+        "Harry Feng"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2025-04-30",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2025-04-30",
+          "investorCount": 1,
+          "leadInvestors": [
+            "Holekamp Seed Fund"
+          ],
+          "postMoneyValuation": {
+            "amount": 2852488,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Holekamp Seed Fund",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2025-04-30",
+          "title": "Pre Seed Round - Quintin AI"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -8,
+      "growthScore": 19,
+      "heatChange90Days": -19,
+      "heatScore": 1
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 65.08
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 64.41,
+        "timingEstimatePercent": {
+          "within6Months": 99.84,
+          "months6To11": 0.01,
+          "months12To24": 0,
+          "beyond24Months": 0.15
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-12",
+        "probabilityPercent": 93.29
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 3.83
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Profound is an AI visibility and content optimization platform that that helps brands optimize their visibility in generative AI search.",
+          "employeeRange": "251-500",
+          "name": "Profound",
+          "similarityScore": 97
+        },
+        {
+          "description": "Otterly.AI monitors and analyzes brand visibility in AI-generated search results while helping marketers optimize content for AI platforms.",
+          "employeeRange": "11-50",
+          "name": "Otterly.AI",
+          "similarityScore": 95
+        },
+        {
+          "description": "Peec AI provides tools for marketing teams to analyze brand performance across various AI platforms.",
+          "employeeRange": "51-100",
+          "name": "Peec AI",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "AthenaHQ is the one-stop-shop for marketers on everything AI Search.",
+          "employeeRange": "11-50",
+          "name": "AthenaHQ",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "SE Ranking is a robust SEO toolkit that best suits small to mid-sized agencies and in-house teams.",
+          "employeeRange": "101-250",
+          "name": "SE Ranking",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $2,852,488 to $2,852,488, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 19 (-8 over 90 days) and market heat at 1 (-19).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Profound, Otterly.AI, Peec AI.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

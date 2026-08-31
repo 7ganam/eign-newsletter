@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:06:36.304Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:06:36.247Z",
+    "url": "https://www.crunchbase.com/organization/vinco"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Vinco",
+      "shortDescription": "Vinco is a boutique IT strategy firm that specializes in cloud migrations, data center storage and managed IT services.",
+      "website": "https://advs-vinco.io/",
+      "foundedYear": 2018,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Data Center",
+        "Data Storage",
+        "Information Technology"
+      ],
+      "sectors": [
+        "Hardware",
+        "Information Technology",
+        "Software"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -17,
+      "heatScore": 62
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 39.03
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 43.53
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 21.17
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Trace3 is a technology consultancy that provides IT strategies, business transformation solutions, and services for the clients.",
+          "employeeRange": "1,001-5,000",
+          "name": "Trace3",
+          "sharedCategories": [
+            "Information Technology"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Presidio provides managed services and network solutions technologies.",
+          "employeeRange": "1,001-5,000",
+          "name": "Presidio",
+          "sharedCategories": [
+            "Information Technology"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "SHI is a corporate reseller of software, hardware, technology products and related services.",
+          "employeeRange": "5,001-10,000",
+          "name": "SHI International Corp",
+          "sharedCategories": [
+            "Information Technology"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "Caylent is a next-generation cloud services company to adapt with speed and drive intelligent growth by leveraging AI and AWS expertise.",
+          "employeeRange": "501-1,000",
+          "name": "Caylent",
+          "similarityScore": 87
+        },
+        {
+          "description": "CDW is a provider of IT solutions for business, government, education, and healthcare.",
+          "employeeRange": "10,001+",
+          "name": "CDW Corporation",
+          "sharedCategories": [
+            "Information Technology"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Trace3, Presidio, SHI International Corp.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

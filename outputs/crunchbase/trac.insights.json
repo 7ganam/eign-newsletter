@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:35:10.173Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:35:10.125Z",
+    "url": "https://www.crunchbase.com/organization/trac"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "TRAC",
+      "shortDescription": "TRAC provides on-demand race timing and analysis solution for road, cross country, and trail races.",
+      "description": "TRAC is an on-demand race timing and analysis solution for road, cross country, and trail races. The solution can be access on iOS, Android, and web platforms.\n\nTRAC was founded by Griffin Kelly and Elliot Hevel in 2014 and is based in Evanston, Illinois.",
+      "website": "https://www.tracchicago.com/",
+      "foundedYear": 2014,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Evanston, Illinois, United States",
+      "geographicRegions": [
+        "Greater Chicago Area",
+        "Great Lakes",
+        "Midwestern US"
+      ],
+      "industries": [
+        "Android",
+        "Predictive Analytics",
+        "Racing"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Mobile",
+        "Platforms",
+        "Software",
+        "Sports"
+      ],
+      "founders": [
+        "Elliot Hevel",
+        "Griffin Kelly"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2016-03-22",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2016-03-22",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 7,
+      "includedUniqueCount": 7,
+      "items": [
+        {
+          "date": "2020-05-28",
+          "publisher": "Yahoo News",
+          "title": "MiX Telematics Partners With TRAC SA to Help Students in Need",
+          "url": "https://news.yahoo.com/mix-telematics-partners-trac-sa-074900177.html"
+        },
+        {
+          "date": "2018-05-30",
+          "publisher": "Tech Republic (Australia)",
+          "title": "How to install the Trac project management tool on Ubuntu 16.04",
+          "url": "https://www.techrepublic.com/article/how-to-install-the-trac-project-management-tool-on-ubuntu-16-04/"
+        },
+        {
+          "date": "2017-05-31",
+          "title": "Synopsys CFO Trac Pham to Speak at Baird Global Consumer, Technology and Services Conference",
+          "url": "http://www.prnewswire.com/news-releases/synopsys-cfo-trac-pham-to-speak-at-baird-global-consumer-technology-and-services-conference-300466672.html"
+        },
+        {
+          "date": "2017-05-30",
+          "title": "Revelation Software Concepts Releases Rev-Trac 7 SPS02 for Flagship SAP Change Control Automation Solution",
+          "url": "http://www.prweb.com/releases/2017/05/prweb14375935.htm"
+        },
+        {
+          "date": "2017-05-18",
+          "title": "New technology: Multi Tool Trac uses renewable energy for 20% more yield, 20% faster",
+          "url": "http://www.irishexaminer.com/breakingnews/farming/new-technology-multi-tool-trac-uses-renewable-energy-for-20-more-yield-20-faster-790153.html"
+        },
+        {
+          "date": "2017-05-12",
+          "title": "Table Trac Announces First Quarter 2017 Results",
+          "url": "http://www.prnewswire.com/news-releases/table-trac-announces-first-quarter-2017-results-300457058.html"
+        },
+        {
+          "date": "2016-03-22",
+          "title": "Pre Seed Round - TRAC"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -14,
+      "heatScore": 1
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Race Result AG is providing a complete race management and race timing solution for any type of active sports event.",
+          "employeeRange": "11-50",
+          "name": "Race Result",
+          "similarityScore": 79
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $120,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

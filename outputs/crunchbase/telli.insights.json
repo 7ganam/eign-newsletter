@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:18:32.176Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:18:32.130Z",
+    "url": "https://www.crunchbase.com/organization/telli"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Telli",
+      "shortDescription": "Telli is a supplier of personal care, furniture, equipment, grooming and bathrobes products to the spa, saloon and hospitality sectors.",
+      "website": "https://www.telliind.com/",
+      "foundedYear": 1999,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Las Vegas, Nevada, United States",
+      "geographicRegions": [
+        "Western US"
+      ],
+      "industries": [
+        "E-Commerce",
+        "Hospitality",
+        "Supply Chain Management",
+        "Wellness"
+      ],
+      "sectors": [
+        "Commerce and Shopping",
+        "Health Care",
+        "Transportation",
+        "Travel and Tourism"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Bulk beauty products for salons, spas, and hotels including personal care, grooming, and bathrobes.",
+        "name": "Wholesale Beauty Supplies"
+      },
+      {
+        "description": "Equipment for spa and salon operations including massage tables, steam room and sauna equipment, and mani-pedi stations.",
+        "name": "Spa and Salon Equipment"
+      },
+      {
+        "description": "Furniture products for salons and spas including chairs, stools, loungers, and treatment tables.",
+        "name": "Salon and Spa Furniture"
+      },
+      {
+        "description": "Disinfectants and sanitization supplies for maintaining hygiene in salons and spas, including Barbicide products and surface wipes.",
+        "name": "Disinfectants and Sanitization Products"
+      },
+      {
+        "description": "Products for massage and body treatments such as massage oils, waxes, and body care items.",
+        "name": "Massage and Body Care Products"
+      },
+      {
+        "description": "Tools and kits for nail care including files, buffers, brushes, and pedicure kits.",
+        "name": "Manicure and Pedicure Supplies"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 0,
+      "heatScore": 66
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 66.67
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Ensure workplace safety with Linen Plus! We supply industrial safety products designed to keep your team protected.",
+          "name": "Linen Plus",
+          "sharedSpecialties": [
+            "Infection Control and Disinfection"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Welcome to HY Supplies.com where you will find your entire beauty salon, tanning salon, spa and restaurant linens needs fulfilled.",
+          "employeeRange": "11-50",
+          "name": "HY supplies Inc.,",
+          "sharedCategories": [
+            "E-Commerce",
+            "Hospitality"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "Belava is a manufacturer that supplies a wider range of beauty salon furniture, equipment and tools.",
+          "employeeRange": "11-50",
+          "name": "Belava",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "sharedSpecialties": [
+            "Beauty Salon and Spa Equipment",
+            "Foot Care",
+            "Stools and Barstools",
+            "Hair Styling Tools",
+            "Nail Care and Nail Art",
+            "Chairs",
+            "Beauty and Personal Care Distribution",
+            "Nail Care Tools"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "SalonCentric is dedicated to providing you with a superior level of customer service.",
+          "employeeRange": "1,001-5,000",
+          "name": "SalonCentric",
+          "sharedSpecialties": [
+            "Beauty Salon and Spa Equipment",
+            "Hair Styling Tools",
+            "Infection Control and Disinfection",
+            "Nail Care and Nail Art",
+            "Beauty and Personal Care Distribution",
+            "Hair Care"
+          ],
+          "similarityScore": 85
+        },
+        {
+          "description": "Universal Companies is a spa and wellness products supplier company.",
+          "employeeRange": "101-250",
+          "name": "Universal Companies",
+          "sharedSpecialties": [
+            "Saunas and Infrared Therapy",
+            "Beauty Salon and Spa Equipment",
+            "Massage and Aromatherapy",
+            "Nail Care and Nail Art",
+            "Beauty and Personal Care Distribution",
+            "Nail Care Tools"
+          ],
+          "similarityScore": 79
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Linen Plus, HY supplies Inc.,, Belava.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

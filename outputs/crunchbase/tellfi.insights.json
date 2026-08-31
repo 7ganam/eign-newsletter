@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:18:27.141Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:18:27.088Z",
+    "url": "https://www.crunchbase.com/organization/tellfi"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "TellFi",
+      "shortDescription": "TellFi provides easy-to-use phone systems with extensions, forwarding and voicemail for small-scale businesses.",
+      "description": "Fastest, easiest way to setup a phone system for your business. \r\nWe take something that has traditionally been painful and expensive, and make it available to everyone. \r\n\r\nThe easiest way to set up a phone system for your business. \r\n\r\nAll the features you want in a business phone system – including extensions, forwarding & voicemail – online for as little as $10 a month.",
+      "website": "http://tellfi.com/",
+      "foundedYear": 2010,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Public Relations"
+      ],
+      "sectors": [
+        "Sales and Marketing"
+      ],
+      "founders": [
+        "Conor Lee",
+        "Jason Corwin",
+        "Zain Memon"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2011-03-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2011-03-01",
+          "investorCount": 2,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "Andreessen Horowitz",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 5,
+      "includedUniqueCount": 5,
+      "items": [
+        {
+          "date": "2011-03-15",
+          "publisher": "Gigaom",
+          "title": "Canada’s Answer to Google Voice: TellFi’s Free Phone Service",
+          "url": "https://gigaom.com/2011/03/15/canadas-answer-to-google-voice-tellfis-free-phone-service/"
+        },
+        {
+          "date": "2011-03-02",
+          "publisher": "Mashable",
+          "title": "Simple Telephony App TellFi Gives Small Businesses More Options",
+          "url": "http://mashable.com/2011/03/02/tellfi/"
+        },
+        {
+          "date": "2011-03-01",
+          "title": "Seed Round - TellFi"
+        },
+        {
+          "date": "2011-03-01",
+          "title": "TellFi Helps Small Businesses Sound Professional on the Phone",
+          "url": "http://networkeffect.allthingsd.com/20110228/tellfi-helps-small-businesses-sound-professional-on-the-phone/"
+        },
+        {
+          "date": "2011-02-28",
+          "publisher": "TechCrunch",
+          "title": "YC-Backed TellFi Is Like &#8220;Google Voice&#8221; For&nbsp;Companies",
+          "url": "http://techcrunch.com/2011/02/28/tellfi/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -11,
+      "heatScore": 40
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Grasshopper enables entrepreneurs to build a virtual office that connects callers to employees.",
+          "employeeRange": "1,001-5,000",
+          "name": "Grasshopper",
+          "similarityScore": 97
+        },
+        {
+          "description": "Flexible & scalable cloud-based call center solution designed for small & mid-sized businesses",
+          "employeeRange": "101-250",
+          "name": "MightyCall",
+          "similarityScore": 93
+        },
+        {
+          "description": "Phone.com is the modern, work-from-anywhere solution for today’s agile, mobile, and always-on entrepreneurs and growing businesses.",
+          "employeeRange": "101-250",
+          "name": "Phone.com",
+          "similarityScore": 91
+        },
+        {
+          "description": "Google Voice is an application for a voice calling service for all devices.",
+          "name": "Google Voice",
+          "similarityScore": 87
+        },
+        {
+          "description": "First in AI. Best in Agentic.",
+          "employeeRange": "1,001-5,000",
+          "name": "Dialpad",
+          "similarityScore": 84
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Grasshopper, MightyCall, Phone.com.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

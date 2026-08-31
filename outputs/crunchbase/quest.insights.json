@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:29:41.269Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:29:41.213Z",
+    "url": "https://www.crunchbase.com/organization/quest"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Quest app",
+      "shortDescription": "Quest let people answer your question. Ask a question from any mobile phone via text message, iPhone and Android apps.",
+      "description": "Quest let people answer your question. Ask a question from any mobile phone via text message, iPhone and Android apps. Within minutes, someone nearby will answer your question.\n Checkout - www.questapp.co\n\n Quest is a people powered answering app where the Human Mind will be the Algorithm behind our answers. We strongly believe Quest is more in line with the future of information sharing among smartphone users.",
+      "website": "http://www.questapp.co/",
+      "foundedYear": 2013,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Android",
+        "iOS",
+        "Mobile",
+        "SMS"
+      ],
+      "sectors": [
+        "Internet Services",
+        "Messaging and Telecommunications",
+        "Mobile",
+        "Platforms",
+        "Software"
+      ],
+      "founders": [
+        "Deepak Ravindran",
+        "Mohammed Hisamuddin"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2014-01-26",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2014-01-26",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "500 Global"
+          ],
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "500 Global",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2021-03-16",
+          "publisher": "Road to VR",
+          "title": "Unassuming One-man VR Project ‘Gorilla Tag’ Sees 125K Players in First Month, Now on Quest App Lab",
+          "url": "http://ow.ly/6DjD50E0zl8"
+        },
+        {
+          "date": "2014-01-26",
+          "title": "Pre Seed Round - Quest app"
+        },
+        {
+          "date": "2010-11-09",
+          "publisher": "TechCrunch",
+          "title": "Quest To Buy Data Protection Software Company BakBone For $55&nbsp;Million",
+          "url": "http://techcrunch.com/2010/11/09/quest-to-buy-data-protection-software-company-bakbone-for-55-million/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -20,
+      "heatScore": 6
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Quora is a question-and-answer platform that allows users to ask and answer questions on a wide range of topics.",
+          "employeeRange": "251-500",
+          "name": "Quora",
+          "similarityScore": 91
+        },
+        {
+          "description": "Stack Overflow is an online community for developers to learn, share their knowledge, and build their careers.",
+          "employeeRange": "501-1,000",
+          "name": "Stack Exchange",
+          "similarityScore": 88
+        },
+        {
+          "description": "Yahoo is a technology and media company that serves users through its portfolio of digital platforms, products, and services.",
+          "employeeRange": "5,001-10,000",
+          "name": "Yahoo",
+          "similarityScore": 88
+        },
+        {
+          "description": "Ask.com is a question answering-focused web search engine that delivers answers from the web and real people.",
+          "employeeRange": "251-500",
+          "name": "Ask.com",
+          "similarityScore": 86
+        },
+        {
+          "description": "Answers empowers consumers, brands and organizations with the information they need to make better-informed decisions.",
+          "employeeRange": "11-50",
+          "name": "Answers Corporation",
+          "sharedCategories": [
+            "Mobile"
+          ],
+          "similarityScore": 86
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $500,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Quora, Stack Exchange, Yahoo.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

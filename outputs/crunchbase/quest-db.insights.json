@@ -1,0 +1,492 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:29:46.370Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:29:46.311Z",
+    "url": "https://www.crunchbase.com/organization/quest-db"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "QuestDB",
+      "shortDescription": "QuestDB is an open-source SQL database designed to process time-series data, faster.",
+      "description": "QuestDB is a high performance database for time-series data. QuestDB’s software architecture has been designed from the ground up to be as close to the hardware structure as possible - offering breakthrough performance. Through QuestDB, companies can harness the power of time series data by handling billions of time-stamped events without relying on powerful hardware.",
+      "website": "https://www.questdb.io/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Analytics",
+        "Big Data",
+        "Database",
+        "Information Technology",
+        "Internet of Things",
+        "Open Source",
+        "Software"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Information Technology",
+        "Internet Services",
+        "Software"
+      ],
+      "founders": [
+        "Nicolas Hourcard",
+        "Tancrede Collard",
+        "Vlad Ilyushchenko"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An open-source SQL database optimized for high-throughput ingestion and fast querying of time-series data using extended SQL features.",
+        "name": "QuestDB Open Source Time-Series Database"
+      },
+      {
+        "description": "A commercial edition of QuestDB offering advanced features for large-scale, secure, and highly available time-series data management with expert support.",
+        "name": "QuestDB Enterprise"
+      },
+      {
+        "description": "Extended SQL syntax and functions tailored for time-series data analysis, enabling efficient temporal queries and data aggregation.",
+        "name": "Time-Series SQL Extensions"
+      },
+      {
+        "description": "Support for open data formats like Apache Parquet and Arrow, and integration with various data clients and frameworks for interoperability.",
+        "name": "Open Format Support and Integration Ecosystem"
+      },
+      {
+        "description": "Capabilities for ingesting millions of rows per second with deduplication and out-of-order data handling, combined with millisecond query response times.",
+        "name": "High-Performance Data Ingestion and Querying"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 14300000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 3,
+      "detailedRoundCount": 3,
+      "lastFundingDate": "2024-04-24",
+      "lastFundingType": "Non Equity Assistance",
+      "rounds": [
+        {
+          "announcedDate": "2024-04-24",
+          "investorCount": 1,
+          "leadInvestors": [
+            "Intel Ignite"
+          ],
+          "type": "Non Equity Assistance"
+        },
+        {
+          "announcedDate": "2021-11-03",
+          "amount": {
+            "amount": 12000000,
+            "currency": "USD"
+          },
+          "investorCount": 15,
+          "leadInvestors": [
+            "468 Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 51832211,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2020-07-02",
+          "amount": {
+            "amount": 2300000,
+            "currency": "USD"
+          },
+          "investorCount": 6,
+          "leadInvestors": [
+            "Episode 1"
+          ],
+          "postMoneyValuation": {
+            "amount": 11525380,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 21,
+        "visibleNames": [
+          {
+            "name": "468 Capital"
+          },
+          {
+            "name": "7percent Ventures",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Alexis Ohanian",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Dan Pinto",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Episode 1"
+          },
+          {
+            "isLead": true,
+            "name": "Intel Ignite",
+            "rounds": [
+              "Non Equity Assistance"
+            ]
+          },
+          {
+            "name": "James Hawkins",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Kima Ventures"
+          },
+          {
+            "name": "Michael Li",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Sebastien Pahl",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Seedcamp"
+          },
+          {
+            "name": "Sumedh Pathak",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Tobi Knaup",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Uncorrelated Ventures",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Y Combinator"
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 18,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-02-17",
+          "publisher": "GlobalFinTechSeries",
+          "title": "QuestDB Supports HDFC Bank’s Real-Time Transaction Monitoring and Risk Analytics",
+          "url": "https://globalfintechseries.com/banking/questdb-supports-hdfc-banks-real-time-transaction-monitoring-and-risk-analytics/"
+        },
+        {
+          "date": "2025-09-08",
+          "publisher": "QuestDB",
+          "title": "Anti Capital Adopts Time-Series Database QuestDB to Power Next-Generation Trading Infrastructure",
+          "url": "https://www.globenewswire.com/news-release/2025/09/08/3146186/0/en/Anti-Capital-Adopts-Time-Series-Database-QuestDB-to-Power-Next-Generation-Trading-Infrastructure.html"
+        },
+        {
+          "date": "2024-04-24",
+          "title": "Non Equity Assistance - QuestDB"
+        },
+        {
+          "date": "2023-12-05",
+          "publisher": "Artrocker",
+          "title": "Time Series Databases Software Market Size, Beyond 2023 ...",
+          "url": "https://www.artrocker.tv/news/time-series-databases-software-market-size-beyond-2023-growth-forecasts-2023-2030/106425/"
+        },
+        {
+          "date": "2023-09-20",
+          "publisher": "Opportunity Desk",
+          "title": "20 Job Opportunities at Leading Organizations Across the ...",
+          "url": "https://opportunitydesk.org/2023/09/20/20-job-opportunities-at-leading-organizations-across-the-world-september-20-2023/"
+        },
+        {
+          "date": "2022-12-20",
+          "publisher": "dzone.com",
+          "title": "Monitoring QuestDB in Kubernetes",
+          "url": "http://dlvr.it/Sfhbb3"
+        },
+        {
+          "date": "2022-11-01",
+          "publisher": "Fintech Finance",
+          "title": "QuestDB Selected by Aquis Exchange to Power Its Financial Exchange Infrastructure",
+          "url": "https://zpr.io/udzQ7ksfqfcU"
+        },
+        {
+          "date": "2022-06-14",
+          "publisher": "Telegraph",
+          "title": "No, QuestDB is not Faster than ClickHouse",
+          "url": "https://telegra.ph/No-QuestDB-is-not-Faster-than-ClickHouse-06-15"
+        },
+        {
+          "date": "2021-11-08",
+          "publisher": "FinSMEs",
+          "title": "QuestDB Raises $12M in Series A Funding",
+          "url": "https://www.finsmes.com/2021/11/questdb-raises-12m-in-series-a-funding.html"
+        },
+        {
+          "date": "2021-11-03",
+          "publisher": "SiliconANGLE",
+          "title": "QuestDB gets $12M Series A funding amid growing interest in time-series databases",
+          "url": "https://siliconangle.com/2021/11/03/questdb-gets-12m-series-funding-amid-growing-interest-time-series-databases/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 2,
+    "knownDetailedFundingAmount": {
+      "amount": 14300000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestToEarliestKnownValuationMultiple": 4.5
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "reportedPartnerships": {
+      "note": "Provider event summaries with linked sources; not independently verified.",
+      "items": [
+        {
+          "date": "2026-02-17",
+          "description": "QuestDB and HDFC Bank have established a technology partnership in which HDFC Bank uses QuestDB’s time-series database to power real-time transaction monitoring and risk analytics at national scale.",
+          "sources": [
+            {
+              "date": "2026-02-17",
+              "publisher": "GlobalFinTechSeries",
+              "title": "QuestDB Supports HDFC Bank’s Real-Time Transaction Monitoring and Risk Analytics",
+              "url": "https://globalfintechseries.com/banking/questdb-supports-hdfc-banks-real-time-transaction-monitoring-and-risk-analytics/"
+            }
+          ]
+        },
+        {
+          "date": "2025-09-08",
+          "description": "QuestDB and Anti Capital announced a partnership in which Anti Capital adopts QuestDB’s high-performance, open-source time-series database to power its next‑generation trading data infrastructure.",
+          "sources": [
+            {
+              "date": "2025-09-08",
+              "publisher": "QuestDB",
+              "title": "Anti Capital Adopts Time-Series Database QuestDB to Power Next-Generation Trading Infrastructure",
+              "url": "https://www.globenewswire.com/news-release/2025/09/08/3146186/0/en/Anti-Capital-Adopts-Time-Series-Database-QuestDB-to-Power-Next-Generation-Trading-Infrastructure.html"
+            }
+          ]
+        }
+      ]
+    },
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2023-12-19",
+      "growthChange90Days": -7,
+      "growthScore": 35,
+      "heatChange90Days": -5,
+      "heatScore": 64,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.2
+      },
+      "funding": {
+        "generatedDate": "2025-10-04",
+        "probabilityPercent": 27.74,
+        "timingEstimatePercent": {
+          "within6Months": 36.21,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 63.79
+        }
+      },
+      "growth": {
+        "generatedDate": "2025-05-07",
+        "probabilityPercent": 91.12
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 3.97
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "InfluxData is the creator of InfluxDB, an open source time series database and platform.",
+          "employeeRange": "101-250",
+          "name": "InfluxData",
+          "sharedCategories": [
+            "Analytics",
+            "Database",
+            "Information Technology",
+            "Internet of Things"
+          ],
+          "sharedSpecialties": [
+            "Data Engineering",
+            "Database Platform Services",
+            "Real-Time Big Data Processing",
+            "Data Quality and Observability",
+            "Data Lake Platforms",
+            "IoT Analytics",
+            "Big Data Infrastructure",
+            "Data Pipelines"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "ClickHouse provides an open-source database system for real-time analytical reporting.",
+          "employeeRange": "251-500",
+          "name": "ClickHouse",
+          "sharedCategories": [
+            "Analytics",
+            "Software",
+            "Big Data",
+            "Database"
+          ],
+          "sharedSpecialties": [
+            "Data Engineering",
+            "Database Platform Services",
+            "Real-Time Big Data Processing",
+            "Data Warehousing",
+            "Big Data Infrastructure",
+            "Data Pipelines"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "OpenTSDB is a distributed time series database that stores and serves large volumes of time-series metrics with HTTP API access.",
+          "name": "OpenTSDB",
+          "sharedCategories": [
+            "Big Data",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Data Engineering",
+            "Database Platform Services",
+            "Real-Time Big Data Processing",
+            "Data Quality and Observability",
+            "Big Data Infrastructure",
+            "Data Pipelines"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Prometheus is an open source monitoring platform that provides metrics collection, time-series storage, and alerting.",
+          "employeeRange": "11-50",
+          "name": "Prometheus",
+          "sharedCategories": [
+            "Software",
+            "Open Source"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Apache Software Foundation provides organizational, legal and financial support for Apache open-source software projects.",
+          "employeeRange": "1-10",
+          "name": "The Apache Software Foundation",
+          "sharedCategories": [
+            "Software",
+            "Open Source"
+          ],
+          "sharedSpecialties": [
+            "Database Platform Services",
+            "Real-Time Big Data Processing",
+            "Data Lake Platforms"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $11,525,380 to $51,832,211, a 4.5x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 35 (-7 over 90 days) and market heat at 64 (-5).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include InfluxData, ClickHouse, OpenTSDB.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 18 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

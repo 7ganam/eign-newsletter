@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:11:27.034Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:11:26.974Z",
+    "url": "https://www.crunchbase.com/organization/newcraft"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "NewCraft",
+      "shortDescription": "API for Employee Data",
+      "description": "NewCraft is a data warehouse for employee data.  We connect to products like Rippling, Greenhouse, Lattice and more to make all of your employee data accessible with a simple API.  You can think of us like Segment for employee data.  NewCraft makes it 10x easier to add a new employee service or migrate between these services.",
+      "website": "http://www.newcraft.io/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "New York, United States",
+      "geographicRegions": [
+        "Greater New York Area",
+        "East Coast",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Developer APIs"
+      ],
+      "sectors": [
+        "Software"
+      ],
+      "founders": [
+        "Cam Sadler",
+        "Nigel Gilbert"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Services facilitating the monetization, sale, and purchase of domain names, including related transactional support.",
+        "name": "Domain Monetization and Sales Services"
+      },
+      {
+        "description": "Management of user data collection, privacy policies, and compliance with data protection regulations on the website.",
+        "name": "Privacy and Data Collection Management"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2018-03-19",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2018-03-19",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 3,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 3,
+        "visibleNames": [
+          {
+            "name": "Precursor Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Sinai Capital Partners",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 4,
+      "includedUniqueCount": 4,
+      "items": [
+        {
+          "date": "2022-09-02",
+          "publisher": "Media Post",
+          "title": "WPP Acquires Newcraft To Strengthen Digital Commerce Capabilities",
+          "url": "https://bit.ly/3AIbVtQ"
+        },
+        {
+          "date": "2022-09-02",
+          "publisher": "Silicon Canals",
+          "title": "Amsterdam-based Newcraft becomes part of WPP division Wunderman Thompson",
+          "url": "https://bit.ly/3ALUp7Q"
+        },
+        {
+          "date": "2022-09-01",
+          "publisher": "UK Investor Magazine",
+          "title": "WPP acquires Dutch ecommerce consultancy Newcraft",
+          "url": "https://ukinvestormagazine.co.uk/wpp-acquires-dutch-ecommerce-consultancy-newcraft/"
+        },
+        {
+          "date": "2018-03-19",
+          "title": "Seed Round - NewCraft"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 3,
+      "heatScore": 51
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $120,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

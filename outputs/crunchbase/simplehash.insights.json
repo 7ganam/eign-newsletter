@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:29:15.545Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:29:15.509Z",
+    "url": "https://www.crunchbase.com/organization/simplehash"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "SimpleHash",
+      "shortDescription": "SimpleHash is an NFT data platform that specializes in infrastructure for multi-chain NFT indexing and querying.",
+      "description": "SimpleHash is a REST and webhook-based API that provides the ability to query NFT metadata, media, and transaction history, including sales, listings, and floor prices, across multiple chains. They build APIs and developer tooling to abstract away this complexity for developers. They provide preview versions of the relevant media file within the previews field.",
+      "website": "https://simplehash.com/",
+      "foundedYear": 2022,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Bitcoin",
+        "Blockchain",
+        "Cryptocurrency",
+        "Security"
+      ],
+      "sectors": [
+        "Blockchain and Cryptocurrency",
+        "Financial Services",
+        "Payments",
+        "Privacy and Security",
+        "Software"
+      ],
+      "founders": [
+        "Alex Kilkka",
+        "Olly Wilson"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A REST API providing access to token and NFT data, including market prices, metadata, ownership, and transaction history across 80+ blockchain networks.",
+        "name": "SimpleHash Multi-Chain Token & NFT API"
+      },
+      {
+        "description": "A high-throughput Kafka-based streaming service delivering real-time token and NFT data streams for large-scale ingestion and processing.",
+        "name": "SimpleHash Kafka Streaming Service"
+      },
+      {
+        "description": "A system that maintains up-to-date NFT metadata and cached media previews, including dynamic refreshing and spam filtering.",
+        "name": "NFT Metadata and Media Management"
+      },
+      {
+        "description": "A spam scoring system that evaluates NFT collections to identify and filter out likely spam or low-quality assets.",
+        "name": "Spam Scoring and Filtering for NFT Collections"
+      },
+      {
+        "description": "Dedicated enterprise support and SLAs providing rapid assistance and guaranteed uptime for mission-critical NFT and token data services.",
+        "name": "Enterprise Support and Service Level Agreements (SLAs)"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2023-04-06",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2023-04-06",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 8364141,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        },
+        {
+          "announcedDate": "2022-03-01",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 3,
+          "postMoneyValuation": {
+            "amount": 6689519,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 4,
+        "visibleNames": [
+          {
+            "name": "FundersClub",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "Orange DAO",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "Outset Capital",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 4,
+      "includedUniqueCount": 4,
+      "items": [
+        {
+          "date": "2025-03-05",
+          "publisher": "globallegalchronicle.com",
+          "title": "Phantom’s Acquisition of SimpleHash",
+          "url": "https://globallegalchronicle.com/phantoms-acquisition-of-simplehash/"
+        },
+        {
+          "date": "2025-02-26",
+          "title": "SimpleHash acquired by Phantom"
+        },
+        {
+          "date": "2023-04-06",
+          "title": "Pre Seed Round - SimpleHash"
+        },
+        {
+          "date": "2022-03-01",
+          "title": "Pre Seed Round - SimpleHash"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1.25
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -3,
+      "growthScore": 65,
+      "heatChange90Days": -7,
+      "heatScore": 33
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2025-02-07",
+        "probabilityPercent": 86.77
+      },
+      "funding": {
+        "generatedDate": "2026-04-04",
+        "probabilityPercent": 6.2,
+        "timingEstimatePercent": {
+          "within6Months": 0.29,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 99.71
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 69
+      },
+      "ipo": {
+        "generatedDate": "2025-09-22",
+        "probabilityPercent": 0.4
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Optimism is an Ethereum-based decentralized infrastructure platform that allows for instant transactions and scalable smart contracts.",
+          "employeeRange": "11-50",
+          "name": "Optimism",
+          "sharedCategories": [
+            "Blockchain",
+            "Cryptocurrency"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Alchemy is a developer platform that helps companies to build reliable decentralized applications.",
+          "employeeRange": "101-250",
+          "name": "Alchemy",
+          "sharedCategories": [
+            "Blockchain"
+          ],
+          "sharedSpecialties": [
+            "API Management"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Reservoir is a developer platform that enables next-generation NFT products to be delivered to market.",
+          "employeeRange": "11-50",
+          "name": "Reservoir",
+          "sharedCategories": [
+            "Blockchain"
+          ],
+          "sharedSpecialties": [
+            "API Management"
+          ],
+          "similarityScore": 96
+        },
+        {
+          "description": "Succinct builds zero-knowledge infrastructure for developers.",
+          "employeeRange": "11-50",
+          "name": "Succinct",
+          "sharedCategories": [
+            "Bitcoin",
+            "Blockchain",
+            "Cryptocurrency"
+          ],
+          "sharedSpecialties": [
+            "Developer Documentation Platforms",
+            "API Management"
+          ],
+          "similarityScore": 91.796
+        },
+        {
+          "description": "Modular data infrastructure for Ai and building the Ethereum Wayback Machine",
+          "employeeRange": "11-50",
+          "name": "Covalent",
+          "sharedCategories": [
+            "Blockchain",
+            "Cryptocurrency"
+          ],
+          "sharedSpecialties": [
+            "Real-Time Big Data Processing",
+            "API Management",
+            "Data Pipelines"
+          ],
+          "similarityScore": 88
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $6,689,519 to $8,364,141, a 1.25x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 65 (-3 over 90 days) and market heat at 33 (-7).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Optimism, Alchemy, Reservoir.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

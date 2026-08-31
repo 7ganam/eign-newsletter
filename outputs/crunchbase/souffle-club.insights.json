@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:40:04.570Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:40:04.514Z",
+    "url": "https://www.crunchbase.com/organization/souffle-club"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Souffle Club",
+      "shortDescription": "Souffle Club operates a professional networking platform built on context-based, trust-driven recommendations.",
+      "description": "Souffle Club operates a professional networking platform that reconstructs professional profiles around credible, context-based recommendations rather than traditional resumes. The service enables users to answer detailed, behavior-focused prompts that nominate peers for specific skills and collaborative scenarios. These responses build a structured trust graph that captures who trusts whom and in what context, emphasizing real-world working relationships. The platform focuses on professional discovery, expert identification, and reputation signaling for roles such as engineers, designers, founders, and investors. Souffle Club also experiments with community features and discussion formats where high-quality contributions can reveal contributor identities for recognition. The product targets professionals seeking more nuanced career discovery, hiring, and collaboration signals than conventional social networking sites provide.",
+      "website": "https://souffle.club/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Career Planning",
+        "Collaboration",
+        "Enterprise Software",
+        "Human Resources",
+        "Professional Networking",
+        "Recruiting",
+        "Social Network",
+        "Software"
+      ],
+      "sectors": [
+        "Administrative Services",
+        "Community and Lifestyle",
+        "Internet Services",
+        "Other",
+        "Professional Services",
+        "Software"
+      ],
+      "founders": [
+        "Pradeep Muthukrishnan"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A professional networking web application based on context-driven, trust graph recommendations instead of traditional resumes.",
+        "name": "Soufflé Club Platform"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 5,
+      "growthScore": 84,
+      "heatChange90Days": 38,
+      "heatScore": 63
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 43.56
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 41.41
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 25.37
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 84 (+5 over 90 days) and market heat at 63 (+38).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

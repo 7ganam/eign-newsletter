@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:26:00.275Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:26:00.221Z",
+    "url": "https://www.crunchbase.com/organization/the-new-money-company"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "The New Money Company",
+      "shortDescription": "The New Money Company provides insured B2B invoicing and cross-border payment infrastructure for global trade.",
+      "description": "The New Money Company provides a financial technology platform for insured B2B invoicing and cross-border enterprise payments. The company offers an order-to-cash backend that combines order management, invoicing, document collection, and structured invoice tracking. Its workflows include automated trade credit underwriting and insurance that can cover invoices against buyer nonpayment or fraud. The platform supports both a web app and developer APIs so teams can embed credit decisions and invoice protection into their own systems. The New Money Company also delivers multi-currency payment rails and virtual accounts to help businesses receive, hold, and send funds across markets. Its services are used by distributors, manufacturers, and other enterprises that extend net payment terms and transact with international buyers.",
+      "website": "https://newmoneycompany.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "B2B",
+        "Banking",
+        "Cloud Computing",
+        "Enterprise Software",
+        "Financial Services",
+        "FinTech",
+        "Payments",
+        "Risk Management"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Financial Services",
+        "Information Technology",
+        "Internet Services",
+        "Lending and Investments",
+        "Other",
+        "Payments",
+        "Professional Services",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A B2B invoicing platform that backs accounts receivable with automated trade credit and insurance against buyer nonpayment or fraud.",
+        "name": "Numo / Invoice Protection Engine"
+      },
+      {
+        "description": "A cross-border business account for receiving, holding, and withdrawing USD across currencies with no transfer fees.",
+        "name": "Emerald Account"
+      },
+      {
+        "description": "An order-to-cash and cross-border payments platform with integrated credit underwriting, invoice insurance, and global payment rails.",
+        "name": "The New Money Company Platform"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 40,
+      "heatScore": 85
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 67.52
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 69.7
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 52.3
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:46:19.232Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:46:19.185Z",
+    "url": "https://www.crunchbase.com/organization/renderlet"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Renderlet",
+      "shortDescription": "Renderlet is a framework that allows developers to write 2D and 3D rendering code once and run it from anywhere.",
+      "description": "Renderlet is a framework that allows developers to write 2D and 3D rendering code once and run it from anywhere.",
+      "website": "https://www.renderlet.com/",
+      "foundedYear": 2024,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "New York, United States",
+      "geographicRegions": [
+        "Greater New York Area",
+        "East Coast",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Data Visualization",
+        "Developer Tools"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Design",
+        "Information Technology",
+        "Software"
+      ],
+      "founders": [
+        "Sean Isom"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A framework enabling developers to create 2D and 3D rendering code once and deploy it across multiple platforms with real-time procedural generation.",
+        "name": "Renderlet 3D Procedural Design Framework"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2024-03-01",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2024-03-01",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 6419962,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2024-03-01",
+          "title": "Pre Seed Round - Renderlet"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -3,
+      "growthScore": 60,
+      "heatChange90Days": -6,
+      "heatScore": 43
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 93.99
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 53.09,
+        "timingEstimatePercent": {
+          "within6Months": 67.28,
+          "months6To11": 0.15,
+          "months12To24": 0,
+          "beyond24Months": 32.57
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-05-23",
+        "probabilityPercent": 71.91
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 3.9
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Unity provides multiplatform tools and services to developers of interactive content.",
+          "employeeRange": "1,001-5,000",
+          "name": "Unity",
+          "sharedCategories": [
+            "Developer Tools"
+          ],
+          "sharedSpecialties": [
+            "Gaming Platforms",
+            "AR/VR and 3D Retail Experiences",
+            "3D Modeling",
+            "Virtual Production",
+            "Architectural Visualization"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Unreal Engine is a real-time 3D creation tool for crafting high-quality video games with photorealistic visuals and immersive experiences.",
+          "employeeRange": "251-500",
+          "name": "Unreal Engine",
+          "sharedSpecialties": [
+            "Gaming Platforms",
+            "AR/VR and 3D Retail Experiences",
+            "3D Modeling",
+            "Digital Twin Software",
+            "Visual Effects (VFX)",
+            "Virtual Production",
+            "Architectural Visualization"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Babylon.js is a company that develops and designs websites, e-commerce sites, and online shops.",
+          "name": "Babylon.js",
+          "sharedSpecialties": [
+            "AR/VR and 3D Retail Experiences",
+            "3D Modeling",
+            "Virtual Production"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "threejs development, 3d animation",
+          "employeeRange": "11-50",
+          "name": "Three.JS Developers",
+          "sharedSpecialties": [
+            "AR/VR and 3D Retail Experiences",
+            "3D Modeling",
+            "Virtual Production"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "Apple is a technology company that designs, manufactures, and markets consumer electronics, personal computers, and software.",
+          "employeeRange": "1-10",
+          "name": "Apple",
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $500,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $6,419,962 to $6,419,962, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 60 (-3 over 90 days) and market heat at 43 (-6).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Unity, Unreal Engine, Babylon.js.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

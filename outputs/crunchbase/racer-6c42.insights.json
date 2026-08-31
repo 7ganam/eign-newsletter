@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:33:11.169Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:33:11.133Z",
+    "url": "https://www.crunchbase.com/organization/racer-6c42"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Racer",
+      "shortDescription": "Restaurant food, delivered in 15-min.",
+      "website": "https://www.racer.app/",
+      "foundedYear": 2020,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Seattle, Washington, United States",
+      "geographicRegions": [
+        "Greater Seattle Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Food Delivery"
+      ],
+      "sectors": [
+        "Food and Beverage",
+        "Transportation"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2021-11-23",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2021-11-23",
+          "investorCount": 2,
+          "postMoneyValuation": {
+            "amount": 6001976,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2020-08-22",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 3313493,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 3,
+        "visibleNames": [
+          {
+            "name": "Founders, Inc.",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "MPG Fund",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2021-11-23",
+          "title": "Seed Round - Racer"
+        },
+        {
+          "date": "2020-08-22",
+          "title": "Pre Seed Round - Racer"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1.81
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 5,
+      "growthScore": 5,
+      "heatChange90Days": -10,
+      "heatScore": 55
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 42.3
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 21.9,
+        "timingEstimatePercent": {
+          "within6Months": 14.59,
+          "months6To11": 12.46,
+          "months12To24": 19.74,
+          "beyond24Months": 24.9
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 40
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 25.76
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "DoorDash is a food delivery platform that connects customers with local and national businesses.",
+          "employeeRange": "10,001+",
+          "name": "DoorDash",
+          "sharedCategories": [
+            "Food Delivery"
+          ],
+          "similarityScore": 96
+        },
+        {
+          "description": "Uber Eats is a food delivery platform that makes getting great food from a favorite local restaurants as easy as requesting a ride.",
+          "employeeRange": "101-250",
+          "name": "Uber Eats",
+          "sharedCategories": [
+            "Food Delivery"
+          ],
+          "similarityScore": 96
+        },
+        {
+          "description": "Grubhub is an online platform that connects customers with local restaurants.",
+          "employeeRange": "11-50",
+          "name": "Grubhub",
+          "sharedCategories": [
+            "Food Delivery"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Seamless North America is an online platform and smartphone app that allows customers to order food from preferred restaurants.",
+          "employeeRange": "501-1,000",
+          "name": "Seamless",
+          "sharedCategories": [
+            "Food Delivery"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "Instacart is an online grocery platform that offers same-day delivery and pickup services for retailers and consumers.",
+          "employeeRange": "1,001-5,000",
+          "name": "Instacart",
+          "similarityScore": 86
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $3,313,493 to $6,001,976, a 1.81x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 5 (+5 over 90 days) and market heat at 55 (-10).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include DoorDash, Uber Eats, Grubhub.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

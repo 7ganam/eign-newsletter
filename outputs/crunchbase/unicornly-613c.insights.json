@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:49:32.066Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:49:32.006Z",
+    "url": "https://www.crunchbase.com/organization/unicornly-613c"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Unicornly",
+      "shortDescription": "Unicornly is a software house that provides technology consulting and software development services.",
+      "website": "https://unicornly.io/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Katowice, Slaskie, Poland",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Consulting",
+        "Information Technology",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Professional Services",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A comprehensive analysis service evaluating technology, talent, and processes for potential investments, focusing on areas like architecture, codebase, infrastructure, and security to identify risks and opportunities.",
+        "name": "360-degree Tech Due Diligence"
+      },
+      {
+        "description": "A comprehensive analysis service evaluating technology, talent, and processes for potential investments, focusing on areas like architecture, codebase, infrastructure, and security to identify risks and opportunities.",
+        "name": "360-degree Tech Due Diligence"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -17,
+      "heatScore": 50
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 20.46
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 67.32
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 9
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Thoughtworks is a technological firm that combines strategy, design, and software engineering.",
+          "employeeRange": "10,001+",
+          "name": "Thoughtworks",
+          "sharedCategories": [
+            "Consulting",
+            "Software",
+            "Information Technology"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "EPAM leverages its core engineering expertise as a leading global product development and digital platform engineering services company.",
+          "employeeRange": "10,001+",
+          "name": "EPAM Systems",
+          "sharedCategories": [
+            "Software",
+            "Information Technology"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "Slalom Consulting is a business and technology consulting firm that designs and builds strategies and systems to help its clients",
+          "employeeRange": "10,001+",
+          "name": "Slalom",
+          "sharedCategories": [
+            "Consulting"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Valtech is a digital agency that offers marketing, digital technology, and business transformation consulting.",
+          "employeeRange": "5,001-10,000",
+          "name": "Valtech",
+          "sharedCategories": [
+            "Consulting",
+            "Information Technology"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "Ciklum is an software development outsourcing company specializing in Client owned software development centers in Eastern Europe.",
+          "employeeRange": "1,001-5,000",
+          "name": "Ciklum",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Software Architecture and Design"
+          ],
+          "similarityScore": 88
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Thoughtworks, EPAM Systems, Slalom.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

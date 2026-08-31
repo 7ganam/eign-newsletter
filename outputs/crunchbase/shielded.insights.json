@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:21:38.527Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:21:38.472Z",
+    "url": "https://www.crunchbase.com/organization/shielded"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Shielded",
+      "shortDescription": "Shielded is an insurance brokerage that arranges personal and commercial insurance cover for clients across Australia.",
+      "description": "Shielded is an insurance brokerage that arranges personal and commercial insurance cover for clients across Australia. The company provides broking services for motor, home and contents, landlord, strata, construction, owner builder, business package, public liability, professional indemnity, farm, aviation, marine, travel, life, income protection and other specialist insurance needs. Shielded supports clients from quote through placement, renewal and claims management, including 24/7 claim lodgement options and online self-service for policy documents and amendments. Its brokers compare policies from multiple insurers, obtain quotes, and help tailor coverage to individual and business risk profiles. Shielded also offers dedicated services for sectors such as transport, mining, hospitality, waste and recycling, and North Queensland property owners.",
+      "website": "https://www.shieldedinsurance.com.au/quote-sent.php",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "industries": [
+        "Insurance"
+      ],
+      "sectors": [
+        "Financial Services"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Broking service that sources and arranges personal and commercial insurance cover from multiple insurers.",
+        "name": "General insurance broking services"
+      },
+      {
+        "description": "Service that assists clients with lodging, managing, and following up insurance claims across all policy types.",
+        "name": "Claims management services"
+      },
+      {
+        "description": "Service that reviews, remarkets, and renews existing insurance policies to maintain appropriate cover.",
+        "name": "Policy renewal and review services"
+      },
+      {
+        "description": "Broking service that arranges specialised insurance cover for owner builder construction and renovation projects.",
+        "name": "Owner builder insurance broking"
+      },
+      {
+        "description": "Broking service that arranges aviation hull, liability, and related insurance for aircraft owners and aviation businesses.",
+        "name": "Aviation insurance broking"
+      },
+      {
+        "description": "Broking service that assists clients with life, income protection, and related personal risk insurance.",
+        "name": "Life and personal risk insurance broking"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 20,
+      "growthScore": 91,
+      "heatChange90Days": 88,
+      "heatScore": 90
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 93.93
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 91 (+20 over 90 days) and market heat at 90 (+88).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

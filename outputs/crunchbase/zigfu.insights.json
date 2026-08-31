@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:36:18.360Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:36:18.308Z",
+    "url": "https://www.crunchbase.com/organization/zigfu"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Zigfu",
+      "shortDescription": "Zigfu provides a gesture-controlled user experience using the Microsoft Kinect or other motion tracking sensors.",
+      "description": "Zigfu is a software development company based in California that is best known for its Zigfu Development Kit for Kinect. The development kit allows users to create motion-controlled 3D games for the Kinect platform. Also provides a gesture-controlled portal and app store to the developers for distributing their games.",
+      "website": "http://zigfu.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "3D Technology",
+        "Artificial Intelligence (AI)",
+        "Augmented Reality",
+        "Developer Tools",
+        "Gaming",
+        "Software",
+        "Video Games",
+        "Virtual Reality",
+        "Web Browsers"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Gaming",
+        "Hardware",
+        "Internet Services",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Amir Hirsch",
+        "Roee Shenberg",
+        "Shlomo Zippel",
+        "Ted Blackman"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Zigfu Development Kit is a cross-platform toolkit for building gesture-controlled applications and 3D games using Kinect and similar sensors.",
+        "name": "Zigfu Development Kit (ZDK)"
+      },
+      {
+        "description": "Zigfu Browser Plugin is a web browser extension that enables web apps to access and use connected motion sensor hardware for gesture control.",
+        "name": "Zigfu Browser Plugin"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 150000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2011-08-02",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2011-08-02",
+          "amount": {
+            "amount": 150000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2011-08-02",
+          "title": "Pre Seed Round - Zigfu"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 150000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -7,
+      "heatScore": 21
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-06-13",
+        "probabilityPercent": 95.34
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "GestureTek develops the gesture-recognition technology for gesture controlled immersive surfaces, signs, displays and games.",
+          "employeeRange": "51-100",
+          "name": "GestureTek",
+          "sharedCategories": [
+            "Augmented Reality",
+            "Software",
+            "Gaming"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "The world's first 3D sensor for mobile devices.",
+          "employeeRange": "1-10",
+          "name": "Structure Sensor",
+          "sharedCategories": [
+            "3D Technology"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Plextek Consulting has been supporting its clients with technology development.",
+          "employeeRange": "51-100",
+          "name": "Plextek Consulting",
+          "similarityScore": 86
+        },
+        {
+          "description": "uSens develops inside-out hand and position tracking technology for augmented and virtual reality",
+          "employeeRange": "51-100",
+          "name": "uSens",
+          "sharedCategories": [
+            "3D Technology",
+            "Augmented Reality",
+            "Software",
+            "Artificial Intelligence (AI)",
+            "Virtual Reality"
+          ],
+          "similarityScore": 86
+        },
+        {
+          "description": "Sixense Enterprises Inc is a leading provider of VR/AR enterprise solutions.",
+          "employeeRange": "11-50",
+          "name": "Sixense",
+          "sharedCategories": [
+            "Augmented Reality",
+            "Software",
+            "Virtual Reality"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $150,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include GestureTek, Structure Sensor, Plextek Consulting.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

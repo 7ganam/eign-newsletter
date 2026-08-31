@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:34:40.170Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:34:40.115Z",
+    "url": "https://www.crunchbase.com/organization/smartbase"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "SmartBase",
+      "shortDescription": "SmartBase is an IT consulting firm that provides analysis, audit, UX/UI design, programming, and software development services.",
+      "website": "https://smartbase.sk/",
+      "foundedYear": 2013,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Bratislava, Slovakia (Slovak Republic)",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Consulting",
+        "Information Technology",
+        "Software",
+        "UX Design"
+      ],
+      "sectors": [
+        "Design",
+        "Information Technology",
+        "Professional Services",
+        "Software"
+      ],
+      "founders": [
+        "Kamil Kušnirák"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Custom-developed online stores designed for high performance, SEO optimization, and scalability with integration to internal systems.",
+        "name": "SmartBase® E-commerce"
+      },
+      {
+        "description": "Custom B2B portals that facilitate straightforward and clear purchasing processes for business partners.",
+        "name": "SmartBase® B2B Zone"
+      },
+      {
+        "description": "A mobile application that provides sales representatives with real-time customer data, product catalogs, and order processing capabilities on mobile devices.",
+        "name": "SmartBase® Mobile Salesman"
+      },
+      {
+        "description": "A mobile application that streamlines warehouse operations by providing real-time order tracking and inventory management on mobile devices.",
+        "name": "SmartBase® Mobile Warehouse Worker"
+      },
+      {
+        "description": "An application for automated and regular employee and management training with measurable tracking of improvements and compliance.",
+        "name": "SmartBase® Education and Operations Management"
+      },
+      {
+        "description": "Design services focused on creating usable and functional digital products by combining visual design and brand identity.",
+        "name": "UI/UX Design Services"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -35,
+      "heatScore": 31
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 24.16
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 69.71
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 12.8
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "360Learning develops an AI-powered collaborative learning platform for employee training, onboarding, course creation, and sharing.",
+          "employeeRange": "251-500",
+          "name": "360Learning",
+          "similarityScore": 100
+        },
+        {
+          "description": "Shopware is an open-source platform that provides B2B and B2C commerce software with full code access and architecture flexibility.",
+          "employeeRange": "251-500",
+          "name": "Shopware",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Product Information Management (PIM)",
+            "B2B E-Commerce Platforms",
+            "E-Commerce Operations Management"
+          ],
+          "similarityScore": 90.821
+        },
+        {
+          "description": "Select Star is a modern data governance platform that helps organizations manage and understand their data at scale",
+          "employeeRange": "11-50",
+          "name": "Select Star",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 83.345
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include 360Learning, Shopware, Select Star.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

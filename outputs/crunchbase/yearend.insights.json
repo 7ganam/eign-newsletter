@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:27:54.802Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:27:54.747Z",
+    "url": "https://www.crunchbase.com/organization/yearend"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "yearend.",
+      "shortDescription": "YearEnd is software that helps startup employees to optimize their equity and taxes in real-time.",
+      "description": "YearEnd operates as a subscription tax platform designed for startup employees' needs. It helps to optimize their equity and taxes in real-time.\n\nThe company was founded in 2019 and is headquartered in San Francisco, California.",
+      "website": "https://yearend.com/",
+      "foundedYear": 2018,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Accounting",
+        "Financial Services",
+        "FinTech",
+        "SaaS",
+        "Software"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Professional Services",
+        "Software"
+      ],
+      "founders": [
+        "Jared Hobbs",
+        "Sean O'Keefe"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 1500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 3,
+      "detailedRoundCount": 3,
+      "lastFundingDate": "2021-01-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2021-01-01",
+          "investorCount": 6,
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2020-03-16",
+          "amount": {
+            "amount": 1500000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2018-03-09",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 7,
+        "visibleNames": [
+          {
+            "name": "Bossa Invest",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Elysium Venture Capital",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Gradient",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Raphael Danilo",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Soma Capital",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Unanimous Capital",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 4,
+      "includedUniqueCount": 4,
+      "items": [
+        {
+          "date": "2021-04-02",
+          "title": "yearend. acquired by Carta"
+        },
+        {
+          "date": "2021-01-01",
+          "title": "Seed Round - yearend."
+        },
+        {
+          "date": "2020-03-16",
+          "title": "Seed Round - yearend."
+        },
+        {
+          "date": "2018-03-09",
+          "title": "Seed Round - yearend."
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 1500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -4,
+      "heatScore": 55
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2025-08-02",
+        "probabilityPercent": 55.62
+      },
+      "growth": {
+        "generatedDate": "2025-01-11",
+        "probabilityPercent": 85.09
+      },
+      "ipo": {
+        "generatedDate": "2025-08-02",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

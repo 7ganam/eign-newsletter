@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:53:32.958Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:53:32.905Z",
+    "url": "https://www.crunchbase.com/organization/stewdio"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Stewdio",
+      "shortDescription": "Stewdio provides branding, website design, website management, SEO, digital advertising, and graphic design services for businesses.",
+      "description": "Stewdio is a design and marketing studio that supports businesses with visual identity, websites, and ongoing digital growth. The company creates branding and identity systems including logos, color palettes, typography, illustrations, and brand guideline documents. Stewdio designs and builds custom Squarespace websites, then provides website management, content updates, and technical maintenance. Its marketing services include search engine optimization, Google and Meta ad campaign management, profile setup on major platforms, and analytics dashboards in Looker Studio. The studio also delivers graphic design for print and digital assets, social media templates, signage, and apparel design, and sells branded merchandise such as stickers, shirts, and hoodies. Stewdio works with small businesses, churches, and other local organizations that want consistent branding and measurable online visibility.",
+      "website": "https://www.stewdio.co/",
+      "foundedYear": 2021,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "employeeRange": "1-10",
+      "headquarters": "Greenville, South Carolina, United States",
+      "geographicRegions": [
+        "East Coast",
+        "Southern US"
+      ],
+      "industries": [
+        "Advertising Platforms",
+        "Brand Marketing",
+        "Content Marketing",
+        "Digital Marketing",
+        "E-Commerce",
+        "Graphic Design",
+        "Marketing Automation",
+        "SEO",
+        "Small and Medium Businesses",
+        "Social Media Marketing"
+      ],
+      "sectors": [
+        "Advertising",
+        "Commerce and Shopping",
+        "Design",
+        "Internet Services",
+        "Other",
+        "Sales and Marketing",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Branding & Identity covers visual brand systems including logos, color palettes, typography, illustrations, and brand guidelines for businesses.",
+        "name": "Branding & Identity"
+      },
+      {
+        "description": "Custom Squarespace Website Design provides tailored, coded Squarespace sites for businesses using Squarespace and GoDaddy hosting.",
+        "name": "Custom Squarespace Website Design"
+      },
+      {
+        "description": "Website Management covers ongoing updates, maintenance, and technical support to keep client sites running smoothly.",
+        "name": "Website Management"
+      },
+      {
+        "description": "Search Engine Optimization (SEO) improves website visibility in search results through keyword strategy, content, and technical optimization.",
+        "name": "Search Engine Optimization (SEO)"
+      },
+      {
+        "description": "Digital Ad Management plans, runs, and optimizes paid campaigns on Google Ads and Meta platforms with ongoing reporting.",
+        "name": "Digital Ad Management"
+      },
+      {
+        "description": "Custom Analytics Dashboards provide tailored Looker Studio reports combining data from multiple marketing and web sources.",
+        "name": "Custom Analytics Dashboards"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 2,
+      "growthScore": 90,
+      "heatChange90Days": -27,
+      "heatScore": 56
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 90.09
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 90 (+2 over 90 days) and market heat at 56 (-27).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

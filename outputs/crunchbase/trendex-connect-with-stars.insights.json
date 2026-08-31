@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:40:51.898Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:40:51.847Z",
+    "url": "https://www.crunchbase.com/organization/trendex-connect-with-stars"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Trendex - Connect with stars",
+      "shortDescription": "Trendex is a fan engagement platform offering official digital fan passes and athlete-backed rewards.",
+      "description": "Trendex is a fan engagement platform that connects sports and entertainment fans with athletes and celebrities through official digital fan passes. The company partners directly with players and public figures to issue passes that unlock exclusive content, rewards, and experiences provided by the talent. Fans use these passes to access items such as signed memorabilia, meet-and-greets, VIP events, and online interactions. The platform uses technology to manage access, distribution, and personalization of these fan experiences at scale. Trendex focuses on creating a structured way for supporters to obtain limited digital passes and redeem associated benefits across its ecosystem.",
+      "website": "https://trendex.gg/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "industries": [
+        "Content",
+        "Digital Entertainment",
+        "E-Commerce Platforms",
+        "Events",
+        "Fantasy Sports",
+        "Marketplace",
+        "Social Media",
+        "Social Media Marketing",
+        "Sports"
+      ],
+      "sectors": [
+        "Commerce and Shopping",
+        "Events",
+        "Gaming",
+        "Internet Services",
+        "Media and Entertainment",
+        "Sales and Marketing",
+        "Sports"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Digital access passes that connect fans with athletes and celebrities through exclusive content, rewards, and experiences.",
+        "name": "Trendex Fan Passes"
+      },
+      {
+        "description": "Online platform that manages issuance, ownership, and redemption of athlete-backed digital fan passes and rewards.",
+        "name": "Trendex Fan Engagement Platform"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 13,
+      "growthScore": 89,
+      "heatChange90Days": 70,
+      "heatScore": 70
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.27
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 89 (+13 over 90 days) and market heat at 70 (+70).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

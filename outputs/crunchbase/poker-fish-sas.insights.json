@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:10:48.101Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:10:48.048Z",
+    "url": "https://www.crunchbase.com/organization/poker-fish-sas"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Poker Fish SAS",
+      "shortDescription": "Poker Fish provides online poker statistics software that profiles opponents and displays real-time HUD data for players.",
+      "description": "Poker Fish offers a statistical analysis platform for online poker players that focuses on profiling opponents and displaying real-time data at the tables. The company provides a Mac and Windows HUD application that shows instant statistics on opponents directly on popular online poker sites. Its service includes detailed player profiles, tournament history, profit and profitability metrics, and performance evolution over time. Users can search tournaments and players, view rankings and leaderboards, and analyze the profitability of specific events. The platform also offers features such as cards-up final table hand history replay, automatic table placement, and username aggregation. Access to data and statistics is delivered through subscription plans that integrate with the desktop application.",
+      "website": "https://www.poker-fish.fr/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "Saint-ouen, Ile-de-France, France",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Analytics",
+        "Data Visualization",
+        "Gaming",
+        "Online Games",
+        "Software",
+        "Sports",
+        "Subscription Service"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Design",
+        "Gaming",
+        "Information Technology",
+        "Other",
+        "Software",
+        "Sports"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A desktop poker statistics platform that provides real-time HUD data and detailed opponent analysis for online poker players.",
+        "name": "Poker Fish HUD and Statistics Platform"
+      },
+      {
+        "description": "A set of tools for analyzing tournament profitability, player fields, and cards-up final table hands using historical data.",
+        "name": "Tournament Profitability and Cards-Up Analysis"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 86,
+      "heatScore": 88
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 92.01
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

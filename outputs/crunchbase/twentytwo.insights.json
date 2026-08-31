@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:46:18.215Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:46:18.163Z",
+    "url": "https://www.crunchbase.com/organization/twentytwo"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "TwentyTwo",
+      "shortDescription": "Audio messaging app for fans to connect to their favorite artists",
+      "description": "Audio messaging app for fans to connect to their favorite artists",
+      "website": "http://twentytwo.fm/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "La, California, United States",
+      "geographicRegions": [
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Information Technology",
+        "Messaging",
+        "Music",
+        "Social Media",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Internet Services",
+        "Media and Entertainment",
+        "Messaging and Telecommunications",
+        "Music and Audio",
+        "Software"
+      ],
+      "founders": [
+        "Robert Schwartzman",
+        "Shashi Jain",
+        "Tom Long"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2024-08-14",
+          "publisher": "Morningstar",
+          "title": "Twentytwo & brand Achieves Top 20% Ranking in Inc. 5000's List of Fastest-Growing Companies",
+          "url": "https://www.morningstar.com/news/pr-newswire/20240814ph83894/twentytwo-brand-achieves-top-20-ranking-in-inc-5000s-list-of-fastest-growing-companies"
+        },
+        {
+          "date": "2021-11-16",
+          "publisher": "Business Journals",
+          "title": "Redd's TwentyTwo turning Olde Gahanna Schoolhouse into startup incubator",
+          "url": "https://www.bizjournals.com/columbus/inno/stories/news/2021/11/16/michael-redd-22-ventures-olde-gahanna-schoolhouse.html"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -4,
+      "heatScore": 18
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

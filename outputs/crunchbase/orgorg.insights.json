@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:35:08.186Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:35:08.136Z",
+    "url": "https://www.crunchbase.com/organization/orgorg"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "OrgOrg",
+      "shortDescription": "OrgOrg is a community of people who work in a field sometimes known as business/people operations.",
+      "description": "OrgOrg is a community of people who work in a field sometimes known as business/people operations.\n\nOrgOrg is an \"Organization Organizers\" - the folks behind the scenes makin' it all work at work. We are a community of like-jobbed individuals, sharing best practices and war stories because we know that it's better not to go it alone. \n\nOrgOrg (the organization) provides a forum for discussion, as well as resources, events, and more! Our over 2,600 members span the globe, and we're constantly growing.",
+      "website": "http://www.orgorg.co/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Association",
+        "Business Development",
+        "Communities"
+      ],
+      "sectors": [
+        "Community and Lifestyle",
+        "Other",
+        "Professional Services"
+      ],
+      "founders": [
+        "Kim Rohrer"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An online forum for approved members to discuss topics related to business and people operations.",
+        "name": "OrgOrg Community Forum"
+      },
+      {
+        "description": "A collection of materials and information relevant to business and people operations professionals.",
+        "name": "Resources Library"
+      },
+      {
+        "description": "Programs and opportunities designed to enhance skills and knowledge for people operations professionals.",
+        "name": "Professional Development"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2018-02-23",
+          "title": "OrgOrg acquired by Eden"
+        },
+        {
+          "date": "2018-02-23",
+          "publisher": "TechCrunch",
+          "title": "Eden acquires OrgOrg, a social network for office managers",
+          "url": "https://techcrunch.com/2018/02/23/eden-acquires-office-managers-social-network-orgorg/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 1,
+      "growthScore": 84,
+      "heatChange90Days": -1,
+      "heatScore": 32
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 60.38
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "People Managing People is a media publishing company that offers publication and community space for the HR sector.",
+          "employeeRange": "1-10",
+          "name": "People Managing People",
+          "sharedSpecialties": [
+            "Community Platforms"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Experienced Sales Manager, skilled in Sales, Sales Management, Team Building, Management, and Leadership.",
+          "employeeRange": "101-250",
+          "name": "CERTIFY Health",
+          "sharedSpecialties": [
+            "Professional Development Programs"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "SHRM Foundation mobilizes the power of HR to lead positive social change impact.",
+          "employeeRange": "1-10",
+          "name": "SHRM Foundation",
+          "sharedSpecialties": [
+            "Professional Development Programs"
+          ],
+          "similarityScore": 83
+        },
+        {
+          "description": "UNLEASH.ai is the go-to marketplace for HR and breakthrough technologies powering the next era of work.",
+          "employeeRange": "51-100",
+          "name": "UNLEASH Group",
+          "sharedCategories": [
+            "Communities"
+          ],
+          "sharedSpecialties": [
+            "Professional Networking Platforms"
+          ],
+          "similarityScore": 74
+        },
+        {
+          "description": "HRLF is the leading community for connection and learning for senior level HR leaders in New England.",
+          "employeeRange": "1-10",
+          "name": "Human Resource Leadership Forum",
+          "sharedCategories": [
+            "Association",
+            "Communities"
+          ],
+          "sharedSpecialties": [
+            "Community Platforms",
+            "Professional Networking Platforms",
+            "Community Events",
+            "Professional Development Programs"
+          ],
+          "similarityScore": 73
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 84 (+1 over 90 days) and market heat at 32 (-1).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include People Managing People, CERTIFY Health, SHRM Foundation.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

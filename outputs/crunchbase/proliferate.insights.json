@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:19:28.850Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:19:28.799Z",
+    "url": "https://www.crunchbase.com/organization/proliferate"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Proliferate",
+      "shortDescription": "Proliferate provides fractional sales leadership, sales coaching, and consulting on sales operations, customer retention, and growth.",
+      "description": "Proliferate provides sales leadership consulting for companies with complex, consultative products and services. The company offers interim and fractional sales leadership to bridge leadership gaps and guide revenue strategy. It provides coaching for sales leaders on topics such as performance management, sales training, objection handling, and executive presence. Proliferate designs and evaluates sales operations, including CRM optimization, incentive and compensation plans, and account management and customer success programs focused on retention and client growth. The firm also supports outsourced sales program design, covering lead generation, pipeline management, and territory or segment coverage. Its services are intended for owners and leaders seeking structured approaches to improve sales effectiveness and revenue growth.",
+      "website": "https://proliferateperformance.com/",
+      "foundedYear": 2019,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Wayzata, Minnesota, United States",
+      "geographicRegions": [
+        "Greater Minneapolis-Saint Paul Area",
+        "Great Lakes",
+        "Midwestern US"
+      ],
+      "industries": [
+        "Business Development",
+        "CRM",
+        "Lead Generation",
+        "Management Consulting",
+        "Sales",
+        "Sales Automation",
+        "Training"
+      ],
+      "sectors": [
+        "Education",
+        "Professional Services",
+        "Sales and Marketing",
+        "Software"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -8,
+      "heatScore": 5
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 43.56
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 76.79
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 25.37
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

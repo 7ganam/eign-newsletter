@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:57:45.305Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:57:45.251Z",
+    "url": "https://www.crunchbase.com/organization/monosi"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Monosi",
+      "shortDescription": "Monosi is a platform for data teams to detect, analyze, and resolve data problems.",
+      "description": "Monosi is a platform for data teams to detect, analyze, and resolve data problems.\n\n\n\nMonosi platform ensures that the teams achieve data reliability.\n\n\n\nMonosi was founded in 2020 and was headquartered in San Francisco, California.",
+      "website": "https://monosi.dev/",
+      "foundedYear": 2020,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "B2B",
+        "Developer Tools",
+        "Open Source"
+      ],
+      "sectors": [
+        "Other",
+        "Software"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2020-08-22",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2020-08-22",
+          "investorCount": 1,
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2020-08-22",
+          "title": "Pre Seed Round - Monosi"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -24,
+      "heatScore": 56
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Monte Carlo develops a data and AI observability platform that monitors data, AI systems, and AI agents to detect and resolve issues.",
+          "employeeRange": "101-250",
+          "name": "Monte Carlo",
+          "similarityScore": 97
+        },
+        {
+          "description": "Bigeye provides data observability solutions for monitoring and analyzing data integrity.",
+          "employeeRange": "11-50",
+          "name": "Bigeye",
+          "similarityScore": 95
+        },
+        {
+          "description": "Soda is a software company that provides data quality solutions through testing and preventing data issues.",
+          "employeeRange": "11-50",
+          "name": "Soda",
+          "similarityScore": 93
+        },
+        {
+          "description": "Anomalo allows users to continuously inspect and validate the data coming into their warehouses.",
+          "employeeRange": "51-100",
+          "name": "Anomalo",
+          "similarityScore": 91
+        },
+        {
+          "description": "Metaplane ensures everyone trusts your business' data with automatic anomaly detection, column-level lineage, and incident prevention.",
+          "employeeRange": "101-250",
+          "name": "Metaplane",
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Monte Carlo, Bigeye, Soda.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

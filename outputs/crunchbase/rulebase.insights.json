@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:02:20.321Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:02:20.289Z",
+    "url": "https://www.crunchbase.com/organization/rulebase"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Rulebase",
+      "shortDescription": "Rulebase is a free, web-based platform that collects and organizes the rules of life.",
+      "description": "Rulebase offers an online platform that enables individuals to find information about laws and rules. It enables its users to access federal, state, and local laws; and business, lifestyle, sports, and religious rules.\n\nRulebase was founded by David Pinkus in 1999 and is based in Dallas, Texas.",
+      "website": "https://rulebase.com/",
+      "foundedYear": 1999,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Dallas, Texas, United States",
+      "geographicRegions": [
+        "Dallas/Fort Worth Metroplex",
+        "Southern US"
+      ],
+      "industries": [
+        "Information Technology",
+        "Internet",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Software"
+      ],
+      "founders": [
+        "David Pinkus"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 3000000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2000-05-25",
+      "lastFundingType": "Series A",
+      "rounds": [
+        {
+          "announcedDate": "2000-05-25",
+          "amount": {
+            "amount": 3000000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Koch Ventures"
+          ],
+          "type": "Series A"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Koch Ventures",
+            "rounds": [
+              "Series A"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2000-05-25",
+          "title": "Series A - Rulebase"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 3000000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 1,
+      "heatScore": 48
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2025-12-06",
+        "probabilityPercent": 20.63
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Wikipedia is an open-source online encyclopedia which provides a database of articles on an extensive range of topics.",
+          "employeeRange": "10,001+",
+          "name": "Wikipedia",
+          "sharedCategories": [
+            "Internet"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "wikiHow is a web- and wiki-based community that provides its users with a database of how-to guides.",
+          "employeeRange": "11-50",
+          "name": "wikiHow",
+          "similarityScore": 89
+        },
+        {
+          "description": "Wikibooks is an open-content textbook platform that offers and supports a wide range of subjects and multiple languages.",
+          "employeeRange": "11-50",
+          "name": "Wikibooks",
+          "similarityScore": 88
+        },
+        {
+          "description": "Medium is a social publishing network that connects ideas and perspectives on topics that matter.",
+          "employeeRange": "1-10",
+          "name": "Medium",
+          "sharedCategories": [
+            "Internet"
+          ],
+          "similarityScore": 83
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Series A round raised $3,000,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Wikipedia, wikiHow, Wikibooks.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

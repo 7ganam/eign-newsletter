@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:04:47.143Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:04:47.087Z",
+    "url": "https://www.crunchbase.com/organization/sureform"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Sureform",
+      "shortDescription": "Sureform provides a multimodal human data platform that supplies real-world audio and video datasets for AI and robotics training.",
+      "description": "Sureform provides a multimodal human data platform focused on collecting real-world human audio and video to train advanced AI and robotics systems. The company operates a contributor network that records speech, sound, and first-person video of everyday physical tasks in environments such as restaurants, warehouses, and hotels. These recordings capture interactions, object handling, and navigation in real-world settings. Sureform standardizes and processes this multimodal data into structured datasets suitable for training robotics labs, world models, and robot foundation models. Its services are aimed at AI research teams, robotics companies, and organizations building multimodal and embodied AI systems. By licensing curated human interaction datasets, Sureform supports the development of models that can better perceive and act in physical environments.",
+      "website": "https://www.sureformhq.com/",
+      "foundedYear": 2025,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Sacramento, California, United States",
+      "geographicRegions": [
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Computer Vision",
+        "Data Collection and Labeling",
+        "Data Management",
+        "Enterprise Software",
+        "Human Computer Interaction",
+        "Machine Learning",
+        "Robotics"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Design",
+        "Hardware",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Ananth Kashyap"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A contributor network and platform that collects and licenses real-world audio and first-person video datasets for AI and robotics training.",
+        "name": "Multimodal Human Data Network"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2025-03-01",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2025-03-01",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 6526549,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2025-03-01",
+          "title": "Pre Seed Round - Sureform"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 19,
+      "growthScore": 19,
+      "heatChange90Days": 57,
+      "heatScore": 90
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 34.14
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 81.47,
+        "timingEstimatePercent": {
+          "within6Months": 99.53,
+          "months6To11": 0.01,
+          "months12To24": 0,
+          "beyond24Months": 0.46
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 71.66
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 4.18
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $6,526,549 to $6,526,549, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 19 (+19 over 90 days) and market heat at 90 (+57).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

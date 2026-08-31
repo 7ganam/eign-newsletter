@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:24:43.385Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:24:43.341Z",
+    "url": "https://www.crunchbase.com/organization/writewith"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "writewith",
+      "shortDescription": "Writewith is a collaborative writing web app that supports users in writing, editing and publishing documents with a group.",
+      "description": "Writewith is a collaborative writing web app, enabling you to easily flow through the steps of writing, editing, and publishing a document with a group. A document is started by uploading an existing document (.doc, .txt, .rdf) or just typing away. After the initial draft is completed, you can invite other editors by email and assign them tasks. Writewith has full version control and even lets you post comments to each other, making it possible to edit together in real time. Currently Writewith is in beta testing with 15 college newspapers including Stanford and two of Canada's largest college papers (which even includes a national newswire).",
+      "website": "http://writewith.com/",
+      "foundedYear": 2007,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Corvallis, Oregon, United States",
+      "geographicRegions": [
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Music"
+      ],
+      "sectors": [
+        "Media and Entertainment",
+        "Music and Audio"
+      ],
+      "founders": [
+        "Eric Eldon",
+        "Phillip Kast"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2007-01-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2007-01-01",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2007-04-12",
+          "publisher": "TechCrunch",
+          "title": "Y Combinator&#8217;s WriteWith Launches - Collaborative Blogging",
+          "url": "http://www.techcrunch.com/2007/04/12/writewith-launches-makes-shared-blogging-easier/"
+        },
+        {
+          "date": "2007-01-01",
+          "title": "Seed Round - writewith"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -1,
+      "heatScore": 18
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

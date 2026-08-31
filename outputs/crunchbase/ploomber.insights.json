@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:06:56.943Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:06:56.889Z",
+    "url": "https://www.crunchbase.com/organization/ploomber"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Ploomber",
+      "shortDescription": "Ploomber is a cloud platform for Data Scientists to build, test, and deploy data products without managing infrastructure.",
+      "description": "Data Science work starts in a notebook, an environment designed for rapid data exploration. However, notebook tooling is underdeveloped, and it is hard to set software development best practices. In addition, moving code into production requires complete refactoring and testing, creating a bottleneck on the data scientists.\n \n\nWe've developed an open-source library that enables users to build data pipelines faster using the familiar notebook interface. Based on feedback from companies using our tool, they have cut development time by 40% and debugging time by 60%.",
+      "website": "https://ploomber.io/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "New York, United States",
+      "geographicRegions": [
+        "Greater New York Area",
+        "East Coast",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Analytics",
+        "Database",
+        "Data Integration",
+        "Software"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Information Technology",
+        "Software"
+      ],
+      "founders": [
+        "Eduardo Blancas",
+        "Ido Michael"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A cloud platform for deploying, managing, and scaling data science applications and projects with support for multiple frameworks and authentication methods.",
+        "name": "Ploomber Cloud"
+      },
+      {
+        "description": "A command-line interface tool to deploy and manage data science projects and applications on Ploomber Cloud.",
+        "name": "Ploomber Cloud CLI"
+      },
+      {
+        "description": "Authentication solutions integrated into Ploomber Cloud for securing Dash and Streamlit applications using enterprise identity providers.",
+        "name": "Enterprise Authentication for Dash and Streamlit Apps"
+      },
+      {
+        "description": "Services and tools to build, test, deploy, and monitor data science applications using various frameworks and cloud infrastructure.",
+        "name": "Data Science Application Deployment and Management"
+      },
+      {
+        "description": "Frameworks and examples for building AI-driven chatbots and interactive data applications using LLMs and natural language processing.",
+        "name": "AI-Powered Chatbot and Data Interaction Applications"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2022-03-22",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2022-03-22",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 5362737,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2022-03-22",
+          "title": "Pre Seed Round - Ploomber"
+        },
+        {
+          "date": "2022-03-03",
+          "publisher": "Machine Learning Mastery",
+          "title": "Data Science Notebook Life-Hacks I Learned From Ploomber",
+          "url": "http://dlvr.it/SKxmPl"
+        },
+        {
+          "date": "2022-02-14",
+          "publisher": "KDnuggets",
+          "title": "Ploomber vs Kubeflow: Making MLOps Easier",
+          "url": "http://dlvr.it/SJzMkZ"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 0,
+      "growthScore": 67,
+      "heatChange90Days": -3,
+      "heatScore": 61
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 43.99
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 21.26,
+        "timingEstimatePercent": {
+          "within6Months": 15.86,
+          "months6To11": 13.34,
+          "months12To24": 20.68,
+          "beyond24Months": 25
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 67.61
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 30.06
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Streamlit is an open-source app framework for creating and deploying data science applications.",
+          "employeeRange": "11-50",
+          "name": "Streamlit",
+          "sharedCategories": [
+            "Analytics",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Application Runtime Platforms"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Domino Data Lab provides an enterprise platform designed to help organizations build, deploy, and manage AI and machine learning models.",
+          "employeeRange": "251-500",
+          "name": "Domino Data Lab",
+          "sharedCategories": [
+            "Analytics",
+            "Software"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "H2O.ai is a machine learning platform that builds smart applications.",
+          "employeeRange": "251-500",
+          "name": "H2O.ai",
+          "sharedCategories": [
+            "Analytics",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "LLMOps"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Plotly is a data science and AI company that offers data visualization libraries for interactive web apps in any programming language.",
+          "employeeRange": "101-250",
+          "name": "Plotly",
+          "sharedCategories": [
+            "Data Integration",
+            "Analytics",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Application Runtime Platforms",
+            "Internal Developer Platforms"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Hugging Face is an AI and machine learning platform for collaborating on models, datasets, and applications.",
+          "employeeRange": "101-250",
+          "name": "Hugging Face",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "LLMOps",
+            "AI Chatbots and Virtual Assistants"
+          ],
+          "similarityScore": 84
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $500,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $5,362,737 to $5,362,737, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 67 (+0 over 90 days) and market heat at 61 (-3).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Streamlit, Domino Data Lab, H2O.ai.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

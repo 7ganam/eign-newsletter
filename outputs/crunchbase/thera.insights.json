@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:27:15.858Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:27:15.805Z",
+    "url": "https://www.crunchbase.com/organization/thera"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "thera",
+      "shortDescription": "Thera develops custom web, e-commerce, and business software solutions for organizations.",
+      "description": "Thera develops custom web, e-commerce, and business software solutions. Its services include requirements analysis, technical feasibility studies, software design, implementation, testing, deployment, maintenance, and manual quality assurance. The company builds online and on-premise business applications, web shops, event websites, real estate portals, and web and mobile systems for operational workflows. It uses technologies including Next.js, Strapi, PostgreSQL, GatsbyJS, Node.js, AstroJS, and React Native.",
+      "website": "https://thera.hr/",
+      "foundedYear": 2016,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "industries": [
+        "B2B",
+        "Consulting",
+        "E-Commerce Platforms",
+        "Information Technology",
+        "Mobile Apps",
+        "Quality Assurance",
+        "Software",
+        "Software Engineering",
+        "Web Apps",
+        "Web Development"
+      ],
+      "sectors": [
+        "Apps",
+        "Commerce and Shopping",
+        "Information Technology",
+        "Internet Services",
+        "Mobile",
+        "Other",
+        "Professional Services",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Custom web applications designed and developed for specific business requirements.",
+        "name": "Custom Web Solutions"
+      },
+      {
+        "description": "Custom online store software for businesses with requirements beyond standard e-commerce platforms.",
+        "name": "Custom E-commerce Solutions"
+      },
+      {
+        "description": "Online and on-premise applications that support organizational processes and internal operations.",
+        "name": "Business Applications"
+      },
+      {
+        "description": "Technical assessments of proposed software architectures, technology stacks, and implementation plans.",
+        "name": "Technical Feasibility Studies"
+      },
+      {
+        "description": "Manual testing and review of software systems to identify functional and production issues.",
+        "name": "Manual Quality Assurance"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 36,
+      "heatScore": 48
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

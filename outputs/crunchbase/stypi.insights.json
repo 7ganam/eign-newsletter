@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:00:35.488Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:00:35.437Z",
+    "url": "https://www.crunchbase.com/organization/stypi"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Stypi",
+      "shortDescription": "Stypi makes it easy to collaborate on documents online.",
+      "description": "Stypi is a collaborative, real-time text editor that allows multiple users to make changes to a single document at the same time.",
+      "website": "http://www.stypi.com/",
+      "foundedYear": 2011,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Collaboration",
+        "Developer Tools",
+        "Real Time"
+      ],
+      "sectors": [
+        "Other",
+        "Software"
+      ],
+      "founders": [
+        "Byron Milligan",
+        "Jason Chen"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2011-08-02",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2011-08-02",
+          "investorCount": 3,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 3,
+        "visibleNames": [
+          {
+            "name": "Aaron Iba",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Quotidian Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 13,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2012-08-27",
+          "publisher": "GeekWire",
+          "title": "Salesforce.com to hire hundreds at Portland office",
+          "url": "http://www.geekwire.com/2012/salesforcecom-hire-hundreds-portland-office/"
+        },
+        {
+          "date": "2012-07-31",
+          "publisher": "TechCrunch",
+          "title": "The Mechanics Of A Small Acquisition &#8211; How One Startup Navigated a Multi-Million Dollar&nbsp;Exit",
+          "url": "http://techcrunch.com/2012/07/31/the-mechanics-of-a-small-acquisition-how-one-startup-navigated-a-multi-million-dollar-exit/"
+        },
+        {
+          "date": "2012-06-04",
+          "publisher": "Mashable",
+          "title": "Salesforce Acquires Buddy Media for $689 Million",
+          "url": "http://mashable.com/2012/06/04/salesforce-acquires-buddy-media/"
+        },
+        {
+          "date": "2012-06-04",
+          "publisher": "The Next Web",
+          "title": "Salesforce.com Buys Buddy Media For $689 Million",
+          "url": "http://thenextweb.com/insider/2012/06/04/done-deal-salesforce-com-buys-buddy-media-for-689-million-in-cash-and-shares/"
+        },
+        {
+          "date": "2012-05-29",
+          "url": "http://startuptunes.com/2012/05/29/stypi-freedom-to-write-share-documents-with-multiple-users/"
+        },
+        {
+          "date": "2012-05-02",
+          "publisher": "The Next Web",
+          "title": "Salesforce Gets Social, Acquires YC Company Stypi",
+          "url": "http://thenextweb.com/insider/2012/05/02/salesforce-continues-its-social-push-by-acquiring-yc-company-stypi/"
+        },
+        {
+          "date": "2012-05-01",
+          "publisher": "TechCrunch",
+          "title": "Salesforce Acquires YC-Backed Collaborative Text Editor&nbsp;Stypi",
+          "url": "http://techcrunch.com/2012/05/01/the-team-from-yc-backed-stypi-heads-to-salesforce-to-work-on-enterprise-collaboration/"
+        },
+        {
+          "date": "2012-05-01",
+          "title": "Stypi acquired by Salesforce"
+        },
+        {
+          "date": "2011-09-26",
+          "publisher": "Venture Beat",
+          "title": "Stypi founders have a plan to reinvent Google Wave (video) | VentureBeat | Dev | by J. O'Dell",
+          "url": "http://venturebeat.com/2011/09/26/stypi/"
+        },
+        {
+          "date": "2011-08-25",
+          "publisher": "Xconomy",
+          "title": "Y Combinator's Summer 2011 Demo Day: The Definitive Debrief, Part 2 | Xconomy",
+          "url": "http://www.xconomy.com/san-francisco/2011/08/25/y-combinators-summer-2011-demo-day-the-definitive-debrief-part-2/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -2,
+      "heatScore": 32
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 13 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:05:16.787Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:05:16.735Z",
+    "url": "https://www.crunchbase.com/organization/sagecare"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Sagecare",
+      "shortDescription": "Sagecare operates a private, nurse-led dementia care home providing residential dementia, Alzheimer’s, and memory care services.",
+      "description": "Sagecare operates a private, nurse-led dementia care home that focuses on residents experiencing dementia and changing cognitive abilities. The organization runs a small-scale elder living community with cognitive supports, providing residential dementia care, Alzheimer’s care, and memory care living. Services include 24/7 nursing and personal support, incontinence care, transfer assistance, daily routines, and structured activities such as recreation, art, music, and therapeutic programs. Sagecare develops individualized care plans, offers geriatric and psychogeriatric consultation, and supports palliative and end-of-life care within the home. The team works closely with families through communication, shared decision-making, and support during transitions from home care or assisted living into memory care. Its environment is organized into small households and designed to facilitate safety, orientation, and social connection for elders.",
+      "website": "https://sagecare.ca/",
+      "foundedYear": 1997,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "headquarters": "North York, Ontario, Canada",
+      "geographicRegions": [
+        "Great Lakes"
+      ],
+      "industries": [
+        "Assisted Living",
+        "Elder Care",
+        "Health Care",
+        "Mental Health",
+        "Personal Care and Hygiene",
+        "Residential",
+        "Social Assistance",
+        "Therapeutics"
+      ],
+      "sectors": [
+        "Consumer Goods",
+        "Government and Military",
+        "Health Care",
+        "Real Estate",
+        "Social Impact"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Residential dementia care provides 24/7 nurse-led accommodation and daily support for elders living with dementia in a structured home-like setting.",
+        "name": "Residential dementia care"
+      },
+      {
+        "description": "Alzheimer’s care delivers specialized residential support and supervision for elders diagnosed with Alzheimer’s disease across its stages.",
+        "name": "Alzheimer’s care"
+      },
+      {
+        "description": "Memory care living combines a secure residential environment with structured routines and activities tailored to residents’ memory and cognitive needs.",
+        "name": "Memory care living"
+      },
+      {
+        "description": "Overbrook Community is a specialized household offering 21 memory care suites and amenity space for individuals with lower acuity dementia.",
+        "name": "Overbrook Community"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 7,
+      "heatScore": 87
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

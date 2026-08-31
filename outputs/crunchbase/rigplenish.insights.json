@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:53:25.433Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:53:25.378Z",
+    "url": "https://www.crunchbase.com/organization/rigplenish"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "RigPlenish",
+      "shortDescription": "RigPlenish makes software designed to reduce the amount of time paramedics spend documenting each ambulance run.",
+      "description": "RigPlenish is a software company that develops a data management application. provides an end-to-end data management application that automates paperwork at each stage of an ambulance run. It offers RigPlenish, an application that reduces the time spent by paramedics filling out paperwork. The company’s product collects real-time data from WiFi enabled devices on ambulances; assign each patient's data to patient through barcode technology; and analyze the data to improve time discrepancies and make ambulances more efficient. Additionally, it charges a fee to automate checklists and compliance while improving communication between ambulance hubs and hospitals.\n\nRigPlenish was founded by Nupur Mehta and Tejaswi Sagiraju in 2015; and is headquartered in Cupertino, California.",
+      "website": "http://www.rigplenish.com/",
+      "foundedYear": 2015,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Cupertino, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Data Center Automation",
+        "Emergency Medicine",
+        "Hospital",
+        "Software"
+      ],
+      "sectors": [
+        "Hardware",
+        "Health Care",
+        "Information Technology",
+        "Software"
+      ],
+      "founders": [
+        "Nupur Mehta",
+        "Tejaswi Sagiraju"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2016-08-24",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2016-08-24",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2016-08-24",
+          "title": "Seed Round - RigPlenish"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -45,
+      "heatScore": 1
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "ImageTrend is a industry-specific software for emergency medical services.",
+          "employeeRange": "251-500",
+          "name": "ImageTrend",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "IPCR is an EPCR software that is designed for the process of generating clear and accurate patient care reports.",
+          "employeeRange": "11-50",
+          "name": "IPCR",
+          "sharedCategories": [
+            "Emergency Medicine",
+            "Software"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Medronix provides document management, revenue cycle management, and staffing services for the healthcare sector.",
+          "employeeRange": "1-10",
+          "name": "Medronix",
+          "similarityScore": 91
+        },
+        {
+          "description": "Ambupro is an ePCR, and EMS reporting system software.",
+          "name": "Ambupro",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "AngelTrack is a software development company that provides cloud software for EMS ambulance and fire department management.",
+          "employeeRange": "11-50",
+          "name": "AngelTrack",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $120,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include ImageTrend, IPCR, Medronix.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

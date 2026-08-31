@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T21:00:35.500Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T21:00:35.444Z",
+    "url": "https://www.crunchbase.com/organization/verata"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Verata",
+      "shortDescription": "Verata provides a B2B SaaS intelligence platform combining company data, executive profiles, and search management for executive search.",
+      "description": "Verata provides a B2B SaaS intelligence platform that combines company intelligence, executive data, backchannel discovery, and mandate management in one place. The platform aggregates professional and financial information on millions of executives and private companies, including revenue estimates, transaction histories, headcount trends, and ownership context. Users can run AI-powered industry and executive searches, map markets, and evaluate candidates with timelines that tie performance outcomes to specific tenures. Verata also supports backchannel discovery by computing tenure overlaps and surfacing potential reference contacts such as former colleagues, supervisors, and board members. Integrated mandate management tools let teams track search pipelines, score candidates against structured requirements, synthesize interview feedback, and generate client-ready reports. The service is designed for private equity talent teams, institutional investors, corporate talent leaders, and executive search firms conducting senior-level searches and portfolio talent work.",
+      "website": "https://www.veratainsight.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "industries": [
+        "Analytics",
+        "Artificial Intelligence (AI)",
+        "B2B",
+        "Enterprise Software",
+        "Financial Services",
+        "Human Resources",
+        "Recruiting",
+        "SaaS",
+        "Software"
+      ],
+      "sectors": [
+        "Administrative Services",
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Financial Services",
+        "Other",
+        "Professional Services",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A B2B SaaS platform that unifies company intelligence, executive data, relationship mapping, and mandate management for executive search workflows.",
+        "name": "Verata Intelligence Platform"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 14,
+      "growthScore": 87,
+      "heatChange90Days": 73,
+      "heatScore": 73
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.23
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 87 (+14 over 90 days) and market heat at 73 (+73).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

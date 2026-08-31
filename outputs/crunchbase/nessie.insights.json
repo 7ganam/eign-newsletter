@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:09:49.703Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:09:49.647Z",
+    "url": "https://www.crunchbase.com/organization/nessie"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Nessie",
+      "shortDescription": "Nessie is a marketing technology SaaS firm that provides a machine learning-powered solution for marketers.",
+      "website": "http://www.nessie.ai/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Woluwé-saint-pierre, Brussels Hoofdstedelijk Gewest, Belgium",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Advertising",
+        "Information Technology",
+        "Marketing"
+      ],
+      "sectors": [
+        "Advertising",
+        "Information Technology",
+        "Sales and Marketing"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A NASA web tool that maps Earth-observing missions against key science observables for strategic planning.",
+        "name": "NESSIE web application"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2026-06-29",
+          "publisher": "Nasa.gov",
+          "title": "Mapping Earth’s Observations, featuring Betsy Ford",
+          "url": "https://www.nasa.gov/general/mapping-earths-observations-featuring-betsy-ford/"
+        },
+        {
+          "date": "2023-09-26",
+          "publisher": "GeekWire",
+          "title": "FTC targets alleged secret Amazon pricing algorithm ‘Project Nessie’ in antitrust complaint",
+          "url": "https://www.geekwire.com/2023/ftc-targets-alleged-secret-amazon-pricing-algorithm-project-nessie-in-antitrust-complaint/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -5,
+      "growthScore": 81,
+      "heatChange90Days": -36,
+      "heatScore": 48
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 83.71
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Phrasee is AI that specializes in language generation for email marketing, push, and Facebook copy.",
+          "employeeRange": "11-50",
+          "name": "Phrasee",
+          "sharedCategories": [
+            "Marketing"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Albert provides a wide range of digital marketing solutions including paid social advertising, mobile marketing, CRM and software solutions.",
+          "employeeRange": "101-250",
+          "name": "Albert",
+          "sharedCategories": [
+            "Marketing",
+            "Advertising"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Persado is a software company that provides machine learning, omnichannel, and generative ai.",
+          "employeeRange": "251-500",
+          "name": "Persado",
+          "similarityScore": 93
+        },
+        {
+          "description": "Mutiny helps B2B companies generate pipeline and revenue from their target accounts through AI-powered personalized web experiences.",
+          "employeeRange": "51-100",
+          "name": "Mutiny",
+          "sharedCategories": [
+            "Marketing",
+            "Advertising"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Optimizely is a digital experience platform for unlocking digital potential, content, commerce, and optimization.",
+          "employeeRange": "1,001-5,000",
+          "name": "Optimizely",
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 81 (-5 over 90 days) and market heat at 48 (-36).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Phrasee, Albert, Persado.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

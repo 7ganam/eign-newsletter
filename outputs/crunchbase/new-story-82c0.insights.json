@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:11:17.299Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:11:17.240Z",
+    "url": "https://www.crunchbase.com/organization/new-story-82c0"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "New Story",
+      "shortDescription": "New Story is a non-profit organization that pioneers solutions to end global homelessness.",
+      "description": "New Story is a non-profit organization that pioneers solutions to end global homelessness.\n\nNew Story creates a more inclusive housing market for low-income families. To shape that market, they rely on innovative solutions and incentivized partners. Through three core interventions, they ensure housing solutions are fair, affordable, and dignified.\n\nFounded by Mike Arrieta and Alexandria Lafci in 2014 and is located in Atlanta, GA.",
+      "website": "https://newstoryhomes.org/",
+      "foundedYear": 2014,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "Nonprofit",
+      "employeeRange": "11-50",
+      "headquarters": "Atlanta, Georgia, United States",
+      "geographicRegions": [
+        "Greater Atlanta Area",
+        "East Coast",
+        "Southern US"
+      ],
+      "industries": [
+        "Non Profit",
+        "Personal Development",
+        "Service Industry"
+      ],
+      "sectors": [
+        "Education",
+        "Other",
+        "Social Impact"
+      ],
+      "founders": [
+        "Brett Hagler",
+        "Matthew Marshall"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2015-08-22",
+      "lastFundingType": "Grant",
+      "rounds": [
+        {
+          "announcedDate": "2015-08-22",
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 9002637,
+            "currency": "USD"
+          },
+          "type": "Grant"
+        },
+        {
+          "announcedDate": "2015-01-01",
+          "investorCount": 1,
+          "leadInvestors": [
+            "The Draper Richards Kaplan Foundation"
+          ],
+          "type": "Grant"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "The Draper Richards Kaplan Foundation",
+            "rounds": [
+              "Grant"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Grant"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2015-08-22",
+          "title": "Grant - New Story"
+        },
+        {
+          "date": "2015-01-01",
+          "title": "Grant - New Story"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -1,
+      "growthScore": 80,
+      "heatChange90Days": -6,
+      "heatScore": 72
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 87.11
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Contour Crafting Corporation (CC Corp) is an early stage company with the mission to commercialize disruptive construction technologies.",
+          "employeeRange": "11-50",
+          "name": "Contour Crafting Corporation",
+          "similarityScore": 100
+        },
+        {
+          "description": "DRI Fund is an investment management firm that specializes in real estate finance and development.",
+          "employeeRange": "1-10",
+          "name": "DRI Fund",
+          "similarityScore": 94.889
+        },
+        {
+          "description": "Social Impact Investment Incubator with a funding and messaging strategy to make the world work for 100%, as proposed by Buckminster Fuller",
+          "employeeRange": "1-10",
+          "name": "Impact Launchpad",
+          "similarityScore": 88.868
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $9,002,637 to $9,002,637, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 80 (-1 over 90 days) and market heat at 72 (-6).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Contour Crafting Corporation, DRI Fund, Impact Launchpad.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:37:38.642Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:37:38.599Z",
+    "url": "https://www.crunchbase.com/organization/zomma"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Zomma",
+      "shortDescription": "Zomma develops AI desktop agents that automate financial operations workflows across existing software tools.",
+      "description": "Zomma develops AI desktop agents that automate financial operations workflows across the software tools teams already use. The platform trains agents to observe how staff complete tasks and then execute those workflows on their behalf in desktop and web applications without requiring APIs or custom integrations. Zomma focuses on back-office use cases in financial services, including client onboarding, compliance reviews, reconciliation, reporting, and data entry across custodian, carrier, CRM, and planning systems. Its agents read screens, extract and populate data, handle routine steps, and pause for human approval at critical actions. Zomma provides audit logging, encryption, and isolated deployments designed for regulated environments.",
+      "website": "https://www.zommalabs.com/",
+      "foundedYear": 2026,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Compliance",
+        "Data Integration",
+        "Enterprise Software",
+        "Financial Services",
+        "Productivity Tools",
+        "Robotic Process Automation (RPA)",
+        "Security",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Financial Services",
+        "Information Technology",
+        "Privacy and Security",
+        "Professional Services",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Cashel Fitzgerald",
+        "Jihyun Kim",
+        "Varun Arumugam"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "AI desktop agents that learn and run financial operations workflows across existing desktop and web applications.",
+        "name": "Zomma AI Desktop Agents"
+      },
+      {
+        "description": "Workflow automation that extracts client intake data and populates CRM, custodian, planning, and carrier systems end to end.",
+        "name": "Client Onboarding Automation for Advisory Firms"
+      },
+      {
+        "description": "AI-driven periodic review and compliance workflow automation across CRM, planning, custodian, and carrier systems.",
+        "name": "Compliance Automation for Advisory Firms"
+      },
+      {
+        "description": "Automation of reconciliation, billing, and client reporting across custodians, portfolio accounting, and fund admin systems.",
+        "name": "Reporting and Reconciliation Automation"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -51,
+      "growthScore": 39,
+      "heatScore": 83
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 5
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 94.64
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

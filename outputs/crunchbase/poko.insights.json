@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:10:53.604Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:10:53.547Z",
+    "url": "https://www.crunchbase.com/organization/poko"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Poko",
+      "shortDescription": "We connect brands with people creating interactive experiences and actions impact.",
+      "website": "http://www.poko.ad/",
+      "foundedYear": 2009,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Barcelona, Catalonia, Spain",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Advertising",
+        "Apps",
+        "Communities",
+        "Internet",
+        "Software"
+      ],
+      "sectors": [
+        "Advertising",
+        "Apps",
+        "Community and Lifestyle",
+        "Information Technology",
+        "Sales and Marketing",
+        "Software"
+      ],
+      "founders": [
+        "Carlos Artola"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2023-06-16",
+          "publisher": "Incubees",
+          "title": "Web3 startup Poko raised $4.5 M Seed funding from prominent investors",
+          "url": "https://incubees.com/web3-startup-poko-raised-4-5-m-seed-funding-from-prominent-investors/"
+        },
+        {
+          "date": "2023-06-15",
+          "publisher": "TechInAsia",
+          "title": "Poko raises $4.5m to reduce Web3 payments friction",
+          "url": "https://www.techinasia.com/poko-raises-4-5m-to-reduce-web3-payments-friction"
+        },
+        {
+          "date": "2023-06-15",
+          "publisher": "DealStreetAsia",
+          "title": "Asia Digest: Poko, Decentralised Gaming Ventures raise funding",
+          "url": "https://www.dealstreetasia.com/stories/asia-digest-poko-decentralised-gaming-ventures-348100/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -11,
+      "heatScore": 33
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 94.16
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "George P. Johnson is an event and experiential marketing agency.",
+          "employeeRange": "51-100",
+          "name": "George P. Johnson",
+          "sharedCategories": [
+            "Advertising"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Freeman is a provider of integrated services for face-to-face marketing events.",
+          "employeeRange": "10,001+",
+          "name": "Freeman",
+          "similarityScore": 91
+        },
+        {
+          "description": "Jack Morton Worldwide is a multinational brand experience agency that offers event marketing, broadcast design, and sponsorship activation.",
+          "employeeRange": "501-1,000",
+          "name": "Jack Morton Worldwide",
+          "sharedCategories": [
+            "Advertising"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "Momentum Worldwide is a marketing agency that offers design and technology services.",
+          "employeeRange": "5,001-10,000",
+          "name": "Momentum Worldwide",
+          "sharedCategories": [
+            "Advertising"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Imagination is an independent Experience Design Company founded over 50 years ago on the principle of Independent Creativity.",
+          "employeeRange": "501-1,000",
+          "name": "Imagination",
+          "sharedCategories": [
+            "Advertising"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include George P. Johnson, Freeman, Jack Morton Worldwide.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

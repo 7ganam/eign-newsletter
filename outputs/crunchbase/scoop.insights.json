@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:10:04.069Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:10:04.019Z",
+    "url": "https://www.crunchbase.com/organization/scoop"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Scoop",
+      "shortDescription": "Scoop is a smartphone app that enables users to discover events relevant to them based on their social and location-based connections.",
+      "description": "Scoop is a smartphone application that enables users to discover events relevant to them based on their social and location-based connections. It was launched by Zac Witte and Grant Nestor, and is based in Los Angeles, California.",
+      "website": "http://beta.scoop.fm/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Los Angeles, California, United States",
+      "geographicRegions": [
+        "Greater Los Angeles Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Content",
+        "Events",
+        "Mobile"
+      ],
+      "sectors": [
+        "Events",
+        "Media and Entertainment",
+        "Mobile"
+      ],
+      "founders": [
+        "Grant Nestor",
+        "Zac Witte"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2014-07-29",
+          "publisher": "TechInAsia",
+          "title": "Southeast Asia’s most expensive app also provides free textbooks for students. This is the story of Mahoni",
+          "url": "http://www.techinasia.com/mahoni-indonesia-app-developer-ebooks-emagazines-themis-reader-buku-sekolah-elektronik-toko-buku-majalah/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 1,
+      "heatScore": 12
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

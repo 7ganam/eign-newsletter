@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:56:19.888Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:56:19.834Z",
+    "url": "https://www.crunchbase.com/organization/mojo"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Mojo",
+      "shortDescription": "Mojo is a collective buying site engine that supports most popular Ukrainian online payment services.",
+      "description": "Mojo is a collective buying site engine that supports the most popular Ukrainian online payment services.\n\nThe company was founded in 2010 and based in Sevastopol, Sevastopol', Ukraine.",
+      "website": "http://mojo.com.ua/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Sevastopol, Sevastopol', Ukraine",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Financial Services",
+        "Search Engine",
+        "Social Media",
+        "Web Development"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Internet Services",
+        "Media and Entertainment",
+        "Software"
+      ],
+      "founders": [
+        "Jordan Wright",
+        "Tarik Ansari"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2019-10-23",
+          "publisher": "Business Up North",
+          "title": "£2.4m PDSA Pet Hospital built by MC Construction opens in Manchester",
+          "url": "https://www.businessupnorth.co.uk/2-4m-pdsa-pet-hospital-built-by-mc-construction-opens-in-manchester/"
+        },
+        {
+          "date": "2019-07-22",
+          "publisher": "Al Jazeera",
+          "title": "Ethiopia's water problem: Excessive fluoride treated with bones",
+          "url": "https://www.aljazeera.com/news/2019/07/ethiopias-water-problem-excessive-fluoride-treated-bones-190722104805651.html"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

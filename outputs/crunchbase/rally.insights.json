@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:34:18.569Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:34:18.512Z",
+    "url": "https://www.crunchbase.com/organization/rally"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Rally",
+      "shortDescription": "Rally offers Rally Up, a location-based app that enables users to interact with individuals within their social circles.",
+      "description": "A location-based application that does not use outside social graphs to populate its users network, instead relying on users to add the connections with rally. As a result, Rally feels it will provide a tighter network of people that better reflect a users friends.",
+      "website": "http://rallyapp.com/",
+      "foundedYear": 2009,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Juan, NA - Puerto Rico, Puerto Rico",
+      "geographicRegions": [
+        "Latin America"
+      ],
+      "industries": [
+        "Apps",
+        "Location Based Services",
+        "Mobile",
+        "Mobile Apps"
+      ],
+      "sectors": [
+        "Apps",
+        "Data and Analytics",
+        "Internet Services",
+        "Mobile",
+        "Navigation and Mapping",
+        "Software"
+      ],
+      "founders": [
+        "Jacob Knobel"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A location-based social app that allows users to interact within their social circles and earn tokens through various activities and referrals.",
+        "name": "Rally App"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2011-06-16",
+          "publisher": "TechCrunch",
+          "title": "Social Fundraising Platform Piryx Is Reborn As Rally.org With Top Investors In&nbsp;Tow",
+          "url": "http://techcrunch.com/2011/06/16/social-fundraising-platform-piryx-is-reborn-as-rally-org-with-top-investors-in-tow/"
+        },
+        {
+          "date": "2011-06-07",
+          "publisher": "TechCrunch",
+          "title": "Rally Lands $20M For Agile Application Lifecycle Management&nbsp;Solutions",
+          "url": "http://techcrunch.com/2011/06/07/rally-lands-20m-for-agile-application-lifecycle-management-solutions/"
+        },
+        {
+          "date": "2009-12-17",
+          "publisher": "TechCrunch",
+          "title": "Rally Wants To Bring Location Back To Its Core, With Only Your Real Friends.",
+          "url": "http://www.techcrunch.com/2009/12/17/rally-app-location/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 1,
+      "heatScore": 76
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 83.24
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Yubo, the social platform where Generation Z creates communities of friends around the world",
+          "employeeRange": "101-250",
+          "name": "Yubo",
+          "sharedCategories": [
+            "Apps",
+            "Mobile"
+          ],
+          "sharedSpecialties": [
+            "Community Platforms"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "WE3 is a venture studio that invests both financial and creative capital in early-stage technology startups.",
+          "employeeRange": "11-50",
+          "name": "WE3",
+          "similarityScore": 95
+        },
+        {
+          "description": "A better way to meet people.",
+          "employeeRange": "1-10",
+          "name": "Friended",
+          "sharedSpecialties": [
+            "Community Platforms",
+            "Push and In-App Notifications"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Nearify is an artificial intelligent platform that provides users information about events happening nearby based on their location.",
+          "employeeRange": "1-10",
+          "name": "Nearify",
+          "sharedSpecialties": [
+            "Location-Based Advertising",
+            "Location-Based Marketing Platform"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Blume is the first direct to consumer brand focused on puberty, from trustworthy education, to safe & effective self care products.",
+          "employeeRange": "11-50",
+          "name": "Blume",
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Yubo, WE3, Friended.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

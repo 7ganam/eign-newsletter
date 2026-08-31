@@ -1,0 +1,260 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:58:56.201Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:58:56.149Z",
+    "url": "https://www.crunchbase.com/organization/rocketable"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Rocketable",
+      "shortDescription": "Rocketable is a software holding company that acquires existing software products and operates them using AI agents.",
+      "website": "https://www.rocketable.com/",
+      "foundedYear": 2023,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Software",
+        "Software Engineering"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Alan Wells"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 6500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2025-07-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2025-07-01",
+          "amount": {
+            "amount": 6500000,
+            "currency": "USD"
+          },
+          "investorCount": 4,
+          "postMoneyValuation": {
+            "amount": 36356318,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 4,
+        "visibleNames": [
+          {
+            "name": "Rebel Fund",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Seaplane Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Unpopular Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2025-07-01",
+          "title": "Seed Round - Rocketable"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 6500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -3,
+      "growthScore": 82,
+      "heatChange90Days": -6,
+      "heatScore": 63
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 83.36
+      },
+      "funding": {
+        "generatedDate": "2026-06-20",
+        "probabilityPercent": 90.86,
+        "timingEstimatePercent": {
+          "within6Months": 99.81,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0.19
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 69.49
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 3.86
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Tiny is a consultancy firm that specializes in owing other companies, venture investments, digital marketing, and advertisement services.",
+          "employeeRange": "501-1,000",
+          "name": "Tiny",
+          "similarityScore": 97
+        },
+        {
+          "description": "Bending Spoons is a technology company that develops and acquires digital products and software platforms.",
+          "employeeRange": "501-1,000",
+          "name": "Bending Spoons",
+          "sharedCategories": [
+            "Software",
+            "Artificial Intelligence (AI)"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Constellation Software is a provider of market leading software and services to a select number of industries.",
+          "employeeRange": "10,001+",
+          "name": "Constellation Software",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Dura Software focuses on supporting and growing software companies that provide mission-critical solutions to various industries.",
+          "employeeRange": "51-100",
+          "name": "Dura Software",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 85
+        },
+        {
+          "description": "Sabin.io is a IT services and IT consulting company.",
+          "employeeRange": "11-50",
+          "name": "Sabin.io",
+          "similarityScore": 78
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $6,500,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $36,356,318 to $36,356,318, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 82 (-3 over 90 days) and market heat at 63 (-6).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Tiny, Bending Spoons, Constellation Software.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

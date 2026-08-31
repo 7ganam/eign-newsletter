@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:13:30.292Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:13:30.237Z",
+    "url": "https://www.crunchbase.com/organization/tapzilla"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "TapZilla",
+      "shortDescription": "TapZilla offers daily deals for paid mobile apps, giving users the chance to get paid apps for free.",
+      "description": "TapZilla is a Y Combinator-backed company that launched October 13, 2010 and is taking the daily deal model and applying it to discounts on paid mobile apps.\nThrough TapZilla.com and AppRebates.com, the company has given out more than 25,000 paid applications to its users and has pioneered the method of connecting developers with users by giving away paid applications for free.\nTapZilla has been featured by TechCrunch and Forbes.\n\nEach day, TapZilla features a paid iOS app. To get the deal, the user clicks on the “get App Now“ button, which will then prompt TapZilla to ask for your email.  Users receive an email with a link to the app in the App Store where they can purchase the app and a coupon code. \nOnce the app is purchased and downloaded, users are prompted to enter the coupon code once inside the App’s interface.  The app can also be prompted by shaking the phone.  Once the code is entered, TapZilla automatically puts the app cost in the buyer’s PayPal account or can issue an iTunes gift card.",
+      "website": "http://tapzilla.com/",
+      "foundedYear": 2010,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "iOS",
+        "Mobile",
+        "Venture Capital"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Lending and Investments",
+        "Mobile",
+        "Platforms",
+        "Software"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2010-08-02",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2010-08-02",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2010-12-16",
+          "publisher": "TechCrunch",
+          "title": "OpenFeint&#8217;s Game Channel Uses The Groupon-Model To Sell Its Mobile&nbsp;Games",
+          "url": "http://techcrunch.com/2010/12/16/openfeints-game-channel-uses-the-groupon-model-to-sell-its-mobile-games/"
+        },
+        {
+          "date": "2010-10-13",
+          "publisher": "TechCrunch",
+          "title": "Leena Rao, TechCrunch",
+          "url": "http://techcrunch.com/2010/10/13/tapzilla-offers-daily-deals-for-paid-mobile-apps/"
+        },
+        {
+          "date": "2010-08-02",
+          "title": "Seed Round - TapZilla"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -9,
+      "heatScore": 38
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Tracks iPhone, iPod Applications",
+          "employeeRange": "1-10",
+          "name": "App Shopper",
+          "sharedCategories": [
+            "iOS"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "148apps is an online platform that offers news, recommendations, and reviews on iPhone OS applications.",
+          "employeeRange": "1-10",
+          "name": "148Apps",
+          "similarityScore": 93
+        },
+        {
+          "description": "AppAdvice is an online resource that enables its users to discover new and relevant iOS applications.",
+          "employeeRange": "11-50",
+          "name": "AppAdvice",
+          "sharedCategories": [
+            "iOS",
+            "Mobile"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include App Shopper, 148Apps, AppAdvice.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

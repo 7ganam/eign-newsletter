@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:38:48.019Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:38:47.966Z",
+    "url": "https://www.crunchbase.com/organization/sonatoria"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Sonatoria",
+      "shortDescription": "Sonatoria provides AI-driven tools for organic marketing campaigns and user-generated content management for startups.",
+      "description": "Sonatoria develops artificial intelligence software that supports organic brand growth and user-generated content programs for startups and other businesses. The platform uses generative AI to structure and produce marketing campaigns, including social media posts, blog content, and coordinated workflow sequences aligned with a company’s audience and positioning. Sonatoria also operates a user-generated content platform that matches clients with vetted creators, generates automated creative briefs, and manages contracts and payments. The service integrates with payment providers such as Stripe to handle monthly billing and escrow arrangements for creator collaborations. In addition, Sonatoria offers analytics capabilities that track creator video performance and conversion metrics. These insights are used to refine campaigns and inform ongoing marketing decisions.",
+      "website": "https://sonatoria.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Los Angeles, California, United States",
+      "geographicRegions": [
+        "Greater Los Angeles Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Affiliate Marketing",
+        "Analytics",
+        "Artificial Intelligence (AI)",
+        "Collaboration",
+        "Content Marketing",
+        "Marketing",
+        "Marketing Automation",
+        "Payments",
+        "SaaS",
+        "Social Media"
+      ],
+      "sectors": [
+        "Advertising",
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Financial Services",
+        "Internet Services",
+        "Media and Entertainment",
+        "Other",
+        "Payments",
+        "Sales and Marketing",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Jacob Tucker"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An AI-powered platform that connects startups with vetted creators and manages briefs, contracts, payments, and performance tracking.",
+        "name": "Sonatoria UGC Platform"
+      },
+      {
+        "description": "AI software that generates structured organic marketing campaigns, including social posts, blogs, and workflows tailored to brand voice.",
+        "name": "Agentic Marketing Suite"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2024-07-01",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2024-07-01",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 6085650,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2024-07-01",
+          "title": "Pre Seed Round - Sonatoria"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 66,
+      "heatScore": 89
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 80.46
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 93.14,
+        "timingEstimatePercent": {
+          "within6Months": 93.8,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 6.19
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 60.04
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 4.12
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $6,085,650 to $6,085,650, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

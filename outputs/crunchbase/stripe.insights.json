@@ -1,0 +1,722 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:57:01.631Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:57:01.570Z",
+    "url": "https://www.crunchbase.com/organization/stripe"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Stripe",
+      "shortDescription": "Stripe is a financial technology company that provides online payment processing and payment infrastructure for businesses.",
+      "description": "Stripe is a financial technology company that provides software and APIs for online payment processing, financial operations, and internet commerce. Businesses use Stripe to accept payments online and in person, manage subscriptions, send payouts, issue invoices, detect fraud, and handle other financial workflows through web and mobile applications.",
+      "website": "https://stripe.com/",
+      "foundedYear": 2010,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "5,001-10,000",
+      "estimatedRevenueRange": "$100M-$500M",
+      "headquarters": "South San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Billing",
+        "Compliance",
+        "E-Commerce Platforms",
+        "Finance",
+        "Financial Services",
+        "FinTech",
+        "Fraud Detection",
+        "Payments",
+        "Software"
+      ],
+      "sectors": [
+        "Commerce and Shopping",
+        "Financial Services",
+        "Internet Services",
+        "Payments",
+        "Privacy and Security",
+        "Professional Services",
+        "Software"
+      ],
+      "founders": [
+        "John Collison",
+        "Patrick Collison"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A payment-processing platform for accepting and managing online and in-person payments across multiple currencies and payment methods.",
+        "name": "Stripe Payments"
+      },
+      {
+        "description": "A billing platform for recurring, usage-based, tiered, and one-time charges, including subscription management and revenue collection.",
+        "name": "Stripe Billing"
+      },
+      {
+        "description": "A platform-payments service for onboarding accounts, routing funds, and managing payouts for marketplaces and software platforms.",
+        "name": "Stripe Connect"
+      },
+      {
+        "description": "A hosted and embeddable checkout interface for collecting online payments with support for multiple payment methods and currencies.",
+        "name": "Stripe Checkout"
+      },
+      {
+        "description": "A solution for accepting in-person payments through compatible card readers and point-of-sale integrations.",
+        "name": "Stripe Terminal"
+      },
+      {
+        "description": "A fraud-prevention service that evaluates transactions and supports rules for detecting and blocking potentially fraudulent payments.",
+        "name": "Stripe Radar"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 10440247725,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 25,
+      "detailedRoundCount": 10,
+      "lastFundingDate": "2026-03-09",
+      "lastFundingType": "Secondary Market",
+      "rounds": [
+        {
+          "announcedDate": "2026-03-09",
+          "investorCount": 3,
+          "leadInvestors": [
+            "EMRAN Batayneh",
+            "Robinhood Ventures"
+          ],
+          "type": "Secondary Market"
+        },
+        {
+          "announcedDate": "2026-02-24",
+          "investorCount": 3,
+          "postMoneyValuation": {
+            "amount": 159000000000,
+            "currency": "USD"
+          },
+          "type": "Secondary Market"
+        },
+        {
+          "announcedDate": "2025-12-17",
+          "investorCount": 1,
+          "type": "Secondary Market"
+        },
+        {
+          "announcedDate": "2025-02-27",
+          "postMoneyValuation": {
+            "amount": 91500000000,
+            "currency": "USD"
+          },
+          "type": "Secondary Market"
+        },
+        {
+          "announcedDate": "2024-04-12",
+          "amount": {
+            "amount": 694159778,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "postMoneyValuation": {
+            "amount": 65000000000,
+            "currency": "USD"
+          },
+          "type": "Secondary Market"
+        },
+        {
+          "announcedDate": "2024-03-01",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 32414537281,
+            "currency": "USD"
+          },
+          "type": "Venture round"
+        },
+        {
+          "announcedDate": "2023-04-25",
+          "amount": {
+            "amount": 11087947,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Grant"
+        },
+        {
+          "announcedDate": "2023-03-15",
+          "amount": {
+            "amount": 6500000000,
+            "currency": "USD"
+          },
+          "investorCount": 15,
+          "leadInvestors": [
+            "Andreessen Horowitz",
+            "Baillie Gifford",
+            "Founders Fund",
+            "General Catalyst",
+            "MSD Partners",
+            "Thrive Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 50000000000,
+            "currency": "USD"
+          },
+          "type": "Series I"
+        },
+        {
+          "announcedDate": "2021-06-14",
+          "amount": {
+            "amount": 1000000000,
+            "currency": "USD"
+          },
+          "investorCount": 4,
+          "type": "Secondary Market"
+        },
+        {
+          "announcedDate": "2021-03-14",
+          "amount": {
+            "amount": 600000000,
+            "currency": "USD"
+          },
+          "investorCount": 11,
+          "leadInvestors": [
+            "Allianz X",
+            "AXA Group",
+            "Baillie Gifford",
+            "Fidelity",
+            "National Treasury Management Agency (NTMA)",
+            "Sequoia Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 95000000000,
+            "currency": "USD"
+          },
+          "type": "Series H"
+        }
+      ],
+      "investors": {
+        "reportedCount": 76,
+        "visibleNames": [
+          {
+            "name": "Alto",
+            "rounds": [
+              "Secondary Market"
+            ]
+          },
+          {
+            "name": "Andreessen Horowitz",
+            "rounds": [
+              "Secondary Market"
+            ]
+          },
+          {
+            "name": "Coatue",
+            "rounds": [
+              "Secondary Market"
+            ]
+          },
+          {
+            "name": "E1 Ventures",
+            "rounds": [
+              "Secondary Market"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "EMRAN Batayneh",
+            "rounds": [
+              "Secondary Market"
+            ]
+          },
+          {
+            "name": "General Catalyst"
+          },
+          {
+            "name": "Irving Investors",
+            "rounds": [
+              "Secondary Market"
+            ]
+          },
+          {
+            "name": "Khosla Ventures"
+          },
+          {
+            "name": "Richard Cooperstein",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Robinhood Ventures",
+            "rounds": [
+              "Secondary Market"
+            ]
+          },
+          {
+            "name": "Sequoia Capital"
+          },
+          {
+            "name": "Temasek"
+          },
+          {
+            "name": "Thrive Capital",
+            "rounds": [
+              "Secondary Market"
+            ]
+          },
+          {
+            "name": "Ventioneers",
+            "rounds": [
+              "Secondary Market"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 6577,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-08-31",
+          "publisher": "Dynamic Business",
+          "title": "Tech Tuesday: The complete guide toinvoicing tools in 2026",
+          "url": "https://dynamicbusiness.com/topics/news/tech-tuesday-the-complete-guide-toinvoicing-tools-in-2026.html"
+        },
+        {
+          "date": "2026-08-29",
+          "publisher": "TechTrendsKE",
+          "title": "Stripe and Advent abandon $53 billion PayPal bid after valuation standoff",
+          "url": "https://techtrendske.co.ke/2026/08/29/paypal-takeover-bid-stripe-advent-collapses/"
+        },
+        {
+          "date": "2026-08-28",
+          "publisher": "Condia",
+          "title": "How to start a fintech in Nigeria in 2026: Licences, costs, CBN requirements and launch guide",
+          "url": "https://thecondia.com/how-to-start-fintech-in-nigeria-guide/"
+        },
+        {
+          "date": "2026-08-28",
+          "publisher": "ChinaVenture",
+          "title": "“抱抱脸”867亿卖了",
+          "url": "https://www.chinaventure.com.cn/news/80-20260828-392994.html"
+        },
+        {
+          "date": "2026-08-28",
+          "publisher": "legacy.thefly.com",
+          "title": "Anthropic discussed buying AI chip startup MatX, Reuters reports",
+          "url": "https://thefly.com/$PRIVATE"
+        },
+        {
+          "date": "2026-08-28",
+          "publisher": "PYMNTS.com",
+          "title": "Advent, Stripe Abandon $50 Billion Pursuit of PayPal",
+          "url": "https://www.pymnts.com/news/acquiring/2026/advent-stripe-abandon-50-billion-pursuit-of-paypal/"
+        },
+        {
+          "date": "2026-08-28",
+          "publisher": "TechRound",
+          "title": "Can Hugging Face Stay Neutral After Nvidia’s $12.9 Billion Acquisition?",
+          "url": "https://techround.co.uk/?post_type=post&p=158049"
+        },
+        {
+          "date": "2026-08-28",
+          "publisher": "legacy.thefly.com",
+          "title": "PayPal falls -11.3%",
+          "url": "https://thefly.com/PYPL"
+        },
+        {
+          "date": "2026-08-28",
+          "publisher": "TechRound",
+          "title": "Can Hugging Face Stay Neutral After Nvidia’s $12.9 Billion Acquisition?",
+          "url": "https://techround.co.uk/news/can-hugging-face-stay-neutral-after-nvidias-12-9-billion-acquisition/"
+        },
+        {
+          "date": "2026-08-28",
+          "publisher": "Silicon Republic",
+          "title": "Stripe, Advent’s PayPal acquisition plans reportedly fall through",
+          "url": "https://www.siliconrepublic.com/business/stripe-advents-paypal-acquisition-plans-reportedly-falls-through"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 5,
+    "knownDetailedFundingAmount": {
+      "amount": 8805247725,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 84.34,
+    "unattributedFundingAmount": {
+      "amount": 1635000000,
+      "currency": "USD"
+    },
+    "grantFunding": {
+      "amount": {
+        "amount": 11087947,
+        "currency": "USD"
+      },
+      "disclosedRoundCount": 1,
+      "shareOfTotalPercent": 0.11
+    },
+    "latestToEarliestKnownValuationMultiple": 1.67
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "reportedPartnerships": {
+      "note": "Provider event summaries with linked sources; not independently verified.",
+      "items": [
+        {
+          "date": "2026-07-18",
+          "description": "Stripe partnered with Advent International on a $53 billion takeover bid for PayPal, indicating collaboration between a fintech company and a private equity firm.",
+          "sources": [
+            {
+              "date": "2026-08-18",
+              "publisher": "RTE Online",
+              "title": "Stripe to acquire AI firm OpenRouter in $7 billion deal",
+              "url": "https://www.rte.ie/news/business/2026/0818/1588319-stripe-openrouter-ai/"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-15",
+          "description": "Stripe and Advent International have formed a partnership to jointly pursue the acquisition of PayPal, aligning Stripe’s merchant network strengths with Advent’s private equity capital and deal expertise.",
+          "sources": [
+            {
+              "date": "2026-07-15",
+              "publisher": "MarketScreener",
+              "title": "Stripe, Advent offer over $53 billion for PayPal, sources say",
+              "url": "https://www.marketscreener.com/news/stripe-advent-offer-over-53-billion-for-paypal-sources-say-ce7f5ed2dd8cf720"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-03",
+          "description": "Stripe and Affirm announced an expansion of their strategic flexible checkout partnership to the UK market, bringing Affirm's buy-now-pay-later options to more merchants via Stripe in the region.",
+          "sources": [
+            {
+              "date": "2026-06-03",
+              "publisher": "The Fintech Times",
+              "title": "Money20/20 Europe: DAY One Roundup",
+              "url": "https://thefintechtimes.com/money20-20-europe-day-one-roundup/"
+            }
+          ]
+        },
+        {
+          "date": "2026-04-29",
+          "description": "Stripe and Google formed a partnership to enable merchants to sell to consumers directly inside Google’s AI Mode and Gemini app using Stripe’s Agentic Commerce Suite for checkout and payments.",
+          "sources": [
+            {
+              "date": "2026-04-29",
+              "publisher": "PYMNTS.com",
+              "title": "Stripe Brings Merchant Checkout to Google’s AI Apps",
+              "url": "https://www.pymnts.com/artificial-intelligence-2/2026/stripe-scales-ai-economic-infrastructure-with-google-deal/"
+            }
+          ]
+        },
+        {
+          "date": "2026-03-26",
+          "description": "Stripe and Tempo formed a partnership to jointly launch the Machine Payments Protocol (MPP), defining how AI agents and services coordinate automated internet payments.",
+          "sources": [
+            {
+              "date": "2026-03-26",
+              "publisher": "PANews",
+              "title": "Agentic Payment的终局大家都在讲，真正难的是中间这条路"
+            }
+          ]
+        },
+        {
+          "date": "2026-02-24",
+          "description": "Stripe announced new partnerships around its Agentic Commerce Suite with retail brands Anthropologie and Urban Outfitters and technology companies OpenAI and Microsoft to power AI-enabled shopping experiences.",
+          "sources": [
+            {
+              "date": "2026-02-24",
+              "publisher": "Benzinga.com",
+              "title": "Stripe Announces Tender Offer At $159B Valuation",
+              "url": "https://www.benzinga.com/markets/private-markets/26/02/50823495/stripe-announces-tender-offer-at-159b-valuation"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-06",
+          "description": "Stripe and Crypto.com announced a new integration-based partnership that lets businesses accept cryptocurrency payments via Crypto.com Pay through Stripe, while Stripe handles conversion to local currency and acquiring services for card-based crypto purchases.",
+          "sources": [
+            {
+              "date": "2026-01-06",
+              "publisher": "PYMNTS.com",
+              "title": "Stripe Integrates Crypto.com to Facilitate Crypto Payments",
+              "url": "https://www.pymnts.com/cryptocurrency/2026/stripe-integrates-cryptocom-facilitate-crypto-payments/"
+            }
+          ]
+        },
+        {
+          "date": "2025-10-13",
+          "description": "Stripe and Bridge formed a pact to launch Open Issuance, enabling enterprises to mint and manage stablecoins.",
+          "sources": [
+            {
+              "date": "2025-10-13",
+              "publisher": "PYMNTS.com",
+              "title": "Tether Chief Says Bitcoin and Gold Will ‘Outlast’ Other Currencies",
+              "url": "https://www.pymnts.com/cryptocurrency/2025/tether-chief-says-bitcoin-and-gold-will-outlast-other-currencies/"
+            }
+          ]
+        },
+        {
+          "date": "2025-09-04",
+          "description": "Stripe announced a collaboration to build a new blockchain, Tempo, focused on faster stablecoin processing, with Anthropic, OpenAI, and Paradigm joining the effort.",
+          "sources": [
+            {
+              "date": "2025-09-04",
+              "publisher": "TechCrunch",
+              "title": "Stripe enlists a who’s who, including Anthropic, OpenAI, and Paradigm, to build a new blockchain",
+              "url": "https://techcrunch.com/2025/09/04/stripe-enlists-a-whos-who-including-anthropic-openai-and-paradigm-to-build-a-new-blockchain/"
+            }
+          ]
+        },
+        {
+          "date": "2025-09-04",
+          "description": "Stripe announced a collaboration to build a new blockchain, Tempo, focused on faster stablecoin processing, with Anthropic, OpenAI, and Paradigm joining the effort.",
+          "sources": [
+            {
+              "date": "2025-09-04",
+              "publisher": "TechCrunch",
+              "title": "Stripe enlists a who’s who, including Anthropic, OpenAI, and Paradigm, to build a new blockchain",
+              "url": "https://techcrunch.com/2025/09/04/stripe-enlists-a-whos-who-including-anthropic-openai-and-paradigm-to-build-a-new-blockchain/"
+            }
+          ]
+        }
+      ]
+    },
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2026-08-09",
+      "growthChange90Days": -1,
+      "growthScore": 99,
+      "heatChange90Days": 11,
+      "heatScore": 83,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-13",
+        "probabilityPercent": 95.1
+      },
+      "funding": {
+        "generatedDate": "2026-04-18",
+        "probabilityPercent": 94.75,
+        "timingEstimatePercent": {
+          "within6Months": 97.35,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 2.65
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 83.63
+      },
+      "ipo": {
+        "generatedDate": "2026-08-15",
+        "probabilityPercent": 95.09
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Adyen is the financial technology platform of choice that helps businesses achieve their ambitions faster.",
+          "employeeRange": "5,001-10,000",
+          "name": "Adyen",
+          "sharedCategories": [
+            "Financial Services",
+            "FinTech"
+          ],
+          "sharedSpecialties": [
+            "Payment Terminals",
+            "Payment Processing",
+            "Banking-as-a-Service (BaaS)",
+            "Merchant Services",
+            "Payment Fraud Detection",
+            "Payment Cards",
+            "Payment Orchestration Platforms",
+            "Payment Gateway Services",
+            "Payment Analytics and Dashboard"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Rapyd is a financial technology company that provides payment processing and fintech infrastructure for businesses.",
+          "employeeRange": "501-1,000",
+          "name": "Rapyd",
+          "sharedCategories": [
+            "Financial Services",
+            "FinTech",
+            "Payments"
+          ],
+          "sharedSpecialties": [
+            "Payment Processing",
+            "Banking-as-a-Service (BaaS)",
+            "Payment Fraud Detection",
+            "Payment Orchestration Platforms",
+            "Payment Gateway Services",
+            "Payment Analytics and Dashboard",
+            "Payment Links"
+          ],
+          "similarityScore": 96.25
+        },
+        {
+          "description": "Checkout.com is a global provider of payment solutions that help businesses and communities thrive in the digital economy.",
+          "employeeRange": "1,001-5,000",
+          "name": "Checkout.com",
+          "sharedCategories": [
+            "Fraud Detection",
+            "Financial Services",
+            "FinTech",
+            "Payments"
+          ],
+          "sharedSpecialties": [
+            "Payment Processing",
+            "Merchant Services",
+            "Payment Fraud Detection",
+            "Payment Cards",
+            "Payment Orchestration Platforms",
+            "Payment Gateway Services",
+            "Payment Analytics and Dashboard",
+            "Payment Links"
+          ],
+          "similarityScore": 95.54
+        },
+        {
+          "description": "PayPal is a financial service company that provides online payment solutions to its users worldwide.",
+          "employeeRange": "10,001+",
+          "name": "PayPal",
+          "sharedCategories": [
+            "E-Commerce Platforms",
+            "FinTech",
+            "Payments"
+          ],
+          "sharedSpecialties": [
+            "Payment Processing",
+            "Merchant Services",
+            "Payment Orchestration Platforms",
+            "Payment Gateway Services",
+            "Payment Links"
+          ],
+          "similarityScore": 95.36
+        },
+        {
+          "description": "Airwallex is a global payments and financial platform that provides business accounts, payment solutions, and spend management tools.",
+          "employeeRange": "1,001-5,000",
+          "name": "Airwallex",
+          "sharedCategories": [
+            "Financial Services",
+            "Finance",
+            "FinTech",
+            "Payments"
+          ],
+          "sharedSpecialties": [
+            "Payment Processing",
+            "Banking-as-a-Service (BaaS)",
+            "Payment Fraud Detection",
+            "Payment Cards",
+            "Payment Orchestration Platforms",
+            "Payment Gateway Services"
+          ],
+          "similarityScore": 95.18
+        }
+      ]
+    },
+    "aiResearchSummary": {
+      "notFact": true,
+      "text": "Stripe is focusing on enhancing secure payment processing and fraud detection. They are developing systems for secure token-driven routing of proceeds and methods for identity document fraud detection. Additionally, Stripe is working on embedded user interface elements to streamline API interactions and secure data management for sensitive information. Their research also includes systems for transaction tracing and multi-factor authentication for commerce platforms. These efforts highlight Stripe's commitment to improving online payment security and efficiency."
+    }
+  },
+  "insights": [
+    {
+      "title": "Meaningful non-dilutive funding",
+      "statement": "1 disclosed grants total $11,087,947, representing 0.11% of reported funding.",
+      "implication": "The grants reduce the share of reported financing attributed to equity or notes, although their restrictions and milestone requirements need separate verification.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.grantFunding"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $95,000,000,000 to $159,000,000,000, a 1.67x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 99 (-1 over 90 days) and market heat at 83 (+11).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Adyen, Rapyd, Checkout.com.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "medium",
+        "finding": "Crunchbase reports 25 funding rounds but supplies 10 detailed rows.",
+        "impact": "The detailed round history is incomplete."
+      },
+      {
+        "severity": "medium",
+        "finding": "Disclosed detailed amounts total $8,805,247,725, leaving $1,635,000,000 of reported funding unattributed.",
+        "impact": "Do not invent or assign the missing amount to a round."
+      },
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 6577 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

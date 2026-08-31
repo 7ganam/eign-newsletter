@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:31:55.588Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:31:55.534Z",
+    "url": "https://www.crunchbase.com/organization/opentools"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "OpenTools",
+      "shortDescription": "Explore the World's Top AI Tools List",
+      "description": "At OpenTools, we make AI work for you. Our free newsletter delivers quick, actionable insights, news, and the latest AI tools to 50,000+ business leaders from Google, Microsoft, Amazon, and more.\n\nOur AI Tools directory website is the best way to discover vetted AI tools that fit your individual needs perfectly. Talk to the free Tool Finder AI Agent on our website to help browse over 10,000 new AI tools based on their reviews, features, pricing, and more!\n\nDon’t miss out—subscribe now and get the latest strategies top companies are using to stay ahead, delivered straight to your inbox to absorb in 5 minutes or less.",
+      "website": "https://opentools.ai/",
+      "foundedYear": 2023,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Harju, Hiiumaa, Estonia",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "SaaS"
+      ],
+      "sectors": [
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A comprehensive database listing over 10,000 AI tools, updated regularly to reflect current and all-time top AI tools across various categories.",
+        "name": "Top AI Tools List"
+      },
+      {
+        "description": "An AI-powered online tool that generates concise summaries of YouTube videos by analyzing video content from a provided URL.",
+        "name": "Free YouTube Video Summarizer"
+      },
+      {
+        "description": "A subscription-based service delivering weekly AI workflow guides, Q&A sessions, and access to an archive of AI productivity workflows.",
+        "name": "AI Workflow Subscription Service"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2025-05-15",
+          "publisher": "Cyprus Mail",
+          "title": "10 best AI tool directories you can’t miss in 2025 (Expert’s Guide)",
+          "url": "https://cyprus-mail.com/2025/05/15/10-best-ai-tool-directories-you-cant-miss-in-2025-experts-guide"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -3,
+      "growthScore": 82,
+      "heatChange90Days": -18,
+      "heatScore": 31
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 66.43
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 89.87
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 60.06
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Toolify offers a directory of free AI tools for text, image, voice, code, and business use.",
+          "name": "Toolify",
+          "similarityScore": 97
+        },
+        {
+          "description": "The largest aggregator of AI tools and use cases.",
+          "employeeRange": "1-10",
+          "name": "AiToolHunt",
+          "sharedSpecialties": [
+            "Technology News",
+            "Software Review Sites",
+            "App Intelligence",
+            "App Store Discovery"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Futurepedia is a leading AI resource platform, dedicated to empowering professionals to leverage AI technologies for innovation and growth.",
+          "employeeRange": "11-50",
+          "name": "Futurepedia",
+          "sharedSpecialties": [
+            "Technology News",
+            "AI and Machine Learning Training Programs"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "The largest aggregator of AI tools and use cases.",
+          "employeeRange": "11-50",
+          "name": "There's An AI For That",
+          "sharedSpecialties": [
+            "Technology News",
+            "Software Review Sites"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "The AI tools discovery platform. Find AI by task, browse daily, follow categories, find alternatives, build stacks.",
+          "employeeRange": "1-10",
+          "name": "TopAI.tools",
+          "similarityScore": 81
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 82 (-3 over 90 days) and market heat at 31 (-18).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Toolify, AiToolHunt, Futurepedia.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}
