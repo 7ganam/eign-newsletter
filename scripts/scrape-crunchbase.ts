@@ -392,37 +392,47 @@ on run argv
   set extractionJavascript to item 2 of argv
   set keepOpenFlag to item 3 of argv
   set pollCount to (item 4 of argv) as integer
+  set scraperMarker to "__CODEX_CRUNCHBASE_SCRAPER__"
+  set scraperMarkerURL to "data:text/html,%3Ctitle%3E__CODEX_CRUNCHBASE_SCRAPER__%3C%2Ftitle%3E"
   set targetTab to missing value
   set targetWindow to missing value
-  set previousWindow to missing value
-  set previousTabIndex to missing value
   set didCreateTab to false
-  set hadExistingWindow to false
   set lastResult to "${WAIT_PREFIX}Page has not finished loading"
 
   try
     tell application "Brave Browser"
-      if (count of windows) is 0 then
+      repeat with candidateWindow in windows
+        repeat with candidateTab in tabs of candidateWindow
+          if title of candidateTab is scraperMarker then
+            set targetWindow to candidateWindow
+            exit repeat
+          end if
+        end repeat
+        if targetWindow is not missing value then exit repeat
+      end repeat
+
+      if targetWindow is missing value then
         set targetWindow to make new window
-      else
-        set hadExistingWindow to true
-        set previousWindow to front window
-        set previousTabIndex to active tab index of previousWindow
-        set targetWindow to previousWindow
+        set URL of active tab of targetWindow to scraperMarkerURL
+        delay 0.25
       end if
 
-      tell targetWindow
-        set targetTab to make new tab at end of tabs with properties {URL:targetURL}
-        set didCreateTab to true
-        set active tab index to (count of tabs)
-      end tell
+      set index of targetWindow to (count of windows)
+
+      set targetTab to make new tab at end of tabs of targetWindow with properties {URL:targetURL}
+      set didCreateTab to true
+      set index of targetWindow to (count of windows)
 
       repeat pollCount times
         if (loading of targetTab) is false then
           try
             set lastResult to execute targetTab javascript extractionJavascript
           on error scriptError
-            set lastResult to "${WAIT_PREFIX}" & scriptError
+            if scriptError contains "Allow JavaScript from Apple Events" then
+              set lastResult to "${ERROR_PREFIX}" & scriptError
+            else
+              set lastResult to "${WAIT_PREFIX}" & scriptError
+            end if
           end try
 
           if lastResult starts with "${ERROR_PREFIX}" then
@@ -431,15 +441,8 @@ on run argv
 
           if lastResult does not start with "${WAIT_PREFIX}" then
             if keepOpenFlag is not "true" then
-              if hadExistingWindow then
-                close targetTab
-                try
-                  set active tab index of previousWindow to previousTabIndex
-                  set index of previousWindow to 1
-                end try
-              else
-                close targetWindow
-              end if
+              close targetTab
+              set index of targetWindow to (count of windows)
               set didCreateTab to false
             end if
             return lastResult
@@ -455,15 +458,8 @@ on run argv
     if didCreateTab and keepOpenFlag is not "true" then
       try
         tell application "Brave Browser"
-          if hadExistingWindow then
-            close targetTab
-            try
-              set active tab index of previousWindow to previousTabIndex
-              set index of previousWindow to 1
-            end try
-          else
-            close targetWindow
-          end if
+          close targetTab
+          set index of targetWindow to (count of windows)
         end tell
       end try
     end if
@@ -816,6 +812,18 @@ async function runBatch(options: CliOptions) {
       } catch (error) {
         entry.error = error instanceof Error ? error.message : String(error)
         const isRateLimited = /rate limit|error 1015/i.test(entry.error)
+        const isAppleEventsJavascriptDisabled =
+          /Allow JavaScript from Apple Events/i.test(entry.error)
+
+        if (isAppleEventsJavascriptDisabled) {
+          entry.failedAt = undefined
+          entry.status = 'pending'
+          await writeBatchState(options, manifest)
+          throw new Error(
+            'Brave Browser has JavaScript from Apple Events disabled; ' +
+            'enable View > Developer > Allow JavaScript from Apple Events, then resume',
+          )
+        }
 
         if (isRateLimited) {
           entry.failedAt = undefined
