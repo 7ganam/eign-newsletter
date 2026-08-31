@@ -337,11 +337,11 @@ export function Newsletters() {
         <nav aria-label="Primary navigation">
           <a href="/">Dashboard</a>
           <a href="/software-companies">Software companies</a>
-          <a href="/valid-links">Valid links</a>
           <a href="/influencers">Influencers</a>
           <a href="/research">Startups</a>
           <a href="/newsletters" aria-current="page">Newsletters</a>
           <a href="/posts">Posts</a>
+          <a href="/in-progress">In progress</a>
         </nav>
       </header>
 

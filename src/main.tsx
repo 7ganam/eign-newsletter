@@ -16,6 +16,8 @@ const isSoftwareCompanies = window.location.pathname === '/software-companies'
 const isNewsletters = window.location.pathname === '/newsletters'
 const isValidLinks = window.location.pathname === '/valid-links'
 const isPosts = window.location.pathname === '/posts'
+const isInProgress = window.location.pathname === '/in-progress'
+const isInfluencers2 = window.location.pathname === '/influncers-2'
 const Visualisations = lazy(async () => {
   const module = await import('./Visualisations')
   return { default: module.Visualisations }
@@ -40,10 +42,26 @@ const Posts = lazy(async () => {
   const module = await import('./Posts')
   return { default: module.Posts }
 })
+const InProgress = lazy(async () => {
+  const module = await import('./InProgress')
+  return { default: module.InProgress }
+})
+const Influencers2 = lazy(async () => {
+  const module = await import('./Influencers2')
+  return { default: module.Influencers2 }
+})
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    {isResearchLedger ? <ResearchLedger /> : isPosts ? (
+    {isResearchLedger ? <ResearchLedger /> : isInfluencers2 ? (
+      <Suspense fallback={<main className="loading-view" aria-label="Loading influncers 2"><div className="loading-mark">EI</div></main>}>
+        <Influencers2 />
+      </Suspense>
+    ) : isInProgress ? (
+      <Suspense fallback={<main className="loading-view" aria-label="Loading in-progress work"><div className="loading-mark">EI</div></main>}>
+        <InProgress />
+      </Suspense>
+    ) : isPosts ? (
       <Suspense fallback={<main className="loading-view" aria-label="Loading posts"><div className="loading-mark">EI</div></main>}>
         <Posts />
       </Suspense>
