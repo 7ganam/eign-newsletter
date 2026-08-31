@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T08:53:07.703Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T08:53:07.658Z",
+    "url": "https://www.crunchbase.com/organization/adentris"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Adentris",
+      "shortDescription": "Adentris provides an AI-powered platform for healthcare documentation compliance, real-time EMR audit, and revenue cycle optimization.",
+      "description": "Adentris provides an AI-powered platform for healthcare documentation compliance, real-time EMR audit, and revenue cycle optimization. The company integrates with hospital electronic health record systems to monitor notes, orders, results, and workflows as clinicians document. Its compliance engine interprets thousands of regulatory rules, detects missing, conflicting, or late documentation elements, and flags issues linked to quality, billing, and regulatory measures. Adentris initiates targeted, in-workflow tasks for physicians, nurses, and compliance teams so gaps such as missing discharge notes, timing errors, or incomplete assessments can be corrected before discharge or claim submission. A billing and revenue cycle module transforms compliant documentation into cleaner claims to reduce denials and revenue leakage. An AI web agent layer enables clinical chart-level access across diverse EMR systems without relying solely on custom API integrations. The platform is used by hospitals and treatment centers to support quality programs, value-based payment measures, and audit readiness.",
+      "website": "https://adentris.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Reno, Nevada, United States",
+      "geographicRegions": [
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Compliance",
+        "Electronic Health Record (EHR)",
+        "Health Care",
+        "Health Diagnostics",
+        "Health Insurance",
+        "Hospital",
+        "Machine Learning",
+        "Medical",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Financial Services",
+        "Health Care",
+        "Professional Services",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Alex Odin",
+        "Dmitry Karpov",
+        "Sergey Yudovskiy"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Adentris AI Compliance Engine is a real-time EHR-integrated copilot that audits medical charts and flags documentation and compliance gaps for clinical teams.",
+        "name": "Adentris AI Compliance Engine"
+      },
+      {
+        "description": "Full-Cycle Billing & Revenue Cycle Module uses AI to convert compliant clinical workflows into cleaner claims and reduce payer denials and revenue loss.",
+        "name": "Full-Cycle Billing & Revenue Cycle Module"
+      },
+      {
+        "description": "AI Web Agent Layer is a browser-based automation system that enables chart-level access across EMR systems to power Adentris audits without custom API builds.",
+        "name": "AI Web Agent Layer"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2026-07-02",
+      "lastFundingType": "Non Equity Assistance",
+      "rounds": [
+        {
+          "announcedDate": "2026-07-02",
+          "investorCount": 1,
+          "leadInvestors": [
+            "Creative Destruction Lab"
+          ],
+          "type": "Non Equity Assistance"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Creative Destruction Lab",
+            "rounds": [
+              "Non Equity Assistance"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2026-07-02",
+          "title": "Non Equity Assistance - Adentris"
+        },
+        {
+          "date": "2026-06-02",
+          "publisher": "EIN Presswire",
+          "title": "Sobrius Partners with Adentris to Set a New Standard for Accountability in Behavioral Health",
+          "url": "https://www.einpresswire.com/article/916745506/sobrius-partners-with-adentris-to-set-a-new-standard-for-accountability-in-behavioral-health"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 73,
+      "growthScore": 90,
+      "heatChange90Days": 49,
+      "heatScore": 76
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 84.68
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 78.92,
+        "timingEstimatePercent": {
+          "within6Months": 99.93,
+          "months6To11": 0.03,
+          "months12To24": 0,
+          "beyond24Months": 0.04
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 96.24
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 22.03
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 90 (+73 over 90 days) and market heat at 76 (+49).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

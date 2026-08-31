@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T09:39:04.623Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T09:39:04.570Z",
+    "url": "https://www.crunchbase.com/organization/alfie"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Alfie",
+      "shortDescription": "Alfie provides creative solutions for individuals looking to purchase or refinance a variety of real estate investments.",
+      "description": "Alfie is a private equity and venture capital firm that specializes in providing creative solutions for individuals looking to purchase or refinance a variety of real estate investments. It offers a loan that are collateral-based for transactions of $150,000+*. Terms are flexible, with three months to two years for repayment.\n\nThe company was founded in 2017 and headquartered in Asheville\tNorth Carolina.",
+      "website": "https://alfieloans.com/",
+      "foundedYear": 2017,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Asheville, North Carolina, United States",
+      "geographicRegions": [
+        "East Coast",
+        "Southern US"
+      ],
+      "industries": [
+        "Finance",
+        "Financial Exchanges",
+        "Financial Services"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Lending and Investments"
+      ],
+      "founders": [
+        "Jon Sarver",
+        "Todd Fowler"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2024-08-19",
+          "publisher": "Techno Buffalo",
+          "title": "Alfie Cameras TYCH+ review: pocket-sized analogue creativity unleashed",
+          "url": "https://www.techradar.com/cameras/compact-cameras/alfie-cameras-tych-review"
+        },
+        {
+          "date": "2023-07-07",
+          "publisher": "alleywatch.com",
+          "title": "Alfie Raises $2.1M for its AI-Powered Virtual Health Platform for Sustainable Weight Loss",
+          "url": "https://www.alleywatch.com/2023/07/alfie-obesity-weight-management-clinic-virtual-telehealth-platform-alexander-singh/"
+        },
+        {
+          "date": "2023-07-01",
+          "publisher": "Pulse 2.0",
+          "title": "Alfie Health: Virtual Obesity Management Clinic Company Secures $2.1 Million",
+          "url": "http://dlvr.it/SrVfPG"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -10,
+      "heatScore": 47
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Lima One Capital is a real estate firm that provides an array of loans, lending, rental, investment, and property management services.",
+          "employeeRange": "251-500",
+          "name": "Lima One Capital",
+          "similarityScore": 97
+        },
+        {
+          "description": "Kiavi is a tech-enabled lender that provides residential real estate investors with financing solutions for property investments.",
+          "employeeRange": "251-500",
+          "name": "Kiavi",
+          "sharedCategories": [
+            "Financial Services"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "RCN Capital is a national, direct private lender providing short-term commercial loans from $50k to $2.5M+.",
+          "employeeRange": "101-250",
+          "name": "RCN Capital",
+          "similarityScore": 89
+        },
+        {
+          "description": "Anchor Loans LP is a California-based fix and flip lending company.",
+          "employeeRange": "101-250",
+          "name": "Anchor Loans LP",
+          "sharedCategories": [
+            "Financial Services"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "Dominion Financial Services is a credit company that provides residential real estate financing solutions.",
+          "employeeRange": "101-250",
+          "name": "Dominion Financial Services",
+          "sharedCategories": [
+            "Financial Services"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Lima One Capital, Kiavi, RCN Capital.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T09:27:20.282Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T09:27:20.227Z",
+    "url": "https://www.crunchbase.com/organization/agentscard"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "AgentsCard",
+      "shortDescription": "The AI Growth Platform for Real Estate.",
+      "description": "AgentsCard is the ultimate digital assistant for top-producing real estate agents. Top agents use AgentsCard to build their online presence, manage client relationships, and generate leads.",
+      "website": "https://www.agentscard.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Software"
+      ],
+      "sectors": [
+        "Software"
+      ],
+      "founders": [
+        "Arad Lev Ari",
+        "Rajwinder Mahal"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 11,
+      "heatScore": 84
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 5
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 69.07
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "NodCards provides a digital customer connection system using employee-specific business cards for auto dealerships and groups.",
+          "employeeRange": "1-10",
+          "name": "NodCards",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Popl is the AI GTM platform for in-person events — the data layer for everything that happens face-to-face.",
+          "employeeRange": "101-250",
+          "name": "Popl",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Linktree is a software firm that provides a platform to make user's online content more discoverable and easy to manage.",
+          "employeeRange": "1-10",
+          "name": "Linktree",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 85
+        },
+        {
+          "description": "HiHello is a software company that builds next generation professional network that allows people to optimize their business relationships.",
+          "employeeRange": "51-100",
+          "name": "HiHello",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 83
+        },
+        {
+          "description": "SaaS, Mobile and Web App",
+          "employeeRange": "1-10",
+          "name": "KADO",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 76
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include NodCards, Popl, Linktree.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

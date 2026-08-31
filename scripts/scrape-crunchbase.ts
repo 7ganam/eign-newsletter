@@ -1,5 +1,5 @@
 import { execFile } from 'node:child_process'
-import { mkdir, writeFile } from 'node:fs/promises'
+import { mkdir, readFile, rename, writeFile } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
 import {
   assertInsightsAreClean,
@@ -12,12 +12,70 @@ const WAIT_PREFIX = '__CRUNCHBASE_WAIT__:'
 const ERROR_PREFIX = '__CRUNCHBASE_ERROR__:'
 
 type CliOptions = {
+  failedPath: string
   help: boolean
+  inputPath?: string
+  keepOpen: boolean
+  limit?: number
+  manifestPath: string
+  maxAttempts: number
+  outputPath?: string
+  rateLimitDelayMs: number
+  requestedUrl: string
+  requestDelayMs: number
+  retryDelayMs: number
+  start: number
+  timeoutMs: number
+}
+
+type ScrapeOptions = {
   keepOpen: boolean
   outputPath: string
   slug: string
   timeoutMs: number
   url: string
+}
+
+type ManifestStatus = 'failed' | 'in_progress' | 'pending' | 'success'
+
+type ManifestEntry = {
+  attempts: number
+  canonicalSlug?: string
+  completedAt?: string
+  error?: string
+  failedAt?: string
+  index: number
+  insightsPath?: string
+  lastAttemptAt?: string
+  outputPath?: string
+  recoveredAt?: string
+  requestedSlug: string
+  requestedUrl: string
+  status: ManifestStatus
+}
+
+type ScrapeManifest = {
+  createdAt: string
+  entries: ManifestEntry[]
+  inputPath: string
+  totalLinks: number
+  updatedAt: string
+  version: 1
+}
+
+type FailedScrapes = {
+  entries: Array<{
+    attempts: number
+    error: string
+    failedAt: string
+    index: number
+    lastAttemptAt?: string
+    requestedSlug: string
+    requestedUrl: string
+  }>
+  generatedAt: string
+  total: number
+  version: 1
 }
 
 type ScrapeResult = {
@@ -43,10 +101,20 @@ type ScrapeResult = {
 function usage() {
   return `Usage:
   pnpm scrape:crunchbase [organization-url] [options]
+  pnpm scrape:crunchbase --input <links.json> [batch-options]
 
 Options:
   -o, --output <path>   JSON output path
-      --keep-open       Leave the Edge tab open after scraping
+      --input <path>    Ordered JSON array of Crunchbase organization URLs
+      --manifest <path> Batch checkpoint path (default: outputs/crunchbase/manifest.json)
+      --failed <path>   Retry queue path (default: outputs/crunchbase/failed.json)
+      --max-attempts <n> Attempts per company per run (default: 3)
+      --rate-limit-delay <ms> Cooldown after Cloudflare 1015 (default: 300000)
+      --request-delay <ms> Minimum pause between companies (default: 10000)
+      --retry-delay <ms> Delay between attempts (default: 5000)
+      --start <number>  First 1-based input index to process (default: 1)
+      --limit <number>  Maximum number of input entries to consider
+      --keep-open       Leave the Brave tab open after scraping
       --timeout <ms>    Page timeout in milliseconds (default: 90000)
   -h, --help            Show this help
 
@@ -54,8 +122,9 @@ Examples:
   pnpm scrape:crunchbase
   pnpm scrape:crunchbase https://www.crunchbase.com/organization/axiom-biosciences
   pnpm scrape:crunchbase https://www.crunchbase.com/organization/stripe -o outputs/crunchbase/stripe.json
+  pnpm scrape:crunchbase --input "valid links.json" --limit 10
 
-The script uses the currently running, logged-in Microsoft Edge session on macOS.
+The script uses the currently running, logged-in Brave Browser session on macOS.
 It never reads or writes browser cookies, profile files, or local storage, and it
 does not export session, user, or authentication data. It checks only whether the
 page reports that the current browser session is logged in.`
@@ -72,6 +141,15 @@ function requireValue(args: string[], index: number, flag: string) {
 function parseArgs(args: string[]): CliOptions {
   let requestedUrl = DEFAULT_URL
   let outputPath: string | undefined
+  let inputPath: string | undefined
+  let manifestPath = 'outputs/crunchbase/manifest.json'
+  let failedPath = 'outputs/crunchbase/failed.json'
+  let maxAttempts = 3
+  let rateLimitDelayMs = 300_000
+  let requestDelayMs = 10_000
+  let retryDelayMs = 5_000
+  let start = 1
+  let limit: number | undefined
   let timeoutMs = 90_000
   let keepOpen = false
   let help = false
@@ -92,6 +170,57 @@ function parseArgs(args: string[]): CliOptions {
 
     if (argument === '-o' || argument === '--output') {
       outputPath = requireValue(args, index, argument)
+      index += 1
+      continue
+    }
+
+    if (argument === '--input') {
+      inputPath = requireValue(args, index, argument)
+      index += 1
+      continue
+    }
+
+    if (argument === '--manifest') {
+      manifestPath = requireValue(args, index, argument)
+      index += 1
+      continue
+    }
+
+    if (argument === '--failed') {
+      failedPath = requireValue(args, index, argument)
+      index += 1
+      continue
+    }
+
+    if (
+      argument === '--start' ||
+      argument === '--limit' ||
+      argument === '--max-attempts'
+    ) {
+      const value = Number(requireValue(args, index, argument))
+      if (!Number.isSafeInteger(value) || value < 1) {
+        throw new Error(`${argument} must be a positive integer`)
+      }
+      if (argument === '--start') start = value
+      else if (argument === '--limit') limit = value
+      else maxAttempts = value
+      index += 1
+      continue
+    }
+
+
+    if (
+      argument === '--rate-limit-delay' ||
+      argument === '--request-delay' ||
+      argument === '--retry-delay'
+    ) {
+      const value = Number(requireValue(args, index, argument))
+      if (!Number.isSafeInteger(value) || value < 0) {
+        throw new Error(`${argument} must be a non-negative integer`)
+      }
+      if (argument === '--rate-limit-delay') rateLimitDelayMs = value
+      else if (argument === '--request-delay') requestDelayMs = value
+      else retryDelayMs = value
       index += 1
       continue
     }
@@ -118,6 +247,39 @@ function parseArgs(args: string[]): CliOptions {
     hasUrlArgument = true
   }
 
+  if (inputPath && hasUrlArgument) {
+    throw new Error('Use either an organization URL or --input, not both')
+  }
+  if (inputPath && outputPath) {
+    throw new Error('--output is available only for a single organization URL')
+  }
+
+  if (!inputPath) parseTarget(requestedUrl, outputPath)
+
+  return {
+    failedPath: resolve(failedPath),
+    help,
+    inputPath: inputPath ? resolve(inputPath) : undefined,
+    keepOpen,
+    limit,
+    manifestPath: resolve(manifestPath),
+    maxAttempts,
+    outputPath,
+    rateLimitDelayMs,
+    requestedUrl,
+    requestDelayMs,
+    retryDelayMs,
+    start,
+    timeoutMs,
+  }
+}
+
+function parseTarget(
+  requestedUrl: string,
+  outputPath?: string,
+  keepOpen = false,
+  timeoutMs = 90_000,
+): ScrapeOptions {
   const parsedUrl = new URL(requestedUrl)
   if (
     parsedUrl.protocol !== 'https:' ||
@@ -136,7 +298,6 @@ function parseArgs(args: string[]): CliOptions {
   const safeFilename = slug.replace(/[^a-zA-Z0-9._-]+/g, '-')
 
   return {
-    help,
     keepOpen,
     outputPath: resolve(
       outputPath ?? `outputs/crunchbase/${safeFilename}.json`,
@@ -154,6 +315,15 @@ function buildExtractor(slug: string) {
     const waitPrefix = ${JSON.stringify(WAIT_PREFIX)};
     const errorPrefix = ${JSON.stringify(ERROR_PREFIX)};
     const expectedSlug = ${expectedSlug};
+    const pageText = document.body?.innerText || '';
+
+    if (
+      /error\\s*1015/i.test(pageText) ||
+      /you are being rate limited/i.test(pageText)
+    ) {
+      return errorPrefix + 'Crunchbase rate limit detected (Cloudflare Error 1015)';
+    }
+
     const stateElement = document.querySelector('script#ng-state[type="application/json"]');
 
     if (!stateElement || !stateElement.textContent) {
@@ -169,12 +339,17 @@ function buildExtractor(slug: string) {
 
     const loggedInState = state.InitialAuthState && state.InitialAuthState.loggedInState;
     if (loggedInState !== 'logged-in') {
-      return errorPrefix + 'The active Edge profile is not logged in to Crunchbase';
+      return errorPrefix + 'The active Brave profile is not logged in to Crunchbase';
     }
 
     const httpState = state.HttpState && typeof state.HttpState === 'object'
       ? Object.values(state.HttpState)
       : [];
+    const currentSlugMatch = location.pathname.match(/^\\/organization\\/([^/]+)\\/?$/);
+    const currentSlug = currentSlugMatch
+      ? decodeURIComponent(currentSlugMatch[1])
+      : undefined;
+    const acceptedSlugs = new Set([expectedSlug, currentSlug].filter(Boolean));
     const responses = httpState
       .filter((candidate) =>
         candidate &&
@@ -182,7 +357,7 @@ function buildExtractor(slug: string) {
         candidate.data &&
         candidate.data.properties &&
         candidate.data.properties.identifier &&
-        candidate.data.properties.identifier.permalink === expectedSlug
+        acceptedSlugs.has(candidate.data.properties.identifier.permalink)
       )
       .sort((left, right) =>
         Object.keys(right.data.cards || {}).length -
@@ -203,7 +378,7 @@ function buildExtractor(slug: string) {
       pageTitle: document.title,
       scrapedAt: new Date().toISOString(),
       extraction: {
-        method: 'edge-apple-events-ng-state',
+        method: 'brave-apple-events-ng-state',
         authenticated: loggedInState === 'logged-in',
       },
       organization: response.data,
@@ -220,19 +395,19 @@ on run argv
   set targetTab to missing value
   set targetWindow to missing value
   set previousWindow to missing value
-  set previousTabID to missing value
+  set previousTabIndex to missing value
   set didCreateTab to false
   set hadExistingWindow to false
   set lastResult to "${WAIT_PREFIX}Page has not finished loading"
 
   try
-    tell application "Microsoft Edge"
+    tell application "Brave Browser"
       if (count of windows) is 0 then
         set targetWindow to make new window
       else
         set hadExistingWindow to true
         set previousWindow to front window
-        set previousTabID to id of active tab of previousWindow
+        set previousTabIndex to active tab index of previousWindow
         set targetWindow to previousWindow
       end if
 
@@ -259,17 +434,7 @@ on run argv
               if hadExistingWindow then
                 close targetTab
                 try
-                  set restoreIndex to 0
-                  set currentTabs to tabs of previousWindow
-                  repeat with candidateIndex from 1 to (count of currentTabs)
-                    if (id of item candidateIndex of currentTabs) is previousTabID then
-                      set restoreIndex to candidateIndex
-                      exit repeat
-                    end if
-                  end repeat
-                  if restoreIndex is greater than 0 then
-                    set active tab index of previousWindow to restoreIndex
-                  end if
+                  set active tab index of previousWindow to previousTabIndex
                   set index of previousWindow to 1
                 end try
               else
@@ -289,21 +454,11 @@ on run argv
   on error errorMessage number errorNumber
     if didCreateTab and keepOpenFlag is not "true" then
       try
-        tell application "Microsoft Edge"
+        tell application "Brave Browser"
           if hadExistingWindow then
             close targetTab
             try
-              set restoreIndex to 0
-              set currentTabs to tabs of previousWindow
-              repeat with candidateIndex from 1 to (count of currentTabs)
-                if (id of item candidateIndex of currentTabs) is previousTabID then
-                  set restoreIndex to candidateIndex
-                  exit repeat
-                end if
-              end repeat
-              if restoreIndex is greater than 0 then
-                set active tab index of previousWindow to restoreIndex
-              end if
+              set active tab index of previousWindow to previousTabIndex
               set index of previousWindow to 1
             end try
           else
@@ -317,7 +472,7 @@ on run argv
 end run
 `
 
-function runInEdge(options: CliOptions) {
+function runInBrowser(options: ScrapeOptions) {
   const extractor = buildExtractor(options.slug)
   const pollCount = String(Math.ceil(options.timeoutMs / 250))
 
@@ -340,7 +495,7 @@ function runInEdge(options: CliOptions) {
       (error, stdout, stderr) => {
         if (error) {
           const details = stderr.trim() || error.message
-          rejectPromise(new Error(`Microsoft Edge automation failed: ${details}`))
+          rejectPromise(new Error(`Brave Browser automation failed: ${details}`))
           return
         }
 
@@ -356,22 +511,31 @@ function validateResult(rawResult: string, expectedSlug: string) {
   try {
     result = JSON.parse(rawResult) as ScrapeResult
   } catch (error) {
-    throw new Error(`Edge returned invalid JSON: ${String(error)}`)
+    throw new Error(`Brave Browser returned invalid JSON: ${String(error)}`)
   }
 
   const identifier = result.organization?.properties?.identifier
-  if (identifier?.permalink !== expectedSlug) {
+  const canonicalSlugMatch = new URL(result.sourceUrl).pathname.match(
+    /^\/organization\/([^/]+)\/?$/,
+  )
+  const canonicalSlug = canonicalSlugMatch
+    ? decodeURIComponent(canonicalSlugMatch[1])
+    : undefined
+  if (
+    identifier?.permalink !== expectedSlug &&
+    identifier?.permalink !== canonicalSlug
+  ) {
     throw new Error(
-      `Edge returned the wrong organization payload: ${identifier?.permalink ?? 'missing permalink'}`,
+      `Brave Browser returned the wrong organization payload: ${identifier?.permalink ?? 'missing permalink'}`,
     )
   }
 
   if (!result.extraction?.authenticated) {
-    throw new Error('The result was not captured from a confirmed logged-in Edge session')
+    throw new Error('The result was not captured from a confirmed logged-in Brave Browser session')
   }
 
   if (Object.keys(result.organization.cards ?? {}).length === 0) {
-    throw new Error('Edge returned an incomplete organization payload with no data cards')
+    throw new Error('Brave Browser returned an incomplete organization payload with no data cards')
   }
 
   return result
@@ -383,15 +547,8 @@ function insightsPathFor(rawOutputPath: string) {
     : `${rawOutputPath}.insights.json`
 }
 
-async function main() {
-  const options = parseArgs(process.argv.slice(2))
-
-  if (options.help) {
-    console.log(usage())
-    return
-  }
-
-  const rawResult = await runInEdge(options)
+async function scrapeOrganization(options: ScrapeOptions) {
+  const rawResult = await runInBrowser(options)
   const result = validateResult(rawResult, options.slug)
   const insights = buildCrunchbaseInsights(result)
   assertInsightsAreClean(insights)
@@ -409,16 +566,339 @@ async function main() {
     'utf8',
   )
 
+  return { insightsOutputPath, result }
+}
+
+async function writeJsonAtomically(path: string, value: unknown) {
+  const temporaryPath = `${path}.${process.pid}.tmp`
+  await mkdir(dirname(path), { recursive: true })
+  await writeFile(
+    temporaryPath,
+    `${JSON.stringify(value, null, 2)}\n`,
+    'utf8',
+  )
+  await rename(temporaryPath, path)
+}
+
+async function writeManifest(path: string, manifest: ScrapeManifest) {
+  manifest.updatedAt = new Date().toISOString()
+  await writeJsonAtomically(path, manifest)
+}
+
+async function writeFailedScrapes(
+  path: string,
+  manifest: ScrapeManifest,
+) {
+  const entries = manifest.entries
+    .filter(
+      (entry): entry is ManifestEntry & { error: string; failedAt: string } =>
+        entry.status === 'failed' &&
+        Boolean(entry.error) &&
+        Boolean(entry.failedAt),
+    )
+    .map((entry) => ({
+      attempts: entry.attempts,
+      error: entry.error,
+      failedAt: entry.failedAt,
+      index: entry.index,
+      lastAttemptAt: entry.lastAttemptAt,
+      requestedSlug: entry.requestedSlug,
+      requestedUrl: entry.requestedUrl,
+    }))
+  const failedScrapes: FailedScrapes = {
+    entries,
+    generatedAt: new Date().toISOString(),
+    total: entries.length,
+    version: 1,
+  }
+  await writeJsonAtomically(path, failedScrapes)
+}
+
+async function writeBatchState(
+  options: CliOptions,
+  manifest: ScrapeManifest,
+) {
+  await writeManifest(options.manifestPath, manifest)
+  await writeFailedScrapes(options.failedPath, manifest)
+}
+
+function wait(milliseconds: number) {
+  return new Promise<void>((resolvePromise) => {
+    setTimeout(resolvePromise, milliseconds)
+  })
+}
+
+async function loadLinks(inputPath: string) {
+  const parsed = JSON.parse(await readFile(inputPath, 'utf8')) as unknown
+  if (
+    !Array.isArray(parsed) ||
+    parsed.some((value) => typeof value !== 'string')
+  ) {
+    throw new Error('The input must be a JSON array of URL strings')
+  }
+  return parsed as string[]
+}
+
+function newManifest(inputPath: string, links: string[]): ScrapeManifest {
+  const now = new Date().toISOString()
+  return {
+    createdAt: now,
+    entries: links.map((requestedUrl, offset) => ({
+      attempts: 0,
+      index: offset + 1,
+      requestedSlug: parseTarget(requestedUrl).slug,
+      requestedUrl,
+      status: 'pending',
+    })),
+    inputPath,
+    totalLinks: links.length,
+    updatedAt: now,
+    version: 1,
+  }
+}
+
+async function loadOrCreateManifest(
+  manifestPath: string,
+  inputPath: string,
+  links: string[],
+) {
+  let manifest: ScrapeManifest
+  try {
+    manifest = JSON.parse(
+      await readFile(manifestPath, 'utf8'),
+    ) as ScrapeManifest
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error
+    manifest = newManifest(inputPath, links)
+    await writeManifest(manifestPath, manifest)
+    return manifest
+  }
+
+  if (
+    manifest.version !== 1 ||
+    manifest.totalLinks !== links.length ||
+    manifest.entries.length !== links.length ||
+    manifest.entries.some(
+      (entry, offset) =>
+        entry.index !== offset + 1 || entry.requestedUrl !== links[offset],
+    )
+  ) {
+    throw new Error(
+      'The existing manifest does not match the ordered input file; use a different --manifest path',
+    )
+  }
+  return manifest
+}
+
+async function recoverExistingOutput(
+  entry: ManifestEntry,
+  options: ScrapeOptions,
+) {
+  try {
+    const rawResult = await readFile(options.outputPath, 'utf8')
+    const result = validateResult(rawResult, options.slug)
+    const insightsOutputPath = insightsPathFor(options.outputPath)
+    const insights = JSON.parse(await readFile(insightsOutputPath, 'utf8'))
+    assertInsightsAreClean(insights)
+    const canonicalSlug = result.organization.properties?.identifier?.permalink
+    Object.assign(entry, {
+      canonicalSlug,
+      completedAt: result.scrapedAt,
+      error: undefined,
+      failedAt: undefined,
+      insightsPath: insightsOutputPath,
+      outputPath: options.outputPath,
+      recoveredAt: entry.attempts === 0
+        ? new Date().toISOString()
+        : entry.recoveredAt,
+      status: 'success' satisfies ManifestStatus,
+    })
+    return true
+  } catch {
+    return false
+  }
+}
+
+async function runBatch(options: CliOptions) {
+  if (!options.inputPath) throw new Error('Batch input path is missing')
+  if (options.keepOpen) {
+    throw new Error('--keep-open cannot be used with batch mode')
+  }
+
+  const links = await loadLinks(options.inputPath)
+  const manifest = await loadOrCreateManifest(
+    options.manifestPath,
+    options.inputPath,
+    links,
+  )
+  const interruptedEntries = manifest.entries.filter(
+    (entry) => entry.status === 'in_progress',
+  )
+  for (const entry of interruptedEntries) {
+    entry.error = 'Previous batch stopped before this entry completed'
+    entry.status = 'pending'
+  }
+  if (interruptedEntries.length) {
+    await writeManifest(options.manifestPath, manifest)
+  }
+  await writeFailedScrapes(options.failedPath, manifest)
+  const endIndex = Math.min(
+    links.length,
+    options.limit ? options.start + options.limit - 1 : links.length,
+  )
+
+  let recovered = 0
+  let skipped = 0
+  let scraped = 0
+  let unresolved = 0
+
+  for (let index = options.start; index <= endIndex; index += 1) {
+    const entry = manifest.entries[index - 1]
+    const target = parseTarget(
+      entry.requestedUrl,
+      undefined,
+      false,
+      options.timeoutMs,
+    )
+
+    const wasSuccessful = entry.status === 'success'
+    const needsRecoveryStamp =
+      wasSuccessful && entry.attempts === 0 && !entry.recoveredAt
+    if (await recoverExistingOutput(entry, target)) {
+      if (wasSuccessful) {
+        skipped += 1
+        if (needsRecoveryStamp) {
+          await writeBatchState(options, manifest)
+        }
+        console.log(`[${index}/${links.length}] Skipped ${entry.requestedSlug} (verified success)`)
+      } else {
+        recovered += 1
+        await writeBatchState(options, manifest)
+        console.log(`[${index}/${links.length}] Recovered ${entry.requestedSlug} from verified outputs`)
+      }
+      continue
+    }
+
+    for (
+      let attemptInRun = 1;
+      attemptInRun <= options.maxAttempts;
+      attemptInRun += 1
+    ) {
+      entry.attempts += 1
+      entry.canonicalSlug = undefined
+      entry.completedAt = undefined
+      entry.error = undefined
+      entry.failedAt = undefined
+      entry.insightsPath = undefined
+      entry.lastAttemptAt = new Date().toISOString()
+      entry.outputPath = undefined
+      entry.recoveredAt = undefined
+      entry.status = 'in_progress'
+      await writeBatchState(options, manifest)
+      console.log(
+        `[${index}/${links.length}] Scraping ${entry.requestedUrl} ` +
+        `(attempt ${attemptInRun}/${options.maxAttempts}, ${entry.attempts} total)`,
+      )
+
+      try {
+        const { insightsOutputPath, result } = await scrapeOrganization(target)
+        entry.canonicalSlug =
+          result.organization.properties?.identifier?.permalink
+        entry.completedAt = new Date().toISOString()
+        entry.error = undefined
+        entry.failedAt = undefined
+        entry.insightsPath = insightsOutputPath
+        entry.outputPath = target.outputPath
+        entry.status = 'success'
+        scraped += 1
+        await writeBatchState(options, manifest)
+        break
+      } catch (error) {
+        entry.error = error instanceof Error ? error.message : String(error)
+        const isRateLimited = /rate limit|error 1015/i.test(entry.error)
+
+        if (isRateLimited) {
+          entry.failedAt = undefined
+          entry.status = 'pending'
+          await writeBatchState(options, manifest)
+          console.error(
+            `[${index}/${links.length}] Crunchbase rate limit detected for ` +
+            `${entry.requestedSlug}; sleeping ${options.rateLimitDelayMs}ms ` +
+            'before retrying the same entry',
+          )
+          if (options.rateLimitDelayMs > 0) {
+            await wait(options.rateLimitDelayMs)
+          }
+          attemptInRun -= 1
+          continue
+        }
+
+        if (attemptInRun < options.maxAttempts) {
+          await writeManifest(options.manifestPath, manifest)
+          console.error(
+            `[${index}/${links.length}] Attempt ${attemptInRun} failed for ` +
+            `${entry.requestedSlug}: ${entry.error}`,
+          )
+          if (options.retryDelayMs > 0) await wait(options.retryDelayMs)
+          continue
+        }
+
+        entry.failedAt = new Date().toISOString()
+        entry.status = 'failed'
+        unresolved += 1
+        await writeBatchState(options, manifest)
+        console.error(
+          `[${index}/${links.length}] Added ${entry.requestedSlug} to ` +
+          `${options.failedPath} after ${options.maxAttempts} attempts this run`,
+        )
+      }
+    }
+
+    if (index < endIndex && options.requestDelayMs > 0) {
+      await wait(options.requestDelayMs)
+    }
+  }
+
+  console.log(`Batch complete for input indices ${options.start}-${endIndex}`)
+  console.log(
+    `Scraped: ${scraped}; recovered: ${recovered}; ` +
+    `skipped: ${skipped}; unresolved: ${unresolved}`,
+  )
+  console.log(`Manifest: ${options.manifestPath}`)
+  console.log(`Failed retry list: ${options.failedPath}`)
+}
+
+async function main() {
+  const options = parseArgs(process.argv.slice(2))
+
+  if (options.help) {
+    console.log(usage())
+    return
+  }
+
+  if (options.inputPath) {
+    await runBatch(options)
+    return
+  }
+
+  const target = parseTarget(
+    options.requestedUrl,
+    options.outputPath,
+    options.keepOpen,
+    options.timeoutMs,
+  )
+  const { insightsOutputPath, result } = await scrapeOrganization(target)
+
   const identifier = result.organization.properties?.identifier
   const cardCount = Object.keys(result.organization.cards ?? {}).length
 
-  console.log(`Saved ${identifier?.value ?? options.slug}`)
-  console.log(`Output: ${options.outputPath}`)
+  console.log(`Saved ${identifier?.value ?? target.slug}`)
+  console.log(`Output: ${target.outputPath}`)
   console.log(`Insights: ${insightsOutputPath}`)
   console.log(`UUID: ${identifier?.uuid ?? 'not provided'}`)
   console.log(`Cards: ${cardCount}`)
   console.log(
-    `Authenticated Edge session: ${result.extraction.authenticated ? 'yes' : 'not confirmed'}`,
+    `Authenticated Brave Browser session: ${result.extraction.authenticated ? 'yes' : 'not confirmed'}`,
   )
 }
 

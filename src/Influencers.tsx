@@ -423,6 +423,7 @@ export function Influencers() {
         <nav aria-label="Primary navigation">
           <a href="/">Dashboard</a>
           <a href="/software-companies">Software companies</a>
+          <a href="/valid-links">Valid links</a>
           <a href="/influencers" aria-current="page">Influencers</a>
           <a href="/research">Startups</a>
           <a href="/newsletters">Newsletters</a>

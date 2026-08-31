@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T09:38:50.208Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T09:38:50.153Z",
+    "url": "https://www.crunchbase.com/organization/alex"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Alex",
+      "shortDescription": "POLYTRONGLASS is the inventor and manufacturer of the world’s leading transparent LED displays, known as the “X-Glass” product series.",
+      "website": "http://www.polytronglass.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "estimatedRevenueRange": "Less than $1M",
+      "industries": [
+        "Consumer Electronics",
+        "Manufacturing"
+      ],
+      "sectors": [
+        "Consumer Electronics",
+        "Hardware",
+        "Manufacturing"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 8,
+      "includedUniqueCount": 8,
+      "items": [
+        {
+          "date": "2018-04-13",
+          "publisher": "Macleans CA",
+          "title": "How rocker Lou Reed inspired Michael Imperioli’s debut novel",
+          "url": "http://www.macleans.ca/culture/arts/how-rocker-lou-reed-inspired-michael-imperiolis-debut-novel/"
+        },
+        {
+          "date": "2018-04-05",
+          "publisher": "Hollywood Report",
+          "title": "TV Ratings: 'Empire' Drops, Still on Top; 'Alex, Inc.' Dims",
+          "url": "https://www.hollywoodreporter.com/live-feed/tv-ratings-empire-drops-still-top-alex-dims-1100079"
+        },
+        {
+          "date": "2018-03-28",
+          "publisher": "Hollywood Report",
+          "title": "'Alex, Inc.': TV Review",
+          "url": "https://www.hollywoodreporter.com/review/alex-review-1097823"
+        },
+        {
+          "date": "2018-03-28",
+          "publisher": "Fresno Bee",
+          "title": "Can Jenna Fischer and Zach Braff remake TV comedy magic in 'Splitting Up Together' and 'Alex, Inc.'? | The Fresno Bee",
+          "url": "http://www.fresnobee.com/entertainment/tv/article207120744.html"
+        },
+        {
+          "date": "2018-03-27",
+          "publisher": "Chicago Tribune",
+          "title": "'Alex, Inc.' is a sitcom about a podcast about a podcast company — how did that get on TV?",
+          "url": "http://www.chicagotribune.com/entertainment/tv/ct-alex-inc-podcast-on-tv-20180327-story.html"
+        },
+        {
+          "date": "2018-03-26",
+          "publisher": "South Carolina",
+          "title": "Zach Braff wants 'Alex, Inc.' to be family affair | The State",
+          "url": "http://www.thestate.com/entertainment/tv/article206810644.html"
+        },
+        {
+          "date": "2018-03-25",
+          "publisher": "Hollywood Report",
+          "title": "Why Zach Braff Returned to Broadcast TV With ABC's 'Alex, Inc.'",
+          "url": "https://www.hollywoodreporter.com/live-feed/why-zach-braff-returned-broadcast-tv-abcs-alex-1096113"
+        },
+        {
+          "date": "2018-03-22",
+          "publisher": "Fox News",
+          "title": "Zach Braff's new show 'Alex, Inc.' is less risque than 'Scrubs:' 'It's more of a family show'",
+          "url": "http://www.foxnews.com/entertainment/2018/03/22/zach-braffs-new-show-alex-inc-is-less-risque-than-scrubs-its-more-family-show.html"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -15,
+      "heatScore": 36
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 91.54
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

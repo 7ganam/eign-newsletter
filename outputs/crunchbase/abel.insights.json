@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T08:51:01.722Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T08:51:01.667Z",
+    "url": "https://www.crunchbase.com/organization/abel"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Abel",
+      "shortDescription": "Abel develops and manufactures alternative cartridges for computer printers with a focus on quality and cost-efficiency.",
+      "website": "http://www.abel.sk/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "101-250",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Cadca, Zilina, Slovakia (Slovak Republic)",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Hardware",
+        "Manufacturing",
+        "Printing"
+      ],
+      "sectors": [
+        "Content and Publishing",
+        "Hardware",
+        "Manufacturing",
+        "Media and Entertainment"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Manufacture and supply of alternative toner and ink cartridges compatible with various printer brands and models.",
+        "name": "Alternative Printer Cartridges"
+      },
+      {
+        "description": "Supply of photographic paper under the Michelangelo brand for high-quality photo printing.",
+        "name": "Photographic Paper Michelangelo"
+      },
+      {
+        "description": "Provision of maintenance, repair, and preventive service for various printer types and brands.",
+        "name": "Printer Maintenance and Service"
+      },
+      {
+        "description": "A program to purchase used original toner and ink cartridges from customers for recycling or refurbishment.",
+        "name": "Cartridge Buy-Back Program"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2021-10-14",
+          "publisher": "PhysOrg.com",
+          "title": "Indian scientists explore galaxy cluster Abell 725",
+          "url": "https://phys.org/news/2021-10-indian-scientists-explore-galaxy-cluster.html"
+        },
+        {
+          "date": "2021-10-01",
+          "publisher": "St. Louis Business Journal",
+          "title": "Warrenton Oil to acquire quick-shop operator Abel Oil",
+          "url": "https://www.bizjournals.com/stlouis/news/2021/10/01/warrenton-oil-to-acquire-abel-oil.html"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 1,
+      "growthScore": 85,
+      "heatChange90Days": -13,
+      "heatScore": 59
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 88
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "InkTec specializes in inkjet applications and printed electronics.",
+          "employeeRange": "1-10",
+          "name": "InkTec",
+          "sharedSpecialties": [
+            "Printer Ink and Toner Cartridges"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Print-Rite manufactures and sells laser printers, ink cartridges, ribbons, and parts.",
+          "employeeRange": "501-1,000",
+          "name": "Print-Rite",
+          "sharedCategories": [
+            "Printing",
+            "Manufacturing"
+          ],
+          "sharedSpecialties": [
+            "Printer Ink and Toner Cartridges",
+            "Office Equipment Maintenance",
+            "Paper and Printing Supplies"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Armor is a cyber defense company that offers customer-centric security outcomes for e-Commerce, healthcare, and financial institutions.",
+          "employeeRange": "101-250",
+          "name": "Armor",
+          "similarityScore": 90
+        },
+        {
+          "description": "G&G Image is a manufacturer and supplier of pocket printers, portable code printers, and copiers.",
+          "employeeRange": "5,001-10,000",
+          "name": "G&G Image",
+          "sharedCategories": [
+            "Printing",
+            "Manufacturing"
+          ],
+          "sharedSpecialties": [
+            "Printer Ink and Toner Cartridges",
+            "Office Equipment Maintenance",
+            "Print Management"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Katun Corporation supplies imaging supplies, photoreceptors, and parts for the office equipment industry.",
+          "employeeRange": "501-1,000",
+          "name": "Katun Corporation",
+          "sharedCategories": [
+            "Printing",
+            "Manufacturing"
+          ],
+          "sharedSpecialties": [
+            "Printer Ink and Toner Cartridges",
+            "Office Equipment Maintenance",
+            "Printing and Copying",
+            "Paper and Printing Supplies",
+            "Print Management"
+          ],
+          "similarityScore": 86
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 85 (+1 over 90 days) and market heat at 59 (-13).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include InkTec, Print-Rite, Armor.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T08:48:12.621Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T08:48:12.565Z",
+    "url": "https://www.crunchbase.com/organization/64-x"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "64 - x",
+      "shortDescription": "64x Bio develops biotechnology platforms and production systems for advanced therapies.",
+      "description": "64x Bio develops biotechnology platforms and production systems for advanced therapies. Its VectorSelect platform combines parallelized screening with computational analysis to engineer cell lines and production technologies. The AAV Apex Suite supports adeno-associated virus production across serotypes, payloads, and manufacturing scales. The LV Apex Suite supports lentiviral vector production for ex vivo and in vivo CAR-T programs. The company also describes a biologics production suite for antibodies and protein therapeutics.",
+      "website": "https://64-x.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "Brisbane, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Advanced Materials",
+        "Artificial Intelligence (AI)",
+        "Biopharma",
+        "Biotechnology",
+        "Machine Learning",
+        "Manufacturing",
+        "Medical",
+        "Therapeutics"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Biotechnology",
+        "Data and Analytics",
+        "Health Care",
+        "Manufacturing",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A platform that uses parallelized screening and computational analysis to develop cell lines and production technologies for advanced therapies.",
+        "name": "VectorSelect"
+      },
+      {
+        "description": "A production system for generating adeno-associated virus vectors across serotypes, payloads, and manufacturing scales.",
+        "name": "AAV Apex Suite"
+      },
+      {
+        "description": "A lentiviral vector production system for ex vivo and in vivo CAR-T development and manufacturing.",
+        "name": "LV Apex Suite"
+      },
+      {
+        "description": "A planned production system for antibodies and other protein therapeutics.",
+        "name": "Biologics Suite"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 56,
+      "heatScore": 87
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 35.09
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

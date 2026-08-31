@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T09:09:39.965Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T09:09:39.911Z",
+    "url": "https://www.crunchbase.com/organization/aerogen-systems"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Aerogen Systems",
+      "shortDescription": "Aerogen Systems develops photocatalytic oxidation systems for airborne molecular contamination control.",
+      "description": "Aerogen Systems develops photocatalytic oxidation systems for removing airborne molecular contaminants and volatile organic compounds. Its technology uses baffled-wafer reactor units to break down trace organics, acid gases, and other airborne pollutants into simpler byproducts. The company offers the 1U Reactor as a modular point-of-use component for air treatment and contamination control, with multiple reactors configurable in series or parallel for different applications. Its systems target semiconductor manufacturing and other environments that require molecular-level control of airborne contaminants.",
+      "website": "https://aerogen-systems.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "Ann Arbor, Michigan, United States",
+      "geographicRegions": [
+        "Great Lakes",
+        "Midwestern US"
+      ],
+      "industries": [
+        "Advanced Materials",
+        "Chemical",
+        "Environmental Engineering",
+        "Industrial",
+        "Industrial Automation",
+        "Manufacturing",
+        "Pollution Control",
+        "Semiconductor"
+      ],
+      "sectors": [
+        "Hardware",
+        "Manufacturing",
+        "Science and Engineering",
+        "Sustainability"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A modular point-of-use reactor that uses photocatalytic oxidation and baffled-wafer technology to break down airborne molecular contaminants.",
+        "name": "1U Reactor"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 29,
+      "growthScore": 91,
+      "heatChange90Days": 88,
+      "heatScore": 89
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.17
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 91 (+29 over 90 days) and market heat at 89 (+88).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

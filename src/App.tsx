@@ -446,6 +446,7 @@ export function App() {
         <nav aria-label="Primary navigation">
           <a href="/" aria-current="page">Dashboard</a>
           <a href="/software-companies">Software companies</a>
+          <a href="/valid-links">Valid links</a>
           <a href="/influencers">Influencers</a>
           <a href="/research">Startups</a>
           <a href="/newsletters">Newsletters</a>

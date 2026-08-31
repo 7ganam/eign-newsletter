@@ -1,5 +1,8 @@
 type UnknownRecord = Record<string, unknown>
 
+const uuidPattern =
+  /\b[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\b/i
+
 type MoneyFact = {
   amount: number
   currency: string
@@ -202,9 +205,10 @@ function cleanUrl(value: unknown) {
       }
     }
     url.hash = ''
-    return url.toString()
+    const cleaned = url.toString()
+    return uuidPattern.test(cleaned) ? undefined : cleaned
   } catch {
-    return raw
+    return uuidPattern.test(raw) ? undefined : raw
   }
 }
 
@@ -327,8 +331,6 @@ function insight(
 }
 
 export function assertInsightsAreClean(value: unknown) {
-  const uuidPattern =
-    /\b[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\b/i
   const emailPattern = /\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b/i
   const forbiddenKeyPartPattern =
     /(^|_)(id|ids|uuid|identifier|permalink|session|auth|authentication|authenticated|token|cookie|account|email|phone)(_|$)/i

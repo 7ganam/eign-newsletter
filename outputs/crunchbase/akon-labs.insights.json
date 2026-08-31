@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T09:36:00.580Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T09:36:00.523Z",
+    "url": "https://www.crunchbase.com/organization/akon-labs"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "akon labs",
+      "shortDescription": "Akon Labs develops GitNexus, a code intelligence engine for software engineering agents.",
+      "description": "Akon Labs develops GitNexus, a code intelligence engine that indexes repositories into a queryable knowledge graph. The product maps dependencies, call chains, execution flows, and cross-repository relationships to support code analysis and software engineering agents. GitNexus is available as open-source software and through enterprise deployments that include managed SaaS, self-hosted, and air-gapped options, along with pull-request analysis, repository indexing, and access controls.",
+      "website": "https://akonlabs.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "industries": [
+        "Data Management",
+        "Developer Tools",
+        "Enterprise Software",
+        "Knowledge Management",
+        "Open Source",
+        "SaaS",
+        "Software",
+        "Software Engineering"
+      ],
+      "sectors": [
+        "Administrative Services",
+        "Data and Analytics",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "GitNexus indexes codebases into a knowledge graph for dependency analysis, impact analysis, and software engineering agent workflows.",
+        "name": "GitNexus"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 30,
+      "growthScore": 91,
+      "heatScore": 90
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 92.36
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

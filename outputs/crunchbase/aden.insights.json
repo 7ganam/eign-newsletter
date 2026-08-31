@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T08:53:05.004Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T08:53:04.948Z",
+    "url": "https://www.crunchbase.com/organization/aden"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "ADEN",
+      "shortDescription": "ADEN specializes in constructions and installations in the field of energy.",
+      "website": "http://www.aden.cz/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Novy Jicin, Moravskoslezsky kraj, Czech Republic",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Construction",
+        "Energy",
+        "Energy Management"
+      ],
+      "sectors": [
+        "Energy",
+        "Real Estate"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2023-12-28",
+          "publisher": "Canada NewsWire",
+          "title": "ADENTRA Announces Normal Course Issuer Bid",
+          "url": "https://www.newswire.ca/news-releases/adentra-announces-normal-course-issuer-bid-893091173.html"
+        },
+        {
+          "date": "2022-01-25",
+          "publisher": "Bitcoin News",
+          "title": "LBank Exchange Will List ADENE (ADEN) on January 27, 2022",
+          "url": "https://news.bitcoin.com/lbank-exchange-will-list-adene-aden-on-january-27-2022"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -20,
+      "heatScore": 16
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2025-09-13",
+        "probabilityPercent": 91.96
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}
