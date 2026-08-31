@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T08:53:19.741Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T08:53:19.686Z",
+    "url": "https://www.crunchbase.com/organization/adni"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "ADNI",
+      "shortDescription": "Adni is a consulting firm that provides audits and advice in notarial IT.",
+      "description": "Adni includes several stages and in addition to recording the existing materials, it is prudent to also reflect upon the methods used for each study. The firm is capable of estimating and managing the installation of any computer or office equipment: complete replacement of computers, purchase, and installation of additional machinery, digital print/scan solutions, saving data, and computer room layout.",
+      "website": "http://www.adni.fr/",
+      "foundedYear": 2007,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Massy, Ile-de-France, France",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Accounting",
+        "Computer",
+        "Hardware"
+      ],
+      "sectors": [
+        "Consumer Electronics",
+        "Financial Services",
+        "Hardware",
+        "Professional Services"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Provides audits and advice on IT systems used in notarial offices to ensure they meet the specific needs and constraints of notarial work.",
+        "name": "Audit and Advisory Services in Notarial IT"
+      },
+      {
+        "description": "Manages and supports the installation and maintenance of IT systems in notarial offices, ensuring stability and adaptability to evolving technological needs.",
+        "name": "IT Installation Management and Support"
+      },
+      {
+        "description": "Delivers tailored training sessions to notarial office personnel to improve their proficiency with IT tools relevant to their specific roles.",
+        "name": "Customized IT Training for Notarial Staff"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -15,
+      "heatScore": 54
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 73.47
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Septeo Group delivers the best services to its customers by using the most relevant tools offered by the digital revolution.",
+          "employeeRange": "1,001-5,000",
+          "name": "Septeo Group",
+          "sharedSpecialties": [
+            "Document Management Systems"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "Genapi is a publisher of software for notaries.",
+          "employeeRange": "251-500",
+          "name": "Genapi",
+          "sharedSpecialties": [
+            "Electronic Signatures"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "ADNOV provides IT networks, data protection, cybersecurity, real estate, and customer relations services.",
+          "employeeRange": "101-250",
+          "name": "ADNOV",
+          "sharedSpecialties": [
+            "Document and Records Management",
+            "Electronic Signatures"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Axiocap offers a platform for secure and efficient shareholding management.",
+          "employeeRange": "11-50",
+          "name": "Axiocap",
+          "sharedSpecialties": [
+            "Document Digitization and Management",
+            "Document and Records Management",
+            "Decentralized Identity and Document Verification",
+            "Electronic Signatures",
+            "Digital Trust and Certification Services"
+          ],
+          "similarityScore": 83
+        },
+        {
+          "description": "Docusign provides a software to prepare, send, sign, store, and manage documents through electronic signature and workflow tools.",
+          "employeeRange": "5,001-10,000",
+          "name": "Docusign",
+          "sharedCategories": [
+            "Computer"
+          ],
+          "sharedSpecialties": [
+            "Document Management Systems",
+            "Document and Records Management",
+            "Electronic Signatures",
+            "Digital Trust and Certification Services"
+          ],
+          "similarityScore": 81
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Septeo Group, Genapi, ADNOV.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

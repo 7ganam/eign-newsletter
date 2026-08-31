@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T08:52:57.085Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T08:52:57.033Z",
+    "url": "https://www.crunchbase.com/organization/adapted"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "AdaptEd",
+      "shortDescription": "Providing an efficient, engaging, trackable, entirely personalized process of learning for each and every learner from anywhere, at anytime.",
+      "website": "https://adapt-ed.fr/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Paris, Ile-de-France, France",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "EdTech"
+      ],
+      "sectors": [
+        "Education",
+        "Software"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -18,
+      "heatScore": 62
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 65.8
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 72.3
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 55.62
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "EvidenceB is develops educational resources which combine didactics, cognitive sciences and AI.",
+          "employeeRange": "11-50",
+          "name": "EvidenceB",
+          "similarityScore": 97
+        },
+        {
+          "description": "Teach Up offers an LXP and Authoring Tool for creating and managing e-learning modules and training programs.",
+          "employeeRange": "11-50",
+          "name": "Teach Up",
+          "similarityScore": 95
+        },
+        {
+          "description": "Smart Sparrow owns and operates an e-learning platform, which enables students and professionals to create an e-learning courseware.",
+          "employeeRange": "11-50",
+          "name": "Smart Sparrow",
+          "sharedCategories": [
+            "EdTech"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "aNewSpring in an adaptive e-learning platform that generates to create and deliver personalized social and blended learning.",
+          "employeeRange": "11-50",
+          "name": "aNewSpring",
+          "similarityScore": 91
+        },
+        {
+          "description": "Area9 Lyceum is a cloud-based educational platform to provide online learning modules for schoolchildren, students and professionals.",
+          "employeeRange": "101-250",
+          "name": "Area9 Lyceum",
+          "sharedCategories": [
+            "EdTech"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include EvidenceB, Teach Up, Smart Sparrow.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

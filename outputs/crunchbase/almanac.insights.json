@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T09:42:28.636Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T09:42:28.565Z",
+    "url": "https://www.crunchbase.com/organization/almanac"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "ALMANAC",
+      "shortDescription": "ALMANAC is developing a service delivery platform that integrates Smart City Information System.",
+      "website": "https://www.almanac.in-jet.eu/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "estimatedRevenueRange": "$10M-$50M",
+      "industries": [
+        "Smart Cities"
+      ],
+      "sectors": [
+        "Real Estate"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 2,
+      "growthScore": 89,
+      "heatChange90Days": -8,
+      "heatScore": 60
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.4
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Huawei is a telecommunication company that designs and develops software solutions, ICT infrastructure, and smart devices.",
+          "employeeRange": "10,001+",
+          "name": "Huawei",
+          "similarityScore": 95
+        },
+        {
+          "description": "Kaa is an enterprise-grade IoT platform that enables a broad range of cloud capabilities for your connected devices.",
+          "employeeRange": "51-100",
+          "name": "Kaa IoT",
+          "similarityScore": 93
+        },
+        {
+          "description": "FIWARE seeks to provide a truly open, public and royalty-free architecture and a set of open specifications .",
+          "employeeRange": "11-50",
+          "name": "FIWARE",
+          "sharedCategories": [
+            "Smart Cities"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "talented colleagues within Comfy Enlighted on a mission to connect people to space with technologies that enable them to do their best work.",
+          "employeeRange": "10,001+",
+          "name": "Siemens Smart Infrastructure",
+          "similarityScore": 89
+        },
+        {
+          "description": "Microsoft provides computer software, consumer electronics, cloud computing platforms, and digital enterprise systems.",
+          "employeeRange": "11-50",
+          "name": "Microsoft",
+          "similarityScore": 88
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 89 (+2 over 90 days) and market heat at 60 (-8).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Huawei, Kaa IoT, FIWARE.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

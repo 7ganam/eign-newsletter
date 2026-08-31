@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T09:40:58.208Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T09:40:58.154Z",
+    "url": "https://www.crunchbase.com/organization/alkali"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Alkali",
+      "shortDescription": "Alkali is an independent insurance broker, outsourcing service provider, and consulting firm.",
+      "description": "Alkali is an independent insurance broker, outsourcing service provider, and consulting firm that leverages its innovative processes and unique team member abilities to educate businesses, employers, individuals, and families on insurance, so they are empowered to take personal responsibility for protecting the important things in their lives.\n\nAt Alkali, we strive to transform the insurance industry by creating innovative, strategically planned processes that empower, maximize value, and increase the integrity received by our clients.",
+      "website": "http://www.alkaliservices.com/",
+      "foundedYear": 2005,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Plano, Texas, United States",
+      "geographicRegions": [
+        "Dallas/Fort Worth Metroplex",
+        "Southern US"
+      ],
+      "industries": [
+        "Consulting",
+        "Insurance",
+        "Risk Management"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Professional Services"
+      ],
+      "founders": [
+        "Steven Neuner"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2025-08-16",
+          "publisher": "The Cool Down",
+          "title": "US company unveils game-changing facility that could solve major challenge in electric vehicle production: 'Fully integrated'",
+          "url": "https://www.thecooldown.com/green-tech/alkali-lithium-extraction-ev-battery-degradation/"
+        },
+        {
+          "date": "2025-06-25",
+          "publisher": "Business Wire India",
+          "title": "Gradiant Announces World’s First Fully Integrated Lithium Production Facility from Oilfield Produced Water",
+          "url": "https://www.businesswireindia.com/gradiant-announces-worlds-first-fully-integrated-lithium-production-facility-from-oilfield-produced-water-95372.html"
+        },
+        {
+          "date": "2017-06-22",
+          "title": "Alkali acquired by Assured Partners"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -15,
+      "heatScore": 43
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Marsh & McLennan is a global professional services firm providing advice and solutions in the areas of risk.",
+          "employeeRange": "10,001+",
+          "name": "Marsh & McLennan",
+          "similarityScore": 95
+        },
+        {
+          "description": "Aon is a global provider of risk management, insurance and reinsurance brokerage, human resources solutions, and outsourcing services.",
+          "employeeRange": "10,001+",
+          "name": "Aon",
+          "sharedCategories": [
+            "Risk Management",
+            "Insurance",
+            "Consulting"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "Gallagher is an international insurance brokerage and risk management services firm.",
+          "employeeRange": "10,001+",
+          "name": "Gallagher",
+          "sharedCategories": [
+            "Risk Management",
+            "Insurance",
+            "Consulting"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "WTW is an advisory company that provides insight-led solutions in the areas of people, risk, and capital.",
+          "employeeRange": "10,001+",
+          "name": "WTW",
+          "sharedCategories": [
+            "Risk Management",
+            "Insurance",
+            "Consulting"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "Brown & Brown provides risk management solutions to help protect what our customers value most.",
+          "employeeRange": "1-10",
+          "name": "Brown & Brown",
+          "sharedCategories": [
+            "Insurance",
+            "Consulting"
+          ],
+          "similarityScore": 88
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Marsh & McLennan, Aon, Gallagher.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

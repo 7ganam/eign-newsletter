@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T09:28:12.344Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T09:28:12.291Z",
+    "url": "https://www.crunchbase.com/organization/agnost-ai"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Agnost AI",
+      "shortDescription": "Agnost AI provides analytics and self-improvement infrastructure for teams building conversational AI agents.",
+      "description": "Agnost AI provides analytics and optimization infrastructure for teams building conversational and voice AI agents. The platform reads production conversations between AI agents and users, extracts intent and sentiment signals, and identifies where users get stuck or drop off. It runs continuous evaluations to detect failures that standard evals miss and highlights high-impact issues in agent behavior. Agnost AI then helps teams prioritize, review, and ship fixes so agents improve based on real-world usage. It supports any large language model or framework and focuses on measuring agent experience, trust, task completion, and recovery over time. Agnost AI is used to make AI agents more reliable, efficient, and aligned with user needs in production environments.",
+      "website": "https://www.agnost.ai/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Analytics",
+        "Artificial Intelligence (AI)",
+        "Customer Service",
+        "Machine Learning",
+        "Natural Language Processing",
+        "SaaS",
+        "Software",
+        "Speech Recognition"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Professional Services",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Parth Ajmera",
+        "Shubham Palriwala"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Agnost AI platform provides analytics and self-improvement for conversational AI agents using production conversation data.",
+        "name": "Agnost AI platform"
+      },
+      {
+        "description": "Self-improving layer for AI agents that turns conversation signals into continuous evals and autonomous improvements.",
+        "name": "Self-improving layer for AI agents"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 88,
+      "heatScore": 90
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 66.57
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}
