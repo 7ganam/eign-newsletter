@@ -1,21 +1,31 @@
 import { useEffect, useMemo, useState } from 'react'
 import type { ComponentProps, CSSProperties, DragEvent as ReactDragEvent } from 'react'
-import { INFLUENCERS, INFLUENCERS_VERIFIED_AT, type Influencer } from './influencerData'
-import {
-  LINKEDIN_FOLLOWERS,
-  LINKEDIN_FOLLOWERS_UPDATED_AT,
-  type LinkedInFollowerSnapshot,
-} from './linkedinFollowerData'
+import { InlineEdit } from './editableCells'
+import type { Influencer } from './influencerData'
+import type { LinkedInFollowerSnapshot } from './linkedinFollowerData'
 import { ColumnResizeHandle, useResizableColumns } from './resizableColumns'
+import { usePersistedSort, type SortDirection } from './tablePreferences'
 
 type SortKey = 'priority' | 'followers' | 'name' | 'country' | 'lane' | 'organisation'
-type SortDirection = 'asc' | 'desc'
 type SortPreset = 'priority' | 'followers' | 'name' | 'country' | 'custom'
 type InfluencerColumnKey = 'person' | 'market' | 'lane' | 'platform' | 'followers' | 'signals' | 'linkedin'
 type ColumnDrop = { column: InfluencerColumnKey; position: 'before' | 'after' }
+type InfluencerRow = Influencer & { __rowId: string; follower: LinkedInFollowerSnapshot }
+type InfluencerResponse = {
+  items: InfluencerRow[]
+  meta: {
+    followerSource: string
+    followersUpdatedAt: string
+    source: string
+    verifiedAt: string
+  }
+}
 
 const COLUMN_ORDER_STORAGE_KEY = 'eign-influencers.column-order.v1'
 const COLUMN_WIDTH_STORAGE_KEY = 'eign-influencers.column-widths.v1'
+const ROW_SORT_STORAGE_KEY = 'eign-influencers.row-sort.v1'
+const SORT_KEYS: SortKey[] = ['priority', 'followers', 'name', 'country', 'lane', 'organisation']
+const DEFAULT_SORT = { field: 'priority', direction: 'desc' } as const
 
 const DEFAULT_SORT_DIRECTIONS: Record<SortKey, SortDirection> = {
   priority: 'desc',
@@ -104,18 +114,6 @@ const COUNTRY_CODES: Record<Influencer['country'], string> = {
   Oman: 'OM',
   Regional: 'ME',
 }
-
-const COUNTRY_COUNTS = new Map(COUNTRY_ORDER.map((item) => [
-  item,
-  INFLUENCERS.filter((influencer) => influencer.country === item).length,
-]))
-
-const LANES = [...new Set(INFLUENCERS.map((influencer) => influencer.lane))]
-  .sort((left, right) => left.localeCompare(right))
-
-const PRIORITY_COUNT = INFLUENCERS.filter((influencer) => influencer.priority).length
-const ARABIC_COUNT = INFLUENCERS.filter((influencer) => influencer.arabicOrBilingual).length
-const FOLLOWER_COVERAGE = INFLUENCERS.filter((influencer) => LINKEDIN_FOLLOWERS[influencer.linkedinUrl]?.count != null).length
 
 const UNKNOWN_FOLLOWER_SNAPSHOT: LinkedInFollowerSnapshot = {
   count: null,
@@ -210,13 +208,22 @@ const formatVerifiedDate = (date: string) => new Intl.DateTimeFormat('en', {
 const formatFollowerCount = (count: number) => new Intl.NumberFormat('en').format(count)
 
 export function Influencers() {
+  const [data, setData] = useState<InfluencerResponse | null>(null)
+  const [loadError, setLoadError] = useState('')
+  const [cellSaveError, setCellSaveError] = useState('')
+  const [savingSignals, setSavingSignals] = useState<Set<string>>(() => new Set())
   const [query, setQuery] = useState('')
   const [country, setCountry] = useState<Influencer['country'] | 'all'>('all')
   const [lane, setLane] = useState<Influencer['lane'] | 'all'>('all')
   const [priorityOnly, setPriorityOnly] = useState(false)
   const [arabicOnly, setArabicOnly] = useState(false)
-  const [sortKey, setSortKey] = useState<SortKey>('priority')
-  const [sortDirection, setSortDirection] = useState<SortDirection>('desc')
+  const {
+    resetSort,
+    setSortDirection,
+    setSortField: setSortKey,
+    sortDirection,
+    sortField: sortKey,
+  } = usePersistedSort<SortKey>(ROW_SORT_STORAGE_KEY, DEFAULT_SORT, SORT_KEYS)
   const [columnOrder, setColumnOrder] = useState<InfluencerColumnKey[]>(restoreColumnOrder)
   const [draggingColumn, setDraggingColumn] = useState<InfluencerColumnKey | null>(null)
   const [columnDrop, setColumnDrop] = useState<ColumnDrop | null>(null)
@@ -230,13 +237,36 @@ export function Influencers() {
 
   useEffect(() => {
     const previousTitle = document.title
+    const controller = new AbortController()
     document.title = 'Influencer index · EIGN Data Workspace'
-    return () => { document.title = previousTitle }
+    fetch('/api/influencers', { signal: controller.signal })
+      .then((response) => {
+        if (!response.ok) throw new Error(`The influencer data service returned ${response.status}.`)
+        return response.json() as Promise<InfluencerResponse>
+      })
+      .then(setData)
+      .catch((reason) => {
+        if (reason instanceof DOMException && reason.name === 'AbortError') return
+        setLoadError(reason instanceof Error ? reason.message : 'Unable to load the influencer files.')
+      })
+    return () => {
+      controller.abort()
+      document.title = previousTitle
+    }
   }, [])
+
+  const influencers = useMemo(() => data?.items ?? [], [data])
+  const countryCounts = useMemo(() => new Map(COUNTRY_ORDER.map((item) => [
+    item,
+    influencers.filter((influencer) => influencer.country === item).length,
+  ])), [influencers])
+  const lanes = useMemo(() => [...new Set(influencers.map((influencer) => influencer.lane))]
+    .sort((left, right) => left.localeCompare(right)), [influencers])
+  const followerCoverage = useMemo(() => influencers.filter((influencer) => influencer.follower.count != null).length, [influencers])
 
   const results = useMemo(() => {
     const normalizedQuery = query.trim().toLocaleLowerCase()
-    return INFLUENCERS
+    return influencers
       .filter((influencer) => country === 'all' || influencer.country === country)
       .filter((influencer) => lane === 'all' || influencer.lane === lane)
       .filter((influencer) => !priorityOnly || influencer.priority)
@@ -251,8 +281,8 @@ export function Influencers() {
         let comparison = 0
 
         if (sortKey === 'followers') {
-          const leftFollowers = LINKEDIN_FOLLOWERS[left.linkedinUrl]?.count ?? -1
-          const rightFollowers = LINKEDIN_FOLLOWERS[right.linkedinUrl]?.count ?? -1
+          const leftFollowers = left.follower.count ?? -1
+          const rightFollowers = right.follower.count ?? -1
           if (leftFollowers === -1 && rightFollowers !== -1) return 1
           if (rightFollowers === -1 && leftFollowers !== -1) return -1
           comparison = leftFollowers - rightFollowers
@@ -272,7 +302,7 @@ export function Influencers() {
           || (sortKey === 'priority' ? COUNTRY_ORDER.indexOf(left.country) - COUNTRY_ORDER.indexOf(right.country) : 0)
           || left.name.localeCompare(right.name)
       })
-  }, [arabicOnly, country, lane, priorityOnly, query, sortDirection, sortKey])
+  }, [arabicOnly, country, influencers, lane, priorityOnly, query, sortDirection, sortKey])
 
   const sortPreset: SortPreset = sortKey === 'priority' && sortDirection === 'desc'
     ? 'priority'
@@ -306,8 +336,7 @@ export function Influencers() {
     setLane('all')
     setPriorityOnly(false)
     setArabicOnly(false)
-    setSortKey('priority')
-    setSortDirection('desc')
+    resetSort()
   }
 
   const moveColumn = (source: InfluencerColumnKey, target: InfluencerColumnKey, position: ColumnDrop['position']) => {
@@ -350,6 +379,42 @@ export function Influencers() {
     setColumnDrop(null)
   }
 
+  const saveCell = async (influencer: InfluencerRow, field: string, value: unknown) => {
+    setCellSaveError('')
+    const response = await fetch(`/api/influencers/${encodeURIComponent(influencer.__rowId)}`, {
+      method: 'PATCH',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ field, value }),
+    })
+    const result = await response.json().catch(() => null) as { error?: string; item?: InfluencerRow } | null
+    if (!response.ok || !result?.item) {
+      const message = result?.error || `The data service returned ${response.status}.`
+      setCellSaveError(message)
+      throw new Error(message)
+    }
+    setData((current) => current ? {
+      ...current,
+      items: current.items.map((item) => item.__rowId === influencer.__rowId ? result.item! : item),
+    } : current)
+  }
+
+  const saveSignal = async (influencer: InfluencerRow, field: 'priority' | 'arabicOrBilingual', checked: boolean) => {
+    const savingKey = `${influencer.__rowId}:${field}`
+    if (savingSignals.has(savingKey)) return
+    setSavingSignals((current) => new Set(current).add(savingKey))
+    try {
+      await saveCell(influencer, field, checked)
+    } catch {
+      // The shared error banner and inline state explain the failed write.
+    } finally {
+      setSavingSignals((current) => {
+        const next = new Set(current)
+        next.delete(savingKey)
+        return next
+      })
+    }
+  }
+
   return (
     <div className="app-shell influencers-page">
       <header className="workspace-header">
@@ -368,7 +433,7 @@ export function Influencers() {
       <main className="influencers-main">
         <section className="influencer-country-index" aria-label="People by market">
           {COUNTRY_ORDER.map((item) => {
-            const count = COUNTRY_COUNTS.get(item) ?? 0
+            const count = countryCounts.get(item) ?? 0
             const active = country === item
             return (
               <button
@@ -390,10 +455,10 @@ export function Influencers() {
             <div>
               <h2 id="directory-title">Influencer directory</h2>
               <p>
-                Directory verified {formatVerifiedDate(INFLUENCERS_VERIFIED_AT)} · Follower lookup checked {formatVerifiedDate(LINKEDIN_FOLLOWERS_UPDATED_AT)} · {FOLLOWER_COVERAGE} / {INFLUENCERS.length} counts available
+                Directory verified {data?.meta.verifiedAt ? formatVerifiedDate(data.meta.verifiedAt) : '—'} · Follower lookup checked {data?.meta.followersUpdatedAt ? formatVerifiedDate(data.meta.followersUpdatedAt) : '—'} · {followerCoverage} / {influencers.length} counts available
               </p>
             </div>
-            <span>{results.length} / {INFLUENCERS.length}</span>
+            <div><span>{results.length} / {influencers.length}</span><small className="table-edit-hint">Pencil or double-click to edit</small></div>
           </header>
 
           <div className="influencer-filters">
@@ -413,7 +478,7 @@ export function Influencers() {
               <span>Influence lane</span>
               <select value={lane} onChange={(event) => setLane(event.target.value as Influencer['lane'] | 'all')}>
                 <option value="all">All lanes</option>
-                {LANES.map((item) => <option key={item} value={item}>{item}</option>)}
+                {lanes.map((item) => <option key={item} value={item}>{item}</option>)}
               </select>
             </label>
             <label>
@@ -432,6 +497,9 @@ export function Influencers() {
               {filtersActive && <button className="influencer-clear" onClick={clearFilters}>Clear</button>}
             </div>
           </div>
+
+          {loadError && <div className="software-error" role="alert">{loadError}</div>}
+          {cellSaveError && <div className="software-error" role="alert">Cell was not saved: {cellSaveError}</div>}
 
           <div className="influencer-table-wrap">
             <table className="influencer-table resizable-table" style={tableStyle}>
@@ -460,7 +528,7 @@ export function Influencers() {
               </thead>
               <tbody>
                 {results.map((influencer, index) => {
-                  const followerSnapshot = LINKEDIN_FOLLOWERS[influencer.linkedinUrl] ?? UNKNOWN_FOLLOWER_SNAPSHOT
+                  const followerSnapshot = influencer.follower ?? UNKNOWN_FOLLOWER_SNAPSHOT
                   const formattedFollowers = followerSnapshot.count == null
                     ? '—'
                     : `${followerSnapshot.precision === 'rounded' ? '≈' : ''}${formatFollowerCount(followerSnapshot.count)}`
@@ -469,49 +537,52 @@ export function Influencers() {
                     : `${followerSnapshot.precision === 'rounded' ? 'Approximately ' : ''}${formatFollowerCount(followerSnapshot.count)} LinkedIn followers; ${followerSnapshot.source === 'search-index' ? 'public search-index snapshot checked' : 'observed'} ${formatVerifiedDate(followerSnapshot.observedAt!)}`
 
                   return (
-                  <tr key={influencer.linkedinUrl}>
+                  <tr key={influencer.__rowId}>
                     {columnOrder.map((column) => {
                       if (column === 'person') return (
                         <td className="influencer-cell--person" key={column}>
-                          <div className="influencer-person">
-                            <span className={`influencer-avatar country-${COUNTRY_CODES[influencer.country].toLowerCase()}`}>{initials(influencer.name)}</span>
-                            <span>
-                              <a
-                                className="influencer-person-profile"
-                                href={influencer.linkedinUrl}
-                                target="_blank"
-                                rel="noreferrer"
-                                aria-label={`View ${influencer.name} on LinkedIn`}
-                              >
-                                <strong>{influencer.name}</strong>
-                                <i aria-hidden="true">↗</i>
-                              </a>
-                              <small>#{String(index + 1).padStart(3, '0')}</small>
-                            </span>
-                          </div>
+                          <InlineEdit ariaLabel={`${influencer.name} name`} value={influencer.name} onSave={(value) => saveCell(influencer, 'name', value)}>
+                            <div className="influencer-person">
+                              <span className={`influencer-avatar country-${COUNTRY_CODES[influencer.country].toLowerCase()}`}>{initials(influencer.name)}</span>
+                              <span>
+                                <a
+                                  className="influencer-person-profile"
+                                  href={influencer.linkedinUrl}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  aria-label={`View ${influencer.name} on LinkedIn`}
+                                >
+                                  <strong>{influencer.name}</strong>
+                                  <i aria-hidden="true">↗</i>
+                                </a>
+                                <small>#{String(index + 1).padStart(3, '0')}</small>
+                              </span>
+                            </div>
+                          </InlineEdit>
                         </td>
                       )
-                      if (column === 'market') return <td className="influencer-cell--market" key={column}><span className={`influencer-market country-${COUNTRY_CODES[influencer.country].toLowerCase()}`}><i />{COUNTRY_LABELS[influencer.country]}</span></td>
-                      if (column === 'lane') return <td className="influencer-cell--lane" key={column}><span className="influencer-lane">{influencer.lane}</span></td>
-                      if (column === 'platform') return <td className="influencer-cell--platform" key={column}><strong className="influencer-organisation">{influencer.organisation}</strong></td>
+                      if (column === 'market') return <td className="influencer-cell--market" key={column}><InlineEdit ariaLabel={`${influencer.name} market`} options={COUNTRY_ORDER.map((item) => ({ label: COUNTRY_LABELS[item], value: item }))} value={influencer.country} onSave={(value) => saveCell(influencer, 'country', value)}><span className={`influencer-market country-${COUNTRY_CODES[influencer.country].toLowerCase()}`}><i />{COUNTRY_LABELS[influencer.country]}</span></InlineEdit></td>
+                      if (column === 'lane') return <td className="influencer-cell--lane" key={column}><InlineEdit ariaLabel={`${influencer.name} influence lane`} options={lanes.map((item) => ({ label: item, value: item }))} value={influencer.lane} onSave={(value) => saveCell(influencer, 'lane', value)}><span className="influencer-lane">{influencer.lane}</span></InlineEdit></td>
+                      if (column === 'platform') return <td className="influencer-cell--platform" key={column}><InlineEdit ariaLabel={`${influencer.name} current platform`} value={influencer.organisation} onSave={(value) => saveCell(influencer, 'organisation', value)}><strong className="influencer-organisation">{influencer.organisation}</strong></InlineEdit></td>
                       if (column === 'followers') return (
                         <td className="influencer-cell--followers" key={column}>
-                          <span className={`influencer-followers${followerSnapshot.count == null ? ' is-unverified' : ''}`} aria-label={followerLabel} title={followerLabel}>
-                            <strong>{formattedFollowers}</strong>
-                            <small>{followerSnapshot.count == null ? 'Not verified' : followerSnapshot.precision === 'rounded' ? 'indexed estimate' : 'followers'}</small>
-                          </span>
+                          <InlineEdit ariaLabel={`${influencer.name} LinkedIn followers`} inputType="number" value={followerSnapshot.count == null ? '' : String(followerSnapshot.count)} onSave={(value) => saveCell(influencer, 'followers', value.trim() ? Number(value) : null)}>
+                            <span className={`influencer-followers${followerSnapshot.count == null ? ' is-unverified' : ''}`} aria-label={followerLabel} title={followerLabel}>
+                              <strong>{formattedFollowers}</strong>
+                              <small>{followerSnapshot.count == null ? 'Not verified' : followerSnapshot.precision === 'rounded' ? 'indexed estimate' : 'followers'}</small>
+                            </span>
+                          </InlineEdit>
                         </td>
                       )
                       if (column === 'signals') return (
                         <td className="influencer-cell--signals" key={column}>
-                          <div className="influencer-signals">
-                            {influencer.priority && <span className="signal-priority">Priority</span>}
-                            {influencer.arabicOrBilingual && <span>AR / EN</span>}
-                            {!influencer.priority && !influencer.arabicOrBilingual && <span className="signal-muted">Verified</span>}
+                          <div className="influencer-signal-editors">
+                            <label title="Priority"><input type="checkbox" checked={influencer.priority} disabled={savingSignals.has(`${influencer.__rowId}:priority`)} onChange={(event) => void saveSignal(influencer, 'priority', event.target.checked)} /><span>Priority</span></label>
+                            <label title="Arabic or bilingual"><input type="checkbox" checked={influencer.arabicOrBilingual} disabled={savingSignals.has(`${influencer.__rowId}:arabicOrBilingual`)} onChange={(event) => void saveSignal(influencer, 'arabicOrBilingual', event.target.checked)} /><span>AR / EN</span></label>
                           </div>
                         </td>
                       )
-                      return <td className="influencer-cell--link" key={column}><a className="influencer-linkedin" href={influencer.linkedinUrl} target="_blank" rel="noreferrer" aria-label={`Open ${influencer.name} on LinkedIn`}><LinkedInIcon /></a></td>
+                      return <td className="influencer-cell--link" key={column}><InlineEdit ariaLabel={`${influencer.name} LinkedIn URL`} inputType="url" value={influencer.linkedinUrl} onSave={(value) => saveCell(influencer, 'linkedinUrl', value)}><a className="influencer-linkedin" href={influencer.linkedinUrl} target="_blank" rel="noreferrer" aria-label={`Open ${influencer.name} on LinkedIn`}><LinkedInIcon /></a></InlineEdit></td>
                     })}
                   </tr>
                   )

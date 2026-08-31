@@ -32,6 +32,7 @@ export type StageDatum = {
 }
 
 export type RankedCompany = {
+  __recordId: string
   name: string
   slug: string
   logoUrl?: string | null
@@ -41,6 +42,8 @@ export type RankedCompany = {
 }
 
 export type RecentRound = {
+  __recordId: string
+  companyRecordId?: string | null
   companySlug: string
   companyName: string
   logoUrl?: string | null
@@ -96,6 +99,7 @@ export type LatestRound = {
 }
 
 export type CompanyListItem = {
+  __recordId: string
   name: string
   slug: string
   logoUrl?: string | null
@@ -122,6 +126,7 @@ export type CompanyListResponse = {
 }
 
 export type FundingRound = {
+  __recordId: string
   amountUsd?: number | null
   announcementDate?: string | null
   evidenceBasis?: string | null

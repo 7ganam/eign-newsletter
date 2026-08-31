@@ -1,7 +1,9 @@
 import { useVirtualizer } from '@tanstack/react-virtual'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import type { CSSProperties, DragEvent as ReactDragEvent, KeyboardEvent as ReactKeyboardEvent } from 'react'
+import { dateEditorValue, InlineEdit, parseJsonEditorValue } from './editableCells'
 import { ColumnResizeHandle, useResizableColumns } from './resizableColumns'
+import { usePersistedSort } from './tablePreferences'
 import './research.css'
 
 type ResearchField = {
@@ -56,6 +58,8 @@ const PAGE_SIZE = 100
 const ROW_HEIGHT = 32
 const COLUMN_ORDER_STORAGE_KEY = 'eign-research.companies.column-order.v1'
 const COLUMN_WIDTH_STORAGE_KEY = 'eign-research.companies.column-widths.v1'
+const ROW_SORT_STORAGE_KEY = 'eign-research.companies.row-sort.v1'
+const DEFAULT_SORT = { field: 'name', direction: 'asc' } as const
 
 const OPERATOR_GROUPS: Record<ResearchField['type'], Array<[string, string]>> = {
   string: [
@@ -127,6 +131,29 @@ const rawValue = (value: unknown) => {
   if (value === null) return 'null'
   if (typeof value === 'object') return JSON.stringify(value)
   return String(value)
+}
+
+const editorValue = (value: unknown, field: ResearchField) => {
+  if (value === undefined || value === null) return ''
+  if (field.type === 'date') return dateEditorValue(value)
+  if (typeof value === 'object') return JSON.stringify(value)
+  return String(value)
+}
+
+const IMMUTABLE_RESEARCH_FIELDS = new Set(['_id', 'companyId', 'slug'])
+const isEditableField = (field: ResearchField) => field.type !== 'objectId' && !IMMUTABLE_RESEARCH_FIELDS.has(field.name)
+
+const parseResearchDraft = (draft: string, field: ResearchField) => {
+  if (field.type === 'number') {
+    if (!draft.trim()) return null
+    const number = Number(draft)
+    if (!Number.isFinite(number)) throw new Error('Enter a valid number.')
+    return number
+  }
+  if (field.type === 'date') return draft || null
+  if (field.type === 'boolean') return draft === 'true'
+  if (field.type === 'unknown') return draft.trim() ? parseJsonEditorValue(draft) : null
+  return draft
 }
 
 const displayValue = (value: unknown) => {
@@ -259,11 +286,14 @@ export function ResearchLedger() {
   const [error, setError] = useState('')
   const [search, setSearch] = useState('')
   const [filters, setFilters] = useState<ResearchFilter[]>([])
-  const [sortField, setSortField] = useState('name')
-  const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc')
+  const { resetSort, setSortDirection, setSortField, sortDirection, sortField } = usePersistedSort<string>(
+    ROW_SORT_STORAGE_KEY,
+    DEFAULT_SORT,
+  )
   const [filterPanelOpen, setFilterPanelOpen] = useState(false)
   const [selectedCell, setSelectedCell] = useState<SelectedCell | null>(null)
   const [copied, setCopied] = useState(false)
+  const [cellSaveError, setCellSaveError] = useState('')
   const [draggingField, setDraggingField] = useState<string | null>(null)
   const [columnDrop, setColumnDrop] = useState<ColumnDrop | null>(null)
   const scrollRef = useRef<HTMLDivElement>(null)
@@ -285,6 +315,10 @@ export function ResearchLedger() {
       .then((loadedSchema) => setSchema(restoreColumnOrder(loadedSchema)))
       .catch((caughtError) => setError(caughtError instanceof Error ? caughtError.message : 'Schema query failed.'))
   }, [])
+
+  useEffect(() => {
+    if (schema && !schema.fields.some((field) => field.name === sortField)) resetSort()
+  }, [resetSort, schema, sortField])
 
   const debouncedSearch = useDebouncedValue(search, 220)
   const queryPayload = useMemo<QueryPayload>(() => ({
@@ -461,6 +495,27 @@ export function ResearchLedger() {
     setCopied(false)
   }
 
+  const saveCell = async (row: Record<string, unknown>, field: ResearchField, draft: string) => {
+    const recordId = String(row.__recordId ?? row._id ?? '')
+    if (!recordId || !isEditableField(field)) throw new Error('That identity field is read-only.')
+    const value = parseResearchDraft(draft, field)
+    setCellSaveError('')
+    const response = await fetch(`/api/records/companies/${encodeURIComponent(recordId)}`, {
+      method: 'PATCH',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ field: field.name, value }),
+    })
+    const result = await response.json().catch(() => null) as { error?: string; value?: unknown } | null
+    if (!response.ok) {
+      const message = result?.error || `The data service returned ${response.status}.`
+      setCellSaveError(message)
+      throw new Error(message)
+    }
+    setRows((current) => current.map((item) => String(item.__recordId ?? item._id ?? '') === recordId
+      ? { ...item, [field.name]: result?.value }
+      : item))
+  }
+
   const copySelectedCell = async () => {
     if (!selectedCell) return
     await navigator.clipboard.writeText(selectedValue)
@@ -494,8 +549,7 @@ export function ResearchLedger() {
   const clearQuery = () => {
     setSearch('')
     setFilters([])
-    setSortField('name')
-    setSortDirection('asc')
+    resetSort()
   }
 
   const styleVariables = {
@@ -614,9 +668,11 @@ export function ResearchLedger() {
         <span className="sheet-fx" aria-hidden="true">fx</span>
         <input value={selectedValue} readOnly aria-label="Selected cell value" placeholder="Select a cell to inspect its full value" />
         <button disabled={!selectedCell} onClick={() => void copySelectedCell()}>{copied ? 'Copied' : 'Copy'}</button>
+        <span className="table-edit-hint">Pencil or double-click a cell to edit</span>
       </div>
 
       {error && <div className="sheet-error" role="alert">{error}</div>}
+      {cellSaveError && <div className="sheet-error" role="alert">Cell was not saved: {cellSaveError}</div>}
 
       <div
         ref={scrollRef}
@@ -693,15 +749,25 @@ export function ResearchLedger() {
                       const isSelected = selectedCell?.rowIndex === virtualRow.index && selectedCell.columnIndex === columnIndex
                       const value = row[field.name]
                       return (
-                        <button
+                        <div
                           className={`sheet-cell sheet-cell--${field.type}${isSelected ? ' is-selected' : ''}${value === undefined ? ' is-missing' : ''}`}
                           data-field={field.name}
                           key={field.name}
                           title={displayValue(value)}
                           onClick={() => selectCell(virtualRow.index, columnIndex)}
                         >
-                          {displayValue(value)}
-                        </button>
+                          <InlineEdit
+                            ariaLabel={`${field.name}, row ${virtualRow.index + 1}`}
+                            disabled={!isEditableField(field)}
+                            inputType={field.type === 'number' ? 'number' : field.type === 'date' ? 'date' : 'text'}
+                            onSave={(draft) => saveCell(row, field, draft)}
+                            options={field.type === 'boolean' ? [{ label: 'TRUE', value: 'true' }, { label: 'FALSE', value: 'false' }] : undefined}
+                            selected={isSelected}
+                            value={editorValue(value, field)}
+                          >
+                            {displayValue(value)}
+                          </InlineEdit>
+                        </div>
                       )
                     })}
                   </div>

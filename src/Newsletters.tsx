@@ -1,9 +1,12 @@
 import { useEffect, useMemo, useState } from 'react'
 import type { CSSProperties, DragEvent as ReactDragEvent, KeyboardEvent as ReactKeyboardEvent } from 'react'
+import { InlineEdit } from './editableCells'
 import { ColumnResizeHandle, useResizableColumns } from './resizableColumns'
+import { usePersistedSort } from './tablePreferences'
 import './research.css'
 
 type NewsletterRecord = {
+  __rowId: string
   newsletter: string
   segment: string
   geography: string
@@ -42,6 +45,7 @@ type ColumnDrop = { column: NewsletterColumn; position: 'before' | 'after' }
 const ROW_HEIGHT = 32
 const COLUMN_ORDER_STORAGE_KEY = 'eign-newsletters.column-order.v1'
 const COLUMN_WIDTH_STORAGE_KEY = 'eign-newsletters.column-widths.v1'
+const ROW_SORT_STORAGE_KEY = 'eign-newsletters.row-sort.v1'
 const RELEVANCE_RANK = { high: 3, medium: 2, low: 1 } as const
 const relevanceRank = (value: string) => RELEVANCE_RANK[value.toLocaleLowerCase() as keyof typeof RELEVANCE_RANK] ?? 0
 
@@ -62,6 +66,8 @@ const COLUMNS: Array<{ key: NewsletterColumn; label: string; width: number }> = 
   { key: 'linkedinMetricsObservedAt', label: 'LinkedIn Observed At', width: 165 },
 ]
 const COLUMNS_BY_KEY = new Map(COLUMNS.map((column) => [column.key, column]))
+const COLUMN_KEYS = COLUMNS.map((column) => column.key)
+const DEFAULT_SORT = { field: 'similarity', direction: 'desc' } as const
 const COLUMN_WIDTHS = Object.fromEntries(
   COLUMNS.map((column) => [column.key, column.width]),
 ) as Record<NewsletterColumn, number>
@@ -122,10 +128,14 @@ export function Newsletters() {
   const [geography, setGeography] = useState('all')
   const [relevance, setRelevance] = useState('all')
   const [linkedin, setLinkedin] = useState('all')
-  const [sortField, setSortField] = useState<NewsletterColumn>('similarity')
-  const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('desc')
+  const { setSortDirection, setSortField, sortDirection, sortField } = usePersistedSort<NewsletterColumn>(
+    ROW_SORT_STORAGE_KEY,
+    DEFAULT_SORT,
+    COLUMN_KEYS,
+  )
   const [selectedCell, setSelectedCell] = useState<SelectedCell | null>(null)
   const [copied, setCopied] = useState(false)
+  const [cellSaveError, setCellSaveError] = useState('')
   const [columnOrder, setColumnOrder] = useState<NewsletterColumn[]>(restoreColumnOrder)
   const [draggingColumn, setDraggingColumn] = useState<NewsletterColumn | null>(null)
   const [columnDrop, setColumnDrop] = useState<ColumnDrop | null>(null)
@@ -274,6 +284,29 @@ export function Newsletters() {
     }
   }
 
+  const saveCell = async (row: NewsletterRecord, column: NewsletterColumn, draft: string) => {
+    const value = column === 'similarity'
+      ? draft.trim() ? Number(draft) : null
+      : draft
+    if (column === 'similarity' && value !== null && !Number.isFinite(value)) throw new Error('Enter a valid similarity number.')
+    setCellSaveError('')
+    const response = await fetch(`/api/newsletters/${encodeURIComponent(row.__rowId)}`, {
+      method: 'PATCH',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ field: column, value }),
+    })
+    const result = await response.json().catch(() => null) as { error?: string } | null
+    if (!response.ok) {
+      const message = result?.error || `The data service returned ${response.status}.`
+      setCellSaveError(message)
+      throw new Error(message)
+    }
+    setData((current) => current ? {
+      ...current,
+      items: current.items.map((item) => item.__rowId === row.__rowId ? { ...item, [column]: value } : item),
+    } : current)
+  }
+
   const handleGridKeyDown = (event: ReactKeyboardEvent<HTMLDivElement>) => {
     if (!selectedCell || !rows.length) return
     if ((event.metaKey || event.ctrlKey) && event.key.toLocaleLowerCase() === 'c') {
@@ -343,9 +376,11 @@ export function Newsletters() {
         <span className="sheet-fx" aria-hidden="true">fx</span>
         <input value={selectedValue} readOnly aria-label="Selected cell value" placeholder="Select a cell to inspect its full value" />
         <button disabled={!selectedCell} onClick={() => void copySelectedValue()}>{copied ? 'Copied' : 'Copy'}</button>
+        <span className="table-edit-hint">Pencil or double-click a cell to edit</span>
       </div>
 
       {error && <div className="sheet-error" role="alert">{error}</div>}
+      {cellSaveError && <div className="sheet-error" role="alert">Cell was not saved: {cellSaveError}</div>}
 
       <div className="sheet-grid-scroll" tabIndex={0} onKeyDown={handleGridKeyDown} aria-label="Newsletter research spreadsheet">
         <div className="sheet-grid" style={gridStyle}>
@@ -390,7 +425,7 @@ export function Newsletters() {
           ) : (
             <div className="sheet-virtual-body" style={{ height: `${rows.length * ROW_HEIGHT}px` }}>
               {rows.map((row, rowIndex) => (
-                <div className="sheet-data-row" key={`${row.newsletter}-${rowIndex}`} style={{ height: `${ROW_HEIGHT}px`, transform: `translateY(${rowIndex * ROW_HEIGHT}px)` }}>
+                <div className="sheet-data-row" key={row.__rowId} style={{ height: `${ROW_HEIGHT}px`, transform: `translateY(${rowIndex * ROW_HEIGHT}px)` }}>
                   <div className="sheet-row-number">{rowIndex + 1}</div>
                   {orderedColumns.map((column, columnIndex) => {
                     const value = cellValue(row, column.key)
@@ -400,18 +435,22 @@ export function Newsletters() {
                     if (links.length) {
                       return (
                         <div className={`sheet-cell newsletter-sheet-link-cell${selected ? ' is-selected' : ''}`} key={column.key} title={value} onClick={() => selectCell(rowIndex, columnIndex)}>
-                          {links.map((link, linkIndex) => (
-                            <a href={link} key={link} rel="noreferrer" target="_blank" onClick={() => selectCell(rowIndex, columnIndex)}>
-                              {links.length === 1 ? link : `${column.label} ${linkIndex + 1}`}
-                            </a>
-                          ))}
+                          <InlineEdit ariaLabel={`${column.label}, row ${rowIndex + 1}`} inputType="url" selected={selected} value={value} onSave={(draft) => saveCell(row, column.key, draft)}>
+                            {links.map((link, linkIndex) => (
+                              <a href={link} key={link} rel="noreferrer" target="_blank" onClick={() => selectCell(rowIndex, columnIndex)}>
+                                {links.length === 1 ? link : `${column.label} ${linkIndex + 1}`}
+                              </a>
+                            ))}
+                          </InlineEdit>
                         </div>
                       )
                     }
                     return (
-                      <button className={`sheet-cell${column.key === 'similarity' ? ' sheet-cell--number' : ''}${selected ? ' is-selected' : ''}${!value ? ' is-missing' : ''}`} key={column.key} title={value} onClick={() => selectCell(rowIndex, columnIndex)}>
-                        {displayValue}
-                      </button>
+                      <div className={`sheet-cell${column.key === 'similarity' ? ' sheet-cell--number' : ''}${selected ? ' is-selected' : ''}${!value ? ' is-missing' : ''}`} key={column.key} title={value} onClick={() => selectCell(rowIndex, columnIndex)}>
+                        <InlineEdit ariaLabel={`${column.label}, row ${rowIndex + 1}`} inputType={column.key === 'similarity' ? 'number' : 'text'} selected={selected} value={value} onSave={(draft) => saveCell(row, column.key, draft)}>
+                          {displayValue}
+                        </InlineEdit>
+                      </div>
                     )
                   })}
                 </div>

@@ -1,7 +1,9 @@
 import { useVirtualizer } from '@tanstack/react-virtual'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { CSSProperties, DragEvent as ReactDragEvent } from 'react'
+import { InlineEdit } from './editableCells'
 import { ColumnResizeHandle, useResizableColumns } from './resizableColumns'
+import { usePersistedSort } from './tablePreferences'
 
 type SoftwareSource = 'linkedin' | 'kattch'
 type SoftwareCompanyRow = Record<string, string> & { source: SoftwareSource }
@@ -30,11 +32,15 @@ type SelectedCell = {
 type ColumnDrop = { column: string; position: 'before' | 'after' }
 type LinkedInFilter = 'all' | 'available' | 'missing'
 type FilterOption = { value: string; count: number }
+type SoftwareCheckboxColumn = 'fit' | 'reviewed'
 
 const ROW_HEIGHT = 34
-const COLUMN_ORDER_STORAGE_KEY = 'eign-software-companies.column-order.v4'
-const LEGACY_COLUMN_ORDER_STORAGE_KEY = 'eign-software-companies.column-order.v3'
+const COLUMN_ORDER_STORAGE_KEY = 'eign-software-companies.column-order.v5'
+const LEGACY_COLUMN_ORDER_STORAGE_KEY = 'eign-software-companies.column-order.v4'
 const COLUMN_WIDTH_STORAGE_KEY = 'eign-software-companies.column-widths.v1'
+const ROW_SORT_STORAGE_KEY = 'eign-software-companies.row-sort.v1'
+const CHECKBOX_COLUMNS: SoftwareCheckboxColumn[] = ['fit', 'reviewed']
+const DEFAULT_SORT = { field: 'company_name', direction: 'asc' } as const
 
 const restoreColumnOrder = (columns: string[]) => {
   try {
@@ -50,10 +56,10 @@ const restoreColumnOrder = (columns: string[]) => {
       return [column]
     })
     const next = [...restored, ...columns.filter((column) => !seen.has(column))]
-    if (!currentOrder && next.includes('fit')) {
-      const migrated = next.filter((column) => column !== 'fit')
+    if (!currentOrder && CHECKBOX_COLUMNS.some((column) => next.includes(column))) {
+      const migrated = next.filter((column) => !CHECKBOX_COLUMNS.includes(column as SoftwareCheckboxColumn))
       const sourceIndex = migrated.indexOf('source')
-      migrated.splice(sourceIndex >= 0 ? sourceIndex + 1 : 0, 0, 'fit')
+      migrated.splice(sourceIndex >= 0 ? sourceIndex + 1 : 0, 0, ...CHECKBOX_COLUMNS.filter((column) => columns.includes(column)))
       saveColumnOrder(migrated)
       return migrated
     }
@@ -73,6 +79,7 @@ const saveColumnOrder = (columns: string[]) => {
 
 const columnWidth = (column: string) => {
   if (column === 'fit') return 58
+  if (column === 'reviewed') return 82
   if (column === 'source') return 90
   if (['company_name', 'title'].includes(column)) return 210
   if (['company_description', 'shortAbout', 'highlights'].includes(column)) return 340
@@ -130,12 +137,15 @@ export function SoftwareCompanies() {
   const [industry, setIndustry] = useState('all')
   const [category, setCategory] = useState('all')
   const [linkedin, setLinkedin] = useState<LinkedInFilter>('all')
-  const [sortField, setSortField] = useState('company_name')
-  const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc')
+  const { resetSort, setSortDirection, setSortField, sortDirection, sortField } = usePersistedSort<string>(
+    ROW_SORT_STORAGE_KEY,
+    DEFAULT_SORT,
+  )
   const [selectedCell, setSelectedCell] = useState<SelectedCell | null>(null)
   const [copied, setCopied] = useState(false)
-  const [fitSaveError, setFitSaveError] = useState('')
-  const [savingFitRows, setSavingFitRows] = useState<Set<string>>(() => new Set())
+  const [checkboxSaveError, setCheckboxSaveError] = useState('')
+  const [cellSaveError, setCellSaveError] = useState('')
+  const [savingCheckboxes, setSavingCheckboxes] = useState<Set<string>>(() => new Set())
   const [columnOrder, setColumnOrder] = useState<string[]>([])
   const [draggingColumn, setDraggingColumn] = useState<string | null>(null)
   const [columnDrop, setColumnDrop] = useState<ColumnDrop | null>(null)
@@ -182,6 +192,10 @@ export function SoftwareCompanies() {
     setSelectedCell(null)
     scrollRef.current?.scrollTo({ top: 0 })
   }, [category, country, industry, linkedin, query, sortDirection, sortField, source])
+
+  useEffect(() => {
+    if (data && !data.columns.includes(sortField)) resetSort()
+  }, [data, resetSort, sortField])
 
   const hasActiveFilters = Boolean(query || source !== 'all' || country !== 'all' || industry !== 'all' || category !== 'all' || linkedin !== 'all')
 
@@ -282,40 +296,66 @@ export function SoftwareCompanies() {
     }
   }
 
-  const setRowFit = (rowKey: string, fit: boolean) => {
+  const setRowCheckbox = (rowKey: string, column: SoftwareCheckboxColumn, checked: boolean) => {
     setData((current) => current ? {
       ...current,
-      items: current.items.map((item) => item.__rowKey === rowKey ? { ...item, fit: fit ? 'true' : '' } : item),
+      items: current.items.map((item) => item.__rowKey === rowKey ? { ...item, [column]: checked ? 'true' : '' } : item),
     } : current)
   }
 
-  const saveFit = async (row: SoftwareCompanyRow, fit: boolean) => {
+  const saveCheckbox = async (row: SoftwareCompanyRow, column: SoftwareCheckboxColumn, checked: boolean) => {
     const rowKey = row.__rowKey
-    if (!rowKey || savingFitRows.has(rowKey)) return
-    const previousFit = row.fit === 'true'
-    setFitSaveError('')
-    setRowFit(rowKey, fit)
-    setSavingFitRows((current) => new Set(current).add(rowKey))
+    const savingKey = `${column}:${rowKey}`
+    if (!rowKey || savingCheckboxes.has(savingKey)) return
+    const previousValue = row[column] === 'true'
+    setCheckboxSaveError('')
+    setRowCheckbox(rowKey, column, checked)
+    setSavingCheckboxes((current) => new Set(current).add(savingKey))
     try {
-      const response = await fetch('/api/software-companies/fit', {
+      const response = await fetch(`/api/software-companies/${column}`, {
         method: 'PATCH',
         headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ fit, rowKey }),
+        body: JSON.stringify({ [column]: checked, rowKey }),
       })
       if (!response.ok) {
         const result = await response.json().catch(() => null) as { error?: string } | null
         throw new Error(result?.error || `The data service returned ${response.status}.`)
       }
     } catch (reason) {
-      setRowFit(rowKey, previousFit)
-      setFitSaveError(reason instanceof Error ? reason.message : 'Unable to save the fit checkmark.')
+      setRowCheckbox(rowKey, column, previousValue)
+      setCheckboxSaveError(reason instanceof Error ? reason.message : `Unable to save the ${column} checkmark.`)
     } finally {
-      setSavingFitRows((current) => {
+      setSavingCheckboxes((current) => {
         const next = new Set(current)
-        next.delete(rowKey)
+        next.delete(savingKey)
         return next
       })
     }
+  }
+
+  const saveCell = async (row: SoftwareCompanyRow, column: string, value: string) => {
+    const rowKey = row.__rowKey
+    if (!rowKey) throw new Error('This CSV row does not have a stable key.')
+    setCellSaveError('')
+    const response = await fetch('/api/software-companies/cell', {
+      method: 'PATCH',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ field: column, rowKey, value }),
+    })
+    const result = await response.json().catch(() => null) as { error?: string; rowKey?: string } | null
+    if (!response.ok) {
+      const message = result?.error || `The data service returned ${response.status}.`
+      setCellSaveError(message)
+      throw new Error(message)
+    }
+    setData((current) => current ? {
+      ...current,
+      items: current.items.map((item) => item.__rowKey === rowKey ? {
+        ...item,
+        [column]: value,
+        __rowKey: result?.rowKey || rowKey,
+      } : item),
+    } : current)
   }
 
   return (
@@ -335,7 +375,7 @@ export function SoftwareCompanies() {
 
       <main className="software-main">
         <section className="software-summary" aria-label="Combined source summary">
-          <div><strong>Software-company directory</strong><span>MENA-only curated view; fit decisions save to the curated CSV.</span></div>
+          <div><strong>Software-company directory</strong><span>MENA-only curated view; fit and reviewed decisions save to the curated CSV.</span></div>
           <dl>
             <div><dt>Combined rows</dt><dd>{data?.summary.total ?? '—'}</dd></div>
             <div><dt>LinkedIn</dt><dd>{data?.summary.linkedin ?? '—'}</dd></div>
@@ -354,7 +394,7 @@ export function SoftwareCompanies() {
           <label><span>LinkedIn</span><select value={linkedin} onChange={(event) => setLinkedin(event.target.value as LinkedInFilter)}><option value="all">Any status</option><option value="available">Available</option><option value="missing">Missing</option></select></label>
           <label><span>Sort</span><select value={sortField} onChange={(event) => setSortField(event.target.value)}><option value="company_name">Company name</option><option value="source">Source</option>{data?.columns.filter((column) => !['source', 'company_name'].includes(column)).map((column) => <option key={column} value={column}>{column}</option>)}</select></label>
           <button onClick={() => setSortDirection((current) => current === 'asc' ? 'desc' : 'asc')}>{sortDirection === 'asc' ? '↑ Ascending' : '↓ Descending'}</button>
-          {(hasActiveFilters || sortField !== 'company_name' || sortDirection !== 'asc') && <button className="software-clear-filters" onClick={() => { clearFilters(); setSortField('company_name'); setSortDirection('asc') }}>Clear</button>}
+          {(hasActiveFilters || sortField !== 'company_name' || sortDirection !== 'asc') && <button className="software-clear-filters" onClick={() => { clearFilters(); resetSort() }}>Clear</button>}
           <span className="software-result-count">{rows.length.toLocaleString()} rows</span>
         </div>
 
@@ -363,10 +403,12 @@ export function SoftwareCompanies() {
           <input value={selectedValue} readOnly placeholder="Select a cell to inspect its full value" aria-label="Selected cell value" />
           {selectedLink && <a href={selectedLink} target="_blank" rel="noreferrer">Open</a>}
           <button disabled={!selectedCell} onClick={() => void copySelectedValue()}>{copied ? 'Copied' : 'Copy'}</button>
+          <span className="table-edit-hint">Pencil or double-click a cell to edit</span>
         </div>
 
         {error && <div className="software-error" role="alert">{error}</div>}
-        {fitSaveError && <div className="software-error" role="alert">Fit was not saved: {fitSaveError}</div>}
+        {checkboxSaveError && <div className="software-error" role="alert">Checkbox was not saved: {checkboxSaveError}</div>}
+        {cellSaveError && <div className="software-error" role="alert">Cell was not saved: {cellSaveError}</div>}
         {!data && !error ? <div className="software-loading"><span className="loading-spinner" /> Loading both CSV files…</div> : data && (
           <div className="software-grid-scroll" ref={scrollRef}>
             <div className="software-grid" style={gridStyle}>
@@ -404,15 +446,17 @@ export function SoftwareCompanies() {
                           setSelectedCell({ rowIndex: virtualRow.index, columnIndex })
                           setCopied(false)
                         }
-                        if (column === 'fit') {
-                          const isSaving = savingFitRows.has(row.__rowKey)
+                        if (CHECKBOX_COLUMNS.includes(column as SoftwareCheckboxColumn)) {
+                          const checkboxColumn = column as SoftwareCheckboxColumn
+                          const isSaving = savingCheckboxes.has(`${checkboxColumn}:${row.__rowKey}`)
+                          const label = checkboxColumn === 'fit' ? 'fit' : 'reviewed'
                           return (
-                            <label className={`software-cell software-fit-cell${selected ? ' is-selected' : ''}${isSaving ? ' is-saving' : ''}`} key={column} onClick={selectCell} title={value === 'true' ? 'Marked as fit' : 'Mark as fit'}>
+                            <label className={`software-cell software-checkbox-cell${selected ? ' is-selected' : ''}${isSaving ? ' is-saving' : ''}`} key={column} onClick={selectCell} title={value === 'true' ? `Marked as ${label}` : `Mark as ${label}`}>
                               <input
-                                aria-label={`${value === 'true' ? 'Remove' : 'Mark'} ${row.company_name || 'company'} as fit`}
+                                aria-label={`${value === 'true' ? 'Remove' : 'Mark'} ${row.company_name || 'company'} as ${label}`}
                                 checked={value === 'true'}
                                 disabled={isSaving}
-                                onChange={(event) => void saveFit(row, event.target.checked)}
+                                onChange={(event) => void saveCheckbox(row, checkboxColumn, event.target.checked)}
                                 type="checkbox"
                               />
                             </label>
@@ -420,23 +464,31 @@ export function SoftwareCompanies() {
                         }
                         if (linkedinLink) {
                           return (
-                            <a
+                            <div
                               className={`software-cell software-cell--link${selected ? ' is-selected' : ''}`}
-                              href={linkedinLink}
                               key={column}
                               onClick={selectCell}
-                              rel="noreferrer"
-                              target="_blank"
                               title={`Open ${row.company_name || 'company'} on LinkedIn`}
                             >
-                              {value}
-                            </a>
+                              <InlineEdit ariaLabel={`${column}, row ${virtualRow.index + 1}`} inputType="url" selected={selected} value={value} onSave={(draft) => saveCell(row, column, draft)}>
+                                <a href={linkedinLink} rel="noreferrer" target="_blank">{value}</a>
+                              </InlineEdit>
+                            </div>
                           )
                         }
                         return (
-                          <button className={`software-cell${selected ? ' is-selected' : ''}${!value ? ' is-empty' : ''}`} key={column} title={value} onClick={selectCell}>
-                            {column === 'source' ? <span className={`software-source software-source--${row.source}`}>{row.source}</span> : value}
-                          </button>
+                          <div className={`software-cell${selected ? ' is-selected' : ''}${!value ? ' is-empty' : ''}`} key={column} title={value} onClick={selectCell}>
+                            <InlineEdit
+                              ariaLabel={`${column}, row ${virtualRow.index + 1}`}
+                              inputType={column === 'linkedin_followers' ? 'number' : 'text'}
+                              onSave={(draft) => saveCell(row, column, draft)}
+                              options={column === 'source' ? [{ label: 'LinkedIn', value: 'linkedin' }, { label: 'Kattch', value: 'kattch' }] : undefined}
+                              selected={selected}
+                              value={value}
+                            >
+                              {column === 'source' ? <span className={`software-source software-source--${row.source}`}>{row.source}</span> : value}
+                            </InlineEdit>
+                          </div>
                         )
                       })}
                     </div>

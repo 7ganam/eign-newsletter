@@ -1,8 +1,10 @@
 import { lazy, Suspense, useCallback, useEffect, useMemo, useState } from 'react'
 import type { EChartsCoreOption } from 'echarts/core'
 import type { EChartProps } from './EChart'
+import { dateEditorValue, InlineEdit } from './editableCells'
 import { displayList, formatDate, formatMoney, formatNumber, initials, truncateLabel } from './lib'
 import { ResizableDataTable } from './resizableColumns'
+import { restoreStoredChoice, saveStoredChoice } from './tablePreferences'
 import type {
   CompanyDetailResponse,
   CompanyListResponse,
@@ -23,14 +25,19 @@ function ChartView(props: EChartProps) {
   )
 }
 
+const COMPANY_SORTS = ['funding_desc', 'funding_asc', 'name_asc', 'name_desc'] as const
+type CompanySort = typeof COMPANY_SORTS[number]
+
 type CompanyFilters = {
   q: string
   industry: string
   batch: string
-  sort: string
+  sort: CompanySort
 }
 
-const initialFilters: CompanyFilters = {
+const COMPANY_SORT_STORAGE_KEY = 'eign-dashboard.companies.row-sort.v1'
+
+const defaultFilters: CompanyFilters = {
   q: '',
   industry: '',
   batch: '',
@@ -69,6 +76,22 @@ const FUNDING_ROUND_COLUMNS = [
   { key: 'evidence', label: 'Evidence', defaultWidth: 320 },
   { key: 'source', label: 'Source', defaultWidth: 105 },
 ] as const
+
+type RecordCollection = 'companies' | 'rounds'
+type SaveRecordCell = (collection: RecordCollection, recordId: string, field: string, value: unknown) => Promise<void>
+
+const numericCellValue = (value: string) => value.trim() === '' ? null : Number(value)
+
+const patchRecordCell = async (collection: RecordCollection, recordId: string, field: string, value: unknown) => {
+  const response = await fetch(`/api/records/${collection}/${encodeURIComponent(recordId)}`, {
+    method: 'PATCH',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ field, value }),
+  })
+  const result = await response.json().catch(() => null) as { error?: string; value?: unknown } | null
+  if (!response.ok) throw new Error(result?.error || `The data service returned ${response.status}.`)
+  return result?.value
+}
 
 function useDebouncedValue<T>(value: T, delay: number) {
   const [debouncedValue, setDebouncedValue] = useState(value)
@@ -133,7 +156,7 @@ function ErrorView({ message, retry }: { message: string; retry: () => void }) {
   )
 }
 
-function RoundsTable({ rounds }: { rounds: FundingRound[] }) {
+function RoundsTable({ onSave, rounds }: { onSave: SaveRecordCell; rounds: FundingRound[] }) {
   return (
     <div className="drawer-table-wrap">
       <ResizableDataTable className="drawer-table" columns={FUNDING_ROUND_COLUMNS} storageKey="eign-dashboard.funding-rounds.column-widths.v1">
@@ -142,11 +165,11 @@ function RoundsTable({ rounds }: { rounds: FundingRound[] }) {
             const investors = displayList(round.leadInvestors) || displayList(round.otherInvestors)
             return (
               <tr key={`${round.round}-${round.announcementDate}-${index}`}>
-                <td>{formatDate(round.announcementDate)}</td>
-                <td><strong>{round.round || round.roundStage || (round.recordType === 'accelerator_commitment' ? 'Accelerator' : 'Funding event')}</strong><small>{round.instrument || ''}</small></td>
-                <td>{formatMoney(round.amountUsd, false)}{round.inferredMinimum && <small>Minimum</small>}</td>
-                <td>{round.evidenceBasis || investors || '—'}{round.includedInTotal === false && <small>Excluded from total</small>}</td>
-                <td>{round.primarySource || round.notionUrl ? <a href={round.primarySource || round.notionUrl || '#'} target="_blank" rel="noreferrer">Open <ExternalIcon /></a> : '—'}</td>
+                <td><InlineEdit ariaLabel="round date" inputType="date" value={dateEditorValue(round.announcementDate)} onSave={(value) => onSave('rounds', round.__recordId, 'announcementDate', value || null)}>{formatDate(round.announcementDate)}</InlineEdit></td>
+                <td><InlineEdit ariaLabel="round type" value={round.round || ''} onSave={(value) => onSave('rounds', round.__recordId, 'round', value)}><strong>{round.round || round.roundStage || (round.recordType === 'accelerator_commitment' ? 'Accelerator' : 'Funding event')}</strong><small>{round.instrument || ''}</small></InlineEdit></td>
+                <td><InlineEdit ariaLabel="round amount" inputType="number" value={round.amountUsd == null ? '' : String(round.amountUsd)} onSave={(value) => onSave('rounds', round.__recordId, 'amountUsd', numericCellValue(value))}>{formatMoney(round.amountUsd, false)}{round.inferredMinimum && <small>Minimum</small>}</InlineEdit></td>
+                <td><InlineEdit ariaLabel="round evidence" value={round.evidenceBasis || ''} onSave={(value) => onSave('rounds', round.__recordId, 'evidenceBasis', value)}>{round.evidenceBasis || investors || '—'}{round.includedInTotal === false && <small>Excluded from total</small>}</InlineEdit></td>
+                <td><InlineEdit ariaLabel="round source" inputType="url" value={round.primarySource || ''} onSave={(value) => onSave('rounds', round.__recordId, 'primarySource', value)}>{round.primarySource || round.notionUrl ? <a href={round.primarySource || round.notionUrl || '#'} target="_blank" rel="noreferrer">Open <ExternalIcon /></a> : '—'}</InlineEdit></td>
               </tr>
             )
           })}
@@ -157,7 +180,7 @@ function RoundsTable({ rounds }: { rounds: FundingRound[] }) {
   )
 }
 
-function CompanyDrawer({ detail, loading, onClose }: { detail: CompanyDetailResponse | null; loading: boolean; onClose: () => void }) {
+function CompanyDrawer({ detail, loading, onClose, onSave }: { detail: CompanyDetailResponse | null; loading: boolean; onClose: () => void; onSave: SaveRecordCell }) {
   const company = detail?.company
 
   return (
@@ -209,7 +232,7 @@ function CompanyDrawer({ detail, loading, onClose }: { detail: CompanyDetailResp
 
             <section className="drawer-block">
               <div className="drawer-block__heading"><h3>Funding history</h3><span>{detail.rounds.length} records</span></div>
-              <RoundsTable rounds={detail.rounds} />
+              <RoundsTable onSave={onSave} rounds={detail.rounds} />
             </section>
           </div>
         )}
@@ -221,7 +244,10 @@ function CompanyDrawer({ detail, loading, onClose }: { detail: CompanyDetailResp
 export function App() {
   const [dashboard, setDashboard] = useState<DashboardData | null>(null)
   const [dashboardError, setDashboardError] = useState('')
-  const [filters, setFilters] = useState<CompanyFilters>(initialFilters)
+  const [filters, setFilters] = useState<CompanyFilters>(() => ({
+    ...defaultFilters,
+    sort: restoreStoredChoice(COMPANY_SORT_STORAGE_KEY, defaultFilters.sort, COMPANY_SORTS),
+  }))
   const [page, setPage] = useState(1)
   const [companyResults, setCompanyResults] = useState<CompanyListResponse | null>(null)
   const [companiesLoading, setCompaniesLoading] = useState(true)
@@ -242,7 +268,39 @@ export function App() {
     }
   }, [])
 
+  const saveRecordCell = useCallback<SaveRecordCell>(async (collection, recordId, field, value) => {
+    const savedValue = await patchRecordCell(collection, recordId, field, value)
+    if (collection === 'companies') {
+      setDashboard((current) => current ? {
+        ...current,
+        topCompanies: current.topCompanies.map((company) => company.__recordId === recordId ? { ...company, [field]: savedValue } : company),
+        recentRounds: current.recentRounds.map((round) => round.companyRecordId === recordId && field === 'name' ? { ...round, companyName: savedValue as string } : round),
+      } : current)
+      setCompanyResults((current) => current ? {
+        ...current,
+        items: current.items.map((company) => company.__recordId === recordId ? { ...company, [field]: savedValue } : company),
+      } : current)
+      setDetail((current) => current?.company.__recordId === recordId ? {
+        ...current,
+        company: { ...current.company, [field]: savedValue },
+      } : current)
+    } else {
+      setDashboard((current) => current ? {
+        ...current,
+        recentRounds: current.recentRounds.map((round) => round.__recordId === recordId ? { ...round, [field]: savedValue } : round),
+      } : current)
+      setDetail((current) => current ? {
+        ...current,
+        rounds: current.rounds.map((round) => round.__recordId === recordId ? { ...round, [field]: savedValue } : round),
+      } : current)
+    }
+  }, [])
+
   useEffect(() => { void loadDashboard() }, [loadDashboard])
+
+  useEffect(() => {
+    saveStoredChoice(COMPANY_SORT_STORAGE_KEY, filters.sort)
+  }, [filters.sort])
 
   useEffect(() => {
     const controller = new AbortController()
@@ -369,7 +427,7 @@ export function App() {
     }
   }, [chartBase, dashboard])
 
-  const updateFilter = (key: keyof CompanyFilters, value: string) => {
+  const updateFilter = <Key extends keyof CompanyFilters>(key: Key, value: CompanyFilters[Key]) => {
     setFilters((current) => ({ ...current, [key]: value }))
     setPage(1)
   }
@@ -436,22 +494,33 @@ export function App() {
           </article>
 
           <article className="analysis-panel analysis-panel--leaders">
-            <header><div><h2>Companies by recorded funding</h2><p>Highest company-level totals</p></div></header>
+            <header><div><h2>Companies by recorded funding</h2><p>Highest company-level totals</p></div><span className="table-edit-hint">Pencil or double-click to edit</span></header>
             <div className="compact-table-wrap">
               <ResizableDataTable className="compact-table" columns={TOP_COMPANY_COLUMNS} storageKey="eign-dashboard.top-companies.column-widths.v1">
                 <tbody>{dashboard.topCompanies.map((company, index) => (
-                  <tr key={company.slug} onClick={() => setSelectedSlug(company.slug)}><td>{index + 1}</td><td><CompanyLogo name={company.name} src={company.logoUrl} size="small" /><strong>{company.name}</strong></td><td>{company.industry || '—'}</td><td>{company.batch || '—'}</td><td>{formatMoney(company.totalFundingUsd)}</td></tr>
+                  <tr key={company.slug} onClick={() => setSelectedSlug(company.slug)}>
+                    <td>{index + 1}</td>
+                    <td><InlineEdit ariaLabel={`${company.name} name`} value={company.name} onSave={(value) => saveRecordCell('companies', company.__recordId, 'name', value)}><CompanyLogo name={company.name} src={company.logoUrl} size="small" /><strong>{company.name}</strong></InlineEdit></td>
+                    <td><InlineEdit ariaLabel={`${company.name} industry`} value={company.industry || ''} onSave={(value) => saveRecordCell('companies', company.__recordId, 'industry', value)}>{company.industry || '—'}</InlineEdit></td>
+                    <td><InlineEdit ariaLabel={`${company.name} batch`} value={company.batch || ''} onSave={(value) => saveRecordCell('companies', company.__recordId, 'batch', value)}>{company.batch || '—'}</InlineEdit></td>
+                    <td><InlineEdit ariaLabel={`${company.name} funding`} inputType="number" value={company.totalFundingUsd == null ? '' : String(company.totalFundingUsd)} onSave={(value) => saveRecordCell('companies', company.__recordId, 'totalFundingUsd', numericCellValue(value))}>{formatMoney(company.totalFundingUsd)}</InlineEdit></td>
+                  </tr>
                 ))}</tbody>
               </ResizableDataTable>
             </div>
           </article>
 
           <article className="analysis-panel analysis-panel--recent">
-            <header><div><h2>Recent funding records</h2><p>Latest dated events</p></div></header>
+            <header><div><h2>Recent funding records</h2><p>Latest dated events</p></div><span className="table-edit-hint">Pencil or double-click to edit</span></header>
             <div className="compact-table-wrap">
               <ResizableDataTable className="compact-table" columns={RECENT_ROUND_COLUMNS} storageKey="eign-dashboard.recent-rounds.column-widths.v1">
                 <tbody>{dashboard.recentRounds.map((round) => (
-                  <tr key={`${round.companySlug}-${round.announcementDate}`} onClick={() => setSelectedSlug(round.companySlug)}><td>{formatDate(round.announcementDate)}</td><td><CompanyLogo name={round.companyName} src={round.logoUrl} size="small" /><strong>{round.companyName}</strong></td><td>{round.roundStage || 'Funding event'}</td><td>{formatMoney(round.amountUsd)}</td></tr>
+                  <tr key={`${round.companySlug}-${round.announcementDate}`} onClick={() => setSelectedSlug(round.companySlug)}>
+                    <td><InlineEdit ariaLabel={`${round.companyName} round date`} inputType="date" value={dateEditorValue(round.announcementDate)} onSave={(value) => saveRecordCell('rounds', round.__recordId, 'announcementDate', value || null)}>{formatDate(round.announcementDate)}</InlineEdit></td>
+                    <td><InlineEdit ariaLabel={`${round.companyName} name`} disabled={!round.companyRecordId} value={round.companyName} onSave={(value) => saveRecordCell('companies', round.companyRecordId!, 'name', value)}><CompanyLogo name={round.companyName} src={round.logoUrl} size="small" /><strong>{round.companyName}</strong></InlineEdit></td>
+                    <td><InlineEdit ariaLabel={`${round.companyName} round stage`} value={round.roundStage || ''} onSave={(value) => saveRecordCell('rounds', round.__recordId, 'roundStage', value)}>{round.roundStage || 'Funding event'}</InlineEdit></td>
+                    <td><InlineEdit ariaLabel={`${round.companyName} round amount`} inputType="number" value={round.amountUsd == null ? '' : String(round.amountUsd)} onSave={(value) => saveRecordCell('rounds', round.__recordId, 'amountUsd', numericCellValue(value))}>{formatMoney(round.amountUsd)}</InlineEdit></td>
+                  </tr>
                 ))}</tbody>
               </ResizableDataTable>
             </div>
@@ -459,13 +528,13 @@ export function App() {
         </section>
 
         <section className="company-explorer" id="company-table">
-          <header className="section-toolbar"><div><h2>Company table</h2><p>Search, filter, sort, and open a company record</p></div><a href="/research">Open Startups →</a></header>
+          <header className="section-toolbar"><div><h2>Company table</h2><p>Search, filter, sort, edit, and open a company record</p></div><div><span className="table-edit-hint">Pencil or double-click to edit</span><a href="/research">Open Startups →</a></div></header>
           <div className="filter-bar">
             <label className="search-field"><span className="sr-only">Search companies</span><SearchIcon /><input type="search" placeholder="Search name, summary, or slug" value={filters.q} onChange={(event) => updateFilter('q', event.target.value)} /></label>
             <label><span>Industry</span><select value={filters.industry} onChange={(event) => updateFilter('industry', event.target.value)}><option value="">All industries</option>{dashboard.industries.map((item) => <option key={item.industry} value={item.industry}>{item.industry}</option>)}</select></label>
             <label><span>Batch</span><select value={filters.batch} onChange={(event) => updateFilter('batch', event.target.value)}><option value="">All batches</option>{dashboard.batches.map((item) => <option key={item.batch} value={item.batch}>{item.batch}</option>)}</select></label>
-            <label><span>Sort</span><select value={filters.sort} onChange={(event) => updateFilter('sort', event.target.value)}><option value="funding_desc">Funding: high to low</option><option value="funding_asc">Funding: low to high</option><option value="name_asc">Name: A–Z</option><option value="name_desc">Name: Z–A</option></select></label>
-            {filtersActive && <button className="reset-button" onClick={() => { setFilters(initialFilters); setPage(1) }}>Clear filters</button>}
+            <label><span>Sort</span><select value={filters.sort} onChange={(event) => updateFilter('sort', event.target.value as CompanySort)}><option value="funding_desc">Funding: high to low</option><option value="funding_asc">Funding: low to high</option><option value="name_asc">Name: A–Z</option><option value="name_desc">Name: Z–A</option></select></label>
+            {filtersActive && <button className="reset-button" onClick={() => { setFilters(defaultFilters); setPage(1) }}>Clear filters</button>}
           </div>
 
           <div className="result-meta"><span>{companiesLoading ? 'Loading…' : `${formatNumber(companyResults?.pagination.total)} matching companies`}</span><span>Page {companyResults?.pagination.page ?? page} of {companyResults?.pagination.pages ?? 1}</span></div>
@@ -473,9 +542,13 @@ export function App() {
             <ResizableDataTable className="company-table" columns={COMPANY_COLUMNS} storageKey="eign-dashboard.companies.column-widths.v1">
               <tbody>{companyResults?.items.map((company) => (
                 <tr key={company.slug} onClick={() => setSelectedSlug(company.slug)}>
-                  <td><div className="company-cell"><CompanyLogo name={company.name} src={company.logoUrl} /><span><strong>{company.name}</strong><small>{company.slug}</small></span></div></td>
-                  <td>{company.industry || 'Unclassified'}</td><td>{company.businessType || '—'}</td><td>{company.batch || '—'}</td>
-                  <td><strong>{formatMoney(company.totalFundingUsd)}</strong><small>{company.fundingTotalType || 'Recorded total'}</small></td><td>{company.roundCount}</td><td><span className="status-pill">{company.fundingReconciliationStatus || 'indexed'}</span></td>
+                  <td><InlineEdit ariaLabel={`${company.name} name`} value={company.name} onSave={(value) => saveRecordCell('companies', company.__recordId, 'name', value)}><div className="company-cell"><CompanyLogo name={company.name} src={company.logoUrl} /><span><strong>{company.name}</strong><small>{company.slug}</small></span></div></InlineEdit></td>
+                  <td><InlineEdit ariaLabel={`${company.name} industry`} value={company.industry || ''} onSave={(value) => saveRecordCell('companies', company.__recordId, 'industry', value)}>{company.industry || 'Unclassified'}</InlineEdit></td>
+                  <td><InlineEdit ariaLabel={`${company.name} business type`} value={company.businessType || ''} onSave={(value) => saveRecordCell('companies', company.__recordId, 'businessType', value)}>{company.businessType || '—'}</InlineEdit></td>
+                  <td><InlineEdit ariaLabel={`${company.name} batch`} value={company.batch || ''} onSave={(value) => saveRecordCell('companies', company.__recordId, 'batch', value)}>{company.batch || '—'}</InlineEdit></td>
+                  <td><InlineEdit ariaLabel={`${company.name} recorded funding`} inputType="number" value={company.totalFundingUsd == null ? '' : String(company.totalFundingUsd)} onSave={(value) => saveRecordCell('companies', company.__recordId, 'totalFundingUsd', numericCellValue(value))}><strong>{formatMoney(company.totalFundingUsd)}</strong><small>{company.fundingTotalType || 'Recorded total'}</small></InlineEdit></td>
+                  <td><InlineEdit ariaLabel={`${company.name} round count`} disabled value={String(company.roundCount)} onSave={async () => undefined}>{company.roundCount}</InlineEdit></td>
+                  <td><InlineEdit ariaLabel={`${company.name} reconciliation status`} value={company.fundingReconciliationStatus || ''} onSave={(value) => saveRecordCell('companies', company.__recordId, 'fundingReconciliationStatus', value)}><span className="status-pill">{company.fundingReconciliationStatus || 'indexed'}</span></InlineEdit></td>
                 </tr>
               ))}</tbody>
             </ResizableDataTable>
@@ -485,7 +558,7 @@ export function App() {
         </section>
       </main>
 
-      {selectedSlug && <CompanyDrawer detail={detail} loading={detailLoading} onClose={() => setSelectedSlug(null)} />}
+      {selectedSlug && <CompanyDrawer detail={detail} loading={detailLoading} onClose={() => setSelectedSlug(null)} onSave={saveRecordCell} />}
     </div>
   )
 }

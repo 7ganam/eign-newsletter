@@ -6,12 +6,22 @@ import { fileURLToPath } from 'node:url'
 import { csvFormat, csvParse } from 'd3'
 import { Hono } from 'hono'
 import { logger } from 'hono/logger'
+import { INFLUENCERS, INFLUENCERS_VERIFIED_AT, type Influencer } from '../src/influencerData'
+import {
+  LINKEDIN_FOLLOWERS,
+  LINKEDIN_FOLLOWERS_UPDATED_AT,
+  type LinkedInFollowerSnapshot,
+} from '../src/linkedinFollowerData'
 
 const API_PORT = Number(process.env.API_PORT ?? 18321)
 const PROJECT_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const DATA_FILES = {
   companies: resolve(PROJECT_ROOT, 'eign_index.companies.json'),
   rounds: resolve(PROJECT_ROOT, 'eign_index.rounds.json'),
+} as const
+const INFLUENCER_FILES = {
+  directory: resolve(PROJECT_ROOT, 'src/influencerData.ts'),
+  followers: resolve(PROJECT_ROOT, 'src/linkedinFollowerData.ts'),
 } as const
 
 class FileObjectId {
@@ -46,6 +56,25 @@ const loadJsonRecords = async (path: string) => {
   return parsed.map((record) => reviveExtendedJson(record) as DataRecord)
 }
 
+const toExtendedJson = (value: unknown): unknown => {
+  if (value instanceof FileObjectId) return { $oid: value.value }
+  if (value instanceof Date) return { $date: value.toISOString() }
+  if (Array.isArray(value)) return value.map(toExtendedJson)
+  if (!value || typeof value !== 'object') return value
+  return Object.fromEntries(Object.entries(value as DataRecord).map(([key, entry]) => [key, toExtendedJson(entry)]))
+}
+
+const saveJsonRecords = async (path: string, records: DataRecord[]) => {
+  const tempPath = `${path}.${process.pid}.tmp`
+  try {
+    await writeFile(tempPath, `${JSON.stringify(toExtendedJson(records), null, 2)}\n`, 'utf8')
+    await rename(tempPath, path)
+  } catch (error) {
+    await unlink(tempPath).catch(() => undefined)
+    throw error
+  }
+}
+
 const [companyRecords, roundRecords] = await Promise.all([
   loadJsonRecords(DATA_FILES.companies),
   loadJsonRecords(DATA_FILES.rounds),
@@ -59,6 +88,70 @@ for (const round of roundRecords) {
   const companyRounds = roundsByCompanyId.get(companyId) ?? []
   companyRounds.push(round)
   roundsByCompanyId.set(companyId, companyRounds)
+}
+
+type JsonCollection = keyof typeof DATA_FILES
+const jsonWriteQueues: Record<JsonCollection, Promise<void>> = {
+  companies: Promise.resolve(),
+  rounds: Promise.resolve(),
+}
+const IMMUTABLE_JSON_FIELDS = new Set(['_id', 'companyId', 'slug'])
+
+const coerceJsonCellValue = (records: DataRecord[], field: string, value: unknown) => {
+  if (value === null) return null
+  const sample = records.map((record) => record[field]).find((entry) => entry !== null && entry !== undefined)
+  if (sample instanceof FileObjectId) throw new Error('ObjectId fields cannot be edited.')
+  if (sample instanceof Date) {
+    if (typeof value !== 'string') throw new Error('Expected an ISO date value.')
+    const date = new Date(value)
+    if (Number.isNaN(date.getTime())) throw new Error('The date value is invalid.')
+    return date
+  }
+  if (typeof sample === 'number') {
+    const number = typeof value === 'number' ? value : Number(value)
+    if (!Number.isFinite(number)) throw new Error('Expected a finite number.')
+    return number
+  }
+  if (typeof sample === 'boolean') {
+    if (typeof value !== 'boolean') throw new Error('Expected true or false.')
+    return value
+  }
+  if (typeof sample === 'string') {
+    if (typeof value !== 'string') throw new Error('Expected text.')
+    return value
+  }
+  if (Array.isArray(sample)) {
+    if (!Array.isArray(value)) throw new Error('Expected a JSON array.')
+    return value
+  }
+  if (sample && typeof sample === 'object') {
+    if (!value || typeof value !== 'object' || Array.isArray(value)) throw new Error('Expected a JSON object.')
+    return value
+  }
+  if (['string', 'number', 'boolean'].includes(typeof value) || value === null || Array.isArray(value) || (value && typeof value === 'object')) return value
+  throw new Error('That value cannot be stored in the file.')
+}
+
+const saveJsonCell = async (collection: JsonCollection, recordId: string, field: string, value: unknown) => {
+  const records = collection === 'companies' ? companyRecords : roundRecords
+  const operation = jsonWriteQueues[collection].then(async () => {
+    if (!field || IMMUTABLE_JSON_FIELDS.has(field)) throw new Error('That identity field is read-only.')
+    if (!records.some((record) => Object.prototype.hasOwnProperty.call(record, field))) throw new Error('That file field does not exist.')
+    const record = records.find((candidate) => idString(candidate._id) === recordId)
+    if (!record) return undefined
+    const previousValue = record[field]
+    const nextValue = coerceJsonCellValue(records, field, value)
+    record[field] = nextValue
+    try {
+      await saveJsonRecords(DATA_FILES[collection], records)
+    } catch (error) {
+      record[field] = previousValue
+      throw error
+    }
+    return nextValue
+  })
+  jsonWriteQueues[collection] = operation.then(() => undefined, () => undefined)
+  return operation
 }
 
 const app = new Hono()
@@ -108,7 +201,8 @@ const SOFTWARE_COMPANY_FILES = {
   review: resolve(PROJECT_ROOT, 'assets/companies/software-companies-non-middle-east-review.csv'),
 } as const
 
-const SOFTWARE_COMPANY_FIT_COLUMN = 'fit'
+const SOFTWARE_COMPANY_FLAG_COLUMNS = ['fit', 'reviewed'] as const
+type SoftwareCompanyFlag = typeof SOFTWARE_COMPANY_FLAG_COLUMNS[number]
 const softwareCompanyRowKey = (row: Record<string, string | undefined>) => JSON.stringify([
   row.source ?? '',
   row.linkedin_company_url ?? '',
@@ -117,10 +211,17 @@ const softwareCompanyRowKey = (row: Record<string, string | undefined>) => JSON.
 ])
 
 const softwareCompanyColumns = (columns: string[]) => {
-  if (columns.includes(SOFTWARE_COMPANY_FIT_COLUMN)) return columns
   const next = [...columns]
-  const sourceIndex = next.indexOf('source')
-  next.splice(sourceIndex >= 0 ? sourceIndex + 1 : 0, 0, SOFTWARE_COMPANY_FIT_COLUMN)
+  let insertIndex = Math.max(0, next.indexOf('source') + 1)
+  SOFTWARE_COMPANY_FLAG_COLUMNS.forEach((column) => {
+    const currentIndex = next.indexOf(column)
+    if (currentIndex >= 0) {
+      insertIndex = currentIndex + 1
+      return
+    }
+    next.splice(insertIndex, 0, column)
+    insertIndex += 1
+  })
   return next
 }
 
@@ -154,7 +255,276 @@ const saveSoftwareCompanyCsv = async ({
 
 let softwareCompanyWriteQueue = Promise.resolve()
 
+const saveSoftwareCompanyFlag = async (rowKey: string, flag: SoftwareCompanyFlag, value: boolean) => {
+  const operation = softwareCompanyWriteQueue.then(async () => {
+    const curated = await loadSoftwareCompanyCsv()
+    const row = curated.rows.find((candidate) => softwareCompanyRowKey(candidate) === rowKey)
+    if (!row) return false
+    row[flag] = value ? 'true' : 'false'
+    await saveSoftwareCompanyCsv(curated)
+    return true
+  })
+  softwareCompanyWriteQueue = operation.then(() => undefined, () => undefined)
+  return operation
+}
+
+const saveSoftwareCompanyCell = async (rowKey: string, field: string, value: string) => {
+  const operation = softwareCompanyWriteQueue.then(async () => {
+    const curated = await loadSoftwareCompanyCsv()
+    if (!field || field === '__rowKey' || !curated.columns.includes(field)) throw new Error('That CSV column is read-only.')
+    if (field === 'source' && !['linkedin', 'kattch'].includes(value)) throw new Error('Source must be linkedin or kattch.')
+    const row = curated.rows.find((candidate) => softwareCompanyRowKey(candidate) === rowKey)
+    if (!row) return null
+    row[field] = value
+    const nextRowKey = softwareCompanyRowKey(row)
+    await saveSoftwareCompanyCsv(curated)
+    return { rowKey: nextRowKey, value }
+  })
+  softwareCompanyWriteQueue = operation.then(() => undefined, () => undefined)
+  return operation
+}
+
 const NEWSLETTER_RESEARCH_FILE = resolve(PROJECT_ROOT, 'assets/newsletter-research.csv')
+const NEWSLETTER_FIELD_COLUMNS = {
+  newsletter: 'Newsletter',
+  segment: 'Segment',
+  geography: 'Geography',
+  postFocus: 'Post Focus & Examples',
+  similarity: 'Similarity to Eign',
+  menaRelevance: 'MENA Relevance',
+  howEignCanUseIt: 'How Eign Can Use It',
+  whatEignCanLearn: 'What Eign Can Learn',
+  website: 'Website',
+  linkedin: 'LinkedIn',
+  linkedinFollowers: 'LinkedIn Followers',
+  linkedinEmployeeRange: 'LinkedIn Employee Range',
+  linkedinMetricsStatus: 'LinkedIn Metrics Status',
+  linkedinMetricsObservedAt: 'LinkedIn Metrics Observed At',
+} as const
+type NewsletterField = keyof typeof NEWSLETTER_FIELD_COLUMNS
+
+const loadNewsletterCsv = async () => {
+  const input = await readFile(NEWSLETTER_RESEARCH_FILE, 'utf8')
+  const rows = csvParse(input.replace(/^\uFEFF/, ''))
+  return {
+    bom: input.startsWith('\uFEFF'),
+    columns: rows.columns,
+    newline: input.includes('\r\n') ? '\r\n' : '\n',
+    rows,
+  }
+}
+
+const saveNewsletterCsv = async ({
+  bom,
+  columns,
+  newline,
+  rows,
+}: Awaited<ReturnType<typeof loadNewsletterCsv>>) => {
+  const tempPath = `${NEWSLETTER_RESEARCH_FILE}.${process.pid}.tmp`
+  const output = csvFormat(rows, columns).replace(/\n/g, newline)
+  try {
+    await writeFile(tempPath, `${bom ? '\uFEFF' : ''}${output}${newline}`, 'utf8')
+    await rename(tempPath, NEWSLETTER_RESEARCH_FILE)
+  } catch (error) {
+    await unlink(tempPath).catch(() => undefined)
+    throw error
+  }
+}
+
+let newsletterWriteQueue = Promise.resolve()
+
+const saveNewsletterCell = async (rowId: string, field: NewsletterField, value: string | number | null) => {
+  const operation = newsletterWriteQueue.then(async () => {
+    const newsletterCsv = await loadNewsletterCsv()
+    const rowIndex = Number(rowId)
+    const row = Number.isInteger(rowIndex) ? newsletterCsv.rows[rowIndex] : undefined
+    if (!row) return false
+    row[NEWSLETTER_FIELD_COLUMNS[field]] = value === null ? '' : String(value)
+    await saveNewsletterCsv(newsletterCsv)
+    return true
+  })
+  newsletterWriteQueue = operation.then(() => undefined, () => undefined)
+  return operation
+}
+
+type InfluencerRow = Influencer & {
+  __rowId: string
+  follower: LinkedInFollowerSnapshot
+}
+
+const influencerRecords = INFLUENCERS.map((influencer) => ({ ...influencer }))
+const influencerFollowerSnapshots = INFLUENCERS.map((influencer) => ({
+  ...(LINKEDIN_FOLLOWERS[influencer.linkedinUrl] ?? { count: null, observedAt: null, status: 'not-verified' as const }),
+}))
+let influencerWriteQueue = Promise.resolve()
+
+const influencerRow = (index: number): InfluencerRow => ({
+  ...influencerRecords[index],
+  __rowId: String(index),
+  follower: influencerFollowerSnapshots[index],
+})
+
+const findArrayObjectBounds = (source: string, marker: string, targetIndex: number) => {
+  const markerIndex = source.indexOf(marker)
+  const assignmentIndex = markerIndex >= 0 ? source.indexOf('= [', markerIndex + marker.length) : -1
+  const arrayStart = assignmentIndex >= 0 ? source.indexOf('[', assignmentIndex) : -1
+  if (arrayStart < 0) return null
+
+  let quote = ''
+  let escaped = false
+  let lineComment = false
+  let blockComment = false
+  let depth = 0
+  let objectStart = -1
+  let objectIndex = -1
+
+  for (let index = arrayStart + 1; index < source.length; index += 1) {
+    const character = source[index]
+    const next = source[index + 1]
+    if (lineComment) {
+      if (character === '\n') lineComment = false
+      continue
+    }
+    if (blockComment) {
+      if (character === '*' && next === '/') {
+        blockComment = false
+        index += 1
+      }
+      continue
+    }
+    if (quote) {
+      if (escaped) escaped = false
+      else if (character === '\\') escaped = true
+      else if (character === quote) quote = ''
+      continue
+    }
+    if (character === '/' && next === '/') {
+      lineComment = true
+      index += 1
+      continue
+    }
+    if (character === '/' && next === '*') {
+      blockComment = true
+      index += 1
+      continue
+    }
+    if (character === "'" || character === '"' || character === '`') {
+      quote = character
+      continue
+    }
+    if (character === '{') {
+      if (depth === 0) {
+        objectStart = index
+        objectIndex += 1
+      }
+      depth += 1
+      continue
+    }
+    if (character === '}') {
+      depth -= 1
+      if (depth === 0 && objectIndex === targetIndex) return { start: objectStart, end: index + 1 }
+      continue
+    }
+    if (character === ']' && depth === 0) break
+  }
+  return null
+}
+
+const formatInfluencerRecord = (record: Influencer) => [
+  '{',
+  `    name: ${JSON.stringify(record.name)},`,
+  `    country: ${JSON.stringify(record.country)},`,
+  `    lane: ${JSON.stringify(record.lane)},`,
+  `    organisation: ${JSON.stringify(record.organisation)},`,
+  `    linkedinUrl: ${JSON.stringify(record.linkedinUrl)},`,
+  `    priority: ${record.priority},`,
+  `    arabicOrBilingual: ${record.arabicOrBilingual},`,
+  '  }',
+].join('\n')
+
+const saveInfluencerRecord = async (index: number, record: Influencer) => {
+  const source = await readFile(INFLUENCER_FILES.directory, 'utf8')
+  const bounds = findArrayObjectBounds(source, 'export const INFLUENCERS', index)
+  if (!bounds) throw new Error('The influencer row could not be located in src/influencerData.ts.')
+  const tempPath = `${INFLUENCER_FILES.directory}.${process.pid}.tmp`
+  const output = `${source.slice(0, bounds.start)}${formatInfluencerRecord(record)}${source.slice(bounds.end)}`
+  try {
+    await writeFile(tempPath, output, 'utf8')
+    await rename(tempPath, INFLUENCER_FILES.directory)
+  } catch (error) {
+    await unlink(tempPath).catch(() => undefined)
+    throw error
+  }
+}
+
+const saveFollowerCount = async (index: number, count: number | null) => {
+  const source = await readFile(INFLUENCER_FILES.followers, 'utf8')
+  const markerIndex = source.indexOf('const FOLLOWER_COUNTS = [')
+  const arrayStart = markerIndex >= 0 ? source.indexOf('[', markerIndex) : -1
+  const arrayEnd = arrayStart >= 0 ? source.indexOf('] as const satisfies', arrayStart) : -1
+  if (arrayStart < 0 || arrayEnd < 0) throw new Error('The follower array could not be located in src/linkedinFollowerData.ts.')
+  const arraySource = source.slice(arrayStart + 1, arrayEnd)
+  const matches = [...arraySource.matchAll(/\b(?:null|\d+)\b/g)]
+  const match = matches[index]
+  if (!match || match.index === undefined) throw new Error('The follower row could not be located in src/linkedinFollowerData.ts.')
+  const valueStart = arrayStart + 1 + match.index
+  const valueEnd = valueStart + match[0].length
+  const today = new Date().toISOString().slice(0, 10)
+  const nextSource = `${source.slice(0, valueStart)}${count ?? 'null'}${source.slice(valueEnd)}`
+    .replace(/export const LINKEDIN_FOLLOWERS_UPDATED_AT = '[^']+' as const/, `export const LINKEDIN_FOLLOWERS_UPDATED_AT = '${today}' as const`)
+  const tempPath = `${INFLUENCER_FILES.followers}.${process.pid}.tmp`
+  try {
+    await writeFile(tempPath, nextSource, 'utf8')
+    await rename(tempPath, INFLUENCER_FILES.followers)
+  } catch (error) {
+    await unlink(tempPath).catch(() => undefined)
+    throw error
+  }
+}
+
+const INFLUENCER_COUNTRIES = new Set(INFLUENCERS.map((influencer) => influencer.country))
+const INFLUENCER_LANES = new Set(INFLUENCERS.map((influencer) => influencer.lane))
+
+const saveInfluencerCell = async (rowId: string, field: string, value: unknown) => {
+  const operation = influencerWriteQueue.then(async () => {
+    const index = Number(rowId)
+    const current = Number.isInteger(index) ? influencerRecords[index] : undefined
+    if (!current) return null
+
+    if (field === 'followers') {
+      const count = value === null || value === '' ? null : Number(value)
+      if (count !== null && (!Number.isInteger(count) || count < 0)) throw new Error('Followers must be a non-negative whole number.')
+      await saveFollowerCount(index, count)
+      influencerFollowerSnapshots[index] = count === null
+        ? { count: null, observedAt: null, status: 'not-verified' }
+        : { count, observedAt: new Date().toISOString().slice(0, 10), status: 'observed', precision: 'exact', source: 'linkedin-profile' }
+      return influencerRow(index)
+    }
+
+    const next = { ...current }
+    if (field === 'country') {
+      if (typeof value !== 'string' || !INFLUENCER_COUNTRIES.has(value as Influencer['country'])) throw new Error('Choose a supported market.')
+      next.country = value as Influencer['country']
+    } else if (field === 'lane') {
+      if (typeof value !== 'string' || !INFLUENCER_LANES.has(value as Influencer['lane'])) throw new Error('Choose a supported influence lane.')
+      next.lane = value as Influencer['lane']
+    } else if (field === 'priority' || field === 'arabicOrBilingual') {
+      if (typeof value !== 'boolean') throw new Error('Expected true or false.')
+      next[field] = value
+    } else if (['name', 'organisation', 'linkedinUrl'].includes(field)) {
+      if (typeof value !== 'string' || !value.trim()) throw new Error('This value cannot be empty.')
+      next[field as 'name' | 'organisation' | 'linkedinUrl'] = value.trim()
+    } else {
+      throw new Error('That influencer field is read-only.')
+    }
+
+    await saveInfluencerRecord(index, next)
+    influencerRecords[index] = next
+    return influencerRow(index)
+  })
+  influencerWriteQueue = operation.then(() => undefined, () => undefined)
+  return operation
+}
 
 const normaliseCompanyName = (value: string) => value.toLocaleLowerCase().replace(/[^a-z0-9]+/g, '')
 
@@ -361,12 +731,30 @@ app.get('/api/health', (context) => context.json({
   },
 }))
 
+app.patch('/api/records/:collection/:recordId', async (context) => {
+  const collection = context.req.param('collection')
+  if (collection !== 'companies' && collection !== 'rounds') return context.json({ error: 'Unknown file-backed collection.' }, 404)
+  const body = await context.req.json<{ field?: unknown; value?: unknown }>().catch(() => null)
+  if (!body || typeof body.field !== 'string' || !Object.prototype.hasOwnProperty.call(body, 'value')) {
+    return context.json({ error: 'Expected a field and value.' }, 400)
+  }
+
+  try {
+    const value = await saveJsonCell(collection, context.req.param('recordId'), body.field, body.value)
+    if (value === undefined) return context.json({ error: 'The source record no longer exists.' }, 404)
+    return context.json({ collection, field: body.field, recordId: context.req.param('recordId'), value })
+  } catch (error) {
+    return context.json({ error: error instanceof Error ? error.message : 'The value could not be saved.' }, 400)
+  }
+})
+
 app.get('/api/software-companies', async (context) => {
   const curated = await loadSoftwareCompanyCsv()
   const items = curated.rows.map((row) => ({
     ...row,
     __rowKey: softwareCompanyRowKey(row),
     fit: row.fit === 'false' ? '' : 'true',
+    reviewed: row.reviewed === 'true' ? 'true' : '',
     source: row.source === 'kattch' ? 'kattch' : 'linkedin',
   })) as Array<Record<string, string | undefined> & { source: 'linkedin' | 'kattch' }>
   const linkedinRows = items.filter((row) => row.source === 'linkedin')
@@ -401,29 +789,68 @@ app.patch('/api/software-companies/fit', async (context) => {
     return context.json({ error: 'Expected a company row key and boolean fit value.' }, 400)
   }
 
-  const operation = softwareCompanyWriteQueue.then(async () => {
-    const curated = await loadSoftwareCompanyCsv()
-    const row = curated.rows.find((candidate) => softwareCompanyRowKey(candidate) === body.rowKey)
-    if (!row) return false
-    row.fit = body.fit ? 'true' : 'false'
-    await saveSoftwareCompanyCsv(curated)
-    return true
-  })
-  softwareCompanyWriteQueue = operation.then(() => undefined, () => undefined)
-
-  if (!await operation) return context.json({ error: 'The company row no longer exists in the curated CSV.' }, 404)
+  if (!await saveSoftwareCompanyFlag(body.rowKey, 'fit', body.fit)) return context.json({ error: 'The company row no longer exists in the curated CSV.' }, 404)
   return context.json({ fit: body.fit, rowKey: body.rowKey })
 })
 
+app.patch('/api/software-companies/reviewed', async (context) => {
+  const body = await context.req.json<{ reviewed?: unknown; rowKey?: unknown }>().catch(() => null)
+  if (!body || typeof body.reviewed !== 'boolean' || typeof body.rowKey !== 'string') {
+    return context.json({ error: 'Expected a company row key and boolean reviewed value.' }, 400)
+  }
+
+  if (!await saveSoftwareCompanyFlag(body.rowKey, 'reviewed', body.reviewed)) return context.json({ error: 'The company row no longer exists in the curated CSV.' }, 404)
+  return context.json({ reviewed: body.reviewed, rowKey: body.rowKey })
+})
+
+app.patch('/api/software-companies/cell', async (context) => {
+  const body = await context.req.json<{ field?: unknown; rowKey?: unknown; value?: unknown }>().catch(() => null)
+  if (!body || typeof body.field !== 'string' || typeof body.rowKey !== 'string' || typeof body.value !== 'string') {
+    return context.json({ error: 'Expected a CSV row key, field, and text value.' }, 400)
+  }
+
+  try {
+    const saved = await saveSoftwareCompanyCell(body.rowKey, body.field, body.value)
+    if (!saved) return context.json({ error: 'The company row no longer exists in the curated CSV.' }, 404)
+    return context.json({ field: body.field, ...saved })
+  } catch (error) {
+    return context.json({ error: error instanceof Error ? error.message : 'The CSV cell could not be saved.' }, 400)
+  }
+})
+
+app.get('/api/influencers', (context) => context.json({
+  items: influencerRecords.map((_, index) => influencerRow(index)),
+  meta: {
+    source: 'src/influencerData.ts',
+    followerSource: 'src/linkedinFollowerData.ts',
+    verifiedAt: INFLUENCERS_VERIFIED_AT,
+    followersUpdatedAt: LINKEDIN_FOLLOWERS_UPDATED_AT,
+  },
+}))
+
+app.patch('/api/influencers/:rowId', async (context) => {
+  const body = await context.req.json<{ field?: unknown; value?: unknown }>().catch(() => null)
+  if (!body || typeof body.field !== 'string' || !Object.prototype.hasOwnProperty.call(body, 'value')) {
+    return context.json({ error: 'Expected an influencer field and value.' }, 400)
+  }
+  try {
+    const item = await saveInfluencerCell(context.req.param('rowId'), body.field, body.value)
+    if (!item) return context.json({ error: 'The influencer row no longer exists.' }, 404)
+    return context.json({ item })
+  } catch (error) {
+    return context.json({ error: error instanceof Error ? error.message : 'The influencer cell could not be saved.' }, 400)
+  }
+})
+
 app.get('/api/newsletters', async (context) => {
-  const csv = await readFile(NEWSLETTER_RESEARCH_FILE, 'utf8')
-  const rows = csvParse(csv.replace(/^\uFEFF/, ''))
-  const items = rows.flatMap((row) => {
+  const newsletterCsv = await loadNewsletterCsv()
+  const items = newsletterCsv.rows.flatMap((row, rowIndex) => {
     const newsletter = row.Newsletter?.trim()
     if (!newsletter) return []
 
     const similarity = Number(row['Similarity to Eign'])
     return [{
+      __rowId: String(rowIndex),
       newsletter,
       segment: row.Segment?.trim() ?? '',
       geography: row.Geography?.trim() ?? '',
@@ -455,6 +882,23 @@ app.get('/api/newsletters', async (context) => {
     },
     source: 'assets/newsletter-research.csv',
   })
+})
+
+app.patch('/api/newsletters/:rowId', async (context) => {
+  const body = await context.req.json<{ field?: unknown; value?: unknown }>().catch(() => null)
+  if (!body || typeof body.field !== 'string' || !Object.prototype.hasOwnProperty.call(body, 'value')) {
+    return context.json({ error: 'Expected a newsletter field and value.' }, 400)
+  }
+  if (!(body.field in NEWSLETTER_FIELD_COLUMNS)) return context.json({ error: 'That newsletter field is read-only.' }, 400)
+  if (body.field === 'similarity' && body.value !== null && (typeof body.value !== 'number' || !Number.isFinite(body.value))) {
+    return context.json({ error: 'Similarity must be a number or blank.' }, 400)
+  }
+  if (body.field !== 'similarity' && typeof body.value !== 'string') return context.json({ error: 'Expected text.' }, 400)
+
+  if (!await saveNewsletterCell(context.req.param('rowId'), body.field as NewsletterField, body.value as string | number | null)) {
+    return context.json({ error: 'The newsletter row no longer exists.' }, 404)
+  }
+  return context.json({ field: body.field, rowId: context.req.param('rowId'), value: body.value })
 })
 
 const groupCompanyData = (field: string, outputField: string) => {
@@ -505,7 +949,10 @@ app.get('/api/dashboard', (context) => {
     .sort((left, right) => right.rounds - left.rounds || left.stage.localeCompare(right.stage))
   const topCompanies = sortRecords(companyRecords, [['totalFundingUsd', -1], ['name', 1]])
     .slice(0, 8)
-    .map((company) => pick(company, ['name', 'slug', 'logoUrl', 'industry', 'batch', 'totalFundingUsd']))
+    .map((company) => ({
+      __recordId: idString(company._id),
+      ...pick(company, ['name', 'slug', 'logoUrl', 'industry', 'batch', 'totalFundingUsd']),
+    }))
   const recentRounds = sortRecords(
     roundRecords.filter((round) => round.announcementDate instanceof Date),
     [['announcementDate', -1]],
@@ -514,6 +961,8 @@ app.get('/api/dashboard', (context) => {
     .map((round) => {
       const company = companyById.get(idString(round.companyId))
       return {
+        __recordId: idString(round._id),
+        companyRecordId: company ? idString(company._id) : null,
         companySlug: round.companySlug,
         companyName: company?.name ?? round.companySlug,
         logoUrl: company?.logoUrl,
@@ -668,6 +1117,7 @@ app.get('/api/companies', (context) => {
     ])
     const latestRound = companyRounds[0]
     return {
+      __recordId: idString(company._id),
       ...pick(company, [
         'name',
         'slug',
@@ -704,10 +1154,13 @@ app.get('/api/companies/:slug', (context) => {
   const companyRounds = sortRecords(roundsByCompanyId.get(idString(company._id)) ?? [], [
     ['announcementDate', -1],
     ['amountUsd', -1],
-  ]).map((round) => omit(round, ['_id', 'companyId', 'notionId', 'createdAt', 'updatedAt']))
+  ]).map((round) => ({
+    __recordId: idString(round._id),
+    ...omit(round, ['_id', 'companyId', 'notionId', 'createdAt', 'updatedAt']),
+  }))
 
   return context.json({
-    company: omit(company, ['_id', 'notionId']),
+    company: { __recordId: idString(company._id), ...omit(company, ['_id', 'notionId']) },
     rounds: companyRounds,
   })
 })
@@ -755,6 +1208,7 @@ app.post('/api/research/companies/query', async (context) => {
   const sortDirection = body.sortDirection === 'desc' ? -1 : 1
   const items = sortRecords(matched, [[sortField, sortDirection], ['_id', 1]])
     .slice((page - 1) * limit, page * limit)
+    .map((record) => ({ ...record, __recordId: idString(record._id) }))
 
   return context.json({
     items,
