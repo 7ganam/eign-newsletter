@@ -18,6 +18,9 @@ const isValidLinks = window.location.pathname === '/valid-links'
 const isPosts = window.location.pathname === '/posts'
 const isInProgress = window.location.pathname === '/in-progress'
 const isInfluencers2 = window.location.pathname === '/influncers-2'
+const isLeapData = window.location.pathname === '/leap-data'
+const isMiddleEastOrganizations = window.location.pathname === '/middle-east-organizations'
+const isUnifiedPeople = window.location.pathname === '/people'
 const Visualisations = lazy(async () => {
   const module = await import('./Visualisations')
   return { default: module.Visualisations }
@@ -50,10 +53,34 @@ const Influencers2 = lazy(async () => {
   const module = await import('./Influencers2')
   return { default: module.Influencers2 }
 })
+const LeapData = lazy(async () => {
+  const module = await import('./LeapData')
+  return { default: module.LeapData }
+})
+const MiddleEastOrganizations = lazy(async () => {
+  const module = await import('./MiddleEastOrganizations')
+  return { default: module.MiddleEastOrganizations }
+})
+const UnifiedPeople = lazy(async () => {
+  const module = await import('./UnifiedPeople')
+  return { default: module.UnifiedPeople }
+})
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    {isResearchLedger ? <ResearchLedger /> : isInfluencers2 ? (
+    {isResearchLedger ? <ResearchLedger /> : isUnifiedPeople ? (
+      <Suspense fallback={<main className="loading-view" aria-label="Loading unified people"><div className="loading-mark">EI</div></main>}>
+        <UnifiedPeople />
+      </Suspense>
+    ) : isMiddleEastOrganizations ? (
+      <Suspense fallback={<main className="loading-view" aria-label="Loading Middle East organizations"><div className="loading-mark">EI</div></main>}>
+        <MiddleEastOrganizations />
+      </Suspense>
+    ) : isLeapData ? (
+      <Suspense fallback={<main className="loading-view" aria-label="Loading LEAP speaker data"><div className="loading-mark">EI</div></main>}>
+        <LeapData />
+      </Suspense>
+    ) : isInfluencers2 ? (
       <Suspense fallback={<main className="loading-view" aria-label="Loading influncers 2"><div className="loading-mark">EI</div></main>}>
         <Influencers2 />
       </Suspense>

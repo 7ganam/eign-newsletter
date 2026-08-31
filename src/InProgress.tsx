@@ -26,13 +26,23 @@ export function InProgress() {
       <main className="in-progress-main">
         <header className="posts-heading">
           <div><h1>In progress</h1><p>Active research, analysis, and editorial work.</p></div>
-          <span>2 items</span>
+          <span>4 items</span>
         </header>
 
         <section className="in-progress-list" aria-label="In-progress items">
           <a className="in-progress-item" href="/influncers-2">
             <span className="in-progress-item__status" aria-hidden="true" />
-            <strong>influncers 2</strong>
+            <strong>RiseUp Data</strong>
+            <span className="in-progress-item__action">Open <b aria-hidden="true">→</b></span>
+          </a>
+          <a className="in-progress-item" href="/middle-east-organizations">
+            <span className="in-progress-item__status" aria-hidden="true" />
+            <strong>Middle East Organizations</strong>
+            <span className="in-progress-item__action">Open <b aria-hidden="true">→</b></span>
+          </a>
+          <a className="in-progress-item" href="/leap-data">
+            <span className="in-progress-item__status" aria-hidden="true" />
+            <strong>Leap Data</strong>
             <span className="in-progress-item__action">Open <b aria-hidden="true">→</b></span>
           </a>
           <a className="in-progress-item" href="/valid-links">

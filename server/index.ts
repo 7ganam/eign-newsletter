@@ -14,11 +14,14 @@ import {
 } from '../src/linkedinFollowerData'
 
 const API_PORT = Number(process.env.API_PORT ?? 18321)
-const PROJECT_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
+const PROJECT_ROOT = process.env.VERCEL
+  ? process.cwd()
+  : resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const DATA_FILES = {
   companies: resolve(PROJECT_ROOT, 'eign_index.companies.json'),
   rounds: resolve(PROJECT_ROOT, 'eign_index.rounds.json'),
 } as const
+const TABLE_PREFERENCES_FILE = resolve(PROJECT_ROOT, 'assets/table-preferences.json')
 const INFLUENCER_FILES = {
   directory: resolve(PROJECT_ROOT, 'src/influencerData.ts'),
   followers: resolve(PROJECT_ROOT, 'src/linkedinFollowerData.ts'),
@@ -75,10 +78,110 @@ const saveJsonRecords = async (path: string, records: DataRecord[]) => {
   }
 }
 
+const RISEUP_SPEAKER_COLUMNS = [
+  'speaker',
+  'linkedin',
+  'role',
+  'organisation',
+  'profile',
+  'specialty',
+  'biography',
+  'sessions',
+  'source',
+  'record',
+] as const
+type RiseUpSpeakerColumn = typeof RISEUP_SPEAKER_COLUMNS[number]
+type SortDirection = 'asc' | 'desc'
+type TablePreference = {
+  columnOrder: RiseUpSpeakerColumn[]
+  sort: { direction: SortDirection; field: RiseUpSpeakerColumn }
+  updatedAt: string | null
+}
+type TablePreferenceStore = Record<string, TablePreference>
+
+const DEFAULT_RISEUP_SPEAKER_PREFERENCE: TablePreference = {
+  columnOrder: [...RISEUP_SPEAKER_COLUMNS],
+  sort: { direction: 'asc', field: 'speaker' },
+  updatedAt: null,
+}
+
+const isRiseUpSpeakerColumn = (value: unknown): value is RiseUpSpeakerColumn =>
+  typeof value === 'string' && RISEUP_SPEAKER_COLUMNS.includes(value as RiseUpSpeakerColumn)
+
+const normaliseRiseUpSpeakerPreference = (value: unknown): TablePreference => {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return DEFAULT_RISEUP_SPEAKER_PREFERENCE
+  const record = value as Record<string, unknown>
+  const requestedOrder = Array.isArray(record.columnOrder) ? record.columnOrder : []
+  const seen = new Set<RiseUpSpeakerColumn>()
+  const columnOrder = requestedOrder.flatMap((column) => {
+    if (!isRiseUpSpeakerColumn(column) || seen.has(column)) return []
+    seen.add(column)
+    return [column]
+  })
+  columnOrder.push(...RISEUP_SPEAKER_COLUMNS.filter((column) => !seen.has(column)))
+
+  const requestedSort = record.sort && typeof record.sort === 'object' && !Array.isArray(record.sort)
+    ? record.sort as Record<string, unknown>
+    : {}
+  const field = isRiseUpSpeakerColumn(requestedSort.field)
+    ? requestedSort.field
+    : DEFAULT_RISEUP_SPEAKER_PREFERENCE.sort.field
+  const direction = requestedSort.direction === 'asc' || requestedSort.direction === 'desc'
+    ? requestedSort.direction
+    : DEFAULT_RISEUP_SPEAKER_PREFERENCE.sort.direction
+
+  return {
+    columnOrder,
+    sort: { direction, field },
+    updatedAt: typeof record.updatedAt === 'string' ? record.updatedAt : null,
+  }
+}
+
+const loadTablePreferences = async (): Promise<TablePreferenceStore> => {
+  try {
+    const parsed: unknown = JSON.parse(await readFile(TABLE_PREFERENCES_FILE, 'utf8'))
+    if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) return {}
+    return Object.fromEntries(
+      Object.entries(parsed as Record<string, unknown>)
+        .map(([key, value]) => [key, normaliseRiseUpSpeakerPreference(value)]),
+    )
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code === 'ENOENT') return {}
+    throw error
+  }
+}
+
+let tablePreferenceWriteQueue = Promise.resolve()
+const saveTablePreference = async (tableId: string, preference: TablePreference) => {
+  const operation = tablePreferenceWriteQueue.then(async () => {
+    const store = await loadTablePreferences()
+    store[tableId] = preference
+    const tempPath = `${TABLE_PREFERENCES_FILE}.${process.pid}.tmp`
+    try {
+      await writeFile(tempPath, `${JSON.stringify(store, null, 2)}\n`, 'utf8')
+      await rename(tempPath, TABLE_PREFERENCES_FILE)
+    } catch (error) {
+      await unlink(tempPath).catch(() => undefined)
+      throw error
+    }
+  })
+  tablePreferenceWriteQueue = operation.catch(() => undefined)
+  await operation
+}
+
 const [companyRecords, roundRecords] = await Promise.all([
   loadJsonRecords(DATA_FILES.companies),
   loadJsonRecords(DATA_FILES.rounds),
-])
+]).catch((error) => {
+  console.error('Failed to load index data', {
+    cwd: process.cwd(),
+    vercel: Boolean(process.env.VERCEL),
+    companies: DATA_FILES.companies,
+    rounds: DATA_FILES.rounds,
+    error,
+  })
+  throw error
+})
 
 const idString = (value: unknown) => value instanceof FileObjectId ? value.value : String(value ?? '')
 const companyById = new Map(companyRecords.map((company) => [idString(company._id), company]))
@@ -154,7 +257,7 @@ const saveJsonCell = async (collection: JsonCollection, recordId: string, field:
   return operation
 }
 
-const app = new Hono()
+export const app = new Hono()
 const escapeRegex = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 const hasOwn = (record: DataRecord, field: string) => Object.prototype.hasOwnProperty.call(record, field)
 const asNumber = (value: unknown) => typeof value === 'number' && Number.isFinite(value) ? value : 0
@@ -899,6 +1002,48 @@ app.get('/api/valid-links', async (context) => {
   }
 })
 
+app.get('/api/table-preferences/:tableId', async (context) => {
+  const tableId = context.req.param('tableId')
+  if (tableId !== 'riseup-speakers') return context.json({ error: 'Unknown table preference ID.' }, 404)
+  try {
+    const store = await loadTablePreferences()
+    return context.json({ tableId, ...(store[tableId] ?? DEFAULT_RISEUP_SPEAKER_PREFERENCE) })
+  } catch (error) {
+    return context.json({ error: error instanceof Error ? error.message : 'Unable to load table preferences.' }, 500)
+  }
+})
+
+app.put('/api/table-preferences/:tableId', async (context) => {
+  const tableId = context.req.param('tableId')
+  if (tableId !== 'riseup-speakers') return context.json({ error: 'Unknown table preference ID.' }, 404)
+  const body = await context.req.json<{ columnOrder?: unknown; sort?: unknown }>().catch(() => null)
+  if (!body || !Array.isArray(body.columnOrder) || body.columnOrder.length !== RISEUP_SPEAKER_COLUMNS.length) {
+    return context.json({ error: 'Expected every RiseUp speaker column exactly once.' }, 400)
+  }
+  if (!body.columnOrder.every(isRiseUpSpeakerColumn) || new Set(body.columnOrder).size !== RISEUP_SPEAKER_COLUMNS.length) {
+    return context.json({ error: 'The RiseUp speaker column order is invalid.' }, 400)
+  }
+  if (!body.sort || typeof body.sort !== 'object' || Array.isArray(body.sort)) {
+    return context.json({ error: 'Expected a RiseUp speaker sort field and direction.' }, 400)
+  }
+  const sort = body.sort as Record<string, unknown>
+  if (!isRiseUpSpeakerColumn(sort.field) || (sort.direction !== 'asc' && sort.direction !== 'desc')) {
+    return context.json({ error: 'The RiseUp speaker sort field or direction is invalid.' }, 400)
+  }
+
+  const preference: TablePreference = {
+    columnOrder: body.columnOrder as RiseUpSpeakerColumn[],
+    sort: { field: sort.field, direction: sort.direction },
+    updatedAt: new Date().toISOString(),
+  }
+  try {
+    await saveTablePreference(tableId, preference)
+    return context.json({ tableId, ...preference })
+  } catch (error) {
+    return context.json({ error: error instanceof Error ? error.message : 'Unable to save table preferences.' }, 500)
+  }
+})
+
 app.get('/api/newsletters', async (context) => {
   const newsletterCsv = await loadNewsletterCsv()
   const items = newsletterCsv.rows.flatMap((row, rowIndex) => {
@@ -1285,24 +1430,26 @@ app.onError((error, context) => {
   return context.json({ error: 'The local file data service could not complete this request.' }, 500)
 })
 
-if (process.env.NODE_ENV === 'production') {
-  app.use('/*', serveStatic({ root: './dist' }))
-  app.get('*', serveStatic({ path: './dist/index.html' }))
+if (!process.env.VERCEL) {
+  if (process.env.NODE_ENV === 'production') {
+    app.use('/*', serveStatic({ root: './dist' }))
+    app.get('*', serveStatic({ path: './dist/index.html' }))
+  }
+
+  const server = serve({
+    fetch: app.fetch,
+    hostname: '127.0.0.1',
+    port: API_PORT,
+  })
+
+  console.log(`EIGN file data server listening at http://127.0.0.1:${API_PORT}`)
+  console.log(`Loaded ${companyRecords.length.toLocaleString()} companies and ${roundRecords.length.toLocaleString()} rounds from JSON files`)
+
+  const shutdown = () => {
+    server.close()
+    process.exit(0)
+  }
+
+  process.on('SIGINT', shutdown)
+  process.on('SIGTERM', shutdown)
 }
-
-const server = serve({
-  fetch: app.fetch,
-  hostname: '127.0.0.1',
-  port: API_PORT,
-})
-
-console.log(`EIGN file data server listening at http://127.0.0.1:${API_PORT}`)
-console.log(`Loaded ${companyRecords.length.toLocaleString()} companies and ${roundRecords.length.toLocaleString()} rounds from JSON files`)
-
-const shutdown = () => {
-  server.close()
-  process.exit(0)
-}
-
-process.on('SIGINT', shutdown)
-process.on('SIGTERM', shutdown)
