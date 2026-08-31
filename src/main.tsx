@@ -20,6 +20,7 @@ const isInProgress = window.location.pathname === '/in-progress'
 const isInfluencers2 = window.location.pathname === '/influncers-2'
 const isLeapData = window.location.pathname === '/leap-data'
 const isMiddleEastOrganizations = window.location.pathname === '/middle-east-organizations'
+const isUnifiedPeople = window.location.pathname === '/people'
 const Visualisations = lazy(async () => {
   const module = await import('./Visualisations')
   return { default: module.Visualisations }
@@ -60,10 +61,18 @@ const MiddleEastOrganizations = lazy(async () => {
   const module = await import('./MiddleEastOrganizations')
   return { default: module.MiddleEastOrganizations }
 })
+const UnifiedPeople = lazy(async () => {
+  const module = await import('./UnifiedPeople')
+  return { default: module.UnifiedPeople }
+})
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    {isResearchLedger ? <ResearchLedger /> : isMiddleEastOrganizations ? (
+    {isResearchLedger ? <ResearchLedger /> : isUnifiedPeople ? (
+      <Suspense fallback={<main className="loading-view" aria-label="Loading unified people"><div className="loading-mark">EI</div></main>}>
+        <UnifiedPeople />
+      </Suspense>
+    ) : isMiddleEastOrganizations ? (
       <Suspense fallback={<main className="loading-view" aria-label="Loading Middle East organizations"><div className="loading-mark">EI</div></main>}>
         <MiddleEastOrganizations />
       </Suspense>

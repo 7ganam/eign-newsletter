@@ -8,6 +8,7 @@
     "dev:web": "vite",
     "build": "tsc --noEmit && vite build",
     "build:riseup-entities": "tsx scripts/build-riseup-entities.ts",
+    "build:unified-people": "tsx scripts/build-unified-people.ts",
     "categorize:yc-crunchbase-audit": "tsx scripts/categorize-yc-crunchbase-audit.ts",
     "analyze:yc-crunchbase-risky": "tsx scripts/analyze-risky-link-error-sample.ts",
     "sample:yc-crunchbase-risky": "tsx scripts/create-risky-link-audit-sample.ts",
