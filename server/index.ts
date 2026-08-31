@@ -172,7 +172,16 @@ const saveTablePreference = async (tableId: string, preference: TablePreference)
 const [companyRecords, roundRecords] = await Promise.all([
   loadJsonRecords(DATA_FILES.companies),
   loadJsonRecords(DATA_FILES.rounds),
-])
+]).catch((error) => {
+  console.error('Failed to load index data', {
+    cwd: process.cwd(),
+    vercel: Boolean(process.env.VERCEL),
+    companies: DATA_FILES.companies,
+    rounds: DATA_FILES.rounds,
+    error,
+  })
+  throw error
+})
 
 const idString = (value: unknown) => value instanceof FileObjectId ? value.value : String(value ?? '')
 const companyById = new Map(companyRecords.map((company) => [idString(company._id), company]))
