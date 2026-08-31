@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:40:45.140Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:40:45.083Z",
+    "url": "https://www.crunchbase.com/organization/boitas-com"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "boitas.com",
+      "shortDescription": "First B2B vertical integrated marketplace for the Food Service Industry.",
+      "description": "Boitas is a startup that is quickly disrupting the $100 Billion industry of wholesale grocery and foodservice distribution in Latam. By offering offices, hospitals, restaurants, schools, and SMBs owners all their daily supplies in one place with a simple mobile/web experience with broad selection of items, transparent pricing, real-time availability, simple ordering, and on-time deliveries 6 days a week",
+      "website": "https://www.boitas.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Monterrey, Nuevo Leon, Mexico",
+      "geographicRegions": [
+        "Latin America"
+      ],
+      "industries": [
+        "E-Commerce",
+        "Food Delivery",
+        "Grocery",
+        "Marketplace",
+        "Supply Chain Management"
+      ],
+      "sectors": [
+        "Commerce and Shopping",
+        "Food and Beverage",
+        "Transportation"
+      ],
+      "founders": [
+        "Argenis Leon",
+        "Marcelo Galván de la Garza",
+        "Raul Maldonado"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2021-03-22",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2021-03-22",
+          "investorCount": 6,
+          "postMoneyValuation": {
+            "amount": 10000000,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 6,
+        "visibleNames": [
+          {
+            "name": "AngelHub VC",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "RaliCap",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "The Ark Fund",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "Toy Ventures",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "Wollef Ventures",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2021-03-22",
+          "title": "Pre Seed Round - boitas.com"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -9,
+      "heatScore": 37
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Choco is a food ordering platform that connects restaurants and suppliers.",
+          "employeeRange": "251-500",
+          "name": "Choco",
+          "sharedCategories": [
+            "Supply Chain Management"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "BlueCart is a web and mobile platform built to modernize the eCommerce and wholesale procurement process for buyers and sellers.",
+          "employeeRange": "51-100",
+          "name": "BlueCart",
+          "sharedCategories": [
+            "Marketplace"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "International B2B Marketplace and Social network dedicated to companies of the Food, Beverages, Commodities, Ingredients Industry",
+          "employeeRange": "1-10",
+          "name": "uFoodin",
+          "sharedCategories": [
+            "Marketplace"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "FoodMaven is a B2B marketplace that helps restaurants and food service compare products and find deals on their ingredients.",
+          "employeeRange": "1-10",
+          "name": "FoodMaven",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Ordermark is a technology platform enabling restaurants to aggregate orders across online ordering services into a single dashboard.",
+          "employeeRange": "101-250",
+          "name": "Ordermark",
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $10,000,000 to $10,000,000, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Choco, BlueCart, uFoodin.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

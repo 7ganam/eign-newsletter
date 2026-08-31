@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:06:33.273Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:06:33.215Z",
+    "url": "https://www.crunchbase.com/organization/cero-2749"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "CERO",
+      "shortDescription": "CERO is a dental radiology clinic offering diagnostic services, courses, and lectures in the field of dentistry.",
+      "description": "CERO - Centro Especializado em Radiologia Odontológica is a specialized dental radiology clinic. It provides a range of services in the field of dentistry, including intraoral radiographs, dental radiographs, cone beam tomography, intraoral scanning, and 3D printing. In addition to diagnostic services, CERO also offers courses and lectures, contributing to the professional development of dental practitioners. It operates multiple units, ensuring accessibility and convenience for its clients.",
+      "website": "https://www.cero.com.br/",
+      "foundedYear": 1998,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "51-100",
+      "estimatedRevenueRange": "$10M-$50M",
+      "headquarters": "Goiânia, Goias, Brazil",
+      "geographicRegions": [
+        "Latin America"
+      ],
+      "industries": [
+        "Dental",
+        "Health Care",
+        "Medical"
+      ],
+      "sectors": [
+        "Health Care"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Provides imaging and diagnostic services for dental health assessment and treatment planning.",
+        "name": "Dental Radiology Diagnostic Services"
+      },
+      {
+        "description": "Offers educational courses and lectures focused on dental radiology and related dental topics.",
+        "name": "Dental Courses and Lectures"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2024-10-21",
+          "publisher": "Globe Newswire",
+          "title": "CERo Therapeutics, Inc. Provides Corporate Update",
+          "url": "https://www.globenewswire.com/en/news-release/2024/10/21/2966235/0/en/CERo-Therapeutics-Inc-Provides-Corporate-Update.html"
+        },
+        {
+          "date": "2024-09-25",
+          "publisher": "Globe Newswire",
+          "title": "CERo Therapeutics, Inc. Announces Financing and Provides Update on Investigational New Drug Application for CER-1236",
+          "url": "https://www.globenewswire.com/en/news-release/2024/09/25/2953057/0/en/CERo-Therapeutics-Inc-Announces-Financing-and-Provides-Update-on-Investigational-New-Drug-Application-for-CER-1236.html"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -32,
+      "heatScore": 27
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 88.15
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Odonto-Scan is a dental radiology clinic offering various types of scans and an online tool for exam results.",
+          "employeeRange": "11-50",
+          "name": "Odonto Scan",
+          "sharedSpecialties": [
+            "X-Ray Services",
+            "Dental Imaging",
+            "Cone Beam CT (CBCT)",
+            "Medical Imaging Software",
+            "Digital Dentistry",
+            "Diagnostic Imaging"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Odonto Imagem provides dental radiology and documentation services.",
+          "employeeRange": "11-50",
+          "name": "Odonto Imagem",
+          "sharedCategories": [
+            "Health Care",
+            "Dental"
+          ],
+          "sharedSpecialties": [
+            "X-Ray Services",
+            "Dental Imaging",
+            "Cone Beam CT (CBCT)",
+            "Medical Imaging Software",
+            "Digital Dentistry",
+            "Diagnostic Imaging"
+          ],
+          "similarityScore": 95.095
+        },
+        {
+          "description": "UEDA Europa S.A. ofrece tecnología avanzada en diagnóstico e imagen dental con más de 40 años de innovación y excelencia.",
+          "employeeRange": "11-50",
+          "name": "UEDA",
+          "sharedSpecialties": [
+            "Dental Education and Conferences",
+            "X-Ray Services",
+            "Dental Imaging",
+            "Cone Beam CT (CBCT)",
+            "Medical Imaging Software",
+            "Digital Dentistry"
+          ],
+          "similarityScore": 88.785
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Odonto Scan, Odonto Imagem, UEDA.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

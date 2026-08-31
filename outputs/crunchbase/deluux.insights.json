@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:51:10.057Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:51:10.002Z",
+    "url": "https://www.crunchbase.com/organization/deluux"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Deluux",
+      "shortDescription": "Deluux aims to relocate the center of people’s online identities to their personal websites instead of a single social network.",
+      "description": "Deluux aims to become distributed Facebook, or inverted Ning, by relocating the center of people's online identities to their websites, which exist outside of any one social network. The service will facilitate the distribution of personalized content around the web and help drive traffic to websites. It has yet to launch.",
+      "website": "http://deluux.com/",
+      "foundedYear": 2008,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Atlanta, Georgia, United States",
+      "geographicRegions": [
+        "Greater Atlanta Area",
+        "East Coast",
+        "Southern US"
+      ],
+      "industries": [
+        "Content",
+        "Facebook",
+        "Social Network"
+      ],
+      "sectors": [
+        "Internet Services",
+        "Media and Entertainment",
+        "Platforms"
+      ],
+      "founders": [
+        "Paul Mckellar",
+        "Philipp Pfeiffenberger"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2008-01-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2008-01-01",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2008-03-14",
+          "publisher": "TechCrunch",
+          "title": "Y Combinator Demo Day Roundup for Spring 2008",
+          "url": "http://www.techcrunch.com/2008/03/14/y-combinator-demo-day-roundup-for-spring-2008/"
+        },
+        {
+          "date": "2008-01-01",
+          "title": "Seed Round - Deluux"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -16,
+      "heatScore": 39
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "About.me is an online platform enabling users to create and maintain a curated page for self-expression.",
+          "employeeRange": "11-50",
+          "name": "PumpkinHead Inc.",
+          "similarityScore": 97
+        },
+        {
+          "description": "Carrd is a one-page site that allows publishing custom domains, forms, Google analytics tracking ID, websites and widgets.",
+          "employeeRange": "11-50",
+          "name": "Carrd",
+          "similarityScore": 95
+        },
+        {
+          "description": "Strikingly is an online platform empowering individuals & businesses to build mobile-optimized websites and stores.",
+          "employeeRange": "101-250",
+          "name": "Strikingly",
+          "similarityScore": 93
+        },
+        {
+          "description": "Wix provides a platform for the development of cloud data services for millions of registered users worldwide.",
+          "employeeRange": "5,001-10,000",
+          "name": "Wix",
+          "similarityScore": 91
+        },
+        {
+          "description": "Squarespace is a website building and hosting platform that helps users create websites without needing advanced technical skills.",
+          "employeeRange": "1,001-5,000",
+          "name": "Squarespace",
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include PumpkinHead Inc., Carrd, Strikingly.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:35:26.880Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:35:26.827Z",
+    "url": "https://www.crunchbase.com/organization/gooseworks"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Gooseworks",
+      "shortDescription": "Gooseworks provides AI coworkers and tooling that automate go-to-market, advertising, and marketing workflows for business teams.",
+      "description": "Gooseworks develops AI coworkers and supporting tools focused on go-to-market, sales, and marketing workflows. The core Goose product functions as a digital coworker with its own filesystem, mailbox, memories, and accounts, accessible via Slack, email, messaging apps, and a web interface. It is used to manage ad campaigns, generate creatives, monitor competitors, run SEO pipelines, and handle outbound and reporting tasks. Gooseworks also offers a CLI that equips AI agents such as Claude with more than one hundred predefined skills and data APIs for prospecting, research, and content production. In addition, the company operates Goose Ads, a creative service that uses AI and human review to produce short-form video ad variants for brands. These offerings target founders, growth teams, and marketing organizations seeking to systematize and scale their digital GTM operations using AI-driven infrastructure.",
+      "website": "https://gooseworks.ai/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Advertising",
+        "Artificial Intelligence (AI)",
+        "Content Marketing",
+        "Digital Marketing",
+        "Machine Learning",
+        "Marketing",
+        "Productivity Tools",
+        "Sales Automation",
+        "Software"
+      ],
+      "sectors": [
+        "Advertising",
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Sales and Marketing",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Goose is an AI coworker that manages GTM, advertising, and marketing workflows through chat and integrations.",
+        "name": "Goose"
+      },
+      {
+        "description": "Gooseworks CLI is a command-line and API toolkit that adds growth and GTM skills and data APIs to AI agents.",
+        "name": "Gooseworks CLI"
+      },
+      {
+        "description": "Goose Ads is a creative service that produces AI-assisted short-form video ad variants for brands.",
+        "name": "Goose Ads"
+      },
+      {
+        "description": "Goose-AEO Library is an open-source resource to optimize brands for AI-driven and conversational search discovery.",
+        "name": "Goose-AEO Library"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatScore": 80
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 67.59
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

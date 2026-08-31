@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:49:29.444Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:49:29.388Z",
+    "url": "https://www.crunchbase.com/organization/deep24"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Deep24",
+      "shortDescription": "Deep24 provides an AI coach that connects to personal data sources to generate plans for life improvement.",
+      "description": "Deep24 provides an AI coach that connects to a wide range of personal data sources to understand user habits, goals, and behavior. The platform analyzes information from these sources to build a holistic profile of each user. Based on this understanding, Deep24 generates structured plans and recommendations aimed at improving different aspects of a user’s life, such as wellness, productivity, and learning. The service is designed for individuals seeking ongoing guidance rather than one-time advice. Deep24 uses artificial intelligence to adapt its coaching as new data becomes available and user circumstances change.",
+      "website": "https://deep24.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Health Care",
+        "Personal Development",
+        "Personal Health",
+        "Productivity Tools",
+        "Software",
+        "Wellness"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Education",
+        "Health Care",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An AI-powered personal coach that connects to user data sources to create personalized life improvement plans.",
+        "name": "Deep24 AI Coach"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 12,
+      "growthScore": 88,
+      "heatScore": 73
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.23
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

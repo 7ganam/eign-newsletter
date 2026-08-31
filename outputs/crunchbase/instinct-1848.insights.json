@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:16:35.362Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:16:35.304Z",
+    "url": "https://www.crunchbase.com/organization/instinct-1848"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Instinct",
+      "shortDescription": "Instinct Space is an aerospace company developing a lunar navigation satellite system.",
+      "website": "https://www.instinct-space.com/",
+      "foundedYear": 2024,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "GPS",
+        "Satellite Communication",
+        "Space Travel"
+      ],
+      "sectors": [
+        "Hardware",
+        "Navigation and Mapping",
+        "Transportation"
+      ],
+      "founders": [
+        "Alex Pinel Neparidze",
+        "Ashwin Ramjee Iyer",
+        "Joaquim Dickson",
+        "Joe Papworth"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2025-03-12",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2025-03-12",
+          "investorCount": 2,
+          "postMoneyValuation": {
+            "amount": 13839408,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "Rebel Fund",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2025-03-12",
+          "title": "Seed Round - Instinct"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 1,
+      "growthScore": 16,
+      "heatChange90Days": 14,
+      "heatScore": 84
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 29.61
+      },
+      "funding": {
+        "generatedDate": "2026-06-20",
+        "probabilityPercent": 75.56,
+        "timingEstimatePercent": {
+          "within6Months": 99.78,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0.22
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 79.2
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 4.54
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $13,839,408 to $13,839,408, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 16 (+1 over 90 days) and market heat at 84 (+14).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

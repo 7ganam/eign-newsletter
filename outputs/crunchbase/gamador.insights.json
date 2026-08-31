@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:22:43.483Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:22:43.435Z",
+    "url": "https://www.crunchbase.com/organization/gamador"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Gamador",
+      "shortDescription": "Gamador develops social games and offers an analytics platform.",
+      "description": "Gamador is a social game developer that has released three games so far. The company says that it differentiates itself from other developers by releasing quick, smart games at a very rapid pace (they can develop a game in about a week. \n\nThe company has built its own analytics platform for social games called Rankador, which they liken to a ‘PageRank for social games’.",
+      "website": "http://www.gamador.com/",
+      "foundedYear": 2010,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Analytics",
+        "Gaming",
+        "Serious Games"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Gaming"
+      ],
+      "founders": [
+        "Kevin Lacker"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2010-02-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2010-02-01",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 4,
+      "includedUniqueCount": 4,
+      "items": [
+        {
+          "date": "2011-08-08",
+          "publisher": "Gigaom",
+          "title": "How Parse wants to make mobile backends easy",
+          "url": "https://gigaom.com/2011/08/08/parse/"
+        },
+        {
+          "date": "2011-02-10",
+          "publisher": "Venture Beat",
+          "title": "Y Combinator presents 26 new startups",
+          "url": "http://venturebeat.com/2010/03/23/y-combinator/"
+        },
+        {
+          "date": "2010-03-25",
+          "publisher": "TechCrunch",
+          "title": "Startups And Top Investors Unite At Y Combinator's Tenth Demo Day | TechCrunch",
+          "url": "http://techcrunch.com/2010/03/23/y-combinator-demo-day/"
+        },
+        {
+          "date": "2010-02-01",
+          "title": "Seed Round - Gamador"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -22,
+      "heatScore": 54
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "GameAnalytics is the world’s most popular analytics tools for games, used by developers, games studios and publishers around the world.",
+          "employeeRange": "11-50",
+          "name": "GameAnalytics",
+          "sharedCategories": [
+            "Analytics"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Firebase is Google's mobile platform that develops apps that grow users base on iOS, Android, or the Web.",
+          "employeeRange": "251-500",
+          "name": "Firebase",
+          "similarityScore": 95
+        },
+        {
+          "description": "Amplitude is a product intelligence platform that provides digital product tools that help teams run and grow their businesses.",
+          "employeeRange": "1,001-5,000",
+          "name": "Amplitude",
+          "sharedCategories": [
+            "Analytics"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Mixpanel turns data into decisions with analytics that simplify insights, guide decisions, and measure product and marketing impact.",
+          "employeeRange": "251-500",
+          "name": "Mixpanel",
+          "sharedCategories": [
+            "Analytics"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "AppsFlyer helps businesses track, analyze, and optimize digital marketing activities across apps and websites.",
+          "employeeRange": "1,001-5,000",
+          "name": "AppsFlyer",
+          "sharedCategories": [
+            "Analytics"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include GameAnalytics, Firebase, Amplitude.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

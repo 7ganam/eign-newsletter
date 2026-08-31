@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:32:50.457Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:32:50.392Z",
+    "url": "https://www.crunchbase.com/organization/billow"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Billow",
+      "shortDescription": "Billow is a business development firm that specializes in cloud-based software, workflow optimization, and application security.",
+      "website": "https://www.gobillow.com/",
+      "foundedYear": 2008,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "New York, United States",
+      "geographicRegions": [
+        "Greater New York Area",
+        "East Coast",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Information Technology",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Software"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 12,
+      "heatScore": 72
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 70.53
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

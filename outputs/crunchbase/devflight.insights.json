@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:54:48.697Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:54:48.638Z",
+    "url": "https://www.crunchbase.com/organization/devflight"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "DevFlight",
+      "shortDescription": "DevFlight is the business model for open-source software.",
+      "description": "DevFlight wants to revamp the business model for open-source software. They’re building a marketplace to pair open-sourced developer with companies. DevFlight works with the company and developers to create a plan that helps both parties understand the scope of the project. DevFlight takes a 25 percent transaction on the deals.",
+      "website": "https://devflight.com/",
+      "foundedYear": 2018,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Mountain View, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Marketplace",
+        "Software"
+      ],
+      "sectors": [
+        "Commerce and Shopping",
+        "Software"
+      ],
+      "founders": [
+        "Anthony Mastrorio",
+        "Victor Bordo"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Allows IT and security teams to automate difficult and repeated tasks, reducing the need for continuous monitoring and manual intervention.",
+        "name": "Security Automation Engine"
+      },
+      {
+        "description": "Enables the creation of automated sequences of actions and integrations in response to detected security risks.",
+        "name": "Playbook"
+      },
+      {
+        "description": "Integrates with existing API-driven security products to build comprehensive security flows.",
+        "name": "Configure"
+      },
+      {
+        "description": "Uses existing monitoring services like Splunk or AWS CloudWatch to trigger automations and react automatically to security events.",
+        "name": "Event Driven"
+      },
+      {
+        "description": "Provides transparent, secure, community-driven tools, allowing users to understand the components of their security tools.",
+        "name": "Open Source"
+      },
+      {
+        "description": "Allows DevFlight to be run in various environments such as AWS, GCP, Azure, or on-premises, with a setup time of less than an hour.",
+        "name": "On-Premise Solution"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 150000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2019-03-18",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2019-03-18",
+          "amount": {
+            "amount": 150000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 2845732,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2019-03-18",
+          "title": "Pre Seed Round - DevFlight"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 150000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 0,
+      "growthScore": 28,
+      "heatChange90Days": -9,
+      "heatScore": 29
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 25.18
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 8.38,
+        "timingEstimatePercent": {
+          "within6Months": 15.16,
+          "months6To11": 12.86,
+          "months12To24": 20.17,
+          "beyond24Months": 24.97
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 70.12
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 13.29
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $150,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $2,845,732 to $2,845,732, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 28 (+0 over 90 days) and market heat at 29 (-9).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:34:27.710Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:34:27.654Z",
+    "url": "https://www.crunchbase.com/organization/journey"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Journey",
+      "shortDescription": "Connecting people via their favorite places and experiences",
+      "website": "http://experiencejourney.com/",
+      "foundedYear": 2014,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Tourism",
+        "Travel"
+      ],
+      "sectors": [
+        "Travel and Tourism"
+      ],
+      "founders": [
+        "Alex Grappo",
+        "Gus Kenworthy",
+        "Shih-Chieh Tao"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 25000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2014-02-06",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2014-02-06",
+          "amount": {
+            "amount": 25000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Telluride Venture Accelerator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 6,
+      "includedUniqueCount": 6,
+      "items": [
+        {
+          "date": "2020-05-13",
+          "publisher": "Multi Channel News - Tech",
+          "title": "New Season of HGTV's Hit Series 'Good Bones' Spotlights Dramatic Home Renovations and Follows Mina Starsiak Hawk's IVF Journey",
+          "url": "https://www.multichannel.com/pr-feed/new-season-of-hgtvs-hit-series-good-bones-spotlights-dramatic-home-renovations-and-follows-mina-starsiak-hawks-ivf-journey"
+        },
+        {
+          "date": "2020-03-23",
+          "publisher": "PRWeb",
+          "title": "Author Raynor Woods' \"Artificial Horizon\" is a First-Class Journey in Suspense",
+          "url": "https://www.prweb.com/releases/author_raynor_woods_artificial_horizon_is_a_first_class_journey_in_suspense/prweb16963470.htm"
+        },
+        {
+          "date": "2020-03-09",
+          "publisher": "PRWeb",
+          "title": "New Book \"An Arduous Journey\" from author L. Gregory Smith Follows A German Family to America in 1833",
+          "url": "https://www.prweb.com/releases/new_book_an_arduous_journey_from_author_l_gregory_smith_follows_a_german_family_to_america_in_1833/prweb16931389.htm"
+        },
+        {
+          "date": "2019-04-08",
+          "publisher": "Vanguard",
+          "title": "The untold story of Xolane Ndhlovu’s arrest and his journey to restitution",
+          "url": "https://www.vanguardngr.com/2019/04/the-untold-story-of-xolane-ndhlovus-arrest-and-his-journey-to-restitution/"
+        },
+        {
+          "date": "2019-03-27",
+          "publisher": "AdWeek",
+          "title": "Dreamer Recreates His Journey to America, and Completes the Athenaeum Portrait in the Process",
+          "url": "https://www.adweek.com/agencies/dreamer-recreates-his-journey-to-america-and-completes-the-athenaeum-portrait-in-the-process/"
+        },
+        {
+          "date": "2014-02-06",
+          "title": "Seed Round - Journey"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 25000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 0,
+      "heatScore": 3
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $25,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

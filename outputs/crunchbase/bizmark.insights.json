@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:36:01.090Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:36:01.048Z",
+    "url": "https://www.crunchbase.com/organization/bizmark"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "BizMark",
+      "shortDescription": "BizMark is a boutique capital advisory firm for legal and financial needs of the business.",
+      "description": "BizMark is a business intermediary firm that provides exempt market dealers and underwriting services in the middle-market private capital space. It is comprised of professionals with substantial financial, legal and operational experience. They work in unison to proactively implement a strategy that maximizes growth potential and value creation through the development of a proficient capital structure and operational efficiency.",
+      "website": "https://bizmark.ca/",
+      "foundedYear": 2017,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Calgary, Alberta, Canada",
+      "industries": [
+        "Consulting",
+        "Legal",
+        "Venture Capital"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Lending and Investments",
+        "Professional Services"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2022-01-03",
+          "publisher": "PR Newswire",
+          "title": "BizMark named a Top B2B Demand Gen Agency in 2022 by Chief Marketer",
+          "url": "https://www.prnewswire.com/news-releases/bizmark-named-a-top-b2b-demand-gen-agency-in-2022-by-chief-marketer-301452517.html"
+        },
+        {
+          "date": "2020-06-29",
+          "publisher": "PRNewswire",
+          "title": "BizMark named Small Agency of the Year (Bronze)",
+          "url": "https://www.prnewswire.com/news-releases/bizmark-named-small-agency-of-the-year-bronze-301085255.html"
+        },
+        {
+          "date": "2013-04-01",
+          "title": "Pre Seed Round - Boxella"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 12,
+      "growthScore": 26,
+      "heatChange90Days": -9,
+      "heatScore": 33
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 26 (+12 over 90 days) and market heat at 33 (-9).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

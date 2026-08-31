@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:13:28.321Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:13:28.267Z",
+    "url": "https://www.crunchbase.com/organization/mage-legal"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Mage Legal",
+      "shortDescription": "Mage Legal provides AI-powered legal diligence and contract review software for transactional attorneys.",
+      "description": "Mage Legal provides AI-powered legal diligence and contract review software focused on transactional work. The platform connects to virtual data rooms, classifies documents, and extracts structured terms across hundreds of contracts. It flags issues against predefined risk checks, supports gap analysis and document request tracking, and generates firm-branded diligence memos. Mage Legal offers tools for disclosure schedule preparation, closing checklists, and variance detection across agreement sets. It also includes contract redline comparison, questionnaire generation, and multi-language document analysis to support M&A, financing, and capital markets matters.",
+      "website": "https://magelegal.com/",
+      "foundedYear": 2024,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Compliance",
+        "Document Management",
+        "Enterprise Software",
+        "Legal Tech",
+        "Natural Language Processing",
+        "Productivity Tools",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Professional Services",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Raffi Isanians"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An AI platform that automates legal diligence, contract review, and deal workflow management for transactional teams.",
+        "name": "Mage Legal platform"
+      },
+      {
+        "description": "A disclosure schedule automation tool that drafts and verifies schedules from merger agreements and data room records.",
+        "name": "Mage Disclosure Schedules"
+      },
+      {
+        "description": "A tool that generates firm-branded diligence memoranda summarizing issues, risks, and recommendations.",
+        "name": "Mage Memo"
+      },
+      {
+        "description": "A grid-based review tool that presents structured clause extraction and risk flags across large contract sets.",
+        "name": "Mage Tabular"
+      },
+      {
+        "description": "An AI contract comparison tool that analyzes redlines and categorizes changes between contract versions.",
+        "name": "Mage Redline"
+      },
+      {
+        "description": "A diligence questionnaire tool that generates, tracks, and follows up on due diligence questions.",
+        "name": "Mage Questionnaire"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2024-01-01",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2024-01-01",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 6600027,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2024-01-01",
+          "title": "Pre Seed Round - Mage Legal"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 84,
+      "heatScore": 84
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 79.31
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 55.78,
+        "timingEstimatePercent": {
+          "within6Months": 10.29,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 89.71
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 61.01
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 4.02
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $6,600,027 to $6,600,027, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

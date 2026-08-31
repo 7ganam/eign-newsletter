@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:45:14.356Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:45:14.300Z",
+    "url": "https://www.crunchbase.com/organization/healia"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Healia",
+      "shortDescription": "Healia is a Health vertical search engine",
+      "description": "Healia is a Health vertical search engine",
+      "website": "http://www.healia.com/",
+      "foundedYear": 2005,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1,001-5,000",
+      "headquarters": "Bellevue, Washington, United States",
+      "geographicRegions": [
+        "Greater Seattle Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Health Care"
+      ],
+      "sectors": [
+        "Health Care"
+      ],
+      "founders": [
+        "Tom Eng"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 6,
+      "includedUniqueCount": 6,
+      "items": [
+        {
+          "date": "2026-07-31",
+          "publisher": "Pulse 2.0",
+          "title": "Healia Launches With $18 Million To Reduce Healthcare Costs For Dual-Income Families",
+          "url": "https://pulse2.com/healia-launches-with-18-million-to-reduce-healthcare-costs-for-dual-income-families/"
+        },
+        {
+          "date": "2008-02-10",
+          "publisher": "ZD Net",
+          "title": "66% of Americans used search engines for health information | ZDNet",
+          "url": "http://www.zdnet.com/article/66-of-americans-used-search-engines-for-health-information/"
+        },
+        {
+          "date": "2007-06-19",
+          "publisher": "Gigaom",
+          "title": "Health Information Social Net DailyStrength Closes First Round Financing",
+          "url": "https://gigaom.com/2007/06/19/419-health-information-social-net-dailystrength-closes-first-round-financin/"
+        },
+        {
+          "date": "2007-06-18",
+          "title": "Healia acquired by Meredith"
+        },
+        {
+          "date": "2007-06-18",
+          "publisher": "Gigaom",
+          "title": "Meredith Acquires Health Search Engine Healia",
+          "url": "https://gigaom.com/2007/06/18/419-meredith-acquires-health-search-engine-healia/"
+        },
+        {
+          "date": "2007-06-18",
+          "publisher": "Venture Beat",
+          "title": "Meredith acquires health-info search engine Healia | VentureBeat | News | by David P. Hamilton",
+          "url": "http://venturebeat.com/2007/06/18/meredith-acquires-health-info-search-engine-healia/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 28,
+      "heatScore": 80
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "WebMD is a healthcare center that offers mental health, pain management, and breast cancer services.",
+          "employeeRange": "1,001-5,000",
+          "name": "WebMD",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Healthline Media is the 2nd largest and fastest growing consumer health publisher in the world, reaching 85 million people a month.",
+          "employeeRange": "101-250",
+          "name": "Healthline Media",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "NewsOK is an online news portal that offers local and world news, advertisement publishing, healthcare advice, and related services.",
+          "employeeRange": "11-50",
+          "name": "Medical News Today",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Cleveland Clinic is a non-profit medical center that combines clinical and hospital care with research and education.",
+          "employeeRange": "10,001+",
+          "name": "Cleveland Clinic",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "MayoClinic is a nonprofit medical practice and medical research group focused on integrated health care, education, and research.",
+          "employeeRange": "10,001+",
+          "name": "Mayo Clinic",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "similarityScore": 83
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include WebMD, Healthline Media, Medical News Today.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

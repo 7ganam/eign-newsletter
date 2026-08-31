@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:55:38.095Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:55:38.034Z",
+    "url": "https://www.crunchbase.com/organization/diana"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Diana",
+      "shortDescription": "Diana is free app that recommends nearby restaurants.",
+      "description": "Diana is a free mobile app that recommends restaurants according to the user’s tastes.",
+      "website": "http://www.dianaapp.com/",
+      "foundedYear": 2013,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Valencia, Comunidad Valenciana, Spain",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Apps",
+        "Mobile",
+        "Restaurants"
+      ],
+      "sectors": [
+        "Apps",
+        "Food and Beverage",
+        "Mobile",
+        "Software"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2013-10-04",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2013-10-04",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 812063,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Plug and Play Spain",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2013-10-04",
+          "title": "Seed Round - Diana"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -1,
+      "growthScore": 85,
+      "heatChange90Days": -16,
+      "heatScore": 60
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 2.02,
+        "timingEstimatePercent": {
+          "within6Months": 13.87,
+          "months6To11": 11.94,
+          "months12To24": 19.15,
+          "beyond24Months": 24.75
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 93.52
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Yelp is an online platform that connects people with great local businesses through user-generated reviews and recommendations.",
+          "employeeRange": "1-10",
+          "name": "Yelp",
+          "sharedCategories": [
+            "Apps",
+            "Mobile"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Tripadvisor is an online travel platform offering travel information reviews, bookings, and restaurants, experiences, airlines, and cruises.",
+          "employeeRange": "1,001-5,000",
+          "name": "Tripadvisor",
+          "sharedCategories": [
+            "Restaurants"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Google specializes in internet-related services and products, including search, advertising, and software.",
+          "employeeRange": "10,001+",
+          "name": "Google",
+          "similarityScore": 92
+        },
+        {
+          "description": "The Infatuation is a website, app, newsletter, and recommendation platform that helps users find restaurants for every situation.",
+          "employeeRange": "101-250",
+          "name": "The Infatuation",
+          "sharedCategories": [
+            "Restaurants",
+            "Apps",
+            "Mobile"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "OpenTable operates as an online restaurant booking service that enables guests to discover and book tables.",
+          "employeeRange": "1,001-5,000",
+          "name": "OpenTable",
+          "sharedCategories": [
+            "Restaurants"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $812,063 to $812,063, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 85 (-1 over 90 days) and market heat at 60 (-16).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Yelp, Tripadvisor, Google.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

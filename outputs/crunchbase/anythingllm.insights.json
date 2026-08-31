@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T09:51:11.073Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T09:51:11.022Z",
+    "url": "https://www.crunchbase.com/organization/anythingllm"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "AnythingLLM",
+      "shortDescription": "AnythingLLM develops an on-device AI workspace for building private chatbots, RAG pipelines, and multi-user AI tools across desktop, mobile,",
+      "description": "AnythingLLM develops an on-device AI application that enables users and teams to run large language models locally and connect them to their own data. The platform lets organizations build customizable, business-compliant chatbots and retrieval-augmented generation pipelines without additional infrastructure or complex setup. Users can ingest documents such as PDFs, emails, codebases, and web pages into local vector stores and query them through a graphical interface or API. AnythingLLM integrates with local model managers and commercial LLM APIs, supports text and multimodal models, and provides tools for agents, authenticated web scraping, and meeting note capture. It offers desktop, mobile, hosted, and self-hosted deployments with features like multi-user workspaces, tenant isolation, admin controls, and white-labeling for enterprise environments. The ecosystem includes plugins, agent skills, system prompts, and slash commands that extend the product into existing workflows and applications.",
+      "website": "https://anythingllm.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Desktop Apps",
+        "Enterprise Software",
+        "Machine Learning",
+        "Mobile",
+        "Natural Language Processing",
+        "Software"
+      ],
+      "sectors": [
+        "Apps",
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Mobile",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "AnythingLLM Desktop is a local AI workspace for running LLMs, ingesting documents, and building private RAG and agent workflows without code.",
+        "name": "AnythingLLM Desktop"
+      },
+      {
+        "description": "AnythingLLM Mobile is an on-device AI app that runs local and hybrid inference for private assistants and synced tasks across personal devices.",
+        "name": "AnythingLLM Mobile"
+      },
+      {
+        "description": "AnythingLLM Hosted and Self-Hosted provides multi-user AI workspaces with team access, isolation, admin controls, and white-labeled deployment.",
+        "name": "AnythingLLM Hosted and Self-Hosted"
+      },
+      {
+        "description": "AnythingLLM Community Hub is a catalog where users create, share, and install plugins, agent skills, prompts, and slash commands for the platform.",
+        "name": "AnythingLLM Community Hub"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 12,
+      "growthScore": 90,
+      "heatChange90Days": 86,
+      "heatScore": 86
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 93.82
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 90 (+12 over 90 days) and market heat at 86 (+86).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

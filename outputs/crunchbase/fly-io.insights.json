@@ -1,0 +1,481 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:11:58.313Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:11:58.254Z",
+    "url": "https://www.crunchbase.com/organization/fly-io"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Fly.io",
+      "shortDescription": "Fly.io provides a cloud platform for deploying, running, and scaling applications, databases, and AI workloads globally.",
+      "description": "Fly.io provides a cloud platform for deploying, running, and scaling applications, databases, and AI workloads. The platform supports containerized applications, virtual machines, managed PostgreSQL databases, object storage, private networking, and GPU-enabled workloads, enabling developers to run services across distributed infrastructure.",
+      "website": "https://fly.io/",
+      "foundedYear": 2016,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "51-100",
+      "headquarters": "Chicago, Illinois, United States",
+      "geographicRegions": [
+        "Greater Chicago Area",
+        "Great Lakes",
+        "Midwestern US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Cloud Computing",
+        "Developer Platform",
+        "PaaS",
+        "Software",
+        "Web Hosting"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Internet Services",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Jerome Gravel-Niquet",
+        "Kurt Mackey",
+        "Michael Dwan"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Hardware-virtualized containers with a REST API that run any Docker image on a global cloud across 35 regions, scalable from single HTTP requests to long uptime.",
+        "name": "Fly Machines"
+      },
+      {
+        "description": "Dynamic request routing that directs each user or robot to their own dedicated sandbox using Fly Proxy and fly-replay.",
+        "name": "User-Specific Routing"
+      },
+      {
+        "description": "Dedicated storage solutions for users or robots including Fly Volumes, Fly Managed Postgres, and S3-compatible Tigris Data.",
+        "name": "Persistent Storage"
+      },
+      {
+        "description": "Remote Model Context Protocol servers built on Fly Machines to integrate sandboxes into large language model workflows.",
+        "name": "MCP Servers"
+      },
+      {
+        "description": "Paid support services offering access to engineers who use the platform, including emergency support and guaranteed response times.",
+        "name": "Developer Support Packages"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 135500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 6,
+      "detailedRoundCount": 6,
+      "lastFundingDate": "2026-07-24",
+      "lastFundingType": "Series D",
+      "rounds": [
+        {
+          "announcedDate": "2026-07-24",
+          "amount": {
+            "amount": 25000000,
+            "currency": "USD"
+          },
+          "investorCount": 6,
+          "leadInvestors": [
+            "Dell Technologies Capital",
+            "Intel Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 521969149,
+            "currency": "USD"
+          },
+          "type": "Series D"
+        },
+        {
+          "announcedDate": "2023-06-27",
+          "amount": {
+            "amount": 70000000,
+            "currency": "USD"
+          },
+          "investorCount": 5,
+          "leadInvestors": [
+            "EQT Ventures"
+          ],
+          "postMoneyValuation": {
+            "amount": 467000000,
+            "currency": "USD"
+          },
+          "type": "Series C"
+        },
+        {
+          "announcedDate": "2022-07-28",
+          "amount": {
+            "amount": 25000000,
+            "currency": "USD"
+          },
+          "investorCount": 6,
+          "leadInvestors": [
+            "Andreessen Horowitz"
+          ],
+          "postMoneyValuation": {
+            "amount": 163153234,
+            "currency": "USD"
+          },
+          "type": "Series B"
+        },
+        {
+          "announcedDate": "2021-08-01",
+          "amount": {
+            "amount": 12000000,
+            "currency": "USD"
+          },
+          "investorCount": 4,
+          "leadInvestors": [
+            "Intel Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 56396421,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2020-04-10",
+          "amount": {
+            "amount": 3500000,
+            "currency": "USD"
+          },
+          "investorCount": 9,
+          "postMoneyValuation": {
+            "amount": 13758148,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2017-01-06",
+          "investorCount": 3,
+          "postMoneyValuation": {
+            "amount": 4636047,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 17,
+        "visibleNames": [
+          {
+            "name": "Andreessen Horowitz",
+            "rounds": [
+              "Series D",
+              "Series C"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Dell Technologies Capital",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "EQT Ventures",
+            "rounds": [
+              "Series D",
+              "Series C"
+            ]
+          },
+          {
+            "name": "Geodesic Capital",
+            "rounds": [
+              "Series D",
+              "Series C"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Intel Capital",
+            "rounds": [
+              "Series D",
+              "Series C"
+            ]
+          },
+          {
+            "name": "Liquid 2 Ventures"
+          },
+          {
+            "name": "SV Angel"
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Series D"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 40,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-08-04",
+          "publisher": "SuperbCrew",
+          "title": "Fly.io Raises $25 Million In Series D Funding Round",
+          "url": "https://www.superbcrew.com/fly-io-raises-25-million-in-series-d-funding-round/"
+        },
+        {
+          "date": "2026-08-03",
+          "publisher": "FinSMEs",
+          "title": "Fly.io Raises $25M in Series D Funding",
+          "url": "https://www.finsmes.com/2026/08/fly-io-raises-25m-in-series-d-funding.html"
+        },
+        {
+          "date": "2026-07-28",
+          "publisher": "ifastdata.com",
+          "title": "美国专用云基础设施提供商Fly.io获得2500万美元D轮融资",
+          "url": "https://www.ifastdata.com/2026/07/29/%e7%be%8e%e5%9b%bd%e4%b8%93%e7%94%a8%e4%ba%91%e5%9f%ba%e7%a1%80%e8%ae%be%e6%96%bd%e6%8f%90%e4%be%9b%e5%95%86fly-io%e8%8e%b7%e5%be%972500%e4%b8%87%e7%be%8e%e5%85%83d%e8%bd%ae%e8%9e%8d%e8%b5%84/"
+        },
+        {
+          "date": "2026-07-27",
+          "publisher": "The SaaS News",
+          "title": "Fly.io Raises $25M Series D",
+          "url": "https://www.thesaasnews.com/news/fly-io-raises-25m-series-d/"
+        },
+        {
+          "date": "2026-07-24",
+          "publisher": "TradingView",
+          "title": "Fly.io Announces $25 Mln Series D Funding Co-Led By Dell, Intel",
+          "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN43Q1E7:0-fly-io-announces-25-mln-series-d-funding-co-led-by-dell-intel/"
+        },
+        {
+          "date": "2026-07-24",
+          "title": "Series D - Fly.io"
+        },
+        {
+          "date": "2026-06-05",
+          "publisher": "TechCabal",
+          "title": "Quick Fire 🔥 with Somtochi Onyekwere",
+          "url": "https://techcabal.com/2026/06/05/quick-fire-somtochi-onyekwere/"
+        },
+        {
+          "date": "2025-08-23",
+          "publisher": "Daring Fireball",
+          "title": "Phoenix.new",
+          "url": "https://daringfireball.net/linked/2025/08/23/phoenix-new"
+        },
+        {
+          "date": "2025-07-15",
+          "publisher": "The New Stack",
+          "title": "Web Dev Kent Dodds on Remix and His Frontend Secret Weapon",
+          "url": "https://thenewstack.io/web-dev-kent-dodds-on-remix-and-his-frontend-secret-weapon/"
+        },
+        {
+          "date": "2025-07-06",
+          "publisher": "Daring Fireball",
+          "title": "Phoenix.new",
+          "url": "https://daringfireball.net/linked/2025/07/06/phoenix"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 5,
+    "knownDetailedFundingAmount": {
+      "amount": 135500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 18.45,
+    "latestToEarliestKnownValuationMultiple": 112.59
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2026-07-26",
+      "growthChange90Days": 2,
+      "growthScore": 71,
+      "heatChange90Days": 16,
+      "heatScore": 83,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 66.61
+      },
+      "funding": {
+        "generatedDate": "2026-08-13",
+        "probabilityPercent": 19.52,
+        "timingEstimatePercent": {
+          "within6Months": 6.68,
+          "months6To11": 0.02,
+          "months12To24": 0,
+          "beyond24Months": 93.31
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-06-22",
+        "probabilityPercent": 4.32
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 4.74
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "H2O.ai is a machine learning platform that builds smart applications.",
+          "employeeRange": "251-500",
+          "name": "H2O.ai",
+          "sharedCategories": [
+            "Software",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "LLMOps"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Kong Inc. is the AI connectivity company building the layer AI needs to reach its full potential with AI governance from day one.",
+          "employeeRange": "1,001-5,000",
+          "name": "Kong",
+          "sharedCategories": [
+            "Cloud Computing",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Container and Kubernetes Platform Services"
+          ],
+          "similarityScore": 94.074
+        },
+        {
+          "description": "Render provides a unified cloud for developers and teams to host all their applications, databases, and websites.",
+          "employeeRange": "101-250",
+          "name": "Render",
+          "sharedCategories": [
+            "PaaS",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Application Runtime Platforms",
+            "Cloud Hosting",
+            "Database Platform Services",
+            "Container and Kubernetes Platform Services"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "Placiq provides a web-based platform for planning, organizing, and managing tasks and workflows through a centralized interface.",
+          "employeeRange": "1-10",
+          "name": "PlaciQ",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Vercel is a developer platform that provides cloud infrastructure services for the web.",
+          "employeeRange": "1,001-5,000",
+          "name": "Vercel",
+          "sharedCategories": [
+            "Software",
+            "Developer Platform",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Content Delivery Network (CDN) Services",
+            "Application Runtime Platforms",
+            "Cloud Hosting",
+            "Edge Computing",
+            "LLMOps"
+          ],
+          "similarityScore": 88
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Series D round raised $25,000,000, or 18.45% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $4,636,047 to $521,969,149, a 112.59x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 71 (+2 over 90 days) and market heat at 83 (+16).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include H2O.ai, Kong, Render.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 40 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:01:10.375Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:01:10.316Z",
+    "url": "https://www.crunchbase.com/organization/double-3870"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Double",
+      "shortDescription": "Double provides an AI career agent that manages job searches, applications, networking, and professional profiles.",
+      "description": "Double provides an AI career agent for managing job searches and professional outreach. The service identifies roles based on a user’s background, tailors resumes and cover letters, and supports application workflows. It also maps potential referral paths, drafts networking messages, manages online profiles, schedules posts, and tracks applications and conversations. Double offers free and paid subscription plans with different usage limits and automation features.",
+      "website": "https://www.trydouble.ai/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Boston, Massachusetts, United States",
+      "geographicRegions": [
+        "Greater Boston Area",
+        "East Coast",
+        "New England",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Career Planning",
+        "Employment",
+        "Generative AI",
+        "Personal Branding",
+        "Professional Networking",
+        "Recruiting",
+        "SaaS",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Community and Lifestyle",
+        "Data and Analytics",
+        "Professional Services",
+        "Sales and Marketing",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Double AI Career Agent helps job seekers find roles, prepare applications, manage outreach, and track their job searches.",
+        "name": "Double AI Career Agent"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 86,
+      "heatScore": 87
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 5
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 77.65
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

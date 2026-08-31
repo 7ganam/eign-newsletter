@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:47:07.789Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:47:07.733Z",
+    "url": "https://www.crunchbase.com/organization/datoric"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Datoric",
+      "shortDescription": "Datoric provides licensed, ethically sourced multimodal datasets and benchmarks for training and evaluating AI models.",
+      "description": "Datoric provides licensed, ethically sourced multimodal datasets and research benchmarks for training and evaluating AI models. The company focuses on voice, video, and computer and browser use data collected from consented contributors, with fair compensation and verifiable provenance for every sample. Its datasets support frontier AI systems that need defensible training data across speech recognition, multimodal understanding, and tool-using agents. Datoric also publishes evaluation suites such as VideoTruth-Bench, VidWork-Bench, GlobalVoice-Bench, and VoicePro-Bench to measure model behavior across safety, fairness, and procedural understanding. Customers include enterprise model teams, research labs, and machine learning operations groups that require compliant, auditable data inputs for multimodal AI development. Through its platform, Datoric emphasizes clean licensing, transparent sourcing, and end-to-end infrastructure for annotation and training data management.",
+      "website": "https://www.datoric.com/",
+      "foundedYear": 2025,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Analytics",
+        "Artificial Intelligence (AI)",
+        "Compliance",
+        "Data Collection and Labeling",
+        "Data Management",
+        "Machine Learning",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Professional Services",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Nikhil Reddy"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Licensed, ethically sourced voice, video, and interaction datasets for training and evaluating multimodal AI models.",
+        "name": "Datoric Multimodal Datasets"
+      },
+      {
+        "description": "Voice datasets from consented native speakers and experts for multilingual ASR, reasoning, and evaluation.",
+        "name": "Voice Data"
+      },
+      {
+        "description": "Procedural and expert workflow video datasets with synchronized audio and text for vision-language models.",
+        "name": "Video Data"
+      },
+      {
+        "description": "Expert GUI interaction traces across browsers and desktops for training tool-using AI agents.",
+        "name": "Computer & Browser Use Data"
+      },
+      {
+        "description": "On-policy voice preference pairs for aligning speech-capable AI models via RLHF-style training.",
+        "name": "RLHF-Voice"
+      },
+      {
+        "description": "Expert reasoning trace dataset capturing step-by-step decisions in medical, legal, and financial workflows.",
+        "name": "ExpertTrace"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 59,
+      "growthScore": 60,
+      "heatScore": 89
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 5
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 67.82
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

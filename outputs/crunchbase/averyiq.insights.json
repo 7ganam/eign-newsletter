@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:18:38.497Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:18:38.442Z",
+    "url": "https://www.crunchbase.com/organization/averyiq"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "AveryIQ",
+      "shortDescription": "AveryIQ provides an AI-native property management platform and leasing copilot for landlords and property managers.",
+      "description": "AveryIQ provides an AI-native property management platform and leasing copilot for landlords, property managers, and residential multifamily operators. The company offers an integrated system that manages leasing workflows, tenant communications, and daily operations in one place. Its platform includes tools for lead intake, tour scheduling, prospect qualification, and handling after-hours tenant inquiries. AveryIQ also supports maintenance coordination by routing work orders, using property-specific knowledge to guide troubleshooting, and escalating complex issues to approved vendors. The platform incorporates accounting, expense tracking, ACH rent collection, and digital utility compliance to centralize financial and operational processes. AveryIQ integrates with common property management systems and CRMs to fit into existing real estate technology stacks. Its products are designed for firms managing residential rental portfolios that seek to automate high-volume, repetitive tasks while maintaining consistent communications with prospects and residents.",
+      "website": "https://callavery.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Customer Service",
+        "Enterprise Software",
+        "Financial Services",
+        "Marketing Automation",
+        "Property Management",
+        "Real Estate",
+        "Residential",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Financial Services",
+        "Professional Services",
+        "Real Estate",
+        "Sales and Marketing",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An AI-native property management platform for leasing, communications, maintenance, and financial operations.",
+        "name": "AveryIQ Platform"
+      },
+      {
+        "description": "A conversational AI leasing and property management assistant that automates communications and routine workflows.",
+        "name": "Avery (AI Agent)"
+      },
+      {
+        "description": "A set of AI-enabled tools for lead management, cloud telephony, CRM, and multi-channel prospect communications.",
+        "name": "Avery Lead and Communications Suite"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 13,
+      "growthScore": 87,
+      "heatScore": 64
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 94.12
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

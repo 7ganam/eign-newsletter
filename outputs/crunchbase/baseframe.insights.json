@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:25:17.163Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:25:17.105Z",
+    "url": "https://www.crunchbase.com/organization/baseframe"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Baseframe",
+      "shortDescription": "Baseframe offers tools inside collaboration platforms that let hardware teams search components, read datasheets, and scope projects.",
+      "website": "https://baseframe.co/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "industries": [
+        "Enterprise Software",
+        "Information Technology",
+        "Project Management",
+        "Software"
+      ],
+      "sectors": [
+        "Administrative Services",
+        "Information Technology",
+        "Software"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 3,
+      "growthScore": 91,
+      "heatChange90Days": -3,
+      "heatScore": 74
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.56
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Octopart is a vertical search engine enabling users to discover, compare prices and view the specifications of electronic components.",
+          "employeeRange": "11-50",
+          "name": "Octopart",
+          "similarityScore": 97
+        },
+        {
+          "description": "SiliconExpert provides the relevant data and insight needed to mitigate risk from a product lifecycle plan.",
+          "employeeRange": "501-1,000",
+          "name": "SiliconExpert",
+          "sharedCategories": [
+            "Software",
+            "Information Technology"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Findchips operates an online search engine for electronic components and sourcing data.",
+          "name": "Findchips",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Mitigate electronic component and supply chain risk with data on 1 Billion+ parts, 20K+ suppliers and 10K+ manufacturing sites.",
+          "employeeRange": "251-500",
+          "name": "Z2Data",
+          "sharedCategories": [
+            "Software",
+            "Information Technology"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Free Electronic Component Search Engine",
+          "employeeRange": "1-10",
+          "name": "OEMsecrets",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 91 (+3 over 90 days) and market heat at 74 (-3).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Octopart, SiliconExpert, Findchips.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

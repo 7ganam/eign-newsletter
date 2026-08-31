@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:25:42.612Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:25:42.555Z",
+    "url": "https://www.crunchbase.com/organization/mayhem-a2cf"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Mayhem",
+      "shortDescription": "Mayhem is a security testing software for developers that identifies defects in apps and APIs.",
+      "website": "https://www.mayhem.security/",
+      "foundedYear": 2012,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Pittsburgh, Pennsylvania, United States",
+      "geographicRegions": [
+        "Great Lakes",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Apps",
+        "SaaS",
+        "Software"
+      ],
+      "sectors": [
+        "Apps",
+        "Software"
+      ],
+      "founders": [
+        "David Brumley",
+        "Thanassis Avgerinos"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Automated testing tool that identifies vulnerabilities in application code and provides proof of exploitability to confirm defects.",
+        "name": "Mayhem for Code Security"
+      },
+      {
+        "description": "Continuous automated testing and validation of APIs to identify and verify security vulnerabilities, including OWASP Top 10 API risks.",
+        "name": "Mayhem for API Security"
+      },
+      {
+        "description": "Runtime-based Software Bill of Materials (SBOM) analysis that filters out unused components to reduce false security alerts by up to 90%.",
+        "name": "Mayhem Dynamic SBOM"
+      },
+      {
+        "description": "AI-powered fuzz testing combined with symbolic execution to systematically explore code paths and identify complex vulnerabilities in applications.",
+        "name": "Mayhem Automated Fuzz Testing"
+      },
+      {
+        "description": "Automated API penetration testing tool that performs positive and negative testing to identify OWASP Top 10 API vulnerabilities without requiring agents.",
+        "name": "Mayhem API Penetration Testing Automation"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2018-01-01",
+      "lastFundingType": "Venture round",
+      "rounds": [
+        {
+          "announcedDate": "2018-01-01",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 14066273,
+            "currency": "USD"
+          },
+          "type": "Venture round"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "New Enterprise Associates",
+            "rounds": [
+              "Venture round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 5,
+      "includedUniqueCount": 5,
+      "items": [
+        {
+          "date": "2025-11-04",
+          "title": "Mayhem acquired by Bugcrowd"
+        },
+        {
+          "date": "2025-11-04",
+          "publisher": "PR Newswire",
+          "title": "Bugcrowd Acquires Mayhem Security to Bring Human-Augmented AI Automation to Security Testing",
+          "url": "https://www.prnewswire.com/news-releases/bugcrowd-acquires-mayhem-security-to-bring-human-augmented-ai-automation-to-security-testing-302603363.html"
+        },
+        {
+          "date": "2024-05-06",
+          "publisher": "PRNewswire",
+          "title": "ForAllSecure Unveils Mayhem Dynamic SBOM to Find Only Real, Exploitable Vulnerabilities",
+          "url": "https://www.prnewswire.com/news-releases/forallsecure-unveils-mayhem-dynamic-sbom-to-find-only-real-exploitable-vulnerabilities-302135807.html"
+        },
+        {
+          "date": "2024-03-11",
+          "publisher": ".xyz",
+          "title": "AI-enhanced solution Mayhem.Security aims to reshape vulnerability detection",
+          "url": "https://gen.xyz/blog/mayhemsecurity"
+        },
+        {
+          "date": "2018-01-01",
+          "title": "Venture Round - Mayhem"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -3,
+      "growthScore": 79,
+      "heatChange90Days": -4,
+      "heatScore": 55
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.57
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Escape - API discovery and API security platform that leverages generative AI to discover and secure all exposed APIs.",
+          "employeeRange": "11-50",
+          "name": "Escape",
+          "sharedSpecialties": [
+            "Attack Surface Management",
+            "API Design and Testing",
+            "API Security",
+            "Vulnerability Assessment and Management",
+            "Application Security Testing",
+            "Test Automation Platforms"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "StackHawk is an API and application security testing platform that enables detection and resolution of application vulnerabilities.",
+          "employeeRange": "11-50",
+          "name": "StackHawk",
+          "sharedCategories": [
+            "SaaS",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Attack Surface Management",
+            "CI/CD (Continuous Integration / Continuous Delivery)",
+            "API Design and Testing",
+            "API Security",
+            "Vulnerability Assessment and Management",
+            "Application Security Testing",
+            "Test Automation Platforms"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Bright Security is an AI -powered application security platform that integrates application security into SDLC.",
+          "employeeRange": "101-250",
+          "name": "Bright Security",
+          "sharedCategories": [
+            "SaaS",
+            "Apps",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Attack Surface Management",
+            "CI/CD (Continuous Integration / Continuous Delivery)",
+            "API Design and Testing",
+            "API Security",
+            "Vulnerability Assessment and Management",
+            "Software Testing",
+            "Application Security Testing",
+            "Test Automation Platforms"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Probely Empowers Security Teams and Developer Teams to embrace Application Security Testing",
+          "employeeRange": "11-50",
+          "name": "Probely",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Attack Surface Management",
+            "CI/CD (Continuous Integration / Continuous Delivery)",
+            "API Design and Testing",
+            "API Security",
+            "Vulnerability Assessment and Management",
+            "Software Testing",
+            "Application Security Testing"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Human + AI platform for continuous security validation and AI pentesting, powered by the Synack Red Team.",
+          "employeeRange": "101-250",
+          "name": "Synack",
+          "sharedSpecialties": [
+            "Attack Surface Management",
+            "API Security",
+            "Vulnerability Assessment and Management",
+            "Application Security Testing"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $14,066,273 to $14,066,273, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 79 (-3 over 90 days) and market heat at 55 (-4).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Escape, StackHawk, Bright Security.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

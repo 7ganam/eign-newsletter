@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:44:38.253Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:44:38.198Z",
+    "url": "https://www.crunchbase.com/organization/engines-603d"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "engines",
+      "shortDescription": "Engines provides tools for running AI agents against containerized software repositories.",
+      "description": "Engines provides a platform for running AI software agents against code repositories. Its tooling containerizes repositories and supports setup through a single command. The platform is intended to provide tools, context, and sandboxes for AI software engineering workflows.",
+      "website": "https://engines.dev/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "industries": [
+        "AI Infrastructure",
+        "Artificial Intelligence (AI)",
+        "Developer Tools",
+        "DevOps",
+        "Generative AI",
+        "SaaS",
+        "Software",
+        "Software Engineering"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A platform that containerizes software repositories so AI agents can run and work with them.",
+        "name": "Engines AI Software Engineering Platform"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 85,
+      "heatScore": 87
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 91.48
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

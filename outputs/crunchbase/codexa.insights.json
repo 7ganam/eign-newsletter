@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:23:53.950Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:23:53.907Z",
+    "url": "https://www.crunchbase.com/organization/codexa"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Codexa",
+      "shortDescription": "Collaborative editing made simple",
+      "description": "Codexa is a new startup company that aims to create simple and intuitive software.\r\n\r\nThe first program that is being developed is called Firetext.  Firetext is a social word processor that currently runs on Firefox OS phones.  In the future, Codexa is planning to expand support to include platforms like Android, iOS, Ubuntu Phone OS, and the Web.",
+      "website": "http://www.codexa.org/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "industries": [
+        "Android",
+        "Apps",
+        "iOS",
+        "Mobile",
+        "Software"
+      ],
+      "sectors": [
+        "Apps",
+        "Mobile",
+        "Platforms",
+        "Software"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2013-07-12",
+          "publisher": "Facebook",
+          "title": "Facebook",
+          "url": "https://www.facebook.com/codexa.apps"
+        },
+        {
+          "date": "2013-07-12",
+          "publisher": "YouTube",
+          "title": "YouTube",
+          "url": "http://www.youtube.com/user/CodexaApps"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 0,
+      "growthScore": 82,
+      "heatChange90Days": -25,
+      "heatScore": 58
+    },
+    "modelPredictions": {
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.39
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Microsoft provides computer software, consumer electronics, cloud computing platforms, and digital enterprise systems.",
+          "employeeRange": "11-50",
+          "name": "Microsoft",
+          "similarityScore": 95
+        },
+        {
+          "description": "Link Building ✓ Guest Posting ✓ Off page seo ✓ local seo ✓ ORM ✓ Expert in Boosting Online Visibility and Traffic",
+          "employeeRange": "1-10",
+          "name": "Sheraz Zaheer",
+          "similarityScore": 91
+        },
+        {
+          "description": "Coda is a document collaboration platform that brings data and teams together.",
+          "employeeRange": "251-500",
+          "name": "Coda",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Dropbox is a smart workspace company that provides secure file sharing, collaboration, and storage solutions.",
+          "employeeRange": "1,001-5,000",
+          "name": "Dropbox",
+          "similarityScore": 90
+        },
+        {
+          "description": "Startups can apply to get up to $1000 in credit for our team-based plans, so that you can try it for free.",
+          "name": "Notion for startups",
+          "similarityScore": 88
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 82 (+0 over 90 days) and market heat at 58 (-25).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Microsoft, Sheraz Zaheer, Coda.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

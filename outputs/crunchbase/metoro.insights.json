@@ -1,0 +1,333 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:32:30.380Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:32:30.323Z",
+    "url": "https://www.crunchbase.com/organization/metoro"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Metoro",
+      "shortDescription": "The AI SRE For Kubernetes",
+      "description": "Metoro is an AI SRE for teams running on kubernetes.\n\nAutonomous deployment verification, issue detection, root causing and remediation via AI. Operational in less than 1 minute. No code changes needed.\n\nMetoro uses eBPF to gather telemetry data at the Kernel level, this means zero code changes are needed, just a single agent install.\n\nLive demo at https://demo.us-east.metoro.io",
+      "website": "https://metoro.io/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Cloud Infrastructure",
+        "Generative AI",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Internet Services",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Chris Battarbee"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A platform providing observability for Kubernetes clusters, collecting logs, metrics, traces, and profiling data automatically without code changes.",
+        "name": "Metoro Kubernetes Observability Platform"
+      },
+      {
+        "description": "Automatically generates application performance monitoring data including traces and RED metrics for services without manual instrumentation.",
+        "name": "Automatic Application Performance Monitoring (APM)"
+      },
+      {
+        "description": "Centralized collection, storage, and analysis of logs from all containers with support for structured JSON parsing and advanced search capabilities.",
+        "name": "Logs Management and Analytics"
+      },
+      {
+        "description": "Collects and visualizes detailed metrics for pods, containers, and hosts, supporting Prometheus and OpenTelemetry integrations.",
+        "name": "Metrics Collection and Visualization"
+      },
+      {
+        "description": "Provides zero-instrumentation CPU profiling for containers using eBPF, showing CPU time down to the function level for multiple programming languages.",
+        "name": "Profiling Service"
+      },
+      {
+        "description": "Tracks and indexes all Kubernetes resource changes and events, maintaining a complete history and derived metrics for cluster state analysis.",
+        "name": "Kubernetes Resources and Events Monitoring"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 1200000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2023-09-06",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2023-09-06",
+          "amount": {
+            "amount": 1200000,
+            "currency": "USD"
+          },
+          "investorCount": 5,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 8853770,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 5,
+        "visibleNames": [
+          {
+            "name": "Apertu Capital",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "REMUS Capital",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "Saturnin Pugnet",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "XG Ventures",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2025-04-05",
+          "publisher": "SiliconANGLE",
+          "title": "KubeCon London: Europe takes the cloud-native reins",
+          "url": "https://siliconangle.com/2025/04/05/kubecon-london-europe-takes-cloud-native-reins/"
+        },
+        {
+          "date": "2023-09-06",
+          "title": "Pre Seed Round - Metoro"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 1200000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -7,
+      "growthScore": 42,
+      "heatChange90Days": 1,
+      "heatScore": 82
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 85.59
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 29.12,
+        "timingEstimatePercent": {
+          "within6Months": 43.62,
+          "months6To11": 0.03,
+          "months12To24": 0,
+          "beyond24Months": 56.35
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-13",
+        "probabilityPercent": 85.2
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 3.91
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Grafana Labs delivers the open observability cloud, helping builders everywhere turn signals into action.",
+          "employeeRange": "1,001-5,000",
+          "name": "Grafana Labs",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Performance Testing",
+            "Log Management",
+            "IT Infrastructure Monitoring",
+            "Application Tracing"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Kong Inc. is the AI connectivity company building the layer AI needs to reach its full potential with AI governance from day one.",
+          "employeeRange": "1,001-5,000",
+          "name": "Kong",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Container and Kubernetes Platform Services",
+            "Integration Platforms"
+          ],
+          "similarityScore": 94.804
+        },
+        {
+          "description": "Observe offers an observability cloud solution to accelerate the transformation of troubleshooting applications and resolving incidents.",
+          "employeeRange": "101-250",
+          "name": "Observe",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "AIOps",
+            "Log Management",
+            "IT Infrastructure Monitoring",
+            "Application Tracing",
+            "Data Pipelines"
+          ],
+          "similarityScore": 87.555
+        },
+        {
+          "description": "Hydrolix is a data management company that specializes in providing solutions for storing, managing, and analyzing large-scale data.",
+          "employeeRange": "251-500",
+          "name": "Hydrolix",
+          "sharedSpecialties": [
+            "Log Management",
+            "Data Pipelines"
+          ],
+          "similarityScore": 82.996
+        },
+        {
+          "description": "User-focused observability for mobile and web, built on OpenTelemetry",
+          "employeeRange": "101-250",
+          "name": "Embrace",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Log Management",
+            "IT Infrastructure Monitoring",
+            "Application Tracing"
+          ],
+          "similarityScore": 75.568
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $1,200,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $8,853,770 to $8,853,770, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 42 (-7 over 90 days) and market heat at 82 (+1).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Grafana Labs, Kong, Observe.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

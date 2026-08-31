@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:19:05.708Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:19:05.650Z",
+    "url": "https://www.crunchbase.com/organization/freestyle"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Freestyle",
+      "shortDescription": "Freestyle is a digital transformation agency that offers business strategy, technology strategy, and digital product services.",
+      "description": "Freestyle is a consulting that develop digital goods, solutions, and interactions that let them advance more than its rivals and keep up with its customers. The strategy-first technique makes sure that clients make the required investments in order to achieve their business goals by moving from infrastructure to a flexible and connected framework. To reduce the distance between the business and its long-term vision, users must deliver value-driven solutions that are based on the goals and the customer service.",
+      "website": "https://freestyle.agency/",
+      "foundedYear": 1996,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Warwick, Warwickshire, United Kingdom",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Apps",
+        "Business Information Systems",
+        "Consulting",
+        "UX Design"
+      ],
+      "sectors": [
+        "Apps",
+        "Design",
+        "Information Technology",
+        "Professional Services",
+        "Software"
+      ],
+      "founders": [
+        "Suzanne Linton"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Services that identify business challenges and opportunities, assess digital maturity, and develop roadmaps to achieve long-term business goals.",
+        "name": "Digital Strategy Services"
+      },
+      {
+        "description": "Design services focused on creating user-centric digital experiences that address business and customer needs through product, interface, and service design.",
+        "name": "UX and Design Services"
+      },
+      {
+        "description": "Technology services that develop flexible, scalable digital solutions including websites, mobile apps, and custom integrations aligned with business goals.",
+        "name": "Technology and Build Services"
+      },
+      {
+        "description": "Implementation, migration, integration, and ongoing support services for the Optimizely Content Management System to manage and personalize digital content.",
+        "name": "Optimizely CMS Implementation and Support"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -4,
+      "heatScore": 69
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 67.17
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Valtech is a digital agency that offers marketing, digital technology, and business transformation consulting.",
+          "employeeRange": "5,001-10,000",
+          "name": "Valtech",
+          "sharedCategories": [
+            "Consulting"
+          ],
+          "sharedSpecialties": [
+            "Digital Experience (DX) Design",
+            "Digital Transformation"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "Publicis sapient is a digital consulting firm that offers consulting, technology, and product management services.",
+          "employeeRange": "10,001+",
+          "name": "Publicis Sapient",
+          "sharedCategories": [
+            "Consulting"
+          ],
+          "sharedSpecialties": [
+            "Digital Experience (DX) Design",
+            "Digital Transformation",
+            "Service Design"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "EPAM leverages its core engineering expertise as a leading global product development and digital platform engineering services company.",
+          "employeeRange": "10,001+",
+          "name": "EPAM Systems",
+          "sharedSpecialties": [
+            "Digital Transformation",
+            "Application Managed Services (AMS)"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Accenture Song accelerates growth and value for clients through sustained customer relevance.",
+          "employeeRange": "5,001-10,000",
+          "name": "Accenture Song",
+          "similarityScore": 90
+        },
+        {
+          "description": "Thoughtworks is a technological firm that combines strategy, design, and software engineering.",
+          "employeeRange": "10,001+",
+          "name": "Thoughtworks",
+          "sharedCategories": [
+            "Apps",
+            "Consulting"
+          ],
+          "sharedSpecialties": [
+            "Digital Transformation"
+          ],
+          "similarityScore": 90
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Valtech, Publicis Sapient, EPAM Systems.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

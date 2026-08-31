@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:37:08.466Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:37:08.412Z",
+    "url": "https://www.crunchbase.com/organization/graphify-65db"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Graphify Labs",
+      "shortDescription": "On-device knowledge graph engine for enterprises.",
+      "description": "Graphify Labs builds an on-device knowledge graph engine for enterprises. It creates queryable knowledge graphs from local codebases, docs, and Jira, giving engineering teams and their coding agents one shared, always-current view of the codebase.\n\nOn that graph, Graphify's enterprise layer reviews every pull request and formally verifies each code change, proving the new behavior matches the old or handing back the exact input that breaks it. The graph updates itself as the code changes, keeping context instead of forgetting it.\n\nGraphify runs fully on-premise, so no data leaves the building. The open-source engine has reached 105K+ GitHub stars and roughly 5M+ downloads, and is used in production by engineering teams at Rootly, Geotab, Tweddle Group, and Superagent.\n\nGraphify Labs is a Y Combinator company (S26).",
+      "website": "https://graphify.com/",
+      "foundedYear": 2026,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Data Management",
+        "Developer Tools",
+        "SaaS",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Safi Shamsi"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An open-source tool that maps relationships across a codebase for use by AI coding assistants.",
+        "name": "Graphify"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2026-08-14",
+          "publisher": "Tech Funding News",
+          "title": "He built an open-source tool AI coding assistants couldn’t ignore",
+          "url": "https://techfundingnews.com/he-built-an-open-source-tool-ai-coding-assistants-couldnt-ignore/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 90,
+      "heatScore": 91
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 5
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 68.69
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

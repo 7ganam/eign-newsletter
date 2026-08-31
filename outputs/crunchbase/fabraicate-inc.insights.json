@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:54:17.315Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:54:17.261Z",
+    "url": "https://www.crunchbase.com/organization/fabraicate-inc"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Fabraicate",
+      "shortDescription": "Fabraicate designs and manufactures custom wire harnesses with online quoting and harness design tools.",
+      "description": "Fabraicate designs and manufactures custom wire harnesses using an online platform for quoting and design. The company operates the Loombotic service, which lets hardware teams upload drawings or use a web-based harness editor to configure assemblies. Its system parses connector types, wire gauges, and pin assignments and returns instant pricing without manual callbacks. Fabraicate then manufactures IPC/WHMA-A-620 compliant harnesses, performs 100 percent electrical continuity testing, and ships completed units. It supports quantities from single prototypes through higher-volume production runs across robotics, electric vehicles, medical devices, aerospace, and consumer hardware. The platform is intended for engineering and hardware teams that need predictable lead times and digital access to harness manufacturing.",
+      "website": "https://loombotic.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "employeeRange": "1-10",
+      "industries": [
+        "Aerospace",
+        "Consumer Electronics",
+        "Electric Vehicle",
+        "Hardware",
+        "Industrial Automation",
+        "Manufacturing",
+        "Medical Device",
+        "Robotics",
+        "Software"
+      ],
+      "sectors": [
+        "Consumer Electronics",
+        "Hardware",
+        "Health Care",
+        "Manufacturing",
+        "Science and Engineering",
+        "Software",
+        "Transportation"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Loombotic is an online platform for quoting, designing, and ordering custom wire harnesses with fast manufacturing and testing.",
+        "name": "Loombotic"
+      },
+      {
+        "description": "Harness Builder is a web-based tool for creating and editing custom wire harness designs for quoting and ordering.",
+        "name": "Harness Builder"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 11,
+      "growthScore": 89,
+      "heatChange90Days": 18,
+      "heatScore": 71
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 92.09
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 89 (+11 over 90 days) and market heat at 71 (+18).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

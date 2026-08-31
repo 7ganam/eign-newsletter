@@ -1,0 +1,361 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:44:01.225Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:44:01.176Z",
+    "url": "https://www.crunchbase.com/organization/brainboard"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Brainboard",
+      "shortDescription": "Brainboard is a software company that provides engineers with end-to-end tools for managing and visually designing Cloud infrastructures.",
+      "description": "Brainboard is an AI driven platform to visually design and manage cloud infrastructure, collaboratively. It's the only solution that automatically generates IaC code for any cloud provider, with an embedded CI/CD.",
+      "website": "https://www.brainboard.co/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Cloud Infrastructure",
+        "Cloud Management",
+        "Information Technology",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Internet Services",
+        "Software"
+      ],
+      "founders": [
+        "Chafik Belhaoues",
+        "Jeremy Albinet"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A cloud infrastructure design and management platform that visually creates and manages infrastructure as code (IaC) with automatic Terraform/OpenTofu code generation and embedded CI/CD.",
+        "name": "Brainboard Platform"
+      },
+      {
+        "description": "A visual design tool within Brainboard that allows users to create cloud infrastructure diagrams which automatically generate corresponding Terraform code.",
+        "name": "Smart Cloud Designer"
+      },
+      {
+        "description": "A centralized repository within Brainboard for managing private, public, and community Terraform and OpenTofu modules as a single source of truth.",
+        "name": "Terraform & OpenTofu Modules Management"
+      },
+      {
+        "description": "A feature that connects cloud infrastructure code with Git repositories to enable continuous integration and continuous deployment (CI/CD) workflows.",
+        "name": "GitOps Workflow Integration"
+      },
+      {
+        "description": "A monitoring feature that detects and corrects discrepancies between the declared infrastructure code and the actual cloud environment.",
+        "name": "Drift Detection and Remediation"
+      },
+      {
+        "description": "A capability to maintain consistency and eliminate drift across multiple cloud environments such as development, QA, staging, and production.",
+        "name": "Synchronized Architectures"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 1200000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2021-09-26",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2021-09-26",
+          "amount": {
+            "amount": 1200000,
+            "currency": "USD"
+          },
+          "investorCount": 4,
+          "leadInvestors": [
+            "Kima Ventures"
+          ],
+          "postMoneyValuation": {
+            "amount": 8687924,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 4,
+        "visibleNames": [
+          {
+            "name": "Bermingham Capital",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "Evolem Start",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Kima Ventures",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 5,
+      "includedUniqueCount": 5,
+      "items": [
+        {
+          "date": "2024-05-16",
+          "publisher": "markets.businessinsider.com",
+          "title": "Brainboard Report finds Cloud Security in Crisis as Security Engineers Drown in Alerts",
+          "url": "https://markets.businessinsider.com/news/stocks/brainboard-report-finds-cloud-security-in-crisis-as-security-engineers-drown-in-alerts-1033385927"
+        },
+        {
+          "date": "2023-10-16",
+          "publisher": "InfoQ",
+          "title": "AWS Application Composer Now Supports All Cloudformation ...",
+          "url": "https://www.infoq.com/news/2023/10/aws-application-composer-updates/"
+        },
+        {
+          "date": "2023-06-28",
+          "publisher": "ITWeb",
+          "title": "Brainboard, XContent collaborate to help cloud architects, platform teams improve how they visually design, manage cloud infrastructures",
+          "url": "https://www.itweb.co.za/content/Pero37Z3Z3gMQb6m"
+        },
+        {
+          "date": "2022-01-02",
+          "publisher": "eCAP PARTNER",
+          "title": "Synthèse des levées de fonds du numérique en décembre 2021",
+          "url": "https://www.ecap-partner.com/news/research/synthese-des-levees-de-fonds-du-numerique-en-decembre-2021/"
+        },
+        {
+          "date": "2021-09-26",
+          "title": "Pre Seed Round - Brainboard"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 1200000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2023-12-26",
+      "growthChange90Days": -1,
+      "growthScore": 64,
+      "heatChange90Days": -9,
+      "heatScore": 66,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 20.04,
+        "timingEstimatePercent": {
+          "within6Months": 14.92,
+          "months6To11": 12.69,
+          "months12To24": 19.99,
+          "beyond24Months": 24.94
+        }
+      },
+      "growth": {
+        "generatedDate": "2025-05-07",
+        "probabilityPercent": 87.19
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Spacelift is an infrastructure orchestration platform that manages provisioning, configuration, and governance workflows.",
+          "employeeRange": "101-250",
+          "name": "Spacelift",
+          "sharedCategories": [
+            "Cloud Management",
+            "Software",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Workflow Automation",
+            "Configuration Management Automation",
+            "CI/CD Platform",
+            "Infrastructure as Code",
+            "Integration Platforms",
+            "Internal Developer Platforms"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "env0 is the first self-service cloud management platform for infrastructure as code (IaC) architecture",
+          "employeeRange": "51-100",
+          "name": "env0",
+          "sharedCategories": [
+            "Software",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Workflow Automation",
+            "Configuration Management Automation",
+            "CI/CD Platform",
+            "Cloud Operations and FinOps",
+            "Infrastructure as Code",
+            "Integration Platforms",
+            "IT Infrastructure Monitoring",
+            "Internal Developer Platforms"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "HashiCorp is a remote-first company that solves development, security, and operations challenges in infrastructure.",
+          "employeeRange": "1,001-5,000",
+          "name": "HashiCorp",
+          "sharedCategories": [
+            "Cloud Infrastructure",
+            "Software",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "CI/CD Platform",
+            "Cloud Operations and FinOps",
+            "Infrastructure as Code",
+            "Internal Developer Platforms"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Terraform GitOps with GitHub",
+          "employeeRange": "1-10",
+          "name": "Terrateam",
+          "sharedSpecialties": [
+            "Source Code Repositories",
+            "CI/CD Platform",
+            "Cloud Operations and FinOps",
+            "Infrastructure as Code",
+            "Internal Developer Platforms"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Harness provides a software delivery platform that helps engineering teams build, deploy, and operate applications through a set of tools.",
+          "employeeRange": "1,001-5,000",
+          "name": "Harness",
+          "sharedCategories": [
+            "Cloud Management"
+          ],
+          "sharedSpecialties": [
+            "CI/CD Platform",
+            "Infrastructure as Code",
+            "Internal Developer Platforms"
+          ],
+          "similarityScore": 88
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $1,200,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $8,687,924 to $8,687,924, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 64 (-1 over 90 days) and market heat at 66 (-9).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Spacelift, env0, HashiCorp.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

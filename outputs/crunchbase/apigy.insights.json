@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T09:52:04.629Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T09:52:04.572Z",
+    "url": "https://www.crunchbase.com/organization/apigy"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Lockitron",
+      "shortDescription": "Lockitron is a device which can lock and unlock doors via remote control, typically via a smartphone",
+      "description": "Apigy is the developer of Lockitron, a device which can lock and unlock deadbolt locks via remote control or a mobile device.",
+      "website": "http://lockitron.com/",
+      "foundedYear": 2009,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Mountain View, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Hardware",
+        "Mobile",
+        "Mobile Devices",
+        "Security"
+      ],
+      "sectors": [
+        "Consumer Electronics",
+        "Hardware",
+        "Mobile",
+        "Privacy and Security"
+      ],
+      "founders": [
+        "Cameron Robertson",
+        "Paul Gerhardt"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 4,
+      "detailedRoundCount": 4,
+      "lastFundingDate": "2013-04-08",
+      "lastFundingType": "Venture round",
+      "rounds": [
+        {
+          "announcedDate": "2013-04-08",
+          "investorCount": 4,
+          "type": "Venture round"
+        },
+        {
+          "announcedDate": "2012-05-04",
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2009-08-22",
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2009-01-01",
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 5,
+        "visibleNames": [
+          {
+            "name": "Acequia Capital (AceCap)",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "Andreessen Horowitz",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "Sinovation Ventures",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "SV Angel",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 5,
+      "includedUniqueCount": 5,
+      "items": [
+        {
+          "date": "2019-01-01",
+          "title": "Lockitron acquired by The Chamberlain Group"
+        },
+        {
+          "date": "2013-04-08",
+          "title": "Venture Round - Lockitron"
+        },
+        {
+          "date": "2012-05-04",
+          "title": "Seed Round - Lockitron"
+        },
+        {
+          "date": "2009-08-22",
+          "title": "Seed Round - Lockitron"
+        },
+        {
+          "date": "2009-01-01",
+          "title": "Pre Seed Round - Lockitron"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 0,
+      "heatScore": 45
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "August Home develops smarter home access products and services that allow physical environments to seamlessly respond to user behavior.",
+          "employeeRange": "51-100",
+          "name": "August Home",
+          "similarityScore": 97
+        },
+        {
+          "description": "Kwikset is an industry leader and innovator in home safety with keyless entry and re-keying technology.",
+          "employeeRange": "1-10",
+          "name": "Kwikset",
+          "similarityScore": 95
+        },
+        {
+          "description": "Schlage manufactures a selection of door locks, entry door knobs, and hardware products.",
+          "employeeRange": "10,001+",
+          "name": "Schlage",
+          "similarityScore": 93
+        },
+        {
+          "description": "Yale is a lock, door hardware, and electronic door lock manufacturer that offers security solutions to homes, offices, and more since 1840.",
+          "employeeRange": "10,001+",
+          "name": "Yale",
+          "sharedCategories": [
+            "Security",
+            "Hardware"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Nuki Home Solutions provides smart home solutions and makes access controls smarter and physical keys irrelevant.",
+          "employeeRange": "101-250",
+          "name": "Nuki Home Solutions",
+          "sharedCategories": [
+            "Hardware"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include August Home, Kwikset, Schlage.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

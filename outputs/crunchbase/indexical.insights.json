@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:10:00.568Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:10:00.513Z",
+    "url": "https://www.crunchbase.com/organization/indexical"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Indexical",
+      "shortDescription": "Indexical is a platform that uses a sequence of performances, workshops to introduce the public to radical and unorthodox artistic work.",
+      "description": "Indexical is a platform for musicians to create and exchange ideas.",
+      "website": "https://www.indexical.org/",
+      "foundedYear": 2011,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Santa Cruz, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Music",
+        "Music Venues",
+        "Performing Arts"
+      ],
+      "sectors": [
+        "Media and Entertainment",
+        "Music and Audio"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A series of live performances showcasing experimental and radical artistic works, primarily in music and time-based visual or performing arts.",
+        "name": "Performance Series"
+      },
+      {
+        "description": "Educational sessions designed to introduce participants to experimental artistic practices, including music and sound art techniques.",
+        "name": "Workshops"
+      },
+      {
+        "description": "Curated art exhibitions featuring installations and visual works that explore experimental and radical artistic themes.",
+        "name": "Exhibitions"
+      },
+      {
+        "description": "Monthly meetups and open mic nights for electronic music practitioners to share performances, demonstrations, and discussions.",
+        "name": "Santa Cruz Synth Cooperative Events"
+      },
+      {
+        "description": "A series of recorded interviews and conversations with experimental musicians and artists discussing their work and creative processes.",
+        "name": "Podcast Series"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2025-06-11",
+      "lastFundingType": "Grant",
+      "rounds": [
+        {
+          "announcedDate": "2025-06-11",
+          "investorCount": 1,
+          "leadInvestors": [
+            "Live Music Society"
+          ],
+          "type": "Grant"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Live Music Society",
+            "rounds": [
+              "Grant"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2025-06-11",
+          "title": "Grant - Indexical"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -12,
+      "growthScore": 15,
+      "heatChange90Days": -27,
+      "heatScore": 45
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.52
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 6.89,
+        "timingEstimatePercent": {
+          "within6Months": 0.74,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 99.26
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-13",
+        "probabilityPercent": 86.26
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 6.71
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Gray Area Foundation for the Arts is a Non-Profit organization that applies art and technology to create positive social impact.",
+          "employeeRange": "1-10",
+          "name": "Gray Area Foundation for the Arts",
+          "sharedSpecialties": [
+            "Interactive Installations",
+            "Community Arts Programs",
+            "Art Galleries and Exhibitions"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "Mills College is a nationally renowned independent liberal arts and sciences college in the San Francisco Bay Area.",
+          "employeeRange": "251-500",
+          "name": "Mills College",
+          "similarityScore": 82
+        },
+        {
+          "description": "The Center for New Music San Francisco, Inc. is a community center for participants of new music in San Francisco.",
+          "employeeRange": "11-50",
+          "name": "Center for New Music",
+          "sharedCategories": [
+            "Music"
+          ],
+          "similarityScore": 81
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 15 (-12 over 90 days) and market heat at 45 (-27).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Gray Area Foundation for the Arts, Mills College, Center for New Music.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

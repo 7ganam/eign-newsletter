@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:19:31.411Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:19:31.355Z",
+    "url": "https://www.crunchbase.com/organization/close"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Close",
+      "shortDescription": "Close is startup developing a new social network for building relationships.",
+      "description": "Close.com is stealthy startup building a creative new social network that will keep you closer to the ones you care about most.\r\n\r\nClose.com - Rediscover what it means to be Close.  \r\n\r\nComing late 2013",
+      "foundedYear": 2013,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Toronto, Ontario, Canada",
+      "geographicRegions": [
+        "Great Lakes"
+      ],
+      "founders": [
+        "Ryan Milnes",
+        "Slava Chernousov"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 250000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2014-01-10",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2014-01-10",
+          "investorCount": 1,
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2013-08-22",
+          "amount": {
+            "amount": 250000,
+            "currency": "USD"
+          },
+          "investorCount": 3,
+          "postMoneyValuation": {
+            "amount": 5250000,
+            "currency": "USD"
+          },
+          "type": "Angel"
+        }
+      ],
+      "investors": {
+        "reportedCount": 4,
+        "visibleNames": [
+          {
+            "name": "Be Great Partners",
+            "rounds": [
+              "Angel Round"
+            ]
+          },
+          {
+            "name": "Kosmayer Investments",
+            "rounds": [
+              "Angel Round"
+            ]
+          },
+          {
+            "name": "Ryan Allis",
+            "rounds": [
+              "Angel Round"
+            ]
+          },
+          {
+            "name": "SierraMaya360",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 8,
+      "includedUniqueCount": 8,
+      "items": [
+        {
+          "date": "2019-07-05",
+          "publisher": "Yonhap News",
+          "title": "(LEAD) S. Korean stocks close nearly flat after choppy trading",
+          "url": "http://english.yonhapnews.co.kr/business/2019/07/05/0503000000AEN20190705006851320.html"
+        },
+        {
+          "date": "2019-06-28",
+          "publisher": "The Street",
+          "title": "Rebalancing and Window Dressing Bring an Exceptional First Half 2019 to a Close",
+          "url": "https://realmoney.thestreet.com/investing/stocks/rebalancing-and-window-dressing-bring-an-exceptional-first-half-2019-to-a-close-15006579"
+        },
+        {
+          "date": "2019-06-28",
+          "publisher": "Mint (IN)",
+          "title": "Rupee closes stronger on G20 Summit hopes",
+          "url": "https://www.livemint.com/market/stock-market-news/rupee-closes-stronger-on-g20-summit-hopes-1561693252400.html"
+        },
+        {
+          "date": "2019-06-24",
+          "publisher": "Mint (IN)",
+          "title": "Rupee closes near two-week high",
+          "url": "https://www.livemint.com/market/stock-market-news/rupee-closes-near-two-week-high-1561347558747.html"
+        },
+        {
+          "date": "2019-06-19",
+          "publisher": "Vanguard",
+          "title": "Actor, Yul Edochie turns born-again after close shave",
+          "url": "http://allure.vanguardngr.com/2019/06/actor-yul-edochie-turns-born-again-after-close-shave/"
+        },
+        {
+          "date": "2019-06-11",
+          "publisher": "Mint (IN)",
+          "title": "Rupee closes marginally higher, 10-year bond at 7.038%",
+          "url": "https://www.livemint.com/market/stock-market-news/rupee-closes-marginally-higher-10-year-bond-at-7-038-1560253122874.html"
+        },
+        {
+          "date": "2014-01-10",
+          "title": "Seed Round - Close"
+        },
+        {
+          "date": "2013-08-22",
+          "title": "Angel Round - Close"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 250000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -10,
+      "heatScore": 1
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $5,250,000 to $5,250,000, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

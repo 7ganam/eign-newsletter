@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:26:42.307Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:26:42.253Z",
+    "url": "https://www.crunchbase.com/organization/be-go"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "be-go",
+      "shortDescription": "BeGo operates a digital platform that connects shippers and carriers and provides freight, tracking, and fleet management services.",
+      "description": "BeGo operates a digital logistics platform that connects freight with available transport for shippers and carriers. The company provides tools to request and manage road and maritime cargo services, track shipments, and handle documentation in the cloud. Its marketplace helps transport operators find nearby loads, increase utilization, and reduce empty returns. BeGo offers BeGo Black, a fleet management software that supports cost control and real-time monitoring of vehicles and commercial teams. The company also supports customs brokerage activities and integrates cargo status visibility across services. Through BeGoPru, developed with an insurance partner, it offers integrated insurance products tailored to cargo transport operators.",
+      "website": "https://begomx.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "industries": [
+        "Cloud Computing",
+        "Fleet Management",
+        "Insurance",
+        "Logistics",
+        "Marine Transportation",
+        "Supply Chain Management",
+        "Transportation"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Information Technology",
+        "Internet Services",
+        "Software",
+        "Transportation"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A digital marketplace that connects freight with available transport and manages logistics operations.",
+        "name": "BeGo digital freight platform"
+      },
+      {
+        "description": "A fleet management software for tracking and managing vehicles and commercial teams.",
+        "name": "BeGo Black"
+      },
+      {
+        "description": "An insurance solution for truck operators developed in partnership with an insurance provider.",
+        "name": "BeGoPru"
+      },
+      {
+        "description": "A mobile app that helps transport operators find nearby cargo and increase trip utilization.",
+        "name": "BeGo Driver"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 20,
+      "growthScore": 91,
+      "heatChange90Days": 42,
+      "heatScore": 42
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.66
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 91 (+20 over 90 days) and market heat at 42 (+42).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

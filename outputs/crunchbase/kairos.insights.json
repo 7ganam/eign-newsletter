@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:37:16.777Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:37:16.721Z",
+    "url": "https://www.crunchbase.com/organization/kairos"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Kairos Media",
+      "shortDescription": "Kairos Media is an full-service social media agency with capabilities across paid, earned and owned media.",
+      "description": "Kairos Media is an full-service social media agency with capabilities across paid, earned and owned media.",
+      "website": "http://www.kairosmedia.com/",
+      "foundedYear": 2015,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "51-100",
+      "estimatedRevenueRange": "$10M-$50M",
+      "headquarters": "London, England, United Kingdom",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Advertising",
+        "Marketing"
+      ],
+      "sectors": [
+        "Advertising",
+        "Sales and Marketing"
+      ],
+      "founders": [
+        "Michael Craddock",
+        "Novita Ciputra"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2023-11-22",
+          "publisher": "Small Business Trends",
+          "title": "26 Top Influencer Marketing Agencies",
+          "url": "https://smallbiztrends.com/2023/11/top-influencer-marketing-agencies.html"
+        },
+        {
+          "date": "2023-07-27",
+          "publisher": "The Drum",
+          "title": "Creators As Brands: Influencer Marketing Leaders’ Near ...",
+          "url": "https://www.thedrum.com/news/2023/07/27/creators-brands-influencer-marketing-leaders-near-future-predictions"
+        },
+        {
+          "date": "2020-07-28",
+          "publisher": "The Drum",
+          "title": "The secret to connecting with the ‘new’ post-pandemic consumer in 2020.",
+          "url": "https://www.thedrum.com/profile/kairos-media/news/the-secret-to-connecting-with-the-new-post-pandemic-consumer-in-2020"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2023-12-22",
+      "heatChange90Days": -18,
+      "heatScore": 40,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2025-05-19",
+        "probabilityPercent": 51.31
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "We Are Social specializes in social media marketing, advertising, and consulting services.",
+          "employeeRange": "1,001-5,000",
+          "name": "We Are Social",
+          "sharedCategories": [
+            "Marketing",
+            "Advertising"
+          ],
+          "similarityScore": 96
+        },
+        {
+          "description": "Social Chain a social media marketing agency.",
+          "employeeRange": "51-100",
+          "name": "Social Chain",
+          "sharedCategories": [
+            "Marketing",
+            "Advertising"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "The Goat Agency is a leading global social influencer marketing agency.",
+          "employeeRange": "251-500",
+          "name": "The Goat Agency",
+          "sharedCategories": [
+            "Marketing",
+            "Advertising"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Influencer Marketing Agency, setting a new standard for social communication through our creativity and technology.",
+          "employeeRange": "101-250",
+          "name": "Billion Dollar Boy",
+          "sharedCategories": [
+            "Marketing",
+            "Advertising"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Global brand Strategy, Advertising, Customer Engagement and Commerce, PR and Influence, Digital Transformation, and Partnerships.",
+          "employeeRange": "10,001+",
+          "name": "Ogilvy",
+          "sharedCategories": [
+            "Advertising"
+          ],
+          "similarityScore": 90
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include We Are Social, Social Chain, The Goat Agency.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

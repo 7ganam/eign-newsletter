@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:41:51.518Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:41:51.461Z",
+    "url": "https://www.crunchbase.com/organization/curious-fictions"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Curious Fictions",
+      "shortDescription": "Curious Fictions is an uncluttered, mobile-friendly site where readers can find stories.",
+      "description": "Curious Fictions is an uncluttered, mobile-friendly site where readers can find stories. The website offers a weekly featured story chosen by Breshears, but anyone can also browse a wider selection based on the writers and genres that interest them. Before anyone dive in, the site tells how many words are in a story and how long it should take to read.\n\nThe company was founded by Tanya Breshears, a designer who previously worked for Airbnb.",
+      "website": "https://curiousfictions.com/",
+      "foundedYear": 2016,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Content",
+        "Content Marketing",
+        "Internet",
+        "Mobile",
+        "Mobile Apps",
+        "News",
+        "Social Media"
+      ],
+      "sectors": [
+        "Apps",
+        "Content and Publishing",
+        "Information Technology",
+        "Internet Services",
+        "Media and Entertainment",
+        "Mobile",
+        "Sales and Marketing",
+        "Software"
+      ],
+      "founders": [
+        "Tanya Breshears"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2018-01-04",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2018-01-04",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2018-03-08",
+          "publisher": "TechCrunch",
+          "title": "Curious Fictions helps readers find (and pay for) short stories",
+          "url": "https://techcrunch.com/2018/03/08/curious-fictions-launch/"
+        },
+        {
+          "date": "2018-01-04",
+          "title": "Seed Round - Curious Fictions"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -14,
+      "heatScore": 37
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Wattpad is a digital entertainment company providing an online social storytelling platform for original stories.",
+          "employeeRange": "251-500",
+          "name": "Wattpad",
+          "sharedCategories": [
+            "Content",
+            "Mobile Apps"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Royal Road is a digital publishing platform for free online stories, fostering a community of readers and writers.",
+          "employeeRange": "11-50",
+          "name": "Royal Road",
+          "sharedCategories": [
+            "Internet"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Tapas Media is a creator platform",
+          "employeeRange": "11-50",
+          "name": "Tapas Media",
+          "sharedCategories": [
+            "Content",
+            "Mobile"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "A fan-created, fan-run, non-profit, non-commercial archive for transformative fanworks, like fanfiction, fanart, fan videos, and podfic.",
+          "employeeRange": "1-10",
+          "name": "Archive of Our Own",
+          "similarityScore": 89
+        },
+        {
+          "description": "Webnovel provides marvels, novels, and comics that stories change the world.",
+          "employeeRange": "251-500",
+          "name": "Webnovel",
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $120,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Wattpad, Royal Road, Tapas Media.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

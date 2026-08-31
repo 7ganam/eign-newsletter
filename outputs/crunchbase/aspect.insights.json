@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:08:29.298Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:08:29.241Z",
+    "url": "https://www.crunchbase.com/organization/aspect"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Aspect",
+      "shortDescription": "Aspect is a platform for website creation where users can publish or download their custom websites.",
+      "description": "Aspect offers a platform for website creation where users can publish or download their custom websites.",
+      "website": "https://aspect.app/",
+      "foundedYear": 2019,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Developer Platform",
+        "Developer Tools",
+        "Web Design",
+        "Web Development"
+      ],
+      "sectors": [
+        "Design",
+        "Software"
+      ],
+      "founders": [
+        "Tshepo Mohlala"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2019-08-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2019-08-01",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2022-05-26",
+          "publisher": "Gambling Alpha",
+          "title": "texas hold em cheat sheet",
+          "url": "https://www.gamblingalpha.com/poker-cheat-sheet/"
+        },
+        {
+          "date": "2019-08-01",
+          "publisher": "Y Combinator",
+          "title": "Aspect",
+          "url": "https://www.ycombinator.com/companies/aspect"
+        },
+        {
+          "date": "2019-08-01",
+          "title": "Seed Round - Aspect"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -3,
+      "heatScore": 61
+    },
+    "modelPredictions": {
+      "funding": {
+        "generatedDate": "2025-10-25",
+        "probabilityPercent": 15.06,
+        "timingEstimatePercent": {
+          "within6Months": 13.9,
+          "months6To11": 11.97,
+          "months12To24": 19.18,
+          "beyond24Months": 24.75
+        }
+      },
+      "growth": {
+        "generatedDate": "2025-10-25",
+        "probabilityPercent": 44.65
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Webflow is a visual web design platform, CMS, and hosting provider for building production websites and prototypes.",
+          "employeeRange": "501-1,000",
+          "name": "Webflow",
+          "sharedCategories": [
+            "Web Development",
+            "Web Design"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Framer is the AI design agent for every step from idea to launch",
+          "employeeRange": "101-250",
+          "name": "Framer",
+          "sharedCategories": [
+            "Web Development",
+            "Developer Tools",
+            "Developer Platform",
+            "Web Design"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Wix provides a platform for the development of cloud data services for millions of registered users worldwide.",
+          "employeeRange": "5,001-10,000",
+          "name": "Wix",
+          "sharedCategories": [
+            "Developer Tools",
+            "Web Design"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Squarespace is a website building and hosting platform that helps users create websites without needing advanced technical skills.",
+          "employeeRange": "1,001-5,000",
+          "name": "Squarespace",
+          "sharedCategories": [
+            "Developer Tools",
+            "Web Design"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Carrd is a one-page site that allows publishing custom domains, forms, Google analytics tracking ID, websites and widgets.",
+          "employeeRange": "11-50",
+          "name": "Carrd",
+          "sharedCategories": [
+            "Web Design"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Webflow, Framer, Wix.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

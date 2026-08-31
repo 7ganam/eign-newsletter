@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:20:59.980Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:20:59.922Z",
+    "url": "https://www.crunchbase.com/organization/marft"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Marft",
+      "shortDescription": "Marft creates embeddable machine learning models for application developers.",
+      "website": "http://www.marft.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "industries": [
+        "Education",
+        "Machine Learning"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Education",
+        "Software"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2012-03-28",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2012-03-28",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2012-03-28",
+          "title": "Seed Round - Marft"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -1,
+      "growthScore": 82,
+      "heatChange90Days": -21,
+      "heatScore": 56
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 92.72
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "DataRobot provides AI technology and ROI enablement services to global enterprises.",
+          "employeeRange": "501-1,000",
+          "name": "DataRobot",
+          "sharedCategories": [
+            "Machine Learning"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "H2O.ai is a machine learning platform that builds smart applications.",
+          "employeeRange": "251-500",
+          "name": "H2O.ai",
+          "sharedCategories": [
+            "Machine Learning"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Domino Data Lab provides an enterprise platform designed to help organizations build, deploy, and manage AI and machine learning models.",
+          "employeeRange": "251-500",
+          "name": "Domino Data Lab",
+          "sharedCategories": [
+            "Machine Learning"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "Dataiku operates as an enterprise artificial intelligence and machine-learning platform.",
+          "employeeRange": "1,001-5,000",
+          "name": "Dataiku",
+          "sharedCategories": [
+            "Machine Learning"
+          ],
+          "similarityScore": 86
+        },
+        {
+          "description": "An AI and machine learning deployment, management and observability platform.",
+          "employeeRange": "11-50",
+          "name": "Seldon",
+          "sharedCategories": [
+            "Machine Learning"
+          ],
+          "similarityScore": 84
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 82 (-1 over 90 days) and market heat at 56 (-21).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include DataRobot, H2O.ai, Domino Data Lab.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

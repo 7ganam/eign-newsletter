@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:50:48.357Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:50:48.300Z",
+    "url": "https://www.crunchbase.com/organization/herder"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Herder",
+      "shortDescription": "Herder publishes and sells books related to education, history, politics, religion, spirituality, living better and philosophy.",
+      "website": "https://www.herder.de/",
+      "foundedYear": 1801,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "101-250",
+      "estimatedRevenueRange": "$10M-$50M",
+      "headquarters": "Freiburg Im Breisgau, Baden-Wurttemberg, Germany",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Books",
+        "EBooks",
+        "E-Commerce",
+        "Publishing",
+        "Retail"
+      ],
+      "sectors": [
+        "Commerce and Shopping",
+        "Content and Publishing",
+        "Media and Entertainment"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Printed and digital books covering topics such as education, history, politics, religion, spirituality, lifestyle improvement, and philosophy.",
+        "name": "Books on Education, History, Politics, Religion, Spirituality, Living Better, and Philosophy"
+      },
+      {
+        "description": "Books and series focused on biblical, systematic, historical, ethical, and practical theology, including liturgy and pastoral care.",
+        "name": "Theological and Pastoral Books and Series"
+      },
+      {
+        "description": "Books, planners, and documentation tools for kindergarten and early childhood education professionals.",
+        "name": "Educational and Pedagogical Books and Resources"
+      },
+      {
+        "description": "Periodicals covering topics in education, theology, religion, spirituality, history, and politics.",
+        "name": "Magazines and Journals"
+      },
+      {
+        "description": "Online training courses and digital documentation tools for kindergarten and daycare professionals.",
+        "name": "Online Courses and Digital Services for Early Childhood Education"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -7,
+      "heatScore": 47
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 69.61
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Kohlhammer Verlag is a publishing and media company that publishes books, e-books, and magazines.",
+          "employeeRange": "51-100",
+          "name": "Kohlhammer Verlag",
+          "sharedCategories": [
+            "E-Commerce",
+            "Publishing",
+            "EBooks"
+          ],
+          "sharedSpecialties": [
+            "E-Book Retail and Distribution",
+            "Academic Publishing",
+            "Magazine Publishing"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Loewe is an e-Commerce book store for children, and teenagers.",
+          "employeeRange": "51-100",
+          "name": "Loewe",
+          "sharedCategories": [
+            "E-Commerce",
+            "EBooks"
+          ],
+          "sharedSpecialties": [
+            "Early Childhood Literacy Resources",
+            "Educational Publishing",
+            "E-Book Retail and Distribution"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "FShoeningh is a media and news company.",
+          "employeeRange": "1-10",
+          "name": "Ferdinand Schöningh",
+          "sharedCategories": [
+            "Publishing"
+          ],
+          "sharedSpecialties": [
+            "Religious Books and Resources",
+            "E-Book Retail and Distribution",
+            "Academic Publishing"
+          ],
+          "similarityScore": 86
+        },
+        {
+          "description": "Vandenhoeck & Ruprecht Verlage is a publisher of books and periodicals.",
+          "employeeRange": "101-250",
+          "name": "Vandenhoeck & Ruprecht Verlage",
+          "sharedCategories": [
+            "Books",
+            "Publishing"
+          ],
+          "sharedSpecialties": [
+            "Educational Publishing",
+            "E-Book Retail and Distribution",
+            "Academic Publishing",
+            "Magazine Publishing"
+          ],
+          "similarityScore": 82
+        },
+        {
+          "description": "Beltz offers printing and publishing services.",
+          "employeeRange": "11-50",
+          "name": "Beltz",
+          "sharedCategories": [
+            "Publishing"
+          ],
+          "sharedSpecialties": [
+            "Educational Publishing",
+            "Early Education",
+            "E-Book Retail and Distribution",
+            "Academic Publishing"
+          ],
+          "similarityScore": 80
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Kohlhammer Verlag, Loewe, Ferdinand Schöningh.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

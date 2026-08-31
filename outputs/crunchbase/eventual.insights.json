@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:50:38.337Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:50:38.280Z",
+    "url": "https://www.crunchbase.com/organization/eventual"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Eventual",
+      "shortDescription": "Get your favourite artists and bands to town",
+      "website": "https://www.eventu.al/",
+      "foundedYear": 2021,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Helsinki, Southern Finland, Finland",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Nordic Countries",
+        "Scandinavia",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Music"
+      ],
+      "sectors": [
+        "Media and Entertainment",
+        "Music and Audio"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A platform feature that allows users to initiate and support campaigns to fund events featuring artists or bands, charging supporters only if the campaign meets its goals and the event is confirmed.",
+        "name": "Crowdfunding Campaigns"
+      },
+      {
+        "description": "A service that allows artists, promoters, and venues to list upcoming events for public viewing and ticket sales on the platform.",
+        "name": "Event Listing"
+      },
+      {
+        "description": "A ticket management system that supports ticket sales, transfers, resales, and scanning for events hosted on the platform.",
+        "name": "Ticketing"
+      },
+      {
+        "description": "A tool for venues to manage bookings and coordinate event scheduling through the platform.",
+        "name": "Venue Booking"
+      },
+      {
+        "description": "A service that supports hosting and accessing online live or recorded arts and entertainment events through the platform.",
+        "name": "Streaming Channel"
+      },
+      {
+        "description": "A suite of tools including calendar, production organizer, guest list management, email communications, and analytics to support event planning and execution.",
+        "name": "Production Management Tools"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 0,
+      "growthScore": 84,
+      "heatChange90Days": -6,
+      "heatScore": 50
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 55.15
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 89.37
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 44.87
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "PledgeMusic is a unique marketplace where passionate fans and artists connect.",
+          "employeeRange": "11-50",
+          "name": "PledgeMusic",
+          "sharedCategories": [
+            "Music"
+          ],
+          "sharedSpecialties": [
+            "Ticket Sales Promotion",
+            "Reward-Based Crowdfunding"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Seed&Spark is an entertainment platform for conscious consumers actively increasing diversity and representation in entertainment.",
+          "employeeRange": "11-50",
+          "name": "Seed&Spark",
+          "sharedSpecialties": [
+            "Reward-Based Crowdfunding"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Kickstarter is a crowdfunding platform for creative projects such as movies, music, art, theater, games, comics, design, and photography.",
+          "employeeRange": "251-500",
+          "name": "Kickstarter",
+          "sharedSpecialties": [
+            "Reward-Based Crowdfunding"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Indiegogo is a crowdfunding platform that empowers people around the world to fund projects that matter to them.",
+          "employeeRange": "101-250",
+          "name": "Indiegogo",
+          "sharedSpecialties": [
+            "Reward-Based Crowdfunding"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "GoFundMe is the world’s largest fundraising platform, helping people, causes, and charities raise money fast and efficiently.",
+          "employeeRange": "101-250",
+          "name": "GoFundMe",
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 84 (+0 over 90 days) and market heat at 50 (-6).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include PledgeMusic, Seed&Spark, Kickstarter.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

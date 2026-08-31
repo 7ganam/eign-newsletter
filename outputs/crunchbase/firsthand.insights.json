@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:05:33.327Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:05:33.273Z",
+    "url": "https://www.crunchbase.com/organization/firsthand"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Firsthand",
+      "shortDescription": "Firsthand curates the freshest online brands and features their products in weekly pop-up shops.",
+      "description": "They provide the kiosk, the products, and the software — you just provide the space and they send you a check with your share of the profits at the end of the month.",
+      "website": "http://www.shopfirsthand.com/",
+      "foundedYear": 2016,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$10M-$50M",
+      "headquarters": "Seattle, Washington, United States",
+      "geographicRegions": [
+        "Greater Seattle Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "E-Commerce",
+        "Retail",
+        "Shopping"
+      ],
+      "sectors": [
+        "Commerce and Shopping"
+      ],
+      "founders": [
+        "Ari Hollander Hollander",
+        "Howard Rose"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2017-03-20",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2017-03-20",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 2080486,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2025-06-24",
+          "publisher": "Zawya.com",
+          "title": "Making a lasting impact: How data and corporate commitment can reshape ECDs in South Africa?",
+          "url": "https://www.zawya.com/en/world/africa/making-a-lasting-impact-how-data-and-corporate-commitment-can-reshape-ecds-in-south-africa-neryp8ns"
+        },
+        {
+          "date": "2017-03-20",
+          "title": "Seed Round - Firsthand"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -11,
+      "heatScore": 44
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 6.06,
+        "timingEstimatePercent": {
+          "within6Months": 13.64,
+          "months6To11": 11.78,
+          "months12To24": 18.96,
+          "beyond24Months": 24.68
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 45.52
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $120,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $2,080,486 to $2,080,486, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

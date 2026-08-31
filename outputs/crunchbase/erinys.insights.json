@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:49:23.403Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:49:23.349Z",
+    "url": "https://www.crunchbase.com/organization/erinys"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Erinys",
+      "shortDescription": "Erinys is a company that offers asset management, insurance, private equity, risk management, and merger and acquisition services.",
+      "website": "http://www.erinys.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Memphis, Tennessee, United States",
+      "geographicRegions": [
+        "Southern US"
+      ],
+      "industries": [
+        "Asset Management",
+        "Consulting",
+        "Insurance",
+        "Risk Management"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Professional Services"
+      ],
+      "founders": [
+        "Alan Cooper",
+        "David Gibson",
+        "Eric Burton",
+        "Jenny Smith",
+        "Kimberly Robertson",
+        "Lori Mendoza"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Service focused on managing investment portfolios and assets to meet client financial goals.",
+        "name": "Asset Management"
+      },
+      {
+        "description": "Investment service providing capital to private companies in exchange for equity ownership.",
+        "name": "Private Equity"
+      },
+      {
+        "description": "Service offering risk transfer solutions to protect clients against financial losses.",
+        "name": "Insurance"
+      },
+      {
+        "description": "Service aimed at identifying, assessing, and mitigating risks to minimize potential negative impacts.",
+        "name": "Risk Management"
+      },
+      {
+        "description": "Advisory and execution services for corporate mergers, acquisitions, and divestitures.",
+        "name": "Merger and Acquisition Services"
+      },
+      {
+        "description": "Service focused on integrating digital technologies to improve manufacturing processes.",
+        "name": "Smart Manufacturing"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -3,
+      "heatScore": 37
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 78.17
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "MDP seeks to invest in companies in partnership with outstanding management teams and achieve significant long-term value appreciation.",
+          "employeeRange": "101-250",
+          "name": "Madison Dearborn Partners",
+          "similarityScore": 100
+        },
+        {
+          "description": "TSG Financial provides risk management, insurance, financial services, and employee benefits services.",
+          "employeeRange": "11-50",
+          "name": "TSG Financial",
+          "sharedCategories": [
+            "Risk Management",
+            "Insurance"
+          ],
+          "sharedSpecialties": [
+            "Enterprise Risk Management",
+            "Insurance Brokerage"
+          ],
+          "similarityScore": 87.537
+        },
+        {
+          "description": "Lowers Risk Group is a security and investigations company providing risk management solutions.",
+          "employeeRange": "251-500",
+          "name": "Lowers Risk Group",
+          "sharedSpecialties": [
+            "Enterprise Risk Management"
+          ],
+          "similarityScore": 83.019
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Madison Dearborn Partners, TSG Financial, Lowers Risk Group.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

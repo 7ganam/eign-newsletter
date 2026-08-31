@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T09:56:37.924Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T09:56:37.899Z",
+    "url": "https://www.crunchbase.com/organization/arcane"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Arcane",
+      "shortDescription": "We're on a mission to change the reality of marketing spend from an expense line to a predictable income generator.",
+      "description": "We're on a mission to change the reality of marketing spend from an expense line to a predictable income generator.",
+      "website": "https://thearcane.com/",
+      "foundedYear": 2011,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "51-100",
+      "headquarters": "London, Ontario, Canada",
+      "geographicRegions": [
+        "Great Lakes"
+      ],
+      "industries": [
+        "Advertising",
+        "Marketing"
+      ],
+      "sectors": [
+        "Advertising",
+        "Sales and Marketing"
+      ],
+      "founders": [
+        "Eric Vardon",
+        "John D'Orsay"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Canvas art prints featuring various themes such as abstracts, skylines, florals, and landscapes, available in large sizes and framed options.",
+        "name": "Canvas Art Prints"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2020-04-01",
+          "title": "Arcane acquired by Republix"
+        },
+        {
+          "date": "2018-05-24",
+          "publisher": "Gamasutra",
+          "title": "GDPR changes prompt Torn Banner Studios to shut down Mirage: Arcane Warfare",
+          "url": "https://www.gamasutra.com/view/news/318830/GDPR_changes_prompt_Torn_Banner_Studios_to_shut_down_Mirage_Arcane_Warfare.php"
+        },
+        {
+          "date": "2018-03-08",
+          "publisher": "PocketGamer",
+          "title": "Indie Spotlight: Arcane Circus’s Molly Heady-Carroll on the accessibility of the mobile market and finding the balance in life",
+          "url": "http://www.pocketgamer.biz/interview/67701/indie-spotlight-arcane-circuss-molly-heady-carroll-on-the-accessibility-of-the-mobile-market-and-finding-the-balance-in-life/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -13,
+      "heatScore": 39
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-04-11",
+        "probabilityPercent": 80.18
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Latostadora offers an online shop for t-shirts, sweatshirts, children's clothing, canvas, paintings, posters, and accessories.",
+          "employeeRange": "11-50",
+          "name": "Latostadora",
+          "similarityScore": 100
+        },
+        {
+          "description": "The Museum Outlet is an e-commerce website that provides artistic products.",
+          "employeeRange": "1-10",
+          "name": "The Museum Outlet",
+          "similarityScore": 95.297
+        },
+        {
+          "description": "L'Diff collects art and shares fair copyright fees to artists.",
+          "employeeRange": "1-10",
+          "name": "L'Diff",
+          "similarityScore": 90.765
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Latostadora, The Museum Outlet, L'Diff.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

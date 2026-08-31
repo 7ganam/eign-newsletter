@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:11:16.204Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:11:16.147Z",
+    "url": "https://www.crunchbase.com/organization/infinity"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Headline Asia (formerly Infinity Ventures)",
+      "shortDescription": "Headline Asia is a technology-focused VC headquartered in Tokyo, Japan with investment teams deployed in Beijing and Taipei.",
+      "description": "Infinity Ventures is now Headline Asia.\nAt Headline Asia, we strive to invest in and create venture companies with infinite possibilities.",
+      "website": "https://headline.com/asia/ja-jp",
+      "foundedYear": 2008,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Tokyo, Japan",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)"
+      ],
+      "industries": [
+        "Finance",
+        "Financial Services",
+        "Venture Capital"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Lending and Investments"
+      ],
+      "founders": [
+        "Akio Tanaka",
+        "Hirofumi Ono"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 196,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-08-20",
+          "title": "Seed Round - Letara"
+        },
+        {
+          "date": "2026-08-17",
+          "title": "Venture Round - Recri"
+        },
+        {
+          "date": "2026-06-04",
+          "title": "Seed Round - Rimowa"
+        },
+        {
+          "date": "2026-06-02",
+          "title": "Series A - Tokenz"
+        },
+        {
+          "date": "2026-04-30",
+          "title": "Series A - GGWP"
+        },
+        {
+          "date": "2026-02-28",
+          "title": "Series C - Lingble"
+        },
+        {
+          "date": "2026-02-25",
+          "title": "Seed Round - RLWRLD"
+        },
+        {
+          "date": "2026-02-10",
+          "title": "Seed Round - InfiniMind"
+        },
+        {
+          "date": "2026-01-28",
+          "title": "Venture Round - Zettabyte"
+        },
+        {
+          "date": "2025-12-02",
+          "title": "Seed Round - Dishwill"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 0,
+      "growthScore": 91,
+      "heatChange90Days": 4,
+      "heatScore": 77
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "JAFCO Japan is a venture capital, incubator, and private equity firm.",
+          "employeeRange": "101-250",
+          "name": "JAFCO",
+          "sharedCategories": [
+            "Financial Services",
+            "Finance",
+            "Venture Capital"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "Global Brain Corporation is a venture capital firm that invests in companies from seed or early to pre-IPO startups.",
+          "employeeRange": "101-250",
+          "name": "Global Brain Corporation",
+          "sharedCategories": [
+            "Financial Services",
+            "Venture Capital"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Archetype Ventures is a venture capital firm that does seed and early stage B2B venture investments.",
+          "employeeRange": "11-50",
+          "name": "Archetype Ventures",
+          "sharedCategories": [
+            "Financial Services",
+            "Finance",
+            "Venture Capital"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Incubate Fund is an independent early stage venture capital that specializes in providing capital to technology startups at seed stage.",
+          "employeeRange": "11-50",
+          "name": "Incubate Fund",
+          "sharedCategories": [
+            "Venture Capital"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "ANRI is a Japanese venture capital firm that mainly invests in seed and early-stage startups.",
+          "employeeRange": "1-10",
+          "name": "ANRI",
+          "sharedCategories": [
+            "Financial Services",
+            "Venture Capital"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 91 (+0 over 90 days) and market heat at 77 (+4).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include JAFCO, Global Brain Corporation, Archetype Ventures.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 196 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

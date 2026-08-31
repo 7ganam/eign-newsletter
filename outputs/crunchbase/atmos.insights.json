@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:12:25.141Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:12:25.111Z",
+    "url": "https://www.crunchbase.com/organization/atmos"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "ATMOS",
+      "shortDescription": "Atmos Spa is a private equity and venture capital firm.",
+      "website": "http://www.atmosholding.com/",
+      "foundedYear": 2004,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "headquarters": "Milan, Lombardia, Italy",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Finance",
+        "Financial Services",
+        "Venture Capital"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Lending and Investments"
+      ],
+      "founders": [
+        "Wlodek Kurjanowicz"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2015-09-04",
+          "title": "Lenovo launches world’s first tablet with immersive Dolby Atmos",
+          "url": "http://www.digitalartsonline.co.uk/news/creative-hardware/lenovo-launches-worlds-first-tablet-with-dolby-atmos-speaker-virtualisation/"
+        },
+        {
+          "date": "2008-11-07",
+          "title": "Venture Round - Pelamis Wave Power"
+        },
+        {
+          "date": "2008-08-19",
+          "title": "Series D - EnOcean"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -6,
+      "heatScore": 30
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

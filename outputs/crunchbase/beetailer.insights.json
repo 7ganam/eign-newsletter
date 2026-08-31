@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:28:19.363Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:28:19.308Z",
+    "url": "https://www.crunchbase.com/organization/beetailer"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Beetailer",
+      "shortDescription": "Beetailer is a service that allows e-commerce merchants to import their website's store to a tab on their Facebook page.",
+      "description": "Beetailer's software helps retailers import existing web stores onto Facebook and gives e-retailers tools for promoting the storefront and detailed analytics about how well it is doing.",
+      "website": "http://www.beetailer.com/",
+      "foundedYear": 2011,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Mountain View, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "E-Commerce",
+        "Software"
+      ],
+      "sectors": [
+        "Commerce and Shopping",
+        "Software"
+      ],
+      "founders": [
+        "Laura Valverde García",
+        "Miguel Martinez Trivino"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2011-04-06",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2011-04-06",
+          "investorCount": 2,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "500 Global",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2011-04-06",
+          "title": "Seed Round - Beetailer"
+        },
+        {
+          "date": "2011-03-24",
+          "publisher": "Xconomy",
+          "title": "Y Combinator's Winter 2011 Demo Day: The Definitive Debrief | Xconomy",
+          "url": "http://www.xconomy.com/san-francisco/2011/03/24/y-combinators-winter-2011-demo-day-the-definitive-debrief/"
+        },
+        {
+          "date": "2011-03-20",
+          "publisher": "TechCrunch",
+          "title": "Beetailer Helps Online Retailers Set Up Shop On&nbsp;Facebook",
+          "url": "http://techcrunch.com/2011/03/20/beetailer-helps-online-retailers-set-up-shop-on-facebook/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -10,
+      "heatScore": 47
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Ecwid is a software-as-a-service e-commerce company that provides online selling solutions for small businesses.",
+          "employeeRange": "101-250",
+          "name": "Ecwid",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Shopify is a commerce platform that provides tools for businesses to build, manage, and grow online and offline stores.",
+          "employeeRange": "5,001-10,000",
+          "name": "Shopify",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "CedCommerce develops and provides e-Commerce solutions for the clients’ specific needs.",
+          "employeeRange": "501-1,000",
+          "name": "CedCommerce",
+          "sharedCategories": [
+            "E-Commerce",
+            "Software"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "StoreYa offers a suite of marketing and advertising apps that help SMBs increase sales, leads, and social following.",
+          "employeeRange": "11-50",
+          "name": "StoreYa",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "BigCommerce is a SaaS provider for merchants running online businesses.",
+          "employeeRange": "501-1,000",
+          "name": "BigCommerce",
+          "sharedCategories": [
+            "E-Commerce",
+            "Software"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Ecwid, Shopify, CedCommerce.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

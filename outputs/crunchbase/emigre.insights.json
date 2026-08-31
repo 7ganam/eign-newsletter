@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:43:06.919Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:43:06.889Z",
+    "url": "https://www.crunchbase.com/organization/emigre"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Emigre",
+      "shortDescription": "A digital type foundry based in Berkeley, California.",
+      "description": "Emigre, Inc. is a digital type foundry based in Berkeley, California. Founded in 1984, coinciding with the birth of the Macintosh computer, the Emigre team, consisting of Rudy VanderLans and Zuzana Licko, with the addition of Tim Starback in 1993, were among the early adaptors to the new digital technology.As a team, Emigre has been honored with numerous awards including the 1994 Chrysler Award for Innovation in Design, and the 1998 Charles Nypels Award for excellence in the field of typography.Emigre is also a recipient of the 1997 American Institute of Graphic Arts Gold Medal Award, its highest honors.",
+      "website": "https://www.emigre.com/",
+      "foundedYear": 1984,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Berkeley, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Marketing"
+      ],
+      "sectors": [
+        "Sales and Marketing"
+      ],
+      "founders": [
+        "Rudy VanderLans",
+        "Zuzana Licko"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A collection of digital typefaces available for licensing and use in various media including desktop, web, app, ebook, server, and game environments.",
+        "name": "Emigre Fonts"
+      },
+      {
+        "description": "A design magazine published from 1984 to 2005 featuring graphic design, typography, and design discourse content.",
+        "name": "Emigre Magazine"
+      },
+      {
+        "description": "Printed and digital catalogs showcasing Emigre's typefaces with design samples and usage examples.",
+        "name": "Type Specimen Catalogs"
+      },
+      {
+        "description": "A collection of handmade ceramic vases and art objects created by Emigre co-founder Zuzana Licko.",
+        "name": "Handmade Ceramics by Zuzana Licko"
+      },
+      {
+        "description": "Limited edition digital prints and photographic works by Emigre co-founder Rudy VanderLans.",
+        "name": "Art Prints by Rudy VanderLans"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -14,
+      "heatScore": 46
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 51.39
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Commercial Type is a joint venture between Paul Barnes and Christian Schwartz, publishing retail fonts developed by Barnes and Schwartz",
+          "employeeRange": "1-10",
+          "name": "Commercial Type",
+          "sharedSpecialties": [
+            "Book Design",
+            "Typography",
+            "Editorial Design",
+            "Print Design",
+            "Desktop Publishing and Typesetting"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Typography design and cloud hosted webfonts",
+          "employeeRange": "11-50",
+          "name": "Hoefler & Co.",
+          "sharedSpecialties": [
+            "Book Design",
+            "Typography",
+            "Digital Publications",
+            "Print Design",
+            "Desktop Publishing and Typesetting"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Monotype is the global leader in design assets, technology, and expertise.",
+          "employeeRange": "1,001-5,000",
+          "name": "Monotype",
+          "sharedCategories": [
+            "Marketing"
+          ],
+          "sharedSpecialties": [
+            "Typography"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Klim Type Foundry is an independent typeface design studio led by Kris Sowersby.",
+          "employeeRange": "1-10",
+          "name": "Klim Type Foundry",
+          "sharedSpecialties": [
+            "Book Design",
+            "Typography",
+            "Editorial Design",
+            "Print Design"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Dalton Maag is an independent type design studio with offices in London.",
+          "employeeRange": "11-50",
+          "name": "Dalton Maag",
+          "sharedSpecialties": [
+            "Book Design",
+            "Typography",
+            "Editorial Design",
+            "Desktop Publishing and Typesetting"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Commercial Type, Hoefler & Co., Monotype.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

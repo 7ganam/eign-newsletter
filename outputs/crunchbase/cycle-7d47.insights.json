@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:42:56.172Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:42:56.113Z",
+    "url": "https://www.crunchbase.com/organization/cycle-7d47"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Cycle",
+      "shortDescription": "Helping companies know exactly what people want, with AI",
+      "description": "We help companies know exactly what people want by replacing traditional surveys with AI-powered conversations.",
+      "website": "https://www.getcycle.dev/",
+      "foundedYear": 2024,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Toronto, Ontario, Canada",
+      "geographicRegions": [
+        "Great Lakes"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Conor Plunkett"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An AI-driven platform that conducts automated interviews with audiences based on user-defined questions and generates summarized reports of insights.",
+        "name": "AI-Interviewer Platform"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2024-07-25",
+          "title": "Cycle acquired by Crossmint"
+        },
+        {
+          "date": "2024-07-25",
+          "publisher": "Crossmint Blog",
+          "title": "Crossmint acquires Cycle AI",
+          "url": "https://blog.crossmint.com/crossmint-acquires-cycle-ai/"
+        },
+        {
+          "date": "2024-07-25",
+          "publisher": "BetaKit",
+          "title": "Nascent AI user research startup Cycle acquired by US blockchain platform Crossmint",
+          "url": "https://betakit.com/nascent-ai-user-research-startup-cycle-acquired-by-us-blockchain-platform-crossmint/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -7,
+      "heatScore": 33
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-04-04",
+        "probabilityPercent": 81.03
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Listen Labs is an AI-first customer research platform that automates customer interviews and delivers actionable insights.",
+          "employeeRange": "101-250",
+          "name": "Listen Labs",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Dscout is a remote experience research technology platform helping businesses to capture products, brands, and user experiences at scale.",
+          "employeeRange": "101-250",
+          "name": "Dscout",
+          "similarityScore": 95
+        },
+        {
+          "description": "UserTesting is an on-demand human insight platform designed to improve customer insights.",
+          "employeeRange": "501-1,000",
+          "name": "UserTesting",
+          "similarityScore": 93
+        },
+        {
+          "description": "Great Question is a customer research platform designed to automate research tasks and gain consumer insights.",
+          "employeeRange": "51-100",
+          "name": "Great Question",
+          "similarityScore": 91
+        },
+        {
+          "description": "Maze is the continuous product discovery platform for user-centric teams.",
+          "employeeRange": "101-250",
+          "name": "Maze",
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Listen Labs, Dscout, UserTesting.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

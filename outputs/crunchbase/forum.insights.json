@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:16:37.974Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:16:37.940Z",
+    "url": "https://www.crunchbase.com/organization/forum"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "FORUM",
+      "shortDescription": "FORUM is a fintech venture builder specializing in Asian emerging markets.",
+      "description": "FORUM is a fintech venture builder specializing in Asian emerging markets. FORUM develops, launches, and builds market leaders in fintech for capital gain. It aims to increase access to finance and maximize social impact in Emerging Asian countries by leveraging innovative digital technology.",
+      "website": "https://forum-cap.com/",
+      "foundedYear": 2015,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "employeeRange": "11-50",
+      "headquarters": "Singapore, Central Region",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)",
+        "Association of Southeast Asian Nations (ASEAN)",
+        "Southeast Asia"
+      ],
+      "industries": [
+        "FinTech",
+        "Retail",
+        "Venture Capital"
+      ],
+      "sectors": [
+        "Commerce and Shopping",
+        "Financial Services",
+        "Lending and Investments"
+      ],
+      "founders": [
+        "Greg Krasnov"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 5,
+      "includedUniqueCount": 5,
+      "items": [
+        {
+          "date": "2018-07-19",
+          "publisher": "PRNewswire",
+          "title": "Strategy experts split over the effect of privacy concerns on big data in new survey from MIT Sloan Management Review",
+          "url": "https://www.prnewswire.com/news-releases/strategy-experts-split-over-the-effect-of-privacy-concerns-on-big-data-in-new-survey-from-mit-sloan-management-review-300683695.html"
+        },
+        {
+          "date": "2017-03-01",
+          "title": "Seed Round - AsiaKredit"
+        },
+        {
+          "date": "2016-12-01",
+          "title": "Pre Seed Round - SolarHome"
+        },
+        {
+          "date": "2016-01-01",
+          "title": "Pre Seed Round - Credolab"
+        },
+        {
+          "date": "2016-01-01",
+          "title": "Seed Round - Flow"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -3,
+      "growthScore": 4,
+      "heatChange90Days": -8,
+      "heatScore": 51
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 4 (-3 over 90 days) and market heat at 51 (-8).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

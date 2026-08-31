@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:10:41.447Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:10:41.375Z",
+    "url": "https://www.crunchbase.com/organization/bytebot"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Bytebot",
+      "shortDescription": "Bytebot streamlines web tasks by translating prompts into browser automation, including clicks, form filling, and data extraction.",
+      "description": "Bytebot simplifies and streamlines web tasks by translating natural language prompts into browser automation, including clicks, form filling, and data extraction.\n\nThe platform and SDK enables users to develop robust, dynamic web automation scripts that adapt alongside changing web environments.\n\nEffortless to use and easy to integrate, Bytebot helps users boost their workflow efficiency and drive growth, all without the complexity.",
+      "website": "https://www.bytebot.ai/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Generative AI",
+        "Information Technology",
+        "Web Browsers"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Internet Services",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Carl Atupem"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A platform that enables the creation and deployment of desktop agents which automate tasks by interacting with applications through keyboard, mouse, and screen inputs.",
+        "name": "Bytebot Desktop Agent Platform"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -22,
+      "heatScore": 50
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 5
+      },
+      "funding": {
+        "generatedDate": "2024-03-01",
+        "probabilityPercent": 96.87,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 44.2,
+          "months12To24": 41.29,
+          "beyond24Months": 14.5
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 80.59
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Make Websites Accessible for Agents",
+          "employeeRange": "1-10",
+          "name": "Browser Use",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Agentic Orchestration",
+            "Workflow Automation",
+            "Computer Use Agents",
+            "Workflow Automation Agents",
+            "Intelligent Process Automation"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Induced AI works to automate browser tasks.",
+          "employeeRange": "1-10",
+          "name": "Induced AI",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Agentic Orchestration",
+            "Intelligent Document Processing",
+            "Workflow Automation",
+            "Workflow Automation Agents",
+            "Intelligent Process Automation"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Browserbase is a comprehensive platform for developers to host, administer, and monitor headless browsers in the cloud.",
+          "employeeRange": "11-50",
+          "name": "Browserbase",
+          "sharedCategories": [
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Container and Kubernetes Platform Services",
+            "Workflow Automation",
+            "Workflow Automation Agents"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Axiom AI  is an AI browser assistant that lets you automate business processes, and share them with others on a ‘process app-store’.",
+          "employeeRange": "1-10",
+          "name": "Axiom AI",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Workflow Automation",
+            "Intelligent Process Automation"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "OpenAI is an AI research and deployment company that develops advanced AI models, including ChatGPT.",
+          "employeeRange": "10,001+",
+          "name": "OpenAI",
+          "sharedCategories": [
+            "Generative AI",
+            "Artificial Intelligence (AI)",
+            "Information Technology"
+          ],
+          "similarityScore": 88
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Browser Use, Induced AI, Browserbase.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

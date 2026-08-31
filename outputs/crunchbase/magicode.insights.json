@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:14:19.924Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:14:19.869Z",
+    "url": "https://www.crunchbase.com/organization/magicode"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Magicode",
+      "shortDescription": "Magicode specializes in business intelligence, data protection, and document management services.",
+      "website": "https://magicode.pt/",
+      "foundedYear": 2006,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Envendos, Santarem, Portugal",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Document Management",
+        "Enterprise Resource Planning (ERP)",
+        "Information Services"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Software"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -4,
+      "heatScore": 60
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 79.89
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "McFile is a powerful corporate tool in the cloud for Electronic Document Management, Information Management, and Process Management.",
+          "employeeRange": "11-50",
+          "name": "McFile",
+          "sharedCategories": [
+            "Document Management"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "The M-Files metadata-driven document management platform enables knowledge workers to instantly find the right information in any context.",
+          "employeeRange": "501-1,000",
+          "name": "M-Files",
+          "sharedCategories": [
+            "Document Management"
+          ],
+          "similarityScore": 96
+        },
+        {
+          "description": "DocuWare provides a recognized best-fit solution for digitizing, automating and transforming key document-centric processes.",
+          "employeeRange": "501-1,000",
+          "name": "DocuWare",
+          "sharedCategories": [
+            "Document Management"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "OpenText powers and protects to secure information management for AI.",
+          "employeeRange": "10,001+",
+          "name": "OpenText",
+          "sharedCategories": [
+            "Information Services"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Alfresco is an enterprise open-source software company that automates content centric processes for digital business.",
+          "employeeRange": "251-500",
+          "name": "Alfresco",
+          "sharedCategories": [
+            "Document Management"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include McFile, M-Files, DocuWare.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:55:11.347Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:55:11.289Z",
+    "url": "https://www.crunchbase.com/organization/camber-1fd0"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Camber",
+      "shortDescription": "Camber offers wealth management services with a focus on disciplined investment strategies.",
+      "description": "Camber specializes in providing wealth management services, focusing on creating disciplined investment strategies for its clients. With a team skilled in navigating the complexities of financial planning, Camber aims to address the biggest risks to retirement cash flow and offers solutions tailored to individual needs. The company leverages financial dashboards and other tools to enhance decision-making and performance tracking. Camber's commitment to its clients is evident in its approach to investment, where understanding and strategy play key roles in achieving financial goals.",
+      "website": "https://www.camberco.ca/",
+      "foundedYear": 2019,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Calgary, Alberta, Canada",
+      "industries": [
+        "Finance",
+        "Financial Services",
+        "Wealth Management"
+      ],
+      "sectors": [
+        "Financial Services"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A tool that provides a comprehensive view of a client's financial life, including past, present, and future data to support informed decision-making.",
+        "name": "Financial Dashboard"
+      },
+      {
+        "description": "A service where Camber manages investment portfolios on behalf of clients, making buy and sell decisions aligned with client objectives and risk tolerance.",
+        "name": "Discretionary Portfolio Management"
+      },
+      {
+        "description": "Personalized financial planning services tailored to individual client needs, covering areas such as retirement, tax, estate, and education planning.",
+        "name": "Customized Financial Planning"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -37,
+      "heatScore": 34
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 78.19
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Wealthsimple is a fintech company that offers digital financial services to help investors grow and manage their money.",
+          "employeeRange": "501-1,000",
+          "name": "Wealthsimple",
+          "sharedCategories": [
+            "Financial Services",
+            "Wealth Management",
+            "Finance"
+          ],
+          "sharedSpecialties": [
+            "Personal Finance Management (PFM) Platforms",
+            "Investment Management"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "RBC Dominion Securities, a trusted resource for all of your wealth management, investing and financial planning needs.",
+          "employeeRange": "5,001-10,000",
+          "name": "RBC Dominion Securities",
+          "sharedCategories": [
+            "Financial Services"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Richardson Wealth provides financial and wealth management services.",
+          "employeeRange": "501-1,000",
+          "name": "Richardson Wealth",
+          "sharedCategories": [
+            "Financial Services",
+            "Wealth Management",
+            "Finance"
+          ],
+          "sharedSpecialties": [
+            "Trust and Fiduciary Services",
+            "Tax Planning",
+            "Financial Planning",
+            "Personal Finance Management (PFM) Platforms",
+            "Estate Planning",
+            "Investment Management",
+            "Retirement Planning"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "IG Wealth Management is a company which provides Investment, Retirement, Insurance, Financial Planning & Tax Planning services.",
+          "employeeRange": "1,001-5,000",
+          "name": "IG Wealth Management",
+          "sharedCategories": [
+            "Financial Services"
+          ],
+          "sharedSpecialties": [
+            "Trust and Fiduciary Services",
+            "Tax Planning",
+            "Financial Planning",
+            "Personal Finance Management (PFM) Platforms",
+            "Estate Planning",
+            "Investment Management",
+            "Retirement Planning"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Canaccord Genuity is a full-service investment bank focused on growth companies.",
+          "employeeRange": "1,001-5,000",
+          "name": "Canaccord Genuity Group",
+          "sharedCategories": [
+            "Financial Services",
+            "Finance"
+          ],
+          "sharedSpecialties": [
+            "Investment Management"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Wealthsimple, RBC Dominion Securities, Richardson Wealth.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

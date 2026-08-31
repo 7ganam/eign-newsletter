@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:06:06.947Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:06:06.893Z",
+    "url": "https://www.crunchbase.com/organization/artifact"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Artifact",
+      "shortDescription": "Traveling Made Easy with a Comprehensive Travel Guide of Sri Lanka http://www.backpacktosrilanka.com",
+      "description": "Artifact a collective of freelancers keen on maintaining a healthy balance of functionality and visual impact on our heavenly designs.",
+      "website": "http://www.artifact.lk/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Colombo, Western, Sri Lanka",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)"
+      ],
+      "industries": [
+        "E-Commerce",
+        "SEO",
+        "Social Media Marketing",
+        "Web Design",
+        "Web Development"
+      ],
+      "sectors": [
+        "Commerce and Shopping",
+        "Design",
+        "Internet Services",
+        "Sales and Marketing",
+        "Software"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 5,
+      "includedUniqueCount": 5,
+      "items": [
+        {
+          "date": "2020-05-23",
+          "publisher": "Engadget",
+          "title": "Valve starts inviting players to 'Artifact' Beta 2.0",
+          "url": "https://engt.co/2ZzN3mX"
+        },
+        {
+          "date": "2020-05-21",
+          "publisher": "Kit Guru News",
+          "title": "Valve shows Artifact 2.0 gameplay for the first time",
+          "url": "https://www.kitguru.net/gaming/matthew-wilson/valve-shows-artifact-2-0-gameplay-for-the-first-time/"
+        },
+        {
+          "date": "2020-05-21",
+          "publisher": "Geeky Gadgets",
+          "title": "Artifact 2 beta gameplay",
+          "url": "http://dlvr.it/RX5BS9"
+        },
+        {
+          "date": "2020-05-18",
+          "publisher": "pcgamer",
+          "title": "Artifact 2.0 enters beta this month",
+          "url": "https://buff.ly/2XbJvV1"
+        },
+        {
+          "date": "2012-03-09",
+          "title": "Why German Translations",
+          "url": "http://digg.com/newsbar/topnews/german_translation_services_artifact_german_website_translations_sri_lanka_austria"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -15,
+      "heatScore": 21
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Walkers Tours is a travel agency that offers hotels, transportation, and travel accommodation services.",
+          "employeeRange": "251-500",
+          "name": "Walkers Tours",
+          "similarityScore": 93
+        },
+        {
+          "description": "Beyonder Experiences offers to travel with fluid itineraries and local tourist guides and truly gets to savor a piece of the local culture.",
+          "employeeRange": "1-10",
+          "name": "Beyonder Experiences",
+          "similarityScore": 92
+        },
+        {
+          "description": "Intrepid Travel is a full-service travel agency that organizes holidays and travels.",
+          "employeeRange": "1,001-5,000",
+          "name": "Intrepid Travel",
+          "similarityScore": 89
+        },
+        {
+          "description": "BookMundi is a very sophisticated travel platform where customers can book tours around the world from screened & qualified travel partners.",
+          "employeeRange": "11-50",
+          "name": "BookMundi ApS",
+          "similarityScore": 88
+        },
+        {
+          "description": "Jetwing Travels arranges tours, travel planning, and destination management services for visitors to Sri Lanka.",
+          "employeeRange": "251-500",
+          "name": "Jetwing Travels",
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Walkers Tours, Beyonder Experiences, Intrepid Travel.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:31:38.172Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:31:38.121Z",
+    "url": "https://www.crunchbase.com/organization/bhrd"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "BHRD",
+      "shortDescription": "BHRD helps public companies manage and communicate with their shareholders.",
+      "description": "BHRD helps public companies manage and communicate with their shareholders.\n\nBHRD allows its clients to leverage clear data-backed insights to help them manage and target investors.",
+      "website": "https://bhrdglobal.com/",
+      "foundedYear": 2017,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Toronto, Ontario, Canada",
+      "geographicRegions": [
+        "Great Lakes"
+      ],
+      "industries": [
+        "Financial Services",
+        "FinTech"
+      ],
+      "sectors": [
+        "Financial Services"
+      ],
+      "founders": [
+        "Michael Yuen Liao"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2018-08-20",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2018-08-20",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2018-01-01",
+          "investorCount": 1,
+          "leadInvestors": [
+            "FinTech Sandbox"
+          ],
+          "type": "Non Equity Assistance"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "FinTech Sandbox",
+            "rounds": [
+              "Non Equity Assistance"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2018-08-21",
+          "publisher": "TechCrunch",
+          "title": "Here are the 63 startups that launched today at Y Combinator’s S18 Demo Day 1",
+          "url": "https://techcrunch.com/2018/08/20/here-are-the-63-startups-that-launched-today-at-y-combinators-s18-demo-day-1/"
+        },
+        {
+          "date": "2018-08-20",
+          "title": "Seed Round - BHRD"
+        },
+        {
+          "date": "2018-01-01",
+          "title": "Non Equity Assistance - BHRD"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 5,
+      "heatScore": 50
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $120,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

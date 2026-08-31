@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:45:38.723Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:45:38.669Z",
+    "url": "https://www.crunchbase.com/organization/healthspark"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "HealthSpark",
+      "shortDescription": "HealthSpark provides U.K. manufactured health supplements, including vitamins and weight loss supplements.",
+      "description": "Healthspark Limited is a health supplements retailer and contract manufacturer.  It trades on a reputation for high quality service and product, and VAT relief owing to its offshore domicile. It is fully compliant with all UK and EU regulations and has therefore proved an attractive partner to large onshore trading companies.",
+      "website": "http://www.healthspark.co.uk/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "St. Helier, NA - Jersey, Jersey",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Dietary Supplements",
+        "Health Care"
+      ],
+      "sectors": [
+        "Food and Beverage",
+        "Health Care"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2013-07-26",
+          "publisher": "Gigaom",
+          "title": "Filament Labs hopes its algorithms turn healthcare into a full-service business",
+          "url": "https://gigaom.com/2013/07/26/filament-labs-hopes-its-algorithms-turn-healthcare-into-a-full-service-business/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -15,
+      "heatScore": 49
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 15.36
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 70.13
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 6.64
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Healthspan manufactures and supplies vitamins, minerals, herbal medicines and health supplements.",
+          "employeeRange": "251-500",
+          "name": "HealthSpan",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Holland & Barrett is a chain of health food shops with over 1,300 stores in 16 countries.",
+          "employeeRange": "5,001-10,000",
+          "name": "Holland & Barrett",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "It sells many health and beauty products, and also Boots provides optician and hearing care services within shops.",
+          "employeeRange": "10,001+",
+          "name": "Boots UK",
+          "similarityScore": 90
+        },
+        {
+          "description": "Vitabiotics is a company that provides health products for all ages and all needs.",
+          "employeeRange": "11-50",
+          "name": "Vitabiotics",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "National Wealth Fund is the government-owned policy bank, focused on increasing infrastructure investment.",
+          "employeeRange": "101-250",
+          "name": "National Wealth Fund",
+          "similarityScore": 84
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include HealthSpan, Holland & Barrett, Boots UK.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

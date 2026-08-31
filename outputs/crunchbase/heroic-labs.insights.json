@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:51:07.301Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:51:07.250Z",
+    "url": "https://www.crunchbase.com/organization/heroic-labs"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Heroic Labs",
+      "shortDescription": "Heroic Labs builds social infrastructure for games and apps.",
+      "description": "Heroic Labs builds Nakama; an open-source distributed social and realtime server for games and apps. It includes a large set of services for users, data storage, and realtime client/server communication; as well as specialized APIs like realtime multiplayer, groups/guilds, and chat.\nHeroic Labs is a Y Combinator company.",
+      "website": "https://heroiclabs.com/",
+      "foundedYear": 2015,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Apps",
+        "Gaming",
+        "Social Media",
+        "Software"
+      ],
+      "sectors": [
+        "Apps",
+        "Gaming",
+        "Internet Services",
+        "Media and Entertainment",
+        "Software"
+      ],
+      "founders": [
+        "Andrei Mihu",
+        "Christopher Molozian",
+        "Mo Firouz"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An open-source game server framework for building social, multiplayer, and competitive game backends.",
+        "name": "Nakama"
+      },
+      {
+        "description": "A game development toolkit for rapidly building meta game features like economies, rewards, and analytics integration.",
+        "name": "Hiro"
+      },
+      {
+        "description": "A LiveOps platform for managing player events, segmentation, feature flags, and experiments in games.",
+        "name": "Satori"
+      },
+      {
+        "description": "A managed cloud service for deploying and scaling Nakama and Satori game backend clusters.",
+        "name": "Heroic Cloud"
+      },
+      {
+        "description": "An integration plugin combining Nakama's social matchmaking with Amazon GameLift's session-based multiplayer server management.",
+        "name": "Nakama-Amazon GameLift Integration"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2015-08-18",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2015-08-18",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 2130436,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 10,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2025-07-31",
+          "publisher": "pocketgamer.biz",
+          "title": "A heroic ten years",
+          "url": "https://www.pocketgamer.biz/a-heroic-ten-years/"
+        },
+        {
+          "date": "2024-05-26",
+          "publisher": "Medium",
+          "title": "Crash Course — Using Nakama To Build An Online Gaming Backend for a Flutter Game",
+          "url": "https://medium.com/@treyhope/crash-course-using-nakama-to-build-an-online-gaming-backend-for-a-flutter-game-10876b11fd93"
+        },
+        {
+          "date": "2022-06-16",
+          "publisher": "pocketgamer.biz",
+          "title": "Heroic Labs releases LiveOps service Satori",
+          "url": "https://www.pocketgamer.biz/news/78985/heroic-labs-releases-satori-liveops-and-player-personalization-engine-for-the-games-industry/"
+        },
+        {
+          "date": "2021-11-01",
+          "publisher": "Cockroach Labs",
+          "title": "Optimize a Distributed DB for Game Developers: Tips From Heroic Labs",
+          "url": "https://www.cockroachlabs.com/blog/optimizing-distributed-database-for-game-dev/"
+        },
+        {
+          "date": "2021-09-22",
+          "publisher": "Cockroach Labs",
+          "title": "The Cockroach Hour: How Heroic Labs Builds Scalable Backend Architecture for Gaming",
+          "url": "https://cockroa.ch/2YrOIwi"
+        },
+        {
+          "date": "2021-01-25",
+          "publisher": "PocketGamer",
+          "title": "Announcing Nakama 3.0 - the #1 open-source game server",
+          "url": "https://www.pocketgamer.biz/news/75595/announcing-nakama-30-the-1-open-source-game-server/"
+        },
+        {
+          "date": "2020-06-15",
+          "publisher": "PocketGamer",
+          "title": "The Heroic Cloud - Hosted games infrastructure at scale",
+          "url": "https://www.pocketgamer.biz/comment-and-opinion/73642/the-heroic-cloud-hosted-games-infrastructure-at-scale/"
+        },
+        {
+          "date": "2019-04-02",
+          "publisher": "PocketGamer",
+          "title": "The Jolly Rogers - An open-source Unity game",
+          "url": "https://www.pocketgamer.biz/news/70382/the-jolly-rogers-an-open-source-unity-game/"
+        },
+        {
+          "date": "2018-05-14",
+          "publisher": "PocketGamer",
+          "title": "Nakama 2.0 - Power games for millions of concurrent players",
+          "url": "http://www.pocketgamer.biz/comment-and-opinion/68098/nakama-2-0-power-games-for-millions-of-concurrent-players/"
+        },
+        {
+          "date": "2015-08-18",
+          "title": "Seed Round - Heroic Labs"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -1,
+      "growthScore": 43,
+      "heatChange90Days": -11,
+      "heatScore": 19
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 4.1,
+        "timingEstimatePercent": {
+          "within6Months": 13.32,
+          "months6To11": 11.54,
+          "months12To24": 18.68,
+          "beyond24Months": 24.58
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 67.17
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "PlayFab is a cloud-based provider of tools and services for building and managing online games.",
+          "employeeRange": "11-50",
+          "name": "PlayFab",
+          "sharedSpecialties": [
+            "Gaming Platforms",
+            "Game Server Hosting",
+            "API Management",
+            "Experiment Management"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Massively scalable and extensible backend platform for live game services helping creators focus on what matters most: making awesome games.",
+          "employeeRange": "101-250",
+          "name": "AccelByte",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Gaming Platforms",
+            "Game Server Hosting",
+            "Container and Kubernetes Platform Services"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Beamable develops a decentralized infrastructure for gaming to add social, commerce, and content management features to their games.",
+          "employeeRange": "11-50",
+          "name": "Beamable",
+          "sharedCategories": [
+            "Gaming"
+          ],
+          "sharedSpecialties": [
+            "Gaming Platforms",
+            "Game Server Hosting",
+            "Container and Kubernetes Platform Services",
+            "API Management"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Pragma is a backend game engine that enables multiplayer and social games.",
+          "employeeRange": "51-100",
+          "name": "Pragma Platform",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Gaming Platforms",
+            "Game Server Hosting",
+            "API Management"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "brainCloud is a cloud-based backend for the development of apps, games, and things.",
+          "employeeRange": "11-50",
+          "name": "brainCloud",
+          "sharedCategories": [
+            "Gaming"
+          ],
+          "sharedSpecialties": [
+            "Game Server Hosting",
+            "Cloud Hosting",
+            "Backend Development",
+            "API Management"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $120,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $2,130,436 to $2,130,436, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 43 (-1 over 90 days) and market heat at 19 (-11).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include PlayFab, AccelByte, Beamable.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

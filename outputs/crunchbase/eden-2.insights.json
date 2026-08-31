@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:37:36.967Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:37:36.922Z",
+    "url": "https://www.crunchbase.com/organization/eden-2"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Edenos",
+      "shortDescription": "A social network for people with chronic conditions to share their experiences and crowdsource effective treatments to improve their life",
+      "description": "A social network for people with chronic conditions to share invaluable experiences, crowdsource effective treatments, and learn about the newest innovations for their condition in order to improve their quality of life.",
+      "website": "http://www.edenos.com/",
+      "foundedYear": 2018,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Los Angeles, California, United States",
+      "geographicRegions": [
+        "Greater Los Angeles Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Communities",
+        "Health Care"
+      ],
+      "sectors": [
+        "Community and Lifestyle",
+        "Health Care"
+      ],
+      "founders": [
+        "Jason Chang",
+        "Peter Nguyen"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A platform for individuals with chronic conditions to share experiences and crowdsource treatment options.",
+        "name": "Edenos Social Network"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -27,
+      "heatScore": 53
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 29.47
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "PatientsLikeMe is a personalized health network of an integrated community, health management, and real-world data platform.",
+          "employeeRange": "11-50",
+          "name": "PatientsLikeMe",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "sharedSpecialties": [
+            "Patient Engagement Platforms",
+            "Community Platforms",
+            "Patient Experience Management"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Inspire is a vital community that helps patients and caregivers connect to members for the purpose of clinical research.",
+          "employeeRange": "101-250",
+          "name": "Inspire",
+          "sharedCategories": [
+            "Health Care",
+            "Communities"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "CreakyJoints is a digital community offering education, support, and research for arthritis patients and caregivers.",
+          "employeeRange": "11-50",
+          "name": "CreakyJoints",
+          "similarityScore": 93
+        },
+        {
+          "description": "HealthUnlocked is a social network for health.",
+          "employeeRange": "11-50",
+          "name": "HealthUnlocked",
+          "sharedCategories": [
+            "Health Care",
+            "Communities"
+          ],
+          "sharedSpecialties": [
+            "Patient Engagement Platforms",
+            "Community Platforms",
+            "Carer Support Services",
+            "Group Therapy and Peer Support",
+            "Forum Software",
+            "Chronic Disease Management"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "MyHealthTeams creates social networks for chronic condition communities.",
+          "employeeRange": "101-250",
+          "name": "MyHealthTeams",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include PatientsLikeMe, Inspire, CreakyJoints.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,454 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:11:30.505Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:11:30.447Z",
+    "url": "https://www.crunchbase.com/organization/infisical"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Infisical",
+      "shortDescription": "Infisical is an open-source secrets manager that secures and syncs app configs and credentials across teams with end-to-end encryption.",
+      "description": "Infisical is an open-source platform that focuses on the secure management of application secrets, certificates, SSH keys, and configurations. It provides tools for teams to effectively manage sensitive information across various applications and environments. The platform features end-to-end encryption, ensuring that data remains protected during storage and transmission. Infisical also offers a user-friendly interface that simplifies the process of injecting secrets like API keys and database credentials into applications. Centralizing configuration management enhances collaboration among development teams and streamlines workflows, making it easier to maintain security and efficiency in software development.",
+      "website": "https://infisical.com/",
+      "foundedYear": 2022,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "51-100",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Cloud Security",
+        "Network Security",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Privacy and Security",
+        "Software"
+      ],
+      "founders": [
+        "Maidul Islam",
+        "Tuan Dang",
+        "Vlad Matsiiako"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A centralized platform for storing, syncing, rotating, and auditing application secrets and configuration across environments, workloads, teams, and infrastructure.",
+        "name": "Secrets Management"
+      },
+      {
+        "description": "A platform for managing private certificate authorities and automating certificate discovery, issuance, renewal, revocation, deployment, and auditing.",
+        "name": "Certificate Management"
+      },
+      {
+        "description": "A privileged access platform that provides short-lived, identity-based access to infrastructure and databases with session auditing, recording, and automatic credential rotation.",
+        "name": "Privileged Access Management"
+      },
+      {
+        "description": "A credential-brokering product that lets AI agents access approved tools and APIs without exposing the underlying secrets to the agents.",
+        "name": "Agent Vault"
+      },
+      {
+        "description": "A secrets-scanning product that detects hardcoded credentials in source code and helps prevent them from being committed to version control systems.",
+        "name": "Infisical Radar"
+      },
+      {
+        "description": "A key management capability for controlling cryptographic keys used to protect secrets and other sensitive data within Infisical deployments.",
+        "name": "Key Management"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 18925000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 3,
+      "detailedRoundCount": 3,
+      "lastFundingDate": "2025-06-06",
+      "lastFundingType": "Series A",
+      "rounds": [
+        {
+          "announcedDate": "2025-06-06",
+          "amount": {
+            "amount": 16000000,
+            "currency": "USD"
+          },
+          "investorCount": 7,
+          "leadInvestors": [
+            "Elad Gil"
+          ],
+          "postMoneyValuation": {
+            "amount": 84088062,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2023-07-03",
+          "amount": {
+            "amount": 2800000,
+            "currency": "USD"
+          },
+          "investorCount": 12,
+          "leadInvestors": [
+            "Gradient"
+          ],
+          "postMoneyValuation": {
+            "amount": 20490813,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2023-04-05",
+          "amount": {
+            "amount": 125000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 4314770,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 16,
+        "visibleNames": [
+          {
+            "name": "Andrew Miklas"
+          },
+          {
+            "name": "Antonio Gracias",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Christoph Deckert",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Darian Shirazi",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Dynamic Funds",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Elad Gil",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Gradient",
+            "rounds": [
+              "Series A",
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Olivier Pomel",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Sanjit Biswas",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "TwentyTwo VC"
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Series A"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 20,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-07-30",
+          "publisher": "PRWeb",
+          "title": "Infisical Launches Agent Proxy So Teams Can Ship AI Agents Without Handing Over Real Credentials",
+          "url": "https://www.prweb.com/releases/infisical-launches-agent-proxy-so-teams-can-ship-ai-agents-without-handing-over-real-credentials-302838708.html"
+        },
+        {
+          "date": "2026-04-22",
+          "publisher": "PRWeb",
+          "title": "Infisical Launches Agent Vault, Letting Engineering Teams Ship AI Agents to Production Without Exposing Credentials",
+          "url": "https://www.prweb.com/releases/infisical-launches-agent-vault-letting-engineering-teams-ship-ai-agents-to-production-without-exposing-credentials-302749986.html"
+        },
+        {
+          "date": "2026-02-25",
+          "publisher": "PRWeb",
+          "title": "Infisical Surpasses 25,000 GitHub Stars, Cementing Its Place as One of the Most Trusted Open Source Security Platforms",
+          "url": "https://www.prweb.com/releases/infisical-surpasses-25-000-github-stars-cementing-its-place-as-one-of-the-most-trusted-open-source-security-platforms-302696761.html"
+        },
+        {
+          "date": "2025-06-10",
+          "publisher": "Pulse 2.0",
+          "title": "Infisical: $16 Million Series A Raised For Transforming Enterprise Secrets, Identity, and Access Management",
+          "url": "https://pulse2.com/infisical-16-million-series-a-raised-for-transforming-enterprise-secrets-identity-and-access-management/"
+        },
+        {
+          "date": "2025-06-10",
+          "publisher": "Built In",
+          "title": "Secrets Management Company Infisical Secures $16M Series A",
+          "url": "https://www.builtinsf.com/articles/infisical-raises-16m-series-a-20250610"
+        },
+        {
+          "date": "2025-06-09",
+          "publisher": "thesaasnews.com",
+          "title": "Infisical Raises $16 Million in Series A",
+          "url": "https://www.thesaasnews.com/news/infisical-raises-16-million-in-series-a"
+        },
+        {
+          "date": "2025-06-09",
+          "publisher": "FinSMEs",
+          "title": "Infisical Raises $16M in Series A Funding",
+          "url": "https://www.finsmes.com/2025/06/infisical-raises-16m-in-series-a-funding.html"
+        },
+        {
+          "date": "2025-06-06",
+          "publisher": "vcnewsdaily.com",
+          "title": "Infisical Secures $16M Series A",
+          "url": "https://vcnewsdaily.com/infisical/venture-capital-funding/fqjjnymqyz"
+        },
+        {
+          "date": "2025-06-06",
+          "title": "Series A - Infisical"
+        },
+        {
+          "date": "2025-06-06",
+          "publisher": "PR Newswire",
+          "title": "Infisical Secures $16M Series A to Redefine Enterprise Secrets, Identity, and Access Management",
+          "url": "https://www.prnewswire.com/news-releases/infisical-secures-16m-series-a-to-redefine-enterprise-secrets-identity-and-access-management-302475063.html"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 3,
+    "knownDetailedFundingAmount": {
+      "amount": 18925000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 84.54,
+    "latestToEarliestKnownValuationMultiple": 19.49
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2026-03-01",
+      "growthChange90Days": -8,
+      "growthScore": 86,
+      "heatChange90Days": 0,
+      "heatScore": 73,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 82.81
+      },
+      "funding": {
+        "generatedDate": "2026-06-20",
+        "probabilityPercent": 94.65,
+        "timingEstimatePercent": {
+          "within6Months": 99.92,
+          "months6To11": 0,
+          "months12To24": 0.01,
+          "beyond24Months": 0.07
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 90.16
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 3.85
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "HashiCorp is a remote-first company that solves development, security, and operations challenges in infrastructure.",
+          "employeeRange": "1,001-5,000",
+          "name": "HashiCorp",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Privileged Access Management"
+          ],
+          "similarityScore": 96
+        },
+        {
+          "description": "Doppler’s developer-first security platform empowers teams to seamlessly manage, orchestrate, & govern secrets at scale.",
+          "employeeRange": "11-50",
+          "name": "Doppler",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Data Protection",
+            "Privileged Access Management",
+            "Password Management",
+            "Digital Trust and Certification Services"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "Unified platform to protect credentials, certificates, keys and manage the entire machine identity lifecycle.",
+          "employeeRange": "51-100",
+          "name": "Akeyless Security",
+          "sharedCategories": [
+            "Software",
+            "Cloud Security"
+          ],
+          "sharedSpecialties": [
+            "Data Protection",
+            "Zero Trust Security",
+            "Privileged Access Management",
+            "API Management",
+            "Password Management",
+            "Digital Trust and Certification Services"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "CyberArk is a security company that applies intelligent privilege controls to every identity across the identity lifecycle.",
+          "employeeRange": "1,001-5,000",
+          "name": "CyberArk",
+          "sharedCategories": [
+            "Cloud Security"
+          ],
+          "sharedSpecialties": [
+            "Zero Trust Security",
+            "Privileged Access Management",
+            "Password Management",
+            "Digital Trust and Certification Services"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "Amazon Web Services provides information technology infrastructure services to businesses in the form of web services.",
+          "employeeRange": "10,001+",
+          "name": "Amazon Web Services",
+          "sharedSpecialties": [
+            "API Management"
+          ],
+          "similarityScore": 88
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Series A round raised $16,000,000, or 84.54% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $4,314,770 to $84,088,062, a 19.49x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 86 (-8 over 90 days) and market heat at 73 (+0).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include HashiCorp, Doppler, Akeyless Security.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 20 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:13:23.373Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:13:23.319Z",
+    "url": "https://www.crunchbase.com/organization/mage"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Mage",
+      "shortDescription": "Mage is an app revenue optimization service for freemium hybrid, android, and iOS apps.",
+      "description": "Mage fully automates simultaneous price testing & setting for in-app purchases in 170+ app store countries! Optimize your apps monetization strategy with our open-source SDK.",
+      "website": "https://www.getmage.io/",
+      "foundedYear": 2020,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Berlin, Germany",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Consulting",
+        "Mobile Apps",
+        "Open Source"
+      ],
+      "sectors": [
+        "Apps",
+        "Mobile",
+        "Professional Services",
+        "Software"
+      ],
+      "founders": [
+        "Benedict Seyer",
+        "Marc Thomas",
+        "Patrick Bläsing"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A service that helps freemium hybrid, Android, and iOS apps optimize their revenue streams.",
+        "name": "Mage App Revenue Optimization Service"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 5,
+      "heatScore": 68
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 48.51
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 80.35
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 32.55
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "In-app subscriptions made profitable",
+          "employeeRange": "101-250",
+          "name": "Adapty",
+          "sharedSpecialties": [
+            "Conversion Rate Optimization",
+            "Product Analytics",
+            "App User Acquisition",
+            "Recurring Billing and Subscription Management"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "RevenueCat is a subscription management platform for apps that monetize through in-app purchases.",
+          "employeeRange": "101-250",
+          "name": "RevenueCat",
+          "sharedCategories": [
+            "Mobile Apps"
+          ],
+          "sharedSpecialties": [
+            "Recurring Billing and Subscription Management",
+            "Payment Analytics and Dashboard"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "In-App Purchase Platform Built for Growth",
+          "employeeRange": "11-50",
+          "name": "Qonversion",
+          "sharedCategories": [
+            "Mobile Apps"
+          ],
+          "sharedSpecialties": [
+            "Product Analytics",
+            "Recurring Billing and Subscription Management",
+            "App Intelligence",
+            "Payment Analytics and Dashboard"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Complete In-App Subscriptions Marketing Infrastructure to Grow Your Mobile App",
+          "employeeRange": "11-50",
+          "name": "Apphud",
+          "sharedSpecialties": [
+            "Product Analytics",
+            "Recurring Billing and Subscription Management",
+            "Push and In-App Notifications",
+            "Payment Analytics and Dashboard"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Superwall is a monetization toolkit that specializes in paywall infrastructure for mobile applications",
+          "employeeRange": "11-50",
+          "name": "Superwall",
+          "sharedSpecialties": [
+            "Product Analytics",
+            "Recurring Billing and Subscription Management",
+            "Payment Analytics and Dashboard"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Adapty, RevenueCat, Qonversion.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

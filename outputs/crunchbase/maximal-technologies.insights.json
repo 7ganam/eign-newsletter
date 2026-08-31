@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:25:13.178Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:25:13.120Z",
+    "url": "https://www.crunchbase.com/organization/maximal-technologies"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Maximal Technologies",
+      "shortDescription": "Maximal is a \"business logic as a service\" platform that brings radical simplicity to business process automation solutions without codes.",
+      "website": "https://maximal.co/",
+      "foundedYear": 2019,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Business Intelligence",
+        "Business Process Automation (BPA)",
+        "Industrial Automation",
+        "Information Technology",
+        "Software"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Information Technology",
+        "Manufacturing",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A cloud-native platform that enables developers to specify business logic and workflows declaratively and expose them as services using constraint logic programming.",
+        "name": "Maximal Platform"
+      },
+      {
+        "description": "Services that provide explainable decisions and analytics for complex business logic scenarios, such as underwriting and risk assessment.",
+        "name": "Complex Decision Services"
+      },
+      {
+        "description": "Real-time processing and reaction to events for applications like fraud detection and compliance monitoring.",
+        "name": "Complex Event Processing"
+      },
+      {
+        "description": "Solutions for managing knowledge worker tasks and workflows dynamically, adapting to changing case requirements.",
+        "name": "Dynamic Case Management"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 0,
+      "heatScore": 48
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 43.56
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 75.79
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 25.37
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "PegaSystems provides business process and customer relationship management solutions for organizations.",
+          "employeeRange": "5,001-10,000",
+          "name": "Pegasystems",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Case Management Automation",
+            "Workflow Automation",
+            "Process Orchestration",
+            "Intelligent Process Automation"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Appian is a software company that provides digital transformation, low-code application development, and business process management.",
+          "employeeRange": "1,001-5,000",
+          "name": "Appian",
+          "sharedCategories": [
+            "Business Process Automation (BPA)",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "No-Code / Low-Code Development",
+            "Case Management Automation",
+            "Workflow Automation",
+            "Process Orchestration"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "Camunda is the leader in enterprise agentic automation, orchestrating complex business processes.",
+          "employeeRange": "501-1,000",
+          "name": "Camunda",
+          "sharedCategories": [
+            "Business Process Automation (BPA)",
+            "Software",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Business Rules Engines",
+            "Business Process Modeling",
+            "Case Management Automation",
+            "Workflow Automation",
+            "Process Orchestration",
+            "Intelligent Process Automation"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Bizagi is an enterprise platform for business orchestration and AI automation",
+          "employeeRange": "251-500",
+          "name": "Bizagi",
+          "sharedCategories": [
+            "Business Process Automation (BPA)",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "No-Code / Low-Code Development",
+            "Business Rules Engines",
+            "Business Process Modeling",
+            "Case Management Automation",
+            "Workflow Automation",
+            "Process Orchestration",
+            "Intelligent Process Automation"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "ServiceNow is an AI platform that delivers IT operations, field service management and app engine solutions.",
+          "employeeRange": "10,001+",
+          "name": "ServiceNow",
+          "sharedCategories": [
+            "Business Process Automation (BPA)",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Workflow Automation",
+            "Process Orchestration"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Pegasystems, Appian, Camunda.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

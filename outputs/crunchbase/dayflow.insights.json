@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:47:41.453Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:47:41.400Z",
+    "url": "https://www.crunchbase.com/organization/dayflow"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Dayflow",
+      "shortDescription": "AI Daily Planner for users with ADHD",
+      "description": "DayFlow is an AI-powered daily planner app developed by 42apps, designed specifically to support neurodivergent individuals, including those with ADHD, in managing their daily tasks, routines, and schedules more effectively. Leveraging advanced artificial intelligence, DayFlow creates personalized, adaptive daily plans that help users prioritize tasks, reduce cognitive overload, and maintain consistent routines without feeling overwhelmed.\n\nThe app features intuitive visual task management, customizable gentle reminders, and seamless integration with popular calendar platforms such as Google Calendar and Apple Calendar. DayFlow’s user-centric design emphasizes simplicity, accessibility, and inclusivity, making it an ideal productivity tool for neurodivergent users seeking smarter ways to organize their lives.\n\nFounded by 42apps, a software development company committed to creating innovative AI-driven productivity solutions, DayFlow reflects the company’s mission to empower individuals through technology that understands and adapts to diverse cognitive needs. Available across iOS, Android, and web platforms, DayFlow continues to evolve based on active user feedback and ongoing technological advancements.",
+      "website": "https://dayflow.me/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "industries": [
+        "Software"
+      ],
+      "sectors": [
+        "Software"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -14,
+      "heatScore": 53
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-04-04",
+        "probabilityPercent": 35
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.12
+      },
+      "ipo": {
+        "generatedDate": "2026-04-04",
+        "probabilityPercent": 35
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Tiimo is an award-winning visual planner that gives neurodivergent people worldwide the planning power to take charge of their day.",
+          "employeeRange": "11-50",
+          "name": "Tiimo",
+          "similarityScore": 97
+        },
+        {
+          "description": "TimeFinder is an app that provides enjoyable and user-friendly schedule planner you will ever come across.",
+          "employeeRange": "1-10",
+          "name": "TimeFinder",
+          "similarityScore": 81
+        },
+        {
+          "description": "14 years in the app industry, 1B+ downloads — building, publishing, and now turning prompts into native app businesses",
+          "employeeRange": "51-100",
+          "name": "MWM",
+          "similarityScore": 68
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Tiimo, TimeFinder, MWM.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

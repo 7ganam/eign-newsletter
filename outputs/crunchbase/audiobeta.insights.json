@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:14:23.833Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:14:23.778Z",
+    "url": "https://www.crunchbase.com/organization/audiobeta"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "AudioBeta",
+      "shortDescription": "AudioBeta developed web-based applications that helps bands communicate with fans and make informed decisions when planning tours.",
+      "description": "AudioBeta developed web-based applications that helps bands communicate with fans and make informed decisions when planning tours.\n\nAudioBeta was a U.S.-based company that was founded in 2006 by Altay Guvench, Keith Fahlgren, and two other co-founders and backed by Y-Combinator.",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "Somerville, Massachusetts, United States",
+      "geographicRegions": [
+        "Greater Boston Area",
+        "East Coast",
+        "New England",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Audio",
+        "Internet",
+        "Music",
+        "Social Network"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Internet Services",
+        "Media and Entertainment",
+        "Music and Audio"
+      ],
+      "founders": [
+        "Altay Guvench",
+        "Keith Fahlgren"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2006-03-02",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2006-03-02",
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2006-03-02",
+          "title": "Seed Round - AudioBeta"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -10,
+      "heatScore": 15
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

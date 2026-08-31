@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:26:21.805Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:26:21.763Z",
+    "url": "https://www.crunchbase.com/organization/getdot"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "GetDot.ai",
+      "shortDescription": "Dot is your AI Data Analyst",
+      "description": "Dot is an AI-powered data assistant that democratizes data analysis by enabling users to interact with their data warehouses through natural language conversations. By integrating seamlessly with existing data stacks—including platforms like Snowflake, Redshift, Looker, and dbt—Dot automates ad-hoc data requests, allowing data teams to concentrate on high-impact tasks. Users can access Dot via Slack, Microsoft Teams, or a native web application, making data insights readily available across the organization. ￼\n\nFounded in 2021 and backed by Y Combinator, Dot is committed to enhancing data accessibility and fostering data-driven decision-making within enterprises. ￼\n\nBy leveraging advanced AI capabilities, Dot ensures accurate data interpretation and analysis, empowering business stakeholders to obtain insights swiftly and efficiently. ￼",
+      "website": "https://www.getdot.ai/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Data Management",
+        "Software"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Software"
+      ],
+      "founders": [
+        "Rick Radewagen",
+        "Sven Rudolph",
+        "Théo Tortorici"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An AI-powered data assistant that answers data questions, performs root cause analysis, and generates business reports from connected data sources.",
+        "name": "Dot AI Data Analyst"
+      },
+      {
+        "description": "Integration that enables Dot to answer questions based on data stored in Google BigQuery data warehouse.",
+        "name": "BigQuery Integration"
+      },
+      {
+        "description": "Integration allowing Dot to answer questions using data from Databricks SQL data lakehouse platform.",
+        "name": "Databricks SQL Integration"
+      },
+      {
+        "description": "Integration that enables Dot to leverage metrics and semantic models defined in the dbt Semantic Layer for consistent data answers.",
+        "name": "dbt Integration"
+      },
+      {
+        "description": "Integration enabling Dot to answer questions based on data stored in DuckDB analytical database.",
+        "name": "DuckDB Integration"
+      },
+      {
+        "description": "Integration that allows Dot to replicate business logic from Metabase dashboards to answer data questions.",
+        "name": "Metabase Integration"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -7,
+      "heatScore": 67
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 54.73
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 77.44
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 36.97
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "ThoughtSpot is the AI-native Intelligence Platform for every enterprise, on a mission is to create a more fact-driven world through data.",
+          "employeeRange": "501-1,000",
+          "name": "ThoughtSpot",
+          "sharedSpecialties": [
+            "Augmented Business Intelligence",
+            "Cloud Business Intelligence",
+            "Embedded Business Intelligence",
+            "Self-Service Business Intelligence",
+            "Dashboarding and Embedded Analytics",
+            "Data Pipelines"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Tableau helps global organizations unleash the power of their most valuable assets: their data and their people.",
+          "employeeRange": "1,001-5,000",
+          "name": "Tableau",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Augmented Business Intelligence",
+            "Cloud Business Intelligence",
+            "Data Cataloging",
+            "Self-Service Business Intelligence",
+            "Dashboarding and Embedded Analytics",
+            "Reporting Software"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "Microsoft provides computer software, consumer electronics, cloud computing platforms, and digital enterprise systems.",
+          "employeeRange": "11-50",
+          "name": "Microsoft",
+          "sharedSpecialties": [
+            "Self-Service Business Intelligence"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Looker is a an enterprise platform for business intelligence, data applications, and embedded analytics.",
+          "employeeRange": "501-1,000",
+          "name": "Looker",
+          "similarityScore": 91
+        },
+        {
+          "description": "Polymer is a search and discovery engine for internal business information.",
+          "employeeRange": "11-50",
+          "name": "Polymer",
+          "sharedSpecialties": [
+            "Augmented Business Intelligence",
+            "Cloud Business Intelligence",
+            "Embedded Business Intelligence",
+            "Self-Service Business Intelligence",
+            "Dashboarding and Embedded Analytics",
+            "Data Warehousing",
+            "Reporting Software"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include ThoughtSpot, Tableau, Microsoft.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

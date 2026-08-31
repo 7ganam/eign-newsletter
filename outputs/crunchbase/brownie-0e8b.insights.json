@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:47:33.597Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:47:33.535Z",
+    "url": "https://www.crunchbase.com/organization/brownie-0e8b"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "BROWNIE",
+      "shortDescription": "BROWNIE is an e-commerce fashion brand that provides apparel, shoes, and accessories products for women.",
+      "website": "https://www.browniespain.com/",
+      "foundedYear": 2006,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "251-500",
+      "estimatedRevenueRange": "$10M-$50M",
+      "headquarters": "Barcelona, Catalonia, Spain",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Apparel",
+        "Consumer Goods",
+        "E-Commerce",
+        "Lifestyle",
+        "Sales",
+        "Shoes",
+        "Women's"
+      ],
+      "sectors": [
+        "Clothing and Apparel",
+        "Commerce and Shopping",
+        "Community and Lifestyle",
+        "Consumer Goods",
+        "Sales and Marketing"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2024-09-30",
+          "publisher": "EIN News",
+          "title": "Brownie's THIRD LUNG Relocates to New Location in Davie, Florida",
+          "url": "https://www.einpresswire.com/article/747577097/brownie-s-third-lung-relocates-to-new-location-in-davie-florida"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -12,
+      "heatScore": 40
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 80.27
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Zara is an international fashion company focused on design, production, distribution, and sales through its extensive retail network.",
+          "employeeRange": "10,001+",
+          "name": "Zara",
+          "sharedCategories": [
+            "Lifestyle"
+          ],
+          "similarityScore": 96
+        },
+        {
+          "description": "Mango sells fashion, footwear, and accessories.",
+          "employeeRange": "10,001+",
+          "name": "Mango",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Stradivarius Espana SA designs and manufactures women's clothing.",
+          "employeeRange": "5,001-10,000",
+          "name": "Stradivarius Espana Sa",
+          "similarityScore": 90
+        },
+        {
+          "description": "Massimo Dutti operates apparel retail stores for men, women, and boys.",
+          "employeeRange": "10,001+",
+          "name": "Massimo Dutti",
+          "sharedCategories": [
+            "Lifestyle",
+            "Apparel"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Pull & Bear Italia S.R.L. owns and operates men's, women's, and children's apparel and accessories stores.",
+          "employeeRange": "5,001-10,000",
+          "name": "Pull & Bear Italia",
+          "sharedCategories": [
+            "Lifestyle",
+            "Apparel"
+          ],
+          "similarityScore": 88
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Zara, Mango, Stradivarius Espana Sa.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:54:01.951Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:54:01.905Z",
+    "url": "https://www.crunchbase.com/organization/f4-industries"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "F4",
+      "shortDescription": "F4 is an industrial hardware design validation platform that focuses on engineering drawing compliance and interpretations.",
+      "website": "https://f4.dev/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Industrial",
+        "Manufacturing",
+        "Software",
+        "Web Apps"
+      ],
+      "sectors": [
+        "Apps",
+        "Manufacturing",
+        "Software"
+      ],
+      "founders": [
+        "Aidan Cantu",
+        "Paul Shin"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2025-09-09",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2025-09-09",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 7683802,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2025-09-09",
+          "title": "Pre Seed Round - F4"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 1,
+      "growthScore": 46,
+      "heatChange90Days": -3,
+      "heatScore": 76
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 5
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 92.98,
+        "timingEstimatePercent": {
+          "within6Months": 99.88,
+          "months6To11": 0.12,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 90.28
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "PTC develops, markets, and supports product lifecycle management software solutions and associated services.",
+          "employeeRange": "5,001-10,000",
+          "name": "PTC",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "Solidworks offers a portfolio of 3D software tools that enable users to create, stimulate, publish, and manage data.",
+          "employeeRange": "10,001+",
+          "name": "Solidworks",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "CIMCO develops and markets software and solutions for computer integrated manufacturing.",
+          "employeeRange": "11-50",
+          "name": "CIMCO",
+          "sharedCategories": [
+            "Software",
+            "Manufacturing"
+          ],
+          "similarityScore": 86
+        },
+        {
+          "description": "Newman Cloud, Inc is offers a cloud-based BOM and Catalog  management tool for manufacturing companies & supply chain",
+          "employeeRange": "11-50",
+          "name": "OpenBOM (TM) - Newman Cloud, Inc",
+          "sharedCategories": [
+            "Software",
+            "Manufacturing"
+          ],
+          "similarityScore": 84
+        },
+        {
+          "description": "Arena Solutions helps high tech and medical device companies design, produce, and deliver innovative products to market fast.",
+          "employeeRange": "101-250",
+          "name": "Arena Solutions",
+          "sharedCategories": [
+            "Software",
+            "Manufacturing"
+          ],
+          "similarityScore": 82
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $500,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $7,683,802 to $7,683,802, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 46 (+1 over 90 days) and market heat at 76 (-3).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include PTC, Solidworks, CIMCO.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

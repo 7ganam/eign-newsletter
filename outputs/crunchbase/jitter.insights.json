@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:33:32.326Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:33:32.296Z",
+    "url": "https://www.crunchbase.com/organization/jitter"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Jitter.",
+      "shortDescription": "SaaS, Mobile App, Fleet Communications",
+      "website": "https://gojitter.com/",
+      "foundedYear": 2023,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Ottawa, Ontario, Canada",
+      "geographicRegions": [
+        "Great Lakes"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A platform for real-time fleet communication and asset management via iOS, Android, and web interfaces.",
+        "name": "Jitter Mobile and Web Application"
+      },
+      {
+        "description": "A tool to scan vehicle identification numbers (VINs) to create digital asset profiles.",
+        "name": "Asset VIN Scanner"
+      },
+      {
+        "description": "Communication channels tied directly to individual fleet assets for coordinated messaging.",
+        "name": "Asset-Based Communication Threads"
+      },
+      {
+        "description": "Real-time GPS tracking and navigation for fleet assets with location-based routing.",
+        "name": "Asset Location and GPS Routing"
+      },
+      {
+        "description": "A desktop-based map interface showing the real-time location and grouping of fleet assets.",
+        "name": "Fleet Location and Tracking (Desktop)"
+      },
+      {
+        "description": "Functionality to manage and update ownership details and transfer of fleet assets digitally.",
+        "name": "Asset Ownership and Transfer Management"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2024-05-28",
+          "publisher": "PRWeb",
+          "title": "Anyline and Jitter Join Forces to Revolutionize Fleet Networking",
+          "url": "https://www.prweb.com/releases/anyline-and-jitter-join-forces-to-revolutionize-fleet-networking-302156762.html"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 11,
+      "heatScore": 82
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2025-12-27",
+        "probabilityPercent": 27.75
+      },
+      "funding": {
+        "generatedDate": "2023-01-01",
+        "probabilityPercent": 95.98,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 98.46,
+          "beyond24Months": 1.54
+        }
+      },
+      "growth": {
+        "generatedDate": "2025-01-11",
+        "probabilityPercent": 96.08
+      },
+      "ipo": {
+        "generatedDate": "2025-12-27",
+        "probabilityPercent": 25.92
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

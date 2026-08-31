@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:56:27.317Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:56:27.259Z",
+    "url": "https://www.crunchbase.com/organization/fathom-8d4f"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Fathom",
+      "shortDescription": "Fathom automates outreach by unifying communication data to optimize business, sales, and fundraising relationships.",
+      "description": "Acquired in 2022.\n\nMost people make decisions about their business relationships using incomplete data, guessing whom to reach out to, or by trusting their instincts.\n\nFathom interweaves your connections across all your communication platforms to automate your outreach workflow for sales, marketing, fundraising, and more.",
+      "website": "https://fathomprivacy.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "New York, United States",
+      "geographicRegions": [
+        "Greater New York Area",
+        "East Coast",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Analytics",
+        "Artificial Intelligence (AI)",
+        "Data Integration",
+        "Lead Generation",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Sales and Marketing",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Zane Witherspoon"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 100000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2021-07-07",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2021-07-07",
+          "amount": {
+            "amount": 100000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "leadInvestors": [
+            "Forum Ventures"
+          ],
+          "postMoneyValuation": {
+            "amount": 1433333,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Forum Ventures",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "Right Side Capital Management",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2022-12-07",
+          "title": "Fathom acquired by Delphia"
+        },
+        {
+          "date": "2021-07-07",
+          "title": "Pre Seed Round - Fathom"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 100000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -11,
+      "heatScore": 47
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Clay is an AI-driven sales and marketing company that equips growth and sales teams with customer data and automated workflows.",
+          "employeeRange": "101-250",
+          "name": "Clay",
+          "sharedCategories": [
+            "Software",
+            "Artificial Intelligence (AI)",
+            "Lead Generation"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Building the industry’s first fully agentic GTM platform, transforming how revenue teams execute",
+          "employeeRange": "501-1,000",
+          "name": "Apollo.io",
+          "sharedCategories": [
+            "Software",
+            "Artificial Intelligence (AI)",
+            "Lead Generation"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Outreach is a sales engagement platform that uses AI for predictive analytics as it relates to sales.",
+          "employeeRange": "501-1,000",
+          "name": "Outreach",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "People Data Labs is a software firm offering compliant data and their b2b solutions.",
+          "employeeRange": "51-100",
+          "name": "People Data Labs",
+          "sharedCategories": [
+            "Analytics",
+            "Software",
+            "Artificial Intelligence (AI)"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "ZoomInfo offers a platform for accessing business contact information, company profiles, and sales intelligence tools.",
+          "employeeRange": "1,001-5,000",
+          "name": "ZoomInfo",
+          "sharedCategories": [
+            "Data Integration",
+            "Analytics",
+            "Artificial Intelligence (AI)",
+            "Lead Generation"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $100,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $1,433,333 to $1,433,333, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Clay, Apollo.io, Outreach.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

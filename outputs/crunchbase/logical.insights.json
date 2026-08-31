@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:06:59.645Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:06:59.590Z",
+    "url": "https://www.crunchbase.com/organization/logical"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Logical",
+      "shortDescription": "Logical is a development and marketing agency that is focused on creating innovative and sustainable solutions.",
+      "website": "https://www.logical-inc.com/",
+      "foundedYear": 2003,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Sacramento, California, United States",
+      "geographicRegions": [
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Advertising",
+        "Digital Marketing",
+        "Marketing",
+        "Service Industry"
+      ],
+      "sectors": [
+        "Advertising",
+        "Other",
+        "Sales and Marketing"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Custom web development services creating unique, mobile-friendly, and responsive websites tailored to business needs using in-house coding and agile methodologies.",
+        "name": "Web Development"
+      },
+      {
+        "description": "Ongoing website maintenance and support services to keep sites updated, secure, and functional with flexible, customizable packages.",
+        "name": "Maintenance & Support"
+      },
+      {
+        "description": "Web development services focused on ensuring digital platforms comply with accessibility standards for users with disabilities.",
+        "name": "Accessibility Services"
+      },
+      {
+        "description": "Analytics services that track user behavior and provide data-driven insights to optimize digital marketing and website performance.",
+        "name": "Data & Analytics"
+      },
+      {
+        "description": "Development of creative strategies aligning audience, objectives, and brand to guide marketing content and campaigns.",
+        "name": "Content Creative Strategy"
+      },
+      {
+        "description": "Crafting brand-aligned stories to communicate product value and enhance brand recognition.",
+        "name": "Storytelling"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -7,
+      "heatScore": 43
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 7.54
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 13.11
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 1.4
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "CleverTap is the all-in-one engagement platform that helps brands unlock limitless CLV by helping them create personalized experiences",
+          "employeeRange": "501-1,000",
+          "name": "CleverTap",
+          "similarityScore": 100
+        },
+        {
+          "description": "Mucho is a graphic designing and advertising firm providing services and training in digital space.",
+          "employeeRange": "11-50",
+          "name": "Mucho Design",
+          "sharedCategories": [
+            "Advertising"
+          ],
+          "sharedSpecialties": [
+            "Digital Experience (DX) Design"
+          ],
+          "similarityScore": 87.644
+        },
+        {
+          "description": "A marketing consulting firm focused on developing scalable acquisition strategies for clients.",
+          "employeeRange": "1-10",
+          "name": "JLH Marketing",
+          "sharedCategories": [
+            "Marketing",
+            "Advertising"
+          ],
+          "sharedSpecialties": [
+            "Marketing Strategy",
+            "Conversion Rate Optimization",
+            "Web Analytics"
+          ],
+          "similarityScore": 83.142
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include CleverTap, Mucho Design, JLH Marketing.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

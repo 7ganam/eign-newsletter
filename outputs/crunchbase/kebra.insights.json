@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:39:46.375Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:39:46.321Z",
+    "url": "https://www.crunchbase.com/organization/kebra"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Kebra",
+      "shortDescription": "Kebra develops AI software that automates field-service documentation and back-office workflows.",
+      "description": "Kebra provides AI software for field service and residential services companies. Its agents capture technician audio, notes, images, and job details, then turn that information into service records, customer communications, parts orders, billing updates, and warranty claims. The platform connects field information with systems such as service-management, accounting, supplier, email, messaging, and warranty portals. Kebra also provides a customer-specific Company Brain that organizes authorized business information for retrieval and workflow automation.",
+      "website": "https://www.kebra.ai/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Business Process Automation (BPA)",
+        "Data Integration",
+        "Enterprise Software",
+        "Field Support",
+        "Home Services",
+        "Knowledge Management",
+        "Natural Language Processing",
+        "SaaS",
+        "Software"
+      ],
+      "sectors": [
+        "Administrative Services",
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Professional Services",
+        "Real Estate",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "AI software that captures field-service job information and automates documentation, claims, parts, billing, and customer follow-up.",
+        "name": "Kebra Field Service OS"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatScore": 89
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 5
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 71.25
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

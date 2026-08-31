@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:54:21.482Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:54:21.429Z",
+    "url": "https://www.crunchbase.com/organization/fabraix-ltd"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "FABRAIX",
+      "shortDescription": "Fabraix develops adversarial verification tools and security benchmarks for testing autonomous AI agents.",
+      "description": "Fabraix develops adversarial verification and runtime security tools for autonomous AI agents. The company focuses on offensive testing methodologies that actively surface hidden vulnerabilities in complex, non-deterministic AI workflows. Its core product, Nyx, is an autonomous blackbox adversarial harness that probes AI agents for architectural, logical, security, and systemic alignment defects at scale. Nyx simulates real-world threat actors to uncover exploit paths that emerge from agent interactions. Fabraix also maintains ACE (Adversarial Cost to Exploit), a benchmark that applies game-theoretic principles to quantify the effort required for attackers to compromise AI systems. These offerings are used by enterprises, AI operators, and developers seeking to evaluate and strengthen the robustness of AI-powered applications and infrastructure.",
+      "website": "https://fabraix.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "headquarters": "London, England, United Kingdom",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Cyber Security",
+        "Enterprise Software",
+        "Machine Learning",
+        "Risk Management",
+        "Security",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Privacy and Security",
+        "Professional Services",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Nyx is an autonomous adversarial testing harness that probes AI agents in blackbox environments to uncover security, logic, and alignment defects.",
+        "name": "Nyx"
+      },
+      {
+        "description": "ACE is an AI security benchmark that models the cost and effort required for attackers to successfully exploit AI systems.",
+        "name": "ACE (Adversarial Cost to Exploit)"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatScore": 90
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 65.11
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

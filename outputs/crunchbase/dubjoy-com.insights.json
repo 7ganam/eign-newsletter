@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:35:15.412Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:35:15.361Z",
+    "url": "https://www.crunchbase.com/organization/dubjoy-com"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Dubjoy",
+      "shortDescription": "Dubjoy makes it easy for anyone to translate and voice-over any video",
+      "description": "Dubjoy makes it easy for anyone to translate and voice-over any video",
+      "website": "http://dubjoy.com/",
+      "foundedYear": 2012,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Software"
+      ],
+      "sectors": [
+        "Software"
+      ],
+      "founders": [
+        "Miha Rebernik",
+        "Rok Gregoric",
+        "Rok Krulec"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2012-07-11",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2012-07-11",
+          "investorCount": 1,
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2011-08-22",
+          "investorCount": 1,
+          "type": "Venture round"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round",
+              "Venture round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2012-07-11",
+          "title": "Seed Round - Dubjoy"
+        },
+        {
+          "date": "2011-08-22",
+          "title": "Venture Round - Dubjoy"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -21,
+      "heatScore": 32
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Rask AI is a translation solution that enables businesses and content producers to translate their videos into more than 60 languages.",
+          "employeeRange": "51-100",
+          "name": "Rask AI",
+          "similarityScore": 97
+        },
+        {
+          "description": "HeyGen is an AI video generation platform that specializes in video creation, AI avatars, and generative AI.",
+          "employeeRange": "101-250",
+          "name": "HeyGen",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Papercup translates videos using AI by generating voices that sound like the original speaker",
+          "employeeRange": "101-250",
+          "name": "Papercup",
+          "similarityScore": 93
+        },
+        {
+          "description": "Synthesia is an AI video platform that enables users to create videos from text using advanced AI avatars and voiceovers.",
+          "employeeRange": "501-1,000",
+          "name": "Synthesia",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "VEED.IO is an online video editing platform that utilizes AI tools to enhance video editing.",
+          "employeeRange": "101-250",
+          "name": "VEED",
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Rask AI, HeyGen, Papercup.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

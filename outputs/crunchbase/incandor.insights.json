@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:09:28.154Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:09:28.097Z",
+    "url": "https://www.crunchbase.com/organization/incandor"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Incandor",
+      "shortDescription": "Incandor develops behavioral intelligence software and APIs for fraud detection on digital financial platforms.",
+      "description": "Incandor develops behavioral intelligence infrastructure for fraud and abuse detection on digital financial platforms. The company builds a behavioral map of each user from physical interaction signals such as mouse movement, keystroke timing, scroll patterns, and mobile device orientation. Its software and APIs help banking and fintech platforms detect account takeovers, mule handoffs, shared operators, and coordinated fraud rings from the first session without relying on historical labels. Fraud and trust and safety teams integrate Incandor’s programmable API into their systems to combine behavioral signals with transaction data and business rules. The platform also supports use cases such as bot and agent detection and identifying sessions under stress or coercion before high‑risk actions occur.",
+      "website": "https://www.incandor.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Cyber Security",
+        "Data Integration",
+        "Financial Services",
+        "FinTech",
+        "Fraud Detection",
+        "Machine Learning",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Financial Services",
+        "Information Technology",
+        "Privacy and Security",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Luc Rosenzweig",
+        "Matthew Yekell"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A behavioral intelligence API that maps user micro-behaviors to detect fraud, abuse, and account takeovers on financial platforms.",
+        "name": "Behavioral Intelligence Infrastructure"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2026-06-16",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2026-06-16",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 7000079,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2026-06-16",
+          "title": "Pre Seed Round - Incandor"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 14,
+      "growthScore": 92,
+      "heatChange90Days": 79,
+      "heatScore": 80
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 5
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 94.97,
+        "timingEstimatePercent": {
+          "within6Months": 99.96,
+          "months6To11": 0.04,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 94.08
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $500,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $7,000,079 to $7,000,079, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 92 (+14 over 90 days) and market heat at 80 (+79).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

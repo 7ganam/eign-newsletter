@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:01:33.858Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:01:33.807Z",
+    "url": "https://www.crunchbase.com/organization/downtobid"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Downtobid",
+      "shortDescription": "Downtobid provides a platform for subcontractors and vendors to manage and track construction bids in one workspace.",
+      "website": "https://downtobid.com/",
+      "foundedYear": 2020,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "New York, United States",
+      "geographicRegions": [
+        "Greater New York Area",
+        "East Coast",
+        "Northeastern US"
+      ],
+      "industries": [
+        "GPS",
+        "Information Technology",
+        "Software"
+      ],
+      "sectors": [
+        "Hardware",
+        "Information Technology",
+        "Navigation and Mapping",
+        "Software"
+      ],
+      "founders": [
+        "Andy Lee",
+        "Kevin Wu"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A platform for general contractors to create and send personalized Invitations to Bid (ITBs) to qualified subcontractors, automating bid package creation and subcontractor matching.",
+        "name": "Downtobid ITB Tool"
+      },
+      {
+        "description": "A bid tracking dashboard for subcontractors and material vendors that automatically imports and organizes bid invitations from email, tracking deadlines and communications without manual data entry.",
+        "name": "Bid Board"
+      },
+      {
+        "description": "A verified and regularly updated database of subcontractors categorized by trade and location, used to provide tailored subcontractor lists for bid invitations.",
+        "name": "Downtobid Subcontractor Database (Downtobid Network)"
+      },
+      {
+        "description": "An AI-powered tool that reads and analyzes construction plans to summarize key information, track changes between versions, and generate reports to assist estimators and contractors.",
+        "name": "AI Notebook"
+      },
+      {
+        "description": "A centralized, AI-driven digital planroom that organizes project documents by category and allows subcontractors to access bid documents without needing an account.",
+        "name": "Planroom"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -14,
+      "heatScore": 45
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 48.6
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 86.44
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 30.39
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Buildingconnected provides builders with cloud-based bid procurement services.",
+          "employeeRange": "251-500",
+          "name": "Buildingconnected",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Work Management",
+            "Proposal and Tender Management",
+            "Construction Documentation",
+            "Proposal Automation",
+            "Procurement and Purchasing Systems"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "iSqFt provides online bid solicitation and preconstruction management solutions for contractors.",
+          "employeeRange": "251-500",
+          "name": "iSqFt",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Work Management",
+            "Proposal and Tender Management",
+            "Construction Documentation",
+            "Proposal Automation"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "PlanHub is a cloud based software that allows general contractors to share project files and information with subcontractors and vendors.",
+          "employeeRange": "1-10",
+          "name": "PlanHub",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Work Management",
+            "Proposal and Tender Management",
+            "Construction Documentation",
+            "Procurement and Purchasing Systems"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "ConstructConnect provides of cloud-based data, collaboration, and workflow automation solutions.",
+          "employeeRange": "1,001-5,000",
+          "name": "ConstructConnect",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Work Management",
+            "Document Digitization and Management",
+            "Proposal and Tender Management",
+            "Construction Documentation",
+            "Proposal Automation",
+            "Procurement and Purchasing Systems"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "BIDMAIL SHARE is an invitation to bid software linked to a true online plan room.",
+          "employeeRange": "51-100",
+          "name": "BidMail",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Proposal and Tender Management"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Buildingconnected, iSqFt, PlanHub.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

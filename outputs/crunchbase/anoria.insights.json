@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T09:50:03.846Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T09:50:03.780Z",
+    "url": "https://www.crunchbase.com/organization/anoria"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Anoria",
+      "shortDescription": "Anoria specializes in window and floor coverings, blinds, curtains, mural paper, and wallpaper.",
+      "website": "https://www.anoriagroup.com/",
+      "foundedYear": 1993,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Tirana, Tirane, Albania",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Home Decor"
+      ],
+      "sectors": [
+        "Real Estate"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Window coverings including roller, double roller, venetian, vertical, honeycell, pleated, panel truck, roman shade, and skylight blinds for light control and privacy.",
+        "name": "Blinds"
+      },
+      {
+        "description": "Various floor covering options including vinyl, linoleum, laminate, parquet, carpet tiles, rolls, and artificial grass for residential and commercial use.",
+        "name": "Floor Coverings"
+      },
+      {
+        "description": "Fabric window treatments designed to provide privacy, light control, and decorative enhancement for interiors.",
+        "name": "Curtains"
+      },
+      {
+        "description": "Decorative wall coverings including wallpaper and mural paper to transform interior spaces with various designs and textures.",
+        "name": "Wallpaper and Mural Paper"
+      },
+      {
+        "description": "A selection of rugs and carpets in various materials, colors, and patterns for residential and commercial flooring needs.",
+        "name": "Rugs and Carpets"
+      },
+      {
+        "description": "Entrance mats designed for durability and resistance, suitable for buildings and businesses, with customization options.",
+        "name": "Doormats"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2025-06-26",
+          "publisher": "Cyprus Mail",
+          "title": "Deposit interest rates fall across Cyprus banks in April",
+          "url": "https://cyprus-mail.com/2025/06/26/deposit-interest-rates-fall-across-cyprus-banks-in-april"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 3,
+      "growthScore": 91,
+      "heatChange90Days": 10,
+      "heatScore": 71
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 80.55
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Allmode is an e-commerce site that provides textile and home appliances sales services.",
+          "employeeRange": "51-100",
+          "name": "Allmode",
+          "sharedSpecialties": [
+            "Flooring and Rugs"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Massimo Carpet is a textile company that designs, produces, and sells hand-woven rugs.",
+          "employeeRange": "51-100",
+          "name": "Massimo Carpet",
+          "sharedSpecialties": [
+            "Flooring and Rugs",
+            "Flooring Services"
+          ],
+          "similarityScore": 94.667
+        },
+        {
+          "description": "Schellenberg provides smart home products, roller shutter drives, garage doors and operators as well as other accessories and services.",
+          "employeeRange": "101-250",
+          "name": "Schellenberg",
+          "sharedSpecialties": [
+            "Window Treatments",
+            "Home Automation"
+          ],
+          "similarityScore": 89.371
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 91 (+3 over 90 days) and market heat at 71 (+10).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Allmode, Massimo Carpet, Schellenberg.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

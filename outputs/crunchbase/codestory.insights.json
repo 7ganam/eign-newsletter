@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:23:33.650Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:23:33.608Z",
+    "url": "https://www.crunchbase.com/organization/codestory"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "CodeStory",
+      "shortDescription": "CodeStory produces contextual documentation for internal teams and customers by automating the complete UI documentation lifecycle.",
+      "description": "CodeStory produces contextual documentation for internal teams and customers by automating the complete UI documentation lifecycle.",
+      "website": "https://getcodestory.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Toronto, Ontario, Canada",
+      "geographicRegions": [
+        "Great Lakes"
+      ],
+      "industries": [
+        "SaaS",
+        "Software",
+        "Software Engineering"
+      ],
+      "sectors": [
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 161753,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2022-12-20",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2022-12-20",
+          "amount": {
+            "amount": 161753,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Antler"
+          ],
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Antler",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2022-12-20",
+          "title": "Pre Seed Round - CodeStory"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 161753,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -2,
+      "growthScore": 59,
+      "heatChange90Days": -21,
+      "heatScore": 34
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2025-12-20",
+        "probabilityPercent": 5
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 39.15
+      },
+      "ipo": {
+        "generatedDate": "2025-12-20",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "AI-powered legacy modernization",
+          "employeeRange": "11-50",
+          "name": "Kodesage",
+          "similarityScore": 97
+        },
+        {
+          "description": "Workik is a context-driven AI code-generation tool for programmers.",
+          "employeeRange": "11-50",
+          "name": "Workik",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Tabnine is an AI coding assistant that accelerates and simplifies the software development process without sacrificing privacy and security.",
+          "employeeRange": "51-100",
+          "name": "Tabnine",
+          "sharedCategories": [
+            "SaaS",
+            "Software"
+          ],
+          "similarityScore": 93
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $161,753, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 59 (-2 over 90 days) and market heat at 34 (-21).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Kodesage, Workik, Tabnine.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

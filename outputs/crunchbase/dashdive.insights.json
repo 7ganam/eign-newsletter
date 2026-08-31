@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:44:59.488Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:44:59.430Z",
+    "url": "https://www.crunchbase.com/organization/dashdive"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Dashdive",
+      "shortDescription": "Dashdive is a SaaS platform that monitors and analyzes multi-tenant cloud service costs.",
+      "description": "Dashdive is a SaaS platform that monitors and analyzes multi-tenant cloud service costs.",
+      "website": "https://www.dashdive.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Cloud Management",
+        "SaaS",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Internet Services",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A SaaS platform that collects and analyzes multi-tenant cloud service usage data to break down cloud costs by feature and team.",
+        "name": "Dashdive Cloud Cost Observability Platform"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2025-02-27",
+          "publisher": "GlobeNewswire News Room",
+          "title": "Rhombus Acquires Cloud Cost Analytics Company Dashdive",
+          "url": "https://www.globenewswire.com/news-release/2025/02/27/3033600/0/en/Rhombus-Acquires-Cloud-Cost-Analytics-Company-Dashdive.html"
+        },
+        {
+          "date": "2025-02-27",
+          "title": "Dashdive acquired by Rhombus"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -11,
+      "heatScore": 36
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-05-02",
+        "probabilityPercent": 95.37
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Vantage is a cloud cost management platform that helps teams analyze, allocate, and optimize cloud spend across cloud, AI, and SaaS.",
+          "employeeRange": "101-250",
+          "name": "Vantage",
+          "sharedCategories": [
+            "SaaS",
+            "Cloud Management",
+            "Software"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Cloudchipr is a cloud cost management and analytics platform.",
+          "employeeRange": "51-100",
+          "name": "Cloudchipr",
+          "sharedCategories": [
+            "SaaS"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Datadog is an observability and security platform that offers infrastructure, applications, software development, and monitoring services.",
+          "employeeRange": "10,001+",
+          "name": "Datadog",
+          "sharedCategories": [
+            "SaaS"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "CloudZero is a cloud cost optimization platform that enables organizations to analyze and manage their cloud expenditures.",
+          "employeeRange": "101-250",
+          "name": "CloudZero",
+          "sharedCategories": [
+            "SaaS",
+            "Cloud Management",
+            "Software"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "IBM provides technology and consulting, including software, infrastructure systems, and cloud-based solutions.",
+          "employeeRange": "10,001+",
+          "name": "IBM",
+          "sharedCategories": [
+            "Cloud Management"
+          ],
+          "similarityScore": 84
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Vantage, Cloudchipr, Datadog.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

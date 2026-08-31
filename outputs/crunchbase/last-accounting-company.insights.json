@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:53:32.355Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:53:32.305Z",
+    "url": "https://www.crunchbase.com/organization/last-accounting-company"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Last Accounting Company",
+      "shortDescription": "Last Accounting Company provides AI-assisted bookkeeping, tax filings, payroll, and financial reporting as one service.",
+      "description": "Last Accounting Company provides bookkeeping, payroll, VAT and tax filings, financial statements, consolidations, invoice processing, and accounting advisory as one service. The company combines these services with an accounting platform that connects banks, payment providers, business systems, documents, and tax authorities to a general ledger. Its Björn accounting agent handles selected manual processes, while human accountants review results. The platform also provides MCP and REST API access for financial data, documents, reports, invoice actions, and defined accounting workflows.",
+      "website": "https://www.lastaccountingcompany.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "Helsinki, Southern Finland, Finland",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Nordic Countries",
+        "Scandinavia",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Accounting",
+        "Bookkeeping and Payroll",
+        "Business Process Automation (BPA)",
+        "Cloud Computing",
+        "Enterprise Software",
+        "SaaS",
+        "Software",
+        "Tax Preparation"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Information Technology",
+        "Internet Services",
+        "Professional Services",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A fixed-price accounting service covering bookkeeping, payroll, filings, financial statements, and related finance work.",
+        "name": "Last Accounting Company accounting service"
+      },
+      {
+        "description": "An accounting platform that centralizes financial records, connected data sources, AI-assisted workflows, and controlled system access.",
+        "name": "LAC General Ledger and accounting platform"
+      },
+      {
+        "description": "An AI accounting agent that supports document handling, transaction clarification, and recurring bookkeeping workflows.",
+        "name": "Björn"
+      },
+      {
+        "description": "Interfaces that let authorized software and AI agents access accounting data and perform defined accounting actions.",
+        "name": "MCP server and REST API"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 25,
+      "growthScore": 91,
+      "heatScore": 87
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.09
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

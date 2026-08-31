@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:00:17.199Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:00:17.166Z",
+    "url": "https://www.crunchbase.com/organization/hyper-406a"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Hyper",
+      "shortDescription": "Hyper is an early-stage venture firm focused on the things modern startups.",
+      "description": "Hyper is an early-stage venture firm focused on the things modern startups need most: distribution, community, mentorship, talent, and funding. We invest in a small number of startups.",
+      "website": "https://hyper.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 26,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-07-20",
+          "publisher": "PR Newswire",
+          "title": "Hyper Appoints Vineet Gambhir as Chief Human Resources Officer",
+          "url": "https://www.prnewswire.com/news-releases/hyper-appoints-vineet-gambhir-as-chief-human-resources-officer-302829753.html"
+        },
+        {
+          "date": "2026-05-13",
+          "publisher": "PR Newswire",
+          "title": "Hyper Appoints Russell Senesac as Vice President of Innovation",
+          "url": "https://www.prnewswire.com/news-releases/hyper-appoints-russell-senesac-as-vice-president-of-innovation-302771049.html"
+        },
+        {
+          "date": "2026-04-03",
+          "publisher": "PR Newswire",
+          "title": "Hyper Appoints Magnus Akesson as Vice President of AI Strategy & Intelligent Systems",
+          "url": "https://www.prnewswire.com/news-releases/hyper-appoints-magnus-akesson-as-vice-president-of-ai-strategy--intelligent-systems-302733956.html"
+        },
+        {
+          "date": "2026-04-03",
+          "publisher": "Morningstar.com",
+          "title": "Hyper Appoints Magnus Akesson as Vice President of AI Strategy & Intelligent Systems",
+          "url": "https://www.morningstar.com/news/pr-newswire/20260403dc26922/hyper-appoints-magnus-akesson-as-vice-president-of-ai-strategy-intelligent-systems"
+        },
+        {
+          "date": "2026-03-20",
+          "publisher": "PR Newswire",
+          "title": "Hyper Appoints Chris Fauerbach as Vice President of Software Engineering",
+          "url": "https://www.prnewswire.com/news-releases/hyper-appoints-chris-fauerbach-as-vice-president-of-software-engineering-302720087.html"
+        },
+        {
+          "date": "2026-03-20",
+          "publisher": "Morningstar.com",
+          "title": "Hyper Appoints Chris Fauerbach as Vice President of Software Engineering",
+          "url": "https://www.morningstar.com/news/pr-newswire/20260320dc15669/hyper-appoints-chris-fauerbach-as-vice-president-of-software-engineering"
+        },
+        {
+          "date": "2026-02-12",
+          "publisher": "PR Newswire",
+          "title": "Hyper Appoints Wendi Runyon as Chief Strategy Officer",
+          "url": "https://www.prnewswire.com/news-releases/hyper-appoints-wendi-runyon-as-chief-strategy-officer-302686808.html"
+        },
+        {
+          "date": "2026-02-11",
+          "publisher": "Morningstar.com",
+          "title": "Hyper Appoints Anand Krishna as Vice President of Product Management",
+          "url": "https://www.morningstar.com/news/pr-newswire/20260211dc86243/hyper-appoints-anand-krishna-as-vice-president-of-product-management"
+        },
+        {
+          "date": "2026-02-11",
+          "publisher": "PR Newswire",
+          "title": "Hyper Appoints Anand Krishna as Vice President of Product Management",
+          "url": "https://www.prnewswire.com/news-releases/hyper-appoints-anand-krishna-as-vice-president-of-product-management-302685582.html"
+        },
+        {
+          "date": "2025-10-23",
+          "publisher": "PR Newswire",
+          "title": "A Culture Built to Scale: Investing in People, Leadership, and the Future of Hyper",
+          "url": "https://www.prnewswire.com/news-releases/a-culture-built-to-scale-investing-in-people-leadership-and-the-future-of-hyper-302593180.html"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -7,
+      "growthScore": 72,
+      "heatChange90Days": -8,
+      "heatScore": 75
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 72 (-7 over 90 days) and market heat at 75 (-8).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 26 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

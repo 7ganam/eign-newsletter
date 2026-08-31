@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:53:50.694Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:53:50.643Z",
+    "url": "https://www.crunchbase.com/organization/dench"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Dench",
+      "shortDescription": "Dench is a B2B software company for the gaming industry.",
+      "website": "https://denchsolutions.com/",
+      "foundedYear": 2015,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Sofia, Grad Sofiya, Bulgaria",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "B2B",
+        "Gaming",
+        "Information Technology",
+        "Software",
+        "Software Engineering"
+      ],
+      "sectors": [
+        "Gaming",
+        "Information Technology",
+        "Other",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A platform offering solutions for launching online casinos and sportsbooks, including player account management, payment and games management, anti-fraud alerts, and a content management system.",
+        "name": "Whitelabel & Turnkey Gaming Platform"
+      },
+      {
+        "description": "A gaming platform designed to simplify processes and provide a comprehensive market solution for the gaming industry.",
+        "name": "Online Casino Platform"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 3,
+      "growthScore": 85,
+      "heatChange90Days": -3,
+      "heatScore": 67
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 29.78
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.5
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 17.32
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "SOFTSWISS is a mature technology provider delivering the infrastructure, expertise, and operational support iGaming operators.",
+          "employeeRange": "1,001-5,000",
+          "name": "SOFTSWISS",
+          "sharedCategories": [
+            "Software Engineering",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "KYC Automation",
+            "Sportsbook",
+            "Live Casino"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "EveryMatrix is an independent company offering award-winning software solutions to the iGaming industry.",
+          "employeeRange": "1,001-5,000",
+          "name": "EveryMatrix",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "KYC Automation",
+            "Sportsbook",
+            "Live Casino"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Gaming Innovation Group offers cutting-edge Cloud based services and Performance Marketing through its 3 B2B products.",
+          "employeeRange": "501-1,000",
+          "name": "Gaming Innovation Group",
+          "sharedCategories": [
+            "B2B"
+          ],
+          "sharedSpecialties": [
+            "Game Server Hosting",
+            "Sportsbook",
+            "Live Casino"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Playtech operates as an online gaming B2B software provider.",
+          "employeeRange": "5,001-10,000",
+          "name": "Playtech",
+          "sharedCategories": [
+            "Software",
+            "B2B",
+            "Gaming"
+          ],
+          "sharedSpecialties": [
+            "Game Server Hosting",
+            "KYC Automation",
+            "Sportsbook",
+            "Live Casino"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "OpenBet is a provider of integrated gaming and betting solutions.",
+          "employeeRange": "501-1,000",
+          "name": "OpenBet",
+          "sharedCategories": [
+            "Software",
+            "Gaming"
+          ],
+          "sharedSpecialties": [
+            "Game Server Hosting",
+            "Sportsbook"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 85 (+3 over 90 days) and market heat at 67 (-3).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include SOFTSWISS, EveryMatrix, Gaming Innovation Group.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

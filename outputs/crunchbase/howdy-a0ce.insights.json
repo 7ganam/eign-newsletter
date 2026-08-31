@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:57:02.220Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:57:02.162Z",
+    "url": "https://www.crunchbase.com/organization/howdy-a0ce"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Howdy",
+      "shortDescription": "Connect, engage and learn about your community",
+      "description": "Howdy is a platform for hosting your community and seeding meaningful connections and conversations.\n\nOn Howdy, your members have a dedicated space to engage with your content and build relationships with each other.\n\nHowdy also provides valuable data insights to help you learn about your community, drive further engagement and increase loyalty.\n\nTo find out what Howdy can do for your community, visit https://howdy.co.",
+      "website": "https://howdy.co/",
+      "foundedYear": 2016,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$10M-$50M",
+      "headquarters": "Singapore, Central Region",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)",
+        "Association of Southeast Asian Nations (ASEAN)",
+        "Southeast Asia"
+      ],
+      "industries": [
+        "Association",
+        "Communities",
+        "Education",
+        "Information Technology"
+      ],
+      "sectors": [
+        "Community and Lifestyle",
+        "Education",
+        "Information Technology",
+        "Other"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A service that assists companies in launching ventures in Asia by identifying potential partners, sales leads, and investors through a trusted network.",
+        "name": "Business Development Support in Asia"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -10,
+      "heatScore": 45
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 83.85
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Circle is a community platform that enables creators and businesses to build branded online communities, courses, and events.",
+          "employeeRange": "101-250",
+          "name": "Circle",
+          "similarityScore": 97
+        },
+        {
+          "description": "Mighty Networks is a networking application that creates and grows a community-powered brand.",
+          "employeeRange": "101-250",
+          "name": "Mighty Networks",
+          "sharedCategories": [
+            "Communities"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "A powerful community platform integrated into your product. Increase user engagement, retention and lifetime value.",
+          "employeeRange": "11-50",
+          "name": "Bettermode",
+          "sharedCategories": [
+            "Communities"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Vanilla Forums is a cloud-based forum software that help companies engage their audience, reduce support costs and increase sales.",
+          "employeeRange": "11-50",
+          "name": "Vanilla Forums",
+          "sharedCategories": [
+            "Communities"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Discourse is the open-source discussion platform built for the next decade of the Internet.",
+          "employeeRange": "101-250",
+          "name": "Discourse",
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Circle, Mighty Networks, Bettermode.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

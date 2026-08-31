@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:57:22.362Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:57:22.306Z",
+    "url": "https://www.crunchbase.com/organization/hubble-3"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Hubble by insightsoftware.com",
+      "shortDescription": "Hubble is an integrated suite of business performance management apps for reporting, analytics, and planning by insightsoftware.com.",
+      "description": "Hubble by insightsoftware.com is an integrated suite of business performance management apps for JD Edwards and Oracle E-Business Suite, offering reporting, analytics and planning in a single real-time solution that fully understands your ERP. Hubble integrates your critical business systems so users at all levels have access to live data extraordinarily fast. With this type of visibility, everyone can easily understand, manage, and predict business results.",
+      "website": "https://gohubble.com/",
+      "foundedYear": 2000,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "101-250",
+      "estimatedRevenueRange": "$10M-$50M",
+      "headquarters": "Greenwood Village, Colorado, United States",
+      "geographicRegions": [
+        "Greater Denver Area",
+        "Western US"
+      ],
+      "industries": [
+        "Analytics",
+        "Finance",
+        "Information Technology",
+        "SaaS",
+        "Software"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Financial Services",
+        "Information Technology",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An integrated suite of applications for analytics, reporting, and budgeting specifically designed for JD Edwards (JDE) and Oracle E-Business Suite (EBS).",
+        "name": "Analytics, Reporting, & Budgeting for JDE and Oracle EBS"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2018-01-31",
+          "publisher": "PRWeb",
+          "title": "Insightsoftware.com Receives New Patent",
+          "url": "http://www.prweb.com/releases/2018/01/prweb15150399.htm"
+        },
+        {
+          "date": "2016-10-04",
+          "title": "Antivia acquired by Hubble by insightsoftware.com"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -18,
+      "heatScore": 27
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 6.6
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Planful is a comprehensive solution with end-to-end capabilities for finance and accounting teams.",
+          "employeeRange": "251-500",
+          "name": "Planful",
+          "sharedCategories": [
+            "SaaS",
+            "Analytics",
+            "Finance"
+          ],
+          "sharedSpecialties": [
+            "Operational Business Intelligence",
+            "Project Financial Management"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Prophix delivers world class Corporate Performance Management solutions.",
+          "employeeRange": "501-1,000",
+          "name": "Prophix Software",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Operational Business Intelligence",
+            "Embedded Business Intelligence",
+            "Self-Service Business Intelligence"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Workday provides SaaS-based enterprise solutions for a company's human resources and financial management activities.",
+          "employeeRange": "10,001+",
+          "name": "Workday",
+          "sharedCategories": [
+            "SaaS",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Operational Business Intelligence",
+            "ERP Consulting"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Oracle is an integrated cloud application and platform services that sells a range of enterprise information technology solutions.",
+          "employeeRange": "10,001+",
+          "name": "Oracle",
+          "sharedCategories": [
+            "SaaS",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "ERP Consulting"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "OneStream Software is an independent software company that develops a financial planning and analysis software.",
+          "employeeRange": "1,001-5,000",
+          "name": "OneStream Software",
+          "sharedCategories": [
+            "Finance",
+            "Software",
+            "Information Technology"
+          ],
+          "similarityScore": 90
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Planful, Prophix Software, Workday.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

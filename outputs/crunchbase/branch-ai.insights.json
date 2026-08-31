@@ -1,0 +1,289 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:44:23.927Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:44:23.866Z",
+    "url": "https://www.crunchbase.com/organization/branch-ai"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Branch AI",
+      "shortDescription": "Branch AI offers data pipeline solution for unstructured data and delivers data to search databases, vector databases, and data lakes.",
+      "website": "https://www.branch-ai.com/",
+      "foundedYear": 2023,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Singapore, Central Region",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)",
+        "Association of Southeast Asian Nations (ASEAN)",
+        "Southeast Asia"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "E-Commerce",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Commerce and Shopping",
+        "Data and Analytics",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Govind Chandrasekhar",
+        "Ishan Agrawal"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A cloud-based AI search solution that enhances website search functionality by providing personalized answers, suggestions, and product comparisons.",
+        "name": "AI Overview Search, as a Service"
+      },
+      {
+        "description": "A service that converts AI-generated answers to common queries into static landing pages for indexing by search engines to increase organic traffic.",
+        "name": "Save Answers as Landing Pages"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2023-09-06",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2023-09-06",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 4151607,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2023-09-06",
+          "title": "Pre Seed Round - Branch AI"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -9,
+      "growthScore": 80,
+      "heatChange90Days": -13,
+      "heatScore": 68
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 90.88
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 35.16,
+        "timingEstimatePercent": {
+          "within6Months": 0.88,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 99.12
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 87.78
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 4.29
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Vectorize is a fast, accurate, production-ready AI.",
+          "employeeRange": "1-10",
+          "name": "Vectorize",
+          "sharedCategories": [
+            "Software",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Vector Search",
+            "Vector Databases",
+            "AI Content Generation",
+            "Enterprise Search"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Unstructured is an enterprise ETL tool that automatically transforms complex, unstructured data into clean, structured data for GenAI.",
+          "employeeRange": "101-250",
+          "name": "Unstructured Technologies",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Vector Search",
+            "Vector Databases",
+            "Enterprise Search",
+            "Data Pipelines"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "MindsDB is an open-source platform that enables developers to integrate machine learning into applications.",
+          "employeeRange": "11-50",
+          "name": "MindsDB",
+          "sharedCategories": [
+            "Software",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Knowledge Management",
+            "Vector Databases",
+            "Enterprise Search",
+            "Data Pipelines"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Cribl, the AI Platform for Telemetry, empowers enterprises to manage and analyze telemetry for humans and agents.",
+          "employeeRange": "501-1,000",
+          "name": "Cribl",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Data Lake Platforms",
+            "Enterprise Search",
+            "Data Pipelines"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Airbyte is an open-source data integration engine that helps to sync data from applications to warehouses.",
+          "employeeRange": "101-250",
+          "name": "Airbyte",
+          "sharedSpecialties": [
+            "Data Lake Platforms",
+            "Data Pipelines"
+          ],
+          "similarityScore": 83
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $500,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $4,151,607 to $4,151,607, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 80 (-9 over 90 days) and market heat at 68 (-13).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Vectorize, Unstructured Technologies, MindsDB.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

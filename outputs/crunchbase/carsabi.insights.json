@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:01:08.812Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:01:08.779Z",
+    "url": "https://www.crunchbase.com/organization/carsabi"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Carsabi",
+      "shortDescription": "Carsabi is the search engine for used cars",
+      "description": "Carsabi puts every car for sale online on one site - whether on a craigslist, dealership websites, speciality auto collections, or other classifieds. Our algorithms extract structured listings from every major online auto site to ensure you have the best deals on the web in real time. Quickly select a Make, Model, and other features and see any matching car in the US  - then compare on price vs mileage to quickly find the best deal.",
+      "website": "http://carsabi.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Automotive",
+        "Natural Language Processing",
+        "Search Engine"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Internet Services",
+        "Software",
+        "Transportation"
+      ],
+      "founders": [
+        "Christopher Berner",
+        "Dwight Crow"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2012-01-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2012-01-01",
+          "investorCount": 2,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "DCVC",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2012-12-27",
+          "title": "Carsabi acquired by Ark"
+        },
+        {
+          "date": "2012-01-01",
+          "title": "Seed Round - Carsabi"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -13,
+      "heatScore": 44
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "CarGurus is an online automotive destination that assists users in contacting sellers and comparing local listings for new and used cars.",
+          "employeeRange": "1,001-5,000",
+          "name": "CarGurus",
+          "sharedCategories": [
+            "Automotive"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Cars.com is a online destination that helps car shoppers and owners navigate every turn of car ownership.",
+          "employeeRange": "1,001-5,000",
+          "name": "Cars.com",
+          "sharedCategories": [
+            "Automotive"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "AutoTrader is an online marketplace for buying and selling new, certified and used cars.",
+          "employeeRange": "5,001-10,000",
+          "name": "Autotrader.com",
+          "similarityScore": 92
+        },
+        {
+          "description": "Edmunds is a technology company that offers an online platform for automotive inventory and information, including expert car reviews.",
+          "employeeRange": "501-1,000",
+          "name": "Edmunds",
+          "sharedCategories": [
+            "Automotive"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Kelley Blue Book provides The Trusted Resource® which provides vehicle buyers and sellers with information on new and used-vehicles.",
+          "employeeRange": "251-500",
+          "name": "Kelley Blue Book",
+          "sharedCategories": [
+            "Automotive"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include CarGurus, Cars.com, Autotrader.com.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

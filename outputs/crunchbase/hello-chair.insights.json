@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:47:13.384Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:47:13.332Z",
+    "url": "https://www.crunchbase.com/organization/hello-chair"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Hello Chair",
+      "shortDescription": "Hello Chair focused on exploring opportunities in applied machine learning and internet advertising.",
+      "description": "Hello, Chair Inc. was founded in 2006 by Luke Iannini, Mike Jacobs and Kevin Corcoran to explore opportunities in applied machine learning and internet advertising. After receiving funding from Y-Combinator in 2007, we produced Adpinion, one of the first advertising networks to utilize user feedback to drive personalized targeting.",
+      "website": "http://www.hellochair.com/",
+      "foundedYear": 2006,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Ad Network",
+        "Artificial Intelligence (AI)",
+        "Mobile"
+      ],
+      "sectors": [
+        "Advertising",
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Mobile",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Kevin Corcoran",
+        "Luke Iannini",
+        "Michael Jacobs"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 889999,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2010-04-12",
+      "lastFundingType": "Venture round",
+      "rounds": [
+        {
+          "announcedDate": "2010-04-12",
+          "amount": {
+            "amount": 874999,
+            "currency": "USD"
+          },
+          "investorCount": 4,
+          "type": "Venture round"
+        },
+        {
+          "announcedDate": "2007-06-01",
+          "amount": {
+            "amount": 15000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 6,
+        "visibleNames": [
+          {
+            "name": "Chris Sacca",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Harrison Metal",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "Kapor Capital",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "Lowercase Capital",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "Wilson Sonsini Goodrich & Rosati",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 5,
+      "includedUniqueCount": 5,
+      "items": [
+        {
+          "date": "2011-03-08",
+          "publisher": "TechCrunch",
+          "title": "Explor, Touch-Based App Discovery To Get Around The App&nbsp;Wall",
+          "url": "http://techcrunch.com/2011/03/08/explor-app/"
+        },
+        {
+          "date": "2010-05-26",
+          "publisher": "TechCrunch",
+          "title": "Mobile App Recommender Appsaurus Raises $850K From Mitch Kapor, Chris Sacca And&nbsp;Others",
+          "url": "http://techcrunch.com/2010/05/26/mobile-app-directory-hello-chair-raises-850k-from-mitch-kapor-chris-sacca-and-others/"
+        },
+        {
+          "date": "2010-04-12",
+          "title": "Venture Round - Hello Chair"
+        },
+        {
+          "date": "2009-12-29",
+          "publisher": "Wired News",
+          "title": "Appsaurus: A Smarter Recommendation Tool Than App Store Genius",
+          "url": "http://www.wired.com/2009/12/appsaurus-iphone-app"
+        },
+        {
+          "date": "2007-06-01",
+          "title": "Seed Round - Hello Chair"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 2,
+    "knownDetailedFundingAmount": {
+      "amount": 889999,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 98.31
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -6,
+      "heatScore": 1
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Venture round round raised $874,999, or 98.31% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

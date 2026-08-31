@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:51:00.676Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:51:00.630Z",
+    "url": "https://www.crunchbase.com/organization/delineate"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Delineate",
+      "shortDescription": "Delineate  is a research and insights firm working exclusively with marketing and communications teams.",
+      "description": "Delineate  is a research and insights firm working exclusively with marketing and communications teams.",
+      "website": "https://delineate.agency/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "London, England, United Kingdom",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Marketing",
+        "Market Research"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Design",
+        "Sales and Marketing"
+      ],
+      "founders": [
+        "James Turner"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 4,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2026-07-28",
+          "title": "Delineate acquired by Vertus Group"
+        },
+        {
+          "date": "2024-04-12",
+          "publisher": "Business Live",
+          "title": "Market research firm Delineate creates 50 jobs in West Wales with new operation",
+          "url": "https://www.business-live.co.uk/enterprise/market-research-firm-delineate-creates-28982803"
+        },
+        {
+          "date": "2019-03-05",
+          "title": "Opinion.Life acquired by Delineate"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2024-09-28",
+      "growthChange90Days": 9,
+      "growthScore": 33,
+      "heatChange90Days": 22,
+      "heatScore": 78,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-06-27",
+        "probabilityPercent": 34
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 90.13
+      },
+      "ipo": {
+        "generatedDate": "2026-06-27",
+        "probabilityPercent": 15.95
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Savanta is the intelligence business that helps companies to make better decisions.",
+          "employeeRange": "501-1,000",
+          "name": "Savanta",
+          "sharedCategories": [
+            "Market Research"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Kantar is the data investment management division of WPP, is a global insight, information, and consultancy network.",
+          "employeeRange": "10,001+",
+          "name": "Kantar",
+          "sharedCategories": [
+            "Market Research",
+            "Marketing"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "YouGov is a data and analytics group that enables companies to explore, plan, activate, and track marketing activities.",
+          "employeeRange": "1,001-5,000",
+          "name": "YouGov",
+          "sharedCategories": [
+            "Market Research"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Ipsos operates is a global market research and consulting firm that provides data and insights regarding society, markets, and people.",
+          "employeeRange": "10,001+",
+          "name": "Ipsos",
+          "sharedCategories": [
+            "Market Research"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "GlobeScan is a public opinion research consultancy",
+          "employeeRange": "51-100",
+          "name": "GlobeScan",
+          "sharedCategories": [
+            "Marketing"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 33 (+9 over 90 days) and market heat at 78 (+22).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Savanta, Kantar, YouGov.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 4 timeline items but exposes 3 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

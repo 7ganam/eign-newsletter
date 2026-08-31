@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:44:33.808Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:44:33.751Z",
+    "url": "https://www.crunchbase.com/organization/hauteday"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "HauteDay",
+      "shortDescription": "Haute Day was created to make shopping a lot more fun!",
+      "description": "Haute Day was created to make shopping a lot more fun! Everyday, they invite their community to submit their best new fashion finds, centered around a particular theme or topic. The community spends the next 24 hours voting, sending their favorite item to the top of the list.",
+      "website": "http://hauteday.com/",
+      "foundedYear": 2014,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Carlsbad, California, United States",
+      "geographicRegions": [
+        "Greater San Diego Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Apps",
+        "E-Commerce",
+        "Fashion",
+        "Internet",
+        "Shopping"
+      ],
+      "sectors": [
+        "Apps",
+        "Clothing and Apparel",
+        "Commerce and Shopping",
+        "Design",
+        "Information Technology",
+        "Software"
+      ],
+      "founders": [
+        "Dan Lin",
+        "Michael Witz"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2014-07-16",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2014-07-16",
+          "investorCount": 2,
+          "postMoneyValuation": {
+            "amount": 2875170,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Zillionize",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2014-07-16",
+          "title": "Seed Round - HauteDay"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 0,
+      "growthScore": 84,
+      "heatChange90Days": -12,
+      "heatScore": 56
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 2.69,
+        "timingEstimatePercent": {
+          "within6Months": 13.69,
+          "months6To11": 11.81,
+          "months12To24": 19,
+          "beyond24Months": 24.7
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 67.42
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Stitch Fix is a personal styling platform that delivers curated and personalized apparel and accessory items for women.",
+          "employeeRange": "5,001-10,000",
+          "name": "Stitch Fix",
+          "sharedCategories": [
+            "E-Commerce",
+            "Fashion"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Wantable is an e-commerce company offering curated assortments of women's makeup, fashion accessories, and intimate apparel.",
+          "employeeRange": "251-500",
+          "name": "Wantable",
+          "sharedCategories": [
+            "E-Commerce",
+            "Fashion"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Trunk Club is a men's clothing service where a personal stylist handpicks high-end clothes and ships it for free.",
+          "employeeRange": "1,001-5,000",
+          "name": "TrunkClub",
+          "sharedCategories": [
+            "E-Commerce",
+            "Fashion"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Quality apparel and gear built to go the distance",
+          "employeeRange": "51-100",
+          "name": "Bespoke Post",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "FabFitFun offers subscription services that allow its members to discover brands and products.",
+          "employeeRange": "251-500",
+          "name": "FabFitFun",
+          "sharedCategories": [
+            "E-Commerce",
+            "Fashion"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $2,875,170 to $2,875,170, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 84 (+0 over 90 days) and market heat at 56 (-12).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Stitch Fix, Wantable, TrunkClub.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

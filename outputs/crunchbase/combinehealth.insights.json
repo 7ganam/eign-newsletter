@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:27:22.203Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:27:22.154Z",
+    "url": "https://www.crunchbase.com/organization/combinehealth"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "CombineHealth",
+      "shortDescription": "Combine Health offers AI‑based revenue cycle management tools that automate medical coding, billing, auditing, and denial handling.",
+      "website": "https://www.combinehealth.ai/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Billing",
+        "Information Technology",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Financial Services",
+        "Information Technology",
+        "Payments",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Sourabh Agrawal"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An AI system that autonomously analyzes clinical documentation to assign accurate medical diagnosis and procedure codes compliant with current guidelines.",
+        "name": "Amy AI Medical Coder"
+      },
+      {
+        "description": "An AI tool that manages end-to-end medical billing processes, including claim submission, denial management, and consistent follow-ups.",
+        "name": "Marc AI Medical Biller"
+      },
+      {
+        "description": "An AI-powered auditing system that performs real-time data analysis to detect inaccuracies and provide ongoing education on coding standards.",
+        "name": "Alice AI Auditor"
+      },
+      {
+        "description": "An AI solution that automates charge entry processes to improve accuracy, speed, and scalability in medical billing.",
+        "name": "Catherine AI Charge Entry"
+      },
+      {
+        "description": "An AI system that automates claim tracking, denial analysis, and appeal management with real-time error detection.",
+        "name": "Deborah AI Denial Manager"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 2,
+      "heatScore": 85
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 5
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 87.16
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "CodaMetrix is a medical coding platform that utilizes AI to provide solutions for healthcare revenue cycle management.",
+          "employeeRange": "101-250",
+          "name": "CodaMetrix",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Electronic Claims Processing",
+            "Claims Processing Automation",
+            "Intelligent Document Processing",
+            "Healthcare Regulatory Compliance",
+            "Revenue Cycle Management",
+            "Health Systems Integration",
+            "Medical Records Management"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Abridge is an AI-driven platform that transforms patient-clinician conversations into structured clinical notes for healthcare industries.",
+          "employeeRange": "251-500",
+          "name": "Abridge",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Revenue Cycle Management",
+            "Health Systems Integration",
+            "Medical Records Management"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Suki provides AI-powered voice solutions that streamline healthcare documentation processes.",
+          "employeeRange": "251-500",
+          "name": "Suki",
+          "sharedCategories": [
+            "Software",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Healthcare Regulatory Compliance",
+            "Health Systems Integration",
+            "Medical Records Management"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Fathom develops medical coding automation platform powered by artificial intelligence.",
+          "employeeRange": "51-100",
+          "name": "Fathom",
+          "sharedCategories": [
+            "Software",
+            "Artificial Intelligence (AI)",
+            "Billing"
+          ],
+          "sharedSpecialties": [
+            "Electronic Claims Processing",
+            "Claims Processing Automation",
+            "Intelligent Document Processing",
+            "Healthcare Regulatory Compliance",
+            "Revenue Cycle Management",
+            "Medical Records Management"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Optum is a healthcare company that provides pharmacy services, health care operations, and population health management.",
+          "employeeRange": "10,001+",
+          "name": "Optum",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Revenue Cycle Management"
+          ],
+          "similarityScore": 88
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include CodaMetrix, Abridge, Suki.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

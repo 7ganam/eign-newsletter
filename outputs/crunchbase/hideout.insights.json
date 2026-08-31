@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:52:45.022Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:52:44.967Z",
+    "url": "https://www.crunchbase.com/organization/hideout"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Hideout",
+      "shortDescription": "Hideout is a bar in Chicago.",
+      "website": "https://www.hideoutchicago.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "101-250",
+      "headquarters": "Chicago, Illinois, United States",
+      "geographicRegions": [
+        "Greater Chicago Area",
+        "Great Lakes",
+        "Midwestern US"
+      ],
+      "industries": [
+        "Restaurants"
+      ],
+      "sectors": [
+        "Food and Beverage"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Hosting live music performances featuring various genres and artists, primarily for audiences aged 21 and over.",
+        "name": "Live Music Events"
+      },
+      {
+        "description": "Providing a bar environment serving alcoholic and non-alcoholic beverages to patrons.",
+        "name": "Bar Services"
+      },
+      {
+        "description": "Offering space and services for private events and gatherings at the venue.",
+        "name": "Private Event Hosting"
+      },
+      {
+        "description": "Organizing recurring themed events and special series such as trivia nights, political talk shows, and benefit concerts.",
+        "name": "Special Event Series and Themed Nights"
+      },
+      {
+        "description": "Hosting annual events such as anniversary block parties and holiday sales featuring local vendors and artists.",
+        "name": "Annual and Seasonal Festivals and Sales"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 5,
+      "includedUniqueCount": 5,
+      "items": [
+        {
+          "date": "2021-02-17",
+          "publisher": "Engadget",
+          "title": "'Knockout City' is a cross-platform dodgeball brawler from Velan and EA",
+          "url": "https://engt.co/3k1X7xs"
+        },
+        {
+          "date": "2021-01-21",
+          "publisher": "Fintech News Malaysia",
+          "title": "Buy Now Pay Later Platform Split Has Processed RM 10 Million in Transactions",
+          "url": "https://buff.ly/3iz6XWU"
+        },
+        {
+          "date": "2020-09-10",
+          "publisher": "The Western Star",
+          "title": "P.E.I.-based Hideout residencies designed for writers, wellness practitioners",
+          "url": "https://www.saltwire.com/lifestyles/local-lifestyles/pei-based-hideout-residencies-designed-for-writers-wellness-practitioners-494869"
+        },
+        {
+          "date": "2020-08-04",
+          "publisher": "Desert News",
+          "title": "Judge grants temporary restraining order to pause Hideout ‘land grab’",
+          "url": "https://www.deseret.com/utah/2020/8/4/21354516/park-city-judge-lawsuit-hideout-summit-county-land-grab-annexation-josh-romney-developers"
+        },
+        {
+          "date": "2020-07-31",
+          "publisher": "Desert News",
+          "title": "Summit County sues to stop Hideout ‘land grab’ near Park City",
+          "url": "https://www.deseret.com/utah/2020/7/31/21349788/park-city-land-grab-summit-county-lawsuit-annexation-wasatch-county"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -1,
+      "growthScore": 85,
+      "heatChange90Days": -14,
+      "heatScore": 59
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 62.19
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Bottom Lounge is a restaurant and live music venue.",
+          "employeeRange": "11-50",
+          "name": "Bottom Lounge",
+          "sharedCategories": [
+            "Restaurants"
+          ],
+          "sharedSpecialties": [
+            "Bars and Pubs",
+            "Event Entertainment",
+            "Venue Marketing",
+            "Event Venues",
+            "Live Music Production",
+            "Concert Promotion",
+            "Venue Hospitality Services"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Thalia Hall is a historic landmark for music, community, and artistic events.",
+          "employeeRange": "11-50",
+          "name": "Thalia Hall",
+          "sharedSpecialties": [
+            "Venue Rental",
+            "Venue Marketing",
+            "Event Venues",
+            "Live Music Production",
+            "Venue Hospitality Services"
+          ],
+          "similarityScore": 81
+        },
+        {
+          "description": "The Salt Shed is a music venue that features concerts, festivals, and events.",
+          "employeeRange": "1-10",
+          "name": "The Salt Shed",
+          "similarityScore": 79
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 85 (-1 over 90 days) and market heat at 59 (-14).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Bottom Lounge, Thalia Hall, The Salt Shed.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

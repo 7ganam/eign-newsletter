@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:45:23.124Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:45:23.073Z",
+    "url": "https://www.crunchbase.com/organization/data-mechanics"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Data Mechanics",
+      "shortDescription": "Data Mechanics is a serverless platform for data engineering and data science.",
+      "description": "Data Mechanics is a managed Spark platform for data scientists and engineers. The platform tunes the infrastructure parameters (e.g. CPU, Memory) and Spark configurations (e.g. parallelism, shuffle, I/O) automatically and continuously for every pipelines to make them stable and performant, and provide an easy-to-use serverless experience to its users.",
+      "website": "https://www.datamechanics.co/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Analytics",
+        "Big Data",
+        "Computer",
+        "Information Technology",
+        "Software"
+      ],
+      "sectors": [
+        "Consumer Electronics",
+        "Data and Analytics",
+        "Hardware",
+        "Information Technology",
+        "Software"
+      ],
+      "founders": [
+        "Julien Dumazert",
+        "Stephan Jean-Yves"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A cloud-native platform that runs Apache Spark on Kubernetes clusters within a user's cloud account, managing Spark applications with automated scaling and configuration tuning.",
+        "name": "Ocean for Apache Spark"
+      },
+      {
+        "description": "A hosted Spark UI alternative that collects and visualizes Spark application metrics via an open-source agent integrated into Spark workloads.",
+        "name": "Delight Spark UI"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 150000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2019-10-15",
+      "lastFundingType": "Non Equity Assistance",
+      "rounds": [
+        {
+          "announcedDate": "2019-10-15",
+          "investorCount": 1,
+          "type": "Non Equity Assistance"
+        },
+        {
+          "announcedDate": "2019-08-19",
+          "amount": {
+            "amount": 150000,
+            "currency": "USD"
+          },
+          "investorCount": 5,
+          "postMoneyValuation": {
+            "amount": 2385998,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 6,
+        "visibleNames": [
+          {
+            "name": "AGORANOV",
+            "rounds": [
+              "Non Equity Assistance"
+            ]
+          },
+          {
+            "name": "Eduardo Ronzano",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Flex Capital",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Guillaume Lestrade",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Liquid 2 Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 8,
+      "includedUniqueCount": 8,
+      "items": [
+        {
+          "date": "2021-06-23",
+          "publisher": "Indian Web 2",
+          "title": "NetApp Acquires Data Mechanics to Accelerate Spot Roadmap and Optimize Data Analytics and Machine Learning Workloads in the Cloud",
+          "url": "https://www.indianweb2.com/2021/06/netapp-acquires-data-mechanics-to.html"
+        },
+        {
+          "date": "2021-06-22",
+          "publisher": "ZDNet",
+          "title": "NetApp scoops up Data Mechanics to add Spark analytics",
+          "url": "https://zd.net/3gKPqvq"
+        },
+        {
+          "date": "2021-06-22",
+          "publisher": "Yahoo Finance",
+          "title": "NetApp Acquires Cloud Analytics Provider Data Mechanics For Undisclosed Sum",
+          "url": "https://finance.yahoo.com/news/netapp-acquires-cloud-analytics-provider-113640197.html"
+        },
+        {
+          "date": "2021-06-22",
+          "publisher": "ChannelE2E",
+          "title": "NetApp Acquires Apache Spark, Kubernetes Expert Data Mechanics",
+          "url": "https://www.channele2e.com/investors/mergers-acquisitions/netapp-buys-data-mechanics/"
+        },
+        {
+          "date": "2021-06-22",
+          "publisher": "CRN",
+          "title": "NetApp’s Data Mechanics Buy Latest Move To Optimize Hybrid Cloud",
+          "url": "https://buff.ly/3zQ6YOf"
+        },
+        {
+          "date": "2021-06-18",
+          "title": "Data Mechanics acquired by NetApp"
+        },
+        {
+          "date": "2019-10-15",
+          "title": "Non Equity Assistance - Data Mechanics"
+        },
+        {
+          "date": "2019-08-19",
+          "title": "Seed Round - Data Mechanics"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 150000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -8,
+      "heatScore": 9
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-04-18",
+        "probabilityPercent": 62.24
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Databricks is a data and AI platform that unifies data engineering, analytics, and machine learning on a lakehouse architecture.",
+          "employeeRange": "10,001+",
+          "name": "Databricks",
+          "sharedCategories": [
+            "Analytics",
+            "Information Technology"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Google Cloud focuses on business challenges that head-on with cloud computing services from Google.",
+          "employeeRange": "10,001+",
+          "name": "Google Cloud",
+          "similarityScore": 92
+        },
+        {
+          "description": "Amazon Web Services provides information technology infrastructure services to businesses in the form of web services.",
+          "employeeRange": "10,001+",
+          "name": "Amazon Web Services",
+          "similarityScore": 90
+        },
+        {
+          "description": "Microsoft provides computer software, consumer electronics, cloud computing platforms, and digital enterprise systems.",
+          "employeeRange": "11-50",
+          "name": "Microsoft",
+          "similarityScore": 88
+        },
+        {
+          "description": "Cloudera is a software development company that offers data management and cloud-native data analytic solutions.",
+          "employeeRange": "1,001-5,000",
+          "name": "Cloudera",
+          "sharedCategories": [
+            "Analytics",
+            "Software"
+          ],
+          "similarityScore": 88
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $2,385,998 to $2,385,998, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Databricks, Google Cloud, Amazon Web Services.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

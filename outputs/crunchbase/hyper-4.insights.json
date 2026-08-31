@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:00:12.181Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:00:12.146Z",
+    "url": "https://www.crunchbase.com/organization/hyper-4"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Hyper.sh",
+      "shortDescription": "Hyper.sh is a secure container cloud service.",
+      "description": "HYPER_ With the rise of Docker, the world is shifting its focus from \"Machine\" toward \"App\". As such, the cloud of tomorrow will be very different than today.\r\n\r\nWhile the future is exciting, what holds us back is the lack of isolation in container. Without the necessary security, it is impossible to build a public multi-tenant CaaS platform, as everyone has to share the single host's kernel (no matter physical or virtual).",
+      "website": "https://hyper.sh/",
+      "foundedYear": 2015,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Beijing, China",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)"
+      ],
+      "industries": [
+        "Cloud Computing",
+        "Cloud Data Services",
+        "Cloud Security"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Internet Services",
+        "Privacy and Security",
+        "Software"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2017-12-05",
+          "publisher": "TechCrunch",
+          "title": "Intel and Hyper partner with the OpenStack Foundation to launch the Kata Containers project",
+          "url": "https://techcrunch.com/2017/12/05/intel-and-hyper-partner-with-the-openstack-foundation-to-launch-the-kata-containers-project/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -3,
+      "heatScore": 25
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

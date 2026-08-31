@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T10:59:29.576Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T10:59:29.519Z",
+    "url": "https://www.crunchbase.com/organization/care-gp"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Care GP",
+      "shortDescription": "Care GP is a SaaS platform that offers AI automation solutions for clinic admins.",
+      "website": "https://www.caregp.com.au/",
+      "foundedYear": 2024,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Haymarket, New South Wales, Australia",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)",
+        "Australasia"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "SaaS",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 44,
+      "heatScore": 85
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 5
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 49.81
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "CarePatron software is a healthcare CRM software that allows doctors to see more clients, manage their schedules, and record their notes.",
+          "employeeRange": "101-250",
+          "name": "Carepatron",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Heidi Health is a healthtech company that develops an AI medical scribe platform that automates clinical documentation and related tasks.",
+          "employeeRange": "101-250",
+          "name": "Heidi Health",
+          "sharedCategories": [
+            "Software",
+            "Artificial Intelligence (AI)"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "KPRO Apps is a software development company that offers mobile applications and software.",
+          "employeeRange": "11-50",
+          "name": "KPRO Apps",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 86
+        },
+        {
+          "description": "Medreception AI provides AI-powered receptionists that answer calls and manage patient communication for medical practices.",
+          "employeeRange": "1-10",
+          "name": "Medreception AI",
+          "sharedCategories": [
+            "SaaS",
+            "Software",
+            "Artificial Intelligence (AI)"
+          ],
+          "similarityScore": 85
+        },
+        {
+          "description": "TAL Life, Australia's leading life insurance specialist.",
+          "employeeRange": "1,001-5,000",
+          "name": "TAL",
+          "similarityScore": 82
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Carepatron, Heidi Health, KPRO Apps.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

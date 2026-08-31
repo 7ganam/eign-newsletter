@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:10:17.459Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:10:17.413Z",
+    "url": "https://www.crunchbase.com/organization/lumetric"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Lumetric",
+      "shortDescription": "Lumetric provides marketing analytics and tracking services.",
+      "description": "Lumetric makes tracking visitor journeys simple.",
+      "website": "https://lumetric.io/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "industries": [
+        "Analytics"
+      ],
+      "sectors": [
+        "Data and Analytics"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -5,
+      "growthScore": 81,
+      "heatChange90Days": -23,
+      "heatScore": 55
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 93.18
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Rockerbox offers a platform combining Multi-Touch Attribution, Marketing Mix Modeling, and Testing for marketing measurement.",
+          "employeeRange": "101-250",
+          "name": "Rockerbox",
+          "similarityScore": 97
+        },
+        {
+          "description": "ThoughtMetric is a Marketing Attribution tool for eCommerce.",
+          "employeeRange": "1-10",
+          "name": "ThoughtMetric",
+          "similarityScore": 95
+        },
+        {
+          "description": "HYROS is hyper-accurate tracking and provides the sales attribution and accuracy possible for digital businesses.",
+          "employeeRange": "51-100",
+          "name": "Hyros",
+          "similarityScore": 93
+        },
+        {
+          "description": "Northbeam is a platform for marketing measurement that uses machine learning for DTC and ecommerce brands.",
+          "employeeRange": "11-50",
+          "name": "Northbeam",
+          "sharedCategories": [
+            "Analytics"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Triple Whale is the eCommerce operating system for Shopify brands.",
+          "employeeRange": "101-250",
+          "name": "Triple Whale",
+          "sharedCategories": [
+            "Analytics"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 81 (-5 over 90 days) and market heat at 55 (-23).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Rockerbox, ThoughtMetric, Hyros.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:21:43.123Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:21:43.065Z",
+    "url": "https://www.crunchbase.com/organization/fuzzwich"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Conecta 2",
+      "shortDescription": "Fuzzwich is an online animation platform developed by Habit Industries.",
+      "description": "Habit Industries is currently pursuing the online animation space with Fuzzwich and has previously launched Minivid, a simple, playful animator. Habit Industries was founded in June 2007 with seed funding from YCombinator. The team has backgrounds in animation, new media promotions, video games, graphic design, and film production.",
+      "website": "http://fuzzwich.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Palo Alto, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Consulting",
+        "Venture Capital"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Lending and Investments",
+        "Professional Services"
+      ],
+      "founders": [
+        "Devin Hunt"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2007-08-17",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2007-08-17",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2007-08-17",
+          "title": "Seed Round - Conecta 2"
+        },
+        {
+          "date": "2007-08-16",
+          "publisher": "TechCrunch",
+          "title": "Y Combinator Demo Day: The Summer Startups",
+          "url": "http://www.techcrunch.com/2007/08/16/y-combinator-demo-day-the-summer-startups/"
+        },
+        {
+          "date": "2007-08-06",
+          "publisher": "TechCrunch",
+          "title": "The Fuzzwich Cartoon Maker",
+          "url": "http://www.techcrunch.com/2007/08/06/the-fuzzwich-cartoon-maker/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -28,
+      "heatScore": 46
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Powtoon is a creative platform that lets users make awesome videos and animated presentations.",
+          "employeeRange": "101-250",
+          "name": "Powtoon",
+          "similarityScore": 97
+        },
+        {
+          "description": "Vyond puts the power of video in the hands of everyone.",
+          "employeeRange": "101-250",
+          "name": "Vyond",
+          "similarityScore": 95
+        },
+        {
+          "description": "Moovly is a cloud-based SaaS digital media and content creation software platform.",
+          "employeeRange": "1-10",
+          "name": "Moovly",
+          "similarityScore": 93
+        },
+        {
+          "description": "Renderforest is an online video and animation maker that provides design tools for videos, animations, and graphics.",
+          "employeeRange": "101-250",
+          "name": "Renderforest",
+          "similarityScore": 91
+        },
+        {
+          "description": "Animoto allows users to create professional-quality video.",
+          "employeeRange": "51-100",
+          "name": "Animoto",
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Powtoon, Vyond, Moovly.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:32:03.702Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:32:03.642Z",
+    "url": "https://www.crunchbase.com/organization/converge"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Converge",
+      "shortDescription": "Converge is an Internet company.",
+      "website": "http://www.convergesystems.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "10,001+",
+      "estimatedRevenueRange": "$10M-$50M",
+      "headquarters": "Baltimore, Maryland, United States",
+      "geographicRegions": [
+        "Greater Baltimore-Maryland Area",
+        "East Coast",
+        "Southern US"
+      ],
+      "industries": [
+        "Internet",
+        "Social Media"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Internet Services",
+        "Media and Entertainment"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2020-03-05",
+          "publisher": "New York Times (NYT)",
+          "title": "An Artist Whose Buddhist and Painting Practices Converge",
+          "url": "https://www.nytimes.com/2020/03/05/t-magazine/leidy-churchman.html"
+        },
+        {
+          "date": "2020-02-21",
+          "publisher": "PRWeb",
+          "title": "HR World 2020: Industry-Leading HR, Recruiting and Learning & Development Professionals Converge November 9-11th in Kissimmee, FL",
+          "url": "https://www.prweb.com/releases/hr_world_2020_industry_leading_hr_recruiting_and_learning_development_professionals_converge_november_9_11th_in_kissimmee_fl/prweb16911217.htm"
+        },
+        {
+          "date": "2020-01-17",
+          "publisher": "Arizona Daily Star",
+          "title": "Arizona State University Named Presenting Sponsor of CONVERGE Tech Summit",
+          "url": "https://tucson.com/business/arizona-state-university-named-presenting-sponsor-of-converge-tech-summit/article_0cd0d25e-0e05-5da5-afc5-12079dea4998.html"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -11,
+      "heatScore": 7
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2025-09-13",
+        "probabilityPercent": 87.4
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

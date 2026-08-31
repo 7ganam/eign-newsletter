@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:58:15.679Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:58:15.617Z",
+    "url": "https://www.crunchbase.com/organization/distro"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Distro",
+      "shortDescription": "Direct to Consumer brand builder,  that aims to achieve massive scale by hitting a large addressable market with strong unit economics.",
+      "description": "Distro centralizes customer services, logistics, influencers, social shopping, and others. Distro is a direct-to-consumer brand builder that aims to achieve massive scale by hitting a large addressable market with strong unit economics. It gives clients access to organic personal care items.",
+      "website": "https://www.distrogroup.eu/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Hodkovice, Hlavni mesto Praha, Czech Republic",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 521344,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2019-12-10",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2019-12-10",
+          "amount": {
+            "amount": 521344,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Lighthouse Ventures"
+          ],
+          "postMoneyValuation": {
+            "amount": 2768146,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Lighthouse Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 5,
+      "includedUniqueCount": 5,
+      "items": [
+        {
+          "date": "2022-04-19",
+          "publisher": "Globe Newswire",
+          "title": "GPOPlus+ Launches New GPO DISTRO+",
+          "url": "https://www.globenewswire.com/en/news-release/2022/04/19/2424891/0/en/GPOPlus-Launches-New-GPO-DISTRO.html"
+        },
+        {
+          "date": "2021-12-06",
+          "publisher": "LinuxInsider",
+          "title": "OSS News: A Linux Takeover in Germany, Distro Updates, New Projects, Linux Tutelage",
+          "url": "https://www.linuxinsider.com/story/87357.html"
+        },
+        {
+          "date": "2021-08-03",
+          "publisher": "Digital Music News",
+          "title": "DistroDirect Brings An Easy Way to Democratize Digital Music Distribution",
+          "url": "https://www.digitalmusicnews.com/2021/08/03/distrodirect-music-distribution-launches/"
+        },
+        {
+          "date": "2020-06-03",
+          "publisher": "Law360",
+          "title": "Calif. Judge Rejects Software Co.'s H-1B Specialty Visa Bid",
+          "url": "https://www.law360.com/articles/1279555"
+        },
+        {
+          "date": "2019-12-10",
+          "title": "Seed Round - Distro"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 521344,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 0,
+      "growthScore": 23,
+      "heatChange90Days": -4,
+      "heatScore": 44
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2024-10-21",
+        "probabilityPercent": 33.52
+      },
+      "growth": {
+        "generatedDate": "2025-01-11",
+        "probabilityPercent": 95.18
+      },
+      "ipo": {
+        "generatedDate": "2024-10-21",
+        "probabilityPercent": 7.94
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $521,344, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $2,768,146 to $2,768,146, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 23 (+0 over 90 days) and market heat at 44 (-4).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

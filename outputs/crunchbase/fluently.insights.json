@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T13:11:17.312Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T13:11:17.267Z",
+    "url": "https://www.crunchbase.com/organization/fluently"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "fluently",
+      "shortDescription": "Translation Infrastructure On Demand",
+      "description": "fluently is a SaaS marketplace for professional translation that let’s you manage all your translation needs in one place, online. The matching algorithm then suggests the perfect team of vetted translators to ensure translations are on-brand, every time.\r\n\r\nTheir software helps B2B customers who typically outsource their translation needs to agencies to access the very same translators directly, cutting out the middle-man and thus creating a win/win scenario for customers and translators alike.",
+      "website": "http://www.fluently.io/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "London, England, United Kingdom",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "E-Commerce",
+        "Enterprise Software",
+        "Marketplace",
+        "SaaS"
+      ],
+      "sectors": [
+        "Commerce and Shopping",
+        "Software"
+      ],
+      "founders": [
+        "Giovanni Charles",
+        "Karin Nielsen"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2015-05-15",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2015-05-15",
+          "investorCount": 3,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 3,
+        "visibleNames": [
+          {
+            "name": "Entrepreneurs First",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Joe White",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Wendy Tan White",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2024-06-28",
+          "publisher": "TechStartups",
+          "title": "Fluently, an AI startup founded by YCombinator alum, raises $2M seed round for AI-powered speaking coach for calls",
+          "url": "https://techstartups.com/2024/06/28/fluently-an-ai-startup-founded-by-ycombinator-alum-raises-2m-seed-round-for-ai-powered-speaking-coach-for-calls/"
+        },
+        {
+          "date": "2015-09-09",
+          "publisher": "TechCrunch",
+          "title": "Entrepreneur First Demo Day: Meet The Nine Startups That Presented (And Read Our Take)",
+          "url": "http://techcrunch.com/2015/09/09/ef4/"
+        },
+        {
+          "date": "2015-05-15",
+          "title": "Seed Round - fluently"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -9,
+      "heatScore": 38
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Lokalise is a translation management system built for agile teams who want to automate their localization process.",
+          "employeeRange": "101-250",
+          "name": "Lokalise",
+          "similarityScore": 97
+        },
+        {
+          "description": "Phrase is a software localization platform that provides API, integrations, and translation editor services.",
+          "employeeRange": "251-500",
+          "name": "Phrase",
+          "sharedCategories": [
+            "SaaS"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Smartling is a language service and technology provider helping customers to localize content across devices and platforms.",
+          "employeeRange": "101-250",
+          "name": "Smartling",
+          "similarityScore": 93
+        },
+        {
+          "description": "Crowdin is a localization platform enhanced by AI to make your website, app, game and other software multilingual.",
+          "employeeRange": "101-250",
+          "name": "Crowdin",
+          "sharedCategories": [
+            "SaaS"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Transifex is a localization automation platform that powers the process of launching digital products into multiple languages.",
+          "employeeRange": "51-100",
+          "name": "Transifex",
+          "sharedCategories": [
+            "SaaS"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Lokalise, Phrase, Smartling.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

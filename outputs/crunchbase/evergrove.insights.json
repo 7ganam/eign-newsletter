@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:50:53.666Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:50:53.613Z",
+    "url": "https://www.crunchbase.com/organization/evergrove"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Evergrove",
+      "shortDescription": "Evergrove is a planned residential community offering new homes and shared amenities.",
+      "description": "Evergrove is a planned residential community that offers new homes within a master-planned neighborhood setting. The community features single-family homes built by Tri Pointe Homes and Toll Brothers on a range of homesites with one- and two-story floorplans. Evergrove provides shared amenities including an amenity center, fitness center, pools, splash pad, playgrounds, pocket parks, walking and biking trails, fishing areas and a community dog park. The neighborhood design incorporates preserved green space, mature trees and Jones Creek as a central natural feature. Evergrove also provides residents access to nearby schools, shopping, dining, parks and cultural attractions in the Richmond and greater Houston area.",
+      "website": "https://evergrovetx.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "Richmond, Texas, United States",
+      "geographicRegions": [
+        "Greater Houston Area",
+        "Southern US"
+      ],
+      "industries": [
+        "Construction",
+        "Home and Garden",
+        "Parks",
+        "Property Management",
+        "Real Estate",
+        "Recreation",
+        "Residential"
+      ],
+      "sectors": [
+        "Community and Lifestyle",
+        "Real Estate",
+        "Travel and Tourism"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Single-family homes in the Evergrove planned community with varied floorplans and homesite sizes.",
+        "name": "Evergrove Residential Homes"
+      },
+      {
+        "description": "Shared recreational amenities including amenity center, fitness, pools, trails, parks and dog park.",
+        "name": "Evergrove Community Amenities"
+      },
+      {
+        "description": "Community spaces and programming that support social connection, events and everyday neighborhood life.",
+        "name": "Evergrove Community Programming and Lifestyle"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatScore": 55
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 80.76
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

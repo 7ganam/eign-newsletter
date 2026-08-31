@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:57:29.225Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:57:29.171Z",
+    "url": "https://www.crunchbase.com/organization/lemonlime-ai"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "LemonLime",
+      "shortDescription": "Fully automated GTM for small business",
+      "description": "LemonLime runs fully automated sales and marketing for small businesses.\n\nEvery morning, LemonLime finds you new leads and drafts personalized outreach, prepares branded content, and identifies untapped sales & marketing opportunities.\n\nAll you have to do is click send.",
+      "website": "https://www.lemonlime.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Business Process Automation (BPA)",
+        "Consulting",
+        "Enterprise Software",
+        "Machine Learning",
+        "Marketing",
+        "Sales"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Professional Services",
+        "Sales and Marketing",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Daniela Munoz",
+        "Jordan Zietz"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An AI knowledge platform that connects business tools and structures company data into a unified knowledge layer for AI-powered workflows.",
+        "name": "LemonLime knowledge platform"
+      },
+      {
+        "description": "Configurable role-specific AI assistants that operate on top of a company’s knowledge layer for functions like marketing and sales.",
+        "name": "LemonLime AI specialists"
+      },
+      {
+        "description": "Professional services to design, build, deploy, and host custom AI workflows, agents, and integrations for business customers.",
+        "name": "Custom AI consulting and deployment services"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2026-07-08",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2026-07-08",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 7914437,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2026-08-12",
+          "publisher": "WIRED",
+          "title": "The Job-Interview Tattoo Guy Everyone Got Mad at Finally Explains Himself",
+          "url": "https://www.wired.com/story/linkedin-grindset-tattoo-guy-explains-himself/"
+        },
+        {
+          "date": "2026-08-05",
+          "publisher": "NDTV",
+          "title": "Startup Founder Apologises After Offering Job Interviews For Tattoos: \"I Thought Would Be Fun\"",
+          "url": "https://www.ndtv.com/offbeat/startup-founder-apologises-after-offering-job-interviews-for-tattoos-i-thought-would-be-fun-11867113"
+        },
+        {
+          "date": "2026-07-08",
+          "title": "Pre Seed Round - LemonLime"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 15,
+      "growthScore": 93,
+      "heatScore": 89
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 29.95
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.7
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $500,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $7,914,437 to $7,914,437, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

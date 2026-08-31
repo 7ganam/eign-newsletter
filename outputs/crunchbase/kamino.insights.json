@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T14:38:05.043Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T14:38:04.986Z",
+    "url": "https://www.crunchbase.com/organization/kamino"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Kamino",
+      "shortDescription": "Kamino offers a web-based application that provides its users with directions and information of places to plan walking tours.",
+      "description": "Kamino is a mobile application that provides its users with tools to create and enjoy walking tours, and plan trips. It is an interactive companion that grants access to user generated explorations of a city.\n\nKamino provides its users with the ability to discover the local reserves in their neighborhood and beyond. It was launched by Louis Huynh and Roger Obando.",
+      "website": "https://www.gokamino.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Diego, California, United States",
+      "geographicRegions": [
+        "Greater San Diego Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "iOS",
+        "Mobile",
+        "Software",
+        "Travel"
+      ],
+      "sectors": [
+        "Mobile",
+        "Platforms",
+        "Software",
+        "Travel and Tourism"
+      ],
+      "founders": [
+        "Louis Huynh",
+        "Roger Obando"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 22,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2023-12-07",
+          "publisher": "coindesk.com",
+          "title": "Solana Protocol Kamino Eyes Airdrop Following Jito Token Launch",
+          "url": "https://www.coindesk.com/business/2023/12/07/solana-protocol-kamino-eyes-airdrop-following-jito-token-launch/"
+        },
+        {
+          "date": "2022-08-31",
+          "publisher": "GlobalFinTechSeries",
+          "title": "Hubble Protocol launches Kamino Finance to Optimize Yields for Liquidity Providers on Solana",
+          "url": "http://ow.ly/RrLK50KwLXh"
+        },
+        {
+          "date": "2022-03-17",
+          "publisher": "LatinFinance",
+          "title": "Kamino sets out to ease financing for start-ups",
+          "url": "https://www.latinfinance.com/daily-briefs/2022/3/17/kamino-sets-out-to-ease-financing-for-start-ups"
+        },
+        {
+          "date": "2022-03-17",
+          "publisher": "NextBillion.net",
+          "title": "FinTech Kamino Raises $6.1 Million to Help Latin American Startups Raise Funds",
+          "url": "https://nextbillion.net/news/fintech-kamino-raises-6-1-million-to-help-latin-american-startups-raise-funds/"
+        },
+        {
+          "date": "2022-03-15",
+          "publisher": "Business Insider",
+          "title": "Here's the 8-page pitch deck Kamino, a fintech helping LatAm startups with everything from financing to corporate credit cards, used to raise a $6.1M pre-seed round",
+          "url": "https://www.businessinsider.com/latin-america-kamino-pitch-deck-pre-seed-financing-corporate-card-2022-3"
+        },
+        {
+          "date": "2014-11-13",
+          "publisher": "Gizmodo",
+          "title": "5 Apps That Help You Find Your City's Hidden Gems",
+          "url": "http://gizmodo.com/5-apps-that-help-you-find-your-citys-hidden-gems-1657009307"
+        },
+        {
+          "date": "2014-08-07",
+          "title": "Conde Nast Traveler: How Foursquare Works As a Travel App",
+          "url": "http://www.cntraveler.com/stories/2014-08-07/6-apps-help-you-find-local-adventures?s_cid=social29302096"
+        },
+        {
+          "date": "2014-08-04",
+          "title": "What's Trending: August 4th | Elvis Duran and the Morning Show",
+          "url": "http://www.elvisduran.com/articles/whats-trending-461825/whats-trending-august-4th-12626487"
+        },
+        {
+          "date": "2014-07-06",
+          "publisher": "LA Times",
+          "title": "LA Times Web Buzz: Kamino app, website helps you set off on an urban adventure",
+          "url": "http://www.latimes.com/travel/deals/la-tr-0706-webbuzz-20140706-story.html"
+        },
+        {
+          "date": "2014-07-03",
+          "title": "Roger Obando of Kamino Labs: From Consulting Work to Launching a Tech Startup",
+          "url": "http://billionsuccess.com/2014/07/roger-obando-kamino-labs/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -10,
+      "heatScore": 7
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 22 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:48:48.784Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:48:48.751Z",
+    "url": "https://www.crunchbase.com/organization/eq-alpha-technology-ltd"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "KeyDB",
+      "shortDescription": "KeyDB is an in-memory, high performance database with support for numerous data types, on-disk persistence and high availability.",
+      "description": "KeyDB is an in-memory, high-performance database with support for numerous data types, on-disk persistence, and high availability.  Compatible with Redis™ API and protocols, KeyDB is a drop-in replacement for your existing Redis™ deployments with numerous enhancements, higher performance, and lower Total Cost of Ownership (TCO). \n\nDesigned for use as both a cache as well as use as a primary database, KeyDB is a fast and versatile NoSQL database useful in many applications.  Its low resource requirements and high-speed mean fewer instances to manage and much lower costs.",
+      "website": "https://keydb.dev/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Toronto, Ontario, Canada",
+      "geographicRegions": [
+        "Great Lakes"
+      ],
+      "industries": [
+        "Database",
+        "Enterprise Applications",
+        "Software Engineering"
+      ],
+      "sectors": [
+        "Apps",
+        "Data and Analytics",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Ben Schermel",
+        "John Sully"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A version of KeyDB that is completely rearchitected for improved performance, including all features previously available in the open source project.",
+        "name": "KeyDB Pro (Enterprise)"
+      },
+      {
+        "description": "Beta feature that allows data to be stored on a storage medium, using RocksDB as the persistent storage provider.",
+        "name": "KeyDB FLASH"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 1330000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 3,
+      "detailedRoundCount": 3,
+      "lastFundingDate": "2021-04-08",
+      "lastFundingType": "Non Equity Assistance",
+      "rounds": [
+        {
+          "announcedDate": "2021-04-08",
+          "investorCount": 1,
+          "leadInvestors": [
+            "Canadian Technology Accelerator"
+          ],
+          "type": "Non Equity Assistance"
+        },
+        {
+          "announcedDate": "2021-04-01",
+          "amount": {
+            "amount": 1330000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "postMoneyValuation": {
+            "amount": 7066673,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2020-09-17",
+          "investorCount": 2,
+          "postMoneyValuation": {
+            "amount": 5775099,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 4,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Canadian Technology Accelerator",
+            "rounds": [
+              "Non Equity Assistance"
+            ]
+          },
+          {
+            "name": "Pegasus Tech Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "TSVC",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 5,
+      "includedUniqueCount": 5,
+      "items": [
+        {
+          "date": "2022-05-12",
+          "publisher": "TechCrunch",
+          "title": "Snap snaps up database developer KeyDB to make its infrastructure more snappy",
+          "url": "https://techcrunch.com/2022/05/12/snap-snaps-up-database-developer-keydb-to-make-its-infrastructure-more-snappy/"
+        },
+        {
+          "date": "2022-05-11",
+          "title": "KeyDB acquired by Snap"
+        },
+        {
+          "date": "2021-04-08",
+          "title": "Non Equity Assistance - KeyDB"
+        },
+        {
+          "date": "2021-04-01",
+          "title": "Seed Round - KeyDB"
+        },
+        {
+          "date": "2020-09-17",
+          "title": "Seed Round - KeyDB"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 1330000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1.22
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -2,
+      "growthScore": 34,
+      "heatChange90Days": -9,
+      "heatScore": 57
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2025-09-22",
+        "probabilityPercent": 85.98
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 59.12
+      },
+      "ipo": {
+        "generatedDate": "2025-09-22",
+        "probabilityPercent": 1.56
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Redis provides cloud and on-prem solutions for caching, vector search, and more that seamlessly fit into any tech stack.",
+          "employeeRange": "1,001-5,000",
+          "name": "Redis",
+          "sharedCategories": [
+            "Database"
+          ],
+          "similarityScore": 99
+        },
+        {
+          "description": "Valkey is an open-source datastore that supports various functions, caching, message queues, and primary database operations.",
+          "employeeRange": "1-10",
+          "name": "Valkey",
+          "sharedCategories": [
+            "Database"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "DragonflyDB is the fastest memory store in the universe.",
+          "employeeRange": "11-50",
+          "name": "DragonflyDB",
+          "similarityScore": 91
+        },
+        {
+          "description": "Alibaba Cloud develops cloud computing and data management services.",
+          "employeeRange": "5,001-10,000",
+          "name": "Alibaba Cloud",
+          "similarityScore": 88
+        },
+        {
+          "description": "Memcached is a distributed memory object caching system that enables its users to speed up dynamic web applications.",
+          "name": "Memcached",
+          "similarityScore": 86
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $5,775,099 to $7,066,673, a 1.22x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 34 (-2 over 90 days) and market heat at 57 (-9).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Redis, Valkey, DragonflyDB.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

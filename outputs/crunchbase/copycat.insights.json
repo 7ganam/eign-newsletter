@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T11:33:00.664Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T11:33:00.611Z",
+    "url": "https://www.crunchbase.com/organization/copycat"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Copycat",
+      "shortDescription": "Copycat is a digital document handling platform that specializes in digital printing, copying, CAD plotting, and cross-media campaigns.",
+      "website": "https://www.copycat.no/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "51-100",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Oslo, Norway",
+      "geographicRegions": [
+        "Nordic Countries",
+        "Scandinavia",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Digital Media",
+        "Printing"
+      ],
+      "sectors": [
+        "Content and Publishing",
+        "Media and Entertainment"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A service that produces printed materials from digital files for various formats and volumes.",
+        "name": "Digital Printing"
+      },
+      {
+        "description": "A service that duplicates physical or digital documents through copying machines or digital processes.",
+        "name": "Copying Services"
+      },
+      {
+        "description": "A service that produces large-format technical drawings and plans from CAD files.",
+        "name": "CAD Plotting"
+      },
+      {
+        "description": "A service that manages and executes marketing campaigns across multiple media channels using digital document handling.",
+        "name": "Cross-Media Campaigns"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2021-01-20",
+          "publisher": "Android Headlines",
+          "title": "CopyCatz Malware Apps With 10M Downloads Removed From The Play Store",
+          "url": "https://bit.ly/3sJFeHl"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 13,
+      "heatScore": 78
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 86.26
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Allkopi NetPrint is a forward-looking modern printing and media house.",
+          "name": "Allkopi Netprint",
+          "sharedCategories": [
+            "Printing"
+          ],
+          "sharedSpecialties": [
+            "Printed Marketing Materials"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Aksell is an advertising agency that specializes in graphic design, consulting, marketing, media production, and logistics solutions.",
+          "employeeRange": "101-250",
+          "name": "Aksell",
+          "sharedSpecialties": [
+            "Printing Equipment"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Xpressprint is a digital printing and communications house that provides creative services and production.",
+          "employeeRange": "1-10",
+          "name": "Xpressprint",
+          "sharedCategories": [
+            "Printing"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "VistaPrint offers enterprises with customized business cards, banners, clothing, bags, stationery, digital marketing, and design services.",
+          "employeeRange": "5,001-10,000",
+          "name": "VistaPrint",
+          "sharedCategories": [
+            "Printing"
+          ],
+          "sharedSpecialties": [
+            "Printed Marketing Materials",
+            "Web-to-Print",
+            "Print-on-Demand and Digital Printing"
+          ],
+          "similarityScore": 86
+        },
+        {
+          "description": "LaserTryk is the largest printing company in Denmark and the market leader in online printing throughout Scandinavia",
+          "employeeRange": "101-250",
+          "name": "LaserTryk",
+          "sharedCategories": [
+            "Printing"
+          ],
+          "sharedSpecialties": [
+            "Printed Marketing Materials",
+            "Web-to-Print",
+            "Print-on-Demand and Digital Printing",
+            "Printing Equipment",
+            "Print and Mail Services",
+            "Print Management"
+          ],
+          "similarityScore": 74
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Allkopi Netprint, Aksell, Xpressprint.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

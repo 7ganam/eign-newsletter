@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T12:40:53.339Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T12:40:53.283Z",
+    "url": "https://www.crunchbase.com/organization/elip-in"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "elip.in",
+      "shortDescription": "Elip is a conversational job-search agent that matches roles and creates tailored résumés through WhatsApp.",
+      "description": "Elip provides a conversational job-search agent that operates through WhatsApp. The service interprets a user's job criteria, analyzes job listings, filters out irrelevant and suspected ghost postings, and returns matched opportunities. It also generates résumés tailored to individual roles and formatted for applicant tracking systems. Elip is intended for job seekers and supports recruitment workflows through chat-based interaction. Employers pay fees when hires are completed, while individual applicants use the service without charge.",
+      "website": "https://elip.in/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "Jaipur, Rajasthan, India",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Career Planning",
+        "Chatbot",
+        "Employment",
+        "Messaging",
+        "Natural Language Processing",
+        "Recruiting"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Internet Services",
+        "Messaging and Telecommunications",
+        "Professional Services",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A WhatsApp-based job-search agent that matches roles to user criteria and generates tailored résumés.",
+        "name": "Elip"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 34,
+      "growthScore": 91,
+      "heatScore": 88
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 5
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 98.13
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}
