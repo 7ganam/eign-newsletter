@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:33:20.485Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:33:20.441Z",
+    "url": "https://www.crunchbase.com/organization/micsi"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "MICSI",
+      "shortDescription": "MICSI offers an AI software to improve image quality with random matrix theory denoising.",
+      "website": "https://www.micsi.co/",
+      "foundedYear": 2018,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "New York, United States",
+      "geographicRegions": [
+        "Greater New York Area",
+        "East Coast",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Health Care",
+        "Health Diagnostics",
+        "Image Recognition"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Health Care",
+        "Software"
+      ],
+      "founders": [
+        "Benjamin Ades-Aron",
+        "Gregory Lemberskiy"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A software suite that enhances diffusion and functional MRI image quality by removing noise using the MP-PCA algorithm and supports quantitative analysis with weighted linear least squares and Bayesian fitting.",
+        "name": "MICSI-RMT"
+      },
+      {
+        "description": "An algorithm that removes noise from MRI images by detecting noise components using random matrix theory, preserving anatomical structures without external training data.",
+        "name": "MP-PCA Denoising Algorithm"
+      },
+      {
+        "description": "Application of MP-PCA denoising to diffusion and functional MRI of the brain to improve image quality and enable high-resolution anatomical and functional mapping.",
+        "name": "Denoising for Brain MRI"
+      },
+      {
+        "description": "A research-focused application of MP-PCA denoising to prostate diffusion MRI to improve efficiency and enable advanced diffusion metrics like fractional anisotropy.",
+        "name": "Denoising for Prostate MRI (Research Only)"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 60000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2023-07-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2023-07-01",
+          "investorCount": 3,
+          "postMoneyValuation": {
+            "amount": 9062689,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2019-05-10",
+          "amount": {
+            "amount": 60000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "NYU Innovation Venture Fund"
+          ],
+          "type": "Grant"
+        }
+      ],
+      "investors": {
+        "reportedCount": 4,
+        "visibleNames": [
+          {
+            "name": "NVO Capital",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "NYU Innovation Venture Fund",
+            "rounds": [
+              "Grant"
+            ]
+          },
+          {
+            "name": "Pioneer Fund",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2024-07-26",
+          "publisher": "Business Wire",
+          "title": "Microstructure Imaging Receives FDA Clearance for MICSI-RMT, Bringing Random Matrix Theory Denoising Into Clinical Practice",
+          "url": "https://www.businesswire.com/news/home/20240724321978/en/Microstructure-Imaging-Receives-FDA-Clearance-for-MICSI-RMT-Bringing-Random-Matrix-Theory-Denoising-Into-Clinical-Practice"
+        },
+        {
+          "date": "2023-07-01",
+          "title": "Seed Round - MICSI"
+        },
+        {
+          "date": "2019-05-10",
+          "title": "Grant - MICSI"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 60000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "grantFunding": {
+      "amount": {
+        "amount": 60000,
+        "currency": "USD"
+      },
+      "disclosedRoundCount": 1,
+      "shareOfTotalPercent": 100
+    },
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -3,
+      "growthScore": 22,
+      "heatChange90Days": -1,
+      "heatScore": 64
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 57.21
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 34.07,
+        "timingEstimatePercent": {
+          "within6Months": 15.54,
+          "months6To11": 13.12,
+          "months12To24": 20.45,
+          "beyond24Months": 24.99
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 83.04
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 41.46
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Akarui Solutions LLP provides medical imaging equipment and healthcare IT solutions, digital radiography detectors, and 4K medical displays.",
+          "employeeRange": "11-50",
+          "name": "Akarui Solutions",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Imperial College London is a university with a mission to benefit society through excellence in science, engineering, medicine and business.",
+          "employeeRange": "5,001-10,000",
+          "name": "Imperial College London",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "similarityScore": 85
+        },
+        {
+          "description": "3D Slicer is an open source software platform for medical image informatics, image processing, and three-dimensional visualization.",
+          "employeeRange": "1-10",
+          "name": "3D Slicer",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "sharedSpecialties": [
+            "Magnetic Resonance Imaging (MRI)",
+            "Medical Imaging Software",
+            "Neuroimaging",
+            "Image Segmentation",
+            "Diagnostic Imaging",
+            "Medical Imaging Systems"
+          ],
+          "similarityScore": 79
+        },
+        {
+          "description": "GitHub is a software company that offers code hosting services that allow developers to build software for open-source and private projects.",
+          "employeeRange": "1,001-5,000",
+          "name": "GitHub",
+          "similarityScore": 77
+        },
+        {
+          "description": "Human Resources Consultants is a not for profit corporation that provides services to adults with psychiatric disabilities.",
+          "name": "Human Resources Consultants",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "similarityScore": 70
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Meaningful non-dilutive funding",
+      "statement": "1 disclosed grants total $60,000, representing 100% of reported funding.",
+      "implication": "The grants reduce the share of reported financing attributed to equity or notes, although their restrictions and milestone requirements need separate verification.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.grantFunding"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $9,062,689 to $9,062,689, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 22 (-3 over 90 days) and market heat at 64 (-1).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Akarui Solutions, Imperial College London, 3D Slicer.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}
