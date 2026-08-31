@@ -8,7 +8,7 @@ import { usePersistedSort, type SortDirection } from './tablePreferences'
 
 type SortKey = 'priority' | 'followers' | 'name' | 'country' | 'lane' | 'organisation'
 type SortPreset = 'priority' | 'followers' | 'name' | 'country' | 'custom'
-type InfluencerColumnKey = 'person' | 'market' | 'lane' | 'platform' | 'followers' | 'signals' | 'linkedin'
+type InfluencerColumnKey = 'person' | 'market' | 'lane' | 'platform' | 'followers' | 'source' | 'signals' | 'linkedin'
 type ColumnDrop = { column: InfluencerColumnKey; position: 'before' | 'after' }
 type InfluencerRow = Influencer & { __rowId: string; follower: LinkedInFollowerSnapshot }
 type InfluencerResponse = {
@@ -24,6 +24,7 @@ type InfluencerResponse = {
 const COLUMN_ORDER_STORAGE_KEY = 'eign-influencers.column-order.v1'
 const COLUMN_WIDTH_STORAGE_KEY = 'eign-influencers.column-widths.v1'
 const ROW_SORT_STORAGE_KEY = 'eign-influencers.row-sort.v1'
+const INFLUENCER_SOURCE = 'web-search'
 const SORT_KEYS: SortKey[] = ['priority', 'followers', 'name', 'country', 'lane', 'organisation']
 const DEFAULT_SORT = { field: 'priority', direction: 'desc' } as const
 
@@ -48,6 +49,7 @@ const INFLUENCER_COLUMNS: Array<{
   { key: 'lane', label: 'Influence lane', className: 'influencer-cell--lane', defaultWidth: 170, sortKey: 'lane' },
   { key: 'platform', label: 'Current platform', className: 'influencer-cell--platform', defaultWidth: 290, sortKey: 'organisation' },
   { key: 'followers', label: 'LinkedIn followers', className: 'influencer-cell--followers', defaultWidth: 165, sortKey: 'followers' },
+  { key: 'source', label: 'Source', className: 'influencer-cell--source', defaultWidth: 120, sortKey: null },
   { key: 'signals', label: 'Signals', className: 'influencer-cell--signals', defaultWidth: 190, sortKey: 'priority' },
   { key: 'linkedin', label: 'LinkedIn', className: 'influencer-cell--link', defaultWidth: 74, sortKey: null },
 ]
@@ -276,6 +278,7 @@ export function Influencers() {
         influencer.country,
         influencer.lane,
         influencer.organisation,
+        INFLUENCER_SOURCE,
       ].some((value) => value.toLocaleLowerCase().includes(normalizedQuery)))
       .sort((left, right) => {
         let comparison = 0
@@ -575,6 +578,7 @@ export function Influencers() {
                           </InlineEdit>
                         </td>
                       )
+                      if (column === 'source') return <td className="influencer-cell--source" key={column}><span className="influencer-source">{INFLUENCER_SOURCE}</span></td>
                       if (column === 'signals') return (
                         <td className="influencer-cell--signals" key={column}>
                           <div className="influencer-signal-editors">

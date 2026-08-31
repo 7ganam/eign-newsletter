@@ -2453,6 +2453,56 @@ a {
   padding: 14px;
 }
 
+/* RiseUp organizations: linked entity index backed by durable file IDs */
+.middle-east-organizations-main {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 14px;
+}
+
+.middle-east-organizations-meta {
+  min-height: 35px;
+  padding-inline: 13px;
+}
+
+.middle-east-organizations-table-wrap {
+  position: relative;
+  max-height: calc(100vh - 171px);
+  min-height: 320px;
+  overflow: auto;
+}
+
+.middle-east-organizations-table {
+  min-width: 100%;
+  font-size: 10px;
+}
+
+.middle-east-organizations-table th {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  height: 33px;
+  background: rgba(248, 249, 250, 0.98);
+  font-size: 8px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.middle-east-organizations-table td {
+  height: 40px;
+  vertical-align: top;
+}
+
+.middle-east-organization-name {
+  font-weight: 500;
+}
+
+.middle-east-organization-people {
+  color: var(--ink-soft);
+  line-height: 1.45;
+  white-space: normal;
+}
+
 .riseup-speakers-directory {
   margin-top: 0;
 }
@@ -2469,6 +2519,25 @@ a {
 
 .riseup-speakers-filters {
   grid-template-columns: minmax(300px, 1fr) minmax(160px, 220px) auto auto;
+}
+
+.riseup-preference-status {
+  display: inline-flex;
+  height: 32px;
+  padding: 0 9px;
+  align-items: center;
+  color: #137333;
+  background: #e6f4ea;
+  border: 1px solid #b7dfc2;
+  border-radius: 4px;
+  font-size: 9px;
+  white-space: nowrap;
+}
+
+.riseup-preference-status.has-error {
+  color: #a50e0e;
+  background: #fce8e6;
+  border-color: #f4b4ae;
 }
 
 .riseup-speakers-toggle {
@@ -2515,6 +2584,35 @@ a {
   font-size: 8px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+}
+
+.riseup-speakers-table th[aria-sort='ascending'],
+.riseup-speakers-table th[aria-sort='descending'] {
+  color: #174ea6;
+  background: rgba(232, 240, 254, 0.98);
+}
+
+.riseup-speakers-table .influencer-sort-button {
+  padding-left: 17px;
+}
+
+.riseup-column-drag-handle {
+  position: absolute;
+  z-index: 4;
+  top: 10px;
+  left: 5px;
+  width: 10px;
+  overflow: hidden;
+  color: #9aa0a6;
+  cursor: grab;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: -3px;
+  line-height: 12px;
+}
+
+.riseup-column-drag-handle:active {
+  cursor: grabbing;
 }
 
 .riseup-speakers-table td {
@@ -2597,8 +2695,70 @@ a {
   font-size: 8px;
 }
 
+.riseup-speaker-source,
+.influencer-source {
+  display: inline-flex;
+  min-height: 20px;
+  padding: 2px 7px;
+  align-items: center;
+  color: #174ea6;
+  background: #e8f0fe;
+  border: 1px solid #d2e3fc;
+  border-radius: 2px;
+  font-family: var(--font-mono);
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
 .riseup-speaker-missing {
   color: #9aa0a6;
+}
+
+.riseup-linkedin-profile {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.riseup-linkedin-profile a {
+  display: inline-flex;
+  min-height: 22px;
+  padding: 3px 8px;
+  align-items: center;
+  color: #0a66c2;
+  background: #eef6ff;
+  border: 1px solid #bfd7ee;
+  border-radius: 3px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.riseup-linkedin-profile a:hover {
+  background: #dceeff;
+  border-color: #78aee0;
+}
+
+.riseup-linkedin-profile small {
+  color: #5f6368;
+  font-size: 8px;
+  line-height: 1.25;
+}
+
+.riseup-linkedin-unresolved {
+  display: inline-flex;
+  min-height: 20px;
+  padding: 2px 7px;
+  align-items: center;
+  color: #7c5b12;
+  background: #fef7e0;
+  border: 1px solid #f6d98b;
+  border-radius: 3px;
+  font-size: 8px;
+  white-space: nowrap;
 }
 
 .riseup-speaker-details {
@@ -2688,6 +2848,249 @@ a {
 
 .riseup-speaker-record a:hover {
   text-decoration: underline;
+}
+
+/* LEAP speaker data: a dense event dossier with a restrained signal-green accent */
+.leap-data-directory {
+  overflow: hidden;
+  border-top: 3px solid #0f9d6a;
+}
+
+.leap-data-header {
+  background:
+    linear-gradient(90deg, rgba(15, 157, 106, 0.08), transparent 42%),
+    #fff;
+}
+
+.leap-data-kicker {
+  display: block;
+  margin-bottom: 3px;
+  color: #087a50;
+  font-family: var(--font-mono);
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.leap-data-filters {
+  grid-template-columns: minmax(340px, 1fr) minmax(220px, 270px) minmax(220px, 270px) auto;
+}
+
+.leap-data-completeness {
+  display: flex;
+  height: 32px;
+  padding-left: 9px;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  border: 1px solid #c7cacf;
+  border-radius: 4px;
+}
+
+.leap-data-completeness > span {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 8px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.leap-data-completeness select {
+  min-width: 0;
+  height: 30px;
+  padding: 0 28px 0 0;
+  flex: 1;
+  color: var(--ink-soft);
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 10px;
+}
+
+.leap-data-table-wrap {
+  max-height: calc(100vh - 273px);
+}
+
+.leap-data-table .influencer-sort-button {
+  padding-left: 17px;
+}
+
+.leap-data-table td {
+  height: 68px;
+  vertical-align: middle;
+}
+
+.leap-speaker-person {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 9px;
+}
+
+.leap-speaker-person > span:last-child,
+.leap-profile-link {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.leap-speaker-person strong,
+.leap-organization {
+  display: block;
+  overflow: hidden;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.leap-speaker-person small,
+.leap-profile-link small {
+  overflow: hidden;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.leap-speaker-avatar {
+  display: grid;
+  width: 46px;
+  height: 50px;
+  overflow: hidden;
+  flex: 0 0 46px;
+  place-items: center;
+  color: #087a50;
+  background: #e3f4ed;
+  border: 1px solid #a8d9c7;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(17, 74, 54, 0.12);
+  font-family: var(--font-mono);
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.leap-speaker-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.leap-profile-link a {
+  color: #087a50;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.leap-profile-link a:hover {
+  text-decoration: underline;
+}
+
+.leap-target-signal {
+  display: inline-block;
+  max-width: 100%;
+  padding: 2px 6px;
+  border-radius: 999px;
+  color: #173a2f;
+  font-size: 8px;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+.leap-target-signal.explicit-me-region {
+  background: #e3f4ed;
+  border: 1px solid #9fd8bb;
+}
+
+.leap-target-signal.automatic-me-name-match {
+  color: #075985;
+  background: #e0f2fe;
+  border: 1px solid #7dd3fc;
+}
+
+.leap-target-signal.arabic-name-indicator {
+  background: #f4f8e9;
+  border: 1px solid #c9df8d;
+}
+
+.leap-target-signal.uncertain {
+  color: #4f5b57;
+  background: #f2f4f6;
+  border: 1px solid #cfd6d8;
+}
+
+.leap-target-checkbox {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  accent-color: #087a50;
+  cursor: default;
+}
+
+.leap-image-source {
+  display: block;
+  overflow: hidden;
+  color: #4f5b57;
+  font-family: var(--font-mono);
+  font-size: 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.leap-data-pager {
+  display: flex;
+  min-height: 40px;
+  padding: 6px 10px;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--muted);
+  background: #f8f9fa;
+  border-top: 1px solid var(--line);
+  font-family: var(--font-mono);
+  font-size: 9px;
+}
+
+.leap-data-pager > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.leap-data-pager button {
+  height: 27px;
+  padding: 0 9px;
+  color: #087a50;
+  background: #fff;
+  border: 1px solid #a8b0ad;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: 9px;
+}
+
+.leap-data-pager button:hover:not(:disabled) {
+  background: #e3f4ed;
+  border-color: #67b99a;
+}
+
+.leap-data-pager button:disabled {
+  cursor: default;
+  opacity: 0.4;
+}
+
+@media (max-width: 760px) {
+  .leap-data-filters {
+    grid-template-columns: 1fr;
+  }
+
+  .leap-data-pager {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
+  }
 }
 
 @media (max-width: 760px) {
