@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:37:53.094Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:37:53.045Z",
+    "url": "https://www.crunchbase.com/organization/mindori"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Mindori",
+      "shortDescription": "Mindori is the accurate way to search your app by voice for e-commerce companies.",
+      "description": "Mindori is the accurate way to search your app by voice for e-commerce companies. Build magical conversational search for your app in minutes, with no learning curve.\r\n\r\n\"What about shirts that I can wear at a wedding?\". Search over concepts that you may not have thought to index in your database.\r\n\r\n\"Find a green shirt\" - \"What about in red?\". Make the experience magical for users through context.\r\n\r\nWas it \"Koffee Kult\" or \"coffee cult\"? Customize speech recognition models for your product catalog and customer queries.\r\n\r\nGet started in minutes. Improving the model requires only minutes per day, not hours. Track user preferences and deliver customized suggestions based on their buying behavior and patterns. Export your generated models to popular assistant or chatbot frameworks automatically.",
+      "website": "http://mindori.com/",
+      "foundedYear": 2015,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "Palo Alto, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Apps",
+        "E-Commerce",
+        "Speech Recognition"
+      ],
+      "sectors": [
+        "Apps",
+        "Commerce and Shopping",
+        "Data and Analytics",
+        "Software"
+      ],
+      "founders": [
+        "Awni Hannun",
+        "Chris Lengerich"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 320000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2016-08-22",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2016-08-22",
+          "amount": {
+            "amount": 320000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "Pear VC",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2016-08-22",
+          "title": "Seed Round - Mindori"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 320000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -42,
+      "heatScore": 1
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Algolia is the Search-as-a-Service platform that enables companies to deliver fast and relevant digital experiences that drive real results.",
+          "employeeRange": "501-1,000",
+          "name": "Algolia, Inc.",
+          "similarityScore": 97
+        },
+        {
+          "description": "Klevu Oy provides AI-based ecommerce site search, product discovery, merchandising, and personalization solutions for online retailers.",
+          "name": "Klevu OY",
+          "similarityScore": 92
+        },
+        {
+          "description": "Coveo is an AI-search and generative experience platform for advanced search, personalization, and recommendations.",
+          "employeeRange": "501-1,000",
+          "name": "Coveo",
+          "similarityScore": 91
+        },
+        {
+          "description": "Better Way Constructor, LLC (Constructor) provides an AI-native ecommerce search and product discovery platform for online retailers.",
+          "employeeRange": "251-500",
+          "name": "Better Way Constructor",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "Doofinder is a search engine that helps e-commerce sites increase sales by helping their users find what they want.",
+          "employeeRange": "101-250",
+          "name": "Doofinder",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $320,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Algolia, Inc., Klevu OY, Coveo.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}
