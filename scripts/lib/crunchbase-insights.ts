@@ -2,6 +2,7 @@ type UnknownRecord = Record<string, unknown>
 
 const uuidPattern =
   /\b[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\b/i
+const emailPattern = /\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b/i
 
 type MoneyFact = {
   amount: number
@@ -247,6 +248,31 @@ function compact(value: unknown): unknown {
   return value
 }
 
+function redactEmailAddresses(value: unknown): unknown {
+  if (typeof value === 'string') {
+    return value.replace(
+      new RegExp(emailPattern.source, 'gi'),
+      '[email omitted]',
+    )
+  }
+
+  if (Array.isArray(value)) {
+    return value.map(redactEmailAddresses)
+  }
+
+  const record = asRecord(value)
+  if (!record) {
+    return value
+  }
+
+  return Object.fromEntries(
+    Object.entries(record).map(([key, nestedValue]) => [
+      key,
+      redactEmailAddresses(nestedValue),
+    ]),
+  )
+}
+
 function dedupeBy<T>(items: T[], keyFor: (item: T) => string) {
   const seen = new Set<string>()
   return items.filter((item) => {
@@ -331,7 +357,6 @@ function insight(
 }
 
 export function assertInsightsAreClean(value: unknown) {
-  const emailPattern = /\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b/i
   const forbiddenKeyPartPattern =
     /(^|_)(id|ids|uuid|identifier|permalink|session|auth|authentication|authenticated|token|cookie|account|email|phone)(_|$)/i
 
@@ -958,6 +983,7 @@ export function buildCrunchbaseInsights(rawValue: unknown) {
     },
   })
 
-  assertInsightsAreClean(output)
-  return output as UnknownRecord
+  const sanitizedOutput = redactEmailAddresses(output)
+  assertInsightsAreClean(sanitizedOutput)
+  return sanitizedOutput as UnknownRecord
 }
