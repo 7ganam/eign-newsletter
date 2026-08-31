@@ -169,28 +169,50 @@ const saveTablePreference = async (tableId: string, preference: TablePreference)
   await operation
 }
 
-const [companyRecords, roundRecords] = await Promise.all([
-  loadJsonRecords(DATA_FILES.companies),
-  loadJsonRecords(DATA_FILES.rounds),
-]).catch((error) => {
-  console.error('Failed to load index data', {
-    cwd: process.cwd(),
-    vercel: Boolean(process.env.VERCEL),
-    companies: DATA_FILES.companies,
-    rounds: DATA_FILES.rounds,
-    error,
-  })
-  throw error
-})
+let companyRecords: DataRecord[] = []
+let roundRecords: DataRecord[] = []
+const companyById = new Map<string, DataRecord>()
+const roundsByCompanyId = new Map<string, DataRecord[]>()
+let companySchema: Array<{ name: string; bsonTypes: string[]; type: 'objectId' | 'date' | 'boolean' | 'number' | 'string' | 'unknown' }> = []
+let indexDataPromise: Promise<void> | null = null
 
 const idString = (value: unknown) => value instanceof FileObjectId ? value.value : String(value ?? '')
-const companyById = new Map(companyRecords.map((company) => [idString(company._id), company]))
-const roundsByCompanyId = new Map<string, DataRecord[]>()
-for (const round of roundRecords) {
-  const companyId = idString(round.companyId)
-  const companyRounds = roundsByCompanyId.get(companyId) ?? []
-  companyRounds.push(round)
-  roundsByCompanyId.set(companyId, companyRounds)
+
+const ensureIndexData = () => {
+  if (!indexDataPromise) {
+    indexDataPromise = (async () => {
+      try {
+        const [companies, rounds] = await Promise.all([
+          loadJsonRecords(DATA_FILES.companies),
+          loadJsonRecords(DATA_FILES.rounds),
+        ])
+        companyRecords = companies
+        roundRecords = rounds
+        companyById.clear()
+        for (const company of companyRecords) {
+          companyById.set(idString(company._id), company)
+        }
+        roundsByCompanyId.clear()
+        for (const round of roundRecords) {
+          const companyId = idString(round.companyId)
+          const companyRounds = roundsByCompanyId.get(companyId) ?? []
+          companyRounds.push(round)
+          roundsByCompanyId.set(companyId, companyRounds)
+        }
+        companySchema = getCompanySchema()
+      } catch (error) {
+        console.error('Failed to load index data', {
+          cwd: process.cwd(),
+          vercel: Boolean(process.env.VERCEL),
+          companies: DATA_FILES.companies,
+          rounds: DATA_FILES.rounds,
+          error,
+        })
+        throw error
+      }
+    })()
+  }
+  return indexDataPromise
 }
 
 type JsonCollection = keyof typeof DATA_FILES
@@ -258,6 +280,18 @@ const saveJsonCell = async (collection: JsonCollection, recordId: string, field:
 }
 
 export const app = new Hono()
+app.use('/api/*', async (context, next) => {
+  try {
+    await ensureIndexData()
+  } catch (error) {
+    return context.json({
+      error: 'Failed to load index data',
+      detail: error instanceof Error ? error.message : String(error),
+      cwd: process.cwd(),
+    }, 500)
+  }
+  await next()
+})
 const escapeRegex = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 const hasOwn = (record: DataRecord, field: string) => Object.prototype.hasOwnProperty.call(record, field)
 const asNumber = (value: unknown) => typeof value === 'number' && Number.isFinite(value) ? value : 0
@@ -743,7 +777,7 @@ const normaliseBsonType = (types: string[]): ResearchField['type'] => {
   return 'unknown'
 }
 
-const getCompanySchema = () => {
+function getCompanySchema() {
   const fieldNames = new Set(companyRecords.flatMap((company) => Object.keys(company)))
   return [...fieldNames]
     .map((name) => {
@@ -761,8 +795,6 @@ const getCompanySchema = () => {
       return left.name.localeCompare(right.name)
     })
 }
-
-const companySchema = getCompanySchema()
 
 const parseFilterValue = (value: string, type: ResearchField['type']) => {
   if (type === 'number') {
