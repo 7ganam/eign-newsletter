@@ -1,6 +1,7 @@
 import { useVirtualizer } from '@tanstack/react-virtual'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import type { CSSProperties, DragEvent as ReactDragEvent, KeyboardEvent as ReactKeyboardEvent } from 'react'
+import { ColumnResizeHandle, useResizableColumns } from './resizableColumns'
 import './research.css'
 
 type ResearchField = {
@@ -54,6 +55,7 @@ type ColumnDrop = {
 const PAGE_SIZE = 100
 const ROW_HEIGHT = 32
 const COLUMN_ORDER_STORAGE_KEY = 'eign-research.companies.column-order.v1'
+const COLUMN_WIDTH_STORAGE_KEY = 'eign-research.companies.column-widths.v1'
 
 const OPERATOR_GROUPS: Record<ResearchField['type'], Array<[string, string]>> = {
   string: [
@@ -362,7 +364,15 @@ export function ResearchLedger() {
     }
   }, [fetchPage, hasMore, initialLoading, loadedPage, loadingMore, queryPayload, querySignature, rows.length, virtualRows])
 
-  const widths = useMemo(() => schema?.fields.map(columnWidth) ?? [], [schema])
+  const fieldKeys = useMemo(() => schema?.fields.map((field) => field.name) ?? [], [schema])
+  const defaultWidths = useMemo(() => Object.fromEntries(
+    schema?.fields.map((field) => [field.name, columnWidth(field)]) ?? [],
+  ), [schema])
+  const { getResizeHandleProps, widths: resizedWidths } = useResizableColumns({
+    defaults: defaultWidths,
+    storageKey: COLUMN_WIDTH_STORAGE_KEY,
+  })
+  const widths = useMemo(() => fieldKeys.map((field) => resizedWidths[field]), [fieldKeys, resizedWidths])
   const gridTemplateColumns = useMemo(() => `52px ${widths.map((width) => `${width}px`).join(' ')}`, [widths])
   const gridWidth = 52 + widths.reduce((sum, width) => sum + width, 0)
 
@@ -500,10 +510,11 @@ export function ResearchLedger() {
         <div className="workspace-title"><strong>EIGN data workspace</strong><span>Companies, capital, and ecosystem directories</span></div>
         <nav aria-label="Primary navigation">
           <a href="/">Dashboard</a>
-          <a href="/visualisations">Funding map</a>
           <a href="/software-companies">Software companies</a>
           <a href="/influencers">Influencers</a>
           <a href="/research" aria-current="page">Startups</a>
+          <a href="/newsletters">Newsletters</a>
+          <a href="/posts">Posts</a>
         </nav>
       </header>
 
@@ -632,7 +643,7 @@ export function ResearchLedger() {
                   ].filter(Boolean).join(' ')}
                   draggable
                   key={field.name}
-                  title={`${field.name} · ${field.type} · Drag to reorder`}
+                  title={`${field.name} · ${field.type} · Drag to reorder; use the right edge to resize`}
                   onDragStart={(event) => handleColumnDragStart(event, field.name)}
                   onDragOver={(event) => handleColumnDragOver(event, field.name)}
                   onDrop={(event) => handleColumnDrop(event, field.name)}
@@ -644,6 +655,7 @@ export function ResearchLedger() {
                     {sortField === field.name && <b>{sortDirection === 'asc' ? '↑' : '↓'}</b>}
                   </button>
                   <button className="sheet-field-filter" aria-label={`Filter ${field.name}`} title={`Filter ${field.name}`} onClick={() => addFilter(field.name)}>▽</button>
+                  <ColumnResizeHandle {...getResizeHandleProps(field.name, field.name)} />
                 </div>
               ))}
             </div>

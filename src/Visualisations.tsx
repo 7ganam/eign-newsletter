@@ -855,7 +855,7 @@ export function Visualisations() {
 
   useEffect(() => {
     const previousTitle = document.title
-    document.title = 'Funding map · EIGN Data Workspace'
+    document.title = 'Funding landscape · EIGN Data Workspace'
     load()
     return () => { document.title = previousTitle }
   }, [])
@@ -867,10 +867,11 @@ export function Visualisations() {
         <div className="workspace-title"><strong>EIGN data workspace</strong><span>Companies and funding records</span></div>
         <nav aria-label="Primary navigation">
           <a href="/">Dashboard</a>
-          <a href="/visualisations" aria-current="page">Funding map</a>
           <a href="/software-companies">Software companies</a>
           <a href="/influencers">Influencers</a>
           <a href="/research">Startups</a>
+          <a href="/newsletters">Newsletters</a>
+          <a href="/posts" aria-current="page">Posts</a>
         </nav>
       </header>
 

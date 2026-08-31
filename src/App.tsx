@@ -2,6 +2,7 @@ import { lazy, Suspense, useCallback, useEffect, useMemo, useState } from 'react
 import type { EChartsCoreOption } from 'echarts/core'
 import type { EChartProps } from './EChart'
 import { displayList, formatDate, formatMoney, formatNumber, initials, truncateLabel } from './lib'
+import { ResizableDataTable } from './resizableColumns'
 import type {
   CompanyDetailResponse,
   CompanyListResponse,
@@ -35,6 +36,39 @@ const initialFilters: CompanyFilters = {
   batch: '',
   sort: 'funding_desc',
 }
+
+const TOP_COMPANY_COLUMNS = [
+  { key: 'rank', label: '#', defaultWidth: 52 },
+  { key: 'company', label: 'Company', defaultWidth: 230 },
+  { key: 'industry', label: 'Industry', defaultWidth: 170 },
+  { key: 'batch', label: 'Batch', defaultWidth: 95 },
+  { key: 'funding', label: 'Funding', defaultWidth: 140 },
+] as const
+
+const RECENT_ROUND_COLUMNS = [
+  { key: 'date', label: 'Date', defaultWidth: 120 },
+  { key: 'company', label: 'Company', defaultWidth: 230 },
+  { key: 'stage', label: 'Stage', defaultWidth: 150 },
+  { key: 'amount', label: 'Amount', defaultWidth: 140 },
+] as const
+
+const COMPANY_COLUMNS = [
+  { key: 'company', label: 'Company', defaultWidth: 310 },
+  { key: 'industry', label: 'Industry', defaultWidth: 220 },
+  { key: 'businessType', label: 'Business type', defaultWidth: 180 },
+  { key: 'batch', label: 'Batch', defaultWidth: 110 },
+  { key: 'funding', label: 'Recorded funding', defaultWidth: 180 },
+  { key: 'rounds', label: 'Rounds', defaultWidth: 85 },
+  { key: 'status', label: 'Status', defaultWidth: 145 },
+] as const
+
+const FUNDING_ROUND_COLUMNS = [
+  { key: 'date', label: 'Date', defaultWidth: 110 },
+  { key: 'type', label: 'Type', defaultWidth: 170 },
+  { key: 'amount', label: 'Amount', defaultWidth: 125 },
+  { key: 'evidence', label: 'Evidence', defaultWidth: 320 },
+  { key: 'source', label: 'Source', defaultWidth: 105 },
+] as const
 
 function useDebouncedValue<T>(value: T, delay: number) {
   const [debouncedValue, setDebouncedValue] = useState(value)
@@ -102,8 +136,7 @@ function ErrorView({ message, retry }: { message: string; retry: () => void }) {
 function RoundsTable({ rounds }: { rounds: FundingRound[] }) {
   return (
     <div className="drawer-table-wrap">
-      <table className="drawer-table">
-        <thead><tr><th>Date</th><th>Type</th><th>Amount</th><th>Evidence</th><th>Source</th></tr></thead>
+      <ResizableDataTable className="drawer-table" columns={FUNDING_ROUND_COLUMNS} storageKey="eign-dashboard.funding-rounds.column-widths.v1">
         <tbody>
           {rounds.map((round, index) => {
             const investors = displayList(round.leadInvestors) || displayList(round.otherInvestors)
@@ -118,7 +151,7 @@ function RoundsTable({ rounds }: { rounds: FundingRound[] }) {
             )
           })}
         </tbody>
-      </table>
+      </ResizableDataTable>
       {!rounds.length && <p className="empty-note">No linked funding records.</p>}
     </div>
   )
@@ -354,10 +387,11 @@ export function App() {
         <div className="workspace-title"><strong>EIGN data workspace</strong><span>Companies and funding records</span></div>
         <nav aria-label="Primary navigation">
           <a href="/" aria-current="page">Dashboard</a>
-          <a href="/visualisations">Funding map</a>
           <a href="/software-companies">Software companies</a>
           <a href="/influencers">Influencers</a>
           <a href="/research">Startups</a>
+          <a href="/newsletters">Newsletters</a>
+          <a href="/posts">Posts</a>
         </nav>
       </header>
 
@@ -403,22 +437,24 @@ export function App() {
 
           <article className="analysis-panel analysis-panel--leaders">
             <header><div><h2>Companies by recorded funding</h2><p>Highest company-level totals</p></div></header>
-            <table className="compact-table">
-              <thead><tr><th>#</th><th>Company</th><th>Industry</th><th>Batch</th><th>Funding</th></tr></thead>
-              <tbody>{dashboard.topCompanies.map((company, index) => (
-                <tr key={company.slug} onClick={() => setSelectedSlug(company.slug)}><td>{index + 1}</td><td><CompanyLogo name={company.name} src={company.logoUrl} size="small" /><strong>{company.name}</strong></td><td>{company.industry || '—'}</td><td>{company.batch || '—'}</td><td>{formatMoney(company.totalFundingUsd)}</td></tr>
-              ))}</tbody>
-            </table>
+            <div className="compact-table-wrap">
+              <ResizableDataTable className="compact-table" columns={TOP_COMPANY_COLUMNS} storageKey="eign-dashboard.top-companies.column-widths.v1">
+                <tbody>{dashboard.topCompanies.map((company, index) => (
+                  <tr key={company.slug} onClick={() => setSelectedSlug(company.slug)}><td>{index + 1}</td><td><CompanyLogo name={company.name} src={company.logoUrl} size="small" /><strong>{company.name}</strong></td><td>{company.industry || '—'}</td><td>{company.batch || '—'}</td><td>{formatMoney(company.totalFundingUsd)}</td></tr>
+                ))}</tbody>
+              </ResizableDataTable>
+            </div>
           </article>
 
           <article className="analysis-panel analysis-panel--recent">
             <header><div><h2>Recent funding records</h2><p>Latest dated events</p></div></header>
-            <table className="compact-table">
-              <thead><tr><th>Date</th><th>Company</th><th>Stage</th><th>Amount</th></tr></thead>
-              <tbody>{dashboard.recentRounds.map((round) => (
-                <tr key={`${round.companySlug}-${round.announcementDate}`} onClick={() => setSelectedSlug(round.companySlug)}><td>{formatDate(round.announcementDate)}</td><td><CompanyLogo name={round.companyName} src={round.logoUrl} size="small" /><strong>{round.companyName}</strong></td><td>{round.roundStage || 'Funding event'}</td><td>{formatMoney(round.amountUsd)}</td></tr>
-              ))}</tbody>
-            </table>
+            <div className="compact-table-wrap">
+              <ResizableDataTable className="compact-table" columns={RECENT_ROUND_COLUMNS} storageKey="eign-dashboard.recent-rounds.column-widths.v1">
+                <tbody>{dashboard.recentRounds.map((round) => (
+                  <tr key={`${round.companySlug}-${round.announcementDate}`} onClick={() => setSelectedSlug(round.companySlug)}><td>{formatDate(round.announcementDate)}</td><td><CompanyLogo name={round.companyName} src={round.logoUrl} size="small" /><strong>{round.companyName}</strong></td><td>{round.roundStage || 'Funding event'}</td><td>{formatMoney(round.amountUsd)}</td></tr>
+                ))}</tbody>
+              </ResizableDataTable>
+            </div>
           </article>
         </section>
 
@@ -434,8 +470,7 @@ export function App() {
 
           <div className="result-meta"><span>{companiesLoading ? 'Loading…' : `${formatNumber(companyResults?.pagination.total)} matching companies`}</span><span>Page {companyResults?.pagination.page ?? page} of {companyResults?.pagination.pages ?? 1}</span></div>
           <div className={`company-table-wrap ${companiesLoading ? 'is-loading' : ''}`}>
-            <table className="company-table">
-              <thead><tr><th>Company</th><th>Industry</th><th>Business type</th><th>Batch</th><th>Recorded funding</th><th>Rounds</th><th>Status</th></tr></thead>
+            <ResizableDataTable className="company-table" columns={COMPANY_COLUMNS} storageKey="eign-dashboard.companies.column-widths.v1">
               <tbody>{companyResults?.items.map((company) => (
                 <tr key={company.slug} onClick={() => setSelectedSlug(company.slug)}>
                   <td><div className="company-cell"><CompanyLogo name={company.name} src={company.logoUrl} /><span><strong>{company.name}</strong><small>{company.slug}</small></span></div></td>
@@ -443,7 +478,7 @@ export function App() {
                   <td><strong>{formatMoney(company.totalFundingUsd)}</strong><small>{company.fundingTotalType || 'Recorded total'}</small></td><td>{company.roundCount}</td><td><span className="status-pill">{company.fundingReconciliationStatus || 'indexed'}</span></td>
                 </tr>
               ))}</tbody>
-            </table>
+            </ResizableDataTable>
             {!companiesLoading && companyResults?.items.length === 0 && <div className="empty-results">No companies match the current filters.</div>}
           </div>
           <div className="pagination"><button disabled={page <= 1 || companiesLoading} onClick={() => setPage((current) => Math.max(1, current - 1))}>Previous</button><span>{page} / {companyResults?.pagination.pages ?? 1}</span><button disabled={page >= (companyResults?.pagination.pages ?? 1) || companiesLoading} onClick={() => setPage((current) => current + 1)}>Next</button></div>

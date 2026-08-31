@@ -1,9 +1,9 @@
 import { serve } from '@hono/node-server'
 import { serveStatic } from '@hono/node-server/serve-static'
-import { readFile } from 'node:fs/promises'
+import { readFile, rename, unlink, writeFile } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { csvParse } from 'd3'
+import { csvFormat, csvParse } from 'd3'
 import { Hono } from 'hono'
 import { logger } from 'hono/logger'
 
@@ -104,23 +104,57 @@ const omit = (record: DataRecord, fields: string[]) => Object.fromEntries(
 )
 
 const SOFTWARE_COMPANY_FILES = {
-  linkedin: resolve(PROJECT_ROOT, 'assets/companies/linkedin-extracted-software-companies.csv'),
-  kattch: resolve(PROJECT_ROOT, 'assets/companies/kattch-prod-providers-2026-08-30.csv'),
+  curated: resolve(PROJECT_ROOT, 'assets/companies/software-companies-middle-east.csv'),
+  review: resolve(PROJECT_ROOT, 'assets/companies/software-companies-non-middle-east-review.csv'),
 } as const
 
-const SOFTWARE_COLUMN_PRIORITY = [
-  'source',
-  'company_name',
-  'company_industry',
-  'categories',
-  'company_location',
-  'address',
-  'company_description',
-  'shortAbout',
-  'linkedin_followers',
-  'domain',
-  'linkedin_company_url',
-]
+const SOFTWARE_COMPANY_FIT_COLUMN = 'fit'
+const softwareCompanyRowKey = (row: Record<string, string | undefined>) => JSON.stringify([
+  row.source ?? '',
+  row.linkedin_company_url ?? '',
+  row.id ?? '',
+  row.company_name ?? '',
+])
+
+const softwareCompanyColumns = (columns: string[]) => {
+  if (columns.includes(SOFTWARE_COMPANY_FIT_COLUMN)) return columns
+  const next = [...columns]
+  const sourceIndex = next.indexOf('source')
+  next.splice(sourceIndex >= 0 ? sourceIndex + 1 : 0, 0, SOFTWARE_COMPANY_FIT_COLUMN)
+  return next
+}
+
+const loadSoftwareCompanyCsv = async () => {
+  const input = await readFile(SOFTWARE_COMPANY_FILES.curated, 'utf8')
+  const rows = csvParse(input.replace(/^\uFEFF/, ''))
+  return {
+    bom: input.startsWith('\uFEFF'),
+    columns: softwareCompanyColumns(rows.columns),
+    newline: input.includes('\r\n') ? '\r\n' : '\n',
+    rows,
+  }
+}
+
+const saveSoftwareCompanyCsv = async ({
+  bom,
+  columns,
+  newline,
+  rows,
+}: Awaited<ReturnType<typeof loadSoftwareCompanyCsv>>) => {
+  const tempPath = `${SOFTWARE_COMPANY_FILES.curated}.${process.pid}.tmp`
+  const output = csvFormat(rows, columns).replace(/\n/g, newline)
+  try {
+    await writeFile(tempPath, `${bom ? '\uFEFF' : ''}${output}${newline}`, 'utf8')
+    await rename(tempPath, SOFTWARE_COMPANY_FILES.curated)
+  } catch (error) {
+    await unlink(tempPath).catch(() => undefined)
+    throw error
+  }
+}
+
+let softwareCompanyWriteQueue = Promise.resolve()
+
+const NEWSLETTER_RESEARCH_FILE = resolve(PROJECT_ROOT, 'assets/newsletter-research.csv')
 
 const normaliseCompanyName = (value: string) => value.toLocaleLowerCase().replace(/[^a-z0-9]+/g, '')
 
@@ -328,49 +362,98 @@ app.get('/api/health', (context) => context.json({
 }))
 
 app.get('/api/software-companies', async (context) => {
-  const [linkedinCsv, kattchCsv] = await Promise.all([
-    readFile(SOFTWARE_COMPANY_FILES.linkedin, 'utf8'),
-    readFile(SOFTWARE_COMPANY_FILES.kattch, 'utf8'),
-  ])
-  const linkedinRows = csvParse(linkedinCsv.replace(/^\uFEFF/, ''))
-  const kattchRows = csvParse(kattchCsv.replace(/^\uFEFF/, ''))
-  const kattchColumns = kattchRows.columns.map((column) => column === 'label' ? 'company_name' : column)
-  const allSourceColumns = [
-    ...linkedinRows.columns,
-    ...kattchColumns.filter((column) => !linkedinRows.columns.includes(column)),
-  ]
-  const columns = [
-    ...SOFTWARE_COLUMN_PRIORITY.filter((column) => column === 'source' || allSourceColumns.includes(column)),
-    ...allSourceColumns.filter((column) => !SOFTWARE_COLUMN_PRIORITY.includes(column)),
-  ]
-  const items = [
-    ...linkedinRows.map((row) => ({ source: 'linkedin', ...row })),
-    ...kattchRows.map((row) => {
-      const { label, ...fields } = row
-      return { source: 'kattch', company_name: label ?? '', ...fields }
-    }),
-  ]
+  const curated = await loadSoftwareCompanyCsv()
+  const items = curated.rows.map((row) => ({
+    ...row,
+    __rowKey: softwareCompanyRowKey(row),
+    fit: row.fit === 'false' ? '' : 'true',
+    source: row.source === 'kattch' ? 'kattch' : 'linkedin',
+  })) as Array<Record<string, string | undefined> & { source: 'linkedin' | 'kattch' }>
+  const linkedinRows = items.filter((row) => row.source === 'linkedin')
+  const kattchRows = items.filter((row) => row.source === 'kattch')
   const linkedinNames = new Set(linkedinRows.map((row) => normaliseCompanyName(row.company_name ?? '')).filter(Boolean))
   const overlappingNames = new Set(
     kattchRows
-      .map((row) => normaliseCompanyName(row.label ?? ''))
+      .map((row) => normaliseCompanyName(row.company_name ?? ''))
       .filter((name) => name && linkedinNames.has(name)),
   )
 
   return context.json({
-    columns,
+    columns: curated.columns,
     items,
     summary: {
       total: items.length,
       linkedin: linkedinRows.length,
       kattch: kattchRows.length,
-      columns: columns.length,
+      columns: curated.columns.length,
       exactNameOverlaps: overlappingNames.size,
     },
     sources: {
-      linkedin: 'assets/companies/linkedin-extracted-software-companies.csv',
-      kattch: 'assets/companies/kattch-prod-providers-2026-08-30.csv',
+      curated: 'assets/companies/software-companies-middle-east.csv',
+      review: 'assets/companies/software-companies-non-middle-east-review.csv',
     },
+  })
+})
+
+app.patch('/api/software-companies/fit', async (context) => {
+  const body = await context.req.json<{ fit?: unknown; rowKey?: unknown }>().catch(() => null)
+  if (!body || typeof body.fit !== 'boolean' || typeof body.rowKey !== 'string') {
+    return context.json({ error: 'Expected a company row key and boolean fit value.' }, 400)
+  }
+
+  const operation = softwareCompanyWriteQueue.then(async () => {
+    const curated = await loadSoftwareCompanyCsv()
+    const row = curated.rows.find((candidate) => softwareCompanyRowKey(candidate) === body.rowKey)
+    if (!row) return false
+    row.fit = body.fit ? 'true' : 'false'
+    await saveSoftwareCompanyCsv(curated)
+    return true
+  })
+  softwareCompanyWriteQueue = operation.then(() => undefined, () => undefined)
+
+  if (!await operation) return context.json({ error: 'The company row no longer exists in the curated CSV.' }, 404)
+  return context.json({ fit: body.fit, rowKey: body.rowKey })
+})
+
+app.get('/api/newsletters', async (context) => {
+  const csv = await readFile(NEWSLETTER_RESEARCH_FILE, 'utf8')
+  const rows = csvParse(csv.replace(/^\uFEFF/, ''))
+  const items = rows.flatMap((row) => {
+    const newsletter = row.Newsletter?.trim()
+    if (!newsletter) return []
+
+    const similarity = Number(row['Similarity to Eign'])
+    return [{
+      newsletter,
+      segment: row.Segment?.trim() ?? '',
+      geography: row.Geography?.trim() ?? '',
+      postFocus: row['Post Focus & Examples']?.trim() ?? '',
+      similarity: Number.isFinite(similarity) ? similarity : null,
+      menaRelevance: row['MENA Relevance']?.trim() ?? '',
+      howEignCanUseIt: row['How Eign Can Use It']?.trim() ?? '',
+      whatEignCanLearn: row['What Eign Can Learn']?.trim() ?? '',
+      website: row.Website?.trim() ?? '',
+      linkedin: row.LinkedIn?.trim() ?? '',
+      linkedinFollowers: row['LinkedIn Followers']?.trim() ?? '',
+      linkedinEmployeeRange: row['LinkedIn Employee Range']?.trim() ?? '',
+      linkedinMetricsStatus: row['LinkedIn Metrics Status']?.trim() ?? '',
+      linkedinMetricsObservedAt: row['LinkedIn Metrics Observed At']?.trim() ?? '',
+    }]
+  })
+
+  return context.json({
+    items,
+    summary: {
+      total: items.length,
+      segments: new Set(items.map((item) => item.segment).filter(Boolean)).size,
+      geographies: new Set(items.map((item) => item.geography).filter(Boolean)).size,
+      highMenaRelevance: items.filter((item) => item.menaRelevance.toLocaleLowerCase() === 'high').length,
+      closestMatches: items.filter((item) => item.similarity === 5).length,
+      linkedin: items.filter((item) => item.linkedin).length,
+      linkedinFollowers: items.filter((item) => item.linkedinFollowers).length,
+      linkedinEmployeeRanges: items.filter((item) => item.linkedinEmployeeRange).length,
+    },
+    source: 'assets/newsletter-research.csv',
   })
 })
 

@@ -1,14 +1,21 @@
 import { useEffect, useMemo, useState } from 'react'
+import type { ComponentProps, CSSProperties, DragEvent as ReactDragEvent } from 'react'
 import { INFLUENCERS, INFLUENCERS_VERIFIED_AT, type Influencer } from './influencerData'
 import {
   LINKEDIN_FOLLOWERS,
   LINKEDIN_FOLLOWERS_UPDATED_AT,
   type LinkedInFollowerSnapshot,
 } from './linkedinFollowerData'
+import { ColumnResizeHandle, useResizableColumns } from './resizableColumns'
 
 type SortKey = 'priority' | 'followers' | 'name' | 'country' | 'lane' | 'organisation'
 type SortDirection = 'asc' | 'desc'
 type SortPreset = 'priority' | 'followers' | 'name' | 'country' | 'custom'
+type InfluencerColumnKey = 'person' | 'market' | 'lane' | 'platform' | 'followers' | 'signals' | 'linkedin'
+type ColumnDrop = { column: InfluencerColumnKey; position: 'before' | 'after' }
+
+const COLUMN_ORDER_STORAGE_KEY = 'eign-influencers.column-order.v1'
+const COLUMN_WIDTH_STORAGE_KEY = 'eign-influencers.column-widths.v1'
 
 const DEFAULT_SORT_DIRECTIONS: Record<SortKey, SortDirection> = {
   priority: 'desc',
@@ -17,6 +24,52 @@ const DEFAULT_SORT_DIRECTIONS: Record<SortKey, SortDirection> = {
   country: 'asc',
   lane: 'asc',
   organisation: 'asc',
+}
+
+const INFLUENCER_COLUMNS: Array<{
+  key: InfluencerColumnKey
+  label: string
+  className: string
+  defaultWidth: number
+  sortKey: SortKey | null
+}> = [
+  { key: 'person', label: 'Person', className: 'influencer-cell--person', defaultWidth: 280, sortKey: 'name' },
+  { key: 'market', label: 'Market', className: 'influencer-cell--market', defaultWidth: 145, sortKey: 'country' },
+  { key: 'lane', label: 'Influence lane', className: 'influencer-cell--lane', defaultWidth: 170, sortKey: 'lane' },
+  { key: 'platform', label: 'Current platform', className: 'influencer-cell--platform', defaultWidth: 290, sortKey: 'organisation' },
+  { key: 'followers', label: 'LinkedIn followers', className: 'influencer-cell--followers', defaultWidth: 165, sortKey: 'followers' },
+  { key: 'signals', label: 'Signals', className: 'influencer-cell--signals', defaultWidth: 190, sortKey: 'priority' },
+  { key: 'linkedin', label: 'LinkedIn', className: 'influencer-cell--link', defaultWidth: 74, sortKey: null },
+]
+
+const INFLUENCER_COLUMNS_BY_KEY = new Map(INFLUENCER_COLUMNS.map((column) => [column.key, column]))
+const INFLUENCER_COLUMN_WIDTHS = Object.fromEntries(
+  INFLUENCER_COLUMNS.map((column) => [column.key, column.defaultWidth]),
+) as Record<InfluencerColumnKey, number>
+
+const restoreColumnOrder = () => {
+  const defaultOrder = INFLUENCER_COLUMNS.map((column) => column.key)
+  try {
+    const savedOrder = JSON.parse(localStorage.getItem(COLUMN_ORDER_STORAGE_KEY) ?? '[]') as unknown
+    if (!Array.isArray(savedOrder)) return defaultOrder
+    const seen = new Set<InfluencerColumnKey>()
+    const restored = savedOrder.flatMap((key) => {
+      if (typeof key !== 'string' || !INFLUENCER_COLUMNS_BY_KEY.has(key as InfluencerColumnKey) || seen.has(key as InfluencerColumnKey)) return []
+      seen.add(key as InfluencerColumnKey)
+      return [key as InfluencerColumnKey]
+    })
+    return [...restored, ...defaultOrder.filter((key) => !seen.has(key))]
+  } catch {
+    return defaultOrder
+  }
+}
+
+const saveColumnOrder = (columns: InfluencerColumnKey[]) => {
+  try {
+    localStorage.setItem(COLUMN_ORDER_STORAGE_KEY, JSON.stringify(columns))
+  } catch {
+    // The directory remains usable if local storage is unavailable.
+  }
 }
 
 const COUNTRY_ORDER: Influencer['country'][] = [
@@ -96,34 +149,54 @@ function LinkedInIcon() {
   )
 }
 
-type SortableHeaderProps = {
+type InfluencerHeaderProps = {
   activeSortKey: SortKey
-  className: string
+  columnKey: InfluencerColumnKey
   direction: SortDirection
-  label: string
+  draggingColumn: InfluencerColumnKey | null
+  drop: ColumnDrop | null
+  onDragEnd: () => void
+  onDragOver: (event: ReactDragEvent<HTMLTableCellElement>, column: InfluencerColumnKey) => void
+  onDragStart: (event: ReactDragEvent<HTMLTableCellElement>, column: InfluencerColumnKey) => void
+  onDrop: (event: ReactDragEvent<HTMLTableCellElement>, column: InfluencerColumnKey) => void
   onSort: (key: SortKey) => void
-  sortKey: SortKey
+  resizeHandle: ComponentProps<typeof ColumnResizeHandle>
 }
 
-function SortableHeader({ activeSortKey, className, direction, label, onSort, sortKey }: SortableHeaderProps) {
-  const active = activeSortKey === sortKey
-  const nextDirection = active
+function InfluencerHeader({ activeSortKey, columnKey, direction, draggingColumn, drop, onDragEnd, onDragOver, onDragStart, onDrop, onSort, resizeHandle }: InfluencerHeaderProps) {
+  const column = INFLUENCER_COLUMNS_BY_KEY.get(columnKey)!
+  const active = column.sortKey !== null && activeSortKey === column.sortKey
+  const nextDirection = active && column.sortKey
     ? direction === 'asc' ? 'desc' : 'asc'
-    : DEFAULT_SORT_DIRECTIONS[sortKey]
+    : column.sortKey ? DEFAULT_SORT_DIRECTIONS[column.sortKey] : null
+  const dropClass = drop?.column === columnKey ? ` is-drop-${drop.position}` : ''
 
   return (
-    <th className={className} aria-sort={active ? direction === 'asc' ? 'ascending' : 'descending' : 'none'}>
-      <button
-        className="influencer-sort-button"
-        type="button"
-        onClick={() => onSort(sortKey)}
-        aria-label={`Sort ${label} ${nextDirection === 'asc' ? 'ascending' : 'descending'}`}
-      >
-        <span>{label}</span>
-        <span className={`influencer-sort-arrow${active ? ' is-active' : ''}`} aria-hidden="true">
-          {active ? direction === 'asc' ? '↑' : '↓' : '↕'}
-        </span>
-      </button>
+    <th
+      className={`${column.className} influencer-draggable-header${draggingColumn === columnKey ? ' is-dragging' : ''}${dropClass}`}
+      aria-sort={column.sortKey ? active ? direction === 'asc' ? 'ascending' : 'descending' : 'none' : undefined}
+      draggable
+      onDragStart={(event) => onDragStart(event, columnKey)}
+      onDragOver={(event) => onDragOver(event, columnKey)}
+      onDrop={(event) => onDrop(event, columnKey)}
+      onDragEnd={onDragEnd}
+    >
+      {column.sortKey ? (
+        <button
+          className="influencer-sort-button"
+          type="button"
+          onClick={() => onSort(column.sortKey!)}
+          aria-label={`Sort ${column.label} ${nextDirection === 'asc' ? 'ascending' : 'descending'}`}
+        >
+          <span className="influencer-header-label"><i aria-hidden="true">⋮⋮</i>{column.label}</span>
+          <span className={`influencer-sort-arrow${active ? ' is-active' : ''}`} aria-hidden="true">
+            {active ? direction === 'asc' ? '↑' : '↓' : '↕'}
+          </span>
+        </button>
+      ) : (
+        <span className="influencer-static-header"><i aria-hidden="true">⋮⋮</i>{column.label}</span>
+      )}
+      <ColumnResizeHandle {...resizeHandle} />
     </th>
   )
 }
@@ -144,6 +217,16 @@ export function Influencers() {
   const [arabicOnly, setArabicOnly] = useState(false)
   const [sortKey, setSortKey] = useState<SortKey>('priority')
   const [sortDirection, setSortDirection] = useState<SortDirection>('desc')
+  const [columnOrder, setColumnOrder] = useState<InfluencerColumnKey[]>(restoreColumnOrder)
+  const [draggingColumn, setDraggingColumn] = useState<InfluencerColumnKey | null>(null)
+  const [columnDrop, setColumnDrop] = useState<ColumnDrop | null>(null)
+  const { getResizeHandleProps, totalWidth, widths } = useResizableColumns({
+    defaults: INFLUENCER_COLUMN_WIDTHS,
+    storageKey: COLUMN_WIDTH_STORAGE_KEY,
+  })
+  const tableStyle = {
+    '--resizable-table-width': `${totalWidth(columnOrder)}px`,
+  } as CSSProperties
 
   useEffect(() => {
     const previousTitle = document.title
@@ -227,6 +310,46 @@ export function Influencers() {
     setSortDirection('desc')
   }
 
+  const moveColumn = (source: InfluencerColumnKey, target: InfluencerColumnKey, position: ColumnDrop['position']) => {
+    if (source === target) return
+    setColumnOrder((current) => {
+      const next = current.filter((column) => column !== source)
+      const targetIndex = next.indexOf(target)
+      if (targetIndex === -1) return current
+      next.splice(targetIndex + (position === 'after' ? 1 : 0), 0, source)
+      saveColumnOrder(next)
+      return next
+    })
+  }
+
+  const handleColumnDragStart = (event: ReactDragEvent<HTMLTableCellElement>, column: InfluencerColumnKey) => {
+    event.dataTransfer.effectAllowed = 'move'
+    event.dataTransfer.setData('text/plain', column)
+    setDraggingColumn(column)
+  }
+
+  const handleColumnDragOver = (event: ReactDragEvent<HTMLTableCellElement>, column: InfluencerColumnKey) => {
+    if (!draggingColumn || draggingColumn === column) return
+    event.preventDefault()
+    event.dataTransfer.dropEffect = 'move'
+    const bounds = event.currentTarget.getBoundingClientRect()
+    setColumnDrop({ column, position: event.clientX < bounds.left + bounds.width / 2 ? 'before' : 'after' })
+  }
+
+  const handleColumnDrop = (event: ReactDragEvent<HTMLTableCellElement>, column: InfluencerColumnKey) => {
+    event.preventDefault()
+    const source = (event.dataTransfer.getData('text/plain') || draggingColumn) as InfluencerColumnKey | null
+    const position = columnDrop?.column === column ? columnDrop.position : 'before'
+    if (source && INFLUENCER_COLUMNS_BY_KEY.has(source)) moveColumn(source, column, position)
+    setDraggingColumn(null)
+    setColumnDrop(null)
+  }
+
+  const finishColumnDrag = () => {
+    setDraggingColumn(null)
+    setColumnDrop(null)
+  }
+
   return (
     <div className="app-shell influencers-page">
       <header className="workspace-header">
@@ -234,10 +357,11 @@ export function Influencers() {
         <div className="workspace-title"><strong>EIGN data workspace</strong><span>Companies, capital, and ecosystem people</span></div>
         <nav aria-label="Primary navigation">
           <a href="/">Dashboard</a>
-          <a href="/visualisations">Funding map</a>
           <a href="/software-companies">Software companies</a>
           <a href="/influencers" aria-current="page">Influencers</a>
           <a href="/research">Startups</a>
+          <a href="/newsletters">Newsletters</a>
+          <a href="/posts">Posts</a>
         </nav>
       </header>
 
@@ -310,16 +434,28 @@ export function Influencers() {
           </div>
 
           <div className="influencer-table-wrap">
-            <table className="influencer-table">
+            <table className="influencer-table resizable-table" style={tableStyle}>
+              <colgroup>
+                {columnOrder.map((column) => <col key={column} style={{ width: `${widths[column]}px` }} />)}
+              </colgroup>
               <thead>
                 <tr>
-                  <SortableHeader className="influencer-cell--person" label="Person" sortKey="name" activeSortKey={sortKey} direction={sortDirection} onSort={toggleSort} />
-                  <SortableHeader className="influencer-cell--market" label="Market" sortKey="country" activeSortKey={sortKey} direction={sortDirection} onSort={toggleSort} />
-                  <SortableHeader className="influencer-cell--lane" label="Influence lane" sortKey="lane" activeSortKey={sortKey} direction={sortDirection} onSort={toggleSort} />
-                  <SortableHeader className="influencer-cell--platform" label="Current platform" sortKey="organisation" activeSortKey={sortKey} direction={sortDirection} onSort={toggleSort} />
-                  <SortableHeader className="influencer-cell--followers" label="LinkedIn followers" sortKey="followers" activeSortKey={sortKey} direction={sortDirection} onSort={toggleSort} />
-                  <SortableHeader className="influencer-cell--signals" label="Signals" sortKey="priority" activeSortKey={sortKey} direction={sortDirection} onSort={toggleSort} />
-                  <th className="influencer-cell--link"><span className="sr-only">LinkedIn</span></th>
+                  {columnOrder.map((column) => (
+                    <InfluencerHeader
+                      key={column}
+                      columnKey={column}
+                      activeSortKey={sortKey}
+                      direction={sortDirection}
+                      draggingColumn={draggingColumn}
+                      drop={columnDrop}
+                      onDragStart={handleColumnDragStart}
+                      onDragOver={handleColumnDragOver}
+                      onDrop={handleColumnDrop}
+                      onDragEnd={finishColumnDrag}
+                      onSort={toggleSort}
+                      resizeHandle={getResizeHandleProps(column, INFLUENCER_COLUMNS_BY_KEY.get(column)!.label)}
+                    />
+                  ))}
                 </tr>
               </thead>
               <tbody>
@@ -334,41 +470,49 @@ export function Influencers() {
 
                   return (
                   <tr key={influencer.linkedinUrl}>
-                    <td className="influencer-cell--person">
-                      <div className="influencer-person">
-                        <span className={`influencer-avatar country-${COUNTRY_CODES[influencer.country].toLowerCase()}`}>{initials(influencer.name)}</span>
-                        <span>
-                          <a
-                            className="influencer-person-profile"
-                            href={influencer.linkedinUrl}
-                            target="_blank"
-                            rel="noreferrer"
-                            aria-label={`View ${influencer.name} on LinkedIn`}
-                          >
-                            <strong>{influencer.name}</strong>
-                            <i aria-hidden="true">↗</i>
-                          </a>
-                          <small>#{String(index + 1).padStart(3, '0')}</small>
-                        </span>
-                      </div>
-                    </td>
-                    <td className="influencer-cell--market"><span className={`influencer-market country-${COUNTRY_CODES[influencer.country].toLowerCase()}`}><i />{COUNTRY_LABELS[influencer.country]}</span></td>
-                    <td className="influencer-cell--lane"><span className="influencer-lane">{influencer.lane}</span></td>
-                    <td className="influencer-cell--platform"><strong className="influencer-organisation">{influencer.organisation}</strong></td>
-                    <td className="influencer-cell--followers">
-                      <span className={`influencer-followers${followerSnapshot.count == null ? ' is-unverified' : ''}`} aria-label={followerLabel} title={followerLabel}>
-                        <strong>{formattedFollowers}</strong>
-                        <small>{followerSnapshot.count == null ? 'Not verified' : followerSnapshot.precision === 'rounded' ? 'indexed estimate' : 'followers'}</small>
-                      </span>
-                    </td>
-                    <td className="influencer-cell--signals">
-                      <div className="influencer-signals">
-                        {influencer.priority && <span className="signal-priority">Priority</span>}
-                        {influencer.arabicOrBilingual && <span>AR / EN</span>}
-                        {!influencer.priority && !influencer.arabicOrBilingual && <span className="signal-muted">Verified</span>}
-                      </div>
-                    </td>
-                    <td className="influencer-cell--link"><a className="influencer-linkedin" href={influencer.linkedinUrl} target="_blank" rel="noreferrer" aria-label={`Open ${influencer.name} on LinkedIn`}><LinkedInIcon /></a></td>
+                    {columnOrder.map((column) => {
+                      if (column === 'person') return (
+                        <td className="influencer-cell--person" key={column}>
+                          <div className="influencer-person">
+                            <span className={`influencer-avatar country-${COUNTRY_CODES[influencer.country].toLowerCase()}`}>{initials(influencer.name)}</span>
+                            <span>
+                              <a
+                                className="influencer-person-profile"
+                                href={influencer.linkedinUrl}
+                                target="_blank"
+                                rel="noreferrer"
+                                aria-label={`View ${influencer.name} on LinkedIn`}
+                              >
+                                <strong>{influencer.name}</strong>
+                                <i aria-hidden="true">↗</i>
+                              </a>
+                              <small>#{String(index + 1).padStart(3, '0')}</small>
+                            </span>
+                          </div>
+                        </td>
+                      )
+                      if (column === 'market') return <td className="influencer-cell--market" key={column}><span className={`influencer-market country-${COUNTRY_CODES[influencer.country].toLowerCase()}`}><i />{COUNTRY_LABELS[influencer.country]}</span></td>
+                      if (column === 'lane') return <td className="influencer-cell--lane" key={column}><span className="influencer-lane">{influencer.lane}</span></td>
+                      if (column === 'platform') return <td className="influencer-cell--platform" key={column}><strong className="influencer-organisation">{influencer.organisation}</strong></td>
+                      if (column === 'followers') return (
+                        <td className="influencer-cell--followers" key={column}>
+                          <span className={`influencer-followers${followerSnapshot.count == null ? ' is-unverified' : ''}`} aria-label={followerLabel} title={followerLabel}>
+                            <strong>{formattedFollowers}</strong>
+                            <small>{followerSnapshot.count == null ? 'Not verified' : followerSnapshot.precision === 'rounded' ? 'indexed estimate' : 'followers'}</small>
+                          </span>
+                        </td>
+                      )
+                      if (column === 'signals') return (
+                        <td className="influencer-cell--signals" key={column}>
+                          <div className="influencer-signals">
+                            {influencer.priority && <span className="signal-priority">Priority</span>}
+                            {influencer.arabicOrBilingual && <span>AR / EN</span>}
+                            {!influencer.priority && !influencer.arabicOrBilingual && <span className="signal-muted">Verified</span>}
+                          </div>
+                        </td>
+                      )
+                      return <td className="influencer-cell--link" key={column}><a className="influencer-linkedin" href={influencer.linkedinUrl} target="_blank" rel="noreferrer" aria-label={`Open ${influencer.name} on LinkedIn`}><LinkedInIcon /></a></td>
+                    })}
                   </tr>
                   )
                 })}
