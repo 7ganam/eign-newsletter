@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:01:08.685Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:01:08.629Z",
+    "url": "https://www.crunchbase.com/organization/muddy"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Muddy",
+      "shortDescription": "Muddy is an Ireland-based live music discovery app.",
+      "description": "Muddy is an Ireland-based live music discovery app that helps musicians to be discovered at festivals and live gigs by new fans.",
+      "website": "http://muddyapp.com/",
+      "foundedYear": 2014,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Straffan, Kildare, Ireland",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Mobile Apps",
+        "Music",
+        "Music Streaming"
+      ],
+      "sectors": [
+        "Apps",
+        "Internet Services",
+        "Media and Entertainment",
+        "Mobile",
+        "Music and Audio",
+        "Software"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2024-04-02",
+          "publisher": "Canadian News Wire",
+          "title": "MUDDY WATERS RELEASES LETTER TO MAYFAIR GOLD SHAREHOLDERS",
+          "url": "https://www.newswire.ca/news-releases/muddy-waters-releases-letter-to-mayfair-gold-shareholders-808497449.html"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -14,
+      "heatScore": 27
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

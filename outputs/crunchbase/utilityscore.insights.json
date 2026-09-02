@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:53:44.776Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:53:44.725Z",
+    "url": "https://www.crunchbase.com/organization/utilityscore"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "UtilityScore",
+      "shortDescription": "UtilityScore provides personalized recommendations for home improvements that save 25% on energy and water bills.",
+      "description": "UtilityScore provides a tool that covers all utilities including electricity, natural gas, water, sewer, and a national database of local utility rates. The company provides personalized recommendations for home efficiency and solar, using its users home address. It helps house hunters understand their costs before buying or renting. UtilityScore was founded by Brian Gitt in 2015 and is based in Oakland, California.",
+      "website": "https://www.myutilityscore.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Oakland, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Energy",
+        "Information Services",
+        "Information Technology"
+      ],
+      "sectors": [
+        "Energy",
+        "Information Technology"
+      ],
+      "founders": [
+        "Brian Gitt"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2016-08-24",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2016-08-24",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2016-01-01",
+          "investorCount": 1,
+          "type": "Non Equity Assistance"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "Cleantech Open",
+            "rounds": [
+              "Non Equity Assistance"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 8,
+      "includedUniqueCount": 8,
+      "items": [
+        {
+          "date": "2016-10-13",
+          "title": "ATTOM Data Solutions Adds Home Utility Costs To Its Bulk Data Platform Via Exclusive Agreement With UtilityScore",
+          "url": "http://www.realtytrac.com/news/company-news/attom-data-solutions-adds-home-utility-costs-to-its-bulk-data-platform-via-exclusive-agreement-with-utilityscore/"
+        },
+        {
+          "date": "2016-08-24",
+          "title": "Seed Round - UtilityScore"
+        },
+        {
+          "date": "2016-08-23",
+          "publisher": "TechCrunch",
+          "title": "The 48 startups that launched at Y Combinator S16 Demo Day 2",
+          "url": "https://techcrunch.com/2016/08/23/yc-demo-day/"
+        },
+        {
+          "date": "2016-08-22",
+          "title": "UtilityScore shows how home improvement projects reduce utilities costs",
+          "url": "http://www.inman.com/2016/08/22/utilityscore-shows-home-improvement-projects-reduce-energy-costs/"
+        },
+        {
+          "date": "2016-08-15",
+          "title": "UtilityScore Tells You How to Improve Your Home and Save Money on Energy Bills",
+          "url": "http://www.themacro.com/articles/2016/08/utilityscore/"
+        },
+        {
+          "date": "2016-03-18",
+          "title": "Anticipating the unanticipated: Hidden costs of home buying",
+          "url": "http://www.wral.com/anticipating-the-unanticipated-hidden-costs-of-home-buying/15565200/"
+        },
+        {
+          "date": "2016-03-16",
+          "publisher": "Chicago Tribue",
+          "title": "Utilities often a forgotten cost",
+          "url": "http://www.chicagotribune.com/classified/realestate/sc-housing-sichelman-consumer-0317-20160317-story.html"
+        },
+        {
+          "date": "2016-01-01",
+          "title": "Non Equity Assistance - UtilityScore"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -25,
+      "heatScore": 1
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $120,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

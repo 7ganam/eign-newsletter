@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:39:04.368Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:39:04.314Z",
+    "url": "https://www.crunchbase.com/organization/sonia"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Sonia",
+      "shortDescription": "Sonia provides in-home respite care for people with developmental disabilities.",
+      "description": "Sonia Corina is a non-profit organization. Sonia provides in-home respite care for people with developmental disabilities that have been found. Respite services give family members a break from the unique demands of caring for someone who is developmentally disabled.",
+      "website": "https://www.soniacorina.org/",
+      "foundedYear": 2004,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "Nonprofit",
+      "employeeRange": "501-1,000",
+      "estimatedRevenueRange": "$10M-$50M",
+      "headquarters": "Brawley, California, United States",
+      "geographicRegions": [
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Health Care",
+        "Medical",
+        "Non Profit"
+      ],
+      "sectors": [
+        "Health Care",
+        "Social Impact"
+      ],
+      "founders": [
+        "Catalina Alcantra-Santillan"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 9,
+      "growthScore": 37,
+      "heatChange90Days": -13,
+      "heatScore": 64
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 67.34
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "One of the largest, most trusted in-home care companies in the nation.",
+          "employeeRange": "10,001+",
+          "name": "24 Hour Home Care",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Kennedy-Donovan Center is a non-profit organization.",
+          "employeeRange": "251-500",
+          "name": "Kennedy-Donovan Center",
+          "sharedCategories": [
+            "Health Care",
+            "Non Profit"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "I Am Boundless providing residential support, autism services, counseling to individuals and families.",
+          "employeeRange": "251-500",
+          "name": "I Am Boundless",
+          "similarityScore": 92
+        },
+        {
+          "description": "Respite Care Services is a non-profit organization that provides care and services for persons with developmental disabilities.",
+          "employeeRange": "1-10",
+          "name": "Respite Care Services",
+          "sharedCategories": [
+            "Health Care",
+            "Non Profit",
+            "Medical"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Devereux Advanced Behavioral Health is a company that offers assistance in the rapidly developing field of behavioral healthcare.",
+          "employeeRange": "5,001-10,000",
+          "name": "Devereux Advanced Behavioral Health.",
+          "sharedCategories": [
+            "Health Care",
+            "Non Profit",
+            "Medical"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 37 (+9 over 90 days) and market heat at 64 (-13).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include 24 Hour Home Care, Kennedy-Donovan Center, I Am Boundless.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

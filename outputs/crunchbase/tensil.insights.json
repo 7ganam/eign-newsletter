@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:19:40.360Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:19:40.305Z",
+    "url": "https://www.crunchbase.com/organization/tensil"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Tensil",
+      "shortDescription": "Open source machine learning accelerators",
+      "description": "Tensil is a machine learning model compiler and hardware generator that enables you to create and deploy the perfect custom ML inference accelerator for your application.",
+      "website": "https://www.tensil.ai/",
+      "foundedYear": 2018,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Autonomous Vehicles",
+        "Internet of Things",
+        "Machine Learning",
+        "Semiconductor"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Hardware",
+        "Information Technology",
+        "Internet Services",
+        "Science and Engineering",
+        "Software",
+        "Transportation"
+      ],
+      "founders": [
+        "Peter Hizalev",
+        "Tom Alcorn"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 150000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2019-08-22",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2019-08-22",
+          "amount": {
+            "amount": 150000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "UpHonest Capital",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2019-08-22",
+          "title": "Seed Round - Tensil"
+        },
+        {
+          "date": "2019-08-20",
+          "publisher": "TechCrunch",
+          "title": "Here are the 82 startups from day 2 of Y Combinator’s S19 Demo Days",
+          "url": "https://techcrunch.com/2019/08/20/here-are-the-82-startups-that-launched-on-day-2-of-ycs-s19-demo-days/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 150000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -14,
+      "heatScore": 44
+    },
+    "modelPredictions": {
+      "funding": {
+        "generatedDate": "2025-12-02",
+        "probabilityPercent": 11.94,
+        "timingEstimatePercent": {
+          "within6Months": 15.38,
+          "months6To11": 13.02,
+          "months12To24": 20.34,
+          "beyond24Months": 24.98
+        }
+      },
+      "growth": {
+        "generatedDate": "2025-11-15",
+        "probabilityPercent": 24.94
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Tenstorrent develops AI hardware and software solutions for data processing and machine learning application.",
+          "employeeRange": "501-1,000",
+          "name": "Tenstorrent",
+          "sharedCategories": [
+            "Semiconductor",
+            "Machine Learning"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Kneron develops an application-specific integrated circuit and software that offers artificial intelligence-based tools.",
+          "employeeRange": "51-100",
+          "name": "Kneron",
+          "sharedCategories": [
+            "Semiconductor"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "Syntiant is a deep learning tech company providing AI voice and sensor solutions.",
+          "employeeRange": "1,001-5,000",
+          "name": "Syntiant",
+          "sharedCategories": [
+            "Semiconductor",
+            "Machine Learning"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "Hailo develops AI processors specifically designed to enable AI tasks on the edge.",
+          "employeeRange": "101-250",
+          "name": "Hailo",
+          "sharedCategories": [
+            "Semiconductor",
+            "Machine Learning"
+          ],
+          "similarityScore": 86
+        },
+        {
+          "description": "Groq provides a platform and hardware infrastructure designed for AI inference workloads.",
+          "employeeRange": "501-1,000",
+          "name": "Groq",
+          "sharedCategories": [
+            "Semiconductor",
+            "Machine Learning"
+          ],
+          "similarityScore": 82
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $150,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Tenstorrent, Kneron, Syntiant.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:21:13.303Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:21:13.246Z",
+    "url": "https://www.crunchbase.com/organization/propolis"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Propolis",
+      "shortDescription": "Propolis is a real estate firm that provides residential properties development and management services.",
+      "website": "https://thepropolis.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Miami, Florida, United States",
+      "geographicRegions": [
+        "Greater Miami Area",
+        "East Coast",
+        "Southern US"
+      ],
+      "industries": [
+        "Property Development",
+        "Real Estate",
+        "Rental"
+      ],
+      "sectors": [
+        "Commerce and Shopping",
+        "Real Estate"
+      ],
+      "founders": [
+        "Misha Gurevich"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Fully furnished apartments for rent in Miami offering private studios and shared three-bedroom units with en-suite bathrooms, designed for young professionals seeking flexible leases and move-in ready spaces.",
+        "name": "Pastel Apartments"
+      },
+      {
+        "description": "Fully furnished rental apartments in Miami featuring private studios and shared units with private bathrooms, offering flexible leases and an all-inclusive utility package for young professionals.",
+        "name": "Saffron Apartments"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -12,
+      "heatScore": 41
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 31.35
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 42.42
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 14.74
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Bungalow provides home rental services.",
+          "employeeRange": "101-250",
+          "name": "Bungalow",
+          "sharedCategories": [
+            "Rental",
+            "Real Estate"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "PadSplit is an affordable housing tech startup that provides a house-sharing service for the workforce.",
+          "employeeRange": "101-250",
+          "name": "PadSplit",
+          "sharedCategories": [
+            "Real Estate"
+          ],
+          "sharedSpecialties": [
+            "Coliving and Serviced Residences",
+            "Rent Collection",
+            "Apartment Rentals"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Landing is a membership-based network that offers a subscription model for the apartment rental experience.",
+          "employeeRange": "251-500",
+          "name": "Landing",
+          "sharedCategories": [
+            "Rental",
+            "Real Estate"
+          ],
+          "sharedSpecialties": [
+            "Coliving and Serviced Residences",
+            "Furniture Delivery and Installation",
+            "Apartment Rentals"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Zumper is the largest privately owned rental platform in North America with a mission to make renting a home as easy as booking a hotel.",
+          "employeeRange": "101-250",
+          "name": "Zumper",
+          "sharedCategories": [
+            "Rental",
+            "Real Estate"
+          ],
+          "sharedSpecialties": [
+            "Apartment Rentals"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Furnished Finder is a short-term housing provider for travel nurses and other business travelers who need furnished housing.",
+          "employeeRange": "11-50",
+          "name": "Furnished Finder",
+          "sharedSpecialties": [
+            "Coliving and Serviced Residences",
+            "Rent Collection",
+            "Apartment Rentals"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Bungalow, PadSplit, Landing.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

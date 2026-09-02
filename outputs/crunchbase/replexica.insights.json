@@ -1,0 +1,360 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:47:02.967Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:47:02.912Z",
+    "url": "https://www.crunchbase.com/organization/replexica"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Lingo.dev",
+      "shortDescription": "Lingo.dev automates localization by generating instant translations and creating pull requests with translations for UI code changes.",
+      "website": "https://lingo.dev/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "B2B",
+        "Open Source"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Other",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Max Prilutskiy",
+        "Veronica Prilutskaya"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Automates translations immediately upon code commits, ensuring high-quality results without manual intervention.",
+        "name": "AI Localization Engine"
+      },
+      {
+        "description": "Localizes web and mobile user interfaces through Git, automating UI string updates via pull requests in CI/CD pipelines.",
+        "name": "Git-native UI Localization"
+      },
+      {
+        "description": "A free, open-source command-line tool that helps developers translate apps and markdown content efficiently using LLMs.",
+        "name": "Lingo.dev CLI"
+      },
+      {
+        "description": "An open-source localization automation tool that integrates with CI/CD pipelines to prevent incomplete translations from reaching production.",
+        "name": "Lingo.dev CI/CD"
+      },
+      {
+        "description": "Lightweight libraries that add real-time AI-powered translation to applications, handling dynamic user-generated content.",
+        "name": "Lingo.dev SDK"
+      },
+      {
+        "description": "A free, open-source compiler middleware that makes React applications multilingual at build time without changing existing components.",
+        "name": "Lingo.dev Compiler"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 4700000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 3,
+      "detailedRoundCount": 3,
+      "lastFundingDate": "2025-02-18",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2025-02-18",
+          "amount": {
+            "amount": 4200000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "leadInvestors": [
+            "Initialized Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 23754678,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2024-12-04",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 7892735,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        },
+        {
+          "announcedDate": "2023-12-01",
+          "postMoneyValuation": {
+            "amount": 8995639,
+            "currency": "USD"
+          },
+          "type": "Undisclosed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Initialized Capital",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round",
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 5,
+      "includedUniqueCount": 5,
+      "items": [
+        {
+          "date": "2025-02-24",
+          "publisher": "citybiz",
+          "title": "Lingo.dev Raises $4.2M Seed Funding",
+          "url": "https://www.citybiz.co/article/664192/lingo-dev-raises-4-2m-seed-funding/"
+        },
+        {
+          "date": "2025-02-18",
+          "publisher": "TechCrunch",
+          "title": "Lingo.dev is an app localization engine for developers",
+          "url": "https://techcrunch.com/2025/02/18/lingo-dev-is-an-app-localization-engine-for-developers/"
+        },
+        {
+          "date": "2025-02-18",
+          "title": "Seed Round - Lingo.dev"
+        },
+        {
+          "date": "2024-12-04",
+          "title": "Pre Seed Round - Lingo.dev"
+        },
+        {
+          "date": "2023-12-01",
+          "title": "Funding Round - Lingo.dev"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 2,
+    "knownDetailedFundingAmount": {
+      "amount": 4700000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 89.36,
+    "latestToEarliestKnownValuationMultiple": 2.64
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2025-03-03",
+      "growthChange90Days": -3,
+      "growthScore": 69,
+      "heatChange90Days": -3,
+      "heatScore": 62,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2025-05-25",
+        "probabilityPercent": 63.36
+      },
+      "funding": {
+        "generatedDate": "2025-10-04",
+        "probabilityPercent": 94.43,
+        "timingEstimatePercent": {
+          "within6Months": 100,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 78.45
+      },
+      "ipo": {
+        "generatedDate": "2025-06-11",
+        "probabilityPercent": 0.65
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Crowdin is a localization platform enhanced by AI to make your website, app, game and other software multilingual.",
+          "employeeRange": "101-250",
+          "name": "Crowdin",
+          "sharedSpecialties": [
+            "Content Localization",
+            "Translation and Localization Management",
+            "App Localization",
+            "SDK Management",
+            "Machine Translation"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Lokalise is a translation management system built for agile teams who want to automate their localization process.",
+          "employeeRange": "101-250",
+          "name": "Lokalise",
+          "sharedSpecialties": [
+            "Content Localization",
+            "CI/CD (Continuous Integration / Continuous Delivery)",
+            "Developer Documentation Platforms",
+            "Workflow Automation",
+            "Translation and Localization Management",
+            "App Localization",
+            "SDK Management",
+            "Machine Translation"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Smartling is a language service and technology provider helping customers to localize content across devices and platforms.",
+          "employeeRange": "101-250",
+          "name": "Smartling",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Content Localization",
+            "Translation and Localization Management",
+            "Machine Translation"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Locize is a online software that enables users to separate the development and translation process.",
+          "employeeRange": "11-50",
+          "name": "Locize",
+          "sharedSpecialties": [
+            "Content Localization",
+            "Developer Documentation Platforms",
+            "Translation and Localization Management",
+            "App Localization",
+            "SDK Management",
+            "Machine Translation"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Phrase is a software localization platform that provides API, integrations, and translation editor services.",
+          "employeeRange": "251-500",
+          "name": "Phrase",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Content Localization",
+            "Workflow Automation",
+            "Translation and Localization Management",
+            "App Localization",
+            "Machine Translation"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $4,200,000, or 89.36% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $8,995,639 to $23,754,678, a 2.64x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 69 (-3 over 90 days) and market heat at 62 (-3).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Crowdin, Lokalise, Smartling.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

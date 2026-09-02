@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:50:14.376Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:50:14.323Z",
+    "url": "https://www.crunchbase.com/organization/stage"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Stage",
+      "shortDescription": "Stage HQ is a simple registration for your events which helps to sell tickets online without hassle.",
+      "description": "Stage helps you to sell tickets online without hassle.\n\nBig conferences, camps, seminars or casual meetings: Stage fits all sizes.\n\n1â‚¬ / $ / £ per ticket sold (no fees for free tickets)\n\nFixed cost. Others charge you with some % of the collected money, while Stage is a fixed cost per ticket sold.\n\nWhy?. Because we don't think we should be more expensive just because you collect more money for your event. We think we are more fair this way.\n\nCurrency. We'll charge in your ticket's currency. If the currency is different from dollars, euros or pounds, we'll charge you in US dollars.",
+      "website": "http://www.stagehq.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "industries": [
+        "Event Management",
+        "Events",
+        "Ticketing"
+      ],
+      "sectors": [
+        "Events",
+        "Media and Entertainment"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 90,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2024-09-07",
+          "publisher": "TradingView",
+          "title": "Annual fashion spotlight CENTRESTAGE draws more than 8,500 buyers",
+          "url": "https://www.tradingview.com/news/reuters.com,2024-09-07:newsml_ACN92750a:0-annual-fashion-spotlight-centrestage-draws-more-than-8-500-buyers/"
+        },
+        {
+          "date": "2024-08-01",
+          "publisher": "PRNewswire",
+          "title": "Retro Stage Unveils Designer-Inspired Clothing Collection",
+          "url": "https://www.prnewswire.com/news-releases/retro-stage-unveils-designer-inspired-clothing-collection-302208362.html"
+        },
+        {
+          "date": "2024-06-14",
+          "publisher": "FinSMES",
+          "title": "Stage Raises $2.4M to Revolutionize the Future of Music",
+          "url": "https://www.finsmes.com/2024/06/stage-raises-2-4m-to-revolutionize-the-future-of-music.html"
+        },
+        {
+          "date": "2024-01-11",
+          "publisher": "Inc42",
+          "title": "Blume Ventures Backed OTT Platform STAGE Ropes In Harsh Mani Tripathi As Cofounder",
+          "url": "https://inc42.com/buzz/blume-ventures-backed-ott-platform-stage-ropes-in-harsh-mani-tripathi-as-cofounder/"
+        },
+        {
+          "date": "2024-01-08",
+          "publisher": "TelecomTalk",
+          "title": "Haryanvi and Rajasthani Content Platform STAGE Joins Tata Play Binge",
+          "url": "https://telecomtalk.info/haryanvi-rajasthani-content-stage-joins-tata-playbinge/912574/"
+        },
+        {
+          "date": "2023-11-27",
+          "publisher": "ETtech.com",
+          "title": "Neeraj Chopra invests in OTT platform Stage",
+          "url": "https://economictimes.indiatimes.com/tech/funding/neeraj-chopra-invests-in-ott-platform-stage/articleshow/105540862.cms"
+        },
+        {
+          "date": "2023-11-27",
+          "publisher": "Inc42",
+          "title": "Olympic Champion Neeraj Chopra Backs Regional OTT Platform Stage",
+          "url": "https://inc42.com/buzz/olympic-champion-neeraj-chopra-backs-regional-ott-platform-stage/"
+        },
+        {
+          "date": "2023-08-01",
+          "publisher": "JD Supra",
+          "title": "CMO Series EP105 - Megan Senese of Stage on taking a client-first approach to legal business development",
+          "url": "https://www.jdsupra.com/legalnews/cmo-series-ep105-megan-senese-of-stage-75545/"
+        },
+        {
+          "date": "2023-01-19",
+          "publisher": "TechCrunch",
+          "title": "Connect and collaborate with new founders at TechCrunch Early Stage 2023",
+          "url": "https://tcrn.ch/3XEAl14"
+        },
+        {
+          "date": "2023-01-03",
+          "publisher": "VCCircle",
+          "title": "Local OTT Stage raises fresh funds",
+          "url": "https://bit.ly/3Ijmmt7"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 5,
+      "heatScore": 16
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 90 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

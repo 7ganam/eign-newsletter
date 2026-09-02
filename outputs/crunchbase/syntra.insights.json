@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:09:02.243Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:09:02.188Z",
+    "url": "https://www.crunchbase.com/organization/syntra"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Syntra",
+      "shortDescription": "Syntra is a security automation specializing in data security solutions, particularly for cloud environments.",
+      "description": "Syntra is a security automation specializing in data security solutions, particularly for cloud environments.",
+      "website": "https://syntra.io/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "industries": [
+        "Cyber Security"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Privacy and Security"
+      ],
+      "founders": [
+        "Neil Patil",
+        "Utsav Shah"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -2,
+      "heatScore": 42
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 31.56
+      },
+      "funding": {
+        "generatedDate": "2024-06-06",
+        "probabilityPercent": 96.2,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 32.24,
+          "beyond24Months": 67.76
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-13",
+        "probabilityPercent": 95.4
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Wiz is a cloud security platform that facilitates collaboration between security, dev, and DevOps teams.",
+          "employeeRange": "1,001-5,000",
+          "name": "Wiz",
+          "sharedCategories": [
+            "Cyber Security"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Orca Security provides instant-on, workload-level security for AWS, Microsoft Azure, and Google Cloud Platform.",
+          "employeeRange": "251-500",
+          "name": "Orca Security",
+          "sharedCategories": [
+            "Cyber Security"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "BigID is a data intelligence company that helps organizations discover, manage, and protect sensitive information.",
+          "employeeRange": "501-1,000",
+          "name": "BigID",
+          "sharedCategories": [
+            "Cyber Security"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Vanta is a trust management platform that automates compliance and risk management.",
+          "employeeRange": "1,001-5,000",
+          "name": "Vanta",
+          "sharedCategories": [
+            "Cyber Security"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Skyflow provides a data privacy vault with an API interface.",
+          "employeeRange": "101-250",
+          "name": "Skyflow",
+          "sharedCategories": [
+            "Cyber Security"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Wiz, Orca Security, BigID.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

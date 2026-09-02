@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:15:50.482Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:15:50.427Z",
+    "url": "https://www.crunchbase.com/organization/north"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "North",
+      "shortDescription": "North is an advertising company that provides branding, social media, digital media, film, and TV production services.",
+      "website": "https://north.com/",
+      "foundedYear": 2006,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$10M-$50M",
+      "headquarters": "Portland, Oregon, United States",
+      "geographicRegions": [
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Advertising",
+        "Digital Media",
+        "Film",
+        "Social"
+      ],
+      "sectors": [
+        "Advertising",
+        "Community and Lifestyle",
+        "Media and Entertainment",
+        "Sales and Marketing",
+        "Video"
+      ],
+      "founders": [
+        "Rebecca Armstrong"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Provides payment processing and merchant account services for businesses to accept payments in-store, online, or on the go.",
+        "name": "Merchant Services"
+      },
+      {
+        "description": "End-to-end credit card payment processing for in-person, online, mobile, and integrated payment acceptance.",
+        "name": "Credit Card Processing"
+      },
+      {
+        "description": "A range of payment devices including mobile readers, smart terminals, and POS systems to facilitate payment acceptance.",
+        "name": "Point of Sale (POS) Hardware"
+      },
+      {
+        "description": "A platform providing APIs and tools for merchants, ISVs, and VARs to integrate payment solutions into apps, websites, and POS systems.",
+        "name": "Developer Portal"
+      },
+      {
+        "description": "Software tools for managing invoicing, reporting, inventory, employee schedules, customer data, and reputation.",
+        "name": "Back-Office Management Tools"
+      },
+      {
+        "description": "Enables businesses to send invoices via email, SMS, or QR codes and supports recurring payments and autopay setups.",
+        "name": "Invoice Management"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2025-06-13",
+          "publisher": "PYMNTS.com",
+          "title": "Services and APIs Turning Interchange Pressure Into Merchant Growth",
+          "url": "https://www.pymnts.com/news/payments-innovation/2025/services-and-apis-turning-interchange-pressure-into-merchant-growth/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2025-06-16",
+      "heatChange90Days": -7,
+      "heatScore": 69,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 79.61
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Stax is an all-in-one subscription-based payment technology for growing businesses & SaaS platforms.",
+          "employeeRange": "251-500",
+          "name": "Stax",
+          "sharedSpecialties": [
+            "Payment Processing",
+            "Payment Facilitation (PayFac) Infrastructure",
+            "Merchant Services",
+            "Recurring Billing and Subscription Management",
+            "Payment Gateway Services",
+            "Payment Analytics and Dashboard",
+            "Surcharging and Cash Discount Programs"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Fiserv is a provider of technology solutions to the financial services industry.",
+          "employeeRange": "10,001+",
+          "name": "Fiserv",
+          "sharedSpecialties": [
+            "Payment Processing",
+            "Payment Facilitation (PayFac) Infrastructure",
+            "Merchant Services",
+            "Payment Gateway Services",
+            "Payment Analytics and Dashboard"
+          ],
+          "similarityScore": 94.388
+        },
+        {
+          "description": "NMI provides payments enablement technology.",
+          "employeeRange": "251-500",
+          "name": "NMI",
+          "sharedSpecialties": [
+            "Payment Processing",
+            "Payment Facilitation (PayFac) Infrastructure",
+            "Merchant Services",
+            "Payment Gateway Services",
+            "Payment Analytics and Dashboard"
+          ],
+          "similarityScore": 83.61
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Stax, Fiserv, NMI.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

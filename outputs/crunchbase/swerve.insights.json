@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:06:14.977Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:06:14.920Z",
+    "url": "https://www.crunchbase.com/organization/swerve"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Swerve",
+      "shortDescription": "Swerve is an outsource IT company.",
+      "website": "https://www.swerve.co.nz/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Auckland, New Zealand",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)",
+        "Australasia"
+      ],
+      "industries": [
+        "Information Technology",
+        "Outsourcing"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Professional Services"
+      ],
+      "founders": [
+        "John Harris"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2022-03-07",
+          "title": "Seed Round - Givhero"
+        },
+        {
+          "date": "2021-03-15",
+          "publisher": "New Orleans",
+          "title": "Help COAST make the holiday a sweet one",
+          "url": "https://www.nola.com/news/communities/st_tammany/article_a1e4572a-8134-11eb-9ac7-df656761f64b.html"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 0,
+      "heatScore": 69
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 7.29
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Datacom is an information technology services company that offers custom software development, payroll, and cloud services.",
+          "employeeRange": "5,001-10,000",
+          "name": "Datacom",
+          "sharedCategories": [
+            "Information Technology"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Fusion5 is a transformation partner helping ANZ businesses unlock more value through integrated tech, AI, and enterprise solutions.",
+          "employeeRange": "1,001-5,000",
+          "name": "Fusion5 Australia",
+          "sharedCategories": [
+            "Information Technology"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "Spark is an online store that offers branded mobile phones, broadband, accessories, e-TV and digital services.",
+          "employeeRange": "5,001-10,000",
+          "name": "Spark",
+          "similarityScore": 86
+        },
+        {
+          "description": "2degrees is a mobile phone provider offering prepay and pay monthly-based mobile services.",
+          "employeeRange": "1,001-5,000",
+          "name": "2degrees",
+          "similarityScore": 84
+        },
+        {
+          "description": "One NZ is a telecommunications company providing mobile, broadband, satellite and business network services.",
+          "employeeRange": "1,001-5,000",
+          "name": "One NZ",
+          "similarityScore": 82
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Datacom, Fusion5 Australia, Spark.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

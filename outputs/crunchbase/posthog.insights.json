@@ -1,0 +1,510 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:14:26.656Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:14:26.602Z",
+    "url": "https://www.crunchbase.com/organization/posthog"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "PostHog",
+      "shortDescription": "PostHog is an open source platform that helps build successful products by providing tools to evaluate feature impact and customer value.",
+      "description": "PostHog provides an open‑source platform for product analytics, combining tools such as event tracking, session replay, surveys, error monitoring, and feature flag management into a unified system. It enables teams to deploy feature flags with multivariate options, scheduled releases, early access control, and cross‑project syncing, while integrating playback and analytics for testing and rollout validation. The platform supports running A/B experiments, collecting qualitative feedback via surveys, and tracking errors alongside data pipelines and data warehouse connectors. It also offers lightweight AI-powered assistance and observability features tailored to product and development workflows. This toolkit is organized under a cohesive product OS that emphasizes open development practices, transparency of roadmap, and community contributions.",
+      "website": "https://posthog.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "101-250",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Analytics",
+        "Developer Platform",
+        "Developer Tools",
+        "Open Source",
+        "Software Engineering"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "James Hawkins",
+        "Tim Glaser"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A tool for analyzing user behavior through event-based analytics, cohorts, and conversion funnels with auto capture and SQL access.",
+        "name": "Product Analytics"
+      },
+      {
+        "description": "A feature that records and replays user sessions to observe user interactions and behaviors within a product.",
+        "name": "Session Replay"
+      },
+      {
+        "description": "A system to control feature rollout by enabling or disabling features for specific user groups or conditions.",
+        "name": "Feature Flags"
+      },
+      {
+        "description": "A tool for running A/B tests and experiments to evaluate the impact of product changes on user behavior.",
+        "name": "Experiments"
+      },
+      {
+        "description": "A service to collect user feedback through surveys integrated into product workflows or emails.",
+        "name": "Surveys"
+      },
+      {
+        "description": "A feature to create guided walkthroughs within a product to onboard or educate users.",
+        "name": "Product Tours"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 182150000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 7,
+      "detailedRoundCount": 7,
+      "lastFundingDate": "2025-09-29",
+      "lastFundingType": "Series E",
+      "rounds": [
+        {
+          "announcedDate": "2025-09-29",
+          "amount": {
+            "amount": 75000000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Peak XV Partners"
+          ],
+          "postMoneyValuation": {
+            "amount": 1400000000,
+            "currency": "USD"
+          },
+          "type": "Series E"
+        },
+        {
+          "announcedDate": "2025-06-09",
+          "amount": {
+            "amount": 70000000,
+            "currency": "USD"
+          },
+          "investorCount": 4,
+          "leadInvestors": [
+            "Stripe"
+          ],
+          "postMoneyValuation": {
+            "amount": 920000000,
+            "currency": "USD"
+          },
+          "type": "Series D"
+        },
+        {
+          "announcedDate": "2024-01-01",
+          "amount": {
+            "amount": 10000000,
+            "currency": "USD"
+          },
+          "postMoneyValuation": {
+            "amount": 207608336,
+            "currency": "USD"
+          },
+          "type": "Series C"
+        },
+        {
+          "announcedDate": "2021-06-10",
+          "amount": {
+            "amount": 15000000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "leadInvestors": [
+            "Y Combinator Continuity Fund"
+          ],
+          "postMoneyValuation": {
+            "amount": 102754084,
+            "currency": "USD"
+          },
+          "type": "Series B"
+        },
+        {
+          "announcedDate": "2020-12-17",
+          "amount": {
+            "amount": 9000000,
+            "currency": "USD"
+          },
+          "investorCount": 3,
+          "leadInvestors": [
+            "Google Ventures"
+          ],
+          "postMoneyValuation": {
+            "amount": 46552544,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2020-06-04",
+          "amount": {
+            "amount": 3000000,
+            "currency": "USD"
+          },
+          "investorCount": 6,
+          "leadInvestors": [
+            "1984 Ventures"
+          ],
+          "postMoneyValuation": {
+            "amount": 12269628,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2020-03-16",
+          "amount": {
+            "amount": 150000,
+            "currency": "USD"
+          },
+          "investorCount": 4,
+          "leadInvestors": [
+            "1984 Ventures",
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 3686673,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 13,
+        "visibleNames": [
+          {
+            "name": "Formus Capital",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Google Ventures",
+            "rounds": [
+              "Series D",
+              "Series B",
+              "Series A"
+            ]
+          },
+          {
+            "name": "Jason Warner",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Liquid 2 Ventures"
+          },
+          {
+            "isLead": true,
+            "name": "Peak XV Partners",
+            "rounds": [
+              "Series E"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Stripe",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "SV Angel"
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator Continuity Fund",
+            "rounds": [
+              "Series B",
+              "Series A"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 39,
+      "includedUniqueCount": 9,
+      "items": [
+        {
+          "date": "2025-10-16",
+          "publisher": "FinTech Global",
+          "title": "Campfire secures $65m Series B to transform finance AI",
+          "url": "https://fintech.global/2025/10/16/campfire-secures-65m-series-b-to-transform-finance-ai/"
+        },
+        {
+          "date": "2025-10-15",
+          "publisher": "Crunchbase News",
+          "title": "Highest Count Of New Unicorns Join Crunchbase Board In Over 3 Years As Exits Also Gain Steam",
+          "url": "https://news.crunchbase.com/venture/unicorn-board-count-soars-september-2025-nscale-filevine/"
+        },
+        {
+          "date": "2025-10-06",
+          "publisher": "alleywatch.com",
+          "title": "The Weekly Notable Startup Funding Report: 10/6/25",
+          "url": "https://www.alleywatch.com/2025/10/the-weekly-notable-startup-funding-report-10-6-25/"
+        },
+        {
+          "date": "2025-10-03",
+          "publisher": "thesaasnews.com",
+          "title": "PostHog Raises $75M Series E at $1.4B Valuation",
+          "url": "https://www.thesaasnews.com/news/posthog-raises-75m-series-e-at-1-4b-valuation"
+        },
+        {
+          "date": "2025-10-03",
+          "publisher": "IndiaTimes",
+          "title": "ETtech Deals Digest: Startups raise $282 million this week, up 4x on-year",
+          "url": "https://economictimes.indiatimes.com/tech/funding/ettech-deals-digest-startups-raise-282-million-this-week-up-4x-on-year/articleshow/124294915.cms"
+        },
+        {
+          "date": "2025-09-30",
+          "publisher": "IndiaTimes",
+          "title": "SaaS startup PostHog turns unicorn after $75 million fundraise led by Peak XV",
+          "url": "https://economictimes.indiatimes.com/tech/funding/saas-startup-posthog-raises-75-million-at-1-4-billion-valuation-turns-unicorn/articleshow/124220377.cms"
+        },
+        {
+          "date": "2025-09-30",
+          "publisher": "Inc42 Media",
+          "title": "Peak XV Partners Leads $75 Mn Funding Round In PostHog",
+          "url": "https://inc42.com/buzz/peak-xv-partners-leads-75-mn-funding-round-in-posthog/"
+        },
+        {
+          "date": "2025-09-29",
+          "title": "Series E - PostHog"
+        },
+        {
+          "date": "2025-09-25",
+          "publisher": "Tech Startups - Startups and Technology news",
+          "title": "KuCoin Appeals FINTRAC Decision, Reaffirms Commitment to Compliance",
+          "url": "https://techstartups.com/2025/09/25/kucoin-appeals-fintrac-decision-reaffirms-commitment-to-compliance/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 7,
+    "knownDetailedFundingAmount": {
+      "amount": 182150000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 41.17,
+    "latestToEarliestKnownValuationMultiple": 379.75
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2025-10-20",
+      "growthChange90Days": -3,
+      "growthScore": 59,
+      "heatChange90Days": -3,
+      "heatScore": 66,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 74.13
+      },
+      "funding": {
+        "generatedDate": "2026-03-07",
+        "probabilityPercent": 75.96,
+        "timingEstimatePercent": {
+          "within6Months": 99.8,
+          "months6To11": 0,
+          "months12To24": 0.01,
+          "beyond24Months": 0.18
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 91.71
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 7.95
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Amplitude is a product intelligence platform that provides digital product tools that help teams run and grow their businesses.",
+          "employeeRange": "1,001-5,000",
+          "name": "Amplitude",
+          "sharedCategories": [
+            "Analytics"
+          ],
+          "sharedSpecialties": [
+            "Product Analytics",
+            "Survey Platforms",
+            "Customer Data Platform (CDP)",
+            "Feature Flag Management",
+            "Web Analytics",
+            "Experiment Management"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Mixpanel turns data into decisions with analytics that simplify insights, guide decisions, and measure product and marketing impact.",
+          "employeeRange": "251-500",
+          "name": "Mixpanel",
+          "sharedCategories": [
+            "Analytics"
+          ],
+          "sharedSpecialties": [
+            "Product Analytics",
+            "Customer Data Platform (CDP)",
+            "Web Analytics",
+            "Data Warehousing"
+          ],
+          "similarityScore": 99.06
+        },
+        {
+          "description": "Heap is a platform that provides analytics infrastructure to reduce the annoying parts of user analytics.",
+          "employeeRange": "101-250",
+          "name": "Heap",
+          "sharedCategories": [
+            "Analytics"
+          ],
+          "sharedSpecialties": [
+            "Product Analytics",
+            "Customer Data Platform (CDP)",
+            "Web Analytics"
+          ],
+          "similarityScore": 97.19
+        },
+        {
+          "description": "FullStory develops a digital experience intelligence platform designed to capture customer experience data.",
+          "employeeRange": "251-500",
+          "name": "FullStory",
+          "sharedCategories": [
+            "Analytics"
+          ],
+          "sharedSpecialties": [
+            "Product Analytics",
+            "Customer Data Platform (CDP)",
+            "Web Analytics"
+          ],
+          "similarityScore": 93.44
+        },
+        {
+          "description": "Statsig provides tools for A/B testing, feature management, and product analytics to help teams optimize product development.",
+          "employeeRange": "101-250",
+          "name": "Statsig",
+          "sharedCategories": [
+            "Developer Tools",
+            "Analytics"
+          ],
+          "sharedSpecialties": [
+            "Product Analytics",
+            "Feature Flag Management",
+            "Experiment Management",
+            "Data Warehousing",
+            "Feature Prioritization"
+          ],
+          "similarityScore": 92.5
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Series E round raised $75,000,000, or 41.17% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $3,686,673 to $1,400,000,000, a 379.75x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 59 (-3 over 90 days) and market heat at 66 (-3).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Amplitude, Mixpanel, Heap.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 39 timeline items but exposes 9 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

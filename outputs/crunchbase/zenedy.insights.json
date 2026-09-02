@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:32:32.933Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:32:32.871Z",
+    "url": "https://www.crunchbase.com/organization/zenedy"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Zenedy",
+      "shortDescription": "Zenedy was started as a means to showcase information about obscure topics from around the web.",
+      "description": "Zenedy was started as a means to showcase information about obscure topics from around the web. Every day, millions of people are searching for information on the Internet, and many times finding little or no quality content returned to them. We aim to identify when that happens, and then provide high quality articles on these obscure, yet interesting, topics.\r\n\r\nOur motto is “learn something new every day,” and we practice what we preach by adding new articles to the site every day about everything you could imagine. You never know when something that peaks your interest will come along, so be sure to subscribe to Zenedy email updates and follow Zenedy on Twitter to be sure you don’t missing something interesting! Enjoy the site!",
+      "website": "http://zenedy.com/",
+      "foundedYear": 2010,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Information Services",
+        "ISP",
+        "Web Browsers"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Internet Services",
+        "Software"
+      ],
+      "founders": [
+        "Jeff Morin"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2010-03-02",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2010-03-02",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2010-03-02",
+          "title": "Seed Round - Zenedy"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -26,
+      "heatScore": 50
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Listverse is an online platform that features trivia-related lists in lifestyles, science, society, and entertainment.",
+          "employeeRange": "1-10",
+          "name": "Listverse",
+          "sharedCategories": [
+            "Information Services"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Mental Floss is a destination for curious people.",
+          "employeeRange": "11-50",
+          "name": "Mental Floss",
+          "similarityScore": 95
+        },
+        {
+          "description": "Atlas Obscura catalogs unusual and obscure travel destinations via user-generated content.",
+          "employeeRange": "51-100",
+          "name": "Atlas Obscura",
+          "similarityScore": 93
+        },
+        {
+          "description": "Learn Something New and Interesting Everyday at Today I Found Out",
+          "employeeRange": "1-10",
+          "name": "Today I Found Out",
+          "similarityScore": 91
+        },
+        {
+          "description": "Bored Panda is an art, design, and photography community for creative people.",
+          "employeeRange": "11-50",
+          "name": "Bored Panda",
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Listverse, Mental Floss, Atlas Obscura.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

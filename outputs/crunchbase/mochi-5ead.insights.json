@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:55:03.540Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:55:03.482Z",
+    "url": "https://www.crunchbase.com/organization/mochi-5ead"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Mochi",
+      "shortDescription": "Mochi is an online bookstore that provides electronic book and system development service for companies.",
+      "website": "https://mochicorp.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "Sumida, Tokyo, Japan",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)"
+      ],
+      "industries": [
+        "B2B",
+        "B2C",
+        "EBooks",
+        "Education"
+      ],
+      "sectors": [
+        "Content and Publishing",
+        "Education",
+        "Media and Entertainment",
+        "Other"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A corporate subscription service providing unlimited access to electronic books for employee training and welfare.",
+        "name": "Sharelot"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 1,
+      "growthScore": 85,
+      "heatChange90Days": -19,
+      "heatScore": 49
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 46.49
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 86.25
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 37.28
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Amazon is a tech firm with a focus on e-commerce, cloud computing, digital streaming, and AI infrastructure.",
+          "employeeRange": "10,001+",
+          "name": "Amazon",
+          "similarityScore": 90
+        },
+        {
+          "description": "Bookmate is mobile story-on-the-go subscription service providing convenient access to ebooks, audiobooks and other long-form content",
+          "employeeRange": "51-100",
+          "name": "Bookmate",
+          "sharedCategories": [
+            "EBooks"
+          ],
+          "sharedSpecialties": [
+            "E-book Reader Apps",
+            "Recurring Billing and Subscription Management",
+            "Digital Publications"
+          ],
+          "similarityScore": 85
+        },
+        {
+          "description": "Kobo offers an open platform for e-reading.",
+          "employeeRange": "251-500",
+          "name": "Kobo",
+          "sharedSpecialties": [
+            "E-book Reader Apps",
+            "Digital Publications",
+            "E-Book Retail and Distribution"
+          ],
+          "similarityScore": 84
+        },
+        {
+          "description": "U-NEXT is an entertainment platform that offers videos, music, and movies.",
+          "employeeRange": "251-500",
+          "name": "U-NEXT",
+          "similarityScore": 81
+        },
+        {
+          "description": "K&K offers website development, interior design and network installation services.",
+          "employeeRange": "1-10",
+          "name": "K&K",
+          "similarityScore": 80
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 85 (+1 over 90 days) and market heat at 49 (-19).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Amazon, Bookmate, Kobo.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

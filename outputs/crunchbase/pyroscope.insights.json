@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:27:27.552Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:27:27.491Z",
+    "url": "https://www.crunchbase.com/organization/pyroscope"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Pyroscope",
+      "shortDescription": "Pyroscope is an open-source profiling program that can use to troubleshoot performance problems.",
+      "description": "Pyroscope is an open-source tool for continuous profiling. \n\nIt will help debug performance problems and identify bottlenecks in a code.\n\nPyroscope was founded in 2020 and is located in Oakland, California.",
+      "website": "https://pyroscope.io/",
+      "foundedYear": 2021,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Oakland, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Cloud Computing",
+        "Information Technology",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Internet Services",
+        "Software"
+      ],
+      "founders": [
+        "Dmitry Filimonov",
+        "Ryan Perry"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An open-source continuous profiling tool that collects and analyzes application performance data to identify CPU and memory usage issues.",
+        "name": "Pyroscope Open Source Continuous Profiling Platform"
+      },
+      {
+        "description": "A managed cloud service for continuous profiling that integrates with Grafana Cloud to provide scalable and secure profiling data storage and analysis.",
+        "name": "Pyroscope Cloud (Grafana Cloud Profiles)"
+      },
+      {
+        "description": "A query engine that enables custom queries and aggregation of profiling data for efficient performance analysis.",
+        "name": "FlameQL Query Engine"
+      },
+      {
+        "description": "Agents that collect profiling data with minimal impact on application performance, supporting multiple programming languages.",
+        "name": "Low-overhead Profiling Agents"
+      },
+      {
+        "description": "Links profiling data with OpenTelemetry tracing to provide request- or span-specific performance profiles.",
+        "name": "Profile Exemplars Integration"
+      },
+      {
+        "description": "Integrations with observability tools like Honeycomb, Jaeger, Grafana, AWS Lambda, Prometheus, and Slack to enhance profiling data usage.",
+        "name": "Pyroscope Integrations"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2021-03-22",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2021-03-22",
+          "investorCount": 3,
+          "postMoneyValuation": {
+            "amount": 7335427,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 3,
+        "visibleNames": [
+          {
+            "name": "Open Opportunity Fund",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "SV Angel",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 6,
+      "includedUniqueCount": 6,
+      "items": [
+        {
+          "date": "2025-05-09",
+          "publisher": "The New Stack",
+          "title": "Grafana’s eBPF Beyla Future Hinges on OpenTelemetry",
+          "url": "https://thenewstack.io/grafanas-ebpf-beyla-future-hinges-on-opentelemetry/"
+        },
+        {
+          "date": "2023-12-20",
+          "publisher": "menafn",
+          "title": "Performance Profiling Tool Market Size And Trends In 2023 ...",
+          "url": "https://menafn.com/1107632427/Performance-Profiling-Tool-Market-Size-And-Trends-In-2023-With-A-Projection-Extended-To-2031"
+        },
+        {
+          "date": "2023-03-15",
+          "title": "Pyroscope acquired by Grafana Labs"
+        },
+        {
+          "date": "2023-03-15",
+          "publisher": "TechCrunch",
+          "title": "Grafana acquires Pyroscope and merges it with its Phlare continuous profiling database",
+          "url": "https://techcrunch.com/2023/03/15/grafana-acquires-pyroscope-and-merges-it-with-its-phlare-continuous-profiling-database/"
+        },
+        {
+          "date": "2022-01-20",
+          "publisher": "hackernoon.com",
+          "title": "An Intro to Continuous Profiling in Kubernetes via Pyroscope",
+          "url": "https://hackernoon.com/an-intro-to-continuous-profiling-in-kubernetes-via-pyroscope"
+        },
+        {
+          "date": "2021-03-22",
+          "title": "Seed Round - Pyroscope"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2023-12-21",
+      "heatChange90Days": -3,
+      "heatScore": 36,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2025-05-11",
+        "probabilityPercent": 98.58
+      },
+      "growth": {
+        "generatedDate": "2025-05-19",
+        "probabilityPercent": 83.52
+      },
+      "ipo": {
+        "generatedDate": "2025-05-20",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Polar Signals is a profiling platform designed to measure and understand performance over time.",
+          "employeeRange": "11-50",
+          "name": "Polar Signals",
+          "sharedCategories": [
+            "Cloud Computing",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Digital Experience Monitoring",
+            "Dashboarding and Embedded Analytics",
+            "IT Infrastructure Monitoring",
+            "Application Tracing"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Datadog is an observability and security platform that offers infrastructure, applications, software development, and monitoring services.",
+          "employeeRange": "10,001+",
+          "name": "Datadog",
+          "sharedCategories": [
+            "Cloud Computing"
+          ],
+          "sharedSpecialties": [
+            "Digital Experience Monitoring",
+            "IT Infrastructure Monitoring",
+            "Application Tracing",
+            "Data Pipelines"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "New Relic is a digital intelligence company that delivers full-stack visibility and analytics to enterprises.",
+          "employeeRange": "1,001-5,000",
+          "name": "New Relic",
+          "sharedCategories": [
+            "Cloud Computing",
+            "Software"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "Dynatrace is an observability platform that monitors applications, infrastructure, and experience using AI-driven analytics for enterprises.",
+          "employeeRange": "5,001-10,000",
+          "name": "Dynatrace",
+          "sharedCategories": [
+            "Software",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "CI/CD Platform",
+            "Digital Experience Monitoring",
+            "IT Infrastructure Monitoring",
+            "Application Tracing"
+          ],
+          "similarityScore": 86
+        },
+        {
+          "description": "Elastic builds software to make data usable in real time and at scale for search, AI, observability, security, and analytics.",
+          "employeeRange": "1,001-5,000",
+          "name": "Elastic",
+          "sharedCategories": [
+            "Cloud Computing",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "IT Infrastructure Monitoring",
+            "Application Tracing",
+            "Data Pipelines"
+          ],
+          "similarityScore": 84
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $7,335,427 to $7,335,427, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Polar Signals, Datadog, New Relic.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

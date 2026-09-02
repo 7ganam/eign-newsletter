@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:48:15.049Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:48:15.019Z",
+    "url": "https://www.crunchbase.com/organization/rescue-forensics"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Rescue Forensics",
+      "shortDescription": "Transforming human trafficking investigations",
+      "description": "Rescue Ops is a digital forensic that archives massive quantities of data from classified advertisement websites specializing in commercial sex ads for law enforcement agencies to use in anti-trafficking investigations.",
+      "website": "http://www.rescueforensics.com/",
+      "foundedYear": 2010,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "251-500",
+      "headquarters": "Texas, South Carolina, United States",
+      "geographicRegions": [
+        "East Coast",
+        "Southern US"
+      ],
+      "industries": [
+        "Big Data",
+        "Law Enforcement"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Government and Military",
+        "Privacy and Security"
+      ],
+      "founders": [
+        "Ryan Dalton"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 245000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2015-06-02",
+      "lastFundingType": "Venture round",
+      "rounds": [
+        {
+          "announcedDate": "2015-06-02",
+          "amount": {
+            "amount": 125000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "type": "Venture round"
+        },
+        {
+          "announcedDate": "2014-12-01",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 3,
+        "visibleNames": [
+          {
+            "name": "Innova Memphis",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "Louis Beryl",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 7,
+      "includedUniqueCount": 7,
+      "items": [
+        {
+          "date": "2016-12-01",
+          "title": "Rescue Forensics acquired by IST Research"
+        },
+        {
+          "date": "2015-06-02",
+          "title": "Venture Round - Rescue Forensics"
+        },
+        {
+          "date": "2015-05-06",
+          "publisher": "FinSMEs",
+          "title": "Point Reyes Management Launches Super Angel Fund",
+          "url": "http://www.finsmes.com/2015/05/point-reyes-management-launches-super-angel-fund-focused-on-startups.html"
+        },
+        {
+          "date": "2015-03-24",
+          "publisher": "TechCrunch",
+          "title": "47 Startups That Launched At Y Combinator Winter 2015 Demo Day 2",
+          "url": "http://techcrunch.com/2015/03/24/y-combinator-demos/"
+        },
+        {
+          "date": "2015-02-20",
+          "publisher": "TechCrunch",
+          "title": "Software Eats Sex Trafficking: YC’s Rescue Forensics Aids Law Enforcement In Finding Victims",
+          "url": "http://techcrunch.com/2015/02/20/software-eats-sex-trafficking-ycs-rescue-forensics-aids-law-enforcement-in-finding-victims/"
+        },
+        {
+          "date": "2014-12-01",
+          "title": "Seed Round - Rescue Forensics"
+        },
+        {
+          "date": "2014-11-19",
+          "publisher": "Fast Company",
+          "title": "The Backpage.com Paradox",
+          "url": "http://www.fastcompany.com/3038284/the-backpagecom-conundrum"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 2,
+    "knownDetailedFundingAmount": {
+      "amount": 245000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 51.02
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Venture round round raised $125,000, or 51.02% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

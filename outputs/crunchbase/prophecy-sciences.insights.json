@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:21:02.702Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:21:02.647Z",
+    "url": "https://www.crunchbase.com/organization/prophecy-sciences"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Prophecy Sciences",
+      "shortDescription": "Predicting workplace and athletic performance with neuroscience",
+      "description": "Prophecy Sciences is identifying the cognitive factors that predict performance.",
+      "website": "http://prophecysciences.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Career Planning",
+        "Human Resources",
+        "Recruiting",
+        "Sports"
+      ],
+      "sectors": [
+        "Administrative Services",
+        "Professional Services",
+        "Sports"
+      ],
+      "founders": [
+        "Bob Schafer"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2014-04-07",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2014-04-07",
+          "investorCount": 1,
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2013-03-26",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "Initialized Capital",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2014-04-07",
+          "title": "Seed Round - Prophecy Sciences"
+        },
+        {
+          "date": "2013-11-20",
+          "publisher": "TechCrunch",
+          "title": "Prophecy Sciences Wants To Transform Recruiting With A Blend Of Neuroscience, Games, Biometrics And Machine Learning",
+          "url": "http://techcrunch.com/2013/11/20/prophecy-sciences-wants-to-transform-recruiting-with-a-blend-of-neuroscience-games-biometrics-and-machine-learning/"
+        },
+        {
+          "date": "2013-03-26",
+          "title": "Seed Round - Prophecy Sciences"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -4,
+      "heatScore": 10
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

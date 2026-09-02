@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:12:04.884Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:12:04.833Z",
+    "url": "https://www.crunchbase.com/organization/polymet"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Polymet",
+      "shortDescription": "Polymet is a manufacturing firm that provides steel manufacturing, welding, polishing, and fabrication services.",
+      "website": "https://www.polymet.ltd.uk/",
+      "foundedYear": 1964,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Blackburn, Lancashire, United Kingdom",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Architecture",
+        "Manufacturing",
+        "Mechanical Engineering"
+      ],
+      "sectors": [
+        "Manufacturing",
+        "Real Estate",
+        "Science and Engineering"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 5,
+      "includedUniqueCount": 5,
+      "items": [
+        {
+          "date": "2023-11-03",
+          "publisher": "MarketScreener",
+          "title": "PolyMet Mining Corp. Receives Final Order for Arrangement with Glencore",
+          "url": "https://www.marketscreener.com/quote/stock/POLYMET-MINING-CORP-1411300/news/PolyMet-Mining-Corp-Receives-Final-Order-for-Arrangement-with-Glencore-45240380/"
+        },
+        {
+          "date": "2023-11-01",
+          "publisher": "SeekingAlpha",
+          "title": "PolyMet shareholders approve Glencore takeover",
+          "url": "https://seekingalpha.com/news/4028680-polymet-shareholders-approve-glencore-takeover?source=content_type%3Areact%7Cfirst_level_url%3Amarket-news%7Csection_asset%3Amain"
+        },
+        {
+          "date": "2023-08-11",
+          "publisher": "SeekingAlpha",
+          "title": "PolyMet Mining GAAP EPS of -$0.02",
+          "url": "https://seekingalpha.com/news/4001503-polymet-mining-gaap-eps-of--002?source=content_type%3Areact%7Cfirst_level_url%3Amarket-news%7Csection_asset%3Amain"
+        },
+        {
+          "date": "2023-07-17",
+          "publisher": "Seeking Alpha",
+          "title": "Glencore seals deal to buy remaining PolyMet shares for $2.11/share",
+          "url": "https://seekingalpha.com/news/3987963-glencore-seals-deal-to-buy-remaining-polymet-shares-for-211share?source=content_type%3Areact%7Cfirst_level_url%3Amarket-news%7Csection_asset%3Amain"
+        },
+        {
+          "date": "2023-07-03",
+          "publisher": "Investing.com",
+          "title": "Glencore proposes to buy remaining stake of PolyMet",
+          "url": "https://www.investing.com/news/stock-market-news/glencore-proposes-to-buy-remaining-stake-of-polymet-3118780"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 1,
+      "growthScore": 83,
+      "heatChange90Days": -13,
+      "heatScore": 14
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 86.1
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 83 (+1 over 90 days) and market heat at 14 (-13).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

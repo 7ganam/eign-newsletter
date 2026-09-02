@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:42:23.145Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:42:23.110Z",
+    "url": "https://www.crunchbase.com/organization/refinetrain-ai"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "RefineTrain AI",
+      "shortDescription": "RefineTrain AI provides AI-powered invoice validation software for complex, contract-driven industries.",
+      "description": "RefineTrain AI provides AI-powered invoice validation software focused on complex, contract-driven environments. The company offers an autonomous agentic AI system that ingests contracts, emails, and related documents to build a knowledge graph of vendor obligations and requirements. Its software cross-checks invoice line items against this knowledge and connected internal systems to detect overpayments, double payments, and non-compliant charges. High‑risk or uncertain invoices are flagged and accompanied by explanations and evidence to streamline human review instead of fully hands-off automation. The platform is designed to handle multi-step, interdependent checks across documents and systems without custom rule programming. RefineTrain AI targets legal, finance, and operations teams that manage intricate agreements, change orders, and high-value invoices.",
+      "website": "http://refinetrain.ai/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "employeeRange": "1-10",
+      "headquarters": "South San Francisco, Pennsylvania, United States",
+      "geographicRegions": [
+        "Great Lakes",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Agentic AI",
+        "Analytics",
+        "Artificial Intelligence (AI)",
+        "Business Process Automation (BPA)",
+        "Compliance",
+        "Enterprise Software",
+        "Finance",
+        "Financial Services",
+        "Legal",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Financial Services",
+        "Professional Services",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "RefineTrain AI Invoice Validation Platform uses agentic AI to validate complex invoices against contracts, documents, and internal systems.",
+        "name": "RefineTrain AI Invoice Validation Platform"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 41,
+      "heatScore": 75
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 57.03
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

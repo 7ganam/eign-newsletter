@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:04:03.020Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:04:02.965Z",
+    "url": "https://www.crunchbase.com/organization/saatvy"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Saatvy",
+      "shortDescription": "Saatvy provides a personalized Ayurvedic wellness platform for managing chronic health conditions.",
+      "description": "Saatvy provides a personalized Ayurvedic wellness platform for individuals managing chronic health conditions. The company offers online access to vetted Ayurvedic practitioners who design customized wellness programs targeting issues such as gut disorders, sleep problems, diabetes, arthritis, allergies, and postpartum thyroiditis. Its platform combines traditional Ayurveda practices with tailored nutrition plans, yoga routines, stress management guidance, and natural supplement tracking. Users share health information through the digital interface, and practitioners use these inputs to create and adjust individualized care plans. Saatvy focuses on addressing underlying causes of long-term conditions rather than only treating surface symptoms. The service is aimed at consumers seeking natural and holistic approaches alongside or outside conventional medical care.",
+      "website": "https://saatvy.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "industries": [
+        "Alternative Medicine",
+        "Consumer",
+        "Health Care",
+        "Personal Health",
+        "Wellness"
+      ],
+      "sectors": [
+        "Health Care",
+        "Other"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Saatvy Health Platform is an online Ayurvedic wellness service that connects consumers with practitioners for personalized chronic care plans.",
+        "name": "Saatvy Health Platform"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 6,
+      "growthScore": 87,
+      "heatChange90Days": 46,
+      "heatScore": 65
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 94.05
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 87 (+6 over 90 days) and market heat at 65 (+46).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

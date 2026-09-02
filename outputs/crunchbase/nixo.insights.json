@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:14:15.583Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:14:15.527Z",
+    "url": "https://www.crunchbase.com/organization/nixo"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Nixo",
+      "shortDescription": "NIXO specializes in Linux servers, HA clusters, ICT security, data recovery, and tailor-made software for its clients.",
+      "website": "http://www.nixo.it/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Bergamo, Lombardia, Italy",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Information and Communications Technology (ICT)",
+        "Linux",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Platforms",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A Linux-based server cluster system designed to ensure continuous IT service availability through software and hardware redundancy, automatic failover, and load balancing.",
+        "name": "Cluster High Availability (HA) \"CHIMERA\""
+      },
+      {
+        "description": "Customizable Linux-based servers configured to deliver multiple services simultaneously with scalable performance and resource management tailored to business needs.",
+        "name": "Linux Servers"
+      },
+      {
+        "description": "Dedicated mail servers that manage email sending, receiving, and access, supporting professional and business email communication needs.",
+        "name": "Mail Server Solutions"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -12,
+      "heatScore": 54
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 66.35
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Red Hat is a software company that offers enterprise open-source software solutions.",
+          "employeeRange": "10,001+",
+          "name": "Red Hat",
+          "sharedCategories": [
+            "Software",
+            "Linux"
+          ],
+          "sharedSpecialties": [
+            "Configuration Management Automation"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Proxmox is a software provider dedicated to develop powerful and efficient open source server solutions",
+          "employeeRange": "11-50",
+          "name": "Proxmox",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Server Virtualization",
+            "Email Security",
+            "Backup Automation"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "SUSE provides reliable and interoperable Linux and cloud infrastructure solutions that give enterprises greater control and flexibility.",
+          "employeeRange": "1,001-5,000",
+          "name": "SUSE",
+          "sharedCategories": [
+            "Software",
+            "Linux"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Canonical, the publisher of Ubuntu, delivers trusted open source for everyone and provides security, support and services to enterprises.",
+          "employeeRange": "1,001-5,000",
+          "name": "Canonical",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Open-E is a company that develops software for business data storage and management.",
+          "employeeRange": "101-250",
+          "name": "Open-E",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Server Management",
+            "Backup Automation",
+            "Data Replication",
+            "Data Recovery Services"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Red Hat, Proxmox, SUSE.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

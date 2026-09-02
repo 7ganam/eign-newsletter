@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:15:07.193Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:15:07.141Z",
+    "url": "https://www.crunchbase.com/organization/waypoint-7e3b"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Waypoint",
+      "shortDescription": "Waypoint is an organization that supports children’s services and adult services to help individuals with disabilities.",
+      "website": "https://waypointmaine.org/",
+      "foundedYear": 1966,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "Nonprofit",
+      "employeeRange": "251-500",
+      "headquarters": "Sanford, Maine, United States",
+      "geographicRegions": [
+        "East Coast",
+        "New England",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Adult",
+        "Child Care",
+        "Communities",
+        "Health Care",
+        "Non Profit"
+      ],
+      "sectors": [
+        "Community and Lifestyle",
+        "Health Care",
+        "Social Impact"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2026-07-24",
+          "title": "The Little Dolphin School acquired by Waypoint"
+        },
+        {
+          "date": "2026-03-26",
+          "publisher": "EIN Presswire",
+          "title": "Waypoint 33 Accepted as Member of the Defense Industrial Base Consortium",
+          "url": "https://www.einpresswire.com/article/901776697/waypoint-33-accepted-as-member-of-the-defense-industrial-base-consortium"
+        },
+        {
+          "date": "2025-10-03",
+          "title": "Waypoint acquired by The Progress Center"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "reportedPartnerships": {
+      "note": "Provider event summaries with linked sources; not independently verified.",
+      "items": [
+        {
+          "date": "2026-03-26",
+          "description": "Waypoint 33 joined the Defense Industrial Base Consortium, establishing a new collaboration channel with U.S. defense agencies and industry partners on autonomous network and communications projects.",
+          "sources": [
+            {
+              "date": "2026-03-26",
+              "publisher": "EIN Presswire",
+              "title": "Waypoint 33 Accepted as Member of the Defense Industrial Base Consortium",
+              "url": "https://www.einpresswire.com/article/901776697/waypoint-33-accepted-as-member-of-the-defense-industrial-base-consortium"
+            }
+          ]
+        }
+      ]
+    },
+    "crunchbaseMomentum": {
+      "growthChange90Days": -2,
+      "growthScore": 85,
+      "heatChange90Days": 34,
+      "heatScore": 81
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.41
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 85 (-2 over 90 days) and market heat at 81 (+34).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

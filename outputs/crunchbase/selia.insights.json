@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:15:58.264Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:15:58.212Z",
+    "url": "https://www.crunchbase.com/organization/selia"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Selia",
+      "shortDescription": "Selia is fiscally responsible and conservative in offering a complete infra for e-commerce operations and integrating the ecosystem.",
+      "website": "https://selia.com.br/",
+      "foundedYear": 2012,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "101-250",
+      "headquarters": "São Paulo, Sao Paulo, Brazil",
+      "geographicRegions": [
+        "Latin America"
+      ],
+      "industries": [
+        "Digital Marketing",
+        "E-Commerce",
+        "SEO"
+      ],
+      "sectors": [
+        "Commerce and Shopping",
+        "Internet Services",
+        "Sales and Marketing"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A comprehensive e-commerce operations management service that handles platform management, inventory control, customer service, marketing, and logistics for businesses.",
+        "name": "Fullcommerce"
+      },
+      {
+        "description": "Development and deployment of customized e-commerce websites using VTEX IO, including design, integrations, and ongoing support.",
+        "name": "E-commerce Platform Development"
+      },
+      {
+        "description": "Strategic management of marketplace sales channels including platform selection, partnerships, monitoring, training, and support.",
+        "name": "Marketplace Management"
+      },
+      {
+        "description": "Logistics management covering storage, order processing, customized packaging, and returns handling for e-commerce operations.",
+        "name": "Fulfillment Services"
+      },
+      {
+        "description": "Management of digital marketing campaigns, SEO, resource allocation, and data analysis tailored to e-commerce businesses.",
+        "name": "Digital Marketing Management"
+      },
+      {
+        "description": "Customer service management with automation, multichannel integration, and personalized support features.",
+        "name": "Customer Service (SAC) Solutions"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -22,
+      "heatScore": 60
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 19.54
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 89.31
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 11.24
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "A Tray é uma plataforma de e-commerce com a missão de facilitar o dia a dia do lojista que quer vender online.",
+          "employeeRange": "251-500",
+          "name": "Tray",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "sharedSpecialties": [
+            "Fulfillment Services",
+            "Payment Orchestration Platforms",
+            "E-Commerce Operations Management"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Mandaê provides air logistics services for packing and delivery.",
+          "employeeRange": "101-250",
+          "name": "Mandaê",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "sharedSpecialties": [
+            "Logistics Software",
+            "E-Commerce Operations Management"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "Nuvemshop is the all-in-one D2C platform for Latin America — payments, logistics, marketing, banking, POS, and AI, all built in-house.",
+          "employeeRange": "1,001-5,000",
+          "name": "Nuvemshop",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "sharedSpecialties": [
+            "E-Commerce Operations Management"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "VTEX focuses on e-commerce strategies for major retailers and consumer brands.",
+          "employeeRange": "1,001-5,000",
+          "name": "VTEX",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "sharedSpecialties": [
+            "Marketplace Management",
+            "Warehouse Management Systems",
+            "E-Commerce Operations Management",
+            "Fulfillment and Warehousing"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Wake is a technology company that provides digital solutions for e-commerce businesses.",
+          "employeeRange": "251-500",
+          "name": "Wake",
+          "sharedSpecialties": [
+            "Marketplace Management",
+            "E-Commerce Operations Management"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Tray, Mandaê, Nuvemshop.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

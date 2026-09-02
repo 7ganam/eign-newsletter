@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:22:43.845Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:22:43.785Z",
+    "url": "https://www.crunchbase.com/organization/odigos-f01b"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Odigos",
+      "shortDescription": "Odigos provides services like audio jingles, recruitment, VFX, 2D-3D graphics & animation, and broadcasting.",
+      "description": "Odigos offers a variety of services including audio jingles, recruitment services, VFX, 2D-3D graphics and animation, and broadcasting services. The company supports clients in enhancing their business operations and improving their outreach to target audiences. Additionally, it provides digital marketing services, utilizing technology to help businesses build their online presence. Through its diverse range of services, it aims to address different business needs, contributing to client success in areas like media production, recruitment, and digital engagement.",
+      "website": "https://odigos.io/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Tel Aviv, Israel",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)",
+        "Middle East",
+        "Middle East and North Africa (MENA)"
+      ],
+      "industries": [
+        "Software"
+      ],
+      "sectors": [
+        "Software"
+      ],
+      "founders": [
+        "Eden Federman"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A platform that automates distributed tracing implementation using eBPF technology, enabling zero-code instrumentation and minimal performance impact.",
+        "name": "Odigos Distributed Tracing Platform"
+      },
+      {
+        "description": "A method to extend Kubernetes containers for automatic application instrumentation with minimal configuration and compatibility with security contexts.",
+        "name": "Automatic Instrumentation via Kubernetes Device Plugins"
+      },
+      {
+        "description": "A control plane that manages automatic instrumentation, deployment of collectors, and configuration for extracting and shipping telemetry data from applications.",
+        "name": "Observability Control Plane"
+      },
+      {
+        "description": "A system for collecting, formatting, transporting, and processing log data using OpenTelemetry standards and protocols.",
+        "name": "Log Pipeline Implementation with OpenTelemetry"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -1,
+      "heatScore": 36
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 84.91
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Grafana Labs delivers the open observability cloud, helping builders everywhere turn signals into action.",
+          "employeeRange": "1,001-5,000",
+          "name": "Grafana Labs",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Log Management",
+            "Dashboarding and Embedded Analytics",
+            "IT Infrastructure Monitoring",
+            "Application Tracing"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "New Relic is a digital intelligence company that delivers full-stack visibility and analytics to enterprises.",
+          "employeeRange": "1,001-5,000",
+          "name": "New Relic",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Datadog is an observability and security platform that offers infrastructure, applications, software development, and monitoring services.",
+          "employeeRange": "10,001+",
+          "name": "Datadog",
+          "sharedSpecialties": [
+            "Log Management",
+            "IT Infrastructure Monitoring",
+            "Application Tracing",
+            "Data Pipelines"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Honeycomb provides full-stack observability for engineering teams to understand, debug, and improve production systems.",
+          "employeeRange": "101-250",
+          "name": "Honeycomb",
+          "sharedSpecialties": [
+            "Log Management",
+            "Integration Platforms",
+            "Dashboarding and Embedded Analytics",
+            "IT Infrastructure Monitoring",
+            "Application Tracing",
+            "Data Pipelines"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "OpenObserve provides an open-source observability platform for monitoring logs, metrics, and traces in a unified system.",
+          "employeeRange": "11-50",
+          "name": "OpenObserve",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Container and Kubernetes Platform Services",
+            "Log Management",
+            "IT Infrastructure Monitoring",
+            "Application Tracing",
+            "Data Pipelines"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Grafana Labs, New Relic, Datadog.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

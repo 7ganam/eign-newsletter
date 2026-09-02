@@ -1,0 +1,567 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:06:26.006Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:06:25.952Z",
+    "url": "https://www.crunchbase.com/organization/saltsecurity"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Salt Security",
+      "shortDescription": "Salt Security provides an API protection platform designed to prevent attacks by leveraging machine learning and AI.",
+      "description": "Salt Security is an API security company based in Palo Alto, California. It provides an API protection platform to prevent attacks, using machine learning and AI to automatically and continuously identify and protect APIs. Deployed in minutes, the platform learns the granular behavior of a company’s APIs and requires no configuration or customization to pinpoint and block API attackers.\n\nThe company was founded in 2018 and led by co-founder and CEO Roey Eliyahu and by co-founder & COO Michael Nicosia.",
+      "website": "https://salt.security/",
+      "foundedYear": 2015,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "101-250",
+      "estimatedRevenueRange": "$10M-$50M",
+      "headquarters": "Palo Alto, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Cyber Security",
+        "Developer APIs",
+        "Machine Learning"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Privacy and Security",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Michael Nicosia",
+        "Omer Sadika",
+        "Roey Eliyahu"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A cloud-based platform for discovering, inventorying, governing, and protecting APIs, AI agents, MCP servers, and the connections between them.",
+        "name": "Illuminate (Agentic Security Platform)"
+      },
+      {
+        "description": "A runtime API protection product that detects and blocks behavioral attacks, business-logic abuse, anomalous activity, and data-exfiltration attempts.",
+        "name": "Salt Protect"
+      },
+      {
+        "description": "An external attack-surface discovery service that identifies exposed APIs, AI-agent endpoints, MCP servers, shadow APIs, and related security risks.",
+        "name": "Salt Surface"
+      },
+      {
+        "description": "An agentless API inventory product that discovers APIs across cloud accounts and code environments using configuration, metadata, and logs without inspecting live traffic.",
+        "name": "Salt Connect"
+      },
+      {
+        "description": "A traffic-analysis product that examines API calls, users, sessions, data flows, and behavior to identify vulnerabilities, misconfigurations, drift, and sensitive-data exposure.",
+        "name": "Salt Collect"
+      },
+      {
+        "description": "A security-policy enforcement product for AI coding assistants that guides generated code and validates APIs, MCP integrations, and agents from prompt through deployment.",
+        "name": "Salt Code"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 271000000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 8,
+      "detailedRoundCount": 8,
+      "lastFundingDate": "2022-09-19",
+      "lastFundingType": "Venture round",
+      "rounds": [
+        {
+          "announcedDate": "2022-09-19",
+          "investorCount": 1,
+          "leadInvestors": [
+            "CrowdStrike Falcon Fund"
+          ],
+          "postMoneyValuation": {
+            "amount": 1407279496,
+            "currency": "USD"
+          },
+          "type": "Venture round"
+        },
+        {
+          "announcedDate": "2022-02-10",
+          "amount": {
+            "amount": 140000000,
+            "currency": "USD"
+          },
+          "investorCount": 8,
+          "leadInvestors": [
+            "CapitalG"
+          ],
+          "postMoneyValuation": {
+            "amount": 1400000000,
+            "currency": "USD"
+          },
+          "type": "Series D"
+        },
+        {
+          "announcedDate": "2021-05-26",
+          "amount": {
+            "amount": 70000000,
+            "currency": "USD"
+          },
+          "investorCount": 7,
+          "leadInvestors": [
+            "Advent Technologies"
+          ],
+          "postMoneyValuation": {
+            "amount": 500000000,
+            "currency": "USD"
+          },
+          "type": "Series C"
+        },
+        {
+          "announcedDate": "2020-12-08",
+          "amount": {
+            "amount": 30000000,
+            "currency": "USD"
+          },
+          "investorCount": 4,
+          "leadInvestors": [
+            "Sequoia Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 187182635,
+            "currency": "USD"
+          },
+          "type": "Series B"
+        },
+        {
+          "announcedDate": "2020-06-16",
+          "amount": {
+            "amount": 20000000,
+            "currency": "USD"
+          },
+          "investorCount": 6,
+          "leadInvestors": [
+            "Tenaya Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 91037525,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2018-09-04",
+          "amount": {
+            "amount": 10000000,
+            "currency": "USD"
+          },
+          "investorCount": 3,
+          "leadInvestors": [
+            "S Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 47702107,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2017-01-20",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 24450002,
+            "currency": "USD"
+          },
+          "type": "Venture round"
+        },
+        {
+          "announcedDate": "2016-03-22",
+          "amount": {
+            "amount": 1000000,
+            "currency": "USD"
+          },
+          "investorCount": 3,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 6745652,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 18,
+        "visibleNames": [
+          {
+            "name": "Advent International",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "Alkeon Capital",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "CapitalG",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "CrowdStrike Falcon Fund",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "DFJ Growth",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "S Capital",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "Sequoia Capital",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "Tenaya Capital",
+            "rounds": [
+              "Series D",
+              "Series C"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Series D"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 205,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-08-04",
+          "publisher": "PR Newswire",
+          "title": "Salt Security Debuts First AWS WAF Managed Ruleset for AI Agent and API Protection",
+          "url": "https://www.prnewswire.com/news-releases/salt-security-debuts-first-aws-waf-managed-ruleset-for-ai-agent-and-api-protection-302842381.html"
+        },
+        {
+          "date": "2026-07-23",
+          "publisher": "EIN Presswire",
+          "title": "Salt Security Launches in Australia with Local Infrastructure and Dedicated Sales Team",
+          "url": "https://www.einpresswire.com/article/928894176/salt-security-launches-in-australia-with-local-infrastructure-and-dedicated-sales-team"
+        },
+        {
+          "date": "2026-07-22",
+          "publisher": "PR Newswire",
+          "title": "Salt Security Launches in Australia with Local Infrastructure and Dedicated Sales Team",
+          "url": "https://www.prnewswire.com/news-releases/salt-security-launches-in-australia-with-local-infrastructure-and-dedicated-sales-team-302831395.html"
+        },
+        {
+          "date": "2026-07-20",
+          "publisher": "PRLog",
+          "title": "Salt Security Introduces the Industry's Largest Policy Library for Agentic AI Governance",
+          "url": "https://www.prlog.org/13159484-salt-security-introduces-the-industrys-largest-policy-library-for-agentic-ai-governance.html"
+        },
+        {
+          "date": "2026-07-20",
+          "publisher": "PR Newswire",
+          "title": "Salt Security Introduces the Industry's Largest Policy Library for Agentic AI Governance",
+          "url": "https://www.prnewswire.com/news-releases/salt-security-introduces-the-industrys-largest-policy-library-for-agentic-ai-governance-302829570.html"
+        },
+        {
+          "date": "2026-07-20",
+          "publisher": "EIN Presswire",
+          "title": "Salt Security Introduces the Industry's Largest Policy Library for Agentic AI Governance",
+          "url": "https://www.einpresswire.com/article/928014854/salt-security-introduces-the-industry-s-largest-policy-library-for-agentic-ai-governance"
+        },
+        {
+          "date": "2026-06-11",
+          "publisher": "Google is held liable for false information from its AI | CIO",
+          "title": "Las nuevas normas de la UE para asegurar los productos TI entran en vigor hoy sin que las empresas estén preparadas",
+          "url": "https://www.cio.com/article/4184027/las-nuevas-normas-de-la-ue-para-asegurar-los-productos-ti-entran-en-vigor-hoy-sin-que-las-empresas-esten-preparadas.html"
+        },
+        {
+          "date": "2026-06-02",
+          "publisher": "Morningstar.com",
+          "title": "New Research Reveals 9 in 10 Security Leaders Concerned About AI-Generated Code Risks",
+          "url": "https://www.morningstar.com/news/pr-newswire/20260602la73455/new-research-reveals-9-in-10-security-leaders-concerned-about-ai-generated-code-risks"
+        },
+        {
+          "date": "2026-06-01",
+          "publisher": "PR Newswire",
+          "title": "Salt Security launches Salt Code, the first agentic security solution to enforce security policies inside AI coding assistants",
+          "url": "https://www.prnewswire.com/news-releases/salt-security-launches-salt-code-the-first-agentic-security-solution-to-enforce-security-policies-inside-ai-coding-assistants-302786506.html"
+        },
+        {
+          "date": "2026-05-04",
+          "publisher": "PR Newswire",
+          "title": "Estee Preciado of Salt Security Spotlighted on the 2026 Women of the Channel List",
+          "url": "https://www.prnewswire.com/news-releases/estee-preciado-of-salt-security-spotlighted-on-the-2026-women-of-the-channel-list-302761045.html"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 6,
+    "knownDetailedFundingAmount": {
+      "amount": 271000000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestToEarliestKnownValuationMultiple": 208.62
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "reportedPartnerships": {
+      "note": "Provider event summaries with linked sources; not independently verified.",
+      "items": [
+        {
+          "date": "2025-12-03",
+          "description": "Salt Security announced an integration-based partnership with AWS WAF, allowing customers to use existing AWS WAF deployments to block MCP server abuse using Salt’s behavioural threat intelligence.",
+          "sources": [
+            {
+              "date": "2025-12-03",
+              "publisher": "EIN Presswire",
+              "title": "Salt Security Brings MCP Threat Protection to AWS WAF, Blocking AI Agent Abuse in Real Time",
+              "url": "https://www.einpresswire.com/article/872166580/salt-security-brings-mcp-threat-protection-to-aws-waf-blocking-ai-agent-abuse-in-real-time"
+            }
+          ]
+        },
+        {
+          "date": "2025-05-15",
+          "description": "Salt Security and Wiz have announced an expanded partnership and new integration, combining Salt's API security intelligence with Wiz's cloud security platform. This integration enables organizations to detect and respond to API and cloud security risks within a unified platform, enhancing threat detection, compliance, and incident response capabilities for customers of both companies.",
+          "sources": [
+            {
+              "date": "2025-05-15",
+              "publisher": "PR Newswire",
+              "title": "Salt Security and Wiz Join Forces to Combine Cloud and API Security",
+              "url": "https://www.prnewswire.com/news-releases/salt-security-and-wiz-join-forces-to-combine-cloud-and-api-security-302455827.html"
+            }
+          ]
+        },
+        {
+          "date": "2025-04-07",
+          "description": "Salt Security and CrowdStrike have announced a partnership to integrate API security solutions with the CrowdStrike Falcon platform. This collaboration aims to enhance API discovery, posture governance, and threat protection, providing real-time threat insights and improving API security posture for organizations.",
+          "sources": [
+            {
+              "date": "2025-04-07",
+              "publisher": "PR Newswire",
+              "title": "Salt Security and CrowdStrike Introduce Comprehensive Suite of API Security Integrations",
+              "url": "https://www.prnewswire.com/news-releases/salt-security-and-crowdstrike-introduce-comprehensive-suite-of-api-security-integrations-302421176.html"
+            }
+          ]
+        },
+        {
+          "date": "2024-12-17",
+          "description": "Salt Security and CrowdStrike have extended their partnership by integrating Salt's API security with CrowdStrike's Falcon Next-Gen SIEM, providing enhanced threat detection and response capabilities.",
+          "sources": [
+            {
+              "date": "2024-12-17",
+              "publisher": "PR Newswire",
+              "title": "Salt Security and CrowdStrike Extend Partnership by Integrating API Security with Falcon Next-Gen SIEM",
+              "url": "https://www.prnewswire.com/news-releases/salt-security-and-crowdstrike-extend-partnership-by-integrating-api-security-with-falcon-next-gen-siem-302332953.html"
+            }
+          ]
+        }
+      ]
+    },
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2026-08-02",
+      "growthChange90Days": 1,
+      "growthScore": 74,
+      "heatChange90Days": 0,
+      "heatScore": 73,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 26.26,
+        "timingEstimatePercent": {
+          "within6Months": 15.46,
+          "months6To11": 13.07,
+          "months12To24": 20.39,
+          "beyond24Months": 24.99
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.05
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Darktrace is an AI company that uses cybersecurity solutions to identify, prevent, and eliminate insider threats.",
+          "employeeRange": "1,001-5,000",
+          "name": "Darktrace",
+          "sharedCategories": [
+            "Cyber Security",
+            "Machine Learning",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Attack Surface Management",
+            "Security Information and Event Management (SIEM)",
+            "Threat Intelligence"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Noname Security develops software that protects organizations by identifying vulnerabilities and defending against attacks in API systems.",
+          "employeeRange": "251-500",
+          "name": "Noname Security",
+          "sharedCategories": [
+            "Cyber Security"
+          ],
+          "similarityScore": 98
+        },
+        {
+          "description": "Wallarm is an API security platform that automates real-time application protection and security testing for APIs, apps, and microservices.",
+          "employeeRange": "101-250",
+          "name": "Wallarm",
+          "sharedCategories": [
+            "Cyber Security",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Attack Surface Management",
+            "API Security",
+            "API and Bot Protection",
+            "API Analytics"
+          ],
+          "similarityScore": 89.707
+        },
+        {
+          "description": "Acronis unifies data protection & cybersecurity to deliver integrated, automated cyber protection to solve challenges of the digital world.",
+          "employeeRange": "1,001-5,000",
+          "name": "Acronis",
+          "sharedCategories": [
+            "Cyber Security",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Threat Intelligence"
+          ],
+          "similarityScore": 84.064
+        },
+        {
+          "description": "SentinelOne is an autonomous cybersecurity solution company.",
+          "employeeRange": "1,001-5,000",
+          "name": "SentinelOne",
+          "sharedCategories": [
+            "Cyber Security",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Attack Surface Management",
+            "Security Information and Event Management (SIEM)",
+            "Cloud Security Posture Management (CSPM)",
+            "Threat Intelligence"
+          ],
+          "similarityScore": 79.491
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $6,745,652 to $1,407,279,496, a 208.62x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 74 (+1 over 90 days) and market heat at 73 (+0).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Darktrace, Noname Security, Wallarm.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 205 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

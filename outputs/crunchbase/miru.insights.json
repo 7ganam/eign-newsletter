@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T15:53:08.447Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T15:53:08.353Z",
+    "url": "https://www.crunchbase.com/organization/miru"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Miru",
+      "shortDescription": "Miru develops an application allowing its users to experience any piece of furniture in AR.",
+      "description": "Miru develops an application allowing its users to experience any piece of furniture in AR.",
+      "website": "https://www.miruhome.com/",
+      "foundedYear": 2018,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Apps",
+        "Augmented Reality",
+        "E-Commerce",
+        "Smart Home"
+      ],
+      "sectors": [
+        "Apps",
+        "Commerce and Shopping",
+        "Consumer Electronics",
+        "Hardware",
+        "Real Estate",
+        "Software"
+      ],
+      "founders": [
+        "Rohan Relan"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2018-08-22",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2018-08-22",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2024-08-09",
+          "publisher": "FinSMES",
+          "title": "Miru Raises $20M in Series A Financing",
+          "url": "https://www.finsmes.com/2024/08/miru-raises-20m-in-series-a-financing.html"
+        },
+        {
+          "date": "2018-08-22",
+          "title": "Seed Round - Miru"
+        },
+        {
+          "date": "2018-08-21",
+          "publisher": "TechCrunch",
+          "title": "All 59 startups that launched today at Y Combinator’s S18 Demo Day 2",
+          "url": "https://techcrunch.com/2018/08/21/all-59-startups-that-launched-today-at-y-combinators-s18-demo-day-2/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -19,
+      "heatScore": 7
+    },
+    "modelPredictions": {
+      "funding": {
+        "generatedDate": "2025-09-27",
+        "probabilityPercent": 11.31,
+        "timingEstimatePercent": {
+          "within6Months": 14.04,
+          "months6To11": 12.07,
+          "months12To24": 19.29,
+          "beyond24Months": 24.79
+        }
+      },
+      "growth": {
+        "generatedDate": "2025-09-27",
+        "probabilityPercent": 55.17
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "IKEA Systems offers a wide range of well-designed, functional home furnishing products.",
+          "employeeRange": "10,001+",
+          "name": "IKEA",
+          "similarityScore": 97
+        },
+        {
+          "description": "Wayfair is a retail store that offers a wide range of home products such as outdoor, bedding, lighting, and appliances with online services.",
+          "employeeRange": "10,001+",
+          "name": "Wayfair",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Houzz is an online platform for home remodeling, architecture, interior design, decorating, landscaping, and home improvement.",
+          "employeeRange": "1,001-5,000",
+          "name": "Houzz",
+          "sharedCategories": [
+            "E-Commerce",
+            "Smart Home"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "VividWorks Ltd. offers innovative online 3D design-to-purchase SaaS platform solutions to the global market. We provide instantly",
+          "employeeRange": "51-100",
+          "name": "VividWorks",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Mazing offers end-to-end 3D modelling, AR-centric e-commerce platform development, web integration, and VR tours to various businesses.",
+          "employeeRange": "11-50",
+          "name": "Mazing",
+          "sharedCategories": [
+            "Augmented Reality"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include IKEA, Wayfair, Houzz.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

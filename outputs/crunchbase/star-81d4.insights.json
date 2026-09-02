@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:51:10.174Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:51:10.115Z",
+    "url": "https://www.crunchbase.com/organization/star-81d4"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "star",
+      "shortDescription": "Star develops internet applications, software, and artificial intelligence engines.",
+      "description": "Star develops internet applications, software solutions, and artificial intelligence engines. Its activities include cloud infrastructure through Sparkle Network and Android productivity applications through EXA Lab. The company builds software for web and mobile environments, including productivity tools and public information systems.",
+      "website": "https://starinc.xyz/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "industries": [
+        "Android",
+        "Artificial Intelligence (AI)",
+        "Cloud Infrastructure",
+        "Internet",
+        "Mobile Apps",
+        "Productivity Tools",
+        "Software",
+        "Web Apps"
+      ],
+      "sectors": [
+        "Apps",
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Internet Services",
+        "Mobile",
+        "Platforms",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Sparkle Network provides cloud infrastructure for data management, availability, security, and multi-location replication.",
+        "name": "Sparkle Network"
+      },
+      {
+        "description": "EXA Lab Apps are Android productivity applications designed for daily creativity and productivity tasks.",
+        "name": "EXA Lab Apps"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

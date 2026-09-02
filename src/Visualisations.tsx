@@ -264,16 +264,17 @@ function FundingLandscape({ data }: { data: FundingLandscapeResponse }) {
         })),
       })),
     }
-    const hierarchy = d3.hierarchy(hierarchyData)
+    const hierarchyRoot = d3.hierarchy(hierarchyData)
       .sum((item) => item.fundingUsd ?? 0)
-      .sort((left, right) => (right.value ?? 0) - (left.value ?? 0)) as LandscapeNode
+      .sort((left, right) => (right.value ?? 0) - (left.value ?? 0))
 
     voronoiTreemap()
       .clip(clip)
       .convergenceRatio(0.004)
       .maxIterationCount(80)
-      .prng(seededRandom(42))(hierarchy)
+      .prng(seededRandom(42))(hierarchyRoot)
 
+    const hierarchy = hierarchyRoot as LandscapeNode
     const leaves = hierarchy.leaves() as LandscapeNode[]
     const industries = hierarchy.children as LandscapeNode[]
     const circleArea = Math.PI * radius * radius

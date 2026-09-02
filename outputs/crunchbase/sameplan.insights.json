@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:06:48.589Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:06:48.532Z",
+    "url": "https://www.crunchbase.com/organization/sameplan"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Sameplan",
+      "shortDescription": "Sameplan is a customer-facing solution that aligns buyers and sellers throughout complex sales.",
+      "description": "Sameplan is a customer-facing outline of everything that needs to get done in a successful partnership.",
+      "website": "https://www.sameplan.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "CRM",
+        "Sales Automation",
+        "Software"
+      ],
+      "sectors": [
+        "Sales and Marketing",
+        "Software"
+      ],
+      "founders": [
+        "Brent D'Adamo",
+        "Carlo Candela"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 625000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2020-11-03",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2020-11-03",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2020-08-24",
+          "amount": {
+            "amount": 125000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "Draper University Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2021-05-05",
+          "title": "Sameplan acquired by Outreach"
+        },
+        {
+          "date": "2020-11-03",
+          "title": "Seed Round - Sameplan"
+        },
+        {
+          "date": "2020-08-24",
+          "title": "Pre Seed Round - Sameplan"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 2,
+    "knownDetailedFundingAmount": {
+      "amount": 625000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 80
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -12,
+      "heatScore": 44
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2025-07-26",
+        "probabilityPercent": 43.02
+      },
+      "growth": {
+        "generatedDate": "2025-07-26",
+        "probabilityPercent": 47.69
+      },
+      "ipo": {
+        "generatedDate": "2025-07-26",
+        "probabilityPercent": 1.59
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Clari is a revenue operations company that provides end-to-end sales analytics and a forecasting platform.",
+          "employeeRange": "501-1,000",
+          "name": "Clari",
+          "similarityScore": 97
+        },
+        {
+          "description": "Aligned is an AI-powered workspace designed for B2B sales teams, facilitating deals in a collaborative environment.",
+          "employeeRange": "51-100",
+          "name": "Aligned",
+          "sharedCategories": [
+            "Sales Automation",
+            "Software"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "emlen is a first-buyer enablement platform that enables business-to-business clients to create visually appealing digital sales rooms.",
+          "employeeRange": "11-50",
+          "name": "emlen",
+          "sharedCategories": [
+            "Sales Automation",
+            "Software"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "The best thing to ever happen to your sales team",
+          "employeeRange": "501-1,000",
+          "name": "Showpad",
+          "sharedCategories": [
+            "Sales Automation",
+            "Software"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Seismic is the global leader in AI-powered enablement, empowering go-to-market leaders to drive growth and deliver exceptional experiences.",
+          "employeeRange": "1,001-5,000",
+          "name": "Seismic",
+          "sharedCategories": [
+            "Sales Automation",
+            "Software"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $500,000, or 80% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Clari, Aligned, emlen.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

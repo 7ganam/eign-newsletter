@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:46:06.883Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:46:06.827Z",
+    "url": "https://www.crunchbase.com/organization/tweeks-io"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Tweeks.io",
+      "shortDescription": "Tweeks is an AI-powered browser extension that lets users customize how websites look and behave using natural language.",
+      "description": "Tweeks is an AI-powered browser extension that lets users customize how websites look and behave using natural language. The product allows users to describe desired changes in plain English, then generates and applies browser userscripts to restyle pages, hide elements, add features, or adjust layouts. Tweeks supports modifications across many popular sites and works with Chromium-based browsers and Firefox. Users can install community-created tweeks from a public library or create their own without writing JavaScript or understanding browser APIs. Each modification runs as a sandboxed userscript, and users can enable, disable, or remove tweeks on specific sites. Tweeks also exposes source code for public tweeks and maintains supporting services such as an online dashboard, documentation, and an engineering blog.",
+      "website": "https://tweeks.io/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Augmented Reality",
+        "Browser Extensions",
+        "Developer Tools",
+        "Digital Media",
+        "Personalization",
+        "Productivity Tools",
+        "Software",
+        "Web Browsers",
+        "Web Development"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Commerce and Shopping",
+        "Data and Analytics",
+        "Hardware",
+        "Internet Services",
+        "Media and Entertainment",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An AI-powered browser extension that generates userscripts from natural language to customize how websites look and behave.",
+        "name": "Tweeks Extension"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 11,
+      "growthScore": 87,
+      "heatChange90Days": 62,
+      "heatScore": 62
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.23
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 87 (+11 over 90 days) and market heat at 62 (+62).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:03:51.171Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:03:51.116Z",
+    "url": "https://www.crunchbase.com/organization/ryvn"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Ryvn",
+      "shortDescription": "Ryvn helps companies deploy, monitor, and manage applications in customer clouds.",
+      "website": "https://ryvn.ai/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Cloud Management",
+        "Developer Tools",
+        "PaaS",
+        "SaaS"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Internet Services",
+        "Software"
+      ],
+      "founders": [
+        "Albert Lam",
+        "Shardool Patel"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Enables deployment of applications directly into customer cloud accounts on AWS, GCP, or Azure with minimal configuration.",
+        "name": "Customer Cloud Deployment"
+      },
+      {
+        "description": "Supports deployment and management of applications in on-premises environments without requiring specialized DevOps expertise.",
+        "name": "On-Premises Deployment Support"
+      },
+      {
+        "description": "Provides automated provisioning of infrastructure including dedicated VPCs, Kubernetes clusters, and environment configurations for application deployment.",
+        "name": "Provisioning Infrastructure and Environment Management"
+      },
+      {
+        "description": "Automates continuous integration and continuous deployment workflows, enabling code deployment across multiple environments with support for rollbacks and gradual releases.",
+        "name": "CI/CD and Release Pipelines"
+      },
+      {
+        "description": "Offers centralized monitoring, logging, and alerting for deployed applications, including real-time metrics and health checks.",
+        "name": "Observability and Monitoring"
+      },
+      {
+        "description": "Delivers enterprise-grade security features including isolated networking, audit trails, and compliance support for regulatory requirements.",
+        "name": "Security and Compliance Controls"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2025-03-07",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2025-03-07",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 11038558,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2024-11-11",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 5993997,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 3,
+        "visibleNames": [
+          {
+            "name": "Alumni Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "SAV (Scale Asia Ventures)",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2025-03-07",
+          "title": "Seed Round - Ryvn"
+        },
+        {
+          "date": "2024-11-11",
+          "title": "Pre Seed Round - Ryvn"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1.84
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -3,
+      "growthScore": 50,
+      "heatChange90Days": -7,
+      "heatScore": 69
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 85.39
+      },
+      "funding": {
+        "generatedDate": "2026-06-20",
+        "probabilityPercent": 74.01,
+        "timingEstimatePercent": {
+          "within6Months": 99.97,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0.03
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 73.09
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 3.88
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Easiest way to deploy on AWS/GCP/Azure",
+          "employeeRange": "11-50",
+          "name": "Porter",
+          "sharedSpecialties": [
+            "Managed Private Cloud",
+            "Container and Kubernetes Platform Services",
+            "CI/CD Platform",
+            "Log Management",
+            "Virtual Private Cloud",
+            "Cloud Operations and FinOps",
+            "Infrastructure as Code"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Qovery provides a DevOps automation platform that enables engineering teams to deploy, observe, secure, and optimize cloud infrastructure.",
+          "employeeRange": "11-50",
+          "name": "Qovery",
+          "sharedSpecialties": [
+            "Container and Kubernetes Platform Services",
+            "CI/CD Platform",
+            "Cloud Security Posture Management (CSPM)",
+            "Cloud Operations and FinOps",
+            "Infrastructure as Code",
+            "Dedicated Cloud Environments"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Nutanix is a cloud software company that provides infrastructure and management platforms for private, hybrid, and multi-cloud environments.",
+          "employeeRange": "5,001-10,000",
+          "name": "Nutanix",
+          "sharedSpecialties": [
+            "Container and Kubernetes Platform Services",
+            "Cloud Operations and FinOps"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "Teleport is an infrastructure identity company provides access to infrastructure on a foundation of cryptographic identity and zero trust.",
+          "employeeRange": "101-250",
+          "name": "Teleport",
+          "similarityScore": 86
+        },
+        {
+          "description": "Humanitec empowers platform engineers to build the perfect Internal Developer Platform for the enterprise",
+          "employeeRange": "11-50",
+          "name": "Humanitec",
+          "sharedSpecialties": [
+            "Container and Kubernetes Platform Services",
+            "Configuration Management Automation",
+            "CI/CD Platform",
+            "Cloud Operations and FinOps",
+            "Infrastructure as Code"
+          ],
+          "similarityScore": 84
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $5,993,997 to $11,038,558, a 1.84x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 50 (-3 over 90 days) and market heat at 69 (-7).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Porter, Qovery, Nutanix.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

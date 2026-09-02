@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:13:26.819Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:13:26.766Z",
+    "url": "https://www.crunchbase.com/organization/portal-entryways"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Portal Entryways",
+      "shortDescription": "Portal Entryways upgrades existing handicap-accessible doors so they can be opened hands-free with any smartphone.",
+      "description": "Portal Entryways exists to create a world where people of any physical ability can get anywhere, enjoying an environment that is safe, convenient, accessible, inclusive, and collaborative. Portal Entryways leverages technology to empower millions of people around the world with physical and mobility type disabilities to have greater access to information, opportunities, events, and experiences to achieve the potential as human beings.",
+      "website": "https://www.portalentryways.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Provo, Utah, United States",
+      "geographicRegions": [
+        "Western US"
+      ],
+      "industries": [
+        "Electronics",
+        "Facilities Support Services",
+        "Mobile Devices"
+      ],
+      "sectors": [
+        "Administrative Services",
+        "Consumer Electronics",
+        "Hardware",
+        "Mobile"
+      ],
+      "founders": [
+        "Joshua Horne",
+        "Sam Lew"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 150000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2019-03-18",
+      "lastFundingType": "Convertible note",
+      "rounds": [
+        {
+          "announcedDate": "2019-03-18",
+          "amount": {
+            "amount": 150000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "type": "Convertible note"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Convertible Note"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 4,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2022-11-23",
+          "publisher": "Google Patent",
+          "title": "Automated door system",
+          "url": "https://patents.google.com/patent/US20230096986A1/en"
+        },
+        {
+          "date": "2022-11-07",
+          "publisher": "Google Patent",
+          "title": "Automated door system",
+          "url": "https://patents.google.com/patent/US20230053526A1/en"
+        },
+        {
+          "date": "2019-03-18",
+          "title": "Convertible Note - Portal Entryways"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 150000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -2,
+      "growthScore": 26,
+      "heatChange90Days": -13,
+      "heatScore": 44
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 43.16
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 16.04
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 24.99
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    },
+    "aiResearchSummary": {
+      "notFact": true,
+      "text": "Portal Entryways is engaged in research and development of automated door systems, as described in the title 'Automated door system.' The abstract details a system utilizing processors and computer-readable mediums with instructions to control door operations. This work focuses on enabling hands-free access to handicap-accessible doors, aligning with the company's goal of smartphone-based entry solutions. Their R&D centers on integrating automation and digital control for accessible entryways."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Convertible note round raised $150,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 26 (-2 over 90 days) and market heat at 44 (-13).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 4 timeline items but exposes 3 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

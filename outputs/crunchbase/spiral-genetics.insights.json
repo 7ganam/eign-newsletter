@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:46:05.006Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:46:04.950Z",
+    "url": "https://www.crunchbase.com/organization/spiral-genetics"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Spiral Genetics",
+      "shortDescription": "Spiral Genetics offers advanced bioinformatics tools for population analysis, structural variant detection, and data compression.",
+      "description": "Spiral Genetics offers advanced bioinformatics tools for population analysis, structural variant detection, and data compression.\n\nAnchored Assembly accurately detects SNPs, indels, and structural variants ranging from 10bp to 100kbp.  Anchored Assembly uses data from HiSeq and MiSeq without special library prep. You can detect structural variants using your existing data.  We optimize Anchored Assembly to ensure a very low false positive rate and reliably detect your variants at the rate that you produce data.\n\nHow does Anchored Assembly work? \nSpiral’s Anchored Assembly uses direct, de novo read overlap assembly to accurately detect SNPs, indels, and structural variants.\nApplication of read overlap assembly to high-coverage whole genome data is a challenge because of its computational demands. Anchored Assembly reduces this computational complexity by focusing analysis on non-reference sequence regions.\nWe map variant sequences to specific genome locations by “anchoring”, or matching the ends of the assembled variant, to unique sequences present in the reference genome. Assembly begins from these reference-anchored reads and traverses variant regions by constructing a read overlap graph.\n\nAnchored Asssembly is available via Cloud or Cluster.\n\nFeatures include:\nRead Alignment (BWA, Bowtie and T-Map),\nSNPs and Indels (SOAP and Maq),\nAssembly Based Variant Detection,\nEffect Prediction,\nAssociated Gene and Pathways,\nAssociated Phenotypes and Disease,\nKEGG, OMIM, LOVD and PharmGKB Links,\nEnsembl Browser Display,\nUpload/Download Common Data Formats,\nCloud and Cluster Versions,\nIon Torrent Plugin to stream data directly to Spiral Cloud",
+      "website": "http://www.spiralgenetics.com/",
+      "foundedYear": 2009,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Seattle, Washington, United States",
+      "geographicRegions": [
+        "Greater Seattle Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Bioinformatics",
+        "Enterprise Software",
+        "Internet"
+      ],
+      "sectors": [
+        "Biotechnology",
+        "Data and Analytics",
+        "Information Technology",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Adina Mangubat",
+        "Jeremy Bruestle"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A genomics analysis platform designed for population analysis, structural variant detection, and data compression.",
+        "name": "BioGraph genomics analysis platform"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 4415591,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 7,
+      "detailedRoundCount": 7,
+      "lastFundingDate": "2021-01-01",
+      "lastFundingType": "Venture round",
+      "rounds": [
+        {
+          "announcedDate": "2021-01-01",
+          "investorCount": 2,
+          "type": "Venture round"
+        },
+        {
+          "announcedDate": "2019-04-01",
+          "investorCount": 2,
+          "type": "Convertible note"
+        },
+        {
+          "announcedDate": "2019-03-18",
+          "amount": {
+            "amount": 150000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "type": "Venture round"
+        },
+        {
+          "announcedDate": "2019-01-01",
+          "investorCount": 1,
+          "type": "Angel"
+        },
+        {
+          "announcedDate": "2016-05-10",
+          "amount": {
+            "amount": 350000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Convertible note"
+        },
+        {
+          "announcedDate": "2013-03-12",
+          "amount": {
+            "amount": 3215591,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Draper Fisher Jurvetson"
+          ],
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2012-08-10",
+          "amount": {
+            "amount": 700000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 9,
+        "visibleNames": [
+          {
+            "name": "415",
+            "rounds": [
+              "Convertible Note"
+            ]
+          },
+          {
+            "name": "Abdulrahman Binghaith Alsayari",
+            "rounds": [
+              "Angel Round"
+            ]
+          },
+          {
+            "name": "Bossa Invest",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "CP Ventures",
+            "rounds": [
+              "Convertible Note"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Draper Fisher Jurvetson",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "EverHaüs",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "Outlines Venture Group",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "TCA Venture Group",
+            "rounds": [
+              "Convertible Note"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Venture round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 37,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2021-01-01",
+          "title": "Venture Round - Spiral Genetics"
+        },
+        {
+          "date": "2019-04-01",
+          "title": "Convertible Note - Spiral Genetics"
+        },
+        {
+          "date": "2019-03-21",
+          "publisher": "GeekWire",
+          "title": "Spiral Genetics re-launches, inks Microsoft deal to predict heart disease with the human genome",
+          "url": "https://www.geekwire.com/2019/spiral-genetics-re-launches-inks-microsoft-partnership-predict-heart-disease-human-genome/"
+        },
+        {
+          "date": "2019-03-18",
+          "title": "Venture Round - Spiral Genetics"
+        },
+        {
+          "date": "2019-03-15",
+          "publisher": "Forbes",
+          "title": "After Selling Her Genetic Data Mining Software Company, A 32-Year-Old CEO Relaunches It With A Microsoft Partnership",
+          "url": "https://www.forbes.com/sites/elliekincaid/2019/03/15/after-selling-her-genetic-data-mining-software-company-a-32-year-old-ceo-relaunches-it-with-a-microsoft-partnership/"
+        },
+        {
+          "date": "2019-01-01",
+          "title": "Angel Round - Spiral Genetics"
+        },
+        {
+          "date": "2017-01-23",
+          "title": "Spiral Genetics acquired by Fabric Genomics (formerly Omicia)"
+        },
+        {
+          "date": "2016-06-25",
+          "publisher": "The Economist",
+          "title": "All about the base",
+          "url": "http://www.economist.com/news/business/21701143-new-businesses-eye-opportunities-managing-genome-data-all-about-base"
+        },
+        {
+          "date": "2016-05-10",
+          "title": "Convertible Note - Spiral Genetics"
+        },
+        {
+          "date": "2015-12-14",
+          "publisher": "Mixergy Interviews",
+          "title": "How Adina Mangubat built a software company for analyzing DNA (with no programming skills)",
+          "url": "http://mixergy.com/interviews/adina-mangubat-spiral-genetics"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 4,
+    "knownDetailedFundingAmount": {
+      "amount": 4415591,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -6,
+      "heatScore": 34
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Illumina is an innovative technology and revolutionary assays aiming the analyze genetic variation and function.",
+          "employeeRange": "5,001-10,000",
+          "name": "Illumina",
+          "similarityScore": 95
+        },
+        {
+          "description": "PacBio is a biotechnology company that designs, develops, and manufactures sequencing systems.",
+          "employeeRange": "501-1,000",
+          "name": "PacBio",
+          "similarityScore": 93
+        },
+        {
+          "description": "Oxford Nanopore Technologies is a biotechnology company that develops and commercializes nanopore sequencing technology.",
+          "employeeRange": "1,001-5,000",
+          "name": "Oxford Nanopore Technologies",
+          "similarityScore": 91
+        },
+        {
+          "description": "The Broad Institute brings together a diverse group of individuals from across its partner institutions to confront biomedical challenges.",
+          "employeeRange": "1,001-5,000",
+          "name": "Broad Institute",
+          "similarityScore": 89
+        },
+        {
+          "description": "DNAnexus develops a cloud platform and global network designed for scientific collaboration and accelerated discovery.",
+          "employeeRange": "251-500",
+          "name": "DNAnexus",
+          "sharedCategories": [
+            "Bioinformatics"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Illumina, PacBio, Oxford Nanopore Technologies.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 37 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

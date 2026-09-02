@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:49:22.233Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:49:22.179Z",
+    "url": "https://www.crunchbase.com/organization/unfurl"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Unfurl",
+      "shortDescription": "Unfurl is the Netflix of the restaurant industry",
+      "description": "Unfurl is a virtual restaurant hall. We offer our customers personalized access to the best local restaurant brands based on the new Curation-as-a-Service (CaaS) concept. We cover the entire value chain from click to fork.",
+      "website": "https://unfurlcuisine.com/",
+      "foundedYear": 2019,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "San Mateo, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Catering",
+        "Food and Beverage",
+        "Restaurants",
+        "Virtual Reality"
+      ],
+      "sectors": [
+        "Food and Beverage",
+        "Hardware",
+        "Software"
+      ],
+      "founders": [
+        "Alex Harris",
+        "Chris Tara-Browne",
+        "Liudmila Kokorich",
+        "Mikhail Kokorich"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2021-03-22",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2021-03-22",
+          "investorCount": 2,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "AvanTech Ventures",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2021-03-22",
+          "title": "Pre Seed Round - Unfurl"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -8,
+      "heatScore": 63
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Online training from restaurant & hospitality experts.",
+          "employeeRange": "11-50",
+          "name": "DiscoverLink",
+          "similarityScore": 94
+        },
+        {
+          "description": "Schoox provides the leading SaaS corporate learning and development platform specializing in organizations with frontline workers.",
+          "employeeRange": "251-500",
+          "name": "Schoox",
+          "similarityScore": 91
+        },
+        {
+          "description": "Waitrainer+™ is the emerging leader of web-based training for the restaurant and hospitality industries.",
+          "employeeRange": "1-10",
+          "name": "Waitrainer",
+          "similarityScore": 88
+        },
+        {
+          "description": "Moxie is a tool for freelancers to grow their business.",
+          "employeeRange": "11-50",
+          "name": "Moxie",
+          "similarityScore": 86
+        },
+        {
+          "description": "Axonify provides e-learning software, interval reinforcement solutions, and gamified learning.",
+          "employeeRange": "251-500",
+          "name": "Axonify",
+          "similarityScore": 84
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include DiscoverLink, Schoox, Waitrainer.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

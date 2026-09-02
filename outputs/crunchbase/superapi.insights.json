@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:03:20.744Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:03:20.688Z",
+    "url": "https://www.crunchbase.com/organization/superapi"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "SuperAPI",
+      "shortDescription": "SuperAPI is an API gateway that makes APIs cacheable.",
+      "website": "https://trysuperapi.com/",
+      "foundedYear": 2022,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Bengaluru, Karnataka, India",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)"
+      ],
+      "industries": [
+        "Developer APIs",
+        "Information Technology",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Software"
+      ],
+      "founders": [
+        "Adithya Kavuluru",
+        "Aditya Agrawal"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An API gateway that caches API responses to reduce latency and improve response times by monitoring database changes and invalidating cache selectively.",
+        "name": "SuperAPI Gateway"
+      },
+      {
+        "description": "A system that connects to the database replication stream to detect data changes in real-time for intelligent cache invalidation.",
+        "name": "Database Change Monitoring"
+      },
+      {
+        "description": "A feature to define which API routes to cache and how they relate to database tables for precise cache management.",
+        "name": "API Endpoint Configuration"
+      },
+      {
+        "description": "A dashboard providing real-time insights into API request rates, cache hit rates, latencies, and cache invalidation patterns.",
+        "name": "SuperAPI Metrics Dashboard"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2023-04-05",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2023-04-05",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 4007571,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 4,
+      "includedUniqueCount": 4,
+      "items": [
+        {
+          "date": "2025-07-13",
+          "publisher": "Paypers",
+          "title": "SuperAPI and Payroo partner with Monoova",
+          "url": "https://thepaypers.com/fintech/news/superapi-and-payroo-partner-with-monoova"
+        },
+        {
+          "date": "2025-07-07",
+          "publisher": "PYMNTS.com",
+          "title": "Monoova Teams With SuperAPI and Payroo to Tackle ‘Antiquated’ Payroll",
+          "url": "https://www.pymnts.com/payroll/2025/monoova-teams-with-superapi-and-payroo-to-tackle-antiquated-payroll/"
+        },
+        {
+          "date": "2025-07-06",
+          "publisher": "Australian FinTech",
+          "title": "Monoova, SuperAPI and Payroo launch one-click payroll and super solution",
+          "url": "https://australianfintech.com.au/monoova-superapi-and-payroo-launch-one-click-payroll-and-super-solution/"
+        },
+        {
+          "date": "2023-04-05",
+          "title": "Pre Seed Round - SuperAPI"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "reportedPartnerships": {
+      "note": "Provider event summaries with linked sources; not independently verified.",
+      "items": [
+        {
+          "date": "2025-07-13",
+          "description": "SuperAPI and Payroo have announced a new partnership with Monoova, aiming to collaborate in the fintech and financial services sector.",
+          "sources": [
+            {
+              "date": "2025-07-13",
+              "publisher": "Paypers",
+              "title": "SuperAPI and Payroo partner with Monoova",
+              "url": "https://thepaypers.com/fintech/news/superapi-and-payroo-partner-with-monoova"
+            }
+          ]
+        }
+      ]
+    },
+    "crunchbaseMomentum": {
+      "growthChange90Days": -3,
+      "growthScore": 21,
+      "heatChange90Days": -10,
+      "heatScore": 36
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 48.75
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 30.38,
+        "timingEstimatePercent": {
+          "within6Months": 15.94,
+          "months6To11": 13.4,
+          "months12To24": 20.73,
+          "beyond24Months": 25
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 82.66
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 60.92
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Kong Inc. is the AI connectivity company building the layer AI needs to reach its full potential with AI governance from day one.",
+          "employeeRange": "1,001-5,000",
+          "name": "Kong",
+          "sharedCategories": [
+            "Developer APIs"
+          ],
+          "sharedSpecialties": [
+            "API Integration",
+            "API Gateway",
+            "API Management",
+            "API Analytics"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Fastly helps digital businesses keep pace with their customer expectations by delivering secure and online experiences.",
+          "employeeRange": "1,001-5,000",
+          "name": "Fastly",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "API Gateway"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "Tyk is an open source API gateway and management platform that provides on-premises, cloud/multi-cloud, and enterprise.",
+          "employeeRange": "101-250",
+          "name": "Tyk",
+          "sharedCategories": [
+            "Developer APIs",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "API Integration",
+            "Developer Analytics",
+            "API Gateway",
+            "API Management",
+            "API Analytics"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "Cloudflare is a web performance and security company that provides online services to protect and accelerate websites online.",
+          "employeeRange": "5,001-10,000",
+          "name": "Cloudflare",
+          "similarityScore": 86
+        },
+        {
+          "description": "Amazon Web Services provides information technology infrastructure services to businesses in the form of web services.",
+          "employeeRange": "10,001+",
+          "name": "Amazon Web Services",
+          "sharedSpecialties": [
+            "API Management"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $500,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $4,007,571 to $4,007,571, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 21 (-3 over 90 days) and market heat at 36 (-10).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Kong, Fastly, Tyk.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

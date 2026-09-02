@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:49:02.465Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:49:02.412Z",
+    "url": "https://www.crunchbase.com/organization/restocks"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Restocks",
+      "shortDescription": "Restocks provides instant notifications on your iPhone or Android when the brands you love release new items, restock or go on sale.",
+      "description": "Restocks offers its users with instant notifications when the brands they like releases new items, restocks, and go on sale. The company offers its users with commerce and builds engaging shopping experiences on mobile platforms. It is funded by Y Combinator and angel investors. It helps its users stay updated with the brands they like, choose the updates they care about, view recent releases, restocks, and price drops, check stock and buy without leaving the app, and save profiles to check out.\n\nRestocks is a U.S.-based company that was founded in 2015.",
+      "website": "https://www.restocks.io/",
+      "foundedYear": 2015,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Android",
+        "Brand Marketing",
+        "Sales"
+      ],
+      "sectors": [
+        "Mobile",
+        "Platforms",
+        "Sales and Marketing",
+        "Software"
+      ],
+      "founders": [
+        "Luke Miles"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2016-03-22",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2016-03-22",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2018-08-07",
+          "publisher": "Law Technology Review",
+          "title": "After Accounting Firm Raid, Dentons' Singapore Affiliate Restocks",
+          "url": "https://www.law.com/international/2018/08/07/dentons-rodyk-hires-corporate-partner-in-singapore/"
+        },
+        {
+          "date": "2016-03-22",
+          "title": "Pre Seed Round - Restocks"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -10,
+      "heatScore": 1
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Sole Retriever is a sneaker and streetwear media firm that focuses on sneaker news and raffles.",
+          "employeeRange": "11-50",
+          "name": "Sole Retriever",
+          "similarityScore": 95
+        },
+        {
+          "description": "SoleSavy is a step into a genuine collective of sneaker culture.",
+          "employeeRange": "11-50",
+          "name": "SoleSavy",
+          "similarityScore": 93
+        },
+        {
+          "description": "Monitoro is a no-code tool to react to website changes. Get alerts & connect integrations to popular no-code tools.",
+          "employeeRange": "1-10",
+          "name": "Monitoro",
+          "similarityScore": 85
+        },
+        {
+          "description": "Ashbury Park Press is a weekly newspaper that covers the latest local news in the Monmouth and Ocean counties throughout New Jersey.",
+          "employeeRange": "5,001-10,000",
+          "name": "Asbury Park Press",
+          "similarityScore": 81
+        },
+        {
+          "description": "The world's #1 page monitoring agent with 2 million users in all verticals and teams from 85% of Fortune 500.",
+          "employeeRange": "11-50",
+          "name": "Visualping",
+          "similarityScore": 79
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $120,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Sole Retriever, SoleSavy, Monitoro.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

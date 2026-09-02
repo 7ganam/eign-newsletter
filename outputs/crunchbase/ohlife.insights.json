@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:24:31.657Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:24:31.600Z",
+    "url": "https://www.crunchbase.com/organization/ohlife"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Thiarec",
+      "shortDescription": "OhLife is a personal journal that you'll actually keep. Every day we send you an email asking “How'd your day go?” You type as much as you",
+      "description": "OhLife is a personal journal that you'll actually keep. Every day we send you an email asking “How'd your day go?” You type as much as you want and hit reply. We accumulate your entire journal through these daily email replies.",
+      "website": "http://ohlife.com/",
+      "foundedYear": 2002,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Email",
+        "Internet",
+        "Social Media",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Internet Services",
+        "Media and Entertainment",
+        "Messaging and Telecommunications",
+        "Software"
+      ],
+      "founders": [
+        "Shawn Gupta"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2010-08-02",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2010-08-02",
+          "investorCount": 1,
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2008-08-22",
+          "investorCount": 1,
+          "type": "Venture round"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round",
+              "Venture round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 4,
+      "includedUniqueCount": 4,
+      "items": [
+        {
+          "date": "2011-01-07",
+          "publisher": "Fast Company",
+          "title": "Startup CEO New Year's Resolutions",
+          "url": "http://www.fastcompany.com/1715014/startup-ceo-new-years-resolutions"
+        },
+        {
+          "date": "2010-10-26",
+          "publisher": "Xconomy",
+          "title": "OhLife's Daily E-Mails Motivate a New Wave of Online Diarists | Xconomy",
+          "url": "http://www.xconomy.com/san-francisco/2010/10/26/ohlifes-daily-e-mails-motivate-a-new-wave-of-online-diarists/"
+        },
+        {
+          "date": "2010-08-02",
+          "title": "Seed Round - Thiarec"
+        },
+        {
+          "date": "2008-08-22",
+          "title": "Venture Round - Thiarec"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -8,
+      "heatScore": 36
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Day One is a personal journaling app, with location, metadata, tracking, self-improvement, and end-to-end encryption to multiple platforms.",
+          "employeeRange": "11-50",
+          "name": "Day One",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Your personal journal in the cloud",
+          "employeeRange": "1-10",
+          "name": "Penzu",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "750Words is an online tool for writing exercises and inspiration.",
+          "employeeRange": "1-10",
+          "name": "750Words",
+          "sharedCategories": [
+            "Social Media"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Private email journal & daily reflection.",
+          "employeeRange": "1-10",
+          "name": "Dabble Me",
+          "sharedCategories": [
+            "Email"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Momento App is an IT company that offers app to collect photos, videos, daily activities and form as a journal services.",
+          "employeeRange": "1-10",
+          "name": "Momento App",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 82
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Day One, Penzu, 750Words.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

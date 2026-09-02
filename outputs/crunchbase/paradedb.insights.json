@@ -1,0 +1,401 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:46:50.598Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:46:50.549Z",
+    "url": "https://www.crunchbase.com/organization/paradedb"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "ParadeDB",
+      "shortDescription": "One Postgres for your application data, full-text search, vector retrieval, and aggregations.",
+      "description": "Search without a second system. One Postgres for your application data, full-text search, vector retrieval, and aggregations.",
+      "website": "https://paradedb.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Analytics",
+        "Database",
+        "Enterprise Software",
+        "Information Technology",
+        "Search Engine",
+        "Semantic Search"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Internet Services",
+        "Software"
+      ],
+      "founders": [
+        "Ming Ying",
+        "Philippe Noël"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A Postgres extension that transforms Postgres into a search and analytics engine for real-time, update-heavy workloads without requiring external search services.",
+        "name": "ParadeDB"
+      },
+      {
+        "description": "A Postgres extension enabling efficient storage and retrieval of sparse vectors using HNSW indexing for similarity search within Postgres.",
+        "name": "pg_sparse"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 14125000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 3,
+      "detailedRoundCount": 3,
+      "lastFundingDate": "2025-03-24",
+      "lastFundingType": "Series A",
+      "rounds": [
+        {
+          "announcedDate": "2025-03-24",
+          "amount": {
+            "amount": 12000000,
+            "currency": "USD"
+          },
+          "investorCount": 3,
+          "leadInvestors": [
+            "Craft Ventures"
+          ],
+          "postMoneyValuation": {
+            "amount": 70156595,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2023-09-01",
+          "amount": {
+            "amount": 2000000,
+            "currency": "USD"
+          },
+          "investorCount": 17,
+          "leadInvestors": [
+            "Stealth Mode"
+          ],
+          "postMoneyValuation": {
+            "amount": 16153393,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2023-06-09",
+          "amount": {
+            "amount": 125000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 3585953,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 18,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Craft Ventures",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "General Catalyst",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "JJ Fliegelman",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Liz Wessel",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Lynett Capital",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Nitay Joffe",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Soren Bramer Schmidt",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Stealth Mode",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Susa Ventures"
+          },
+          {
+            "name": "Team Ignite Ventures"
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Series A",
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 4,
+      "includedUniqueCount": 4,
+      "items": [
+        {
+          "date": "2025-07-15",
+          "publisher": "TechCrunch",
+          "title": "ParadeDB takes on Elasticsearch as interest in Postgres explodes amid AI boom",
+          "url": "https://techcrunch.com/2025/07/15/paradedb-takes-on-elasticsearch-as-interest-in-postgres-explodes-amid-ai-boom/"
+        },
+        {
+          "date": "2025-03-24",
+          "title": "Series A - ParadeDB"
+        },
+        {
+          "date": "2023-09-01",
+          "title": "Seed Round - ParadeDB"
+        },
+        {
+          "date": "2023-06-09",
+          "title": "Pre Seed Round - ParadeDB"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 3,
+    "knownDetailedFundingAmount": {
+      "amount": 14125000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 84.96,
+    "latestToEarliestKnownValuationMultiple": 19.56
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -4,
+      "growthScore": 85,
+      "heatChange90Days": -10,
+      "heatScore": 63
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 91.77
+      },
+      "funding": {
+        "generatedDate": "2026-06-20",
+        "probabilityPercent": 92.49,
+        "timingEstimatePercent": {
+          "within6Months": 99.9,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0.1
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 93.65
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 3.88
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Elasticsearch is an open-source analytics engine that can handle textual, numerical, geographic, structured, and unstructured data.",
+          "employeeRange": "1,001-5,000",
+          "name": "Elasticsearch",
+          "sharedCategories": [
+            "Database",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Knowledge Management",
+            "Vector Search",
+            "Vector Databases",
+            "Enterprise Search",
+            "Conversational Search"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Open-source search engine API",
+          "employeeRange": "11-50",
+          "name": "Meilisearch",
+          "sharedCategories": [
+            "Search Engine",
+            "Semantic Search"
+          ],
+          "sharedSpecialties": [
+            "Knowledge Management",
+            "Vector Search",
+            "Vector Databases",
+            "Hybrid Search",
+            "Enterprise Search"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "OpenSearch Project is an open search community that ingests, searches, visualizes, and analyses data.",
+          "employeeRange": "101-250",
+          "name": "OpenSearch Project",
+          "sharedCategories": [
+            "Search Engine",
+            "Analytics",
+            "Semantic Search"
+          ],
+          "sharedSpecialties": [
+            "Vector Search",
+            "Database Platform Services",
+            "Vector Databases",
+            "Enterprise Search",
+            "Data Pipelines"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Open source, typo tolerant search engine that delivers fast & relevant results out-of-the-box.",
+          "employeeRange": "1-10",
+          "name": "Typesense",
+          "sharedSpecialties": [
+            "Knowledge Management",
+            "Vector Search",
+            "Knowledge Repository Management",
+            "Database Platform Services",
+            "Vector Databases",
+            "Hybrid Search",
+            "Enterprise Search",
+            "Conversational Search"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Apache Software Foundation provides organizational, legal and financial support for Apache open-source software projects.",
+          "employeeRange": "1-10",
+          "name": "The Apache Software Foundation",
+          "sharedSpecialties": [
+            "Database Platform Services",
+            "Enterprise Search"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Series A round raised $12,000,000, or 84.96% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $3,585,953 to $70,156,595, a 19.56x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 85 (-4 over 90 days) and market heat at 63 (-10).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Elasticsearch, Meilisearch, OpenSearch Project.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

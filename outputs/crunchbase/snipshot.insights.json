@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:36:35.818Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:36:35.766Z",
+    "url": "https://www.crunchbase.com/organization/snipshot"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Snipshot",
+      "shortDescription": "Snipshot is an online photo editor enabling users to edit and enhance pictures.",
+      "description": "Snipshot is a photo editor that lets you start editing any photo with one click of a bookmarklet. You can use Snipshot to crop, resize, adjust colors, an automatically enhance you photos within your browser and then save it back to the web. There are a couple other photo editors in this category and Photoshop plans to get in as well.",
+      "website": "http://snipshot.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Sofia, Grad Sofiya, Bulgaria",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Photo Editing",
+        "Photography",
+        "Photo Sharing"
+      ],
+      "sectors": [
+        "Content and Publishing",
+        "Media and Entertainment"
+      ],
+      "founders": [
+        "Beau Hartshorne",
+        "Greg Dingle"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2007-01-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2007-01-01",
+          "investorCount": 1,
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2006-03-01",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 20,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2013-05-01",
+          "title": "Snipshot acquired by Ark"
+        },
+        {
+          "date": "2013-04-09",
+          "publisher": "The Next Web",
+          "title": "Inside That Traffic Data Concerning Y Combinator Companies",
+          "url": "http://thenextweb.com/insider/2013/04/09/inside-that-traffic-data-concerning-y-combinator-companies/"
+        },
+        {
+          "date": "2010-03-01",
+          "publisher": "Gigaom",
+          "title": "Google Picks Up Another Former Employee's Startup: Picnik",
+          "url": "https://gigaom.com/2010/03/01/google-picks-up-another-former-employees-startup-picnik/"
+        },
+        {
+          "date": "2009-10-29",
+          "publisher": "Wired News",
+          "title": "Startups Rise From Wreckage of NYC’s Financial System",
+          "url": "http://www.wired.com/2009/10/startups-rise-from-the-wreckage-of-new-yorks-financial-system"
+        },
+        {
+          "date": "2009-08-19",
+          "publisher": "CNet",
+          "title": "Seven Photoshop alternatives: Online image editors reviewed and rated - CNET",
+          "url": "http://www.cnet.com/news/seven-photoshop-alternatives-online-image-editors-reviewed-and-rated/"
+        },
+        {
+          "date": "2009-02-25",
+          "publisher": "CNet",
+          "title": "15 online photo editors compared",
+          "url": "http://www.cnet.com/news/15-online-photo-editors-compared/"
+        },
+        {
+          "date": "2008-03-14",
+          "publisher": "TechCrunch",
+          "title": "Demo Day: Y Combinator's Spring Chicks | TechCrunch",
+          "url": "http://techcrunch.com/2007/03/09/demo-day-y-combinators-spring-chicks/"
+        },
+        {
+          "date": "2008-02-08",
+          "publisher": "CNet",
+          "title": "Box.net adds group collaboration to personal Web storage - CNET",
+          "url": "http://www.cnet.com/news/box-net-adds-group-collaboration-to-personal-web-storage/"
+        },
+        {
+          "date": "2007-11-14",
+          "publisher": "Gigaom",
+          "title": "Free Online Storage Service Reaches Out to Other Free Apps",
+          "url": "https://gigaom.com/2007/11/13/free-online-storage-service-reaches-out-to-other-free-apps/"
+        },
+        {
+          "date": "2007-10-19",
+          "publisher": "CNet",
+          "title": "Flickr to use Picnik for online photo editing - CNET",
+          "url": "http://www.cnet.com/news/flickr-to-use-picnik-for-online-photo-editing/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -1,
+      "heatScore": 33
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 20 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

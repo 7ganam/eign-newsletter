@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:01:19.162Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:01:19.109Z",
+    "url": "https://www.crunchbase.com/organization/pier"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Pier",
+      "shortDescription": "Pier is a PR & marketing agency delivering superb strategic consultancy, inspired creative solutions and original marketing campaigns.",
+      "website": "https://www.pierweare.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Felixstowe, Suffolk, United Kingdom",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Consulting",
+        "Marketing",
+        "Public Relations"
+      ],
+      "sectors": [
+        "Professional Services",
+        "Sales and Marketing"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 0,
+      "growthScore": 84,
+      "heatChange90Days": -17,
+      "heatScore": 54
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 77.63
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "MHP Group is a PR firm that offers crisis and risk, media training, design, digital, brand strategy, and communication services.",
+          "employeeRange": "11-50",
+          "name": "MHP Group",
+          "sharedCategories": [
+            "Consulting",
+            "Public Relations"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Golin offers businesses with technology solutions and insights that focus on connecting brands with their customers.",
+          "employeeRange": "501-1,000",
+          "name": "Golin",
+          "sharedCategories": [
+            "Public Relations"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Mæ is an architecture company for urban design and social infrastructure sectors.",
+          "employeeRange": "11-50",
+          "name": "Mæ",
+          "similarityScore": 92
+        },
+        {
+          "description": "Edelman, a public relations firm, offers analysis, advertising, marketing, branding, and content and strategy management services.",
+          "employeeRange": "5,001-10,000",
+          "name": "Edelman",
+          "sharedCategories": [
+            "Marketing",
+            "Public Relations"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "Ketchum provides public relations, marketing, and corporate communications services worldwide.",
+          "employeeRange": "5,001-10,000",
+          "name": "Ketchum",
+          "sharedCategories": [
+            "Marketing",
+            "Public Relations"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 84 (+0 over 90 days) and market heat at 54 (-17).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include MHP Group, Golin, Mæ.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

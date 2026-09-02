@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:27:44.634Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:27:44.580Z",
+    "url": "https://www.crunchbase.com/organization/q2q-health"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Q2Q Health",
+      "shortDescription": "Quantitative to Qualitative Health is a digital platform that prevents patients from harmful drugs by providing health education.",
+      "website": "https://q2qhealth.com/",
+      "foundedYear": 2017,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Providence, Rhode Island, United States",
+      "geographicRegions": [
+        "East Coast",
+        "New England",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Education",
+        "Health Care"
+      ],
+      "sectors": [
+        "Education",
+        "Health Care"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2019-10-02",
+      "lastFundingType": "Non Equity Assistance",
+      "rounds": [
+        {
+          "announcedDate": "2019-10-02",
+          "investorCount": 1,
+          "type": "Non Equity Assistance"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "MassChallenge",
+            "rounds": [
+              "Non Equity Assistance"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2019-10-02",
+          "title": "Non Equity Assistance - Q2Q Health"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 0,
+      "heatScore": 51
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2025-10-25",
+        "probabilityPercent": 67.25
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

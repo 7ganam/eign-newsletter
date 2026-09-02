@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:54:57.863Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:54:57.808Z",
+    "url": "https://www.crunchbase.com/organization/value-voting"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Value Voting",
+      "shortDescription": "Value Voting develops political targeting software for advocacy groups.",
+      "description": "Value Voting is a political coordination and targeting tool for all types of organizations.\n\nThey match your members list to our enhanced voter file, show you which members are reliable voters, and determine who represents them.\n\nLearn how many verified voters you have collectively in a district. Understand who has the most electoral influence over an official and should take the lead on outreach.\n\nImprove the efficacy of your outreach to elected officials by using Value Voting to translate your member list into powerful verified voting data.",
+      "website": "https://www.valuevoting.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Antonio, Texas, United States",
+      "geographicRegions": [
+        "Southern US"
+      ],
+      "industries": [
+        "Government",
+        "Politics",
+        "Software"
+      ],
+      "sectors": [
+        "Government and Military",
+        "Software"
+      ],
+      "founders": [
+        "Can Sar",
+        "James Vaughan"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2017-08-21",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2017-08-21",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2017-08-21",
+          "title": "Pre Seed Round - Value Voting"
+        },
+        {
+          "date": "2017-08-10",
+          "publisher": "TechCrunch",
+          "title": "Value Voting launches from YC to supercharge the work of political advocates",
+          "url": "https://techcrunch.com/2017/08/10/value-voting-launches-from-yc-to-supercharge-the-work-of-political-advocates/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -7,
+      "heatScore": 39
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Catalist is a provider of voter file data and data-related services.",
+          "employeeRange": "51-100",
+          "name": "Catalist",
+          "sharedCategories": [
+            "Politics"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "The Resonate platform translates deep insights about people's values, preferences, and beliefs into more relevant marketing and advertising.",
+          "employeeRange": "101-250",
+          "name": "Resonate",
+          "similarityScore": 95
+        },
+        {
+          "description": "Campaign Nucleus is a SaaS platform for managing campaigns and organizations.",
+          "employeeRange": "11-50",
+          "name": "Campaign Nucleus",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Voter.Vote is a campaign outreach platform offering voter‑data targeting, AI‑driven timing, and multi‑channel engagement tools.",
+          "employeeRange": "1-10",
+          "name": "Voter.Vote",
+          "sharedCategories": [
+            "Politics"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Data driven political, marketing, and communication solutions",
+          "employeeRange": "51-100",
+          "name": "TargetSmart Communications",
+          "sharedCategories": [
+            "Politics",
+            "Software"
+          ],
+          "similarityScore": 84
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $120,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Catalist, Resonate, Campaign Nucleus.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:13:41.743Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:13:41.688Z",
+    "url": "https://www.crunchbase.com/organization/tare"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Tare",
+      "shortDescription": "Tare is a supplier of electronic digital scales and systems, mechanical scales, and scale parts.",
+      "website": "https://tare.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Londonderry, New Hampshire, United States",
+      "geographicRegions": [
+        "Greater Boston Area",
+        "East Coast",
+        "New England",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Industrial",
+        "Industrial Engineering",
+        "Supply Chain Management"
+      ],
+      "sectors": [
+        "Manufacturing",
+        "Science and Engineering",
+        "Transportation"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Devices that measure weight electronically for industrial and commercial use.",
+        "name": "Electronic Digital Scales and Systems"
+      },
+      {
+        "description": "Traditional scales that measure weight using mechanical components without electronic parts.",
+        "name": "Mechanical Scales"
+      },
+      {
+        "description": "Components and replacement parts for electronic and mechanical scales.",
+        "name": "Scale Parts"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 1,
+      "heatScore": 75
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 71.02
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "We have Force Guage often used to measure the force during a push or pull test.",
+          "name": "force gauge",
+          "sharedSpecialties": [
+            "Weighing Systems",
+            "Weighing Scales",
+            "Metrology and Measurement Equipment",
+            "Weighing Instruments and Indicators",
+            "Test and Measurement Equipment",
+            "Calibration and Instrumentation Services"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "RICE LAKE WEIGHING SYSTEMS is a manufacturer and distributor of weight-related products and process-control equipment.",
+          "employeeRange": "251-500",
+          "name": "RICE LAKE WEIGHING SYSTEMS",
+          "sharedCategories": [
+            "Industrial"
+          ],
+          "sharedSpecialties": [
+            "Weighing Systems",
+            "Weighing Scales",
+            "Metrology and Measurement Equipment",
+            "Weighing Instruments and Indicators"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Mettler Toledo is a manufacturer of industrial equipment like scales, X-ray machines, instruments and laboratory items.",
+          "employeeRange": "10,001+",
+          "name": "Mettler Toledo",
+          "sharedCategories": [
+            "Industrial"
+          ],
+          "sharedSpecialties": [
+            "Weighing Systems",
+            "POS Scales",
+            "Calibration and Instrumentation Services"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Adam Equipment provides balancing and scaling services customized for different sectors.",
+          "employeeRange": "101-250",
+          "name": "Adam Equipment",
+          "sharedSpecialties": [
+            "Weighing Systems",
+            "Point of Sale (POS) Hardware",
+            "POS Scales",
+            "Metrology and Measurement Equipment",
+            "Weighing Instruments and Indicators",
+            "Calibration and Instrumentation Services"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Detecto is a USA-made manufacturer of clinical, food service, retail POS, and logistics scales and related devices.",
+          "employeeRange": "251-500",
+          "name": "Detecto",
+          "sharedSpecialties": [
+            "Weighing Systems",
+            "Point of Sale (POS) Hardware",
+            "Weighing Scales",
+            "POS Scales",
+            "Metrology and Measurement Equipment",
+            "Weighing Instruments and Indicators"
+          ],
+          "similarityScore": 83
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include force gauge, RICE LAKE WEIGHING SYSTEMS, Mettler Toledo.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

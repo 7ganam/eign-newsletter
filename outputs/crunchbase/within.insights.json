@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:22:46.388Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:22:46.333Z",
+    "url": "https://www.crunchbase.com/organization/within"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Within Technologies",
+      "shortDescription": "Software company that develops design tools that aid in the exploitation of the design freedoms enabled by additive manufacturing.",
+      "description": "Within Technologies designs and develops 3D printing software for its clients.\n\nThe company’s range of software include Autodesk wihthin and Autodesk within medical. Autodesk within enables its users to verify and optimize lattice and skin elements. Autodesk within medical allows implant designers to create coatings for their implants to aid osseointegration.\n\nWithin Technologies was founded in 2008 by Siavash Mahdevi.",
+      "website": "http://www.withinlab.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "London, England, United Kingdom",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "3D Printing",
+        "Aerospace",
+        "Automotive",
+        "Medical Device"
+      ],
+      "sectors": [
+        "Health Care",
+        "Manufacturing",
+        "Science and Engineering",
+        "Transportation"
+      ],
+      "founders": [
+        "Siavash Mahdavi"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2014-10-26",
+          "title": "Within Technologies acquired by Autodesk"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 0,
+      "heatScore": 31
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

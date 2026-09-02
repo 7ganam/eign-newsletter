@@ -1,0 +1,257 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:26:56.428Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:26:56.373Z",
+    "url": "https://www.crunchbase.com/organization/silogy"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "SiLogy",
+      "shortDescription": "SiLogy is a company that building cloud-based design verification tools to help decrease integrated circuits' time to market.",
+      "description": "SiLogy is a company that building cloud-based design verification tools to help decrease integrated circuits' time to market.",
+      "website": "https://silogy.io/",
+      "foundedYear": 2023,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "New York, United States",
+      "geographicRegions": [
+        "Greater New York Area",
+        "East Coast",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Developer Tools",
+        "SaaS"
+      ],
+      "sectors": [
+        "Software"
+      ],
+      "founders": [
+        "Kay Li",
+        "Paul Kim"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An AI verification engineer tool that automates debugging of test failures using log files, code, and waveform files to identify bug sources in integrated circuit designs.",
+        "name": "Viv"
+      },
+      {
+        "description": "A test execution tool that supports running verification tests on most commercial simulators used in integrated circuit design verification.",
+        "name": "Silogy Test Runner"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2024-03-01",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2024-03-01",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 5934362,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2024-03-01",
+          "title": "Pre Seed Round - SiLogy"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -2,
+      "growthScore": 50,
+      "heatChange90Days": -1,
+      "heatScore": 54
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.02
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 60.13,
+        "timingEstimatePercent": {
+          "within6Months": 76.92,
+          "months6To11": 0.09,
+          "months12To24": 0,
+          "beyond24Months": 22.99
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-05-30",
+        "probabilityPercent": 63.69
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 3.89
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Synopsys is a software company providing electronic design automation (EDA), semiconductor IP, software quality, and security solutions.",
+          "employeeRange": "10,001+",
+          "name": "Synopsys",
+          "sharedCategories": [
+            "Developer Tools"
+          ],
+          "sharedSpecialties": [
+            "Logic Simulation",
+            "Test Automation Platforms"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Cadence Design Systems develops electronic design automation, software, hardware and silicon intellectual property technologies.",
+          "employeeRange": "10,001+",
+          "name": "Cadence Design Systems",
+          "sharedSpecialties": [
+            "Logic Simulation"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Aldec is an industry-leading Electronic Design Automation (EDA) company delivering innovative design creation, simulation.",
+          "employeeRange": "251-500",
+          "name": "Aldec",
+          "similarityScore": 91
+        },
+        {
+          "description": "Intel designs, manufactures and sells computer components and related products for business and consumer markets.",
+          "employeeRange": "10,001+",
+          "name": "Intel",
+          "similarityScore": 84
+        },
+        {
+          "description": "Verific Design Automation provides (System)Verilog, VHDL, and UPF front-ends to leading EDA, FPGA, and semiconductor companies.",
+          "employeeRange": "11-50",
+          "name": "Verific Design Automation",
+          "sharedSpecialties": [
+            "Logic Simulation"
+          ],
+          "similarityScore": 83
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $500,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $5,934,362 to $5,934,362, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 50 (-2 over 90 days) and market heat at 54 (-1).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Synopsys, Cadence Design Systems, Aldec.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

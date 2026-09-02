@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:55:01.130Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:55:01.081Z",
+    "url": "https://www.crunchbase.com/organization/risotto"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Risotto",
+      "shortDescription": "Risotto is a risograph print and design studio.",
+      "website": "https://www.risottostudio.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Glasgow, Glasgow City, United Kingdom",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Art",
+        "Printing"
+      ],
+      "sectors": [
+        "Content and Publishing",
+        "Media and Entertainment"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A stencil printing service using spot colors and soy inks to produce tactile, vibrant prints with low environmental impact.",
+        "name": "Risograph Printing Service"
+      },
+      {
+        "description": "A service allowing customers to upload their artwork and order custom Risograph prints with selectable paper types, quantities, and finishing options.",
+        "name": "Print Your Own Service"
+      },
+      {
+        "description": "A monthly subscription service delivering curated Risograph prints and print-related items to members.",
+        "name": "Riso Club Print Subscription"
+      },
+      {
+        "description": "Sales of blank A3 sheets and custom-cut paper for use in Risograph printing or other creative projects.",
+        "name": "Blank Paper Sales"
+      },
+      {
+        "description": "Educational resources including tutorials, FAQs, and how-to guides on preparing artwork and using Risograph printing techniques.",
+        "name": "Print Tutorials and Guides"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 1,
+      "heatScore": 69
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 22.48
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 74.83
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 7.86
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

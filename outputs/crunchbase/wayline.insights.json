@@ -1,0 +1,248 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:15:02.196Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:15:02.140Z",
+    "url": "https://www.crunchbase.com/organization/wayline"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Wayline",
+      "shortDescription": "Wayline is an AI based real estate voice and text assistance for property managers.",
+      "website": "https://wayline.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Assistive Technology",
+        "B2B",
+        "Real Estate"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Health Care",
+        "Other",
+        "Real Estate",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Eric Rowell",
+        "Jason Okra"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2025-09-09",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2025-09-09",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 4,
+          "postMoneyValuation": {
+            "amount": 5850704,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 4,
+        "visibleNames": [
+          {
+            "name": "Pioneer Fund",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "Rebel Fund",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "Valia Ventures",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2025-10-16",
+          "publisher": "CB Insights",
+          "title": "Y Combinator’s 2025 Summer Batch reveals focus on production-ready AI",
+          "url": "https://www.cbinsights.com/research/y-combinator-summer2025/"
+        },
+        {
+          "date": "2025-09-09",
+          "title": "Pre Seed Round - Wayline"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -1,
+      "growthScore": 89,
+      "heatChange90Days": -4,
+      "heatScore": 68
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.15
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "EliseAI is an AI-driven company that offers automation, streamlining workflows, and unique needs of housing and healthcare operations.",
+          "employeeRange": "251-500",
+          "name": "EliseAI",
+          "sharedCategories": [
+            "Real Estate",
+            "Artificial Intelligence (AI)"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "BetterBot offers automated property leasing assistance.",
+          "employeeRange": "11-50",
+          "name": "BetterBot",
+          "sharedCategories": [
+            "Real Estate"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "RealPage is a provider of cloud-based software for managing multi-family real estate.",
+          "employeeRange": "1,001-5,000",
+          "name": "RealPage",
+          "similarityScore": 93
+        },
+        {
+          "description": "AppFolio is a cloud business management solutions provider for the real estate industry.",
+          "employeeRange": "1,001-5,000",
+          "name": "AppFolio",
+          "similarityScore": 91
+        },
+        {
+          "description": "Buildium is a software company that provides cloud-based property management software to landlords, and many other parties.",
+          "employeeRange": "251-500",
+          "name": "Buildium",
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $500,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $5,850,704 to $5,850,704, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 89 (-1 over 90 days) and market heat at 68 (-4).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include EliseAI, BetterBot, RealPage.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:28:29.790Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:28:29.737Z",
+    "url": "https://www.crunchbase.com/organization/simcare-e2af"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "SimCare",
+      "shortDescription": "SimCare provides an AI clinical simulation platform with virtual patients for counseling and healthcare skills training.",
+      "description": "SimCare provides an AI clinical simulation platform that uses virtual patients and counseling avatars to support skills training. The platform enables students and trainees to conduct full counseling sessions with AI clients, practice building rapport, explore emotions, and plan treatment steps. It offers instant feedback on tone, empathy, communication, diagnostic accuracy, and other clinical skills. SimCare supports longitudinal interactions with the same simulated client, including follow-up sessions and messaging. Educational institutions and training programs use SimCare to embed simulation-based learning across curricula for psychology, counseling, social work, behavioral health, and related disciplines.",
+      "website": "https://simcare.ai/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "EdTech",
+        "Education",
+        "E-Learning",
+        "Health Care",
+        "Mental Health",
+        "Software",
+        "Virtual Reality"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Education",
+        "Hardware",
+        "Health Care",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "SimCare AI is a simulation platform with conversational AI clients for counseling and clinical skills training.",
+        "name": "SimCare AI"
+      },
+      {
+        "description": "FieldX is a practicum and placement management tool with reporting, forms, and AI insights for training programs.",
+        "name": "FieldX"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 14,
+      "growthScore": 91,
+      "heatChange90Days": 86,
+      "heatScore": 87
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 94
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 91 (+14 over 90 days) and market heat at 87 (+86).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

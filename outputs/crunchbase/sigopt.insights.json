@@ -1,0 +1,322 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:26:28.678Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:26:28.641Z",
+    "url": "https://www.crunchbase.com/organization/sigopt"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "SigOpt",
+      "shortDescription": "SigOpt’s API tunes the model’s parameters through state-of-the-art Bayesian optimization.",
+      "description": "SigOpt's REST API can be easily integrated into any existing ML workflow. SigOpt suggests parameter configurations, and you report their performance. They continuously refine their models to suggest the next best configuration to try. Their black-box optimization approach means you only need to send SigOpt the parameter space, and your performance metric, not the underlying training data or model.",
+      "website": "https://sigopt.com/",
+      "foundedYear": 2014,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Enterprise Software",
+        "Machine Learning",
+        "SaaS",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Software"
+      ],
+      "founders": [
+        "Patrick Hayes",
+        "Scott Clark"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Allows users to run SigOpt on their own servers, ensuring data privacy and enabling the organization and visualization of experiment progress.",
+        "name": "Self-hosted SigOpt server"
+      },
+      {
+        "description": "A lightweight version of SigOpt's core module that can be run in-memory for powering experiments with local computation.",
+        "name": "SigOpt-Lite"
+      },
+      {
+        "description": "Facilitates easier and more efficient learning of hyperparameters for models using XGBoost through SigOpt's integration.",
+        "name": "XGBoost Integration"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 8720000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 4,
+      "detailedRoundCount": 4,
+      "lastFundingDate": "2018-02-01",
+      "lastFundingType": "Venture round",
+      "rounds": [
+        {
+          "announcedDate": "2018-02-01",
+          "investorCount": 1,
+          "leadInvestors": [
+            "IQT"
+          ],
+          "type": "Venture round"
+        },
+        {
+          "announcedDate": "2016-08-24",
+          "amount": {
+            "amount": 6600000,
+            "currency": "USD"
+          },
+          "investorCount": 5,
+          "leadInvestors": [
+            "Andreessen Horowitz"
+          ],
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2015-06-16",
+          "amount": {
+            "amount": 2000000,
+            "currency": "USD"
+          },
+          "investorCount": 3,
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2015-03-22",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 8,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Andreessen Horowitz",
+            "rounds": [
+              "Series A",
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Blumberg Capital",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "DCVC",
+            "rounds": [
+              "Series A",
+              "Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "IQT",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "SGH CAPITAL",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Stanford University",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "SV Angel",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 29,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2021-03-26",
+          "publisher": "neurons.AI",
+          "title": "Kisaco Research: SigOpt is a Leader in AI Software",
+          "url": "https://neurons.ai/blog/news-stories/kisaco-research-sigopt-is-a-leader-in-ai-software-5/"
+        },
+        {
+          "date": "2020-10-31",
+          "publisher": "Pulse 2.0",
+          "title": "Why Intel (INTC) Is Buying SigOpt",
+          "url": "https://pulse2.com/why-intel-intc-is-buying-sigopt/"
+        },
+        {
+          "date": "2020-10-30",
+          "publisher": "Telecom Paper",
+          "title": "Intel to acquire SigOpt",
+          "url": "https://www.telecompaper.com/news/intel-to-acquire-sigopt--1359960"
+        },
+        {
+          "date": "2020-10-29",
+          "publisher": "TechCrunch",
+          "title": "Intel acquires SigOpt, a specialist in modeling optimization, to boost its AI business",
+          "url": "http://ow.ly/ol00102qKt6"
+        },
+        {
+          "date": "2020-10-29",
+          "title": "SigOpt acquired by Intel"
+        },
+        {
+          "date": "2020-10-29",
+          "publisher": "Intel Newsroom",
+          "title": "Intel to Acquire SigOpt to Scale AI Productivity and Performance",
+          "url": "https://intel.ly/3e9sins"
+        },
+        {
+          "date": "2020-10-29",
+          "publisher": "Datanami",
+          "title": "Intel Acquires Model Optimizer SigOpt",
+          "url": "http://ow.ly/eYUM50C6Bsv"
+        },
+        {
+          "date": "2020-10-29",
+          "publisher": "Silicon Angle",
+          "title": "Intel to acquire AI hyperparameter optimization startup SigOpt",
+          "url": "https://siliconangle.com/2020/10/29/intel-acquire-ai-hyperparameter-optimization-startup-sigopt/"
+        },
+        {
+          "date": "2018-02-01",
+          "title": "Venture Round - SigOpt"
+        },
+        {
+          "date": "2017-01-11",
+          "publisher": "WebWire Headlines",
+          "title": "CB Insights Reveals the AI 100 List At The Innovation Summit",
+          "url": "http://www.webwire.com/ViewPressRel.asp?aId=207210"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 3,
+    "knownDetailedFundingAmount": {
+      "amount": 8720000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -34,
+      "heatScore": 1
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "GitHub is a software company that offers code hosting services that allow developers to build software for open-source and private projects.",
+          "employeeRange": "1,001-5,000",
+          "name": "GitHub",
+          "sharedCategories": [
+            "SaaS",
+            "Software"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "Amazon Web Services provides information technology infrastructure services to businesses in the form of web services.",
+          "employeeRange": "10,001+",
+          "name": "Amazon Web Services",
+          "sharedCategories": [
+            "Machine Learning",
+            "Enterprise Software"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Google Cloud focuses on business challenges that head-on with cloud computing services from Google.",
+          "employeeRange": "10,001+",
+          "name": "Google Cloud",
+          "sharedCategories": [
+            "Machine Learning"
+          ],
+          "similarityScore": 86
+        },
+        {
+          "description": "Almanac Labs is a developer of an IoT platform intended for smart city enablers.",
+          "employeeRange": "11-50",
+          "name": "Almanac Labs",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include GitHub, Amazon Web Services, Google Cloud.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 29 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

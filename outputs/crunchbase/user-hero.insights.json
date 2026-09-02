@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:53:17.881Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:53:17.823Z",
+    "url": "https://www.crunchbase.com/organization/user-hero"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "User Hero",
+      "shortDescription": "Software to help you organize and quantify your user research.",
+      "description": "User Hero is a software platform that allows UX researchers and Product Managers organize all of their qualitative information. As a repository, we allow you to run reports and analytics on your qualitative data to extract insights, highlight trends, and track features related to user feedback.",
+      "website": "https://userhero.io/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Analytics",
+        "Product Research",
+        "Software"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Design",
+        "Software"
+      ],
+      "founders": [
+        "Adam Green",
+        "Emilie Lincoln"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2018-05-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2018-05-01",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 2189602,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2018-05-01",
+          "title": "Seed Round - User Hero"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -20,
+      "heatScore": 60
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 6.04,
+        "timingEstimatePercent": {
+          "within6Months": 15.34,
+          "months6To11": 12.98,
+          "months12To24": 20.3,
+          "beyond24Months": 24.98
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 61.13
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Dovetail is the only AI-first insights hub that automatically centralizes and transforms customer feedback into insights.",
+          "employeeRange": "101-250",
+          "name": "Dovetail",
+          "similarityScore": 98
+        },
+        {
+          "description": "Condens is a software tool that makes storing, analyzing and sharing user research data easier, faster and more enjoyable.",
+          "employeeRange": "11-50",
+          "name": "Condens",
+          "sharedCategories": [
+            "Software",
+            "Product Research"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Tag, Analyze, Search and Share All Your UX Research in One Place",
+          "employeeRange": "11-50",
+          "name": "Aurelius",
+          "sharedCategories": [
+            "Analytics"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Looppanel allows product & design teams to analyze and share insights from Zoom-based user interviews in minutes.",
+          "employeeRange": "1-10",
+          "name": "Looppanel",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "Ruttl is a feedback tool that allows you to make real-time edits and leave comments on live websites.",
+          "employeeRange": "11-50",
+          "name": "Ruttl",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 86
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $120,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $2,189,602 to $2,189,602, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Dovetail, Condens, Aurelius.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

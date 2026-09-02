@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:51:36.826Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:51:36.770Z",
+    "url": "https://www.crunchbase.com/organization/starjar"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "StarJar",
+      "shortDescription": "StarJar is a medical AI provider automation software platform.",
+      "description": "StarJar is a developer of an AI patient intake automation software designed to automate patient intake and reduce the time from referral to appointment.",
+      "website": "https://www.starjar.io/",
+      "foundedYear": 2023,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Mountain View, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Health Care",
+        "Software"
+      ],
+      "sectors": [
+        "Health Care",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Software that automates the extraction and processing of referral information to streamline patient intake and scheduling.",
+        "name": "AI Patient Intake Automation Software"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2025-04-15",
+          "title": "StarJar acquired by Plaud"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -33,
+      "heatScore": 1
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-05-19",
+        "probabilityPercent": 80.37
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Luma Health offers patient access, revenue cycle management, and patient relationship management.",
+          "employeeRange": "101-250",
+          "name": "Luma Health",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "sharedSpecialties": [
+            "Patient Engagement Platforms",
+            "Admissions and Patient Registration",
+            "Patient Portal",
+            "Appointment Scheduling and Reminder Services",
+            "Revenue Cycle Management",
+            "Health Systems Integration",
+            "Patient Experience Management"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Notable is the AI platform for healthcare operations.",
+          "employeeRange": "251-500",
+          "name": "Notable",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "sharedSpecialties": [
+            "Patient Engagement Platforms",
+            "Intelligent Document Processing",
+            "Admissions and Patient Registration",
+            "Patient Portal",
+            "Appointment Scheduling and Reminder Services",
+            "Revenue Cycle Management",
+            "Health Systems Integration",
+            "Patient Experience Management"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Phreesia is a healthcare centre that provides automated patient check-in processes for personal health.",
+          "employeeRange": "1,001-5,000",
+          "name": "Phreesia",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "sharedSpecialties": [
+            "Patient Engagement Platforms",
+            "Document Digitization and Management",
+            "Admissions and Patient Registration",
+            "Appointment Scheduling and Reminder Services",
+            "Revenue Cycle Management",
+            "Medical Records Management",
+            "Patient Experience Management"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Elation Health is a technology platform designed for independent primary care, delivering clinical-first solutions.",
+          "employeeRange": "101-250",
+          "name": "Elation Health",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "sharedSpecialties": [
+            "Patient Engagement Platforms",
+            "Patient Portal",
+            "Revenue Cycle Management",
+            "Health Systems Integration",
+            "Medical Records Management",
+            "Patient Experience Management"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Tebra provide independent healthcare practices with digital tools and support to thrive in a new era of healthcare.",
+          "employeeRange": "501-1,000",
+          "name": "Tebra",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "sharedSpecialties": [
+            "Patient Engagement Platforms",
+            "Patient Portal",
+            "Appointment Scheduling and Reminder Services",
+            "Revenue Cycle Management",
+            "Health Systems Integration",
+            "Medical Records Management",
+            "Patient Experience Management"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Luma Health, Notable, Phreesia.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

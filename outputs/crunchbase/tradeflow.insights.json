@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:36:34.088Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:36:34.033Z",
+    "url": "https://www.crunchbase.com/organization/tradeflow"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Tradeflow",
+      "shortDescription": "Tradeflow provides a technological framework for importers and exporters to manage their trading and purchasing activities.",
+      "website": "http://www.tradeflow.net/",
+      "foundedYear": 2003,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "51-100",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Seattle, Washington, United States",
+      "geographicRegions": [
+        "Greater Seattle Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Information Technology",
+        "Logistics",
+        "Trading Platform"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Information Technology",
+        "Lending and Investments",
+        "Transportation"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2019-11-08",
+          "publisher": "FinTech Futures",
+          "title": "DBS Bank unveils trade finance blockchain project",
+          "url": "https://www.fintechfutures.com/2019/11/dbs-bank-unveils-trade-finance-blockchain-project/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -14,
+      "heatScore": 59
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 65.24
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "e2open is an enterprise platform that offers supply chain management solutions.",
+          "employeeRange": "1,001-5,000",
+          "name": "e2open",
+          "sharedCategories": [
+            "Logistics"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "MIC is the worldwide leading provider of global customs and trade compliance software solutions.",
+          "employeeRange": "251-500",
+          "name": "MIC Customs Solutions",
+          "sharedCategories": [
+            "Information Technology"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Oracle is an integrated cloud application and platform services that sells a range of enterprise information technology solutions.",
+          "employeeRange": "10,001+",
+          "name": "Oracle",
+          "similarityScore": 90
+        },
+        {
+          "description": "Descartes provides cloud-based logistics and supply chain management solutions to improve productivity for businesses.",
+          "employeeRange": "1,001-5,000",
+          "name": "Descartes Systems Group",
+          "sharedCategories": [
+            "Logistics",
+            "Information Technology"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "AEB is a software developement company that provides software for foreign trade and logistics.",
+          "employeeRange": "501-1,000",
+          "name": "AEB",
+          "sharedCategories": [
+            "Logistics"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include e2open, MIC Customs Solutions, Oracle.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

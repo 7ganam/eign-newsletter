@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:36:48.566Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:36:48.517Z",
+    "url": "https://www.crunchbase.com/organization/rct-studio-1212"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "rct studio",
+      "shortDescription": "rct AI develops artificial intelligence tools and games for interactive entertainment and gaming applications.",
+      "description": "rct AI develops artificial intelligence technologies and tools for gaming and interactive entertainment. The company focuses on AI-generated content that powers intelligent non-player characters, dynamic storylines, and adaptive virtual worlds. Its cloud-based Chaos Box platform enables developers to create self-evolving virtual environments, creatures, and NPCs with real-time AI control. rct AI also creates games such as The Extractors, which showcase AI-driven NPC behavior and narrative generation. The company applies deep learning, reinforcement learning, natural language processing, and computer vision to build AI agent systems that support natural interaction between players and virtual characters.",
+      "website": "https://rct-studio.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "Los Angeles, California, United States",
+      "geographicRegions": [
+        "Greater Los Angeles Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Cloud Computing",
+        "Computer Vision",
+        "Gaming",
+        "Natural Language Processing",
+        "Software",
+        "Video Games"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Gaming",
+        "Information Technology",
+        "Internet Services",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Chaos Box is a cloud-based platform for creating intelligent, adaptive NPCs and virtual environments for games.",
+        "name": "Chaos Box"
+      },
+      {
+        "description": "The Extractors is a game that showcases AI-powered NPC interactions and dynamic story generation.",
+        "name": "The Extractors"
+      },
+      {
+        "description": "Intelligent NPC is an AI agent system for creating virtual characters with natural, immersive interaction in games.",
+        "name": "Intelligent NPC"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 85,
+      "heatScore": 86
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 41.23
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 76.06
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 23.17
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

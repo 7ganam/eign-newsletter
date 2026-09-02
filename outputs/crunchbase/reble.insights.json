@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:38:37.617Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:38:37.563Z",
+    "url": "https://www.crunchbase.com/organization/reble"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Reble",
+      "shortDescription": "Reble offers a software downloading solution for Windows that allows users to stream music from others who also havr Reble installed.",
+      "description": "Reble offers a software download, only for windows, that allows users to stream music from your friends who also have installed Reble.  It launched into public beta on Feb. 5th, 2008, and is a [Y Combinator](http://www.crunchbase.com/organization/y-combinator)-funded company.",
+      "website": "http://reble.fm/",
+      "foundedYear": 2007,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Music",
+        "Software",
+        "Venture Capital"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Lending and Investments",
+        "Media and Entertainment",
+        "Music and Audio",
+        "Software"
+      ],
+      "founders": [
+        "Vinay Pulim"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2007-06-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2007-06-01",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2013-05-11",
+          "publisher": "TechCrunch",
+          "title": "Yahoo Acquires Tech And Talent Of Frequent Flyer Flight Search Startup MileWise, And Shuts It Down | TechCrunch",
+          "url": "http://techcrunch.com/2013/05/09/frequent-flyer-flight-search-startup-milewises-talent-and-tech-acquired-by-yahoo/"
+        },
+        {
+          "date": "2008-02-05",
+          "publisher": "TechCrunch",
+          "title": "Reble, Reble, I Like Your Playlist",
+          "url": "http://www.techcrunch.com/2008/02/05/reble-reble-i-like-your-playlist/"
+        },
+        {
+          "date": "2007-06-01",
+          "title": "Seed Round - Reble"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -19,
+      "heatScore": 48
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Spotify is a commercial music streaming service that provides restricted digital content from a range of record labels and artists.",
+          "employeeRange": "1-10",
+          "name": "Spotify",
+          "sharedCategories": [
+            "Music"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Apple Music is a streaming service offering songs, albums, curated playlists, music videos, and live radio across devices.",
+          "employeeRange": "11-50",
+          "name": "Apple Music",
+          "sharedCategories": [
+            "Music"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Amazon Music is a music platform and online music store that connects fans, artists, and creators through music, podcasts, and culture.",
+          "employeeRange": "10,001+",
+          "name": "Amazon Music",
+          "sharedCategories": [
+            "Music"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Last.fm is an online music catalogue providing users with personalized recommendations based on their taste in music.",
+          "employeeRange": "51-100",
+          "name": "Last.fm",
+          "sharedCategories": [
+            "Music"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Napster enables users to discover, listen, and share music files with others.",
+          "employeeRange": "101-250",
+          "name": "Napster",
+          "sharedCategories": [
+            "Music"
+          ],
+          "similarityScore": 88
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Spotify, Apple Music, Amazon Music.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

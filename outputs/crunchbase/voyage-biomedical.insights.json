@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:11:45.545Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:11:45.492Z",
+    "url": "https://www.crunchbase.com/organization/voyage-biomedical"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Voyage Biomedical",
+      "shortDescription": "Voyage Biomedical is a medical device startup.",
+      "description": "Voyage Biomedical creates life-altering solutions to help patients for whom no acceptable alternatives exist. Our first endeavor is ending brain damage due to cerebral ischemia using our Voyage Brain Cooling System.",
+      "website": "https://voyage.bio/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Berkeley, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Health Care",
+        "Medical"
+      ],
+      "sectors": [
+        "Health Care"
+      ],
+      "founders": [
+        "Bridget Vaughan",
+        "Justin Olshavsky",
+        "Robert Schultz"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 150000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2019-04-20",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2019-04-20",
+          "amount": {
+            "amount": 150000,
+            "currency": "USD"
+          },
+          "investorCount": 3,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 3,
+        "visibleNames": [
+          {
+            "name": "Creative Destruction Lab",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "SkyDeck Berkeley",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2019-04-20",
+          "title": "Pre Seed Round - Voyage Biomedical"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 150000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -4,
+      "heatScore": 48
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Bardy Diagnostics is a developer of a cardiac monitor and arrhythmia detection device .",
+          "employeeRange": "11-50",
+          "name": "Bardy Diagnostics",
+          "sharedCategories": [
+            "Health Care",
+            "Medical"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "ZOLL Medical Corporation, an Asahi Kasei Group company, develops and markets medical devices and software solutions.",
+          "employeeRange": "1,001-5,000",
+          "name": "ZOLL Medical Corporation",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "similarityScore": 88
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $150,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

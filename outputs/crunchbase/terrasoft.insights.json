@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:22:43.523Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:22:43.476Z",
+    "url": "https://www.crunchbase.com/organization/terrasoft"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Terrasoft",
+      "shortDescription": "Terrasoft supplies integrated customer relationship management solutions to companies of various sizes and industries.",
+      "description": "Terrasoft supplies integrated customer relationship management solutions to companies of various sizes and industries.",
+      "website": "https://www.terrasoft.ru/",
+      "foundedYear": 2002,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "101-250",
+      "estimatedRevenueRange": "$50M-$100M",
+      "industries": [
+        "Information Technology",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Software"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -1,
+      "growthScore": 85,
+      "heatChange90Days": -12,
+      "heatScore": 29
+    },
+    "modelPredictions": {
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.13
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Agentic CRM & Workflow Platform with No-Code and AI at Its Core",
+          "employeeRange": "501-1,000",
+          "name": "Creatio",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Salesforce is a cloud-based software company that provides customer relationship management software and applications.",
+          "employeeRange": "10,001+",
+          "name": "Salesforce",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 96
+        },
+        {
+          "description": "Microsoft Dynamics SL is an enterprise resource planning (ERP) solution",
+          "name": "Dynamics SL",
+          "sharedCategories": [
+            "Software",
+            "Information Technology"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "HubSpot develops cloud-based, inbound marketing software that allows businesses to transform the way that they market online.",
+          "employeeRange": "5,001-10,000",
+          "name": "HubSpot",
+          "similarityScore": 92
+        },
+        {
+          "description": "Zoho is an IT company that offers cloud-based software for CRM, project management, finance, and human resource services.",
+          "employeeRange": "10,001+",
+          "name": "Zoho",
+          "sharedCategories": [
+            "Software",
+            "Information Technology"
+          ],
+          "similarityScore": 90
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 85 (-1 over 90 days) and market heat at 29 (-12).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Creatio, Salesforce, Dynamics SL.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

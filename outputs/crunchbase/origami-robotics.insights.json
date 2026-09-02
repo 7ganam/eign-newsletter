@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:35:18.171Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:35:18.123Z",
+    "url": "https://www.crunchbase.com/organization/origami-robotics"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Origami Robotics",
+      "shortDescription": "Origami Robotics is the interactive educational companion for children with autism and developmental disorders.",
+      "description": "Origami Robotics is the interactive educational companion for children with autism and developmental disorders.\r\n\r\nThey are Educator driven and community supported. They think that the products available for those with autism should reflect the diversity of autistic people.",
+      "website": "http://origamirobotics.com/",
+      "foundedYear": 2011,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Berkeley, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Education"
+      ],
+      "sectors": [
+        "Education"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2014-04-11",
+          "publisher": "Xconomy",
+          "title": "Robo Madness 2014 Takeaways: Jobs, Education, & Redefining Autonomy | Xconomy",
+          "url": "http://www.xconomy.com/san-francisco/2014/04/11/robo-madness-2014-takeaways-jobs-education-redefining-autonomy/"
+        },
+        {
+          "date": "2012-01-15",
+          "publisher": "The Next Web",
+          "title": "DIY Fuzzy Robot Provides Therapy For Kids",
+          "url": "http://thenextweb.com/shareables/2012/01/15/romibo-this-diy-fuzzy-robot-provides-therapy-for-kids/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -13,
+      "heatScore": 63
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Leka is a educational company that offers robotic learning products to educators and businesses for children.",
+          "employeeRange": "1-10",
+          "name": "Leka",
+          "sharedCategories": [
+            "Education"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Auria Robotics develops AI-driven robotic companions that provide personalized autism therapy and interactive learning support.",
+          "employeeRange": "1-10",
+          "name": "Auria Robotics",
+          "similarityScore": 91
+        },
+        {
+          "description": "Embodied is an artificial intelligence company that develops companion robots.",
+          "employeeRange": "11-50",
+          "name": "Embodied",
+          "similarityScore": 89
+        },
+        {
+          "description": "qbrobotics is produce innovative actuators, devices and systems for soft robotics as robotic hands, handles, delta robots and VSA.",
+          "employeeRange": "11-50",
+          "name": "qbrobotics",
+          "similarityScore": 87
+        },
+        {
+          "description": "Misty Robotics, a spinoff of Sphero, is a hardware company that builds personal robots for homes and offices.",
+          "employeeRange": "11-50",
+          "name": "Misty Robotics",
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Leka, Auria Robotics, Embodied.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

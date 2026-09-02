@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:03:13.368Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:03:13.318Z",
+    "url": "https://www.crunchbase.com/organization/veritus"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Veritus",
+      "shortDescription": "Veritus is a health care platform that provides specialty telehealth substance abuse treatment programs and clinical treatment solutions.",
+      "website": "https://www.veritussolutions.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "New York, United States",
+      "geographicRegions": [
+        "Greater New York Area",
+        "East Coast",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Addiction Treatment",
+        "Health Care",
+        "Medical",
+        "mHealth"
+      ],
+      "sectors": [
+        "Health Care",
+        "Mobile"
+      ],
+      "founders": [
+        "Robert Miller",
+        "Steven j. Wolt"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -21,
+      "heatScore": 60
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 68.3
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Boulder is a telehealth provider of treatment and long-term support for people with substance use disorders",
+          "employeeRange": "51-100",
+          "name": "Boulder Care",
+          "sharedCategories": [
+            "Health Care",
+            "Medical"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Bright Heart Health provides telemedicine treatment for addictions and eating disorders along with behavioral health therapy.",
+          "employeeRange": "251-500",
+          "name": "Bright Heart Health",
+          "sharedCategories": [
+            "Addiction Treatment",
+            "Health Care",
+            "Medical"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Workit Health is a virtual-first clinic providing evidence-based, patient-centered treatment for substance use disorders.",
+          "employeeRange": "101-250",
+          "name": "Workit Health",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Groups Recover Together provides accessible and affordable medication-assisted treatment (MAT) for opioid addiction.",
+          "employeeRange": "501-1,000",
+          "name": "Groups Recover Together",
+          "sharedCategories": [
+            "Health Care",
+            "Medical"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Monument is an online treatment platform that offers alcohol addiction treatment, telehealth, teletherapy, and therapy services.",
+          "employeeRange": "101-250",
+          "name": "Monument",
+          "sharedCategories": [
+            "Addiction Treatment",
+            "Health Care"
+          ],
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Boulder Care, Bright Heart Health, Workit Health.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

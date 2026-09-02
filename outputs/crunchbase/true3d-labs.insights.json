@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:42:45.869Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:42:45.816Z",
+    "url": "https://www.crunchbase.com/organization/true3d-labs"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "True3D Labs",
+      "shortDescription": "True3D Labs provides 3D visualization for web and live streams, delivering real-time graphics, overlays, and interactive content.",
+      "description": "True3D Labs creates 3D visualization and interactive media solutions for web and live digital experiences. Offerings include design, production, and deployment of real-time 3D scenes, motion graphics, and broadcast-style overlays that integrate with streaming platforms and websites. Services cover asset creation, rendering pipelines, and software tools that support live data-driven graphics, audience engagement elements, and cross-device playback. Capabilities extend to building custom interactives, optimizing 3D content for performance, and managing cloud delivery of media assets. Projects often synchronize visuals with external data feeds, enabling scoreboards, alerts, and dynamic scenes during events. Support involves content updates, technical integration, and testing for scheduled shows and campaigns.",
+      "website": "https://true3d.com/",
+      "foundedYear": 2021,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Brooklyn, New York, United States",
+      "geographicRegions": [
+        "Greater New York Area",
+        "East Coast",
+        "Northeastern US"
+      ],
+      "industries": [
+        "3D Technology",
+        "Graphic Design",
+        "Internet"
+      ],
+      "sectors": [
+        "Design",
+        "Hardware",
+        "Information Technology",
+        "Software"
+      ],
+      "founders": [
+        "Daniel Habib"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -11,
+      "heatScore": 58
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 54.23
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 55.64
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 36.42
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Vizrt is a software company for real-time 3D graphics, video playout, studio automation, sports analysis, journalist story tools.",
+          "employeeRange": "501-1,000",
+          "name": "Vizrt",
+          "similarityScore": 95
+        },
+        {
+          "description": "Singular Live is an advanced interactive live content platform for multi-channel content producers.",
+          "employeeRange": "11-50",
+          "name": "Singular Live",
+          "similarityScore": 93
+        },
+        {
+          "description": "Ross Video designs, manufactures and supports a wide range of innovative products for use in video production applications.",
+          "employeeRange": "1,001-5,000",
+          "name": "Ross Video",
+          "similarityScore": 91
+        },
+        {
+          "description": "WASP3D is a workflow based 3D graphics solution Company.",
+          "employeeRange": "1-10",
+          "name": "Beehive Systems",
+          "similarityScore": 91
+        },
+        {
+          "description": "Chyron is a radio and television broadcasting company.",
+          "employeeRange": "101-250",
+          "name": "Chyron",
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Vizrt, Singular Live, Ross Video.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

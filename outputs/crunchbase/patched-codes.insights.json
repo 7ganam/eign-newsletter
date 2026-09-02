@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:52:00.829Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:52:00.792Z",
+    "url": "https://www.crunchbase.com/organization/patched-codes"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Patched Codes",
+      "shortDescription": "Patched Codes provides open-source workflow automation for development teams",
+      "description": "Patched is an open-source framework to automate code reviews, docs, and patches with AI.\n\nWe empower developers to build and deploy AI-assisted workflows that can autonomously complete repetitive, mundane tasks like documentation, code reviews, and security patching.\n\nPatched is the preferred option for privacy-conscious enterprises and engineers that want to leverage the best AI models for their development workflows without compromising security, control, or compliance.",
+      "website": "https://www.patched.codes/",
+      "foundedYear": 2024,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Information Technology",
+        "Internet",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Software"
+      ],
+      "founders": [
+        "Asankhaya Sharma",
+        "Rohan Sood"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An open-source framework for automating IT and development workflows, enabling tasks like bug fixes, vulnerability patches, documentation updates, and issue triage.",
+        "name": "Patchwork"
+      },
+      {
+        "description": "A Patchwork patchflow that automatically generates README.md documentation files for repository folders based on their contents.",
+        "name": "GenerateREADME"
+      },
+      {
+        "description": "A Patchwork patchflow that automatically summarizes and comments on pull requests based on code changes.",
+        "name": "PRReview"
+      },
+      {
+        "description": "A Patchwork patchflow that automatically updates vulnerable dependency versions in repositories while mitigating breaking changes.",
+        "name": "DependencyUpgrade"
+      },
+      {
+        "description": "A tool that analyzes GitHub repositories to identify opportunities for LLM-assisted workflow automation across code, issues, and pull requests.",
+        "name": "Patched GitHub Repo Analyzer"
+      },
+      {
+        "description": "A set of GitHub Actions that integrate Patched's patchflows into CI/CD pipelines for automating documentation generation, PR reviews, vulnerability fixes, and more.",
+        "name": "GitHub Actions for Patched"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2024-09-25",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2024-09-25",
+          "investorCount": 2,
+          "postMoneyValuation": {
+            "amount": 7333258,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "SAV (Scale Asia Ventures)",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2024-09-25",
+          "title": "Pre Seed Round - Patched Codes"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -1,
+      "growthScore": 12,
+      "heatChange90Days": -1,
+      "heatScore": 46
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.09
+      },
+      "funding": {
+        "generatedDate": "2026-06-20",
+        "probabilityPercent": 88.87,
+        "timingEstimatePercent": {
+          "within6Months": 99.76,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0.24
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 81.87
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 3.84
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Sweep is an AI coding assistant for JetBrains",
+          "employeeRange": "1-10",
+          "name": "Sweep",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Source Code Repositories",
+            "Developer Documentation Platforms",
+            "Prompt Management"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "OpenHands operates as an open source agent for developers.",
+          "employeeRange": "1-10",
+          "name": "OpenHands",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Source Code Repositories",
+            "LLMOps",
+            "Open Source Governance",
+            "Prompt Management"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Continue delivers an open-source AI coding assistant that integrates with popular IDEs such as VS Code and JetBrains.",
+          "employeeRange": "1-10",
+          "name": "Continue",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Source Code Repositories",
+            "Developer Documentation Platforms",
+            "LLMOps",
+            "Prompt Management"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Bito builds AI tools designed to help software engineers ship better code, faster.",
+          "employeeRange": "1-10",
+          "name": "Bito",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Source Code Repositories",
+            "CI/CD (Continuous Integration / Continuous Delivery)",
+            "LLMOps",
+            "Prompt Management"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Snyk is a cloud native application security provider that enables millions of developers to build software securely.",
+          "employeeRange": "1,001-5,000",
+          "name": "Snyk",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "CI/CD (Continuous Integration / Continuous Delivery)",
+            "Vulnerability Assessment and Management",
+            "Open Source Security"
+          ],
+          "similarityScore": 81
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $7,333,258 to $7,333,258, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 12 (-1 over 90 days) and market heat at 46 (-1).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Sweep, OpenHands, Continue.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

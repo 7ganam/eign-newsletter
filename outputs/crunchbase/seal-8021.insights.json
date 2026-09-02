@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:13:57.990Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:13:57.941Z",
+    "url": "https://www.crunchbase.com/organization/seal-8021"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Seal",
+      "shortDescription": "Seal provides an AI-driven platform to automate and manage regulated product operations for businesses.",
+      "website": "https://seal.run/",
+      "foundedYear": 2019,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "London, England, United Kingdom",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "William Moss"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Pre-built digital templates for GxP operations to ensure compliance and standardize regulated processes.",
+        "name": "Blueprints"
+      },
+      {
+        "description": "API-driven integration to connect Bitbucket repositories with Seal for automated compliance checks and traceability in software development.",
+        "name": "Bitbucket Integration"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -9,
+      "heatScore": 76
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 46.02
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 84.81
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 26.65
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Veeva Systems is a provider of cloud-based business solutions for the global life sciences industry.",
+          "employeeRange": "10,001+",
+          "name": "Veeva",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Quality Management Systems",
+            "Healthcare Regulatory Compliance"
+          ],
+          "similarityScore": 96
+        },
+        {
+          "description": "MasterControl develops quality and manufacturing software solutions to help the life science sector manufacture and commercialize products.",
+          "employeeRange": "501-1,000",
+          "name": "MasterControl",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Quality Management Systems",
+            "Serialization and Traceability",
+            "Workflow Automation",
+            "Electronic Signatures",
+            "Laboratory Information Management Systems (LIMS)"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "EtQ is an enterprise quality and compliance software focused on. FDA compliance.",
+          "employeeRange": "101-250",
+          "name": "EtQ",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Quality Management Systems",
+            "Compliance Automation",
+            "Serialization and Traceability",
+            "Document and Records Management"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Greenlight Guru is the only quality management software platform designed specifically for medical device companies.",
+          "employeeRange": "101-250",
+          "name": "Greenlight Guru",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Quality Management Systems",
+            "Compliance Automation",
+            "Electronic Signatures",
+            "Healthcare Regulatory Compliance"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Qualio is a quality management system helping life sciences companies bring quality products to the market.",
+          "employeeRange": "51-100",
+          "name": "Qualio",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Quality Management Systems",
+            "Serialization and Traceability",
+            "Healthcare Regulatory Compliance"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Veeva, MasterControl, EtQ.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

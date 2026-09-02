@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:25:57.439Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:25:57.382Z",
+    "url": "https://www.crunchbase.com/organization/xkit"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Xkit",
+      "shortDescription": "Xkit is an integration platform that creates synergies between different applications.",
+      "description": "Xkit is an integration platform that creates synergies between different applications.\n\nIt features encrypted token storage, cross-site request forgery (CSRF) mitigation and an application programming interface (API) that lets a company's customers connect different apps to the company's own app while obtaining access tokens in a few lines of code, with or without a backend, enabling businesses to increase the usefulness of its applications through integration.",
+      "website": "https://xkit.co/",
+      "foundedYear": 2018,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Apps",
+        "Data Integration",
+        "Developer APIs",
+        "SaaS",
+        "Software"
+      ],
+      "sectors": [
+        "Apps",
+        "Data and Analytics",
+        "Information Technology",
+        "Software"
+      ],
+      "founders": [
+        "Trey Griffith"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2018-08-22",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2018-08-22",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 4165529,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2018-08-22",
+          "title": "Seed Round - Xkit"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -2,
+      "growthScore": 84,
+      "heatChange90Days": -18,
+      "heatScore": 52
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 7.64,
+        "timingEstimatePercent": {
+          "within6Months": 14.65,
+          "months6To11": 12.51,
+          "months12To24": 19.78,
+          "beyond24Months": 24.91
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 74.5
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Workato is an automation and orchestration platform designed to connect applications, data sources, and workflows across an organization.",
+          "employeeRange": "501-1,000",
+          "name": "Workato",
+          "sharedCategories": [
+            "Data Integration",
+            "SaaS"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Tray.io provides a cloud-based software integration platform for automators.",
+          "employeeRange": "101-250",
+          "name": "tray.io",
+          "sharedCategories": [
+            "Data Integration",
+            "SaaS",
+            "Software"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Celigo is the AI-driven integration platform(iPaaS) that allows applications to work together for both IT and business users.",
+          "employeeRange": "501-1,000",
+          "name": "Celigo",
+          "sharedCategories": [
+            "Data Integration",
+            "SaaS",
+            "Software"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Zapier is an IT company that provides integrations for web applications for use in automated workflows.",
+          "employeeRange": "1,001-5,000",
+          "name": "Zapier",
+          "sharedCategories": [
+            "Data Integration",
+            "SaaS",
+            "Software"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "MuleSoft provides an integration and API platform that makes it easy to connect data from any system to create connected experiences.",
+          "employeeRange": "1,001-5,000",
+          "name": "MuleSoft",
+          "sharedCategories": [
+            "Data Integration",
+            "Developer APIs",
+            "Apps"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $4,165,529 to $4,165,529, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 84 (-2 over 90 days) and market heat at 52 (-18).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Workato, tray.io, Celigo.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

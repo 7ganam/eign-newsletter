@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:14:20.350Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:14:20.293Z",
+    "url": "https://www.crunchbase.com/organization/no-cap"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "NO CAP",
+      "shortDescription": "NO CAP is a digital marketing company that offers consulting, media management services.",
+      "website": "https://nocap.jp/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "Tokyo, Japan",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)"
+      ],
+      "industries": [
+        "Brand Marketing",
+        "Consulting",
+        "Digital Marketing",
+        "Marketing",
+        "Wellness"
+      ],
+      "sectors": [
+        "Health Care",
+        "Professional Services",
+        "Sales and Marketing"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Services that support companies and brands in achieving their digital marketing goals through consulting and media management.",
+        "name": "Digital Marketing Consulting and Media Management Services"
+      },
+      {
+        "description": "A wellness product offering CBD supplements aimed at supporting modern individuals' rest and lifestyle improvement.",
+        "name": "Go Slow CBD Supplement"
+      },
+      {
+        "description": "An online medical consultation service specializing in mental and physical health issues.",
+        "name": "Go Slow Wellness Clinic"
+      },
+      {
+        "description": "A comprehensive media platform providing information on cryptocurrencies and digital assets.",
+        "name": "Cryptocurrency Media - Coin Maker"
+      },
+      {
+        "description": "A specialized service assisting in the recovery of lost cryptocurrencies across various types including Bitcoin, XRP, and ADA.",
+        "name": "Cryptocurrency Recovery Support - CCR"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 1,
+      "growthScore": 86,
+      "heatChange90Days": 1,
+      "heatScore": 58
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 54.82
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.36
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 46.1
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Kaizen Platform is a full-service digital customer experience optimization platform that scales data-driven creativity.",
+          "employeeRange": "11-50",
+          "name": "Kaizen Platform",
+          "sharedCategories": [
+            "Marketing"
+          ],
+          "sharedSpecialties": [
+            "Conversion Rate Optimization"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "AViC is a digital marketing company that provides strategy planning, creative production, and programmatic advertising services.",
+          "employeeRange": "51-100",
+          "name": "AViC",
+          "sharedCategories": [
+            "Digital Marketing"
+          ],
+          "sharedSpecialties": [
+            "Marketing Analytics",
+            "Marketing Strategy",
+            "Conversion Rate Optimization",
+            "Performance Marketing"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Plan-B is a consulting company that specializes in digital marketing, media, and human resources services.",
+          "employeeRange": "101-250",
+          "name": "Plan-B",
+          "sharedCategories": [
+            "Marketing",
+            "Digital Marketing"
+          ],
+          "sharedSpecialties": [
+            "Marketing Strategy",
+            "Social Media Influencer Marketing",
+            "Performance Marketing"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "StockSun is an It firm that offers web development, web consulting, and application contract development services.",
+          "employeeRange": "51-100",
+          "name": "StockSun",
+          "similarityScore": 91
+        },
+        {
+          "description": "Speee is a web marketing company that solves social issues through a chain of business development.",
+          "employeeRange": "501-1,000",
+          "name": "Speee",
+          "sharedCategories": [
+            "Marketing",
+            "Digital Marketing"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 86 (+1 over 90 days) and market heat at 58 (+1).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Kaizen Platform, AViC, Plan-B.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:02:24.227Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:02:24.190Z",
+    "url": "https://www.crunchbase.com/organization/pinch"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Pinch",
+      "shortDescription": "Pinch relieves the strain by facilitating short-term employee leases between like-minded startups.",
+      "description": "Pinch relieves the strain by facilitating short-term employee leases between like-minded startups. Now you’ll never be forced to lose a valuable employee again.",
+      "website": "http://pinchable.co/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "estimatedRevenueRange": "$10M-$50M",
+      "industries": [
+        "Financial Services",
+        "Human Resources"
+      ],
+      "sectors": [
+        "Administrative Services",
+        "Financial Services"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2019-03-29",
+          "publisher": "The Guardian",
+          "title": "Pinch of Nom suddenly makes Delia and Heston look a little stale",
+          "url": "https://www.theguardian.com/commentisfree/2019/mar/29/pinch-of-nom-delia-heston-cookbook-weight-loss"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -1,
+      "growthScore": 84,
+      "heatChange90Days": -16,
+      "heatScore": 33
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 95.2
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Fleksy builds powerful text input technologies enabling developers to create engaging writing experiences",
+          "employeeRange": "11-50",
+          "name": "Fleksy",
+          "similarityScore": 97
+        },
+        {
+          "description": "Gigster is the first team intelligence engine, enabling software development teams to achieve 30% higher efficiency.",
+          "employeeRange": "51-100",
+          "name": "Gigster",
+          "similarityScore": 95
+        },
+        {
+          "description": "Crossover’s mission is to democratize access to impactful, high-paying jobs.",
+          "employeeRange": "101-250",
+          "name": "Crossover",
+          "sharedCategories": [
+            "Human Resources"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "A.Team builds proprietary agentic systems that turns fragmented enterprise data into self-improving intelligence embedded in your workflows.",
+          "employeeRange": "51-100",
+          "name": "A.Team",
+          "similarityScore": 89
+        },
+        {
+          "description": "Toptal is a network of talent in business, design, and technology that enables companies to scale their teams, on demand.",
+          "employeeRange": "1,001-5,000",
+          "name": "Toptal",
+          "sharedCategories": [
+            "Human Resources"
+          ],
+          "similarityScore": 88
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 84 (-1 over 90 days) and market heat at 33 (-16).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Fleksy, Gigster, Crossover.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

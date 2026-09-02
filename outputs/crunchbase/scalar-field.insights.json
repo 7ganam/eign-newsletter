@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:08:58.789Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:08:58.732Z",
+    "url": "https://www.crunchbase.com/organization/scalar-field"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Scalar Field",
+      "shortDescription": "Scalar Field specializes in custom hardware and software development, rapid prototyping, AR/VR development, and 3D software development.",
+      "website": "http://www.scalarfieldvr.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Redmond, Washington, United States",
+      "geographicRegions": [
+        "Greater Seattle Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "3D Technology",
+        "Augmented Reality",
+        "Information Technology",
+        "Software",
+        "Virtual Reality"
+      ],
+      "sectors": [
+        "Hardware",
+        "Information Technology",
+        "Software"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -17,
+      "heatScore": 20
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Groove Jones is a creatively led technology company that produces award-winning AR, AR, VR, interactive immersive experiences.",
+          "employeeRange": "51-100",
+          "name": "Groove Jones",
+          "sharedCategories": [
+            "3D Technology",
+            "Software",
+            "Information Technology"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "STRIVR is an E-Learning company that provides virtual reality training solutions.",
+          "employeeRange": "51-100",
+          "name": "STRIVR",
+          "sharedCategories": [
+            "Software",
+            "Information Technology",
+            "Virtual Reality"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "We Democratize XR by making Creation and Sharing XR Easy for Learning, Training And Performing.",
+          "employeeRange": "101-250",
+          "name": "EON Reality",
+          "sharedCategories": [
+            "Augmented Reality",
+            "Software",
+            "Virtual Reality"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Vention offers custom software and application development, modernization, migration, QA & testing services.",
+          "employeeRange": "1,001-5,000",
+          "name": "Vention",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Cubic Motion is the world leader in real-time model-based computer vision and digital animation technology.",
+          "employeeRange": "11-50",
+          "name": "Cubic Motion",
+          "sharedCategories": [
+            "Augmented Reality",
+            "Software"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Groove Jones, STRIVR, EON Reality.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

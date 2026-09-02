@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:41:07.987Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:41:07.935Z",
+    "url": "https://www.crunchbase.com/organization/owners-circle"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Owners Circle",
+      "shortDescription": "Owners Circle provides small business owners with the online tools and financial information.",
+      "description": "OwnersCircle provides small business owners with the online tools and financial information that they need in order to navigate the complex world of business financing.\n\nThe reality is that there is no easy way to search for small business financial products, which creates a headache for already time-strapped business owners. Recent reports show that owners spend an enormous amount of time (25 hrs on average) searching and applying for loan products, with many focusing on lenders that have high rejection rates and long, complex processes.",
+      "website": "http://www.ownerscircle.com/",
+      "foundedYear": 2013,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Berkeley, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Financial Services",
+        "Insurance",
+        "iOS",
+        "Marketplace"
+      ],
+      "sectors": [
+        "Commerce and Shopping",
+        "Financial Services",
+        "Mobile",
+        "Platforms",
+        "Software"
+      ],
+      "founders": [
+        "Matthew Christen",
+        "Obinna Okogbue",
+        "Usman Cheema"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 1272500,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2015-03-19",
+      "lastFundingType": "Venture round",
+      "rounds": [
+        {
+          "announcedDate": "2015-03-19",
+          "amount": {
+            "amount": 1152500,
+            "currency": "USD"
+          },
+          "type": "Venture round"
+        },
+        {
+          "announcedDate": "2014-08-19",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2015-03-19",
+          "title": "Venture Round - Owners Circle"
+        },
+        {
+          "date": "2014-08-19",
+          "title": "Seed Round - Owners Circle"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 2,
+    "knownDetailedFundingAmount": {
+      "amount": 1272500,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 90.57
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -13,
+      "heatScore": 8
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Nav is a credit and financial health platform that provides access to credit and financing opportunities for businesses.",
+          "employeeRange": "251-500",
+          "name": "Nav",
+          "sharedCategories": [
+            "Financial Services"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Fundera is a marketplace for small business financial solutions.",
+          "employeeRange": "51-100",
+          "name": "Fundera",
+          "sharedCategories": [
+            "Marketplace",
+            "Financial Services"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Lendio is an online lending marketplace that develops financial applications to offer online loan services.",
+          "employeeRange": "251-500",
+          "name": "Lendio",
+          "sharedCategories": [
+            "Financial Services"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Biz2credit is a leading online fina.ncing platform , founded in 2007 with one goal to improve Business finance.",
+          "employeeRange": "501-1,000",
+          "name": "Biz2Credit",
+          "sharedCategories": [
+            "Financial Services"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Accion Opportunity Fund is a nonprofit firm that provides funds to mall businesses.",
+          "employeeRange": "101-250",
+          "name": "Accion Opportunity Fund",
+          "sharedCategories": [
+            "Financial Services"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Venture round round raised $1,152,500, or 90.57% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Nav, Fundera, Lendio.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

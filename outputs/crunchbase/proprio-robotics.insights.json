@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:21:24.301Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:21:24.249Z",
+    "url": "https://www.crunchbase.com/organization/proprio-robotics"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Proprio Robotics",
+      "shortDescription": "Proprio Robotics develops autonomous robots for data center server operations.",
+      "description": "Proprio Robotics develops autonomous robotic systems for data center operations. Its robots perform tasks across the server hardware lifecycle, including server assembly, rack deployment, component maintenance, upgrades, and equipment removal. Demonstrated functions include fan insertion, RAM extraction, switch recabling, GPU cabling, disk hot-swapping, and heatsink removal. The company combines physical AI models with robotic hardware for use in server rooms and other data center environments.",
+      "website": "https://www.propriorobotics.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Computer",
+        "Data Center Automation",
+        "Hardware",
+        "Industrial Automation",
+        "IT Infrastructure",
+        "Robotics"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Consumer Electronics",
+        "Data and Analytics",
+        "Hardware",
+        "Information Technology",
+        "Manufacturing",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Autonomous robots perform server assembly, rack deployment, maintenance, upgrades, and decommissioning tasks in data centers.",
+        "name": "Data Center Lifecycle Robots"
+      },
+      {
+        "description": "Robotic systems carry out fine-motor server chassis tasks, including RAM extraction, fan insertion, and GPU cabling.",
+        "name": "Server Component Harvester"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatScore": 87
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 67.77
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:02:48.775Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:02:48.721Z",
+    "url": "https://www.crunchbase.com/organization/sunset"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "SUNSET",
+      "shortDescription": "Sunset is a provider of solutions for drivers with sun glare and radiation problems.",
+      "website": "http://www.sunset4drivers.com/",
+      "foundedYear": 2010,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$50M-$100M",
+      "headquarters": "Netiv Haasara, HaDarom, Israel",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)",
+        "Middle East",
+        "Middle East and North Africa (MENA)"
+      ],
+      "industries": [
+        "Industrial"
+      ],
+      "sectors": [
+        "Manufacturing"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 7,
+      "includedUniqueCount": 7,
+      "items": [
+        {
+          "date": "2020-04-14",
+          "publisher": "GeekWire",
+          "title": "Normandy Park Home with Undeniable Views",
+          "url": "https://www.geekwire.com/home-of-the-day/normandy-park-home-undeniable-views/"
+        },
+        {
+          "date": "2020-01-30",
+          "publisher": "PRNewswire",
+          "title": "The House on Sunset Partners with Bentley Beverly Hills and Paddle8 to Deliver the Ultimate Oscar Weekend Experience in Their Famed Penthouse Suite",
+          "url": "https://www.prnewswire.com/news-releases/the-house-on-sunset-partners-with-bentley-beverly-hills-and-paddle8-to-deliver-the-ultimate-oscar-weekend-experience-in-their-famed-penthouse-suite-300996141.html"
+        },
+        {
+          "date": "2019-12-19",
+          "publisher": "Multi Channel News - Tech",
+          "title": "STELAR to Sunset Dec. 31",
+          "url": "https://www.multichannel.com/news/stelar-to-sunset-dec-31"
+        },
+        {
+          "date": "2019-10-07",
+          "publisher": "Seattle Times Business",
+          "title": "ArtsWest delivers a searing and rough-edged ‘Sunset Baby’",
+          "url": "https://www.seattletimes.com/entertainment/theater/artswest-delivers-a-searing-and-rough-edged-sunset-baby/"
+        },
+        {
+          "date": "2019-09-25",
+          "publisher": "Seattle PI",
+          "title": "ArtsWest does it again with SUNSET BABY!",
+          "url": "https://blog.seattlepi.com/seattlearts/2019/09/25/21158/"
+        },
+        {
+          "date": "2019-07-18",
+          "publisher": "Portland Tribute",
+          "title": "Sunset's Jin wins PGTPOY for the Apollos",
+          "url": "https://pamplinmedia.com/bvt/18-sports/433729-343536-sunsets-jin-wins-pgtpoy-for-the-apollos"
+        },
+        {
+          "date": "2017-12-21",
+          "publisher": "Deccan Chronicle",
+          "title": "Day sixteen of 20 days of celebrity Christmas",
+          "url": "http://www.deccanchronicle.com/videos/entertainment/day-sixteen-of-20-days-of-celebrity-christmas.html"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 2,
+      "heatScore": 54
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0,
+        "timingEstimatePercent": {
+          "within6Months": 0,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 92.5
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

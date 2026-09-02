@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:02:08.890Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:02:08.839Z",
+    "url": "https://www.crunchbase.com/organization/summer-playbook"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Summer Playbook",
+      "shortDescription": "Summer Playbook is an online community of young people around the world who want to get offline and hang out in person.",
+      "description": "Summer Playbook is an online community of young people around the world who want to get offline and hang out in person. Its main focus is to let its users see what people around them are doing so they can join them offline.\n\nPlaybook is focused on college campuses.\n\nPlaybook was founded by Luke Heine, Raphael Rouvinov, and Sean Sullivan.",
+      "website": "http://summerplaybook.com/",
+      "foundedYear": 2014,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Cambridge, Massachusetts, United States",
+      "geographicRegions": [
+        "Greater Boston Area",
+        "East Coast",
+        "New England",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Apps",
+        "Internet",
+        "Mobile Apps",
+        "Social",
+        "Social Network"
+      ],
+      "sectors": [
+        "Apps",
+        "Community and Lifestyle",
+        "Information Technology",
+        "Internet Services",
+        "Mobile",
+        "Software"
+      ],
+      "founders": [
+        "Luke Heine",
+        "Raphael Rouvinov",
+        "Sean Sullivan"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2018-07-17",
+          "publisher": "Forbes",
+          "title": "Dropping Out Of Harvard Isn't An Easy Choice. This Founder Did It Three Times.",
+          "url": "https://www.forbes.com/sites/frederickdaso/2018/07/17/dropping-out-of-harvard-isnt-an-easy-choice-this-founder-did-it-three-times/"
+        },
+        {
+          "date": "2018-03-09",
+          "publisher": "TechCrunch",
+          "title": "YC-backed Playbook wants students to make plans online, hang out offline",
+          "url": "https://techcrunch.com/2018/03/09/yc-backed-playbook-wants-students-to-make-plans-online-hang-out-offline/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -11,
+      "heatScore": 10
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2025-11-15",
+        "probabilityPercent": 59.86
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

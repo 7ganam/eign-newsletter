@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:22:30.437Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:22:30.381Z",
+    "url": "https://www.crunchbase.com/organization/wireover"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "WireOver",
+      "shortDescription": "WireOver is a desktop application that leverages peer-to-peer technology for sending files privately.",
+      "description": "WireOver is a desktop application that leverages peer-to-peer technology for sending files privately. It's free and unlimited, solving an unmet need for sending large files easily. Pro accounts get incredibly strong security, with end-to-end encryption.",
+      "website": "http://www.wireover.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Cambridge, Massachusetts, United States",
+      "geographicRegions": [
+        "Greater Boston Area",
+        "East Coast",
+        "New England",
+        "Northeastern US"
+      ],
+      "industries": [
+        "File Sharing",
+        "Peer to Peer",
+        "Virtual Desktop"
+      ],
+      "sectors": [
+        "Other",
+        "Software"
+      ],
+      "founders": [
+        "Trent Ashburn"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 150000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2012-08-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2012-08-01",
+          "investorCount": 3,
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2012-01-01",
+          "amount": {
+            "amount": 150000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 5,
+        "visibleNames": [
+          {
+            "name": ".406 Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Bessemer Venture Partners",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Hayes Metzger",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Start Fund",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 4,
+      "includedUniqueCount": 4,
+      "items": [
+        {
+          "date": "2015-04-01",
+          "title": "wireover shut down",
+          "url": "https://news.ycombinator.com/from?site=wireover.com"
+        },
+        {
+          "date": "2014-01-17",
+          "publisher": "TechCrunch",
+          "title": "Protect Yourself From The NSA With WireOver’s Encrypted File Sharing",
+          "url": "http://techcrunch.com/2014/01/17/wireover/"
+        },
+        {
+          "date": "2012-08-01",
+          "title": "Seed Round - WireOver"
+        },
+        {
+          "date": "2012-01-01",
+          "title": "Seed Round - WireOver"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 150000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -8,
+      "heatScore": 12
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "WeTransfer offers a suite of creative productivity tools that make it easy to collaborate, share and deliver work.",
+          "employeeRange": "101-250",
+          "name": "WeTransfer",
+          "sharedCategories": [
+            "File Sharing"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "ToffeeShare is an internet company that creates a customizable licensed tool for companies with a secure way of sending files via the web.",
+          "employeeRange": "1-10",
+          "name": "ToffeeShare",
+          "similarityScore": 83
+        },
+        {
+          "description": "Move faster—meet the new standard for high-performance data everywhere.",
+          "employeeRange": "51-100",
+          "name": "Resilio",
+          "similarityScore": 81
+        },
+        {
+          "description": "LocalSend enables secure, offline file and message sharing between devices over local Wi-Fi, supporting multiple platforms.",
+          "name": "LocalSend",
+          "similarityScore": 75
+        },
+        {
+          "description": "Estmob is a creator behind Send Anywhere. Send Anywhere takes an easy, quick, and unlimited approach to file sharing.",
+          "employeeRange": "11-50",
+          "name": "Estmob",
+          "sharedCategories": [
+            "File Sharing"
+          ],
+          "similarityScore": 73
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include WeTransfer, ToffeeShare, Resilio.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

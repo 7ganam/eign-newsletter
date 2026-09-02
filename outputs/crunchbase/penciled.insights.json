@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:55:33.066Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:55:33.013Z",
+    "url": "https://www.crunchbase.com/organization/penciled"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Penciled",
+      "shortDescription": "Penciled offers AI-powered front desk automation for physical therapy clinics with scheduling and EHR integration.",
+      "website": "https://penciled.com/",
+      "foundedYear": 2022,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Chatbot",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Deniz Sert",
+        "Shawn Shivdat"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An AI-powered assistant that automates scheduling, reminders, cancellations, and waitlist management for physical therapy clinics, integrating with EHR systems like WebPT and Healthie.",
+        "name": "Nicole AI Front Office Assistant"
+      },
+      {
+        "description": "A system that scans EHRs for prescribed visits and automatically books them into available slots, ensuring patients complete their full treatment plans.",
+        "name": "Automated Plan-of-Care Scheduling"
+      },
+      {
+        "description": "An AI system that monitors cancellations in real time and automatically contacts waitlisted patients to fill open appointment slots quickly.",
+        "name": "AI-Driven Waitlist Management"
+      },
+      {
+        "description": "An AI-powered system that sends two-way SMS and voice reminders to patients, handles cancellations, reschedules appointments, and collects fees automatically.",
+        "name": "Conversational AI Reminders and Rescheduling"
+      },
+      {
+        "description": "A backup AI scheduling system that operates independently of EHRs to enable patient self-booking and waitlist management during EHR outages.",
+        "name": "Standalone AI Scheduler for EHR Downtime"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 2,
+      "growthScore": 87,
+      "heatChange90Days": -7,
+      "heatScore": 75
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 60.51
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 80.04
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 43.64
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "WebPT is a web-based physical therapy EMR providing integrated documentation, scheduling, billing solutions and more for therapists.",
+          "employeeRange": "501-1,000",
+          "name": "WebPT",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Patient Engagement Platforms",
+            "Online Appointment Scheduling",
+            "Patient Portal",
+            "Revenue Cycle Management",
+            "Physical Therapy",
+            "Patient Experience Management"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Spry is a cloud-based operating system that allows movement health professionals to collect and analyze patient data in real time.",
+          "employeeRange": "51-100",
+          "name": "Spry",
+          "sharedSpecialties": [
+            "Patient Engagement Platforms",
+            "Revenue Cycle Management",
+            "Physical Therapy",
+            "Appointment Scheduling"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "Raintree Systems is a group of dedicated people with a passion to solve the real-world problems in the healthcare industry.",
+          "employeeRange": "251-500",
+          "name": "Raintree Systems",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Patient Engagement Platforms",
+            "Revenue Cycle Management",
+            "Physical Therapy",
+            "Health Systems Integration"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Prompt EMR provides an EMR and practice management software for physical therapy.",
+          "employeeRange": "11-50",
+          "name": "Prompt Therapy Solutions Inc",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Patient Engagement Platforms",
+            "Online Appointment Scheduling",
+            "Patient Portal",
+            "Appointment Scheduling and Reminder Services",
+            "Revenue Cycle Management",
+            "Physical Therapy",
+            "Patient Experience Management"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "TheraOffice is an EMR and practice management software.",
+          "employeeRange": "51-100",
+          "name": "TheraOffice",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Hybrid therapeutic platform",
+      "statement": "Penciled combines AI-Driven Waitlist Management with Nicole AI Front Office Assistant.",
+      "implication": "The company is positioned as a biotechnology platform with both a physical therapeutic-delivery modality and an AI-assisted discovery layer, rather than as a standalone AI software vendor.",
+      "confidence": "high",
+      "evidence": [
+        "facts.company.description",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Product descriptions are profile claims and do not establish clinical efficacy."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 87 (+2 over 90 days) and market heat at 75 (-7).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include WebPT, Spry, Raintree Systems.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

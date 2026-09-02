@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:11:11.643Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:11:11.587Z",
+    "url": "https://www.crunchbase.com/organization/talc"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "TalC",
+      "shortDescription": "TalC is a venture capital investment firm.",
+      "website": "https://talc.ae/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "headquarters": "Abu Dhabi, United Arab Emirates",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)",
+        "Gulf Cooperation Council (GCC)",
+        "Middle East",
+        "Middle East and North Africa (MENA)"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 7,
+      "includedUniqueCount": 7,
+      "items": [
+        {
+          "date": "2025-06-08",
+          "title": "Venture Round - Carbyne"
+        },
+        {
+          "date": "2024-08-13",
+          "publisher": "Law360",
+          "title": "Talc Claims Land Cosmetics Giant Avon In Ch. 11",
+          "url": "https://www.law360.com/articles/1869304/talc-claims-land-cosmetics-giant-avon-in-ch-11"
+        },
+        {
+          "date": "2023-05-15",
+          "publisher": "Endpoints News",
+          "title": "Talc claimants look to sue J&J over alleged fraud in bankruptcy case",
+          "url": "https://endpts.com/talc-claimants-look-to-sue-jj-over-alleged-fraud-in-bankruptcy-case/"
+        },
+        {
+          "date": "2023-05-12",
+          "publisher": "The Recorder",
+          "title": "'This Must End.' Talc Bankruptcy Lawyers Plan Fraud Lawsuit Against J&J",
+          "url": "https://ift.tt/kL9JpPS"
+        },
+        {
+          "date": "2023-03-22",
+          "publisher": "PRNewswire",
+          "title": "Talc Plaintiffs Will Press to Reopen Courthouse Doors",
+          "url": "https://www.prnewswire.com/news-releases/talc-plaintiffs-will-press-to-reopen-courthouse-doors-301779145.html"
+        },
+        {
+          "date": "2023-02-06",
+          "publisher": "Financial Times",
+          "title": "Talc ruling a blow to J&J and the ‘Texas two-step’ bankruptcy jig"
+        },
+        {
+          "date": "2022-09-07",
+          "title": "Series C - Carbyne"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -2,
+      "growthScore": 41,
+      "heatChange90Days": 27,
+      "heatScore": 41
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 41 (-2 over 90 days) and market heat at 41 (+27).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

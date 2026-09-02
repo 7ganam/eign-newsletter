@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:21:27.395Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:21:27.336Z",
+    "url": "https://www.crunchbase.com/organization/sherpa"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "SHERPA",
+      "shortDescription": "SHERPA offers actionable analytics and metrics tools that enable websites to increase conversions.",
+      "description": "SHERPA is a simple set of actionable analytics and metrics tools that help websites make decisions to increase conversions and analyze how your website is being used by it's visitors.\r\n\r\nSherpa's core tool at launch is an amazingly simple A/B Split Testing solution.",
+      "website": "http://hellosherpa.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Chicago, Illinois, United States",
+      "geographicRegions": [
+        "Greater Chicago Area",
+        "Great Lakes",
+        "Midwestern US"
+      ],
+      "industries": [
+        "Analytics",
+        "Software"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Software"
+      ],
+      "founders": [
+        "Ian Borders"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2013-03-26",
+          "publisher": "TechCrunch",
+          "title": "Personal Assistant App Sherpa Raises $1.6M | TechCrunch",
+          "url": "http://techcrunch.com/2013/03/21/sherpa-funding/"
+        },
+        {
+          "date": "2013-02-10",
+          "publisher": "TechCrunch",
+          "title": "Menlo’s Shervin Pishevar And Goldman’s Scott Stanford Leave Their Day Jobs To Do Something Really Vague, By Design",
+          "url": "http://techcrunch.com/2013/02/10/sherpa/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -8,
+      "heatScore": 2
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

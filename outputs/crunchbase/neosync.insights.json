@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:09:22.334Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:09:22.300Z",
+    "url": "https://www.crunchbase.com/organization/neosync"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "NeoSync",
+      "shortDescription": "NeoSync, Inc. is a clinical stage company That treatment of Major Depressive Disorder.",
+      "description": "NeoSync is a clinical-stage company with a proprietary platform technology being used to develop advanced, non-invasive neuromodulation products designed to treat Major Depressive Disorder and other diseases of the Central Nervous System .(Autism, Parkinson's Disease, Anxiety, Post Traumatic Stress Disorder, etc.). ​The Company is led by experienced medical device executives and entrepreneurs.",
+      "website": "http://www.neosync.com/",
+      "foundedYear": 2008,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "South Boston, Virginia, United States",
+      "geographicRegions": [
+        "East Coast",
+        "Southern US"
+      ],
+      "industries": [
+        "Clinical Trials",
+        "Information Technology",
+        "Medical"
+      ],
+      "sectors": [
+        "Health Care",
+        "Information Technology"
+      ],
+      "founders": [
+        "Bill Phillips"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 13000000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2017-08-10",
+      "lastFundingType": "Series D",
+      "rounds": [
+        {
+          "announcedDate": "2017-08-10",
+          "amount": {
+            "amount": 13000000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Valiance Asset Management"
+          ],
+          "type": "Series D"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Valiance Asset Management",
+            "rounds": [
+              "Series D"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2020-02-26",
+          "title": "NeoSync acquired by Wave Neuroscience"
+        },
+        {
+          "date": "2017-08-10",
+          "title": "Series D - NeoSync"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 13000000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -7,
+      "heatScore": 17
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Neuronetics is a medical device company that develops non-invasive therapies for psychiatric and neurological disorders.",
+          "employeeRange": "101-250",
+          "name": "Neuronetics",
+          "similarityScore": 95
+        },
+        {
+          "description": "Brainsway's patented breakthrough technology launches a new era in brain disorder treatment.",
+          "employeeRange": "51-100",
+          "name": "Brainsway",
+          "similarityScore": 93
+        },
+        {
+          "description": "Nexstim is a medical device company that specializes in image-guided transcranial magnetic stimulation.",
+          "employeeRange": "11-50",
+          "name": "Nexstim",
+          "similarityScore": 91
+        },
+        {
+          "description": "MagVenture A/S is a   medical device manufacturer of world leading magnetic stimulation systems.",
+          "employeeRange": "101-250",
+          "name": "MagVenture",
+          "similarityScore": 89
+        },
+        {
+          "description": "Soterix Medical develops devices and accessories based on neuromodulation and brain stimulation technologies.",
+          "employeeRange": "11-50",
+          "name": "Soterix Medical",
+          "sharedCategories": [
+            "Medical"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Series D round raised $13,000,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Neuronetics, Brainsway, Nexstim.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

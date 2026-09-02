@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:47:57.165Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:47:57.107Z",
+    "url": "https://www.crunchbase.com/organization/requestly"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "requestly",
+      "shortDescription": "Buyer Automation & B2B Marketplace. Our mission is to make it simpler and quicker for buyers and vendors to engage one another.",
+      "website": "http://requestly.co/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Hutton, Essex, United Kingdom",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "E-Commerce",
+        "Information Technology",
+        "Software"
+      ],
+      "sectors": [
+        "Commerce and Shopping",
+        "Information Technology",
+        "Software"
+      ],
+      "founders": [
+        "Michael Matsoukas"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -22,
+      "heatScore": 38
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 52.75
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 51.66
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 33.62
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Mirakl is a SaaS solution that helps enterprises manage their marketplace and drop-ship business.",
+          "employeeRange": "501-1,000",
+          "name": "Mirakl",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Marketplacer is a marketplace platform and solution that allows retailers to scale and grow in today's evolving e-commerce environment.",
+          "employeeRange": "101-250",
+          "name": "Marketplacer",
+          "sharedCategories": [
+            "E-Commerce",
+            "Software"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Launch your online marketplace in a day without coding. Extend infinitely with code. Scale your business to any size.",
+          "employeeRange": "1-10",
+          "name": "Sharetribe",
+          "sharedCategories": [
+            "E-Commerce",
+            "Software"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Arcadier enables individuals & organisations to develop and maintain their marketplace easily and affordably with minimal coding knowledge.",
+          "employeeRange": "51-100",
+          "name": "Arcadier",
+          "sharedCategories": [
+            "E-Commerce",
+            "Software",
+            "Information Technology"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Spryker is a commerce technology platform that enables global enterprises to build transactional business models.",
+          "employeeRange": "251-500",
+          "name": "Spryker",
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Mirakl, Marketplacer, Sharetribe.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:54:13.532Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:54:13.480Z",
+    "url": "https://www.crunchbase.com/organization/rio"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Rio",
+      "shortDescription": "Rio is an Education company.",
+      "website": "http://www.riomovies.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "estimatedRevenueRange": "$10M-$50M",
+      "industries": [
+        "Education",
+        "Non Profit",
+        "Social Entrepreneurship"
+      ],
+      "sectors": [
+        "Community and Lifestyle",
+        "Education",
+        "Social Impact"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2021-02-09",
+          "title": "Rio acquired by The Walt Disney Company"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -28,
+      "heatScore": 24
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Ellucian delivers the software, services, and insights that help your institution thrive.",
+          "employeeRange": "1,001-5,000",
+          "name": "Ellucian",
+          "sharedCategories": [
+            "Education"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Workday provides SaaS-based enterprise solutions for a company's human resources and financial management activities.",
+          "employeeRange": "10,001+",
+          "name": "Workday",
+          "similarityScore": 94
+        },
+        {
+          "description": "Jenzabar provides software, strategies, and services for the administration of higher education institutions.",
+          "employeeRange": "251-500",
+          "name": "Jenzabar",
+          "sharedCategories": [
+            "Education"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Anthology is a brand new company offering industry-leading solutions to better support the ever-changing needs of Higher Education.",
+          "employeeRange": "1,001-5,000",
+          "name": "Anthology",
+          "similarityScore": 91
+        },
+        {
+          "description": "Oracle is an integrated cloud application and platform services that sells a range of enterprise information technology solutions.",
+          "employeeRange": "10,001+",
+          "name": "Oracle",
+          "similarityScore": 88
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Ellucian, Workday, Jenzabar.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

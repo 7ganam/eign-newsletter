@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:07:50.908Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:07:50.854Z",
+    "url": "https://www.crunchbase.com/organization/synch"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Synch",
+      "shortDescription": "Synch provides a range of smart inventory and ordering solutions.",
+      "description": "Synch provides a range of smart inventory and ordering solutions. The company’s solution portfolio includes a smart phone application and a web dashboard. The smart phone application helps users capture their orders and manage their inventories on the move without paper and pencil. Statistics and analytics are presented on web dashboards as well as in the app to help users with their master demand planning and decisions\n\nSynch was founded by Changhao Han and Scott Dyer, and is based in Toronto, Ohio.",
+      "website": "http://synchbi.com/",
+      "foundedYear": 2012,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Toronto, Ontario, Canada",
+      "geographicRegions": [
+        "Great Lakes"
+      ],
+      "industries": [
+        "Software"
+      ],
+      "sectors": [
+        "Software"
+      ],
+      "founders": [
+        "Changhao Han",
+        "Scott Dyer"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2013-04-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2013-04-01",
+          "investorCount": 4,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 4,
+        "visibleNames": [
+          {
+            "name": "Microsoft Accelerator",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Microsoft for Startups",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Right Side Capital Management",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Techstars",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2013-06-24",
+          "publisher": "GeekWire",
+          "title": "The 3 best pitches from the TechStars Windows Azure accelerator",
+          "url": "http://www.geekwire.com/2013/pitches-techstars-windows-azure-accelerator/"
+        },
+        {
+          "date": "2013-04-01",
+          "title": "Seed Round - Synch"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -4,
+      "heatScore": 46
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Inventory Source provides wholesale dropship inventory management solutions for online resellers.",
+          "employeeRange": "11-50",
+          "name": "Inventory Source",
+          "similarityScore": 97
+        },
+        {
+          "description": "Cin7 is an all-in-one, cloud-based solution with fully integrated inventory management, POS, EDI and 3PL functions in a single system.",
+          "employeeRange": "101-250",
+          "name": "Cin7",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Extensiv is a vision technology company.",
+          "employeeRange": "101-250",
+          "name": "Extensiv",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Katana is a cloud inventory platform for SMBs",
+          "employeeRange": "101-250",
+          "name": "Katana",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Zoho is an IT company that offers cloud-based software for CRM, project management, finance, and human resource services.",
+          "employeeRange": "10,001+",
+          "name": "Zoho",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 88
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Inventory Source, Cin7, Extensiv.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:29:06.634Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:29:06.582Z",
+    "url": "https://www.crunchbase.com/organization/youlicit"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Youlicit",
+      "shortDescription": "Youlicit is a recommendation engine that enables users to get relevant recommendations based on personal interests.",
+      "description": "The Youlicit web content recommendation engine leverages the wisdom of the crowds to return the most recommended sites related to a website or topic. To use Youlicit, simply install a plug-in with the Youlicit buttons on your Firefox browser. These buttons light up, while you surf, and by clicking on them, you instantly get highly relevant recommendations, without searching. It also allows you to discover the web via personalized recommendations based on your interests and find other users interested in the same topics as you.",
+      "website": "http://www.youlicit.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "New York, United States",
+      "geographicRegions": [
+        "Greater New York Area",
+        "East Coast",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Content",
+        "Content Delivery Network",
+        "Content Discovery"
+      ],
+      "sectors": [
+        "Content and Publishing",
+        "Media and Entertainment"
+      ],
+      "founders": [
+        "Asif Rahman",
+        "Nihaar Gupta",
+        "Omar Radi",
+        "Toufique Harun"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2008-08-14",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2008-08-14",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2008-08-14",
+          "title": "Seed Round - Youlicit"
+        },
+        {
+          "date": "2008-08-14",
+          "publisher": "TechCrunch",
+          "title": "Y Combinator's Demo Day Summer 2008 | TechCrunch",
+          "url": "http://techcrunch.com/2008/08/14/y-combinators-demo-day-summer-2008/"
+        },
+        {
+          "date": "2008-08-14",
+          "publisher": "TechCrunch",
+          "title": "Y Combinator&#8217;s Demo Day Summer 2008",
+          "url": "http://www.techcrunch.com/2008/08/14/y-combinators-demo-day-summer-2008/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -14,
+      "heatScore": 30
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

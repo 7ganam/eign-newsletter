@@ -1,0 +1,291 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:08:33.950Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:08:33.896Z",
+    "url": "https://www.crunchbase.com/organization/vly-ai"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "vly.ai",
+      "shortDescription": "vly.ai creates custom full-stack software without writing code and describes one's software in plain english.",
+      "website": "https://www.vly.ai/",
+      "foundedYear": 2024,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Software"
+      ],
+      "sectors": [
+        "Software"
+      ],
+      "founders": [
+        "Manav Bokinala",
+        "Victor Cheng"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A platform that enables users to create custom full-stack software applications by describing the software in plain English without writing code.",
+        "name": "vly.ai Custom Full-Stack Software Builder"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2024-12-17",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2024-12-17",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 6946356,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2024-12-04",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 5645434,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "Treeo VC",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2024-12-17",
+          "title": "Seed Round - vly.ai"
+        },
+        {
+          "date": "2024-12-04",
+          "title": "Pre Seed Round - vly.ai"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1.23
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -4,
+      "growthScore": 81,
+      "heatChange90Days": -5,
+      "heatScore": 79
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 92.95
+      },
+      "funding": {
+        "generatedDate": "2026-06-20",
+        "probabilityPercent": 82.29,
+        "timingEstimatePercent": {
+          "within6Months": 99.93,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0.07
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 80.65
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 3.84
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Lovable provides an AI-driven platform enabling users to generate and deploy web applications and websites from natural language prompts.",
+          "employeeRange": "1,001-5,000",
+          "name": "Lovable",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "No-Code / Low-Code Development",
+            "API Integration",
+            "Frontend Development",
+            "AI Website Builders",
+            "Code Generation"
+          ],
+          "similarityScore": 96
+        },
+        {
+          "description": "Bolt.new is an AI development platform that offers building, running, editing, and deploying services for full-stack applications.",
+          "employeeRange": "11-50",
+          "name": "Bolt.new",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "No-Code / Low-Code Development",
+            "CI/CD (Continuous Integration / Continuous Delivery)",
+            "LLMOps",
+            "Code Generation",
+            "Prompt Management"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Base44 is a no-code platform that enables users to build and deploy web and mobile apps using natural language prompts.",
+          "employeeRange": "1-10",
+          "name": "Base44",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "No-Code / Low-Code Development",
+            "Workflow Automation",
+            "AI Website Builders",
+            "Prompt Management"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "Emergent is an AI-powered software creation platform that enables users to build full-stack web and mobile applications.",
+          "employeeRange": "101-250",
+          "name": "Emergent",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "No-Code / Low-Code Development",
+            "Code Generation",
+            "Backend Development"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Replit provides a cloud-based development platform that enables users to write, run, and deploy applications in browsers.",
+          "employeeRange": "101-250",
+          "name": "Replit",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "No-Code / Low-Code Development",
+            "API Integration",
+            "CI/CD (Continuous Integration / Continuous Delivery)",
+            "Code Generation"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $5,645,434 to $6,946,356, a 1.23x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 81 (-4 over 90 days) and market heat at 79 (-5).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Lovable, Bolt.new, Base44.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

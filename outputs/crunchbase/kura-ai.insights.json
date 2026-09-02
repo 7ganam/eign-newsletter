@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:53:56.285Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:53:56.240Z",
+    "url": "https://www.crunchbase.com/organization/kura-ai"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Kura AI",
+      "shortDescription": "Kura AI provides a developer platform for building and deploying enterprise-focused AI browser agents using natural language.",
+      "description": "Kura AI provides a developer platform for building, iterating, and deploying AI browser agents that automate interactions with web applications. The company focuses on generative browser automation, enabling developers to define agent behavior using plain natural language instead of traditional scripting. Its framework is designed for enterprise use, incorporating data isolation, client-side encryption based on private key ownership, and full audit trails. The platform uses a hierarchical multi-agent architecture that runs specialized loops to analyze context and execute page logic. This architecture supports use cases such as automated testing, web scraping, data extraction, and other repetitive browser-based workflows. Kura AI targets software teams and organizations that need resilient, maintainable automation for complex web interfaces.",
+      "website": "https://trykura.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Browser Extensions",
+        "Data Integration",
+        "Developer Platform",
+        "Enterprise Software",
+        "Machine Learning",
+        "Productivity Tools",
+        "Robotic Process Automation (RPA)",
+        "Security",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Privacy and Security",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Darren Hwang",
+        "Ronit Basu"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Kura Web Agent Builder is a developer environment for creating resilient AI browser agents using natural language workflows.",
+        "name": "Kura Web Agent Builder"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2024-11-15",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2024-11-15",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 5338184,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2024-11-15",
+          "title": "Pre Seed Round - Kura AI"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 50,
+      "heatScore": 79
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 81
+      },
+      "funding": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 88.36,
+        "timingEstimatePercent": {
+          "within6Months": 98.61,
+          "months6To11": 0.01,
+          "months12To24": 0,
+          "beyond24Months": 1.39
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 65.28
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 3.88
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $5,338,184 to $5,338,184, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

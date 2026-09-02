@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:19:24.763Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:19:24.702Z",
+    "url": "https://www.crunchbase.com/organization/serra"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Serra",
+      "shortDescription": "Serra provides engineering & consulting services for control systems used in food & beverage, life Sciences, manufacturing industries, etc.",
+      "website": "http://serra.com/",
+      "foundedYear": 1984,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "51-100",
+      "estimatedRevenueRange": "$10M-$50M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Industrial Automation",
+        "Manufacturing"
+      ],
+      "sectors": [
+        "Manufacturing",
+        "Science and Engineering"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 30144,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2008-11-30",
+      "lastFundingType": "Debt Financing",
+      "rounds": [
+        {
+          "announcedDate": "2008-11-30",
+          "amount": {
+            "amount": 30144,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Debt Financing"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Advantage Capital",
+            "rounds": [
+              "Debt Financing"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2022-02-11",
+          "publisher": "Global AgInvesting",
+          "title": "Serra Capital Ag Tech Fund Closes on $45M in Commitments",
+          "url": "https://www.globalaginvesting.com/serra-capital-ag-tech-fund-closes-45m-commitments/"
+        },
+        {
+          "date": "2008-11-30",
+          "title": "Debt Financing - Serra"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 30144,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 2,
+      "growthScore": 83,
+      "heatChange90Days": 2,
+      "heatScore": 63
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 52.33
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Control Engineering is a control systems engineering and integration firm that provides automation and power systems analysis services.",
+          "employeeRange": "11-50",
+          "name": "Control Engineering",
+          "sharedCategories": [
+            "Industrial Automation"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "ONDEX Automation is a discrete and process automation systems integrator.",
+          "employeeRange": "101-250",
+          "name": "ONDEX Automation",
+          "sharedCategories": [
+            "Industrial Automation"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Systems Engineering Associates, Inc. focuses on electronic systems and engineering services.",
+          "employeeRange": "1-10",
+          "name": "Systems Engineering Associates",
+          "sharedCategories": [
+            "Manufacturing"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Atlas Automation is an industrial automation company that specializes in food, beverage and dairy processing and system integration.",
+          "employeeRange": "11-50",
+          "name": "Atlas Automation",
+          "sharedCategories": [
+            "Manufacturing",
+            "Industrial Automation"
+          ],
+          "similarityScore": 85
+        },
+        {
+          "description": "General Control Systems is an industrial automation company specializing in wastewater control systems.",
+          "employeeRange": "51-100",
+          "name": "General Control Systems",
+          "sharedCategories": [
+            "Manufacturing"
+          ],
+          "similarityScore": 84
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Debt Financing round raised $30,144, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 83 (+2 over 90 days) and market heat at 63 (+2).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Control Engineering, ONDEX Automation, Systems Engineering Associates.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:22:02.838Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:22:02.786Z",
+    "url": "https://www.crunchbase.com/organization/winfunc"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "winfunc",
+      "shortDescription": "winfunc provides an AI-native security engineering platform that autonomously finds, triages, exploits, and patches codebase vulnerabilities",
+      "description": "winfunc provides an AI-native security engineering platform that autonomously finds, triages, exploits, and patches security vulnerabilities across codebases. The platform uses AI agents to perform static and dependency analysis, generate executable proof-of-concept exploits, and deliver patches as pull requests. winfunc supports multiple programming languages and integrates with Git-based workflows, CI/CD pipelines, and existing development processes. Its features include AI-assisted vulnerability triage, continuous scanning of commits and pull requests, and analytics for security posture and vulnerability trends. The company also publishes research, vulnerability disclosures, and technical deep dives based on issues discovered by its automated agents.",
+      "website": "https://winfunc.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "industries": [
+        "Application Performance Management",
+        "Artificial Intelligence (AI)",
+        "Cloud Computing",
+        "Cyber Security",
+        "Developer Tools",
+        "DevOps",
+        "Enterprise Software",
+        "Security",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Internet Services",
+        "Privacy and Security",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "AI-native security engineering platform that autonomously finds, triages, exploits, and patches vulnerabilities in codebases.",
+        "name": "winfunc Security Engineering Platform"
+      },
+      {
+        "description": "Service that autonomously generates and delivers security patches as pull requests for detected vulnerabilities.",
+        "name": "AUTOFIX AI-Generated Patches"
+      },
+      {
+        "description": "Context-aware AI assistant that helps analyze findings, assess exploitability, and prioritize remediation in natural language.",
+        "name": "TRIAGER AI Security Assistant"
+      },
+      {
+        "description": "Upcoming build-time security enforcement tool that applies per-endpoint policies and blocks insecure builds.",
+        "name": "Dome"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 17,
+      "growthScore": 91,
+      "heatChange90Days": 61,
+      "heatScore": 89
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 94.96
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 91 (+17 over 90 days) and market heat at 89 (+61).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

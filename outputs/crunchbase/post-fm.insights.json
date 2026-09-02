@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:14:04.737Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:14:04.681Z",
+    "url": "https://www.crunchbase.com/organization/post-fm"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Post.fm",
+      "shortDescription": "Post.fm offers social email service.",
+      "description": "Post.fm offers social email service.",
+      "website": "http://www.post.fm/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Email"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Internet Services",
+        "Messaging and Telecommunications"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2010-08-16",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2010-08-16",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2010-08-16",
+          "title": "Seed Round - Post.fm"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -42,
+      "heatScore": 41
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Substack is a subscription-based newsletter publishing platform for independent writers.",
+          "employeeRange": "101-250",
+          "name": "Substack",
+          "similarityScore": 93
+        },
+        {
+          "description": "Beehiiv is an email newsletter platform enhancing audience engagement, growth, and monetization.",
+          "employeeRange": "251-500",
+          "name": "beehiiv",
+          "similarityScore": 92
+        },
+        {
+          "description": "Revue is a developer of an editorial newsletter tool designed to build a direct relationship with the readers.",
+          "employeeRange": "1-10",
+          "name": "Revue",
+          "similarityScore": 88
+        },
+        {
+          "description": "Professional, modern, open source publishing",
+          "employeeRange": "11-50",
+          "name": "Ghost",
+          "similarityScore": 88
+        },
+        {
+          "description": "Patreon is an online platform connecting musicians and other artists with their fan base.",
+          "employeeRange": "251-500",
+          "name": "Patreon",
+          "similarityScore": 86
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Substack, beehiiv, Revue.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:40:32.164Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:40:32.113Z",
+    "url": "https://www.crunchbase.com/organization/overshoot"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "overshoot",
+      "shortDescription": "Overshoot publishes a newsletter about the business of entertainment, finance, trends, and culture.",
+      "description": "Overshoot publishes a subscription-supported, bi-monthly newsletter about the business of entertainment in India. It covers financial information, trend analysis, and cultural insights concerning streaming platforms, movies, theaters, gaming, and the creator economy.",
+      "website": "https://overshootnewsletter.substack.com/",
+      "foundedYear": 2023,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "industries": [
+        "Content",
+        "Digital Media",
+        "Media and Entertainment",
+        "News",
+        "Publishing"
+      ],
+      "sectors": [
+        "Content and Publishing",
+        "Media and Entertainment"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A subscription-supported newsletter covering the business, finance, trends, and culture of entertainment.",
+        "name": "Overshoot Newsletter"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

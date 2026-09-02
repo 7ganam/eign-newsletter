@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:31:43.476Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:31:43.431Z",
+    "url": "https://www.crunchbase.com/organization/tl-biolabs-9280"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "TL Biolabs",
+      "shortDescription": "TL Biolabs offers economical genomic tests for beef and dairy cattle, with free software to deliver actionable results.",
+      "description": "TL Biolabs offers economical genomic tests for beef and dairy cattle, with free software to deliver actionable results.",
+      "website": "http://www.tlbiolabs.com/",
+      "foundedYear": 2016,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Santa Clara, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Software"
+      ],
+      "sectors": [
+        "Software"
+      ],
+      "founders": [
+        "Mark Wilson"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 4000000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2017-02-23",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2017-02-23",
+          "amount": {
+            "amount": 4000000,
+            "currency": "USD"
+          },
+          "investorCount": 5,
+          "leadInvestors": [
+            "Andreessen Horowitz"
+          ],
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 5,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Andreessen Horowitz",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Josh Buckley",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Refactor",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "SGH CAPITAL",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2017-03-02",
+          "publisher": "AgFunderNews",
+          "title": "Andreessen Horowitz Leads $4m Seed Round for Livestock Genetics Startup TL Biolabs",
+          "url": "https://agfundernews.com/andreessen-horowitz-leads-4m-seed-round-livestock-genetics-startup-tl-biolabs.html"
+        },
+        {
+          "date": "2017-02-23",
+          "title": "Seed Round - TL Biolabs"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 4000000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -12,
+      "heatScore": 32
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Neogen Corp. is a developer of food and animal safety products.",
+          "employeeRange": "1,001-5,000",
+          "name": "Neogen",
+          "similarityScore": 95
+        },
+        {
+          "description": "Holstein Association USA is the world's largest dairy cattle breed organization, offering information services to all dairy producers.",
+          "employeeRange": "101-250",
+          "name": "Holstein Association USA",
+          "similarityScore": 93
+        },
+        {
+          "description": "DataGene is an independent and industry-owned organisation responsible for driving genetic gain and herd improvement.",
+          "employeeRange": "11-50",
+          "name": "DataGene",
+          "similarityScore": 91
+        },
+        {
+          "description": "AgSights offers the support, technology, and methods of enhancing your management, tracking, identification, and information storage needs.",
+          "employeeRange": "1-10",
+          "name": "AgSights",
+          "similarityScore": 89
+        },
+        {
+          "description": "American Simmental Association is an nonprofit organization that provides cattle genetics and multi-breed evaluation research services.",
+          "employeeRange": "11-50",
+          "name": "American Simmental Association",
+          "similarityScore": 85
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $4,000,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Neogen, Holstein Association USA, DataGene.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

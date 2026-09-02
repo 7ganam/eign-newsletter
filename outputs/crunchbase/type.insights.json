@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:47:09.964Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:47:09.910Z",
+    "url": "https://www.crunchbase.com/organization/type"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Type",
+      "shortDescription": "Type is an online application that enables users to type with customized keyboards on their iOS 8 platforms.",
+      "description": "Type is an online application that enables users to type with customized keyboards on their iOS 8 platforms. It was launched in September 2014.",
+      "website": "http://downloadtype.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "industries": [
+        "Apps",
+        "Software"
+      ],
+      "sectors": [
+        "Apps",
+        "Software"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 13,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2023-07-23",
+          "publisher": "ARN",
+          "title": "Microsoft unveils TypeChat library for building natural language interfaces",
+          "url": "https://www.arnnet.com.au/article/708121/microsoft-unveils-typechat-library-building-natural-language-interfaces/?fp=2&fpid=1"
+        },
+        {
+          "date": "2023-07-22",
+          "publisher": "Hackaday",
+          "title": "Bridging A Gap Between LLMs And Programming With TypeChat",
+          "url": "https://hackaday.com/2023/07/22/bridging-a-gap-between-llms-and-programming-with-typechat/"
+        },
+        {
+          "date": "2023-07-05",
+          "publisher": "The New Stack",
+          "title": "Quick Tips to Make Your SDK More Maintainable in TypeScript",
+          "url": "https://thenewstack.io/quick-tips-to-make-your-sdk-more-maintainable-in-typescript/"
+        },
+        {
+          "date": "2023-02-27",
+          "publisher": "PRNewswire",
+          "title": "Typeface Emerges From Stealth With a Generative AI Application For Enterprise Content Creation and $65 Million in Funding",
+          "url": "https://www.prnewswire.com/news-releases/typeface-emerges-from-stealth-with-a-generative-ai-application-for-enterprise-content-creation-and-65-million-in-funding-301756660.html"
+        },
+        {
+          "date": "2023-01-25",
+          "publisher": "hackernoon.com",
+          "title": "Unexpected Discoveries in TypeORM 0.3.11",
+          "url": "https://hackernoon.com/unexpected-discoveries-in-typeorm-0311"
+        },
+        {
+          "date": "2022-10-05",
+          "publisher": "ZDNET",
+          "title": "Programming languages: Microsoft's TypeScript shows vision can beat skepticism",
+          "url": "https://zd.net/3yi1ywi"
+        },
+        {
+          "date": "2022-07-05",
+          "publisher": "Docker",
+          "title": "How to Build and Deploy a URL Shortener Using TypeScript and Nest.js",
+          "url": "https://ift.tt/hNCtne0"
+        },
+        {
+          "date": "2022-03-12",
+          "publisher": "Slashdot",
+          "title": "Should JavaScript Add a New Syntax for Types?",
+          "url": "https://bit.ly/35PIY3D"
+        },
+        {
+          "date": "2022-03-01",
+          "publisher": "SD Times",
+          "title": "Microsoft releases TypeScript 4.6",
+          "url": "https://buff.ly/3C55zoq"
+        },
+        {
+          "date": "2021-12-03",
+          "publisher": "DevOps.com",
+          "title": "Is TypeScript the New JavaScript?",
+          "url": "http://dlvr.it/SDgk8V"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -12,
+      "heatScore": 16
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 13 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

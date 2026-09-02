@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:49:40.384Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:49:40.327Z",
+    "url": "https://www.crunchbase.com/organization/reticular"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Reticular",
+      "shortDescription": "Bridging brands and their customers",
+      "description": "Reticular is a SOCIAL MEDIA MANAGEMENT firm that builds bridges between YOU the brand, and your consumer. Reticular introduce you to your followers. Talk to them. Listen to them. Get feedback and reactions. Share insights and ideas with them.",
+      "website": "http://www.reticular.in/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Bangalore, Karnataka, India",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)"
+      ],
+      "industries": [
+        "Digital Media",
+        "Mobile",
+        "Social Media"
+      ],
+      "sectors": [
+        "Internet Services",
+        "Media and Entertainment",
+        "Mobile"
+      ],
+      "founders": [
+        "Vikram Angelo"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -6,
+      "heatScore": 46
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2025-09-13",
+        "probabilityPercent": 85.96
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Braze is a customer engagement platform that enables customer-centric interactions between brands and consumers.",
+          "employeeRange": "1,001-5,000",
+          "name": "Braze",
+          "similarityScore": 95
+        },
+        {
+          "description": "Iterable is an AI-powered communication platform that improves customer retention with its marketing.",
+          "employeeRange": "501-1,000",
+          "name": "Iterable",
+          "similarityScore": 93
+        },
+        {
+          "description": "Customer.io enables users to send newsletters to selected segments of customers using their website data.",
+          "employeeRange": "251-500",
+          "name": "Customer.io",
+          "similarityScore": 91
+        },
+        {
+          "description": "MoEngage is an internet company that features cloud-based marketing services for consumer businesses.",
+          "employeeRange": "501-1,000",
+          "name": "MoEngage",
+          "similarityScore": 89
+        },
+        {
+          "description": "HubSpot develops cloud-based, inbound marketing software that allows businesses to transform the way that they market online.",
+          "employeeRange": "5,001-10,000",
+          "name": "HubSpot",
+          "sharedCategories": [
+            "Social Media"
+          ],
+          "similarityScore": 86
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Braze, Iterable, Customer.io.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

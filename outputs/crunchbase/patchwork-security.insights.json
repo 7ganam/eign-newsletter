@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:52:11.947Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:52:11.889Z",
+    "url": "https://www.crunchbase.com/organization/patchwork-security"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Patchwork Security",
+      "shortDescription": "Patchwork Security Personalized notifications for Open Source Vulnerabilities.",
+      "description": "Patchwork was founded by two security engineers with the goal of bringing automation and expert security processes to the wider software market.",
+      "website": "https://patchworksecurity.com/",
+      "foundedYear": 2015,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Oakland, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Cyber Security",
+        "Network Security",
+        "Security",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Privacy and Security",
+        "Software"
+      ],
+      "founders": [
+        "David Chan",
+        "Shamiq Islam"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2016-03-22",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2016-03-22",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2016-03-22",
+          "title": "Seed Round - Patchwork Security"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -12,
+      "heatScore": 9
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Snyk is a cloud native application security provider that enables millions of developers to build software securely.",
+          "employeeRange": "1,001-5,000",
+          "name": "Snyk",
+          "sharedCategories": [
+            "Cyber Security",
+            "Security",
+            "Software"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Application Security for the AI-Software Development Era",
+          "employeeRange": "101-250",
+          "name": "Endor Labs",
+          "sharedCategories": [
+            "Cyber Security",
+            "Security"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Mend is a platform designed to automate open source security and compliance processes.",
+          "employeeRange": "251-500",
+          "name": "Mend.io",
+          "sharedCategories": [
+            "Cyber Security",
+            "Software"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Black Duck provides application security testing tools for software supply chain risk, open source security, and AI-generated code.",
+          "employeeRange": "1,001-5,000",
+          "name": "Black Duck",
+          "sharedCategories": [
+            "Cyber Security"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Sonatype is the developer-friendly full-spectrum software supply chain management platform helps organizations and software developers.",
+          "employeeRange": "501-1,000",
+          "name": "Sonatype",
+          "sharedCategories": [
+            "Cyber Security",
+            "Software"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $120,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Snyk, Endor Labs, Mend.io.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

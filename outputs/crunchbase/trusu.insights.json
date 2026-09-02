@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:44:12.735Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:44:12.681Z",
+    "url": "https://www.crunchbase.com/organization/trusu"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Trusu",
+      "shortDescription": "Trusu allows you to order the products you love and miss from abroad",
+      "description": "We are a group of expats in Hong Kong that want easy and affordable access to buy the products we love from back home. Snacks, foods, health products, and other daily essentials that we miss are either not found in Hong Kong, or are too expensive to buy. We were faced with bad alternatives such as overpriced grocery stores, or expensive package forwarding companies. \n\nWe believe that with the help of technology, anyone should be able to buy anything from around the world at an affordable price. We are on a mission to make international commerce seamless. \n\nThis is why we started Trusu.",
+      "website": "https://trusu.hk/",
+      "foundedYear": 2016,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Hong Kong, Hong Kong Island",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)"
+      ],
+      "industries": [
+        "E-Commerce",
+        "Internet",
+        "Retail Technology"
+      ],
+      "sectors": [
+        "Commerce and Shopping",
+        "Hardware",
+        "Information Technology",
+        "Software"
+      ],
+      "founders": [
+        "James Steinberg",
+        "Naren Sathiya",
+        "Osman Mendoza"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 120000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2017-03-21",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2017-03-21",
+          "amount": {
+            "amount": 120000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2019-03-25",
+          "title": "Trusu acquired by ZipX"
+        },
+        {
+          "date": "2017-03-21",
+          "title": "Pre Seed Round - Trusu"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 120000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -7,
+      "heatScore": 42
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Stackry is a transportation company that offers international shipping, parcel, package forwarding, logistics and referral program services.",
+          "employeeRange": "11-50",
+          "name": "Stackry",
+          "similarityScore": 93
+        },
+        {
+          "description": "MyUS.com is a package consolidation service helping shoppers and business owners alike shop without borders.",
+          "employeeRange": "501-1,000",
+          "name": "MyUS.com",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Shipito is a package forwarding company allowing buyers to purchase products in the U.S. and have them shipped anywhere in the world.",
+          "employeeRange": "51-100",
+          "name": "Shipito",
+          "similarityScore": 91
+        },
+        {
+          "description": "Borderlinx provides a cross-border SaaS solution for online retailers.",
+          "employeeRange": "11-50",
+          "name": "Borderlinx",
+          "sharedCategories": [
+            "E-Commerce"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "forward2me is a parcel forwarding services provider company.",
+          "employeeRange": "11-50",
+          "name": "forward2me",
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $120,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Stackry, MyUS.com, Shipito.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

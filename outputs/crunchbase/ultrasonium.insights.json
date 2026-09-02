@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:48:30.714Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:48:30.660Z",
+    "url": "https://www.crunchbase.com/organization/ultrasonium"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Ultrasonium",
+      "shortDescription": "Ultrasonium develops metal additive manufacturing equipment and processes for aerospace, defense, and energy applications.",
+      "description": "Ultrasonium develops metal additive manufacturing equipment and processes for aerospace, defense, and energy applications. Its platform includes electronic systems, embedded controls, robotics, mechanical assemblies, and process-monitoring capabilities for metal 3D printing. The company also develops multiphysics models and simulation workflows to guide equipment design and process validation.",
+      "website": "https://www.ultrasonium.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "industries": [
+        "3D Printing",
+        "Advanced Materials",
+        "Aerospace",
+        "Electronic Design Automation (EDA)",
+        "Energy",
+        "Industrial Automation",
+        "Manufacturing",
+        "Mechanical Engineering",
+        "Robotics",
+        "Simulation"
+      ],
+      "sectors": [
+        "Design",
+        "Energy",
+        "Hardware",
+        "Manufacturing",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A metal 3D printing platform for producing components through additive manufacturing processes.",
+        "name": "Metal Additive Manufacturing Platform"
+      },
+      {
+        "description": "A metal 3D printing process that uses ultrasonic waves to shape liquid metal.",
+        "name": "Contactless Acoustic Shaping Technology (CAST)"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 27,
+      "growthScore": 91,
+      "heatChange90Days": 89,
+      "heatScore": 90
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 90.06
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 91 (+27 over 90 days) and market heat at 90 (+89).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

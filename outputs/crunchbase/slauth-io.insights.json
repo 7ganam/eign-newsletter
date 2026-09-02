@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:33:13.239Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:33:13.181Z",
+    "url": "https://www.crunchbase.com/organization/slauth-io"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Slauth.io",
+      "shortDescription": "Slauth.io is an IAM Policy Copilot that suggests secure IAM policies",
+      "description": "Slauth.io is an IAM Policy Copilot that suggests secure IAM policies based on the observed activity of a newly developed service identity i.e. micro-service. As opposed to a DevOps engineer having to manually write a policy and hope it is secure, Slauth suggests the most secure policy through a PR within seconds. We save DevOps engineers countless of hours and reduce technical debt which results in security vulnerabilities. Integrations with Terraform are also available.",
+      "website": "https://slauth.io/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Tel Aviv, Israel",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)",
+        "Middle East",
+        "Middle East and North Africa (MENA)"
+      ],
+      "industries": [
+        "Cyber Security",
+        "DevOps",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Privacy and Security",
+        "Software"
+      ],
+      "founders": [
+        "Daniel Haven",
+        "Moti Elkayam",
+        "Tal Auslander"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A tool that auto-generates least-privilege IAM policies for AWS and GCP environments by analyzing code using language learning models and traditional scanning.",
+        "name": "IAM Policy Copilot"
+      },
+      {
+        "description": "A command-line interface tool that scans code locally and generates secure IAM policies for AWS and GCP, integrating with CI/CD workflows.",
+        "name": "Open-Source CLI Companion"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 1700000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2023-01-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2023-01-01",
+          "amount": {
+            "amount": 1200000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "postMoneyValuation": {
+            "amount": 8665877,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2022-07-01",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 4562787,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 3,
+        "visibleNames": [
+          {
+            "name": "ACE & Company",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Rebel Fund",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 9,
+      "includedUniqueCount": 5,
+      "items": [
+        {
+          "date": "2024-02-04",
+          "publisher": "Business Wire",
+          "title": "Ark Infotech LLC Completes Acquisition of Slauth.io, Paving the Way for Enhanced Cybersecurity and AI Innovations",
+          "url": "https://www.businesswire.com/news/home/20240131495027/en/Ark-Infotech-LLC-Completes-Acquisition-of-Slauth.io-Paving-the-Way-for-Enhanced-Cybersecurity-and-AI-Innovations"
+        },
+        {
+          "date": "2024-01-31",
+          "title": "Slauth.io acquired by Ark Infotech"
+        },
+        {
+          "date": "2023-01-01",
+          "title": "Seed Round - Slauth.io"
+        },
+        {
+          "date": "2022-09-30",
+          "publisher": "Security Boulevard",
+          "title": "Y Combinator’s Summer 2022 Cybersecurity, Privacy, and Trust Startups",
+          "url": "https://securityboulevard.com/2022/09/y-combinators-summer-2022-cybersecurity-privacy-and-trust-startups/"
+        },
+        {
+          "date": "2022-07-01",
+          "title": "Pre Seed Round - Slauth.io"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 2,
+    "knownDetailedFundingAmount": {
+      "amount": 1700000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 70.59,
+    "latestToEarliestKnownValuationMultiple": 1.9
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2024-05-18",
+      "growthChange90Days": -1,
+      "growthScore": 18,
+      "heatChange90Days": -7,
+      "heatScore": 34,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "funding": {
+        "generatedDate": "2025-10-11",
+        "probabilityPercent": 65.4,
+        "timingEstimatePercent": {
+          "within6Months": 5.38,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 94.62
+        }
+      },
+      "growth": {
+        "generatedDate": "2025-05-11",
+        "probabilityPercent": 77.08
+      },
+      "ipo": {
+        "generatedDate": "2025-05-20",
+        "probabilityPercent": 0.18
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Island offers an enterprise browser that enhances security and productivity by integrating essential tools.",
+          "employeeRange": "501-1,000",
+          "name": "Island",
+          "sharedCategories": [
+            "Cyber Security"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "GitHub is a software company that offers code hosting services that allow developers to build software for open-source and private projects.",
+          "employeeRange": "1,001-5,000",
+          "name": "GitHub",
+          "sharedCategories": [
+            "Cyber Security",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Source Code Repositories",
+            "CI/CD (Continuous Integration / Continuous Delivery)",
+            "Open Source Security"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Amazon Web Services provides information technology infrastructure services to businesses in the form of web services.",
+          "employeeRange": "10,001+",
+          "name": "Amazon Web Services",
+          "sharedSpecialties": [
+            "Infrastructure as Code"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "Sola Security provides a self-serve cybersecurity platform that enables organizations to build, customize, and manage security tools.",
+          "employeeRange": "11-50",
+          "name": "Sola Security",
+          "sharedCategories": [
+            "Cyber Security"
+          ],
+          "sharedSpecialties": [
+            "Cloud Infrastructure Entitlement Management (CIEM)",
+            "API Security",
+            "Cloud Security Posture Management (CSPM)",
+            "Identity Governance and Administration (IGA)",
+            "Open Source Security"
+          ],
+          "similarityScore": 89.973
+        },
+        {
+          "description": "Reco is a dynamic SaaS security company that specializes in monitoring and securing cloud applications.",
+          "employeeRange": "101-250",
+          "name": "Reco",
+          "sharedCategories": [
+            "Cyber Security"
+          ],
+          "sharedSpecialties": [
+            "API Security",
+            "Identity Governance and Administration (IGA)"
+          ],
+          "similarityScore": 85.35
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $1,200,000, or 70.59% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $4,562,787 to $8,665,877, a 1.9x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 18 (-1 over 90 days) and market heat at 34 (-7).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Island, GitHub, Amazon Web Services.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 9 timeline items but exposes 5 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

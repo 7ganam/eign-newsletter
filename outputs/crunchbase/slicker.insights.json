@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:33:36.816Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:33:36.767Z",
+    "url": "https://www.crunchbase.com/organization/slicker"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Slicker",
+      "shortDescription": "A software company.",
+      "description": "Their agency is experienced in bringing online businesses to life. They believe that online presences need to offer 5 different business tools: a blogging engine, an e-commerce section, an e-mail marketing tool, powerful analytics, customer relationship management.",
+      "website": "http://web.slicker.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Charleston, South Carolina, United States",
+      "geographicRegions": [
+        "East Coast",
+        "Southern US"
+      ],
+      "industries": [
+        "Business Development",
+        "E-Commerce",
+        "Software"
+      ],
+      "sectors": [
+        "Commerce and Shopping",
+        "Professional Services",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A software product or service offered by Slicker, details unspecified.",
+        "name": "PLAYUS SOFT"
+      },
+      {
+        "description": "A service that provides leaderboard functionalities, likely for tracking and displaying rankings.",
+        "name": "LEADERBOARD SERVICES"
+      },
+      {
+        "description": "A service or tool for monitoring and managing CPU usage.",
+        "name": "CPU Utilization"
+      },
+      {
+        "description": "A service or tool for monitoring and managing memory usage.",
+        "name": "Memory Usage"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -7,
+      "growthScore": 81,
+      "heatChange90Days": -26,
+      "heatScore": 40
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 78.44
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Slicker streamlines your payment process, increasing conversions and reducing failures with AI-powered insights.",
+          "employeeRange": "1-10",
+          "name": "Slicker",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 97
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 81 (-7 over 90 days) and market heat at 40 (-26).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:55:27.567Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:55:27.507Z",
+    "url": "https://www.crunchbase.com/organization/pelm"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Pelm",
+      "shortDescription": "Pelm provides digital infrastructure to develop API for accessing and managing user's energy data.",
+      "description": "Pelm aims to democratize and modernize the energy sector. Founded in 2021 and is based in San Francisco, California.",
+      "website": "https://pelm.com/docs/welcome",
+      "foundedYear": 2021,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Developer APIs",
+        "Energy",
+        "Infrastructure"
+      ],
+      "sectors": [
+        "Energy",
+        "Other",
+        "Software"
+      ],
+      "founders": [
+        "Drew Kim"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 500000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2022-03-22",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2022-03-22",
+          "amount": {
+            "amount": 500000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2022-03-22",
+          "title": "Pre Seed Round - Pelm"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 500000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -14,
+      "heatScore": 57
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2025-06-01",
+        "probabilityPercent": 86.78
+      },
+      "funding": {
+        "generatedDate": "2025-06-11",
+        "probabilityPercent": 33.27,
+        "timingEstimatePercent": {
+          "within6Months": 15.54,
+          "months6To11": 13.13,
+          "months12To24": 20.45,
+          "beyond24Months": 24.99
+        }
+      },
+      "growth": {
+        "generatedDate": "2025-06-01",
+        "probabilityPercent": 77.69
+      },
+      "ipo": {
+        "generatedDate": "2025-06-01",
+        "probabilityPercent": 0.49
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "UtilityAPI is a service that automatically collects utility bill and usage data from utility web portals.",
+          "employeeRange": "11-50",
+          "name": "UtilityAPI",
+          "similarityScore": 97
+        },
+        {
+          "description": "Bayou Energy is a utility data access, actions and sharing platform company that connects clean energy companies to the grid.",
+          "employeeRange": "1-10",
+          "name": "Bayou Energy",
+          "similarityScore": 95
+        },
+        {
+          "description": "To provide electricity customers with easy access to their energy usage data in a consumer-friendly and computer-friendly format.",
+          "employeeRange": "11-50",
+          "name": "Green Button Alliance",
+          "sharedCategories": [
+            "Energy"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Bidgely offers energy analytics and customer engagement solutions for utilities and energy providers.",
+          "employeeRange": "101-250",
+          "name": "Bidgely",
+          "sharedCategories": [
+            "Energy"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Arcadia is the global utility data and energy solutions platform.",
+          "employeeRange": "501-1,000",
+          "name": "Arcadia",
+          "sharedCategories": [
+            "Energy"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $500,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include UtilityAPI, Bayou Energy, Green Button Alliance.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

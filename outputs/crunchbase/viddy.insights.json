@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:05:45.918Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:05:45.890Z",
+    "url": "https://www.crunchbase.com/organization/viddy"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Viddy",
+      "shortDescription": "Viddy is a video creation and life sharing mobile application that makes it easy for consumers.",
+      "description": "Viddy is a video creation and life sharing mobile application that makes it easy for consumers to transform raw mobile video into stylized clips with the tap of a finger and then share them with friends, family and the world.",
+      "website": "http://www.viddy.com/",
+      "foundedYear": 2010,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Venice, California, United States",
+      "geographicRegions": [
+        "Greater Los Angeles Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Mobile Apps",
+        "Video"
+      ],
+      "sectors": [
+        "Apps",
+        "Media and Entertainment",
+        "Mobile",
+        "Software",
+        "Video"
+      ],
+      "founders": [
+        "Chris Ovitz"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 2861832,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2013-04-30",
+      "lastFundingType": "Venture round",
+      "rounds": [
+        {
+          "announcedDate": "2013-04-30",
+          "amount": {
+            "amount": 2861832,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Venture round"
+        },
+        {
+          "announcedDate": "2011-01-01",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "New Enterprise Associates",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "O.D. Kobo",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2013-04-30",
+          "title": "Venture Round - Viddy"
+        },
+        {
+          "date": "2011-01-01",
+          "title": "Seed Round - Viddy"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 2861832,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -3,
+      "heatScore": 12
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Instagram is a free photo-sharing application that enables its users to take photos, apply filters, and share them on social networks.",
+          "employeeRange": "10,001+",
+          "name": "Instagram",
+          "similarityScore": 97
+        },
+        {
+          "description": "TikTok is a short-form video entertainment app and social network platform.",
+          "employeeRange": "10,001+",
+          "name": "TikTok",
+          "sharedCategories": [
+            "Video"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Dubsmash is a video-sharing social media service application.",
+          "employeeRange": "11-50",
+          "name": "Dubsmash",
+          "sharedCategories": [
+            "Video"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Likee is a video-making app where one can create a short-form video and share it with their followers.",
+          "employeeRange": "1,001-5,000",
+          "name": "Likee",
+          "sharedCategories": [
+            "Video"
+          ],
+          "similarityScore": 83
+        },
+        {
+          "description": "Byte App is a new looping video app  for video creators.",
+          "employeeRange": "1-10",
+          "name": "Byte.co",
+          "sharedCategories": [
+            "Video"
+          ],
+          "similarityScore": 82
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Venture round round raised $2,861,832, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Instagram, TikTok, Dubsmash.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

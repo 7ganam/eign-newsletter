@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:16:45.685Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:16:45.630Z",
+    "url": "https://www.crunchbase.com/organization/prendea"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Prendea",
+      "shortDescription": "Live afterschool classes for Spanish-speaking kids ages 4 to 15",
+      "description": "Prendea offers live afterschool classes to Spanish-speaking kids ages 4 to 15. For a fixed monthly price, kids can choose as many classes as they like from our large selection that ranges from TikTok choreography to astronomy.",
+      "website": "https://prendea.com/",
+      "foundedYear": 2020,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Barranco, Lima, Peru",
+      "geographicRegions": [
+        "Latin America"
+      ],
+      "industries": [
+        "E-Commerce"
+      ],
+      "sectors": [
+        "Commerce and Shopping"
+      ],
+      "founders": [
+        "Benjamín Garmendia",
+        "Gonzalo Aguilar Málaga"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2021-03-22",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2021-03-22",
+          "investorCount": 3,
+          "leadInvestors": [
+            "Rethink Education"
+          ],
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2020-09-30",
+          "investorCount": 2,
+          "leadInvestors": [
+            "Dunce Capital"
+          ],
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 5,
+        "visibleNames": [
+          {
+            "name": "Blaine Vess",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Dunce Capital",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Rethink Education",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "The Board",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2022-07-21",
+          "title": "Prendea acquired by ClassDojo"
+        },
+        {
+          "date": "2021-03-22",
+          "title": "Seed Round - Prendea"
+        },
+        {
+          "date": "2020-09-30",
+          "title": "Pre Seed Round - Prendea"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -9,
+      "heatScore": 32
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2025-08-02",
+        "probabilityPercent": 1.74
+      },
+      "growth": {
+        "generatedDate": "2025-01-11",
+        "probabilityPercent": 67.04
+      },
+      "ipo": {
+        "generatedDate": "2025-08-02",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

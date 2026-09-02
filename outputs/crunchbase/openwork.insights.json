@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:32:26.472Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:32:26.413Z",
+    "url": "https://www.crunchbase.com/organization/openwork"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "OpenWork",
+      "shortDescription": "OpenWork is a platform that allows companies to deal directly with consultants, with all the protection of an agent.",
+      "description": "OpenWork is a platform that allows companies to deal directly with consultants, with all the protection of an agent. They reinvest 80% of their profits directly in the community & continual developments on the platform, these include free skills workshops, parties & networking and conferences.",
+      "website": "http://www.openwork.co/fr",
+      "foundedYear": 2010,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "51-100",
+      "headquarters": "Paris, Ile-de-France, France",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Consulting"
+      ],
+      "sectors": [
+        "Professional Services"
+      ],
+      "founders": [
+        "Benoit Debray"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2026-05-20",
+          "publisher": "PR TIMES",
+          "title": "日本最大級の社員クチコミプラットフォーム運営2社が初対談。「エン カイシャの評判」×「OpenWork」共催セミナーを6月5日に開催",
+          "url": "https://prtimes.jp/main/html/rd/p/000001207.000000725.html"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 1,
+      "growthScore": 83,
+      "heatChange90Days": -20,
+      "heatScore": 46
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 16.35
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 74.42
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 7.9
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 83 (+1 over 90 days) and market heat at 46 (-20).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

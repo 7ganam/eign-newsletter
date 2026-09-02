@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:38:47.568Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:38:47.511Z",
+    "url": "https://www.crunchbase.com/organization/rebulk"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Rebulk",
+      "shortDescription": "Rebulk develops computer vision tools for real-time bulk inventory tracking and logistics visibility.",
+      "website": "https://www.rebulk.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "Overland Park, Kansas, United States",
+      "geographicRegions": [
+        "Midwestern US"
+      ],
+      "industries": [
+        "Drones",
+        "Hardware",
+        "Software"
+      ],
+      "sectors": [
+        "Hardware",
+        "Software"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2026-03-23",
+          "publisher": "Startland News",
+          "title": "KC-backed (and built) AI startup rebrands amid shift to tackling America’s supply chain pain points",
+          "url": "https://www.startlandnews.com/2026/03/dscribe-ai-rebulk/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -7,
+      "heatScore": 72
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 14.48
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Tiliter builds Vision Agents. AI tools that turn images into structured data to automate visual workflows across industries.",
+          "employeeRange": "11-50",
+          "name": "Tiliter",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "We are a team of passionate individuals dedicated to pushing the boundaries of what AI can achieve.",
+          "employeeRange": "11-50",
+          "name": "Clearspot",
+          "similarityScore": 92
+        },
+        {
+          "description": "Cargo Matrix develops software and mobile applications for logistics, automated solutions and software suite for logistics providers.",
+          "employeeRange": "11-50",
+          "name": "Cargo Matrix",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Intelgic Technologies transforms businesses through process automation with RPA and machine learning.",
+          "employeeRange": "51-100",
+          "name": "Intelgic Technologies",
+          "similarityScore": 91
+        },
+        {
+          "description": "The most end-end AI computer vision platform in the market!",
+          "employeeRange": "11-50",
+          "name": "Visionplatform.ai",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Tiliter, Clearspot, Cargo Matrix.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

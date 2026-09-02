@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:51:08.400Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:51:08.346Z",
+    "url": "https://www.crunchbase.com/organization/unsurvey"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "unSurvey",
+      "shortDescription": "unSurvey is a multi-agent AI system that conducts human-like, AI-moderated conversational-based interviews",
+      "description": "unSurvey utilizes advanced conversational AI to facilitate natural, engaging conversations with participants. This platform is used to receive feedback, conduct market research, and gain deep insights from consumers, employees, and other groups.",
+      "website": "https://unsurvey.ai/",
+      "foundedYear": 2024,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Market Research",
+        "Software"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Design",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Generates conversational interview flows from natural language descriptions to structure AI-moderated interviews.",
+        "name": "AI-curated Conversation Flows"
+      },
+      {
+        "description": "A drag-and-drop editor for building and customizing conversational interview flows using natural language logic.",
+        "name": "No-code Conversational Flow Editor"
+      },
+      {
+        "description": "Conducts AI-moderated interviews via voice, video, and text in over 50 languages with human-like interaction.",
+        "name": "Multi-modal Conversational Interviews"
+      },
+      {
+        "description": "Provides real-time reports combining qualitative and quantitative insights with deep-linked citations from interviews.",
+        "name": "Conversational Insights and Reporting"
+      },
+      {
+        "description": "Automatically extracts clean, structured data from conversations and provides pre-built visualizations for analysis.",
+        "name": "Structured Data Extraction and Visualization"
+      },
+      {
+        "description": "Manages participant access by enabling anonymous participation or invitations to specific contacts for interviews.",
+        "name": "Participation Access Controls and Invitation Management"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2025-06-11",
+          "publisher": "citybiz",
+          "title": "G2 Acquires unSurvey",
+          "url": "https://www.citybiz.co/article/705327/g2-acquires-unsurvey/"
+        },
+        {
+          "date": "2025-06-10",
+          "title": "unSurvey acquired by G2"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -22,
+      "heatScore": 34
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-04-04",
+        "probabilityPercent": 90.07
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Dialogue AI is a research platform that uses AI agents to conduct and analyze customer interviews at scale.",
+          "employeeRange": "1-10",
+          "name": "Dialogue AI",
+          "sharedCategories": [
+            "Market Research"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "AI-moderated consumer research interviews",
+          "employeeRange": "11-50",
+          "name": "tellet.ai",
+          "sharedCategories": [
+            "Market Research"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Outset provides an AI-moderated research platform that helps research teams analyze and share qualitative and quantitative studies.",
+          "employeeRange": "101-250",
+          "name": "Outset",
+          "sharedCategories": [
+            "Market Research",
+            "Software"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "The only AI-native research platform that makes customer feedback truly accessible — at scale, in real time, and for everyone.",
+          "employeeRange": "101-250",
+          "name": "HeyMarvin",
+          "sharedCategories": [
+            "Market Research",
+            "Software"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "Yabble is a cutting-edge generative AI company.",
+          "employeeRange": "11-50",
+          "name": "Yabble",
+          "sharedCategories": [
+            "Market Research"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Dialogue AI, tellet.ai, Outset.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

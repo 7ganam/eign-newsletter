@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:54:59.750Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:54:59.695Z",
+    "url": "https://www.crunchbase.com/organization/peer"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "PEER",
+      "shortDescription": "PEER is a face-to-face social network for professionals to connect, learn new skills, build products, create new opportunities, and more.",
+      "description": "PEER is face 2 face networking for meeting unacquainted professionals to network, learn new skills, build a product, hire, create new opportunities, and expand your professional world, instantly and over live video.",
+      "website": "http://peer2.me/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Mobile",
+        "Professional Services",
+        "Social Media",
+        "Video",
+        "Video Chat"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Internet Services",
+        "Media and Entertainment",
+        "Messaging and Telecommunications",
+        "Mobile",
+        "Professional Services",
+        "Video"
+      ],
+      "founders": [
+        "Carl Jackson",
+        "Ofer Baharav"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 40000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2013-02-05",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2013-02-05",
+          "amount": {
+            "amount": 40000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Start-Up Chile",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2013-02-05",
+          "title": "Seed Round - PEER"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 40000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -11,
+      "heatScore": 3
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "LinkedIn is a professional networking site that allows users to create business connections, search for jobs, and find potential clients.",
+          "employeeRange": "1-10",
+          "name": "LinkedIn Corporation",
+          "sharedCategories": [
+            "Social Media"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Shapr The environment for early-stage entrepreneurs looking to scale quickly.",
+          "employeeRange": "11-50",
+          "name": "Shapr",
+          "similarityScore": 95
+        },
+        {
+          "description": "Lunchclub utilizes AI to match people for one-on-one video meetings.",
+          "employeeRange": "11-50",
+          "name": "Lunchclub",
+          "sharedCategories": [
+            "Video"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Brella is a simple, web-based networking tool that helps you to meet the most valuable people at events, conferences and livestreams.",
+          "employeeRange": "51-100",
+          "name": "Brella",
+          "similarityScore": 91
+        },
+        {
+          "description": "Bizzabo powers in-person, virtual, and hybrid experiences with the event experience OS.",
+          "employeeRange": "101-250",
+          "name": "Bizzabo",
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $40,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include LinkedIn Corporation, Shapr, Lunchclub.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

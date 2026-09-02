@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:59:37.653Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:59:37.597Z",
+    "url": "https://www.crunchbase.com/organization/roin-technologies"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Roin Technologies",
+      "shortDescription": "Roin Technologies builds robots to automate commercial concrete construction.",
+      "description": "Roin Technologies builds robots to automate commercial concrete construction.\n\nThe company was founded in 2020 and based in San Francisco, California.",
+      "website": "https://rointech.com/",
+      "foundedYear": 2020,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Electronics",
+        "Industrial Automation",
+        "Robotics"
+      ],
+      "sectors": [
+        "Hardware",
+        "Manufacturing",
+        "Science and Engineering"
+      ],
+      "founders": [
+        "Gunner Robinson",
+        "Jim Delaney"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 125000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2021-03-22",
+      "lastFundingType": "Pre Seed",
+      "rounds": [
+        {
+          "announcedDate": "2021-03-22",
+          "amount": {
+            "amount": 125000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 4,
+      "includedUniqueCount": 4,
+      "items": [
+        {
+          "date": "2023-12-18",
+          "publisher": "Digital Journal",
+          "title": "Mining Robots Market Gaining Growth Momentum in Long Run",
+          "url": "https://www.digitaljournal.com/pr/news/htf-market-intelligence/mining-robots-market-gaining-growth-momentum-in-long-run"
+        },
+        {
+          "date": "2023-01-24",
+          "publisher": "PR Newswire",
+          "title": "Built Robotics Acquires Y Combinator-Backed Roin Technologies to Expand beyond Autonomous Earthmoving",
+          "url": "https://www.prnewswire.com/news-releases/built-robotics-acquires-y-combinator-backed-roin-technologies-to-expand-beyond-autonomous-earthmoving-301729257.html"
+        },
+        {
+          "date": "2023-01-24",
+          "title": "Roin Technologies acquired by Built Robotics"
+        },
+        {
+          "date": "2021-03-22",
+          "title": "Pre Seed Round - Roin Technologies"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 125000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2023-12-25",
+      "heatChange90Days": -4,
+      "heatScore": 35,
+      "status": "Growing"
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Advanced Construction Robotics is a developer of a rebar-tying robot designed to lead the long-term transformation.",
+          "employeeRange": "1-10",
+          "name": "Advanced Construction Robotics",
+          "sharedCategories": [
+            "Robotics"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Fastbrick Robotics is an Australian robotics technology company.",
+          "employeeRange": "101-250",
+          "name": "Fastbrick Robotics",
+          "sharedCategories": [
+            "Robotics"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "ICON is the global leader in construction technology changing the way the world builds on Earth and beyond.",
+          "employeeRange": "251-500",
+          "name": "ICON",
+          "sharedCategories": [
+            "Robotics"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Dusty Robotics develops robot-powered tools for the modern construction workforce.",
+          "employeeRange": "51-100",
+          "name": "Dusty Robotics",
+          "sharedCategories": [
+            "Robotics"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Robotics company creating a new class of tool for the skilled construction worker.",
+          "employeeRange": "51-100",
+          "name": "Canvas",
+          "sharedCategories": [
+            "Robotics"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Pre Seed round raised $125,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Advanced Construction Robotics, Fastbrick Robotics, ICON.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

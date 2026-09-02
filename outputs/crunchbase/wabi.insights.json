@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:12:12.193Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:12:12.141Z",
+    "url": "https://www.crunchbase.com/organization/wabi"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "WaBi",
+      "shortDescription": "WaBi is the digital token behind Walimai's anti-counterfeit technology.",
+      "website": "https://www.wacoin.io/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "Singapore, Central Region",
+      "geographicRegions": [
+        "Asia-Pacific (APAC)",
+        "Association of Southeast Asian Nations (ASEAN)",
+        "Southeast Asia"
+      ],
+      "industries": [
+        "Information Technology",
+        "Internet",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Software"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 9,
+      "includedUniqueCount": 9,
+      "items": [
+        {
+          "date": "2024-04-09",
+          "publisher": "Business Journals",
+          "title": "Wabi Capital, a Louisville VC firm, sells HELM Boots brand",
+          "url": "https://www.bizjournals.com/louisville/news/2024/04/09/wabi-capital-helm-boots-exit-justin-delaney-2024.html"
+        },
+        {
+          "date": "2022-03-17",
+          "publisher": "TechCabal",
+          "title": "Inside Wabi2B’s Plan to Empower Women & Digitise Informal Businesses",
+          "url": "https://techcabal.com/?p=90517"
+        },
+        {
+          "date": "2021-11-24",
+          "publisher": "Tech Moran",
+          "title": "How Wabi is Digitising Traditional Trade Channels in Nigeria",
+          "url": "https://techmoran.com/2021/11/24/how-wabi-is-digitising-traditional-trade-channels-in-nigeria/"
+        },
+        {
+          "date": "2021-08-02",
+          "publisher": "TradingView",
+          "title": "\"Price Prediction\" for WABI/BTC",
+          "url": "https://www.tradingview.com/chart/WABIBTC/53TOaEPJ-Price-Prediction-for-WABI-BTC"
+        },
+        {
+          "date": "2021-03-27",
+          "publisher": "TradingView",
+          "title": "WABI/BTC possible 200% Gain !!!!",
+          "url": "https://www.tradingview.com/chart/WABIBTC/fsF0UpAc-WABI-BTC-possible-200-Gain"
+        },
+        {
+          "date": "2020-08-20",
+          "publisher": "TradingView",
+          "title": "TAEL (WABI) 330% Potential Growth",
+          "url": "https://www.tradingview.com/chart/WABIBTC/tHEtvg7t-TAEL-WABI-330-Potential-Growth"
+        },
+        {
+          "date": "2020-08-09",
+          "publisher": "TradingView",
+          "title": "WABI Tael upside potential",
+          "url": "https://www.tradingview.com/chart/WABIBTC/N0fkCBL2-WABI-Tael-upside-potential"
+        },
+        {
+          "date": "2020-07-25",
+          "publisher": "TradingView",
+          "title": "WABI/BTC launch soon :)",
+          "url": "https://www.tradingview.com/chart/WABIBTC/txZ71oVL-WABI-BTC-launch-soon"
+        },
+        {
+          "date": "2020-07-02",
+          "publisher": "Fintech Finance",
+          "title": "Santander Consumer launches Wabi, a car subscription service",
+          "url": "http://zpr.io/Hgywn"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -2,
+      "growthScore": 80,
+      "heatChange90Days": -18,
+      "heatScore": 22
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 92.58
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 80 (-2 over 90 days) and market heat at 22 (-18).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

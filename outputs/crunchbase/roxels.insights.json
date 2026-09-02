@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:01:42.501Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:01:42.449Z",
+    "url": "https://www.crunchbase.com/organization/roxels"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Roxels",
+      "shortDescription": "Roxels provides an AI voice agent that guides users through onboarding, setup flows, and data collection inside software and live calls.",
+      "description": "Roxels develops an AI-powered voice agent that helps software companies guide users through complex workflows. The platform joins browser-based sessions or live calls, holds natural voice conversations in multiple languages, and observes the user’s screen in real time. It walks customers through onboarding, product configuration, and form completion, or can complete flows on their behalf when delegated. Roxels validates inputs as they are provided, adapts questions based on previous answers, and handles conditional logic in forms and checklists. At the end of each session, it produces structured outputs such as completed records, configuration details, and summaries, which are delivered to client systems via webhooks or documentation. The product is used in customer onboarding, guided setup and forms, and other operational data collection scenarios where structured information must be captured accurately from end users.",
+      "website": "https://www.roxels.ai/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Chatbot",
+        "Customer Service",
+        "Enterprise Software",
+        "Natural Language Processing",
+        "Productivity Tools",
+        "Software",
+        "Speech Recognition"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Professional Services",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Antonio Longoria",
+        "Daniel Akle Carranza"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A vision-enabled AI voice agent that guides users through onboarding, setup flows, and form-based data collection in software and live calls.",
+        "name": "Roxels AI Voice Agent"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 87,
+      "heatScore": 87
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 5
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 54.61
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

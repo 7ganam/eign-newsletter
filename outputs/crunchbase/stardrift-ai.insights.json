@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:51:32.092Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:51:32.039Z",
+    "url": "https://www.crunchbase.com/organization/stardrift-ai"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "stardrift ai",
+      "shortDescription": "Stardrift AI develops custom AI applications, agents, automations, and analytics tools for businesses.",
+      "description": "Stardrift AI develops custom AI applications, autonomous agents, workflow automations, and analytics tools for businesses. Its services include SaaS development, chatbot creation, software engineering, data integration, and enterprise AI implementation. The company also provides AgentNovo, a platform for creating assistants connected to organizational documents, databases, and external tools. Its named agents support research, internal knowledge access, email processing, task planning, voice-to-content generation, customer service, refund handling, and social media publishing.",
+      "website": "https://stardriftai.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "Montreal, Quebec, Canada",
+      "industries": [
+        "Agentic AI",
+        "Analytics",
+        "Artificial Intelligence (AI)",
+        "B2B",
+        "Business Process Automation (BPA)",
+        "Chatbot",
+        "Data Integration",
+        "Knowledge Management",
+        "Software"
+      ],
+      "sectors": [
+        "Administrative Services",
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Other",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A platform for creating AI assistants connected to company documents, databases, tools, and team workflows.",
+        "name": "AgentNovo"
+      },
+      {
+        "description": "Autonomous software agents that perform business tasks using organizational data, instructions, tools, and workflow integrations.",
+        "name": "Custom AI Agents"
+      },
+      {
+        "description": "Business software applications built with AI components across front-end interfaces, back-end systems, and data integrations.",
+        "name": "Custom AI Applications"
+      },
+      {
+        "description": "Workflow tools and automations that use AI to coordinate business tasks, process information, and support operations.",
+        "name": "AI-Powered Workflows"
+      },
+      {
+        "description": "An agent that breaks down complex questions, searches multiple sources, summarizes findings, and produces structured reports with citations.",
+        "name": "Deep Research Agent"
+      },
+      {
+        "description": "A retrieval-augmented agent that searches internal documents and data to answer organization-specific questions.",
+        "name": "Internal Knowledge-Base RAG Agent"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 83,
+      "heatScore": 90
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

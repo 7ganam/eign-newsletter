@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:55:23.491Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:55:23.436Z",
+    "url": "https://www.crunchbase.com/organization/strac"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "STRAC",
+      "shortDescription": "STRAC is a non-profit medical organization that comprises several hospitals and units in different countries for emergency healthcare.",
+      "website": "https://strac.org/",
+      "foundedYear": 1993,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "Nonprofit",
+      "employeeRange": "101-250",
+      "headquarters": "San Antonio, Texas, United States",
+      "geographicRegions": [
+        "Southern US"
+      ],
+      "industries": [
+        "Emergency Medicine",
+        "Health Care",
+        "Hospital",
+        "Medical",
+        "Non Profit"
+      ],
+      "sectors": [
+        "Health Care",
+        "Social Impact"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2022-07-19",
+          "publisher": "TechCrunch",
+          "title": "Strac plugs into Slack, OneDrive and more to automatically redact sensitive info",
+          "url": "https://techcrunch.com/2022/07/19/strac-plugs-into-slack-onedrive-and-more-to-automatically-redact-sensitive-info/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -9,
+      "heatScore": 22
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 85.31
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "SETRAC is a non-profit organization that provides stakeholder support through planning, facilitation, and operations.",
+          "employeeRange": "11-50",
+          "name": "SETRAC",
+          "sharedCategories": [
+            "Non Profit",
+            "Medical"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "NCTTRAC is the administrative body responsible for trauma system oversight within the bounds of Trauma Service Area C, D, & E in Texas.",
+          "employeeRange": "11-50",
+          "name": "North Central Texas Trauma Regional Advisory Council",
+          "sharedCategories": [
+            "Health Care",
+            "Non Profit"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Capital Area of Texas Regional Advisory Council facilitates coordination among trauma and emergency healthcare providers.",
+          "employeeRange": "11-50",
+          "name": "Capital Area of Texas Regional Advisory Council",
+          "sharedCategories": [
+            "Health Care",
+            "Non Profit"
+          ],
+          "similarityScore": 83
+        },
+        {
+          "description": "Trauma Center Association of America is a nonprofit trade association that secures the economic viability of trauma centers and systems.",
+          "employeeRange": "1-10",
+          "name": "Trauma Center Association of America",
+          "sharedCategories": [
+            "Health Care",
+            "Non Profit"
+          ],
+          "similarityScore": 82
+        },
+        {
+          "description": "Association of Air Medical Services is a trade association that represents and advocates for the medical transportation industry.",
+          "employeeRange": "1-10",
+          "name": "Association of Air Medical Services",
+          "sharedCategories": [
+            "Non Profit"
+          ],
+          "similarityScore": 80
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include SETRAC, North Central Texas Trauma Regional Advisory Council, Capital Area of Texas Regional Advisory Council.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

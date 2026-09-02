@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:04:01.249Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:04:01.192Z",
+    "url": "https://www.crunchbase.com/organization/nambii"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Nambii",
+      "shortDescription": "Dating Mobile Application",
+      "description": "Nambii is an online dating service with iPhone applications that allow users to send and receive flirts with people around them.",
+      "website": "http://www.nambii.com/",
+      "foundedYear": 2009,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Dating",
+        "Venture Capital"
+      ],
+      "sectors": [
+        "Community and Lifestyle",
+        "Financial Services",
+        "Lending and Investments"
+      ],
+      "founders": [
+        "James Boyle",
+        "Jody Grigs"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2009-03-19",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2009-03-19",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 3,
+      "includedUniqueCount": 3,
+      "items": [
+        {
+          "date": "2020-12-14",
+          "publisher": "ITWeb",
+          "title": "Top year-end ICT tender awards",
+          "url": "https://bit.ly/3no2nMx"
+        },
+        {
+          "date": "2009-03-19",
+          "title": "Seed Round - Nambii"
+        },
+        {
+          "date": "2009-03-18",
+          "publisher": "TechCrunch",
+          "title": "Y Combinator Demo Day Spring 2009",
+          "url": "http://www.techcrunch.com/2009/03/18/y-combinator-demo-day-spring-2009/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -3,
+      "heatScore": 35
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

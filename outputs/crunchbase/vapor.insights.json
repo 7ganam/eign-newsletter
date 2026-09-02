@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T19:55:43.028Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T19:55:42.973Z",
+    "url": "https://www.crunchbase.com/organization/vapor"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Vapor",
+      "shortDescription": "Vapor is a web framework that creates modular server side software with Swift.",
+      "description": "Vapor is a web framework for Swift. It provides a beautifully expressive and easy to use foundation for websites or APIs.\n\nVapor's documentation covers everything from creating applications to building large projects. The definitive book on developing web apps and web APIs with Vapor, written by the creators of the framework.",
+      "website": "https://vapor.codes/",
+      "foundedYear": 2016,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Brooklyn, New York, United States",
+      "geographicRegions": [
+        "Greater New York Area",
+        "East Coast",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Developer APIs",
+        "Developer Tools",
+        "Information Technology",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Software"
+      ],
+      "founders": [
+        "Tanner Nelson"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A Swift-based web framework for building modular server-side software, HTTP servers, backends, and APIs.",
+        "name": "Vapor Framework"
+      },
+      {
+        "description": "An ORM for Swift that allows interaction with databases using native Swift code without writing SQL.",
+        "name": "Fluent"
+      },
+      {
+        "description": "A Swift library for creating, signing, and verifying JSON Web Tokens, built on Swift Crypto.",
+        "name": "JWT"
+      },
+      {
+        "description": "A Swift templating engine for generating HTML for web applications and emails using simple syntax.",
+        "name": "Leaf"
+      },
+      {
+        "description": "A command-line tool to create new Vapor projects and manage development workflows.",
+        "name": "Vapor Toolbox"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2021-03-18",
+          "publisher": "Telecom Paper",
+          "title": "De-Cix equips Dallas, Chicago exchanges with Vapor's edge platform",
+          "url": "https://www.telecompaper.com/news/de-cix-equips-dallas-chicago-exchanges-with-vapors-edge-platform--1376456"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -3,
+      "growthScore": 82,
+      "heatChange90Days": -26,
+      "heatScore": 59
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 31.35
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 77.58
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 14.74
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Perfect is the application server and framework for developing the web.",
+          "employeeRange": "1-10",
+          "name": "Perfect",
+          "sharedCategories": [
+            "Developer APIs",
+            "Developer Tools",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Application Runtime Platforms",
+            "Database Platform Services",
+            "API Design and Testing",
+            "Backend Development",
+            "User Authentication and Single Sign-On"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "IBM provides technology and consulting, including software, infrastructure systems, and cloud-based solutions.",
+          "employeeRange": "10,001+",
+          "name": "IBM",
+          "sharedCategories": [
+            "Developer Tools"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Swift is a general-purpose programming language built using a modern approach to safety, performance, and software design patterns.",
+          "employeeRange": "1-10",
+          "name": "Swift",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Application Runtime Platforms",
+            "Developer Documentation Platforms",
+            "Backend Development"
+          ],
+          "similarityScore": 86
+        },
+        {
+          "description": "GitHub is a software company that offers code hosting services that allow developers to build software for open-source and private projects.",
+          "employeeRange": "1,001-5,000",
+          "name": "GitHub",
+          "sharedCategories": [
+            "Developer Tools",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Application Runtime Platforms",
+            "Developer Documentation Platforms"
+          ],
+          "similarityScore": 84
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 82 (-3 over 90 days) and market heat at 59 (-26).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Perfect, IBM, Swift.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

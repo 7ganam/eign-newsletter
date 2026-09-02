@@ -364,12 +364,35 @@ function buildExtractor(slug: string) {
         Object.keys(left.data.cards || {}).length
       );
     const response = responses[0];
+    let organization = response && response.data;
+    let extractionMethod = 'brave-apple-events-ng-state';
 
-    if (!response || !response.data) {
-      return waitPrefix + 'Organization payload is not available yet';
+    // Client-only pages expose the same authenticated entity request in the
+    // resource list even when Angular does not copy its result into ng-state.
+    if (!organization) {
+      const entityResource = performance.getEntriesByType('resource')
+        .map((entry) => entry.name)
+        .find((url) => url.includes(
+          '/v4/data/entities/organizations/' + encodeURIComponent(currentSlug || expectedSlug) + '?',
+        ));
+      if (!entityResource) {
+        return waitPrefix + 'Organization entity request is not available yet';
+      }
+
+      const request = new XMLHttpRequest();
+      request.open('GET', entityResource, false);
+      request.send();
+      if (request.status === 429) {
+        return errorPrefix + 'Crunchbase rate limit detected while loading organization data';
+      }
+      if (request.status !== 200) {
+        return errorPrefix + 'Organization data request failed with HTTP ' + request.status;
+      }
+      organization = JSON.parse(request.responseText);
+      extractionMethod = 'brave-apple-events-entity-fetch';
     }
 
-    if (!response.data.cards || Object.keys(response.data.cards).length === 0) {
+    if (!organization.cards || Object.keys(organization.cards).length === 0) {
       return waitPrefix + 'Organization payload is incomplete';
     }
 
@@ -378,10 +401,10 @@ function buildExtractor(slug: string) {
       pageTitle: document.title,
       scrapedAt: new Date().toISOString(),
       extraction: {
-        method: 'brave-apple-events-ng-state',
+        method: extractionMethod,
         authenticated: loggedInState === 'logged-in',
       },
-      organization: response.data,
+      organization,
     });
   })()`
 }
@@ -427,6 +450,9 @@ on run argv
         if (loading of targetTab) is false then
           try
             set lastResult to execute targetTab javascript extractionJavascript
+            if lastResult is missing value then
+              set lastResult to "${WAIT_PREFIX}Browser returned no value while page state was changing"
+            end if
           on error scriptError
             if scriptError contains "Allow JavaScript from Apple Events" then
               set lastResult to "${ERROR_PREFIX}" & scriptError

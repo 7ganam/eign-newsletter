@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:59:11.667Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:59:11.615Z",
+    "url": "https://www.crunchbase.com/organization/rocketsdr"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "RocketSDR",
+      "shortDescription": "RocketSDR provides an AI-native sales development platform that automates prospecting, personalization, outreach, and pipeline generation.",
+      "description": "RocketSDR provides an AI-native sales development platform that functions as an autonomous sales development representative for B2B teams. The platform automates outbound pipeline generation by handling prospecting, lead enrichment, and multichannel outreach across email and social channels. It layers artificial intelligence over a real-time prospect database and signal intelligence engine that tracks hiring changes, funding rounds, job moves, and website activity. RocketSDR researches each prospect across multiple public data sources before composing personalized messages that reference current, relevant context. The system also manages email infrastructure, including warmup, deliverability monitoring, and mailbox rotation, so campaigns reach inboxes rather than spam. Integrations with common CRM, email, and collaboration tools allow data to sync in both directions. RocketSDR is designed for sales and go-to-market teams that want to run outbound as a continuous, learning experiment rather than a static set of sequences.",
+      "website": "https://rocketsdr.ai/",
+      "foundedYear": 2024,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Wilmington, Delaware, United States",
+      "geographicRegions": [
+        "Greater Philadelphia Area",
+        "East Coast",
+        "Southern US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "B2B",
+        "CRM",
+        "Data Integration",
+        "Lead Generation",
+        "Marketing Automation",
+        "Productivity Tools",
+        "Sales Automation",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Other",
+        "Sales and Marketing",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An AI-native sales development platform that automates prospecting, personalization, multichannel outreach, and outbound strategy.",
+        "name": "RocketSDR Platform"
+      },
+      {
+        "description": "An AI research and personalization engine that crafts prospect-specific outreach from live web and company signals.",
+        "name": "RocketSDR AI Personalisation"
+      },
+      {
+        "description": "An AI prospecting module that finds, scores, and enriches ICP-matched leads across multiple sourcing modes.",
+        "name": "RocketSDR AI Prospecting"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 67,
+      "heatScore": 67
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 5
+      },
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 86.85
+      },
+      "ipo": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:17:25.444Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:17:25.392Z",
+    "url": "https://www.crunchbase.com/organization/sendwithus-8c97"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "sendwithus",
+      "shortDescription": "Sendwithus provides software for managing transactional emails outside source code.",
+      "description": "Sendwithus provides software for managing transactional emails outside source code. The platform supports email creation, optimization, and personalization, along with A/B testing, analytics, and triggered or scheduled messages. It integrates with existing email service providers and provides a REST-based API for programmatic access.",
+      "website": "https://sendwithus.com/",
+      "foundedYear": 2013,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "Victoria, British Columbia, Canada",
+      "industries": [
+        "A/B Testing",
+        "Analytics",
+        "Developer APIs",
+        "Email",
+        "Email Marketing",
+        "Marketing Automation",
+        "Personalization",
+        "Software"
+      ],
+      "sectors": [
+        "Commerce and Shopping",
+        "Data and Analytics",
+        "Information Technology",
+        "Internet Services",
+        "Messaging and Telecommunications",
+        "Sales and Marketing",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A software platform for creating, managing, testing, and analyzing transactional emails outside source code.",
+        "name": "Sendwithus transactional email management platform"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

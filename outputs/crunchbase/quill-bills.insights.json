@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:30:53.033Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:30:52.979Z",
+    "url": "https://www.crunchbase.com/organization/quill-bills"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Quill Bills",
+      "shortDescription": "Quill Bills provides AI-driven practice management and revenue cycle automation for medical billing workflows.",
+      "description": "Quill Bills develops an AI-native platform for practice management and revenue cycle automation for healthcare providers. The company focuses on independent practices and clinics that need to streamline medical billing workflows across the full claim lifecycle. Its system connects to electronic health records to construct claims, auto-code encounters, verify eligibility, scrub claims against payer rules, and submit clean claims. Quill Bills also automates rejection and denial follow-up, claim status monitoring, and payment posting from remittances. In addition, it supports patient billing with digital statements, payment links, and installment tracking. The platform combines rule-based processing with AI agents, including automated phone calls to insurance payers, to reduce manual work in billing operations.",
+      "website": "https://quillbills.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Enterprise Software",
+        "Financial Services",
+        "FinTech",
+        "Health Care",
+        "Health Diagnostics",
+        "Medical",
+        "Medical Device",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Financial Services",
+        "Health Care",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An AI-native revenue cycle platform that connects to EHRs to automate claim creation, coding, scrubbing, submission, and follow-up.",
+        "name": "Quill Autonomous Billing Platform"
+      },
+      {
+        "description": "A claims validation engine that checks coding, payer rules, and missing data before submission to reduce denials.",
+        "name": "AI Claim Scrubbing"
+      },
+      {
+        "description": "Automated AI voice agents that call payers to verify eligibility, check benefits, and obtain claim status updates.",
+        "name": "AI Phone Calling & Voice Agents"
+      },
+      {
+        "description": "A digital patient billing system with SMS, email, mail statements, online payments, and installment tracking.",
+        "name": "Patient Billing & Online Portal"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 12,
+      "growthScore": 88,
+      "heatChange90Days": 67,
+      "heatScore": 67
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 94.65
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 88 (+12 over 90 days) and market heat at 67 (+67).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

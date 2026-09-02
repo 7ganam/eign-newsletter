@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T16:21:56.173Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T16:21:56.123Z",
+    "url": "https://www.crunchbase.com/organization/octavewealth"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "OctaveWealth",
+      "shortDescription": "A full-service 401(k) provider specialising in plans for SMEs.",
+      "description": "A full-service 401(k) provider specialising in plans for SMEs. We strive to be the easiest 401(k) on the market; our plans are fully customisable, we automate maintenance by integrating with payroll, and we offer on-going support to keep plans IRS compliant and avoid hefty penalties.\n\n OctaveWealth is operated by Quillu Inc, an SEC registered Investment Advisor.",
+      "website": "http://octavewealth.com/",
+      "foundedYear": 2012,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "founders": [
+        "Dharmesh Malam",
+        "Rikin Shah"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A comprehensive 401(k) retirement plan service designed for small and medium-sized enterprises, including plan design, investment management, and compliance support.",
+        "name": "Full-Service 401(k) Plan"
+      },
+      {
+        "description": "Automated administration and fiduciary services including eligibility tracking, plan compliance, and regulatory filings for 401(k) plans.",
+        "name": "401(k) Plan Administration and Compliance"
+      },
+      {
+        "description": "Management and monitoring of 401(k) plan investments as a 3(38) fiduciary, selecting diversified portfolios personalized to employee risk profiles.",
+        "name": "Investment Management and Fiduciary Services"
+      },
+      {
+        "description": "Provides employees with live retirement education sessions and access to personalized retirement planning tools and advice.",
+        "name": "Employee Financial Education and Retirement Planning Tools"
+      },
+      {
+        "description": "Integration of 401(k) plan administration with employer payroll systems to automate contributions and record-keeping.",
+        "name": "Payroll Integration"
+      },
+      {
+        "description": "A dedicated account manager assists employers with plan setup, transfer, and ongoing support for the 401(k) plan.",
+        "name": "Dedicated Account Management and Concierge Service"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2012-08-21",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2012-08-21",
+          "investorCount": 1,
+          "leadInvestors": [
+            "Y Combinator"
+          ],
+          "postMoneyValuation": {
+            "amount": 3863833,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2012-08-21",
+          "title": "Seed Round - OctaveWealth"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 1,
+      "growthScore": 3,
+      "heatChange90Days": 1,
+      "heatScore": 59
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2025-01-11",
+        "probabilityPercent": 95.36
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "PGIM is a money manager whose clients rely on their risk management expertise, intellectual capital, and innovative solutions.",
+          "employeeRange": "1,001-5,000",
+          "name": "PGIM",
+          "similarityScore": 100
+        },
+        {
+          "description": "Basic Capital is a retirement investment platform that enhances retirement savings by providing financing options within IRAs and 401(k)s.",
+          "employeeRange": "11-50",
+          "name": "Basic Capital",
+          "sharedSpecialties": [
+            "Health Benefits Administration",
+            "Workplace Pension Services",
+            "Individual Retirement Accounts (IRAs)",
+            "Custody and Depositary Services",
+            "Benefits and ERISA Services"
+          ],
+          "similarityScore": 90.343
+        },
+        {
+          "description": "Vestwell is a digital savings platform that offers and manages a range of savings and retirement plans.",
+          "employeeRange": "501-1,000",
+          "name": "Vestwell",
+          "sharedSpecialties": [
+            "Health Benefits Administration",
+            "Workplace Pension Services",
+            "Individual Retirement Accounts (IRAs)",
+            "Benefits and ERISA Services",
+            "Financial Education",
+            "Employee Benefits Compliance"
+          ],
+          "similarityScore": 84.243
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $3,863,833 to $3,863,833, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 3 (+1 over 90 days) and market heat at 59 (+1).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include PGIM, Basic Capital, Vestwell.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:11:24.063Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:11:24.024Z",
+    "url": "https://www.crunchbase.com/organization/vouch"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Vouch",
+      "shortDescription": "Vouch is the standard for recommendation",
+      "description": "Vouch is the unified platform that bridges online recommendations from people and business to the real world. Vouch measures and analyzes online content to provide recommendations based off of relationships and status updates.",
+      "website": "http://vouchapp.com/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Raleigh, North Carolina, United States",
+      "geographicRegions": [
+        "Research Triangle",
+        "East Coast",
+        "Southern US"
+      ],
+      "industries": [
+        "Analytics",
+        "Social Media",
+        "Software"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Internet Services",
+        "Media and Entertainment",
+        "Software"
+      ],
+      "founders": [
+        "Wayne Sutton"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2011-08-04",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2011-08-04",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "NewMe Accelerator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2019-11-20",
+          "publisher": "TechCrunch",
+          "title": "Vouch raises $45M led by YC Continuity for business insurance that targets startups",
+          "url": "https://techcrunch.com/2019/11/20/vouch-raises-45m-led-by-yc-continuity-for-business-insurance-that-targets-startups/"
+        },
+        {
+          "date": "2011-08-04",
+          "title": "Seed Round - Vouch"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 8,
+      "heatScore": 59
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Embroker helps growing businesses save time and find the best value on the right coverage.",
+          "employeeRange": "101-250",
+          "name": "Embroker",
+          "similarityScore": 97
+        },
+        {
+          "description": "Hiscox is an insurance company that provides medical and auto insurance services.",
+          "employeeRange": "1,001-5,000",
+          "name": "Hiscox",
+          "similarityScore": 93
+        },
+        {
+          "description": "TechInsurance is the largest online insurance marketplace for IT consultants, software developers, and other tech professionals.",
+          "employeeRange": "11-50",
+          "name": "TechInsurance",
+          "similarityScore": 91
+        },
+        {
+          "description": "ERGO NEXT Insurance is a financial service firm that offers insurance coverage to entrepreneurs and small businesses.",
+          "employeeRange": "501-1,000",
+          "name": "ERGO NEXT Insurance",
+          "similarityScore": 89
+        },
+        {
+          "description": "Founder Shield, The Baldwin Group's innovation arm, empowers high-growth companies, from Seed to IPO, with tailored insurance solutions.",
+          "employeeRange": "101-250",
+          "name": "Founder Shield",
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Embroker, Hiscox, TechInsurance.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

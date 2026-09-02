@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T17:15:27.153Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T17:15:27.099Z",
+    "url": "https://www.crunchbase.com/organization/prana-health"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Prana Health",
+      "shortDescription": "Prana Health provides primary care, urgent care, allergy testing, and treatment for adult sleep disorders.",
+      "website": "https://prana.healthcare/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "51-100",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Fayetteville, North Carolina, United States",
+      "geographicRegions": [
+        "East Coast",
+        "Southern US"
+      ],
+      "industries": [
+        "Health Care",
+        "Hospital",
+        "Medical",
+        "Primary and Urgent Care"
+      ],
+      "sectors": [
+        "Health Care"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2024-04-02",
+          "publisher": "Endpoints News",
+          "title": "Providence spinout Praia Health raises $20M",
+          "url": "https://endpts.com/providence-spinout-praia-health-raises-20m/"
+        },
+        {
+          "date": "2023-10-02",
+          "publisher": "PR Newswire",
+          "title": "Providence Unveils Praia Health, Its Fourth Incubated Technology",
+          "url": "https://www.prnewswire.com/news-releases/providence-unveils-praia-health-its-fourth-incubated-technology-301943931.html"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -35,
+      "heatScore": 41
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 83.34
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "FastMed Is Setting the Standard for Community Medical Clinics in North Carolina and Arizona.",
+          "employeeRange": "5,001-10,000",
+          "name": "FastMed",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "Access Clinical Partners owns and operates urgent care centers to provide healthcare services to patients.",
+          "employeeRange": "501-1,000",
+          "name": "GoHealth Urgent Care",
+          "sharedCategories": [
+            "Health Care",
+            "Primary and Urgent Care"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "NextCare offers urgent care and occupational medical services for various illnesses such as cough, diaper rashes, earaches and more.",
+          "employeeRange": "1,001-5,000",
+          "name": "NextCare",
+          "sharedCategories": [
+            "Health Care",
+            "Primary and Urgent Care",
+            "Medical"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "CityMD is an urgent care provider delivering efficient medical care with a uniquely personalized, patient-centric approach.",
+          "employeeRange": "1,001-5,000",
+          "name": "CityMD",
+          "sharedCategories": [
+            "Health Care",
+            "Primary and Urgent Care",
+            "Hospital",
+            "Medical"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Atrium Health Wake Forest Baptist is a nationally acclaimed academic medical center and healthcare system.",
+          "employeeRange": "10,001+",
+          "name": "Atrium Health Wake Forest Baptist",
+          "sharedCategories": [
+            "Health Care"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include FastMed, GoHealth Urgent Care, NextCare.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

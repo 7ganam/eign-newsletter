@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T20:24:48.919Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T20:24:48.866Z",
+    "url": "https://www.crunchbase.com/organization/wundrbar"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Wundrbar",
+      "shortDescription": "Wundrbar wants to improve upon the search bar experience by providing users with powerful inline commands.",
+      "description": "Wundrbar wants to improve upon the search bar experience by providing users with powerful inline commands. The idea is reminiscent of YubNub but Wundrbar strives to appeal to a larger audience and to incorporate functionality that helps people manage their personal online accounts in addition to searching the web.",
+      "website": "http://wundrbar.com/",
+      "foundedYear": 2008,
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Search Engine"
+      ],
+      "sectors": [
+        "Internet Services"
+      ],
+      "founders": [
+        "Andrew Dudley",
+        "Nick Grandy"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2008-01-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2008-01-01",
+          "investorCount": 1,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "name": "Y Combinator",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 4,
+      "includedUniqueCount": 4,
+      "items": [
+        {
+          "date": "2008-03-14",
+          "publisher": "TechCrunch",
+          "title": "Y Combinator Demo Day Roundup for Spring 2008",
+          "url": "http://www.techcrunch.com/2008/03/14/y-combinator-demo-day-roundup-for-spring-2008/"
+        },
+        {
+          "date": "2008-03-14",
+          "publisher": "TechCrunch",
+          "title": "Wundrbar: A Smart Search and Account Management Tool",
+          "url": "http://www.techcrunch.com/2008/03/14/wundrbar-a-smart-search-and-account-management-tool/"
+        },
+        {
+          "date": "2008-03-14",
+          "publisher": "TechCrunch",
+          "title": "Wundrbar: A Smart Search and Account Management Tool",
+          "url": "http://techcrunch.com/2008/03/14/wundrbar-a-smart-search-and-account-management-tool/"
+        },
+        {
+          "date": "2008-01-01",
+          "title": "Seed Round - Wundrbar"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -7,
+      "heatScore": 59
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "A continuously growing team of talented enthusiasts, sharing their passion for programming, design, productivity.",
+          "employeeRange": "11-50",
+          "name": "Objective Development",
+          "similarityScore": 92
+        },
+        {
+          "description": "Running with Crayons is a productivity app that boosts efficiency with hotkeys, keywords, and text expansion.",
+          "employeeRange": "1-10",
+          "name": "Running with Crayons",
+          "similarityScore": 90
+        },
+        {
+          "description": "Raycast is a Productivity Tools company that provides a command bar software to assist developers control their tools as well as AI tools.",
+          "employeeRange": "11-50",
+          "name": "Raycast",
+          "similarityScore": 88
+        },
+        {
+          "description": "Quicksilver is a Mac OS X productivity application that provides its users with the ability to control their Mac through keystrokes.",
+          "employeeRange": "1-10",
+          "name": "Quicksilver",
+          "similarityScore": 86
+        },
+        {
+          "description": "GitHub is a software company that offers code hosting services that allow developers to build software for open-source and private projects.",
+          "employeeRange": "1,001-5,000",
+          "name": "GitHub",
+          "similarityScore": 82
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Objective Development, Running with Crayons, Raycast.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

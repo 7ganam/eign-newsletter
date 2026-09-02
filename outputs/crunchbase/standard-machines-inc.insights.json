@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T18:50:49.442Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-08-31T18:50:49.389Z",
+    "url": "https://www.crunchbase.com/organization/standard-machines-inc"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "standard machines",
+      "shortDescription": "Standard Machines designs and manufactures pad and screen printing machines, consumables, and engineering services for manufacturers.",
+      "website": "https://comdecinc.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Newburyport, Massachusetts, United States",
+      "geographicRegions": [
+        "Greater Boston Area",
+        "East Coast",
+        "New England",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Customer Service",
+        "Industrial Automation",
+        "Industrial Manufacturing",
+        "Machinery Manufacturing",
+        "Manufacturing",
+        "Mechanical Engineering",
+        "Packaging Services",
+        "Printing",
+        "Technical Support",
+        "Training"
+      ],
+      "sectors": [
+        "Administrative Services",
+        "Content and Publishing",
+        "Education",
+        "Information Technology",
+        "Manufacturing",
+        "Media and Entertainment",
+        "Professional Services",
+        "Science and Engineering"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A modular line of pad printing machines for industrial product decoration and part marking.",
+        "name": "SMI Standard Series Pad Printing Machines"
+      },
+      {
+        "description": "Industrial pad and screen printing machines for decorating and marking manufactured components.",
+        "name": "Pad and Screen Printing Machines"
+      },
+      {
+        "description": "Engineering services for custom pad and screen printing machines, fixtures, and production workflows.",
+        "name": "Custom Pad and Screen Printing Systems Engineering"
+      },
+      {
+        "description": "Drying systems designed to cure inks and coatings in pad and screen printing production lines.",
+        "name": "Industrial Dryers for Printing Lines"
+      },
+      {
+        "description": "UV exposure systems for creating pad printing plates and other imaging applications.",
+        "name": "UV Exposure Units for Plate Making"
+      },
+      {
+        "description": "Silicone pads for pad printing, available in standard designs and custom configurations.",
+        "name": "Silicone Pad Printing Pads"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 76,
+      "heatScore": 77
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-08-24",
+        "probabilityPercent": 74.79
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}
