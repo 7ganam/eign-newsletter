@@ -1,0 +1,610 @@
+{
+  "schema_version": "events-financing-verified.v1",
+  "lane": "events_financing",
+  "researched_at": "2026-09-03",
+  "source_file": "outputs/lead-research/workers/events-financing.json",
+  "scoring_policy": {
+    "formula": "product_intent + outsourcing_likelihood + budget_readiness + timing - penalties",
+    "bands": { "A": "15-20", "B": "10-14", "C": "5-9", "D": "0-4" },
+    "capacity_rule": "Unknown capacity is scored 1, never as absence. A score of 3 requires a documented team audit and 5 requires an explicit external-builder request.",
+    "result": "No record receives 3 or 5 outsourcing points because no explicit external-partner evidence or qualifying team audit was found."
+  },
+  "additional_evidence": [
+    {
+      "id": "ev-tabsense-founder-2026-plan",
+      "url": "https://www.linkedin.com/posts/mohjaber_tabsense-is-on-after-an-incredible-2025-activity-7417193059429359616-ymy8",
+      "source_title": "Mohammad Jaber - TabSense 2026 product and team update",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "person_controlled_post",
+      "confidence": "medium",
+      "paraphrase": "The CEO says TabSense had 95 team members, had launched ten AI agents and an advanced multi-agent architecture, and planned another generation of AI agents in 2026."
+    },
+    {
+      "id": "ev-urcash-founder-profile",
+      "url": "https://sa.linkedin.com/in/talal638",
+      "source_title": "Talal Alharbi LinkedIn profile",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "person_controlled_profile",
+      "confidence": "high",
+      "paraphrase": "The public profile identifies Talal Alharbi as urCASH founder and CEO and documents current product-building activity."
+    }
+  ],
+  "promoted": [
+    {
+      "id": "remedium-fawaz-abu-ghazaleh",
+      "source_candidate_id": "remedium-fawaz-abu-ghazaleh",
+      "discovery_lane": "sme_digital_product",
+      "canonical_lane": "sme-digital-build",
+      "identity": { "display_name": "Fawaz Abu-Ghazaleh", "role": "Founder", "linkedin_url": null },
+      "company": { "name": "Remedium", "domain": "remedium.sa", "url": "https://remedium.sa/" },
+      "active_gates": { "identity": true, "ksa_fit": true, "authority": true, "software_fit": true },
+      "capacity_status": "unknown",
+      "verification_sources": {
+        "primary": ["https://remedium.sa/"],
+        "independent": ["https://www.wamda.com/2026/09/saudi-remedium-secures-1-5-million-expand-sustainability-accounting"]
+      },
+      "score": {
+        "product_intent": { "value": 4, "evidence_refs": ["https://www.wamda.com/2026/09/saudi-remedium-secures-1-5-million-expand-sustainability-accounting", "https://remedium.sa/"], "reason": "A dated announcement specifies AI, machine-learning and module development for an operating platform." },
+        "outsourcing_likelihood": { "value": 1, "evidence_refs": ["https://remedium.sa/", "https://www.wamda.com/2026/09/saudi-remedium-secures-1-5-million-expand-sustainability-accounting"], "reason": "Delivery capacity and external-partner intent are unknown." },
+        "budget_readiness": { "value": 3, "evidence_refs": ["https://www.wamda.com/2026/09/saudi-remedium-secures-1-5-million-expand-sustainability-accounting"], "reason": "A $1.5 million pre-seed round is evidenced, without a disclosed build budget." },
+        "timing": { "value": 4, "evidence_refs": ["https://www.wamda.com/2026/09/saudi-remedium-secures-1-5-million-expand-sustainability-accounting"], "reason": "The product trigger occurred on 1 September 2026, within 90 days." },
+        "penalties": { "value": 0, "evidence_refs": ["https://remedium.sa/"], "reason": "No listed penalty is evidenced; internal capacity remains unknown." },
+        "total": 12,
+        "band": "B"
+      },
+      "recommended_state": "active"
+    },
+    {
+      "id": "aila-yousef-alsayed",
+      "source_candidate_id": "aila-yousef-alsayed",
+      "discovery_lane": "sme_digital_product",
+      "canonical_lane": "sme-digital-build",
+      "identity": { "display_name": "Yousef Alsayed", "role": "Co-founder and CEO", "linkedin_url": null },
+      "company": { "name": "AILA", "domain": "aila.sa", "url": "https://www.aila.sa/" },
+      "active_gates": { "identity": true, "ksa_fit": true, "authority": true, "software_fit": true },
+      "capacity_status": "unknown",
+      "verification_sources": {
+        "primary": ["https://aila.sa/about-us-ar/"],
+        "independent": ["https://www.wamda.com/2026/08/aila-raises-3-million-pre-series-a-expand-personalised-learning-platform"]
+      },
+      "score": {
+        "product_intent": { "value": 4, "evidence_refs": ["https://www.wamda.com/2026/08/aila-raises-3-million-pre-series-a-expand-personalised-learning-platform", "https://www.aila.sa/"], "reason": "A specific AI learning-platform expansion was described within 12 months." },
+        "outsourcing_likelihood": { "value": 1, "evidence_refs": ["https://aila.sa/about-us-ar/", "https://www.aila.sa/"], "reason": "The team is identified, but its engineering capacity and vendor intent are unknown." },
+        "budget_readiness": { "value": 3, "evidence_refs": ["https://www.wamda.com/2026/08/aila-raises-3-million-pre-series-a-expand-personalised-learning-platform", "https://www.aila.sa/"], "reason": "$3 million funding plus operating-user traction is evidenced; no dedicated build allocation is public." },
+        "timing": { "value": 4, "evidence_refs": ["https://www.wamda.com/2026/08/aila-raises-3-million-pre-series-a-expand-personalised-learning-platform"], "reason": "The trigger occurred on 19 August 2026, within 90 days." },
+        "penalties": { "value": 0, "evidence_refs": ["https://aila.sa/about-us-ar/"], "reason": "No sufficient internal engineering capacity or other penalty condition is evidenced." },
+        "total": 12,
+        "band": "B"
+      },
+      "recommended_state": "active"
+    },
+    {
+      "id": "fitting-mohammed-al-mubayed",
+      "source_candidate_id": "fitting-mohammed-al-mubayed",
+      "discovery_lane": "new_founder",
+      "canonical_lane": "new-founder",
+      "identity": { "display_name": "Mohammed Al-Mubayed", "role": "Co-founder and CEO", "linkedin_url": null },
+      "company": { "name": "Fitting", "domain": "fitting.sa", "url": "https://fitting.sa/" },
+      "active_gates": { "identity": true, "ksa_fit": true, "authority": true, "software_fit": true },
+      "capacity_status": "unknown",
+      "verification_sources": {
+        "primary": ["https://fitting.sa/en/buyer/developers"],
+        "independent": ["https://www.wamda.com/2026/08/saudi-contech-fitting-raises-1-1-million-seed-fuel-expansion"]
+      },
+      "score": {
+        "product_intent": { "value": 4, "evidence_refs": ["https://www.wamda.com/2026/08/saudi-contech-fitting-raises-1-1-million-seed-fuel-expansion", "https://fitting.sa/en/buyer/developers"], "reason": "A specific construction-procurement platform and technology-infrastructure expansion are current." },
+        "outsourcing_likelihood": { "value": 1, "evidence_refs": ["https://fitting.sa/en/buyer/developers", "https://www.linkedin.com/company/fittingsa"], "reason": "Public sources do not establish internal delivery sufficiency or external-builder intent." },
+        "budget_readiness": { "value": 3, "evidence_refs": ["https://www.wamda.com/2026/08/saudi-contech-fitting-raises-1-1-million-seed-fuel-expansion"], "reason": "$1.1 million funding and operating projects are evidenced, but no build budget is itemised." },
+        "timing": { "value": 4, "evidence_refs": ["https://www.wamda.com/2026/08/saudi-contech-fitting-raises-1-1-million-seed-fuel-expansion"], "reason": "The trigger occurred on 10 August 2026, within 90 days." },
+        "penalties": { "value": 0, "evidence_refs": ["https://fitting.sa/en/buyer/developers"], "reason": "No listed penalty is evidenced." },
+        "total": 12,
+        "band": "B"
+      },
+      "recommended_state": "active"
+    },
+    {
+      "id": "rime-mohammed-almarshidi",
+      "source_candidate_id": "rime-mohammed-almarshidi",
+      "discovery_lane": "sme_digital_product",
+      "canonical_lane": "sme-digital-build",
+      "identity": { "display_name": "Mohammed Almarshidi", "role": "Co-founder", "linkedin_url": "https://sa.linkedin.com/in/malmarshidi" },
+      "company": { "name": "RIME", "domain": "rime.sa", "url": "https://rime.sa/en" },
+      "active_gates": { "identity": true, "ksa_fit": true, "authority": true, "software_fit": true },
+      "capacity_status": "unknown",
+      "verification_sources": {
+        "primary": ["https://rime.sa/en", "https://sa.linkedin.com/in/malmarshidi"],
+        "independent": ["https://www.wamda.com/2026/08/saudi-startup-rime-raises-2-million-seed-round"]
+      },
+      "score": {
+        "product_intent": { "value": 4, "evidence_refs": ["https://www.wamda.com/2026/08/saudi-startup-rime-raises-2-million-seed-round", "https://rime.sa/en"], "reason": "A specific AI video-intelligence platform expansion is current." },
+        "outsourcing_likelihood": { "value": 1, "evidence_refs": ["https://rime.sa/en", "https://sa.linkedin.com/in/malmarshidi"], "reason": "RIME is a software company, but the available evidence does not establish sufficient team capacity or any external-partner intent." },
+        "budget_readiness": { "value": 3, "evidence_refs": ["https://www.wamda.com/2026/08/saudi-startup-rime-raises-2-million-seed-round"], "reason": "More than $2 million in seed funding and deployment traction are evidenced." },
+        "timing": { "value": 4, "evidence_refs": ["https://www.wamda.com/2026/08/saudi-startup-rime-raises-2-million-seed-round"], "reason": "The trigger occurred on 4 August 2026, within 90 days." },
+        "penalties": { "value": 0, "evidence_refs": ["https://rime.sa/en"], "reason": "Existing product capability does not by itself prove sufficient delivery capacity; no penalty is applied." },
+        "total": 12,
+        "band": "B"
+      },
+      "recommended_state": "active"
+    },
+    {
+      "id": "desaisiv-mohammad-nabhan",
+      "source_candidate_id": "desaisiv-mohammad-nabhan",
+      "discovery_lane": "sme_digital_product",
+      "canonical_lane": "sme-digital-build",
+      "identity": { "display_name": "Mohammad Nabhan", "role": "Co-founder and CEO", "linkedin_url": null },
+      "company": { "name": "DESAISIV", "domain": "desaisiv.com", "url": "https://www.desaisiv.com/" },
+      "active_gates": { "identity": true, "ksa_fit": true, "authority": true, "software_fit": true },
+      "capacity_status": "unknown",
+      "verification_sources": {
+        "primary": ["https://www.desaisiv.com/"],
+        "independent": ["https://www.wamda.com/2026/07/desaisiv-introduces-ai-powered-fair-market-pricing-engine-enterprises"]
+      },
+      "score": {
+        "product_intent": { "value": 4, "evidence_refs": ["https://www.wamda.com/2026/07/desaisiv-introduces-ai-powered-fair-market-pricing-engine-enterprises", "https://www.desaisiv.com/"], "reason": "A specific AI Insurance Agent and pricing engine were launched within 12 months." },
+        "outsourcing_likelihood": { "value": 1, "evidence_refs": ["https://www.desaisiv.com/", "https://www.wamda.com/2026/07/desaisiv-introduces-ai-powered-fair-market-pricing-engine-enterprises"], "reason": "The company has AI products, but team sufficiency and external-partner intent remain unknown." },
+        "budget_readiness": { "value": 3, "evidence_refs": ["https://www.wamda.com/2026/07/desaisiv-introduces-ai-powered-fair-market-pricing-engine-enterprises", "https://www.desaisiv.com/"], "reason": "Fundraising activity, clients and partners are evidenced, without an explicit build budget." },
+        "timing": { "value": 4, "evidence_refs": ["https://www.wamda.com/2026/07/desaisiv-introduces-ai-powered-fair-market-pricing-engine-enterprises"], "reason": "The launch occurred on 30 July 2026, within 90 days." },
+        "penalties": { "value": 0, "evidence_refs": ["https://www.desaisiv.com/"], "reason": "No employee or engineering-capacity evidence satisfies the sufficient-team penalty." },
+        "total": 12,
+        "band": "B"
+      },
+      "recommended_state": "active"
+    },
+    {
+      "id": "think-ahmed-alsharif",
+      "source_candidate_id": "think-ahmed-alsharif",
+      "discovery_lane": "sme_digital_product",
+      "canonical_lane": "sme-digital-build",
+      "identity": { "display_name": "Ahmed AlSharif", "role": "Co-founder and CEO", "linkedin_url": null },
+      "company": { "name": "Think", "domain": "think-ai.com", "url": "https://www.think-ai.com/company" },
+      "active_gates": { "identity": true, "ksa_fit": true, "authority": true, "software_fit": true },
+      "capacity_status": "unknown",
+      "verification_sources": {
+        "primary": ["https://www.think-ai.com/company"],
+        "independent": ["https://www.wamda.com/2026/07/think-gears-gcc-expansion-8-million-pre-seed-funding"]
+      },
+      "score": {
+        "product_intent": { "value": 4, "evidence_refs": ["https://www.wamda.com/2026/07/think-gears-gcc-expansion-8-million-pre-seed-funding", "https://www.think-ai.com/company"], "reason": "Enterprise AI products and proof-of-concept conversions were specifically described within 12 months." },
+        "outsourcing_likelihood": { "value": 1, "evidence_refs": ["https://www.think-ai.com/company", "https://sa.linkedin.com/in/ammarenaya"], "reason": "Technical leadership is visible, but delivery sufficiency and any external-partner intent remain unknown." },
+        "budget_readiness": { "value": 3, "evidence_refs": ["https://www.wamda.com/2026/07/think-gears-gcc-expansion-8-million-pre-seed-funding"], "reason": "More than $8 million of funding and deployments are evidenced, with no itemised build budget." },
+        "timing": { "value": 4, "evidence_refs": ["https://www.wamda.com/2026/07/think-gears-gcc-expansion-8-million-pre-seed-funding"], "reason": "The trigger occurred on 15 July 2026, within 90 days." },
+        "penalties": { "value": 0, "evidence_refs": ["https://www.think-ai.com/company"], "reason": "Visible technical leadership alone does not establish sufficient delivery capacity; no penalty is applied." },
+        "total": 12,
+        "band": "B"
+      },
+      "recommended_state": "active"
+    },
+    {
+      "id": "revora-shuvo-rahman",
+      "source_candidate_id": "revora-shuvo-rahman",
+      "discovery_lane": "new_founder",
+      "canonical_lane": "new-founder",
+      "identity": { "display_name": "Shuvo Rahman", "role": "Co-founder", "linkedin_url": null },
+      "company": { "name": "Revora", "domain": "userevora.com", "url": "https://userevora.com/" },
+      "active_gates": { "identity": true, "ksa_fit": true, "authority": true, "software_fit": true },
+      "capacity_status": "unknown",
+      "verification_sources": {
+        "primary": ["https://userevora.com/"],
+        "independent": ["https://www.wamda.com/2026/06/revora-raises-2-million-scale-ai-driven-conversational-commerce-mena"]
+      },
+      "score": {
+        "product_intent": { "value": 4, "evidence_refs": ["https://www.wamda.com/2026/06/revora-raises-2-million-scale-ai-driven-conversational-commerce-mena", "https://userevora.com/"], "reason": "A specific conversational-commerce product and regional platform expansion were described within 12 months." },
+        "outsourcing_likelihood": { "value": 1, "evidence_refs": ["https://userevora.com/", "https://www.wamda.com/2026/06/revora-raises-2-million-scale-ai-driven-conversational-commerce-mena"], "reason": "Delivery capacity and vendor intent are not public." },
+        "budget_readiness": { "value": 3, "evidence_refs": ["https://www.wamda.com/2026/06/revora-raises-2-million-scale-ai-driven-conversational-commerce-mena"], "reason": "$2 million funding and commercial traction are evidenced." },
+        "timing": { "value": 4, "evidence_refs": ["https://www.wamda.com/2026/06/revora-raises-2-million-scale-ai-driven-conversational-commerce-mena"], "reason": "The trigger occurred on 25 June 2026, within 90 days." },
+        "penalties": { "value": 0, "evidence_refs": ["https://userevora.com/"], "reason": "No listed penalty is evidenced." },
+        "total": 12,
+        "band": "B"
+      },
+      "recommended_state": "active"
+    },
+    {
+      "id": "pickappo-waleed-ghloniem",
+      "source_candidate_id": "pickappo-waleed-ghloniem",
+      "discovery_lane": "new_founder",
+      "canonical_lane": "new-founder",
+      "identity": { "display_name": "Waleed Ghloniem", "role": "Co-founder", "linkedin_url": null },
+      "company": { "name": "Pickappo", "domain": "pickappo.com", "url": "https://www.pickappo.com/en" },
+      "active_gates": { "identity": true, "ksa_fit": true, "authority": true, "software_fit": true },
+      "capacity_status": "unknown",
+      "verification_sources": {
+        "primary": ["https://www.pickappo.com/en"],
+        "independent": ["https://www.wamda.com/ar/2026/06/pickappo-secures-530000-expand-demand-delivery-infrastructure"]
+      },
+      "score": {
+        "product_intent": { "value": 4, "evidence_refs": ["https://www.wamda.com/ar/2026/06/pickappo-secures-530000-expand-demand-delivery-infrastructure", "https://www.pickappo.com/en"], "reason": "Product, AI and automation development for a specific delivery platform were described within 12 months." },
+        "outsourcing_likelihood": { "value": 1, "evidence_refs": ["https://www.pickappo.com/en", "https://www.wamda.com/ar/2026/06/pickappo-secures-530000-expand-demand-delivery-infrastructure"], "reason": "No qualifying team audit or external-builder request exists." },
+        "budget_readiness": { "value": 3, "evidence_refs": ["https://www.wamda.com/ar/2026/06/pickappo-secures-530000-expand-demand-delivery-infrastructure"], "reason": "SAR2 million pre-seed funding and platform traction are evidenced." },
+        "timing": { "value": 4, "evidence_refs": ["https://www.wamda.com/ar/2026/06/pickappo-secures-530000-expand-demand-delivery-infrastructure"], "reason": "The trigger occurred on 16 June 2026, within 90 days." },
+        "penalties": { "value": 0, "evidence_refs": ["https://www.pickappo.com/en"], "reason": "No listed penalty is evidenced." },
+        "total": 12,
+        "band": "B"
+      },
+      "recommended_state": "active"
+    },
+    {
+      "id": "metafare-ibrahim-almaghlouth",
+      "source_candidate_id": "metafare-ibrahim-almaghlouth",
+      "discovery_lane": "new_founder",
+      "canonical_lane": "new-founder",
+      "identity": { "display_name": "Ibrahim Almaghlouth", "role": "Founder", "linkedin_url": null },
+      "company": { "name": "Metafare", "domain": "metafare.sa", "url": "https://metafare.sa/" },
+      "active_gates": { "identity": true, "ksa_fit": true, "authority": true, "software_fit": true },
+      "capacity_status": "unknown",
+      "verification_sources": {
+        "primary": ["https://metafare.sa/", "https://www.linkedin.com/company/metafare"],
+        "independent": ["https://www.wamda.com/en/2026/05/metafare-secures-1-million-scale-virtual-wellness-solutions"]
+      },
+      "score": {
+        "product_intent": { "value": 4, "evidence_refs": ["https://www.wamda.com/en/2026/05/metafare-secures-1-million-scale-virtual-wellness-solutions", "https://metafare.sa/"], "reason": "A specific AI and virtual-wellness platform expansion was described within 12 months." },
+        "outsourcing_likelihood": { "value": 1, "evidence_refs": ["https://metafare.sa/", "https://www.linkedin.com/company/metafare"], "reason": "The visible employee band does not reveal engineering capacity or vendor intent." },
+        "budget_readiness": { "value": 3, "evidence_refs": ["https://www.wamda.com/en/2026/05/metafare-secures-1-million-scale-virtual-wellness-solutions"], "reason": "$1 million funding and completed-session traction are evidenced." },
+        "timing": { "value": 3, "evidence_refs": ["https://www.wamda.com/en/2026/05/metafare-secures-1-million-scale-virtual-wellness-solutions"], "reason": "The trigger occurred on 5 May 2026, within 180 days." },
+        "penalties": { "value": 0, "evidence_refs": ["https://www.linkedin.com/company/metafare"], "reason": "The 11-50 company band does not by itself satisfy any penalty." },
+        "total": 11,
+        "band": "B"
+      },
+      "recommended_state": "active"
+    },
+    {
+      "id": "cashin-omar-al-ramahi",
+      "source_candidate_id": "cashin-omar-al-ramahi",
+      "discovery_lane": "sme_digital_product",
+      "canonical_lane": "sme-digital-build",
+      "identity": { "display_name": "Omar Al-Ramahi", "role": "Co-founder and CEO", "linkedin_url": null },
+      "company": { "name": "Cashin", "domain": "cashin.sa", "url": "https://cashin.sa/" },
+      "active_gates": { "identity": true, "ksa_fit": true, "authority": true, "software_fit": true },
+      "capacity_status": "unknown",
+      "verification_sources": {
+        "primary": ["https://cashin.sa/", "https://impact46.sa/cashin-closes-sar-60-million-series-a-round-led-by-impact46-to-accelerate-automation-and-digitalization-of-fuel-and-energy-stations/"],
+        "independent": ["https://enterpriseam.com/ksa/2026/02/17/olayan-invests-in-breadfast-aramco-gets-lng-from-catarus-cashin-raises-series-a-funding/"]
+      },
+      "score": {
+        "product_intent": { "value": 4, "evidence_refs": ["https://impact46.sa/cashin-closes-sar-60-million-series-a-round-led-by-impact46-to-accelerate-automation-and-digitalization-of-fuel-and-energy-stations/", "https://cashin.sa/"], "reason": "Product investment and fuel-station automation are specifically described within 12 months." },
+        "outsourcing_likelihood": { "value": 1, "evidence_refs": ["https://cashin.sa/", "https://impact46.sa/cashin-closes-sar-60-million-series-a-round-led-by-impact46-to-accelerate-automation-and-digitalization-of-fuel-and-energy-stations/"], "reason": "Cashin is scaled, but no evidence establishes sufficient engineering capacity or external-partner intent." },
+        "budget_readiness": { "value": 3, "evidence_refs": ["https://impact46.sa/cashin-closes-sar-60-million-series-a-round-led-by-impact46-to-accelerate-automation-and-digitalization-of-fuel-and-energy-stations/"], "reason": "SAR60 million Series A and substantial transaction traction are evidenced, but no product budget is itemised." },
+        "timing": { "value": 2, "evidence_refs": ["https://impact46.sa/cashin-closes-sar-60-million-series-a-round-led-by-impact46-to-accelerate-automation-and-digitalization-of-fuel-and-energy-stations/"], "reason": "The trigger occurred on 16 February 2026, within 365 days but outside 180 days." },
+        "penalties": { "value": 0, "evidence_refs": ["https://cashin.sa/"], "reason": "Scale alone is not a listed penalty while a specific new build is evidenced." },
+        "total": 10,
+        "band": "B"
+      },
+      "recommended_state": "active"
+    },
+    {
+      "id": "kliq-asmaa-almaraghi",
+      "source_candidate_id": "kliq-asmaa-almaraghi",
+      "discovery_lane": "new_founder",
+      "canonical_lane": "new-founder",
+      "identity": { "display_name": "Asma'a AlMaraghi", "role": "Co-founder and CEO", "linkedin_url": null },
+      "company": { "name": "KLIQ", "domain": "kliqapp.io", "url": "https://www.kliqapp.io/" },
+      "active_gates": { "identity": true, "ksa_fit": true, "authority": true, "software_fit": true },
+      "capacity_status": "unknown",
+      "verification_sources": {
+        "primary": ["https://www.linkedin.com/company/kliqapp", "https://apps.apple.com/sa/app/get-kliq/id6749889392"],
+        "independent": ["https://www.wamda.com/en/2025/10/sanabil-venture-studio-backs-kliq-2-25-million"]
+      },
+      "score": {
+        "product_intent": { "value": 4, "evidence_refs": ["https://www.wamda.com/en/2025/10/sanabil-venture-studio-backs-kliq-2-25-million", "https://apps.apple.com/sa/app/get-kliq/id6749889392"], "reason": "A specific AI-enabled social-shopping platform and mobile application launched within 12 months." },
+        "outsourcing_likelihood": { "value": 1, "evidence_refs": ["https://www.linkedin.com/company/kliqapp", "https://apps.apple.com/sa/app/get-kliq/id6749889392"], "reason": "The visible company band and live app do not establish engineering capacity or vendor intent." },
+        "budget_readiness": { "value": 3, "evidence_refs": ["https://www.wamda.com/en/2025/10/sanabil-venture-studio-backs-kliq-2-25-million"], "reason": "$2.25 million seed funding is evidenced." },
+        "timing": { "value": 2, "evidence_refs": ["https://www.wamda.com/en/2025/10/sanabil-venture-studio-backs-kliq-2-25-million"], "reason": "The trigger occurred on 19 October 2025, within 365 days." },
+        "penalties": { "value": 0, "evidence_refs": ["https://www.linkedin.com/company/kliqapp", "https://apps.apple.com/sa/app/get-kliq/id6749889392"], "reason": "The company has more than 20 visible profiles, but a specific new build exists, so the stage penalty does not apply." },
+        "total": 10,
+        "band": "B"
+      },
+      "recommended_state": "active"
+    },
+    {
+      "id": "najeeb-ahmed-yasmina",
+      "source_candidate_id": "najeeb-ahmed-yasmina",
+      "discovery_lane": "sme_digital_product",
+      "canonical_lane": "sme-digital-build",
+      "identity": { "display_name": "Ahmed Yasmina", "role": "Co-founder", "linkedin_url": null },
+      "company": { "name": "Najeeb.ai", "domain": "najeeb.ai", "url": "https://najeeb.ai/" },
+      "active_gates": { "identity": true, "ksa_fit": true, "authority": true, "software_fit": true },
+      "capacity_status": "unknown",
+      "verification_sources": {
+        "primary": ["https://najeeb.ai/"],
+        "independent": ["https://www.wamda.com/2025/10/saudi-insurtech-najeebai-closes-pre-seed-round"]
+      },
+      "score": {
+        "product_intent": { "value": 4, "evidence_refs": ["https://www.wamda.com/2025/10/saudi-insurtech-najeebai-closes-pre-seed-round", "https://najeeb.ai/"], "reason": "Additional AI products and system integrations were specifically described within 12 months." },
+        "outsourcing_likelihood": { "value": 1, "evidence_refs": ["https://najeeb.ai/", "https://www.wamda.com/2025/10/saudi-insurtech-najeebai-closes-pre-seed-round"], "reason": "As an AI product company, Najeeb has some technical capability, but sufficiency and external-partner intent are unknown." },
+        "budget_readiness": { "value": 3, "evidence_refs": ["https://www.wamda.com/2025/10/saudi-insurtech-najeebai-closes-pre-seed-round"], "reason": "A pre-seed round is evidenced, although its amount and build allocation are undisclosed." },
+        "timing": { "value": 2, "evidence_refs": ["https://www.wamda.com/2025/10/saudi-insurtech-najeebai-closes-pre-seed-round"], "reason": "The trigger occurred on 27 October 2025, within 365 days." },
+        "penalties": { "value": 0, "evidence_refs": ["https://najeeb.ai/"], "reason": "No listed penalty is evidenced." },
+        "total": 10,
+        "band": "B"
+      },
+      "recommended_state": "active"
+    },
+    {
+      "id": "ghanem-saleh-al-ghamdi",
+      "source_candidate_id": "ghanem-saleh-al-ghamdi",
+      "discovery_lane": "new_founder",
+      "canonical_lane": "new-founder",
+      "identity": { "display_name": "Saleh Al-Ghamdi", "role": "Co-founder and CEO", "linkedin_url": null },
+      "company": { "name": "Ghanem", "domain": "ghanem.sa", "url": "https://ghanem.sa/en" },
+      "active_gates": { "identity": true, "ksa_fit": true, "authority": true, "software_fit": true },
+      "capacity_status": "unknown",
+      "verification_sources": {
+        "primary": ["https://ghanem.sa/en", "https://www.linkedin.com/company/ghanemapp"],
+        "independent": ["https://www.wamda.com/en/2025/11/saudi-proptech-ghanem-raises-7-1-million-al-romaih-group"]
+      },
+      "score": {
+        "product_intent": { "value": 4, "evidence_refs": ["https://www.wamda.com/en/2025/11/saudi-proptech-ghanem-raises-7-1-million-al-romaih-group", "https://ghanem.sa/en"], "reason": "New fractional-real-estate products and platform expansion were described within 12 months." },
+        "outsourcing_likelihood": { "value": 1, "evidence_refs": ["https://ghanem.sa/en", "https://www.linkedin.com/company/ghanemapp"], "reason": "The visible employee count does not establish engineering capacity or external-partner intent." },
+        "budget_readiness": { "value": 3, "evidence_refs": ["https://www.wamda.com/en/2025/11/saudi-proptech-ghanem-raises-7-1-million-al-romaih-group"], "reason": "$7.1 million funding and a regulated live product are evidenced." },
+        "timing": { "value": 2, "evidence_refs": ["https://www.wamda.com/en/2025/11/saudi-proptech-ghanem-raises-7-1-million-al-romaih-group"], "reason": "The trigger occurred on 16 November 2025, within 365 days but outside 180 days." },
+        "penalties": { "value": 0, "evidence_refs": ["https://www.linkedin.com/company/ghanemapp", "https://ghanem.sa/en"], "reason": "More than 20 visible profiles are offset by a specific new-build trigger under the scoring rule." },
+        "total": 10,
+        "band": "B"
+      },
+      "recommended_state": "active"
+    },
+    {
+      "id": "zahib-badr-alhader",
+      "source_candidate_id": "zahib-badr-alhader",
+      "discovery_lane": "sme_digital_product",
+      "canonical_lane": "sme-digital-build",
+      "identity": { "display_name": "Badr Alhader", "role": "Co-founder", "linkedin_url": null },
+      "company": { "name": "Zahib", "domain": "zahib.sa", "url": "https://www.zahib.sa/" },
+      "active_gates": { "identity": true, "ksa_fit": true, "authority": true, "software_fit": true },
+      "capacity_status": "unknown",
+      "verification_sources": {
+        "primary": ["https://www.zahib.sa/", "https://www.linkedin.com/company/zahib-sa"],
+        "independent": ["https://www.wamda.com/ar/2025/09/zahib-secures-seed-round-modernise-saudi-laundry-market"]
+      },
+      "score": {
+        "product_intent": { "value": 4, "evidence_refs": ["https://www.wamda.com/ar/2025/09/zahib-secures-seed-round-modernise-saudi-laundry-market", "https://www.zahib.sa/"], "reason": "A specific technology-stack enhancement for a live marketplace was described within 12 months." },
+        "outsourcing_likelihood": { "value": 1, "evidence_refs": ["https://www.zahib.sa/", "https://www.linkedin.com/company/zahib-sa"], "reason": "A service-operator model makes software delivery relevant, but capacity and vendor intent remain unknown." },
+        "budget_readiness": { "value": 3, "evidence_refs": ["https://www.wamda.com/ar/2025/09/zahib-secures-seed-round-modernise-saudi-laundry-market"], "reason": "Seed funding and a live product are evidenced, without an explicit build budget." },
+        "timing": { "value": 2, "evidence_refs": ["https://www.wamda.com/ar/2025/09/zahib-secures-seed-round-modernise-saudi-laundry-market"], "reason": "The trigger occurred on 15 September 2025, within 365 days." },
+        "penalties": { "value": 0, "evidence_refs": ["https://www.zahib.sa/"], "reason": "No listed penalty is evidenced." },
+        "total": 10,
+        "band": "B"
+      },
+      "recommended_state": "active"
+    },
+    {
+      "id": "wadaie-abdullah-alandas",
+      "source_candidate_id": "wadaie-abdullah-alandas",
+      "discovery_lane": "sme_digital_product",
+      "canonical_lane": "sme-digital-build",
+      "identity": { "display_name": "Abdullah Alandas", "role": "Co-founder", "linkedin_url": null },
+      "company": { "name": "Wadaie", "domain": "wadaie.com", "url": "https://www.wadaie.com/en" },
+      "active_gates": { "identity": true, "ksa_fit": true, "authority": true, "software_fit": true },
+      "capacity_status": "unknown",
+      "verification_sources": {
+        "primary": ["https://www.wadaie.com/en", "https://sama.gov.sa/en-US/MediaCenter/News/pages/news-1033.aspx"],
+        "independent": ["https://www.wamda.com/en/2025/09/wadaie-closes-seed-round-led-venturesouq"]
+      },
+      "score": {
+        "product_intent": { "value": 4, "evidence_refs": ["https://www.wamda.com/en/2025/09/wadaie-closes-seed-round-led-venturesouq", "https://www.wadaie.com/en"], "reason": "Compliance, cybersecurity, infrastructure and product work for a live platform were specifically described within 12 months." },
+        "outsourcing_likelihood": { "value": 1, "evidence_refs": ["https://www.wadaie.com/en", "https://sama.gov.sa/en-US/MediaCenter/News/pages/news-1033.aspx"], "reason": "Delivery capacity and external-partner intent are unknown." },
+        "budget_readiness": { "value": 3, "evidence_refs": ["https://www.wamda.com/en/2025/09/wadaie-closes-seed-round-led-venturesouq", "https://www.wadaie.com/en"], "reason": "Seed funding and substantial self-reported investor traction are evidenced." },
+        "timing": { "value": 2, "evidence_refs": ["https://www.wamda.com/en/2025/09/wadaie-closes-seed-round-led-venturesouq"], "reason": "The trigger occurred on 15 September 2025, within 365 days." },
+        "penalties": { "value": 0, "evidence_refs": ["https://www.wadaie.com/en"], "reason": "Scale alone does not meet a listed penalty while a specific build trigger exists." },
+        "total": 10,
+        "band": "B"
+      },
+      "recommended_state": "active"
+    },
+    {
+      "id": "nqoodlet-mohamed-milyani",
+      "source_candidate_id": "nqoodlet-mohamed-milyani",
+      "discovery_lane": "sme_digital_product",
+      "canonical_lane": "sme-digital-build",
+      "identity": { "display_name": "Mohamed Milyani", "role": "Co-founder", "linkedin_url": null },
+      "company": { "name": "Nqoodlet", "domain": "nqoodlet.com", "url": "https://nqoodlet.com/en/" },
+      "active_gates": { "identity": true, "ksa_fit": true, "authority": true, "software_fit": true },
+      "capacity_status": "unknown",
+      "verification_sources": {
+        "primary": ["https://nqoodlet.com/en/"],
+        "independent": ["https://www.arabnews.com/finance/saudi-fintech-startup-nqoodlet-secures-3m-in-seed-funding-2599494"]
+      },
+      "score": {
+        "product_intent": { "value": 2, "evidence_refs": ["https://www.arabnews.com/finance/saudi-fintech-startup-nqoodlet-secures-3m-in-seed-funding-2599494", "https://nqoodlet.com/en/"], "reason": "The business model supports software integrations, but the dated build trigger is older than 12 months." },
+        "outsourcing_likelihood": { "value": 1, "evidence_refs": ["https://nqoodlet.com/en/", "https://www.arabnews.com/finance/saudi-fintech-startup-nqoodlet-secures-3m-in-seed-funding-2599494"], "reason": "Delivery capacity and vendor intent remain unknown." },
+        "budget_readiness": { "value": 3, "evidence_refs": ["https://www.arabnews.com/finance/saudi-fintech-startup-nqoodlet-secures-3m-in-seed-funding-2599494"], "reason": "$3 million funding and 600 reported SME customers are evidenced." },
+        "timing": { "value": 1, "evidence_refs": ["https://www.arabnews.com/finance/saudi-fintech-startup-nqoodlet-secures-3m-in-seed-funding-2599494", "https://nqoodlet.com/en/"], "reason": "The 4 May 2025 signal is older than one year, while the product remains current." },
+        "penalties": { "value": 0, "evidence_refs": ["https://nqoodlet.com/en/"], "reason": "No listed penalty is evidenced." },
+        "total": 7,
+        "band": "C"
+      },
+      "recommended_state": "watchlist_refresh_trigger"
+    },
+    {
+      "id": "vminds-ahmed-al-mashhadi",
+      "source_candidate_id": "vminds-ahmed-al-mashhadi",
+      "discovery_lane": "sme_digital_product",
+      "canonical_lane": "sme-digital-build",
+      "identity": { "display_name": "Ahmed Al-Mashhadi", "role": "Founder and CEO", "linkedin_url": null },
+      "company": { "name": "vminds.ai", "domain": "vminds.ai", "url": "https://vminds.ai/" },
+      "active_gates": { "identity": true, "ksa_fit": true, "authority": true, "software_fit": true },
+      "capacity_status": "unknown",
+      "verification_sources": {
+        "primary": ["https://vminds.ai/"],
+        "independent": ["https://www.wamda.com/index.php/2025/02/saudi-ai-startup-vmindsai-secures-six-figure-pre-seed"]
+      },
+      "score": {
+        "product_intent": { "value": 2, "evidence_refs": ["https://vminds.ai/", "https://www.wamda.com/index.php/2025/02/saudi-ai-startup-vmindsai-secures-six-figure-pre-seed"], "reason": "Specific forthcoming products are visible, but their current launch commitment is undated and the funding trigger is stale." },
+        "outsourcing_likelihood": { "value": 1, "evidence_refs": ["https://vminds.ai/"], "reason": "vminds is an AI builder, but delivery sufficiency and external-partner intent are unknown." },
+        "budget_readiness": { "value": 3, "evidence_refs": ["https://www.wamda.com/index.php/2025/02/saudi-ai-startup-vmindsai-secures-six-figure-pre-seed"], "reason": "Six-figure pre-seed funding is evidenced, though old and not allocated to a current build." },
+        "timing": { "value": 1, "evidence_refs": ["https://www.wamda.com/index.php/2025/02/saudi-ai-startup-vmindsai-secures-six-figure-pre-seed", "https://vminds.ai/"], "reason": "The 4 February 2025 trigger is older than one year while the product remains visibly current." },
+        "penalties": { "value": 0, "evidence_refs": ["https://vminds.ai/"], "reason": "No listed penalty is evidenced." },
+        "total": 7,
+        "band": "C"
+      },
+      "recommended_state": "watchlist_refresh_trigger"
+    },
+    {
+      "id": "revie-ibrahim-abu-khadra",
+      "source_candidate_id": "revie-ibrahim-abu-khadra",
+      "discovery_lane": "sme_digital_product",
+      "canonical_lane": "sme-digital-build",
+      "identity": { "display_name": "Ibrahim Abu Khadra", "role": "Founder and CEO", "linkedin_url": null },
+      "company": { "name": "Revie", "domain": "reviespaces.com", "url": "https://www.reviespaces.com/en" },
+      "active_gates": { "identity": true, "ksa_fit": true, "authority": true, "software_fit": true },
+      "capacity_status": "unknown",
+      "verification_sources": {
+        "primary": ["https://www.reviespaces.com/en/about-us", "https://www.linkedin.com/posts/ibrahimabukhadra_%D8%B1%DA%A4%D9%8A-activity-7282651400939950080-zMhw"],
+        "independent": ["https://www.arabnews.com/node/2586067/businesseconomy"]
+      },
+      "score": {
+        "product_intent": { "value": 2, "evidence_refs": ["https://www.reviespaces.com/en/about-us", "https://www.arabnews.com/node/2586067/businesseconomy"], "reason": "A technology-enabled renovation platform is live, but its dated build trigger is older than 12 months." },
+        "outsourcing_likelihood": { "value": 1, "evidence_refs": ["https://www.reviespaces.com/en/about-us", "https://www.linkedin.com/posts/ibrahimabukhadra_%D8%B1%DA%A4%D9%8A-activity-7282651400939950080-zMhw"], "reason": "The service-operator model is relevant, but delivery capacity and external-partner intent remain unknown." },
+        "budget_readiness": { "value": 3, "evidence_refs": ["https://www.arabnews.com/node/2586067/businesseconomy"], "reason": "$2.5 million seed funding is evidenced." },
+        "timing": { "value": 1, "evidence_refs": ["https://www.arabnews.com/node/2586067/businesseconomy", "https://www.reviespaces.com/en/about-us"], "reason": "The January 2025 trigger is older than one year while the company remains operating." },
+        "penalties": { "value": 0, "evidence_refs": ["https://www.reviespaces.com/en/about-us"], "reason": "No listed penalty is evidenced." },
+        "total": 7,
+        "band": "C"
+      },
+      "recommended_state": "watchlist_refresh_trigger"
+    },
+    {
+      "id": "nuhieh-abeer-tadmori",
+      "source_candidate_id": "nuhieh-abeer-tadmori",
+      "discovery_lane": "new_founder",
+      "canonical_lane": "new-founder",
+      "identity": { "display_name": "Abeer M. Tadmori", "role": "Co-founder and CEO", "linkedin_url": null },
+      "company": { "name": "Nuhieh", "domain": "nuhieh.com", "url": "https://www.nuhieh.com/whoweare" },
+      "active_gates": { "identity": true, "ksa_fit": true, "authority": true, "software_fit": true },
+      "capacity_status": "unknown",
+      "verification_sources": {
+        "primary": ["https://www.nuhieh.com/whoweare", "https://sa.linkedin.com/company/nuhieh"],
+        "independent": ["https://www.launch-x.ventures/"]
+      },
+      "score": {
+        "product_intent": { "value": 2, "evidence_refs": ["https://www.nuhieh.com/whoweare", "https://www.launch-x.ventures/"], "reason": "A specific learning platform is evidenced, but the visible pre-launch work lacks a dated trigger inside 12 months." },
+        "outsourcing_likelihood": { "value": 1, "evidence_refs": ["https://www.nuhieh.com/whoweare", "https://sa.linkedin.com/company/nuhieh"], "reason": "The public 2-10 band is not an engineering-capacity audit and no external partner is requested." },
+        "budget_readiness": { "value": 1, "evidence_refs": ["https://www.nuhieh.com/whoweare", "https://www.launch-x.ventures/"], "reason": "No funding, revenue, paid pilot, grant or build budget is evidenced." },
+        "timing": { "value": 1, "evidence_refs": ["https://www.launch-x.ventures/", "https://www.nuhieh.com/whoweare"], "reason": "The 2025 discovery signal is older than one year, while the product remains visibly current." },
+        "penalties": { "value": 0, "evidence_refs": ["https://sa.linkedin.com/company/nuhieh"], "reason": "No listed penalty is evidenced." },
+        "total": 5,
+        "band": "C"
+      },
+      "recommended_state": "watchlist_budget_and_timing"
+    },
+    {
+      "id": "urcash-talal-alharbi",
+      "source_candidate_id": "urcash-talal-alharbi",
+      "discovery_lane": "new_founder",
+      "canonical_lane": "new-founder",
+      "identity": { "display_name": "Talal Alharbi", "role": "Founder and CEO", "linkedin_url": "https://sa.linkedin.com/in/talal638" },
+      "company": { "name": "urCASH", "domain": "urcash.net", "url": "https://www.urcash.net/" },
+      "active_gates": { "identity": true, "ksa_fit": true, "authority": true, "software_fit": true },
+      "capacity_status": "unknown_cofounder_capability",
+      "verification_sources": {
+        "primary": ["https://www.urcash.net/", "https://sa.linkedin.com/in/talal638"],
+        "independent": ["https://www.launch-x.ventures/"]
+      },
+      "score": {
+        "product_intent": { "value": 4, "evidence_refs": ["https://www.urcash.net/", "https://sa.linkedin.com/in/talal638"], "reason": "A specific Saudi personal-finance application is in a current waitlist and active build phase." },
+        "outsourcing_likelihood": { "value": 1, "evidence_refs": ["https://www.linkedin.com/posts/talal638_urcash-has-3-co-founders-and-no-employees-activity-7481421898732675072-HaA9", "https://sa.linkedin.com/in/talal638"], "reason": "The founder reports no employees, but co-founder technical capacity is not audited and no external builder is sought; capacity stays unknown." },
+        "budget_readiness": { "value": 1, "evidence_refs": ["https://www.urcash.net/", "https://sa.linkedin.com/in/talal638"], "reason": "A waitlist is visible, but no funding, revenue, paid pilot or build budget is evidenced." },
+        "timing": { "value": 4, "evidence_refs": ["https://www.linkedin.com/posts/talal638_urcash-has-3-co-founders-and-no-employees-activity-7481421898732675072-HaA9", "https://sa.linkedin.com/in/talal638"], "reason": "The founder's current build and operating-model posts are within 90 days." },
+        "penalties": { "value": 0, "evidence_refs": ["https://sa.linkedin.com/in/talal638", "https://www.urcash.net/"], "reason": "AI-agent use and no employees do not prove sufficient engineering capacity or trigger a listed penalty." },
+        "total": 10,
+        "band": "B"
+      },
+      "recommended_state": "active"
+    }
+  ],
+  "holds": [
+    {
+      "id": "tabsense-mohammad-jaber",
+      "source_candidate_id": "tabsense-mohammad-jaber",
+      "discovery_lane": "sme_digital_product",
+      "canonical_lane": "sme-digital-build",
+      "identity": { "display_name": "Mohammad Jaber", "role": "Co-founder and CEO", "linkedin_url": null },
+      "company": { "name": "TabSense", "domain": "tabsense.ai", "url": "https://tabsense.ai/en" },
+      "active_gates": { "identity": true, "ksa_fit": true, "authority": true, "software_fit": true },
+      "missing_gates": [],
+      "missing_requirements": ["non_d_band_for_active_set"],
+      "reason": "All four gates pass, but first-party evidence shows substantial internal delivery capacity. The deterministic score is D-band, so the record cannot remain active.",
+      "verification_sources": {
+        "primary": ["https://tabsense.ai/en", "https://www.linkedin.com/posts/mohjaber_tabsense-is-on-after-an-incredible-2025-activity-7417193059429359616-ymy8"],
+        "independent": ["https://www.wamda.com/2025/10/tabsense-attracts-5-million-backing-jasoor-ventures"]
+      },
+      "score": {
+        "product_intent": { "value": 4, "evidence_refs": ["https://www.linkedin.com/posts/mohjaber_tabsense-is-on-after-an-incredible-2025-activity-7417193059429359616-ymy8", "https://tabsense.ai/en"], "reason": "The CEO describes a 2026 next-generation AI-agent release for an operating POS platform." },
+        "outsourcing_likelihood": { "value": 0, "evidence_refs": ["https://www.linkedin.com/posts/mohjaber_tabsense-is-on-after-an-incredible-2025-activity-7417193059429359616-ymy8"], "reason": "The CEO reports 95 team members, ten launched AI agents and an advanced internal architecture, evidencing substantial in-house delivery." },
+        "budget_readiness": { "value": 3, "evidence_refs": ["https://www.wamda.com/2025/10/tabsense-attracts-5-million-backing-jasoor-ventures"], "reason": "$5 million funding and operating customer traction are evidenced." },
+        "timing": { "value": 2, "evidence_refs": ["https://www.wamda.com/2025/10/tabsense-attracts-5-million-backing-jasoor-ventures"], "reason": "The dated funding and launch trigger occurred within 365 days." },
+        "penalties": { "value": 5, "evidence_refs": ["https://www.linkedin.com/posts/mohjaber_tabsense-is-on-after-an-incredible-2025-activity-7417193059429359616-ymy8"], "reason": "Sufficient internal product and engineering delivery capacity is directly evidenced." },
+        "total": 4,
+        "band": "D"
+      },
+      "recommended_state": "archive_low_outsourcing_fit"
+    },
+    {
+      "id": "raff-ali-al-qudah",
+      "source_candidate_id": "raff-ali-al-qudah",
+      "discovery_lane": "sme_digital_product",
+      "canonical_lane": "sme-digital-build",
+      "identity": { "display_name": "Ali Al Qudah", "role": "Co-founder", "linkedin_url": null },
+      "company": { "name": "Raff", "domain": null, "url": null },
+      "active_gates": { "identity": false, "ksa_fit": false, "authority": false, "software_fit": true },
+      "missing_gates": ["identity", "ksa-fit", "authority"],
+      "missing_requirements": ["one_primary_source", "canonical_company_domain"],
+      "reason": "Only trade-press and ecosystem-secondary evidence was found. No first-party company domain, founder profile or current executive source verifies the identity, Saudi basis and authority together.",
+      "evidence_refs": [
+        "https://www.wamda.com/2026/08/raff-raises-17-million-bridge-online-brands-physical-retail",
+        "https://ae.linkedin.com/posts/ihubsa_%D8%AA%D9%82%D9%86%D9%8A%D8%A9%D8%A7%D9%84%D8%AA%D8%AC%D8%B2%D8%A6%D8%A9-%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9-activity-7497949198210899968-jAqQ"
+      ],
+      "recommended_state": "hold_for_primary_verification"
+    },
+    {
+      "id": "oori-elie-nasr",
+      "source_candidate_id": "oori-elie-nasr",
+      "discovery_lane": "new_founder",
+      "canonical_lane": "new-founder",
+      "identity": { "display_name": "Elie Nasr", "role": "Co-founder; executive title unresolved", "linkedin_url": "https://sa.linkedin.com/in/elienasr" },
+      "company": { "name": "OORI", "domain": "oori.co", "url": "https://oori.co/en/about" },
+      "active_gates": { "identity": true, "ksa_fit": true, "authority": false, "software_fit": true },
+      "missing_gates": ["authority"],
+      "missing_requirements": ["resolve_current_ceo_conflict"],
+      "reason": "The official company page names Allen Merhej as co-founder and CEO, while current trade coverage calls Elie Nasr CEO. Elie remains a confirmed co-founder, but current buying authority cannot be assigned without resolving the conflict.",
+      "evidence_refs": [
+        "https://oori.co/en/about",
+        "https://www.wamda.com/2026/08/saudi-investment-platform-oori-secures-cma-licence-arranging-advising",
+        "https://sa.linkedin.com/in/elienasr"
+      ],
+      "recommended_state": "hold_identity_title_conflict"
+    },
+    {
+      "id": "workey-mohamad-al-mohamad",
+      "source_candidate_id": "workey-mohamad-al-mohamad",
+      "discovery_lane": "sme_digital_product",
+      "canonical_lane": "sme-digital-build",
+      "identity": { "display_name": "Mohamad Al Mohamad", "role": "Co-founder", "linkedin_url": null },
+      "company": { "name": "Workey", "domain": null, "url": null },
+      "active_gates": { "identity": false, "ksa_fit": true, "authority": false, "software_fit": true },
+      "missing_gates": ["identity", "authority"],
+      "missing_requirements": ["one_primary_source", "canonical_company_domain"],
+      "reason": "The Saudi platform and build plan are reported by Wamda, but no authoritative company domain, current founder profile or first-party operating source was confirmed; similarly named sites were excluded.",
+      "evidence_refs": ["https://www.wamda.com/en/2025/11/falak-backs-workey-accelerate-saudi-arabia-business-solutions-ecosystem"],
+      "recommended_state": "hold_missing_first_party_source"
+    },
+    {
+      "id": "tadawulcom-unresolved-founder",
+      "source_candidate_id": "tadawulcom-unresolved-founder",
+      "discovery_lane": "sme_digital_product",
+      "canonical_lane": "sme-digital-build",
+      "identity": { "display_name": null, "role": null, "linkedin_url": null },
+      "company": { "name": "Tadawulcom", "domain": "tadawulcom.sa", "url": "https://saadahmad.tadawulcom.sa/login" },
+      "active_gates": { "identity": false, "ksa_fit": true, "authority": false, "software_fit": true },
+      "missing_gates": ["identity", "authority"],
+      "missing_requirements": ["named_current_decision_maker"],
+      "reason": "The regulator confirms a Saudi electronic real-estate platform and funding coverage confirms a feature rollout, but neither source names a current founder or executive buyer.",
+      "evidence_refs": [
+        "https://rega.gov.sa/en/media-center/news-announcements/rega-licenses-28-electronic-real-estate-platforms/",
+        "https://www.wamda.com/ar/2025/09/tadawulcom-closes-400000-seed-advance-proptech-services-ksa"
+      ],
+      "recommended_state": "hold_missing_buying_authority"
+    }
+  ]
+}

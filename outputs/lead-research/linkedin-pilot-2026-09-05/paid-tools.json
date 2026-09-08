@@ -1,0 +1,232 @@
+{
+  "schema_version": "saudi-prebuild-paid-tools-review.v1",
+  "reviewed_at": "2026-09-05",
+  "scope": "Public official product documentation and pricing only. No account, trial, purchase, plugin installation or profile collection was performed by this reviewer.",
+  "decision_status": "final_after_completed_coordinator_live_pilot",
+  "main_recommendation": "Do not buy a paid tool yet. The coordinator's free LinkedIn pilot worked without an observed commercial-search restriction; its bottlenecks were buyer-intent ambiguity, project ownership and a supported team maximum. Improve intent queries and candidate verification first. Core remains a conditional future trial for demonstrated combined-filter or volume friction. Premium Business is relevant only if ordinary search limits become the primary obstacle. Neither plan proves that a core product is unbuilt, that its complete software team has at most two people, or that its owner intends to pay an external builder.",
+  "coordinator_live_pilot_snapshot": {
+    "snapshot_status": "interim_superseded_by_final_snapshot",
+    "reported_at": "2026-09-05",
+    "provenance": "Coordinator-reported Microsoft Edge observations, not independently reproduced by this reviewer",
+    "account_path": "ordinary logged-in LinkedIn",
+    "unique_post_queries_so_far": 5,
+    "profile_checks_so_far": 3,
+    "commercial_search_restriction_observed": false,
+    "post_date_filter_worked": true,
+    "samples": [
+      {
+        "query": "\"development partner\" \"Saudi\"",
+        "date_filter": "past month",
+        "inspected_posts": 6,
+        "composition": { "business_development_job_ads": 3, "vendor_promotion": 3 }
+      },
+      {
+        "query": "\"MVP\" \"Saudi\"",
+        "date_filter": "past month",
+        "inspected_posts": 6,
+        "composition": { "vendor_promotion": 4, "existing_venture_expansion": 1, "self_building_cto": 1 }
+      },
+      {
+        "query": "\"أبحث عن مبرمج\"",
+        "date_filter": "all time",
+        "inspected_posts": 11,
+        "jobseekers_observed": 6,
+        "remaining_observations": "Some actual project requests appeared, but old dates, unnamed projects, unknown ownership or missing team ceilings prevented confirmed qualification. No exact disposition count was supplied for the remaining five posts."
+      }
+    ],
+    "interpretation": "This is an early non-random search sample, not a measurement of all LinkedIn coverage or future rate limits. It supplies no evidence that a subscription would solve the current qualification gaps."
+  },
+  "coordinator_live_pilot_final_snapshot": {
+    "reported_at": "2026-09-05",
+    "provenance": "Coordinator-reported completed Microsoft Edge pilot; not independently reproduced by this reviewer",
+    "distinct_queries": 9,
+    "filter_and_sort_passes": 11,
+    "visible_top_level_post_impressions": 59,
+    "impressions_are_unique_leads": false,
+    "user_seed_newsletter_editions_fully_read": 2,
+    "free_controls_observed": ["Latest sorting", "date filtering", "author filtering"],
+    "commercial_search_restriction_observed": false,
+    "fully_qualified_revised_persona_fits": 0,
+    "interpretation": "The completed pilot supports continuing free research. Its 59 post impressions are not a deduplicated lead denominator, so no lead-conversion rate is asserted. No volume restriction was observed; buyer intent, project ownership and supported team maximum remained the material evidence gaps. Zero fully qualified fits in this bounded pilot does not establish that suitable buyers do not exist."
+  },
+  "known_vs_unverified": {
+    "known": [
+      "Current public LinkedIn US starting prices and documented feature categories were checked on official pages.",
+      "Core includes advanced search. Current official filter definitions include company, title, geography, tenure and department/company headcount; official glossary documents recent-post and job-change spotlights.",
+      "Premium Business documents unlimited people/company search; LinkedIn Help also documents additional Premium filters such as Actively hiring.",
+      "Apollo documents employee/department counts, job postings, geography, titles and company-activity filters.",
+      "Crunchbase documents company, team, funding and growth filters. MAGNiTT documents venture/funding research and customized enterprise subscriptions."
+    ],
+    "unverified": [
+      "This account's current paid plan, trial eligibility, checkout amount, billing currency and applicable tax.",
+      "Exact Premium Business headcount/tenure filter combinations available to this account.",
+      "Paid search result quality or coverage for Saudi pre-company founders.",
+      "Whether a paid plan would measurably improve Saudi pre-build research; the observed free pilot has not demonstrated a volume restriction.",
+      "Complete engineering rosters, external contractors, current product functionality and paid-vendor intent for any individual candidate."
+    ]
+  },
+  "tools": [
+    {
+      "id": "linkedin-sales-navigator-core",
+      "recommendation": "defer_now_conditional_future_trial",
+      "buy_now": false,
+      "best_use": "Find candidate founders using several company/person filters together, then inspect the underlying product and team evidence.",
+      "verified_capabilities": [
+        "Current and past company; current and past job title; function and seniority.",
+        "Person geography and company headquarters location.",
+        "Company headcount and account department headcount; growth filters exist at account level.",
+        "Years in current company and position.",
+        "Spotlights for changed jobs within 90 days and posting within 30 days.",
+        "Lead/account profiles, advanced searches and alerts."
+      ],
+      "important_limits": [
+        "Total company headcount is not software-team size. Department counts reflect LinkedIn data and do not establish a complete contractor-inclusive maximum.",
+        "Recent posting does not mean the post contains a build request; new founder title or recent job change does not prove a new unbuilt company.",
+        "Company-size restrictions can miss unincorporated founders or businesses without a populated company page; keep a separate search without that restriction.",
+        "No verified documented filter directly proves an unbuilt core product, cash development budget or willingness to buy outsourced software."
+      ],
+      "price": {
+        "currency": "USD",
+        "monthly_billing_per_license": 119.99,
+        "annual_billing_per_license": 1079.88,
+        "price_basis": "Official public starting price, not this user's quote",
+        "official_price_updated_at": "2026-08-01",
+        "checked_at": "2026-09-05",
+        "source_url": "https://business.linkedin.com/sell/sales-navigator/compare-plans?lang=en",
+        "locale_caveat": "LinkedIn calls listed prices estimates; VAT/GST, promotions, currency and device variation may apply. Egypt/Saudi checkout amount was not inspected."
+      },
+      "upgrade_trigger": "Not met in the reported pilot. Reconsider only after two comparable free sessions show that unavailable combined founder/company-size/geography controls consume over half of discovery time, or an explicit commercial-search restriction prevents planned exact-name checks. Buyer-versus-vendor noise alone is insufficient, because Core does not certify paid intent. Test against the same research brief before subscribing long term.",
+      "trial_success_criterion": "Proposed experiment: at least 30% lower discovery minutes per unique evidence-supported pre-build candidate over comparable batches, or demonstrably restores blocked exact-name work, without increasing unknown team/product cases. Continue only if downstream fully qualified yield also improves. Thresholds are analyst proposals, not vendor promises.",
+      "source_ids": ["linkedin-pricing", "linkedin-plans", "linkedin-filters", "linkedin-glossary"]
+    },
+    {
+      "id": "linkedin-premium-business",
+      "recommendation": "defer_now_conditional_on_future_volume_limit",
+      "buy_now": false,
+      "best_use": "More ordinary LinkedIn research when precise candidates are already found through program rosters, public posts or company websites.",
+      "verified_capabilities": [
+        "Unlimited people and company search is advertised.",
+        "Profile access beyond the immediate network and business growth/hiring insights are advertised.",
+        "Premium search documentation lists additional filters such as Actively hiring."
+      ],
+      "important_limits": [
+        "Do not assume Premium includes every Core filter combination; exact company/department headcount and tenure controls were not verified for Premium.",
+        "It does not solve missing first-party team, product or paid-budget evidence.",
+        "Profile promotion, content features and messaging do not contribute to this research-only task."
+      ],
+      "price": {
+        "currency": "USD",
+        "monthly_billing_per_license": 69.99,
+        "annual_billing_per_license": 539.88,
+        "price_basis": "Official public starting price, not this user's quote",
+        "official_price_updated_at": "2026-04-20",
+        "checked_at": "2026-09-05",
+        "source_url": "https://premium.linkedin.com/small-business/business",
+        "locale_caveat": "LinkedIn lists estimated starting prices that may exclude taxes and promotions; exact local checkout was not inspected."
+      },
+      "upgrade_trigger": "Use only if free exact-name research is visibly blocked by search-volume restrictions and the current ordinary filters otherwise meet the research need. If combined targeting filters are the bottleneck, test Core instead.",
+      "source_ids": ["linkedin-premium-business", "linkedin-basic-premium-search"]
+    },
+    {
+      "id": "linkedin-sales-navigator-advanced-or-plus",
+      "recommendation": "skip_for_current_task",
+      "buy_now": false,
+      "best_use": "Team collaboration and integrated sales workflows if those become separate requirements.",
+      "important_limits": [
+        "The current task has no demonstrated requirement for team sales administration or CRM integration.",
+        "LinkedIn Buyer Intent concerns interest in the user's company through LinkedIn engagement. It does not certify a pre-build project or an outsourced-development request."
+      ],
+      "price": {
+        "advanced_usd_monthly_billing_per_license": 159.99,
+        "advanced_usd_annual_billing_per_license": 1799.88,
+        "advanced_plus_public_fixed_price": null,
+        "advanced_plus_basis": "Customized quote",
+        "checked_at": "2026-09-05",
+        "source_url": "https://business.linkedin.com/sell/sales-navigator/compare-plans?lang=en",
+        "locale_caveat": "Official estimated starting prices, potentially excluding tax/promotions; local checkout not verified."
+      },
+      "upgrade_trigger": "Reconsider only after a separate need for multi-user collaboration or supported CRM integration is established and its cost justified.",
+      "source_ids": ["linkedin-pricing", "linkedin-plans", "linkedin-filters"]
+    },
+    {
+      "id": "apollo",
+      "recommendation": "skip_paid_for_now",
+      "buy_now": false,
+      "verified_capabilities": [
+        "Person/company geography, titles, employee and department headcount, funding, technologies, job postings, job changes and tenure filters are documented.",
+        "The vendor warns that filter access differs by plan and that private-company revenue estimates vary in coverage and precision."
+      ],
+      "assessment": "Potential auxiliary company/role lookup tool, but Saudi pre-company coverage is untested. Aggregate counts or technology detection cannot prove an absent app or a complete <=2-builder team. Its topic-based buying-intent measure is not a direct vendor brief. Core enrichment/outreach capabilities are outside the user's current need.",
+      "price": {
+        "verified_public_numeric_price": null,
+        "checked_at": "2026-09-05",
+        "source_url": "https://www.apollo.io/pricing",
+        "reason": "The retrieved official page did not expose a usable numeric plan-price table. No third-party price substituted."
+      },
+      "upgrade_trigger": "Only consider a later trial if existing accessible previews demonstrate substantial coverage of a benchmark set of independently discovered Saudi pre-build founders and improved research speed. Do not buy based on total database size.",
+      "source_ids": ["apollo-filters", "apollo-pricing"]
+    },
+    {
+      "id": "crunchbase",
+      "recommendation": "skip_paid_for_current_acquisition",
+      "buy_now": false,
+      "verified_capabilities": [
+        "Headquarters, employee count, industry, founded date, funding dates/stages, people roles and growth information are documented searchable attributes."
+      ],
+      "assessment": "Useful to corroborate an already-discovered company's financing and maturity. Funding-first acquisition can reproduce the present list's bias toward established software ventures. Missing profiles or funding records are not evidence of no company, no cash or no product.",
+      "price": {
+        "verified_public_numeric_price": null,
+        "checked_at": "2026-09-05",
+        "source_url": "https://www.crunchbase.com/pricing",
+        "reason": "Official pricing page was not readable by the web tool. No reseller or review-site price is quoted."
+      },
+      "upgrade_trigger": "Reconsider when a repeated, quantified funding-verification workload for already-fit candidates becomes material. A price and entitlement check would still be required.",
+      "source_ids": ["crunchbase-filters", "crunchbase-search-types"]
+    },
+    {
+      "id": "magnitt",
+      "recommendation": "skip_paid_for_current_acquisition",
+      "buy_now": false,
+      "verified_capabilities": [
+        "Official materials describe venture/funding directories and research, investor filters and customized enterprise subscriptions."
+      ],
+      "assessment": "A regional financing and ecosystem source may support exact-company corroboration, but no verified capability solves the project's missing product/team facts. The current workflow does not justify an enterprise research subscription.",
+      "price": {
+        "verified_public_numeric_price": null,
+        "checked_at": "2026-09-05",
+        "source_url": "https://helpdesk.magnitt.com/subscriptions",
+        "reason": "Official help describes customized Enterprise subscriptions; no public numeric price verified."
+      },
+      "upgrade_trigger": "Reconsider only for a separate sustained regional funding-data workload or after a relevant coverage demonstration; no sales inquiry is recommended as part of this research pass.",
+      "source_ids": ["magnitt-subscriptions", "magnitt-investors", "magnitt-research"]
+    }
+  ],
+  "trial_notes": {
+    "eligibility": "LinkedIn's current pricing page says Sales Navigator trials depend on current subscription status, previous trial use within 365 days, plan and region. This user's eligibility was not checked.",
+    "billing": "The same official page says trial enrollment requires payment information and cancellation before trial end avoids the next charge. No trial was started.",
+    "workflow_scope": "This assessment describes product capabilities. Saved-lead alerts would require saving leads, which is outside the user's present read-only LinkedIn constraint and is excluded from the proposed pilot benefit calculation.",
+    "source_ids": ["linkedin-pricing"]
+  },
+  "decision_by_observed_bottleneck": [
+    { "bottleneck": "No commercial restriction; useful posts/profiles accessible", "decision": "Continue free and measure the evidence pipeline." },
+    { "bottleneck": "Ordinary search-volume restriction blocks exact-name checks", "decision": "Consider Premium Business if basic search is otherwise sufficient; Core if advanced targeting is also needed." },
+    { "bottleneck": "Many irrelevant results caused by unavailable combined founder/company-size/location/recency controls", "decision": "Conditional Core trial with a matched free-search baseline." },
+    { "bottleneck": "Unknown complete team roster, live product state or paid intent", "decision": "Improve first-party evidence collection. No tested paid plan can certify these missing facts." },
+    { "bottleneck": "Public posts return vendors, old hiring ads or equity-only roles", "decision": "Refine search phrases and separate request types; paying alone does not establish better intent." }
+  ],
+  "sources": [
+    { "id": "linkedin-pricing", "url": "https://business.linkedin.com/sell/sales-navigator/compare-plans?lang=en", "publisher": "LinkedIn", "checked_at": "2026-09-05", "access": "readable", "document_updated_at": "2026-08-01", "date_verification_note": "Coordinator reopened the official page on 2026-09-05 and observed Updated: Aug 1, 2026; this supersedes the initial retrieved July date." },
+    { "id": "linkedin-plans", "url": "https://www.linkedin.com/help/sales-navigator/answer/a110637", "publisher": "LinkedIn", "checked_at": "2026-09-05", "access": "readable" },
+    { "id": "linkedin-filters", "url": "https://www.linkedin.com/help/sales-navigator/answer/a1452817", "publisher": "LinkedIn", "checked_at": "2026-09-05", "access": "readable" },
+    { "id": "linkedin-glossary", "url": "https://www.linkedin.com/help/sales-navigator/answer/a129655", "publisher": "LinkedIn", "checked_at": "2026-09-05", "access": "readable" },
+    { "id": "linkedin-premium-business", "url": "https://premium.linkedin.com/small-business/business", "publisher": "LinkedIn", "checked_at": "2026-09-05", "access": "readable", "document_updated_at": "2026-04-20" },
+    { "id": "linkedin-basic-premium-search", "url": "https://www.linkedin.com/help/linkedin/answer/a520842/search-results-for-free-and-premium-members?lang=en", "publisher": "LinkedIn", "checked_at": "2026-09-05", "access": "readable" },
+    { "id": "apollo-filters", "url": "https://knowledge.apollo.io/hc/en-us/articles/4412665755661-Search-Filters-Glossary", "publisher": "Apollo", "checked_at": "2026-09-05", "access": "readable", "document_updated_at": "2026-08-14" },
+    { "id": "apollo-pricing", "url": "https://www.apollo.io/pricing", "publisher": "Apollo", "checked_at": "2026-09-05", "access": "partial_no_numeric_price_table" },
+    { "id": "crunchbase-filters", "url": "https://support.crunchbase.com/hc/en-us/articles/30493799544211-Companies-Filters-Definitions", "publisher": "Crunchbase", "checked_at": "2026-09-05", "access": "readable", "document_updated_at": "2026-03-12" },
+    { "id": "crunchbase-search-types", "url": "https://support.crunchbase.com/hc/en-us/articles/360046655554-What-types-of-searches-can-I-build-using-Crunchbase-Pro", "publisher": "Crunchbase", "checked_at": "2026-09-05", "access": "readable", "document_updated_at": "2025-02-19" },
+    { "id": "magnitt-subscriptions", "url": "https://helpdesk.magnitt.com/subscriptions", "publisher": "MAGNiTT", "checked_at": "2026-09-05", "access": "readable" },
+    { "id": "magnitt-investors", "url": "https://www.magnitt.com/investors", "publisher": "MAGNiTT", "checked_at": "2026-09-05", "access": "readable" },
+    { "id": "magnitt-research", "url": "https://www.magnitt.com/research/Q1-2026-State-of-Venture-Capital-in-MENA-51036", "publisher": "MAGNiTT", "checked_at": "2026-09-05", "access": "public_description_readable_report_gated" }
+  ]
+}

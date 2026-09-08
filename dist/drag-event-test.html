@@ -1,0 +1,37 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Drag Event Test</title>
+<style>
+  body { font: 20px system-ui; padding: 40px; }
+  #drag, #drop {
+    display: inline-grid;
+    width: 300px;
+    height: 180px;
+    margin: 20px;
+    place-items: center;
+    border: 5px solid #333;
+    border-radius: 18px;
+  }
+  #drag { background: #dbeafe; }
+  #drop { margin-left: 120px; background: #dcfce7; }
+  pre { min-height: 220px; padding: 20px; color: #0f0; background: #111; font: 16px ui-monospace; white-space: pre-wrap; }
+</style>
+<h1>Drag event test</h1>
+<div id="drag" draggable="true">DRAG ME</div>
+<div id="drop">DROP HERE</div>
+<pre id="log">ready</pre>
+<script>
+  const output = document.querySelector('#log')
+  const eventTypes = [
+    'pointerdown', 'pointerup', 'pointercancel',
+    'mousedown', 'mouseup',
+    'dragstart', 'dragenter', 'dragover', 'drop', 'dragend',
+  ]
+
+  for (const type of eventTypes) {
+    document.addEventListener(type, (event) => {
+      if ((type === 'dragover' || type === 'drop') && event.target.closest('#drop')) event.preventDefault()
+      output.textContent += `\n${type} target=${event.target.id || event.target.tagName} x=${Math.round(event.clientX)} buttons=${event.buttons ?? ''}`
+    }, true)
+  }
+</script>

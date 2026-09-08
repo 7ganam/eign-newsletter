@@ -1,0 +1,1692 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "surface": "report",
+    "title": "Saudi lead research: revised pre-build buyer plan",
+    "generatedAt": "2026-09-05T07:33:42.767Z",
+    "description": "Review of all 50 existing candidates and 25 accepted resources. Proposed changes only; live data unchanged.",
+    "sources": [
+      {
+        "id": "audit",
+        "label": "Row-by-row local evidence audit, reviewed 5 September 2026",
+        "path": "outputs/lead-research/review-2026-09-05/lead-audit.json",
+        "query": {
+          "engine": "JavaScript",
+          "language": "javascript",
+          "query": "import { readFileSync, writeFileSync } from 'node:fs';\nimport { createHash } from 'node:crypto';\nimport { fileURLToPath } from 'node:url';\nimport { dirname, resolve } from 'node:path';\nimport assert from 'node:assert/strict';\n\nconst here = dirname(fileURLToPath(import.meta.url));\nconst root = resolve(here, '../../..');\nconst read = p => JSON.parse(readFileSync(resolve(root, p), 'utf8'));\nconst base = 'outputs/lead-research/review-2026-09-05/';\nconst audit = read(base + 'lead-audit.json');\nconst strategy = read(base + 'source-strategy.json');\nconst original = read('assets/lead-research/saudi-software-leads.json');\nconst resources = read('assets/lead-research/saudi-lead-resources.json');\nconst generatedAt = new Date().toISOString();\nconst labels = { suggested_exclude: 'Exclude from campaign', needs_verification: 'Hold for verification', promising_for_verification: 'Investigate first' };\nconst rank = { promising_for_verification: 1, needs_verification: 3, suggested_exclude: 4 };\nassert.equal(audit.rows.length, 50);\nassert.equal(new Set(audit.rows.map(r => r.id)).size, 50);\nassert.deepEqual(audit.rows.map(r => r.id).sort(), original.rows.map(r => r.id).sort());\nfor (const row of audit.rows) {\n  const old = original.rows.find(r => r.id === row.id);\n  assert.equal(row.current_score, old.qualification.total_score);\n  assert.equal(row.current_band, old.qualification.band);\n  assert.equal(row.team_gate.proven_software_people_upper_bound, null);\n}\nconst outcomes = Object.entries(labels).map(([key, outcome]) => ({ outcome, count: audit.rows.filter(r => r.suggested_verdict === key).length }));\nassert.deepEqual(outcomes.map(r => r.count), [38, 7, 5]);\nconst leadRows = audit.rows.map(r => ({\n  priority: r.research_priority === 'low' && r.suggested_verdict === 'promising_for_verification' ? 2 : rank[r.suggested_verdict],\n  id: r.id, name: r.display_name, company: r.company,\n  proposal: labels[r.suggested_verdict], original_score: r.current_score, original_band: r.current_band,\n  recorded_stage: r.stored_lifecycle_stage, product_reason: r.product_gate.reason,\n  team_reason: r.team_gate.reason, next_check: r.next_check,\n  evidence_url: r.evidence[0]?.url ?? null,\n})).sort((a, b) => a.priority - b.priority || a.company.localeCompare(b.company));\nconst revisions = [...strategy.resource_revisions, ...strategy.grouped_resource_revisions.flatMap(r => r.resource_ids.map(id => ({...r, resource_id:id})))];\nconst resourceRows = resources.rows.filter(r => r.classification === 'accepted').map(r => {\n  const revision = revisions.find(v => v.resource_id === r.id);\n  assert.ok(revision, `Missing source revision: ${r.id}`);\n  return { id:r.id, source:r.name, url:r.url, proposal:revision.priority_revision,\n    harvest:revision.extraction_recipe, cadence:revision.cadence, caveat:revision.limitation,\n    live_checked: revision.verification_ids?.length ? 'Selected official checks; see limitations' : 'Stored source review only' };\n});\nassert.equal(resourceRows.length,25);\nconst s = audit.summary;\nconst flags = [\n  {flag:'No complete software-team ceiling audit',count:s.missing_complete_current_software_team_audit},\n  {flag:'Outsourcing likelihood recorded unknown',count:s.stored_outsourcing_level_unknown},\n  {flag:'Total employee band missing or unknown',count:s.missing_or_unknown_structured_total_employee_band},\n  {flag:'Already labeled launched or operating',count:s.current_lifecycle_counts.launched+s.current_lifecycle_counts.operating},\n  {flag:'All evidence publication dates missing',count:s.leads_with_all_evidence_publication_dates_missing},\n  {flag:'Generic placeholder product summary',count:s.placeholder_product_summaries},\n].map(r => ({...r, denominator:50, share:r.count/50}));\nconst sources = [\n  {id:'audit',label:'Row-by-row local evidence audit, reviewed 5 September 2026',path:base+'lead-audit.json',query:{engine:'JavaScript',language:'javascript',query:readFileSync(resolve(here,'build-review.mjs'),'utf8'),description:'Reproducible counts from canonical rows and reviewed assessment; overlap flags are not additive.',tables_used:['assets/lead-research/saudi-software-leads.json',base+'lead-audit.json']}},\n  {id:'plan',label:'Revised persona and execution plan',path:base+'revised-plan.md'},\n  {id:'code',label:'Qualification generator and validator review',path:base+'qualification-review.md'},\n  {id:'strategy',label:'Source strategy and dated official checks',path:base+'source-strategy.json'},\n  ...strategy.first_party_verifications.map(v => ({id:v.id,label:v.id+' — checked '+v.checked_at,href:v.url})),\n  {id:'stoqa',label:'STOQA Android listing, read 5 September 2026',href:'https://play.google.com/store/apps/details?id=ai.stoqa.app'},\n  {id:'vision',label:'Vision Mate technical co-founder role, read 5 September 2026',href:'https://sa.linkedin.com/jobs/view/technical-co-founder-at-vision-mate-4460498663'},\n  {id:'jadi',label:'Jadi CTO role, read 5 September 2026',href:'https://sa.linkedin.com/jobs/view/4399318887'},\n  {id:'book',label:'BookMyGuide founder project post, read 5 September 2026',href:'https://www.linkedin.com/posts/hayath-kargal-b0b17057_vision2030-ntdp-mvplab-activity-7412319001252618240-2TT5'},\n];\nconst title = 'Saudi lead research: revised pre-build buyer plan';\nconst markdown = (id,body,sourceId='plan') => ({id,type:'markdown',body,sourceId});\nconst table = (id,title,dataset,columns,sort,sourceId='audit') => ({id,title,dataset,columns:columns.map(([field,label])=>({field,label})),defaultSort:{field:sort,direction:sort==='count'?'desc':'asc'},density:'dense',sourceId,layout:'full'});\nconst artifact = {\n  surface:'report',\n  manifest:{version:1,surface:'report',title,generatedAt,description:'Review of all 50 existing candidates and 25 accepted resources. Proposed changes only; live data unchanged.',sources,\n    charts:[{id:'coverage',title:'Missing team evidence prevents any confirmed v2 fit',subtitle:'Number of records out of 50; flags overlap and must not be added.',type:'horizontalBar',dataset:'flags',sourceId:'audit',intent:'comparison',question:'Which recorded evidence gaps and maturity signals undermine the current labels?',rationale:'A horizontal bar comparison makes the scale of six audit flags visible without suggesting mutually exclusive groups.',comparisonContext:{denominator:'50 reviewed records',grain:'one flag',unit:'records',semanticFamily:'overlapping audit flags'},encodings:{x:{field:'flag',type:'nominal',label:'Audit flag'},y:{field:'count',type:'quantitative',label:'Records',unit:'records'},tooltip:[{field:'denominator',label:'Reviewed records'},{field:'share',format:'percent',label:'Share of 50'}]},valueFormat:'number',layout:'full'}],\n    tables:[\n      table('outcomes','Proposed dispositions — all remain unqualified under v2','outcomes',[['outcome','Proposed disposition'],['count','Records']],'count'),\n      table('flags','Exact audit flag counts','flags',[['flag','Flag'],['count','Records'],['denominator','Reviewed records']],'count'),\n      table('queue','Twelve candidates retained for investigation','queue',[['priority','Order'],['name','Person'],['company','Project'],['proposal','Proposal'],['next_check','Next check']],'priority'),\n      table('all-leads','All 50 proposed lead decisions','leads',[['priority','Order'],['name','Person'],['company','Project'],['proposal','Proposal'],['product_reason','Product finding'],['team_reason','Team gap'],['next_check','Next check'],['evidence_url','Evidence URL']],'priority'),\n      table('resources','All 25 accepted resources — proposed revised use','resources',[['source','Source'],['proposal','Revised priority'],['harvest','Harvesting instructions'],['cadence','Cadence'],['caveat','Limitation'],['url','URL']],'source','strategy'),\n    ],\n    blocks:[\n      markdown('title','# '+title+'\\n\\nResearch review dated 5 September 2026. Three parallel reviews covered the list, qualification logic and discovery sources. The canonical list and application remain unchanged.'),\n      markdown('executive','## Executive Summary\\n\\nRecommend excluding 38 prospects, investigating five first, and retaining seven other holds. None currently has sufficient evidence to confirm all revised gates. This is a review of all stored records and 156 evidence summaries, supplemented by selected live checks; it is not 50 new external profile verifications.\\n\\nThe desired buyer has a specific first software project whose core functionality remains unbuilt and a supported maximum of two software builders. Paid external-delivery demand is a separate commercial question.','audit'),\n      {id:'outcome-table',type:'table',tableId:'outcomes',sourceId:'audit'},\n      markdown('failure','## Why the current list overstates fit\\n\\nForty-seven records explicitly mark outsourcing likelihood unknown, yet 44 are labeled qualified and all 50 have high qualification confidence. At least 26 are labeled launched or operating; further built products appear among unknown-stage rows. All seven A labels lack the qualitative support required by the stored rubric.\\n\\nThe team-ceiling gap is universal. This does not mean all teams are large; it means the evidence cannot yet establish that they are small enough. The total-employee field is also missing frequently, but total employees and software builders are different quantities.','audit'),\n      {id:'coverage-chart',type:'chart',chartId:'coverage',sourceId:'audit'},\n      {id:'coverage-table',type:'table',tableId:'flags',sourceId:'audit'},\n      markdown('gates','## Apply gates before commercial scoring\\n\\nRequire supported identity and authority, a specific Saudi-market build, unbuilt core functionality, no more than two current software builders, and a current initiative. An unresolved gate stays on hold; a failed gate makes the project out of scope. A company-controlled full-team statement can support a maximum; a partial LinkedIn roster only establishes a visible minimum.\\n\\nCount hands-on technical founders, employees and known contractors. Record assigned vendors separately. A functional private app can already fail the product gate; a brochure site does not disqualify an SME’s first custom build. Avoid industry-wide exclusions.\\n\\nFor confirmed fits, score build commitment (6), paid external intent (6), available project funds (4) and timing (4). Unknowns earn no affirmative points. Equity-only hiring and noncash credits do not prove a paid development opportunity. Preserve those candidates in a research pool when otherwise relevant.'),\n      markdown('candidate-story','## Recheck the best unresolved candidates first\\n\\nurCASH, Wathba, Jadi and Vision Mate have useful pre-build signals, with current team and commercial gaps. BookMyGuide is lower priority because its Saudi entry and current activity remain unresolved. The seven other holds are Smart Quotation, Gaia, Ballora, Zakn AI, GreenVision, Suhail and Mara.\\n\\nSTOQA’s [available Android product](https://play.google.com/store/apps/details?id=ai.stoqa.app) supports exclusion for this campaign. [Vision Mate](https://sa.linkedin.com/jobs/view/technical-co-founder-at-vision-mate-4460498663) is an equity-based wearable/AI co-founder opportunity. [Jadi](https://sa.linkedin.com/jobs/view/4399318887) is a closed equity CTO listing. [BookMyGuide’s post](https://www.linkedin.com/posts/hayath-kargal-b0b17057_vision2030-ntdp-mvplab-activity-7412319001252618240-2TT5) describes planned Saudi entry and a program application, not a confirmed grant. None is a verified paid-agency lead.','audit'),\n      {id:'queue-table',type:'table',tableId:'queue',sourceId:'audit'},\n      markdown('source-story','## Find founders earlier and test manual-business demand\\n\\nPrioritize current pre-incubation admissions, specific public first-build requests, and owners of non-software SMEs planning their first custom product. Use portfolios, funding news and demo days to verify maturity and funds.\\n\\n[Misk Launchpad](https://hub.misk.org.sa/en/programs/entrepreneurship/misk-launchpad/) lists its next cohort starting 6 September 2026, initially in Ideate. [Sanabil Accelerator](https://mena.500.co/founders/mena/seed-accelerator) requires an MVP and early traction. [StartSmart’s tenth edition](https://startsmartsaudi.com/programs/competitions?page=1) excludes idea-only applicants and offers technical benefits rather than cash. Record exact program, edition and phase. Admission alone proves neither an unbuilt product nor a paid build budget.\\n\\nPilot [Antler Riyadh residency](https://www.antler.co/location/menap) introductions and public Saudi first-app briefs. These are discovery experiments; no new yield has been measured. Ordinary LinkedIn remains useful for small exact-name checks. No outreach, interactions or contact enrichment are part of the plan.','strategy'),\n      markdown('execution','## Next steps and success measures\\n\\n1. Preserve v1 and implement claim-backed v2 eligibility without overwriting research notes. Fix hardcoded verified gates, stage substring inference, automatic review timestamps and unrelated fallback evidence.\\n2. Calibrate ten contrasting examples, then run independent discovery streams for pre-incubation, public build requests and manual SMEs. Apply the product screen before spending time on deep team enrichment.\\n3. Verify plausible candidates’ remaining gaps in parallel and publish valid partial batches. Fifty is a goal, not a requirement for data validity.\\n4. Track unique reviewed candidates, confirmed fits, paid external demand, exclusions and research minutes. Separate discovery attribution from corroboration and preserve v1 yields. After two 20-candidate source passes each yield fewer than two new confirmed fits, pause and redirect that channel.\\n5. Show product status, supported team ceiling, evidence coverage, paid intent and next research action. Keep evidence grouped by claim in the centered modal.\\n\\nAcceptance should mean zero unsupported active qualifications. It should not depend on filling exactly 50 rows.','code'),\n      markdown('caveats','## Caveats and further questions\\n\\nThe 38 exclusions are proposed from recorded evidence, not assertions that every person has been freshly investigated. “Zero confirmed fits” measures evidence sufficiency and does not prove zero suitable founders exist. Public research may leave team ceilings unresolved; do not contact founders to fill those gaps within this scope. The new scoring thresholds are uncalibrated operational rules.\\n\\nNine official/program-source checks were attempted; some pages were partial, historical or unreadable. Current website checks did not yield readable urCASH or MVP Lab text. Missing content proves nothing about product or funding. Twelve candidates remain investigable, and no replacement lead count or future source yield is claimed.\\n\\nPilot questions: which channel produces confirmed fits fastest, how often do fits want paid external help, whether manual SMEs show more cash readiness, and which programs assign their own providers?','strategy'),\n      markdown('appendix','## Full proposed lead and resource revisions\\n\\nThe tables preserve original identities and attach proposed reasons and next checks. Original scores are retained in the companion CSV/JSON for comparison, not endorsed as current v2 priorities.','audit'),\n      {id:'all-lead-table',type:'table',tableId:'all-leads',sourceId:'audit'},\n      {id:'resource-table',type:'table',tableId:'resources',sourceId:'strategy'},\n    ]\n  },\n  snapshot:{version:1,generatedAt,status:'ready',datasets:{outcomes,flags,queue:leadRows.filter(r=>r.proposal!=='Exclude from campaign'),leads:leadRows,resources:resourceRows}},sources\n};\nconst csv = rows => {\n  const columns = Object.keys(rows[0]);\n  const cell = x => '\"'+String(x??'').replaceAll('\"','\"\"')+'\"';\n  return [columns.map(cell).join(','),...rows.map(r=>columns.map(k=>cell(r[k])).join(','))].join('\\n')+'\\n';\n};\nwriteFileSync(resolve(here,'artifact.json'),JSON.stringify(artifact,null,2)+'\\n');\nwriteFileSync(resolve(here,'revised-lead-list.csv'),csv(leadRows));\nwriteFileSync(resolve(here,'revised-resources.csv'),csv(resourceRows));\nconst hashes = ['saudi-lead-persona.json','saudi-lead-resources.json','saudi-software-leads.json'].map(file=>({file:'assets/lead-research/'+file,sha256:createHash('sha256').update(readFileSync(resolve(root,'assets/lead-research',file))).digest('hex')}));\nwriteFileSync(resolve(here,'review-checks.json'),JSON.stringify({checked_at:generatedAt,rows:50,resources:25,outcomes,canonical_hashes:hashes,tests:'IDs, original mappings, row counts, team unknowns and all accepted-resource coverage passed',chart_contract:{question:artifact.manifest.charts[0].question,takeaway:'Universal team evidence gap; stored confidence is unsupported',form:'horizontalBar',palette:'single default categorical series, count magnitude',encoding:'flag category and count of records',overlap:'Flags overlap; denominator 50 for each',qa:'Counts recomputed from audited snapshot and compared to row-level totals'},canonical_files_modified:false},null,2)+'\\n');\nconsole.log(JSON.stringify({ok:true,leadRows:leadRows.length,resourceRows:resourceRows.length,outcomes,artifact:'artifact.json'}));\n",
+          "description": "Reproducible counts from canonical rows and reviewed assessment; overlap flags are not additive.",
+          "tables_used": [
+            "assets/lead-research/saudi-software-leads.json",
+            "outputs/lead-research/review-2026-09-05/lead-audit.json"
+          ]
+        }
+      },
+      {
+        "id": "plan",
+        "label": "Revised persona and execution plan",
+        "path": "outputs/lead-research/review-2026-09-05/revised-plan.md"
+      },
+      {
+        "id": "code",
+        "label": "Qualification generator and validator review",
+        "path": "outputs/lead-research/review-2026-09-05/qualification-review.md"
+      },
+      {
+        "id": "strategy",
+        "label": "Source strategy and dated official checks",
+        "path": "outputs/lead-research/review-2026-09-05/source-strategy.json"
+      },
+      {
+        "id": "misk-current",
+        "label": "misk-current — checked 2026-09-05",
+        "href": "https://hub.misk.org.sa/en/programs/entrepreneurship/misk-launchpad/"
+      },
+      {
+        "id": "garage-current",
+        "label": "garage-current — checked 2026-09-05",
+        "href": "https://thegarage.sa/"
+      },
+      {
+        "id": "sanabil-accelerator-current",
+        "label": "sanabil-accelerator-current — checked 2026-09-05",
+        "href": "https://mena.500.co/founders/mena/seed-accelerator"
+      },
+      {
+        "id": "startup-unlocked-official-post",
+        "label": "startup-unlocked-official-post — checked 2026-09-05",
+        "href": "https://www.linkedin.com/posts/500mena_what-happens-when-you-take-an-idea-a-whiteboard-activity-7395914835504295936-3kGH"
+      },
+      {
+        "id": "startsmart-ninth-edition",
+        "label": "startsmart-ninth-edition — checked 2026-09-05",
+        "href": "https://competition.startsmartsaudi.com/"
+      },
+      {
+        "id": "startsmart-tenth-edition",
+        "label": "startsmart-tenth-edition — checked 2026-09-05",
+        "href": "https://startsmartsaudi.com/programs/competitions?page=1"
+      },
+      {
+        "id": "monshaat-digitization-workshop",
+        "label": "monshaat-digitization-workshop — checked 2026-09-05",
+        "href": "https://www.monshaat.gov.sa/en/node/13506"
+      },
+      {
+        "id": "ntdp-mvp-lab",
+        "label": "ntdp-mvp-lab — checked 2026-09-05",
+        "href": "https://ntdp.gov.sa/en/initiative/mvplab"
+      },
+      {
+        "id": "antler-menap-residency",
+        "label": "antler-menap-residency — checked 2026-09-05",
+        "href": "https://www.antler.co/location/menap"
+      },
+      {
+        "id": "stoqa",
+        "label": "STOQA Android listing, read 5 September 2026",
+        "href": "https://play.google.com/store/apps/details?id=ai.stoqa.app"
+      },
+      {
+        "id": "vision",
+        "label": "Vision Mate technical co-founder role, read 5 September 2026",
+        "href": "https://sa.linkedin.com/jobs/view/technical-co-founder-at-vision-mate-4460498663"
+      },
+      {
+        "id": "jadi",
+        "label": "Jadi CTO role, read 5 September 2026",
+        "href": "https://sa.linkedin.com/jobs/view/4399318887"
+      },
+      {
+        "id": "book",
+        "label": "BookMyGuide founder project post, read 5 September 2026",
+        "href": "https://www.linkedin.com/posts/hayath-kargal-b0b17057_vision2030-ntdp-mvplab-activity-7412319001252618240-2TT5"
+      }
+    ],
+    "charts": [
+      {
+        "id": "coverage",
+        "title": "Missing team evidence prevents any confirmed v2 fit",
+        "subtitle": "Number of records out of 50; flags overlap and must not be added.",
+        "type": "horizontalBar",
+        "dataset": "flags",
+        "sourceId": "audit",
+        "intent": "comparison",
+        "question": "Which recorded evidence gaps and maturity signals undermine the current labels?",
+        "rationale": "A horizontal bar comparison makes the scale of six audit flags visible without suggesting mutually exclusive groups.",
+        "comparisonContext": {
+          "denominator": "50 reviewed records",
+          "grain": "one flag",
+          "unit": "records",
+          "semanticFamily": "overlapping audit flags"
+        },
+        "encodings": {
+          "x": {
+            "field": "flag",
+            "type": "nominal",
+            "label": "Audit flag"
+          },
+          "y": {
+            "field": "count",
+            "type": "quantitative",
+            "label": "Records",
+            "unit": "records"
+          },
+          "tooltip": [
+            {
+              "field": "denominator",
+              "label": "Reviewed records"
+            },
+            {
+              "field": "share",
+              "format": "percent",
+              "label": "Share of 50"
+            }
+          ]
+        },
+        "valueFormat": "number",
+        "layout": "full"
+      }
+    ],
+    "tables": [
+      {
+        "id": "outcomes",
+        "title": "Proposed dispositions — all remain unqualified under v2",
+        "dataset": "outcomes",
+        "columns": [
+          {
+            "field": "outcome",
+            "label": "Proposed disposition"
+          },
+          {
+            "field": "count",
+            "label": "Records"
+          }
+        ],
+        "defaultSort": {
+          "field": "count",
+          "direction": "desc"
+        },
+        "density": "dense",
+        "sourceId": "audit",
+        "layout": "full"
+      },
+      {
+        "id": "flags",
+        "title": "Exact audit flag counts",
+        "dataset": "flags",
+        "columns": [
+          {
+            "field": "flag",
+            "label": "Flag"
+          },
+          {
+            "field": "count",
+            "label": "Records"
+          },
+          {
+            "field": "denominator",
+            "label": "Reviewed records"
+          }
+        ],
+        "defaultSort": {
+          "field": "count",
+          "direction": "desc"
+        },
+        "density": "dense",
+        "sourceId": "audit",
+        "layout": "full"
+      },
+      {
+        "id": "queue",
+        "title": "Twelve candidates retained for investigation",
+        "dataset": "queue",
+        "columns": [
+          {
+            "field": "priority",
+            "label": "Order"
+          },
+          {
+            "field": "name",
+            "label": "Person"
+          },
+          {
+            "field": "company",
+            "label": "Project"
+          },
+          {
+            "field": "proposal",
+            "label": "Proposal"
+          },
+          {
+            "field": "next_check",
+            "label": "Next check"
+          }
+        ],
+        "defaultSort": {
+          "field": "priority",
+          "direction": "asc"
+        },
+        "density": "dense",
+        "sourceId": "audit",
+        "layout": "full"
+      },
+      {
+        "id": "all-leads",
+        "title": "All 50 proposed lead decisions",
+        "dataset": "leads",
+        "columns": [
+          {
+            "field": "priority",
+            "label": "Order"
+          },
+          {
+            "field": "name",
+            "label": "Person"
+          },
+          {
+            "field": "company",
+            "label": "Project"
+          },
+          {
+            "field": "proposal",
+            "label": "Proposal"
+          },
+          {
+            "field": "product_reason",
+            "label": "Product finding"
+          },
+          {
+            "field": "team_reason",
+            "label": "Team gap"
+          },
+          {
+            "field": "next_check",
+            "label": "Next check"
+          },
+          {
+            "field": "evidence_url",
+            "label": "Evidence URL"
+          }
+        ],
+        "defaultSort": {
+          "field": "priority",
+          "direction": "asc"
+        },
+        "density": "dense",
+        "sourceId": "audit",
+        "layout": "full"
+      },
+      {
+        "id": "resources",
+        "title": "All 25 accepted resources — proposed revised use",
+        "dataset": "resources",
+        "columns": [
+          {
+            "field": "source",
+            "label": "Source"
+          },
+          {
+            "field": "proposal",
+            "label": "Revised priority"
+          },
+          {
+            "field": "harvest",
+            "label": "Harvesting instructions"
+          },
+          {
+            "field": "cadence",
+            "label": "Cadence"
+          },
+          {
+            "field": "caveat",
+            "label": "Limitation"
+          },
+          {
+            "field": "url",
+            "label": "URL"
+          }
+        ],
+        "defaultSort": {
+          "field": "source",
+          "direction": "asc"
+        },
+        "density": "dense",
+        "sourceId": "strategy",
+        "layout": "full"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "title",
+        "type": "markdown",
+        "body": "# Saudi lead research: revised pre-build buyer plan\n\nResearch review dated 5 September 2026. Three parallel reviews covered the list, qualification logic and discovery sources. The canonical list and application remain unchanged.",
+        "sourceId": "plan"
+      },
+      {
+        "id": "executive",
+        "type": "markdown",
+        "body": "## Executive Summary\n\nRecommend excluding 38 prospects, investigating five first, and retaining seven other holds. None currently has sufficient evidence to confirm all revised gates. This is a review of all stored records and 156 evidence summaries, supplemented by selected live checks; it is not 50 new external profile verifications.\n\nThe desired buyer has a specific first software project whose core functionality remains unbuilt and a supported maximum of two software builders. Paid external-delivery demand is a separate commercial question.",
+        "sourceId": "audit"
+      },
+      {
+        "id": "outcome-table",
+        "type": "table",
+        "tableId": "outcomes",
+        "sourceId": "audit"
+      },
+      {
+        "id": "failure",
+        "type": "markdown",
+        "body": "## Why the current list overstates fit\n\nForty-seven records explicitly mark outsourcing likelihood unknown, yet 44 are labeled qualified and all 50 have high qualification confidence. At least 26 are labeled launched or operating; further built products appear among unknown-stage rows. All seven A labels lack the qualitative support required by the stored rubric.\n\nThe team-ceiling gap is universal. This does not mean all teams are large; it means the evidence cannot yet establish that they are small enough. The total-employee field is also missing frequently, but total employees and software builders are different quantities.",
+        "sourceId": "audit"
+      },
+      {
+        "id": "coverage-chart",
+        "type": "chart",
+        "chartId": "coverage",
+        "sourceId": "audit"
+      },
+      {
+        "id": "coverage-table",
+        "type": "table",
+        "tableId": "flags",
+        "sourceId": "audit"
+      },
+      {
+        "id": "gates",
+        "type": "markdown",
+        "body": "## Apply gates before commercial scoring\n\nRequire supported identity and authority, a specific Saudi-market build, unbuilt core functionality, no more than two current software builders, and a current initiative. An unresolved gate stays on hold; a failed gate makes the project out of scope. A company-controlled full-team statement can support a maximum; a partial LinkedIn roster only establishes a visible minimum.\n\nCount hands-on technical founders, employees and known contractors. Record assigned vendors separately. A functional private app can already fail the product gate; a brochure site does not disqualify an SME’s first custom build. Avoid industry-wide exclusions.\n\nFor confirmed fits, score build commitment (6), paid external intent (6), available project funds (4) and timing (4). Unknowns earn no affirmative points. Equity-only hiring and noncash credits do not prove a paid development opportunity. Preserve those candidates in a research pool when otherwise relevant.",
+        "sourceId": "plan"
+      },
+      {
+        "id": "candidate-story",
+        "type": "markdown",
+        "body": "## Recheck the best unresolved candidates first\n\nurCASH, Wathba, Jadi and Vision Mate have useful pre-build signals, with current team and commercial gaps. BookMyGuide is lower priority because its Saudi entry and current activity remain unresolved. The seven other holds are Smart Quotation, Gaia, Ballora, Zakn AI, GreenVision, Suhail and Mara.\n\nSTOQA’s [available Android product](https://play.google.com/store/apps/details?id=ai.stoqa.app) supports exclusion for this campaign. [Vision Mate](https://sa.linkedin.com/jobs/view/technical-co-founder-at-vision-mate-4460498663) is an equity-based wearable/AI co-founder opportunity. [Jadi](https://sa.linkedin.com/jobs/view/4399318887) is a closed equity CTO listing. [BookMyGuide’s post](https://www.linkedin.com/posts/hayath-kargal-b0b17057_vision2030-ntdp-mvplab-activity-7412319001252618240-2TT5) describes planned Saudi entry and a program application, not a confirmed grant. None is a verified paid-agency lead.",
+        "sourceId": "audit"
+      },
+      {
+        "id": "queue-table",
+        "type": "table",
+        "tableId": "queue",
+        "sourceId": "audit"
+      },
+      {
+        "id": "source-story",
+        "type": "markdown",
+        "body": "## Find founders earlier and test manual-business demand\n\nPrioritize current pre-incubation admissions, specific public first-build requests, and owners of non-software SMEs planning their first custom product. Use portfolios, funding news and demo days to verify maturity and funds.\n\n[Misk Launchpad](https://hub.misk.org.sa/en/programs/entrepreneurship/misk-launchpad/) lists its next cohort starting 6 September 2026, initially in Ideate. [Sanabil Accelerator](https://mena.500.co/founders/mena/seed-accelerator) requires an MVP and early traction. [StartSmart’s tenth edition](https://startsmartsaudi.com/programs/competitions?page=1) excludes idea-only applicants and offers technical benefits rather than cash. Record exact program, edition and phase. Admission alone proves neither an unbuilt product nor a paid build budget.\n\nPilot [Antler Riyadh residency](https://www.antler.co/location/menap) introductions and public Saudi first-app briefs. These are discovery experiments; no new yield has been measured. Ordinary LinkedIn remains useful for small exact-name checks. No outreach, interactions or contact enrichment are part of the plan.",
+        "sourceId": "strategy"
+      },
+      {
+        "id": "execution",
+        "type": "markdown",
+        "body": "## Next steps and success measures\n\n1. Preserve v1 and implement claim-backed v2 eligibility without overwriting research notes. Fix hardcoded verified gates, stage substring inference, automatic review timestamps and unrelated fallback evidence.\n2. Calibrate ten contrasting examples, then run independent discovery streams for pre-incubation, public build requests and manual SMEs. Apply the product screen before spending time on deep team enrichment.\n3. Verify plausible candidates’ remaining gaps in parallel and publish valid partial batches. Fifty is a goal, not a requirement for data validity.\n4. Track unique reviewed candidates, confirmed fits, paid external demand, exclusions and research minutes. Separate discovery attribution from corroboration and preserve v1 yields. After two 20-candidate source passes each yield fewer than two new confirmed fits, pause and redirect that channel.\n5. Show product status, supported team ceiling, evidence coverage, paid intent and next research action. Keep evidence grouped by claim in the centered modal.\n\nAcceptance should mean zero unsupported active qualifications. It should not depend on filling exactly 50 rows.",
+        "sourceId": "code"
+      },
+      {
+        "id": "caveats",
+        "type": "markdown",
+        "body": "## Caveats and further questions\n\nThe 38 exclusions are proposed from recorded evidence, not assertions that every person has been freshly investigated. “Zero confirmed fits” measures evidence sufficiency and does not prove zero suitable founders exist. Public research may leave team ceilings unresolved; do not contact founders to fill those gaps within this scope. The new scoring thresholds are uncalibrated operational rules.\n\nNine official/program-source checks were attempted; some pages were partial, historical or unreadable. Current website checks did not yield readable urCASH or MVP Lab text. Missing content proves nothing about product or funding. Twelve candidates remain investigable, and no replacement lead count or future source yield is claimed.\n\nPilot questions: which channel produces confirmed fits fastest, how often do fits want paid external help, whether manual SMEs show more cash readiness, and which programs assign their own providers?",
+        "sourceId": "strategy"
+      },
+      {
+        "id": "appendix",
+        "type": "markdown",
+        "body": "## Full proposed lead and resource revisions\n\nThe tables preserve original identities and attach proposed reasons and next checks. Original scores are retained in the companion CSV/JSON for comparison, not endorsed as current v2 priorities.",
+        "sourceId": "audit"
+      },
+      {
+        "id": "all-lead-table",
+        "type": "table",
+        "tableId": "all-leads",
+        "sourceId": "audit"
+      },
+      {
+        "id": "resource-table",
+        "type": "table",
+        "tableId": "resources",
+        "sourceId": "strategy"
+      }
+    ]
+  },
+  "snapshot": {
+    "version": 1,
+    "generatedAt": "2026-09-05T07:33:42.767Z",
+    "status": "ready",
+    "datasets": {
+      "outcomes": [
+        {
+          "outcome": "Exclude from campaign",
+          "count": 38
+        },
+        {
+          "outcome": "Hold for verification",
+          "count": 7
+        },
+        {
+          "outcome": "Investigate first",
+          "count": 5
+        }
+      ],
+      "flags": [
+        {
+          "flag": "No complete software-team ceiling audit",
+          "count": 50,
+          "denominator": 50,
+          "share": 1
+        },
+        {
+          "flag": "Outsourcing likelihood recorded unknown",
+          "count": 47,
+          "denominator": 50,
+          "share": 0.94
+        },
+        {
+          "flag": "Total employee band missing or unknown",
+          "count": 46,
+          "denominator": 50,
+          "share": 0.92
+        },
+        {
+          "flag": "Already labeled launched or operating",
+          "count": 26,
+          "denominator": 50,
+          "share": 0.52
+        },
+        {
+          "flag": "All evidence publication dates missing",
+          "count": 20,
+          "denominator": 50,
+          "share": 0.4
+        },
+        {
+          "flag": "Generic placeholder product summary",
+          "count": 11,
+          "denominator": 50,
+          "share": 0.22
+        }
+      ],
+      "queue": [
+        {
+          "priority": 1,
+          "id": "lead-jadi-bashayr-alabbad",
+          "name": "Bashayr Alabbad",
+          "company": "Jadi | جادي",
+          "proposal": "Investigate first",
+          "original_score": 15,
+          "original_band": "A",
+          "recorded_stage": "idea",
+          "product_reason": "Founder/job evidence explicitly says the technical co-founder must build the student platform from the ground up.",
+          "team_reason": "A missing technical co-founder is a strong historical gap signal, not proof of current <=2 software capacity.",
+          "next_check": "The role is closed and roughly four months old: verify present product and team, then check cash capacity because the offer is negotiable equity.",
+          "evidence_url": "https://sa.linkedin.com/in/balabbad"
+        },
+        {
+          "priority": 1,
+          "id": "lead-urcash-talal-alharbi",
+          "name": "Talal Alharbi",
+          "company": "urCASH",
+          "proposal": "Investigate first",
+          "original_score": 10,
+          "original_band": "B",
+          "recorded_stage": "launched",
+          "product_reason": "Official-site evidence describes a waitlist rather than a public launch, contradicting the stored launched lifecycle label.",
+          "team_reason": "Founder says three co-founders and no employees. Their hands-on engineering roles and any contractors are unknown; zero employees is not zero developers.",
+          "next_check": "Check current website/app-store state, audit all three co-founders and contributors, and establish funding or paid build capacity.",
+          "evidence_url": "https://www.urcash.net/"
+        },
+        {
+          "priority": 1,
+          "id": "lead-vision-mate-abdulrahman-almuqati-cipd",
+          "name": "Abdulrahman Almuqati CIPD",
+          "company": "Vision Mate",
+          "proposal": "Investigate first",
+          "original_score": 16,
+          "original_band": "A",
+          "recorded_stage": "precompany",
+          "product_reason": "The recent role describes a pre-company concept requiring an AI wearable and mobile/cloud implementation.",
+          "team_reason": "A solo founder and company size of one are recorded, but a complete current roster including contractors and the founder's hands-on capacity is absent.",
+          "next_check": "Confirm role remains open and no prototype is operational; audit delivery roster; look for cash/grant allocation because the offer is equity-based.",
+          "evidence_url": "https://sa.linkedin.com/jobs/view/technical-co-founder-at-vision-mate-4460498663"
+        },
+        {
+          "priority": 1,
+          "id": "lead-wathba-mashhoor-aldubayan",
+          "name": "Mashhoor Aldubayan",
+          "company": "Wathba | وثبة",
+          "proposal": "Investigate first",
+          "original_score": 16,
+          "original_band": "A",
+          "recorded_stage": "launched",
+          "product_reason": "The original role explicitly asks one primary founding engineer to produce the first production MVP; this contradicts the stored launched label. The community website is not proof this intended product is launched.",
+          "team_reason": "The role suggests a delivery gap, but an approved architecture implies earlier technical contribution and hiring may since have completed.",
+          "next_check": "Check original role closure and whether engineer was hired, confirm first MVP still unbuilt, audit current contributors and cash budget.",
+          "evidence_url": "https://www.linkedin.com/posts/aldubayan_were-looking-for-a-founding-engineer-at-activity-7471873287841689600-uoLw"
+        },
+        {
+          "priority": 2,
+          "id": "lead-bookmyguide-hayath-kargal",
+          "name": "Hayath Kargal",
+          "company": "BookMyGuide",
+          "proposal": "Investigate first",
+          "original_score": 8,
+          "original_band": "C",
+          "recorded_stage": "beta",
+          "product_reason": "Founder-authored evidence says pre-MVP and planning Saudi pilots, contradicting beta. The coordinator's live recheck shows the post is approximately eight months old, so current product state remains unknown.",
+          "team_reason": "Two founders are mentioned but software roles and outside contributors are unknown.",
+          "next_check": "First establish current Saudi presence/operations and whether the pre-MVP project remains active. Then audit product, both founders' technical roles and contributors. MVP Lab was an application, not an award or verified funding.",
+          "evidence_url": "https://www.linkedin.com/posts/hayath-kargal-b0b17057_vision2030-ntdp-mvplab-activity-7412319001252618240-2TT5"
+        },
+        {
+          "priority": 3,
+          "id": "lead-ballora-marya-fawaz",
+          "name": "Marya Fawaz",
+          "company": "Ballora",
+          "proposal": "Hold for verification",
+          "original_score": 11,
+          "original_band": "B",
+          "recorded_stage": "unknown",
+          "product_reason": "Ballora is documented as a graduation project and conference platform; no source establishes the current software lifecycle or a commercial build decision.",
+          "team_reason": "Fawaz has front-end/design experience, but the full student/project engineering team is unknown.",
+          "next_check": "Confirm active company/project ownership and authority (official roster names Ghadah Alshehri), current product state, all contributors and a funding path.",
+          "evidence_url": "https://www.startsmartsaudi.com/sites/default/files/2026-02/teams_1.pdf"
+        },
+        {
+          "priority": 3,
+          "id": "lead-gaia-badr-al-malluh",
+          "name": "Badr Al-Malluh",
+          "company": "Gaia",
+          "proposal": "Hold for verification",
+          "original_score": 6,
+          "original_band": "C",
+          "recorded_stage": "unknown",
+          "product_reason": "Private early access may already contain functioning enterprise software; the stored evidence does not establish an unbuilt core platform.",
+          "team_reason": "One co-founder/CPTO (Mohammad Rababah) is identified. An 11–50 total band does not prove three engineers or a <=2 upper bound.",
+          "next_check": "Low-priority check of actual product operation and current engineering roster; do not infer sufficient team from CPTO plus company-size band alone.",
+          "evidence_url": "https://sa.linkedin.com/company/gaiaplatform"
+        },
+        {
+          "priority": 3,
+          "id": "lead-greenvision-yara-alalawi",
+          "name": "Yara Alalawi",
+          "company": "GreenVision",
+          "proposal": "Hold for verification",
+          "original_score": 11,
+          "original_band": "B",
+          "recorded_stage": "unknown",
+          "product_reason": "A cloud-dashboard prototype is explicitly described. That can be eligible, but it must be distinguished from already-operating deployed software.",
+          "team_reason": "Yara explicitly identifies herself as lead engineer/backend architect, establishing at least one builder; other team members and contractors are uncounted.",
+          "next_check": "Confirm prototype-only state, current team with <=2 upper bound, commercial owner intent and available project funds.",
+          "evidence_url": "https://www.startsmartsaudi.com/sites/default/files/2026-02/teams_1.pdf"
+        },
+        {
+          "priority": 3,
+          "id": "lead-mara-omar-alsumih",
+          "name": "Omar Alsumih",
+          "company": "Mara | مرا",
+          "proposal": "Hold for verification",
+          "original_score": 6,
+          "original_band": "C",
+          "recorded_stage": "beta",
+          "product_reason": "A first app version was demonstrated and sandbox testing is recorded. This proves some build work, but does not establish public/production operation or whether it remains a prototype.",
+          "team_reason": "Four total employees and a software-development company category do not prove four software builders or sufficient capacity.",
+          "next_check": "Low-priority check whether app is operational or just a demo; then current technical-role count. Record the unpaid role/resource constraint as a budget issue.",
+          "evidence_url": "https://www.linkedin.com/company/yourmara"
+        },
+        {
+          "priority": 3,
+          "id": "lead-smart-quotation-radhi-alshammari",
+          "name": "Radhi Alshammari",
+          "company": "Smart Quotation",
+          "proposal": "Hold for verification",
+          "original_score": 12,
+          "original_band": "B",
+          "recorded_stage": "unknown",
+          "product_reason": "The founder already describes an MVP and supplier onboarding. A company 'building' post does not establish whether the MVP is a mock-up, private pilot or operational product.",
+          "team_reason": "Internal leadership is mentioned but no role census exists.",
+          "next_check": "First establish whether the MVP is functional/in use, then audit every current founder and engineer and identify a paid build need.",
+          "evidence_url": "https://sa.linkedin.com/company/smart-quotation.sa"
+        },
+        {
+          "priority": 3,
+          "id": "lead-suhail-shatha-khalid-alharbi",
+          "name": "Shatha Khalid Alharbi | شذى الحربي",
+          "company": "Suhail | سهيل",
+          "proposal": "Hold for verification",
+          "original_score": 9,
+          "original_band": "C",
+          "recorded_stage": "precompany",
+          "product_reason": "The project advanced to an MVP-building program phase; participation does not tell us whether the MVP was subsequently completed or deployed.",
+          "team_reason": "Three co-founders are named and technical founders are mentioned, but individual active software roles are not enumerated; do not treat all three as developers automatically.",
+          "next_check": "Check post-program product progress and the engineering roles of Shatha, Ghadah and Nada; then commercial ownership and funds.",
+          "evidence_url": "https://sa.linkedin.com/in/shatha-khalid-alharbi/ar"
+        },
+        {
+          "priority": 3,
+          "id": "lead-zakn-ai-zakaria-alnajar",
+          "name": "Zakaria Alnajar",
+          "company": "Zakn AI",
+          "proposal": "Hold for verification",
+          "original_score": 12,
+          "original_band": "B",
+          "recorded_stage": "unknown",
+          "product_reason": "The phrase 'pre-launch idea/product validation' describes what Zakn helps customers do; it does not prove Zakn itself has no built product. Worker context calls it an active early product.",
+          "team_reason": "A prior external AI contributor is visible, but current engagement, founders' software roles and total capacity are unknown.",
+          "next_check": "Inspect actual product availability and ask only public evidence whether it is a concept, prototype or usable validation platform; then audit current team and paid-build signals.",
+          "evidence_url": "https://sa.linkedin.com/in/zakalnajar"
+        }
+      ],
+      "leads": [
+        {
+          "priority": 1,
+          "id": "lead-jadi-bashayr-alabbad",
+          "name": "Bashayr Alabbad",
+          "company": "Jadi | جادي",
+          "proposal": "Investigate first",
+          "original_score": 15,
+          "original_band": "A",
+          "recorded_stage": "idea",
+          "product_reason": "Founder/job evidence explicitly says the technical co-founder must build the student platform from the ground up.",
+          "team_reason": "A missing technical co-founder is a strong historical gap signal, not proof of current <=2 software capacity.",
+          "next_check": "The role is closed and roughly four months old: verify present product and team, then check cash capacity because the offer is negotiable equity.",
+          "evidence_url": "https://sa.linkedin.com/in/balabbad"
+        },
+        {
+          "priority": 1,
+          "id": "lead-urcash-talal-alharbi",
+          "name": "Talal Alharbi",
+          "company": "urCASH",
+          "proposal": "Investigate first",
+          "original_score": 10,
+          "original_band": "B",
+          "recorded_stage": "launched",
+          "product_reason": "Official-site evidence describes a waitlist rather than a public launch, contradicting the stored launched lifecycle label.",
+          "team_reason": "Founder says three co-founders and no employees. Their hands-on engineering roles and any contractors are unknown; zero employees is not zero developers.",
+          "next_check": "Check current website/app-store state, audit all three co-founders and contributors, and establish funding or paid build capacity.",
+          "evidence_url": "https://www.urcash.net/"
+        },
+        {
+          "priority": 1,
+          "id": "lead-vision-mate-abdulrahman-almuqati-cipd",
+          "name": "Abdulrahman Almuqati CIPD",
+          "company": "Vision Mate",
+          "proposal": "Investigate first",
+          "original_score": 16,
+          "original_band": "A",
+          "recorded_stage": "precompany",
+          "product_reason": "The recent role describes a pre-company concept requiring an AI wearable and mobile/cloud implementation.",
+          "team_reason": "A solo founder and company size of one are recorded, but a complete current roster including contractors and the founder's hands-on capacity is absent.",
+          "next_check": "Confirm role remains open and no prototype is operational; audit delivery roster; look for cash/grant allocation because the offer is equity-based.",
+          "evidence_url": "https://sa.linkedin.com/jobs/view/technical-co-founder-at-vision-mate-4460498663"
+        },
+        {
+          "priority": 1,
+          "id": "lead-wathba-mashhoor-aldubayan",
+          "name": "Mashhoor Aldubayan",
+          "company": "Wathba | وثبة",
+          "proposal": "Investigate first",
+          "original_score": 16,
+          "original_band": "A",
+          "recorded_stage": "launched",
+          "product_reason": "The original role explicitly asks one primary founding engineer to produce the first production MVP; this contradicts the stored launched label. The community website is not proof this intended product is launched.",
+          "team_reason": "The role suggests a delivery gap, but an approved architecture implies earlier technical contribution and hiring may since have completed.",
+          "next_check": "Check original role closure and whether engineer was hired, confirm first MVP still unbuilt, audit current contributors and cash budget.",
+          "evidence_url": "https://www.linkedin.com/posts/aldubayan_were-looking-for-a-founding-engineer-at-activity-7471873287841689600-uoLw"
+        },
+        {
+          "priority": 2,
+          "id": "lead-bookmyguide-hayath-kargal",
+          "name": "Hayath Kargal",
+          "company": "BookMyGuide",
+          "proposal": "Investigate first",
+          "original_score": 8,
+          "original_band": "C",
+          "recorded_stage": "beta",
+          "product_reason": "Founder-authored evidence says pre-MVP and planning Saudi pilots, contradicting beta. The coordinator's live recheck shows the post is approximately eight months old, so current product state remains unknown.",
+          "team_reason": "Two founders are mentioned but software roles and outside contributors are unknown.",
+          "next_check": "First establish current Saudi presence/operations and whether the pre-MVP project remains active. Then audit product, both founders' technical roles and contributors. MVP Lab was an application, not an award or verified funding.",
+          "evidence_url": "https://www.linkedin.com/posts/hayath-kargal-b0b17057_vision2030-ntdp-mvplab-activity-7412319001252618240-2TT5"
+        },
+        {
+          "priority": 3,
+          "id": "lead-ballora-marya-fawaz",
+          "name": "Marya Fawaz",
+          "company": "Ballora",
+          "proposal": "Hold for verification",
+          "original_score": 11,
+          "original_band": "B",
+          "recorded_stage": "unknown",
+          "product_reason": "Ballora is documented as a graduation project and conference platform; no source establishes the current software lifecycle or a commercial build decision.",
+          "team_reason": "Fawaz has front-end/design experience, but the full student/project engineering team is unknown.",
+          "next_check": "Confirm active company/project ownership and authority (official roster names Ghadah Alshehri), current product state, all contributors and a funding path.",
+          "evidence_url": "https://www.startsmartsaudi.com/sites/default/files/2026-02/teams_1.pdf"
+        },
+        {
+          "priority": 3,
+          "id": "lead-gaia-badr-al-malluh",
+          "name": "Badr Al-Malluh",
+          "company": "Gaia",
+          "proposal": "Hold for verification",
+          "original_score": 6,
+          "original_band": "C",
+          "recorded_stage": "unknown",
+          "product_reason": "Private early access may already contain functioning enterprise software; the stored evidence does not establish an unbuilt core platform.",
+          "team_reason": "One co-founder/CPTO (Mohammad Rababah) is identified. An 11–50 total band does not prove three engineers or a <=2 upper bound.",
+          "next_check": "Low-priority check of actual product operation and current engineering roster; do not infer sufficient team from CPTO plus company-size band alone.",
+          "evidence_url": "https://sa.linkedin.com/company/gaiaplatform"
+        },
+        {
+          "priority": 3,
+          "id": "lead-greenvision-yara-alalawi",
+          "name": "Yara Alalawi",
+          "company": "GreenVision",
+          "proposal": "Hold for verification",
+          "original_score": 11,
+          "original_band": "B",
+          "recorded_stage": "unknown",
+          "product_reason": "A cloud-dashboard prototype is explicitly described. That can be eligible, but it must be distinguished from already-operating deployed software.",
+          "team_reason": "Yara explicitly identifies herself as lead engineer/backend architect, establishing at least one builder; other team members and contractors are uncounted.",
+          "next_check": "Confirm prototype-only state, current team with <=2 upper bound, commercial owner intent and available project funds.",
+          "evidence_url": "https://www.startsmartsaudi.com/sites/default/files/2026-02/teams_1.pdf"
+        },
+        {
+          "priority": 3,
+          "id": "lead-mara-omar-alsumih",
+          "name": "Omar Alsumih",
+          "company": "Mara | مرا",
+          "proposal": "Hold for verification",
+          "original_score": 6,
+          "original_band": "C",
+          "recorded_stage": "beta",
+          "product_reason": "A first app version was demonstrated and sandbox testing is recorded. This proves some build work, but does not establish public/production operation or whether it remains a prototype.",
+          "team_reason": "Four total employees and a software-development company category do not prove four software builders or sufficient capacity.",
+          "next_check": "Low-priority check whether app is operational or just a demo; then current technical-role count. Record the unpaid role/resource constraint as a budget issue.",
+          "evidence_url": "https://www.linkedin.com/company/yourmara"
+        },
+        {
+          "priority": 3,
+          "id": "lead-smart-quotation-radhi-alshammari",
+          "name": "Radhi Alshammari",
+          "company": "Smart Quotation",
+          "proposal": "Hold for verification",
+          "original_score": 12,
+          "original_band": "B",
+          "recorded_stage": "unknown",
+          "product_reason": "The founder already describes an MVP and supplier onboarding. A company 'building' post does not establish whether the MVP is a mock-up, private pilot or operational product.",
+          "team_reason": "Internal leadership is mentioned but no role census exists.",
+          "next_check": "First establish whether the MVP is functional/in use, then audit every current founder and engineer and identify a paid build need.",
+          "evidence_url": "https://sa.linkedin.com/company/smart-quotation.sa"
+        },
+        {
+          "priority": 3,
+          "id": "lead-suhail-shatha-khalid-alharbi",
+          "name": "Shatha Khalid Alharbi | شذى الحربي",
+          "company": "Suhail | سهيل",
+          "proposal": "Hold for verification",
+          "original_score": 9,
+          "original_band": "C",
+          "recorded_stage": "precompany",
+          "product_reason": "The project advanced to an MVP-building program phase; participation does not tell us whether the MVP was subsequently completed or deployed.",
+          "team_reason": "Three co-founders are named and technical founders are mentioned, but individual active software roles are not enumerated; do not treat all three as developers automatically.",
+          "next_check": "Check post-program product progress and the engineering roles of Shatha, Ghadah and Nada; then commercial ownership and funds.",
+          "evidence_url": "https://sa.linkedin.com/in/shatha-khalid-alharbi/ar"
+        },
+        {
+          "priority": 3,
+          "id": "lead-zakn-ai-zakaria-alnajar",
+          "name": "Zakaria Alnajar",
+          "company": "Zakn AI",
+          "proposal": "Hold for verification",
+          "original_score": 12,
+          "original_band": "B",
+          "recorded_stage": "unknown",
+          "product_reason": "The phrase 'pre-launch idea/product validation' describes what Zakn helps customers do; it does not prove Zakn itself has no built product. Worker context calls it an active early product.",
+          "team_reason": "A prior external AI contributor is visible, but current engagement, founders' software roles and total capacity are unknown.",
+          "next_check": "Inspect actual product availability and ask only public evidence whether it is a concept, prototype or usable validation platform; then audit current team and paid-build signals.",
+          "evidence_url": "https://sa.linkedin.com/in/zakalnajar"
+        },
+        {
+          "priority": 4,
+          "id": "lead-21doctors-osama-almabroum",
+          "name": "Osama Almabroum",
+          "company": "21Doctors",
+          "proposal": "Exclude from campaign",
+          "original_score": 13,
+          "original_band": "B",
+          "recorded_stage": "unknown",
+          "product_reason": "The company describes an integrated digital-health platform being expanded into Saudi Arabia, with an existing development headquarters.",
+          "team_reason": "At least one named co-founder/CTO (Rania Abu Taleb) is visible; the full delivery team and any upper bound are unknown.",
+          "next_check": "No priority recheck; existing platform plus development organization is outside the intended buyer stage.",
+          "evidence_url": "https://www.linkedin.com/company/21doctorsmedical"
+        },
+        {
+          "priority": 4,
+          "id": "lead-aila-yousef-alsayed",
+          "name": "Yousef Alsayed",
+          "company": "AILA",
+          "proposal": "Exclude from campaign",
+          "original_score": 12,
+          "original_band": "B",
+          "recorded_stage": "operating",
+          "product_reason": "The official sources describe a live learning platform with 95,000 active users and institutions; funding extends current software.",
+          "team_reason": "Named founding team is not an enumerated software roster.",
+          "next_check": "No priority recheck; exclude on operating software, not merely SME operating status.",
+          "evidence_url": "https://www.wamda.com/2026/08/aila-raises-3-million-pre-series-a-expand-personalised-learning-platform"
+        },
+        {
+          "priority": 4,
+          "id": "lead-athleads-app-marwan-alshayeb",
+          "name": "Marwan AlShayeb",
+          "company": "Athleads.app",
+          "proposal": "Exclude from campaign",
+          "original_score": 15,
+          "original_band": "A",
+          "recorded_stage": "launched",
+          "product_reason": "The stored narrative describes a launched scouting/performance analytics platform, current client/investor activity and continued product work, not a first unbuilt app.",
+          "team_reason": "A 2–10 total company band cannot establish <=2 software builders.",
+          "next_check": "Reopen only for a separately evidenced unbuilt product; verify platform operation first if exclusion is disputed.",
+          "evidence_url": "https://www.linkedin.com/company/athleadsapp"
+        },
+        {
+          "priority": 4,
+          "id": "lead-aya-munira-alkadi",
+          "name": "Munira Alkadi",
+          "company": "Aya",
+          "proposal": "Exclude from campaign",
+          "original_score": 12,
+          "original_band": "B",
+          "recorded_stage": "unknown",
+          "product_reason": "The recorded commerce platform serves 100,000+ customers and is iterating a mature product.",
+          "team_reason": "A 60+ total team and software hiring do not specify an exact engineering count.",
+          "next_check": "No priority recheck; this is a mature operating product.",
+          "evidence_url": "https://www.kaust.edu.sa/en/news/four-kaust-innovators-named-to-forbes-middle-east-30-under-30-2025"
+        },
+        {
+          "priority": 4,
+          "id": "lead-bookahospi-sebastian-jimenez",
+          "name": "Sebastian Jimenez",
+          "company": "Bookahospi",
+          "proposal": "Exclude from campaign",
+          "original_score": 13,
+          "original_band": "B",
+          "recorded_stage": "unknown",
+          "product_reason": "The marketplace is explicitly described as live; recruitment/credentialing software already supports international hires.",
+          "team_reason": "An existing cross-market team is mentioned, but '60 hires' refers to placed healthcare workers, not Bookahospi staff.",
+          "next_check": "No priority recheck; do not interpret placement counts as technical employees.",
+          "evidence_url": "https://lanzadera.es/proyecto/bookahospi/"
+        },
+        {
+          "priority": 4,
+          "id": "lead-cashin-omar-al-ramahi",
+          "name": "Omar Al-Ramahi",
+          "company": "Cashin",
+          "proposal": "Exclude from campaign",
+          "original_score": 10,
+          "original_band": "B",
+          "recorded_stage": "operating",
+          "product_reason": "The official site presents operating payments/business-management software and an investor reports material processed transactions.",
+          "team_reason": "Unknown engineering count; total business scale alone is not counted as developers.",
+          "next_check": "No priority recheck; first-product criterion fails on software already in operation.",
+          "evidence_url": "https://impact46.sa/cashin-closes-sar-60-million-series-a-round-led-by-impact46-to-accelerate-automation-and-digitalization-of-fuel-and-energy-stations/"
+        },
+        {
+          "priority": 4,
+          "id": "lead-coretechx-fahad-durukan",
+          "name": "Fahad Durukan",
+          "company": "CoreTechX",
+          "proposal": "Exclude from campaign",
+          "original_score": 12,
+          "original_band": "B",
+          "recorded_stage": "launched",
+          "product_reason": "The evidence and qualification narrative describe an Arabic document-intelligence product already shipping.",
+          "team_reason": "'Likely internal AI development' is an inference, not a measured count.",
+          "next_check": "No priority recheck; if revisited, establish product state before investigating team size.",
+          "evidence_url": "https://flat6labs.com/flat6labs-hosts-sixth-demo-day-in-riyadh/"
+        },
+        {
+          "priority": 4,
+          "id": "lead-desaisiv-mohammad-nabhan",
+          "name": "Mohammad Nabhan",
+          "company": "DESAISIV",
+          "proposal": "Exclude from campaign",
+          "original_score": 12,
+          "original_band": "B",
+          "recorded_stage": "operating",
+          "product_reason": "The AI insurance/pricing product launch and existing live insurance products are explicit.",
+          "team_reason": "No complete technical-team count is recorded.",
+          "next_check": "No priority recheck; an AI software vendor with launched products is outside first-product targeting.",
+          "evidence_url": "https://www.wamda.com/2026/07/desaisiv-introduces-ai-powered-fair-market-pricing-engine-enterprises"
+        },
+        {
+          "priority": 4,
+          "id": "lead-eden-nicolae-esanu",
+          "name": "Nicolae Esanu",
+          "company": "EDEN",
+          "proposal": "Exclude from campaign",
+          "original_score": 12,
+          "original_band": "B",
+          "recorded_stage": "beta",
+          "product_reason": "The company explicitly states its MVP launched to a limited Riyadh cohort in December 2025 and reports live matching. A limited release is still a built functioning core product.",
+          "team_reason": "Software team count is unknown; the founder has technical systems experience but that is not an exact delivery-role count.",
+          "next_check": "No priority recheck under the current unbuilt-product target.",
+          "evidence_url": "https://www.edentravel.online/"
+        },
+        {
+          "priority": 4,
+          "id": "lead-fitting-mohammed-al-mubayed",
+          "name": "Mohammed Al-Mubayed",
+          "company": "Fitting",
+          "proposal": "Exclude from campaign",
+          "original_score": 12,
+          "original_band": "B",
+          "recorded_stage": "operating",
+          "product_reason": "The official site explicitly shows an operating digital procurement product with project/supply activity; this conclusion is not based on the operating label.",
+          "team_reason": "No complete software-team inventory exists.",
+          "next_check": "No priority recheck; proposed infrastructure expansion extends an existing marketplace.",
+          "evidence_url": "https://www.wamda.com/2026/08/saudi-contech-fitting-raises-1-1-million-seed-fuel-expansion"
+        },
+        {
+          "priority": 4,
+          "id": "lead-ghanem-saleh-al-ghamdi",
+          "name": "Saleh Al-Ghamdi",
+          "company": "Ghanem",
+          "proposal": "Exclude from campaign",
+          "original_score": 10,
+          "original_band": "B",
+          "recorded_stage": "operating",
+          "product_reason": "The official site presents a live fractional-property investment product; financing funds expansion.",
+          "team_reason": "The 11–50 total band leaves engineering count unknown.",
+          "next_check": "No priority recheck; core product already operates.",
+          "evidence_url": "https://ghanem.sa/en"
+        },
+        {
+          "priority": 4,
+          "id": "lead-green-desert-technologies-abdulmajeed-hashem",
+          "name": "Abdulmajeed Hashem",
+          "company": "Green Desert Technologies",
+          "proposal": "Exclude from campaign",
+          "original_score": 9,
+          "original_band": "C",
+          "recorded_stage": "launched",
+          "product_reason": "The product is algae-production hardware/automation; no specific unbuilt software project is evidenced. Exclusion is for missing software-project fit, not for an app launch.",
+          "team_reason": "Small technical founding team is described but software roles are unknown.",
+          "next_check": "Reconsider only after a specific software brief is found; hardware fundraising is insufficient.",
+          "evidence_url": "https://flat6labs.com/demoday/flat6labs-fifth-demo-day-in-riyadh/"
+        },
+        {
+          "priority": 4,
+          "id": "lead-handl-hub-doaa-aref",
+          "name": "Doaa Aref",
+          "company": "Handl Hub",
+          "proposal": "Exclude from campaign",
+          "original_score": 15,
+          "original_band": "A",
+          "recorded_stage": "unknown",
+          "product_reason": "The official product source describes a live early-access platform with integrations, execution features and monthly pricing. Early-access wording does not make an operational product unbuilt.",
+          "team_reason": "No technical-role inventory; integration complexity does not imply a team gap.",
+          "next_check": "Retain as existing-product exclusion; reopen only if first-party evidence proves the page was a nonfunctional concept.",
+          "evidence_url": "https://ecom.handlhub.com/"
+        },
+        {
+          "priority": 4,
+          "id": "lead-juthor-lolwah-binsaedan",
+          "name": "Lolwah Binsaedan",
+          "company": "Juthor",
+          "proposal": "Exclude from campaign",
+          "original_score": 13,
+          "original_band": "B",
+          "recorded_stage": "launched",
+          "product_reason": "The official company site describes a live orders/inventory/analytics platform with 10+ marketplace integrations.",
+          "team_reason": "Internal backend capacity is asserted in qualification notes, but no named full role inventory is preserved.",
+          "next_check": "No priority recheck; core commerce platform is already built.",
+          "evidence_url": "https://juthor.sa/"
+        },
+        {
+          "priority": 4,
+          "id": "lead-kliq-asma-a-almaraghi",
+          "name": "Asma'a AlMaraghi",
+          "company": "KLIQ",
+          "proposal": "Exclude from campaign",
+          "original_score": 10,
+          "original_band": "B",
+          "recorded_stage": "launched",
+          "product_reason": "The Saudi App Store listing establishes a public mobile app.",
+          "team_reason": "The 11–50 total band leaves engineering count unknown.",
+          "next_check": "No priority recheck; preserve the App Store URL as exclusion evidence.",
+          "evidence_url": "https://apps.apple.com/sa/app/get-kliq/id6749889392"
+        },
+        {
+          "priority": 4,
+          "id": "lead-madak-abdulaziz-ghazi-alardi",
+          "name": "Abdulaziz Ghazi Alardi",
+          "company": "Madak",
+          "proposal": "Exclude from campaign",
+          "original_score": 16,
+          "original_band": "A",
+          "recorded_stage": "launched",
+          "product_reason": "The recorded official app listing reports an existing Android app, July release and 10,000+ downloads. The target core product is already built.",
+          "team_reason": "Technical capacity is unknown; customer and investor counts do not supply a software-team count.",
+          "next_check": "No priority recheck; retain exclusion unless a separate qualifying unbuilt venture is evidenced.",
+          "evidence_url": "https://madak.app/en/"
+        },
+        {
+          "priority": 4,
+          "id": "lead-medirect-alwaleed-altorabi",
+          "name": "Alwaleed Altorabi",
+          "company": "MEDirect",
+          "proposal": "Exclude from campaign",
+          "original_score": 14,
+          "original_band": "B",
+          "recorded_stage": "launched",
+          "product_reason": "The stored company and founder evidence describes a live virtual-clinic SaaS product and diagnostic/payment integrations.",
+          "team_reason": "A 2–10 total employee band gives no upper bound of two developers.",
+          "next_check": "No priority recheck; core product is already live.",
+          "evidence_url": "https://www.linkedin.com/company/medirect-sa"
+        },
+        {
+          "priority": 4,
+          "id": "lead-metafare-ibrahim-almaghlouth",
+          "name": "Ibrahim Almaghlouth",
+          "company": "Metafare",
+          "proposal": "Exclude from campaign",
+          "original_score": 11,
+          "original_band": "B",
+          "recorded_stage": "operating",
+          "product_reason": "The first-party site has a live virtual-wellness product interface and recorded completed sessions; the company-operating tag alone is not the reason.",
+          "team_reason": "The 11–50 company band does not identify software capacity.",
+          "next_check": "No priority recheck; its core platform is already operational.",
+          "evidence_url": "https://www.wamda.com/en/2026/05/metafare-secures-1-million-scale-virtual-wellness-solutions"
+        },
+        {
+          "priority": 4,
+          "id": "lead-mutim-abdulmohsin-hotami",
+          "name": "Abdulmohsin Hotami",
+          "company": "Mutim",
+          "proposal": "Exclude from campaign",
+          "original_score": 13,
+          "original_band": "B",
+          "recorded_stage": "unknown",
+          "product_reason": "Founder-authored evidence says the platform launched, obtained a paying customer and onboarded 100+ HR experts. Forthcoming modules do not reverse that launch.",
+          "team_reason": "Two co-founders and a 2–10 employee band do not establish how many software builders are active.",
+          "next_check": "No priority recheck; beta URL and unfinished modules are not evidence of an unbuilt core product.",
+          "evidence_url": "https://www.linkedin.com/posts/hotamia_%D9%82%D8%A8%D9%84-%D8%AB%D9%85%D8%A7%D9%86%D9%8A%D8%A9-%D8%A3%D8%B4%D9%87%D8%B1-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%AA-%D9%85%D9%86-%D9%88%D8%B8%D9%8A%D9%81%D8%AA%D9%8A-%D8%A8%D8%B3%D8%A8%D8%A8-%D9%81%D9%83%D8%B1%D8%A9-activity-7428774643194531840-gY25"
+        },
+        {
+          "priority": 4,
+          "id": "lead-najeeb-ai-ahmed-yasmina",
+          "name": "Ahmed Yasmina",
+          "company": "Najeeb.ai",
+          "proposal": "Exclude from campaign",
+          "original_score": 10,
+          "original_band": "B",
+          "recorded_stage": "operating",
+          "product_reason": "The official site presents operating Arabic insurance-AI software; the funding is for additional products/integrations.",
+          "team_reason": "Some technical capability is inferred but not enumerated.",
+          "next_check": "No priority recheck; existing product fails the target.",
+          "evidence_url": "https://www.wamda.com/2025/10/saudi-insurtech-najeebai-closes-pre-seed-round"
+        },
+        {
+          "priority": 4,
+          "id": "lead-nitx-mohammed-al-saad",
+          "name": "Mohammed Al-Saad",
+          "company": "Nitx",
+          "proposal": "Exclude from campaign",
+          "original_score": 13,
+          "original_band": "B",
+          "recorded_stage": "unknown",
+          "product_reason": "The stored sources/narrative describe an established commercial advertising platform and expansion activity.",
+          "team_reason": "Visible staff are not mapped to software roles.",
+          "next_check": "No priority recheck unless a distinct unbuilt initiative is documented.",
+          "evidence_url": "https://hub.misk.org.sa/en/programs/entrepreneurship/misk-launchpad/"
+        },
+        {
+          "priority": 4,
+          "id": "lead-nqoodlet-mohamed-milyani",
+          "name": "Mohamed Milyani",
+          "company": "Nqoodlet",
+          "proposal": "Exclude from campaign",
+          "original_score": 7,
+          "original_band": "C",
+          "recorded_stage": "operating",
+          "product_reason": "The official site confirms live SME expense/card software; the main build/funding trigger is also older than twelve months.",
+          "team_reason": "No software-team audit exists.",
+          "next_check": "No priority recheck; preserve both existing-product and stale-trigger reasons.",
+          "evidence_url": "https://www.arabnews.com/finance/saudi-fintech-startup-nqoodlet-secures-3m-in-seed-funding-2599494"
+        },
+        {
+          "priority": 4,
+          "id": "lead-ofintech-mohammed-alnoosh",
+          "name": "Mohammed Alnoosh",
+          "company": "OFINTECH",
+          "proposal": "Exclude from campaign",
+          "original_score": 13,
+          "original_band": "B",
+          "recorded_stage": "unknown",
+          "product_reason": "Stored evidence describes an AI/open-banking business scaling an existing platform, rather than a founder with no software product.",
+          "team_reason": "At least one CTO-associated profile is recorded; nine total visible employees are not an engineering count.",
+          "next_check": "No priority recheck; confirm platform operation if disputing the suggested exclusion.",
+          "evidence_url": "https://www.linkedin.com/company/ofintech"
+        },
+        {
+          "priority": 4,
+          "id": "lead-pickappo-waleed-ghloniem",
+          "name": "Waleed Ghloniem",
+          "company": "Pickappo",
+          "proposal": "Exclude from campaign",
+          "original_score": 12,
+          "original_band": "B",
+          "recorded_stage": "operating",
+          "product_reason": "The first-party site presents live delivery-management software and orders; proposed AI/automation features extend a built core platform.",
+          "team_reason": "No software-team audit or external-builder request is recorded.",
+          "next_check": "No priority recheck; new modules are outside the current first-product target.",
+          "evidence_url": "https://www.wamda.com/ar/2026/06/pickappo-secures-530000-expand-demand-delivery-infrastructure"
+        },
+        {
+          "priority": 4,
+          "id": "lead-qubit-abdullah-rashad",
+          "name": "Abdullah Rashad",
+          "company": "Qubit",
+          "proposal": "Exclude from campaign",
+          "original_score": 14,
+          "original_band": "B",
+          "recorded_stage": "unknown",
+          "product_reason": "Current enterprise deployments, 140+ integrations and product releases describe built software.",
+          "team_reason": "Product/data capability is described but there is no complete engineering-role count.",
+          "next_check": "No priority recheck; source can still discover younger founders.",
+          "evidence_url": "https://www.linkedin.com/company/qubitksa"
+        },
+        {
+          "priority": 4,
+          "id": "lead-remedium-fawaz-abu-ghazaleh",
+          "name": "Fawaz Abu-Ghazaleh",
+          "company": "Remedium",
+          "proposal": "Exclude from campaign",
+          "original_score": 12,
+          "original_band": "B",
+          "recorded_stage": "operating",
+          "product_reason": "The official site describes live carbon-accounting software managing emissions; funding adds AI and modules.",
+          "team_reason": "Delivery capacity remains unknown.",
+          "next_check": "No priority recheck; core product already exists.",
+          "evidence_url": "https://www.wamda.com/2026/09/saudi-remedium-secures-1-5-million-expand-sustainability-accounting"
+        },
+        {
+          "priority": 4,
+          "id": "lead-reporty-abdulbadea-altukroni",
+          "name": "Abdulbadea Altukroni",
+          "company": "Reporty",
+          "proposal": "Exclude from campaign",
+          "original_score": 13,
+          "original_band": "B",
+          "recorded_stage": "launched",
+          "product_reason": "Stored official site and founder activity describe existing medical software, live trials and current operations.",
+          "team_reason": "A named CTO is recorded; further software capacity is unknown.",
+          "next_check": "No priority recheck; the core reporting product exists.",
+          "evidence_url": "https://www.dev.reporty.sa/about-us"
+        },
+        {
+          "priority": 4,
+          "id": "lead-revora-formerly-myalice-shuvo-rahman",
+          "name": "Shuvo Rahman",
+          "company": "Revora (formerly MyAlice)",
+          "proposal": "Exclude from campaign",
+          "original_score": 13,
+          "original_band": "B",
+          "recorded_stage": "unknown",
+          "product_reason": "Revora is explicitly an established SaaS platform formerly MyAlice, with growth, customers and current engineering hiring.",
+          "team_reason": "Engineering/product leadership and hiring do not give an exact current count, but do evidence active internal delivery.",
+          "next_check": "No priority recheck; rebranding and beta features do not make the core SaaS product unbuilt.",
+          "evidence_url": "https://userevora.com/about/"
+        },
+        {
+          "priority": 4,
+          "id": "lead-rime-mohammed-almarshidi",
+          "name": "Mohammed Almarshidi",
+          "company": "RIME",
+          "proposal": "Exclude from campaign",
+          "original_score": 12,
+          "original_band": "B",
+          "recorded_stage": "operating",
+          "product_reason": "The official site and source describe an operating video-intelligence product with deployed cameras/sites.",
+          "team_reason": "No complete software-role audit is recorded.",
+          "next_check": "No priority recheck; funding supports an already-deployed software platform.",
+          "evidence_url": "https://www.wamda.com/2026/08/saudi-startup-rime-raises-2-million-seed-round"
+        },
+        {
+          "priority": 4,
+          "id": "lead-sighti-salim-noor",
+          "name": "Salim Noor",
+          "company": "Sighti",
+          "proposal": "Exclude from campaign",
+          "original_score": 13,
+          "original_band": "B",
+          "recorded_stage": "unknown",
+          "product_reason": "The founder interview describes paid pilots and live deployments of the product; this is beyond an unbuilt core system.",
+          "team_reason": "The founder has software/AI capability and active senior-AI recruiting is recorded; current total remains unknown.",
+          "next_check": "No priority recheck; a separate unbuilt product would require new evidence.",
+          "evidence_url": "https://startupshouse.com/en/news/attliq-cohort-5-graduation/"
+        },
+        {
+          "priority": 4,
+          "id": "lead-stoqa-abdulrahman-saud",
+          "name": "Abdulrahman Saud",
+          "company": "STOQA",
+          "proposal": "Exclude from campaign",
+          "original_score": 15,
+          "original_band": "A",
+          "recorded_stage": "unknown",
+          "product_reason": "The Android app listing and company launch statement clearly evidence an already-built core product.",
+          "team_reason": "Sixteen visible employees are total employees, not sixteen developers; exact engineering count remains unknown.",
+          "next_check": "No priority research; preserve the app URL as the exclusion evidence.",
+          "evidence_url": "https://www.linkedin.com/company/stoqa-company"
+        },
+        {
+          "priority": 4,
+          "id": "lead-supplai-azmi-negro",
+          "name": "Azmi Negro",
+          "company": "Supplai",
+          "proposal": "Exclude from campaign",
+          "original_score": 13,
+          "original_band": "B",
+          "recorded_stage": "unknown",
+          "product_reason": "The co-founder and accelerator sources describe a live logistics/SaaS network with customers and shipments.",
+          "team_reason": "A fifteen-person operational team is not a fifteen-person software team; no technical count is available.",
+          "next_check": "No priority recheck; operational software is already built.",
+          "evidence_url": "https://www.linkedin.com/in/azminegro121"
+        },
+        {
+          "priority": 4,
+          "id": "lead-swarm-robotics-mohammed-bukhamsin",
+          "name": "Mohammed Bukhamsin",
+          "company": "Swarm Robotics",
+          "proposal": "Exclude from campaign",
+          "original_score": 10,
+          "original_band": "B",
+          "recorded_stage": "unknown",
+          "product_reason": "Stored evidence describes an operating robotics/software and turnkey automation offering; no specific first unbuilt custom-software project is documented.",
+          "team_reason": "A small specialist robotics team exists, but actual software roles are not enumerated.",
+          "next_check": "Low priority; require a separate explicit unbuilt software initiative before reconsidering.",
+          "evidence_url": "https://hub.misk.org.sa/en/programs/entrepreneurship/misk-launchpad/"
+        },
+        {
+          "priority": 4,
+          "id": "lead-t-gate-fahad-alfaheid",
+          "name": "Fahad Alfaheid",
+          "company": "T-Gate",
+          "proposal": "Exclude from campaign",
+          "original_score": 11,
+          "original_band": "B",
+          "recorded_stage": "launched",
+          "product_reason": "Recorded evidence describes a mature F&B integration platform with modules for orders, branches, inventory and POS/delivery.",
+          "team_reason": "An 11–50 total band is not a technical-role count.",
+          "next_check": "No priority recheck; core software already exists.",
+          "evidence_url": "https://www.linkedin.com/company/t-gate-company"
+        },
+        {
+          "priority": 4,
+          "id": "lead-thedar-ai-mohy-aboualam",
+          "name": "Mohy Aboualam",
+          "company": "TheDar.AI",
+          "proposal": "Exclude from campaign",
+          "original_score": 14,
+          "original_band": "B",
+          "recorded_stage": "launched",
+          "product_reason": "Enterprise use of the Arabic media-intelligence product and commercial shipping are already recorded.",
+          "team_reason": "Visible internal AI/product staff are not enumerated.",
+          "next_check": "No priority recheck; this is an existing software offering.",
+          "evidence_url": "https://onegiantleap.com/2026-speakers/mohy-aboualam"
+        },
+        {
+          "priority": 4,
+          "id": "lead-think-ahmed-alsharif",
+          "name": "Ahmed AlSharif",
+          "company": "Think",
+          "proposal": "Exclude from campaign",
+          "original_score": 12,
+          "original_band": "B",
+          "recorded_stage": "operating",
+          "product_reason": "Stored product/qualification evidence describes enterprise AI products and deployments, with new funds extending the vendor's product suite. No specific first unbuilt product is identified.",
+          "team_reason": "Technical leadership is asserted, but founders' exact software roles and total delivery count are unknown.",
+          "next_check": "No priority recheck; if disputed, verify whether the target is a separately unbuilt product instead of existing enterprise AI delivery.",
+          "evidence_url": "https://www.wamda.com/2026/07/think-gears-gcc-expansion-8-million-pre-seed-funding"
+        },
+        {
+          "priority": 4,
+          "id": "lead-wadaie-abdullah-alandas",
+          "name": "Abdullah Alandas",
+          "company": "Wadaie",
+          "proposal": "Exclude from campaign",
+          "original_score": 10,
+          "original_band": "B",
+          "recorded_stage": "operating",
+          "product_reason": "The official site has a live deposit marketplace with existing investor activity.",
+          "team_reason": "No software-role census exists.",
+          "next_check": "No priority recheck; current platform is already operating.",
+          "evidence_url": "https://www.wamda.com/en/2025/09/wadaie-closes-seed-round-led-venturesouq"
+        },
+        {
+          "priority": 4,
+          "id": "lead-zahib-badr-alhader",
+          "name": "Badr Alhader",
+          "company": "Zahib",
+          "proposal": "Exclude from campaign",
+          "original_score": 10,
+          "original_band": "B",
+          "recorded_stage": "operating",
+          "product_reason": "The official Saudi site links a live consumer app and describes a digital laundry marketplace.",
+          "team_reason": "Delivery capacity and software-role count are unknown.",
+          "next_check": "No priority recheck; a service business can qualify only before the target core software is built.",
+          "evidence_url": "https://www.zahib.sa/"
+        }
+      ],
+      "resources": [
+        {
+          "id": "resource-misk-launchpad",
+          "source": "Misk Launchpad",
+          "url": "https://hub.misk.org.sa/en/programs/entrepreneurship/misk-launchpad/",
+          "proposal": "high",
+          "harvest": "Inspect public 10.0 admission and Ideate participant posts; extract only named founders with a specific unbuilt software concept. Capture admission date, product stage statement and full source URL, then audit team and vendor demand. Recheck at transition into Build.",
+          "cadence": "weekly during admission and Ideate; every two weeks through Build",
+          "caveat": "No public list is guaranteed. Do not treat program membership or free enrollment as budget evidence.",
+          "live_checked": "Selected official checks; see limitations"
+        },
+        {
+          "id": "resource-the-garage",
+          "source": "The Garage accelerator and incubator",
+          "url": "https://thegarage.sa/",
+          "proposal": "high_for_incubator_low_for_accelerator",
+          "harvest": "Create child sources for incubator admissions, idea workshops, MVP Lab and accelerator. Extract named prototype teams only from the first three; use accelerator membership as a product-maturity check.",
+          "cadence": "weekly around intake; monthly otherwise",
+          "caveat": "Prototype/MVP labels need candidate-specific interpretation; a live MVP fails the user's first-product constraint.",
+          "live_checked": "Selected official checks; see limitations"
+        },
+        {
+          "id": "resource-flat6labs-rsp",
+          "source": "Flat6Labs Riyadh Seed Program",
+          "url": "https://flat6labs.com/Location/ksa/",
+          "proposal": "low",
+          "harvest": "Before any new harvest, confirm current intake criteria; use individual company pages to check already-launched products. Do not accept a seed label as pre-build evidence.",
+          "cadence": "on_candidate_demand",
+          "caveat": "Not refreshed online in this review.",
+          "live_checked": "Stored source review only"
+        },
+        {
+          "id": "resource-flat6labs-demo-days",
+          "source": "Flat6Labs Riyadh Demo Day pages",
+          "url": "https://flat6labs.com/demoday/flat6labs-fifth-demo-day-in-riyadh/",
+          "proposal": "low",
+          "harvest": "Use product descriptions and company links to resolve maturity; seek admissions instead if a pre-build intake is later documented.",
+          "cadence": "on_candidate_demand",
+          "caveat": "Not refreshed online in this review.",
+          "live_checked": "Stored source review only"
+        },
+        {
+          "id": "resource-taqadam",
+          "source": "KAUST TAQADAM Startup Accelerator",
+          "url": "https://taqadam.kaust.edu.sa/",
+          "proposal": "medium",
+          "harvest": "Verify current admission criteria and isolate incoming teams with explicit first-product plans. Confirm grant award and allowable spending candidate by candidate.",
+          "cadence": "new intake only",
+          "caveat": "Not refreshed online in this review; no current pre-build eligibility asserted.",
+          "live_checked": "Stored source review only"
+        },
+        {
+          "id": "resource-taqadam-showcases",
+          "source": "KAUST TAQADAM showcase announcements",
+          "url": "https://www.kaust.edu.sa/en/news/kaust-and-sab-celebrate-milestone-ninth-cohort-of-taqadam-accelerator-driving-global-innovation-into-the-kingdoms-ecosystem",
+          "proposal": "low",
+          "harvest": "Cross-check named candidates against completed products and current operations; do not use prize winners as default primary acquisition.",
+          "cadence": "on_candidate_demand",
+          "caveat": "Not refreshed online in this review.",
+          "live_checked": "Stored source review only"
+        },
+        {
+          "id": "resource-code-software-accelerator",
+          "source": "CODE Software Accelerator",
+          "url": "https://code.mcit.gov.sa/sites/default/files/2024-08/CodeReportQ1V22Aug.pdf",
+          "proposal": "low_pending_current_idea_stage_channel",
+          "harvest": "Locate a current official challenge with explicit idea/prototype entry criteria before harvesting; confirm entrants are buyers rather than software vendors.",
+          "cadence": "quarterly discovery pilot",
+          "caveat": "No specific current challenge verified here.",
+          "live_checked": "Stored source review only"
+        },
+        {
+          "id": "resource-monshaat-accelerators",
+          "source": "Monsha'at Business Accelerators Program",
+          "url": "https://www.monshaat.gov.sa/sites/default/files/guide/files/Services%20Guide%20Q2%202025%20%E2%80%93%20EN.pdf",
+          "proposal": "medium",
+          "harvest": "Use current SME Support Centre, Thakaa and sector-event pages to find public named owner cases; follow the business's own description of manual workflow and planned first system. Reject provider catalogues as buyer evidence.",
+          "cadence": "monthly pilot",
+          "caveat": "The verified workshop is historical and supplies no live buyer roster. General digital transformation interest often means off-the-shelf software adoption, not custom development.",
+          "live_checked": "Selected official checks; see limitations"
+        },
+        {
+          "id": "resource-ntdp-products",
+          "source": "NTDP startup-support products",
+          "url": "https://ntdp.gov.sa/",
+          "proposal": "medium_pending_verification",
+          "harvest": "Verify current MVP Lab rules and public beneficiaries. For a named candidate, establish that the build remains uncontracted and distinguish cash support from provider-delivered services or cloud credits.",
+          "cadence": "monthly and new intake announcements",
+          "caveat": "Current eligibility and budget terms were not readable in this review. Never assume a grant is available to hire the user's business.",
+          "live_checked": "Selected official checks; see limitations"
+        },
+        {
+          "id": "resource-sanabil-500",
+          "source": "Sanabil Accelerator by 500 Global",
+          "url": "https://mena.500.co/founders/mena/seed-accelerator",
+          "proposal": "low",
+          "harvest": "Use the cohort/company page to establish product maturity and exclude an already-launched core product. Pursue a candidate only if fresh, specific evidence establishes an eligible unbuilt product and very small team.",
+          "cadence": "on_candidate_demand",
+          "caveat": "MENA location alone does not establish Saudi operations.",
+          "live_checked": "Selected official checks; see limitations"
+        },
+        {
+          "id": "biban-ewc",
+          "source": "Entrepreneurship World Cup Global Finals",
+          "url": "https://entrepreneurshipworldcup.com/100-startups-qualify-for-the-entrepreneurship-world-cup-global-finals-in-saudi-arabia/",
+          "proposal": "low_for_general_finalists_medium_for_explicit_idea_tracks",
+          "harvest": "Require an explicitly documented idea/pre-launch track and named participants before harvesting. For SME owners, require an owner-described first-software project; discard technology suppliers selling products.",
+          "cadence": "edition_intake_check_only",
+          "caveat": "No current idea-track eligibility verified in this review; do not assume one exists.",
+          "live_checked": "Stored source review only"
+        },
+        {
+          "id": "biban-forum",
+          "source": "Biban Forum startup and SME programme",
+          "url": "https://my.gov.sa/en/events/1240833",
+          "proposal": "low_for_general_finalists_medium_for_explicit_idea_tracks",
+          "harvest": "Require an explicitly documented idea/pre-launch track and named participants before harvesting. For SME owners, require an owner-described first-software project; discard technology suppliers selling products.",
+          "cadence": "edition_intake_check_only",
+          "caveat": "No current idea-track eligibility verified in this review; do not assume one exists.",
+          "live_checked": "Stored source review only"
+        },
+        {
+          "id": "leap-rocket-fuel",
+          "source": "LEAP Rocket Fuel Startup Pitch Competition",
+          "url": "https://onegiantleap.com/startup/rocketfuel-pitch-competition-stage",
+          "proposal": "low_for_general_finalists_medium_for_explicit_idea_tracks",
+          "harvest": "Require an explicitly documented idea/pre-launch track and named participants before harvesting. For SME owners, require an owner-described first-software project; discard technology suppliers selling products.",
+          "cadence": "edition_intake_check_only",
+          "caveat": "No current idea-track eligibility verified in this review; do not assume one exists.",
+          "live_checked": "Stored source review only"
+        },
+        {
+          "id": "money20-middle-east-startups",
+          "source": "Money20/20 Middle East Investor and Startup Programme",
+          "url": "https://money2020middleeast.com/exhibitor/2025-exhibitors-list",
+          "proposal": "low_for_general_finalists_medium_for_explicit_idea_tracks",
+          "harvest": "Require an explicitly documented idea/pre-launch track and named participants before harvesting. For SME owners, require an owner-described first-software project; discard technology suppliers selling products.",
+          "cadence": "edition_intake_check_only",
+          "caveat": "No current idea-track eligibility verified in this review; do not assume one exists.",
+          "live_checked": "Stored source review only"
+        },
+        {
+          "id": "svc-reports",
+          "source": "Saudi Venture Capital Reports",
+          "url": "https://svc.com.sa/en/reports/",
+          "proposal": "low_for_acquisition_high_for_candidate_verification",
+          "harvest": "Search only an already-discovered exact venture to verify financing, existing product, named founders and stage; label source role as corroboration or exclusion. Any new seed requires independent pre-build evidence.",
+          "cadence": "on_candidate_demand",
+          "caveat": "Class-level strategy recommendation based on the stored source definitions, not a fresh audit of each website.",
+          "live_checked": "Stored source review only"
+        },
+        {
+          "id": "raed-portfolio",
+          "source": "RAED Ventures Portfolio",
+          "url": "https://raed.vc/portfolio/",
+          "proposal": "low_for_acquisition_high_for_candidate_verification",
+          "harvest": "Search only an already-discovered exact venture to verify financing, existing product, named founders and stage; label source role as corroboration or exclusion. Any new seed requires independent pre-build evidence.",
+          "cadence": "on_candidate_demand",
+          "caveat": "Class-level strategy recommendation based on the stored source definitions, not a fresh audit of each website.",
+          "live_checked": "Stored source review only"
+        },
+        {
+          "id": "waed-portfolio-news",
+          "source": "Wa'ed Ventures Portfolio and News",
+          "url": "https://www.waed.com/",
+          "proposal": "low_for_acquisition_high_for_candidate_verification",
+          "harvest": "Search only an already-discovered exact venture to verify financing, existing product, named founders and stage; label source role as corroboration or exclusion. Any new seed requires independent pre-build evidence.",
+          "cadence": "on_candidate_demand",
+          "caveat": "Class-level strategy recommendation based on the stored source definitions, not a fresh audit of each website.",
+          "live_checked": "Stored source review only"
+        },
+        {
+          "id": "impact46-portfolio-news",
+          "source": "Impact46 Portfolio and News",
+          "url": "https://impact46.sa/",
+          "proposal": "low_for_acquisition_high_for_candidate_verification",
+          "harvest": "Search only an already-discovered exact venture to verify financing, existing product, named founders and stage; label source role as corroboration or exclusion. Any new seed requires independent pre-build evidence.",
+          "cadence": "on_candidate_demand",
+          "caveat": "Class-level strategy recommendation based on the stored source definitions, not a fresh audit of each website.",
+          "live_checked": "Stored source review only"
+        },
+        {
+          "id": "wamda-saudi-feed",
+          "source": "Wamda Saudi Arabia News Feed",
+          "url": "https://www.wamda.com/country/saudi-arabia",
+          "proposal": "low_for_acquisition_high_for_candidate_verification",
+          "harvest": "Search only an already-discovered exact venture to verify financing, existing product, named founders and stage; label source role as corroboration or exclusion. Any new seed requires independent pre-build evidence.",
+          "cadence": "on_candidate_demand",
+          "caveat": "Class-level strategy recommendation based on the stored source definitions, not a fresh audit of each website.",
+          "live_checked": "Stored source review only"
+        },
+        {
+          "id": "launchx-riyadh",
+          "source": "LaunchX Riyadh Founder Community and Demo Days",
+          "url": "https://www.launch-x.ventures/",
+          "proposal": "medium_experimental",
+          "harvest": "Time-box a current named-founder pass; retain only explicit unbuilt concepts; record reviewed and accepted counts before giving the channel more time.",
+          "cadence": "one 60-minute pilot, then yield-based",
+          "caveat": "Not refreshed online here. Project Startup's stored evidence is from 2025.",
+          "live_checked": "Stored source review only"
+        },
+        {
+          "id": "startsmart-saudi-2026",
+          "source": "StartSmart Saudi Arabia finalist teams",
+          "url": "https://www.startsmartsaudi.com/sites/default/files/2026-02/teams_1.pdf",
+          "proposal": "medium_historical_revalidation",
+          "harvest": "Keep the 9th-edition roster as a historical discovery queue and recheck every product today. Create a separate 10th-edition source; shortlist manual-service businesses only if the first core software product remains unbuilt.",
+          "cadence": "one historical revalidation pass; then per new edition",
+          "caveat": "The 10th-edition technical credits are not vendor cash. Do not carry the earlier edition's grants or stage assumptions into the new cohort.",
+          "live_checked": "Selected official checks; see limitations"
+        },
+        {
+          "id": "lr-linkedin-intent-search",
+          "source": "LinkedIn product-intent post search",
+          "url": "https://www.linkedin.com/search/results/content/",
+          "proposal": "high",
+          "harvest": "Run small read-only recent-post searches for exact phrases such as looking for an app development company, MVP development partner, developing our first app, seeking a technical cofounder, أبحث عن شركة برمجة, تطوير تطبيق لمشروعي, نبحث عن شريك تقني, and نعمل على نموذج أولي, then apply Saudi geography terms. Tag paid vendor request, employee vacancy, equity-only co-founder request, or unclear separately; exact-name verification follows discovery.",
+          "cadence": "two short passes weekly",
+          "caveat": "These are proposed search phrases, not verified buyer posts. Cofounder or employee searches establish a possible capacity gap but not paid-vendor demand; public post visibility and commercial limits may constrain coverage.",
+          "live_checked": "Stored source review only"
+        },
+        {
+          "id": "lr-linkedin-misk-entrepreneurship",
+          "source": "Misk Entrepreneurship LinkedIn stream",
+          "url": "https://www.linkedin.com/company/miskentrepreneurship",
+          "proposal": "high",
+          "harvest": "Read current official Ideate/Build cohort posts and founders' own statements. Ignore congratulations, likes and follower lists; attribute discovery to Misk plus this access channel.",
+          "cadence": "weekly",
+          "caveat": "Program site and its LinkedIn account are one underlying organization, not independent corroboration.",
+          "live_checked": "Selected official checks; see limitations"
+        },
+        {
+          "id": "lr-linkedin-500-mena",
+          "source": "500 MENA and Sanabil Startup Unlocked LinkedIn stream",
+          "url": "https://www.linkedin.com/company/500mena",
+          "proposal": "high_for_startup_unlocked_only",
+          "harvest": "Inspect the next publicly announced Startup Unlocked intake and named participant introductions. Record the exact program name and cohort; investigate pre-MVP entrants before bootcamp completion.",
+          "cadence": "monthly; weekly during active intake",
+          "caveat": "The verified February 2026 event is past; no future date is asserted. Existing companies expanding into Saudi must be filtered out if their core product already operates.",
+          "live_checked": "Selected official checks; see limitations"
+        },
+        {
+          "id": "lr-linkedin-zero-to-one",
+          "source": "Zero to One | صفر لواحد LinkedIn page",
+          "url": "https://www.linkedin.com/company/ztosa/",
+          "proposal": "low",
+          "harvest": "Use exact-venture lookup; only first-product plans enter the discovery queue.",
+          "cadence": "on_candidate_demand",
+          "caveat": "Publisher praise and engagement do not prove buying demand.",
+          "live_checked": "Stored source review only"
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "audit",
+      "label": "Row-by-row local evidence audit, reviewed 5 September 2026",
+      "path": "outputs/lead-research/review-2026-09-05/lead-audit.json",
+      "query": {
+        "engine": "JavaScript",
+        "language": "javascript",
+        "query": "import { readFileSync, writeFileSync } from 'node:fs';\nimport { createHash } from 'node:crypto';\nimport { fileURLToPath } from 'node:url';\nimport { dirname, resolve } from 'node:path';\nimport assert from 'node:assert/strict';\n\nconst here = dirname(fileURLToPath(import.meta.url));\nconst root = resolve(here, '../../..');\nconst read = p => JSON.parse(readFileSync(resolve(root, p), 'utf8'));\nconst base = 'outputs/lead-research/review-2026-09-05/';\nconst audit = read(base + 'lead-audit.json');\nconst strategy = read(base + 'source-strategy.json');\nconst original = read('assets/lead-research/saudi-software-leads.json');\nconst resources = read('assets/lead-research/saudi-lead-resources.json');\nconst generatedAt = new Date().toISOString();\nconst labels = { suggested_exclude: 'Exclude from campaign', needs_verification: 'Hold for verification', promising_for_verification: 'Investigate first' };\nconst rank = { promising_for_verification: 1, needs_verification: 3, suggested_exclude: 4 };\nassert.equal(audit.rows.length, 50);\nassert.equal(new Set(audit.rows.map(r => r.id)).size, 50);\nassert.deepEqual(audit.rows.map(r => r.id).sort(), original.rows.map(r => r.id).sort());\nfor (const row of audit.rows) {\n  const old = original.rows.find(r => r.id === row.id);\n  assert.equal(row.current_score, old.qualification.total_score);\n  assert.equal(row.current_band, old.qualification.band);\n  assert.equal(row.team_gate.proven_software_people_upper_bound, null);\n}\nconst outcomes = Object.entries(labels).map(([key, outcome]) => ({ outcome, count: audit.rows.filter(r => r.suggested_verdict === key).length }));\nassert.deepEqual(outcomes.map(r => r.count), [38, 7, 5]);\nconst leadRows = audit.rows.map(r => ({\n  priority: r.research_priority === 'low' && r.suggested_verdict === 'promising_for_verification' ? 2 : rank[r.suggested_verdict],\n  id: r.id, name: r.display_name, company: r.company,\n  proposal: labels[r.suggested_verdict], original_score: r.current_score, original_band: r.current_band,\n  recorded_stage: r.stored_lifecycle_stage, product_reason: r.product_gate.reason,\n  team_reason: r.team_gate.reason, next_check: r.next_check,\n  evidence_url: r.evidence[0]?.url ?? null,\n})).sort((a, b) => a.priority - b.priority || a.company.localeCompare(b.company));\nconst revisions = [...strategy.resource_revisions, ...strategy.grouped_resource_revisions.flatMap(r => r.resource_ids.map(id => ({...r, resource_id:id})))];\nconst resourceRows = resources.rows.filter(r => r.classification === 'accepted').map(r => {\n  const revision = revisions.find(v => v.resource_id === r.id);\n  assert.ok(revision, `Missing source revision: ${r.id}`);\n  return { id:r.id, source:r.name, url:r.url, proposal:revision.priority_revision,\n    harvest:revision.extraction_recipe, cadence:revision.cadence, caveat:revision.limitation,\n    live_checked: revision.verification_ids?.length ? 'Selected official checks; see limitations' : 'Stored source review only' };\n});\nassert.equal(resourceRows.length,25);\nconst s = audit.summary;\nconst flags = [\n  {flag:'No complete software-team ceiling audit',count:s.missing_complete_current_software_team_audit},\n  {flag:'Outsourcing likelihood recorded unknown',count:s.stored_outsourcing_level_unknown},\n  {flag:'Total employee band missing or unknown',count:s.missing_or_unknown_structured_total_employee_band},\n  {flag:'Already labeled launched or operating',count:s.current_lifecycle_counts.launched+s.current_lifecycle_counts.operating},\n  {flag:'All evidence publication dates missing',count:s.leads_with_all_evidence_publication_dates_missing},\n  {flag:'Generic placeholder product summary',count:s.placeholder_product_summaries},\n].map(r => ({...r, denominator:50, share:r.count/50}));\nconst sources = [\n  {id:'audit',label:'Row-by-row local evidence audit, reviewed 5 September 2026',path:base+'lead-audit.json',query:{engine:'JavaScript',language:'javascript',query:readFileSync(resolve(here,'build-review.mjs'),'utf8'),description:'Reproducible counts from canonical rows and reviewed assessment; overlap flags are not additive.',tables_used:['assets/lead-research/saudi-software-leads.json',base+'lead-audit.json']}},\n  {id:'plan',label:'Revised persona and execution plan',path:base+'revised-plan.md'},\n  {id:'code',label:'Qualification generator and validator review',path:base+'qualification-review.md'},\n  {id:'strategy',label:'Source strategy and dated official checks',path:base+'source-strategy.json'},\n  ...strategy.first_party_verifications.map(v => ({id:v.id,label:v.id+' — checked '+v.checked_at,href:v.url})),\n  {id:'stoqa',label:'STOQA Android listing, read 5 September 2026',href:'https://play.google.com/store/apps/details?id=ai.stoqa.app'},\n  {id:'vision',label:'Vision Mate technical co-founder role, read 5 September 2026',href:'https://sa.linkedin.com/jobs/view/technical-co-founder-at-vision-mate-4460498663'},\n  {id:'jadi',label:'Jadi CTO role, read 5 September 2026',href:'https://sa.linkedin.com/jobs/view/4399318887'},\n  {id:'book',label:'BookMyGuide founder project post, read 5 September 2026',href:'https://www.linkedin.com/posts/hayath-kargal-b0b17057_vision2030-ntdp-mvplab-activity-7412319001252618240-2TT5'},\n];\nconst title = 'Saudi lead research: revised pre-build buyer plan';\nconst markdown = (id,body,sourceId='plan') => ({id,type:'markdown',body,sourceId});\nconst table = (id,title,dataset,columns,sort,sourceId='audit') => ({id,title,dataset,columns:columns.map(([field,label])=>({field,label})),defaultSort:{field:sort,direction:sort==='count'?'desc':'asc'},density:'dense',sourceId,layout:'full'});\nconst artifact = {\n  surface:'report',\n  manifest:{version:1,surface:'report',title,generatedAt,description:'Review of all 50 existing candidates and 25 accepted resources. Proposed changes only; live data unchanged.',sources,\n    charts:[{id:'coverage',title:'Missing team evidence prevents any confirmed v2 fit',subtitle:'Number of records out of 50; flags overlap and must not be added.',type:'horizontalBar',dataset:'flags',sourceId:'audit',intent:'comparison',question:'Which recorded evidence gaps and maturity signals undermine the current labels?',rationale:'A horizontal bar comparison makes the scale of six audit flags visible without suggesting mutually exclusive groups.',comparisonContext:{denominator:'50 reviewed records',grain:'one flag',unit:'records',semanticFamily:'overlapping audit flags'},encodings:{x:{field:'flag',type:'nominal',label:'Audit flag'},y:{field:'count',type:'quantitative',label:'Records',unit:'records'},tooltip:[{field:'denominator',label:'Reviewed records'},{field:'share',format:'percent',label:'Share of 50'}]},valueFormat:'number',layout:'full'}],\n    tables:[\n      table('outcomes','Proposed dispositions — all remain unqualified under v2','outcomes',[['outcome','Proposed disposition'],['count','Records']],'count'),\n      table('flags','Exact audit flag counts','flags',[['flag','Flag'],['count','Records'],['denominator','Reviewed records']],'count'),\n      table('queue','Twelve candidates retained for investigation','queue',[['priority','Order'],['name','Person'],['company','Project'],['proposal','Proposal'],['next_check','Next check']],'priority'),\n      table('all-leads','All 50 proposed lead decisions','leads',[['priority','Order'],['name','Person'],['company','Project'],['proposal','Proposal'],['product_reason','Product finding'],['team_reason','Team gap'],['next_check','Next check'],['evidence_url','Evidence URL']],'priority'),\n      table('resources','All 25 accepted resources — proposed revised use','resources',[['source','Source'],['proposal','Revised priority'],['harvest','Harvesting instructions'],['cadence','Cadence'],['caveat','Limitation'],['url','URL']],'source','strategy'),\n    ],\n    blocks:[\n      markdown('title','# '+title+'\\n\\nResearch review dated 5 September 2026. Three parallel reviews covered the list, qualification logic and discovery sources. The canonical list and application remain unchanged.'),\n      markdown('executive','## Executive Summary\\n\\nRecommend excluding 38 prospects, investigating five first, and retaining seven other holds. None currently has sufficient evidence to confirm all revised gates. This is a review of all stored records and 156 evidence summaries, supplemented by selected live checks; it is not 50 new external profile verifications.\\n\\nThe desired buyer has a specific first software project whose core functionality remains unbuilt and a supported maximum of two software builders. Paid external-delivery demand is a separate commercial question.','audit'),\n      {id:'outcome-table',type:'table',tableId:'outcomes',sourceId:'audit'},\n      markdown('failure','## Why the current list overstates fit\\n\\nForty-seven records explicitly mark outsourcing likelihood unknown, yet 44 are labeled qualified and all 50 have high qualification confidence. At least 26 are labeled launched or operating; further built products appear among unknown-stage rows. All seven A labels lack the qualitative support required by the stored rubric.\\n\\nThe team-ceiling gap is universal. This does not mean all teams are large; it means the evidence cannot yet establish that they are small enough. The total-employee field is also missing frequently, but total employees and software builders are different quantities.','audit'),\n      {id:'coverage-chart',type:'chart',chartId:'coverage',sourceId:'audit'},\n      {id:'coverage-table',type:'table',tableId:'flags',sourceId:'audit'},\n      markdown('gates','## Apply gates before commercial scoring\\n\\nRequire supported identity and authority, a specific Saudi-market build, unbuilt core functionality, no more than two current software builders, and a current initiative. An unresolved gate stays on hold; a failed gate makes the project out of scope. A company-controlled full-team statement can support a maximum; a partial LinkedIn roster only establishes a visible minimum.\\n\\nCount hands-on technical founders, employees and known contractors. Record assigned vendors separately. A functional private app can already fail the product gate; a brochure site does not disqualify an SME’s first custom build. Avoid industry-wide exclusions.\\n\\nFor confirmed fits, score build commitment (6), paid external intent (6), available project funds (4) and timing (4). Unknowns earn no affirmative points. Equity-only hiring and noncash credits do not prove a paid development opportunity. Preserve those candidates in a research pool when otherwise relevant.'),\n      markdown('candidate-story','## Recheck the best unresolved candidates first\\n\\nurCASH, Wathba, Jadi and Vision Mate have useful pre-build signals, with current team and commercial gaps. BookMyGuide is lower priority because its Saudi entry and current activity remain unresolved. The seven other holds are Smart Quotation, Gaia, Ballora, Zakn AI, GreenVision, Suhail and Mara.\\n\\nSTOQA’s [available Android product](https://play.google.com/store/apps/details?id=ai.stoqa.app) supports exclusion for this campaign. [Vision Mate](https://sa.linkedin.com/jobs/view/technical-co-founder-at-vision-mate-4460498663) is an equity-based wearable/AI co-founder opportunity. [Jadi](https://sa.linkedin.com/jobs/view/4399318887) is a closed equity CTO listing. [BookMyGuide’s post](https://www.linkedin.com/posts/hayath-kargal-b0b17057_vision2030-ntdp-mvplab-activity-7412319001252618240-2TT5) describes planned Saudi entry and a program application, not a confirmed grant. None is a verified paid-agency lead.','audit'),\n      {id:'queue-table',type:'table',tableId:'queue',sourceId:'audit'},\n      markdown('source-story','## Find founders earlier and test manual-business demand\\n\\nPrioritize current pre-incubation admissions, specific public first-build requests, and owners of non-software SMEs planning their first custom product. Use portfolios, funding news and demo days to verify maturity and funds.\\n\\n[Misk Launchpad](https://hub.misk.org.sa/en/programs/entrepreneurship/misk-launchpad/) lists its next cohort starting 6 September 2026, initially in Ideate. [Sanabil Accelerator](https://mena.500.co/founders/mena/seed-accelerator) requires an MVP and early traction. [StartSmart’s tenth edition](https://startsmartsaudi.com/programs/competitions?page=1) excludes idea-only applicants and offers technical benefits rather than cash. Record exact program, edition and phase. Admission alone proves neither an unbuilt product nor a paid build budget.\\n\\nPilot [Antler Riyadh residency](https://www.antler.co/location/menap) introductions and public Saudi first-app briefs. These are discovery experiments; no new yield has been measured. Ordinary LinkedIn remains useful for small exact-name checks. No outreach, interactions or contact enrichment are part of the plan.','strategy'),\n      markdown('execution','## Next steps and success measures\\n\\n1. Preserve v1 and implement claim-backed v2 eligibility without overwriting research notes. Fix hardcoded verified gates, stage substring inference, automatic review timestamps and unrelated fallback evidence.\\n2. Calibrate ten contrasting examples, then run independent discovery streams for pre-incubation, public build requests and manual SMEs. Apply the product screen before spending time on deep team enrichment.\\n3. Verify plausible candidates’ remaining gaps in parallel and publish valid partial batches. Fifty is a goal, not a requirement for data validity.\\n4. Track unique reviewed candidates, confirmed fits, paid external demand, exclusions and research minutes. Separate discovery attribution from corroboration and preserve v1 yields. After two 20-candidate source passes each yield fewer than two new confirmed fits, pause and redirect that channel.\\n5. Show product status, supported team ceiling, evidence coverage, paid intent and next research action. Keep evidence grouped by claim in the centered modal.\\n\\nAcceptance should mean zero unsupported active qualifications. It should not depend on filling exactly 50 rows.','code'),\n      markdown('caveats','## Caveats and further questions\\n\\nThe 38 exclusions are proposed from recorded evidence, not assertions that every person has been freshly investigated. “Zero confirmed fits” measures evidence sufficiency and does not prove zero suitable founders exist. Public research may leave team ceilings unresolved; do not contact founders to fill those gaps within this scope. The new scoring thresholds are uncalibrated operational rules.\\n\\nNine official/program-source checks were attempted; some pages were partial, historical or unreadable. Current website checks did not yield readable urCASH or MVP Lab text. Missing content proves nothing about product or funding. Twelve candidates remain investigable, and no replacement lead count or future source yield is claimed.\\n\\nPilot questions: which channel produces confirmed fits fastest, how often do fits want paid external help, whether manual SMEs show more cash readiness, and which programs assign their own providers?','strategy'),\n      markdown('appendix','## Full proposed lead and resource revisions\\n\\nThe tables preserve original identities and attach proposed reasons and next checks. Original scores are retained in the companion CSV/JSON for comparison, not endorsed as current v2 priorities.','audit'),\n      {id:'all-lead-table',type:'table',tableId:'all-leads',sourceId:'audit'},\n      {id:'resource-table',type:'table',tableId:'resources',sourceId:'strategy'},\n    ]\n  },\n  snapshot:{version:1,generatedAt,status:'ready',datasets:{outcomes,flags,queue:leadRows.filter(r=>r.proposal!=='Exclude from campaign'),leads:leadRows,resources:resourceRows}},sources\n};\nconst csv = rows => {\n  const columns = Object.keys(rows[0]);\n  const cell = x => '\"'+String(x??'').replaceAll('\"','\"\"')+'\"';\n  return [columns.map(cell).join(','),...rows.map(r=>columns.map(k=>cell(r[k])).join(','))].join('\\n')+'\\n';\n};\nwriteFileSync(resolve(here,'artifact.json'),JSON.stringify(artifact,null,2)+'\\n');\nwriteFileSync(resolve(here,'revised-lead-list.csv'),csv(leadRows));\nwriteFileSync(resolve(here,'revised-resources.csv'),csv(resourceRows));\nconst hashes = ['saudi-lead-persona.json','saudi-lead-resources.json','saudi-software-leads.json'].map(file=>({file:'assets/lead-research/'+file,sha256:createHash('sha256').update(readFileSync(resolve(root,'assets/lead-research',file))).digest('hex')}));\nwriteFileSync(resolve(here,'review-checks.json'),JSON.stringify({checked_at:generatedAt,rows:50,resources:25,outcomes,canonical_hashes:hashes,tests:'IDs, original mappings, row counts, team unknowns and all accepted-resource coverage passed',chart_contract:{question:artifact.manifest.charts[0].question,takeaway:'Universal team evidence gap; stored confidence is unsupported',form:'horizontalBar',palette:'single default categorical series, count magnitude',encoding:'flag category and count of records',overlap:'Flags overlap; denominator 50 for each',qa:'Counts recomputed from audited snapshot and compared to row-level totals'},canonical_files_modified:false},null,2)+'\\n');\nconsole.log(JSON.stringify({ok:true,leadRows:leadRows.length,resourceRows:resourceRows.length,outcomes,artifact:'artifact.json'}));\n",
+        "description": "Reproducible counts from canonical rows and reviewed assessment; overlap flags are not additive.",
+        "tables_used": [
+          "assets/lead-research/saudi-software-leads.json",
+          "outputs/lead-research/review-2026-09-05/lead-audit.json"
+        ]
+      }
+    },
+    {
+      "id": "plan",
+      "label": "Revised persona and execution plan",
+      "path": "outputs/lead-research/review-2026-09-05/revised-plan.md"
+    },
+    {
+      "id": "code",
+      "label": "Qualification generator and validator review",
+      "path": "outputs/lead-research/review-2026-09-05/qualification-review.md"
+    },
+    {
+      "id": "strategy",
+      "label": "Source strategy and dated official checks",
+      "path": "outputs/lead-research/review-2026-09-05/source-strategy.json"
+    },
+    {
+      "id": "misk-current",
+      "label": "misk-current — checked 2026-09-05",
+      "href": "https://hub.misk.org.sa/en/programs/entrepreneurship/misk-launchpad/"
+    },
+    {
+      "id": "garage-current",
+      "label": "garage-current — checked 2026-09-05",
+      "href": "https://thegarage.sa/"
+    },
+    {
+      "id": "sanabil-accelerator-current",
+      "label": "sanabil-accelerator-current — checked 2026-09-05",
+      "href": "https://mena.500.co/founders/mena/seed-accelerator"
+    },
+    {
+      "id": "startup-unlocked-official-post",
+      "label": "startup-unlocked-official-post — checked 2026-09-05",
+      "href": "https://www.linkedin.com/posts/500mena_what-happens-when-you-take-an-idea-a-whiteboard-activity-7395914835504295936-3kGH"
+    },
+    {
+      "id": "startsmart-ninth-edition",
+      "label": "startsmart-ninth-edition — checked 2026-09-05",
+      "href": "https://competition.startsmartsaudi.com/"
+    },
+    {
+      "id": "startsmart-tenth-edition",
+      "label": "startsmart-tenth-edition — checked 2026-09-05",
+      "href": "https://startsmartsaudi.com/programs/competitions?page=1"
+    },
+    {
+      "id": "monshaat-digitization-workshop",
+      "label": "monshaat-digitization-workshop — checked 2026-09-05",
+      "href": "https://www.monshaat.gov.sa/en/node/13506"
+    },
+    {
+      "id": "ntdp-mvp-lab",
+      "label": "ntdp-mvp-lab — checked 2026-09-05",
+      "href": "https://ntdp.gov.sa/en/initiative/mvplab"
+    },
+    {
+      "id": "antler-menap-residency",
+      "label": "antler-menap-residency — checked 2026-09-05",
+      "href": "https://www.antler.co/location/menap"
+    },
+    {
+      "id": "stoqa",
+      "label": "STOQA Android listing, read 5 September 2026",
+      "href": "https://play.google.com/store/apps/details?id=ai.stoqa.app"
+    },
+    {
+      "id": "vision",
+      "label": "Vision Mate technical co-founder role, read 5 September 2026",
+      "href": "https://sa.linkedin.com/jobs/view/technical-co-founder-at-vision-mate-4460498663"
+    },
+    {
+      "id": "jadi",
+      "label": "Jadi CTO role, read 5 September 2026",
+      "href": "https://sa.linkedin.com/jobs/view/4399318887"
+    },
+    {
+      "id": "book",
+      "label": "BookMyGuide founder project post, read 5 September 2026",
+      "href": "https://www.linkedin.com/posts/hayath-kargal-b0b17057_vision2030-ntdp-mvplab-activity-7412319001252618240-2TT5"
+    }
+  ]
+}

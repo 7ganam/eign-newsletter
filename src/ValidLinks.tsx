@@ -2,6 +2,7 @@ import { useVirtualizer } from '@tanstack/react-virtual'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { CSSProperties } from 'react'
 import { ColumnResizeHandle, useResizableColumns } from './resizableColumns'
+import { ArchiveToolbar, RowSelectionCell, RowSelectionHeader, useRowArchive } from './rowArchive'
 import { usePersistedSort } from './tablePreferences'
 import { WorkspaceNav } from './WorkspaceNav'
 
@@ -87,6 +88,8 @@ export function ValidLinks() {
         * (sortDirection === 'asc' ? 1 : -1)
       ))
   }, [data, query, sortDirection, sortField])
+  const archive = useRowArchive({ tableId: 'valid-links', visibleRowIds: rows.map((row) => row.__rowId) })
+  const displayedRows = rows.filter((row) => archive.showArchived === archive.isArchived(row.__rowId))
 
   useEffect(() => {
     setSelectedCell(null)
@@ -94,11 +97,11 @@ export function ValidLinks() {
   }, [query, sortDirection, sortField])
 
   const virtualizer = useVirtualizer({
-    count: rows.length,
+    count: displayedRows.length,
     getScrollElement: () => scrollRef.current,
     estimateSize: () => ROW_HEIGHT,
     overscan: 16,
-    getItemKey: (index) => rows[index]?.__rowId ?? index,
+    getItemKey: (index) => displayedRows[index]?.__rowId ?? index,
   })
 
   const gridTemplateColumns = `48px ${COLUMN_KEYS.map((column) => `${widths[column]}px`).join(' ')}`
@@ -116,7 +119,7 @@ export function ValidLinks() {
     }
   }
 
-  const selectedRow = selectedCell ? rows[selectedCell.rowIndex] : null
+  const selectedRow = selectedCell ? displayedRows[selectedCell.rowIndex] : null
   const selectedColumn = selectedCell ? COLUMN_KEYS[selectedCell.columnIndex] : null
   const selectedValue = selectedRow && selectedColumn ? selectedRow[selectedColumn] : ''
   const selectedLink = selectedRow?.url ?? ''
@@ -149,7 +152,7 @@ export function ValidLinks() {
           <dl>
             <div><dt>Total links</dt><dd>{data?.summary.total.toLocaleString() ?? '—'}</dd></div>
             <div><dt>Unique URLs</dt><dd>{data?.summary.unique.toLocaleString() ?? '—'}</dd></div>
-            <div><dt>Visible</dt><dd>{rows.length.toLocaleString()}</dd></div>
+            <div><dt>Visible</dt><dd>{displayedRows.length.toLocaleString()}</dd></div>
           </dl>
         </section>
 
@@ -162,8 +165,10 @@ export function ValidLinks() {
             {sortDirection === 'asc' ? '↑' : '↓'} {COLUMNS.find((column) => column.key === sortField)?.label}
           </button>
           {query && <button className="software-clear-filters" onClick={() => setQuery('')}>Clear search</button>}
-          <span className="software-result-count">{rows.length.toLocaleString()} rows</span>
+          <span className="software-result-count">{displayedRows.length.toLocaleString()} rows</span>
         </div>
+
+        <ArchiveToolbar archive={archive} noun="links" />
 
         <div className="software-formula-bar">
           <output>{selectedCell && selectedColumn ? `${selectedColumn} · row ${selectedCell.rowIndex + 1}` : '—'}</output>
@@ -177,7 +182,7 @@ export function ValidLinks() {
           <div className="software-grid-scroll" ref={scrollRef}>
             <div className="software-grid" style={gridStyle}>
               <div className="software-grid-header">
-                <div className="software-row-number">#</div>
+                <div className="software-row-number"><RowSelectionHeader allSelected={archive.allVisibleSelected} onToggle={archive.toggleAllVisible} someSelected={archive.someVisibleSelected} /></div>
                 {COLUMNS.map((column) => (
                   <div className={`software-column-header${sortField === column.key ? ' is-sorted' : ''}`} key={column.key}>
                     <button className="software-column-sort" onClick={() => sortBy(column.key)}>
@@ -190,10 +195,10 @@ export function ValidLinks() {
               </div>
               <div className="software-virtual-body" style={{ height: `${virtualizer.getTotalSize()}px` }}>
                 {virtualizer.getVirtualItems().map((virtualRow) => {
-                  const row = rows[virtualRow.index]
+                  const row = displayedRows[virtualRow.index]
                   return (
                     <div className="software-data-row" key={virtualRow.key} style={{ height: `${virtualRow.size}px`, transform: `translateY(${virtualRow.start}px)` }}>
-                      <div className="software-row-number">{virtualRow.index + 1}</div>
+                      <div className="software-row-number"><RowSelectionCell checked={archive.selectedIds.has(row.__rowId)} label={`Select ${row.organization}`} onToggle={() => archive.toggleRow(row.__rowId)} /></div>
                       {COLUMN_KEYS.map((column, columnIndex) => {
                         const value = row[column]
                         const selected = selectedCell?.rowIndex === virtualRow.index && selectedCell.columnIndex === columnIndex
@@ -223,14 +228,14 @@ export function ValidLinks() {
                   )
                 })}
               </div>
-              {!rows.length && <div className="software-empty">No links match the current search.</div>}
+              {!displayedRows.length && <div className="software-empty">{archive.showArchived ? 'No archived links match the current search.' : 'No links match the current search.'}</div>}
             </div>
           </div>
         )}
 
         <footer className="software-statusbar">
           <span>{data?.source ?? 'valid links.json'}</span>
-          <span>{rows.length.toLocaleString()} of {data?.summary.total.toLocaleString() ?? '—'} links</span>
+          <span>{displayedRows.length.toLocaleString()} of {data?.summary.total.toLocaleString() ?? '—'} links</span>
         </footer>
       </main>
     </div>

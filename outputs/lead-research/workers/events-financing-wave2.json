@@ -1,0 +1,1061 @@
+{
+  "schema_version": "events-financing-wave2.v1",
+  "lane": "events_financing_wave2",
+  "researched_at": "2026-09-03",
+  "scope": "Bounded second pass for 2025-2026 Saudi funding, portfolio, demo-day and first-party launch signals. Only genuinely new founders with all four active gates and a C-or-better deterministic score are promoted.",
+  "scoring_policy": {
+    "product_intent_range": "0-6",
+    "outsourcing_likelihood_range": "0-5",
+    "budget_readiness_range": "0-5",
+    "timing_range": "0-4",
+    "penalties_range": "0-8",
+    "formula": "product_intent + outsourcing_likelihood + budget_readiness + timing - penalties",
+    "bands": {
+      "A": "15-20",
+      "B": "10-14",
+      "C": "5-9",
+      "D": "0-4"
+    },
+    "capacity_rule": "Unknown capacity stays unknown. No record receives more than one outsourcing-likelihood point without explicit evidence of external-partner intent or a documented team audit.",
+    "verification_rule": "Every promoted record needs a confirmed identity, Saudi-market basis, buying authority, plausible custom-software need and at least one primary source. A/B records also need a second independent source."
+  },
+  "evidence_catalog": [
+    {
+      "url": "https://sa.linkedin.com/company/gaiaplatform",
+      "source_title": "Gaia | LinkedIn",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_company_profile",
+      "confidence": "high",
+      "paraphrase": "The company identifies Gaia as a Riyadh-based sovereign enterprise-AI platform, lists an 11-50 employee band, and carries recent build and NVIDIA Inception updates."
+    },
+    {
+      "url": "https://gaia.sa/about",
+      "source_title": "About Gaia - Sovereign Enterprise AI from Saudi Arabia",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_company",
+      "confidence": "high",
+      "paraphrase": "Gaia describes a Saudi-hosted enterprise-AI system connecting organizational data, systems and workflows, with private early access and local data residency."
+    },
+    {
+      "url": "https://sa.linkedin.com/in/mohammad-rababah-707b02146",
+      "source_title": "Mohammad Rababah | LinkedIn",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_founder_profile",
+      "confidence": "high",
+      "paraphrase": "Rababah identifies himself as Gaia co-founder and CPTO and published a 2026 account of starting and building the venture with Badr Al-Malluh."
+    },
+    {
+      "url": "https://sa.linkedin.com/in/badr-al-malluh-097746121",
+      "source_title": "Badr Al-Malluh | LinkedIn",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_founder_profile",
+      "confidence": "high",
+      "paraphrase": "Al-Malluh identifies himself as Gaia co-founder and CEO and documents the venture's 2026 start and active product-building work."
+    },
+    {
+      "url": "https://www.crunchbase.com/organization/gaia-2e2a",
+      "source_title": "Gaia company profile | Crunchbase",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "company_database",
+      "confidence": "medium",
+      "paraphrase": "The independent company profile corroborates Gaia's Riyadh base, enterprise-AI product and the CEO and CPTO leadership identities."
+    },
+    {
+      "url": "https://sa.linkedin.com/company/smart-quotation.sa",
+      "source_title": "Smart Quotation | LinkedIn",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_company_profile",
+      "confidence": "high",
+      "paraphrase": "The company identifies itself as a Jubail-based Saudi AI industrial-procurement marketplace founded in 2026 and describes its RFQ-to-transaction workflow and current platform build."
+    },
+    {
+      "url": "https://sa.linkedin.com/in/radhi20999",
+      "source_title": "Radhi Alshammari | LinkedIn",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_founder_profile",
+      "confidence": "high",
+      "paraphrase": "Alshammari identifies himself as Smart Quotation's founder and CEO and documents active work on the Saudi industrial marketplace."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/smart-quotation.sa_smartquotation-industrialmarketplace-saudiarabia-activity-7475556550531788800-RPYa",
+      "source_title": "Smart Quotation onboards suppliers in Saudi Arabia",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_company",
+      "confidence": "high",
+      "paraphrase": "A current company update says the team is building the AI-powered marketplace and onboarding supplier partners across Saudi Arabia."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/smartquotation_flat6labs-start-smart-activity-7388390766714187777-4WeC",
+      "source_title": "Radhi Alshammari on Smart Quotation and StartSmart",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_founder",
+      "confidence": "high",
+      "paraphrase": "The founder describes the marketplace MVP and the venture's accelerator participation while seeking capital to advance the product."
+    },
+    {
+      "url": "https://www.startsmartsaudi.com/sites/default/files/2026-02/teams_1.pdf",
+      "source_title": "StartSmart Saudi ninth version nominated teams",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_program",
+      "confidence": "high",
+      "paraphrase": "The official finalist roster names Radhi Alshammari for Smart Quotation and describes its AI industrial-buyer-and-supplier platform; it separately names the StethoLink team and product."
+    },
+    {
+      "url": "https://www.wamda.com/index.php/en/2026/05/madeed-closes-925k-pre-seed-scale-personalised-preventive-healthcare-ksa",
+      "source_title": "Madeed closes $925K pre-seed to scale personalised preventive healthcare in KSA",
+      "observed_at": "2026-09-03",
+      "published_at": "2026-05-05",
+      "source_quality": "specialist_trade_press",
+      "confidence": "high",
+      "paraphrase": "Wamda names Adam Bataineh as founder and CEO, dates the company only to 2025, and reports a $925,000 pre-seed round for platform product development and Saudi expansion."
+    },
+    {
+      "url": "https://www.madeed.co/about",
+      "source_title": "About Madeed",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_company",
+      "confidence": "high",
+      "paraphrase": "Madeed presents Adam Bataineh as its founder and describes its personalized preventive-health platform."
+    },
+    {
+      "url": "https://www.linkedin.com/company/madeedhealth",
+      "source_title": "Madeed | LinkedIn",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_company_profile",
+      "confidence": "high",
+      "paraphrase": "The company page places Madeed in Riyadh, describes its health platform, shows recent Saudi launch activity and links Adam Bataineh to the company."
+    },
+    {
+      "url": "https://mabien.sa/",
+      "source_title": "MABIEN",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_company",
+      "confidence": "high",
+      "paraphrase": "MABIEN identifies Dr Talal Al Baz as founder and CEO and describes the AI decision platform for medical approvals and claims."
+    },
+    {
+      "url": "https://sa.linkedin.com/company/mabien",
+      "source_title": "MABIEN | LinkedIn",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_company_profile",
+      "confidence": "high",
+      "paraphrase": "The company page lists a 2025 founding year and Riyadh base and shows current Wadi Jeddah incubation and continued platform-building activity."
+    },
+    {
+      "url": "https://sa.linkedin.com/in/dr-talal-albaz",
+      "source_title": "Dr Talal Al Baz | LinkedIn",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_founder_profile",
+      "confidence": "high",
+      "paraphrase": "Al Baz identifies himself as MABIEN founder and CEO and reports current incubation, investment and product-development activity."
+    },
+    {
+      "url": "https://startuphub.today/en/editorial/wadi-jeddah-incubator-invests-sar-1-million-in-10-promising-startups-2813",
+      "source_title": "Wadi Jeddah Incubator invests SAR 1 million in 10 promising startups",
+      "observed_at": "2026-09-03",
+      "published_at": "2026-08-11",
+      "source_quality": "specialist_trade_press",
+      "confidence": "medium",
+      "paraphrase": "The ecosystem report includes MABIEN and StethoLink among the 2026 Wadi Jeddah incubator selections and reports SAR 1 million of cohort investment."
+    },
+    {
+      "url": "https://stetholink.app/",
+      "source_title": "StethoLink - The Stethoscope's New Brain",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_company",
+      "confidence": "high",
+      "paraphrase": "The product site describes a Saudi-clinic AI assistant that captures stethoscope audio, generates clinical notes and keeps data in the Kingdom."
+    },
+    {
+      "url": "https://www.linkedin.com/company/stetholink",
+      "source_title": "StethoLink | LinkedIn",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_company_profile",
+      "confidence": "high",
+      "paraphrase": "The company page lists a 2025 founding year, a Jeddah base and current product and program activity."
+    },
+    {
+      "url": "https://sa.linkedin.com/in/faisal-alhashmi",
+      "source_title": "Faisal Alhashmi | LinkedIn",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_founder_profile",
+      "confidence": "high",
+      "paraphrase": "Alhashmi identifies himself as StethoLink founder and documents product work and recent StartSmart and Wadi Jeddah participation."
+    },
+    {
+      "url": "https://www.linkedin.com/company/governata",
+      "source_title": "Governata | LinkedIn",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_company_profile",
+      "confidence": "high",
+      "paraphrase": "Governata's page lists 2024 as its founding year and describes an operating Arabic-first enterprise data-governance and AI platform."
+    },
+    {
+      "url": "https://en.incarabia.com/saudi-arabiabased-governata-nets-us4-million-seed-round-to-support-enterprise-ai-adoption-816839.html",
+      "source_title": "KSA-Based Governata nets US$4 million seed round",
+      "observed_at": "2026-09-03",
+      "published_at": "2026-08-13",
+      "source_quality": "specialist_trade_press",
+      "confidence": "high",
+      "paraphrase": "Inc. Arabia reports a $4 million seed round, identifies Khalid Almudayfir as co-founder and CEO, and says the Saudi company was founded in 2024."
+    },
+    {
+      "url": "https://lucidityinsights.com/news/stamp-secures-2m-pre-seed",
+      "source_title": "STAMP raises $2M to scale RegTech platform",
+      "observed_at": "2026-09-03",
+      "published_at": "2025-11-24",
+      "source_quality": "specialist_trade_press",
+      "confidence": "high",
+      "paraphrase": "Lucidity reports STAMP's $2 million pre-seed round, platform-development plans and a 2021 founding year, placing it outside the new-founder lane."
+    },
+    {
+      "url": "https://buildsaudi.co/",
+      "source_title": "BuildSaudi startup directory",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "startup_ecosystem_directory",
+      "confidence": "medium",
+      "paraphrase": "The ecosystem directory corroborates STAMP's Saudi operating basis, founders and 2021 founding year."
+    },
+    {
+      "url": "https://www.wamda.com/index.php/en/2026/01/aamar-raises-4-million-seed-round-modernise-saudi-rental-market",
+      "source_title": "Aamar raises $4 million seed round to modernise Saudi rental market",
+      "observed_at": "2026-09-03",
+      "published_at": "2026-01-07",
+      "source_quality": "specialist_trade_press",
+      "confidence": "high",
+      "paraphrase": "Wamda reports Aamar's AI leasing platform, $4 million seed round and late-2023 founding, which is outside the new-founder window."
+    },
+    {
+      "url": "https://sa.linkedin.com/in/fisalalarfaj",
+      "source_title": "Faisal Alarfaj | LinkedIn",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_founder_profile",
+      "confidence": "high",
+      "paraphrase": "Alarfaj identifies himself as Aamar founder and CEO and documents the current Saudi proptech platform and funding milestone."
+    },
+    {
+      "url": "https://www.linkedin.com/company/stoqa-company",
+      "source_title": "STOQA | LinkedIn",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_company_profile",
+      "confidence": "high",
+      "paraphrase": "STOQA's page lists Riyadh, a 2022 founding year and an operating inventory-commerce software product."
+    },
+    {
+      "url": "https://sa.linkedin.com/in/abdulrahman-saud-768160243",
+      "source_title": "Abdulrahman Saud | LinkedIn",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_founder_profile",
+      "confidence": "high",
+      "paraphrase": "Saud identifies himself as STOQA founder and CEO and documents the product's current operating activity."
+    },
+    {
+      "url": "https://startupshouse.com/en/news/attliq-cohort-5-graduation/",
+      "source_title": "Ventures by Startups House invests in five Attliq cohort startups",
+      "observed_at": "2026-09-03",
+      "published_at": "2026-07-07",
+      "source_quality": "first_party_program",
+      "confidence": "high",
+      "paraphrase": "The program reports STOQA's cohort graduation and a $100,000 investment into each selected startup."
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=ai.stoqa.app",
+      "source_title": "STOQA - Apps on Google Play",
+      "observed_at": "2026-09-03",
+      "published_at": "2026-08-12",
+      "source_quality": "official_app_marketplace",
+      "confidence": "high",
+      "paraphrase": "The marketplace listing confirms a current Android software product and a recent update, but does not make the venture a new-founder-lane company."
+    }
+  ],
+  "promoted": [
+    {
+      "id": "gaia-badr-al-malluh",
+      "source_candidate_id": "wave2-gaia-badr-al-malluh",
+      "discovery_lane": "new_founder",
+      "canonical_lane": "new-founder",
+      "identity": {
+        "display_name": "Badr Al-Malluh",
+        "role": "Co-founder and CEO",
+        "linkedin_url": "https://sa.linkedin.com/in/badr-al-malluh-097746121"
+      },
+      "company": {
+        "name": "Gaia",
+        "domain": "gaia.sa",
+        "url": "https://gaia.sa/",
+        "linkedin_url": "https://sa.linkedin.com/company/gaiaplatform"
+      },
+      "context": {
+        "saudi_basis": "Riyadh-based venture building a Saudi-hosted enterprise-AI platform with local data residency.",
+        "founder_window": "The founders' first-party profiles document starting Gaia in 2026.",
+        "software_initiative": "A sovereign enterprise-AI layer connecting organizational data, systems and workflows.",
+        "product_stage": "Private early access with active build and deployment updates.",
+        "budget_or_traction": "Accepted into NVIDIA Inception; no cash amount or dedicated build budget is disclosed.",
+        "timing_trigger": "First-party build updates were visible within the last 90 days."
+      },
+      "lane_eligibility": {
+        "eligible": true,
+        "evidence_refs": [
+          "https://sa.linkedin.com/in/mohammad-rababah-707b02146",
+          "https://sa.linkedin.com/in/badr-al-malluh-097746121"
+        ],
+        "reason": "Two founders independently document beginning Gaia in 2026."
+      },
+      "active_gates": {
+        "identity": true,
+        "ksa_fit": true,
+        "authority": true,
+        "software_fit": true
+      },
+      "capacity_status": "sufficient_internal_leadership_evidenced",
+      "verification_sources": {
+        "primary": [
+          "https://gaia.sa/about",
+          "https://sa.linkedin.com/company/gaiaplatform",
+          "https://sa.linkedin.com/in/badr-al-malluh-097746121"
+        ],
+        "independent": [
+          "https://www.crunchbase.com/organization/gaia-2e2a"
+        ]
+      },
+      "score": {
+        "product_intent": {
+          "value": 4,
+          "evidence_refs": [
+            "https://gaia.sa/about",
+            "https://sa.linkedin.com/company/gaiaplatform"
+          ],
+          "reason": "Current first-party sources describe a specific enterprise-AI platform in active private-early-access development."
+        },
+        "outsourcing_likelihood": {
+          "value": 0,
+          "evidence_refs": [
+            "https://sa.linkedin.com/in/mohammad-rababah-707b02146",
+            "https://sa.linkedin.com/company/gaiaplatform"
+          ],
+          "reason": "A CPTO and an 11-50 employee band provide affirmative internal delivery evidence; no external-builder intent is stated."
+        },
+        "budget_readiness": {
+          "value": 3,
+          "evidence_refs": [
+            "https://sa.linkedin.com/company/gaiaplatform"
+          ],
+          "reason": "Current NVIDIA Inception acceptance is evidenced as accelerator support; no cash build budget is claimed."
+        },
+        "timing": {
+          "value": 4,
+          "evidence_refs": [
+            "https://sa.linkedin.com/company/gaiaplatform",
+            "https://sa.linkedin.com/in/badr-al-malluh-097746121"
+          ],
+          "reason": "First-party build and venture-start signals occurred within 90 days."
+        },
+        "penalties": {
+          "value": 5,
+          "evidence_refs": [
+            "https://sa.linkedin.com/in/mohammad-rababah-707b02146",
+            "https://sa.linkedin.com/company/gaiaplatform"
+          ],
+          "reason": "Sufficient internal product and technical leadership is directly evidenced."
+        },
+        "total": 6,
+        "band": "C"
+      },
+      "recommended_state": "active"
+    },
+    {
+      "id": "smart-quotation-radhi-alshammari",
+      "source_candidate_id": "wave2-smart-quotation-radhi-alshammari",
+      "discovery_lane": "new_founder",
+      "canonical_lane": "new-founder",
+      "identity": {
+        "display_name": "Radhi Alshammari",
+        "role": "Founder and CEO",
+        "linkedin_url": "https://sa.linkedin.com/in/radhi20999"
+      },
+      "company": {
+        "name": "Smart Quotation",
+        "domain": "smartquotation.sa",
+        "url": "https://www.smartquotation.sa/",
+        "linkedin_url": "https://sa.linkedin.com/company/smart-quotation.sa"
+      },
+      "context": {
+        "saudi_basis": "Saudi company headquartered in Jubail and building for Saudi industrial buyers and suppliers.",
+        "founder_window": "The first-party company profile gives a 2026 founding year.",
+        "software_initiative": "AI-powered B2B procurement platform covering RFQs, quotations, supplier matching and transaction workflows.",
+        "product_stage": "MVP-stage product with active Saudi supplier onboarding.",
+        "budget_or_traction": "StartSmart finalist and accelerator participant; the founder reports raising for the MVP but no closed amount is treated as budget.",
+        "timing_trigger": "Supplier onboarding and build updates were published within 90 days."
+      },
+      "lane_eligibility": {
+        "eligible": true,
+        "evidence_refs": [
+          "https://sa.linkedin.com/company/smart-quotation.sa",
+          "https://sa.linkedin.com/in/radhi20999"
+        ],
+        "reason": "The company is explicitly founded in 2026 and the founder's current role is first-party evidenced."
+      },
+      "active_gates": {
+        "identity": true,
+        "ksa_fit": true,
+        "authority": true,
+        "software_fit": true
+      },
+      "capacity_status": "internal_cto_or_mvp_signal_present_but_delivery_capacity_unknown",
+      "verification_sources": {
+        "primary": [
+          "https://sa.linkedin.com/company/smart-quotation.sa",
+          "https://sa.linkedin.com/in/radhi20999",
+          "https://www.linkedin.com/posts/smart-quotation.sa_smartquotation-industrialmarketplace-saudiarabia-activity-7475556550531788800-RPYa"
+        ],
+        "independent": [
+          "https://www.startsmartsaudi.com/sites/default/files/2026-02/teams_1.pdf"
+        ]
+      },
+      "score": {
+        "product_intent": {
+          "value": 4,
+          "evidence_refs": [
+            "https://sa.linkedin.com/company/smart-quotation.sa",
+            "https://www.linkedin.com/posts/smart-quotation.sa_smartquotation-industrialmarketplace-saudiarabia-activity-7475556550531788800-RPYa"
+          ],
+          "reason": "Current first-party sources describe the specific marketplace workflow, active product build and supplier onboarding."
+        },
+        "outsourcing_likelihood": {
+          "value": 1,
+          "evidence_refs": [
+            "https://sa.linkedin.com/company/smart-quotation.sa",
+            "https://www.linkedin.com/posts/smartquotation_flat6labs-start-smart-activity-7388390766714187777-4WeC"
+          ],
+          "reason": "The venture reports an MVP and internal leadership, but neither sufficient delivery capacity nor explicit external-builder intent is evidenced."
+        },
+        "budget_readiness": {
+          "value": 3,
+          "evidence_refs": [
+            "https://www.startsmartsaudi.com/sites/default/files/2026-02/teams_1.pdf",
+            "https://www.linkedin.com/posts/smartquotation_flat6labs-start-smart-activity-7388390766714187777-4WeC"
+          ],
+          "reason": "Official finalist and accelerator participation are evidenced; an unclosed raise is not treated as cash budget."
+        },
+        "timing": {
+          "value": 4,
+          "evidence_refs": [
+            "https://www.linkedin.com/posts/smart-quotation.sa_smartquotation-industrialmarketplace-saudiarabia-activity-7475556550531788800-RPYa",
+            "https://sa.linkedin.com/company/smart-quotation.sa"
+          ],
+          "reason": "The company was founded in 2026 and published active build and onboarding signals within 90 days."
+        },
+        "penalties": {
+          "value": 0,
+          "evidence_refs": [
+            "https://sa.linkedin.com/company/smart-quotation.sa"
+          ],
+          "reason": "No listed penalty is established; the broad employee band alone does not prove a sufficient engineering team."
+        },
+        "total": 12,
+        "band": "B"
+      },
+      "recommended_state": "active"
+    }
+  ],
+  "holds": [
+    {
+      "id": "madeed-adam-bataineh",
+      "source_candidate_id": "wave2-madeed-adam-bataineh",
+      "discovery_lane": "new_founder",
+      "canonical_lane": "new-founder",
+      "identity": {
+        "display_name": "Adam Bataineh",
+        "role": "Founder and CEO",
+        "linkedin_url": "https://uk.linkedin.com/in/adambataineh"
+      },
+      "company": {
+        "name": "Madeed",
+        "domain": "madeed.co",
+        "url": "https://www.madeed.co/",
+        "linkedin_url": "https://www.linkedin.com/company/madeedhealth"
+      },
+      "active_gates": {
+        "identity": true,
+        "ksa_fit": true,
+        "authority": true,
+        "software_fit": true
+      },
+      "missing_gates": [],
+      "missing_requirements": [
+        "new_founder_window_confirmed_to_day_or_month"
+      ],
+      "reason": "The company is dated only to 2025. As of 3 September 2026 that does not prove the founder role or venture began within the required 12-month window, so the record is held despite a B score.",
+      "capacity_status": "unknown",
+      "verification_sources": {
+        "primary": [
+          "https://www.madeed.co/about",
+          "https://www.linkedin.com/company/madeedhealth"
+        ],
+        "independent": [
+          "https://www.wamda.com/index.php/en/2026/05/madeed-closes-925k-pre-seed-scale-personalised-preventive-healthcare-ksa"
+        ]
+      },
+      "score": {
+        "product_intent": {
+          "value": 4,
+          "evidence_refs": [
+            "https://www.linkedin.com/company/madeedhealth",
+            "https://www.wamda.com/index.php/en/2026/05/madeed-closes-925k-pre-seed-scale-personalised-preventive-healthcare-ksa"
+          ],
+          "reason": "A current platform launch and funded product-development program are specific and dated."
+        },
+        "outsourcing_likelihood": {
+          "value": 1,
+          "evidence_refs": [
+            "https://www.linkedin.com/company/madeedhealth"
+          ],
+          "reason": "Capacity and external-partner intent remain unknown."
+        },
+        "budget_readiness": {
+          "value": 3,
+          "evidence_refs": [
+            "https://www.wamda.com/index.php/en/2026/05/madeed-closes-925k-pre-seed-scale-personalised-preventive-healthcare-ksa"
+          ],
+          "reason": "$925,000 of pre-seed funding and pilot traction are evidenced."
+        },
+        "timing": {
+          "value": 4,
+          "evidence_refs": [
+            "https://www.linkedin.com/company/madeedhealth"
+          ],
+          "reason": "Launch and product-building activity is visible within 90 days."
+        },
+        "penalties": {
+          "value": 0,
+          "evidence_refs": [
+            "https://www.linkedin.com/company/madeedhealth"
+          ],
+          "reason": "No listed penalty is evidenced."
+        },
+        "total": 12,
+        "band": "B"
+      },
+      "recommended_state": "hold_lane_date_precision"
+    },
+    {
+      "id": "mabien-talal-al-baz",
+      "source_candidate_id": "wave2-mabien-talal-al-baz",
+      "discovery_lane": "new_founder",
+      "canonical_lane": "new-founder",
+      "identity": {
+        "display_name": "Talal Al Baz",
+        "role": "Founder and CEO",
+        "linkedin_url": "https://sa.linkedin.com/in/dr-talal-albaz"
+      },
+      "company": {
+        "name": "MABIEN",
+        "domain": "mabien.sa",
+        "url": "https://mabien.sa/",
+        "linkedin_url": "https://sa.linkedin.com/company/mabien"
+      },
+      "active_gates": {
+        "identity": true,
+        "ksa_fit": true,
+        "authority": true,
+        "software_fit": true
+      },
+      "missing_gates": [],
+      "missing_requirements": [
+        "new_founder_window_confirmed_to_day_or_month"
+      ],
+      "reason": "The company is dated only to 2025. Current incubation does not establish that the founder role or venture began after 3 September 2025, so it is held despite a B score.",
+      "capacity_status": "unknown",
+      "verification_sources": {
+        "primary": [
+          "https://mabien.sa/",
+          "https://sa.linkedin.com/company/mabien",
+          "https://sa.linkedin.com/in/dr-talal-albaz"
+        ],
+        "independent": [
+          "https://startuphub.today/en/editorial/wadi-jeddah-incubator-invests-sar-1-million-in-10-promising-startups-2813"
+        ]
+      },
+      "score": {
+        "product_intent": {
+          "value": 4,
+          "evidence_refs": [
+            "https://mabien.sa/",
+            "https://sa.linkedin.com/company/mabien"
+          ],
+          "reason": "The sources describe a specific AI medical-approval and claims platform in active development."
+        },
+        "outsourcing_likelihood": {
+          "value": 1,
+          "evidence_refs": [
+            "https://sa.linkedin.com/company/mabien"
+          ],
+          "reason": "Capacity and external-partner intent remain unknown."
+        },
+        "budget_readiness": {
+          "value": 3,
+          "evidence_refs": [
+            "https://startuphub.today/en/editorial/wadi-jeddah-incubator-invests-sar-1-million-in-10-promising-startups-2813",
+            "https://sa.linkedin.com/company/mabien"
+          ],
+          "reason": "Current incubation and cohort investment support are evidenced."
+        },
+        "timing": {
+          "value": 4,
+          "evidence_refs": [
+            "https://sa.linkedin.com/company/mabien"
+          ],
+          "reason": "Incubation and continued-building signals occurred within 90 days."
+        },
+        "penalties": {
+          "value": 0,
+          "evidence_refs": [
+            "https://sa.linkedin.com/company/mabien"
+          ],
+          "reason": "No listed penalty is evidenced."
+        },
+        "total": 12,
+        "band": "B"
+      },
+      "recommended_state": "hold_lane_date_precision"
+    },
+    {
+      "id": "stetholink-faisal-alhashmi",
+      "source_candidate_id": "wave2-stetholink-faisal-alhashmi",
+      "discovery_lane": "new_founder",
+      "canonical_lane": "new-founder",
+      "identity": {
+        "display_name": "Faisal Alhashmi",
+        "role": "Founder",
+        "linkedin_url": "https://sa.linkedin.com/in/faisal-alhashmi"
+      },
+      "company": {
+        "name": "StethoLink",
+        "domain": "stetholink.app",
+        "url": "https://stetholink.app/",
+        "linkedin_url": "https://www.linkedin.com/company/stetholink"
+      },
+      "active_gates": {
+        "identity": true,
+        "ksa_fit": true,
+        "authority": true,
+        "software_fit": true
+      },
+      "missing_gates": [],
+      "missing_requirements": [
+        "new_founder_window_confirmed_to_day_or_month"
+      ],
+      "reason": "The company is dated only to 2025. Recent finalist and incubation activity confirms a current build, but not that the founder role or venture began after 3 September 2025.",
+      "capacity_status": "unknown",
+      "verification_sources": {
+        "primary": [
+          "https://stetholink.app/",
+          "https://www.linkedin.com/company/stetholink",
+          "https://sa.linkedin.com/in/faisal-alhashmi"
+        ],
+        "independent": [
+          "https://www.startsmartsaudi.com/sites/default/files/2026-02/teams_1.pdf",
+          "https://startuphub.today/en/editorial/wadi-jeddah-incubator-invests-sar-1-million-in-10-promising-startups-2813"
+        ]
+      },
+      "score": {
+        "product_intent": {
+          "value": 4,
+          "evidence_refs": [
+            "https://stetholink.app/",
+            "https://www.startsmartsaudi.com/sites/default/files/2026-02/teams_1.pdf"
+          ],
+          "reason": "Current sources specify the hardware-linked clinical app, AI diagnostics and documentation workflow."
+        },
+        "outsourcing_likelihood": {
+          "value": 1,
+          "evidence_refs": [
+            "https://www.linkedin.com/company/stetholink"
+          ],
+          "reason": "Capacity and external-partner intent remain unknown."
+        },
+        "budget_readiness": {
+          "value": 3,
+          "evidence_refs": [
+            "https://startuphub.today/en/editorial/wadi-jeddah-incubator-invests-sar-1-million-in-10-promising-startups-2813"
+          ],
+          "reason": "Current incubator selection and cohort investment support are evidenced."
+        },
+        "timing": {
+          "value": 4,
+          "evidence_refs": [
+            "https://www.linkedin.com/company/stetholink"
+          ],
+          "reason": "Current product and program activity occurred within 90 days."
+        },
+        "penalties": {
+          "value": 0,
+          "evidence_refs": [
+            "https://www.linkedin.com/company/stetholink"
+          ],
+          "reason": "No listed penalty is evidenced."
+        },
+        "total": 12,
+        "band": "B"
+      },
+      "recommended_state": "hold_lane_date_precision"
+    },
+    {
+      "id": "governata-khalid-almudayfir",
+      "source_candidate_id": "wave2-governata-khalid-almudayfir",
+      "discovery_lane": "new_founder",
+      "canonical_lane": "new-founder",
+      "identity": {
+        "display_name": "Khalid Almudayfir",
+        "role": "Co-founder and CEO",
+        "linkedin_url": null
+      },
+      "company": {
+        "name": "Governata",
+        "domain": "governata.com",
+        "url": "https://governata.com/",
+        "linkedin_url": "https://www.linkedin.com/company/governata"
+      },
+      "active_gates": {
+        "identity": true,
+        "ksa_fit": true,
+        "authority": true,
+        "software_fit": true
+      },
+      "missing_gates": [],
+      "missing_requirements": [
+        "new_founder_window"
+      ],
+      "reason": "First-party and independent evidence date the venture to 2024, so it is not a new-founder-lane prospect even though the funded software initiative scores C.",
+      "capacity_status": "sufficient_internal_capacity_evidenced",
+      "verification_sources": {
+        "primary": [
+          "https://www.linkedin.com/company/governata"
+        ],
+        "independent": [
+          "https://en.incarabia.com/saudi-arabiabased-governata-nets-us4-million-seed-round-to-support-enterprise-ai-adoption-816839.html"
+        ]
+      },
+      "score": {
+        "product_intent": {
+          "value": 4,
+          "evidence_refs": [
+            "https://www.linkedin.com/company/governata",
+            "https://en.incarabia.com/saudi-arabiabased-governata-nets-us4-million-seed-round-to-support-enterprise-ai-adoption-816839.html"
+          ],
+          "reason": "Current sources describe an operating Arabic enterprise data-governance platform and continued product development."
+        },
+        "outsourcing_likelihood": {
+          "value": 0,
+          "evidence_refs": [
+            "https://www.linkedin.com/company/governata"
+          ],
+          "reason": "A CTO, developed platform and 11-50 employee band provide affirmative internal-capacity evidence."
+        },
+        "budget_readiness": {
+          "value": 3,
+          "evidence_refs": [
+            "https://en.incarabia.com/saudi-arabiabased-governata-nets-us4-million-seed-round-to-support-enterprise-ai-adoption-816839.html"
+          ],
+          "reason": "A $4 million seed round is independently reported."
+        },
+        "timing": {
+          "value": 4,
+          "evidence_refs": [
+            "https://en.incarabia.com/saudi-arabiabased-governata-nets-us4-million-seed-round-to-support-enterprise-ai-adoption-816839.html"
+          ],
+          "reason": "The funding and scale trigger occurred within 90 days."
+        },
+        "penalties": {
+          "value": 5,
+          "evidence_refs": [
+            "https://www.linkedin.com/company/governata"
+          ],
+          "reason": "Sufficient internal product and technical delivery capacity is evidenced."
+        },
+        "total": 6,
+        "band": "C"
+      },
+      "recommended_state": "hold_wrong_lane"
+    },
+    {
+      "id": "stamp-muyasser-albar",
+      "source_candidate_id": "wave2-stamp-muyasser-albar",
+      "discovery_lane": "new_founder",
+      "canonical_lane": "new-founder",
+      "identity": {
+        "display_name": "Muyasser Albar",
+        "role": "Founder and CEO",
+        "linkedin_url": null
+      },
+      "company": {
+        "name": "STAMP",
+        "domain": "stamp.sa",
+        "url": "https://stamp.sa/",
+        "linkedin_url": null
+      },
+      "active_gates": {
+        "identity": true,
+        "ksa_fit": true,
+        "authority": true,
+        "software_fit": true
+      },
+      "missing_gates": [],
+      "missing_requirements": [
+        "new_founder_window"
+      ],
+      "reason": "The available ecosystem sources date STAMP to 2021, outside the new-founder lane. Funding alone does not make it a new venture.",
+      "capacity_status": "unknown",
+      "verification_sources": {
+        "primary": [],
+        "independent": [
+          "https://lucidityinsights.com/news/stamp-secures-2m-pre-seed",
+          "https://buildsaudi.co/"
+        ]
+      },
+      "score": {
+        "product_intent": {
+          "value": 4,
+          "evidence_refs": [
+            "https://lucidityinsights.com/news/stamp-secures-2m-pre-seed"
+          ],
+          "reason": "The report describes a specific AI RegTech platform and funded development plan."
+        },
+        "outsourcing_likelihood": {
+          "value": 1,
+          "evidence_refs": [
+            "https://buildsaudi.co/"
+          ],
+          "reason": "Capacity and external-partner intent remain unknown."
+        },
+        "budget_readiness": {
+          "value": 3,
+          "evidence_refs": [
+            "https://lucidityinsights.com/news/stamp-secures-2m-pre-seed"
+          ],
+          "reason": "$2 million of pre-seed funding is reported."
+        },
+        "timing": {
+          "value": 2,
+          "evidence_refs": [
+            "https://lucidityinsights.com/news/stamp-secures-2m-pre-seed"
+          ],
+          "reason": "The funding trigger occurred within 365 days."
+        },
+        "penalties": {
+          "value": 0,
+          "evidence_refs": [
+            "https://buildsaudi.co/"
+          ],
+          "reason": "No listed penalty is established by the available evidence."
+        },
+        "total": 10,
+        "band": "B"
+      },
+      "recommended_state": "hold_wrong_lane"
+    },
+    {
+      "id": "aamar-faisal-alarfaj",
+      "source_candidate_id": "wave2-aamar-faisal-alarfaj",
+      "discovery_lane": "new_founder",
+      "canonical_lane": "new-founder",
+      "identity": {
+        "display_name": "Faisal Alarfaj",
+        "role": "Founder and CEO",
+        "linkedin_url": "https://sa.linkedin.com/in/fisalalarfaj"
+      },
+      "company": {
+        "name": "Aamar",
+        "domain": "aamar.io",
+        "url": "https://aamar.io/",
+        "linkedin_url": null
+      },
+      "active_gates": {
+        "identity": true,
+        "ksa_fit": true,
+        "authority": true,
+        "software_fit": true
+      },
+      "missing_gates": [],
+      "missing_requirements": [
+        "new_founder_window"
+      ],
+      "reason": "The venture was founded in late 2023, so it is not eligible for the new-founder lane despite a current seed-backed product-development trigger.",
+      "capacity_status": "unknown",
+      "verification_sources": {
+        "primary": [
+          "https://sa.linkedin.com/in/fisalalarfaj"
+        ],
+        "independent": [
+          "https://www.wamda.com/index.php/en/2026/01/aamar-raises-4-million-seed-round-modernise-saudi-rental-market"
+        ]
+      },
+      "score": {
+        "product_intent": {
+          "value": 4,
+          "evidence_refs": [
+            "https://www.wamda.com/index.php/en/2026/01/aamar-raises-4-million-seed-round-modernise-saudi-rental-market"
+          ],
+          "reason": "A current announcement specifies continued development of an AI rental and leasing platform."
+        },
+        "outsourcing_likelihood": {
+          "value": 1,
+          "evidence_refs": [
+            "https://sa.linkedin.com/in/fisalalarfaj"
+          ],
+          "reason": "Capacity and external-partner intent remain unknown."
+        },
+        "budget_readiness": {
+          "value": 3,
+          "evidence_refs": [
+            "https://www.wamda.com/index.php/en/2026/01/aamar-raises-4-million-seed-round-modernise-saudi-rental-market"
+          ],
+          "reason": "A $4 million seed round is reported."
+        },
+        "timing": {
+          "value": 2,
+          "evidence_refs": [
+            "https://www.wamda.com/index.php/en/2026/01/aamar-raises-4-million-seed-round-modernise-saudi-rental-market"
+          ],
+          "reason": "The product and funding trigger occurred within 365 days."
+        },
+        "penalties": {
+          "value": 0,
+          "evidence_refs": [
+            "https://sa.linkedin.com/in/fisalalarfaj"
+          ],
+          "reason": "No listed penalty is established by the available evidence."
+        },
+        "total": 10,
+        "band": "B"
+      },
+      "recommended_state": "hold_wrong_lane"
+    },
+    {
+      "id": "stoqa-abdulrahman-saud",
+      "source_candidate_id": "wave2-stoqa-abdulrahman-saud",
+      "discovery_lane": "new_founder",
+      "canonical_lane": "new-founder",
+      "identity": {
+        "display_name": "Abdulrahman Saud",
+        "role": "Founder and CEO",
+        "linkedin_url": "https://sa.linkedin.com/in/abdulrahman-saud-768160243"
+      },
+      "company": {
+        "name": "STOQA",
+        "domain": "stoqa.ai",
+        "url": "https://stoqa.ai/",
+        "linkedin_url": "https://www.linkedin.com/company/stoqa-company"
+      },
+      "active_gates": {
+        "identity": true,
+        "ksa_fit": true,
+        "authority": true,
+        "software_fit": true
+      },
+      "missing_gates": [],
+      "missing_requirements": [
+        "new_founder_window"
+      ],
+      "reason": "First-party evidence dates STOQA to 2022. Its current program investment and app update are useful timing signals but do not make it a new-founder-lane venture.",
+      "capacity_status": "unknown",
+      "verification_sources": {
+        "primary": [
+          "https://www.linkedin.com/company/stoqa-company",
+          "https://sa.linkedin.com/in/abdulrahman-saud-768160243",
+          "https://startupshouse.com/en/news/attliq-cohort-5-graduation/"
+        ],
+        "independent": [
+          "https://play.google.com/store/apps/details?id=ai.stoqa.app"
+        ]
+      },
+      "score": {
+        "product_intent": {
+          "value": 4,
+          "evidence_refs": [
+            "https://www.linkedin.com/company/stoqa-company",
+            "https://play.google.com/store/apps/details?id=ai.stoqa.app"
+          ],
+          "reason": "A live inventory-commerce product and current application update are evidenced."
+        },
+        "outsourcing_likelihood": {
+          "value": 1,
+          "evidence_refs": [
+            "https://www.linkedin.com/company/stoqa-company"
+          ],
+          "reason": "Capacity and external-partner intent remain unknown."
+        },
+        "budget_readiness": {
+          "value": 3,
+          "evidence_refs": [
+            "https://startupshouse.com/en/news/attliq-cohort-5-graduation/"
+          ],
+          "reason": "A $100,000 program investment is officially reported."
+        },
+        "timing": {
+          "value": 4,
+          "evidence_refs": [
+            "https://startupshouse.com/en/news/attliq-cohort-5-graduation/",
+            "https://play.google.com/store/apps/details?id=ai.stoqa.app"
+          ],
+          "reason": "Program investment and an application update occurred within 90 days."
+        },
+        "penalties": {
+          "value": 0,
+          "evidence_refs": [
+            "https://www.linkedin.com/company/stoqa-company"
+          ],
+          "reason": "No listed penalty is established by the available evidence."
+        },
+        "total": 12,
+        "band": "B"
+      },
+      "recommended_state": "hold_wrong_lane"
+    }
+  ],
+  "carryover_audit": {
+    "candidate_id": "tabsense-mohammad-jaber",
+    "source_file": "outputs/lead-research/workers/events-financing-verified.json",
+    "status": "held",
+    "score_total": 4,
+    "score_band": "D",
+    "reason": "TabSense remains in holds because first-party evidence establishes substantial internal delivery capacity and its recomputed D score is not eligible for the active set. It is not reused in this wave."
+  },
+  "gaps": [
+    {
+      "topic": "year-only founding dates",
+      "detail": "Madeed, MABIEN and StethoLink have strong current product triggers but only a 2025 founding year. They remain held until a primary source establishes a start date after 3 September 2025."
+    },
+    {
+      "topic": "external delivery fit",
+      "detail": "No promoted candidate explicitly seeks an outside software builder. Smart Quotation therefore receives only the unknown-capacity point, while Gaia receives zero plus the sufficient-capacity penalty."
+    },
+    {
+      "topic": "bounded yield",
+      "detail": "Two of nine assessed prospects passed the exact new-founder lane, all four active gates and the C-or-better score rule without weakening evidence standards."
+    }
+  ]
+}

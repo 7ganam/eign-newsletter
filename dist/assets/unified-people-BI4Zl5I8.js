@@ -1,0 +1,1 @@
+var e=`/assets/unified-people-D-iles41.json`;export{e as t};

@@ -1,0 +1,791 @@
+{
+  "schema_version": "accelerator-incubator-pilot.v1",
+  "run": {
+    "id": "accelerator-incubator-2026-09-05",
+    "batch_id": "accelerator-incubator-2026-09-05",
+    "created_at": "2026-09-05T17:19:58Z",
+    "completed_at": "2026-09-05T17:30:30Z",
+    "observed_on": "2026-09-05",
+    "lead_ids": [
+      "lead-program-feras-hayf-momawwil",
+      "lead-program-nawaf-eissa-precision-brake",
+      "lead-program-ahmad-alohali-wasl"
+    ],
+    "metrics": {
+      "queries": 5,
+      "search_passes": 5,
+      "post_impressions": 38,
+      "new_candidates": 3,
+      "carried_candidates": 0,
+      "confirmed_fits": 0
+    },
+    "summary": "Bounded program-first pilot: 16 founder-venture groups screened, three new Needs verification candidates, three existing duplicates, three rejected and seven raw holds. Zero confirmed fits. Counts cover five program-anchored LinkedIn result sets (38 observed post impressions, including duplicates), excluding web and exact-name enrichment. This was not the full planned 30-pair run."
+  },
+  "screened": [
+    {
+      "id": "program-screen-1",
+      "person": "Feras Hayf",
+      "venture": "Momawwil",
+      "program": "Garage Challenge",
+      "disposition": "added-candidate",
+      "reason": "Prelaunch page; team, core completion and paid intent unknown.",
+      "source_url": "https://www.linkedin.com/in/feras-hayf-aa9399309/",
+      "observed_at": "2026-09-05"
+    },
+    {
+      "id": "program-screen-2",
+      "person": "Ahmad Alohali",
+      "venture": "Wasl",
+      "program": "Garage Challenge / incubator",
+      "disposition": "added-candidate",
+      "reason": "Official founder/incubation corroboration; three technical-background founders and unclear launch stage.",
+      "source_url": "https://www.linkedin.com/in/ahmad-alohali/",
+      "observed_at": "2026-09-05"
+    },
+    {
+      "id": "program-screen-3",
+      "person": "Nawaf Eissa",
+      "venture": "Precision Brake / APBS",
+      "program": "Garage Challenge",
+      "disposition": "added-candidate",
+      "reason": "Concrete prototype and owner; existing contributor and specialist scope require checks.",
+      "source_url": "https://www.linkedin.com/in/nawaf-eissa/",
+      "observed_at": "2026-09-05"
+    },
+    {
+      "id": "program-screen-4",
+      "person": "Faisal Abduljawad",
+      "venture": "Prospective LogTech venture",
+      "program": "Antler Riyadh",
+      "disposition": "existing-duplicate",
+      "reason": "Already in the database; current cohort announcement does not resolve scope/team/budget.",
+      "source_url": "https://www.linkedin.com/in/faisalabduljawad/",
+      "observed_at": "2026-09-05"
+    },
+    {
+      "id": "program-screen-5",
+      "person": "Adilet Zakiyev",
+      "venture": "Next venture distinct from Resti",
+      "program": "Antler Riyadh",
+      "disposition": "existing-duplicate",
+      "reason": "Already in the database; separate unbuilt venture still unverified.",
+      "source_url": "https://www.linkedin.com/in/azakiyev/",
+      "observed_at": "2026-09-05"
+    },
+    {
+      "id": "program-screen-6",
+      "person": "Osama Alanazi / Saleh Aldawsari",
+      "venture": "Sports-talent project",
+      "program": "Misk Launchpad 10.0",
+      "disposition": "existing-duplicate",
+      "reason": "Same sports project already represented by Osama. No cofounder duplication.",
+      "source_url": "https://www.linkedin.com/in/osama-alanazi-46538528a/",
+      "observed_at": "2026-09-05"
+    },
+    {
+      "id": "program-screen-7",
+      "person": "Taimoor Zia / Ansar Moughis",
+      "venture": "AIDE AI",
+      "program": "Misk / Antler",
+      "disposition": "rejected",
+      "reason": "Existing product, customers and revenue; admission is not pre-build proof.",
+      "source_url": "https://www.linkedin.com/in/taimoor-zia-604b7525/",
+      "observed_at": "2026-09-05"
+    },
+    {
+      "id": "program-screen-8",
+      "person": "Md Danish Khan",
+      "venture": "ClarifyAi",
+      "program": "Misk Launchpad 10.0",
+      "disposition": "rejected",
+      "reason": "Describes an AI tutor already built for India and Saudi expansion, not a separate unbuilt core.",
+      "source_url": "https://www.linkedin.com/in/md-danish-khan-sn/",
+      "observed_at": "2026-09-05"
+    },
+    {
+      "id": "program-screen-9",
+      "person": "Yazeed Zaidan",
+      "venture": "WATEER",
+      "program": "Misk participant search",
+      "disposition": "rejected",
+      "reason": "Existing receipts product/CTO; older program signal does not establish new pre-build need.",
+      "source_url": null,
+      "observed_at": "2026-09-05"
+    },
+    {
+      "id": "program-screen-10",
+      "person": "Bandar Aljadani",
+      "venture": "Unnamed project",
+      "program": "Misk Launchpad 10.0",
+      "disposition": "held",
+      "reason": "Fresh phase-one admission; no specific software scope or named venture verified.",
+      "source_url": "https://www.linkedin.com/in/bandaraljadani/",
+      "observed_at": "2026-09-05"
+    },
+    {
+      "id": "program-screen-11",
+      "person": "Abdulrahman Bamoukrah / Yosuf Al Awadi / Ali Almuhtaseb",
+      "venture": "AQALL AI",
+      "program": "Misk Launchpad 10.0",
+      "disposition": "held",
+      "reason": "Beta/waitlist build, three technically oriented founders. Verify real current builder count before adding.",
+      "source_url": "https://www.linkedin.com/in/abdulrahmanbamoukrah/",
+      "observed_at": "2026-09-05"
+    },
+    {
+      "id": "program-screen-12",
+      "person": "Mohanad Alaswad",
+      "venture": "R Learn",
+      "program": "Older Misk cohort",
+      "disposition": "held",
+      "reason": "Recent promotional mention recycles older cohort participation; no fresh build milestone verified.",
+      "source_url": "https://www.linkedin.com/in/mohanad-alaswad/",
+      "observed_at": "2026-09-05"
+    },
+    {
+      "id": "program-screen-13",
+      "person": "Basmah Almalki",
+      "venture": "ZENITHA",
+      "program": "Garage Challenge",
+      "disposition": "held",
+      "reason": "Sports-medicine concept; no defined custom-software scope or buying budget verified.",
+      "source_url": "https://www.linkedin.com/in/basmah-almalki-6b9632376/",
+      "observed_at": "2026-09-05"
+    },
+    {
+      "id": "program-screen-14",
+      "person": "Mona Al-bogami",
+      "venture": "Unnamed business solution",
+      "program": "Garage Challenge",
+      "disposition": "held",
+      "reason": "Prototype-to-market statement but unnamed venture and unclear product ownership/scope.",
+      "source_url": "https://www.linkedin.com/in/mona-al-bogami-625a6032a/",
+      "observed_at": "2026-09-05"
+    },
+    {
+      "id": "program-screen-15",
+      "person": "Reem AlShammari",
+      "venture": "Unnamed interactive property-viewing concept",
+      "program": "Garage Challenge",
+      "disposition": "held",
+      "reason": "Prototype/membership reported; commercial ownership, continuity and current capacity not verified.",
+      "source_url": "https://www.linkedin.com/in/reem-alshammari--/",
+      "observed_at": "2026-09-05"
+    },
+    {
+      "id": "program-screen-16",
+      "person": "Khalid Abdelrahman",
+      "venture": "Rakaa / رَكاء",
+      "program": "Garage Challenge",
+      "disposition": "held",
+      "reason": "Large mixed challenge team; precise software scope and buying authority unresolved.",
+      "source_url": "https://www.linkedin.com/in/khalid-abdelrahman-63a49b228/",
+      "observed_at": "2026-09-05"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "lead-program-feras-hayf-momawwil",
+      "identity": {
+        "display_name": "Feras Hayf",
+        "linkedin_url": "https://www.linkedin.com/in/feras-hayf-aa9399309",
+        "current_title": "Founder, Momawwil; operations/customer-experience professional",
+        "current_organization": "Momawwil",
+        "identity_status": "verified",
+        "identity_confidence": "high",
+        "evidence_ids": [
+          "lead-program-feras-hayf-momawwil-e4",
+          "lead-program-feras-hayf-momawwil-e7"
+        ]
+      },
+      "company": {
+        "name": "Momawwil",
+        "website_url": "https://momawwil.com/",
+        "linkedin_url": "https://www.linkedin.com/company/momawwil/",
+        "city": "Riyadh",
+        "saudi_basis": "person-based",
+        "founder_role_started_at": null,
+        "founded_at": null,
+        "linkedin_employee_band": "2–10",
+        "sector": "Fintech / startup-investor matching",
+        "lifecycle_stage": "building",
+        "product_types": [
+          "web-platform",
+          "marketplace"
+        ],
+        "product_summary": "Prelaunch Saudi venture-investor matching platform with verification and agreement workflows.",
+        "existing_product_urls": [],
+        "evidence_ids": [
+          "lead-program-feras-hayf-momawwil-e1",
+          "lead-program-feras-hayf-momawwil-e2",
+          "lead-program-feras-hayf-momawwil-e3"
+        ]
+      },
+      "discovery": {
+        "strategy": {
+          "id": "accelerator-incubator-prebuild-v1",
+          "label": "Accelerators & incubators • Pre-build cohort-first",
+          "batch_id": "accelerator-incubator-2026-09-05",
+          "method": "official-program",
+          "access": "logged-in-linkedin"
+        },
+        "lane": "new-founder",
+        "resource_ids": [
+          "resource-the-garage"
+        ],
+        "public_behavior_tags": [
+          "program-first-pilot",
+          "garage-challenge",
+          "needs-verification",
+          "prelaunch-waitlist",
+          "prototype-milestone"
+        ],
+        "behavioral_summary": "Prelaunch Saudi venture-investor matching platform with verification and agreement workflows.",
+        "discovery_note": "FIRST RESEARCH PRIORITY in this batch, not a qualified buyer. Current coming-soon page plus August product posts are useful. Two visible LinkedIn members do not prove a small engineering team; six challenge collaborators and an agent demo require follow-up."
+      },
+      "qualification": {
+        "persona_review": {
+          "status": "needs-verification",
+          "core_product": "unknown",
+          "software_builders_min": null,
+          "software_builders_max": null,
+          "missing_checks": [
+            "Confirm whether the core platform is still unbuilt rather than privately functional",
+            "Identify all current hands-on founders, developers and contractors; prove maximum two",
+            "Verify paid-vendor openness, budget and target launch date",
+            "Check software scope and regulatory dependencies before treating this as a straightforward app build"
+          ],
+          "summary": "FIRST RESEARCH PRIORITY in this batch, not a qualified buyer. Current coming-soon page plus August product posts are useful. Two visible LinkedIn members do not prove a small engineering team; six challenge collaborators and an agent demo require follow-up."
+        },
+        "ksa_fit": "confirmed",
+        "decision_authority": "confirmed",
+        "software_fit": "confirmed",
+        "product_intent": {
+          "score": 4,
+          "level": "confirmed",
+          "summary": "Prelaunch Saudi venture-investor matching platform with verification and agreement workflows.",
+          "evidence_ids": [
+            "lead-program-feras-hayf-momawwil-e2"
+          ]
+        },
+        "outsourcing_likelihood": {
+          "score": 0,
+          "level": "unknown",
+          "summary": "No explicit paid external-development request or agency openness verified.",
+          "evidence_ids": []
+        },
+        "budget_readiness": {
+          "score": 0,
+          "level": "unknown",
+          "summary": "No awarded cash, approved build budget or paid pilot verified. Program participation is not funding.",
+          "evidence_ids": []
+        },
+        "timing": {
+          "score": 2,
+          "level": "possible",
+          "summary": "August 24 opening-soon post is recent, but supplies no dated delivery commitment.",
+          "evidence_ids": [
+            "lead-program-feras-hayf-momawwil-e2"
+          ]
+        },
+        "negative_signals": [],
+        "positive_score": 6,
+        "penalty": 0,
+        "total_score": 6,
+        "band": "C",
+        "qualification_confidence": "low",
+        "manually_reviewed_at": "2026-09-05"
+      },
+      "research": {
+        "status": "review-required",
+        "discovered_at": "2026-09-05",
+        "last_researched_at": "2026-09-05",
+        "next_review_at": "2026-09-12",
+        "notes": "FIRST RESEARCH PRIORITY in this batch, not a qualified buyer. Current coming-soon page plus August product posts are useful. Two visible LinkedIn members do not prove a small engineering team; six challenge collaborators and an agent demo require follow-up.\nVerification needed: Confirm whether the core platform is still unbuilt rather than privately functional; Identify all current hands-on founders, developers and contractors; prove maximum two; Verify paid-vendor openness, budget and target launch date; Check software scope and regulatory dependencies before treating this as a straightforward app build."
+      },
+      "evidence": [
+        {
+          "id": "lead-program-feras-hayf-momawwil-e1",
+          "claim_key": "program_participation",
+          "source_url": "https://www.linkedin.com/feed/update/urn:li:activity:7479464595808489473/",
+          "source_title": "Feras Hayf — Momawwil at The Garage Challenge",
+          "source_type": "first_party_post",
+          "publisher_id": "person:feras-hayf",
+          "resource_id": "resource-the-garage",
+          "published_at": "2026-07-05",
+          "publication_date_status": "derived",
+          "publication_date_basis": "UTC creation day decoded from the canonical LinkedIn activity identifier; not a source-displayed exact date.",
+          "publication_date_checked_at": "2026-09-05",
+          "observed_at": "2026-09-05",
+          "source_quality": "primary",
+          "confidence": "high",
+          "summary": "Founder presented Momawwil at The Garage Challenge. Names six collaborators; a challenge team is not a current engineering headcount. Participation is evidenced, not an incubation award or grant."
+        },
+        {
+          "id": "lead-program-feras-hayf-momawwil-e2",
+          "claim_key": "product_intent",
+          "source_url": "https://www.linkedin.com/feed/update/urn:li:activity:7497589743623438338/",
+          "source_title": "Momawwil — opening soon for the first group",
+          "source_type": "first_party_post",
+          "publisher_id": "company:momawwil",
+          "resource_id": "resource-the-garage",
+          "published_at": "2026-08-24",
+          "publication_date_status": "derived",
+          "publication_date_basis": "UTC creation day decoded from the canonical LinkedIn activity identifier; not a source-displayed exact date.",
+          "publication_date_checked_at": "2026-09-05",
+          "observed_at": "2026-09-05",
+          "source_quality": "primary",
+          "confidence": "high",
+          "summary": "Company describes identity verification, venture-stage classification, digitally documented agreements and a secure payment flow. Says the first group opens soon and invites interest registrations. No paid vendor request."
+        },
+        {
+          "id": "lead-program-feras-hayf-momawwil-e3",
+          "claim_key": "core_product",
+          "source_url": "https://momawwil.com/",
+          "source_title": "Momawwil — current landing page",
+          "source_type": "company_homepage",
+          "publisher_id": "company:momawwil",
+          "resource_id": "resource-the-garage",
+          "published_at": null,
+          "publication_date_status": "not-applicable",
+          "publication_date_basis": "Living profile or homepage; observation date is not a publication date.",
+          "publication_date_checked_at": "2026-09-05",
+          "observed_at": "2026-09-05",
+          "source_quality": "primary",
+          "confidence": "high",
+          "summary": "Opened in Edge on September 5. Arabic coming-soon page and register-interest action. This is a prelaunch signal, not proof that no functioning private MVP exists."
+        },
+        {
+          "id": "lead-program-feras-hayf-momawwil-e4",
+          "claim_key": "identity",
+          "source_url": "https://www.linkedin.com/in/feras-hayf-aa9399309/",
+          "source_title": "Feras Hayf — profile",
+          "source_type": "first_party_profile",
+          "publisher_id": "person:feras-hayf",
+          "resource_id": "resource-the-garage",
+          "published_at": null,
+          "publication_date_status": "not-applicable",
+          "publication_date_basis": "Living profile or homepage; observation date is not a publication date.",
+          "publication_date_checked_at": "2026-09-05",
+          "observed_at": "2026-09-05",
+          "source_quality": "primary",
+          "confidence": "high",
+          "summary": "Riyadh-based operations/customer-experience professional building a Saudi fintech startup. Profile, company attribution and project posts consistently identify the same person and venture."
+        },
+        {
+          "id": "lead-program-feras-hayf-momawwil-e5",
+          "claim_key": "software_builders",
+          "source_url": "https://www.linkedin.com/company/momawwil/people/",
+          "source_title": "Momawwil — visible people",
+          "source_type": "company_profile",
+          "publisher_id": "company:momawwil",
+          "resource_id": "resource-the-garage",
+          "published_at": null,
+          "publication_date_status": "not-applicable",
+          "publication_date_basis": "Living profile or homepage; observation date is not a publication date.",
+          "publication_date_checked_at": "2026-09-05",
+          "observed_at": "2026-09-05",
+          "source_quality": "primary",
+          "confidence": "high",
+          "summary": "LinkedIn shows a 2–10 company band and two associated members, with business-development/operations categories. This incomplete roster cannot establish a 0–2 software-builder maximum; the founder named six challenge collaborators."
+        },
+        {
+          "id": "lead-program-feras-hayf-momawwil-e6",
+          "claim_key": "product_intent",
+          "source_url": "https://www.linkedin.com/feed/update/urn:li:activity:7484519824187047936/",
+          "source_title": "Feras Hayf — Founder Readiness Agent",
+          "source_type": "first_party_post",
+          "publisher_id": "person:feras-hayf",
+          "resource_id": "resource-the-garage",
+          "published_at": "2026-07-19",
+          "publication_date_status": "derived",
+          "publication_date_basis": "UTC creation day decoded from the canonical LinkedIn activity identifier; not a source-displayed exact date.",
+          "publication_date_checked_at": "2026-09-05",
+          "observed_at": "2026-09-05",
+          "source_quality": "primary",
+          "confidence": "high",
+          "summary": "Reports a Kanz training-hackathon agent project whose learning fed into Momawwil. Evidence of some build activity, not proof of an unbuilt core platform or available software-services budget."
+        },
+        {
+          "id": "lead-program-feras-hayf-momawwil-e7",
+          "claim_key": "identity",
+          "source_url": "https://try.ka.nz/ai/ferashayf",
+          "source_title": "Kanz — Feras Hayf project portfolio",
+          "source_type": "project_portfolio",
+          "publisher_id": "organization:kanz",
+          "resource_id": "resource-the-garage",
+          "published_at": null,
+          "publication_date_status": "unavailable",
+          "publication_date_basis": "Portfolio shows July 2026, but no exact publication day. No first-of-month date invented.",
+          "publication_date_checked_at": "2026-09-05",
+          "observed_at": "2026-09-05",
+          "source_quality": "discovery-only",
+          "confidence": "medium",
+          "summary": "Names Feras as Momawwil founder and describes an MVP under development and a built readiness-agent demo. AI-reviewed portfolio corroborates identity but is not independent proof of current product completion, funding or the page's unverified winner claim."
+        }
+      ]
+    },
+    {
+      "id": "lead-program-nawaf-eissa-precision-brake",
+      "identity": {
+        "display_name": "Nawaf Eissa",
+        "linkedin_url": "https://www.linkedin.com/in/nawaf-eissa",
+        "current_title": "Founder & CEO, Precision Brake",
+        "current_organization": "Precision Brake — APBS",
+        "identity_status": "verified",
+        "identity_confidence": "high",
+        "evidence_ids": [
+          "lead-program-nawaf-eissa-precision-brake-e3"
+        ]
+      },
+      "company": {
+        "name": "Precision Brake — APBS",
+        "website_url": null,
+        "linkedin_url": null,
+        "city": "Riyadh",
+        "saudi_basis": "person-based",
+        "founder_role_started_at": null,
+        "founded_at": null,
+        "linkedin_employee_band": null,
+        "sector": "Aviation operations / simulation",
+        "lifecycle_stage": "building",
+        "product_types": [
+          "internal-software",
+          "web-platform"
+        ],
+        "product_summary": "Garage Challenge prototype for aviation brake-temperature prediction, simulation and an operations dashboard.",
+        "existing_product_urls": [],
+        "evidence_ids": [
+          "lead-program-nawaf-eissa-precision-brake-e1",
+          "lead-program-nawaf-eissa-precision-brake-e2",
+          "lead-program-nawaf-eissa-precision-brake-e3"
+        ]
+      },
+      "discovery": {
+        "strategy": {
+          "id": "accelerator-incubator-prebuild-v1",
+          "label": "Accelerators & incubators • Pre-build cohort-first",
+          "batch_id": "accelerator-incubator-2026-09-05",
+          "method": "official-program",
+          "access": "logged-in-linkedin"
+        },
+        "lane": "new-founder",
+        "resource_ids": [
+          "resource-the-garage"
+        ],
+        "public_behavior_tags": [
+          "program-first-pilot",
+          "garage-challenge",
+          "needs-verification",
+          "prototype-milestone",
+          "specialist-domain"
+        ],
+        "behavioral_summary": "Garage Challenge prototype for aviation brake-temperature prediction, simulation and an operations dashboard.",
+        "discovery_note": "EXPLORATORY, lower research priority. Named founder and concrete prototype are verified; an engineering collaborator already built substantial components. Current capacity and budget are unknown. Specialized aviation work is less aligned than ordinary app builds; no safety or regulatory approval is inferred."
+      },
+      "qualification": {
+        "persona_review": {
+          "status": "needs-verification",
+          "core_product": "prototype",
+          "software_builders_min": null,
+          "software_builders_max": null,
+          "missing_checks": [
+            "Confirm prototype remains incomplete and is being commercialized now",
+            "Verify current software-builder range including challenge collaborators",
+            "Verify paid external-development scope, budget and purchasing timeline",
+            "Identify a separable non-safety-critical dashboard or simulation scope and specialist validation responsibility"
+          ],
+          "summary": "EXPLORATORY, lower research priority. Named founder and concrete prototype are verified; an engineering collaborator already built substantial components. Current capacity and budget are unknown. Specialized aviation work is less aligned than ordinary app builds; no safety or regulatory approval is inferred."
+        },
+        "ksa_fit": "confirmed",
+        "decision_authority": "confirmed",
+        "software_fit": "possible",
+        "product_intent": {
+          "score": 3,
+          "level": "confirmed",
+          "summary": "Garage Challenge prototype for aviation brake-temperature prediction, simulation and an operations dashboard.",
+          "evidence_ids": [
+            "lead-program-nawaf-eissa-precision-brake-e2"
+          ]
+        },
+        "outsourcing_likelihood": {
+          "score": 0,
+          "level": "unknown",
+          "summary": "No explicit paid external-development request or agency openness verified.",
+          "evidence_ids": []
+        },
+        "budget_readiness": {
+          "score": 0,
+          "level": "unknown",
+          "summary": "No awarded cash, approved build budget or paid pilot verified. Program participation is not funding.",
+          "evidence_ids": []
+        },
+        "timing": {
+          "score": 1,
+          "level": "unknown",
+          "summary": "July prototype/incubation evidence; no newer build deadline verified.",
+          "evidence_ids": [
+            "lead-program-nawaf-eissa-precision-brake-e1"
+          ]
+        },
+        "negative_signals": [],
+        "positive_score": 4,
+        "penalty": 0,
+        "total_score": 4,
+        "band": "D",
+        "qualification_confidence": "low",
+        "manually_reviewed_at": "2026-09-05"
+      },
+      "research": {
+        "status": "review-required",
+        "discovered_at": "2026-09-05",
+        "last_researched_at": "2026-09-05",
+        "next_review_at": "2026-09-12",
+        "notes": "EXPLORATORY, lower research priority. Named founder and concrete prototype are verified; an engineering collaborator already built substantial components. Current capacity and budget are unknown. Specialized aviation work is less aligned than ordinary app builds; no safety or regulatory approval is inferred.\nVerification needed: Confirm prototype remains incomplete and is being commercialized now; Verify current software-builder range including challenge collaborators; Verify paid external-development scope, budget and purchasing timeline; Identify a separable non-safety-critical dashboard or simulation scope and specialist validation responsibility."
+      },
+      "evidence": [
+        {
+          "id": "lead-program-nawaf-eissa-precision-brake-e1",
+          "claim_key": "program_participation",
+          "source_url": "https://www.linkedin.com/feed/update/urn:li:activity:7479444896983080961/",
+          "source_title": "Nawaf Eissa — APBS first public prototype",
+          "source_type": "first_party_post",
+          "publisher_id": "person:nawaf-eissa",
+          "resource_id": "resource-the-garage",
+          "published_at": "2026-07-05",
+          "publication_date_status": "derived",
+          "publication_date_basis": "UTC creation day decoded from the canonical LinkedIn activity identifier; not a source-displayed exact date.",
+          "publication_date_checked_at": "2026-09-05",
+          "observed_at": "2026-09-05",
+          "source_quality": "primary",
+          "confidence": "high",
+          "summary": "Describes presenting APBS publicly at The Garage and building its prototype with engineers/technicians during the challenge. Participation does not establish incubator selection, grant receipt or a current purchasing deadline."
+        },
+        {
+          "id": "lead-program-nawaf-eissa-precision-brake-e2",
+          "claim_key": "product_intent",
+          "source_url": "https://www.linkedin.com/feed/update/urn:li:activity:7481045892398247937/",
+          "source_title": "Mohammed Alsaeed — APBS prototype implementation",
+          "source_type": "first_party_post",
+          "publisher_id": "team:precision-brake",
+          "resource_id": "resource-the-garage",
+          "published_at": "2026-07-09",
+          "publication_date_status": "derived",
+          "publication_date_basis": "UTC creation day decoded from the canonical LinkedIn activity identifier; not a source-displayed exact date.",
+          "publication_date_checked_at": "2026-09-05",
+          "observed_at": "2026-09-05",
+          "source_quality": "primary",
+          "confidence": "high",
+          "summary": "Project participant attributes the concept to Nawaf and describes building a simulation, operations dashboard, aircraft profiles and brake-temperature prediction prototype. Establishes one named software contributor in July, not today's complete team."
+        },
+        {
+          "id": "lead-program-nawaf-eissa-precision-brake-e3",
+          "claim_key": "identity",
+          "source_url": "https://www.linkedin.com/in/nawaf-eissa/",
+          "source_title": "Nawaf Eissa — Precision Brake founder profile",
+          "source_type": "first_party_profile",
+          "publisher_id": "person:nawaf-eissa",
+          "resource_id": "resource-the-garage",
+          "published_at": null,
+          "publication_date_status": "not-applicable",
+          "publication_date_basis": "Living profile or homepage; observation date is not a publication date.",
+          "publication_date_checked_at": "2026-09-05",
+          "observed_at": "2026-09-05",
+          "source_quality": "primary",
+          "confidence": "high",
+          "summary": "Profile identifies Riyadh-based founder and CEO of Precision Brake and its APBS aviation system. Patent and performance statements are self-reported and were not used as verified qualification evidence."
+        }
+      ]
+    },
+    {
+      "id": "lead-program-ahmad-alohali-wasl",
+      "identity": {
+        "display_name": "Ahmad Alohali",
+        "linkedin_url": "https://www.linkedin.com/in/ahmad-alohali",
+        "current_title": "Co-founder, Wasl; Analyst, Deloitte Technology & Transformation",
+        "current_organization": "Wasl — NFC digital receipts",
+        "identity_status": "verified",
+        "identity_confidence": "high",
+        "evidence_ids": [
+          "lead-program-ahmad-alohali-wasl-e3"
+        ]
+      },
+      "company": {
+        "name": "Wasl — NFC digital receipts",
+        "website_url": null,
+        "linkedin_url": null,
+        "city": "Riyadh",
+        "saudi_basis": "person-based",
+        "founder_role_started_at": null,
+        "founded_at": null,
+        "linkedin_employee_band": null,
+        "sector": "Retail technology / digital receipts",
+        "lifecycle_stage": "building",
+        "product_types": [
+          "mobile-app",
+          "web-platform"
+        ],
+        "product_summary": "NFC digital-receipt delivery, receipt management and POS-integration product; Garage Challenge runner-up with incubation.",
+        "existing_product_urls": [],
+        "evidence_ids": [
+          "lead-program-ahmad-alohali-wasl-e1",
+          "lead-program-ahmad-alohali-wasl-e2",
+          "lead-program-ahmad-alohali-wasl-e3"
+        ]
+      },
+      "discovery": {
+        "strategy": {
+          "id": "accelerator-incubator-prebuild-v1",
+          "label": "Accelerators & incubators • Pre-build cohort-first",
+          "batch_id": "accelerator-incubator-2026-09-05",
+          "method": "official-program",
+          "access": "logged-in-linkedin"
+        },
+        "lane": "new-founder",
+        "resource_ids": [
+          "resource-the-garage"
+        ],
+        "public_behavior_tags": [
+          "program-first-pilot",
+          "garage-challenge",
+          "needs-verification",
+          "incubator-selected",
+          "competition-runner-up"
+        ],
+        "behavioral_summary": "NFC digital-receipt delivery, receipt management and POS-integration product; Garage Challenge runner-up with incubation.",
+        "discovery_note": "LOW RESEARCH PRIORITY, not a qualified buyer. Official KAUST corroboration is strong, but three technical-background cofounders create a substantial persona risk. Do not equate academic background with current builder count, or incubation with cash. No fresh dated build milestone since July was found."
+      },
+      "qualification": {
+        "persona_review": {
+          "status": "needs-verification",
+          "core_product": "unknown",
+          "software_builders_min": null,
+          "software_builders_max": null,
+          "missing_checks": [
+            "Verify whether core receipt product is already functional or launched",
+            "Determine whether all three technically educated cofounders currently build software; establish maximum two",
+            "Confirm present incubator milestone and paid software-services budget",
+            "Verify external-development openness and purchasing authority for a defined scope"
+          ],
+          "summary": "LOW RESEARCH PRIORITY, not a qualified buyer. Official KAUST corroboration is strong, but three technical-background cofounders create a substantial persona risk. Do not equate academic background with current builder count, or incubation with cash. No fresh dated build milestone since July was found."
+        },
+        "ksa_fit": "confirmed",
+        "decision_authority": "confirmed",
+        "software_fit": "confirmed",
+        "product_intent": {
+          "score": 3,
+          "level": "confirmed",
+          "summary": "NFC digital-receipt delivery, receipt management and POS-integration product; Garage Challenge runner-up with incubation.",
+          "evidence_ids": [
+            "lead-program-ahmad-alohali-wasl-e2"
+          ]
+        },
+        "outsourcing_likelihood": {
+          "score": 0,
+          "level": "unknown",
+          "summary": "No explicit paid external-development request or agency openness verified.",
+          "evidence_ids": []
+        },
+        "budget_readiness": {
+          "score": 0,
+          "level": "unknown",
+          "summary": "No awarded cash, approved build budget or paid pilot verified. Program participation is not funding.",
+          "evidence_ids": []
+        },
+        "timing": {
+          "score": 1,
+          "level": "unknown",
+          "summary": "July prototype/incubation evidence; no newer build deadline verified.",
+          "evidence_ids": [
+            "lead-program-ahmad-alohali-wasl-e1"
+          ]
+        },
+        "negative_signals": [],
+        "positive_score": 4,
+        "penalty": 0,
+        "total_score": 4,
+        "band": "D",
+        "qualification_confidence": "low",
+        "manually_reviewed_at": "2026-09-05"
+      },
+      "research": {
+        "status": "review-required",
+        "discovered_at": "2026-09-05",
+        "last_researched_at": "2026-09-05",
+        "next_review_at": "2026-09-12",
+        "notes": "LOW RESEARCH PRIORITY, not a qualified buyer. Official KAUST corroboration is strong, but three technical-background cofounders create a substantial persona risk. Do not equate academic background with current builder count, or incubation with cash. No fresh dated build milestone since July was found.\nVerification needed: Verify whether core receipt product is already functional or launched; Determine whether all three technically educated cofounders currently build software; establish maximum two; Confirm present incubator milestone and paid software-services budget; Verify external-development openness and purchasing authority for a defined scope."
+      },
+      "evidence": [
+        {
+          "id": "lead-program-ahmad-alohali-wasl-e1",
+          "claim_key": "program_participation",
+          "source_url": "https://www.linkedin.com/feed/update/urn:li:activity:7483060484309569536/",
+          "source_title": "Ahmad Alohali — Wasl second place and incubation",
+          "source_type": "first_party_post",
+          "publisher_id": "person:ahmad-alohali",
+          "resource_id": "resource-the-garage",
+          "published_at": "2026-07-15",
+          "publication_date_status": "derived",
+          "publication_date_basis": "UTC creation day decoded from the canonical LinkedIn activity identifier; not a source-displayed exact date.",
+          "publication_date_checked_at": "2026-09-05",
+          "observed_at": "2026-09-05",
+          "source_quality": "primary",
+          "confidence": "high",
+          "summary": "Says Wasl placed second at The Garage Challenge and earned incubator admission. Identifies Salem and Abdelrahman as cofounders; does not disclose cash or a vendor requirement."
+        },
+        {
+          "id": "lead-program-ahmad-alohali-wasl-e2",
+          "claim_key": "product_intent",
+          "source_url": "https://www.linkedin.com/feed/update/urn:li:activity:7482698969416998913/",
+          "source_title": "KAUST Startups — Wasl founder spotlight",
+          "source_type": "official_program_post",
+          "publisher_id": "organization:kaust",
+          "resource_id": "resource-the-garage",
+          "published_at": "2026-07-14",
+          "publication_date_status": "derived",
+          "publication_date_basis": "UTC creation day decoded from the canonical LinkedIn activity identifier; not a source-displayed exact date.",
+          "publication_date_checked_at": "2026-09-05",
+          "observed_at": "2026-09-05",
+          "source_quality": "primary",
+          "confidence": "high",
+          "summary": "KAUST independently names Ahmad Alohali, Abdelrahman Sabbagh and Salem Al-Saqaf as Wasl cofounders, confirms direct Garage incubation and describes an NFC digital-receipt platform. CS/ECE backgrounds do not establish current developer roles."
+        },
+        {
+          "id": "lead-program-ahmad-alohali-wasl-e3",
+          "claim_key": "identity",
+          "source_url": "https://www.linkedin.com/in/ahmad-alohali/",
+          "source_title": "Ahmad Alohali — profile and Wasl award",
+          "source_type": "first_party_profile",
+          "publisher_id": "person:ahmad-alohali",
+          "resource_id": "resource-the-garage",
+          "published_at": null,
+          "publication_date_status": "not-applicable",
+          "publication_date_basis": "Living profile or homepage; observation date is not a publication date.",
+          "publication_date_checked_at": "2026-09-05",
+          "observed_at": "2026-09-05",
+          "source_quality": "primary",
+          "confidence": "high",
+          "summary": "Riyadh-based; profile lists developing Wasl's receipt-delivery, management and POS-integration experience. July 2026 Garage award is listed. Product availability, current founder delivery roles and paid budget remain unresolved."
+        }
+      ]
+    }
+  ],
+  "metric_basis": {
+    "program_search_queries": [
+      "\"Misk Launchpad 10.0\"",
+      "\"Misk Launchpad\"",
+      "\"Antler\" \"Riyadh\"",
+      "\"Antler\" \"Riyadh\" \"joining\"",
+      "\"تحدي الكراج\""
+    ],
+    "observed_post_impressions_by_query": [
+      8,
+      12,
+      9,
+      3,
+      6
+    ],
+    "counts_are_exhaustive": false,
+    "exact_name_and_web_enrichment_excluded_from_query_metrics": true
+  }
+}

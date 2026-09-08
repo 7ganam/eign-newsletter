@@ -1,9 +1,10 @@
 import { useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
 import type { CSSProperties, DragEvent as ReactDragEvent, PointerEvent as ReactPointerEvent } from 'react'
-import leapPeopleUrl from '../assets/people/leap-2026-people.json?url'
+import unifiedPeopleUrl from '../assets/people/unified-people.json?url'
 import { ColumnResizeHandle, useResizableColumns } from './resizableColumns'
+import { ArchiveToolbar, RowSelectionCell, RowSelectionHeader, useRowArchive } from './rowArchive'
 import { usePersistedSort } from './tablePreferences'
-import type { UnifiedPeopleSourceFile } from './unifiedPeopleTypes'
+import type { UnifiedPeopleFile } from './unifiedPeopleTypes'
 import { WorkspaceNav } from './WorkspaceNav'
 
 type LeapSpeaker = {
@@ -144,6 +145,7 @@ const DEFAULT_SORT_DIRECTIONS: Record<LeapColumn, SortDirection> = {
 
 const isLeapColumn = (value: unknown): value is LeapColumn =>
   typeof value === 'string' && LEAP_COLUMNS_BY_KEY.has(value as LeapColumn)
+const leapArchiveId = (speaker: IndexedLeapSpeaker) => `${speaker.profile_url}::${speaker.sourceIndex}`
 
 const restoreColumnOrder = () => {
   try {
@@ -241,16 +243,17 @@ const CAMPAIGN_SIGNAL_LABEL: Record<CampaignSignal, string> = {
   uncertain: 'No current signal',
 }
 
-const convertedLeapSpeakers = (data: UnifiedPeopleSourceFile) => data.people.map((person, sourceIndex): IndexedLeapSpeaker => {
-  const appearance = person.event_appearances.find((item) => item.event_id === 'leap-2026')
-  const sourceRecord = person.source_records.find((item) => item.source_id === 'leap-2026')
+const convertedLeapSpeakers = (data: UnifiedPeopleFile) => data.people.flatMap((person) =>
+  person.source_records.filter((record) => record.source_id === 'leap-2026'),
+).map((sourceRecord, sourceIndex): IndexedLeapSpeaker => {
+  const rawSpeaker = sourceRecord.raw as Partial<LeapSpeaker>
   const speaker: LeapSpeaker = {
-    name: person.name.display,
-    title: person.current_role.title,
-    organization: person.current_role.organization,
-    profile_url: appearance?.profile_url ?? sourceRecord?.source_url ?? '',
-    image_src: person.image.source_path ?? person.image.url ?? '',
-    image_alt: person.image.alt ?? person.name.display,
+    name: rawSpeaker.name ?? '',
+    title: rawSpeaker.title ?? null,
+    organization: rawSpeaker.organization ?? null,
+    profile_url: rawSpeaker.profile_url ?? sourceRecord.source_url ?? '',
+    image_src: rawSpeaker.image_src ?? '',
+    image_alt: rawSpeaker.image_alt ?? rawSpeaker.name ?? '',
   }
   const explicitRegionSignal = hasMiddleEastRegionSignal(speaker)
   const nameSignal = arabicNameSignal(speaker.name)
@@ -448,33 +451,35 @@ export function LeapData() {
         return (sortDirection === 'asc' ? comparison : -comparison) || left.sourceIndex - right.sourceIndex
       })
   }, [campaignOverrides, completeness, campaignFilter, deferredQuery, sortDirection, sortField, speakers])
+  const archive = useRowArchive({ tableId: 'leap-speakers', visibleRowIds: results.map(leapArchiveId) })
+  const displayedResults = results.filter((speaker) => archive.showArchived === archive.isArchived(leapArchiveId(speaker)))
 
   const checkedTargetCount = useMemo(
     () => speakers.reduce((total, speaker) => total + Number(isCampaignChecked(speaker, campaignOverrides)), 0),
     [campaignOverrides, speakers],
   )
 
-  const pageCount = Math.max(1, Math.ceil(results.length / PAGE_SIZE))
+  const pageCount = Math.max(1, Math.ceil(displayedResults.length / PAGE_SIZE))
   const safePage = Math.min(page, pageCount)
   const pageStart = (safePage - 1) * PAGE_SIZE
-  const visibleSpeakers = results.slice(pageStart, pageStart + PAGE_SIZE)
-  const firstVisible = results.length ? pageStart + 1 : 0
-  const lastVisible = Math.min(pageStart + PAGE_SIZE, results.length)
+  const visibleSpeakers = displayedResults.slice(pageStart, pageStart + PAGE_SIZE)
+  const firstVisible = displayedResults.length ? pageStart + 1 : 0
+  const lastVisible = Math.min(pageStart + PAGE_SIZE, displayedResults.length)
 
   useEffect(() => {
     const previousTitle = document.title
     const controller = new AbortController()
     document.title = 'LEAP 2026 speaker data · EIGN Data Workspace'
 
-    fetch(leapPeopleUrl, { signal: controller.signal })
+    fetch(unifiedPeopleUrl, { signal: controller.signal })
       .then((response) => {
-        if (!response.ok) throw new Error(`The converted LEAP people file returned ${response.status}.`)
-        return response.json() as Promise<UnifiedPeopleSourceFile>
+        if (!response.ok) throw new Error(`The combined people file returned ${response.status}.`)
+        return response.json() as Promise<UnifiedPeopleFile>
       })
       .then((data) => setSpeakers(convertedLeapSpeakers(data)))
       .catch((error) => {
         if (controller.signal.aborted) return
-        setLoadError(error instanceof Error ? error.message : 'Unable to load the converted LEAP people file.')
+        setLoadError(error instanceof Error ? error.message : 'Unable to load LEAP records from the combined people file.')
       })
 
     return () => {
@@ -606,7 +611,7 @@ export function LeapData() {
     || sortDirection !== DEFAULT_SORT.direction,
   )
   const tableStyle = {
-    '--resizable-table-width': `${totalWidth(columnOrder)}px`,
+    '--resizable-table-width': `${totalWidth(columnOrder, 42)}px`,
   } as CSSProperties
 
   return (
@@ -626,7 +631,7 @@ export function LeapData() {
               <p>Source-preserving conference directory extracted from the saved speaker page.</p>
             </div>
             <div>
-              <span>{results.length.toLocaleString()} / {speakers.length.toLocaleString()}</span>
+              <span>{displayedResults.length.toLocaleString()} / {speakers.length.toLocaleString()}</span>
               <a href={SOURCE_URL} target="_blank" rel="noreferrer">Open source ↗</a>
             </div>
           </header>
@@ -672,17 +677,21 @@ export function LeapData() {
           </div>
 
           <div className="result-meta leap-data-meta" aria-live="polite">
-            <span>{results.length.toLocaleString()} matching speakers · sorted by {LEAP_COLUMNS_BY_KEY.get(sortField)?.label.toLocaleLowerCase()} {sortDirection === 'asc' ? '↑' : '↓'}</span>
+            <span>{displayedResults.length.toLocaleString()} matching speakers · sorted by {LEAP_COLUMNS_BY_KEY.get(sortField)?.label.toLocaleLowerCase()} {sortDirection === 'asc' ? '↑' : '↓'}</span>
             <span>{checkedTargetCount} checked · {Object.keys(campaignOverrides).length} manual overrides · drag headers to reorder · click arrows to sort · drag edges to resize</span>
           </div>
+
+          <ArchiveToolbar archive={archive} noun="LEAP speakers" />
 
           <div className="riseup-speakers-table-wrap leap-data-table-wrap">
             <table className="company-table riseup-speakers-table leap-data-table resizable-table" style={tableStyle}>
               <colgroup>
+                <col className="row-select-column" style={{ width: '42px' }} />
                 {columnOrder.map((column) => <col key={column} style={{ width: `${widths[column]}px` }} />)}
               </colgroup>
               <thead>
                 <tr>
+                  <th className="row-select-heading" scope="col"><RowSelectionHeader allSelected={archive.allVisibleSelected} label="Select all matching speakers" onToggle={archive.toggleAllVisible} someSelected={archive.someVisibleSelected} /></th>
                   {columnOrder.map((columnKey) => {
                     const column = LEAP_COLUMNS_BY_KEY.get(columnKey)!
                     const active = sortField === column.key
@@ -732,6 +741,7 @@ export function LeapData() {
               <tbody>
                 {visibleSpeakers.map((speaker) => (
                   <tr key={`${speaker.profile_url}-${speaker.sourceIndex}`}>
+                    <td className="row-select-cell"><RowSelectionCell checked={archive.selectedIds.has(leapArchiveId(speaker))} label={`Select ${speaker.name}`} onToggle={() => archive.toggleRow(leapArchiveId(speaker))} /></td>
                     {columnOrder.map((column) => (
                       <LeapSpeakerCell
                         key={column}
@@ -746,15 +756,15 @@ export function LeapData() {
                 ))}
               </tbody>
             </table>
-            {!results.length && (
+            {!displayedResults.length && (
               <div className="empty-results">
-                {loadError || (speakers.length ? 'No LEAP speakers match the current filters.' : 'Loading converted LEAP speakers…')}
+                {loadError || (speakers.length ? 'No LEAP speakers match the current filters.' : 'Loading LEAP records from the combined people file…')}
               </div>
             )}
           </div>
 
           <footer className="leap-data-pager">
-            <span>Rows {firstVisible.toLocaleString()}–{lastVisible.toLocaleString()} of {results.length.toLocaleString()}</span>
+            <span>Rows {firstVisible.toLocaleString()}–{lastVisible.toLocaleString()} of {displayedResults.length.toLocaleString()}</span>
             <div>
               <button type="button" disabled={safePage === 1} onClick={() => setPage((current) => Math.max(1, current - 1))}>Previous</button>
               <span>Page {safePage} of {pageCount}</span>

@@ -1,0 +1,44 @@
+{
+  "checked_at": "2026-09-05T07:33:42.767Z",
+  "rows": 50,
+  "resources": 25,
+  "outcomes": [
+    {
+      "outcome": "Exclude from campaign",
+      "count": 38
+    },
+    {
+      "outcome": "Hold for verification",
+      "count": 7
+    },
+    {
+      "outcome": "Investigate first",
+      "count": 5
+    }
+  ],
+  "canonical_hashes": [
+    {
+      "file": "assets/lead-research/saudi-lead-persona.json",
+      "sha256": "6ed8272872ee51065cdb7d3e2e58a5faa634be40b8b4e9e87003a4e671e7a91f"
+    },
+    {
+      "file": "assets/lead-research/saudi-lead-resources.json",
+      "sha256": "1b650f49fce5a6453cc29e1cd50e16f6916bc95934047f0c1b5fa646769b3608"
+    },
+    {
+      "file": "assets/lead-research/saudi-software-leads.json",
+      "sha256": "8772999c3221dca21c6587c6f03df3e6ea913d64b1a0eee00efe98db26a44e3a"
+    }
+  ],
+  "tests": "IDs, original mappings, row counts, team unknowns and all accepted-resource coverage passed",
+  "chart_contract": {
+    "question": "Which recorded evidence gaps and maturity signals undermine the current labels?",
+    "takeaway": "Universal team evidence gap; stored confidence is unsupported",
+    "form": "horizontalBar",
+    "palette": "single default categorical series, count magnitude",
+    "encoding": "flag category and count of records",
+    "overlap": "Flags overlap; denominator 50 for each",
+    "qa": "Counts recomputed from audited snapshot and compared to row-level totals"
+  },
+  "canonical_files_modified": false
+}

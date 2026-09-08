@@ -1,0 +1,1040 @@
+{
+  "schema_version": "linkedin-intent-research-batch.v1",
+  "batch_id": "linkedin-intent-first-2026-09-05",
+  "observed_at": "2026-09-05",
+  "scope": "Read-only signed-in LinkedIn in Microsoft Edge; no outreach or contact enrichment.",
+  "counts": {
+    "newly_discovered": 4,
+    "prior_same_day_pilot": 3,
+    "imported_research_candidates": 7,
+    "confirmed_persona_fits": 0
+  },
+  "limitations": [
+    "All rows are research holds, not qualified buyers.",
+    "Profiles and authored posts are not independent publishers.",
+    "Publication dates remain null for relative ages.",
+    "No complete software-builder upper bound established.",
+    "Old requests are not current buying demand."
+  ],
+  "rows": [
+    {
+      "id": "lead-li-intent-afnan-anwal-platform",
+      "identity": {
+        "display_name": "Afnan .A.",
+        "linkedin_url": "https://www.linkedin.com/in/afnan-a-40026831a",
+        "current_title": "Founder, Anwal Business Solutions",
+        "current_organization": "Anwal Business Solutions",
+        "identity_status": "verified",
+        "identity_confidence": "high",
+        "evidence_ids": [
+          "lead-li-intent-afnan-anwal-platform-e1"
+        ]
+      },
+      "company": {
+        "name": "Anwal Business Solutions",
+        "website_url": "https://www.anwal.sa/",
+        "linkedin_url": "https://www.linkedin.com/company/anwal-business-solutions",
+        "city": "Riyadh",
+        "saudi_basis": "hq-based",
+        "founder_role_started_at": null,
+        "founded_at": null,
+        "linkedin_employee_band": "11–50",
+        "sector": "Business services",
+        "lifecycle_stage": "operating",
+        "product_types": [
+          "web-platform",
+          "marketplace"
+        ],
+        "product_summary": "Proposed standalone B2B platform: accounts/permissions, opportunity and service requests, partner workflows, administration, search and future payment/integrations.",
+        "existing_product_urls": [],
+        "evidence_ids": [
+          "lead-li-intent-afnan-anwal-platform-e2"
+        ]
+      },
+      "discovery": {
+        "strategy": {
+          "id": "linkedin-intent-first-v1",
+          "label": "LinkedIn • Intent-first",
+          "batch_id": "linkedin-intent-first-2026-09-05",
+          "method": "direct-request",
+          "access": "logged-in-linkedin"
+        },
+        "lane": "sme-digital-build",
+        "resource_ids": [
+          "lr-linkedin-intent-search"
+        ],
+        "public_behavior_tags": [
+          "explicit-vendor-request",
+          "cost-and-timeline-request",
+          "new-platform-brief"
+        ],
+        "behavioral_summary": "Proposed standalone B2B platform: accounts/permissions, opportunity and service requests, partner workflows, administration, search and future payment/integrations.",
+        "discovery_note": "HIGH research priority. Founder requests cost/timeline proposals. Existing CRM/call-center services and an Odoo form are not proof of a custom core app, but prevent assuming no software exists."
+      },
+      "qualification": {
+        "persona_review": {
+          "status": "needs-verification",
+          "core_product": "unknown",
+          "software_builders_min": null,
+          "software_builders_max": null,
+          "missing_checks": [
+            "Confirm first unbuilt core product rather than replacement or extension.",
+            "Count all current software builders, including founders and contractors. The 11–50 employee band and two visible profiles are not a software-team census.",
+            "Confirm vendor selection remains open and establish the paid build budget."
+          ],
+          "summary": "Strong current vendor brief. Anwal already has digital-service workflows, so its first unbuilt core product and a maximum of two software builders are not established."
+        },
+        "ksa_fit": "confirmed",
+        "decision_authority": "confirmed",
+        "software_fit": "confirmed",
+        "product_intent": {
+          "score": 6,
+          "level": "confirmed",
+          "summary": "Proposed standalone B2B platform: accounts/permissions, opportunity and service requests, partner workflows, administration, search and future payment/integrations.",
+          "evidence_ids": [
+            "lead-li-intent-afnan-anwal-platform-e2"
+          ]
+        },
+        "outsourcing_likelihood": {
+          "score": 5,
+          "level": "confirmed",
+          "summary": "External-development request; current provider eligibility and fulfillment require verification.",
+          "evidence_ids": [
+            "lead-li-intent-afnan-anwal-platform-e2"
+          ]
+        },
+        "budget_readiness": {
+          "score": 0,
+          "level": "unknown",
+          "summary": "No supported project build budget; no wealth, title or funding inference.",
+          "evidence_ids": []
+        },
+        "timing": {
+          "score": 3,
+          "level": "probable",
+          "summary": "Recent relative post age observed; exact publication date and deadline unknown.",
+          "evidence_ids": [
+            "lead-li-intent-afnan-anwal-platform-e2"
+          ]
+        },
+        "negative_signals": [],
+        "positive_score": 14,
+        "penalty": 0,
+        "total_score": 14,
+        "band": "B",
+        "qualification_confidence": "low",
+        "manually_reviewed_at": "2026-09-05"
+      },
+      "research": {
+        "status": "review-required",
+        "discovered_at": "2026-09-05",
+        "last_researched_at": "2026-09-05",
+        "next_review_at": "2026-09-12",
+        "notes": "HIGH research priority. Founder requests cost/timeline proposals. Existing CRM/call-center services and an Odoo form are not proof of a custom core app, but prevent assuming no software exists.\nVerification gaps: Confirm first unbuilt core product rather than replacement or extension. Count all current software builders, including founders and contractors. The 11–50 employee band and two visible profiles are not a software-team census. Confirm vendor selection remains open and establish the paid build budget."
+      },
+      "evidence": [
+        {
+          "id": "lead-li-intent-afnan-anwal-platform-e1",
+          "claim_key": "identity",
+          "source_url": "https://www.linkedin.com/in/afnan-a-40026831a/",
+          "source_title": "Afnan .A. — profile",
+          "source_type": "first_party_profile",
+          "resource_id": "lr-linkedin-intent-search",
+          "published_at": null,
+          "observed_at": "2026-09-05",
+          "source_quality": "primary",
+          "confidence": "high",
+          "summary": "Founder of Anwal Business Solutions in Riyadh Region. The professional display name uses initials; no fuller legal identity is inferred."
+        },
+        {
+          "id": "lead-li-intent-afnan-anwal-platform-e2",
+          "claim_key": "product_intent",
+          "source_url": "https://www.linkedin.com/feed/update/urn:li:activity:7498636413467365376/",
+          "source_title": "Afnan — platform development brief",
+          "source_type": "first_party_post",
+          "resource_id": "lr-linkedin-intent-search",
+          "published_at": null,
+          "observed_at": "2026-09-05",
+          "source_quality": "primary",
+          "confidence": "high",
+          "summary": "Displayed 1w. Requests a company to develop a separate interactive platform linked to the current website, with roles, workflows, search and future payments/integrations. Asks for work examples, technology, cost and timeline. No budget or complete software-team size is stated."
+        },
+        {
+          "id": "lead-li-intent-afnan-anwal-platform-e3",
+          "claim_key": "team_context",
+          "source_url": "https://www.linkedin.com/company/anwal-business-solutions/",
+          "source_title": "Anwal — company page",
+          "source_type": "first_party_company",
+          "resource_id": "lr-linkedin-intent-search",
+          "published_at": null,
+          "observed_at": "2026-09-05",
+          "source_quality": "primary",
+          "confidence": "high",
+          "summary": "Lists 11–50 total employees and two visible associated profiles. This is not evidence of a two-person engineering maximum or of current contractor capacity."
+        }
+      ]
+    },
+    {
+      "id": "lead-li-intent-maryam-alatwiy-photobooth",
+      "identity": {
+        "display_name": "Maryam Alatwiy",
+        "linkedin_url": "https://www.linkedin.com/in/maryam-alatwiy-7b10191b5",
+        "current_title": null,
+        "current_organization": null,
+        "identity_status": "verified",
+        "identity_confidence": "high",
+        "evidence_ids": [
+          "lead-li-intent-maryam-alatwiy-photobooth-e1"
+        ]
+      },
+      "company": {
+        "name": "Unnamed Tabuk Photo Booth business",
+        "website_url": null,
+        "linkedin_url": null,
+        "city": "Tabuk",
+        "saudi_basis": "operations-based",
+        "founder_role_started_at": null,
+        "founded_at": null,
+        "linkedin_employee_band": null,
+        "sector": "Photo Booth / event and retail services",
+        "lifecycle_stage": "operating",
+        "product_types": [
+          "mobile-app",
+          "internal-software"
+        ],
+        "product_summary": "Project-contract brief for a custom touch-screen Photo Booth app with camera/printer integration, effects, QR sharing and payment; Windows or tablet implementation.",
+        "existing_product_urls": [],
+        "evidence_ids": [
+          "lead-li-intent-maryam-alatwiy-photobooth-e2"
+        ]
+      },
+      "discovery": {
+        "strategy": {
+          "id": "linkedin-intent-first-v1",
+          "label": "LinkedIn • Intent-first",
+          "batch_id": "linkedin-intent-first-2026-09-05",
+          "method": "direct-request",
+          "access": "logged-in-linkedin"
+        },
+        "lane": "sme-digital-build",
+        "resource_ids": [
+          "lr-linkedin-intent-search"
+        ],
+        "public_behavior_tags": [
+          "project-contract-request",
+          "onsite-hardware-testing",
+          "specific-software-brief"
+        ],
+        "behavioral_summary": "Project-contract brief for a custom touch-screen Photo Booth app with camera/printer integration, effects, QR sharing and payment; Windows or tablet implementation.",
+        "discovery_note": "HIGH research priority with an onsite constraint: developer must be in Tabuk for hardware tests. Earlier device-maintenance fees are not an app-development budget. Owner/founder status is not asserted."
+      },
+      "qualification": {
+        "persona_review": {
+          "status": "needs-verification",
+          "core_product": "unknown",
+          "software_builders_min": null,
+          "software_builders_max": null,
+          "missing_checks": [
+            "Identify the commissioning business and Maryam’s authority.",
+            "Check whether this is a first unbuilt core application or replacement of existing booth software.",
+            "Verify no more than two current software builders including contractors.",
+            "Confirm currentness, budget and feasibility of required in-person work in Tabuk."
+          ],
+          "summary": "Specific Saudi project contract; commissioning institution, authority and current software capacity remain unknown. Existing physical Photo Booth activity does not prove this is a first custom-software build."
+        },
+        "ksa_fit": "confirmed",
+        "decision_authority": "possible",
+        "software_fit": "confirmed",
+        "product_intent": {
+          "score": 6,
+          "level": "confirmed",
+          "summary": "Project-contract brief for a custom touch-screen Photo Booth app with camera/printer integration, effects, QR sharing and payment; Windows or tablet implementation.",
+          "evidence_ids": [
+            "lead-li-intent-maryam-alatwiy-photobooth-e2"
+          ]
+        },
+        "outsourcing_likelihood": {
+          "score": 4,
+          "level": "probable",
+          "summary": "External-development request; current provider eligibility and fulfillment require verification.",
+          "evidence_ids": [
+            "lead-li-intent-maryam-alatwiy-photobooth-e2"
+          ]
+        },
+        "budget_readiness": {
+          "score": 0,
+          "level": "unknown",
+          "summary": "No supported project build budget; no wealth, title or funding inference.",
+          "evidence_ids": []
+        },
+        "timing": {
+          "score": 2,
+          "level": "possible",
+          "summary": "Recent relative post age observed; exact publication date and deadline unknown.",
+          "evidence_ids": [
+            "lead-li-intent-maryam-alatwiy-photobooth-e2"
+          ]
+        },
+        "negative_signals": [],
+        "positive_score": 12,
+        "penalty": 0,
+        "total_score": 12,
+        "band": "B",
+        "qualification_confidence": "low",
+        "manually_reviewed_at": "2026-09-05"
+      },
+      "research": {
+        "status": "review-required",
+        "discovered_at": "2026-09-05",
+        "last_researched_at": "2026-09-05",
+        "next_review_at": "2026-09-12",
+        "notes": "HIGH research priority with an onsite constraint: developer must be in Tabuk for hardware tests. Earlier device-maintenance fees are not an app-development budget. Owner/founder status is not asserted.\nVerification gaps: Identify the commissioning business and Maryam’s authority. Check whether this is a first unbuilt core application or replacement of existing booth software. Verify no more than two current software builders including contractors. Confirm currentness, budget and feasibility of required in-person work in Tabuk."
+      },
+      "evidence": [
+        {
+          "id": "lead-li-intent-maryam-alatwiy-photobooth-e1",
+          "claim_key": "identity",
+          "source_url": "https://www.linkedin.com/in/maryam-alatwiy-7b10191b5/",
+          "source_title": "Maryam Alatwiy — profile",
+          "source_type": "first_party_profile",
+          "resource_id": "lr-linkedin-intent-search",
+          "published_at": null,
+          "observed_at": "2026-09-05",
+          "source_quality": "primary",
+          "confidence": "high",
+          "summary": "Identifies Maryam in Tabuk, Saudi Arabia. No current owner/founder position for the commissioning institution was visible."
+        },
+        {
+          "id": "lead-li-intent-maryam-alatwiy-photobooth-e2",
+          "claim_key": "product_intent",
+          "source_url": "https://www.linkedin.com/feed/update/urn:li:activity:7481443443165274112/",
+          "source_title": "Maryam — Photo Booth app contract",
+          "source_type": "first_party_post",
+          "resource_id": "lr-linkedin-intent-search",
+          "published_at": null,
+          "observed_at": "2026-09-05",
+          "source_quality": "primary",
+          "confidence": "high",
+          "summary": "Displayed 1mo. Requests a project-based/contract developer for touch-screen capture effects, camera/printer integration, QR sharing and payment. Requires a developer in Tabuk for hardware testing."
+        },
+        {
+          "id": "lead-li-intent-maryam-alatwiy-photobooth-e3",
+          "claim_key": "existing_operation",
+          "source_url": "https://www.linkedin.com/feed/update/urn:li:activity:7450891528983556096/",
+          "source_title": "Maryam — Photo Booth technical support",
+          "source_type": "first_party_post",
+          "resource_id": "lr-linkedin-intent-search",
+          "published_at": null,
+          "observed_at": "2026-09-05",
+          "source_quality": "primary",
+          "confidence": "high",
+          "summary": "Displayed 4mo. Requests technical support for an existing mall Photo Booth device. Evidences an operating physical service, not the current build stage or development budget of the proposed application."
+        }
+      ]
+    },
+    {
+      "id": "lead-li-intent-faisal-abduljawad-logtech",
+      "identity": {
+        "display_name": "Faisal Abduljawad",
+        "linkedin_url": "https://www.linkedin.com/in/faisalabduljawad",
+        "current_title": "Builder | LogTech & AI | Antler RYD4",
+        "current_organization": null,
+        "identity_status": "verified",
+        "identity_confidence": "high",
+        "evidence_ids": [
+          "lead-li-intent-faisal-abduljawad-logtech-e1"
+        ]
+      },
+      "company": {
+        "name": "Unnamed new LogTech venture",
+        "website_url": null,
+        "linkedin_url": null,
+        "city": null,
+        "saudi_basis": "person-based",
+        "founder_role_started_at": null,
+        "founded_at": null,
+        "linkedin_employee_band": null,
+        "sector": "Logistics / supply chain",
+        "lifecycle_stage": "idea",
+        "product_types": [],
+        "product_summary": "New logistics venture inviting industry contacts to validate problems and shape its product; exact software requirements are not yet public.",
+        "existing_product_urls": [],
+        "evidence_ids": [
+          "lead-li-intent-faisal-abduljawad-logtech-e2"
+        ]
+      },
+      "discovery": {
+        "strategy": {
+          "id": "linkedin-intent-first-v1",
+          "label": "LinkedIn • Intent-first",
+          "batch_id": "linkedin-intent-first-2026-09-05",
+          "method": "current-cohort",
+          "access": "logged-in-linkedin"
+        },
+        "lane": "stealth-or-precompany",
+        "resource_ids": [
+          "lr-linkedin-intent-search"
+        ],
+        "public_behavior_tags": [
+          "current-cohort-admission",
+          "customer-problem-validation",
+          "new-venture-announcement"
+        ],
+        "behavioral_summary": "New logistics venture inviting industry contacts to validate problems and shape its product; exact software requirements are not yet public.",
+        "discovery_note": "MEDIUM research priority. Keep this new venture separate from former Mubarrad operations. Previous workforce management does not establish this venture’s team or budget. Antler admission is not confirmed funding."
+      },
+      "qualification": {
+        "persona_review": {
+          "status": "needs-verification",
+          "core_product": "unknown",
+          "software_builders_min": null,
+          "software_builders_max": null,
+          "missing_checks": [
+            "Identify the new venture and concrete software requirements.",
+            "Confirm the core product is unbuilt and count all software builders and contractors.",
+            "Confirm authority, paid-vendor intent and build budget."
+          ],
+          "summary": "Fresh Saudi venture discovery, not a confirmed development buyer. AI/SaaS tags and validation activity do not prove an unbuilt app, paid outsourcing intent or a two-builder maximum."
+        },
+        "ksa_fit": "confirmed",
+        "decision_authority": "possible",
+        "software_fit": "possible",
+        "product_intent": {
+          "score": 3,
+          "level": "possible",
+          "summary": "New logistics venture inviting industry contacts to validate problems and shape its product; exact software requirements are not yet public.",
+          "evidence_ids": [
+            "lead-li-intent-faisal-abduljawad-logtech-e2"
+          ]
+        },
+        "outsourcing_likelihood": {
+          "score": 0,
+          "level": "unknown",
+          "summary": "No public paid-development request found for this project.",
+          "evidence_ids": []
+        },
+        "budget_readiness": {
+          "score": 0,
+          "level": "unknown",
+          "summary": "No supported project build budget; no wealth, title or funding inference.",
+          "evidence_ids": []
+        },
+        "timing": {
+          "score": 3,
+          "level": "probable",
+          "summary": "Recent relative post age observed; exact publication date and deadline unknown.",
+          "evidence_ids": [
+            "lead-li-intent-faisal-abduljawad-logtech-e2"
+          ]
+        },
+        "negative_signals": [],
+        "positive_score": 6,
+        "penalty": 0,
+        "total_score": 6,
+        "band": "C",
+        "qualification_confidence": "low",
+        "manually_reviewed_at": "2026-09-05"
+      },
+      "research": {
+        "status": "review-required",
+        "discovered_at": "2026-09-05",
+        "last_researched_at": "2026-09-05",
+        "next_review_at": "2026-09-12",
+        "notes": "MEDIUM research priority. Keep this new venture separate from former Mubarrad operations. Previous workforce management does not establish this venture’s team or budget. Antler admission is not confirmed funding.\nVerification gaps: Identify the new venture and concrete software requirements. Confirm the core product is unbuilt and count all software builders and contractors. Confirm authority, paid-vendor intent and build budget."
+      },
+      "evidence": [
+        {
+          "id": "lead-li-intent-faisal-abduljawad-logtech-e1",
+          "claim_key": "identity",
+          "source_url": "https://www.linkedin.com/in/faisalabduljawad/",
+          "source_title": "Faisal Abduljawad — profile",
+          "source_type": "first_party_profile",
+          "resource_id": "lr-linkedin-intent-search",
+          "published_at": null,
+          "observed_at": "2026-09-05",
+          "source_quality": "primary",
+          "confidence": "high",
+          "summary": "Saudi Arabia profile; headline describes LogTech, AI and Antler RYD4. Professional history concerns logistics and operations leadership."
+        },
+        {
+          "id": "lead-li-intent-faisal-abduljawad-logtech-e2",
+          "claim_key": "product_intent",
+          "source_url": "https://www.linkedin.com/feed/update/urn:li:activity:7500170604201996288/",
+          "source_title": "Faisal — Antler Riyadh new venture",
+          "source_type": "first_party_post",
+          "resource_id": "lr-linkedin-intent-search",
+          "published_at": null,
+          "observed_at": "2026-09-05",
+          "source_quality": "primary",
+          "confidence": "high",
+          "summary": "Displayed 4d. Reports Antler Riyadh selection and a next venture; invites freight, supply-chain and technology contacts to share pain points and validate the product direction. No detailed build brief, team census or vendor budget."
+        }
+      ]
+    },
+    {
+      "id": "lead-li-intent-adilet-zakiyev-next-venture",
+      "identity": {
+        "display_name": "Adilet Zakiyev",
+        "linkedin_url": "https://www.linkedin.com/in/azakiyev",
+        "current_title": "Co-founder & CEO, Resti; prospective next startup at Antler",
+        "current_organization": "Resti (existing venture, not assigned as this project)",
+        "identity_status": "verified",
+        "identity_confidence": "high",
+        "evidence_ids": [
+          "lead-li-intent-adilet-zakiyev-next-venture-e1"
+        ]
+      },
+      "company": {
+        "name": "Unnamed next startup — separate scope unverified",
+        "website_url": null,
+        "linkedin_url": null,
+        "city": null,
+        "saudi_basis": "unknown",
+        "founder_role_started_at": null,
+        "founded_at": null,
+        "linkedin_employee_band": null,
+        "sector": null,
+        "lifecycle_stage": "precompany",
+        "product_types": [],
+        "product_summary": "Announces joining Antler in Riyadh to build a next startup, find cofounders and validate. Separation from already-operating Resti is unconfirmed.",
+        "existing_product_urls": [],
+        "evidence_ids": [
+          "lead-li-intent-adilet-zakiyev-next-venture-e2"
+        ]
+      },
+      "discovery": {
+        "strategy": {
+          "id": "linkedin-intent-first-v1",
+          "label": "LinkedIn • Intent-first",
+          "batch_id": "linkedin-intent-first-2026-09-05",
+          "method": "current-cohort",
+          "access": "logged-in-linkedin"
+        },
+        "lane": "stealth-or-precompany",
+        "resource_ids": [
+          "lr-linkedin-intent-search"
+        ],
+        "public_behavior_tags": [
+          "current-cohort-admission",
+          "cofounder-search",
+          "new-venture-announcement"
+        ],
+        "behavioral_summary": "Announces joining Antler in Riyadh to build a next startup, find cofounders and validate. Separation from already-operating Resti is unconfirmed.",
+        "discovery_note": "LOW research priority. Original Antler post verified on exact personal profile; public search had misattributed it to Resti’s feed. Do not transfer Resti’s funding, app, customers or team to this project. Exclude if it is Resti itself."
+      },
+      "qualification": {
+        "persona_review": {
+          "status": "needs-verification",
+          "core_product": "unknown",
+          "software_builders_min": null,
+          "software_builders_max": null,
+          "missing_checks": [
+            "Confirm the announced next startup is separate from Resti, not its expansion.",
+            "Identify a concrete software need and Saudi operating/customer basis beyond residency attendance.",
+            "Verify the new project’s unbuilt core and complete builder count.",
+            "Establish authority, paid-vendor intent and budget."
+          ],
+          "summary": "Exploratory hold only. Resti has a built product and customers and is not the target. No fit is claimed unless the next venture is separate, unbuilt and has at most two software builders."
+        },
+        "ksa_fit": "possible",
+        "decision_authority": "possible",
+        "software_fit": "unknown",
+        "product_intent": {
+          "score": 1,
+          "level": "possible",
+          "summary": "Announces joining Antler in Riyadh to build a next startup, find cofounders and validate. Separation from already-operating Resti is unconfirmed.",
+          "evidence_ids": [
+            "lead-li-intent-adilet-zakiyev-next-venture-e2"
+          ]
+        },
+        "outsourcing_likelihood": {
+          "score": 0,
+          "level": "unknown",
+          "summary": "No public paid-development request found for this project.",
+          "evidence_ids": []
+        },
+        "budget_readiness": {
+          "score": 0,
+          "level": "unknown",
+          "summary": "No supported project build budget; no wealth, title or funding inference.",
+          "evidence_ids": []
+        },
+        "timing": {
+          "score": 3,
+          "level": "probable",
+          "summary": "Recent relative post age observed; exact publication date and deadline unknown.",
+          "evidence_ids": [
+            "lead-li-intent-adilet-zakiyev-next-venture-e2"
+          ]
+        },
+        "negative_signals": [],
+        "positive_score": 4,
+        "penalty": 0,
+        "total_score": 4,
+        "band": "D",
+        "qualification_confidence": "low",
+        "manually_reviewed_at": "2026-09-05"
+      },
+      "research": {
+        "status": "review-required",
+        "discovered_at": "2026-09-05",
+        "last_researched_at": "2026-09-05",
+        "next_review_at": "2026-09-12",
+        "notes": "LOW research priority. Original Antler post verified on exact personal profile; public search had misattributed it to Resti’s feed. Do not transfer Resti’s funding, app, customers or team to this project. Exclude if it is Resti itself.\nVerification gaps: Confirm the announced next startup is separate from Resti, not its expansion. Identify a concrete software need and Saudi operating/customer basis beyond residency attendance. Verify the new project’s unbuilt core and complete builder count. Establish authority, paid-vendor intent and budget."
+      },
+      "evidence": [
+        {
+          "id": "lead-li-intent-adilet-zakiyev-next-venture-e1",
+          "claim_key": "identity",
+          "source_url": "https://www.linkedin.com/in/azakiyev/",
+          "source_title": "Adilet Zakiyev — profile",
+          "source_type": "first_party_profile",
+          "resource_id": "lr-linkedin-intent-search",
+          "published_at": null,
+          "observed_at": "2026-09-05",
+          "source_quality": "primary",
+          "confidence": "high",
+          "summary": "Identifies Adilet as Resti co-founder/CEO, based in Kazakhstan. Resti is an already-built restaurant-software business, not an unbuilt-app prospect."
+        },
+        {
+          "id": "lead-li-intent-adilet-zakiyev-next-venture-e2",
+          "claim_key": "new_venture",
+          "source_url": "https://www.linkedin.com/feed/update/urn:li:activity:7499065145663496195/",
+          "source_title": "Adilet — original Antler announcement",
+          "source_type": "first_party_post",
+          "resource_id": "lr-linkedin-intent-search",
+          "published_at": null,
+          "observed_at": "2026-09-05",
+          "source_quality": "primary",
+          "confidence": "high",
+          "summary": "Displayed 1w. Says he is joining Antler Riyadh to build a next startup, find cofounders and validate. No new project identity, software scope, team size or development budget. Read on the exact personal profile."
+        }
+      ]
+    },
+    {
+      "id": "lead-li-intent-osama-alanazi-sports",
+      "identity": {
+        "display_name": "Osama Alanazi",
+        "linkedin_url": "https://www.linkedin.com/in/osama-alanazi-46538528a",
+        "current_title": "Industrial engineer; sports-project participant",
+        "current_organization": null,
+        "identity_status": "verified",
+        "identity_confidence": "high",
+        "evidence_ids": [
+          "lead-li-intent-osama-alanazi-sports-e2"
+        ]
+      },
+      "company": {
+        "name": "Unnamed new sports-talent venture",
+        "website_url": null,
+        "linkedin_url": null,
+        "city": null,
+        "saudi_basis": "person-based",
+        "founder_role_started_at": null,
+        "founded_at": null,
+        "linkedin_employee_band": null,
+        "sector": "Sports",
+        "lifecycle_stage": "unknown",
+        "product_types": [],
+        "product_summary": "New sports-talent venture announced with Misk Launchpad 10.0 admission",
+        "existing_product_urls": [],
+        "evidence_ids": [
+          "lead-li-intent-osama-alanazi-sports-e1"
+        ]
+      },
+      "discovery": {
+        "strategy": {
+          "id": "linkedin-intent-first-v1",
+          "label": "LinkedIn • Intent-first",
+          "batch_id": "linkedin-intent-first-2026-09-05",
+          "method": "current-cohort",
+          "access": "logged-in-linkedin"
+        },
+        "lane": "stealth-or-precompany",
+        "resource_ids": [
+          "lr-linkedin-intent-search",
+          "resource-misk-launchpad"
+        ],
+        "public_behavior_tags": [
+          "current-cohort-admission",
+          "new-project-announcement"
+        ],
+        "behavioral_summary": "New sports-talent venture announced with Misk Launchpad 10.0 admission",
+        "discovery_note": "MEDIUM research priority. Imported from the same-day logged-in pilot, not a newly discovered person in this continuation. Inspect a current introduction/pitch for the specific sports project and named teammates. Keep Mu'ad separate; two tagged teammates do not prove a total team of three or a builder maximum."
+      },
+      "qualification": {
+        "persona_review": {
+          "status": "needs-verification",
+          "core_product": "unknown",
+          "software_builders_min": null,
+          "software_builders_max": null,
+          "missing_checks": [
+            "Project name and concrete software need",
+            "Current core product stage",
+            "Complete current builder count, including hands-on cofounders and contractors",
+            "External paid-development demand and decision authority"
+          ],
+          "summary": "Current cohort discovery only: sports-project software, app stage, authority and complete builder count are unknown."
+        },
+        "ksa_fit": "possible",
+        "decision_authority": "possible",
+        "software_fit": "possible",
+        "product_intent": {
+          "score": 2,
+          "level": "possible",
+          "summary": "New sports-talent venture announced with Misk Launchpad 10.0 admission",
+          "evidence_ids": [
+            "lead-li-intent-osama-alanazi-sports-e1"
+          ]
+        },
+        "outsourcing_likelihood": {
+          "score": 0,
+          "level": "unknown",
+          "summary": "No public paid-development request found for this project.",
+          "evidence_ids": []
+        },
+        "budget_readiness": {
+          "score": 0,
+          "level": "unknown",
+          "summary": "No supported project build budget; no wealth, title or funding inference.",
+          "evidence_ids": []
+        },
+        "timing": {
+          "score": 3,
+          "level": "probable",
+          "summary": "Recent relative post age observed; exact publication date and deadline unknown.",
+          "evidence_ids": [
+            "lead-li-intent-osama-alanazi-sports-e1"
+          ]
+        },
+        "negative_signals": [],
+        "positive_score": 5,
+        "penalty": 0,
+        "total_score": 5,
+        "band": "C",
+        "qualification_confidence": "low",
+        "manually_reviewed_at": "2026-09-05"
+      },
+      "research": {
+        "status": "review-required",
+        "discovered_at": "2026-09-05",
+        "last_researched_at": "2026-09-05",
+        "next_review_at": "2026-09-12",
+        "notes": "MEDIUM research priority. Imported from the same-day logged-in pilot, not a newly discovered person in this continuation. Inspect a current introduction/pitch for the specific sports project and named teammates. Keep Mu'ad separate; two tagged teammates do not prove a total team of three or a builder maximum.\nVerification gaps: Project name and concrete software need Current core product stage Complete current builder count, including hands-on cofounders and contractors External paid-development demand and decision authority"
+      },
+      "evidence": [
+        {
+          "id": "lead-li-intent-osama-alanazi-sports-e1",
+          "claim_key": "product_intent",
+          "source_url": "https://www.linkedin.com/feed/update/urn:li:activity:7500223144914329600/",
+          "source_title": "Osama Alanazi — original project post",
+          "source_type": "first_party_post",
+          "resource_id": "lr-linkedin-intent-search",
+          "published_at": null,
+          "observed_at": "2026-09-05",
+          "source_quality": "primary",
+          "confidence": "high",
+          "summary": "Displayed 4d; edited. Announces sports project, Misk 10 admission and two collaborators."
+        },
+        {
+          "id": "lead-li-intent-osama-alanazi-sports-e2",
+          "claim_key": "identity",
+          "source_url": "https://www.linkedin.com/in/osama-alanazi-46538528a/",
+          "source_title": "Osama Alanazi — profile",
+          "source_type": "first_party_profile",
+          "resource_id": "lr-linkedin-intent-search",
+          "published_at": null,
+          "observed_at": "2026-09-05",
+          "source_quality": "primary",
+          "confidence": "high",
+          "summary": "Riyadh location and industrial-engineering background. Another venture, Mu'ad, appears and must not be merged with the unnamed sports project."
+        }
+      ]
+    },
+    {
+      "id": "lead-li-intent-sokainh-buhlal-platform",
+      "identity": {
+        "display_name": "SOKAINH BUHLAL",
+        "linkedin_url": "https://www.linkedin.com/in/sokainh-buhlal%E3%80%8Ashrm-cp-%E3%80%8B-9159261a2",
+        "current_title": "HR and government-platform professional",
+        "current_organization": null,
+        "identity_status": "verified",
+        "identity_confidence": "high",
+        "evidence_ids": [
+          "lead-li-intent-sokainh-buhlal-platform-e2"
+        ]
+      },
+      "company": {
+        "name": "Unnamed integrated-platform project",
+        "website_url": null,
+        "linkedin_url": null,
+        "city": null,
+        "saudi_basis": "person-based",
+        "founder_role_started_at": null,
+        "founded_at": null,
+        "linkedin_employee_band": null,
+        "sector": null,
+        "lifecycle_stage": "unknown",
+        "product_types": [
+          "web-platform"
+        ],
+        "product_summary": "Integrated platform with government integrations and Arabic AI",
+        "existing_product_urls": [],
+        "evidence_ids": [
+          "lead-li-intent-sokainh-buhlal-platform-e1"
+        ]
+      },
+      "discovery": {
+        "strategy": {
+          "id": "linkedin-intent-first-v1",
+          "label": "LinkedIn • Intent-first",
+          "batch_id": "linkedin-intent-first-2026-09-05",
+          "method": "direct-request",
+          "access": "logged-in-linkedin"
+        },
+        "lane": "sme-digital-build",
+        "resource_ids": [
+          "lr-linkedin-intent-search"
+        ],
+        "public_behavior_tags": [
+          "explicit-developer-request",
+          "stale-request",
+          "commissioning-entity-unknown"
+        ],
+        "behavioral_summary": "Integrated platform with government integrations and Arabic AI",
+        "discovery_note": "LOW research priority. Imported from the same-day logged-in pilot, not a newly discovered person in this continuation. Identify the commissioning project from public follow-up posts before attributing it to her employer or recruitment initiative. Do not treat mirrored public and logged-in versions as independent evidence. The original post resurfaced in the current Latest search; this is not evidence it remains open."
+      },
+      "qualification": {
+        "persona_review": {
+          "status": "needs-verification",
+          "core_product": "unknown",
+          "software_builders_min": null,
+          "software_builders_max": null,
+          "missing_checks": [
+            "Ownership and authority for this particular platform",
+            "Request still open after five months",
+            "Current product functionality and existing delivery team",
+            "Paid budget and provider-eligibility terms"
+          ],
+          "summary": "Specific but five-month-old request. The author may be an intermediary; commissioning entity, fulfillment and software-team size are unknown."
+        },
+        "ksa_fit": "possible",
+        "decision_authority": "possible",
+        "software_fit": "confirmed",
+        "product_intent": {
+          "score": 6,
+          "level": "confirmed",
+          "summary": "Integrated platform with government integrations and Arabic AI",
+          "evidence_ids": [
+            "lead-li-intent-sokainh-buhlal-platform-e1"
+          ]
+        },
+        "outsourcing_likelihood": {
+          "score": 3,
+          "level": "possible",
+          "summary": "External-development request; current provider eligibility and fulfillment require verification.",
+          "evidence_ids": [
+            "lead-li-intent-sokainh-buhlal-platform-e1"
+          ]
+        },
+        "budget_readiness": {
+          "score": 0,
+          "level": "unknown",
+          "summary": "No supported project build budget; no wealth, title or funding inference.",
+          "evidence_ids": []
+        },
+        "timing": {
+          "score": 0,
+          "level": "unknown",
+          "summary": "Original request is several months old; finding it today does not refresh buying intent.",
+          "evidence_ids": []
+        },
+        "negative_signals": [],
+        "positive_score": 9,
+        "penalty": 0,
+        "total_score": 9,
+        "band": "C",
+        "qualification_confidence": "low",
+        "manually_reviewed_at": "2026-09-05"
+      },
+      "research": {
+        "status": "review-required",
+        "discovered_at": "2026-09-05",
+        "last_researched_at": "2026-09-05",
+        "next_review_at": "2026-09-05",
+        "notes": "LOW research priority. Imported from the same-day logged-in pilot, not a newly discovered person in this continuation. Identify the commissioning project from public follow-up posts before attributing it to her employer or recruitment initiative. Do not treat mirrored public and logged-in versions as independent evidence. The original post resurfaced in the current Latest search; this is not evidence it remains open.\nVerification gaps: Ownership and authority for this particular platform Request still open after five months Current product functionality and existing delivery team Paid budget and provider-eligibility terms"
+      },
+      "evidence": [
+        {
+          "id": "lead-li-intent-sokainh-buhlal-platform-e1",
+          "claim_key": "product_intent",
+          "source_url": "https://www.linkedin.com/posts/sokainh-buhlal%E3%80%8Ashrm-cp-%E3%80%8B-9159261a2_%D8%A3%D8%A8%D8%AD%D8%AB-%D8%B9%D9%86-%D9%85%D8%A8%D8%B1%D9%85%D8%AC-%D9%85%D8%B3%D8%AA%D9%82%D9%84-%D8%B0%D9%83%D8%B1%D8%A3%D9%86%D8%AB%D9%89%D8%A3%D9%88-%D9%81%D8%B1%D9%8A%D9%82-%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-share-7440195078272348160-Ws8i/",
+          "source_title": "SOKAINH BUHLAL — original project post",
+          "source_type": "first_party_post",
+          "resource_id": "lr-linkedin-intent-search",
+          "published_at": null,
+          "observed_at": "2026-09-05",
+          "source_quality": "primary",
+          "confidence": "high",
+          "summary": "Displayed 5mo. Requests an independent developer or Saudi team for a platform; specifies Python frameworks, React, PostgreSQL, integrations and Arabic AI."
+        },
+        {
+          "id": "lead-li-intent-sokainh-buhlal-platform-e2",
+          "claim_key": "identity",
+          "source_url": "https://www.linkedin.com/in/sokainh-buhlal%E3%80%8Ashrm-cp-%E3%80%8B-9159261a2/",
+          "source_title": "SOKAINH BUHLAL — profile",
+          "source_type": "first_party_profile",
+          "resource_id": "lr-linkedin-intent-search",
+          "published_at": null,
+          "observed_at": "2026-09-05",
+          "source_quality": "primary",
+          "confidence": "high",
+          "summary": "Jubail, Saudi Arabia; HR/government-platform work and recruitment initiative. Current activity includes shared hiring requests."
+        }
+      ]
+    },
+    {
+      "id": "lead-li-intent-momen-el-santawy-mobile",
+      "identity": {
+        "display_name": "Mo'men El-Santawy",
+        "linkedin_url": "https://www.linkedin.com/in/mo-men-el-santawy-7851b3105",
+        "current_title": "Senior IT Leader",
+        "current_organization": "Al Mashariq Group (project not attributed to employer)",
+        "identity_status": "verified",
+        "identity_confidence": "high",
+        "evidence_ids": [
+          "lead-li-intent-momen-el-santawy-mobile-e2"
+        ]
+      },
+      "company": {
+        "name": "Unnamed small institution — mobile project",
+        "website_url": null,
+        "linkedin_url": null,
+        "city": null,
+        "saudi_basis": "person-based",
+        "founder_role_started_at": null,
+        "founded_at": null,
+        "linkedin_employee_band": null,
+        "sector": null,
+        "lifecycle_stage": "unknown",
+        "product_types": [
+          "mobile-app"
+        ],
+        "product_summary": "Mobile application for an unnamed small institution",
+        "existing_product_urls": [],
+        "evidence_ids": [
+          "lead-li-intent-momen-el-santawy-mobile-e1"
+        ]
+      },
+      "discovery": {
+        "strategy": {
+          "id": "linkedin-intent-first-v1",
+          "label": "LinkedIn • Intent-first",
+          "batch_id": "linkedin-intent-first-2026-09-05",
+          "method": "direct-request",
+          "access": "logged-in-linkedin"
+        },
+        "lane": "sme-digital-build",
+        "resource_ids": [
+          "lr-linkedin-intent-search"
+        ],
+        "public_behavior_tags": [
+          "explicit-developer-request",
+          "stale-request",
+          "commissioning-entity-unknown"
+        ],
+        "behavioral_summary": "Mobile application for an unnamed small institution",
+        "discovery_note": "LOW research priority. Imported from the same-day logged-in pilot, not a newly discovered person in this continuation. Find a public update identifying the institution and whether the project was delivered. A six-month-old request is not a current buying signal. The original post resurfaced in the current Latest search; this is not evidence it remains open."
+      },
+      "qualification": {
+        "persona_review": {
+          "status": "needs-verification",
+          "core_product": "unknown",
+          "software_builders_min": null,
+          "software_builders_max": null,
+          "missing_checks": [
+            "Commissioning institution and Saudi project basis",
+            "Authority or authorized referral role",
+            "Whether the application is still unbuilt",
+            "Current software team and contractor capacity",
+            "Agency eligibility and payment terms"
+          ],
+          "summary": "Six-month-old project assignment for an unnamed institution. Ownership, unbuilt core and small software-team capacity are not established."
+        },
+        "ksa_fit": "possible",
+        "decision_authority": "possible",
+        "software_fit": "confirmed",
+        "product_intent": {
+          "score": 5,
+          "level": "confirmed",
+          "summary": "Mobile application for an unnamed small institution",
+          "evidence_ids": [
+            "lead-li-intent-momen-el-santawy-mobile-e1"
+          ]
+        },
+        "outsourcing_likelihood": {
+          "score": 4,
+          "level": "possible",
+          "summary": "External-development request; current provider eligibility and fulfillment require verification.",
+          "evidence_ids": [
+            "lead-li-intent-momen-el-santawy-mobile-e1"
+          ]
+        },
+        "budget_readiness": {
+          "score": 0,
+          "level": "unknown",
+          "summary": "No supported project build budget; no wealth, title or funding inference.",
+          "evidence_ids": []
+        },
+        "timing": {
+          "score": 0,
+          "level": "unknown",
+          "summary": "Original request is several months old; finding it today does not refresh buying intent.",
+          "evidence_ids": []
+        },
+        "negative_signals": [],
+        "positive_score": 9,
+        "penalty": 0,
+        "total_score": 9,
+        "band": "C",
+        "qualification_confidence": "low",
+        "manually_reviewed_at": "2026-09-05"
+      },
+      "research": {
+        "status": "review-required",
+        "discovered_at": "2026-09-05",
+        "last_researched_at": "2026-09-05",
+        "next_review_at": "2026-09-05",
+        "notes": "LOW research priority. Imported from the same-day logged-in pilot, not a newly discovered person in this continuation. Find a public update identifying the institution and whether the project was delivered. A six-month-old request is not a current buying signal. The original post resurfaced in the current Latest search; this is not evidence it remains open.\nVerification gaps: Commissioning institution and Saudi project basis Authority or authorized referral role Whether the application is still unbuilt Current software team and contractor capacity Agency eligibility and payment terms"
+      },
+      "evidence": [
+        {
+          "id": "lead-li-intent-momen-el-santawy-mobile-e1",
+          "claim_key": "product_intent",
+          "source_url": "https://www.linkedin.com/posts/mo-men-el-santawy-7851b3105_%D9%8A%D8%B3%D8%B9%D8%AF%D9%86%D9%8A-%D8%AA%D9%88%D8%A7%D8%B5%D9%84%D9%83%D9%85-%D8%A3%D8%A8%D8%AD%D8%AB-%D8%B9%D9%86-%D9%85%D8%B7%D9%88%D8%B1-%D9%85%D8%A8%D8%B1%D9%85%D8%AC-%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0-activity-7432707705829658624-F3T0",
+          "source_title": "Mo'men El-Santawy — original project post",
+          "source_type": "first_party_post",
+          "resource_id": "lr-linkedin-intent-search",
+          "published_at": null,
+          "observed_at": "2026-09-05",
+          "source_quality": "primary",
+          "confidence": "high",
+          "summary": "Displayed 6mo in Edge; earlier public rendering 5mo. Requests an institution's mobile application as project work, not a job. Visible comments recommend providers, without resolving fulfillment."
+        },
+        {
+          "id": "lead-li-intent-momen-el-santawy-mobile-e2",
+          "claim_key": "identity",
+          "source_url": "https://www.linkedin.com/in/mo-men-el-santawy-7851b3105/",
+          "source_title": "Mo'men El-Santawy — profile",
+          "source_type": "first_party_profile",
+          "resource_id": "lr-linkedin-intent-search",
+          "published_at": null,
+          "observed_at": "2026-09-05",
+          "source_quality": "primary",
+          "confidence": "high",
+          "summary": "Dammam, Saudi Arabia; senior IT role at Al Mashariq Group. The post does not name that employer as the commissioning institution."
+        }
+      ]
+    }
+  ]
+}

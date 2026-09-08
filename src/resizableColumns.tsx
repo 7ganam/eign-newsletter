@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import type { CSSProperties, KeyboardEvent, PointerEvent as ReactPointerEvent, ReactNode } from 'react'
+import type { CSSProperties, KeyboardEvent, PointerEvent as ReactPointerEvent, ReactNode, ThHTMLAttributes } from 'react'
+import { RowSelectionHeader } from './rowArchive'
 
 const DEFAULT_MIN_WIDTH = 48
 const DEFAULT_MAX_WIDTH = 720
@@ -164,27 +165,36 @@ type ResizableDataTableProps<Key extends string> = {
   children: ReactNode
   className: string
   columns: readonly BasicTableColumn<Key>[]
+  getHeaderProps?: (column: BasicTableColumn<Key>) => ThHTMLAttributes<HTMLTableCellElement>
+  renderHeader?: (column: BasicTableColumn<Key>) => ReactNode
+  selection?: {
+    allSelected: boolean
+    onToggle: () => void
+    someSelected: boolean
+  }
   storageKey: string
 }
 
-export function ResizableDataTable<Key extends string>({ children, className, columns, storageKey }: ResizableDataTableProps<Key>) {
+export function ResizableDataTable<Key extends string>({ children, className, columns, getHeaderProps, renderHeader, selection, storageKey }: ResizableDataTableProps<Key>) {
   const defaults = useMemo(() => Object.fromEntries(
     columns.map((column) => [column.key, column.defaultWidth]),
   ) as Record<Key, number>, [columns])
   const { getResizeHandleProps, totalWidth, widths } = useResizableColumns({ defaults, storageKey })
   const keys = useMemo(() => columns.map((column) => column.key), [columns])
-  const style = { '--resizable-table-width': `${totalWidth(keys)}px` } as CSSProperties
+  const style = { '--resizable-table-width': `${totalWidth(keys, selection ? 42 : 0)}px` } as CSSProperties
 
   return (
     <table className={`${className} resizable-table`} style={style}>
       <colgroup>
+        {selection && <col className="row-select-column" style={{ width: '42px' }} />}
         {columns.map((column) => <col key={column.key} style={{ width: `${widths[column.key]}px` }} />)}
       </colgroup>
       <thead>
         <tr>
+          {selection && <th className="row-select-heading" scope="col"><RowSelectionHeader {...selection} /></th>}
           {columns.map((column) => (
-            <th key={column.key}>
-              <span className="resizable-table-header-label">{column.label}</span>
+            <th key={column.key} scope="col" {...getHeaderProps?.(column)}>
+              <span className="resizable-table-header-label">{renderHeader?.(column) ?? column.label}</span>
               <ColumnResizeHandle {...getResizeHandleProps(column.key, column.label)} />
             </th>
           ))}

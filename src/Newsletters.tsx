@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import type { CSSProperties, DragEvent as ReactDragEvent, KeyboardEvent as ReactKeyboardEvent } from 'react'
 import { InlineEdit } from './editableCells'
 import { ColumnResizeHandle, useResizableColumns } from './resizableColumns'
+import { ArchiveToolbar, RowSelectionCell, RowSelectionHeader, useRowArchive } from './rowArchive'
 import { usePersistedSort } from './tablePreferences'
 import { WorkspaceNav } from './WorkspaceNav'
 import './research.css'
@@ -196,6 +197,8 @@ export function Newsletters() {
         return left.newsletter.localeCompare(right.newsletter)
       })
   }, [data, geography, linkedin, query, relevance, segment, sortDirection, sortField])
+  const archive = useRowArchive({ tableId: 'newsletters', visibleRowIds: rows.map((row) => row.__rowId) })
+  const displayedRows = rows.filter((row) => archive.showArchived === archive.isArchived(row.__rowId))
 
   useEffect(() => {
     setSelectedCell(null)
@@ -203,7 +206,7 @@ export function Newsletters() {
   }, [geography, linkedin, query, relevance, segment, sortDirection, sortField])
 
   const selectedColumn = selectedCell ? orderedColumns[selectedCell.columnIndex] : null
-  const selectedValue = selectedCell && selectedColumn ? cellValue(rows[selectedCell.rowIndex], selectedColumn.key) : ''
+  const selectedValue = selectedCell && selectedColumn && displayedRows[selectedCell.rowIndex] ? cellValue(displayedRows[selectedCell.rowIndex], selectedColumn.key) : ''
   const selectedAddress = selectedCell ? `${columnLetter(selectedCell.columnIndex)}${selectedCell.rowIndex + 1}` : ''
   const hasFilters = Boolean(query || segment !== 'all' || geography !== 'all' || relevance !== 'all' || linkedin !== 'all')
   const gridWidth = 52 + orderedColumns.reduce((sum, column) => sum + widths[column.key], 0)
@@ -309,7 +312,7 @@ export function Newsletters() {
   }
 
   const handleGridKeyDown = (event: ReactKeyboardEvent<HTMLDivElement>) => {
-    if (!selectedCell || !rows.length) return
+    if (!selectedCell || !displayedRows.length) return
     if ((event.metaKey || event.ctrlKey) && event.key.toLocaleLowerCase() === 'c') {
       event.preventDefault()
       void copySelectedValue()
@@ -325,7 +328,7 @@ export function Newsletters() {
     if (!move) return
     event.preventDefault()
     setSelectedCell({
-      rowIndex: Math.max(0, Math.min(rows.length - 1, selectedCell.rowIndex + move[0])),
+      rowIndex: Math.max(0, Math.min(displayedRows.length - 1, selectedCell.rowIndex + move[0])),
       columnIndex: Math.max(0, Math.min(orderedColumns.length - 1, selectedCell.columnIndex + move[1])),
     })
   }
@@ -362,8 +365,10 @@ export function Newsletters() {
         <label><span>LinkedIn</span><select value={linkedin} onChange={(event) => setLinkedin(event.target.value)}><option value="all">Any status</option><option value="available">Available</option><option value="missing">Missing</option></select></label>
         <button title="Reverse current sort" onClick={() => setSortDirection((current) => current === 'asc' ? 'desc' : 'asc')}>{sortDirection === 'asc' ? '↑' : '↓'} {COLUMNS.find((column) => column.key === sortField)?.label}</button>
         {hasFilters && <button onClick={clearFilters}>Clear</button>}
-        <span className="sheet-result-count">{rows.length.toLocaleString()} rows</span>
+        <span className="sheet-result-count">{displayedRows.length.toLocaleString()} rows</span>
       </div>
+
+      <ArchiveToolbar archive={archive} noun="newsletters" />
 
       <div className="sheet-formula-bar">
         <output className="sheet-cell-address">{selectedAddress || '—'}</output>
@@ -384,7 +389,7 @@ export function Newsletters() {
               {orderedColumns.map((column, index) => <div key={column.key}>{columnLetter(index)}</div>)}
             </div>
             <div className="sheet-field-row">
-              <div className="sheet-row-heading">#</div>
+              <div className="sheet-row-heading"><RowSelectionHeader allSelected={archive.allVisibleSelected} onToggle={archive.toggleAllVisible} someSelected={archive.someVisibleSelected} /></div>
               {orderedColumns.map((column) => (
                 <div
                   className={[
@@ -414,13 +419,13 @@ export function Newsletters() {
 
           {!data && !error ? (
             <div className="sheet-initial-loading">Loading newsletter rows…</div>
-          ) : rows.length === 0 ? (
-            <div className="sheet-empty">No rows match the current filters.</div>
+          ) : displayedRows.length === 0 ? (
+            <div className="sheet-empty">{archive.showArchived ? 'No archived newsletters match the current filters.' : 'No rows match the current filters.'}</div>
           ) : (
-            <div className="sheet-virtual-body" style={{ height: `${rows.length * ROW_HEIGHT}px` }}>
-              {rows.map((row, rowIndex) => (
+            <div className="sheet-virtual-body" style={{ height: `${displayedRows.length * ROW_HEIGHT}px` }}>
+              {displayedRows.map((row, rowIndex) => (
                 <div className="sheet-data-row" key={row.__rowId} style={{ height: `${ROW_HEIGHT}px`, transform: `translateY(${rowIndex * ROW_HEIGHT}px)` }}>
-                  <div className="sheet-row-number">{rowIndex + 1}</div>
+                  <div className="sheet-row-number"><RowSelectionCell checked={archive.selectedIds.has(row.__rowId)} label={`Select ${row.newsletter}`} onToggle={() => archive.toggleRow(row.__rowId)} /></div>
                   {orderedColumns.map((column, columnIndex) => {
                     const value = cellValue(row, column.key)
                     const displayValue = column.key === 'linkedinFollowers' ? formatFollowerValue(value) : value
@@ -457,7 +462,7 @@ export function Newsletters() {
       <footer className="sheet-statusbar">
         <span className="sheet-tab">Newsletters</span>
         <span>{COLUMNS.length} columns</span>
-        <span>{rows.length.toLocaleString()} of {data?.summary.total.toLocaleString() ?? '—'} rows</span>
+        <span>{displayedRows.length.toLocaleString()} of {data?.summary.total.toLocaleString() ?? '—'} rows</span>
         <span>{data?.summary.linkedin?.toLocaleString() ?? '—'} rows with LinkedIn links</span>
       </footer>
     </main>

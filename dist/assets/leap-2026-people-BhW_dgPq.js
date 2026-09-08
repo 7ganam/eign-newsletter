@@ -1,1 +1,0 @@
-var e=`/assets/leap-2026-people-BxMEp9yZ.json`;export{e as t};

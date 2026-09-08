@@ -1,0 +1,1148 @@
+{
+  "lane": "linkedin-community",
+  "researched_at": "2026-09-03",
+  "resources": [
+    {
+      "id": "lr-linkedin-intent-search",
+      "name": "LinkedIn product-intent post search",
+      "type": "linkedin_search_recipe",
+      "url": "https://www.linkedin.com/search/results/content/",
+      "access_level": "free_linkedin_login",
+      "geography": "Saudi Arabia",
+      "priority": "high",
+      "cadence": "weekly",
+      "status": "accepted",
+      "discovery_method": "Manually search the Posts tab with Arabic and English launch-intent terms, then verify shortlisted people by exact name.",
+      "harvesting_instructions": "Run separate recent-post searches for (MVP OR beta OR launching OR platform OR marketplace OR mobile app) with (Saudi OR Riyadh OR Jeddah), then repeat with (نسخة تجريبية OR إطلاق OR منصة OR تطبيق OR شريك تقني) and (السعودية OR الرياض OR جدة). Open only posts with a named builder and verify the exact person and venture; do not infer intent from likes.",
+      "expected_yield": {
+        "unit": "raw_candidates_per_month",
+        "minimum": 6,
+        "maximum": 15
+      },
+      "observed_yield": {
+        "raw_candidates": 5,
+        "accepted_for_manual_verification": 5,
+        "observation_window": "2026-09-03 single research pass"
+      },
+      "last_checked_date": "2026-09-03",
+      "future_usefulness": "High for finding founders who publicly state a live product, MVP, launch, pilot, or developer need before the signal appears in databases.",
+      "notes": "Use post search before broad People search. Exact-name profile searches do not count toward LinkedIn's commercial-use limit, while general profile searching and profile browsing can. Search results and public visibility are incomplete and personalized.",
+      "evidence": [
+        {
+          "url": "https://www.linkedin.com/help/linkedin/answer/a526104/searching-for-member-posts?lang=en",
+          "source_title": "Search for member posts | LinkedIn Help",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "official_platform_documentation",
+          "confidence": "high",
+          "paraphrased_evidence": "LinkedIn documents post search and filters including date posted, content type, author, company, and industry."
+        },
+        {
+          "url": "https://www.linkedin.com/help/linkedin/answer/a524335/using-boolean-search-on-linkedin?lang=en",
+          "source_title": "Use Boolean search on LinkedIn | LinkedIn Help",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "official_platform_documentation",
+          "confidence": "high",
+          "paraphrased_evidence": "LinkedIn supports uppercase AND, OR, and NOT, quoted phrases, and parentheses in its main search bar."
+        },
+        {
+          "url": "https://www.linkedin.com/help/linkedin/answer/a564226/commercial-use-limit?lang=en",
+          "source_title": "Commercial use limit | LinkedIn Help",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "official_platform_documentation",
+          "confidence": "high",
+          "paraphrased_evidence": "Broad profile search and browsing can consume the free commercial-use allowance; exact-name profile searches are excluded from that count."
+        }
+      ]
+    },
+    {
+      "id": "lr-linkedin-misk-entrepreneurship",
+      "name": "Misk Entrepreneurship LinkedIn stream",
+      "type": "official_program_linkedin_page",
+      "url": "https://www.linkedin.com/company/miskentrepreneurship",
+      "access_level": "public_partial_free_login_for_full_history",
+      "geography": "Saudi Arabia",
+      "priority": "high",
+      "cadence": "weekly_during_applications_and_cohorts",
+      "status": "accepted",
+      "discovery_method": "Review official Launchpad announcements, MVP Sprint posts, cohort graduation posts, and named participant comments; verify each founder on their public profile.",
+      "harvesting_instructions": "Check for new Launchpad cohort, MVP Sprint, demo-day, and graduation posts. Search the post and comments for founders naming their venture and product. Record the cohort, product-stage statement, founder profile, and a second source. Ignore generic congratulations and unnamed attendees.",
+      "expected_yield": {
+        "unit": "raw_candidates_per_cohort",
+        "minimum": 8,
+        "maximum": 25
+      },
+      "observed_yield": {
+        "raw_candidates": 10,
+        "accepted_for_manual_verification": 8,
+        "observation_window": "Launchpad cohorts 7 through 9"
+      },
+      "last_checked_date": "2026-09-03",
+      "future_usefulness": "High because the official stream repeatedly surfaces idea-, MVP-, and early-launch-stage founders working in the Saudi ecosystem.",
+      "notes": "Cohort participation proves program participation, not Saudi incorporation, budget, or absence of an internal technical team. Reverify old cohort records before scoring timing.",
+      "evidence": [
+        {
+          "url": "https://www.linkedin.com/company/miskentrepreneurship",
+          "source_title": "Misk Entrepreneurship | LinkedIn",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "official_program_page",
+          "confidence": "high",
+          "paraphrased_evidence": "The official Misk Entrepreneurship page describes its Saudi startup-building role and continues to publish Launchpad application and cohort activity."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/misk-entrep_misklaunchpad-activity-7359315291618648064-GCLk",
+          "source_title": "MVPs in the making | Misk Entrepreneurship",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "official_program_post",
+          "confidence": "high",
+          "paraphrased_evidence": "The program's MVP Sprint post exposes founders building, testing, and receiving product feedback, including a named Aziz Platform founder in comments."
+        }
+      ]
+    },
+    {
+      "id": "lr-linkedin-500-mena",
+      "name": "500 MENA and Sanabil Startup Unlocked LinkedIn stream",
+      "type": "official_accelerator_linkedin_page",
+      "url": "https://www.linkedin.com/company/500mena",
+      "access_level": "public_partial_free_login_for_full_history",
+      "geography": "Saudi Arabia and MENA entrants to Saudi Arabia",
+      "priority": "high",
+      "cadence": "weekly_during_applications_and_cohorts",
+      "status": "accepted",
+      "discovery_method": "Review official Startup Unlocked batch announcements, founder sessions, demo days, and accelerator selections, then resolve founders by exact venture name.",
+      "harvesting_instructions": "Capture every named cohort company from official batch posts. For each company, search its exact name plus founder, verify a personal LinkedIn URL and Saudi operating intent, then look for a dated MVP, pilot, hiring, product-launch, or funding signal. Do not assume every MENA company is Saudi-based.",
+      "expected_yield": {
+        "unit": "raw_candidates_per_cohort",
+        "minimum": 10,
+        "maximum": 20
+      },
+      "observed_yield": {
+        "raw_candidates": 7,
+        "accepted_for_manual_verification": 6,
+        "observation_window": "Startup Unlocked batches 1 through 4 plus current accelerator posts"
+      },
+      "last_checked_date": "2026-09-03",
+      "future_usefulness": "High because batch announcements provide a bounded, named company universe and later posts expose alumni, pivots, and product maturity.",
+      "notes": "Separate the five-day Startup Unlocked bootcamp from the investment accelerator. Participation alone is not funding evidence and Saudi program attendance alone is not Saudi-market proof.",
+      "evidence": [
+        {
+          "url": "https://www.linkedin.com/company/500mena",
+          "source_title": "500 MENA | LinkedIn",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "official_accelerator_page",
+          "confidence": "high",
+          "paraphrased_evidence": "The official page publishes current Startup Unlocked applications, founder lessons, and named alumni and accelerator companies."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/500mena_meet-the-startups-sanabil-startup-unlocked-activity-7424738577235812352-pMbR",
+          "source_title": "Meet the Startups | Sanabil Startup Unlocked Batch 4",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "official_accelerator_post",
+          "confidence": "high",
+          "paraphrased_evidence": "The official Batch 4 post names 18 early companies across AI, finance, healthcare, sustainability, and other sectors, creating a reusable enrichment queue."
+        }
+      ]
+    },
+    {
+      "id": "lr-linkedin-zero-to-one",
+      "name": "Zero to One | صفر لواحد LinkedIn page",
+      "type": "saudi_business_media_linkedin_page",
+      "url": "https://www.linkedin.com/company/ztosa/",
+      "access_level": "public_partial",
+      "geography": "Saudi Arabia",
+      "priority": "medium",
+      "cadence": "twice_weekly",
+      "status": "accepted",
+      "discovery_method": "Scan recent Saudi business, app, startup, and AI launch coverage; follow named company links and verify the founder separately.",
+      "harvesting_instructions": "Review recent updates for Saudi companies introduced with launch, funding, new app, platform, MVP, or founder language. Open the named company page, identify founders by exact company, and retain only ventures with a current product-build signal. Do not treat general AI or market news as a lead.",
+      "expected_yield": {
+        "unit": "raw_candidates_per_month",
+        "minimum": 2,
+        "maximum": 8
+      },
+      "observed_yield": {
+        "raw_candidates": 0,
+        "accepted_for_manual_verification": 0,
+        "observation_window": "2026-09-03 spot check"
+      },
+      "last_checked_date": "2026-09-03",
+      "future_usefulness": "Medium-high as an Arabic-language launch monitor with direct links to Saudi companies, but it requires aggressive filtering because most posts are not early-stage lead signals.",
+      "notes": "The public page identifies itself as a Riyadh business and investment media platform and showed frequent current updates. Its separate AI newsletter is duplicative and broader than the company stream.",
+      "evidence": [
+        {
+          "url": "https://www.linkedin.com/company/ztosa/",
+          "source_title": "Zero to One | صفر لواحد | LinkedIn",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "publisher_first_party_page",
+          "confidence": "high",
+          "paraphrased_evidence": "The Riyadh-based page describes its coverage as business and investment media and publishes frequent Saudi company, app, AI, and investment updates."
+        }
+      ]
+    }
+  ],
+  "seed_classification": [
+    {
+      "id": "seed-001",
+      "provided_url": "https://www.linkedin.com/in/abdulrahman-aljohani-11b2881b4?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+      "canonical_url": "https://www.linkedin.com/in/abdulrahman-aljohani-11b2881b4",
+      "classification": "useful",
+      "observed_title": "Abdulrahman Aljohani LinkedIn profile",
+      "reason": "Known customer and valid persona-reference seed; excluded from prospect candidates by plan.",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "user_supplied_customer_reference",
+      "confidence": "high"
+    },
+    {
+      "id": "seed-002",
+      "provided_url": "https://www.linkedin.com/in/hasan-alsoud-tiptop/",
+      "canonical_url": "https://www.linkedin.com/in/hasan-alsoud-tiptop",
+      "classification": "useful",
+      "observed_title": "Hasan Alsoud LinkedIn profile",
+      "reason": "Arabic founder-content hub whose founder-specific posts can expose builders in comments, but follower overlap is not qualification evidence.",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "user_supplied_public_profile",
+      "confidence": "medium"
+    },
+    {
+      "id": "seed-003",
+      "provided_url": "https://www.linkedin.com/posts/officialtonyrobbins_one-decision-one-action-that-locks-you-in-ugcPost-7423785881884323841-pker?utm_source=share&utm_medium=member_desktop&rcm=ACoAADG_7dEBU78NilZwtnDrauu8e3TXLB-i6W8",
+      "canonical_url": "https://www.linkedin.com/posts/officialtonyrobbins_one-decision-one-action-that-locks-you-in-ugcPost-7423785881884323841-pker",
+      "classification": "low-signal",
+      "observed_title": "One decision, one action that locks you in | Tony Robbins",
+      "reason": "Generic motivational content has a broad audience and does not indicate Saudi market activity, founder authority, or software demand.",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_public_post",
+      "confidence": "high"
+    },
+    {
+      "id": "seed-004",
+      "provided_url": "https://www.linkedin.com/in/adwa-aldakheel-ababb23a/",
+      "canonical_url": "https://www.linkedin.com/in/adwa-aldakheel-ababb23a",
+      "classification": "useful",
+      "observed_title": "Adwa AlDakheel LinkedIn profile",
+      "reason": "Useful ecosystem and financing hub for discovering named portfolio companies and launch announcements; the profile owner is not automatically a lead.",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "user_supplied_public_profile",
+      "confidence": "medium"
+    },
+    {
+      "id": "seed-005",
+      "provided_url": "https://www.linkedin.com/in/hamadmubarkalhajri/",
+      "canonical_url": "https://www.linkedin.com/in/hamadmubarkalhajri",
+      "classification": "low-signal",
+      "observed_title": "Hamad Mubarak Al-Hajri LinkedIn profile",
+      "reason": "Influencer and investor content is too broad for lead qualification and is best used only as an occasional discovery surface.",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "user_supplied_public_profile",
+      "confidence": "medium"
+    },
+    {
+      "id": "seed-006",
+      "provided_url": "https://www.linkedin.com/newsletters/7492136610118098945/",
+      "canonical_url": "https://www.linkedin.com/newsletters/7492136610118098945/",
+      "classification": "useful",
+      "observed_title": "The Saudi Landing",
+      "reason": "Biweekly first-party commentary on entering Saudi Arabia can surface new market entrants, although the current edition list did not yield a named software buyer in this pass.",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "publisher_first_party_newsletter",
+      "confidence": "high"
+    },
+    {
+      "id": "seed-007",
+      "provided_url": "https://www.linkedin.com/newsletters/7384541694740041728/",
+      "canonical_url": "https://www.linkedin.com/newsletters/7384541694740041728/",
+      "classification": "duplicate",
+      "duplicate_of": "lr-linkedin-zero-to-one",
+      "observed_title": "صفر لواحد . AI",
+      "reason": "Weekly local and global AI-news newsletter from Zero to One; the accepted company page is a broader and more frequent lead-discovery surface.",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "publisher_first_party_newsletter",
+      "confidence": "high"
+    },
+    {
+      "id": "seed-008",
+      "provided_url": "https://www.linkedin.com/newsletters/7495425255386230785/",
+      "canonical_url": "https://www.linkedin.com/newsletters/7495425255386230785/",
+      "classification": "useful",
+      "observed_title": "Building Between Markets",
+      "reason": "Saudi market-entry, AI staffing, and go-to-market focus is relevant to entrant discovery, but the newsletter was very new and had not yet demonstrated repeatable candidate yield.",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "publisher_first_party_newsletter",
+      "confidence": "high"
+    },
+    {
+      "id": "seed-009",
+      "provided_url": "https://www.linkedin.com/newsletters/7467187914733465601/",
+      "canonical_url": "https://www.linkedin.com/newsletters/7467187914733465601/",
+      "classification": "low-signal",
+      "observed_title": "The AI Profit Gap",
+      "reason": "Broad AI operations and governance coverage is useful for market learning but not sufficiently Saudi- or founder-specific for efficient lead discovery.",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "publisher_first_party_newsletter",
+      "confidence": "high"
+    },
+    {
+      "id": "seed-010",
+      "provided_url": "https://www.linkedin.com/newsletters/7495425255386230785/",
+      "canonical_url": "https://www.linkedin.com/newsletters/7495425255386230785/",
+      "classification": "duplicate",
+      "duplicate_of": "seed-008",
+      "observed_title": "Building Between Markets",
+      "reason": "The same newsletter was supplied twice under overlapping AI and knowledge-transfer descriptions.",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "user_supplied_duplicate",
+      "confidence": "high"
+    },
+    {
+      "id": "seed-011",
+      "provided_url": "https://www.linkedin.com/newsletters/7456977748880683008/",
+      "canonical_url": "https://www.linkedin.com/newsletters/7456977748880683008/",
+      "classification": "low-signal",
+      "observed_title": "نشرة دراهم",
+      "reason": "Personal-finance and investment education does not identify product-building intent or custom-software demand.",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "publisher_first_party_newsletter",
+      "confidence": "high"
+    },
+    {
+      "id": "seed-012",
+      "provided_url": "https://www.linkedin.com/newsletters/7448450970868707328/",
+      "canonical_url": "https://www.linkedin.com/newsletters/7448450970868707328/",
+      "classification": "low-signal",
+      "observed_title": "Growth DNA",
+      "reason": "Practical growth frameworks are relevant to founder interests but readership does not establish a current venture or software purchase trigger.",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "publisher_first_party_newsletter",
+      "confidence": "high"
+    },
+    {
+      "id": "seed-013",
+      "provided_url": "https://www.linkedin.com/newsletters/7291734193032593409/",
+      "canonical_url": "https://www.linkedin.com/newsletters/7291734193032593409/",
+      "classification": "low-signal",
+      "observed_title": "Behind View",
+      "reason": "SingleView's monthly product and fintech updates monitor a mature vendor rather than a repeatable pool of new software buyers.",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "company_first_party_newsletter",
+      "confidence": "high"
+    },
+    {
+      "id": "seed-014",
+      "provided_url": "https://www.linkedin.com/posts/trendz-podcast_%D9%86%D8%AC%D8%A7%D8%AD-%D8%A3%D9%8A-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%84%D8%A7-%D9%8A%D8%B9%D8%AA%D9%85%D8%AF-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D9%81%D9%83%D8%B1%D8%A9-%D9%81%D9%82%D8%B7-%D8%A8%D9%84-ugcPost-7462440458426867712-PScq?utm_source=share&utm_medium=member_desktop&rcm=ACoAADG_7dEBU78NilZwtnDrauu8e3TXLB-i6W8",
+      "canonical_url": "https://www.linkedin.com/posts/trendz-podcast_%D9%86%D8%AC%D8%A7%D8%AD-%D8%A3%D9%8A-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%84%D8%A7-%D9%8A%D8%B9%D8%AA%D9%85%D8%AF-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D9%81%D9%83%D8%B1%D8%A9-%D9%81%D9%82%D8%B7-%D8%A8%D9%84-ugcPost-7462440458426867712-PScq",
+      "classification": "low-signal",
+      "observed_title": "نجاح أي مشروع لا يعتمد على الفكرة فقط | Trendz Podcast",
+      "reason": "General business-management advice can attract entrepreneurs but does not isolate current product builders or buyers.",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "publisher_first_party_post",
+      "confidence": "high"
+    },
+    {
+      "id": "seed-015",
+      "provided_url": "https://www.linkedin.com/posts/trendz-podcast_%D8%A7%D9%84%D8%B9%D9%84%D8%A7%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9-%D9%84%D9%8A%D8%B3%D8%AA-%D8%B1%D9%81%D8%A7%D9%87%D9%8A%D8%A9-%D8%A8%D9%84-%D8%AC%D8%B2%D8%A1-%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A-ugcPost-7464597713905463297-S9hj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADG_7dEBU78NilZwtnDrauu8e3TXLB-i6W8",
+      "canonical_url": "https://www.linkedin.com/posts/trendz-podcast_%D8%A7%D9%84%D8%B9%D9%84%D8%A7%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9-%D9%84%D9%8A%D8%B3%D8%AA-%D8%B1%D9%81%D8%A7%D9%87%D9%8A%D8%A9-%D8%A8%D9%84-%D8%AC%D8%B2%D8%A1-%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A-ugcPost-7464597713905463297-S9hj",
+      "classification": "low-signal",
+      "observed_title": "العلاقات العامة ليست رفاهية | Trendz Podcast",
+      "reason": "Public-relations advice is broad business content without a product-build or procurement trigger.",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "publisher_first_party_post",
+      "confidence": "high"
+    },
+    {
+      "id": "seed-016",
+      "provided_url": "https://www.linkedin.com/posts/hasan-alsoud-tiptop_%D9%83%D9%8A%D9%81-%D8%A7%D8%AE%D8%AA%D8%A7%D8%B1-founders-ugcPost-7252803492900159488-3M5k?utm_source=share&utm_medium=member_desktop&rcm=ACoAADG_7dEBU78NilZwtnDrauu8e3TXLB-i6W8",
+      "canonical_url": "https://www.linkedin.com/posts/hasan-alsoud-tiptop_%D9%83%D9%8A%D9%81-%D8%A7%D8%AE%D8%AA%D8%A7%D8%B1-founders-ugcPost-7252803492900159488-3M5k",
+      "classification": "useful",
+      "observed_title": "كيف اختار Founders | Hasan Alsoud",
+      "reason": "Founder-specific content can provide a manual commenter discovery queue, but engagement must never be used as purchasing-intent evidence.",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_public_post",
+      "confidence": "medium"
+    },
+    {
+      "id": "seed-017",
+      "provided_url": "https://www.linkedin.com/posts/hasan-alsoud-tiptop_%D8%A7%D9%84%D9%88%D8%B8%D9%8A%D9%81%D8%A9-x-%D8%A7%D9%84%D8%B9%D9%85%D9%84-%D8%A7%D9%84%D8%AD%D8%B1-ugcPost-7433484079070625793-sjaI?utm_source=share&utm_medium=member_desktop&rcm=ACoAADG_7dEBU78NilZwtnDrauu8e3TXLB-i6W8",
+      "canonical_url": "https://www.linkedin.com/posts/hasan-alsoud-tiptop_%D8%A7%D9%84%D9%88%D8%B8%D9%8A%D9%81%D8%A9-x-%D8%A7%D9%84%D8%B9%D9%85%D9%84-%D8%A7%D9%84%D8%AD%D8%B1-ugcPost-7433484079070625793-sjaI",
+      "classification": "low-signal",
+      "observed_title": "الوظيفة X العمل الحر | Hasan Alsoud",
+      "reason": "Employment-versus-freelance discussion attracts a broad audience and is not specific enough to product-building founders.",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_public_post",
+      "confidence": "medium"
+    },
+    {
+      "id": "seed-018",
+      "provided_url": "https://www.linkedin.com/posts/officialtonyrobbins_one-decision-one-action-that-locks-you-in-ugcPost-7423785881884323841-pker?utm_source=share&utm_medium=member_desktop&rcm=ACoAADG_7dEBU78NilZwtnDrauu8e3TXLB-i6W8",
+      "canonical_url": "https://www.linkedin.com/posts/officialtonyrobbins_one-decision-one-action-that-locks-you-in-ugcPost-7423785881884323841-pker",
+      "classification": "duplicate",
+      "duplicate_of": "seed-003",
+      "observed_title": "One decision, one action that locks you in | Tony Robbins",
+      "reason": "The same motivational post was supplied twice.",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "user_supplied_duplicate",
+      "confidence": "high"
+    },
+    {
+      "id": "seed-019",
+      "provided_url": "https://www.linkedin.com/posts/adwa-aldakheel-ababb23a_falakinvestmenthub-alinma-amadtech-activity-7356749028249763841-p_ML?utm_source=share&utm_medium=member_desktop&rcm=ACoAADG_7dEBU78NilZwtnDrauu8e3TXLB-i6W8",
+      "canonical_url": "https://www.linkedin.com/posts/adwa-aldakheel-ababb23a_falakinvestmenthub-alinma-amadtech-activity-7356749028249763841-p_ML",
+      "classification": "useful",
+      "observed_title": "AmadTech: A New Fintech Ecosystem in Saudi Arabia | Adwa AlDakheel",
+      "reason": "A named Saudi fintech launch is a concrete company-discovery signal; the startup and its decision-makers still require independent qualification.",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_ecosystem_post",
+      "confidence": "high"
+    },
+    {
+      "id": "seed-020",
+      "provided_url": "https://www.linkedin.com/posts/hamadmubarkalhajri_leadership-simplelessons-innovation-activity-7286476335416270848-FXY-?utm_source=share&utm_medium=member_desktop&rcm=ACoAADG_7dEBU78NilZwtnDrauu8e3TXLB-i6W8",
+      "canonical_url": "https://www.linkedin.com/posts/hamadmubarkalhajri_leadership-simplelessons-innovation-activity-7286476335416270848-FXY-",
+      "classification": "low-signal",
+      "observed_title": "The Dead Horse Theory: A Simple Lesson for Leaders | Hamad Mubarak Al-Hajri",
+      "reason": "General leadership commentary is not evidence of a current venture, application project, or software budget.",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_public_post",
+      "confidence": "high"
+    },
+    {
+      "id": "seed-021",
+      "provided_url": "https://www.linkedin.com/company/ztosa/",
+      "canonical_url": "https://www.linkedin.com/company/ztosa/",
+      "classification": "useful",
+      "accepted_resource_id": "lr-linkedin-zero-to-one",
+      "observed_title": "Zero to One | صفر لواحد",
+      "reason": "Active Riyadh business and investment media page with frequent current Saudi app, company, technology, and funding coverage.",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "publisher_first_party_page",
+      "confidence": "high"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "lc-hayath-kargal-bookmyguide",
+      "name": "Hayath Kargal",
+      "personal_linkedin_url": "https://www.linkedin.com/in/hayath-kargal-b0b17057",
+      "company": "BookMyGuide",
+      "company_domain": null,
+      "lane": "stealth_pre_company",
+      "product_stage": "application_and_pre_mvp",
+      "research_state": "retain_for_verification",
+      "observed_behavior": ["publicly documenting a Saudi-first marketplace", "applying to an MVP-building program", "validating with Saudi tourism professionals"],
+      "saudi_market_basis": "Public profile places the venture in Jeddah and describes Saudi city pilots and a Saudi tourism marketplace.",
+      "product_building_signal": "Founder says the team is building a marketplace for licensed tour-guide discovery, booking, pricing, and payments.",
+      "buying_authority": "co_founder_confirmed",
+      "technical_team_signal": "unknown",
+      "resource_ids": ["lr-linkedin-intent-search"],
+      "evidence": [
+        {
+          "url": "https://www.linkedin.com/posts/hayath-kargal-b0b17057_vision2030-ntdp-mvplab-activity-7412319001252618240-2TT5",
+          "source_title": "Announcing Application to Saudi Arabia's NTDP MVPLab Program for BookMyGuide",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "founder_first_party_post",
+          "confidence": "high",
+          "paraphrased_evidence": "Kargal names himself and Mohammed Mishal Hassan as founders, describes the Saudi-first guide-booking marketplace, and says the team is establishing a Saudi entity and preparing pilots in five Saudi destinations."
+        },
+        {
+          "url": "https://sa.linkedin.com/in/hayath-kargal-b0b17057",
+          "source_title": "Hayath Kargal | LinkedIn",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "public_professional_profile",
+          "confidence": "high",
+          "paraphrased_evidence": "The public profile identifies BookMyGuide, describes it as a Saudi-first marketplace, and lists Jeddah as the venture location."
+        }
+      ]
+    },
+    {
+      "id": "lc-muhammad-mubashir-mukhtar-ma3rood",
+      "name": "Muhammad Mubashir Mukhtar",
+      "personal_linkedin_url": "https://www.linkedin.com/in/mubashirmukhtar",
+      "company": "Ma3rood | معروض",
+      "company_domain": "ma3rood.com",
+      "lane": "early_founder",
+      "product_stage": "mvp_launched_mobile_planned",
+      "research_state": "retain_for_verification",
+      "observed_behavior": ["launched an MVP publicly", "states active product-market-fit validation", "seeks ecosystem feedback"],
+      "saudi_market_basis": "Founder is publicly located in Madinah and describes a Saudi Vision 2030-aligned Haraj marketplace.",
+      "product_building_signal": "Marketplace MVP is live and the founder says mobile applications are planned next.",
+      "buying_authority": "founder_operator_inferred_from_first_person_launch",
+      "technical_team_signal": "founder_offers_software_services_internal_capacity_possible",
+      "resource_ids": ["lr-linkedin-intent-search"],
+      "evidence": [
+        {
+          "url": "https://www.linkedin.com/posts/mubashirmukhtar_ma3rood-%D9%85%D8%B9%D8%B1%D9%88%D8%B6-haraj-activity-7417264053032665089-0DR4",
+          "source_title": "Introducing Ma3rood | MVP Launch of a Next-Generation Haraj Marketplace",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "founder_first_party_post",
+          "confidence": "high",
+          "paraphrased_evidence": "Mukhtar announces the marketplace MVP, lists validation and platform-governance work, and says mobile apps are coming."
+        },
+        {
+          "url": "https://sa.linkedin.com/in/mubashirmukhtar",
+          "source_title": "Muhammad Mubashir Mukhtar | LinkedIn",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "public_professional_profile",
+          "confidence": "high",
+          "paraphrased_evidence": "The public profile resolves the post author to a Madinah-based professional associated with Ma3rood; his listed software services mean outsourcing need must not be assumed."
+        }
+      ]
+    },
+    {
+      "id": "lc-azzam-sahili-shattara-ai",
+      "name": "Azzam Sahili",
+      "personal_linkedin_url": "https://www.linkedin.com/in/azzam-el-sahili",
+      "company": "Shattara AI",
+      "company_domain": "shattaraai.com",
+      "lane": "early_founder",
+      "product_stage": "live_early_product",
+      "research_state": "deprioritize_internal_builder",
+      "observed_behavior": ["builds in public", "ships product iterations", "completed Misk Launchpad 9"],
+      "saudi_market_basis": "Public profile places Sahili and Shattara AI in Saudi Arabia; posts describe a localized MENA and Saudi student experience.",
+      "product_building_signal": "Recent posts detail shipped real-time study-room features and an evolving AI tutor product.",
+      "buying_authority": "founder_confirmed",
+      "technical_team_signal": "strong_internal_builder_signal",
+      "resource_ids": ["lr-linkedin-misk-entrepreneurship"],
+      "evidence": [
+        {
+          "url": "https://sa.linkedin.com/in/azzam-el-sahili",
+          "source_title": "Azzam Sahili | LinkedIn",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "founder_public_profile_and_posts",
+          "confidence": "high",
+          "paraphrased_evidence": "The Saudi public profile identifies Shattara AI and contains recent first-person shipping updates for real-time rooms and AI tutoring, indicating active internal product capability."
+        },
+        {
+          "url": "https://www.linkedin.com/company/shattaraai",
+          "source_title": "Shattara AI | LinkedIn",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "company_first_party_page",
+          "confidence": "high",
+          "paraphrased_evidence": "The company page names Sahili as founder, describes the Misk Launchpad 9 transition from concept to validated EdTech platform, and documents Arabic localization of its tutor app."
+        }
+      ]
+    },
+    {
+      "id": "lc-nicolae-esanu-eden",
+      "name": "Nicolae Esanu",
+      "personal_linkedin_url": "https://www.linkedin.com/in/nicolae-esanu-923683b8",
+      "company": "EDEN",
+      "company_domain": "edentravel.online",
+      "lane": "early_founder",
+      "product_stage": "mvp_live_pilot_validation",
+      "research_state": "retain_for_verification",
+      "observed_behavior": ["completed Misk Launchpad 9", "ran a Riyadh limited-cohort MVP", "publishes live validation metrics"],
+      "saudi_market_basis": "EDEN lists Riyadh headquarters, a 2026 founding year, and a Saudi-first travel product.",
+      "product_building_signal": "The company says it launched an MVP in Riyadh and is currently demonstrating traveler-matching features at LEAP 2026.",
+      "buying_authority": "founder_confirmed_by_company_and_third_party",
+      "technical_team_signal": "unknown",
+      "resource_ids": ["lr-linkedin-misk-entrepreneurship"],
+      "evidence": [
+        {
+          "url": "https://sa.linkedin.com/company/edentravelonline",
+          "source_title": "EDEN | LinkedIn",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "company_first_party_page",
+          "confidence": "high",
+          "paraphrased_evidence": "The page lists Riyadh, founding year 2026, Misk Launchpad 9, a Saudi-first traveler-matching platform, and current LEAP demonstrations."
+        },
+        {
+          "url": "https://sa.linkedin.com/in/nicolae-esanu-923683b8",
+          "source_title": "Nicolae Esanu | LinkedIn",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "public_professional_profile",
+          "confidence": "high",
+          "paraphrased_evidence": "The profile resolves the named founder associated with EDEN and Saudi telecom and digital systems work."
+        }
+      ]
+    },
+    {
+      "id": "lc-leen-abu-khadra-thoraya",
+      "name": "Leen Abu-Khadra",
+      "personal_linkedin_url": "https://www.linkedin.com/in/leenabukhadra",
+      "company": "Thoraya (formerly MentorConnection)",
+      "company_domain": null,
+      "lane": "early_founder",
+      "product_stage": "post_preaccelerator_early_build",
+      "research_state": "retain_with_market_scope_gap",
+      "observed_behavior": ["completed Misk Launchpad 9", "publicly iterating a marketplace", "targets students and emerging professionals"],
+      "saudi_market_basis": "The venture graduated from a Saudi Misk pre-accelerator; its stated product geography is broader SWANA, so Saudi commercial focus needs confirmation.",
+      "product_building_signal": "Founder describes building a marketplace for paid expert career advice and continuing product work after graduation.",
+      "buying_authority": "co_founder_confirmed",
+      "technical_team_signal": "unknown",
+      "resource_ids": ["lr-linkedin-misk-entrepreneurship"],
+      "evidence": [
+        {
+          "url": "https://www.linkedin.com/posts/leenabukhadra_misk-launchpad-90-thoraya-ex-mentorconnection-activity-7432756432879562752-PDt8",
+          "source_title": "Misk Launchpad 9.0 | Thoraya | Leen Abu-Khadra",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "founder_first_party_post",
+          "confidence": "high",
+          "paraphrased_evidence": "Abu-Khadra says Thoraya graduated from the Saudi pre-accelerator and describes continued building of a SWANA expert-career-advice marketplace."
+        },
+        {
+          "url": "https://jo.linkedin.com/in/leenabukhadra",
+          "source_title": "Leen Abu-Khadra | LinkedIn",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "public_professional_profile",
+          "confidence": "high",
+          "paraphrased_evidence": "The public profile confirms the exact person identity but places her in Jordan, so Saudi buyer relevance remains a verification item."
+        }
+      ]
+    },
+    {
+      "id": "lc-salim-noor-sighti",
+      "name": "Salim Noor",
+      "personal_linkedin_url": "https://www.linkedin.com/in/abutalhasalim",
+      "company": "Sighti",
+      "company_domain": null,
+      "lane": "early_founder",
+      "product_stage": "early_scale_and_hiring",
+      "research_state": "deprioritize_internal_technical_hiring",
+      "observed_behavior": ["completed Misk Launchpad 9", "publishes product and hiring updates", "recruits senior AI engineering"],
+      "saudi_market_basis": "Founder profile lists Riyadh and Sighti in Saudi Arabia.",
+      "product_building_signal": "Sighti turns CCTV feeds into real-time safety and operations intelligence; founder is hiring a senior computer-vision engineer for Saudi on-site work.",
+      "buying_authority": "founder_confirmed",
+      "technical_team_signal": "internal_team_active_and_hiring",
+      "resource_ids": ["lr-linkedin-misk-entrepreneurship"],
+      "evidence": [
+        {
+          "url": "https://sa.linkedin.com/in/abutalhasalim",
+          "source_title": "Salim Noor | LinkedIn",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "founder_public_profile_and_posts",
+          "confidence": "high",
+          "paraphrased_evidence": "The Riyadh profile identifies Noor as Sighti founder, records Misk Launchpad 9 graduation, explains the surveillance-AI product, and shows active senior AI hiring."
+        }
+      ]
+    },
+    {
+      "id": "lc-osama-almabroum-21doctors",
+      "name": "Osama Almabroum",
+      "personal_linkedin_url": "https://www.linkedin.com/in/osama-almabroum-4184064a",
+      "company": "21Doctors",
+      "company_domain": "21doctors.com",
+      "lane": "early_founder",
+      "product_stage": "funded_early_scale",
+      "research_state": "deprioritize_post_seed_scale",
+      "observed_behavior": ["joined The Garage cohort 10", "announced Saudi expansion", "closed half of a seed round"],
+      "saudi_market_basis": "Public profile lists Riyadh and Saudi operations; posts say the regional headquarters was established in Saudi Arabia.",
+      "product_building_signal": "The company is expanding an end-to-end healthcare platform and Arabic-first medical AI across Saudi regions.",
+      "buying_authority": "founder_confirmed",
+      "technical_team_signal": "unknown_but_product_is_operating_and_funded",
+      "resource_ids": ["lr-linkedin-intent-search"],
+      "evidence": [
+        {
+          "url": "https://sa.linkedin.com/in/osama-almabroum-4184064a",
+          "source_title": "Osama Almabroum | LinkedIn",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "founder_public_profile_and_posts",
+          "confidence": "high",
+          "paraphrased_evidence": "The profile identifies Almabroum with 21Doctors and contains a company announcement of selection into The Garage's tenth accelerator cohort."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/osama-almabroum-4184064a_21doctors-seedround-ntdp-activity-7419584775193206784-4BqU",
+          "source_title": "21Doctors seed round and Saudi expansion | Osama Almabroum",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "founder_first_party_post",
+          "confidence": "high",
+          "paraphrased_evidence": "Almabroum states that 21Doctors established its Saudi regional headquarters, is expanding across the Kingdom, and has seed backing, which lowers fit for a pre-MVP agency sale."
+        }
+      ]
+    },
+    {
+      "id": "lc-mohammed-alnoosh-ofintech",
+      "name": "Mohammed Alnoosh",
+      "personal_linkedin_url": "https://www.linkedin.com/in/alnoosh",
+      "company": "OFINTECH",
+      "company_domain": null,
+      "lane": "early_founder",
+      "product_stage": "accelerator_early_scale",
+      "research_state": "deprioritize_internal_cto",
+      "observed_behavior": ["participated in Attliq accelerator", "building AI and open-banking infrastructure", "operates from Riyadh"],
+      "saudi_market_basis": "Public profile lists OFINTECH in Riyadh and an accelerator recap identifies it as a Saudi portfolio company.",
+      "product_building_signal": "OFINTECH is described as an AI-powered open-banking platform linking bank and enterprise accounting data.",
+      "buying_authority": "founder_ceo_confirmed_by_public_feature",
+      "technical_team_signal": "internal_cto_visible",
+      "resource_ids": ["lr-linkedin-intent-search"],
+      "evidence": [
+        {
+          "url": "https://sa.linkedin.com/in/alnoosh",
+          "source_title": "Mohammed Alnoosh | LinkedIn",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "public_professional_profile",
+          "confidence": "high",
+          "paraphrased_evidence": "The profile links Alnoosh to OFINTECH in Riyadh and exposes an internal CTO recommendation, so external development need must not be inferred."
+        },
+        {
+          "url": "https://sa.linkedin.com/in/mohammedjamjoom",
+          "source_title": "Attliq accelerator portfolio recap | Mohammed Jamjoom",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "ecosystem_operator_public_post",
+          "confidence": "medium",
+          "paraphrased_evidence": "The recap names Alnoosh as OFINTECH founder and characterizes the product as an AI-powered open-banking and accounting-integration platform."
+        }
+      ]
+    },
+    {
+      "id": "lc-doaa-aref-handl-hub",
+      "name": "Doaa Aref",
+      "personal_linkedin_url": "https://www.linkedin.com/in/idoaaaref",
+      "company": "Handl Hub",
+      "company_domain": null,
+      "lane": "early_founder",
+      "product_stage": "accelerator_early_scale",
+      "research_state": "retain_for_specific_product_gap_only",
+      "observed_behavior": ["operates from Riyadh", "participated in Attliq accelerator", "experienced healthtech founder building another product"],
+      "saudi_market_basis": "Public profile lists Handl Hub in Riyadh and documents Aref's commitment to building in Saudi Arabia.",
+      "product_building_signal": "Handl Hub is described as an AI platform turning e-commerce store data into business recommendations.",
+      "buying_authority": "founder_confirmed",
+      "technical_team_signal": "unknown_but_experienced_technology_operator",
+      "resource_ids": ["lr-linkedin-intent-search"],
+      "evidence": [
+        {
+          "url": "https://sa.linkedin.com/in/idoaaaref",
+          "source_title": "Doaa Aref | LinkedIn",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "founder_public_profile_and_posts",
+          "confidence": "high",
+          "paraphrased_evidence": "The profile lists Handl Hub in Riyadh and contains first-person posts about building and investing in the Saudi ecosystem."
+        },
+        {
+          "url": "https://sa.linkedin.com/in/mohammedjamjoom",
+          "source_title": "Attliq accelerator portfolio recap | Mohammed Jamjoom",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "ecosystem_operator_public_post",
+          "confidence": "medium",
+          "paraphrased_evidence": "The recap names Aref as founder and describes Handl Hub's AI e-commerce analytics and recommendation product."
+        }
+      ]
+    },
+    {
+      "id": "lc-lea-mehaweg-testa-maison-safqa",
+      "name": "Léa Mehaweg Testa",
+      "personal_linkedin_url": "https://www.linkedin.com/in/l%C3%A9a-mehaweg-testa",
+      "company": "Maison Safqa",
+      "company_domain": "maisonsafqa.com",
+      "lane": "early_founder",
+      "product_stage": "launched_and_preseed_funded",
+      "research_state": "deprioritize_funded_operating_platform",
+      "observed_behavior": ["launched in Saudi Arabia", "completed Sanabil 500 accelerator", "raised a pre-seed round"],
+      "saudi_market_basis": "Founder and company posts describe Maison Safqa as Saudi-based and serving Saudi premium and luxury commerce.",
+      "product_building_signal": "Online flash-sale platform is operating with customers and brands and continues to develop its Saudi commerce product.",
+      "buying_authority": "ceo_cofounder_confirmed",
+      "technical_team_signal": "unknown",
+      "resource_ids": ["lr-linkedin-500-mena"],
+      "evidence": [
+        {
+          "url": "https://sa.linkedin.com/in/l%C3%A9a-mehaweg-testa",
+          "source_title": "Léa Mehaweg Testa | LinkedIn",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "founder_public_profile_and_posts",
+          "confidence": "high",
+          "paraphrased_evidence": "The public profile identifies Testa as founder, describes the Saudi commerce platform, its 2024 founding, live customers, accelerator progress, and a USD 620,000 pre-seed round."
+        }
+      ]
+    },
+    {
+      "id": "lc-faisal-alnaji-jaree",
+      "name": "Faisal AlNaji",
+      "personal_linkedin_url": "https://www.linkedin.com/in/faisalalnaji",
+      "company": "Jaree | جريء",
+      "company_domain": "jaree.sa",
+      "lane": "early_founder",
+      "product_stage": "launched_and_scaling",
+      "research_state": "deprioritize_visible_internal_team",
+      "observed_behavior": ["co-founded a Saudi investment platform", "launched a second-generation product", "operates an active startup community"],
+      "saudi_market_basis": "Profile places AlNaji and Jaree in Riyadh; the venture calls itself a Saudi platform for startups and investors.",
+      "product_building_signal": "Recent update describes dashboards, in-platform chat and meetings, deal rooms, digital agreements, AI matching, and iOS and Android availability.",
+      "buying_authority": "cofounder_confirmed",
+      "technical_team_signal": "internal_software_team_visible",
+      "resource_ids": ["lr-linkedin-intent-search"],
+      "evidence": [
+        {
+          "url": "https://sa.linkedin.com/in/faisalalnaji",
+          "source_title": "Faisal AlNaji | LinkedIn",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "founder_public_profile_and_company_updates",
+          "confidence": "high",
+          "paraphrased_evidence": "The profile identifies AlNaji with Jaree in Riyadh and contains a current company update for a feature-rich next-generation web and mobile platform; a software trainee is also visible."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/jareeplatform_%D8%AC%D8%B1%D9%8A%D8%A1-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D8%A7%D9%84%D8%AC%D8%B1%D9%8A%D8%A1-%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA%D8%A7%D9%84%D9%86%D8%A7%D8%B4%D8%A6%D8%A9-activity-7321473060765671424-Qxa1",
+          "source_title": "Jaree official Saudi platform launch",
+          "observed_at": "2026-09-03",
+          "published_at": "2025-04-25",
+          "source_quality": "company_first_party_post",
+          "confidence": "high",
+          "paraphrased_evidence": "Jaree announced the Saudi platform's formal launch for connecting startups and qualified investors."
+        }
+      ]
+    },
+    {
+      "id": "lc-malek-zlitni-speeda-ai",
+      "name": "Malek Zlitni",
+      "personal_linkedin_url": "https://www.linkedin.com/in/malek-zlitni-567246ba",
+      "company": "Speeda AI",
+      "company_domain": "speeda.ai",
+      "lane": "early_founder",
+      "product_stage": "launched_and_raising_preseed",
+      "research_state": "deprioritize_internal_technical_cofounders",
+      "observed_behavior": ["launched a Saudi-focused AI product", "building across WhatsApp, web, and mobile", "raising pre-seed"],
+      "saudi_market_basis": "LinkedIn company page lists Riyadh headquarters, 2025 founding, and Saudi SME use cases.",
+      "product_building_signal": "Founder and company describe an agentic marketing operating system for SMEs with active product development and fundraising.",
+      "buying_authority": "cofounder_confirmed",
+      "technical_team_signal": "ai_and_software_cofounders_explicitly_present",
+      "resource_ids": ["lr-linkedin-intent-search"],
+      "evidence": [
+        {
+          "url": "https://sa.linkedin.com/in/malek-zlitni-567246ba",
+          "source_title": "Malek Zlitni | LinkedIn",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "founder_public_profile_and_posts",
+          "confidence": "high",
+          "paraphrased_evidence": "The profile links Zlitni to Speeda AI and contains recent product-development, regional SME positioning, and pre-seed fundraising updates."
+        },
+        {
+          "url": "https://www.linkedin.com/company/speeda-ai",
+          "source_title": "Speeda AI | LinkedIn",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "company_first_party_page",
+          "confidence": "high",
+          "paraphrased_evidence": "The page lists two to ten employees, Riyadh headquarters, founding year 2025, and a multi-agent marketing platform delivered through web, mobile, and WhatsApp."
+        }
+      ]
+    },
+    {
+      "id": "lc-maysam-alfaddagh-almarkaz",
+      "name": "Maysam Alfaddagh",
+      "personal_linkedin_url": "https://www.linkedin.com/in/maysamalfaddagh",
+      "company": "Almarkaz / Almarkz",
+      "company_domain": null,
+      "lane": "stealth_pre_company",
+      "product_stage": "digital_platform_concept",
+      "research_state": "needs_current_status_refresh",
+      "observed_behavior": ["led a digital platform concept", "completed Misk Launchpad 7", "developed the venture through an entrepreneurship pathway"],
+      "saudi_market_basis": "Founder profile is in Al Khobar and ties the platform to Saudi education and accelerator programs.",
+      "product_building_signal": "Profile describes a digital platform concept for family coordination; the latest publicly found build evidence is older than one year.",
+      "buying_authority": "founder_confirmed_by_team_post",
+      "technical_team_signal": "ui_ux_and_landing_page_contributors_visible",
+      "resource_ids": ["lr-linkedin-misk-entrepreneurship"],
+      "evidence": [
+        {
+          "url": "https://sa.linkedin.com/in/maysamalfaddagh",
+          "source_title": "Maysam Alfaddagh | LinkedIn",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "public_professional_profile",
+          "confidence": "high",
+          "paraphrased_evidence": "The Saudi profile states that Alfaddagh led development of Almarkaz, a digital platform concept for family coordination."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/fouadtarabolsi_misk-launchpad-70-graduation-certificate-activity-7274429960994381826-viSI",
+          "source_title": "Misk Launchpad 7.0 | Almarkz",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "team_member_first_party_post",
+          "confidence": "high",
+          "paraphrased_evidence": "A team member names Alfaddagh as founder and describes the team developing Almarkz through Misk Launchpad."
+        }
+      ]
+    },
+    {
+      "id": "lc-aeshah-alamoudi-unnamed-cybersecurity",
+      "name": "Aeshah Alamoudi",
+      "personal_linkedin_url": "https://www.linkedin.com/in/aeshah-alamoudi",
+      "company": null,
+      "company_domain": null,
+      "lane": "stealth_pre_company",
+      "product_stage": "mvp_refinement",
+      "research_state": "needs_current_status_and_company_name",
+      "observed_behavior": ["completed early Misk Launchpad phases", "refined a cybersecurity MVP", "joined a Saudi cybersecurity entrepreneurship bootcamp"],
+      "saudi_market_basis": "Public profile shows Saudi employment and Saudi entrepreneurship-program activity; a commenter explicitly references the Saudi cybersecurity market.",
+      "product_building_signal": "Founder described an unnamed DeepTech cybersecurity, privacy, and AI startup in MVP refinement.",
+      "buying_authority": "founder_self_identified",
+      "technical_team_signal": "unknown",
+      "resource_ids": ["lr-linkedin-misk-entrepreneurship"],
+      "evidence": [
+        {
+          "url": "https://www.linkedin.com/posts/aeshah-alamoudi_misklaunchpad-deeptech-cybersecurity-activity-7259600429926301696-8gs0",
+          "source_title": "Misk Launchpad DeepTech cybersecurity startup | Aeshah Alamoudi",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "founder_first_party_post",
+          "confidence": "high",
+          "paraphrased_evidence": "Alamoudi says she advanced through Launchpad with her DeepTech cybersecurity, privacy, and AI startup and attended an MVP Sprint."
+        },
+        {
+          "url": "https://sa.linkedin.com/in/aeshah-alamoudi",
+          "source_title": "Aeshah Alamoudi | LinkedIn",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "public_professional_profile",
+          "confidence": "high",
+          "paraphrased_evidence": "The public Saudi profile resolves identity and shows continued cybersecurity entrepreneurship participation, but no current venture name or 2026 build update."
+        }
+      ]
+    },
+    {
+      "id": "lc-yaser-alkhayyat-nateq",
+      "name": "Yaser Alkhayyat",
+      "personal_linkedin_url": "https://www.linkedin.com/in/yaser-alkhayyat-382369290",
+      "company": "Nateq",
+      "company_domain": null,
+      "lane": "stealth_pre_company",
+      "product_stage": "mvp_completed_or_refined",
+      "research_state": "needs_current_status_refresh",
+      "observed_behavior": ["completed Misk Launchpad 7", "refined an accessibility app MVP", "worked with two named partners"],
+      "saudi_market_basis": "Profile is Saudi and the product addresses communication for the deaf and mute community in Saudi Arabia.",
+      "product_building_signal": "Nateq is described as a Flutter mobile application using AI to ease communication for deaf and mute users.",
+      "buying_authority": "founder_or_core_partner_inferred",
+      "technical_team_signal": "named_partners_but_roles_unknown",
+      "resource_ids": ["lr-linkedin-misk-entrepreneurship"],
+      "evidence": [
+        {
+          "url": "https://sa.linkedin.com/in/yaser-alkhayyat-382369290",
+          "source_title": "Yaser Alkhayyat | LinkedIn",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "founder_public_profile_and_posts",
+          "confidence": "high",
+          "paraphrased_evidence": "The Saudi profile documents Nateq's Launchpad progression and completion and identifies it as an AI and Flutter mobile application for deaf and mute communication in Saudi Arabia."
+        }
+      ]
+    },
+    {
+      "id": "lc-haya-al-alshaikh-mubarak-rate",
+      "name": "Haya Al Alshaikh Mubarak",
+      "personal_linkedin_url": "https://www.linkedin.com/in/haya-al-alshaikh-mubarak-7104691bb",
+      "company": "Rate",
+      "company_domain": null,
+      "lane": "stealth_pre_company",
+      "product_stage": "mvp_roadmap",
+      "research_state": "needs_product_definition_and_current_status",
+      "observed_behavior": ["participated in Misk Launchpad 7", "developed an MVP roadmap", "names a venture partner"],
+      "saudi_market_basis": "Public profile shows Saudi employment and describes Rate as part of a Saudi early-stage startup program.",
+      "product_building_signal": "Founder says mentorship helped the team develop a solid MVP roadmap, but the public evidence does not explain the product.",
+      "buying_authority": "founder_self_identified",
+      "technical_team_signal": "unknown",
+      "resource_ids": ["lr-linkedin-misk-entrepreneurship"],
+      "evidence": [
+        {
+          "url": "https://sa.linkedin.com/in/haya-al-alshaikh-mubarak-7104691bb",
+          "source_title": "Haya Al Alshaikh Mubarak | LinkedIn",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "founder_public_profile_and_posts",
+          "confidence": "high",
+          "paraphrased_evidence": "The Saudi public profile says Mubarak's startup Rate joined Misk Launchpad and that she and Najlaa AlSuwailem developed an MVP roadmap. Product fit remains unknown."
+        }
+      ]
+    },
+    {
+      "id": "lc-abeer-aljohani-mosaweeq",
+      "name": "Abeer Aljohani",
+      "personal_linkedin_url": "https://www.linkedin.com/in/abeeraljohaniksa",
+      "company": "MOSAWEEQ",
+      "company_domain": null,
+      "lane": "stealth_pre_company",
+      "product_stage": "mvp_built",
+      "research_state": "needs_current_status_refresh",
+      "observed_behavior": ["converted a graduation project into a venture", "completed Misk Launchpad 7", "built an MVP with a named team"],
+      "saudi_market_basis": "Saudi public profile and product problem statement explicitly concern Saudi productive families and creators.",
+      "product_building_signal": "Team built a marketplace MVP intended to connect productive families and creators with customers.",
+      "buying_authority": "core_founder_team_member_inferred",
+      "technical_team_signal": "four_named_team_members_roles_unknown",
+      "resource_ids": ["lr-linkedin-misk-entrepreneurship"],
+      "evidence": [
+        {
+          "url": "https://sa.linkedin.com/in/abeeraljohaniksa",
+          "source_title": "Abeer Aljohani | LinkedIn",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "founder_public_profile_and_posts",
+          "confidence": "high",
+          "paraphrased_evidence": "Aljohani's Saudi profile says MOSAWEEQ addresses the lack of a dedicated platform for productive families and creators and that the team built an MVP during Launchpad."
+        }
+      ]
+    },
+    {
+      "id": "lc-abdulrahman-joud-emtethal",
+      "name": "Abdulrahman Joud",
+      "personal_linkedin_url": "https://www.linkedin.com/in/ajoud",
+      "company": "Emtethal",
+      "company_domain": null,
+      "lane": "early_founder",
+      "product_stage": "funded_early_scale",
+      "research_state": "deprioritize_internal_cto_and_live_customers",
+      "observed_behavior": ["pivoted from a failed MVP", "won a 2026 municipal technology competition", "joined Sanabil 500 accelerator batch 11"],
+      "saudi_market_basis": "Founder profile is in Riyadh and describes Saudi hospitality compliance infrastructure aligned to Saudi regulators.",
+      "product_building_signal": "Emtethal is actively building AI, IoT, and smart-camera compliance software already used by hospitality customers.",
+      "buying_authority": "cofounder_ceo_confirmed",
+      "technical_team_signal": "cofounder_cto_and_team_explicitly_present",
+      "resource_ids": ["lr-linkedin-500-mena"],
+      "evidence": [
+        {
+          "url": "https://sa.linkedin.com/in/ajoud",
+          "source_title": "Abdulrahman Joud | LinkedIn",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "founder_public_profile_and_posts",
+          "confidence": "high",
+          "paraphrased_evidence": "The Riyadh profile documents Emtethal's pivot, live hotel and restaurant customers, accelerator selection, AI compliance product, and an internal CTO cofounder."
+        }
+      ]
+    },
+    {
+      "id": "lc-rakan-bin-sagr-recyclee",
+      "name": "Rakan Abdulaziz Bin Sagr",
+      "personal_linkedin_url": "https://www.linkedin.com/in/r4k4n",
+      "company": "RECYCLEE | ريسايكلي",
+      "company_domain": null,
+      "lane": "early_founder",
+      "product_stage": "pilot_to_early_scale",
+      "research_state": "deprioritize_internal_cto_and_operating_platform",
+      "observed_behavior": ["completed pilots", "joined Startup Unlocked batch 4", "publishes founder-building updates"],
+      "saudi_market_basis": "Founder is in Riyadh and product posts describe the first integrated digital waste-management platform in Saudi Arabia.",
+      "product_building_signal": "Recent first-party posts describe an operating platform, pilot data, customer traction, and continued systems development.",
+      "buying_authority": "cofounder_confirmed",
+      "technical_team_signal": "named_internal_cto_and_institutional_cofounder",
+      "resource_ids": ["lr-linkedin-500-mena"],
+      "evidence": [
+        {
+          "url": "https://www.linkedin.com/posts/r4k4n_building-recyclee-%D8%B1%D9%8A%D8%B3%D8%A7%D9%8A%D9%83%D9%84%D9%8A-changed-me-we-activity-7430978161275817984-JO0g",
+          "source_title": "Recyclee's Founding Story: Scaling Value from Waste | Rakan Bin Sagr",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "founder_first_party_post",
+          "confidence": "high",
+          "paraphrased_evidence": "Bin Sagr describes building pilots and scalable systems and names Anas AlSahli as the CTO who built the platform backbone."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/r4k4n_thanks-to-our-founding-partner-sequencive-activity-7400092315127562240-rSNh",
+          "source_title": "RECYCLEE digital waste platform update | Rakan Bin Sagr",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "founder_and_company_first_party_post",
+          "confidence": "high",
+          "paraphrased_evidence": "The post describes the Saudi platform, major clients, contracted-waste pipeline, and internal technical leadership."
+        }
+      ]
+    },
+    {
+      "id": "lc-mohsin-termezy-hemaayah",
+      "name": "Mohsin Termezy",
+      "personal_linkedin_url": "https://www.linkedin.com/in/termezy",
+      "company": "Hemaayah | حماية",
+      "company_domain": "hemaayah.com",
+      "lane": "early_founder",
+      "product_stage": "funded_gcc_scale",
+      "research_state": "retain_for_saudi_product_gap_only",
+      "observed_behavior": ["joined Startup Unlocked batch 4", "preparing a YC application", "launching Saudi event presence"],
+      "saudi_market_basis": "Founder says Hemaayah joined the Sanabil program in Riyadh and is exhibiting at Money20/20 Middle East in Riyadh, but the company is headquartered in Qatar and needs Saudi customer verification.",
+      "product_building_signal": "Hemaayah is building embedded insurance and relationship-intelligence products for diaspora remittances and GCC financial services.",
+      "buying_authority": "founder_confirmed",
+      "technical_team_signal": "unknown",
+      "resource_ids": ["lr-linkedin-500-mena"],
+      "evidence": [
+        {
+          "url": "https://qa.linkedin.com/in/termezy",
+          "source_title": "Mohsin Termezy | LinkedIn",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "founder_public_profile_and_posts",
+          "confidence": "high",
+          "paraphrased_evidence": "The Qatar profile identifies Termezy with Hemaayah, documents Saudi accelerator participation and a Riyadh fintech-event launch, and describes current embedded-insurance product development."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/500mena_meet-the-startups-sanabil-startup-unlocked-activity-7424738577235812352-pMbR",
+          "source_title": "Meet the Startups | Sanabil Startup Unlocked Batch 4",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "official_accelerator_post",
+          "confidence": "high",
+          "paraphrased_evidence": "500 MENA officially lists Hemaayah among Batch 4 companies, corroborating the Riyadh program link."
+        }
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "id": "gap-candidate-count-and-freshness",
+      "status": "open",
+      "detail": "This lane contains 20 raw candidate records. Four Misk Launchpad 7 records have product evidence older than one year and require a fresh exact-name check before they can count as active leads; none should be promoted solely from likes, generic comments, unnamed products, or ambiguous identities."
+    },
+    {
+      "id": "gap-linkedin-visibility",
+      "status": "known_platform_limit",
+      "detail": "Public profile and post visibility varies by member settings, deletion, indexing, geography, and login state. A missing company, employee, or activity signal is unknown, not evidence of absence."
+    },
+    {
+      "id": "gap-commercial-use-limit",
+      "status": "known_platform_limit",
+      "detail": "LinkedIn does not show the exact remaining free commercial-use allowance. Broad profile searches and profile browsing can consume it; exact-name searches do not. No automated profile traversal, extension, connection, follow, reaction, save, form submission, or message was used."
+    },
+    {
+      "id": "gap-team-capacity",
+      "status": "open",
+      "detail": "Most public pages do not establish whether a founder will outsource development. Where an internal CTO, engineering team, or technical founder was visible, the record is explicitly deprioritized; silence is retained as unknown."
+    },
+    {
+      "id": "gap-seed-profiles",
+      "status": "bounded",
+      "detail": "The supplied Hasan Alsoud, Adwa AlDakheel, and Hamad Al-Hajri profile pages were not consistently retrievable through public web fetch. Their classification therefore relies on the supplied context plus retrievable linked posts, and none was counted among the four accepted resources."
+    },
+    {
+      "id": "gap-no-outreach-or-contact-data",
+      "status": "satisfied",
+      "detail": "Research remained read-only. Public posts sometimes displayed phone numbers or email addresses, but none were captured in this dataset."
+    }
+  ]
+}

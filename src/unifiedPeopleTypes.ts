@@ -1,4 +1,12 @@
-export type UnifiedPeopleSourceId = 'leap-2026' | 'riseup-2026' | 'web-search'
+export type UnifiedPeopleSourceId = 'leap-2026' | 'riseup-2026' | 'web-search' | 'middle-east-vc-people' | 'middle-east-founders' | 'juhani-like-accounts' | 'saudi-software-leads'
+
+export type NewsletterTargetGroup = 'repost-target' | 'client-target' | 'audience-gateway' | `custom-${string}`
+
+export type NewsletterTargetGroupOption = {
+  value: NewsletterTargetGroup
+  label: string
+  description: string
+}
 
 export type InfluencerCountry =
   | 'Egypt'
@@ -82,9 +90,24 @@ export type UnifiedEventAppearance = {
   sessions: UnifiedEventSession[]
 }
 
+export type UnifiedFounderProfile = {
+  companies: string[]
+  editorial_order: number
+  influence_signal: string
+  primary_market: string
+  role: string
+  sector: string
+  target: boolean
+  tier: 1 | 2 | 3
+  tier_label: string
+  why_selected: string
+}
+
 export type UnifiedPerson = {
   id: string
+  merged_person_ids?: string[]
   source_ids: UnifiedPeopleSourceId[]
+  group: NewsletterTargetGroup | null
   name: {
     display: string
     title: string | null
@@ -111,6 +134,9 @@ export type UnifiedPerson = {
   profiles: UnifiedProfile[]
   influence: {
     lane: string | null
+    fit: boolean
+    potential_target: boolean
+    target: boolean
     priority: boolean | null
     middle_eastern: {
       value: boolean | null
@@ -120,6 +146,7 @@ export type UnifiedPerson = {
     }
   }
   event_appearances: UnifiedEventAppearance[]
+  founder?: UnifiedFounderProfile
   source_records: Array<{
     source_id: UnifiedPeopleSourceId
     record_id: string
@@ -130,16 +157,10 @@ export type UnifiedPerson = {
   }>
 }
 
-export type UnifiedPeopleSourceFile = {
-  schema_version: 'people.v1'
-  generated_at: string
-  source: UnifiedPeopleSource
-  people: UnifiedPerson[]
-}
-
 export type UnifiedPeopleFile = {
   schema_version: 'people.v1'
   generated_at: string
+  group_options?: NewsletterTargetGroupOption[]
   sources: UnifiedPeopleSource[]
   stats: {
     source_records: number

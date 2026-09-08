@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import type { ComponentProps, CSSProperties, DragEvent as ReactDragEvent } from 'react'
 import { InlineEdit } from './editableCells'
 import { ColumnResizeHandle, useResizableColumns } from './resizableColumns'
+import { ArchiveToolbar, RowSelectionCell, RowSelectionHeader, useRowArchive } from './rowArchive'
 import { usePersistedSort, type SortDirection } from './tablePreferences'
 import type { Influencer, LinkedInFollowerSnapshot } from './unifiedPeopleTypes'
 import { WorkspaceNav } from './WorkspaceNav'
@@ -25,7 +26,7 @@ type InfluencerResponse = {
 const COLUMN_ORDER_STORAGE_KEY = 'eign-influencers.column-order.v1'
 const COLUMN_WIDTH_STORAGE_KEY = 'eign-influencers.column-widths.v1'
 const ROW_SORT_STORAGE_KEY = 'eign-influencers.row-sort.v1'
-const INFLUENCER_SOURCE = 'web-search'
+const INFLUENCER_SOURCE_LABEL = 'influncer'
 const SORT_KEYS: SortKey[] = ['priority', 'followers', 'name', 'country', 'lane', 'organisation']
 const DEFAULT_SORT = { field: 'priority', direction: 'desc' } as const
 
@@ -234,7 +235,7 @@ export function Influencers() {
     storageKey: COLUMN_WIDTH_STORAGE_KEY,
   })
   const tableStyle = {
-    '--resizable-table-width': `${totalWidth(columnOrder)}px`,
+    '--resizable-table-width': `${totalWidth(columnOrder, 42)}px`,
   } as CSSProperties
 
   useEffect(() => {
@@ -277,7 +278,7 @@ export function Influencers() {
         influencer.country,
         influencer.lane,
         influencer.organisation,
-        INFLUENCER_SOURCE,
+        INFLUENCER_SOURCE_LABEL,
       ].some((value) => value.toLocaleLowerCase().includes(normalizedQuery)))
       .sort((left, right) => {
         let comparison = 0
@@ -305,6 +306,8 @@ export function Influencers() {
           || left.name.localeCompare(right.name)
       })
   }, [country, influencers, lane, priorityOnly, query, sortDirection, sortKey])
+  const archive = useRowArchive({ tableId: 'influencers', visibleRowIds: results.map((influencer) => influencer.__rowId) })
+  const displayedResults = results.filter((influencer) => archive.showArchived === archive.isArchived(influencer.__rowId))
 
   const sortPreset: SortPreset = sortKey === 'priority' && sortDirection === 'desc'
     ? 'priority'
@@ -421,7 +424,7 @@ export function Influencers() {
       <header className="workspace-header">
         <a className="workspace-brand" href="/">EI</a>
         <div className="workspace-title"><strong>EIGN data workspace</strong><span>Companies, capital, and ecosystem people</span></div>
-        <WorkspaceNav active="influencers" />
+        <WorkspaceNav active="in-progress" />
       </header>
 
       <main className="influencers-main">
@@ -452,7 +455,7 @@ export function Influencers() {
                 Directory verified {data?.meta.verifiedAt ? formatVerifiedDate(data.meta.verifiedAt) : '—'} · Follower lookup checked {data?.meta.followersUpdatedAt ? formatVerifiedDate(data.meta.followersUpdatedAt) : '—'} · {followerCoverage} / {influencers.length} counts available
               </p>
             </div>
-            <div><span>{results.length} / {influencers.length}</span><small className="table-edit-hint">Pencil or double-click to edit</small></div>
+            <div><span>{displayedResults.length} / {influencers.length}</span><small className="table-edit-hint">Pencil or double-click to edit</small></div>
           </header>
 
           <div className="influencer-filters">
@@ -493,14 +496,17 @@ export function Influencers() {
 
           {loadError && <div className="software-error" role="alert">{loadError}</div>}
           {cellSaveError && <div className="software-error" role="alert">Cell was not saved: {cellSaveError}</div>}
+          <ArchiveToolbar archive={archive} noun="influencers" />
 
           <div className="influencer-table-wrap">
             <table className="influencer-table resizable-table" style={tableStyle}>
               <colgroup>
+                <col className="row-select-column" style={{ width: '42px' }} />
                 {columnOrder.map((column) => <col key={column} style={{ width: `${widths[column]}px` }} />)}
               </colgroup>
               <thead>
                 <tr>
+                  <th className="row-select-heading" scope="col"><RowSelectionHeader allSelected={archive.allVisibleSelected} onToggle={archive.toggleAllVisible} someSelected={archive.someVisibleSelected} /></th>
                   {columnOrder.map((column) => (
                     <InfluencerHeader
                       key={column}
@@ -520,7 +526,7 @@ export function Influencers() {
                 </tr>
               </thead>
               <tbody>
-                {results.map((influencer, index) => {
+                {displayedResults.map((influencer, index) => {
                   const followerSnapshot = influencer.follower ?? UNKNOWN_FOLLOWER_SNAPSHOT
                   const formattedFollowers = followerSnapshot.count == null
                     ? '—'
@@ -531,6 +537,7 @@ export function Influencers() {
 
                   return (
                   <tr key={influencer.__rowId}>
+                    <td className="row-select-cell"><RowSelectionCell checked={archive.selectedIds.has(influencer.__rowId)} label={`Select ${influencer.name}`} onToggle={() => archive.toggleRow(influencer.__rowId)} /></td>
                     {columnOrder.map((column) => {
                       if (column === 'person') return (
                         <td className="influencer-cell--person" key={column}>
@@ -567,7 +574,7 @@ export function Influencers() {
                           </InlineEdit>
                         </td>
                       )
-                      if (column === 'source') return <td className="influencer-cell--source" key={column}><span className="influencer-source">{INFLUENCER_SOURCE}</span></td>
+                      if (column === 'source') return <td className="influencer-cell--source" key={column}><span className="influencer-source">{INFLUENCER_SOURCE_LABEL}</span></td>
                       if (column === 'signals') return (
                         <td className="influencer-cell--signals" key={column}>
                           <div className="influencer-signal-editors">
@@ -582,7 +589,7 @@ export function Influencers() {
                 })}
               </tbody>
             </table>
-            {!results.length && (
+            {!displayedResults.length && (
               <div className="influencer-empty">
                 <strong>No matching people</strong>
                 <span>Try a broader market, lane, or search term.</span>

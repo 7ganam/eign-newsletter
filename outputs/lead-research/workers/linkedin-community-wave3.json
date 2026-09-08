@@ -1,0 +1,447 @@
+{
+  "schema_version": "lead-research-worker-verification.v1",
+  "lane": "stealth-or-precompany",
+  "verified_at": "2026-09-03",
+  "scope": {
+    "requested_maximum": 4,
+    "priority_records": [
+      "Ariful Islam Bishal / unnamed workforce platform",
+      "Iris Zhorov / Synapse IZ",
+      "Abdulmohsan Alobaidan / HimmaFit",
+      "Bagi and Operon SA if a named founder could be verified"
+    ],
+    "boundaries": "Public professional sources only. LinkedIn was used read-only through public indexed pages and exact-name results. No interaction, profile traversal, contact enrichment, or commercial search was used."
+  },
+  "scoring_contract": {
+    "formula": "product_intent + outsourcing_likelihood + budget_readiness + timing - penalties",
+    "bands": {
+      "A": "15-20",
+      "B": "10-14",
+      "C": "5-9",
+      "D": "0-4 or hard-disqualified"
+    },
+    "active_gate_requirement": "Confirmed identity, Saudi-market relevance, buying authority, plausible custom-software need, and at least one primary source.",
+    "a_b_evidence_requirement": "Two independent sources, including at least one primary or official source.",
+    "unknown_capacity_rule": "Unknown technical delivery capacity is neither a positive signal nor a penalty."
+  },
+  "promoted": [
+    {
+      "id": "lr-linkedin-suhail-shatha-khalid-alharbi",
+      "name": "Shatha Khalid Alharbi | شذى الحربي",
+      "personal_linkedin_url": "https://sa.linkedin.com/in/shatha-khalid-alharbi",
+      "company": "Suhail | سهيل",
+      "company_domain": null,
+      "company_linkedin_url": null,
+      "lane": "stealth-or-precompany",
+      "product_stage": "Pre-company education project; progressed from a Saudi hackathon concept into Misk Launchpad 9 phase two for product refinement and prototype building",
+      "research_state": "active",
+      "technical_capacity": "Shatha is a computer-engineering student and has built technical projects, but the public evidence does not establish whether Suhail has a complete internal delivery team. Capacity is therefore unknown rather than scored positively or negatively.",
+      "observed_behaviour": [
+        "Co-created and iterated an AI-personalized education platform from a Saudi hackathon project",
+        "Published a detailed first-person product narrative naming the founding collaborators and the specific learner and instructor workflows",
+        "Advanced the project into the second phase of Misk Launchpad 9"
+      ],
+      "gate_review": {
+        "confirmed_identity": {
+          "passed": true,
+          "evidence_refs": [
+            "ev-suhail-shatha-profile"
+          ],
+          "reason": "The exact public profile identifies Shatha in Al-Qassim and contains her first-person Suhail project history."
+        },
+        "saudi_market_basis": {
+          "passed": true,
+          "evidence_refs": [
+            "ev-suhail-shatha-profile",
+            "ev-suhail-misk-program"
+          ],
+          "reason": "The project originated in a hackathon run by Imam Abdulrahman Bin Faisal University and a Saudi AI-governance association, while Shatha is based in Al-Qassim. Misk independently describes Launchpad as a Saudi-focused pre-accelerator requiring founders to test and launch in the Kingdom."
+        },
+        "buying_authority": {
+          "passed": true,
+          "evidence_refs": [
+            "ev-suhail-shatha-profile"
+          ],
+          "reason": "Shatha describes forming and developing the original project team, leading the idea's reframing into Suhail, and names the other co-founders and collaborators. This is direct founding-team product authority, not attendance alone."
+        },
+        "plausible_custom_software_need": {
+          "passed": true,
+          "evidence_refs": [
+            "ev-suhail-shatha-profile"
+          ],
+          "reason": "Suhail is specified as an AI education platform that analyzes learning patterns, dynamically adapts content, generates personalized paths, and provides instructors with data-backed decisions."
+        },
+        "has_primary_source": {
+          "passed": true,
+          "evidence_refs": [
+            "ev-suhail-shatha-profile",
+            "ev-suhail-misk-program"
+          ],
+          "reason": "A founder-team first-person source and the official Misk program page are present."
+        }
+      },
+      "qualification": {
+        "product_intent": {
+          "score": 4,
+          "evidence_refs": [
+            "ev-suhail-shatha-profile"
+          ],
+          "reason": "Within the last twelve months, Shatha described a specific AI platform, its user problem, feature set, founding team, and progression into phase two of a pre-accelerator."
+        },
+        "outsourcing_likelihood": {
+          "score": 1,
+          "evidence_refs": [
+            "ev-suhail-shatha-profile"
+          ],
+          "reason": "The project has technical founders, but the evidence does not establish either sufficient delivery capacity or an external-builder search. Capacity remains unknown."
+        },
+        "budget_readiness": {
+          "score": 3,
+          "evidence_refs": [
+            "ev-suhail-shatha-profile",
+            "ev-suhail-misk-program"
+          ],
+          "reason": "The team advanced through a structured Saudi pre-accelerator that provides MVP development and investment-readiness support; no cash software budget or secured funding is claimed."
+        },
+        "timing": {
+          "score": 1,
+          "evidence_refs": [
+            "ev-suhail-shatha-profile"
+          ],
+          "reason": "The product narrative is approximately eight months old and the later cohort-completion update is approximately six months old. The project is monitor-worthy, but there is no fresher product-build milestone."
+        },
+        "penalties": {
+          "score": 0,
+          "evidence_refs": [],
+          "reason": "No evidence-backed penalty applies. Profile silence after the cohort is not treated as proof of inactivity.",
+          "items": []
+        },
+        "total": 9,
+        "band": "C",
+        "calculation": "4 + 1 + 3 + 1 - 0 = 9"
+      },
+      "source_independence": {
+        "meets_a_b_rule": null,
+        "independent_groups": [
+          "founding_team_personal_profile",
+          "official_program"
+        ],
+        "note": "The record is C-band, so the A/B two-independent-source rule does not apply. The official program page corroborates the cohort's Saudi and pre-company context but is not used to infer Shatha's authority."
+      },
+      "resource_links": [
+        "https://hub.misk.org.sa/en/programs/misk-launchpad/"
+      ],
+      "evidence": [
+        {
+          "evidence_id": "ev-suhail-shatha-profile",
+          "url": "https://sa.linkedin.com/in/shatha-khalid-alharbi/ar",
+          "source_title": "Shatha Khalid Alharbi - Suhail project and Misk Launchpad 9 activity",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "primary",
+          "confidence": "high",
+          "publisher_independence_group": "founding_team_personal_profile",
+          "paraphrased_evidence": "Shatha's exact public profile places her in Al-Qassim and includes a first-person account of forming the project team in a Saudi university and AI-governance hackathon, evolving the initial Manhal concept into Suhail, specifying an AI-personalized learning platform, naming co-founders Ghadah Almutairi and Nada Alharbi, and advancing to Misk Launchpad 9 phase two. The profile also lists Suhail as a project with concrete AI and adaptive-learning capabilities."
+        },
+        {
+          "evidence_id": "ev-suhail-misk-program",
+          "url": "https://hub.misk.org.sa/en/programs/misk-launchpad/",
+          "source_title": "Misk Launchpad",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "official",
+          "confidence": "high",
+          "publisher_independence_group": "official_program",
+          "paraphrased_evidence": "Misk defines Launchpad as a Saudi-focused pre-accelerator for idea, prototype, and MVP-stage technology ventures. Its second phase is dedicated to developing a functional MVP, and admission requires Saudi founders or non-Saudis committed to testing and launching in Saudi Arabia."
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ev-wave3-ariful-profile",
+      "url": "https://sa.linkedin.com/in/ariful-islam-bishal-aa44523a8",
+      "source_title": "Ariful Islam Bishal - public professional profile and workforce-platform posts",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "primary",
+      "confidence": "high",
+      "paraphrased_evidence": "Ariful says he is based in Saudi Arabia and is designing an unbuilt website and mobile marketplace for verified workforce profiles, seeking a technical co-founder. The same profile says the initial launch focus is Bangladesh before expansion across other regions. No independent venture or program source was found."
+    },
+    {
+      "evidence_id": "ev-wave3-synapse-job",
+      "url": "https://sa.linkedin.com/jobs/view/technical-cofounder-saudi-based-at-synapse-iz-4418831755",
+      "source_title": "Technical Cofounder (Saudi Based) at Synapse IZ",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "primary",
+      "confidence": "high",
+      "paraphrased_evidence": "The three-month-old, now-closed role describes a Saudi chronic-disease intervention platform, an equity-first technical co-founder search, a live clinical prototype, detailed Saudi data and health-integration requirements, and planned fundraising. It identifies Iris as the application recipient, but does not explicitly state her founder title. No contact detail was retained."
+    },
+    {
+      "evidence_id": "ev-wave3-synapse-site",
+      "url": "https://synapseiz.com/",
+      "source_title": "Synapse IZ - Health Intelligence and Infrastructure",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "primary",
+      "confidence": "high",
+      "paraphrased_evidence": "The venture site presents a currently building post-screening intervention platform for Saudi Arabia and says its prototype is operational with clinical advisors in place. It does not name the founder."
+    },
+    {
+      "evidence_id": "ev-wave3-synapse-profile",
+      "url": "https://www.linkedin.com/in/iris-zhorov-69a21b1a2",
+      "source_title": "Iris Zhorov - public professional profile",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "primary",
+      "confidence": "medium",
+      "paraphrased_evidence": "The exact profile is current and public search directories associate Iris with Synapse IZ, but the rendered experience section does not expose her title at that venture."
+    },
+    {
+      "evidence_id": "ev-wave3-basma-company",
+      "url": "https://www.linkedin.com/company/basmasa",
+      "source_title": "BASMA Entertainment & Marketing",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "primary",
+      "confidence": "high",
+      "paraphrased_evidence": "BASMA's page names Abdulmohsan Alobaidan as its founder and republishes his first-person teaser for a new Riyadh fitness and gaming application, followed by HimmaFit product and technical-partner updates. The evidence strongly connects his operating company to the product, but does not explicitly name him as HimmaFit's founder."
+    },
+    {
+      "evidence_id": "ev-wave3-himmafit-site",
+      "url": "https://himmafit.com/",
+      "source_title": "HimmaFit - Your Smart Weight-Loss Plan",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "primary",
+      "confidence": "high",
+      "paraphrased_evidence": "The live multilingual site now presents a working AI fitness and nutrition product with device integrations, subscription plans, and an Android path while iOS is marked forthcoming. It does not identify the founder or show that the historical technical-partner search remains open."
+    },
+    {
+      "evidence_id": "ev-wave3-bagi-job",
+      "url": "https://sa.linkedin.com/jobs/view/%D8%B4%D8%B1%D9%8A%D9%83-%D8%AA%D9%82%D9%86%D9%8A-technical-co-founder-at-bagi-4311463678",
+      "source_title": "Technical Co-Founder at Bagi",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "primary",
+      "confidence": "high",
+      "paraphrased_evidence": "The closed ten-month-old role describes a Saudi pre-launch luggage-storage app, a founding team, and an equity technical-partner search with a detailed React Native and backend brief. The public page does not name the existing founder or decision-maker."
+    },
+    {
+      "evidence_id": "ev-wave3-operon-job",
+      "url": "https://sa.linkedin.com/jobs/view/technical-co-founder-founding-engineer-at-operon-sa-4350736279",
+      "source_title": "Technical Co-Founder / Founding Engineer at Operon SA",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "primary",
+      "confidence": "high",
+      "paraphrased_evidence": "The closed six-month-old Jeddah role describes a validation and MVP-stage workforce-scheduling SaaS and a founding-engineer search. It refers to an existing founder but does not name that person, and no independent current venture source was found."
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "lr-wave3-unresolved-ariful-islam-bishal",
+      "name": "Ariful Islam Bishal",
+      "company": "Unnamed verified-workforce platform",
+      "personal_linkedin_url": "https://sa.linkedin.com/in/ariful-islam-bishal-aa44523a8",
+      "source_urls": [
+        "https://sa.linkedin.com/in/ariful-islam-bishal-aa44523a8"
+      ],
+      "gate_review": {
+        "confirmed_identity": true,
+        "saudi_market_basis": "partial",
+        "buying_authority": true,
+        "plausible_custom_software_need": true,
+        "has_primary_source": true
+      },
+      "why_not_promoted": "Every consequential claim remains in one personal source, while the stated initial launch market is Bangladesh rather than Saudi Arabia. A likely B-band score would require an independent source, and Saudi residence alone is not treated as Saudi-market activity.",
+      "exact_gaps": [
+        "Independent venture, program, product, or partner source confirming the founder-project relationship",
+        "Evidence that Saudi Arabia is an initial operating or testing market rather than a later expansion geography"
+      ],
+      "observed_at": "2026-09-03"
+    },
+    {
+      "id": "lr-wave3-unresolved-iris-zhorov-synapse-iz",
+      "name": "Iris Zhorov",
+      "company": "Synapse IZ",
+      "personal_linkedin_url": "https://www.linkedin.com/in/iris-zhorov-69a21b1a2",
+      "source_urls": [
+        "https://www.linkedin.com/in/iris-zhorov-69a21b1a2",
+        "https://synapseiz.com/",
+        "https://sa.linkedin.com/company/synapseiz",
+        "https://sa.linkedin.com/jobs/view/technical-cofounder-saudi-based-at-synapse-iz-4418831755"
+      ],
+      "gate_review": {
+        "confirmed_identity": true,
+        "saudi_market_basis": true,
+        "buying_authority": "unresolved",
+        "plausible_custom_software_need": true,
+        "has_primary_source": true
+      },
+      "why_not_promoted": "The product and Saudi build brief are unusually strong, but the exact profile does not render Iris's Synapse title and no independent source explicitly names her as the venture's founder or hiring decision-maker. The technical-cofounder role is also closed. Associating a person through an application-recipient field is not enough to pass authority.",
+      "exact_gaps": [
+        "Direct source explicitly naming Iris as Synapse IZ founder or authorized product owner",
+        "Independent corroboration of that founder-project relationship",
+        "Current technical-build signal after the closed role"
+      ],
+      "observed_at": "2026-09-03"
+    },
+    {
+      "id": "lr-wave3-unresolved-abdulmohsan-alobaidan-himmafit",
+      "name": "Abdulmohsan Alobaidan | عبدالمحسن ال عبيدان",
+      "company": "HimmaFit",
+      "personal_linkedin_url": "https://sa.linkedin.com/in/alobaidan7",
+      "source_urls": [
+        "https://sa.linkedin.com/in/alobaidan7",
+        "https://www.linkedin.com/company/basmasa",
+        "https://himmafit.com/"
+      ],
+      "gate_review": {
+        "confirmed_identity": true,
+        "saudi_market_basis": true,
+        "buying_authority": "partial",
+        "plausible_custom_software_need": true,
+        "has_primary_source": true
+      },
+      "why_not_promoted": "Abdulmohsan is explicitly BASMA's founder and authored the Riyadh app teaser that BASMA connects to HimmaFit, but no source directly names him as HimmaFit's founder. The external technical-partner search is approximately ten months old, while the current site shows that a working product now exists; present outsourcing need and pre-company lane fit are therefore not established.",
+      "exact_gaps": [
+        "Direct founder attribution between Abdulmohsan and HimmaFit",
+        "Current external-build or technical-capacity gap",
+        "Proof that HimmaFit remains a pre-company venture rather than a launched product of the established BASMA business"
+      ],
+      "observed_at": "2026-09-03"
+    },
+    {
+      "id": "lr-wave3-unresolved-bagi-founder",
+      "name": null,
+      "company": "Bagi",
+      "personal_linkedin_url": null,
+      "source_urls": [
+        "https://sa.linkedin.com/company/bagi-app-ksa",
+        "https://sa.linkedin.com/jobs/view/%D8%B4%D8%B1%D9%8A%D9%83-%D8%AA%D9%82%D9%86%D9%8A-technical-co-founder-at-bagi-4311463678"
+      ],
+      "gate_review": {
+        "confirmed_identity": false,
+        "saudi_market_basis": true,
+        "buying_authority": false,
+        "plausible_custom_software_need": true,
+        "has_primary_source": true
+      },
+      "why_not_promoted": "The detailed pre-launch Saudi app brief passes product and geography checks, but neither the company nor job page exposes a named founder. The role is also approximately ten months old and closed.",
+      "exact_gaps": [
+        "Named founder or current buying decision-maker",
+        "Canonical personal profile",
+        "Current venture and build-status source"
+      ],
+      "observed_at": "2026-09-03"
+    },
+    {
+      "id": "lr-wave3-unresolved-operon-sa-founder",
+      "name": null,
+      "company": "Operon SA",
+      "personal_linkedin_url": null,
+      "source_urls": [
+        "https://sa.linkedin.com/jobs/view/technical-co-founder-founding-engineer-at-operon-sa-4350736279"
+      ],
+      "gate_review": {
+        "confirmed_identity": false,
+        "saudi_market_basis": true,
+        "buying_authority": false,
+        "plausible_custom_software_need": true,
+        "has_primary_source": true
+      },
+      "why_not_promoted": "The Saudi B2B SaaS brief is concrete, but the public role never names the existing founder and no second current venture source was found. The six-month-old role is closed.",
+      "exact_gaps": [
+        "Named founder or product owner",
+        "Canonical personal profile",
+        "Independent current venture source"
+      ],
+      "observed_at": "2026-09-03"
+    },
+    {
+      "id": "lr-wave3-unresolved-ayman-abdelmawla",
+      "name": "Ayman Abdelmawla",
+      "company": "Unnamed cloud software platform",
+      "personal_linkedin_url": "https://www.linkedin.com/in/ayman-abdelmawla",
+      "source_urls": [
+        "https://www.linkedin.com/in/ayman-abdelmawla"
+      ],
+      "gate_review": {
+        "confirmed_identity": true,
+        "saudi_market_basis": "unresolved",
+        "buying_authority": true,
+        "plausible_custom_software_need": true,
+        "has_primary_source": true
+      },
+      "why_not_promoted": "Ayman's profile contains a first-person technical-cofounder search for a cloud platform, but his current location is New York and Riyadh appears only in a prior experience entry. No venture name, Saudi-market commitment, or independent source was found.",
+      "exact_gaps": [
+        "Current Saudi-market operating basis",
+        "Named venture or product source",
+        "Independent corroboration"
+      ],
+      "observed_at": "2026-09-03"
+    },
+    {
+      "id": "lr-wave3-unresolved-thoraya-amr-abu-khadra",
+      "name": "Amr Abu-Khadra",
+      "company": "Thoraya Inc.",
+      "personal_linkedin_url": "https://jo.linkedin.com/in/amr-a-b-thoraya2026",
+      "source_urls": [
+        "https://jo.linkedin.com/in/amr-a-b-thoraya2026",
+        "https://www.thoraya.org/",
+        "https://www.linkedin.com/posts/leenabukhadra_misk-launchpad-90-thoraya-ex-mentorconnection-activity-7432756432879562752-PDt8",
+        "https://hub.misk.org.sa/en/programs/misk-launchpad/"
+      ],
+      "gate_review": {
+        "confirmed_identity": true,
+        "saudi_market_basis": true,
+        "buying_authority": true,
+        "plausible_custom_software_need": true,
+        "has_primary_source": true
+      },
+      "why_not_promoted": "Amr passes the four substantive gates, but Thoraya is already a named pre-seed company with a live monetized platform, stated usage, and an operating product. It fits the new-founder lane rather than the required stealth-or-precompany lane, so it is not used to fill this quota.",
+      "exact_gaps": [
+        "Correct canonical lane is new-founder, not stealth-or-precompany"
+      ],
+      "observed_at": "2026-09-03"
+    },
+    {
+      "id": "lr-wave3-unresolved-yosra-ammar-mwja",
+      "name": "Yosra Ammar",
+      "company": "MWJA Wave",
+      "personal_linkedin_url": "https://www.linkedin.com/in/yousra-ammar-b3aa5613b",
+      "source_urls": [
+        "https://ly.linkedin.com/company/m-wja",
+        "https://www.linkedin.com/posts/yousra-ammar-b3aa5613b_mwja-mentalhealth-libya-activity-7277729838092701696-O6At",
+        "https://hub.misk.org.sa/en/programs/misk-launchpad/"
+      ],
+      "gate_review": {
+        "confirmed_identity": true,
+        "saudi_market_basis": "partial",
+        "buying_authority": true,
+        "plausible_custom_software_need": true,
+        "has_primary_source": true
+      },
+      "why_not_promoted": "Yosra is independently identified as MWJA's founder and the company joined Misk Launchpad 9, but its current headquarters, product story, grant, and customer focus are Libyan. It is also a legally registered platform preparing a mobile app, making it a new-founder record rather than a clean Saudi stealth/precompany record.",
+      "exact_gaps": [
+        "Direct evidence of active Saudi customers, pilots, or launch work",
+        "Correct canonical lane is likely new-founder if Saudi activity is confirmed"
+      ],
+      "observed_at": "2026-09-03"
+    }
+  ],
+  "stopping_reason": {
+    "promoted_count": 1,
+    "requested_maximum": 4,
+    "shortfall": 3,
+    "detail": "The bounded priority pass and one nearby-cohort discovery pass were exhausted. Additional searches repeated the same job, profile, and company pages without producing a named decision-maker, independent founder attribution, current build signal, or correct stealth/precompany lane fit. Continuing would weaken the evidence rules or duplicate adjacent new-founder records."
+  },
+  "limitations": [
+    "Public LinkedIn indexing sometimes hides experience titles and job posters; hidden fields were not inferred.",
+    "No logged-in navigation, commercial search, browser extension, automated profile traversal, interaction, or contact-detail collection was used.",
+    "Relative LinkedIn ages were recorded with published_at null because no exact publication date was exposed.",
+    "Program participation corroborates stage and Saudi commitment only when combined with a founder-controlled product source; attendance alone was never used as qualification evidence."
+  ]
+}

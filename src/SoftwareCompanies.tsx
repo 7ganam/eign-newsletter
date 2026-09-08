@@ -3,6 +3,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import type { CSSProperties, DragEvent as ReactDragEvent } from 'react'
 import { InlineEdit } from './editableCells'
 import { ColumnResizeHandle, useResizableColumns } from './resizableColumns'
+import { ArchiveToolbar, RowSelectionCell, RowSelectionHeader, useRowArchive } from './rowArchive'
 import { usePersistedSort } from './tablePreferences'
 import { WorkspaceNav } from './WorkspaceNav'
 
@@ -188,6 +189,8 @@ export function SoftwareCompanies() {
         return leftValue.localeCompare(rightValue, undefined, { numeric: true, sensitivity: 'base' }) * (sortDirection === 'asc' ? 1 : -1)
       })
   }, [category, country, data, industry, linkedin, query, sortDirection, sortField, source])
+  const archive = useRowArchive({ tableId: 'software-companies', visibleRowIds: rows.map((row) => row.__rowKey) })
+  const displayedRows = rows.filter((row) => archive.showArchived === archive.isArchived(row.__rowKey))
 
   useEffect(() => {
     setSelectedCell(null)
@@ -210,11 +213,11 @@ export function SoftwareCompanies() {
   }
 
   const virtualizer = useVirtualizer({
-    count: rows.length,
+    count: displayedRows.length,
     getScrollElement: () => scrollRef.current,
     estimateSize: () => ROW_HEIGHT,
     overscan: 12,
-    getItemKey: (index) => `${rows[index]?.source}-${rows[index]?.linkedin_company_url || rows[index]?.id || index}`,
+    getItemKey: (index) => displayedRows[index]?.__rowKey ?? index,
   })
 
   const displayColumns = useMemo(() => columnOrder.length ? columnOrder : data?.columns ?? [], [columnOrder, data])
@@ -281,7 +284,7 @@ export function SoftwareCompanies() {
     setColumnDrop(null)
   }
 
-  const selectedRow = selectedCell ? rows[selectedCell.rowIndex] : null
+  const selectedRow = selectedCell ? displayedRows[selectedCell.rowIndex] : null
   const selectedColumn = selectedCell ? displayColumns[selectedCell.columnIndex] ?? '' : ''
   const selectedValue = selectedRow && selectedColumn ? selectedRow[selectedColumn] ?? '' : ''
   const selectedLink = selectedColumn ? isLinkValue(selectedColumn, selectedValue) : null
@@ -389,8 +392,10 @@ export function SoftwareCompanies() {
           <label><span>Sort</span><select value={sortField} onChange={(event) => setSortField(event.target.value)}><option value="company_name">Company name</option><option value="source">Source</option>{data?.columns.filter((column) => !['source', 'company_name'].includes(column)).map((column) => <option key={column} value={column}>{column}</option>)}</select></label>
           <button onClick={() => setSortDirection((current) => current === 'asc' ? 'desc' : 'asc')}>{sortDirection === 'asc' ? '↑ Ascending' : '↓ Descending'}</button>
           {(hasActiveFilters || sortField !== 'company_name' || sortDirection !== 'asc') && <button className="software-clear-filters" onClick={() => { clearFilters(); resetSort() }}>Clear</button>}
-          <span className="software-result-count">{rows.length.toLocaleString()} rows</span>
+          <span className="software-result-count">{displayedRows.length.toLocaleString()} rows</span>
         </div>
+
+        <ArchiveToolbar archive={archive} noun="software companies" />
 
         <div className="software-formula-bar">
           <output>{selectedCell ? `${selectedColumn} · row ${selectedCell.rowIndex + 1}` : '—'}</output>
@@ -407,7 +412,7 @@ export function SoftwareCompanies() {
           <div className="software-grid-scroll" ref={scrollRef}>
             <div className="software-grid" style={gridStyle}>
               <div className="software-grid-header">
-                <div className="software-row-number">#</div>
+                <div className="software-row-number"><RowSelectionHeader allSelected={archive.allVisibleSelected} onToggle={archive.toggleAllVisible} someSelected={archive.someVisibleSelected} /></div>
                 {displayColumns.map((column) => (
                   <div
                     className={`software-column-header${sortField === column ? ' is-sorted' : ''}${draggingColumn === column ? ' is-dragging' : ''}${columnDrop?.column === column ? ` is-drop-${columnDrop.position}` : ''}`}
@@ -428,10 +433,10 @@ export function SoftwareCompanies() {
               </div>
               <div className="software-virtual-body" style={{ height: `${virtualizer.getTotalSize()}px` }}>
                 {virtualizer.getVirtualItems().map((virtualRow) => {
-                  const row = rows[virtualRow.index]
+                  const row = displayedRows[virtualRow.index]
                   return (
                     <div className="software-data-row" key={virtualRow.key} style={{ height: `${virtualRow.size}px`, transform: `translateY(${virtualRow.start}px)` }}>
-                      <div className="software-row-number">{virtualRow.index + 1}</div>
+                      <div className="software-row-number"><RowSelectionCell checked={archive.selectedIds.has(row.__rowKey)} label={`Select ${row.company_name || 'company'}`} onToggle={() => archive.toggleRow(row.__rowKey)} /></div>
                       {displayColumns.map((column, columnIndex) => {
                         const value = row[column] ?? ''
                         const selected = selectedCell?.rowIndex === virtualRow.index && selectedCell.columnIndex === columnIndex
@@ -489,13 +494,13 @@ export function SoftwareCompanies() {
                   )
                 })}
               </div>
-              {!rows.length && <div className="software-empty">No rows match the current filters.</div>}
+              {!displayedRows.length && <div className="software-empty">{archive.showArchived ? 'No archived rows match the current filters.' : 'No rows match the current filters.'}</div>}
             </div>
           </div>
         )}
 
         <footer className="software-statusbar">
-          <span>{data?.sources.curated}</span><span>{data?.sources.review}</span><span>{rows.length.toLocaleString()} visible rows</span>
+          <span>{data?.sources.curated}</span><span>{data?.sources.review}</span><span>{displayedRows.length.toLocaleString()} visible rows</span>
         </footer>
       </main>
     </div>

@@ -1,0 +1,807 @@
+{
+  "schema_version": "official-programs-wave2.v1",
+  "lane": "official-programs",
+  "source_context": [
+    "Attliq Accelerator fifth cohort",
+    "Misk Launchpad cohort 9"
+  ],
+  "verified_at": "2026-09-03",
+  "method": {
+    "active_gates": [
+      "confirmed_identity",
+      "saudi_market_basis",
+      "buying_authority",
+      "plausible_custom_software_need"
+    ],
+    "score_formula": "product_intent + outsourcing_likelihood + budget_readiness + timing - penalties",
+    "score_ranges": {
+      "product_intent": [0, 6],
+      "outsourcing_likelihood": [0, 5],
+      "budget_readiness": [0, 5],
+      "timing": [0, 4],
+      "penalties": [0, 8]
+    },
+    "bands": {
+      "A": "15-20",
+      "B": "10-14",
+      "C": "5-9",
+      "D": "0-4 or hard-disqualified"
+    },
+    "evidence_rule": "Every promoted candidate has at least one primary or official source. A/B candidates have at least two independent sources, including a primary or official source.",
+    "saudi_basis_rule": "Program attendance alone is never used as Saudi-market evidence. A company page, product page, app listing, founder statement about Kingdom operations, or equivalent independent evidence is required.",
+    "interpretation_note": "A visible need for continuing software does not prove willingness to hire an outside team. Outsourcing likelihood is scored separately, and engineering capacity is unknown unless a source directly identifies it."
+  },
+  "evidence_catalog": [
+    {
+      "id": "src-wave2-attliq5-investment",
+      "url": "https://startupshouse.com/en/news/attliq-cohort-5-graduation/",
+      "source_title": "Startups House, through Ventures by Startups House, Invests in Five Saudi Startups from the Latest Attliq Accelerator Cohort",
+      "publisher": "Startups House",
+      "published_at": "2026-07-07",
+      "observed_at": "2026-09-03",
+      "source_quality": "first_party_cohort_release",
+      "confidence": "high",
+      "paraphrase": "Startups House identifies HANDL HUB, STOQA, OFINTECH, SIGHTY, and 21 DOCTORS as five pre-seed Saudi technology companies and reports a USD 100,000 SAFE investment into each after the fifth Attliq cohort Demo Day."
+    },
+    {
+      "id": "src-wave2-handl-site",
+      "url": "https://ecom.handlhub.com/",
+      "source_title": "HandlHub - هاندل هب",
+      "publisher": "Handl Hub",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "first_party_company_website",
+      "confidence": "high",
+      "paraphrase": "Handl Hub describes an early-access Saudi ecommerce operations platform with direct store and advertising integrations, 63 AI recommendation engines, measurable actions, automation, execution services, and live monthly pricing."
+    },
+    {
+      "id": "src-wave2-handl-founder-profile",
+      "url": "https://www.linkedin.com/in/idoaaaref",
+      "source_title": "Doaa Aref LinkedIn public profile",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_professional_profile",
+      "confidence": "medium",
+      "paraphrase": "The current public profile places Doaa Aref in Riyadh and shows Handl Hub as a current organization."
+    },
+    {
+      "id": "src-wave2-handl-founder-directory",
+      "url": "https://www.crunchbase.com/person/doaa-aref",
+      "source_title": "Doaa Aref - Founder at HandlHub",
+      "publisher": "Crunchbase",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "structured_business_directory",
+      "confidence": "medium",
+      "paraphrase": "The company directory identifies Doaa Aref as Handl Hub's current founder from August 2025 and locates her in Riyadh."
+    },
+    {
+      "id": "src-wave2-ofintech-company",
+      "url": "https://www.linkedin.com/company/ofintech",
+      "source_title": "OFINTECH LinkedIn public company page",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_company_profile",
+      "confidence": "high",
+      "paraphrase": "OFINTECH reports a Riyadh-headquartered AI financial-management and open-banking business founded in 2024, nine visible employees, an 11-50 employee range, Attliq graduation, investment, and current scaling activity."
+    },
+    {
+      "id": "src-wave2-ofintech-founder-profile",
+      "url": "https://www.linkedin.com/in/alnoosh",
+      "source_title": "Mohammed Alnoosh LinkedIn public profile",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_professional_profile",
+      "confidence": "medium",
+      "paraphrase": "The current public profile places Mohammed Alnoosh in Riyadh and shows OFINTECH as a current organization."
+    },
+    {
+      "id": "src-wave2-ofintech-ceo-profile",
+      "url": "https://www.linkedin.com/posts/ai-mena-network_aiinfintech-founderceo-businesstransformation-activity-7418233614271660032-cscH",
+      "source_title": "Mohammed Alnoosh: AI-Driven Business Transformation Leader",
+      "publisher": "AI MENA Network",
+      "published_at": "2026-01-17",
+      "observed_at": "2026-09-03",
+      "source_quality": "independent_professional_profile",
+      "confidence": "medium",
+      "paraphrase": "AI MENA Network identifies Alnoosh as OFINTECH's chief executive and describes responsibility for product strategy, growth, governance, and cloud architecture."
+    },
+    {
+      "id": "src-wave2-ofintech-cto-profile",
+      "url": "https://www.linkedin.com/in/mohamed-ibrahim-a-441258199",
+      "source_title": "Mohamed H. LinkedIn public profile",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_professional_profile",
+      "confidence": "medium",
+      "paraphrase": "The public profile associates Mohamed H. with OFINTECH and includes direct professional evidence of a CTO role, supporting the presence of internal technical leadership."
+    },
+    {
+      "id": "src-wave2-stoqa-company",
+      "url": "https://www.linkedin.com/company/stoqa-company",
+      "source_title": "STOQA LinkedIn public company page",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_company_profile",
+      "confidence": "high",
+      "paraphrase": "STOQA reports a Riyadh headquarters, 16 visible employees, an 11-50 employee range, a Saudi-market financial-intelligence product, a recent Android launch, and continuing feature releases."
+    },
+    {
+      "id": "src-wave2-stoqa-app",
+      "url": "https://play.google.com/store/apps/details?id=ai.stoqa.app",
+      "source_title": "STOQA - ستوكا",
+      "publisher": "Google Play",
+      "published_at": "2026-08-12",
+      "observed_at": "2026-09-03",
+      "source_quality": "official_app_store_listing",
+      "confidence": "high",
+      "paraphrase": "The current Android listing documents a Saudi-market investment-analysis app with paid plans, Tadawul analytics, portfolio tools, more than 23,000 daily users, more than SAR 500 million in tracked portfolios, and an August 2026 feature release."
+    },
+    {
+      "id": "src-wave2-stoqa-founder-profile",
+      "url": "https://www.linkedin.com/in/abdulrahman-saud-768160243",
+      "source_title": "Abdulrahman Saud LinkedIn public profile",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_professional_profile",
+      "confidence": "high",
+      "paraphrase": "The current Riyadh profile identifies STOQA as Saud's organization, describes his financial-research and fintech background, and shows current engagement with STOQA's Saudi-product activity."
+    },
+    {
+      "id": "src-wave2-stoqa-founder-directory",
+      "url": "https://www.crunchbase.com/organization/stoqa",
+      "source_title": "STOQA company profile",
+      "publisher": "Crunchbase",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "structured_business_directory",
+      "confidence": "medium",
+      "paraphrase": "The company directory identifies Abdulrahman Saud as STOQA's founder and CEO and records the Riyadh company and pre-seed backing."
+    },
+    {
+      "id": "src-wave2-sighti-founder",
+      "url": "https://www.linkedin.com/in/abutalhasalim",
+      "source_title": "Salim Noor LinkedIn public profile",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_professional_profile",
+      "confidence": "high",
+      "paraphrase": "The current Riyadh profile identifies Noor as Sighti's founder, describes demand for computer-vision compliance use cases, confirms Misk Launchpad 9 graduation, and documents recent recruitment for a senior AI engineer."
+    },
+    {
+      "id": "src-wave2-sighti-company",
+      "url": "https://www.linkedin.com/company/sighti",
+      "source_title": "Sighti LinkedIn public company page",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_company_profile",
+      "confidence": "high",
+      "paraphrase": "Sighti reports a Riyadh headquarters, a 2-10 employee range, and a platform that converts existing CCTV into operational, safety, customer, and regulatory analytics."
+    },
+    {
+      "id": "src-wave2-sighti-interview",
+      "url": "https://gulfstartups.co/case-study/sighti/",
+      "source_title": "Meet the Riyadh Founder Turning CCTV Into AI Business Intelligence In the Gulf Region",
+      "publisher": "Gulf Startups",
+      "published_at": "2025-09-19",
+      "observed_at": "2026-09-03",
+      "source_quality": "independent_founder_interview",
+      "confidence": "high",
+      "paraphrase": "The founder interview identifies Salim Noor, a 2025 Saudi-headquartered company, paid pilots and deployments, pre-seed backing, tailored F&B solutions, specialized-model development, and Noor's software and AI background."
+    },
+    {
+      "id": "src-wave2-21doctors-company",
+      "url": "https://www.linkedin.com/company/21doctorsmedical",
+      "source_title": "21Doctors LinkedIn public company page",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_company_profile",
+      "confidence": "high",
+      "paraphrase": "21Doctors describes an integrated digital-health platform, an 11-50 employee range, active expansion into Saudi Arabia with MISA support, and selection for The Garage's tenth accelerator cohort."
+    },
+    {
+      "id": "src-wave2-21doctors-founders-post",
+      "url": "https://www.linkedin.com/posts/21doctorsmedical_21doctors-%D8%A7%D9%84%D8%B5%D8%AD%D8%A9%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-activity-7368680420143562753-_0N2",
+      "source_title": "21Doctors pre-seed and Saudi headquarters announcement",
+      "publisher": "21Doctors",
+      "published_at": "2025-09-02",
+      "observed_at": "2026-09-03",
+      "source_quality": "first_party_company_announcement",
+      "confidence": "high",
+      "paraphrase": "The company announces a pre-seed round and Saudi headquarters for development and operations, naming Osama Almabroum as co-founder and CEO and Rania Abu Taleb as co-founder and CTO."
+    },
+    {
+      "id": "src-wave2-21doctors-founder",
+      "url": "https://www.linkedin.com/in/osama-almabroum-4184064a",
+      "source_title": "Osama Almabroum LinkedIn public profile",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_professional_profile",
+      "confidence": "high",
+      "paraphrase": "The current Riyadh profile shows 21Doctors as Almabroum's organization and current activity around Attliq funding, Saudi expansion, The Garage cohort 10, and the company's AI healthcare platform."
+    },
+    {
+      "id": "src-wave2-misk9-program",
+      "url": "https://hub.misk.org.sa/programs/entrepreneurship/misk-launchpad-7-0/",
+      "source_title": "Misk Launchpad Cohort 9",
+      "publisher": "Misk Foundation",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "first_party_program_page",
+      "confidence": "high",
+      "paraphrase": "Misk's archived cohort page dates Cohort 9 from November 2025 to January 2026 and defines Phase 3 graduation as completion with a functional MVP and a focus on early traction and paying customers."
+    },
+    {
+      "id": "src-wave2-mutim-founder-post",
+      "url": "https://www.linkedin.com/posts/hotamia_%D9%82%D8%A8%D9%84-%D8%AB%D9%85%D8%A7%D9%86%D9%8A%D8%A9-%D8%A3%D8%B4%D9%87%D8%B1-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%AA-%D9%85%D9%86-%D9%88%D8%B8%D9%8A%D9%81%D8%AA%D9%8A-%D8%A8%D8%B3%D8%A8%D8%A8-%D9%81%D9%83%D8%B1%D8%A9-activity-7428774643194531840-gY25",
+      "source_title": "Abdulmohsin Hotami's Mutim launch post",
+      "publisher": "Abdulmohsin Hotami",
+      "published_at": "2026-02-15",
+      "observed_at": "2026-09-03",
+      "source_quality": "founder_self_reported_post",
+      "confidence": "high",
+      "paraphrase": "Hotami says he and co-founder Abdullah Binafif began building Mutim in May 2025, completed Misk Launchpad Cohort 9 Phase 3, secured a first paying customer, onboarded more than 100 HR experts, and launched the platform."
+    },
+    {
+      "id": "src-wave2-mutim-company",
+      "url": "https://www.linkedin.com/company/mutim-hr",
+      "source_title": "Mutim LinkedIn public company page",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_company_profile",
+      "confidence": "high",
+      "paraphrase": "Mutim describes a Saudi HR marketplace founded in 2025, a 2-10 employee range, AI-supported matching, verified experts, a current launch, and company workflows for accessing HR services."
+    },
+    {
+      "id": "src-wave2-mutim-site",
+      "url": "https://beta.mutim.sa/",
+      "source_title": "Mutim HR Experts Platform",
+      "publisher": "Mutim",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "first_party_company_website",
+      "confidence": "high",
+      "paraphrase": "Mutim's product site shows an early-access Saudi platform with expert matching, project workflows, electronic agreements, protected payments, candidate tracking, and HR analytics; some modules remain marked as forthcoming."
+    },
+    {
+      "id": "src-wave2-mutim-launch",
+      "url": "https://www.linkedin.com/posts/launch-calacanis_accessing-the-right-hr-expertise-shouldn-activity-7435392269471576064-IiQ7",
+      "source_title": "Mutim founder and traction profile",
+      "publisher": "LAUNCH",
+      "published_at": "2026-03-05",
+      "observed_at": "2026-09-03",
+      "source_quality": "independent_accelerator_profile",
+      "confidence": "high",
+      "paraphrase": "LAUNCH names Abdulmohsin Hotami and Abdullah Binafif as Mutim's founders and reports a Saudi HR marketplace, more than 100 onboarded experts, a live platform, and secured clients."
+    },
+    {
+      "id": "src-wave2-contramind-post",
+      "url": "https://www.linkedin.com/posts/sarahaladl_completion-for-the-program-activity-7435972510841655296-OI-q",
+      "source_title": "ContraMind.ai Graduates Misk Entrepreneurship Launchpad 9.0",
+      "publisher": "Sarah Hassan",
+      "published_at": "2026-03-07",
+      "observed_at": "2026-09-03",
+      "source_quality": "team_self_reported_post",
+      "confidence": "medium",
+      "paraphrase": "The post reports ContraMind.ai's Misk Launchpad 9 graduation and an Arabic-first AI contract-review product, but does not establish Sarah Hassan's current decision authority or a Saudi operating basis beyond program participation."
+    },
+    {
+      "id": "src-wave2-collabscafe-post",
+      "url": "https://www.linkedin.com/posts/mudassir-gadit_misklaunchpad-entrepreneurship-saudiarabia-activity-7391059322052456448-Mzkl",
+      "source_title": "Collabscafe selected for Misk Launchpad Cohort 9",
+      "publisher": "Mudassir Gadit",
+      "published_at": "2025-11-03",
+      "observed_at": "2026-09-03",
+      "source_quality": "founder_self_reported_post",
+      "confidence": "medium",
+      "paraphrase": "Gadit reports Cohort 9 selection and a creator-brand partnership mission, but the source does not show Saudi customers or operations, a live software product, or budget evidence."
+    },
+    {
+      "id": "src-wave2-newmavericks-company",
+      "url": "https://www.linkedin.com/company/new-mavericks-information-technology/",
+      "source_title": "New Mavericks LinkedIn public company page",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_company_profile",
+      "confidence": "medium",
+      "paraphrase": "New Mavericks names Faisal Asif and Affan N. as company leaders and reports completing Misk Launchpad Cohort 9's activation phase, but the visible evidence does not define the product or verify Saudi customers or operations."
+    }
+  ],
+  "promoted": [
+    {
+      "candidate_id": "candidate-handl-hub-doaa-aref",
+      "person": {
+        "name": "Doaa Aref",
+        "decision_role": "Founder",
+        "linkedin_url": "https://www.linkedin.com/in/idoaaaref"
+      },
+      "company": {
+        "name": "Handl Hub",
+        "canonical_domain": "handlhub.com",
+        "url": "https://ecom.handlhub.com"
+      },
+      "active_gates": {
+        "confirmed_identity": {
+          "status": "pass",
+          "evidence_refs": ["src-wave2-handl-founder-profile", "src-wave2-handl-founder-directory"],
+          "reason": "The current Riyadh profile and structured company record connect the same person to Handl Hub, with the latter identifying her as founder."
+        },
+        "saudi_market_basis": {
+          "status": "pass",
+          "evidence_refs": ["src-wave2-handl-site", "src-wave2-attliq5-investment"],
+          "reason": "The product is explicitly designed for Saudi ecommerce stores and the official cohort release classifies the company as a Saudi pre-seed technology venture."
+        },
+        "buying_authority": {
+          "status": "pass",
+          "evidence_refs": ["src-wave2-handl-founder-directory", "src-wave2-handl-founder-profile"],
+          "reason": "Founder status establishes product and budget authority, with a current company association on the founder's profile."
+        },
+        "plausible_custom_software_need": {
+          "status": "pass",
+          "evidence_refs": ["src-wave2-handl-site", "src-wave2-attliq5-investment"],
+          "reason": "The product requires ongoing ecommerce, advertising, analytics, AI-recommendation, automation, dashboard, and execution-workflow development."
+        }
+      },
+      "technical_capacity": {
+        "state": "unknown",
+        "detail": "No reliable source in this pass establishes Handl Hub's engineering team composition or internal-versus-external delivery model."
+      },
+      "score": {
+        "product_intent": {
+          "value": 6,
+          "evidence_refs": ["src-wave2-handl-site", "src-wave2-attliq5-investment"],
+          "reason": "A live early-access platform, integrations, priced plans, and July 2026 pre-seed investment show active product building."
+        },
+        "outsourcing_likelihood": {
+          "value": 3,
+          "evidence_refs": ["src-wave2-handl-site"],
+          "reason": "The integration-heavy roadmap creates plausible external-build work, but technical capacity is unknown and no outsourcing intent is claimed."
+        },
+        "budget_readiness": {
+          "value": 4,
+          "evidence_refs": ["src-wave2-attliq5-investment", "src-wave2-handl-site"],
+          "reason": "A USD 100,000 pre-seed investment plus live paid plans indicates usable early-stage budget."
+        },
+        "timing": {
+          "value": 4,
+          "evidence_refs": ["src-wave2-attliq5-investment", "src-wave2-handl-site"],
+          "reason": "Investment closed in July 2026 while the platform is inviting early access and shipping current functionality."
+        },
+        "penalties": {
+          "value": 0,
+          "evidence_refs": [],
+          "reason": "No evidence-backed penalty; technical uncertainty is reflected in the outsourcing score."
+        },
+        "total": 17,
+        "band": "A"
+      },
+      "evidence_refs": ["src-wave2-attliq5-investment", "src-wave2-handl-site", "src-wave2-handl-founder-profile", "src-wave2-handl-founder-directory"]
+    },
+    {
+      "candidate_id": "candidate-ofintech-mohammed-alnoosh",
+      "person": {
+        "name": "Mohammed Alnoosh",
+        "decision_role": "Co-founder and CEO",
+        "linkedin_url": "https://www.linkedin.com/in/alnoosh"
+      },
+      "company": {
+        "name": "OFINTECH",
+        "canonical_domain": "ofintech.co",
+        "url": "https://ofintech.co"
+      },
+      "active_gates": {
+        "confirmed_identity": {
+          "status": "pass",
+          "evidence_refs": ["src-wave2-ofintech-founder-profile", "src-wave2-ofintech-ceo-profile"],
+          "reason": "The current Riyadh profile shows OFINTECH and an independent professional profile identifies Alnoosh as its chief executive."
+        },
+        "saudi_market_basis": {
+          "status": "pass",
+          "evidence_refs": ["src-wave2-ofintech-company", "src-wave2-attliq5-investment"],
+          "reason": "OFINTECH reports a Riyadh headquarters and Saudi activity, while the official cohort release classifies it as a Saudi pre-seed technology company."
+        },
+        "buying_authority": {
+          "status": "pass",
+          "evidence_refs": ["src-wave2-ofintech-ceo-profile", "src-wave2-ofintech-founder-profile"],
+          "reason": "The CEO role includes product strategy, growth, and governance authority."
+        },
+        "plausible_custom_software_need": {
+          "status": "pass",
+          "evidence_refs": ["src-wave2-ofintech-company", "src-wave2-attliq5-investment"],
+          "reason": "An AI open-banking product connecting bank accounts to enterprise accounting systems requires continuing custom integrations, data workflows, security, and product development."
+        }
+      },
+      "technical_capacity": {
+        "state": "visible_internal_capacity",
+        "detail": "A public CTO profile and nine visible company employees establish some internal technical leadership; the full engineering capacity remains unclear."
+      },
+      "score": {
+        "product_intent": {
+          "value": 6,
+          "evidence_refs": ["src-wave2-ofintech-company", "src-wave2-attliq5-investment"],
+          "reason": "The funded company is actively scaling a complex AI and open-banking platform."
+        },
+        "outsourcing_likelihood": {
+          "value": 1,
+          "evidence_refs": ["src-wave2-ofintech-cto-profile", "src-wave2-ofintech-company"],
+          "reason": "Visible internal technical leadership makes broad outsourcing less likely, though specialist integration or overflow work remains plausible."
+        },
+        "budget_readiness": {
+          "value": 4,
+          "evidence_refs": ["src-wave2-attliq5-investment", "src-wave2-ofintech-company"],
+          "reason": "The July 2026 USD 100,000 SAFE and active company scaling indicate usable pre-seed budget."
+        },
+        "timing": {
+          "value": 4,
+          "evidence_refs": ["src-wave2-attliq5-investment", "src-wave2-ofintech-company"],
+          "reason": "Fresh July 2026 capital and a current scaling statement create a near-term build window."
+        },
+        "penalties": {
+          "value": 2,
+          "evidence_refs": ["src-wave2-ofintech-cto-profile"],
+          "reason": "Visible internal CTO capacity reduces external-service fit."
+        },
+        "total": 13,
+        "band": "B"
+      },
+      "evidence_refs": ["src-wave2-attliq5-investment", "src-wave2-ofintech-company", "src-wave2-ofintech-founder-profile", "src-wave2-ofintech-ceo-profile", "src-wave2-ofintech-cto-profile"]
+    },
+    {
+      "candidate_id": "candidate-stoqa-abdulrahman-saud",
+      "person": {
+        "name": "Abdulrahman Saud",
+        "decision_role": "Founder and CEO",
+        "linkedin_url": "https://www.linkedin.com/in/abdulrahman-saud-768160243"
+      },
+      "company": {
+        "name": "STOQA",
+        "canonical_domain": "stoqa.ai",
+        "url": "https://stoqa.ai"
+      },
+      "active_gates": {
+        "confirmed_identity": {
+          "status": "pass",
+          "evidence_refs": ["src-wave2-stoqa-founder-profile", "src-wave2-stoqa-founder-directory"],
+          "reason": "The current Riyadh profile and company directory consistently connect Abdulrahman Saud to STOQA, with the directory identifying him as founder and CEO."
+        },
+        "saudi_market_basis": {
+          "status": "pass",
+          "evidence_refs": ["src-wave2-stoqa-company", "src-wave2-stoqa-app"],
+          "reason": "STOQA is Riyadh-headquartered and its first-party app listing says it is built specifically for Saudi-market and Tadawul investors."
+        },
+        "buying_authority": {
+          "status": "pass",
+          "evidence_refs": ["src-wave2-stoqa-founder-directory", "src-wave2-stoqa-founder-profile"],
+          "reason": "Founder and CEO is direct product and budget authority, corroborated by a current company association."
+        },
+        "plausible_custom_software_need": {
+          "status": "pass",
+          "evidence_refs": ["src-wave2-stoqa-app", "src-wave2-stoqa-company"],
+          "reason": "The mobile and web product requires continuing market-data ingestion, financial calculations, subscription features, portfolio tooling, app delivery, and UX development."
+        }
+      },
+      "technical_capacity": {
+        "state": "unknown",
+        "detail": "Sixteen employees are visible, but the public sources in this pass do not establish how many are engineers or whether development is fully internal."
+      },
+      "score": {
+        "product_intent": {
+          "value": 6,
+          "evidence_refs": ["src-wave2-stoqa-app", "src-wave2-stoqa-company"],
+          "reason": "The Android product launched recently and an August 2026 release added multiple portfolio features."
+        },
+        "outsourcing_likelihood": {
+          "value": 2,
+          "evidence_refs": ["src-wave2-stoqa-company", "src-wave2-stoqa-app"],
+          "reason": "The multi-platform roadmap creates specialist or overflow opportunities, but an established 16-person organization lowers broad outsourcing likelihood and its engineering mix is unknown."
+        },
+        "budget_readiness": {
+          "value": 5,
+          "evidence_refs": ["src-wave2-attliq5-investment", "src-wave2-stoqa-app"],
+          "reason": "Fresh USD 100,000 capital, paid subscriptions, reported daily usage, and substantial tracked portfolios indicate strong operating readiness."
+        },
+        "timing": {
+          "value": 4,
+          "evidence_refs": ["src-wave2-stoqa-app", "src-wave2-attliq5-investment"],
+          "reason": "A major app update landed in August 2026 immediately after the July investment."
+        },
+        "penalties": {
+          "value": 1,
+          "evidence_refs": ["src-wave2-stoqa-company"],
+          "reason": "The already-live product and 16-person organization reduce greenfield-service fit, without proving internal engineering capacity."
+        },
+        "total": 16,
+        "band": "A"
+      },
+      "evidence_refs": ["src-wave2-attliq5-investment", "src-wave2-stoqa-company", "src-wave2-stoqa-app", "src-wave2-stoqa-founder-profile", "src-wave2-stoqa-founder-directory"]
+    },
+    {
+      "candidate_id": "candidate-sighti-salim-noor",
+      "person": {
+        "name": "Salim Noor",
+        "decision_role": "Founder and CEO",
+        "linkedin_url": "https://www.linkedin.com/in/abutalhasalim"
+      },
+      "company": {
+        "name": "Sighti",
+        "canonical_domain": "sighti.ai",
+        "url": "https://sighti.ai"
+      },
+      "active_gates": {
+        "confirmed_identity": {
+          "status": "pass",
+          "evidence_refs": ["src-wave2-sighti-founder", "src-wave2-sighti-interview"],
+          "reason": "Noor's current profile and the independent founder interview consistently identify him as Sighti's founder; the profile also supports the CEO title through current public activity."
+        },
+        "saudi_market_basis": {
+          "status": "pass",
+          "evidence_refs": ["src-wave2-sighti-company", "src-wave2-sighti-interview"],
+          "reason": "Sighti reports a Riyadh headquarters and current Saudi operations, independently corroborated by the founder interview."
+        },
+        "buying_authority": {
+          "status": "pass",
+          "evidence_refs": ["src-wave2-sighti-founder", "src-wave2-sighti-interview"],
+          "reason": "Founder and CEO is direct product and budget authority."
+        },
+        "plausible_custom_software_need": {
+          "status": "pass",
+          "evidence_refs": ["src-wave2-sighti-company", "src-wave2-sighti-interview"],
+          "reason": "Sighti is building edge-and-cloud computer vision, customer-specific compliance workflows, real-time alerts, dashboards, and sector-specialized models."
+        }
+      },
+      "technical_capacity": {
+        "state": "visible_internal_capacity",
+        "detail": "The founder has direct software and AI expertise and was recently recruiting a senior computer-vision engineer, so internal technical capability must be assumed present."
+      },
+      "score": {
+        "product_intent": {
+          "value": 6,
+          "evidence_refs": ["src-wave2-sighti-founder", "src-wave2-sighti-interview", "src-wave2-attliq5-investment"],
+          "reason": "Paid pilots, live deployments, specialized model development, technical hiring, and fresh pre-seed funding show active product execution."
+        },
+        "outsourcing_likelihood": {
+          "value": 1,
+          "evidence_refs": ["src-wave2-sighti-founder", "src-wave2-sighti-interview"],
+          "reason": "A technical founder and active AI hiring make broad outsourcing unlikely, although overflow or non-core product work remains possible."
+        },
+        "budget_readiness": {
+          "value": 4,
+          "evidence_refs": ["src-wave2-attliq5-investment", "src-wave2-sighti-interview"],
+          "reason": "The company has fresh USD 100,000 funding plus paid pilots and deployments."
+        },
+        "timing": {
+          "value": 4,
+          "evidence_refs": ["src-wave2-attliq5-investment", "src-wave2-sighti-founder"],
+          "reason": "July 2026 capital and current senior technical hiring indicate an immediate build phase."
+        },
+        "penalties": {
+          "value": 2,
+          "evidence_refs": ["src-wave2-sighti-founder", "src-wave2-sighti-interview"],
+          "reason": "Substantial founder-level engineering experience and active internal AI recruitment reduce service-provider fit."
+        },
+        "total": 13,
+        "band": "B"
+      },
+      "evidence_refs": ["src-wave2-attliq5-investment", "src-wave2-sighti-founder", "src-wave2-sighti-company", "src-wave2-sighti-interview"]
+    },
+    {
+      "candidate_id": "candidate-21doctors-osama-almabroum",
+      "person": {
+        "name": "Osama Almabroum",
+        "decision_role": "Co-founder and CEO",
+        "linkedin_url": "https://www.linkedin.com/in/osama-almabroum-4184064a"
+      },
+      "company": {
+        "name": "21Doctors",
+        "canonical_domain": "21doctors.com",
+        "url": "https://21doctors.com"
+      },
+      "active_gates": {
+        "confirmed_identity": {
+          "status": "pass",
+          "evidence_refs": ["src-wave2-21doctors-founders-post", "src-wave2-21doctors-founder"],
+          "reason": "The first-party founder announcement names Almabroum as co-founder and CEO, while his current Riyadh profile shows 21Doctors and ongoing company activity."
+        },
+        "saudi_market_basis": {
+          "status": "pass",
+          "evidence_refs": ["src-wave2-21doctors-founders-post", "src-wave2-21doctors-company"],
+          "reason": "The company established its Saudi headquarters for development and operations and now reports active Kingdom expansion backed by MISA and The Garage."
+        },
+        "buying_authority": {
+          "status": "pass",
+          "evidence_refs": ["src-wave2-21doctors-founders-post", "src-wave2-21doctors-founder"],
+          "reason": "Co-founder and CEO is direct product and budget authority."
+        },
+        "plausible_custom_software_need": {
+          "status": "pass",
+          "evidence_refs": ["src-wave2-21doctors-company", "src-wave2-attliq5-investment"],
+          "reason": "The integrated product spans booking, clinic management, provider profiles, telemedicine, patient workflows, digital presence, and Arabic-first AI tools."
+        }
+      },
+      "technical_capacity": {
+        "state": "visible_internal_capacity",
+        "detail": "The company publicly names a co-founder and CTO responsible for scalable Arabic-first AI medical infrastructure, indicating meaningful internal technical leadership."
+      },
+      "score": {
+        "product_intent": {
+          "value": 6,
+          "evidence_refs": ["src-wave2-21doctors-company", "src-wave2-attliq5-investment"],
+          "reason": "The company is simultaneously scaling its Saudi product, entering The Garage cohort 10, and building AI-enabled provider workflows."
+        },
+        "outsourcing_likelihood": {
+          "value": 1,
+          "evidence_refs": ["src-wave2-21doctors-founders-post"],
+          "reason": "A co-founder/CTO and internal development headquarters reduce broad outsourcing likelihood, though integrations or overflow work remain plausible."
+        },
+        "budget_readiness": {
+          "value": 4,
+          "evidence_refs": ["src-wave2-attliq5-investment", "src-wave2-21doctors-founders-post"],
+          "reason": "The company has the July 2026 USD 100,000 SAFE on top of an earlier disclosed pre-seed round."
+        },
+        "timing": {
+          "value": 4,
+          "evidence_refs": ["src-wave2-attliq5-investment", "src-wave2-21doctors-company"],
+          "reason": "Fresh funding, current Saudi expansion, and accelerator selection indicate an immediate scale-up period."
+        },
+        "penalties": {
+          "value": 2,
+          "evidence_refs": ["src-wave2-21doctors-founders-post"],
+          "reason": "Named internal CTO leadership and a development headquarters reduce external-service fit."
+        },
+        "total": 13,
+        "band": "B"
+      },
+      "evidence_refs": ["src-wave2-attliq5-investment", "src-wave2-21doctors-company", "src-wave2-21doctors-founders-post", "src-wave2-21doctors-founder"]
+    },
+    {
+      "candidate_id": "candidate-mutim-abdulmohsin-hotami",
+      "person": {
+        "name": "Abdulmohsin Hotami",
+        "decision_role": "Co-founder",
+        "linkedin_url": "https://www.linkedin.com/in/hotamia"
+      },
+      "company": {
+        "name": "Mutim",
+        "canonical_domain": "mutim.sa",
+        "url": "https://beta.mutim.sa"
+      },
+      "active_gates": {
+        "confirmed_identity": {
+          "status": "pass",
+          "evidence_refs": ["src-wave2-mutim-founder-post", "src-wave2-mutim-launch"],
+          "reason": "Hotami's founder post and LAUNCH's independent profile consistently name him as a Mutim co-founder."
+        },
+        "saudi_market_basis": {
+          "status": "pass",
+          "evidence_refs": ["src-wave2-mutim-company", "src-wave2-mutim-site"],
+          "reason": "Mutim independently describes itself as a Saudi HR marketplace serving companies and experts in the Kingdom; this gate does not rely on Misk attendance."
+        },
+        "buying_authority": {
+          "status": "pass",
+          "evidence_refs": ["src-wave2-mutim-founder-post", "src-wave2-mutim-launch"],
+          "reason": "Co-founder status and Hotami's direct account of leaving employment to build and launch the company establish decision authority."
+        },
+        "plausible_custom_software_need": {
+          "status": "pass",
+          "evidence_refs": ["src-wave2-mutim-site", "src-wave2-mutim-company"],
+          "reason": "The early product needs marketplace matching, identity and expertise verification, project workflows, electronic agreements, payments, candidate tracking, analytics, and module completion."
+        }
+      },
+      "technical_capacity": {
+        "state": "unknown",
+        "detail": "The company reports a 2-10 employee range, but no reliable source establishes engineering composition or internal-versus-external delivery."
+      },
+      "score": {
+        "product_intent": {
+          "value": 6,
+          "evidence_refs": ["src-wave2-mutim-founder-post", "src-wave2-mutim-site", "src-wave2-misk9-program"],
+          "reason": "The company completed Misk Cohort 9's MVP-focused third phase and is now shipping an early-access platform with several unfinished modules."
+        },
+        "outsourcing_likelihood": {
+          "value": 3,
+          "evidence_refs": ["src-wave2-mutim-company", "src-wave2-mutim-site"],
+          "reason": "A very small team and multi-module roadmap support moderate external-build plausibility, but engineering capacity and outsourcing intent remain unknown."
+        },
+        "budget_readiness": {
+          "value": 2,
+          "evidence_refs": ["src-wave2-mutim-founder-post", "src-wave2-mutim-launch"],
+          "reason": "A first paying customer and secured clients show early commercial validation, but no funding amount is established."
+        },
+        "timing": {
+          "value": 4,
+          "evidence_refs": ["src-wave2-mutim-founder-post", "src-wave2-mutim-site"],
+          "reason": "The founder reported the platform launch in 2026 while several modules remain in staged rollout."
+        },
+        "penalties": {
+          "value": 0,
+          "evidence_refs": [],
+          "reason": "No evidence-backed penalty; the limited budget signal is already reflected in budget readiness."
+        },
+        "total": 15,
+        "band": "A"
+      },
+      "evidence_refs": ["src-wave2-misk9-program", "src-wave2-mutim-founder-post", "src-wave2-mutim-company", "src-wave2-mutim-site", "src-wave2-mutim-launch"]
+    }
+  ],
+  "unresolved": [
+    {
+      "candidate_id": "candidate-contramind-sarah-hassan",
+      "person": {
+        "name": "Sarah Hassan",
+        "decision_role": null,
+        "linkedin_url": "https://www.linkedin.com/in/sarahaladl"
+      },
+      "company": {
+        "name": "ContraMind.ai",
+        "canonical_domain": "contramind.ai",
+        "url": "https://contramind.ai"
+      },
+      "exact_gaps": [
+        "Current founder, executive, or budget authority is not established by the visible evidence.",
+        "Saudi customers, legal presence, headquarters, or active Kingdom operations are not independently verified; Misk participation alone is insufficient."
+      ],
+      "evidence_refs": ["src-wave2-misk9-program", "src-wave2-contramind-post"]
+    },
+    {
+      "candidate_id": "candidate-collabscafe-mudassir-gadit",
+      "person": {
+        "name": "Mudassir Gadit",
+        "decision_role": null,
+        "linkedin_url": "https://www.linkedin.com/in/mudassir-gadit"
+      },
+      "company": {
+        "name": "Collabscafe",
+        "canonical_domain": null,
+        "url": null
+      },
+      "exact_gaps": [
+        "The visible source does not confirm a current founder or executive title.",
+        "No Saudi customer, operation, legal entity, or product-market activity is verified outside cohort participation.",
+        "A live custom-software product, concrete build stage, and usable budget signal are not established."
+      ],
+      "evidence_refs": ["src-wave2-misk9-program", "src-wave2-collabscafe-post"]
+    },
+    {
+      "candidate_id": "candidate-new-mavericks-faisal-asif",
+      "person": {
+        "name": "Faisal Asif",
+        "decision_role": "Company leadership; exact title unverified",
+        "linkedin_url": "https://www.linkedin.com/in/faisalmasif"
+      },
+      "company": {
+        "name": "New Mavericks",
+        "canonical_domain": null,
+        "url": null
+      },
+      "exact_gaps": [
+        "The specific software product or custom-software need is not defined in the visible cohort evidence.",
+        "Saudi customers, headquarters, legal presence, or active Kingdom operations are not verified independently of program participation.",
+        "The exact current executive title and budget authority remain unverified."
+      ],
+      "evidence_refs": ["src-wave2-misk9-program", "src-wave2-newmavericks-company"]
+    }
+  ],
+  "counts": {
+    "promoted": 6,
+    "promoted_A": 3,
+    "promoted_B": 3,
+    "promoted_C": 0,
+    "unresolved": 3,
+    "attliq_fifth_cohort_promoted": 5,
+    "misk_launchpad_9_promoted": 1,
+    "evidence_records": 26
+  },
+  "stopping_reason": "The bounded pass produced six non-duplicate C-or-better candidates with all four active gates supported and claim-level evidence. Additional Misk Cohort 9 discoveries failed one or more gates, so they remain unresolved rather than being padded into the promoted set."
+}

@@ -1,0 +1,364 @@
+{
+  "schema_version": "lead-research-worker-verification.v1",
+  "lane": "stealth-or-precompany",
+  "verified_at": "2026-09-03",
+  "scope": "Bounded read-only verification of public professional information. Promotion requires confirmed identity, Saudi-market basis, buying authority, plausible custom-software need, and at least one primary source. Unknown technical capacity is neutral.",
+  "scoring_contract": {
+    "formula": "product_intent + outsourcing_likelihood + budget_readiness + timing - penalties",
+    "bands": {
+      "A": "15-20",
+      "B": "10-14",
+      "C": "5-9",
+      "D": "0-4 or hard-disqualified"
+    },
+    "active_rule": "No D-band record may be active. A/B records require two independent sources, including at least one primary or official source.",
+    "allowed_scores": {
+      "product_intent": [0, 2, 4, 6],
+      "outsourcing_likelihood": [0, 1, 3, 5],
+      "budget_readiness": [0, 1, 3, 5],
+      "timing": [0, 1, 2, 3, 4],
+      "penalties": [0, 1, 2, 3, 4, 5, 6, 7, 8]
+    }
+  },
+  "promoted": [
+    {
+      "id": "lr-linkedin-vision-mate-abdulrahman-almuqati",
+      "name": "Abdulrahman Almuqati CIPD",
+      "personal_linkedin_url": "https://sa.linkedin.com/in/abdulrahman-almuqati-cipd",
+      "company": "Vision Mate",
+      "company_domain": null,
+      "company_linkedin_url": "https://www.linkedin.com/company/vision-mate",
+      "lane": "stealth-or-precompany",
+      "product_stage": "pre-company; patent-pending concept seeking a technical co-founder",
+      "research_state": "active",
+      "technical_capacity": "The founder explicitly states that he is solo and is seeking a technical co-founder; no broader internal technical-team conclusion was made.",
+      "gate_review": {
+        "confirmed_identity": {
+          "passed": true,
+          "evidence_refs": ["ev-vision-mate-profile", "ev-vision-mate-job"],
+          "reason": "The exact personal profile and founder-authored venture job listing identify the same person and current founder role."
+        },
+        "saudi_market_basis": {
+          "passed": true,
+          "evidence_refs": ["ev-vision-mate-profile", "ev-vision-mate-job"],
+          "reason": "The profile is based in Riyadh, and the venture listing says the founder is working toward Saudi incorporation and cites a Saudi patent application."
+        },
+        "buying_authority": {
+          "passed": true,
+          "evidence_refs": ["ev-vision-mate-job"],
+          "reason": "The listing identifies Abdulrahman as the solo founder choosing a founding technical partner."
+        },
+        "plausible_custom_software_need": {
+          "passed": true,
+          "evidence_refs": ["ev-vision-mate-job", "ev-vision-mate-company"],
+          "reason": "The product requires computer vision plus on-device, mobile, and cloud software integrated with wearable hardware."
+        },
+        "has_primary_source": {
+          "passed": true,
+          "evidence_refs": ["ev-vision-mate-job", "ev-vision-mate-company"],
+          "reason": "The founder-authored role and venture-owned company page are first-party sources."
+        }
+      },
+      "qualification": {
+        "product_intent": {
+          "score": 6,
+          "evidence_refs": ["ev-vision-mate-job"],
+          "reason": "A same-day role requests a technical co-founder for a specifically described AI wearable and its mobile/cloud delivery stack."
+        },
+        "outsourcing_likelihood": {
+          "score": 5,
+          "evidence_refs": ["ev-vision-mate-job"],
+          "reason": "The solo founder explicitly seeks an external technical co-founder to build the product."
+        },
+        "budget_readiness": {
+          "score": 1,
+          "evidence_refs": ["ev-vision-mate-job"],
+          "reason": "The offer is described as equity-based rather than salaried; no cash build budget, paid pilot, procurement, funding, or revenue is disclosed."
+        },
+        "timing": {
+          "score": 4,
+          "evidence_refs": ["ev-vision-mate-job"],
+          "reason": "The technical-partner request was published on the verification date."
+        },
+        "penalties": {
+          "score": 0,
+          "evidence_refs": [],
+          "reason": "No evidence-backed exclusion penalty applies.",
+          "items": []
+        },
+        "total": 16,
+        "band": "A",
+        "calculation": "6 + 5 + 1 + 4 - 0 = 16"
+      },
+      "source_independence": {
+        "meets_a_b_rule": true,
+        "independent_groups": ["founder_personal_profile", "venture_job_listing", "venture_company_page"],
+        "note": "The evidence is published in distinct LinkedIn objects controlled by the individual profile and venture. It is not cross-validated by an external news or program source."
+      },
+      "evidence": [
+        {
+          "evidence_id": "ev-vision-mate-job",
+          "url": "https://sa.linkedin.com/jobs/view/technical-co-founder-at-vision-mate-4460498663",
+          "source_title": "Technical Co-Founder at Vision Mate",
+          "observed_at": "2026-09-03",
+          "published_at": "2026-09-03",
+          "source_quality": "primary",
+          "confidence": "high",
+          "publisher_independence_group": "venture_job_listing",
+          "paraphrased_evidence": "The listing names Abdulrahman Almuqati as Vision Mate's solo founder, describes a wearable AI vision-assistance device with computer-vision and on-device/mobile/cloud components, says a Saudi patent application is under substantive examination and Saudi incorporation is in progress, and seeks an equity-based technical co-founder."
+        },
+        {
+          "evidence_id": "ev-vision-mate-profile",
+          "url": "https://sa.linkedin.com/in/abdulrahman-almuqati-cipd",
+          "source_title": "Abdulrahman Almuqati CIPD - LinkedIn profile",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "primary",
+          "confidence": "high",
+          "publisher_independence_group": "founder_personal_profile",
+          "paraphrased_evidence": "The exact-name profile places Abdulrahman in Riyadh, Saudi Arabia and identifies him as a current founder and operating executive."
+        },
+        {
+          "evidence_id": "ev-vision-mate-company",
+          "url": "https://www.linkedin.com/company/vision-mate",
+          "source_title": "Vision Mate - LinkedIn company page",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "primary",
+          "confidence": "medium",
+          "publisher_independence_group": "venture_company_page",
+          "paraphrased_evidence": "The venture page describes Vision Mate as a wearable AI vision-assistance product and lists a company size of one, consistent with the pre-company solo-founder stage."
+        }
+      ]
+    },
+    {
+      "id": "lr-linkedin-bookmyguide-hayath-kargal",
+      "name": "Hayath Kargal",
+      "personal_linkedin_url": "https://sa.linkedin.com/in/hayath-kargal-b0b17057",
+      "company": "BookMyGuide",
+      "company_domain": null,
+      "company_linkedin_url": null,
+      "lane": "stealth-or-precompany",
+      "product_stage": "pre-MVP; Saudi entity formation and pilot planning",
+      "research_state": "active_watchlist",
+      "technical_capacity": "unknown",
+      "gate_review": {
+        "confirmed_identity": {
+          "passed": true,
+          "evidence_refs": ["ev-bookmyguide-profile", "ev-bookmyguide-founder-post"],
+          "reason": "The exact personal profile and founder-authored post identify Hayath Kargal and BookMyGuide consistently."
+        },
+        "saudi_market_basis": {
+          "passed": true,
+          "evidence_refs": ["ev-bookmyguide-profile", "ev-bookmyguide-founder-post"],
+          "reason": "The current profile places the role in Jeddah, while the product post describes a Saudi-first marketplace, Saudi pilots, and Saudi entity formation."
+        },
+        "buying_authority": {
+          "passed": true,
+          "evidence_refs": ["ev-bookmyguide-founder-post"],
+          "reason": "Hayath identifies himself as a co-founder applying the venture to an MVP program and planning its Saudi pilots."
+        },
+        "plausible_custom_software_need": {
+          "passed": true,
+          "evidence_refs": ["ev-bookmyguide-founder-post"],
+          "reason": "The planned product is a Saudi-first booking marketplace, which plausibly requires custom web or mobile marketplace software."
+        },
+        "has_primary_source": {
+          "passed": true,
+          "evidence_refs": ["ev-bookmyguide-founder-post"],
+          "reason": "The product-stage evidence comes directly from the co-founder."
+        }
+      },
+      "qualification": {
+        "product_intent": {
+          "score": 4,
+          "evidence_refs": ["ev-bookmyguide-founder-post"],
+          "reason": "The co-founder describes a specific marketplace, pre-MVP program application, Saudi entity work, and planned city pilots within the last year."
+        },
+        "outsourcing_likelihood": {
+          "score": 1,
+          "evidence_refs": [],
+          "reason": "Technical capacity and external-builder intent are unknown; silence is not treated as evidence for or against outsourcing."
+        },
+        "budget_readiness": {
+          "score": 1,
+          "evidence_refs": ["ev-bookmyguide-founder-post"],
+          "reason": "An MVP-program application is reported, but acceptance, funding, revenue, paid pilots, procurement, and a build budget are not verified."
+        },
+        "timing": {
+          "score": 2,
+          "evidence_refs": ["ev-bookmyguide-founder-post"],
+          "reason": "LinkedIn displayed the qualifying post as approximately seven months old, within 365 days but outside 180 days."
+        },
+        "penalties": {
+          "score": 0,
+          "evidence_refs": [],
+          "reason": "No evidence-backed exclusion penalty applies.",
+          "items": []
+        },
+        "total": 8,
+        "band": "C",
+        "calculation": "4 + 1 + 1 + 2 - 0 = 8"
+      },
+      "source_independence": {
+        "meets_a_b_rule": null,
+        "independent_groups": ["founder_personal_profile", "founder_personal_post"],
+        "note": "The record is C-band, so the A/B two-source rule does not apply. Both items are first-party and should not be represented as independent external corroboration."
+      },
+      "evidence": [
+        {
+          "evidence_id": "ev-bookmyguide-founder-post",
+          "url": "https://www.linkedin.com/posts/hayath-kargal-b0b17057_vision2030-ntdp-mvplab-activity-7412319001252618240-2TT5",
+          "source_title": "Hayath Kargal - BookMyGuide MVP Lab application post",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "primary",
+          "confidence": "high",
+          "publisher_independence_group": "founder_personal_post",
+          "paraphrased_evidence": "Hayath describes BookMyGuide as a Saudi-first marketplace, names himself and a co-founder, says the venture is pre-MVP and applying to NTDP MVPLab, and reports work toward a Saudi entity and pilots in Saudi cities. LinkedIn displayed the post as roughly seven months old; no exact publication date was exposed."
+        },
+        {
+          "evidence_id": "ev-bookmyguide-profile",
+          "url": "https://sa.linkedin.com/in/hayath-kargal-b0b17057",
+          "source_title": "Hayath Kargal - LinkedIn profile",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "primary",
+          "confidence": "medium",
+          "publisher_independence_group": "founder_personal_profile",
+          "paraphrased_evidence": "The exact-name profile presents Hayath's BookMyGuide role in a Jeddah context and is consistent with the founder-authored product post."
+        }
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "lr-unresolved-ariful-islam-bishal",
+      "name": "Ariful Islam Bishal",
+      "company": "Unnamed digital workforce platform",
+      "personal_linkedin_url": "https://sa.linkedin.com/in/ariful-islam-bishal-aa44523a8",
+      "source_urls": ["https://sa.linkedin.com/in/ariful-islam-bishal-aa44523a8"],
+      "why_not_promoted": "A current first-person post appears to satisfy the identity, Saudi-basis, authority, and software-need gates and seeks a technical co-founder, but every material claim is contained in one personal LinkedIn source. Its likely A-band score cannot be activated without a second independent source.",
+      "exact_gaps": ["Independent official, program, venture, or product source confirming the founder-project relationship and current build"],
+      "observed_at": "2026-09-03"
+    },
+    {
+      "id": "lr-unresolved-shahad-alzahrani-bara",
+      "name": "Shahad AlZahrani",
+      "company": "Bar'a",
+      "personal_linkedin_url": "https://sa.linkedin.com/in/shahad-alzahrani-78398a233",
+      "source_urls": ["https://sa.linkedin.com/in/shahad-alzahrani-78398a233"],
+      "why_not_promoted": "A recent first-person post confirms co-founder authority, Riyadh context, and Misk Launchpad participation, but the described environmental-monitoring project does not establish whether the required deliverable is custom software rather than hardware, consulting, or an off-the-shelf system. The evidence is also confined to one personal source.",
+      "exact_gaps": ["Primary evidence specifying the software, app, dashboard, platform, or MVP being built", "Independent official or venture source confirming the project and founder relationship"],
+      "observed_at": "2026-09-03"
+    },
+    {
+      "id": "lr-unresolved-maysam-alfaddagh-almarkaz",
+      "name": "Maysam Alfaddagh",
+      "company": "Almarkaz",
+      "personal_linkedin_url": "https://sa.linkedin.com/in/maysam-alfaddagh",
+      "source_urls": ["https://sa.linkedin.com/in/maysam-alfaddagh"],
+      "why_not_promoted": "The available product evidence is from 2024 and does not confirm that the pre-company venture or build remains active in 2026.",
+      "exact_gaps": ["Current first-party venture status", "Recent product-building or delivery signal", "Independent source if the resulting score is A or B"],
+      "observed_at": "2026-09-03"
+    },
+    {
+      "id": "lr-unresolved-aeshah-alamoudi",
+      "name": "Aeshah Alamoudi",
+      "company": "Unnamed cybersecurity startup",
+      "personal_linkedin_url": null,
+      "source_urls": [],
+      "why_not_promoted": "Older public evidence mentions a cybersecurity startup but does not expose a stable current venture identity or confirm a current founder build.",
+      "exact_gaps": ["Canonical personal profile", "Current venture name", "Current founder authority", "Recent specific software-product evidence"],
+      "observed_at": "2026-09-03"
+    },
+    {
+      "id": "lr-unresolved-yaser-alkhayyat-nateq",
+      "name": "Yaser Alkhayyat",
+      "company": "Nateq",
+      "personal_linkedin_url": null,
+      "source_urls": [],
+      "why_not_promoted": "The available evidence is stale and does not confirm current venture status or present buying authority. The person also has technical delivery experience, so outsourcing cannot be assumed.",
+      "exact_gaps": ["Canonical personal profile", "Current venture and authority confirmation", "Recent build or external-partner requirement", "Evidence clarifying whether additional delivery capacity is needed"],
+      "observed_at": "2026-09-03"
+    },
+    {
+      "id": "lr-unresolved-haya-al-alshaikh-mubarak-rate",
+      "name": "Haya Al Alshaikh Mubarak",
+      "company": "Rate",
+      "personal_linkedin_url": null,
+      "source_urls": [],
+      "why_not_promoted": "The available 2024 reference does not define the product sufficiently or confirm that the venture remains active.",
+      "exact_gaps": ["Canonical personal profile", "Current founder authority", "Specific software-product definition", "Recent venture activity"],
+      "observed_at": "2026-09-03"
+    },
+    {
+      "id": "lr-unresolved-abeer-aljohani-mosaweeq",
+      "name": "Abeer Aljohani",
+      "company": "MOSAWEEQ",
+      "personal_linkedin_url": null,
+      "source_urls": [],
+      "why_not_promoted": "The older evidence does not verify a current founder role, current venture status, or an independently supported software need.",
+      "exact_gaps": ["Canonical personal profile", "Current founder authority", "Recent specific software build evidence", "Independent official or venture source"],
+      "observed_at": "2026-09-03"
+    },
+    {
+      "id": "lr-unresolved-bagi-founder",
+      "name": null,
+      "company": "Bagi",
+      "personal_linkedin_url": null,
+      "source_urls": [
+        "https://sa.linkedin.com/company/bagi-app-ksa",
+        "https://sa.linkedin.com/jobs/view/%D8%B4%D8%B1%D9%8A%D9%83-%D8%AA%D9%82%D9%86%D9%8A-technical-co-founder-at-bagi-4311463678"
+      ],
+      "why_not_promoted": "The Saudi pre-launch luggage-storage app and technical-co-founder need are explicit, but the public sources do not name a founder or decision-maker, and the role is roughly ten months old.",
+      "exact_gaps": ["Named founder or current buying decision-maker", "Canonical personal profile", "Current evidence that the venture and technical-partner search remain active"],
+      "observed_at": "2026-09-03"
+    },
+    {
+      "id": "lr-unresolved-operon-sa-founder",
+      "name": null,
+      "company": "Operon SA",
+      "personal_linkedin_url": null,
+      "source_urls": ["https://sa.linkedin.com/jobs/view/technical-co-founder-founding-engineer-at-operon-sa-4350736279"],
+      "why_not_promoted": "A public role describes a Jeddah B2B workforce-scheduling SaaS at MVP/validation stage and seeks a technical co-founder, but it does not expose a named founder or current decision-maker.",
+      "exact_gaps": ["Named founder or current buying decision-maker", "Canonical personal profile", "Second source confirming current venture status"],
+      "observed_at": "2026-09-03"
+    },
+    {
+      "id": "lr-unresolved-asma-alyafei-gcc-saas",
+      "name": "Asma Alyafei",
+      "company": "Unnamed GCC compliance SaaS",
+      "personal_linkedin_url": "https://ae.linkedin.com/in/asma-alyafei",
+      "source_urls": ["https://ae.linkedin.com/in/asma-alyafei"],
+      "why_not_promoted": "A recent first-person post describes an AI SaaS compliance platform and seeks a technical co-founder, but the profile is based in Dubai and no specific Saudi-market activity, incorporation, customer, pilot, or program evidence was verified.",
+      "exact_gaps": ["Direct Saudi-market basis", "Independent source confirming the current venture if its eventual score is A or B"],
+      "observed_at": "2026-09-03"
+    }
+  ],
+  "gaps": [
+    {
+      "code": "verification-yield",
+      "detail": "Only 2 records passed every active-lead gate without weakening evidence standards; 10 examined records remain unresolved."
+    },
+    {
+      "code": "independent-corroboration",
+      "detail": "Several attractive technical-co-founder posts are first-person LinkedIn evidence only. A/B promotion requires a distinct program, venture, product, or official source."
+    },
+    {
+      "code": "unnamed-decision-maker",
+      "detail": "Company/job pages for Bagi and Operon SA describe credible Saudi software needs but do not expose a named person with buying authority."
+    },
+    {
+      "code": "stale-cohort-evidence",
+      "detail": "Multiple cohort discoveries date to 2024. They require a current founder-controlled or official update before promotion."
+    }
+  ],
+  "limitations": [
+    "Research used only publicly visible professional pages and search-result excerpts in read-only mode.",
+    "No follows, connections, reactions, comments, saves, publications, messages, form submissions, extensions, or automated profile traversal were used.",
+    "No private personal identifiers were collected; canonical professional-profile URLs are retained only for identity and deduplication.",
+    "LinkedIn relative-age labels were not converted to invented exact dates; published_at remains null where the exact date was not exposed.",
+    "The accepted count is intentionally below ten because the remaining records lacked a required gate, source independence, freshness, or named authority."
+  ]
+}

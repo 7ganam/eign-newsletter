@@ -1,9 +1,9 @@
 import { createHash } from 'node:crypto'
 import { readFile, rename, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
-import type { UnifiedPeopleSourceFile } from '../src/unifiedPeopleTypes'
+import type { UnifiedPeopleFile } from '../src/unifiedPeopleTypes'
 
-const PEOPLE_PATH = resolve(process.cwd(), 'assets/people/riseup-2026-people.json')
+const PEOPLE_PATH = resolve(process.cwd(), 'assets/people/unified-people.json')
 const COMPANIES_PATH = resolve(process.cwd(), 'eign_index.companies.json')
 const OUTPUT_PATH = resolve(process.cwd(), 'assets/riseup-summit-2026-entities.json')
 const NON_ORGANIZATION_VALUES = new Set(['-', 'n/a', 'na'])
@@ -55,26 +55,29 @@ const readExistingEntities = async (): Promise<ExistingEntityData> => {
   }
 }
 
-const converted = JSON.parse(await readFile(PEOPLE_PATH, 'utf8')) as UnifiedPeopleSourceFile
+const converted = JSON.parse(await readFile(PEOPLE_PATH, 'utf8')) as UnifiedPeopleFile
+const riseUpSource = converted.sources.find((item) => item.id === 'riseup-2026')
 const source = {
   event: 'RiseUp Summit 2026 — Egypt',
-  source: converted.source.url,
-  source_data_updated_at: converted.source.observed_at,
-  speakers: converted.people.map((person): SourceSpeaker => {
-    const appearance = person.event_appearances.find((item) => item.event_id === 'riseup-2026')
-    return {
-      id: Number(appearance?.speaker_id),
-      attendee_id: Number(appearance?.attendee_id),
-      passport_name: person.name.passport ?? person.name.display,
-      institute: person.current_role.organization,
-    }
-  }),
+  source: riseUpSource?.url ?? null,
+  source_data_updated_at: riseUpSource?.observed_at ?? null,
+  speakers: converted.people.flatMap((person) => person.source_records
+    .filter((record) => record.source_id === 'riseup-2026')
+    .map((record): SourceSpeaker => {
+      const raw = record.raw as { speaker?: Partial<SourceSpeaker> }
+      return {
+        id: Number(raw.speaker?.id ?? record.record_id),
+        attendee_id: Number(raw.speaker?.attendee_id ?? 0),
+        passport_name: raw.speaker?.passport_name ?? person.name.passport ?? person.name.display,
+        institute: raw.speaker?.institute ?? null,
+      }
+    })),
 }
 const companies = JSON.parse(await readFile(COMPANIES_PATH, 'utf8')) as Company[]
 const existing = await readExistingEntities()
 
 if (!Array.isArray(source.speakers) || source.speakers.length === 0) {
-  throw new Error('RiseUp source file has no speakers.')
+  throw new Error('The combined people file has no RiseUp source records.')
 }
 
 const sourceSpeakerIds = new Set<number>()

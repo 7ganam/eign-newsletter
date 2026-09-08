@@ -1,0 +1,508 @@
+{
+  "schema_version": "events-financing-wave3.v1",
+  "lane": "stealth-or-precompany",
+  "researched_at": "2026-09-03",
+  "scope": "Final bounded pass for current Saudi-market pre-company or incomplete-company-profile founders visible in 2025-2026 demo days, competitions, founder announcements or product launches. Existing worker promotions were excluded before qualification.",
+  "scoring_policy": {
+    "formula": "product_intent + outsourcing_likelihood + budget_readiness + timing - penalties",
+    "bands": {
+      "A": "15-20",
+      "B": "10-14",
+      "C": "5-9",
+      "D": "0-4"
+    },
+    "capacity_rule": "Unknown capacity stays unknown. No record receives more than one outsourcing-likelihood point without explicit evidence of external-partner intent or a documented team audit.",
+    "verification_rule": "Every promoted record has a confirmed person, Saudi-market basis, founder or founder-equivalent decision role, a specific software product, and at least one first-party or official source. Each B record also has a second independent source group.",
+    "lane_rule": "A promoted venture must still lack a complete operating-company profile; a project page or an incomplete early-stage profile does not by itself move the record out of the pre-company lane."
+  },
+  "deduplication_audit": {
+    "checked_files": [
+      "outputs/lead-research/workers/events-financing-verified.json",
+      "outputs/lead-research/workers/events-financing-wave2.json",
+      "outputs/lead-research/workers/events-financing.json",
+      "outputs/lead-research/workers/official-programs-verified.json",
+      "outputs/lead-research/workers/official-programs-wave2.json",
+      "outputs/lead-research/workers/official-programs.json",
+      "outputs/lead-research/workers/linkedin-community-verified.json",
+      "outputs/lead-research/workers/linkedin-community-wave2.json",
+      "outputs/lead-research/workers/linkedin-community-wave3.json",
+      "outputs/lead-research/workers/linkedin-community.json"
+    ],
+    "person_collisions": [],
+    "domain_collisions": [],
+    "result": "No promoted wave-three person, canonical LinkedIn URL, or known venture domain appears among earlier worker promotions."
+  },
+  "evidence_catalog": [
+    {
+      "id": "ev-startsmart-finalists-2026",
+      "source_group": "startsmart-official-program",
+      "url": "https://www.startsmartsaudi.com/sites/default/files/2026-02/teams_1.pdf",
+      "source_title": "StartSmart Saudi ninth version nominated teams",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "official_program",
+      "confidence": "high",
+      "paraphrase": "The official finalist roster names Yara Ali Alalawi for GreenVision and Zakaria Alezi Alnajar for Zakn, names Ghadah Alshehri for Ballora, and describes each venture's specific software product."
+    },
+    {
+      "id": "ev-startsmart-selection-post-2026",
+      "source_group": "startsmart-official-program",
+      "url": "https://www.linkedin.com/posts/startsmartsaudi_through-community-jameel-saudis-support-activity-7409953622043557888-pAmo",
+      "source_title": "StartSmart Saudi announces 40 qualifying entrepreneurial ideas",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "official_program_post",
+      "confidence": "high",
+      "paraphrase": "The official program says its 2025 qualifying ideas entered an intensive Jeddah development journey with expert training, mentorship and financial prizes, and tags Marya Fawaz, Yara Alalawi and Zakn among the participants."
+    },
+    {
+      "id": "ev-marya-fawaz-profile",
+      "source_group": "marya-fawaz-first-party",
+      "url": "https://sa.linkedin.com/in/marya-fawaz",
+      "source_title": "Marya Fawaz | LinkedIn",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_creator_profile",
+      "confidence": "high",
+      "paraphrase": "Fawaz identifies Ballora as her graduation project, describes representing its AI platform at King Abdulaziz University's innovation conference, and separately reports its selection for StartSmart's 2025 development program."
+    },
+    {
+      "id": "ev-yara-alalawi-profile",
+      "source_group": "yara-alalawi-first-party",
+      "url": "https://sa.linkedin.com/in/yara-alalawi",
+      "source_title": "Yara Alalawi | LinkedIn",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_creator_profile",
+      "confidence": "high",
+      "paraphrase": "Alalawi calls GreenVision her project, explains how she originated it from a Saudi Environmental Fund field problem, identifies herself as its lead engineer and backend architect, and documents a cloud dashboard prototype and current next-step intent."
+    },
+    {
+      "id": "ev-zakaria-alnajar-profile",
+      "source_group": "zakn-first-party",
+      "url": "https://sa.linkedin.com/in/zakalnajar",
+      "source_title": "Zakaria Alnajar | LinkedIn",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_founder_profile",
+      "confidence": "high",
+      "paraphrase": "Alnajar's public profile lists him as Zakn founder in Riyadh and shows a current founder-controlled update placing Zakn at LEAP 2026."
+    },
+    {
+      "id": "ev-zakn-company-profile",
+      "source_group": "zakn-first-party",
+      "url": "https://www.linkedin.com/company/zakn",
+      "source_title": "Zakn AI | LinkedIn",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_company_profile",
+      "confidence": "high",
+      "paraphrase": "The early company page describes a Saudi-market idea-and-product validation platform, links zakn.digital, shows current LEAP and StartSmart activity, and does not publish a founding year or headquarters."
+    },
+    {
+      "id": "ev-zakn-contributor-profile",
+      "source_group": "independent-professional-contributor",
+      "url": "https://tn.linkedin.com/in/moslem-ajra",
+      "source_title": "Moslem Ajra | LinkedIn",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "independent_professional_profile",
+      "confidence": "medium",
+      "paraphrase": "An independent developer profile lists work supporting AI integration for Zakn's pre-launch product-validation platform; this corroborates active development but is not treated as a current vendor request."
+    },
+    {
+      "id": "ev-chill-and-pill-company",
+      "source_group": "chill-and-pill-first-party",
+      "url": "https://www.linkedin.com/company/chill-and-pill",
+      "source_title": "Chill and Pill | LinkedIn",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_company_profile",
+      "confidence": "high",
+      "paraphrase": "The company has a public website, a Dubai headquarters, a 2-10 employee band and an identified founder, so it is an operating company rather than an incomplete-profile Saudi pre-company venture."
+    },
+    {
+      "id": "ev-ibrahim-almahboob-profile",
+      "source_group": "ibrahim-almahboob-first-party",
+      "url": "https://sa.linkedin.com/in/ibrahim-almahboob",
+      "source_title": "Ibrahim Almahboob | LinkedIn",
+      "observed_at": "2026-09-03",
+      "published_at": null,
+      "source_quality": "first_party_professional_profile",
+      "confidence": "medium",
+      "paraphrase": "A matching Jeddah professional profile is visible, but its public content does not connect the person to the Haji finalist project."
+    }
+  ],
+  "promoted": [
+    {
+      "id": "greenvision-yara-alalawi",
+      "source_candidate_id": "wave3-greenvision-yara-alalawi",
+      "discovery_lane": "stealth_or_precompany",
+      "canonical_lane": "stealth-or-precompany",
+      "identity": {
+        "display_name": "Yara Alalawi",
+        "role": "Project creator and venture lead (founder-equivalent)",
+        "linkedin_url": "https://sa.linkedin.com/in/yara-alalawi"
+      },
+      "company": {
+        "name": "GreenVision",
+        "domain": null,
+        "url": "https://green-vision.vercel.app/",
+        "linkedin_url": null
+      },
+      "context": {
+        "saudi_basis": "Jeddah-based creator building a system trained for invasive plant monitoring in Saudi Arabia; both the founder-controlled profile and official finalist roster state the Saudi use case.",
+        "founder_signal": "Alalawi calls GreenVision her project, documents originating the idea from a Saudi field interview, and identifies herself as the lead engineer and backend architect.",
+        "software_initiative": "Cloud-native environmental monitoring system combining drone imagery, localized AI classification, maps and an interactive reporting dashboard.",
+        "product_stage": "Graduation-project prototype plus StartSmart finalist development; no standalone operating-company profile was found.",
+        "budget_or_traction": "Official StartSmart finalist and development-program participation; no cash budget, grant amount, customer or paid pilot is claimed.",
+        "timing_trigger": "First-party product-build and next-step updates were visible within 180 days."
+      },
+      "lane_eligibility": {
+        "eligible": true,
+        "evidence_refs": [
+          "https://sa.linkedin.com/in/yara-alalawi",
+          "https://www.startsmartsaudi.com/sites/default/files/2026-02/teams_1.pdf"
+        ],
+        "reason": "A named creator leads a current Saudi-market software project, while no legal entity, dedicated venture domain or complete company profile is visible."
+      },
+      "active_gates": {
+        "identity": true,
+        "ksa_fit": true,
+        "authority": true,
+        "software_fit": true
+      },
+      "gate_reasons": {
+        "identity": "The official roster names Yara Ali Alalawi for GreenVision and the exact public profile independently documents the same project.",
+        "ksa_fit": "The venture is designed for invasive-plant monitoring in Saudi Arabia and the creator is based in Jeddah.",
+        "authority": "Her first-person origin account and lead-engineer role establish a current founder-equivalent project decision role; no formal founder title is invented.",
+        "software_fit": "The evidenced system requires an AI pipeline, backend, cloud storage, maps and a reporting dashboard."
+      },
+      "capacity_status": "technical_creator_and_prototype_visible_but_long_term_delivery_capacity_unknown",
+      "verification_sources": {
+        "primary": [
+          "https://sa.linkedin.com/in/yara-alalawi"
+        ],
+        "independent": [
+          "https://www.startsmartsaudi.com/sites/default/files/2026-02/teams_1.pdf"
+        ],
+        "independent_source_groups": [
+          "yara-alalawi-first-party",
+          "startsmart-official-program"
+        ]
+      },
+      "score": {
+        "product_intent": {
+          "value": 4,
+          "evidence_refs": [
+            "https://sa.linkedin.com/in/yara-alalawi",
+            "https://www.startsmartsaudi.com/sites/default/files/2026-02/teams_1.pdf"
+          ],
+          "reason": "A specific AI, drone, backend and dashboard product was publicly described and prototyped within 12 months."
+        },
+        "outsourcing_likelihood": {
+          "value": 1,
+          "evidence_refs": [
+            "https://sa.linkedin.com/in/yara-alalawi"
+          ],
+          "reason": "The creator has substantial technical capability, but the available project evidence does not establish a sufficient long-term delivery team or explicit external-builder intent; capacity remains unknown."
+        },
+        "budget_readiness": {
+          "value": 3,
+          "evidence_refs": [
+            "https://www.linkedin.com/posts/startsmartsaudi_through-community-jameel-saudis-support-activity-7409953622043557888-pAmo"
+          ],
+          "reason": "Official accelerator-style development, mentorship and prize participation are evidenced; no cash build budget is claimed."
+        },
+        "timing": {
+          "value": 3,
+          "evidence_refs": [
+            "https://sa.linkedin.com/in/yara-alalawi"
+          ],
+          "reason": "Founder-controlled product-build and next-step signals were visible within 180 days."
+        },
+        "penalties": {
+          "value": 0,
+          "evidence_refs": [
+            "https://sa.linkedin.com/in/yara-alalawi"
+          ],
+          "reason": "A working student prototype and individual technical capability do not by themselves establish a sufficient operating-company product and engineering team."
+        },
+        "total": 11,
+        "band": "B"
+      },
+      "recommended_state": "active"
+    },
+    {
+      "id": "ballora-marya-fawaz",
+      "source_candidate_id": "wave3-ballora-marya-fawaz",
+      "discovery_lane": "stealth_or_precompany",
+      "canonical_lane": "stealth-or-precompany",
+      "identity": {
+        "display_name": "Marya Fawaz",
+        "role": "Project co-creator and venture representative (founder-equivalent)",
+        "linkedin_url": "https://sa.linkedin.com/in/marya-fawaz"
+      },
+      "company": {
+        "name": "Ballora",
+        "domain": null,
+        "url": null,
+        "linkedin_url": null
+      },
+      "context": {
+        "saudi_basis": "Jeddah-based co-creator building for idea owners, investors and innovation centers at Saudi universities; the official program ran the development cohort in Jeddah.",
+        "founder_signal": "Fawaz calls Ballora her graduation project, publicly represents it at a university entrepreneurship conference, and reports its StartSmart selection as a shared venture.",
+        "software_initiative": "AI platform that structures early ideas into investment-ready projects, checks uniqueness, generates business models and matches projects with investors and university innovation centers.",
+        "product_stage": "Pre-company graduation venture in an official development competition; no standalone company page, domain or legal profile was found.",
+        "budget_or_traction": "StartSmart development-program participation and eligibility for financial prizes; no won prize, revenue, customer or cash budget is claimed.",
+        "timing_trigger": "First-party product representation and StartSmart updates were visible within 180 days."
+      },
+      "lane_eligibility": {
+        "eligible": true,
+        "evidence_refs": [
+          "https://sa.linkedin.com/in/marya-fawaz",
+          "https://www.startsmartsaudi.com/sites/default/files/2026-02/teams_1.pdf"
+        ],
+        "reason": "A verified co-creator represents a current Saudi university software venture that has no complete company profile."
+      },
+      "active_gates": {
+        "identity": true,
+        "ksa_fit": true,
+        "authority": true,
+        "software_fit": true
+      },
+      "gate_reasons": {
+        "identity": "Fawaz's exact public profile and the official tagged cohort announcement link her to Ballora; the roster separately confirms the project and names its listed team lead.",
+        "ksa_fit": "The product explicitly targets Saudi university innovation centers and its creator is based in Jeddah.",
+        "authority": "Her repeated first-person project ownership and public representation establish a co-creator decision role; the record does not claim that she is the sole lead named by the program.",
+        "software_fit": "The platform requires idea analysis, AI-generated venture artifacts, matching and workflow software."
+      },
+      "capacity_status": "individual_front_end_and_design_skill_visible_but_venture_delivery_capacity_unknown",
+      "verification_sources": {
+        "primary": [
+          "https://sa.linkedin.com/in/marya-fawaz"
+        ],
+        "independent": [
+          "https://www.startsmartsaudi.com/sites/default/files/2026-02/teams_1.pdf",
+          "https://www.linkedin.com/posts/startsmartsaudi_through-community-jameel-saudis-support-activity-7409953622043557888-pAmo"
+        ],
+        "independent_source_groups": [
+          "marya-fawaz-first-party",
+          "startsmart-official-program"
+        ]
+      },
+      "score": {
+        "product_intent": {
+          "value": 4,
+          "evidence_refs": [
+            "https://sa.linkedin.com/in/marya-fawaz",
+            "https://www.startsmartsaudi.com/sites/default/files/2026-02/teams_1.pdf"
+          ],
+          "reason": "A specific AI platform and target workflow were publicly described within 12 months."
+        },
+        "outsourcing_likelihood": {
+          "value": 1,
+          "evidence_refs": [
+            "https://sa.linkedin.com/in/marya-fawaz"
+          ],
+          "reason": "Fawaz's front-end and design experience is visible, but overall venture delivery capacity and external-partner intent remain unknown."
+        },
+        "budget_readiness": {
+          "value": 3,
+          "evidence_refs": [
+            "https://www.linkedin.com/posts/startsmartsaudi_through-community-jameel-saudis-support-activity-7409953622043557888-pAmo"
+          ],
+          "reason": "Official intensive development, mentorship and prize-program participation are evidenced; no prize win or cash build allocation is claimed."
+        },
+        "timing": {
+          "value": 3,
+          "evidence_refs": [
+            "https://sa.linkedin.com/in/marya-fawaz"
+          ],
+          "reason": "Founder-controlled project representation and cohort-selection updates were visible within 180 days."
+        },
+        "penalties": {
+          "value": 0,
+          "evidence_refs": [
+            "https://sa.linkedin.com/in/marya-fawaz"
+          ],
+          "reason": "Individual software experience does not prove sufficient ongoing product and engineering capacity for the venture."
+        },
+        "total": 11,
+        "band": "B"
+      },
+      "recommended_state": "active"
+    },
+    {
+      "id": "zakn-zakaria-alnajar",
+      "source_candidate_id": "wave3-zakn-zakaria-alnajar",
+      "discovery_lane": "stealth_or_precompany",
+      "canonical_lane": "stealth-or-precompany",
+      "identity": {
+        "display_name": "Zakaria Alnajar",
+        "role": "Founder",
+        "linkedin_url": "https://sa.linkedin.com/in/zakalnajar"
+      },
+      "company": {
+        "name": "Zakn AI",
+        "domain": "zakn.digital",
+        "url": "https://zakn.digital/",
+        "linkedin_url": "https://www.linkedin.com/company/zakn"
+      },
+      "context": {
+        "saudi_basis": "Riyadh-based founder and Saudi-market platform; the company describes validation against local Saudi market data and participated in StartSmart's Jeddah cohort.",
+        "founder_signal": "Alnajar's first-party profile explicitly lists him as Zakn founder and shows him representing the product at LEAP 2026.",
+        "software_initiative": "AI platform for pre-launch idea and product validation using market, competitor, cost, pricing and short advertising-test data.",
+        "product_stage": "Active early product shown through StartSmart and LEAP; a basic domain and company page exist, but no founding year, headquarters or complete operating-company profile is published.",
+        "budget_or_traction": "StartSmart development-program support and LEAP exhibition are visible; no cash budget, revenue or paid pilot is claimed.",
+        "timing_trigger": "The founder represented Zakn at LEAP within the current week."
+      },
+      "lane_eligibility": {
+        "eligible": true,
+        "evidence_refs": [
+          "https://sa.linkedin.com/in/zakalnajar",
+          "https://www.linkedin.com/company/zakn"
+        ],
+        "reason": "The founder and product are verified, while the early public company record remains incomplete: no founding year, headquarters or verified operating-entity detail is published."
+      },
+      "active_gates": {
+        "identity": true,
+        "ksa_fit": true,
+        "authority": true,
+        "software_fit": true
+      },
+      "gate_reasons": {
+        "identity": "The exact founder profile, early company page and official finalist roster align on Zakaria Alnajar and Zakn.",
+        "ksa_fit": "The founder is in Riyadh and the venture describes a Saudi local-market validation use case.",
+        "authority": "The current profile explicitly lists Alnajar as Zakn founder and shows current product representation.",
+        "software_fit": "The evidenced product requires data aggregation, AI analysis, validation workflows and advertising-test integrations."
+      },
+      "capacity_status": "early_product_and_one_external_contributor_visible_but_overall_delivery_capacity_unknown",
+      "verification_sources": {
+        "primary": [
+          "https://sa.linkedin.com/in/zakalnajar",
+          "https://www.linkedin.com/company/zakn"
+        ],
+        "independent": [
+          "https://www.startsmartsaudi.com/sites/default/files/2026-02/teams_1.pdf",
+          "https://tn.linkedin.com/in/moslem-ajra"
+        ],
+        "independent_source_groups": [
+          "zakn-first-party",
+          "startsmart-official-program",
+          "independent-professional-contributor"
+        ]
+      },
+      "score": {
+        "product_intent": {
+          "value": 4,
+          "evidence_refs": [
+            "https://www.linkedin.com/company/zakn",
+            "https://www.startsmartsaudi.com/sites/default/files/2026-02/teams_1.pdf"
+          ],
+          "reason": "A specific AI validation platform is in active development and was represented at current events within 12 months."
+        },
+        "outsourcing_likelihood": {
+          "value": 1,
+          "evidence_refs": [
+            "https://www.linkedin.com/company/zakn",
+            "https://tn.linkedin.com/in/moslem-ajra"
+          ],
+          "reason": "An outside contributor previously supported AI integration, but there is no current external-builder request and no complete team audit; capacity remains unknown."
+        },
+        "budget_readiness": {
+          "value": 3,
+          "evidence_refs": [
+            "https://www.linkedin.com/posts/startsmartsaudi_through-community-jameel-saudis-support-activity-7409953622043557888-pAmo"
+          ],
+          "reason": "Official development-program participation and event exhibition are evidenced; no cash budget is claimed."
+        },
+        "timing": {
+          "value": 4,
+          "evidence_refs": [
+            "https://sa.linkedin.com/in/zakalnajar",
+            "https://www.linkedin.com/company/zakn"
+          ],
+          "reason": "Founder and company updates place Zakn at LEAP 2026 within the current week."
+        },
+        "penalties": {
+          "value": 0,
+          "evidence_refs": [
+            "https://www.linkedin.com/company/zakn"
+          ],
+          "reason": "No mature-product, inactivity, employee-band or sufficient-internal-team penalty is established."
+        },
+        "total": 12,
+        "band": "B"
+      },
+      "recommended_state": "active"
+    }
+  ],
+  "holds": [
+    {
+      "id": "hold-ballora-ghadah-alshehri",
+      "person": "Ghadah Alshehri",
+      "venture": "Ballora",
+      "missing_gates": [
+        "identity"
+      ],
+      "reason": "The official finalist roster names Ghadah Alshehri, but many same-name Saudi profiles remain and no founder-controlled profile was found that links one exact identity to Ballora. This record is not merged with verified co-creator Marya Fawaz.",
+      "evidence_refs": [
+        "https://www.startsmartsaudi.com/sites/default/files/2026-02/teams_1.pdf"
+      ]
+    },
+    {
+      "id": "hold-haji-ibrahim-almahboob",
+      "person": "Ibrahim Almahboob",
+      "venture": "Haji",
+      "missing_gates": [
+        "identity",
+        "authority"
+      ],
+      "reason": "The official roster supplies the name and software project, and a plausible Jeddah profile exists, but no independent founder-controlled source links that exact person to Haji or establishes a current decision role.",
+      "evidence_refs": [
+        "https://www.startsmartsaudi.com/sites/default/files/2026-02/teams_1.pdf",
+        "https://sa.linkedin.com/in/ibrahim-almahboob"
+      ]
+    },
+    {
+      "id": "hold-nathra-mona-abdullah-alhassan",
+      "person": "Mona Abdullah Alhassan",
+      "venture": "NATHRA",
+      "missing_gates": [
+        "identity",
+        "authority"
+      ],
+      "reason": "The official roster verifies a Saudi-focused AI-health project and supplies a name, but same-name profile collisions could not be resolved and no independent founder-controlled venture link was found.",
+      "evidence_refs": [
+        "https://www.startsmartsaudi.com/sites/default/files/2026-02/teams_1.pdf"
+      ]
+    },
+    {
+      "id": "hold-chill-and-pill-anna-galtseva",
+      "person": "Anna Galtseva",
+      "venture": "Chill and Pill",
+      "missing_gates": [
+        "lane_eligibility"
+      ],
+      "reason": "The founder and software product are visible, but the venture already has a complete operating-company profile, website, Dubai headquarters and employee band. Saudi program participation alone does not make it a Saudi pre-company record.",
+      "evidence_refs": [
+        "https://www.startsmartsaudi.com/sites/default/files/2026-02/teams_1.pdf",
+        "https://www.linkedin.com/company/chill-and-pill"
+      ]
+    }
+  ],
+  "stopping_reason": {
+    "target_maximum": 4,
+    "promoted_count": 3,
+    "hold_count": 4,
+    "active_gate_pass_count": 3,
+    "band_distribution": {
+      "A": 0,
+      "B": 3,
+      "C": 0,
+      "D": 0
+    },
+    "exact_reason": "Stopped after three unique B-band records cleared all four active gates and the remaining bounded finalist checks either lacked a collision-free founder-controlled identity or fell outside the pre-company lane. A fourth record was not added because the available evidence would require weakening identity, authority or lane standards."
+  }
+}

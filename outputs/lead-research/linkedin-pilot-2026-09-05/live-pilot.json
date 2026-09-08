@@ -1,0 +1,465 @@
+{
+  "schemaVersion": "1.0.0",
+  "artifactType": "signed-in-linkedin-persona-pilot",
+  "observedAt": "2026-09-05",
+  "status": "research_only_not_imported",
+  "scope": {
+    "browser": "Microsoft Edge, ordinary logged-in LinkedIn",
+    "persona": "Saudi-market first-core-software buyer, no shipped core product, no established software team and supported maximum two current software builders.",
+    "restrictions": [
+      "No outreach, follows, connections, reactions, saves, subscriptions or account-setting changes.",
+      "No contact-detail enrichment or retention.",
+      "No canonical lead, resource, persona or application changes."
+    ]
+  },
+  "summary": {
+    "distinctQueries": 9,
+    "searchPasses": 11,
+    "reviewedPostImpressions": 59,
+    "newsletterEditionsReadInEdge": 2,
+    "fullyQualifiedFits": 0,
+    "coreResearchHolds": 3,
+    "additionalProcurementComparator": 1,
+    "commercialSearchRestrictionObserved": false
+  },
+  "methodology": {
+    "unit": "Visible top-level post impression inspected per query/filter pass; repeat appearances count again. Nested reposts, profile activity and article comments excluded from the 59.",
+    "sampling": "Bounded convenience sample; personalized results, not exhaustive search coverage or unique candidate total. No controlled query experiment or commercial conversion test.",
+    "datePolicy": "Keep literal relative labels; observation date is not publication date. Public/cache discrepancies retained.",
+    "sourceIndependence": "Authored profile and post are the same person's evidence, not two independent publishers. Root and agent views of the same post do not add independent corroboration.",
+    "evidenceLimit": "Zero current complete contractor-inclusive software-team upper bounds established; missing evidence stays unknown."
+  },
+  "observedFreePostFilters": [
+    "Latest or Top Match",
+    "Past 24 hours, past week, past month",
+    "Content type",
+    "From member and from company",
+    "Posted by me, first connections or followed people (not used)",
+    "Mentioning member and company",
+    "Author industry",
+    "Author company",
+    "Author Keywords: Title"
+  ],
+  "queries": [
+    {
+      "id": "q1",
+      "query": "\"أبحث عن شركة برمجة\"",
+      "passes": [
+        {
+          "dateFilter": "all_time",
+          "sort": "top_match",
+          "reviewedPostImpressions": 0,
+          "finding": "No results shown in Posts."
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "query": "\"أبحث عن مبرمج\"",
+      "passes": [
+        {
+          "dateFilter": "all_time",
+          "sort": "top_match",
+          "reviewedPostImpressions": 11,
+          "jobseekers": 6,
+          "finding": "Five other posts included SOKAINH's integrated-platform request, Ahmed Elabd's individual-only desktop build, a website request, script maintenance and a Sudan-focused equity project."
+        },
+        {
+          "dateFilter": "past_month",
+          "sort": "top_match",
+          "reviewedPostImpressions": 0,
+          "finding": "No post cards after date filtering; old requests must not be treated as current opportunities."
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "query": "\"MVP\" \"Saudi\"",
+      "passes": [
+        {
+          "dateFilter": "past_month",
+          "sort": "top_match",
+          "reviewedPostImpressions": 6,
+          "vendorPromotions": 4,
+          "finding": "Remaining posts were an existing venture's expansion and Osamah Alaawr building WTRLY himself; no qualified first-build buyer."
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "query": "\"شريك تقني\"",
+      "passes": [
+        {
+          "dateFilter": "past_month",
+          "sort": "top_match",
+          "reviewedPostImpressions": 6,
+          "finding": "Mixed general advice, supplier promotion, equity-only pre-MVP requests and an explicit Libya-based agency request. Pre-build need does not imply paid outsourcing."
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "query": "\"development partner\" \"Saudi\"",
+      "passes": [
+        {
+          "dateFilter": "past_month",
+          "sort": "top_match",
+          "reviewedPostImpressions": 6,
+          "businessDevelopmentJobs": 3,
+          "vendorPromotions": 3,
+          "finding": "No software-buying request in the six reviewed posts."
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "query": "\"Misk Launchpad\"",
+      "passes": [
+        {
+          "dateFilter": "past_month",
+          "sort": "top_match",
+          "reviewedPostImpressions": 6,
+          "finding": "Found Osama Alanazi's fresh sports-project admission, but also old-cohort resharing, mentoring and already-operating products."
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "query": "\"Misk Launchpad 10.0\"",
+      "passes": [
+        {
+          "dateFilter": "past_month",
+          "sort": "top_match",
+          "reviewedPostImpressions": 6,
+          "distinctNamedProjectsInSample": 4,
+          "finding": "Osama's sports project; AIDE AI with paying users; three posts for AQALL AI; ClarifyAi entering Saudi with an existing product. Cohort membership is discovery, not qualification."
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "query": "\"أبحث عن مبرمج\" NOT \"وظيفة\" NOT \"وظائف\"",
+      "passes": [
+        {
+          "dateFilter": "all_time",
+          "sort": "top_match",
+          "reviewedPostImpressions": 6,
+          "jobseekers": 0,
+          "finding": "Cleaner intent sample, including SOKAINH, but stale dates, geography, equity and maintenance still require manual checks. Not a controlled A/B experiment."
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "query": "\"أبحث عن مطور\" NOT \"وظيفة\" NOT \"وظائف\"",
+      "passes": [
+        {
+          "dateFilter": "all_time",
+          "sort": "top_match",
+          "reviewedPostImpressions": 9,
+          "finding": "Job-seeker synonyms still leaked; repeated Shopify requests, technical hiring and an already-built app sale appeared."
+        },
+        {
+          "dateFilter": "all_time",
+          "sort": "latest",
+          "reviewedPostImpressions": 3,
+          "finding": "IHAB SLAMA's broad physical-attraction proposal, a job seeker and Moayd Hamid's Drupal project contract. Moayd's profile shows an established digital-delivery role, not a demonstrated first-app founder."
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "id": "pilot-osama-alanazi-sports",
+      "person": "Osama Alanazi",
+      "profileUrl": "https://www.linkedin.com/in/osama-alanazi-46538528a/",
+      "projectName": null,
+      "projectDescription": "New sports-talent venture announced with Misk Launchpad 10.0 admission",
+      "disposition": "promising_research_hold",
+      "priority": "fresh_project_verification",
+      "confirmedFit": false,
+      "softwareBuildersUpperBound": null,
+      "unbuiltCoreProduct": "unknown",
+      "decisionAuthority": "venture participant; commissioning authority unknown",
+      "paidVendorIntent": "unknown",
+      "budget": null,
+      "evidence": [
+        {
+          "id": "osama-post",
+          "url": "https://www.linkedin.com/feed/update/urn:li:activity:7500223144914329600/",
+          "sourceType": "first_party_post",
+          "access": "logged_in_edge_and_public_original",
+          "observedAt": "2026-09-05",
+          "displayedAge": "4d; edited",
+          "publicationDate": null,
+          "summary": "Announces sports project, Misk 10 admission and two collaborators."
+        },
+        {
+          "id": "osama-profile",
+          "url": "https://www.linkedin.com/in/osama-alanazi-46538528a/",
+          "sourceType": "first_party_profile",
+          "access": "logged_in_edge",
+          "observedAt": "2026-09-05",
+          "summary": "Riyadh location and industrial-engineering background. Another venture, Mu'ad, appears and must not be merged with the unnamed sports project."
+        }
+      ],
+      "saudiBasis": "Riyadh-based author plus Saudi program; exact sports venture market still needs corroboration",
+      "gaps": [
+        "Project name and concrete software need",
+        "Current core product stage",
+        "Complete current builder count, including hands-on cofounders and contractors",
+        "External paid-development demand and decision authority"
+      ],
+      "nextCheck": "Inspect a current introduction/pitch for the specific sports project and named teammates. Keep Mu'ad separate; two tagged teammates do not prove a total team of three or a builder maximum."
+    },
+    {
+      "id": "pilot-sokainh-buhlal-platform",
+      "person": "SOKAINH BUHLAL",
+      "profileUrl": "https://www.linkedin.com/in/sokainh-buhlal%E3%80%8Ashrm-cp-%E3%80%8B-9159261a2/",
+      "projectName": null,
+      "projectDescription": "Integrated platform with government integrations and Arabic AI",
+      "disposition": "research_hold_stale_request",
+      "priority": "ownership_then_currentness",
+      "confirmedFit": false,
+      "softwareBuildersUpperBound": null,
+      "unbuiltCoreProduct": "unknown",
+      "decisionAuthority": "unknown; possible sharing or intermediary role",
+      "paidVendorIntent": "freelancer or Saudi team request; commercial terms unknown",
+      "budget": null,
+      "evidence": [
+        {
+          "id": "sokainh-post",
+          "url": "https://www.linkedin.com/posts/sokainh-buhlal%E3%80%8Ashrm-cp-%E3%80%8B-9159261a2_%D8%A3%D8%A8%D8%AD%D8%AB-%D8%B9%D9%86-%D9%85%D8%A8%D8%B1%D9%85%D8%AC-%D9%85%D8%B3%D8%AA%D9%82%D9%84-%D8%B0%D9%83%D8%B1%D8%A3%D9%86%D8%AB%D9%89%D8%A3%D9%88-%D9%81%D8%B1%D9%8A%D9%82-%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-share-7440195078272348160-Ws8i/",
+          "sourceType": "first_party_post",
+          "access": "logged_in_edge",
+          "observedAt": "2026-09-05",
+          "displayedAge": "5mo",
+          "publicationDate": null,
+          "summary": "Requests an independent developer or Saudi team for a platform; specifies Python frameworks, React, PostgreSQL, integrations and Arabic AI."
+        },
+        {
+          "id": "sokainh-profile",
+          "url": "https://www.linkedin.com/in/sokainh-buhlal%E3%80%8Ashrm-cp-%E3%80%8B-9159261a2/",
+          "sourceType": "first_party_profile",
+          "access": "logged_in_edge",
+          "observedAt": "2026-09-05",
+          "summary": "Jubail, Saudi Arabia; HR/government-platform work and recruitment initiative. Current activity includes shared hiring requests."
+        }
+      ],
+      "saudiBasis": "Saudi-based author and Saudi delivery-team preference; exact commissioning venture not identified",
+      "gaps": [
+        "Ownership and authority for this particular platform",
+        "Request still open after five months",
+        "Current product functionality and existing delivery team",
+        "Paid budget and provider-eligibility terms"
+      ],
+      "nextCheck": "Identify the commissioning project from public follow-up posts before attributing it to her employer or recruitment initiative. Do not treat mirrored public and logged-in versions as independent evidence."
+    },
+    {
+      "id": "pilot-momen-el-santawy-mobile",
+      "person": "Mo'men El-Santawy",
+      "profileUrl": "https://www.linkedin.com/in/mo-men-el-santawy-7851b3105/",
+      "projectName": null,
+      "projectDescription": "Mobile application for an unnamed small institution",
+      "disposition": "research_hold_stale_request",
+      "priority": "currentness_and_commissioning_entity",
+      "confirmedFit": false,
+      "softwareBuildersUpperBound": null,
+      "unbuiltCoreProduct": "unknown_today",
+      "decisionAuthority": "unknown for unnamed institution",
+      "paidVendorIntent": "project assignment explicitly not employment; amount and terms unknown",
+      "budget": null,
+      "evidence": [
+        {
+          "id": "momen-post",
+          "url": "https://www.linkedin.com/posts/mo-men-el-santawy-7851b3105_%D9%8A%D8%B3%D8%B9%D8%AF%D9%86%D9%8A-%D8%AA%D9%88%D8%A7%D8%B5%D9%84%D9%83%D9%85-%D8%A3%D8%A8%D8%AD%D8%AB-%D8%B9%D9%86-%D9%85%D8%B7%D9%88%D8%B1-%D9%85%D8%A8%D8%B1%D9%85%D8%AC-%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0-activity-7432707705829658624-F3T0",
+          "sourceType": "first_party_post",
+          "access": "logged_in_edge_and_public_original",
+          "observedAt": "2026-09-05",
+          "displayedAge": "6mo in Edge; earlier public rendering 5mo",
+          "publicationDate": null,
+          "summary": "Requests an institution's mobile application as project work, not a job. Visible comments recommend providers, without resolving fulfillment."
+        },
+        {
+          "id": "momen-profile",
+          "url": "https://www.linkedin.com/in/mo-men-el-santawy-7851b3105/",
+          "sourceType": "first_party_profile",
+          "access": "logged_in_edge",
+          "observedAt": "2026-09-05",
+          "summary": "Dammam, Saudi Arabia; senior IT role at Al Mashariq Group. The post does not name that employer as the commissioning institution."
+        }
+      ],
+      "saudiBasis": "Author location confirmed in Saudi Arabia; project-specific Saudi basis unresolved",
+      "gaps": [
+        "Commissioning institution and Saudi project basis",
+        "Authority or authorized referral role",
+        "Whether the application is still unbuilt",
+        "Current software team and contractor capacity",
+        "Agency eligibility and payment terms"
+      ],
+      "nextCheck": "Find a public update identifying the institution and whether the project was delivered. A six-month-old request is not a current buying signal."
+    },
+    {
+      "id": "pilot-moayd-hamid-drupal",
+      "person": "Moayd Hamid",
+      "profileUrl": "https://www.linkedin.com/in/moaydhamid/",
+      "projectName": null,
+      "projectDescription": "New Drupal website with delivery and administrator training",
+      "disposition": "adjacent_procurement_hold_not_core_shortlist",
+      "priority": "low_for_strict_persona",
+      "confirmedFit": false,
+      "softwareBuildersUpperBound": null,
+      "unbuiltCoreProduct": "new website requested; organization first-product status unknown",
+      "decisionAuthority": "credible project-management role, specific commissioning entity unknown",
+      "paidVendorIntent": "two-month remote project contract; budget unknown",
+      "budget": null,
+      "evidence": [
+        {
+          "id": "moayd-post",
+          "url": "https://www.linkedin.com/feed/update/urn:li:activity:7489987845915459584/",
+          "sourceType": "first_party_post",
+          "access": "logged_in_edge_profile_activity_and_search",
+          "observedAt": "2026-09-05",
+          "displayedAge": "1mo; edited",
+          "publicationDate": null,
+          "summary": "Requests end-to-end Drupal site development over two months, remote project contract, with preference for an Egypt-based developer."
+        },
+        {
+          "id": "moayd-profile",
+          "url": "https://www.linkedin.com/in/moaydhamid/",
+          "sourceType": "first_party_profile",
+          "access": "logged_in_edge",
+          "observedAt": "2026-09-05",
+          "summary": "Riyadh-based digital-learning/product program manager; states he leads cross-functional teams comprising 21 professionals and has delivered institutional platforms."
+        }
+      ],
+      "saudiBasis": "Author location Saudi; project geography unnamed",
+      "gaps": [
+        "Whether this is custom product work or a content website",
+        "First-core-product status",
+        "Commissioning institution and actual developer roster",
+        "Current request availability and vendor eligibility"
+      ],
+      "nextCheck": "Do not promote to the strict first-build list. Twenty-one cross-functional professionals is not twenty-one engineers, but establishes neither no delivery organization nor a <=2-builder maximum."
+    }
+  ],
+  "negativeControls": [
+    {
+      "id": "wtrly-self-builder",
+      "person": "Osamah Alaawr",
+      "project": "WTRLY",
+      "profileUrl": "https://www.linkedin.com/in/osamah-alaawr-87499218a/",
+      "websiteUrl": "https://wtrly.cloud",
+      "disposition": "hold_not_paid_buyer",
+      "observedAt": "2026-09-05",
+      "displayedAge": "3d",
+      "reason": "Saudi water-ordering MVP being designed and developed by the author, a CTO/software developer. No external build request or supported full team maximum. Do not confuse with Osama Alanazi.",
+      "limitation": "Public website fetch exposed only a JavaScript shell; no production app test was performed."
+    },
+    {
+      "id": "aide-live-product",
+      "person": "Taimoor Zia",
+      "project": "AIDE AI",
+      "queryId": "q7",
+      "disposition": "exclude_existing_core_product",
+      "observedAt": "2026-09-05",
+      "reason": "Current Misk 10 admission post describes an operating product and paying users; new cohort does not mean new unbuilt product.",
+      "postPermalink": null
+    },
+    {
+      "id": "clarify-existing-expansion",
+      "person": "Md Danish Khan",
+      "project": "ClarifyAi",
+      "queryId": "q7",
+      "disposition": "exclude_existing_core_product",
+      "observedAt": "2026-09-05",
+      "reason": "Misk admission described entry into Saudi after building for India. Expansion is not first build.",
+      "postPermalink": null
+    },
+    {
+      "id": "aqall-duplicate-project",
+      "person": "Multiple cofounders and company",
+      "project": "AQALL AI",
+      "queryId": "q7",
+      "disposition": "hold_self_building_beta_stage_unknown",
+      "observedAt": "2026-09-05",
+      "reason": "Three posts belong to one project, with beta/waitlist and months of building. Multiple technical-background founders do not establish their complete current engineering roles.",
+      "postPermalink": null
+    },
+    {
+      "id": "ahmed-elabd-individual",
+      "person": "Ahmed Elabd",
+      "profileUrl": "https://www.linkedin.com/in/ah-medelabd010/",
+      "project": "Fuel-station desktop application",
+      "disposition": "individual_only_provider_mismatch_and_saudi_unknown",
+      "observedAt": "2026-09-05",
+      "reason": "First-build-looking C#/SQL request explicitly prefers an individual, not a company. Saudi project basis not verified."
+    },
+    {
+      "id": "mazn-enterprise-procurement",
+      "person": "Mazn Ali Almesned",
+      "project": "Coffee Address AI/CCTV procurement",
+      "disposition": "adjacent_scope_not_core_shortlist",
+      "observedAt": "2026-09-05",
+      "displayedAge": "1w; edited in Edge; earlier public rendering 1d",
+      "url": "https://www.linkedin.com/posts/mazn-ali-almesned-06549619b_%D9%86%D8%A8%D8%AD%D8%AB-%D8%B9%D9%86-%D8%B4%D8%B1%D9%83%D8%A7%D8%AA-%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D9%85%D8%AA%D8%AE%D8%B5%D8%B5%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-activity-7497669709463564289-oUiu",
+      "reason": "Concrete company procurement with a shortlisting process, but an established chain, no confirmed first-product/<=2-builder fit and explicit Saudi-provider requirements. Strong demand comparator, not authorization to broaden the persona."
+    },
+    {
+      "id": "ihab-physical-project",
+      "person": "IHAB SLAMA",
+      "profileUrl": "https://www.linkedin.com/in/ihab-slama-a598bb3b7/",
+      "project": "Diyar immersive attraction",
+      "disposition": "out_of_scope_software_need_not_established",
+      "observedAt": "2026-09-05",
+      "reason": "Saudi physical-tourism concept seeks investors, developers, operators and strategic partners. Generic developer vocabulary is not a defined custom-software brief."
+    }
+  ],
+  "newsletterChecks": [
+    {
+      "id": "saudi-landing",
+      "newsletterUrl": "https://www.linkedin.com/newsletters/7492136610118098945/",
+      "articleUrl": "https://www.linkedin.com/pulse/what-entering-saudi-arabia-actually-involves-mina-kerols--m2aqf",
+      "name": "The Saudi Landing",
+      "author": "Mina Kerols",
+      "observedAt": "2026-09-05",
+      "publicationDate": "2026-08-10",
+      "access": "logged_in_edge",
+      "editionsRead": 1,
+      "qualifiedBuyersFound": 0,
+      "assessment": "Market-entry context. Sampled article and its visible comment thread contained no explicit first-software-build request. Do not infer buying intent from readership or a founder commenter."
+    },
+    {
+      "id": "building-between-markets",
+      "newsletterUrl": "https://www.linkedin.com/newsletters/7495425255386230785/",
+      "articleUrl": "https://www.linkedin.com/pulse/issue-2-mistake-i-keep-watching-people-make-saudi-yusra-jzm2f",
+      "name": "Building Between Markets",
+      "author": "Yusra M.",
+      "observedAt": "2026-09-05",
+      "publicationDate": "2026-08-27",
+      "access": "logged_in_edge",
+      "editionsRead": 1,
+      "qualifiedBuyersFound": 0,
+      "assessment": "Author's market-entry/relationship-building perspective; two external comments and an author reply did not describe an owned first-build project. Context source, not demonstrated high-yield buyer source."
+    }
+  ],
+  "supportingFiles": [
+    "public-candidates.json",
+    "community-channels.json",
+    "paid-tools.json"
+  ],
+  "recommendation": "Use explicit project-request posts first and exact current pre-incubation cohort posts second. Keep buyer-intent evidence separate from persona eligibility. Buy no paid service yet.",
+  "nextExperiment": {
+    "proposedNotExecuted": true,
+    "workflow": "Two comparable research sessions; start Latest with recent request phrases, then exact current cohort; qualify only unique person-project records.",
+    "measure": [
+      "Unique projects per query",
+      "Confirmed pre-build stage",
+      "Supported team upper bound",
+      "Explicit paid-vendor request",
+      "Qualified prospects per research hour",
+      "Time blocked by search access"
+    ],
+    "stoppingRule": "After two consecutive source passes contribute under 10% new evidence-supported candidates, retire or change the query and report shortfall; never fill a 50-lead quota with unknowns."
+  }
+}

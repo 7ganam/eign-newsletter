@@ -1,0 +1,87 @@
+{
+  "existingRowsPreserved": true,
+  "originalCount": 50,
+  "protectedFiles": [
+    {
+      "path": "assets/lead-research/saudi-lead-persona.json",
+      "unchanged": true
+    },
+    {
+      "path": "assets/lead-research/saudi-lead-resources.json",
+      "unchanged": true
+    },
+    {
+      "path": "assets/people/unified-people.json",
+      "unchanged": true
+    }
+  ],
+  "importedRows": 7,
+  "importedMatch": true,
+  "total": 57,
+  "tagged": 7,
+  "qualificationStates": [
+    {
+      "id": "lead-li-intent-afnan-anwal-platform",
+      "status": "review-required",
+      "persona": "needs-verification"
+    },
+    {
+      "id": "lead-li-intent-maryam-alatwiy-photobooth",
+      "status": "review-required",
+      "persona": "needs-verification"
+    },
+    {
+      "id": "lead-li-intent-faisal-abduljawad-logtech",
+      "status": "review-required",
+      "persona": "needs-verification"
+    },
+    {
+      "id": "lead-li-intent-adilet-zakiyev-next-venture",
+      "status": "review-required",
+      "persona": "needs-verification"
+    },
+    {
+      "id": "lead-li-intent-osama-alanazi-sports",
+      "status": "review-required",
+      "persona": "needs-verification"
+    },
+    {
+      "id": "lead-li-intent-sokainh-buhlal-platform",
+      "status": "review-required",
+      "persona": "needs-verification"
+    },
+    {
+      "id": "lead-li-intent-momen-el-santawy-mobile",
+      "status": "review-required",
+      "persona": "needs-verification"
+    }
+  ],
+  "newRowsArchived": [],
+  "mismatches": [],
+  "observedAt": "2026-09-05",
+  "tests": {
+    "unit_and_data": "19 passed",
+    "build": "pnpm build passed; existing bundle-size warning",
+    "diff": "git diff --check passed",
+    "api": {
+      "get": 200,
+      "readOnlyAndUnqualifiedPatchRejections": "6 checks returned 400 without changing canonical data",
+      "missingId": 404
+    },
+    "edge": {
+      "tagAndFilter": true,
+      "urlPreservedUnrelatedParameter": true,
+      "reviewDateSavedAndReloaded": true,
+      "sortBothDirections": true,
+      "physicalColumnDragPersisted": true,
+      "columnResizePersisted": true,
+      "selectionScopedToFilter": true,
+      "multiSelection": true,
+      "archiveAndRestore": true,
+      "evidenceCenteredModalAndLinks": true,
+      "applicationConsoleErrors": 0,
+      "unrelatedExtensionWarnings": true
+    }
+  },
+  "cleanup": "QA date, selection, archive, width, ordering and sort restored; clean strategy URL kept open. No outreach or account interactions."
+}

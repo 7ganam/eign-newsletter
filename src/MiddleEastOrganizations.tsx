@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import entityData from '../assets/riseup-summit-2026-entities.json'
 import { ResizableDataTable } from './resizableColumns'
+import { ArchiveToolbar, RowSelectionCell, useRowArchive } from './rowArchive'
 import { WorkspaceNav } from './WorkspaceNav'
 
 type Organization = {
@@ -31,6 +32,9 @@ const organizationRows = organizations.map((organization) => ({
 }))
 
 export function MiddleEastOrganizations() {
+  const archive = useRowArchive({ tableId: 'middle-east-organizations', visibleRowIds: organizationRows.map((organization) => organization.id) })
+  const displayedRows = organizationRows.filter((organization) => archive.showArchived === archive.isArchived(organization.id))
+
   useEffect(() => {
     const previousTitle = document.title
     document.title = 'Middle East Organizations · EIGN Data Workspace'
@@ -63,15 +67,19 @@ export function MiddleEastOrganizations() {
             <span>{entityData.counts.people_without_organization} speakers have no organization in the source</span>
           </div>
 
+          <ArchiveToolbar archive={archive} noun="organizations" />
+
           <div className="middle-east-organizations-table-wrap">
             <ResizableDataTable
               className="company-table middle-east-organizations-table"
               columns={ORGANIZATION_COLUMNS}
+              selection={{ allSelected: archive.allVisibleSelected, onToggle: archive.toggleAllVisible, someSelected: archive.someVisibleSelected }}
               storageKey="eign-middle-east-organizations.column-widths.v2"
             >
               <tbody>
-                {organizationRows.map((organization) => (
+                {displayedRows.map((organization) => (
                   <tr key={organization.id}>
+                    <td className="row-select-cell"><RowSelectionCell checked={archive.selectedIds.has(organization.id)} label={`Select ${organization.name}`} onToggle={() => archive.toggleRow(organization.id)} /></td>
                     <td className="middle-east-organization-name">{organization.name}</td>
                     <td><div className="middle-east-organization-people">{organization.people.join(', ')}</div></td>
                   </tr>

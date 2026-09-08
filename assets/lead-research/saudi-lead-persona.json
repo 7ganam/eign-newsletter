@@ -1,0 +1,130 @@
+{
+  "schema_version": "saudi-lead-persona.v1",
+  "updated_at": "2026-09-03",
+  "title": "Saudi mobile-first software buyer",
+  "target_definition": "A Saudi-market founder, co-founder, or owner with verified buying authority who is actively building or digitizing a venture, has a credible need for custom mobile or software work, lacks sufficient visible in-house delivery capacity or explicitly seeks an external builder, and shows a realistic budget or urgency signal.",
+  "geography_rule": "Saudi relevance means current residence, company headquarters, or verified Saudi-market operations; never infer nationality.",
+  "product_scope": [
+    "Mobile applications",
+    "Web platforms",
+    "Marketplaces",
+    "Internal business software"
+  ],
+  "lanes": [
+    {
+      "id": "new-founder",
+      "label": "New founder",
+      "definition": "Founder role or venture began within the last 12 months and the venture has a plausible custom-software need.",
+      "target_count": 30
+    },
+    {
+      "id": "stealth-or-precompany",
+      "label": "Stealth or pre-company",
+      "definition": "Verified Saudi-market founder signal and explicit product intent, but no complete company profile yet.",
+      "target_count": 10
+    },
+    {
+      "id": "sme-digital-build",
+      "label": "SME digital build",
+      "definition": "An established Saudi operating business with a recent, specific app, platform, marketplace, or internal-software initiative.",
+      "target_count": 10
+    }
+  ],
+  "required_gates": [
+    { "id": "identity", "label": "Identity", "rule": "The person and current organization are verified without an unresolved collision." },
+    { "id": "ksa-fit", "label": "Saudi-market relevance", "rule": "Residence, headquarters, or Saudi-market operations are confirmed by evidence." },
+    { "id": "authority", "label": "Buying authority", "rule": "The person currently holds a founder, co-founder, owner, or equivalent decision role." },
+    { "id": "software-fit", "label": "Software fit", "rule": "A plausible need for custom mobile or software work is evidenced, not assumed from title alone." }
+  ],
+  "dimensions": [
+    {
+      "id": "product_intent",
+      "label": "Product intent",
+      "maximum": 6,
+      "levels": [
+        { "score": 0, "rule": "Unknown or no evidenced custom-software use case." },
+        { "score": 2, "rule": "A plausible software use case is supported by the business model." },
+        { "score": 4, "rule": "A specific app, platform, marketplace, MVP, or build was publicly described within 12 months." },
+        { "score": 6, "rule": "A developer, vendor, technical partner, or dated build brief was explicitly requested within six months." }
+      ]
+    },
+    {
+      "id": "outsourcing_likelihood",
+      "label": "Outsourcing likelihood",
+      "maximum": 5,
+      "levels": [
+        { "score": 0, "rule": "In-house delivery capacity is clearly sufficient." },
+        { "score": 1, "rule": "Delivery capacity is unknown." },
+        { "score": 3, "rule": "A documented team audit finds no visible technical co-founder or engineering capacity; this remains an observation, not proof of absence." },
+        { "score": 5, "rule": "The venture explicitly seeks an external builder, vendor, or delivery partner." }
+      ]
+    },
+    {
+      "id": "budget_readiness",
+      "label": "Budget readiness",
+      "maximum": 5,
+      "levels": [
+        { "score": 0, "rule": "The initiative is explicitly paused or has no budget." },
+        { "score": 1, "rule": "Budget evidence is unknown." },
+        { "score": 3, "rule": "Operating revenue, customers, funding, a grant, accelerator support, or a credible commercial partner is evidenced." },
+        { "score": 5, "rule": "Budget, procurement, an awarded product grant, or a paid pilot tied to the build is explicit." }
+      ]
+    },
+    {
+      "id": "timing",
+      "label": "Timing",
+      "maximum": 4,
+      "levels": [
+        { "score": 0, "rule": "The signal is undated or inactive." },
+        { "score": 1, "rule": "The signal is older than one year but demonstrably current." },
+        { "score": 2, "rule": "The relevant trigger occurred within 365 days." },
+        { "score": 3, "rule": "The relevant trigger occurred within 180 days." },
+        { "score": 4, "rule": "The relevant trigger occurred within 90 days." }
+      ]
+    }
+  ],
+  "penalties": [
+    { "id": "sufficient-internal-team", "points": 5, "rule": "Sufficient internal product and engineering delivery capacity is evidenced." },
+    { "id": "mature-no-new-build", "points": 4, "rule": "The product is mature and no new build, rebuild, or expansion trigger exists." },
+    { "id": "outside-target-stage", "points": 3, "rule": "The venture has more than 20 visible LinkedIn employees without a specific new build." },
+    { "id": "inactive-venture", "points": 3, "rule": "The venture is closed or dormant, or the founder role has ended." }
+  ],
+  "bands": [
+    { "id": "A", "minimum": 15, "maximum": 20, "definition": "All gates confirmed; strong intent, outsourcing, and budget evidence; manually reviewed." },
+    { "id": "B", "minimum": 10, "maximum": 14, "definition": "All gates confirmed, with one high-value proof weaker than an A lead." },
+    { "id": "C", "minimum": 5, "maximum": 9, "definition": "Plausible watchlist candidate with evidence gaps documented for refresh." },
+    { "id": "D", "minimum": 0, "maximum": 4, "definition": "Low fit or hard-disqualified; keep outside the active lead set." }
+  ],
+  "evidence_policy": [
+    "Every scored claim references an evidence record with a source URL and observation date.",
+    "A and B leads require two independent sources, including one first-party or official source.",
+    "Unknown facts remain unknown; profile silence is never proof.",
+    "LinkedIn employee counts are labelled as visible bands, not payroll.",
+    "Likes, follows, newsletters, and inspirational content are discovery tags only.",
+    "Refresh role, product, team, timing, and budget claims after 90 days; refresh stable identity facts after 365 days."
+  ],
+  "exclusions": [
+    "Identity mismatch or unresolved collision",
+    "Saudi relevance refuted",
+    "No active buying-authority role",
+    "Inactive venture",
+    "Software agency or vendor rather than buyer",
+    "No plausible custom-software need"
+  ],
+  "reference_customers": [
+    {
+      "id": "reference-abdulrahman-aljohani",
+      "display_name": "Abdulrahman Aljohani",
+      "linkedin_url": "https://www.linkedin.com/in/abdulrahman-aljohani-11b2881b4",
+      "relationship": "existing-customer",
+      "observed_at": "2026-09-03",
+      "evidence_basis": "The user identified this person as an existing software-company customer who requested a mobile application.",
+      "discovery_signals": [
+        "Founder of a very small company",
+        "Follows business-building and startup material",
+        "Engages with founder and ecosystem accounts",
+        "Known verified purchase of mobile-application development"
+      ]
+    }
+  ]
+}

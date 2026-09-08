@@ -3,6 +3,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import type { CSSProperties, DragEvent as ReactDragEvent, KeyboardEvent as ReactKeyboardEvent } from 'react'
 import { dateEditorValue, InlineEdit, parseJsonEditorValue } from './editableCells'
 import { ColumnResizeHandle, useResizableColumns } from './resizableColumns'
+import { ArchiveToolbar, RowSelectionCell, RowSelectionHeader, useRowArchive } from './rowArchive'
 import { usePersistedSort } from './tablePreferences'
 import { WorkspaceNav } from './WorkspaceNav'
 import './research.css'
@@ -381,23 +382,29 @@ export function ResearchLedger() {
     void fetchPage(1, false, queryPayload, querySignature)
   }, [fetchPage, queryPayload, querySignature, schema?.collection])
 
+  const archive = useRowArchive({
+    tableId: 'companies',
+    visibleRowIds: rows.map((row) => String(row.__recordId ?? row._id ?? '')),
+  })
+  const displayedRows = rows.filter((row) => archive.showArchived === archive.isArchived(String(row.__recordId ?? row._id ?? '')))
+
   const rowVirtualizer = useVirtualizer({
-    count: hasMore ? rows.length + 1 : rows.length,
+    count: hasMore ? displayedRows.length + 1 : displayedRows.length,
     getScrollElement: () => scrollRef.current,
     estimateSize: () => ROW_HEIGHT,
     overscan: 14,
     useFlushSync: false,
-    getItemKey: (index) => String(rows[index]?._id ?? `loader-${index}`),
+    getItemKey: (index) => String(displayedRows[index]?.__recordId ?? displayedRows[index]?._id ?? `loader-${index}`),
   })
   const virtualRows = rowVirtualizer.getVirtualItems()
 
   useEffect(() => {
     const lastVirtualRow = virtualRows.at(-1)
     if (!lastVirtualRow || !hasMore || initialLoading || loadingMore) return
-    if (lastVirtualRow.index >= rows.length - 8) {
+    if (lastVirtualRow.index >= displayedRows.length - 8) {
       void fetchPage(loadedPage + 1, true, queryPayload, querySignature)
     }
-  }, [fetchPage, hasMore, initialLoading, loadedPage, loadingMore, queryPayload, querySignature, rows.length, virtualRows])
+  }, [displayedRows.length, fetchPage, hasMore, initialLoading, loadedPage, loadingMore, queryPayload, querySignature, virtualRows])
 
   const fieldKeys = useMemo(() => schema?.fields.map((field) => field.name) ?? [], [schema])
   const defaultWidths = useMemo(() => Object.fromEntries(
@@ -487,7 +494,7 @@ export function ResearchLedger() {
   }
 
   const selectedValue = selectedCell && schema
-    ? rawValue(rows[selectedCell.rowIndex]?.[schema.fields[selectedCell.columnIndex]?.name])
+    ? rawValue(displayedRows[selectedCell.rowIndex]?.[schema.fields[selectedCell.columnIndex]?.name])
     : ''
   const selectedAddress = selectedCell ? `${columnLetter(selectedCell.columnIndex)}${selectedCell.rowIndex + 1}` : ''
 
@@ -541,7 +548,7 @@ export function ResearchLedger() {
     const move = moves[event.key]
     if (!move) return
     event.preventDefault()
-    const nextRow = Math.max(0, Math.min(rows.length - 1, selectedCell.rowIndex + move[0]))
+    const nextRow = Math.max(0, Math.min(displayedRows.length - 1, selectedCell.rowIndex + move[0]))
     const nextColumn = Math.max(0, Math.min(schema.fields.length - 1, selectedCell.columnIndex + move[1]))
     setSelectedCell({ rowIndex: nextRow, columnIndex: nextColumn })
     rowVirtualizer.scrollToIndex(nextRow, { align: 'auto' })
@@ -665,6 +672,8 @@ export function ResearchLedger() {
         <span className="table-edit-hint">Pencil or double-click a cell to edit</span>
       </div>
 
+      <ArchiveToolbar archive={archive} noun="startups" />
+
       {error && <div className="sheet-error" role="alert">{error}</div>}
       {cellSaveError && <div className="sheet-error" role="alert">Cell was not saved: {cellSaveError}</div>}
 
@@ -682,7 +691,7 @@ export function ResearchLedger() {
               {schema?.fields.map((field, index) => <div key={field.name}>{columnLetter(index)}</div>)}
             </div>
             <div className="sheet-field-row">
-              <div className="sheet-row-heading">#</div>
+              <div className="sheet-row-heading"><RowSelectionHeader allSelected={archive.allVisibleSelected} onToggle={archive.toggleAllVisible} someSelected={archive.someVisibleSelected} /></div>
               {schema?.fields.map((field) => (
                 <div
                   className={[
@@ -713,12 +722,12 @@ export function ResearchLedger() {
 
           {initialLoading ? (
             <div className="sheet-initial-loading">Loading rows…</div>
-          ) : rows.length === 0 ? (
-            <div className="sheet-empty">No rows match the current filters.</div>
+          ) : displayedRows.length === 0 ? (
+            <div className="sheet-empty">{archive.showArchived ? 'No archived startups match the current filters.' : 'No rows match the current filters.'}</div>
           ) : (
             <div className="sheet-virtual-body" style={{ height: `${rowVirtualizer.getTotalSize()}px` }}>
               {virtualRows.map((virtualRow) => {
-                const row = rows[virtualRow.index]
+                const row = displayedRows[virtualRow.index]
                 if (!row) {
                   return (
                     <div
@@ -738,7 +747,7 @@ export function ResearchLedger() {
                     key={virtualRow.key}
                     style={{ height: `${virtualRow.size}px`, transform: `translateY(${virtualRow.start}px)` }}
                   >
-                    <div className="sheet-row-number">{virtualRow.index + 1}</div>
+                    <div className="sheet-row-number"><RowSelectionCell checked={archive.selectedIds.has(String(row.__recordId ?? row._id ?? ''))} label={`Select row ${virtualRow.index + 1}`} onToggle={() => archive.toggleRow(String(row.__recordId ?? row._id ?? ''))} /></div>
                     {schema?.fields.map((field, columnIndex) => {
                       const isSelected = selectedCell?.rowIndex === virtualRow.index && selectedCell.columnIndex === columnIndex
                       const value = row[field.name]
@@ -775,7 +784,7 @@ export function ResearchLedger() {
       <footer className="sheet-statusbar">
         <span className="sheet-tab">Startups</span>
         <span>{schema?.fields.length ?? 0} columns</span>
-        <span>{rows.length.toLocaleString()} of {total.toLocaleString()} rows loaded</span>
+        <span>{displayedRows.length.toLocaleString()} of {total.toLocaleString()} rows visible</span>
         <span>{hasMore ? 'Scroll down to load more' : 'All matching rows loaded'}</span>
       </footer>
     </main>

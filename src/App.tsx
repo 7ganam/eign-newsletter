@@ -4,6 +4,7 @@ import type { EChartProps } from './EChart'
 import { dateEditorValue, InlineEdit } from './editableCells'
 import { displayList, formatDate, formatMoney, formatNumber, initials, truncateLabel } from './lib'
 import { ResizableDataTable } from './resizableColumns'
+import { ArchiveToolbar, RowSelectionCell, useRowArchive } from './rowArchive'
 import { restoreStoredChoice, saveStoredChoice } from './tablePreferences'
 import { WorkspaceNav } from './WorkspaceNav'
 import type {
@@ -158,14 +159,24 @@ function ErrorView({ message, retry }: { message: string; retry: () => void }) {
 }
 
 function RoundsTable({ onSave, rounds }: { onSave: SaveRecordCell; rounds: FundingRound[] }) {
+  const archive = useRowArchive({ tableId: 'rounds', visibleRowIds: rounds.map((round) => round.__recordId) })
+  const visibleRounds = rounds.filter((round) => archive.showArchived === archive.isArchived(round.__recordId))
+
   return (
     <div className="drawer-table-wrap">
-      <ResizableDataTable className="drawer-table" columns={FUNDING_ROUND_COLUMNS} storageKey="eign-dashboard.funding-rounds.column-widths.v1">
+      <ArchiveToolbar archive={archive} noun="funding records" />
+      <ResizableDataTable
+        className="drawer-table"
+        columns={FUNDING_ROUND_COLUMNS}
+        selection={{ allSelected: archive.allVisibleSelected, onToggle: archive.toggleAllVisible, someSelected: archive.someVisibleSelected }}
+        storageKey="eign-dashboard.funding-rounds.column-widths.v1"
+      >
         <tbody>
-          {rounds.map((round, index) => {
+          {visibleRounds.map((round, index) => {
             const investors = displayList(round.leadInvestors) || displayList(round.otherInvestors)
             return (
               <tr key={`${round.round}-${round.announcementDate}-${index}`}>
+                <td className="row-select-cell"><RowSelectionCell checked={archive.selectedIds.has(round.__recordId)} label={`Select ${round.round || 'funding record'}`} onToggle={() => archive.toggleRow(round.__recordId)} /></td>
                 <td><InlineEdit ariaLabel="round date" inputType="date" value={dateEditorValue(round.announcementDate)} onSave={(value) => onSave('rounds', round.__recordId, 'announcementDate', value || null)}>{formatDate(round.announcementDate)}</InlineEdit></td>
                 <td><InlineEdit ariaLabel="round type" value={round.round || ''} onSave={(value) => onSave('rounds', round.__recordId, 'round', value)}><strong>{round.round || round.roundStage || (round.recordType === 'accelerator_commitment' ? 'Accelerator' : 'Funding event')}</strong><small>{round.instrument || ''}</small></InlineEdit></td>
                 <td><InlineEdit ariaLabel="round amount" inputType="number" value={round.amountUsd == null ? '' : String(round.amountUsd)} onSave={(value) => onSave('rounds', round.__recordId, 'amountUsd', numericCellValue(value))}>{formatMoney(round.amountUsd, false)}{round.inferredMinimum && <small>Minimum</small>}</InlineEdit></td>
@@ -176,7 +187,7 @@ function RoundsTable({ onSave, rounds }: { onSave: SaveRecordCell; rounds: Fundi
           })}
         </tbody>
       </ResizableDataTable>
-      {!rounds.length && <p className="empty-note">No linked funding records.</p>}
+      {!visibleRounds.length && <p className="empty-note">{archive.showArchived ? 'No archived funding records.' : 'No linked funding records.'}</p>}
     </div>
   )
 }
@@ -257,6 +268,18 @@ export function App() {
   const [detailLoading, setDetailLoading] = useState(false)
   const [industryMetric, setIndustryMetric] = useState<'companies' | 'fundingUsd'>('companies')
   const debouncedSearch = useDebouncedValue(filters.q, 250)
+  const topCompanyArchive = useRowArchive({
+    tableId: 'companies',
+    visibleRowIds: dashboard?.topCompanies.map((company) => company.__recordId) ?? [],
+  })
+  const recentRoundArchive = useRowArchive({
+    tableId: 'rounds',
+    visibleRowIds: dashboard?.recentRounds.map((round) => round.__recordId) ?? [],
+  })
+  const companyArchive = useRowArchive({
+    tableId: 'companies',
+    visibleRowIds: companyResults?.items.map((company) => company.__recordId) ?? [],
+  })
 
   const loadDashboard = useCallback(async () => {
     setDashboardError('')
@@ -436,6 +459,10 @@ export function App() {
   if (dashboardError) return <ErrorView message={dashboardError} retry={() => void loadDashboard()} />
   if (!dashboard) return <LoadingView />
 
+  const visibleTopCompanies = dashboard.topCompanies.filter((company) => topCompanyArchive.showArchived === topCompanyArchive.isArchived(company.__recordId))
+  const visibleRecentRounds = dashboard.recentRounds.filter((round) => recentRoundArchive.showArchived === recentRoundArchive.isArchived(round.__recordId))
+  const visibleCompanies = companyResults?.items.filter((company) => companyArchive.showArchived === companyArchive.isArchived(company.__recordId)) ?? []
+
   const reconciliationRate = dashboard.summary.companies ? dashboard.summary.reconciledCompanies / dashboard.summary.companies : 0
   const filtersActive = Boolean(filters.q || filters.industry || filters.batch || filters.sort !== 'funding_desc')
 
@@ -489,10 +516,12 @@ export function App() {
 
           <article className="analysis-panel analysis-panel--leaders">
             <header><div><h2>Companies by recorded funding</h2><p>Highest company-level totals</p></div><span className="table-edit-hint">Pencil or double-click to edit</span></header>
+            <ArchiveToolbar archive={topCompanyArchive} noun="companies" />
             <div className="compact-table-wrap">
-              <ResizableDataTable className="compact-table" columns={TOP_COMPANY_COLUMNS} storageKey="eign-dashboard.top-companies.column-widths.v1">
-                <tbody>{dashboard.topCompanies.map((company, index) => (
+              <ResizableDataTable className="compact-table" columns={TOP_COMPANY_COLUMNS} selection={{ allSelected: topCompanyArchive.allVisibleSelected, onToggle: topCompanyArchive.toggleAllVisible, someSelected: topCompanyArchive.someVisibleSelected }} storageKey="eign-dashboard.top-companies.column-widths.v1">
+                <tbody>{visibleTopCompanies.map((company, index) => (
                   <tr key={company.slug} onClick={() => setSelectedSlug(company.slug)}>
+                    <td className="row-select-cell"><RowSelectionCell checked={topCompanyArchive.selectedIds.has(company.__recordId)} label={`Select ${company.name}`} onToggle={() => topCompanyArchive.toggleRow(company.__recordId)} /></td>
                     <td>{index + 1}</td>
                     <td><InlineEdit ariaLabel={`${company.name} name`} value={company.name} onSave={(value) => saveRecordCell('companies', company.__recordId, 'name', value)}><CompanyLogo name={company.name} src={company.logoUrl} size="small" /><strong>{company.name}</strong></InlineEdit></td>
                     <td><InlineEdit ariaLabel={`${company.name} industry`} value={company.industry || ''} onSave={(value) => saveRecordCell('companies', company.__recordId, 'industry', value)}>{company.industry || '—'}</InlineEdit></td>
@@ -506,10 +535,12 @@ export function App() {
 
           <article className="analysis-panel analysis-panel--recent">
             <header><div><h2>Recent funding records</h2><p>Latest dated events</p></div><span className="table-edit-hint">Pencil or double-click to edit</span></header>
+            <ArchiveToolbar archive={recentRoundArchive} noun="funding records" />
             <div className="compact-table-wrap">
-              <ResizableDataTable className="compact-table" columns={RECENT_ROUND_COLUMNS} storageKey="eign-dashboard.recent-rounds.column-widths.v1">
-                <tbody>{dashboard.recentRounds.map((round) => (
+              <ResizableDataTable className="compact-table" columns={RECENT_ROUND_COLUMNS} selection={{ allSelected: recentRoundArchive.allVisibleSelected, onToggle: recentRoundArchive.toggleAllVisible, someSelected: recentRoundArchive.someVisibleSelected }} storageKey="eign-dashboard.recent-rounds.column-widths.v1">
+                <tbody>{visibleRecentRounds.map((round) => (
                   <tr key={`${round.companySlug}-${round.announcementDate}`} onClick={() => setSelectedSlug(round.companySlug)}>
+                    <td className="row-select-cell"><RowSelectionCell checked={recentRoundArchive.selectedIds.has(round.__recordId)} label={`Select ${round.companyName} funding record`} onToggle={() => recentRoundArchive.toggleRow(round.__recordId)} /></td>
                     <td><InlineEdit ariaLabel={`${round.companyName} round date`} inputType="date" value={dateEditorValue(round.announcementDate)} onSave={(value) => saveRecordCell('rounds', round.__recordId, 'announcementDate', value || null)}>{formatDate(round.announcementDate)}</InlineEdit></td>
                     <td><InlineEdit ariaLabel={`${round.companyName} name`} disabled={!round.companyRecordId} value={round.companyName} onSave={(value) => saveRecordCell('companies', round.companyRecordId!, 'name', value)}><CompanyLogo name={round.companyName} src={round.logoUrl} size="small" /><strong>{round.companyName}</strong></InlineEdit></td>
                     <td><InlineEdit ariaLabel={`${round.companyName} round stage`} value={round.roundStage || ''} onSave={(value) => saveRecordCell('rounds', round.__recordId, 'roundStage', value)}>{round.roundStage || 'Funding event'}</InlineEdit></td>
@@ -531,11 +562,13 @@ export function App() {
             {filtersActive && <button className="reset-button" onClick={() => { setFilters(defaultFilters); setPage(1) }}>Clear filters</button>}
           </div>
 
-          <div className="result-meta"><span>{companiesLoading ? 'Loading…' : `${formatNumber(companyResults?.pagination.total)} matching companies`}</span><span>Page {companyResults?.pagination.page ?? page} of {companyResults?.pagination.pages ?? 1}</span></div>
+          <div className="result-meta"><span>{companiesLoading ? 'Loading…' : `${formatNumber(visibleCompanies.length)} visible on this page`}</span><span>Page {companyResults?.pagination.page ?? page} of {companyResults?.pagination.pages ?? 1}</span></div>
+          <ArchiveToolbar archive={companyArchive} noun="companies" />
           <div className={`company-table-wrap ${companiesLoading ? 'is-loading' : ''}`}>
-            <ResizableDataTable className="company-table" columns={COMPANY_COLUMNS} storageKey="eign-dashboard.companies.column-widths.v1">
-              <tbody>{companyResults?.items.map((company) => (
+            <ResizableDataTable className="company-table" columns={COMPANY_COLUMNS} selection={{ allSelected: companyArchive.allVisibleSelected, onToggle: companyArchive.toggleAllVisible, someSelected: companyArchive.someVisibleSelected }} storageKey="eign-dashboard.companies.column-widths.v1">
+              <tbody>{visibleCompanies.map((company) => (
                 <tr key={company.slug} onClick={() => setSelectedSlug(company.slug)}>
+                  <td className="row-select-cell"><RowSelectionCell checked={companyArchive.selectedIds.has(company.__recordId)} label={`Select ${company.name}`} onToggle={() => companyArchive.toggleRow(company.__recordId)} /></td>
                   <td><InlineEdit ariaLabel={`${company.name} name`} value={company.name} onSave={(value) => saveRecordCell('companies', company.__recordId, 'name', value)}><div className="company-cell"><CompanyLogo name={company.name} src={company.logoUrl} /><span><strong>{company.name}</strong><small>{company.slug}</small></span></div></InlineEdit></td>
                   <td><InlineEdit ariaLabel={`${company.name} industry`} value={company.industry || ''} onSave={(value) => saveRecordCell('companies', company.__recordId, 'industry', value)}>{company.industry || 'Unclassified'}</InlineEdit></td>
                   <td><InlineEdit ariaLabel={`${company.name} business type`} value={company.businessType || ''} onSave={(value) => saveRecordCell('companies', company.__recordId, 'businessType', value)}>{company.businessType || '—'}</InlineEdit></td>
@@ -546,7 +579,7 @@ export function App() {
                 </tr>
               ))}</tbody>
             </ResizableDataTable>
-            {!companiesLoading && companyResults?.items.length === 0 && <div className="empty-results">No companies match the current filters.</div>}
+            {!companiesLoading && visibleCompanies.length === 0 && <div className="empty-results">{companyArchive.showArchived ? 'No archived companies on this page.' : 'No companies match the current filters.'}</div>}
           </div>
           <div className="pagination"><button disabled={page <= 1 || companiesLoading} onClick={() => setPage((current) => Math.max(1, current - 1))}>Previous</button><span>{page} / {companyResults?.pagination.pages ?? 1}</span><button disabled={page >= (companyResults?.pagination.pages ?? 1) || companiesLoading} onClick={() => setPage((current) => current + 1)}>Next</button></div>
         </section>

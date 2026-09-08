@@ -1,6 +1,21 @@
 import { useEffect } from 'react'
 import { WorkspaceNav } from './WorkspaceNav'
 
+const inProgressItems = [
+  { href: '/people-notion-table', label: 'People · Notion-style table' },
+  { href: '/influencers', label: 'Influencers' },
+  { href: '/influncers-2', label: 'RiseUp Data' },
+  { href: '/middle-east-organizations', label: 'Middle East Organizations' },
+  { href: '/middle-east-crunchbase', label: 'Middle East Crunchbase Companies' },
+  { href: '/yc-crunchbase', label: 'YC Crunchbase Pulls' },
+  { href: '/industry-taxonomy', label: 'YC Industry Groups' },
+  { href: '/middle-east-founders', label: 'Middle East Founders' },
+  { href: '/middle-east-vcs', label: 'VC’s' },
+  { href: '/middle-east-vc-people', label: 'VC People' },
+  { href: '/leap-data', label: 'Leap Data' },
+  { href: '/valid-links', label: 'Valid links' },
+] as const
+
 export function InProgress() {
   useEffect(() => {
     const previousTitle = document.title
@@ -19,35 +34,17 @@ export function InProgress() {
       <main className="in-progress-main">
         <header className="posts-heading">
           <div><h1>In progress</h1><p>Active research, analysis, and editorial work.</p></div>
-          <span>5 items</span>
+          <span>{inProgressItems.length} items</span>
         </header>
 
         <section className="in-progress-list" aria-label="In-progress items">
-          <a className="in-progress-item" href="/people">
-            <span className="in-progress-item__status" aria-hidden="true" />
-            <strong>Unified People</strong>
-            <span className="in-progress-item__action">Open <b aria-hidden="true">→</b></span>
-          </a>
-          <a className="in-progress-item" href="/influncers-2">
-            <span className="in-progress-item__status" aria-hidden="true" />
-            <strong>RiseUp Data</strong>
-            <span className="in-progress-item__action">Open <b aria-hidden="true">→</b></span>
-          </a>
-          <a className="in-progress-item" href="/middle-east-organizations">
-            <span className="in-progress-item__status" aria-hidden="true" />
-            <strong>Middle East Organizations</strong>
-            <span className="in-progress-item__action">Open <b aria-hidden="true">→</b></span>
-          </a>
-          <a className="in-progress-item" href="/leap-data">
-            <span className="in-progress-item__status" aria-hidden="true" />
-            <strong>Leap Data</strong>
-            <span className="in-progress-item__action">Open <b aria-hidden="true">→</b></span>
-          </a>
-          <a className="in-progress-item" href="/valid-links">
-            <span className="in-progress-item__status" aria-hidden="true" />
-            <strong>Valid links</strong>
-            <span className="in-progress-item__action">Open <b aria-hidden="true">→</b></span>
-          </a>
+          {inProgressItems.map((item) => (
+            <a className="in-progress-item" href={item.href} key={item.href}>
+              <span className="in-progress-item__status" aria-hidden="true" />
+              <strong>{item.label}</strong>
+              <span className="in-progress-item__action">Open <b aria-hidden="true">→</b></span>
+            </a>
+          ))}
         </section>
       </main>
     </div>

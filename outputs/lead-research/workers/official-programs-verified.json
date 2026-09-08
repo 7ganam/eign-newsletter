@@ -1,0 +1,859 @@
+{
+  "schema_version": "official-programs-verification.v1",
+  "lane": "official-programs",
+  "source_file": "outputs/lead-research/workers/official-programs.json",
+  "verified_at": "2026-09-03",
+  "method": {
+    "active_gates": [
+      "confirmed_identity",
+      "saudi_market_basis",
+      "buying_authority",
+      "plausible_custom_software_need"
+    ],
+    "score_formula": "product_intent + outsourcing_likelihood + budget_readiness + timing - penalties",
+    "score_ranges": {
+      "product_intent": [0, 6],
+      "outsourcing_likelihood": [0, 5],
+      "budget_readiness": [0, 5],
+      "timing": [0, 4],
+      "penalties": [0, 8]
+    },
+    "bands": {
+      "A": "15-20",
+      "B": "10-14",
+      "C": "5-9",
+      "D": "0-4 or hard-disqualified"
+    },
+    "evidence_rule": "Every promoted candidate has at least one primary or official source. A/B candidates have at least two independent sources, including a primary or official source.",
+    "interpretation_note": "A visible need for ongoing software does not prove willingness to hire an outside team. Outsourcing likelihood is scored separately, and unknown engineering capacity remains unknown."
+  },
+  "evidence_catalog": [
+    {
+      "id": "src-flat6-cycle5",
+      "url": "https://flat6labs.com/demoday/flat6labs-fifth-demo-day-in-riyadh/",
+      "source_title": "Flat6Labs Fifth Demo Day in Riyadh",
+      "publisher": "Flat6Labs",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "first_party_cohort",
+      "confidence": "high",
+      "paraphrase": "The official cohort directory identifies Cycle 5 companies, their CEOs, products, business models, target customers, and Saudi-market context."
+    },
+    {
+      "id": "src-flat6-cycle6",
+      "url": "https://flat6labs.com/flat6labs-hosts-sixth-demo-day-in-riyadh/",
+      "source_title": "Flat6Labs Hosts Sixth Demo Day of Riyadh Seed Program",
+      "publisher": "Flat6Labs",
+      "published_at": "2026-01-14",
+      "observed_at": "2026-09-03",
+      "source_quality": "first_party_cohort",
+      "confidence": "high",
+      "paraphrase": "The official release identifies Cycle 6 ventures and describes their current software or technology products."
+    },
+    {
+      "id": "src-kaust-taqadam9",
+      "url": "https://www.kaust.edu.sa/en/news/kaust-and-sab-celebrate-milestone-ninth-cohort-of-taqadam-accelerator-driving-global-innovation-into-the-kingdoms-ecosystem",
+      "source_title": "KAUST and SAB celebrate milestone ninth cohort of TAQADAM accelerator",
+      "publisher": "KAUST",
+      "published_at": "2026-05-03",
+      "observed_at": "2026-09-03",
+      "source_quality": "first_party_cohort",
+      "confidence": "high",
+      "paraphrase": "KAUST identifies the ninth-cohort finalists, their products, and the additional non-dilutive funding awarded to the top ten."
+    },
+    {
+      "id": "src-kaust-aya",
+      "url": "https://www.kaust.edu.sa/en/news/four-kaust-innovators-named-to-forbes-middle-east-30-under-30-2025",
+      "source_title": "Four KAUST innovators named to Forbes Middle East 30 Under 30 2025",
+      "publisher": "KAUST",
+      "published_at": "2025-12-29",
+      "observed_at": "2026-09-03",
+      "source_quality": "first_party_institution",
+      "confidence": "high",
+      "paraphrase": "KAUST identifies Aya's founders and reports Saudi/GCC customer volume and funding."
+    },
+    {
+      "id": "src-misk-launchpad",
+      "url": "https://hub.misk.org.sa/en/programs/entrepreneurship/misk-launchpad/",
+      "source_title": "Misk Launchpad",
+      "publisher": "Misk Foundation",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "first_party_program",
+      "confidence": "high",
+      "paraphrase": "Misk's official page identifies alumni founders and summarizes product, grant, partnership, revenue, and Saudi-market milestones."
+    },
+    {
+      "id": "src-juthor-site",
+      "url": "https://juthor.sa/",
+      "source_title": "Juthor",
+      "publisher": "Juthor",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "first_party_company",
+      "confidence": "high",
+      "paraphrase": "Juthor describes a live Saudi commerce platform spanning product information, orders, inventory, analytics, automation, and more than ten marketplace integrations."
+    },
+    {
+      "id": "src-juthor-linkedin",
+      "url": "https://www.linkedin.com/in/lolwah-binsaedan-16287a105",
+      "source_title": "Lolwah Binsaedan LinkedIn public profile",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_professional_profile",
+      "confidence": "high",
+      "paraphrase": "The profile confirms Binsaedan's current Juthor leadership and current Saudi product, partnership, and fundraising activity."
+    },
+    {
+      "id": "src-tgate-linkedin",
+      "url": "https://www.linkedin.com/company/t-gate-company",
+      "source_title": "T-Gate LinkedIn public company page",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_company_profile",
+      "confidence": "medium",
+      "paraphrase": "T-Gate reports a Saudi F&B integration platform, an 11-50 employee range, and current modules for orders, branches, inventory, reports, and POS/delivery connectivity."
+    },
+    {
+      "id": "src-reporty-site",
+      "url": "https://www.dev.reporty.sa/about-us",
+      "source_title": "About Reporty",
+      "publisher": "Reporty",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "first_party_company",
+      "confidence": "high",
+      "paraphrase": "Reporty's site names Abdulbadea Altukroni as CEO, identifies a CTO, and describes its AI-assisted dental reporting and documentation software."
+    },
+    {
+      "id": "src-green-desert-linkedin",
+      "url": "https://www.linkedin.com/company/green-desert-technology",
+      "source_title": "Green Desert Technologies LinkedIn public company page",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_company_profile",
+      "confidence": "medium",
+      "paraphrase": "The company reports Jeddah headquarters, a small team, and smart automated algae-production technology."
+    },
+    {
+      "id": "src-madak-site",
+      "url": "https://madak.app/en/",
+      "source_title": "Fractional Real Estate Ownership in Saudi Arabia",
+      "publisher": "Madak",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "first_party_company",
+      "confidence": "high",
+      "paraphrase": "Madak reports a regulated Saudi fractional-property app, 30,000-plus investors, more than SAR 8 million in issued deeds, and current wallet, reporting, exit, and AI-assistant functions."
+    },
+    {
+      "id": "src-madak-google-play",
+      "url": "https://play.google.com/store/apps/details?hl=en-US&id=com.tqwedy.mdak",
+      "source_title": "Madak: Fractional Ownership",
+      "publisher": "Google Play",
+      "published_at": "2026-07-22",
+      "observed_at": "2026-09-03",
+      "source_quality": "official_app_store_listing",
+      "confidence": "high",
+      "paraphrase": "The current app listing documents a July 2026 release with a redesigned experience, smart assistant, property resale, live reporting, and more than 10,000 downloads."
+    },
+    {
+      "id": "src-madak-linkedin",
+      "url": "https://www.linkedin.com/in/abdulaziz-alardi/",
+      "source_title": "Abdulaziz Ghazi Alardi LinkedIn public profile",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_professional_profile",
+      "confidence": "high",
+      "paraphrase": "The Riyadh profile confirms current Madak leadership and describes recent product building, regulatory work, partnerships, market launch, and service to thousands of customers."
+    },
+    {
+      "id": "src-supplai-founder",
+      "url": "https://www.linkedin.com/in/azminegro121",
+      "source_title": "Azmi Negro LinkedIn public profile",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_professional_profile",
+      "confidence": "medium",
+      "paraphrase": "The co-founder describes a live Saudi cold-chain network, fundraising, customers, shipments, growth, and a 15-person team."
+    },
+    {
+      "id": "src-thedar-leap",
+      "url": "https://onegiantleap.com/2026-speakers/mohy-aboualam",
+      "source_title": "Mohy Aboualam",
+      "publisher": "LEAP",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "official_event_profile",
+      "confidence": "high",
+      "paraphrase": "LEAP identifies Aboualam as TheDar.AI co-founder and CEO and says the company relocated its headquarters to Riyadh in 2025."
+    },
+    {
+      "id": "src-thedar-linkedin",
+      "url": "https://www.linkedin.com/company/thedar-ai",
+      "source_title": "TheDar.AI LinkedIn public company page",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_company_profile",
+      "confidence": "medium",
+      "paraphrase": "The company reports Riyadh headquarters, visible staff, an Arabic-first media intelligence product, enterprise use, and active LEAP 2026 product activity."
+    },
+    {
+      "id": "src-rvin-founder",
+      "url": "https://www.linkedin.com/in/ghadah-aldjain",
+      "source_title": "Ghadah AlDjain LinkedIn public profile",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_professional_profile",
+      "confidence": "high",
+      "paraphrase": "The public profile confirms AlDjain's current RVIN association in Riyadh."
+    },
+    {
+      "id": "src-coretechx-founder",
+      "url": "https://www.linkedin.com/in/fahad-durukan",
+      "source_title": "Fahad Durukan LinkedIn public profile",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_professional_profile",
+      "confidence": "high",
+      "paraphrase": "The Riyadh profile shows Durukan's current CoreTechX leadership and 2026 product-shipping activity around Arabic document intelligence."
+    },
+    {
+      "id": "src-bookahospi-lanzadera",
+      "url": "https://lanzadera.es/proyecto/bookahospi/",
+      "source_title": "Bookahospi",
+      "publisher": "Lanzadera",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "first_party_accelerator_profile",
+      "confidence": "high",
+      "paraphrase": "Lanzadera names Sebastian Jimenez as CEO and reports Saudi presence, more than 60 international hires, and software for healthcare recruitment and credentialing."
+    },
+    {
+      "id": "src-medirect-linkedin",
+      "url": "https://www.linkedin.com/company/medirect-sa",
+      "source_title": "MEDirect Private Virtual Clinics LinkedIn public company page",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_company_profile",
+      "confidence": "medium",
+      "paraphrase": "MEDirect reports Riyadh headquarters, a 2-10 employee range, a live SaaS platform, and current integrations with laboratories, radiology networks, pharmacies, payments, and prescriptions."
+    },
+    {
+      "id": "src-medirect-founder",
+      "url": "https://www.linkedin.com/in/alwaleed-altorabi",
+      "source_title": "Alwaleed Altorabi LinkedIn public profile",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_professional_profile",
+      "confidence": "high",
+      "paraphrase": "The Riyadh founder identifies his current MEDirect leadership and describes nationwide Saudi diagnostic integrations and a live virtual-clinic product."
+    },
+    {
+      "id": "src-aya-linkedin",
+      "url": "https://www.linkedin.com/company/ayaapp",
+      "source_title": "Aya LinkedIn public company page",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_company_profile",
+      "confidence": "medium",
+      "paraphrase": "Aya identifies Munira Alkadi as co-founder and CEO, reports a 60-plus person team and Saudi/GCC growth, and advertises current software, computer-science, and product roles."
+    },
+    {
+      "id": "src-aya-founder",
+      "url": "https://www.linkedin.com/in/muniraalkadi",
+      "source_title": "Munira Alkadi LinkedIn public profile",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_professional_profile",
+      "confidence": "high",
+      "paraphrase": "Alkadi reports current CEO leadership, 9x year-over-year growth, more than 100,000 customers, a 60-plus team, and a SAR 26 million Series A."
+    },
+    {
+      "id": "src-revora-site",
+      "url": "https://userevora.com/about/",
+      "source_title": "About Revora",
+      "publisher": "Revora",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "first_party_company",
+      "confidence": "high",
+      "paraphrase": "Revora says it was formerly MyAlice and positions its Arabic-first conversational-commerce platform for Saudi and Gulf brands."
+    },
+    {
+      "id": "src-revora-founder",
+      "url": "https://www.linkedin.com/in/shuvo-rahman",
+      "source_title": "Shuvo Rahman LinkedIn public profile",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_professional_profile",
+      "confidence": "high",
+      "paraphrase": "Rahman identifies himself as founder and CEO, says Saudi Arabia is Revora's main market, reports a $2 million 2026 round and 10x growth, and describes active product, engineering-lead, and QA hiring."
+    },
+    {
+      "id": "src-qubit-linkedin",
+      "url": "https://www.linkedin.com/company/qubitksa",
+      "source_title": "Qubit LinkedIn public company page",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_company_profile",
+      "confidence": "medium",
+      "paraphrase": "Qubit reports Riyadh headquarters, a 2-10 employee range, 140-plus integrations, custom enterprise deployments, active LEAP 2026 activity, and current product work."
+    },
+    {
+      "id": "src-qubit-founder",
+      "url": "https://www.linkedin.com/in/abdullah-rashad1",
+      "source_title": "Abdullah Rashad LinkedIn public profile",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_professional_profile",
+      "confidence": "high",
+      "paraphrase": "The Riyadh profile confirms Rashad's current Qubit association and current product-leadership activity."
+    },
+    {
+      "id": "src-swarm-linkedin",
+      "url": "https://www.linkedin.com/company/swarm-robotics-io",
+      "source_title": "Swarm Robotics LinkedIn public company page",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_company_profile",
+      "confidence": "medium",
+      "paraphrase": "Swarm reports Riyadh headquarters, a small robotics team, and current robotics software and turnkey industrial automation offerings."
+    },
+    {
+      "id": "src-nitx-founder",
+      "url": "https://www.linkedin.com/in/mohammed-al-saad-4511bb169",
+      "source_title": "Mohammed Al-Saad LinkedIn public profile",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_professional_profile",
+      "confidence": "high",
+      "paraphrase": "The Riyadh profile identifies Al-Saad as Nitx co-founder and CEO and shows current 2026 Saudi advertising-technology activity."
+    },
+    {
+      "id": "src-athleads-linkedin",
+      "url": "https://www.linkedin.com/company/athleadsapp",
+      "source_title": "Athleads.app LinkedIn public company page",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_company_profile",
+      "confidence": "medium",
+      "paraphrase": "Athleads reports Riyadh headquarters, a 2-10 employee range, recent investment progress, a fresh Saudi Ministry of Sport meeting, and continued work on scouting and performance analytics."
+    },
+    {
+      "id": "src-athleads-founder",
+      "url": "https://www.linkedin.com/in/marwanalshayeb",
+      "source_title": "Marwan AlShayeb LinkedIn public profile",
+      "publisher": "LinkedIn",
+      "published_at": null,
+      "observed_at": "2026-09-03",
+      "source_quality": "self_reported_professional_profile",
+      "confidence": "high",
+      "paraphrase": "The profile identifies AlShayeb as the Riyadh-based, venture-backed co-founder and CEO of Athleads.app."
+    }
+  ],
+  "promoted": [
+    {
+      "candidate_id": "candidate-madak-abdulaziz-al-ardi",
+      "person": {"name": "Abdulaziz Ghazi Alardi", "decision_role": "Co-founder and Managing Director", "linkedin_url": "https://www.linkedin.com/in/abdulaziz-alardi/"},
+      "company": {"name": "Madak", "canonical_domain": "madak.app", "url": "https://madak.app"},
+      "active_gates": {
+        "confirmed_identity": {"status": "pass", "evidence_refs": ["src-flat6-cycle5", "src-madak-linkedin"], "reason": "The cohort names Abdulaziz Al Ardi as CEO, while his current profile and the 2026 LEAP program tie the same person to Madak leadership."},
+        "saudi_market_basis": {"status": "pass", "evidence_refs": ["src-flat6-cycle5", "src-madak-site"], "reason": "The product is a regulated Saudi real-estate application serving Saudi investors and properties."},
+        "buying_authority": {"status": "pass", "evidence_refs": ["src-flat6-cycle5", "src-madak-linkedin"], "reason": "Co-founder, CEO/managing-director evidence establishes product and budget authority."},
+        "plausible_custom_software_need": {"status": "pass", "evidence_refs": ["src-madak-site", "src-madak-google-play"], "reason": "The regulated mobile product added a new design, AI assistant, resale, wallet, reporting, and registry/payment integrations in 2026; continued custom app and integration work is plausible."}
+      },
+      "technical_capacity": {"state": "unknown", "detail": "No reliable source in this pass establishes the engineering team's composition or whether development is internal or external."},
+      "score": {
+        "product_intent": {"value": 6, "evidence_refs": ["src-madak-site", "src-madak-google-play"], "reason": "A live app received a broad product update in July 2026."},
+        "outsourcing_likelihood": {"value": 3, "evidence_refs": ["src-madak-site", "src-madak-google-play"], "reason": "The roadmap is integration-heavy, but technical capacity is unknown; this is moderate likelihood, not proof."},
+        "budget_readiness": {"value": 5, "evidence_refs": ["src-madak-site"], "reason": "Regulatory authorization, 30,000-plus investors, and more than SAR 8 million in issued deeds indicate strong operating readiness."},
+        "timing": {"value": 4, "evidence_refs": ["src-madak-google-play"], "reason": "A major release shipped on 2026-07-22 and the product remains in active expansion."},
+        "penalties": {"value": 0, "evidence_refs": [], "reason": "No evidence-backed penalty beyond the separately conservative outsourcing score."},
+        "total": 18,
+        "band": "A"
+      },
+      "evidence_refs": ["src-flat6-cycle5", "src-madak-site", "src-madak-google-play", "src-madak-linkedin"]
+    },
+    {
+      "candidate_id": "candidate-medirect-alwaleed-altorabi",
+      "person": {"name": "Alwaleed Altorabi", "decision_role": "Founder and CEO", "linkedin_url": "https://www.linkedin.com/in/alwaleed-altorabi"},
+      "company": {"name": "MEDirect", "canonical_domain": "medirect.link", "url": "https://medirect.link"},
+      "active_gates": {
+        "confirmed_identity": {"status": "pass", "evidence_refs": ["src-medirect-founder", "src-flat6-cycle6"], "reason": "The founder's current profile and the official cohort consistently identify MEDirect and its current product."},
+        "saudi_market_basis": {"status": "pass", "evidence_refs": ["src-medirect-linkedin", "src-flat6-cycle6"], "reason": "MEDirect is Riyadh-based and reports nationwide Saudi healthcare integrations."},
+        "buying_authority": {"status": "pass", "evidence_refs": ["src-medirect-founder"], "reason": "Founder and CEO is direct buying authority."},
+        "plausible_custom_software_need": {"status": "pass", "evidence_refs": ["src-medirect-linkedin", "src-flat6-cycle6"], "reason": "Virtual-clinic SaaS spans payments, labs, radiology, pharmacy, prescriptions, and records, making continued custom integration work plausible."}
+      },
+      "technical_capacity": {"state": "unknown", "detail": "A 2-10 employee company is visible, but the engineering mix and internal-versus-external delivery model are not established."},
+      "score": {
+        "product_intent": {"value": 6, "evidence_refs": ["src-medirect-linkedin", "src-flat6-cycle6"], "reason": "The live platform is actively extending a complex healthcare workflow."},
+        "outsourcing_likelihood": {"value": 3, "evidence_refs": ["src-medirect-linkedin"], "reason": "Small team plus many integrations supports moderate likelihood; capacity remains unknown."},
+        "budget_readiness": {"value": 3, "evidence_refs": ["src-medirect-linkedin", "src-flat6-cycle6"], "reason": "Accelerator backing and active partner integrations indicate some budget readiness without a disclosed round."},
+        "timing": {"value": 4, "evidence_refs": ["src-medirect-linkedin", "src-flat6-cycle6"], "reason": "The product and nationwide partner integrations were active during the 2025-26 window."},
+        "penalties": {"value": 0, "evidence_refs": [], "reason": "No evidence-backed penalty; uncertainty is reflected in outsourcing and budget scores."},
+        "total": 16,
+        "band": "A"
+      },
+      "evidence_refs": ["src-flat6-cycle6", "src-medirect-linkedin", "src-medirect-founder"]
+    },
+    {
+      "candidate_id": "candidate-athleads-marwan-alshayeb",
+      "person": {"name": "Marwan AlShayeb", "decision_role": "Co-founder and CEO", "linkedin_url": "https://www.linkedin.com/in/marwanalshayeb"},
+      "company": {"name": "Athleads.app", "canonical_domain": "athleads.app", "url": "https://athleads.app"},
+      "active_gates": {
+        "confirmed_identity": {"status": "pass", "evidence_refs": ["src-misk-launchpad", "src-athleads-founder"], "reason": "Misk and the founder's current profile consistently identify AlShayeb and Athleads.app."},
+        "saudi_market_basis": {"status": "pass", "evidence_refs": ["src-misk-launchpad", "src-athleads-linkedin"], "reason": "The company is Riyadh-based and is building for Saudi clubs, academies, federations, and national sports organizations."},
+        "buying_authority": {"status": "pass", "evidence_refs": ["src-athleads-founder", "src-athleads-linkedin"], "reason": "Co-founder and CEO is direct buying authority."},
+        "plausible_custom_software_need": {"status": "pass", "evidence_refs": ["src-athleads-linkedin", "src-misk-launchpad"], "reason": "The company is actively building AI scouting, talent-discovery, and performance-analytics workflows for institutional users."}
+      },
+      "technical_capacity": {"state": "unknown", "detail": "The company reports 2-10 employees, but no reliable evidence isolates engineering capacity."},
+      "score": {
+        "product_intent": {"value": 6, "evidence_refs": ["src-athleads-linkedin", "src-misk-launchpad"], "reason": "Fresh Ministry and investor activity is tied directly to continued product building."},
+        "outsourcing_likelihood": {"value": 3, "evidence_refs": ["src-athleads-linkedin"], "reason": "A small team and institution-specific analytics workflows create moderate external-build plausibility; capacity is unknown."},
+        "budget_readiness": {"value": 4, "evidence_refs": ["src-athleads-linkedin", "src-athleads-founder"], "reason": "The company is venture-backed and Misk reports a new investment milestone."},
+        "timing": {"value": 4, "evidence_refs": ["src-athleads-linkedin"], "reason": "A current Ministry of Sport meeting and 2026 investment/pitch activity indicate immediate expansion."},
+        "penalties": {"value": 0, "evidence_refs": [], "reason": "No evidence-backed penalty; technical uncertainty is kept explicit."},
+        "total": 17,
+        "band": "A"
+      },
+      "evidence_refs": ["src-misk-launchpad", "src-athleads-linkedin", "src-athleads-founder"]
+    },
+    {
+      "candidate_id": "candidate-juthor-lolwah-binsaedan",
+      "person": {"name": "Lolwah Binsaedan", "decision_role": "Founder and CEO", "linkedin_url": "https://www.linkedin.com/in/lolwah-binsaedan-16287a105"},
+      "company": {"name": "Juthor", "canonical_domain": "juthor.sa", "url": "https://juthor.sa"},
+      "active_gates": {
+        "confirmed_identity": {"status": "pass", "evidence_refs": ["src-flat6-cycle5", "src-juthor-linkedin"], "reason": "The official cohort and current founder profile agree on identity and leadership."},
+        "saudi_market_basis": {"status": "pass", "evidence_refs": ["src-juthor-site", "src-juthor-linkedin"], "reason": "Juthor is headquartered and primarily operates in Saudi Arabia."},
+        "buying_authority": {"status": "pass", "evidence_refs": ["src-flat6-cycle5", "src-juthor-linkedin"], "reason": "Founder and CEO is direct buying authority."},
+        "plausible_custom_software_need": {"status": "pass", "evidence_refs": ["src-juthor-site"], "reason": "The platform must maintain marketplace, order, inventory, logistics, analytics, and workflow integrations; ongoing custom software work is plausible."}
+      },
+      "technical_capacity": {"state": "visible_internal_capacity", "detail": "Public company activity includes technical staff and backend hiring, so an internal delivery capability must be assumed present."},
+      "score": {
+        "product_intent": {"value": 6, "evidence_refs": ["src-juthor-site", "src-juthor-linkedin"], "reason": "A new, funded platform is actively expanding integrations and partnerships."},
+        "outsourcing_likelihood": {"value": 1, "evidence_refs": ["src-juthor-site", "src-juthor-linkedin"], "reason": "Visible internal backend capacity makes broad outsourcing unlikely, though overflow or connector work remains possible."},
+        "budget_readiness": {"value": 4, "evidence_refs": ["src-juthor-linkedin", "src-flat6-cycle5"], "reason": "A pre-seed round and live commercial partnerships indicate usable budget."},
+        "timing": {"value": 4, "evidence_refs": ["src-juthor-linkedin"], "reason": "Fundraising and partner-led expansion continued in 2026."},
+        "penalties": {"value": 2, "evidence_refs": ["src-juthor-linkedin"], "reason": "Internal backend capacity and an already-live platform reduce service-provider fit."},
+        "total": 13,
+        "band": "B"
+      },
+      "evidence_refs": ["src-flat6-cycle5", "src-juthor-site", "src-juthor-linkedin"]
+    },
+    {
+      "candidate_id": "candidate-reporty-abdulbadea-altakroni",
+      "person": {"name": "Abdulbadea Altukroni", "decision_role": "Co-founder and CEO", "linkedin_url": "https://www.linkedin.com/in/abdulbadea-altakroni-42922a190"},
+      "company": {"name": "Reporty", "canonical_domain": "reporty.sa", "url": "https://www.reporty.sa"},
+      "active_gates": {
+        "confirmed_identity": {"status": "pass", "evidence_refs": ["src-flat6-cycle5", "src-reporty-site"], "reason": "Both sources name Altukroni as Reporty's CEO."},
+        "saudi_market_basis": {"status": "pass", "evidence_refs": ["src-flat6-cycle5", "src-reporty-site"], "reason": "The Saudi cohort and Saudi-hosted clinic product establish Kingdom-market activity."},
+        "buying_authority": {"status": "pass", "evidence_refs": ["src-flat6-cycle5", "src-reporty-site"], "reason": "Co-founder and CEO is direct buying authority."},
+        "plausible_custom_software_need": {"status": "pass", "evidence_refs": ["src-reporty-site", "src-flat6-cycle5"], "reason": "The live medical AI product spans clinical documentation, patient communication, booking, follow-up, campaigns, and imaging workflows."}
+      },
+      "technical_capacity": {"state": "visible_internal_capacity", "detail": "Reporty's own team page identifies a CTO; the size and delivery capacity of that technical function remain unknown."},
+      "score": {
+        "product_intent": {"value": 6, "evidence_refs": ["src-reporty-site", "src-flat6-cycle5"], "reason": "The company is actively operating and broadening a multi-workflow health product."},
+        "outsourcing_likelihood": {"value": 1, "evidence_refs": ["src-reporty-site"], "reason": "A named CTO indicates internal technical ownership, limiting likely external scope."},
+        "budget_readiness": {"value": 3, "evidence_refs": ["src-flat6-cycle5", "src-reporty-site"], "reason": "An accelerator-backed live subscription product supports moderate readiness without disclosed recent funding."},
+        "timing": {"value": 4, "evidence_refs": ["src-reporty-site", "src-flat6-cycle5"], "reason": "The platform is live and its broader medical-AI product is current in 2026."},
+        "penalties": {"value": 1, "evidence_refs": ["src-reporty-site"], "reason": "A visible CTO reduces the fit for outsourced core development."},
+        "total": 13,
+        "band": "B"
+      },
+      "evidence_refs": ["src-flat6-cycle5", "src-reporty-site"]
+    },
+    {
+      "candidate_id": "candidate-thedar-mohy-aboualam",
+      "person": {"name": "Mohy Aboualam", "decision_role": "Co-founder and CEO", "linkedin_url": "https://www.linkedin.com/in/maboualam"},
+      "company": {"name": "TheDar.AI", "canonical_domain": "thedar.ai", "url": "https://thedar.ai"},
+      "active_gates": {
+        "confirmed_identity": {"status": "pass", "evidence_refs": ["src-flat6-cycle5", "src-thedar-leap"], "reason": "Flat6Labs and LEAP consistently identify Aboualam as the company's CEO/co-founder."},
+        "saudi_market_basis": {"status": "pass", "evidence_refs": ["src-thedar-leap", "src-thedar-linkedin"], "reason": "The company relocated its headquarters to Riyadh and serves Saudi/GCC enterprises."},
+        "buying_authority": {"status": "pass", "evidence_refs": ["src-thedar-leap"], "reason": "Co-founder and CEO is direct buying authority."},
+        "plausible_custom_software_need": {"status": "pass", "evidence_refs": ["src-flat6-cycle5", "src-thedar-linkedin"], "reason": "The web/mobile intelligence product continuously connects media sources, dialect models, analytics, alerts, and enterprise workflows."}
+      },
+      "technical_capacity": {"state": "visible_internal_capacity", "detail": "Visible employees and the founder's engineering background support internal capacity, although exact engineering headcount is unknown."},
+      "score": {
+        "product_intent": {"value": 6, "evidence_refs": ["src-thedar-linkedin", "src-thedar-leap"], "reason": "Current enterprise product use and LEAP 2026 activity show active commercial shipping."},
+        "outsourcing_likelihood": {"value": 1, "evidence_refs": ["src-thedar-linkedin", "src-thedar-leap"], "reason": "Core AI capability and visible internal staff make outside core development unlikely."},
+        "budget_readiness": {"value": 4, "evidence_refs": ["src-flat6-cycle5", "src-thedar-linkedin"], "reason": "Funded accelerator participation and active enterprise customers support readiness."},
+        "timing": {"value": 4, "evidence_refs": ["src-thedar-linkedin", "src-thedar-leap"], "reason": "The company is actively selling and demonstrating the product at LEAP 2026."},
+        "penalties": {"value": 1, "evidence_refs": ["src-thedar-linkedin"], "reason": "Internal product and AI capacity reduce outsourced-build fit."},
+        "total": 14,
+        "band": "B"
+      },
+      "evidence_refs": ["src-flat6-cycle5", "src-thedar-leap", "src-thedar-linkedin"]
+    },
+    {
+      "candidate_id": "candidate-nitx-mohammed-al-saad",
+      "person": {"name": "Mohammed Al-Saad", "decision_role": "Co-founder and CEO", "linkedin_url": "https://www.linkedin.com/in/mohammed-al-saad-4511bb169"},
+      "company": {"name": "Nitx", "canonical_domain": null, "url": null},
+      "active_gates": {
+        "confirmed_identity": {"status": "pass", "evidence_refs": ["src-misk-launchpad", "src-nitx-founder"], "reason": "Misk and the current profile consistently identify Al-Saad and Nitx."},
+        "saudi_market_basis": {"status": "pass", "evidence_refs": ["src-misk-launchpad", "src-nitx-founder"], "reason": "Nitx is a Riyadh Saudi advertising-technology venture serving local multi-branch and hospitality use cases."},
+        "buying_authority": {"status": "pass", "evidence_refs": ["src-nitx-founder"], "reason": "Co-founder and CEO is direct buying authority."},
+        "plausible_custom_software_need": {"status": "pass", "evidence_refs": ["src-misk-launchpad", "src-nitx-founder"], "reason": "The platform manages distributed screens and multi-channel advertising, making device, reporting, campaign, and inventory integrations plausible."}
+      },
+      "technical_capacity": {"state": "visible_team_engineering_unknown", "detail": "Multiple employees and a live platform are visible; the engineering mix remains unknown."},
+      "score": {
+        "product_intent": {"value": 5, "evidence_refs": ["src-misk-launchpad", "src-nitx-founder"], "reason": "The platform is established but current 2026 market and product-expansion activity is clear."},
+        "outsourcing_likelihood": {"value": 2, "evidence_refs": ["src-nitx-founder"], "reason": "Visible staff reduce likelihood, but engineering capacity is unknown and the integration surface is broad."},
+        "budget_readiness": {"value": 3, "evidence_refs": ["src-misk-launchpad", "src-nitx-founder"], "reason": "Commercial use and ecosystem activity indicate moderate readiness without verified funding."},
+        "timing": {"value": 4, "evidence_refs": ["src-nitx-founder"], "reason": "The CEO shows active Saudi and international advertising-sector activity in 2026."},
+        "penalties": {"value": 0, "evidence_refs": [], "reason": "Engineering uncertainty is reflected conservatively in outsourcing likelihood."},
+        "total": 14,
+        "band": "B"
+      },
+      "evidence_refs": ["src-misk-launchpad", "src-nitx-founder"]
+    },
+    {
+      "candidate_id": "candidate-qubit-abdullah-rashad",
+      "person": {"name": "Abdullah Rashad", "decision_role": "Founder", "linkedin_url": "https://www.linkedin.com/in/abdullah-rashad1"},
+      "company": {"name": "Qubit", "canonical_domain": "qubit.sa", "url": "https://qubit.sa"},
+      "active_gates": {
+        "confirmed_identity": {"status": "pass", "evidence_refs": ["src-qubit-founder", "src-qubit-linkedin"], "reason": "The founder and company profiles consistently tie Rashad to the Riyadh company."},
+        "saudi_market_basis": {"status": "pass", "evidence_refs": ["src-qubit-linkedin", "src-kaust-taqadam9"], "reason": "Qubit is Riyadh-headquartered and builds Saudi-hosted or on-premise enterprise AI products."},
+        "buying_authority": {"status": "pass", "evidence_refs": ["src-qubit-founder"], "reason": "Founder status establishes strategic product authority."},
+        "plausible_custom_software_need": {"status": "pass", "evidence_refs": ["src-qubit-linkedin", "src-kaust-taqadam9"], "reason": "Qubit explicitly adapts deployments to each organization's systems and policies and connects more than 140 data sources."}
+      },
+      "technical_capacity": {"state": "visible_internal_capacity", "detail": "The small company has multiple visible product/data builders and its core offering is proprietary enterprise AI."},
+      "score": {
+        "product_intent": {"value": 6, "evidence_refs": ["src-qubit-linkedin", "src-kaust-taqadam9"], "reason": "Qubit is shipping current features, integrations, and enterprise deployments."},
+        "outsourcing_likelihood": {"value": 1, "evidence_refs": ["src-qubit-linkedin"], "reason": "Core internal AI/data capability makes broad outsourcing unlikely; specialist overflow remains possible."},
+        "budget_readiness": {"value": 4, "evidence_refs": ["src-kaust-taqadam9", "src-qubit-linkedin"], "reason": "The TAQADAM award and enterprise/government deployment posture indicate readiness."},
+        "timing": {"value": 4, "evidence_refs": ["src-qubit-linkedin"], "reason": "Current feature releases and LEAP 2026 activity show immediate momentum."},
+        "penalties": {"value": 1, "evidence_refs": ["src-qubit-linkedin"], "reason": "Visible internal product/data capacity reduces external-development fit."},
+        "total": 14,
+        "band": "B"
+      },
+      "evidence_refs": ["src-kaust-taqadam9", "src-qubit-linkedin", "src-qubit-founder"]
+    },
+    {
+      "candidate_id": "candidate-bookahospi-sebastian-jimenez",
+      "person": {"name": "Sebastian Jimenez", "decision_role": "Co-founder and CEO", "linkedin_url": null},
+      "company": {"name": "Bookahospi", "canonical_domain": "bookahospi.com", "url": "https://www.bookahospi.com"},
+      "active_gates": {
+        "confirmed_identity": {"status": "pass", "evidence_refs": ["src-bookahospi-lanzadera", "src-flat6-cycle6"], "reason": "Lanzadera names Jimenez as CEO and the official Riyadh cohort confirms the same company and product."},
+        "saudi_market_basis": {"status": "pass", "evidence_refs": ["src-bookahospi-lanzadera", "src-flat6-cycle6"], "reason": "The company reports Saudi presence, Saudi contracts, and more than 60 international healthcare hires."},
+        "buying_authority": {"status": "pass", "evidence_refs": ["src-bookahospi-lanzadera"], "reason": "Co-founder and CEO is direct buying authority."},
+        "plausible_custom_software_need": {"status": "pass", "evidence_refs": ["src-bookahospi-lanzadera", "src-flat6-cycle6"], "reason": "Cross-border recruitment requires country-specific credentialing, visas, matching, shifts, billing, and predictive availability modules."}
+      },
+      "technical_capacity": {"state": "visible_team_engineering_unknown", "detail": "An 11-50 employee team is visible, but engineering capacity is not isolated."},
+      "score": {
+        "product_intent": {"value": 5, "evidence_refs": ["src-bookahospi-lanzadera", "src-flat6-cycle6"], "reason": "The marketplace is live and expanding modules and geographies."},
+        "outsourcing_likelihood": {"value": 2, "evidence_refs": ["src-bookahospi-lanzadera"], "reason": "Country-specific integrations create plausible external scope, but the existing team reduces likelihood."},
+        "budget_readiness": {"value": 4, "evidence_refs": ["src-bookahospi-lanzadera"], "reason": "Active contracts, Saudi operations, and planned seed activity support readiness."},
+        "timing": {"value": 4, "evidence_refs": ["src-flat6-cycle6", "src-bookahospi-lanzadera"], "reason": "The company joined Cycle 6 and planned international seed and product expansion in 2026."},
+        "penalties": {"value": 1, "evidence_refs": ["src-bookahospi-lanzadera"], "reason": "An established cross-market team lowers greenfield outsourcing fit."},
+        "total": 14,
+        "band": "B"
+      },
+      "evidence_refs": ["src-flat6-cycle6", "src-bookahospi-lanzadera"]
+    },
+    {
+      "candidate_id": "candidate-supplai-azmi-negro",
+      "person": {"name": "Azmi Negro", "decision_role": "Co-founder and CEO", "linkedin_url": "https://www.linkedin.com/in/azminegro121"},
+      "company": {"name": "Supplai", "canonical_domain": null, "url": "https://flat6labs.com/Company/supplai/"},
+      "active_gates": {
+        "confirmed_identity": {"status": "pass", "evidence_refs": ["src-flat6-cycle5", "src-supplai-founder"], "reason": "The official cohort and founder profile agree on identity, company, and role."},
+        "saudi_market_basis": {"status": "pass", "evidence_refs": ["src-flat6-cycle5", "src-supplai-founder"], "reason": "Supplai operates a Saudi nationwide cold-chain network."},
+        "buying_authority": {"status": "pass", "evidence_refs": ["src-flat6-cycle5", "src-supplai-founder"], "reason": "Co-founder and CEO is direct buying authority."},
+        "plausible_custom_software_need": {"status": "pass", "evidence_refs": ["src-flat6-cycle5", "src-supplai-founder"], "reason": "The logistics platform requires shipment, tracking, documentation, customer, carrier, and performance integrations as it scales."}
+      },
+      "technical_capacity": {"state": "visible_team_engineering_unknown", "detail": "The founder reports a 15-person team; the engineering share is not established."},
+      "score": {
+        "product_intent": {"value": 5, "evidence_refs": ["src-flat6-cycle5", "src-supplai-founder"], "reason": "A live logistics platform is scaling customers and shipment volume."},
+        "outsourcing_likelihood": {"value": 1, "evidence_refs": ["src-supplai-founder"], "reason": "A 15-person operational team and mature platform lower outside-build likelihood."},
+        "budget_readiness": {"value": 5, "evidence_refs": ["src-supplai-founder"], "reason": "The founder reports about $1.5 million raised, paying customers, and material operations."},
+        "timing": {"value": 3, "evidence_refs": ["src-supplai-founder"], "reason": "Growth continues in 2026, although no specific new build milestone was identified."},
+        "penalties": {"value": 1, "evidence_refs": ["src-supplai-founder"], "reason": "Existing scale and team reduce fit for an external greenfield build."},
+        "total": 13,
+        "band": "B"
+      },
+      "evidence_refs": ["src-flat6-cycle5", "src-supplai-founder"]
+    },
+    {
+      "candidate_id": "candidate-coretechx-fahad-durukan",
+      "person": {"name": "Fahad Durukan", "decision_role": "Co-founder and CEO", "linkedin_url": "https://www.linkedin.com/in/fahad-durukan"},
+      "company": {"name": "CoreTechX", "canonical_domain": "coretechx.ai", "url": "https://coretechx.ai"},
+      "active_gates": {
+        "confirmed_identity": {"status": "pass", "evidence_refs": ["src-coretechx-founder", "src-flat6-cycle6"], "reason": "The current profile and official cohort tie Durukan to the same Riyadh product company."},
+        "saudi_market_basis": {"status": "pass", "evidence_refs": ["src-coretechx-founder", "src-flat6-cycle6"], "reason": "CoreTechX operates in Riyadh and targets Arabic government and enterprise archives."},
+        "buying_authority": {"status": "pass", "evidence_refs": ["src-coretechx-founder"], "reason": "Co-founder and CEO is direct buying authority."},
+        "plausible_custom_software_need": {"status": "pass", "evidence_refs": ["src-coretechx-founder", "src-flat6-cycle6"], "reason": "The product combines OCR, searchable databases, private deployments, and GPT-style interfaces, requiring ongoing custom enterprise software."}
+      },
+      "technical_capacity": {"state": "likely_internal_capacity", "detail": "The core product is proprietary AI infrastructure and current product shipping is visible; exact engineering headcount remains unverified."},
+      "score": {
+        "product_intent": {"value": 5, "evidence_refs": ["src-coretechx-founder", "src-flat6-cycle6"], "reason": "The company is actively shipping an Arabic document-intelligence product."},
+        "outsourcing_likelihood": {"value": 1, "evidence_refs": ["src-coretechx-founder"], "reason": "Core AI development is likely internal, leaving only specialist or implementation overflow as plausible external scope."},
+        "budget_readiness": {"value": 3, "evidence_refs": ["src-flat6-cycle6", "src-coretechx-founder"], "reason": "Accelerator participation and enterprise product activity support moderate readiness without verified funding."},
+        "timing": {"value": 4, "evidence_refs": ["src-coretechx-founder"], "reason": "Current 2026 product releases and recognition indicate active execution."},
+        "penalties": {"value": 1, "evidence_refs": ["src-coretechx-founder"], "reason": "Likely internal core engineering lowers external-development fit."},
+        "total": 12,
+        "band": "B"
+      },
+      "evidence_refs": ["src-flat6-cycle6", "src-coretechx-founder"]
+    },
+    {
+      "candidate_id": "candidate-rvin-ghadah-aldjain",
+      "person": {"name": "Ghadah AlDjain", "decision_role": "CEO", "linkedin_url": "https://www.linkedin.com/in/ghadah-aldjain"},
+      "company": {"name": "RVIN", "canonical_domain": null, "url": "https://flat6labs.com/Company/rvin/"},
+      "active_gates": {
+        "confirmed_identity": {"status": "pass", "evidence_refs": ["src-flat6-cycle5", "src-rvin-founder"], "reason": "The official cohort names AlDjain as CEO and her current profile confirms RVIN in Riyadh."},
+        "saudi_market_basis": {"status": "pass", "evidence_refs": ["src-flat6-cycle5", "src-rvin-founder"], "reason": "Flat6Labs describes RVIN as a Saudi AI company and the CEO is Riyadh-based."},
+        "buying_authority": {"status": "pass", "evidence_refs": ["src-flat6-cycle5"], "reason": "CEO is direct buying authority."},
+        "plausible_custom_software_need": {"status": "pass", "evidence_refs": ["src-flat6-cycle5"], "reason": "Customer-facing AI agents for support, sales, and marketing require workflow, channel, and business-system integrations."}
+      },
+      "technical_capacity": {"state": "visible_internal_capacity", "detail": "A public employee profile attributes RVIN backend architecture and early workflows to an internal team member."},
+      "score": {
+        "product_intent": {"value": 5, "evidence_refs": ["src-flat6-cycle5"], "reason": "The startup had a demo-ready, priced AI-agent platform in the recent cohort."},
+        "outsourcing_likelihood": {"value": 1, "evidence_refs": ["src-rvin-founder"], "reason": "Visible backend capacity lowers the likelihood of outsourcing core product work."},
+        "budget_readiness": {"value": 3, "evidence_refs": ["src-flat6-cycle5"], "reason": "Accelerator participation and a defined subscription model indicate moderate readiness."},
+        "timing": {"value": 3, "evidence_refs": ["src-flat6-cycle5"], "reason": "The September 2025 demo-day signal is relevant but not as fresh as the strongest 2026 cases."},
+        "penalties": {"value": 1, "evidence_refs": ["src-rvin-founder"], "reason": "Visible internal backend capability lowers service-provider fit."},
+        "total": 11,
+        "band": "B"
+      },
+      "evidence_refs": ["src-flat6-cycle5", "src-rvin-founder"]
+    },
+    {
+      "candidate_id": "candidate-t-gate-fahad-alfaheid",
+      "person": {"name": "Fahad Alfaheid", "decision_role": "CEO", "linkedin_url": "https://www.linkedin.com/in/fahad-alfaheid-b77b371a2"},
+      "company": {"name": "T-Gate", "canonical_domain": "t-gate.net", "url": "https://t-gate.net"},
+      "active_gates": {
+        "confirmed_identity": {"status": "pass", "evidence_refs": ["src-flat6-cycle5", "src-tgate-linkedin"], "reason": "Flat6Labs names Alfaheid as CEO and the current company page lists him at the same business."},
+        "saudi_market_basis": {"status": "pass", "evidence_refs": ["src-flat6-cycle5", "src-tgate-linkedin"], "reason": "Both sources describe a Saudi F&B technology platform."},
+        "buying_authority": {"status": "pass", "evidence_refs": ["src-flat6-cycle5"], "reason": "CEO is direct buying authority."},
+        "plausible_custom_software_need": {"status": "pass", "evidence_refs": ["src-flat6-cycle5", "src-tgate-linkedin"], "reason": "The core offering is a continuously changing integration layer across delivery, POS, inventory, branches, finance, and restaurant operations."}
+      },
+      "technical_capacity": {"state": "visible_team_engineering_unknown", "detail": "The company reports 11-50 employees, but the engineering composition is not verified."},
+      "score": {
+        "product_intent": {"value": 5, "evidence_refs": ["src-flat6-cycle5", "src-tgate-linkedin"], "reason": "A live mobile/cloud product has recent operational feature activity."},
+        "outsourcing_likelihood": {"value": 1, "evidence_refs": ["src-tgate-linkedin"], "reason": "The established team and mature integration product reduce likely outside scope."},
+        "budget_readiness": {"value": 3, "evidence_refs": ["src-flat6-cycle5"], "reason": "Defined paid plans and managed services indicate moderate commercial readiness."},
+        "timing": {"value": 3, "evidence_refs": ["src-tgate-linkedin", "src-flat6-cycle5"], "reason": "Recent feature updates exist, but no fresh financing or new-build announcement was verified."},
+        "penalties": {"value": 1, "evidence_refs": ["src-tgate-linkedin"], "reason": "Existing team size and a mature product lower external-development fit."},
+        "total": 11,
+        "band": "B"
+      },
+      "evidence_refs": ["src-flat6-cycle5", "src-tgate-linkedin"]
+    },
+    {
+      "candidate_id": "candidate-myalice-shuvo-rahman",
+      "person": {"name": "Shuvo Rahman", "decision_role": "Co-founder and CEO", "linkedin_url": null},
+      "company": {"name": "Revora (formerly MyAlice)", "canonical_domain": "userevora.com", "url": "https://userevora.com"},
+      "active_gates": {
+        "confirmed_identity": {"status": "pass", "evidence_refs": ["src-kaust-taqadam9", "src-revora-site", "src-revora-founder"], "reason": "The cohort identifies MyAlice, the company site documents its rebrand, and Rahman's current profile confirms founder and CEO continuity."},
+        "saudi_market_basis": {"status": "pass", "evidence_refs": ["src-revora-site", "src-revora-founder", "src-kaust-taqadam9"], "reason": "The current product targets Saudi commerce, and the founder identifies Saudi Arabia as Revora's main market."},
+        "buying_authority": {"status": "pass", "evidence_refs": ["src-revora-founder"], "reason": "Founder and CEO is direct buying authority."},
+        "plausible_custom_software_need": {"status": "pass", "evidence_refs": ["src-revora-site", "src-revora-founder"], "reason": "Arabic conversational commerce requires storefront, chat, order, shipping, refund, merchant-system, analytics, and AI-agent integrations."}
+      },
+      "technical_capacity": {"state": "visible_internal_capacity", "detail": "The founder has a software-engineering background, the company has product leadership, and 2026 hiring targeted engineering and QA leadership."},
+      "score": {
+        "product_intent": {"value": 6, "evidence_refs": ["src-revora-site", "src-revora-founder"], "reason": "The company is actively rebranding, shipping, hiring, and deepening its product for Saudi commerce."},
+        "outsourcing_likelihood": {"value": 0, "evidence_refs": ["src-revora-founder"], "reason": "Internal product leadership plus engineering and QA leadership hiring make external core development unlikely."},
+        "budget_readiness": {"value": 5, "evidence_refs": ["src-revora-founder", "src-kaust-taqadam9"], "reason": "A $2 million 2026 round, 10x growth, and the TAQADAM award indicate strong readiness."},
+        "timing": {"value": 4, "evidence_refs": ["src-revora-founder", "src-kaust-taqadam9"], "reason": "Fresh funding, hiring, and beta feature rollout make timing current."},
+        "penalties": {"value": 2, "evidence_refs": ["src-revora-founder"], "reason": "Mature SaaS and visible internal technical leadership reduce service-provider fit."},
+        "total": 13,
+        "band": "B"
+      },
+      "evidence_refs": ["src-kaust-taqadam9", "src-revora-site", "src-revora-founder"]
+    },
+    {
+      "candidate_id": "candidate-aya-munira-alkadi",
+      "person": {"name": "Munira Alkadi", "decision_role": "Co-founder and CEO", "linkedin_url": "https://www.linkedin.com/in/muniraalkadi"},
+      "company": {"name": "Aya", "canonical_domain": "aya.app", "url": "https://www.aya.app"},
+      "active_gates": {
+        "confirmed_identity": {"status": "pass", "evidence_refs": ["src-kaust-aya", "src-aya-linkedin", "src-aya-founder"], "reason": "KAUST plus the current company and founder profiles consistently identify Alkadi and Aya."},
+        "saudi_market_basis": {"status": "pass", "evidence_refs": ["src-kaust-aya", "src-aya-linkedin"], "reason": "Aya is Saudi-based and reports Saudi/GCC customers and expansion."},
+        "buying_authority": {"status": "pass", "evidence_refs": ["src-aya-linkedin", "src-aya-founder"], "reason": "Co-founder and CEO is direct buying authority."},
+        "plausible_custom_software_need": {"status": "pass", "evidence_refs": ["src-aya-linkedin", "src-aya-founder"], "reason": "Aya continuously tests hundreds of designs, predicts demand, routes production, and runs ecommerce discovery; ongoing custom product and data work is evident."}
+      },
+      "technical_capacity": {"state": "visible_internal_capacity", "detail": "Aya reports a 60-plus team and current software-engineering, computer-science, and product recruitment."},
+      "score": {
+        "product_intent": {"value": 6, "evidence_refs": ["src-aya-linkedin", "src-aya-founder"], "reason": "The company is rapidly iterating a data-heavy commerce platform."},
+        "outsourcing_likelihood": {"value": 0, "evidence_refs": ["src-aya-linkedin", "src-aya-founder"], "reason": "A 60-plus team and direct software/product hiring make external core development unlikely."},
+        "budget_readiness": {"value": 5, "evidence_refs": ["src-aya-founder", "src-kaust-aya"], "reason": "A large disclosed Series A and material operating scale indicate strong budget readiness."},
+        "timing": {"value": 4, "evidence_refs": ["src-aya-linkedin", "src-aya-founder"], "reason": "Fresh 2026 financing, hiring, and product-expansion signals are current."},
+        "penalties": {"value": 3, "evidence_refs": ["src-aya-linkedin", "src-aya-founder"], "reason": "Large internal team and mature growth stage substantially reduce outsourced-build fit."},
+        "total": 12,
+        "band": "B"
+      },
+      "evidence_refs": ["src-kaust-aya", "src-aya-linkedin", "src-aya-founder"]
+    },
+    {
+      "candidate_id": "candidate-swarm-robotics-mohammed-bukhamsin",
+      "person": {"name": "Mohammed Bukhamsin", "decision_role": "Co-founder and CEO", "linkedin_url": null},
+      "company": {"name": "Swarm Robotics", "canonical_domain": "swarmrobotics.io", "url": "https://swarmrobotics.io"},
+      "active_gates": {
+        "confirmed_identity": {"status": "pass", "evidence_refs": ["src-misk-launchpad", "src-swarm-linkedin"], "reason": "Misk names Mohammed and Abdulelah Bokhamseen and the current company record confirms the same Riyadh venture."},
+        "saudi_market_basis": {"status": "pass", "evidence_refs": ["src-misk-launchpad", "src-swarm-linkedin"], "reason": "The company is Riyadh-headquartered and serves Saudi industrial automation."},
+        "buying_authority": {"status": "pass", "evidence_refs": ["src-misk-launchpad"], "reason": "The named co-founder/CEO has strategic product authority."},
+        "plausible_custom_software_need": {"status": "pass", "evidence_refs": ["src-misk-launchpad", "src-swarm-linkedin"], "reason": "Robotics-as-a-service requires fleet control, analytics, traceability, site integration, and customer-specific automation software."}
+      },
+      "technical_capacity": {"state": "visible_internal_capacity", "detail": "Visible employees include robotics and automation specialists, and the founding team has robotics expertise."},
+      "score": {
+        "product_intent": {"value": 4, "evidence_refs": ["src-misk-launchpad", "src-swarm-linkedin"], "reason": "The company has a live industrial product and current Saudi event activity."},
+        "outsourcing_likelihood": {"value": 1, "evidence_refs": ["src-swarm-linkedin"], "reason": "A specialist robotics team makes core outsourcing unlikely."},
+        "budget_readiness": {"value": 4, "evidence_refs": ["src-misk-launchpad"], "reason": "Misk reports grant support, partnerships, and more than $200,000 annual revenue."},
+        "timing": {"value": 3, "evidence_refs": ["src-swarm-linkedin"], "reason": "Activity continued in late 2025 and 2026, without a discrete new software procurement signal."},
+        "penalties": {"value": 2, "evidence_refs": ["src-swarm-linkedin"], "reason": "Specialist internal technical capacity and an operating product reduce outside-build fit."},
+        "total": 10,
+        "band": "B"
+      },
+      "evidence_refs": ["src-misk-launchpad", "src-swarm-linkedin"]
+    },
+    {
+      "candidate_id": "candidate-green-desert-abdulmajeed-hashem",
+      "person": {"name": "Abdulmajeed Hashem", "decision_role": "Founder and CEO", "linkedin_url": "https://www.linkedin.com/in/abdulmajeed-hashem"},
+      "company": {"name": "Green Desert Technologies", "canonical_domain": "greendesert.tech", "url": "https://greendesert.tech"},
+      "active_gates": {
+        "confirmed_identity": {"status": "pass", "evidence_refs": ["src-flat6-cycle5", "src-green-desert-linkedin"], "reason": "Flat6Labs names Hashem as CEO and the company profile confirms the same Jeddah venture."},
+        "saudi_market_basis": {"status": "pass", "evidence_refs": ["src-flat6-cycle5", "src-green-desert-linkedin"], "reason": "The company is headquartered in Jeddah and participated in the Riyadh program."},
+        "buying_authority": {"status": "pass", "evidence_refs": ["src-flat6-cycle5"], "reason": "Founder and CEO is direct buying authority."},
+        "plausible_custom_software_need": {"status": "pass", "evidence_refs": ["src-flat6-cycle5", "src-green-desert-linkedin"], "reason": "Automated reactor operations plausibly require monitoring, control, licensing, maintenance, and customer reporting software, although software is secondary to the hard-tech offering."}
+      },
+      "technical_capacity": {"state": "visible_internal_capacity", "detail": "The research-scientist founder and technical co-founding team indicate substantial internal hard-tech capability."},
+      "score": {
+        "product_intent": {"value": 3, "evidence_refs": ["src-flat6-cycle5", "src-green-desert-linkedin"], "reason": "Software supports the automated hardware product but is not the primary commercial offering."},
+        "outsourcing_likelihood": {"value": 1, "evidence_refs": ["src-green-desert-linkedin"], "reason": "The technical founding team lowers external development likelihood."},
+        "budget_readiness": {"value": 4, "evidence_refs": ["src-flat6-cycle5"], "reason": "VC backing and priced licensing/reactor offerings indicate readiness."},
+        "timing": {"value": 3, "evidence_refs": ["src-flat6-cycle5"], "reason": "Recent cohort visibility supports ongoing growth, but no specific software build signal was found."},
+        "penalties": {"value": 2, "evidence_refs": ["src-green-desert-linkedin"], "reason": "Software is secondary and internal technical capacity is visible."},
+        "total": 9,
+        "band": "C"
+      },
+      "evidence_refs": ["src-flat6-cycle5", "src-green-desert-linkedin"]
+    }
+  ],
+  "holds": [
+    {
+      "candidate_id": "candidate-kudwa-karl-nasr",
+      "person_name": "Karl Nasr",
+      "company_name": "Kudwa",
+      "exact_gaps": ["Current Saudi operating activity is not confirmed; the CEO is Dubai-based and Riyadh-cohort participation alone is insufficient."],
+      "evidence_refs": ["https://flat6labs.com/Company/kudwa/", "https://www.linkedin.com/in/karlnasr"]
+    },
+    {
+      "candidate_id": "candidate-digital-petroleum-fakhreddine-mrabet",
+      "person_name": "Fakhreddine Mrabet",
+      "company_name": "Digital Petroleum",
+      "exact_gaps": ["The company and Saudi operation are confirmed, but the retained sources do not independently confirm Mrabet's current CTO/General Manager role and buying authority."],
+      "evidence_refs": ["src-flat6-cycle6", "https://digitalpetroleum.com/"]
+    },
+    {
+      "candidate_id": "candidate-sanadk-founder-unverified",
+      "person_name": null,
+      "company_name": "Sanadk",
+      "exact_gaps": ["No founder or senior buyer identity is confirmed."],
+      "evidence_refs": ["src-flat6-cycle6", "https://sanadk.ai/en"]
+    },
+    {
+      "candidate_id": "candidate-nero-mohammed-albaity",
+      "person_name": "Mohammed Albaity",
+      "company_name": "Nero",
+      "exact_gaps": ["Albaity's current founder, executive, or budget-owning role is not confirmed."],
+      "evidence_refs": ["src-flat6-cycle6", "https://www.linkedin.com/company/usenero"]
+    },
+    {
+      "candidate_id": "candidate-rintel-ameen-khan",
+      "person_name": "Ameen Khan",
+      "company_name": "Rintel",
+      "exact_gaps": ["Khan's current founder, executive, or budget-owning role is not confirmed."],
+      "evidence_refs": ["src-flat6-cycle6", "https://www.rintel.co/"]
+    },
+    {
+      "candidate_id": "candidate-bellboy-bhuvan-batra",
+      "person_name": "Bhuvan Batra",
+      "company_name": "Bellboy",
+      "exact_gaps": ["Saudi scaling intent is visible, but a current Saudi customer, entity, or operating footprint is not confirmed."],
+      "evidence_refs": ["src-kaust-taqadam9", "https://www.bellboytech.com/about"]
+    },
+    {
+      "candidate_id": "candidate-scigeniq-jawad-kamal",
+      "person_name": "Jawad Kamal",
+      "company_name": "Scigeniq",
+      "exact_gaps": ["Saudi customers are reported, but the retained primary sources do not confirm Kamal's current CEO role strongly enough for the authority gate."],
+      "evidence_refs": ["src-kaust-taqadam9", "https://www.linkedin.com/company/scigeniq"]
+    },
+    {
+      "candidate_id": "candidate-relocal-peter-ang",
+      "person_name": "Peter Ang",
+      "company_name": "Relocal",
+      "exact_gaps": ["The company confirms GCC focus and Malaysian headquarters, but this pass did not confirm a current Saudi customer, entity, or operating footprint."],
+      "evidence_refs": ["src-kaust-taqadam9", "https://www.relocal.co/about-us/"]
+    },
+    {
+      "candidate_id": "candidate-dentophilic-youssef-al-ghareeb",
+      "person_name": "Youssef Al Ghareeb",
+      "company_name": "Dentophilic / DSmart",
+      "exact_gaps": ["The relationship between Dentophilic and DSmart is unresolved.", "Al Ghareeb's current title and buying authority for the current product are not confirmed."],
+      "evidence_refs": ["src-misk-launchpad", "https://www.linkedin.com/in/dr-youssef-al-ghareeb-428a80177"]
+    }
+  ],
+  "rejected": [
+    {
+      "candidate_id": "candidate-atomica-yahia-megahed",
+      "person_name": "Yahia Megahed",
+      "company_name": "Atomica AI",
+      "hard_disqualification": "No verified Saudi-market operation; the company is US-headquartered and cohort participation alone is insufficient.",
+      "evidence_refs": ["src-kaust-taqadam9", "https://newsite.atomica.ai/about"]
+    },
+    {
+      "candidate_id": "candidate-tilegreen-amr-shalan",
+      "person_name": "Amr Shalan",
+      "company_name": "TileGreen",
+      "hard_disqualification": "No verified Saudi-market operation; the company is Egypt-based and only future Saudi scaling intent is visible.",
+      "evidence_refs": ["src-kaust-taqadam9", "https://solve.mit.edu/solutions/83601"]
+    },
+    {
+      "candidate_id": "candidate-innotech-othman-al-mandhari",
+      "person_name": "Othman Al Mandhari",
+      "company_name": "InnoTech Oman",
+      "hard_disqualification": "Oman-based mature hard-tech company with no verified Saudi operating basis.",
+      "evidence_refs": ["src-kaust-taqadam9", "https://www.innotech.om/blog1/-3"]
+    },
+    {
+      "candidate_id": "candidate-vitruvianmd-ifthakaar-shaik",
+      "person_name": "Ifthakaar Shaik",
+      "company_name": "VitruvianMD",
+      "hard_disqualification": "South Africa-based company with no verified Saudi operating basis.",
+      "evidence_refs": ["src-kaust-taqadam9", "https://www.foundersfactory.africa/portfolio/vitruvian-md"]
+    }
+  ],
+  "counts": {
+    "input_candidates": 30,
+    "promoted": 17,
+    "promoted_A": 3,
+    "promoted_B": 13,
+    "promoted_C": 1,
+    "holds": 9,
+    "rejected": 4
+  },
+  "gaps": [
+    "No candidate was promoted solely because it appeared in a Saudi accelerator.",
+    "Low outsourcing scores are common because several official-program candidates are already software companies with visible internal product capacity.",
+    "Madak, MEDirect, and Athleads.app are the strongest official-program candidates, but their technical delivery models still require later human confirmation before any outreach decision.",
+    "No contact details or outreach fields were collected."
+  ]
+}

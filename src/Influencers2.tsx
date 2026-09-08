@@ -1,8 +1,9 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import type { ComponentProps, CSSProperties, DragEvent as ReactDragEvent, PointerEvent as ReactPointerEvent } from 'react'
-import riseUpPeopleUrl from '../assets/people/riseup-2026-people.json?url'
+import unifiedPeopleUrl from '../assets/people/unified-people.json?url'
 import { ColumnResizeHandle, useResizableColumns } from './resizableColumns'
-import type { UnifiedPeopleSourceFile, UnifiedPerson } from './unifiedPeopleTypes'
+import { ArchiveToolbar, RowSelectionCell, RowSelectionHeader, useRowArchive } from './rowArchive'
+import type { UnifiedPeopleFile, UnifiedPerson } from './unifiedPeopleTypes'
 import { WorkspaceNav } from './WorkspaceNav'
 
 type NamedValue = {
@@ -24,6 +25,8 @@ type RiseUpActivity = {
 }
 
 type RiseUpSpeaker = {
+  person_id: string
+  target: boolean
   id: number
   attendee_id: number
   title: string | null
@@ -51,7 +54,7 @@ type SpeakerLinkedInProfile = {
 }
 
 type SortDirection = 'asc' | 'desc'
-type SpeakerColumn = 'speaker' | 'linkedin' | 'role' | 'organisation' | 'profile' | 'specialty' | 'biography' | 'sessions' | 'source' | 'record'
+type SpeakerColumn = 'speaker' | 'target' | 'linkedin' | 'role' | 'organisation' | 'profile' | 'specialty' | 'biography' | 'sessions' | 'source' | 'record'
 type ColumnDrop = { column: SpeakerColumn; position: 'before' | 'after' }
 type TablePreference = {
   columnOrder: SpeakerColumn[]
@@ -63,6 +66,7 @@ const TABLE_PREFERENCE_ENDPOINT = '/api/table-preferences/riseup-speakers'
 
 const SPEAKER_COLUMNS: Array<{ key: SpeakerColumn; label: string; defaultWidth: number }> = [
   { key: 'speaker', label: 'Speaker', defaultWidth: 280 },
+  { key: 'target', label: 'Target', defaultWidth: 88 },
   { key: 'linkedin', label: 'LinkedIn', defaultWidth: 150 },
   { key: 'role', label: 'Role', defaultWidth: 220 },
   { key: 'organisation', label: 'Organisation', defaultWidth: 240 },
@@ -82,6 +86,7 @@ const SPEAKER_COLUMN_WIDTHS = Object.fromEntries(
 const DEFAULT_SORT: TablePreference['sort'] = { field: 'speaker', direction: 'asc' }
 const DEFAULT_SORT_DIRECTIONS: Record<SpeakerColumn, SortDirection> = {
   speaker: 'asc',
+  target: 'desc',
   linkedin: 'asc',
   role: 'asc',
   organisation: 'asc',
@@ -100,72 +105,51 @@ type RiseUpRawRecord = {
 
 const EMPTY_LINKEDIN_BY_SPEAKER_ID = new Map<number, SpeakerLinkedInProfile>()
 
-const convertedRiseUpSpeaker = (person: UnifiedPerson): RiseUpSpeaker => {
-  const sourceRecord = person.source_records.find((record) => record.source_id === 'riseup-2026')
-  const rawRecord = sourceRecord?.raw as RiseUpRawRecord | undefined
+type RiseUpSourceRecord = UnifiedPerson['source_records'][number]
+
+const convertedRiseUpSpeaker = (person: UnifiedPerson, sourceRecord: RiseUpSourceRecord): RiseUpSpeaker => {
+  const rawRecord = sourceRecord.raw as RiseUpRawRecord | undefined
   const rawSpeaker = rawRecord?.speaker
-  const appearance = person.event_appearances.find((item) => item.event_id === 'riseup-2026')
-  const sessionsById = new Map(appearance?.sessions.map((session) => [session.id, session]) ?? [])
 
   return {
     ...(rawSpeaker ?? {} as RiseUpSpeaker),
-    id: Number(appearance?.speaker_id ?? rawSpeaker?.id ?? 0),
-    attendee_id: Number(appearance?.attendee_id ?? rawSpeaker?.attendee_id ?? 0),
-    title: person.name.title,
-    passport_name: person.name.passport ?? person.name.display,
-    certificate_name: person.name.certificate ?? person.name.display,
+    person_id: person.id,
+    target: Boolean(person.influence.target),
+    id: Number(rawSpeaker?.id ?? sourceRecord.record_id),
+    attendee_id: Number(rawSpeaker?.attendee_id ?? 0),
+    title: rawSpeaker?.title ?? null,
+    passport_name: rawSpeaker?.passport_name ?? '',
+    certificate_name: rawSpeaker?.certificate_name ?? rawSpeaker?.passport_name ?? '',
     gender: rawSpeaker?.gender ?? null,
-    country: person.location.country,
-    city: person.location.city,
-    nationality: person.location.nationality,
-    institute: person.current_role.organization,
-    occupation: person.current_role.title,
-    profile_picture_url: person.image.url,
-    profile_picture: person.image.source_path,
-    specialty: person.specialties[0] ?? null,
-    biography: person.biography,
+    country: rawSpeaker?.country ?? null,
+    city: rawSpeaker?.city ?? null,
+    nationality: rawSpeaker?.nationality ?? null,
+    institute: rawSpeaker?.institute ?? null,
+    occupation: rawSpeaker?.occupation ?? null,
+    profile_picture_url: rawSpeaker?.profile_picture_url ?? null,
+    profile_picture: rawSpeaker?.profile_picture ?? null,
+    specialty: rawSpeaker?.specialty ?? null,
+    biography: rawSpeaker?.biography ?? null,
     social_links: rawSpeaker?.social_links ?? [],
-    activities: (rawSpeaker?.activities ?? []).map((activity) => {
-      const session = sessionsById.get(String(activity.id))
-      if (!session) return activity
-      return {
-        ...activity,
-        type: session.type,
-        activity_type: activity.activity_type ? { ...activity.activity_type, name: session.activity_type ?? activity.activity_type.name } : session.activity_type ? { name: session.activity_type } : null,
-        title: session.title,
-        description: session.description,
-        start_time: session.start_time,
-        end_time: session.end_time,
-        requires_registration: session.requires_registration,
-        track: activity.track ? { ...activity.track, name: session.track ?? activity.track.name, track_date: session.date ?? activity.track.track_date } : session.track || session.date ? { name: session.track ?? undefined, track_date: session.date ?? undefined } : null,
-        hall: activity.hall ? { ...activity.hall, name: session.hall ?? activity.hall.name } : session.hall ? { name: session.hall } : null,
-      }
-    }),
+    activities: rawSpeaker?.activities ?? [],
   }
 }
 
-const convertedRiseUpData = (data: UnifiedPeopleSourceFile) => {
-  const speakers = data.people.map(convertedRiseUpSpeaker)
-  const linkedInProfiles = data.people.flatMap((person) => {
-    const appearance = person.event_appearances.find((item) => item.event_id === 'riseup-2026')
-    const linkedIn = person.profiles.find((profile) => profile.platform === 'linkedin')
-    if (!appearance?.speaker_id || !linkedIn) return []
-    const verification: SpeakerLinkedInProfile['verification'] = linkedIn.verification === 'name-and-organisation'
-      || linkedIn.verification === 'linkedin-authored-post'
-      || linkedIn.verification === 'manual-review'
-      ? linkedIn.verification
-      : 'manual-review'
-    return [{
-      speaker_id: Number(appearance.speaker_id),
-      name: person.name.display,
-      linkedin_url: linkedIn.url,
-      verification,
-    } satisfies SpeakerLinkedInProfile]
+const convertedRiseUpData = (data: UnifiedPeopleFile) => {
+  const sourceRecords = data.people.flatMap((person) =>
+    person.source_records
+      .filter((record) => record.source_id === 'riseup-2026')
+      .map((sourceRecord) => ({ person, sourceRecord })),
+  )
+  const speakers = sourceRecords.map(({ person, sourceRecord }) => convertedRiseUpSpeaker(person, sourceRecord))
+  const linkedInProfiles = sourceRecords.flatMap(({ sourceRecord }) => {
+    const rawRecord = sourceRecord.raw as RiseUpRawRecord | undefined
+    return rawRecord?.linkedin_profile ? [rawRecord.linkedin_profile] : []
   })
   return {
     linkedInBySpeakerId: new Map(linkedInProfiles.map((profile) => [profile.speaker_id, profile])),
     linkedInProfiles,
-    source: data.source,
+    source: data.sources.find((source) => source.id === 'riseup-2026'),
     speakers,
   }
 }
@@ -213,6 +197,7 @@ const sortValue = (
 ): string | number => {
   switch (column) {
     case 'speaker': return speaker.passport_name
+    case 'target': return Number(speaker.target)
     case 'linkedin': return linkedInBySpeakerId.get(speaker.id)?.linkedin_url ?? ''
     case 'role': return speaker.occupation ?? ''
     case 'organisation': return speaker.institute ?? ''
@@ -314,10 +299,12 @@ type SpeakerCellProps = {
   column: SpeakerColumn
   index: number
   linkedInProfile?: SpeakerLinkedInProfile
+  onTargetSave: (speaker: RiseUpSpeaker, checked: boolean) => Promise<void>
+  savingTarget: boolean
   speaker: RiseUpSpeaker
 }
 
-function SpeakerCell({ column, index, linkedInProfile, speaker }: SpeakerCellProps) {
+function SpeakerCell({ column, index, linkedInProfile, onTargetSave, savingTarget, speaker }: SpeakerCellProps) {
   if (column === 'speaker') {
     return (
       <td>
@@ -332,6 +319,22 @@ function SpeakerCell({ column, index, linkedInProfile, speaker }: SpeakerCellPro
             <small>#{String(index + 1).padStart(3, '0')}</small>
           </span>
         </div>
+      </td>
+    )
+  }
+
+  if (column === 'target') {
+    return (
+      <td className="riseup-target-column">
+        <label className="riseup-target-cell" title={speaker.target ? 'Selected as a target' : 'Select as a target'}>
+          <input
+            aria-label={`${speaker.passport_name}: Target`}
+            checked={speaker.target}
+            disabled={savingTarget}
+            onChange={(event) => { void onTargetSave(speaker, event.target.checked) }}
+            type="checkbox"
+          />
+        </label>
       </td>
     )
   }
@@ -430,10 +433,12 @@ function SpeakerCell({ column, index, linkedInProfile, speaker }: SpeakerCellPro
 }
 
 export function Influencers2() {
-  const [convertedSource, setConvertedSource] = useState<UnifiedPeopleSourceFile | null>(null)
+  const [convertedSource, setConvertedSource] = useState<UnifiedPeopleFile | null>(null)
   const [loadError, setLoadError] = useState('')
   const [query, setQuery] = useState('')
   const [sessionsOnly, setSessionsOnly] = useState(false)
+  const [targetSaveError, setTargetSaveError] = useState('')
+  const [savingTargets, setSavingTargets] = useState<Set<string>>(() => new Set())
   const [columnOrder, setColumnOrder] = useState<SpeakerColumn[]>(DEFAULT_COLUMN_ORDER)
   const [sort, setSort] = useState<TablePreference['sort']>(DEFAULT_SORT)
   const [draggingColumn, setDraggingColumn] = useState<SpeakerColumn | null>(null)
@@ -448,7 +453,7 @@ export function Influencers2() {
     storageKey: 'eign-riseup-speakers.column-widths.v1',
   })
   const tableStyle = {
-    '--resizable-table-width': `${totalWidth(columnOrder)}px`,
+    '--resizable-table-width': `${totalWidth(columnOrder, 42)}px`,
   } as CSSProperties
   const convertedData = useMemo(
     () => convertedSource ? convertedRiseUpData(convertedSource) : null,
@@ -460,15 +465,15 @@ export function Influencers2() {
 
   useEffect(() => {
     const controller = new AbortController()
-    fetch(riseUpPeopleUrl, { signal: controller.signal })
+    fetch(unifiedPeopleUrl, { signal: controller.signal })
       .then((response) => {
-        if (!response.ok) throw new Error(`The converted RiseUp people file returned ${response.status}.`)
-        return response.json() as Promise<UnifiedPeopleSourceFile>
+        if (!response.ok) throw new Error(`The combined people file returned ${response.status}.`)
+        return response.json() as Promise<UnifiedPeopleFile>
       })
       .then(setConvertedSource)
       .catch((error) => {
         if (controller.signal.aborted) return
-        setLoadError(error instanceof Error ? error.message : 'Unable to load the converted RiseUp people file.')
+        setLoadError(error instanceof Error ? error.message : 'Unable to load RiseUp records from the combined people file.')
       })
     return () => controller.abort()
   }, [])
@@ -563,6 +568,36 @@ export function Influencers2() {
           || left.passport_name.localeCompare(right.passport_name)
       })
   }, [linkedInBySpeakerId, query, sessionsOnly, sort, speakers])
+  const archive = useRowArchive({ tableId: 'riseup-speakers', visibleRowIds: results.map((speaker) => String(speaker.id)) })
+  const displayedResults = results.filter((speaker) => archive.showArchived === archive.isArchived(String(speaker.id)))
+
+  const saveTarget = async (speaker: RiseUpSpeaker, checked: boolean) => {
+    if (savingTargets.has(speaker.person_id)) return
+    setTargetSaveError('')
+    setSavingTargets((current) => new Set(current).add(speaker.person_id))
+    try {
+      const response = await fetch(`/api/people/${encodeURIComponent(speaker.person_id)}`, {
+        method: 'PATCH',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ field: 'target', value: checked }),
+      })
+      const result = await response.json().catch(() => null) as { error?: string; generatedAt?: string; person?: UnifiedPerson } | null
+      if (!response.ok || !result?.person) throw new Error(result?.error || `The data service returned ${response.status}.`)
+      setConvertedSource((current) => current ? {
+        ...current,
+        generated_at: result.generatedAt ?? current.generated_at,
+        people: current.people.map((person) => person.id === speaker.person_id ? result.person! : person),
+      } : current)
+    } catch (error) {
+      setTargetSaveError(error instanceof Error ? error.message : 'The target selection could not be saved.')
+    } finally {
+      setSavingTargets((current) => {
+        const next = new Set(current)
+        next.delete(speaker.person_id)
+        return next
+      })
+    }
+  }
 
   const moveColumn = (source: SpeakerColumn, target: SpeakerColumn, position: ColumnDrop['position']) => {
     if (source === target) return
@@ -689,11 +724,11 @@ export function Influencers2() {
           <header className="influencer-directory__header riseup-speakers-header">
             <div>
               <h2 id="riseup-speakers-title">RiseUp Summit 2026 speakers</h2>
-              <p>Egypt Summit directory · Converted source observed {formatSourceDate(convertedData?.source.observed_at ?? null)}</p>
+              <p>Egypt Summit directory · Combined source observed {formatSourceDate(convertedData?.source?.observed_at ?? null)}</p>
             </div>
             <div>
-              <span>{results.length} / {convertedData?.source.record_count ?? speakers.length}</span>
-              {convertedData?.source.url && <a href={convertedData.source.url} target="_blank" rel="noreferrer">Open source ↗</a>}
+              <span>{displayedResults.length} / {convertedData?.source?.record_count ?? speakers.length}</span>
+              {convertedData?.source?.url && <a href={convertedData.source.url} target="_blank" rel="noreferrer">Open source ↗</a>}
             </div>
           </header>
 
@@ -726,17 +761,23 @@ export function Influencers2() {
           </div>
 
           <div className="result-meta">
-            <span>{results.length} matching speakers · drag headers to reorder · use arrows to sort</span>
+            <span>{displayedResults.length} matching speakers · drag headers to reorder · use arrows to sort</span>
             <span>{linkedInProfiles.length} verified LinkedIn profiles · {speakers.length - linkedInProfiles.length} unresolved · {speakers.filter((speaker) => speaker.biography).length} biographies · {speakers.reduce((total, speaker) => total + speaker.activities.length, 0)} session assignments</span>
           </div>
+
+          <ArchiveToolbar archive={archive} noun="RiseUp speakers" />
+
+          {targetSaveError && <div className="software-error" role="alert">Target was not saved: {targetSaveError}</div>}
 
           <div className="riseup-speakers-table-wrap">
             <table className="company-table riseup-speakers-table resizable-table" style={tableStyle}>
               <colgroup>
+                <col className="row-select-column" style={{ width: '42px' }} />
                 {columnOrder.map((column) => <col key={column} style={{ width: `${widths[column]}px` }} />)}
               </colgroup>
               <thead>
                 <tr>
+                  <th className="row-select-heading" scope="col"><RowSelectionHeader allSelected={archive.allVisibleSelected} onToggle={archive.toggleAllVisible} someSelected={archive.someVisibleSelected} /></th>
                   {columnOrder.map((column) => (
                     <SpeakerHeader
                       key={column}
@@ -756,14 +797,17 @@ export function Influencers2() {
                 </tr>
               </thead>
               <tbody>
-                {results.map((speaker, index) => (
+                {displayedResults.map((speaker, index) => (
                   <tr key={speaker.id}>
+                    <td className="row-select-cell"><RowSelectionCell checked={archive.selectedIds.has(String(speaker.id))} label={`Select ${speaker.passport_name}`} onToggle={() => archive.toggleRow(String(speaker.id))} /></td>
                     {columnOrder.map((column) => (
                       <SpeakerCell
                         key={column}
                         column={column}
                         index={index}
                         linkedInProfile={linkedInBySpeakerId.get(speaker.id)}
+                        onTargetSave={saveTarget}
+                        savingTarget={savingTargets.has(speaker.person_id)}
                         speaker={speaker}
                       />
                     ))}
@@ -771,9 +815,9 @@ export function Influencers2() {
                 ))}
               </tbody>
             </table>
-            {!results.length && (
+            {!displayedResults.length && (
               <div className="empty-results">
-                {loadError || (convertedData ? 'No RiseUp speakers match the current filters.' : 'Loading converted RiseUp speakers…')}
+                {loadError || (convertedData ? 'No RiseUp speakers match the current filters.' : 'Loading RiseUp records from the combined people file…')}
               </div>
             )}
           </div>

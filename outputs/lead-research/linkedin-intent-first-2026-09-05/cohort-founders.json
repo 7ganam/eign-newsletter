@@ -1,0 +1,301 @@
+{
+  "schema_version": "cohort-founder-discovery.v1",
+  "observed_at": "2026-09-05",
+  "scope": "Read-only public web search and public LinkedIn source checks. Parent owns logged-in Edge. This is an isolated research artifact, not an update to canonical leads.",
+  "target": "A Saudi-market owner/founder with a specific intended core software product that is not yet built, with a supported maximum of two software builders. Paid external development intent is a separate field, never inferred from admission or an equity co-founder request.",
+  "summary": {
+    "search_queries": 25,
+    "accepted_new_leads": 0,
+    "new_discovery_holds": 1,
+    "prior_known_holds_rechecked": 1,
+    "named_current_software_project_candidates_passing_identity_and_original_post": 0,
+    "channel_or_project_only_signals": 3,
+    "rejected_examples": 11,
+    "stop_reason": "Reached the bounded 25-query cap. Current Misk/Antler and university source passes did not establish any new candidate passing the pre-build and complete small-team gates. No padding or admission-to-buyer inference.",
+    "important_caveat": "Search indexing differed from the opened Resti feed. Parent subsequently verified Adilet's original Antler announcement on the exact profile in logged-in Edge and supplied its permalink. Original intent is now verified; the unnamed new venture still lacks product, team and budget evidence.",
+    "research_minutes": null,
+    "research_minutes_basis": "Not instrumented; do not invent a precise elapsed time.",
+    "research_minutes_per_accepted_lead": null,
+    "recommendation": "Retain Osama and Adilet as research holds. Adilet's admission is now directly verified by parent, but neither hold has sufficient software scope, unbuilt-product and complete-team evidence for acceptance. Prefer original posts describing a deliverable, not only admission."
+  },
+  "candidates": [
+    {
+      "id": "osama-alanazi-unnamed-sports-misk10",
+      "discovery_status": "prior_known_hold_rechecked",
+      "accepted": false,
+      "person": "Osama Alanazi",
+      "canonical_linkedin": "https://www.linkedin.com/in/osama-alanazi-46538528a/",
+      "original_post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7500223144914329600/",
+      "original_post_access": "public_original_readable_and_parent_logged_in_observation",
+      "publication_date": null,
+      "displayed_age": "4d Edited",
+      "observed_at": "2026-09-05",
+      "program": "Misk Launchpad 10.0",
+      "company": null,
+      "project_name": null,
+      "project_description": "A project supporting the sports sector and improving access to emerging talent; author says more will be shared soon.",
+      "specific_software_deliverable": null,
+      "software_fit": "unknown",
+      "saudi_basis": {
+        "state": "supported",
+        "evidence": "Current Misk Launchpad selection and Saudi-startup context in the original sports post. Parent also directly observed Riyadh on the exact profile."
+      },
+      "authority": {
+        "state": "project_builder_supported_buying_authority_unknown",
+        "evidence": "First-person work on this project and named collaborators; no explicit ownership or purchasing remit in the inspected post."
+      },
+      "core_product_status": "unknown",
+      "software_builders_lower_bound": null,
+      "software_builders_upper_bound": null,
+      "observed_named_collaborators": 3,
+      "team_completeness": "unknown",
+      "paid_external_help": "unknown",
+      "budget": null,
+      "timing": "Current cohort participation; no build procurement deadline stated.",
+      "collaborators": [
+        {
+          "name": "Saleh Aldawsari",
+          "canonical_linkedin": "https://www.linkedin.com/in/saleh-aldawsari-4a1712282/",
+          "basis": "Direct tag in sports post; exact-profile public indexing in prior pilot shows industrial engineering and Assistant Business Analyst Intern at Pure Sports.",
+          "current_software_role": "unknown"
+        },
+        {
+          "name": "Mohammed Alsubaie",
+          "canonical_linkedin": "https://www.linkedin.com/in/mohammed-al-mutawa/",
+          "basis": "Current post display name points to this profile slug. Prior pilot found an older authored post with the same slug and display name, plus historical collaboration with Osama and Saleh.",
+          "identity_limit": "Account continuity supported; slug/display-name mismatch remains recorded. No legal-name conclusion or cross-profile merge.",
+          "current_software_role": "unknown"
+        }
+      ],
+      "project_separation_rule": "Do not merge this sports project with Osama's separately observed Mu'ad waste-logistics venture or copy its older four-person team. Do not carry historical hackathon collaborators into the current team without explicit evidence.",
+      "missing_gates": [
+        "Specific software deliverable and current venture identity",
+        "Explicit core app unbuilt or non-functional-prototype status",
+        "Complete current builder count, including founders and contractors, supporting at most two",
+        "Current purchasing authority",
+        "Paid external development intent and budget if any"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.linkedin.com/feed/update/urn:li:activity:7500223144914329600/",
+          "kind": "first_person_original_post",
+          "observed_at": "2026-09-05",
+          "claim": "Author announces Misk Launchpad 10.0 selection and work on an emerging-sports-talent project, tagging two collaborators.",
+          "limitations": "No app specification, launch status, total team or paid developer request."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/mohammed-al-mutawa_yesterday-was-truly-an-exceptional-day-activity-7301239041948045313-3fEH",
+          "kind": "prior_pilot_first_person_original_post",
+          "observed_at": "2026-09-05",
+          "claim": "Older industrial-engineering student collaboration connects the same account to Osama and Saleh.",
+          "limitations": "Historical collaboration is not the current sports project's complete team or evidence of zero coding capability."
+        }
+      ]
+    },
+    {
+      "id": "adilet-zakiyev-unnamed-antler-project",
+      "discovery_status": "original_post_verified_by_parent_project_hold",
+      "accepted": false,
+      "person": "Adilet Zakiyev",
+      "canonical_linkedin": "https://www.linkedin.com/in/azakiyev/",
+      "original_post_url": "https://www.linkedin.com/feed/update/urn:li:activity:7499065145663496195/",
+      "original_post_access": "parent_direct_logged_in_edge_verification_on_exact_profile",
+      "publication_date": null,
+      "displayed_age": "6d on indexed liked activity; conflicting 4d company-feed search snapshot",
+      "observed_at": "2026-09-05",
+      "program": "Antler Riyadh, edition and start date unknown",
+      "company": null,
+      "project_name": null,
+      "project_description": "First-person statement describes joining Riyadh residency for a next startup, seeking co-founders and validation. Parent directly verified the original on the exact profile; new venture remains unspecified and distinct from Resti's built product.",
+      "specific_software_deliverable": null,
+      "software_fit": "unknown",
+      "saudi_basis": {
+        "state": "riyadh_residency_supported_new_venture_market_unknown",
+        "evidence": "Parent directly verified the original Antler Riyadh announcement. Exact profile indexing locates existing Resti experience in Kazakhstan; residency does not independently establish the new venture's Saudi customers or operations."
+      },
+      "authority": {
+        "state": "verified_next_startup_builder_claim_buying_authority_unknown",
+        "evidence": "Parent verified the self-authored next-startup announcement on the exact profile. Formal purchasing remit for the unspecified new venture remains unknown."
+      },
+      "core_product_status": "unknown",
+      "software_builders_lower_bound": null,
+      "software_builders_upper_bound": null,
+      "team_completeness": "unknown",
+      "paid_external_help": "unknown",
+      "budget": null,
+      "timing": "Current residency announcement directly verified by parent on 2026-09-05; exact publication date and new project's build deadline unconfirmed.",
+      "existing_venture": {
+        "name": "Resti",
+        "url": "https://www.linkedin.com/company/resticloud/",
+        "status": "already_built_product_excluded",
+        "evidence": "Direct company page describes employee mobile software and paying restaurant chains. It states that the product was built internally before commercialization.",
+        "team_note": "Company size 11–50 is not an engineering count. A small visible employee list is not a maximum.",
+        "merge_rule": "Parent verified that the announcement concerns an unspecified next venture, distinct from Resti. Do not transfer Resti's product, budget or team to the unnamed venture; do not qualify Resti itself."
+      },
+      "missing_gates": [
+        "Exact publication date and named new venture",
+        "Identify a specific software deliverable for the new venture",
+        "Saudi-market operations or intended customers beyond attendance",
+        "Unbuilt core product and complete at-most-two builder team",
+        "Purchasing authority and paid external help if any"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.linkedin.com/feed/update/urn:li:activity:7499065145663496195/",
+          "kind": "first_person_original_post_parent_direct_verification",
+          "observed_at": "2026-09-05",
+          "claim": "Parent verified Adilet's original Antler Riyadh next-startup announcement on https://www.linkedin.com/in/azakiyev/ in logged-in Edge.",
+          "limitations": "This agent did not independently operate Edge. Parent reports the new venture remains unspecified; no core software scope, complete builder count, budget or paid external help verified."
+        },
+        {
+          "url": "https://kz.linkedin.com/in/binsabit",
+          "kind": "search_index_of_liked_activity",
+          "observed_at": "2026-09-05",
+          "claim": "Indexed activity attributes a current Antler Riyadh admission and co-founder/validation statement to Adilet Zakiyev.",
+          "limitations": "This URL belongs to Yerdaulet Seidizhappar, who liked the post, not its author. Direct opening returned LinkedIn 999; original permalink not recovered."
+        },
+        {
+          "url": "https://kz.linkedin.com/in/azakiyev",
+          "kind": "search_index_of_exact_profile",
+          "observed_at": "2026-09-05",
+          "claim": "Exact name and Resti organization match the author linked in the 500 Eurasia founder roster.",
+          "limitations": "This agent's public profile open returned LinkedIn 999. Parent subsequently verified the original announcement on the exact profile in logged-in Edge."
+        },
+        {
+          "url": "https://kz.linkedin.com/company/resticloud",
+          "kind": "first_party_company_page_directly_read",
+          "observed_at": "2026-09-05",
+          "claim": "Resti is already functional software with an employee mobile app and paying customers.",
+          "limitations": "Search indexed an Adilet Antler statement in this feed; direct opening instead showed an ordinary Resti/Forbes update. Do not count the indexed feed as confirmation of that announcement."
+        }
+      ]
+    }
+  ],
+  "channel_or_project_only_signals": [
+    {
+      "name": "MUSHKAT INCUBATOR third innovation-capacity cohort",
+      "url": "https://sa.linkedin.com/in/mushkat-incubator",
+      "date_in_body": "2026-08-25 application deadline",
+      "evidence": "Indexed current program post describes moving from health challenges to innovative solutions; direct public open returned 999.",
+      "candidate_names": [],
+      "decision": "Useful next cohort-introduction channel, not a lead list or proof of a software project.",
+      "next_recipe": "Read exact original third-cohort introductions. Extract author/project only when a software deliverable appears, then verify launch stage and complete team separately."
+    },
+    {
+      "name": "JUTHOOR at Wadi Jeddah incubator 2026",
+      "url": "https://sa.linkedin.com/in/badr-neyaz-42883123b",
+      "date_in_body": "2026 edition; exact post date unresolved",
+      "evidence": "Indexed liked activity contains first-person JUTHOOR admission to Wadi Jeddah's 2026 bootcamp, but the author is not exposed.",
+      "candidate_names": [],
+      "decision": "Unresolved project discovery only. Badr Neyaz is an intern who liked the post; do not assign JUTHOOR to him.",
+      "next_recipe": "Retrieve original JUTHOOR statement through current official Wadi Jeddah cohort feed, then identify its actual author and project scope."
+    },
+    {
+      "name": "KAUST Hult Prize Saudi Arabia finalist projects",
+      "url": "https://isl.kaust.edu.sa/articles/2026/06/03/flow-guard-wins-first-prize-hult-prize-saudi-arabia-national-competition",
+      "date_in_body": "2026-06-03",
+      "evidence": "Official article names Wiaam Project, FutureHeat and Furat alongside winner Flow Guard; it does not name these other projects' founders or intended software deliverables.",
+      "candidate_names": [],
+      "decision": "Not accepted candidates. Broad Wiaam searches produced unrelated personal names, demonstrating identity noise.",
+      "next_recipe": "Only inspect first-party team introductions with a concrete digital product and ongoing build intention; do not import every university competitor."
+    }
+  ],
+  "rejected_examples": [
+    {
+      "name": "Sohazur I. / ReachLLM",
+      "url": "https://www.linkedin.com/posts/sohazur_antlermenap-reachllm-riyadh-activity-7367419311264587776-__wt",
+      "reason": "Old Antler admission explicitly describes an already-built prototype, product launch and users. Admission does not establish pre-build status."
+    },
+    {
+      "name": "Ansar Moughis / AIDE",
+      "url": "https://pk.linkedin.com/in/ansarmoughis",
+      "reason": "Current Antler2026 activity describes established usage and revenue, not an unbuilt first product; also explicitly excluded by parent."
+    },
+    {
+      "name": "Mohammad Shah / Hysabat",
+      "url": "https://sa.linkedin.com/in/themohammadshah",
+      "reason": "Indexed Misk graduation statement says the company entered with a product. Not evidence of an unbuilt core app."
+    },
+    {
+      "name": "Maaweya Alkattash / Serva",
+      "url": "https://sa.linkedin.com/in/maaweya-alkattash-42945024b",
+      "reason": "Indexed current LEAP demonstration promotes an existing platform; Misk8 participation is older and not a pre-build signal."
+    },
+    {
+      "name": "Ahmed Alanazi / Bithra",
+      "url": "https://sa.linkedin.com/in/ahmed-alanazi-2665512b3",
+      "reason": "Old Misk7 graduation with developed MVP. No current first-product build demand found."
+    },
+    {
+      "name": "Velodoc",
+      "url": "https://www.linkedin.com/company/velodoc-ai",
+      "reason": "Old Misk admission plus current software hiring/team signals; no current evidence of unbuilt app or complete at-most-two builders. Rejected from this acquisition pass, not a claim about exact team size."
+    },
+    {
+      "name": "Athleads",
+      "url": "https://sa.linkedin.com/company/athleadsapp",
+      "reason": "Indexed platform investment and expansion activity, not a named pre-build buyer."
+    },
+    {
+      "name": "Platable and Kitchenara comments under Talal Alanzi",
+      "url": "https://www.linkedin.com/posts/talal-alanzi-875b9817_founders-lets-talk-if-youre-losing-sleep-activity-7323134888621096960-24Q_",
+      "reason": "Old investor invitation and existing-market usage in comments; Misk Accelerator10 is not current Launchpad10. Do not turn every commenter into a prospect."
+    },
+    {
+      "name": "Flow Guard / Omar Khalifa and Mohammed Ahmed",
+      "url": "https://www.linkedin.com/posts/hult-prize-foundation_hultprize-hpincubator26-waterconservation-activity-7481036038262464512-zQb-",
+      "reason": "Program describes smart meters combined with an interactive app; official university article describes operational sensing/analytics solution. No unbuilt-core proof, complete small-builder-team proof or paid external help. Do not add solely because the incubator is current.",
+      "supporting_url": "https://isl.kaust.edu.sa/articles/2026/06/03/flow-guard-wins-first-prize-hult-prize-saudi-arabia-national-competition"
+    },
+    {
+      "name": "Buthoor Tech",
+      "url": "https://sa.linkedin.com/company/cla-academy-sa",
+      "reason": "Company's current Hult narrative and older original platform introduction describe existing educational operations/platform, not a specified first app yet to be built.",
+      "supporting_url": "https://ae.linkedin.com/posts/cla-academy-sa_نرحب-بكم-بمنصة-بذور-تك-منصة-الجيل-activity-7288578440943820800-vpHQ"
+    },
+    {
+      "name": "Adilet Zakiyev / Resti existing product",
+      "url": "https://kz.linkedin.com/company/resticloud",
+      "reason": "Direct first-party company page confirms an employee mobile app and paying restaurant chains. Existing Resti is excluded; parent's verified announcement establishes a separate unnamed new-venture research hold, not a qualified software buyer."
+    }
+  ],
+  "query_log": [
+    {"n": 1, "query": "site:linkedin.com/posts/ \"Misk Launchpad 10.0\" \"selected\"", "outcome": "No new named current pre-build buyer."},
+    {"n": 2, "query": "site:linkedin.com/posts/ \"Misk Launchpad\" \"Cohort 10\" \"our\"", "outcome": "Program promotion and older/mature companies."},
+    {"n": 3, "query": "site:linkedin.com/posts/ \"MiskLaunchpad\" \"10\" \"accepted\"", "outcome": "No new candidate with unbuilt app evidence."},
+    {"n": 4, "query": "site:linkedin.com/posts/ \"مسك\" \"لونشباد\" \"العاشرة\"", "outcome": "Mixed old editions and graduation signals."},
+    {"n": 5, "query": "\"Misk Launchpad 10.0\" -site:hub.misk.org.sa", "outcome": "Current official promotion, no named entrant recovered."},
+    {"n": 6, "query": "\"Misk Launchpad\" \"10.0\" founder", "outcome": "Promotion and unrelated prior cohorts."},
+    {"n": 7, "query": "\"لونشباد\" \"2026\" \"قبول\"", "outcome": "Old participation and current existing-product exhibitions."},
+    {"n": 8, "query": "\"MiskLaunchpad\" \"September\" \"2026\"", "outcome": "No new original current entrant post with concrete project."},
+    {"n": 9, "query": "site:linkedin.com/posts/ \"Antler\" \"Riyadh\" \"2026\" \"joining\"", "outcome": "Adilet indexed next-startup statement; original unresolved."},
+    {"n": 10, "query": "site:linkedin.com/posts/ \"Antler\" \"Riyadh\" \"2026\" \"accepted\"", "outcome": "Existing AIDE and older launched products."},
+    {"n": 11, "query": "site:linkedin.com/posts/ \"حاضنة\" \"مشروعي\" \"2026\"", "outcome": "No qualifying named software project."},
+    {"n": 12, "query": "site:linkedin.com/posts/ \"incubator\" \"Saudi\" \"2026\" \"our platform\"", "outcome": "Mature platforms and program sources."},
+    {"n": 13, "query": "\"Adilet Zakiyev\" \"Antler\"", "outcome": "No original post recovered."},
+    {"n": 14, "query": "\"I’ve been talking about building my own startup\" \"Riyadh\"", "outcome": "No reliable author/permalink recovered."},
+    {"n": 15, "query": "site:linkedin.com/posts/ \"حاضنة\" \"تطبيق\" \"2026\"", "outcome": "Program/feed-level signals, no qualifying owner request."},
+    {"n": 16, "query": "site:linkedin.com/posts/ \"university\" \"incubator\" \"Riyadh\" \"2026\"", "outcome": "MUSHKAT and Hult channels; current named software intent absent."},
+    {"n": 17, "query": "\"Adilet\" \"Riyadh\" \"Antler\"", "outcome": "Same indexed liked activity, not independent confirmation."},
+    {"n": 18, "query": "\"Zakiyev\" startup", "outcome": "Resti identity roster and unrelated surname noise."},
+    {"n": 19, "query": "\"Buthoor Tech\" founder", "outcome": "Existing education platform; no new first-app scope."},
+    {"n": 20, "query": "\"Flow Guard\" \"Hult\" founder", "outcome": "Official university founders and solution; pre-build gate not established."},
+    {"n": 21, "query": "site:linkedin.com/posts/ \"Wiaam\" \"2026\"", "outcome": "Unrelated person names, no verified Wiaam Project founder."},
+    {"n": 22, "query": "site:linkedin.com/posts/ \"مشكاة\" \"مشروع\" \"2026\"", "outcome": "Unrelated organizations/name noise."},
+    {"n": 23, "query": "site:linkedin.com/posts/ \"وادي جدة\" \"مشروعنا\" \"2026\"", "outcome": "JUTHOOR admission in liked activity; actual author unresolved."},
+    {"n": 24, "query": "site:linkedin.com/posts/ \"Misk\" \"10.0\" \"sports\"", "outcome": "No additional named current project beyond prior Osama hold."},
+    {"n": 25, "query": "\"Adilet Zakiyev\" linkedin", "outcome": "Exact profile found; direct profile blocked and feed mismatch exposed."}
+  ],
+  "quality_rules_applied": [
+    "Unknown builder lower and upper bounds remain null, never zero from profile silence.",
+    "An industrial-engineering degree or non-software job is not proof a person cannot build software.",
+    "A company-size range and visible employees are neither complete engineering headcount nor a maximum.",
+    "People who like a post are not its authors or founders; infer neither identity nor demand from reactions.",
+    "Current programs may admit existing products. Exact edition, original intent, product stage and complete team are separate gates.",
+    "Observed relative timestamps are not converted into publication dates; search crawl dates are not post dates.",
+    "A functional app or beta fails the unbuilt core-product target even if its founder is alone.",
+    "A solo technical founder is not automatically excluded if the app remains unbuilt and all other gates pass.",
+    "Admissions, prizes, investor interest and co-founder searches do not establish budget or paid vendor demand.",
+    "No canonical files, outreach, contact enrichment, follows, connections, messages or social reactions were performed."
+  ]
+}

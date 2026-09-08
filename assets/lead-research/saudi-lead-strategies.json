@@ -1,0 +1,608 @@
+{
+  "schema_version": "saudi-lead-strategies.v1",
+  "generated_at": "2026-09-05T17:30:30Z",
+  "rows": [
+    {
+      "id": "accelerator-incubator-prebuild-v1",
+      "label": "Accelerators & incubators • Pre-build cohort-first",
+      "version": 3,
+      "created_at": "2026-09-05T17:03:00Z",
+      "updated_at": "2026-09-05T17:30:30Z",
+      "status": "active",
+      "priority": "high",
+      "cadence": "twice-weekly",
+      "next_review_at": "2026-09-12",
+      "objective": "Discover Saudi pre-build software buyers from suitable incubator and accelerator participant pools, then verify actual product gap, small delivery capacity and paid intent.",
+      "persona_summary": "Specific unbuilt core software product; Saudi-market buyer with decision authority, no established engineering team and at most two CURRENT software builders including founders and contractors. Missing people profiles do not establish a maximum.",
+      "access_and_boundaries": [
+        "Start from a named program and cohort or event; exact-name LinkedIn research is verification, not the separate manual-intent strategy.",
+        "Public professional information and ordinary signed-in LinkedIn, read-only. No outreach, interactions or contact enrichment.",
+        "Program acceptance is not funding, an outsourcing request or proof of an unbuilt product.",
+        "Retain historical strategy provenance on existing leads and do not duplicate founders from the same venture."
+      ],
+      "time_allocation": [
+        {
+          "lane": "Current idea-to-MVP cohort discovery",
+          "percent": 40
+        },
+        {
+          "lane": "Founder, product and team verification",
+          "percent": 50
+        },
+        {
+          "lane": "Run evidence and yield audit",
+          "percent": 10
+        }
+      ],
+      "workflow_steps": [
+        "Verify current official program stage and cycle; prioritize Misk Launchpad, Garage Incubator and conditional Antler Riyadh.",
+        "Use program-specific cohort announcements, tagged participants and founder introductions; separate challenge participation, membership, incubation and cash awards.",
+        "Resolve exact founder-venture identity and deduplicate before deeper research.",
+        "Open current first-party product pages and dated posts; distinguish a waitlist from proof that the core product is not already functional.",
+        "Identify current hands-on founders, staff and contractors; record unknown maximum unless positively supported.",
+        "Seek explicit paid-vendor openness, budget, scope and a delivery window. Graduation, prestige, grants eligibility and profile silence cannot substitute.",
+        "Keep incomplete candidates Needs verification; promote only after all persona and commercial gates pass.",
+        "Save exact URLs, derived versus observed publication dates, exclusions and per-program yield. Review existing candidates before collecting more names."
+      ],
+      "proven_queries": [
+        "\"Misk Launchpad 10.0\"",
+        "\"Misk Launchpad\"",
+        "\"Antler\" \"Riyadh\"",
+        "\"Antler\" \"Riyadh\" \"joining\"",
+        "\"تحدي الكراج\""
+      ],
+      "low_yield_queries": [
+        "Broad accelerator funding news without current product and team checks",
+        "\"Antler\" \"Riyadh\" \"joining\" mostly repeated existing candidates in this pilot"
+      ],
+      "next_queries_to_test": [
+        "Misk Launchpad 10.0 introductions during ideation/build phases after September 6",
+        "Garage Incubator founder spotlights with explicit unfinished product and delivery roles",
+        "Antler Riyadh October 11 cohort introductions with concrete venture scope"
+      ],
+      "insights": {
+        "what_worked": [
+          "Program-anchored Garage Challenge search surfaced Momawwil's concrete prelaunch marketplace and a named founder.",
+          "Independent KAUST spotlight corroborated Wasl founder identity and incubator admission.",
+          "Current website and dated company posts gave more useful stage evidence than program badges."
+        ],
+        "what_did_not_work": [
+          "Fresh Misk/Antler acceptance also surfaced mature AIDE AI and ClarifyAi products.",
+          "Repeated Antler searches mostly resurfaced already-recorded founders.",
+          "July prototype posts did not establish a current paid buying window."
+        ],
+        "risks_and_limits": [
+          "Zero confirmed fits in this bounded pilot; these are research candidates, not sales-ready buyers.",
+          "Two associated LinkedIn members are not a 0–2 software-builder maximum. Challenge collaborators may differ from the current team.",
+          "Misk phase-one selection is not full-program acceptance or cash. Antler potential investment is not an award.",
+          "Prototype and waitlist language can coexist with an already functional private product.",
+          "No statistically representative yield claim; post impressions include duplicates, and this did not reach the strategy's 30-pair first-run target."
+        ],
+        "improvements": [
+          "Prioritize verification of Feras Hayf/Momawwil; leave APBS and Wasl lower priority until decisive gaps close.",
+          "Use current product/budget milestones rather than newer profile visits for freshness.",
+          "Require the actual builder maximum, not just the visible roster, in both Notion strategy wording and qualification.",
+          "Separate short challenges, incubator admission and accelerator scaling tracks in every evidence record.",
+          "Revisit current cohorts at the build milestone; do not buy paid search to solve missing commercial evidence."
+        ]
+      },
+      "source_artifacts": [
+        "outputs/lead-research/accelerator-incubator-2026-09-05/run.json",
+        "outputs/lead-research/accelerator-incubator-2026-09-05/findings.md"
+      ],
+      "runs": [
+        {
+          "id": "accelerator-incubator-2026-09-05",
+          "batch_id": "accelerator-incubator-2026-09-05",
+          "created_at": "2026-09-05T17:19:58Z",
+          "completed_at": "2026-09-05T17:30:30Z",
+          "observed_on": "2026-09-05",
+          "lead_ids": [
+            "lead-program-feras-hayf-momawwil",
+            "lead-program-nawaf-eissa-precision-brake",
+            "lead-program-ahmad-alohali-wasl"
+          ],
+          "metrics": {
+            "queries": 5,
+            "search_passes": 5,
+            "post_impressions": 38,
+            "new_candidates": 3,
+            "carried_candidates": 0,
+            "confirmed_fits": 0
+          },
+          "summary": "Bounded program-first pilot: 16 founder-venture groups screened, three new Needs verification candidates, three existing duplicates, three rejected and seven raw holds. Zero confirmed fits. Counts cover five program-anchored LinkedIn result sets (38 observed post impressions, including duplicates), excluding web and exact-name enrichment. This was not the full planned 30-pair run."
+        }
+      ],
+      "notes": "Notion strategy page: https://app.notion.com/p/3d2d460a15cb81529c20d7c61db2c1a7. Imported locally and updated after the first bounded live pilot; not a claim that the full planned collection is complete."
+    },
+    {
+      "id": "official-program-cohort-first-v1",
+      "label": "Official programs • Cohort-first",
+      "version": 1,
+      "created_at": "2026-09-03T16:26:21.000Z",
+      "updated_at": "2026-09-05T11:33:33.000Z",
+      "status": "retired",
+      "priority": "medium",
+      "cadence": "monthly",
+      "next_review_at": null,
+      "objective": "Discover named Saudi-market founders from official accelerator, incubator, cohort, and showcase pages, then verify identity, authority, product activity, and Saudi-market relevance on first-party sources.",
+      "persona_summary": "Historical strategy used before the stricter pre-build persona. Cohort participation was a discovery signal only; it did not prove an unbuilt core product, a small software team, budget, or outsourcing intent.",
+      "access_and_boundaries": [
+        "Use public first-party program, cohort, showcase, company, app-store, and professional-profile pages only.",
+        "Do not infer Saudi nationality from participation; require evidence of Saudi-market activity.",
+        "Do not treat a missing CTO or invisible employee list as proof that no engineering team exists.",
+        "Do not collect contact details or perform outreach."
+      ],
+      "time_allocation": [
+        {
+          "lane": "Official cohort and showcase harvesting",
+          "percent": 60
+        },
+        {
+          "lane": "Exact founder and company verification",
+          "percent": 30
+        },
+        {
+          "lane": "Capacity and persona checks",
+          "percent": 10
+        }
+      ],
+      "workflow_steps": [
+        "Review first-party Misk, Flat6Labs Riyadh, KAUST TAQADAM, Attliq, CODE, NTDP, The Garage, and related program announcements.",
+        "Extract named ventures, founders, product descriptions, cohort dates, and funding or award statements.",
+        "Verify each person by exact name and current organization on a founder-controlled or official source.",
+        "Confirm Saudi-market activity independently of program attendance.",
+        "Apply the four active gates and deterministic score; hold unresolved identities, global-only teams, duplicates, and D-band records.",
+        "Preserve unknown engineering capacity as unknown."
+      ],
+      "proven_queries": [
+        "site:flat6labs.com Riyadh demo day founder",
+        "site:kaust.edu.sa TAQADAM cohort showcase",
+        "Misk Launchpad cohort founder",
+        "Attliq Accelerator fifth cohort"
+      ],
+      "low_yield_queries": [
+        "The Garage general program page without a named cohort roster",
+        "CODE, Monsha’at, and NTDP overview pages without founder-level entries",
+        "Accelerator participation without a separate Saudi-market or authority source"
+      ],
+      "next_queries_to_test": [
+        "Current graduation and demo-day announcements from exact Saudi programs",
+        "Named participant spotlights published by program operators",
+        "Program alumni with an explicit new unbuilt product or external-builder request"
+      ],
+      "insights": {
+        "what_worked": [
+          "Flat6Labs Riyadh demo-day pages exposed unusually rich founder, product, business-model, and target-customer details.",
+          "Misk Launchpad, KAUST TAQADAM, and Attliq announcements supplied repeatable named founder seeds.",
+          "Exact-name and first-party company verification prevented program attendance from becoming unsupported Saudi-market or authority claims."
+        ],
+        "what_did_not_work": [
+          "The Garage, CODE, Monsha’at, and NTDP overview pages did not expose complete crawlable founder rosters in the observed pass.",
+          "Many program finalists already had mature software products or visible technical teams, making them poor matches for the later pre-build persona.",
+          "Program participation did not establish outside-development intent."
+        ],
+        "risks_and_limits": [
+          "Observed source yields overlap when a founder appears in both a cohort page and a partner-program announcement.",
+          "Global programs such as TAQADAM require separate proof of actual Saudi operations.",
+          "The 22 connected records have not been confirmed against the latest unbuilt-product and zero-to-two-builders persona."
+        ],
+        "improvements": [
+          "Apply the current persona gates before promoting a cohort participant into the active lead list.",
+          "Prefer programs that publish named current cohorts and product-stage detail.",
+          "Add explicit first-core-product and complete software-team checks to every verification pass."
+        ]
+      },
+      "source_artifacts": [
+        "outputs/lead-research/workers/official-programs.json",
+        "outputs/lead-research/workers/official-programs-verified.json",
+        "outputs/lead-research/workers/official-programs-wave2.json"
+      ],
+      "runs": [
+        {
+          "id": "official-programs-2026-09-03",
+          "batch_id": "official-programs-2026-09-03",
+          "created_at": "2026-09-03T16:26:21.000Z",
+          "completed_at": "2026-09-03T16:45:30.000Z",
+          "observed_on": "2026-09-03",
+          "lead_ids": [
+            "lead-madak-abdulaziz-ghazi-alardi",
+            "lead-athleads-app-marwan-alshayeb",
+            "lead-handl-hub-doaa-aref",
+            "lead-stoqa-abdulrahman-saud",
+            "lead-medirect-alwaleed-altorabi",
+            "lead-qubit-abdullah-rashad",
+            "lead-thedar-ai-mohy-aboualam",
+            "lead-21doctors-osama-almabroum",
+            "lead-bookahospi-sebastian-jimenez",
+            "lead-juthor-lolwah-binsaedan",
+            "lead-mutim-abdulmohsin-hotami",
+            "lead-nitx-mohammed-al-saad",
+            "lead-ofintech-mohammed-alnoosh",
+            "lead-reporty-abdulbadea-altukroni",
+            "lead-revora-formerly-myalice-shuvo-rahman",
+            "lead-sighti-salim-noor",
+            "lead-supplai-azmi-negro",
+            "lead-aya-munira-alkadi",
+            "lead-coretechx-fahad-durukan",
+            "lead-t-gate-fahad-alfaheid",
+            "lead-swarm-robotics-mohammed-bukhamsin",
+            "lead-green-desert-technologies-abdulmajeed-hashem"
+          ],
+          "metrics": {
+            "queries": 10,
+            "search_passes": 3,
+            "post_impressions": 0,
+            "new_candidates": 30,
+            "carried_candidates": 0,
+            "confirmed_fits": 0
+          },
+          "summary": "Thirty raw program candidates were reviewed across the initial collection and two verification outputs. Twenty-two survived deduplication, evidence gates, lane quotas, and score ordering. None is recorded as a confirmed fit under the later stricter persona."
+        }
+      ],
+      "notes": "Historical provenance strategy reconstructed from the original official-programs worker artifacts and lead discovery notes. Retired for acquisition use because it over-samples companies with already-built products or visible technical capacity."
+    },
+    {
+      "id": "events-financing-trigger-first-v1",
+      "label": "Events & financing • Trigger-first",
+      "version": 1,
+      "created_at": "2026-09-03T16:30:09.000Z",
+      "updated_at": "2026-09-05T11:33:33.000Z",
+      "status": "retired",
+      "priority": "low",
+      "cadence": "weekly",
+      "next_review_at": null,
+      "objective": "Use recent Saudi funding announcements, startup-event rosters, portfolio pages, demo days, and product launches to identify named decision-makers with current software activity.",
+      "persona_summary": "Historical strategy used before the stricter pre-build persona. Funding and launch signals supported timing and budget-readiness research, but did not prove an unbuilt first product, a small engineering team, or willingness to outsource.",
+      "access_and_boundaries": [
+        "Use public event, investor, portfolio, funding-news, company, and professional-profile sources.",
+        "Attribute funding, traction, and use-of-proceeds claims to their publishers; do not treat them as audited facts.",
+        "Do not convert event attendance, prize eligibility, or aggregate Saudi funding totals into company budget evidence.",
+        "Do not collect contact details or perform outreach."
+      ],
+      "time_allocation": [
+        {
+          "lane": "Recent funding and product triggers",
+          "percent": 50
+        },
+        {
+          "lane": "Event, finalist, and portfolio rosters",
+          "percent": 25
+        },
+        {
+          "lane": "Founder and first-party verification",
+          "percent": 25
+        }
+      ],
+      "workflow_steps": [
+        "Review recent Saudi startup funding feeds, investor portfolio news, event finalist rosters, and product-launch coverage.",
+        "Extract named founders, products, financing dates, expansion plans, and first-party company sources.",
+        "Verify identity, buying authority, Saudi-market activity, and plausible software need.",
+        "Score funding as budget readiness only when attributable, while keeping the actual build allocation unknown.",
+        "Hold stale triggers, unnamed decision-makers, identity conflicts, duplicates, and companies with evidenced sufficient delivery capacity.",
+        "Keep outsourcing likelihood conservative unless an external-builder or procurement signal exists."
+      ],
+      "proven_queries": [
+        "Saudi startup funding Wamda 2026",
+        "Saudi portfolio company product launch expansion",
+        "StartSmart Saudi Arabia 2026 finalist teams",
+        "Money20/20 Middle East startup programme"
+      ],
+      "low_yield_queries": [
+        "Event attendance without a named founder or current product trigger",
+        "SVC aggregate reports used as individual company evidence",
+        "Stale Project Startup Saudi material without a current milestone"
+      ],
+      "next_queries_to_test": [
+        "Fresh first-party product launches that explicitly require a new software build",
+        "Current procurement or implementation-partner announcements from funded SMEs",
+        "Pre-company finalist rosters with named creators and no shipped core product"
+      ],
+      "insights": {
+        "what_worked": [
+          "Wamda’s Saudi feed produced the largest volume of recent named financing and product triggers.",
+          "StartSmart and Money20/20 rosters surfaced some pre-company or newly launched teams.",
+          "Investor and company pages helped verify identity, authority, and use-of-proceeds claims."
+        ],
+        "what_did_not_work": [
+          "No reviewed company publicly stated that it wanted an outside software-development partner.",
+          "Funding rounds and event prizes frequently pointed to companies with existing products and internal technical capability.",
+          "Attendance-only and aggregate-market sources did not establish individual buying intent."
+        ],
+        "risks_and_limits": [
+          "Funding stories often repeat company-supplied claims and remain interested-party evidence.",
+          "A recent round proves access to capital, not an approved software budget.",
+          "The 21 connected records have not been confirmed against the latest unbuilt-product and zero-to-two-builders persona."
+        ],
+        "improvements": [
+          "Use funding and event sources as secondary verification after an explicit unbuilt-product or partner-intent signal.",
+          "Require a current named decision-maker and a first-party product-stage check before promotion.",
+          "Reject or archive mature software companies earlier when the target is a first-build buyer."
+        ]
+      },
+      "source_artifacts": [
+        "outputs/lead-research/workers/events-financing.json",
+        "outputs/lead-research/workers/events-financing-verified.json",
+        "outputs/lead-research/workers/events-financing-wave2.json",
+        "outputs/lead-research/workers/events-financing-wave3.json"
+      ],
+      "runs": [
+        {
+          "id": "events-financing-2026-09-03",
+          "batch_id": "events-financing-2026-09-03",
+          "created_at": "2026-09-03T16:30:09.000Z",
+          "completed_at": "2026-09-03T16:59:44.000Z",
+          "observed_on": "2026-09-03",
+          "lead_ids": [
+            "lead-fitting-mohammed-al-mubayed",
+            "lead-pickappo-waleed-ghloniem",
+            "lead-smart-quotation-radhi-alshammari",
+            "lead-metafare-ibrahim-almaghlouth",
+            "lead-ghanem-saleh-al-ghamdi",
+            "lead-kliq-asma-a-almaraghi",
+            "lead-urcash-talal-alharbi",
+            "lead-gaia-badr-al-malluh",
+            "lead-zakn-ai-zakaria-alnajar",
+            "lead-ballora-marya-fawaz",
+            "lead-greenvision-yara-alalawi",
+            "lead-aila-yousef-alsayed",
+            "lead-desaisiv-mohammad-nabhan",
+            "lead-remedium-fawaz-abu-ghazaleh",
+            "lead-rime-mohammed-almarshidi",
+            "lead-think-ahmed-alsharif",
+            "lead-cashin-omar-al-ramahi",
+            "lead-najeeb-ai-ahmed-yasmina",
+            "lead-wadaie-abdullah-alandas",
+            "lead-zahib-badr-alhader",
+            "lead-nqoodlet-mohamed-milyani"
+          ],
+          "metrics": {
+            "queries": 11,
+            "search_passes": 4,
+            "post_impressions": 0,
+            "new_candidates": 25,
+            "carried_candidates": 0,
+            "confirmed_fits": 0
+          },
+          "summary": "Twenty-five raw event and financing candidates were examined through an initial pass and three verification waves. Twenty-one appear in the canonical historical lead set after gates, deduplication, quotas, and scoring. None is recorded as a confirmed fit under the later stricter persona."
+        }
+      ],
+      "notes": "Historical provenance strategy reconstructed from the events-financing worker artifacts and lead discovery notes. Retired as a primary acquisition strategy because it favors already-funded, already-built software companies."
+    },
+    {
+      "id": "linkedin-community-signal-first-v1",
+      "label": "LinkedIn & community • Signal-first",
+      "version": 1,
+      "created_at": "2026-09-03T16:27:03.000Z",
+      "updated_at": "2026-09-05T11:33:33.000Z",
+      "status": "retired",
+      "priority": "medium",
+      "cadence": "weekly",
+      "next_review_at": null,
+      "objective": "Use public LinkedIn product-intent posts, Saudi ecosystem accounts, cohort streams, newsletters, and supplied profile seeds to discover named builders, then verify them by exact identity and current organization.",
+      "persona_summary": "Historical public-LinkedIn strategy used before the stricter pre-build persona and before the later logged-in intent-first pilot. Missing profiles, employees, or posts remained unknown rather than evidence of no software team.",
+      "access_and_boundaries": [
+        "Use publicly visible professional pages and search-result excerpts in read-only mode.",
+        "Do not follow, connect, react, comment, save, publish, message, submit forms, traverse profiles automatically, or collect contact details.",
+        "Use exact-name verification after discovery and preserve relative post ages without inventing dates.",
+        "Do not score likes, generic comments, cohort participation, or profile silence as qualification evidence."
+      ],
+      "time_allocation": [
+        {
+          "lane": "Product-intent and builder-signal posts",
+          "percent": 50
+        },
+        {
+          "lane": "Saudi cohort and ecosystem streams",
+          "percent": 30
+        },
+        {
+          "lane": "Exact-name founder verification",
+          "percent": 20
+        }
+      ],
+      "workflow_steps": [
+        "Search public LinkedIn posts before broad People search, using software-build and product-intent terms.",
+        "Review current Saudi entrepreneurship, accelerator, and community-account streams for named people and ventures.",
+        "Classify every supplied profile, post, newsletter, and community URL as useful, low-signal, duplicate, or rejected.",
+        "Verify the exact person, current organization, authority, Saudi-market basis, and product activity.",
+        "Require independent corroboration for A/B promotion and keep unclear project ownership or stale cohorts unresolved.",
+        "Preserve missing team-capacity evidence as unknown."
+      ],
+      "proven_queries": [
+        "LinkedIn product-intent post search",
+        "Misk Entrepreneurship cohort founder posts",
+        "500 MENA and Sanabil Startup Unlocked founders",
+        "Exact founder name plus current company"
+      ],
+      "low_yield_queries": [
+        "Generic newsletter editions without a named current buyer",
+        "Likes, follows, and broad engagement signals",
+        "Broad People search that consumes commercial-use allowance without stronger intent evidence",
+        "Zero to One spot checks without a named product-build trigger"
+      ],
+      "next_queries_to_test": [
+        "Exact Arabic and English external-builder request phrases in recent posts",
+        "Current founder introductions from pre-incubation programmes",
+        "Named project briefs with explicit cost, timeline, or vendor-selection language"
+      ],
+      "insights": {
+        "what_worked": [
+          "Post-first discovery produced named product and technical-cofounder signals without broad profile traversal.",
+          "Misk and 500 MENA ecosystem streams yielded repeatable founder seeds.",
+          "Exact-name checks and independent sources resolved some identity, authority, and Saudi-market gaps."
+        ],
+        "what_did_not_work": [
+          "Only seven records survived into the canonical historical set from twenty raw candidates.",
+          "Generic community and newsletter content rarely established a current commissioning project.",
+          "Closed roles, stale cohort posts, unnamed decision-makers, and visible internal capacity limited usable yield."
+        ],
+        "risks_and_limits": [
+          "Public LinkedIn indexing is incomplete, personalized, and sometimes rate-limited.",
+          "A founder profile and that founder’s own post are not independent publishers.",
+          "The seven connected records have not been confirmed against the latest unbuilt-product and zero-to-two-builders persona."
+        ],
+        "improvements": [
+          "Prioritize explicit paid project requests over general founder or cohort signals.",
+          "Verify project ownership, first-product stage, and the complete software-builder range before scoring.",
+          "Move to the later logged-in intent-first strategy when public indexing becomes the limiting factor."
+        ]
+      },
+      "source_artifacts": [
+        "outputs/lead-research/workers/linkedin-community.json",
+        "outputs/lead-research/workers/linkedin-community-verified.json",
+        "outputs/lead-research/workers/linkedin-community-wave2.json",
+        "outputs/lead-research/workers/linkedin-community-wave3.json"
+      ],
+      "runs": [
+        {
+          "id": "linkedin-community-2026-09-03",
+          "batch_id": "linkedin-community-2026-09-03",
+          "created_at": "2026-09-03T16:27:03.000Z",
+          "completed_at": "2026-09-03T16:57:17.000Z",
+          "observed_on": "2026-09-03",
+          "lead_ids": [
+            "lead-vision-mate-abdulrahman-almuqati-cipd",
+            "lead-wathba-mashhoor-aldubayan",
+            "lead-jadi-bashayr-alabbad",
+            "lead-eden-nicolae-esanu",
+            "lead-suhail-shatha-khalid-alharbi",
+            "lead-bookmyguide-hayath-kargal",
+            "lead-mara-omar-alsumih"
+          ],
+          "metrics": {
+            "queries": 4,
+            "search_passes": 4,
+            "post_impressions": 0,
+            "new_candidates": 20,
+            "carried_candidates": 0,
+            "confirmed_fits": 0
+          },
+          "summary": "Twenty raw public LinkedIn and community candidates were reviewed through an initial pass and three verification waves. Seven appear in the canonical historical set after evidence gates, deduplication, quotas, and scoring. None is recorded as a confirmed fit under the later stricter persona."
+        }
+      ],
+      "notes": "Historical provenance strategy reconstructed from the LinkedIn-community worker artifacts and lead discovery notes. Retired in favor of the more specific logged-in LinkedIn intent-first strategy."
+    },
+    {
+      "id": "linkedin-intent-first-v1",
+      "label": "LinkedIn • Intent-first",
+      "version": 1,
+      "created_at": "2026-09-05T08:20:11.000Z",
+      "updated_at": "2026-09-05T08:20:11.000Z",
+      "status": "active",
+      "priority": "high",
+      "cadence": "twice-weekly",
+      "next_review_at": "2026-09-12",
+      "objective": "Find Saudi-market buyers before their first custom software product is built, while keeping uncertain candidates separate from qualified buyers.",
+      "persona_summary": "A specific unbuilt core product, no established engineering team, and no more than two current software builders including hands-on founders and relevant contractors. Missing LinkedIn profiles never prove an absent team.",
+      "access_and_boundaries": [
+        "Use an ordinary signed-in LinkedIn account and public professional sources in read-only mode.",
+        "Do not connect, follow, react, save, subscribe, message, reveal contact details, enrich contacts, or perform outreach.",
+        "Keep a person’s existing built company separate from any specifically evidenced new venture.",
+        "Treat authored profiles and posts as one publisher unless an independent publisher is identified."
+      ],
+      "time_allocation": [
+        {
+          "lane": "Explicit project requests",
+          "percent": 60
+        },
+        {
+          "lane": "Current pre-incubation and cohort introductions",
+          "percent": 30
+        },
+        {
+          "lane": "Newsletters and ecosystem context",
+          "percent": 10
+        }
+      ],
+      "workflow_steps": [
+        "Search Posts using individual Arabic and English request phrases, starting with Latest results.",
+        "Separate paid project demand from employment, supplier promotion, and equity-only cofounder searches.",
+        "Open the exact author profile and original post; identify the specific person-project pair.",
+        "Verify Saudi-market relevance, commissioning authority, first-core-product stage, and the complete software-builder range.",
+        "Record unresolved candidates as Needs verification with one or more decisive next checks.",
+        "Qualify only after persona and commercial-intent gates pass with publisher-independent evidence where required."
+      ],
+      "proven_queries": [
+        "\"أبحث عن مبرمج\" NOT \"وظيفة\" NOT \"وظائف\"",
+        "\"نبحث عن شركة\" \"تطوير\"",
+        "\"مطلوب مطور\" \"تطبيق\"",
+        "\"Misk Launchpad 10.0\"",
+        "\"joining Antler\" \"Riyadh\""
+      ],
+      "low_yield_queries": [
+        "\"development partner\" \"Saudi\"",
+        "\"MVP\" \"Saudi\"",
+        "\"أبحث عن شركة برمجة\"",
+        "\"انضمامي\" \"Antler\""
+      ],
+      "next_queries_to_test": [
+        "\"looking for\" \"MVP\" \"Saudi\"",
+        "\"فكرة تطبيق\" \"مبرمج\"",
+        "\"طلب عروض\" \"تطوير منصة\"",
+        "Current admission and founder-introduction posts from exact Saudi pre-incubation cohorts"
+      ],
+      "insights": {
+        "what_worked": [
+          "Explicit request language produced the clearest software-buying signals.",
+          "Latest sorting plus the displayed post age was more useful than a broad date filter.",
+          "Current Misk and Antler admission posts surfaced early founders before funding publicity.",
+          "Exact profile and original-post checks prevented company, project, and repost attribution errors."
+        ],
+        "what_did_not_work": [
+          "Broad MVP and development-partner searches were dominated by vendors, jobs, and existing products.",
+          "Newsletter editions supplied market context but no qualified buyer in the inspected sample.",
+          "Cofounder searches frequently represented equity-only demand rather than paid outsourcing.",
+          "One exact Arabic phrase was too restrictive and returned no post results."
+        ],
+        "risks_and_limits": [
+          "Public sources rarely establish a complete zero-to-two software-builder upper bound.",
+          "Old project posts may already be fulfilled; finding them today does not refresh demand.",
+          "A profile and its authored post are not independent publishers.",
+          "LinkedIn results are personalized and the observed samples are not exhaustive or statistically representative."
+        ],
+        "improvements": [
+          "Prioritize verification of ownership, product stage, and team capacity before running more broad searches.",
+          "Track unique projects and evidence-supported candidates rather than raw post impressions.",
+          "Change or pause a source after two consecutive passes add less than ten percent new supported candidates.",
+          "Consider paid search only if free search restrictions, not missing evidence, become the measured bottleneck."
+        ]
+      },
+      "source_artifacts": [
+        "outputs/lead-research/linkedin-pilot-2026-09-05/tested-strategy.md",
+        "outputs/lead-research/linkedin-pilot-2026-09-05/live-pilot.json",
+        "outputs/lead-research/linkedin-intent-first-2026-09-05/browser-research.json",
+        "outputs/lead-research/linkedin-intent-first-2026-09-05/import-batch.json",
+        "outputs/lead-research/linkedin-intent-first-2026-09-05/verification.json"
+      ],
+      "runs": [
+        {
+          "id": "linkedin-intent-first-2026-09-05",
+          "batch_id": "linkedin-intent-first-2026-09-05",
+          "created_at": "2026-09-05T08:20:11.000Z",
+          "completed_at": "2026-09-05T08:25:00.000Z",
+          "observed_on": "2026-09-05",
+          "lead_ids": [
+            "lead-li-intent-afnan-anwal-platform",
+            "lead-li-intent-maryam-alatwiy-photobooth",
+            "lead-li-intent-faisal-abduljawad-logtech",
+            "lead-li-intent-adilet-zakiyev-next-venture",
+            "lead-li-intent-osama-alanazi-sports",
+            "lead-li-intent-sokainh-buhlal-platform",
+            "lead-li-intent-momen-el-santawy-mobile"
+          ],
+          "metrics": {
+            "queries": 13,
+            "search_passes": 14,
+            "post_impressions": 75,
+            "new_candidates": 4,
+            "carried_candidates": 3,
+            "confirmed_fits": 0
+          },
+          "summary": "Imported four newly discovered candidates and three same-day pilot holds. All seven remained Needs verification because no complete unbuilt-product and software-team maximum was established."
+        }
+      ],
+      "notes": "Keep ordinary LinkedIn for now. The present bottleneck is evidence about project ownership, product stage, team capacity, and paid intent—not access to more names."
+    }
+  ]
+}

@@ -19,7 +19,7 @@ export function Posts() {
       <main className="posts-main">
         <header className="posts-heading">
           <div><h1>Posts</h1><p>Analytical views built from the local EIGN datasets.</p></div>
-          <span>1 post</span>
+          <span>2 posts</span>
         </header>
 
         <section className="posts-grid" aria-label="Available posts">
@@ -31,6 +31,17 @@ export function Posts() {
               <span className="post-card__type">Funding analysis</span>
               <h2>Funding landscape</h2>
               <p>Explore recorded company funding as an industry-grouped capital map and inspect individual company territories.</p>
+              <span className="post-card__action">Open post <b aria-hidden="true">→</b></span>
+            </div>
+          </a>
+          <a className="post-card" href="/posts/industry-funding-by-year">
+            <div className="post-card__preview post-card__preview--timeline" aria-hidden="true">
+              <span /><span /><span /><span /><span /><span /><span /><span /><span /><span /><span /><span />
+            </div>
+            <div className="post-card__body">
+              <span className="post-card__type">Funding chronology</span>
+              <h2>Funding by industry, year by year</h2>
+              <p>Trace disclosed funding from 2005 onward across every Crunchbase industry attached to the YC-derived company set.</p>
               <span className="post-card__action">Open post <b aria-hidden="true">→</b></span>
             </div>
           </a>

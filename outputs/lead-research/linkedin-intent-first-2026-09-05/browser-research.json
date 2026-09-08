@@ -1,0 +1,173 @@
+{
+  "schema_version": "linkedin-browser-research.v1",
+  "observed_at": "2026-09-05",
+  "browser": "Microsoft Edge; ordinary signed-in LinkedIn",
+  "boundary": "Only search, read posts and profiles, and record professional project evidence. No interactions, purchases or contact enrichment.",
+  "method": "Bounded manual-intent searches with Latest sort, followed by exact personal-profile and project checks. No extensions or automated profile traversal.",
+  "summary": {
+    "distinct_queries": 13,
+    "passes": 14,
+    "post_impressions": 75,
+    "new_research_candidates": 4,
+    "previous_pilot_candidates_imported": 3,
+    "fully_qualified": 0
+  },
+  "counting_rule": "Visible top-level post impressions examined per pass, including duplicates across queries. Not unique profiles or search coverage. Profile activity is not counted again. Public agent queries are logged separately and are not summed as distinct people.",
+  "queries": [
+    {
+      "query": "\"نبحث عن شركة\" \"تطوير\"",
+      "passes": [
+        {
+          "sort": "Top match",
+          "impressions": 6
+        },
+        {
+          "sort": "Latest",
+          "impressions": 6
+        }
+      ],
+      "result": "Afnan/Anwal new brief; supplier, unrelated services, non-Saudi and established internal-team requests excluded."
+    },
+    {
+      "query": "\"تطبيق\" \"بنظام المشروع\"",
+      "passes": [
+        {
+          "sort": "Latest",
+          "impressions": 6
+        }
+      ],
+      "result": "No new suitable candidate. Saudi super-app request was equity-only; other posts were unrelated services/jobs."
+    },
+    {
+      "query": "\"أنوال\"",
+      "purpose": "Identity and company corroboration",
+      "passes": [
+        {
+          "sort": "Latest",
+          "impressions": 5
+        }
+      ],
+      "result": "Founder brief plus Anwal services; not additional independent publisher evidence."
+    },
+    {
+      "query": "\"فكرة تطبيق\"",
+      "passes": [
+        {
+          "sort": "Latest",
+          "impressions": 6
+        }
+      ],
+      "result": "Advice, suppliers and already-launched apps, including SetSnap and TEMRINAK."
+    },
+    {
+      "query": "\"أبحث\" \"تطبيق\" \"السعودية\" NOT \"وظيفة\"",
+      "passes": [
+        {
+          "sort": "Latest",
+          "impressions": 6
+        }
+      ],
+      "result": "Jobs/education requests and existing products; no new core candidate."
+    },
+    {
+      "query": "\"أبحث عن مبرمج\" NOT \"وظيفة\" NOT \"وظائف\"",
+      "passes": [
+        {
+          "sort": "Latest",
+          "impressions": 11
+        }
+      ],
+      "result": "Re-found prior SOKAINH and Mo’men requests. Sana/Cinnamon explicitly sought a cofounder, not paid programming; other results lacked Saudi basis, named authority or a new core product."
+    },
+    {
+      "query": "\"مطلوب مطور\" \"تطبيق\"",
+      "passes": [
+        {
+          "sort": "Latest",
+          "impressions": 1
+        }
+      ],
+      "result": "New Maryam Alatwiy Tabuk Photo Booth contract; onsite/provider and ownership gaps."
+    },
+    {
+      "query": "\"تطوير تطبيق\" \"أبحث\"",
+      "passes": [
+        {
+          "sort": "Latest",
+          "impressions": 4
+        }
+      ],
+      "result": "Job seekers and a Jordan-focused investment request; no new suitable candidate."
+    },
+    {
+      "query": "\"مسك الانطلاق\"",
+      "passes": [
+        {
+          "sort": "Latest",
+          "impressions": 6
+        }
+      ],
+      "result": "Program announcements and old graduation content; no additional named fresh project."
+    },
+    {
+      "query": "\"joining Antler\" \"Riyadh\"",
+      "passes": [
+        {
+          "sort": "Latest",
+          "impressions": 6
+        }
+      ],
+      "result": "New Faisal logistics venture and Adilet next-venture announcement. Older Baitak/Eddiy/Sumopod examples already had products or customers."
+    },
+    {
+      "query": "\"Antler\" \"Riyadh\" \"joining\"",
+      "passes": [
+        {
+          "sort": "Latest",
+          "impressions": 6
+        }
+      ],
+      "result": "Faisal and Adilet repeated; official cohort posts useful for future discovery, not extra prospects."
+    },
+    {
+      "query": "\"انضمامي\" \"Antler\"",
+      "passes": [
+        {
+          "sort": "Latest",
+          "impressions": 0
+        }
+      ],
+      "result": "No results."
+    },
+    {
+      "query": "\"أبحث\" \"شركة\" \"منصة\" NOT \"وظيفة\" NOT \"وظائف\"",
+      "passes": [
+        {
+          "sort": "Latest",
+          "impressions": 6
+        }
+      ],
+      "result": "Job seekers, suppliers and VIZOR built prototype/equity-only cofounder search; no new candidate."
+    }
+  ],
+  "stop_reason": "After the broader Antler pass returned repeated candidates, the final Arabic and platform passes added no suitable new candidate. Additional public parallel passes likewise did not establish qualified fits. Stopped without padding.",
+  "prior_work": "outputs/lead-research/linkedin-pilot-2026-09-05/live-pilot.json",
+  "parallel_outputs": [
+    "direct-requests.json",
+    "cohort-founders.json"
+  ],
+  "strongest_next_checks": [
+    "Afnan: first-core status and complete engineering/contractor capacity.",
+    "Maryam: commissioning authority, first-owned-app status and onsite delivery fit.",
+    "Faisal: named product scope and paid outsourcing intent."
+  ],
+  "excluded_patterns": [
+    "Built app or functional core already present.",
+    "Established internal delivery team.",
+    "Explicitly equity-only or no paid developer wanted.",
+    "Unknown Saudi market or non-Saudi project.",
+    "Job seeker or supplier promotion.",
+    "Anonymous request lacking a resolvable commissioning identity."
+  ],
+  "publication_policy": "Exact publication dates stay null where LinkedIn only displayed relative ages. Last-researched date does not refresh an old request."
+}

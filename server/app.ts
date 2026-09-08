@@ -4,12 +4,26 @@ import { fileURLToPath } from 'node:url'
 import { csvFormat, csvParse } from 'd3'
 import { Hono } from 'hono'
 import { logger } from 'hono/logger'
-import webSearchPeopleData from '../assets/people/web-search-people.json'
+import middleEastFoundersData from '../assets/people/middle-east-founders.json'
+import unifiedPeopleData from '../assets/people/unified-people.json'
+import { newsletterTargetGroupOptions } from '../src/newsletterTargetGroups'
+import { createIndustryGroup, loadIndustryTaxonomy, updateIndustryGroup } from './industryTaxonomy'
+import { loadLeadResearch, saveLeadEngagementCell, saveLeadEngagementEvent, saveLeadResearchLeadCell, saveLeadResearchResourceCell, saveLeadResearchStrategyCell } from './leadResearch'
+import {
+  isVcPerson,
+  primaryVcAffiliation,
+  vcAffiliations,
+  vcPeopleResearchRaw,
+  vcPeopleView,
+} from '../src/vcPeopleData'
+import type { VcPeopleManualOverrides } from '../src/vcPeopleData'
 import type {
   Influencer,
   LinkedInFollowerSnapshot,
+  NewsletterTargetGroup,
+  NewsletterTargetGroupOption,
   UnifiedFollowerSnapshot,
-  UnifiedPeopleSourceFile,
+  UnifiedPeopleFile,
   UnifiedPerson,
 } from '../src/unifiedPeopleTypes'
 
@@ -21,7 +35,23 @@ const DATA_FILES = {
   rounds: resolve(PROJECT_ROOT, 'eign_index.rounds.json'),
 } as const
 const TABLE_PREFERENCES_FILE = resolve(PROJECT_ROOT, 'assets/table-preferences.json')
-const WEB_SEARCH_PEOPLE_FILE = resolve(PROJECT_ROOT, 'assets/people/web-search-people.json')
+const TABLE_ARCHIVES_FILE = resolve(PROJECT_ROOT, 'assets/table-archives.json')
+const UNIFIED_PEOPLE_FILE = resolve(PROJECT_ROOT, 'assets/people/unified-people.json')
+const MIDDLE_EAST_FOUNDERS_FILE = resolve(PROJECT_ROOT, 'assets/people/middle-east-founders.json')
+const MIDDLE_EAST_FOUNDER_EDITS_FILE = resolve(PROJECT_ROOT, 'assets/people/middle-east-founder-edits.json')
+const MIDDLE_EAST_CRUNCHBASE_FILE = resolve(
+  PROJECT_ROOT,
+  'outputs/middle-east-jordan-funding-1000-plus/companies.json',
+)
+const YC_CRUNCHBASE_SNAPSHOT_FILE = resolve(PROJECT_ROOT, 'assets/crunchbase/yc-companies.json')
+const YC_INDUSTRY_FUNDING_POST_FILE = resolve(PROJECT_ROOT, 'assets/posts/yc-industry-funding-by-year.json')
+const YC_INDUSTRY_CHART_FILE = resolve(PROJECT_ROOT, 'assets/posts/yc-industry-funding-flourish-all-time-smoothed.tsv')
+const YC_INDUSTRY_GROUPS_FILE = resolve(PROJECT_ROOT, 'assets/posts/yc-industry-groups.json')
+const INDUSTRY_TAXONOMY_PATHS = {
+  chartFile: YC_INDUSTRY_CHART_FILE,
+  groupFile: YC_INDUSTRY_GROUPS_FILE,
+  snapshotFile: YC_CRUNCHBASE_SNAPSHOT_FILE,
+} as const
 
 class FileObjectId {
   constructor(readonly value: string) {}
@@ -76,6 +106,7 @@ const saveJsonRecords = async (path: string, records: DataRecord[]) => {
 
 const RISEUP_SPEAKER_COLUMNS = [
   'speaker',
+  'target',
   'linkedin',
   'role',
   'organisation',
@@ -114,6 +145,11 @@ const normaliseRiseUpSpeakerPreference = (value: unknown): TablePreference => {
     seen.add(column)
     return [column]
   })
+  if (!seen.has('target')) {
+    const speakerIndex = columnOrder.indexOf('speaker')
+    columnOrder.splice(speakerIndex >= 0 ? speakerIndex + 1 : columnOrder.length, 0, 'target')
+    seen.add('target')
+  }
   columnOrder.push(...RISEUP_SPEAKER_COLUMNS.filter((column) => !seen.has(column)))
 
   const requestedSort = record.sort && typeof record.sort === 'object' && !Array.isArray(record.sort)
@@ -163,6 +199,85 @@ const saveTablePreference = async (tableId: string, preference: TablePreference)
   })
   tablePreferenceWriteQueue = operation.catch(() => undefined)
   await operation
+}
+
+type TableArchiveStore = {
+  schema_version: 'table-archives.v1'
+  updated_at: string | null
+  tables: Record<string, { archived_ids: string[]; updated_at: string | null }>
+}
+
+const emptyTableArchiveStore = (): TableArchiveStore => ({
+  schema_version: 'table-archives.v1',
+  updated_at: null,
+  tables: {},
+})
+
+const validateArchiveTableId = (value: string) => {
+  if (!/^[a-z0-9][a-z0-9-]{0,79}$/.test(value)) throw new Error('The archive table ID is invalid.')
+  return value
+}
+
+const normaliseArchiveRowIds = (value: unknown) => {
+  if (!Array.isArray(value) || value.length === 0) throw new Error('Choose at least one row to archive.')
+  if (value.length > 10_000) throw new Error('Too many rows were selected at once.')
+  const ids = value.map((entry) => {
+    if (typeof entry !== 'string' || !entry || entry.length > 1_000) throw new Error('One or more row IDs are invalid.')
+    return entry
+  })
+  return [...new Set(ids)]
+}
+
+const loadTableArchives = async (): Promise<TableArchiveStore> => {
+  try {
+    const parsed = JSON.parse(await readFile(TABLE_ARCHIVES_FILE, 'utf8')) as Partial<TableArchiveStore>
+    const tables = parsed.tables && typeof parsed.tables === 'object' && !Array.isArray(parsed.tables)
+      ? Object.fromEntries(Object.entries(parsed.tables).flatMap(([tableId, value]) => {
+          if (!value || typeof value !== 'object' || Array.isArray(value)) return []
+          const record = value as { archived_ids?: unknown; updated_at?: unknown }
+          const archivedIds = Array.isArray(record.archived_ids)
+            ? [...new Set(record.archived_ids.filter((id): id is string => typeof id === 'string' && Boolean(id)))]
+            : []
+          return [[tableId, {
+            archived_ids: archivedIds,
+            updated_at: typeof record.updated_at === 'string' ? record.updated_at : null,
+          }]]
+        }))
+      : {}
+    return {
+      schema_version: 'table-archives.v1',
+      updated_at: typeof parsed.updated_at === 'string' ? parsed.updated_at : null,
+      tables,
+    }
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code === 'ENOENT') return emptyTableArchiveStore()
+    throw error
+  }
+}
+
+let tableArchiveWriteQueue = Promise.resolve()
+const updateTableArchives = async (tableId: string, rowIds: string[], archived: boolean) => {
+  let updatedTable: TableArchiveStore['tables'][string] | undefined
+  const operation = tableArchiveWriteQueue.then(async () => {
+    const store = await loadTableArchives()
+    const archivedIds = new Set(store.tables[tableId]?.archived_ids ?? [])
+    rowIds.forEach((rowId) => archived ? archivedIds.add(rowId) : archivedIds.delete(rowId))
+    const updatedAt = new Date().toISOString()
+    updatedTable = { archived_ids: [...archivedIds].sort(), updated_at: updatedAt }
+    store.tables[tableId] = updatedTable
+    store.updated_at = updatedAt
+    const tempPath = `${TABLE_ARCHIVES_FILE}.${process.pid}.tmp`
+    try {
+      await writeFile(tempPath, `${JSON.stringify(store, null, 2)}\n`, 'utf8')
+      await rename(tempPath, TABLE_ARCHIVES_FILE)
+    } catch (error) {
+      await unlink(tempPath).catch(() => undefined)
+      throw error
+    }
+  })
+  tableArchiveWriteQueue = operation.catch(() => undefined)
+  await operation
+  return updatedTable!
 }
 
 let companyRecords: DataRecord[] = []
@@ -333,6 +448,95 @@ const SOFTWARE_COMPANY_FILES = {
   curated: resolve(PROJECT_ROOT, 'assets/companies/software-companies-middle-east.csv'),
   review: resolve(PROJECT_ROOT, 'assets/companies/software-companies-non-middle-east-review.csv'),
 } as const
+
+type MiddleEastCrunchbaseCompany = {
+  country: string
+  crunchbaseUrl: string
+  foundedOn: string
+  foundedOnPrecision: string
+  name: string
+  permalink: string
+  sourcePartition: string
+  uuid: string
+}
+
+type MiddleEastCrunchbaseSnapshot = {
+  companies: MiddleEastCrunchbaseCompany[]
+  updatedAt: string
+  version: number
+}
+
+const loadMiddleEastCrunchbaseSnapshot = async (): Promise<MiddleEastCrunchbaseSnapshot> => {
+  const parsed: unknown = JSON.parse(await readFile(MIDDLE_EAST_CRUNCHBASE_FILE, 'utf8'))
+  if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
+    throw new Error('The Middle East Crunchbase snapshot is not a JSON object.')
+  }
+  const snapshot = parsed as Partial<MiddleEastCrunchbaseSnapshot>
+  if (!Array.isArray(snapshot.companies)) {
+    throw new Error('The Middle East Crunchbase snapshot has no companies array.')
+  }
+  return {
+    companies: snapshot.companies,
+    updatedAt: typeof snapshot.updatedAt === 'string' ? snapshot.updatedAt : '',
+    version: typeof snapshot.version === 'number' ? snapshot.version : 1,
+  }
+}
+
+type PulledCrunchbaseCompany = {
+  crunchbaseUrl: string
+  detailedRoundCount: string
+  employeeRange: string
+  estimatedRevenueRange: string
+  foundedYear: string
+  founders: string
+  headquarters: string
+  industries: string
+  investorCount: string
+  investors: string
+  lastFundingDate: string
+  lastFundingType: string
+  name: string
+  operatingStatus: string
+  ownershipStatus: string
+  reportedRoundCount: string
+  shortDescription: string
+  source: string
+  totalRaisedUsd: string
+  website: string
+}
+
+type PulledCrunchbaseSnapshot = {
+  createdAt: string
+  inputFile: string
+  items: PulledCrunchbaseCompany[]
+  updatedAt: string
+  version: number
+}
+
+let pulledCrunchbaseSnapshotPromise: Promise<PulledCrunchbaseSnapshot> | undefined
+
+const loadPulledCrunchbaseSnapshot = () => {
+  if (pulledCrunchbaseSnapshotPromise) return pulledCrunchbaseSnapshotPromise
+  pulledCrunchbaseSnapshotPromise = (async () => {
+    const parsed: unknown = JSON.parse(await readFile(YC_CRUNCHBASE_SNAPSHOT_FILE, 'utf8'))
+    if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
+      throw new Error('The YC Crunchbase table snapshot is not a JSON object.')
+    }
+    const snapshot = parsed as Partial<PulledCrunchbaseSnapshot>
+    if (!Array.isArray(snapshot.items)) throw new Error('The YC Crunchbase table snapshot has no items array.')
+    return {
+      createdAt: asString(snapshot.createdAt),
+      inputFile: asString(snapshot.inputFile) || 'valid links.json',
+      items: snapshot.items,
+      updatedAt: asString(snapshot.updatedAt),
+      version: asNumber(snapshot.version) || 1,
+    }
+  })().catch((error) => {
+    pulledCrunchbaseSnapshotPromise = undefined
+    throw error
+  })
+  return pulledCrunchbaseSnapshotPromise
+}
 
 const SOFTWARE_COMPANY_FLAG_COLUMNS = ['fit', 'reviewed'] as const
 type SoftwareCompanyFlag = typeof SOFTWARE_COMPANY_FLAG_COLUMNS[number]
@@ -529,6 +733,285 @@ const saveNewsletterCell = async (rowId: string, field: NewsletterField, value: 
   return operation
 }
 
+type FounderTier = 1 | 2 | 3
+type FounderEditableField =
+  | 'companies'
+  | 'editorial_order'
+  | 'founder_role'
+  | 'followers'
+  | 'influence_signal'
+  | 'linkedin_url'
+  | 'name'
+  | 'primary_market'
+  | 'sector'
+  | 'source_url'
+  | 'target'
+  | 'tier'
+  | 'why_selected'
+
+type MiddleEastFounderRow = {
+  companies: string[]
+  editorial_order: number
+  evidence: { label: string; observed_at: string; url: string }
+  founder_role: string
+  followers: number | null
+  id: string
+  influence_signal: string
+  linkedin_review: {
+    confidence: string | null
+    evidence: string
+    observed_at: string
+    profile_name: string | null
+    source: string
+    status: 'unresolved' | 'verified'
+  }
+  linkedin_url: string | null
+  name: string
+  primary_market: string
+  sector: string
+  source: 'founder-search'
+  target: boolean
+  tier: FounderTier
+  tier_label: string
+  why_selected: string
+}
+
+type MiddleEastFoundersFile = {
+  generated_at: string
+  rows: MiddleEastFounderRow[]
+  stats: Record<string, number>
+  [key: string]: unknown
+}
+
+type FounderRowOverride = Partial<{
+  companies: string[]
+  editorial_order: number
+  founder_role: string
+  followers: number | null
+  influence_signal: string
+  linkedin_url: string | null
+  name: string
+  primary_market: string
+  sector: string
+  source_url: string
+  target: boolean
+  tier: FounderTier
+  why_selected: string
+}>
+
+type FounderEditsFile = {
+  rows: Record<string, FounderRowOverride>
+  schema_version: 'middle-east-founder-edits.v1'
+  updated_at: string | null
+}
+
+const FOUNDER_TIER_LABELS: Record<FounderTier, string> = {
+  1: 'Region shaper',
+  2: 'Category leader',
+  3: 'Breakout builder',
+}
+
+const FOUNDER_EDITABLE_FIELDS = new Set<FounderEditableField>([
+  'companies',
+  'editorial_order',
+  'founder_role',
+  'followers',
+  'influence_signal',
+  'linkedin_url',
+  'name',
+  'primary_market',
+  'sector',
+  'source_url',
+  'target',
+  'tier',
+  'why_selected',
+])
+
+const isFounderEditableField = (value: unknown): value is FounderEditableField =>
+  typeof value === 'string' && FOUNDER_EDITABLE_FIELDS.has(value as FounderEditableField)
+
+const cleanFounderText = (value: unknown, label: string, allowEmpty = false) => {
+  if (typeof value !== 'string') throw new Error(`${label} must be text.`)
+  const cleaned = value.trim()
+  if (!allowEmpty && !cleaned) throw new Error(`${label} cannot be empty.`)
+  return cleaned
+}
+
+const canonicalFounderLinkedInUrl = (value: string) => {
+  const parsed = new URL(value)
+  const host = parsed.hostname.toLowerCase()
+  const pathParts = parsed.pathname.split('/').filter(Boolean)
+  if (!(host === 'linkedin.com' || host.endsWith('.linkedin.com')) || pathParts[0] !== 'in' || !pathParts[1]) {
+    throw new Error('LinkedIn must be a personal linkedin.com/in profile URL.')
+  }
+  return `https://www.linkedin.com/in/${pathParts[1]}`
+}
+
+const founderCompanies = (value: unknown) => {
+  const values = Array.isArray(value)
+    ? value
+    : typeof value === 'string'
+      ? value.split(/\s*(?:·|,|;|\n)\s*/)
+      : []
+  const companies = values.flatMap((entry) => typeof entry === 'string' && entry.trim() ? [entry.trim()] : [])
+  if (!companies.length) throw new Error('Companies must contain at least one name.')
+  return [...new Set(companies)]
+}
+
+const founderHttpsUrl = (value: unknown) => {
+  const cleaned = cleanFounderText(value, 'Evidence URL')
+  const url = new URL(cleaned)
+  if (url.protocol !== 'https:') throw new Error('Evidence URL must use HTTPS.')
+  return url.toString()
+}
+
+const normaliseFounderEdit = (field: FounderEditableField, value: unknown): FounderRowOverride[FounderEditableField] => {
+  if (field === 'editorial_order') {
+    const order = Number(value)
+    if (!Number.isInteger(order) || order < 1) throw new Error('Order must be a positive whole number.')
+    return order
+  }
+  if (field === 'tier') {
+    const tier = Number(value)
+    if (tier !== 1 && tier !== 2 && tier !== 3) throw new Error('Tier must be 1, 2, or 3.')
+    return tier
+  }
+  if (field === 'followers') {
+    if (value === null || value === '') return null
+    const followers = Number(value)
+    if (!Number.isInteger(followers) || followers < 0) throw new Error('Followers must be a non-negative whole number.')
+    return followers
+  }
+  if (field === 'target') {
+    if (typeof value !== 'boolean') throw new Error('Target must be true or false.')
+    return value
+  }
+  if (field === 'companies') return founderCompanies(value)
+  if (field === 'linkedin_url') {
+    if (value === null || value === '') return null
+    return canonicalFounderLinkedInUrl(cleanFounderText(value, 'LinkedIn URL'))
+  }
+  if (field === 'source_url') return founderHttpsUrl(value)
+  if (field === 'why_selected' || field === 'influence_signal') return cleanFounderText(value, field === 'why_selected' ? 'Why selected' : 'Influence signal', true)
+  const labels: Record<Exclude<FounderEditableField, 'companies' | 'editorial_order' | 'followers' | 'influence_signal' | 'linkedin_url' | 'source_url' | 'target' | 'tier' | 'why_selected'>, string> = {
+    founder_role: 'Founder role',
+    name: 'Name',
+    primary_market: 'Primary market',
+    sector: 'Sector',
+  }
+  return cleanFounderText(value, labels[field])
+}
+
+const loadFounderEdits = async (): Promise<FounderEditsFile> => {
+  try {
+    const parsed = JSON.parse(await readFile(MIDDLE_EAST_FOUNDER_EDITS_FILE, 'utf8')) as FounderEditsFile
+    if (parsed.schema_version !== 'middle-east-founder-edits.v1' || !parsed.rows || typeof parsed.rows !== 'object') {
+      throw new Error('Founder edits file has an invalid schema.')
+    }
+    return parsed
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
+      return { schema_version: 'middle-east-founder-edits.v1', updated_at: null, rows: {} }
+    }
+    throw error
+  }
+}
+
+const writeFounderJson = async (path: string, value: unknown) => {
+  const tempPath = `${path}.${process.pid}.tmp`
+  try {
+    await writeFile(tempPath, `${JSON.stringify(value, null, 2)}\n`, 'utf8')
+    await rename(tempPath, path)
+  } catch (error) {
+    await unlink(tempPath).catch(() => undefined)
+    throw error
+  }
+}
+
+const founderStats = (rows: MiddleEastFounderRow[], previous: Record<string, number>) => ({
+  ...previous,
+  people: rows.length,
+  tier_1: rows.filter((row) => row.tier === 1).length,
+  tier_2: rows.filter((row) => row.tier === 2).length,
+  tier_3: rows.filter((row) => row.tier === 3).length,
+  primary_markets: new Set(rows.map((row) => row.primary_market)).size,
+  sectors: new Set(rows.map((row) => row.sector)).size,
+  linkedin_profiles_verified: rows.filter((row) => row.linkedin_url).length,
+  linkedin_profiles_from_unified_people_exact: rows.filter((row) => row.linkedin_review.source === 'unified-people-exact-match').length,
+  linkedin_profiles_from_unified_people_alias: rows.filter((row) => row.linkedin_review.source === 'unified-people-alias-match').length,
+  linkedin_profiles_from_public_search: rows.filter((row) => row.linkedin_review.source === 'linkedin-public-search' && row.linkedin_review.status === 'verified').length,
+  linkedin_profiles_unresolved: rows.filter((row) => !row.linkedin_url).length,
+  linkedin_followers_filled: rows.filter((row) => row.followers !== null).length,
+  targets_selected: rows.filter((row) => row.target).length,
+  rows_with_sources: rows.filter((row) => row.source === 'founder-search').length,
+  rows_with_evidence: rows.filter((row) => row.evidence.url).length,
+})
+
+let middleEastFoundersFile = structuredClone(middleEastFoundersData) as MiddleEastFoundersFile
+let middleEastFoundersWriteQueue = Promise.resolve()
+
+const saveMiddleEastFounderCell = async (founderId: string, field: FounderEditableField, value: unknown) => {
+  const operation = middleEastFoundersWriteQueue.then(async () => {
+    const rowIndex = middleEastFoundersFile.rows.findIndex((row) => row.id === founderId)
+    if (rowIndex < 0) return null
+
+    const normalizedValue = normaliseFounderEdit(field, value)
+    const nextFile = structuredClone(middleEastFoundersFile)
+    const current = nextFile.rows[rowIndex]
+    const next = { ...current }
+
+    if (field === 'source_url') {
+      next.evidence = { ...next.evidence, url: normalizedValue as string }
+    } else if (field === 'tier') {
+      next.tier = normalizedValue as FounderTier
+      next.tier_label = FOUNDER_TIER_LABELS[next.tier]
+    } else if (field === 'linkedin_url') {
+      const linkedinUrl = normalizedValue as string | null
+      const today = new Date().toISOString().slice(0, 10)
+      next.linkedin_url = linkedinUrl
+      next.linkedin_review = linkedinUrl ? {
+        status: 'verified',
+        profile_name: next.name,
+        confidence: 'high',
+        source: 'manual-ui',
+        evidence: 'Personal LinkedIn profile URL manually edited in the founders table.',
+        observed_at: today,
+      } : {
+        status: 'unresolved',
+        profile_name: null,
+        confidence: null,
+        source: 'manual-ui',
+        evidence: 'Personal LinkedIn profile URL manually cleared in the founders table.',
+        observed_at: today,
+      }
+    } else {
+      Object.assign(next, { [field]: normalizedValue })
+    }
+
+    const nextRows = nextFile.rows.map((row, index) => index === rowIndex ? next : row)
+    if (!nextRows.every((row) => row.source === 'founder-search')) throw new Error('Founder provenance must remain founder-search.')
+    if (new Set(nextRows.map((row) => row.editorial_order)).size !== nextRows.length) throw new Error('Order values must remain unique.')
+    if (new Set(nextRows.map((row) => row.name.trim().toLocaleLowerCase())).size !== nextRows.length) throw new Error('Founder names must remain unique.')
+    const linkedInUrls = nextRows.flatMap((row) => row.linkedin_url ? [row.linkedin_url] : [])
+    if (new Set(linkedInUrls).size !== linkedInUrls.length) throw new Error('LinkedIn profile URLs must remain unique.')
+
+    const now = new Date().toISOString()
+    nextFile.rows = nextRows
+    nextFile.generated_at = now
+    nextFile.stats = founderStats(nextRows, nextFile.stats)
+
+    const edits = await loadFounderEdits()
+    edits.rows[founderId] = { ...edits.rows[founderId], [field]: normalizedValue }
+    edits.updated_at = now
+    await writeFounderJson(MIDDLE_EAST_FOUNDER_EDITS_FILE, edits)
+    await writeFounderJson(MIDDLE_EAST_FOUNDERS_FILE, nextFile)
+    middleEastFoundersFile = nextFile
+    return next
+  })
+  middleEastFoundersWriteQueue = operation.then(() => undefined, () => undefined)
+  return operation
+}
+
 type ActiveInfluencer = Pick<Influencer, 'name' | 'country' | 'lane' | 'organisation' | 'linkedinUrl' | 'priority'>
 
 type InfluencerRow = ActiveInfluencer & {
@@ -542,26 +1025,38 @@ type WebSearchRawRecord = {
   followers_updated_at: string
 }
 
-const webSearchPeopleFile = structuredClone(webSearchPeopleData) as UnifiedPeopleSourceFile
+let unifiedPeopleFile = structuredClone(unifiedPeopleData) as UnifiedPeopleFile
+type PeopleSourceRecord = UnifiedPerson['source_records'][number]
+type WebSearchEntry = {
+  person: UnifiedPerson
+  sourceRecord: PeopleSourceRecord
+  raw: WebSearchRawRecord
+}
 
-const webSearchRawRecord = (person: UnifiedPerson) =>
-  person.source_records.find((record) => record.source_id === 'web-search')?.raw as WebSearchRawRecord | undefined
+const webSearchEntriesFrom = (file: UnifiedPeopleFile): WebSearchEntry[] => file.people.flatMap((person) =>
+  person.source_records
+    .filter((sourceRecord) => sourceRecord.source_id === 'web-search')
+    .map((sourceRecord) => ({
+      person,
+      sourceRecord,
+      raw: sourceRecord.raw as WebSearchRawRecord,
+    })),
+)
 
-const influencerFromPerson = (person: UnifiedPerson): ActiveInfluencer => {
-  const rawDirectory = webSearchRawRecord(person)?.directory
-  const linkedIn = person.profiles.find((profile) => profile.platform === 'linkedin')
+const influencerFromEntry = ({ person, raw }: WebSearchEntry): ActiveInfluencer => {
+  const rawDirectory = raw.directory
   return {
-    name: person.name.display,
-    country: rawDirectory?.country ?? person.location.country as Influencer['country'] ?? 'Regional',
-    lane: person.influence.lane as Influencer['lane'] ?? rawDirectory?.lane ?? 'Ecosystem',
-    organisation: person.current_role.organization ?? rawDirectory?.organisation ?? 'Unknown',
-    linkedinUrl: linkedIn?.url ?? rawDirectory?.linkedinUrl ?? '',
-    priority: person.influence.priority ?? rawDirectory?.priority ?? false,
+    name: rawDirectory.name ?? person.name.display,
+    country: rawDirectory.country ?? person.location.country as Influencer['country'] ?? 'Regional',
+    lane: rawDirectory.lane ?? person.influence.lane as Influencer['lane'] ?? 'Ecosystem',
+    organisation: rawDirectory.organisation ?? person.current_role.organization ?? 'Unknown',
+    linkedinUrl: rawDirectory.linkedinUrl ?? '',
+    priority: rawDirectory.priority ?? person.influence.priority ?? false,
   }
 }
 
-const followerFromPerson = (person: UnifiedPerson): LinkedInFollowerSnapshot => {
-  const follower = person.profiles.find((profile) => profile.platform === 'linkedin')?.followers
+const followerFromEntry = ({ raw }: WebSearchEntry): LinkedInFollowerSnapshot => {
+  const follower = raw.follower
   return follower ? {
     count: follower.count,
     observedAt: follower.observed_at,
@@ -575,9 +1070,17 @@ const followerFromPerson = (person: UnifiedPerson): LinkedInFollowerSnapshot => 
   }
 }
 
-const influencerRecords = webSearchPeopleFile.people.map(influencerFromPerson)
-const influencerFollowerSnapshots = webSearchPeopleFile.people.map(followerFromPerson)
-let influencerWriteQueue = Promise.resolve()
+let webSearchEntries = webSearchEntriesFrom(unifiedPeopleFile)
+let influencerRecords = webSearchEntries.map(influencerFromEntry)
+let influencerFollowerSnapshots = webSearchEntries.map(followerFromEntry)
+let unifiedPeopleWriteQueue = Promise.resolve()
+
+const refreshUnifiedPeopleFile = async () => {
+  unifiedPeopleFile = JSON.parse(await readFile(UNIFIED_PEOPLE_FILE, 'utf8')) as UnifiedPeopleFile
+  webSearchEntries = webSearchEntriesFrom(unifiedPeopleFile)
+  influencerRecords = webSearchEntries.map(influencerFromEntry)
+  influencerFollowerSnapshots = webSearchEntries.map(followerFromEntry)
+}
 
 const influencerRow = (index: number): InfluencerRow => ({
   ...influencerRecords[index],
@@ -585,15 +1088,30 @@ const influencerRow = (index: number): InfluencerRow => ({
   follower: influencerFollowerSnapshots[index],
 })
 
-const saveWebSearchPeopleFile = async () => {
-  const tempPath = `${WEB_SEARCH_PEOPLE_FILE}.${process.pid}.tmp`
+const saveUnifiedPeopleFile = async () => {
+  const tempPath = `${UNIFIED_PEOPLE_FILE}.${process.pid}.tmp`
   try {
-    await writeFile(tempPath, `${JSON.stringify(webSearchPeopleFile, null, 2)}\n`, 'utf8')
-    await rename(tempPath, WEB_SEARCH_PEOPLE_FILE)
+    await writeFile(tempPath, `${JSON.stringify(unifiedPeopleFile, null, 2)}\n`, 'utf8')
+    await rename(tempPath, UNIFIED_PEOPLE_FILE)
   } catch (error) {
     await unlink(tempPath).catch(() => undefined)
     throw error
   }
+}
+
+const canonicalLinkedInProfileUrl = (value: string) => {
+  try {
+    const url = new URL(value)
+    return `linkedin.com${url.pathname.toLocaleLowerCase().replace(/\/$/, '')}`
+  } catch {
+    return value.toLocaleLowerCase().replace(/[?#].*$/, '').replace(/\/$/, '')
+  }
+}
+
+const linkedInProfileForEntry = ({ person, raw }: WebSearchEntry) => {
+  const profileKey = canonicalLinkedInProfileUrl(raw.directory.linkedinUrl)
+  return person.profiles.find((profile) => canonicalLinkedInProfileUrl(profile.url) === profileKey)
+    ?? person.profiles.find((profile) => profile.platform === 'linkedin')
 }
 
 const COUNTRY_CODES: Partial<Record<Influencer['country'], string>> = {
@@ -607,11 +1125,10 @@ const COUNTRY_CODES: Partial<Record<Influencer['country'], string>> = {
 }
 
 const saveInfluencerRecord = async (index: number, record: ActiveInfluencer) => {
-  const person = webSearchPeopleFile.people[index]
-  if (!person) throw new Error('The influencer row could not be located in assets/people/web-search-people.json.')
-  const linkedIn = person.profiles.find((profile) => profile.platform === 'linkedin')
-  const sourceRecord = person.source_records.find((source) => source.source_id === 'web-search')
-  const rawRecord = webSearchRawRecord(person)
+  const entry = webSearchEntries[index]
+  if (!entry) throw new Error('The influencer row could not be located in assets/people/unified-people.json.')
+  const { person, raw, sourceRecord } = entry
+  const linkedIn = linkedInProfileForEntry(entry)
 
   person.name.display = record.name
   person.current_role.organization = record.organisation
@@ -620,16 +1137,17 @@ const saveInfluencerRecord = async (index: number, record: ActiveInfluencer) => 
   person.influence.lane = record.lane
   person.influence.priority = record.priority
   if (linkedIn) linkedIn.url = record.linkedinUrl
-  if (sourceRecord) sourceRecord.source_url = record.linkedinUrl
-  if (rawRecord) rawRecord.directory = { ...rawRecord.directory, ...structuredClone(record) }
-  await saveWebSearchPeopleFile()
+  sourceRecord.source_url = record.linkedinUrl
+  raw.directory = { ...raw.directory, ...structuredClone(record) }
+  unifiedPeopleFile.generated_at = new Date().toISOString()
+  await saveUnifiedPeopleFile()
 }
 
 const saveFollowerCount = async (index: number, count: number | null) => {
-  const person = webSearchPeopleFile.people[index]
-  if (!person) throw new Error('The follower row could not be located in assets/people/web-search-people.json.')
-  const linkedIn = person.profiles.find((profile) => profile.platform === 'linkedin')
-  if (!linkedIn) throw new Error('The converted influencer record has no LinkedIn profile.')
+  const entry = webSearchEntries[index]
+  if (!entry) throw new Error('The follower row could not be located in assets/people/unified-people.json.')
+  const linkedIn = linkedInProfileForEntry(entry)
+  if (!linkedIn) throw new Error('The combined influencer record has no LinkedIn profile.')
   const today = new Date().toISOString().slice(0, 10)
   const snapshot: UnifiedFollowerSnapshot = count === null ? {
     count: null,
@@ -645,19 +1163,18 @@ const saveFollowerCount = async (index: number, count: number | null) => {
     source: 'linkedin-profile',
   }
   linkedIn.followers = snapshot
-  const rawRecord = webSearchRawRecord(person)
-  if (rawRecord) {
-    rawRecord.follower = structuredClone(snapshot)
-    rawRecord.followers_updated_at = today
-  }
-  await saveWebSearchPeopleFile()
+  entry.raw.follower = structuredClone(snapshot)
+  entry.raw.followers_updated_at = today
+  unifiedPeopleFile.generated_at = new Date().toISOString()
+  await saveUnifiedPeopleFile()
 }
 
 const INFLUENCER_COUNTRIES = new Set(influencerRecords.map((influencer) => influencer.country))
 const INFLUENCER_LANES = new Set(influencerRecords.map((influencer) => influencer.lane))
 
 const saveInfluencerCell = async (rowId: string, field: string, value: unknown) => {
-  const operation = influencerWriteQueue.then(async () => {
+  const operation = unifiedPeopleWriteQueue.then(async () => {
+    await refreshUnifiedPeopleFile()
     const index = Number(rowId)
     const current = Number.isInteger(index) ? influencerRecords[index] : undefined
     if (!current) return null
@@ -693,7 +1210,267 @@ const saveInfluencerCell = async (rowId: string, field: string, value: unknown) 
     influencerRecords[index] = next
     return influencerRow(index)
   })
-  influencerWriteQueue = operation.then(() => undefined, () => undefined)
+  unifiedPeopleWriteQueue = operation.then(() => undefined, () => undefined)
+  return operation
+}
+
+const PEOPLE_EDITABLE_FIELDS = [
+  'name',
+  'role',
+  'organization',
+  'country',
+  'lane',
+  'group',
+  'linkedinUrl',
+  'followers',
+  'biography',
+  'fit',
+  'potentialTarget',
+  'target',
+  'priority',
+  'middleEastern',
+] as const
+type PeopleEditableField = typeof PEOPLE_EDITABLE_FIELDS[number]
+
+const isPeopleEditableField = (value: unknown): value is PeopleEditableField =>
+  typeof value === 'string' && PEOPLE_EDITABLE_FIELDS.includes(value as PeopleEditableField)
+
+const optionalText = (value: unknown) => {
+  if (value === null || value === '') return null
+  if (typeof value !== 'string') throw new Error('Expected text or an empty value.')
+  return value.trim() || null
+}
+
+const isLinkedInUrl = (value: string) => {
+  try {
+    const url = new URL(value)
+    return url.protocol === 'https:' && (url.hostname === 'linkedin.com' || url.hostname.endsWith('.linkedin.com'))
+  } catch {
+    return false
+  }
+}
+
+const editableLinkedInProfile = (person: UnifiedPerson) => person.profiles.find(
+  (profile) => profile.platform === 'linkedin' && profile.followers?.count != null,
+) ?? person.profiles.find((profile) => profile.platform === 'linkedin')
+
+const createNewsletterTargetGroup = (rawLabel: unknown) => {
+  const operation = unifiedPeopleWriteQueue.then(async () => {
+    await refreshUnifiedPeopleFile()
+    const label = optionalText(rawLabel)
+    if (!label) throw new Error('Enter a group name.')
+    if (label.length > 60) throw new Error('Group names must be 60 characters or fewer.')
+
+    const options = newsletterTargetGroupOptions(unifiedPeopleFile)
+    const existing = options.find((option) => option.label.localeCompare(label, undefined, { sensitivity: 'accent' }) === 0)
+    if (existing) return { created: false, group: existing }
+
+    const slug = label
+      .normalize('NFKD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLocaleLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-+|-+$/g, '')
+      .slice(0, 42) || 'group'
+    const usedValues = new Set(options.map((option) => option.value))
+    let value = `custom-${slug}` as NewsletterTargetGroup
+    let suffix = 2
+    while (usedValues.has(value)) {
+      value = `custom-${slug}-${suffix}` as NewsletterTargetGroup
+      suffix += 1
+    }
+
+    const group: NewsletterTargetGroupOption = {
+      value,
+      label,
+      description: 'Custom newsletter group.',
+    }
+    unifiedPeopleFile.group_options = [...options, group]
+    unifiedPeopleFile.generated_at = new Date().toISOString()
+    await saveUnifiedPeopleFile()
+    return { created: true, group }
+  })
+  unifiedPeopleWriteQueue = operation.then(() => undefined, () => undefined)
+  return operation
+}
+
+const VC_PEOPLE_EDITABLE_FIELDS = ['name', 'role', 'organization', 'linkedinUrl', 'followers', 'target'] as const
+type VcPeopleEditableField = typeof VC_PEOPLE_EDITABLE_FIELDS[number]
+
+const isVcPeopleEditableField = (value: unknown): value is VcPeopleEditableField =>
+  typeof value === 'string' && VC_PEOPLE_EDITABLE_FIELDS.includes(value as VcPeopleEditableField)
+
+const saveMiddleEastVcPersonCell = (personId: string, field: VcPeopleEditableField, value: unknown) => {
+  const operation = unifiedPeopleWriteQueue.then(async () => {
+    await refreshUnifiedPeopleFile()
+    const person = unifiedPeopleFile.people.find((candidate) => candidate.id === personId)
+    if (!person || !isVcPerson(person)) return null
+
+    const now = new Date().toISOString()
+    const today = now.slice(0, 10)
+    const affiliations = vcAffiliations(person)
+    const primaryAffiliation = primaryVcAffiliation(person)
+    const sourceRecord = primaryAffiliation?.record
+    if (!sourceRecord) return null
+    const raw = structuredClone(vcPeopleResearchRaw(sourceRecord))
+    const manualOverrides: VcPeopleManualOverrides = structuredClone(raw.manual_overrides ?? {})
+
+    if (field === 'name') {
+      const previousName = person.name.display
+      const name = optionalText(value)
+      if (!name) throw new Error('A person name cannot be empty.')
+      person.name.display = name
+      if (person.image.alt === previousName) person.image.alt = name
+      manualOverrides.name = name
+    } else if (field === 'role') {
+      if (affiliations.length > 1) throw new Error('This person has multiple VC affiliations. Edit the canonical role in Unified People.')
+      const role = optionalText(value)
+      manualOverrides.role = role
+      if (!person.current_role.title || person.current_role.title === primaryAffiliation.role) person.current_role.title = role
+    } else if (field === 'organization') {
+      if (affiliations.length > 1) throw new Error('This person has multiple VC affiliations. Edit the canonical organization in Unified People.')
+      const organization = optionalText(value)
+      manualOverrides.organization = organization
+      if (!person.current_role.organization || person.current_role.organization === primaryAffiliation.firm) {
+        person.current_role.organization = organization
+      }
+    } else if (field === 'target') {
+      if (typeof value !== 'boolean') throw new Error('Target must be true or false.')
+      person.influence.target = value
+      manualOverrides.target = value
+    } else if (field === 'linkedinUrl') {
+      const url = optionalText(value)
+      const linkedIn = editableLinkedInProfile(person)
+      if (!url) {
+        if (linkedIn) person.profiles = person.profiles.filter((profile) => profile !== linkedIn)
+      } else {
+        if (!isLinkedInUrl(url)) throw new Error('Enter a valid HTTPS LinkedIn profile URL.')
+        if (linkedIn) {
+          linkedIn.url = url
+          linkedIn.verification = 'manual-ui'
+        } else {
+          person.profiles.push({ platform: 'linkedin', url, verification: 'manual-ui', followers: null })
+        }
+      }
+      manualOverrides.linkedinUrl = url
+    } else {
+      const count = value === null || value === '' ? null : Number(value)
+      if (count !== null && (!Number.isInteger(count) || count < 0)) {
+        throw new Error('Followers must be a non-negative whole number.')
+      }
+      const linkedIn = editableLinkedInProfile(person)
+      if (!linkedIn) throw new Error('Add a LinkedIn profile before entering followers.')
+      linkedIn.followers = count === null ? {
+        count: null,
+        observed_at: today,
+        status: 'not-verified',
+        precision: null,
+        source: null,
+      } : {
+        count,
+        observed_at: today,
+        status: 'observed',
+        precision: 'exact',
+        source: 'linkedin-profile',
+      }
+      raw.follower_count_status = count === null ? 'page_count_unavailable' : 'observed_exact'
+      raw.follower_observation_note = count === null
+        ? 'Follower count cleared in the VC people table.'
+        : 'Exact follower count entered manually in the VC people table.'
+      manualOverrides.followers = count
+    }
+
+    raw.last_manual_edit_at = now
+    raw.manual_edit_fields = [...new Set([...(raw.manual_edit_fields ?? []), field])]
+    raw.manual_overrides = manualOverrides
+    sourceRecord.raw = raw
+    sourceRecord.observed_at = today
+    sourceRecord.verification = 'manual-ui'
+    unifiedPeopleFile.generated_at = now
+    await saveUnifiedPeopleFile()
+    return structuredClone(person)
+  })
+  unifiedPeopleWriteQueue = operation.then(() => undefined, () => undefined)
+  return operation
+}
+
+const saveUnifiedPersonCell = (personId: string, field: PeopleEditableField, value: unknown) => {
+  const operation = unifiedPeopleWriteQueue.then(async () => {
+    await refreshUnifiedPeopleFile()
+    const person = unifiedPeopleFile.people.find((candidate) => candidate.id === personId)
+    if (!person) return null
+
+    if (field === 'name') {
+      const name = optionalText(value)
+      if (!name) throw new Error('A person name cannot be empty.')
+      person.name.display = name
+    } else if (field === 'role') {
+      person.current_role.title = optionalText(value)
+    } else if (field === 'organization') {
+      person.current_role.organization = optionalText(value)
+    } else if (field === 'country') {
+      const country = optionalText(value)
+      person.location.country = country
+      person.location.country_code = country ? COUNTRY_CODES[country as Influencer['country']] ?? null : null
+    } else if (field === 'lane') {
+      person.influence.lane = optionalText(value)
+    } else if (field === 'group') {
+      const group = optionalText(value)
+      const supportedGroups = new Set(newsletterTargetGroupOptions(unifiedPeopleFile).map((option) => option.value))
+      if (group !== null && !supportedGroups.has(group as NewsletterTargetGroup)) throw new Error('Choose a supported newsletter group.')
+      person.group = group as UnifiedPerson['group']
+    } else if (field === 'biography') {
+      person.biography = optionalText(value)
+    } else if (field === 'fit' || field === 'potentialTarget' || field === 'target' || field === 'priority' || field === 'middleEastern') {
+      if (typeof value !== 'boolean') throw new Error('Expected true or false.')
+      if (field === 'fit') person.influence.fit = value
+      else if (field === 'potentialTarget') person.influence.potential_target = value
+      else if (field === 'target') person.influence.target = value
+      else if (field === 'priority') person.influence.priority = value
+      else {
+        person.influence.middle_eastern = {
+          value,
+          method: 'manual-ui',
+          reason: 'Edited in the unified people table',
+          manually_overridden: true,
+        }
+      }
+    } else if (field === 'linkedinUrl') {
+      const url = optionalText(value)
+      const linkedIn = editableLinkedInProfile(person)
+      if (!url) {
+        if (linkedIn) person.profiles = person.profiles.filter((profile) => profile !== linkedIn)
+      } else {
+        if (!isLinkedInUrl(url)) throw new Error('Enter a valid HTTPS LinkedIn profile URL.')
+        if (linkedIn) linkedIn.url = url
+        else person.profiles.push({
+          platform: 'linkedin',
+          url,
+          verification: 'manual-ui',
+          followers: null,
+        })
+      }
+    } else {
+      const count = value === null || value === '' ? null : Number(value)
+      if (count !== null && (!Number.isInteger(count) || count < 0)) {
+        throw new Error('Followers must be a non-negative whole number.')
+      }
+      const linkedIn = editableLinkedInProfile(person)
+      if (!linkedIn) throw new Error('Add a LinkedIn profile before entering followers.')
+      linkedIn.followers = count === null ? null : {
+        count,
+        observed_at: new Date().toISOString().slice(0, 10),
+        status: 'observed',
+        precision: 'exact',
+        source: 'linkedin-profile',
+      }
+    }
+
+    unifiedPeopleFile.generated_at = new Date().toISOString()
+    await saveUnifiedPeopleFile()
+    return person
+  })
+  unifiedPeopleWriteQueue = operation.then(() => undefined, () => undefined)
   return operation
 }
 
@@ -900,6 +1677,110 @@ app.get('/api/health', (context) => context.json({
   },
 }))
 
+app.get('/api/lead-research', async (context) => {
+  try {
+    return context.json(await loadLeadResearch())
+  } catch (error) {
+    return context.json({ error: error instanceof Error ? error.message : 'Unable to load lead research.' }, 500)
+  }
+})
+
+app.patch('/api/lead-research/leads/:leadId', async (context) => {
+  const body = await context.req.json<{ field?: unknown; value?: unknown }>().catch(() => null)
+  if (!body || typeof body.field !== 'string' || !Object.prototype.hasOwnProperty.call(body, 'value')) {
+    return context.json({ error: 'Expected an editable lead field and value.' }, 400)
+  }
+  try {
+    const lead = await saveLeadResearchLeadCell(context.req.param('leadId'), body.field, body.value)
+    if (!lead) return context.json({ error: 'The lead no longer exists.' }, 404)
+    return context.json({ lead, stats: (await loadLeadResearch()).stats })
+  } catch (error) {
+    return context.json({ error: error instanceof Error ? error.message : 'The lead cell could not be saved.' }, 400)
+  }
+})
+
+app.patch('/api/lead-research/resources/:resourceId', async (context) => {
+  const body = await context.req.json<{ field?: unknown; value?: unknown }>().catch(() => null)
+  if (!body || typeof body.field !== 'string' || !Object.prototype.hasOwnProperty.call(body, 'value')) {
+    return context.json({ error: 'Expected an editable resource field and value.' }, 400)
+  }
+  try {
+    const resource = await saveLeadResearchResourceCell(context.req.param('resourceId'), body.field, body.value)
+    if (!resource) return context.json({ error: 'The resource no longer exists.' }, 404)
+    return context.json({ resource, stats: (await loadLeadResearch()).stats })
+  } catch (error) {
+    return context.json({ error: error instanceof Error ? error.message : 'The resource cell could not be saved.' }, 400)
+  }
+})
+
+app.patch('/api/lead-research/strategies/:strategyId', async (context) => {
+  const body = await context.req.json<{ field?: unknown; value?: unknown }>().catch(() => null)
+  if (!body || typeof body.field !== 'string' || !Object.prototype.hasOwnProperty.call(body, 'value')) {
+    return context.json({ error: 'Expected an editable strategy field and value.' }, 400)
+  }
+  try {
+    const strategy = await saveLeadResearchStrategyCell(context.req.param('strategyId'), body.field, body.value)
+    if (!strategy) return context.json({ error: 'The strategy no longer exists.' }, 404)
+    return context.json({ strategy, stats: (await loadLeadResearch()).stats })
+  } catch (error) {
+    return context.json({ error: error instanceof Error ? error.message : 'The strategy cell could not be saved.' }, 400)
+  }
+})
+
+app.patch('/api/lead-research/engagements/:leadId', async (context) => {
+  const body = await context.req.json<{ field?: unknown; value?: unknown }>().catch(() => null)
+  if (!body || typeof body.field !== 'string' || !Object.prototype.hasOwnProperty.call(body, 'value')) {
+    return context.json({ error: 'Expected an editable engagement field and value.' }, 400)
+  }
+  try {
+    const engagement = await saveLeadEngagementCell(context.req.param('leadId'), body.field, body.value)
+    if (!engagement) return context.json({ error: 'The lead no longer exists.' }, 404)
+    return context.json({ engagement, stats: (await loadLeadResearch()).stats })
+  } catch (error) {
+    return context.json({ error: error instanceof Error ? error.message : 'The engagement cell could not be saved.' }, 400)
+  }
+})
+
+app.post('/api/lead-research/engagements/:leadId/events', async (context) => {
+  const body = await context.req.json<{ occurred_on?: unknown; kind?: unknown; channel?: unknown; summary?: unknown }>().catch(() => null)
+  if (!body) return context.json({ error: 'Expected a dated engagement activity.' }, 400)
+  try {
+    const result = await saveLeadEngagementEvent(context.req.param('leadId'), body)
+    if (!result) return context.json({ error: 'The lead no longer exists.' }, 404)
+    return context.json({ ...result, stats: (await loadLeadResearch()).stats }, 201)
+  } catch (error) {
+    return context.json({ error: error instanceof Error ? error.message : 'The engagement activity could not be saved.' }, 400)
+  }
+})
+
+app.get('/api/table-archives/:tableId', async (context) => {
+  try {
+    const tableId = validateArchiveTableId(context.req.param('tableId'))
+    const store = await loadTableArchives()
+    const table = store.tables[tableId]
+    return context.json({
+      archivedIds: table?.archived_ids ?? [],
+      tableId,
+      updatedAt: table?.updated_at ?? null,
+    })
+  } catch (error) {
+    return context.json({ error: error instanceof Error ? error.message : 'Unable to load archived rows.' }, 400)
+  }
+})
+
+app.patch('/api/table-archives/:tableId', async (context) => {
+  try {
+    const tableId = validateArchiveTableId(context.req.param('tableId'))
+    const body = await context.req.json() as { archived?: unknown; rowIds?: unknown }
+    if (typeof body.archived !== 'boolean') throw new Error('Archived must be true or false.')
+    const rowIds = normaliseArchiveRowIds(body.rowIds)
+    const table = await updateTableArchives(tableId, rowIds, body.archived)
+    return context.json({ archivedIds: table.archived_ids, tableId, updatedAt: table.updated_at })
+  } catch (error) {
+    return context.json({ error: error instanceof Error ? error.message : 'Unable to update archived rows.' }, 400)
+  }
+})
+
 app.patch('/api/records/:collection/:recordId', async (context) => {
   const collection = context.req.param('collection')
   if (collection !== 'companies' && collection !== 'rounds') return context.json({ error: 'Unknown file-backed collection.' }, 404)
@@ -914,6 +1795,158 @@ app.patch('/api/records/:collection/:recordId', async (context) => {
     return context.json({ collection, field: body.field, recordId: context.req.param('recordId'), value })
   } catch (error) {
     return context.json({ error: error instanceof Error ? error.message : 'The value could not be saved.' }, 400)
+  }
+})
+
+app.get('/api/middle-east-crunchbase', async (context) => {
+  try {
+    const snapshot = await loadMiddleEastCrunchbaseSnapshot()
+    const items = snapshot.companies.map((company) => ({
+      country: asString(company.country),
+      crunchbaseUrl: asString(company.crunchbaseUrl),
+      foundedOn: asString(company.foundedOn),
+      foundedOnPrecision: asString(company.foundedOnPrecision),
+      name: asString(company.name),
+      permalink: asString(company.permalink),
+      source: 'Crunchbase',
+      sourcePartition: asString(company.sourcePartition),
+      uuid: asString(company.uuid),
+    }))
+    return context.json({
+      columns: [
+        'name',
+        'source',
+        'country',
+        'foundedOn',
+        'foundedOnPrecision',
+        'sourcePartition',
+        'permalink',
+        'crunchbaseUrl',
+        'uuid',
+      ],
+      items,
+      summary: {
+        countries: new Set(items.map((company) => company.country).filter(Boolean)).size,
+        foundedDates: items.filter((company) => company.foundedOn).length,
+        total: items.length,
+      },
+      source: {
+        file: 'outputs/middle-east-jordan-funding-1000-plus/companies.json',
+        provider: 'Crunchbase',
+        updatedAt: snapshot.updatedAt,
+        version: snapshot.version,
+      },
+    })
+  } catch (error) {
+    return context.json({
+      error: error instanceof Error ? error.message : 'Unable to load the Middle East Crunchbase snapshot.',
+    }, 500)
+  }
+})
+
+app.get('/api/yc-crunchbase', async (context) => {
+  try {
+    const snapshot = await loadPulledCrunchbaseSnapshot()
+    const detailedRounds = snapshot.items.reduce(
+      (total, company) => total + (Number(company.detailedRoundCount) || 0),
+      0,
+    )
+    const totalRaisedUsd = snapshot.items.reduce(
+      (total, company) => total + (Number(company.totalRaisedUsd) || 0),
+      0,
+    )
+    return context.json({
+      columns: [
+        'name',
+        'source',
+        'operatingStatus',
+        'headquarters',
+        'foundedYear',
+        'employeeRange',
+        'industries',
+        'totalRaisedUsd',
+        'reportedRoundCount',
+        'detailedRoundCount',
+        'lastFundingType',
+        'lastFundingDate',
+        'investorCount',
+        'investors',
+        'founders',
+        'ownershipStatus',
+        'estimatedRevenueRange',
+        'website',
+        'crunchbaseUrl',
+        'shortDescription',
+      ],
+      items: snapshot.items,
+      summary: {
+        detailedRounds,
+        fundedCompanies: snapshot.items.filter((company) => Number(company.reportedRoundCount) > 0).length,
+        total: snapshot.items.length,
+        totalRaisedUsd,
+      },
+      source: {
+        directory: 'outputs/crunchbase',
+        inputFile: snapshot.inputFile,
+        provider: 'Crunchbase',
+        updatedAt: snapshot.updatedAt || snapshot.createdAt,
+        version: snapshot.version,
+      },
+    })
+  } catch (error) {
+    return context.json({
+      error: error instanceof Error ? error.message : 'Unable to load the pulled Crunchbase dataset.',
+    }, 500)
+  }
+})
+
+app.get('/api/posts/yc-industry-funding-by-year', async (context) => {
+  try {
+    const parsed: unknown = JSON.parse(await readFile(YC_INDUSTRY_FUNDING_POST_FILE, 'utf8'))
+    if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
+      throw new Error('The industry funding post snapshot is not a JSON object.')
+    }
+    return context.json(parsed)
+  } catch (error) {
+    return context.json({
+      error: error instanceof Error ? error.message : 'Unable to load the industry funding post snapshot.',
+    }, 500)
+  }
+})
+
+app.get('/api/yc-industry-taxonomy', async (context) => {
+  try {
+    return context.json(await loadIndustryTaxonomy(INDUSTRY_TAXONOMY_PATHS))
+  } catch (error) {
+    return context.json({
+      error: error instanceof Error ? error.message : 'Unable to load the YC industry taxonomy workspace.',
+    }, 500)
+  }
+})
+
+app.post('/api/yc-industry-taxonomy/groups', async (context) => {
+  const body = await context.req.json<{ name?: unknown }>().catch(() => null)
+  if (!body || !Object.prototype.hasOwnProperty.call(body, 'name')) {
+    return context.json({ error: 'Expected a group name.' }, 400)
+  }
+  try {
+    return context.json(await createIndustryGroup(INDUSTRY_TAXONOMY_PATHS, body.name), 201)
+  } catch (error) {
+    return context.json({ error: error instanceof Error ? error.message : 'Unable to create the industry group.' }, 400)
+  }
+})
+
+app.patch('/api/yc-industry-taxonomy/groups/:groupId', async (context) => {
+  const body = await context.req.json<{ labels?: unknown; name?: unknown }>().catch(() => null)
+  if (!body || (!Object.prototype.hasOwnProperty.call(body, 'labels') && !Object.prototype.hasOwnProperty.call(body, 'name'))) {
+    return context.json({ error: 'Expected a group name or industry labels.' }, 400)
+  }
+  try {
+    const result = await updateIndustryGroup(INDUSTRY_TAXONOMY_PATHS, context.req.param('groupId'), body)
+    if (!result) return context.json({ error: 'The industry group no longer exists.' }, 404)
+    return context.json(result)
+  } catch (error) {
+    return context.json({ error: error instanceof Error ? error.message : 'Unable to update the industry group.' }, 400)
   }
 })
 
@@ -990,10 +2023,10 @@ app.patch('/api/software-companies/cell', async (context) => {
 app.get('/api/influencers', (context) => context.json({
   items: influencerRecords.map((_, index) => influencerRow(index)),
   meta: {
-    source: 'assets/people/web-search-people.json',
-    followerSource: 'assets/people/web-search-people.json · profiles[].followers',
-    verifiedAt: webSearchPeopleFile.source.observed_at ?? webSearchPeopleFile.generated_at.slice(0, 10),
-    followersUpdatedAt: webSearchPeopleFile.people.map(webSearchRawRecord).find(Boolean)?.followers_updated_at ?? webSearchPeopleFile.generated_at.slice(0, 10),
+    source: 'assets/people/unified-people.json · source_records[web-search]',
+    followerSource: 'assets/people/unified-people.json · profiles[].followers',
+    verifiedAt: unifiedPeopleFile.sources.find((source) => source.id === 'web-search')?.observed_at ?? unifiedPeopleFile.generated_at.slice(0, 10),
+    followersUpdatedAt: webSearchEntries.map((entry) => entry.raw.followers_updated_at).find(Boolean) ?? unifiedPeopleFile.generated_at.slice(0, 10),
   },
 }))
 
@@ -1008,6 +2041,65 @@ app.patch('/api/influencers/:rowId', async (context) => {
     return context.json({ item })
   } catch (error) {
     return context.json({ error: error instanceof Error ? error.message : 'The influencer cell could not be saved.' }, 400)
+  }
+})
+
+app.patch('/api/people/:personId', async (context) => {
+  const body = await context.req.json<{ field?: unknown; value?: unknown }>().catch(() => null)
+  if (!body || !isPeopleEditableField(body.field) || !Object.prototype.hasOwnProperty.call(body, 'value')) {
+    return context.json({ error: 'Expected an editable people field and value.' }, 400)
+  }
+  try {
+    const person = await saveUnifiedPersonCell(context.req.param('personId'), body.field, body.value)
+    if (!person) return context.json({ error: 'The combined person record no longer exists.' }, 404)
+    return context.json({ generatedAt: unifiedPeopleFile.generated_at, person })
+  } catch (error) {
+    return context.json({ error: error instanceof Error ? error.message : 'The person cell could not be saved.' }, 400)
+  }
+})
+
+app.post('/api/people/groups', async (context) => {
+  const body = await context.req.json<{ label?: unknown }>().catch(() => null)
+  if (!body || !Object.prototype.hasOwnProperty.call(body, 'label')) {
+    return context.json({ error: 'Expected a group name.' }, 400)
+  }
+  try {
+    const result = await createNewsletterTargetGroup(body.label)
+    return context.json({ ...result, generatedAt: unifiedPeopleFile.generated_at }, result.created ? 201 : 200)
+  } catch (error) {
+    return context.json({ error: error instanceof Error ? error.message : 'The group could not be created.' }, 400)
+  }
+})
+
+app.get('/api/middle-east-vc-people', (context) => context.json(vcPeopleView(unifiedPeopleFile)))
+
+app.patch('/api/middle-east-vc-people/:personId', async (context) => {
+  const body = await context.req.json<{ field?: unknown; value?: unknown }>().catch(() => null)
+  if (!body || !isVcPeopleEditableField(body.field) || !Object.prototype.hasOwnProperty.call(body, 'value')) {
+    return context.json({ error: 'Expected an editable VC people field and value.' }, 400)
+  }
+  try {
+    const person = await saveMiddleEastVcPersonCell(context.req.param('personId'), body.field, body.value)
+    if (!person) return context.json({ error: 'The VC person record no longer exists.' }, 404)
+    return context.json({ generatedAt: unifiedPeopleFile.generated_at, person })
+  } catch (error) {
+    return context.json({ error: error instanceof Error ? error.message : 'The VC person cell could not be saved.' }, 400)
+  }
+})
+
+app.get('/api/middle-east-founders', (context) => context.json(middleEastFoundersFile))
+
+app.patch('/api/middle-east-founders/:founderId', async (context) => {
+  const body = await context.req.json<{ field?: unknown; value?: unknown }>().catch(() => null)
+  if (!body || !isFounderEditableField(body.field) || !Object.prototype.hasOwnProperty.call(body, 'value')) {
+    return context.json({ error: 'Expected an editable founder field and value.' }, 400)
+  }
+  try {
+    const founder = await saveMiddleEastFounderCell(context.req.param('founderId'), body.field, body.value)
+    if (!founder) return context.json({ error: 'The founder row no longer exists.' }, 404)
+    return context.json({ founder, generatedAt: middleEastFoundersFile.generated_at, stats: middleEastFoundersFile.stats })
+  } catch (error) {
+    return context.json({ error: error instanceof Error ? error.message : 'The founder cell could not be saved.' }, 400)
   }
 })
 

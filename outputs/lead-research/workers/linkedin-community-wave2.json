@@ -1,0 +1,804 @@
+{
+  "schema_version": "lead-research-worker-verification.v1",
+  "lane": "stealth-or-precompany",
+  "verified_at": "2026-09-03",
+  "scope": "Second bounded read-only verification wave using public professional sources. Promotion requires confirmed identity, Saudi-market basis, buying authority, plausible custom-software need, and at least one primary source. Unknown technical capacity is neutral, and likes, follows, reposts, and program attendance alone are not qualification evidence.",
+  "scoring_contract": {
+    "formula": "product_intent + outsourcing_likelihood + budget_readiness + timing - penalties",
+    "bands": {
+      "A": "15-20",
+      "B": "10-14",
+      "C": "5-9",
+      "D": "0-4 or hard-disqualified"
+    },
+    "active_rule": "No D-band record may be active. A/B records require two independent source objects, including at least one primary or official source.",
+    "allowed_scores": {
+      "product_intent": [0, 2, 4, 6],
+      "outsourcing_likelihood": [0, 1, 3, 5],
+      "budget_readiness": [0, 1, 3, 5],
+      "timing": [0, 1, 2, 3, 4],
+      "penalties": [0, 1, 2, 3, 4, 5, 6, 7, 8]
+    }
+  },
+  "promoted": [
+    {
+      "id": "lr-linkedin-wathba-mashhoor-aldubayan",
+      "name": "Mashhoor Aldubayan",
+      "personal_linkedin_url": "https://sa.linkedin.com/in/aldubayan",
+      "company": "Wathba | وثبة",
+      "company_domain": "wathba.sa",
+      "company_linkedin_url": null,
+      "lane": "stealth-or-precompany",
+      "product_stage": "pre-MVP; approved architecture and product direction, recruiting the primary founding engineer",
+      "research_state": "active",
+      "technical_capacity": "The role says technology consultants produced architecture and design, while the new hire would be the primary engineer responsible for the first production version. No broader internal engineering team is evidenced.",
+      "gate_review": {
+        "confirmed_identity": {
+          "passed": true,
+          "evidence_refs": ["ev-wathba-founder-post", "ev-wathba-job"],
+          "reason": "The exact personal profile authored the Wathba hiring post, and the linked venture job identifies Mashhoor as the job poster."
+        },
+        "saudi_market_basis": {
+          "passed": true,
+          "evidence_refs": ["ev-wathba-job", "ev-wathba-site"],
+          "reason": "The role calls Wathba an early-stage Saudi startup and locates the work in Riyadh; the venture website describes monthly Riyadh activity."
+        },
+        "buying_authority": {
+          "passed": true,
+          "evidence_refs": ["ev-wathba-founder-post", "ev-wathba-job"],
+          "reason": "Mashhoor personally announced the search and is named as the poster for the primary engineer who will implement the venture's approved architecture."
+        },
+        "plausible_custom_software_need": {
+          "passed": true,
+          "evidence_refs": ["ev-wathba-job", "ev-wathba-sabbar"],
+          "reason": "The brief requires a custom backend, APIs, data model, authentication, dashboard, integrations, GCP deployment, CI/CD, observability, billing and operational tooling for a new platform."
+        },
+        "has_primary_source": {
+          "passed": true,
+          "evidence_refs": ["ev-wathba-founder-post", "ev-wathba-job", "ev-wathba-site"],
+          "reason": "Founder-authored, venture job, and venture-site sources are present."
+        }
+      },
+      "qualification": {
+        "product_intent": {
+          "score": 6,
+          "evidence_refs": ["ev-wathba-job"],
+          "reason": "A specific recent build brief seeks the primary engineer to turn approved architecture into Wathba's first production MVP."
+        },
+        "outsourcing_likelihood": {
+          "score": 5,
+          "evidence_refs": ["ev-wathba-founder-post", "ev-wathba-job"],
+          "reason": "The venture explicitly sought an external founding-level engineer to own end-to-end MVP implementation."
+        },
+        "budget_readiness": {
+          "score": 1,
+          "evidence_refs": ["ev-wathba-job"],
+          "reason": "The role is full-time, but no salary, secured funding, paid pilot, revenue, procurement, or software-build budget is disclosed."
+        },
+        "timing": {
+          "score": 4,
+          "evidence_refs": ["ev-wathba-sabbar"],
+          "reason": "The independent job mirror displayed the role as newly listed within the last three weeks at observation time."
+        },
+        "penalties": {
+          "score": 0,
+          "evidence_refs": [],
+          "reason": "No evidence-backed penalty applies.",
+          "items": []
+        },
+        "total": 16,
+        "band": "A",
+        "calculation": "6 + 5 + 1 + 4 - 0 = 16"
+      },
+      "source_independence": {
+        "meets_a_b_rule": true,
+        "independent_groups": ["founder_personal_post", "venture_job_listing", "venture_website", "independent_job_mirror"],
+        "note": "The Sabbar mirror independently preserved the same detailed brief; the founder post, LinkedIn job, and venture site are first-party source objects."
+      },
+      "evidence": [
+        {
+          "evidence_id": "ev-wathba-founder-post",
+          "url": "https://www.linkedin.com/posts/aldubayan_were-looking-for-a-founding-engineer-at-activity-7471873287841689600-uoLw",
+          "source_title": "Mashhoor Aldubayan - Wathba founding-engineer post",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "primary",
+          "confidence": "high",
+          "publisher_independence_group": "founder_personal_post",
+          "paraphrased_evidence": "Mashhoor states that Wathba is looking for a founding engineer to build an ambitious new product and links to the venture role. LinkedIn displayed the post as approximately two months old."
+        },
+        {
+          "evidence_id": "ev-wathba-job",
+          "url": "https://sa.linkedin.com/jobs/view/founding-engineer-at-wathba-%D9%88%D8%AB%D8%A8%D8%A9-4425875081",
+          "source_title": "Founding Engineer at Wathba | وثبة",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "primary",
+          "confidence": "high",
+          "publisher_independence_group": "venture_job_listing",
+          "paraphrased_evidence": "The listing identifies Mashhoor as poster, calls Wathba an early-stage Saudi startup preparing its MVP, and assigns one primary engineer end-to-end responsibility for backend, dashboard, integrations, cloud deployment, security and operational readiness. LinkedIn displayed the original role as about two months old and no longer accepting applications."
+        },
+        {
+          "evidence_id": "ev-wathba-sabbar",
+          "url": "https://sabbar.com/en/jobs/c-riyadh-r-founding-engineer/id-52af6ec7-ed8f-4528-82c7-5b719c8678c3",
+          "source_title": "Founding Engineer in Wathba - Sabbar",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "secondary",
+          "confidence": "high",
+          "publisher_independence_group": "independent_job_mirror",
+          "paraphrased_evidence": "Sabbar mirrors the Wathba role in Riyadh and independently preserves the pre-MVP stage, approved-architecture handoff, primary-engineer ownership, and detailed platform stack. It displayed the listing as less than three weeks old."
+        },
+        {
+          "evidence_id": "ev-wathba-site",
+          "url": "https://wathba.sa/en",
+          "source_title": "Wathba - Arab Community for AI Builders",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "primary",
+          "confidence": "high",
+          "publisher_independence_group": "venture_website",
+          "paraphrased_evidence": "The venture site describes an AI-builder community for people creating digital products and lists monthly Riyadh meetups plus planned additional member and partner features."
+        }
+      ]
+    },
+    {
+      "id": "lr-linkedin-jadi-bashayr-alabbad",
+      "name": "Bashayr Alabbad",
+      "personal_linkedin_url": "https://sa.linkedin.com/in/balabbad",
+      "company": "Jadi | جادي",
+      "company_domain": null,
+      "company_linkedin_url": null,
+      "lane": "stealth-or-precompany",
+      "product_stage": "concept-to-build; recruiting a full-time technical co-founder to build the platform from the ground up",
+      "research_state": "active",
+      "technical_capacity": "The founder-side job says the technical co-founder is the missing piece and would own architecture, core-platform development, infrastructure and future team building. No existing technical delivery capacity is evidenced.",
+      "gate_review": {
+        "confirmed_identity": {
+          "passed": true,
+          "evidence_refs": ["ev-jadi-profile", "ev-jadi-job"],
+          "reason": "The exact Dhahran-based profile surfaced the Jadi technical-cofounder search, and the linked job names Bashayr as its poster."
+        },
+        "saudi_market_basis": {
+          "passed": true,
+          "evidence_refs": ["ev-jadi-profile", "ev-jadi-job"],
+          "reason": "Bashayr is based in Dhahran, and the product is explicitly for university students across Saudi Arabia with Dhahran preferred for the role."
+        },
+        "buying_authority": {
+          "passed": true,
+          "evidence_refs": ["ev-jadi-profile", "ev-jadi-job"],
+          "reason": "Bashayr posted the first-person technical-partner search and is identified by LinkedIn as the job poster for an equity co-founder role."
+        },
+        "plausible_custom_software_need": {
+          "passed": true,
+          "evidence_refs": ["ev-jadi-job"],
+          "reason": "Jadi requires a new marketplace/ecosystem platform, technical architecture, infrastructure, data layer, analytics and compliance capabilities built from the ground up."
+        },
+        "has_primary_source": {
+          "passed": true,
+          "evidence_refs": ["ev-jadi-profile", "ev-jadi-job"],
+          "reason": "The founder-side profile and venture job are primary source objects."
+        }
+      },
+      "qualification": {
+        "product_intent": {
+          "score": 6,
+          "evidence_refs": ["ev-jadi-job"],
+          "reason": "The role is a concrete technical-partner brief to architect and build a named Saudi student platform from zero."
+        },
+        "outsourcing_likelihood": {
+          "score": 5,
+          "evidence_refs": ["ev-jadi-profile", "ev-jadi-job"],
+          "reason": "The founder side explicitly seeks an external technical co-founder with complete ownership of engineering and vendor relationships."
+        },
+        "budget_readiness": {
+          "score": 1,
+          "evidence_refs": ["ev-jadi-job"],
+          "reason": "The offer is negotiable equity; no salary, funding, customer revenue, procurement, grant or cash build budget is disclosed."
+        },
+        "timing": {
+          "score": 3,
+          "evidence_refs": ["ev-jadi-job"],
+          "reason": "LinkedIn displayed the role as approximately four months old, within the six-month timing window."
+        },
+        "penalties": {
+          "score": 0,
+          "evidence_refs": [],
+          "reason": "No evidence-backed penalty applies.",
+          "items": []
+        },
+        "total": 15,
+        "band": "A",
+        "calculation": "6 + 5 + 1 + 3 - 0 = 15"
+      },
+      "source_independence": {
+        "meets_a_b_rule": true,
+        "independent_groups": ["founder_personal_profile", "venture_job_listing"],
+        "note": "The person profile and venture job are distinct first-party LinkedIn objects, but no external program, product site, or news source was found; the closed application state should be refreshed before future use."
+      },
+      "evidence": [
+        {
+          "evidence_id": "ev-jadi-profile",
+          "url": "https://sa.linkedin.com/in/balabbad",
+          "source_title": "Bashayr Alabbad - LinkedIn profile",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "primary",
+          "confidence": "high",
+          "publisher_independence_group": "founder_personal_profile",
+          "paraphrased_evidence": "The exact profile places Bashayr in Dhahran and contains her first-person Jadi post seeking a technical co-founder with equity and technical autonomy."
+        },
+        {
+          "evidence_id": "ev-jadi-job",
+          "url": "https://sa.linkedin.com/jobs/view/4399318887",
+          "source_title": "Co-Founder | Chief Technology Officer at Jadi | جادي",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "primary",
+          "confidence": "high",
+          "publisher_independence_group": "venture_job_listing",
+          "paraphrased_evidence": "The listing names Bashayr as poster, describes Jadi as a planned ecosystem for Saudi university students, and says the missing technical partner will build the architecture, core platform, infrastructure and data foundation from the ground up. LinkedIn displayed it as about four months old and no longer accepting applications."
+        }
+      ]
+    },
+    {
+      "id": "lr-linkedin-eden-nicolae-esanu",
+      "name": "Nicolae Esanu",
+      "personal_linkedin_url": "https://sa.linkedin.com/in/nicolae-esanu-923683b8",
+      "company": "EDEN",
+      "company_domain": "edentravel.online",
+      "company_linkedin_url": "https://sa.linkedin.com/company/edentravelonline",
+      "lane": "stealth-or-precompany",
+      "product_stage": "new 2026 company with launched MVP, live validation, and early B2B pilot development",
+      "research_state": "active",
+      "technical_capacity": "The public sources identify two business co-founders but do not establish whether software delivery is internal or external. Technical capacity therefore remains unknown and neutral.",
+      "gate_review": {
+        "confirmed_identity": {
+          "passed": true,
+          "evidence_refs": ["ev-eden-site", "ev-eden-profile-corroboration"],
+          "reason": "EDEN's site names Nicolae as co-founder and COO, while an independent ecosystem post identifies the same person as a Saudi-based founder and digital-systems operator."
+        },
+        "saudi_market_basis": {
+          "passed": true,
+          "evidence_refs": ["ev-eden-company", "ev-eden-launchpad", "ev-eden-profile-corroboration"],
+          "reason": "EDEN is headquartered in Riyadh, describes a Saudi-first product and live Riyadh cohort, and is independently associated with Nicolae in Saudi Arabia."
+        },
+        "buying_authority": {
+          "passed": true,
+          "evidence_refs": ["ev-eden-site", "ev-eden-profile-corroboration"],
+          "reason": "Nicolae is explicitly named co-founder and COO."
+        },
+        "plausible_custom_software_need": {
+          "passed": true,
+          "evidence_refs": ["ev-eden-company", "ev-eden-site", "ev-eden-launchpad"],
+          "reason": "The product requires AI traveler-intent matching, social-graph intelligence, group creation, partner analytics, optional API integrations and ongoing roadmap work."
+        },
+        "has_primary_source": {
+          "passed": true,
+          "evidence_refs": ["ev-eden-site", "ev-eden-company", "ev-eden-launchpad"],
+          "reason": "The venture website, company page, and venture-authored Launchpad post are primary sources."
+        }
+      },
+      "qualification": {
+        "product_intent": {
+          "score": 4,
+          "evidence_refs": ["ev-eden-company", "ev-eden-launchpad"],
+          "reason": "EDEN has a specific live platform and recently demonstrated product behavior at LEAP while continuing pilot and partner validation."
+        },
+        "outsourcing_likelihood": {
+          "score": 1,
+          "evidence_refs": ["ev-eden-site"],
+          "reason": "No source confirms an internal engineering team or an external-builder search, so technical capacity remains unknown."
+        },
+        "budget_readiness": {
+          "score": 3,
+          "evidence_refs": ["ev-eden-launchpad", "ev-eden-company"],
+          "reason": "The company completed Misk Launchpad, launched an MVP, is pursuing strategic pilots and angel conversations, and exhibited at LEAP; no paid software budget is disclosed."
+        },
+        "timing": {
+          "score": 4,
+          "evidence_refs": ["ev-eden-company"],
+          "reason": "The company reported live product testing at LEAP two days before observation and a Saudi-built product demonstration within the prior week."
+        },
+        "penalties": {
+          "score": 0,
+          "evidence_refs": [],
+          "reason": "The company was founded in 2026 and no evidence-backed penalty applies.",
+          "items": []
+        },
+        "total": 12,
+        "band": "B",
+        "calculation": "4 + 1 + 3 + 4 - 0 = 12"
+      },
+      "source_independence": {
+        "meets_a_b_rule": true,
+        "independent_groups": ["venture_website", "venture_company_page", "venture_program_post", "ecosystem_profile"],
+        "note": "Startup Moldova provides external identity and Saudi-location corroboration; venture sources establish authority, product and stage."
+      },
+      "evidence": [
+        {
+          "evidence_id": "ev-eden-site",
+          "url": "https://www.edentravel.online/",
+          "source_title": "EDEN - Transforming Solo Travel Experiences",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "primary",
+          "confidence": "high",
+          "publisher_independence_group": "venture_website",
+          "paraphrased_evidence": "The site names Nicolae Esanu as co-founder and COO and describes traveler matching, group-travel creation, partner analytics, pilots, API integrations and continuous product co-creation."
+        },
+        {
+          "evidence_id": "ev-eden-company",
+          "url": "https://sa.linkedin.com/company/edentravelonline",
+          "source_title": "EDEN - LinkedIn company page",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "primary",
+          "confidence": "high",
+          "publisher_independence_group": "venture_company_page",
+          "paraphrased_evidence": "The company page lists Riyadh headquarters, a 2026 founding year and a 2-10 size band. It reported live traveler matching at LEAP within two days of observation and described the product as built in Saudi Arabia."
+        },
+        {
+          "evidence_id": "ev-eden-launchpad",
+          "url": "https://www.linkedin.com/posts/edentravelonline_misk-launchpad-90-eden-misk-foundation-activity-7429858570973646849-N0jZ",
+          "source_title": "EDEN completes Misk Launchpad 9.0",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "primary",
+          "confidence": "high",
+          "publisher_independence_group": "venture_program_post",
+          "paraphrased_evidence": "EDEN states that it completed Misk Launchpad 9.0, launched a Saudi-first MVP to a limited Riyadh cohort on December 23, 2025, and moved into strategic pilot, partnership and early angel conversations."
+        },
+        {
+          "evidence_id": "ev-eden-profile-corroboration",
+          "url": "https://www.linkedin.com/posts/startup-moldova_meet-nicolae-esanu-pmo-consumer-big-data-activity-7408136920515579904-SZAF",
+          "source_title": "Startup Moldova introduces Nicolae Esanu",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "secondary",
+          "confidence": "high",
+          "publisher_independence_group": "ecosystem_profile",
+          "paraphrased_evidence": "Startup Moldova independently identifies Nicolae as a founder and digital-systems leader participating from Saudi Arabia."
+        }
+      ]
+    },
+    {
+      "id": "lr-linkedin-mara-omar-alsumih",
+      "name": "Omar Alsumih",
+      "personal_linkedin_url": "https://sa.linkedin.com/in/omar-alsumih",
+      "company": "Mara | مرا",
+      "company_domain": "iammara.com",
+      "company_linkedin_url": "https://www.linkedin.com/company/yourmara",
+      "lane": "stealth-or-precompany",
+      "product_stage": "student-founded 2026 health-tech startup with a first app version and current regulated-sandbox validation",
+      "research_state": "active",
+      "technical_capacity": "Omar is technically capable and the company lists a four-person team; public teammate evidence also describes AI, backend and health-integration work. This is treated as sufficient internal technical capacity and scored conservatively.",
+      "gate_review": {
+        "confirmed_identity": {
+          "passed": true,
+          "evidence_refs": ["ev-mara-omar-profile", "ev-mara-company"],
+          "reason": "The exact Saudi profile lists Mara as current experience and the venture page shows a matching 2026 Riyadh health-tech company."
+        },
+        "saudi_market_basis": {
+          "passed": true,
+          "evidence_refs": ["ev-mara-company", "ev-mara-job"],
+          "reason": "Mara is headquartered in Riyadh, was founded by Saudi university students, and entered a Saudi national AI health sandbox."
+        },
+        "buying_authority": {
+          "passed": true,
+          "evidence_refs": ["ev-mara-omar-profile", "ev-mara-company"],
+          "reason": "Omar's current venture role, first-person product updates, and first-person hiring language show founding-team product and recruiting authority."
+        },
+        "plausible_custom_software_need": {
+          "passed": true,
+          "evidence_refs": ["ev-mara-company", "ev-mara-job"],
+          "reason": "Mara is a privacy-first multilingual AI health assistant requiring custom app, AI, backend, health-integration, product-design and compliance work."
+        },
+        "has_primary_source": {
+          "passed": true,
+          "evidence_refs": ["ev-mara-omar-profile", "ev-mara-company", "ev-mara-job"],
+          "reason": "The team member profile, venture page and venture job are first-party sources."
+        }
+      },
+      "qualification": {
+        "product_intent": {
+          "score": 4,
+          "evidence_refs": ["ev-mara-company"],
+          "reason": "Mara showed its first app version two months ago, joined a national AI-health sandbox three weeks ago, and is currently recruiting product-design capacity."
+        },
+        "outsourcing_likelihood": {
+          "score": 0,
+          "evidence_refs": ["ev-mara-omar-profile", "ev-mara-company"],
+          "reason": "The founding team demonstrates internal technical and product-building capacity; no external software-builder or vendor request is present."
+        },
+        "budget_readiness": {
+          "score": 3,
+          "evidence_refs": ["ev-mara-company"],
+          "reason": "Mara passed evaluation for a national health-AI sandbox and completed Launchpad, but the only public team role found was unpaid and no cash build budget is disclosed."
+        },
+        "timing": {
+          "score": 4,
+          "evidence_refs": ["ev-mara-company"],
+          "reason": "Sandbox entry and active product/team work were published within three weeks of observation."
+        },
+        "penalties": {
+          "score": 5,
+          "evidence_refs": ["ev-mara-omar-profile", "ev-mara-company"],
+          "reason": "The venture has evidence of sufficient internal technical capacity.",
+          "items": [
+            {
+              "code": "sufficient-internal-team",
+              "score": 5,
+              "reason": "Omar publishes technical work, and Mara's small team has already delivered the first product version and supporting AI/backend capabilities."
+            }
+          ]
+        },
+        "total": 6,
+        "band": "C",
+        "calculation": "4 + 0 + 3 + 4 - 5 = 6"
+      },
+      "source_independence": {
+        "meets_a_b_rule": false,
+        "independent_groups": ["founding_team_profile", "venture_company_page", "venture_job_listing"],
+        "note": "A/B corroboration is not required for this C-band record. The evidence is first-party and should not be read as an outsourcing signal."
+      },
+      "evidence": [
+        {
+          "evidence_id": "ev-mara-omar-profile",
+          "url": "https://sa.linkedin.com/in/omar-alsumih",
+          "source_title": "Omar Alsumih - LinkedIn profile",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "primary",
+          "confidence": "high",
+          "publisher_independence_group": "founding_team_profile",
+          "paraphrased_evidence": "The exact Saudi profile lists Mara as current experience, links the venture domain, posts first-person updates about ongoing work, and shares the venture's current product-designer search as a team need."
+        },
+        {
+          "evidence_id": "ev-mara-company",
+          "url": "https://www.linkedin.com/company/yourmara",
+          "source_title": "Mara | مرا - LinkedIn company page",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "primary",
+          "confidence": "high",
+          "publisher_independence_group": "venture_company_page",
+          "paraphrased_evidence": "The company page lists Riyadh, a 2026 founding year, four employees and a software-development focus. Recent updates report selection into the National AI Health Sandbox, a first app version demonstrated two months earlier, and current product-design recruiting."
+        },
+        {
+          "evidence_id": "ev-mara-job",
+          "url": "https://sa.linkedin.com/jobs/view/product-growth-intern-multidisciplinary-role-at-mara-%D9%85%D9%8E%D8%B1%D9%8E%D8%A7-4363710456",
+          "source_title": "Product & Growth Intern at Mara | مرا",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "primary",
+          "confidence": "high",
+          "publisher_independence_group": "venture_job_listing",
+          "paraphrased_evidence": "The venture describes itself as a student-founded early-stage Saudi health-tech startup building a multilingual AI health assistant and says the role is unpaid because resources are limited."
+        }
+      ]
+    },
+    {
+      "id": "lr-linkedin-shattara-azzam-sahili",
+      "name": "Azzam Sahili",
+      "personal_linkedin_url": "https://sa.linkedin.com/in/azzam-el-sahili",
+      "company": "Shattara AI",
+      "company_domain": "shattaraai.com",
+      "company_linkedin_url": "https://www.linkedin.com/company/shattaraai",
+      "lane": "stealth-or-precompany",
+      "product_stage": "early 2025 company with a live AI-tutor product, recent feature releases and initial campus distribution",
+      "research_state": "active",
+      "technical_capacity": "Azzam is the named founder and personally describes product experimentation and shipping. The company page lists one employee, so his demonstrated technical delivery is treated as sufficient internal capacity rather than as a gap.",
+      "gate_review": {
+        "confirmed_identity": {
+          "passed": true,
+          "evidence_refs": ["ev-shattara-company", "ev-shattara-feature"],
+          "reason": "The company page names Azzam as founder and sole listed employee, and the exact personal post links him to a recent Shattara feature."
+        },
+        "saudi_market_basis": {
+          "passed": true,
+          "evidence_refs": ["ev-shattara-company"],
+          "reason": "The company page identifies Jeddah, Saudi Arabia and says the product was validated for how Saudi university students study."
+        },
+        "buying_authority": {
+          "passed": true,
+          "evidence_refs": ["ev-shattara-company", "ev-shattara-feature"],
+          "reason": "Azzam is explicitly named as founder and publishes first-person product roadmap and feature decisions."
+        },
+        "plausible_custom_software_need": {
+          "passed": true,
+          "evidence_refs": ["ev-shattara-company", "ev-shattara-feature", "ev-shattara-site"],
+          "reason": "The live bilingual AI tutor turns user content into study artifacts and continues to add exams, mind maps, personalization and progress features."
+        },
+        "has_primary_source": {
+          "passed": true,
+          "evidence_refs": ["ev-shattara-company", "ev-shattara-feature", "ev-shattara-site"],
+          "reason": "Founder-authored and venture-owned sources are present."
+        }
+      },
+      "qualification": {
+        "product_intent": {
+          "score": 4,
+          "evidence_refs": ["ev-shattara-feature", "ev-shattara-company"],
+          "reason": "Azzam published an early Exams feature with real-student use two months ago, while the venture continued product experimentation and feature work."
+        },
+        "outsourcing_likelihood": {
+          "score": 0,
+          "evidence_refs": ["ev-shattara-company", "ev-shattara-feature"],
+          "reason": "The technical founder has already delivered and iterated the product; no external builder or vendor request is evidenced."
+        },
+        "budget_readiness": {
+          "score": 3,
+          "evidence_refs": ["ev-shattara-company"],
+          "reason": "Shattara completed Misk Launchpad and operates a live product with a stated subscription and institutional-licensing model; no paid build budget is disclosed."
+        },
+        "timing": {
+          "score": 4,
+          "evidence_refs": ["ev-shattara-feature"],
+          "reason": "A concrete feature update was published within two months of observation."
+        },
+        "penalties": {
+          "score": 5,
+          "evidence_refs": ["ev-shattara-company", "ev-shattara-feature"],
+          "reason": "The founder has demonstrated sufficient internal product-building capacity.",
+          "items": [
+            {
+              "code": "sufficient-internal-team",
+              "score": 5,
+              "reason": "The founder is shipping and testing the product himself; silence about other engineers was not used as evidence."
+            }
+          ]
+        },
+        "total": 6,
+        "band": "C",
+        "calculation": "4 + 0 + 3 + 4 - 5 = 6"
+      },
+      "source_independence": {
+        "meets_a_b_rule": false,
+        "independent_groups": ["founder_personal_post", "venture_company_page", "venture_website"],
+        "note": "A/B corroboration is not required for this C-band record; the record is retained for future product-change monitoring, not as evidence of present outsourcing demand."
+      },
+      "evidence": [
+        {
+          "evidence_id": "ev-shattara-feature",
+          "url": "https://www.linkedin.com/posts/azzam-el-sahili_edtech-aiineducation-studentexperience-activity-7425980107229405184-co56",
+          "source_title": "Azzam Sahili - Shattara Exams feature update",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "primary",
+          "confidence": "high",
+          "publisher_independence_group": "founder_personal_post",
+          "paraphrased_evidence": "Azzam describes Shattara's early Exams feature, real-student use, several assessment modes, instant explanations and more improvements planned. LinkedIn displayed the post as about two months old."
+        },
+        {
+          "evidence_id": "ev-shattara-company",
+          "url": "https://www.linkedin.com/company/shattaraai",
+          "source_title": "Shattara AI - LinkedIn company page",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "primary",
+          "confidence": "high",
+          "publisher_independence_group": "venture_company_page",
+          "paraphrased_evidence": "The page names Azzam as founder, lists Jeddah and a 2025 founding year, describes the bilingual AI tutor, and preserves recent founder updates about product experiments, mind maps, campus distribution and Misk Launchpad 9 completion."
+        },
+        {
+          "evidence_id": "ev-shattara-site",
+          "url": "https://shattaraai.com/",
+          "source_title": "Shattara AI - product website",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "primary",
+          "confidence": "medium",
+          "publisher_independence_group": "venture_website",
+          "paraphrased_evidence": "The venture maintains a live product site for its AI tutor."
+        }
+      ]
+    },
+    {
+      "id": "lr-linkedin-mutim-abdulmohsin-hotami",
+      "name": "Abdulmohsin Hotami",
+      "personal_linkedin_url": "https://sa.linkedin.com/in/hotamia",
+      "company": "Mutim | مُتِم",
+      "company_domain": "mutim.sa",
+      "company_linkedin_url": "https://www.linkedin.com/company/mutim-hr",
+      "lane": "stealth-or-precompany",
+      "product_stage": "new 2025 Saudi company with a working marketplace, first paying customer and staged public launch",
+      "research_state": "active",
+      "technical_capacity": "The two named co-founders have HR-domain backgrounds. The public sources do not establish whether marketplace engineering is internal or external, so technical capacity remains unknown and neutral.",
+      "gate_review": {
+        "confirmed_identity": {
+          "passed": true,
+          "evidence_refs": ["ev-mutim-founder-post", "ev-mutim-company"],
+          "reason": "The exact personal profile authored the launch account, and the company page plus LAUNCH spotlight name Abdulmohsin as a co-founder."
+        },
+        "saudi_market_basis": {
+          "passed": true,
+          "evidence_refs": ["ev-mutim-founder-post", "ev-mutim-site", "ev-mutim-company"],
+          "reason": "Mutim is described as a Saudi HR marketplace, its site says it is made in Saudi Arabia, and the founder profile is in Riyadh."
+        },
+        "buying_authority": {
+          "passed": true,
+          "evidence_refs": ["ev-mutim-founder-post", "ev-mutim-company"],
+          "reason": "Abdulmohsin explicitly identifies himself and Abdullah Binafif as the two co-founders and narrates the venture's launch and customer milestones."
+        },
+        "plausible_custom_software_need": {
+          "passed": true,
+          "evidence_refs": ["ev-mutim-site"],
+          "reason": "The marketplace includes matching, verified provider profiles, contracts, escrow-like payment flow, project tracking, recruiting workflows and analytics."
+        },
+        "has_primary_source": {
+          "passed": true,
+          "evidence_refs": ["ev-mutim-founder-post", "ev-mutim-site", "ev-mutim-company"],
+          "reason": "Founder-authored, venture-site, and venture-page sources are present."
+        }
+      },
+      "qualification": {
+        "product_intent": {
+          "score": 4,
+          "evidence_refs": ["ev-mutim-founder-post", "ev-mutim-site"],
+          "reason": "The founder announced a working marketplace with a first paying customer, and the current site exposes specific platform workflows while staging broader access."
+        },
+        "outsourcing_likelihood": {
+          "score": 1,
+          "evidence_refs": ["ev-mutim-founder-post", "ev-mutim-company"],
+          "reason": "No public source identifies either an internal technical team or an external software-builder search."
+        },
+        "budget_readiness": {
+          "score": 3,
+          "evidence_refs": ["ev-mutim-founder-post"],
+          "reason": "The founder reports a first paying customer plus completion of Sanabil Founder University and Misk Launchpad; no explicit software-procurement budget is disclosed."
+        },
+        "timing": {
+          "score": 3,
+          "evidence_refs": ["ev-mutim-founder-post"],
+          "reason": "The founder launch-and-customer update was displayed as approximately five months old, within the six-month window."
+        },
+        "penalties": {
+          "score": 0,
+          "evidence_refs": [],
+          "reason": "The venture was founded in 2025 and no evidence-backed penalty applies.",
+          "items": []
+        },
+        "total": 11,
+        "band": "B",
+        "calculation": "4 + 1 + 3 + 3 - 0 = 11"
+      },
+      "source_independence": {
+        "meets_a_b_rule": true,
+        "independent_groups": ["founder_personal_post", "venture_website", "venture_company_page", "accelerator_spotlight"],
+        "note": "The founder post and venture site establish product and milestones; the company page carries a separate LAUNCH spotlight naming both founders."
+      },
+      "evidence": [
+        {
+          "evidence_id": "ev-mutim-founder-post",
+          "url": "https://ae.linkedin.com/posts/hotamia_%D9%82%D8%A8%D9%84-%D8%AB%D9%85%D8%A7%D9%86%D9%8A%D8%A9-%D8%A3%D8%B4%D9%87%D8%B1-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%AA-%D9%85%D9%86-%D9%88%D8%B8%D9%8A%D9%81%D8%AA%D9%8A-%D8%A8%D8%B3%D8%A8%D8%A8-%D9%81%D9%83%D8%B1%D8%A9-activity-7428774643194531840-gY25",
+          "source_title": "Abdulmohsin Hotami - Mutim founder launch post",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "primary",
+          "confidence": "high",
+          "publisher_independence_group": "founder_personal_post",
+          "paraphrased_evidence": "Abdulmohsin says he and co-founder Abdullah Binafif began building Mutim in May 2025, completed Sanabil Founder University and Misk Launchpad 9, spoke with more than 100 HR experts, won a first paying customer, and made the platform available."
+        },
+        {
+          "evidence_id": "ev-mutim-site",
+          "url": "https://beta.mutim.sa/",
+          "source_title": "Mutim - Saudi HR experts marketplace",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "primary",
+          "confidence": "high",
+          "publisher_independence_group": "venture_website",
+          "paraphrased_evidence": "The site presents a Saudi HR marketplace with verified-expert matching, contracts, protected payment, project tracking, applicant tracking and analytics, while describing some access and services as coming soon."
+        },
+        {
+          "evidence_id": "ev-mutim-company",
+          "url": "https://www.linkedin.com/company/mutim-hr",
+          "source_title": "Mutim - LinkedIn company page",
+          "observed_at": "2026-09-03",
+          "published_at": null,
+          "source_quality": "primary",
+          "confidence": "high",
+          "publisher_independence_group": "venture_company_page",
+          "paraphrased_evidence": "The page lists a 2025 founding year, 2-10 employees, and the Saudi HR-marketplace mission. It also preserves a LAUNCH spotlight naming Abdulmohsin Hotami and Abdullah Binafif as founders."
+        }
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "lr-unresolved-shahad-alzahrani-bara",
+      "name": "Shahad AlZahrani",
+      "company": "Bar'a",
+      "personal_linkedin_url": "https://sa.linkedin.com/in/shahad-alzahrani-78398a233",
+      "source_urls": ["https://sa.linkedin.com/in/shahad-alzahrani-78398a233"],
+      "why_not_promoted": "Shahad's first-person post confirms that she co-founded a recent environmental-monitoring project during Misk Launchpad 9, but no independent venture source, product site, or software specification was found. The evidence does not yet establish that Bar'a requires a custom app/platform rather than hardware, monitoring services, or an off-the-shelf stack.",
+      "exact_gaps": ["Independent venture or program source", "Explicit software product modality and current build requirement", "Evidence that the project continued after the cohort"],
+      "observed_at": "2026-09-03"
+    },
+    {
+      "id": "lr-unresolved-abdullah-alrasheed-matchmode",
+      "name": "Abdullah Alrasheed",
+      "company": "MatchMode",
+      "personal_linkedin_url": "https://sa.linkedin.com/in/abdullah-alrasheed-a06b27296",
+      "source_urls": ["https://sa.linkedin.com/in/abdullah-alrasheed-a06b27296", "https://sa.linkedin.com/jobs/view/full-stack-developer-intern-at-matchmode-4364292718", "https://matchmode.app/"],
+      "why_not_promoted": "The Saudi app, MVP work and Launchpad completion are clear, but Abdullah's public evidence does not explicitly call him a founder or establish hiring/procurement authority. The App Store publisher is Salem Al Nashwan, so authority cannot be transferred to Abdullah by assumption.",
+      "exact_gaps": ["First-party source explicitly naming Abdullah as founder or decision-maker", "Verified relationship between Abdullah, Salem Al Nashwan and the product entity"],
+      "observed_at": "2026-09-03"
+    },
+    {
+      "id": "lr-unresolved-munirah-w-masqar",
+      "name": "Munirah W",
+      "company": "MASQAR",
+      "personal_linkedin_url": "https://sa.linkedin.com/in/munirah-w",
+      "source_urls": ["https://sa.linkedin.com/in/munirah-w", "https://www.linkedin.com/company/masqar", "https://www.masqar.com/"],
+      "why_not_promoted": "Identity, Saudi basis, co-founder authority and active software work are supported, including a current site and a new live-translation feature still in development. However, MASQAR says it was established in 2019, so it is not an honest stealth-or-precompany record for this lane.",
+      "exact_gaps": ["Evidence that the current direction is a newly formed spinout or genuinely pre-company venture rather than a relaunch of the 2019 platform"],
+      "observed_at": "2026-09-03"
+    },
+    {
+      "id": "lr-unresolved-wadha-alsahli-mulhim",
+      "name": "Wadha Alsahli",
+      "company": "Mulhim delta",
+      "personal_linkedin_url": "https://sa.linkedin.com/in/wadha-alsahli-b705b528a",
+      "source_urls": ["https://www.linkedin.com/company/mulhimd", "https://ae.linkedin.com/posts/wadha-alsahli-b705b528a_%D8%A7%D9%84%D8%AD%D9%85%D8%AF%D8%A7%D9%84%D9%84%D9%87-%D9%81%D9%8A-%D8%A3%D8%B3%D8%A8%D9%88%D8%B9-%D9%88%D8%A7%D8%AD%D8%AF-%D8%AA%D8%AE%D8%B1%D8%AC-mulhim-delta-activity-7432586981278294016-xWS5"],
+      "why_not_promoted": "Wadha is clearly the solo founder and CEO of a Saudi tech-sport company that completed two accelerators and is shipping an app. The current company page nevertheless lists 11-50 employees, an active internship program and a live new app version, placing it outside the stealth-or-precompany lane.",
+      "exact_gaps": ["Correct lane assignment outside stealth-or-precompany", "Evidence of a current external custom-software capacity gap"],
+      "observed_at": "2026-09-03"
+    },
+    {
+      "id": "lr-unresolved-yaser-gebril-nnpa",
+      "name": "Yaser M. Gebril",
+      "company": "Data Nexus Architect - D.N.A / NNPA",
+      "personal_linkedin_url": "https://sa.linkedin.com/in/yaser-m-gebril-a79736123",
+      "source_urls": ["https://www.linkedin.com/company/nnpa", "https://sa.linkedin.com/jobs/view/technical-co-founder-ml-nnpa-at-ninety-nine-percent-analytica-nnpa-4407276746"],
+      "why_not_promoted": "Yaser's founder authority, Riyadh basis and technical-cofounder search are explicit, but the company page says NNPA was founded in 2021 and lists 11-50 employees. The technical-cofounder listing is also closed, so this belongs in a mature/new-product lane unless a separate spinout is verified.",
+      "exact_gaps": ["Evidence that D.N.A is a separate new venture or spinout", "Current confirmation that the closed technical-cofounder requirement remains open"],
+      "observed_at": "2026-09-03"
+    },
+    {
+      "id": "lr-unresolved-iris-zhorov-synapse-iz",
+      "name": "Iris Zhorov",
+      "company": "Synapse IZ",
+      "personal_linkedin_url": "https://www.linkedin.com/in/iris-zhorov-69a21b1a2",
+      "source_urls": ["https://synapseiz.com/", "https://www.linkedin.com/company/synapseiz", "https://sa.linkedin.com/jobs/view/technical-cofounder-saudi-based-at-synapse-iz-4418831755"],
+      "why_not_promoted": "The Saudi health-platform brief is specific and the role seeks a technical co-founder to build it from the ground up, while the company site shows an operational prototype. Public evidence associates Iris with Synapse and the role directs responses to her venture-domain address, but the exact profile could not be opened and no source explicitly rendered her founder title beside the Saudi project. The A-band record is held rather than inferring authority from address ownership.",
+      "exact_gaps": ["Direct first-party source explicitly naming Iris as founder and hiring decision-maker for the Saudi platform", "Independent corroboration of the founder-project relationship", "Current confirmation because the three-month-old LinkedIn role is closed"],
+      "observed_at": "2026-09-03"
+    },
+    {
+      "id": "lr-unresolved-majid-alareqi-inbuco",
+      "name": "Majid Alareqi",
+      "company": "Integrated business computing / INBUCO",
+      "personal_linkedin_url": "https://sa.linkedin.com/in/majid-alareqi-490a0574",
+      "source_urls": ["https://www.linkedin.com/company/inbuco", "https://sa.linkedin.com/jobs/view/%0Atechnical-co-founder-chief-technology-officer-cto-%0A-at-integrated-business-computing-4334695611"],
+      "why_not_promoted": "INBUCO is a 2025 Jeddah ERP company with active product updates and a prior technical-cofounder role, but the company page only identifies Majid as an employee. No source found in this pass establishes that he is the founder, CEO, or current buying authority.",
+      "exact_gaps": ["First-party founder or executive title for Majid", "Current link between Majid and the closed technical-cofounder search"],
+      "observed_at": "2026-09-03"
+    }
+  ],
+  "gaps": [
+    {
+      "code": "verification-yield",
+      "detail": "Six records passed all active gates and scored C or better. The pass stopped below eight rather than moving established 2019-2021 companies into a stealth/precompany lane."
+    },
+    {
+      "code": "closed-role-freshness",
+      "detail": "Several otherwise strong technical-cofounder or founding-engineer listings are marked closed. Their product intent remains useful, but current role availability should be refreshed before any later action."
+    },
+    {
+      "code": "internal-capacity",
+      "detail": "Mara and Shattara are C-band monitoring leads because public evidence shows internal technical delivery capacity; their inclusion is not evidence of outsourcing likelihood."
+    },
+    {
+      "code": "public-visibility",
+      "detail": "Public LinkedIn indexing was incomplete and sometimes rate-limited exact profile pages. Only exact-name verification and public posts/jobs were used; no profile traversal, interaction, contact enrichment, or commercial-search tooling was used."
+    }
+  ],
+  "limitations": [
+    "Research was read-only and used public professional information only.",
+    "No follow, connection, reaction, comment, save, publish, message, form submission, browser extension, contact-detail capture, or automated profile traversal occurred.",
+    "LinkedIn relative ages were preserved in evidence prose; published_at is null when an exact publication date was not exposed.",
+    "A closed application does not prove that the underlying product need ended, but it also does not prove the role remains available."
+  ]
+}

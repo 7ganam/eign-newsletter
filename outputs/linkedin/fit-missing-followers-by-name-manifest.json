@@ -1,0 +1,3528 @@
+{
+  "browser": "edge",
+  "createdAt": "2026-09-01T08:24:16.613Z",
+  "eligibility": "fit-with-linkedin-and-missing-follower-count",
+  "entries": [
+    {
+      "attempts": 1,
+      "error": "Microsoft Edge automation failed: 2030:2042: execution error: __LINKEDIN_FOLLOWERS_ERROR__:LinkedIn opened a different profile than the requested URL (-2700).",
+      "failedAt": "2026-09-01T09:15:27.407Z",
+      "lastAttemptAt": "2026-09-01T09:15:24.744Z",
+      "key": "person_fahad-alghamdi_0m2k5vo\thttps://www.linkedin.com/in/fahad-alghamdi-pmp-pmi-rmp-8889066a",
+      "personIds": [
+        "person_fahad-alghamdi_0m2k5vo"
+      ],
+      "personNames": [
+        "Fahad Alghamdi"
+      ],
+      "status": "failed",
+      "uiPosition": 347,
+      "url": "https://www.linkedin.com/in/fahad-alghamdi-pmp-pmi-rmp-8889066a"
+    },
+    {
+      "attempts": 1,
+      "error": "Microsoft Edge automation failed: 3560:3572: execution error: Timed out waiting for LinkedIn followers. Last result: __LINKEDIN_FOLLOWERS_WAIT__:Page has not finished loading (-2700).",
+      "failedAt": "2026-09-01T12:14:29.723Z",
+      "lastAttemptAt": "2026-09-01T12:14:00.474Z",
+      "key": "person_karima-el-hakim_1xyetd9\thttps://www.linkedin.com/in/karimaelhakim",
+      "personIds": [
+        "person_karima-el-hakim_1xyetd9"
+      ],
+      "personNames": [
+        "Karima El Hakim"
+      ],
+      "status": "failed",
+      "uiPosition": 488,
+      "url": "https://www.linkedin.com/in/karimaelhakim"
+    },
+    {
+      "attempts": 1,
+      "lastAttemptAt": "2026-09-01T12:28:10.464Z",
+      "key": "person_kola-aina_189pbqz\thttps://www.linkedin.com/in/kola-aina-vp",
+      "personIds": [
+        "person_kola-aina_189pbqz"
+      ],
+      "personNames": [
+        "Kola Aina"
+      ],
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/kola-aina-vp",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/kola-aina-vp",
+        "profileSlug": "kola-aina-vp",
+        "profileName": "Kola A.",
+        "pageTitle": "Kola A. | LinkedIn",
+        "observedAt": "2026-09-01T12:28:13.774Z",
+        "followers": {
+          "count": 22873,
+          "displayText": "22,873 followers",
+          "locations": [
+            "profile-header"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "status": "success",
+      "succeededAt": "2026-09-01T12:28:13.797Z",
+      "uiPosition": 509,
+      "url": "https://www.linkedin.com/in/kola-aina-vp"
+    },
+    {
+      "attempts": 1,
+      "error": "Microsoft Edge automation failed: 3560:3572: execution error: __LINKEDIN_FOLLOWERS_ERROR__:LinkedIn opened a different profile than the requested URL (-2700).",
+      "failedAt": "2026-09-01T12:46:33.991Z",
+      "lastAttemptAt": "2026-09-01T12:46:27.939Z",
+      "key": "person_malangou-seyadou_1aslp8r\thttps://www.linkedin.com/in/malangou-seyadou-17a7a9133",
+      "personIds": [
+        "person_malangou-seyadou_1aslp8r"
+      ],
+      "personNames": [
+        "Malangou Seyadou"
+      ],
+      "status": "failed",
+      "uiPosition": 559,
+      "url": "https://www.linkedin.com/in/malangou-seyadou-17a7a9133"
+    },
+    {
+      "attempts": 1,
+      "error": "Microsoft Edge automation failed: Command failed: /usr/bin/osascript -e \non run argv\n  set targetURL to item 1 of argv\n  set extractionJavascript to item 2 of argv\n  set keepOpenFlag to item 3 of argv\n  set pollCount to (item 4 of argv) as integer\n  set collectorWindowName to \"EIGN LinkedIn Collector\"\n  set targetWindow to missing value\n  set targetTab to missing value\n  set lastResult to \"__LINKEDIN_FOLLOWERS_WAIT__:Page has not finished loading\"\n\n  try\n    using terms from application \"Microsoft Edge\"\n      tell application \"Microsoft Edge\"\n        if keepOpenFlag is \"true\" then\n          repeat with candidateWindow in every window\n            try\n              if given name of candidateWindow is collectorWindowName then\n                set targetWindow to candidateWindow\n                exit repeat\n              end if\n            end try\n          end repeat\n        end if\n\n        if targetWindow is missing value then\n          set targetWindow to make new window with properties {visible:false}\n          if keepOpenFlag is \"true\" then\n            set given name of targetWindow to collectorWindowName\n          end if\n        end if\n\n        -- Reassert this throughout every request. Edge can surface a hidden\n        -- window after navigation finishes unless it is also kept minimized.\n        if keepOpenFlag is \"true\" then\n          set minimized of targetWindow to true\n        end if\n        set visible of targetWindow to false\n        set targetTab to active tab of targetWindow\n        set URL of targetTab to targetURL\n        if keepOpenFlag is \"true\" then\n          set minimized of targetWindow to true\n        end if\n        set visible of targetWindow to false\n\n        repeat pollCount times\n          if keepOpenFlag is \"true\" then\n            set minimized of targetWindow to true\n            set visible of targetWindow to false\n          end if\n          if (loading of targetTab) is false then\n            try\n              set lastResult to execute targetTab javascript extractionJavascript\n            on error scriptError\n              if scriptError contains \"JavaScript from Apple Events\" or scriptError contains \"AppleScript is turned off\" then\n                set lastResult to \"__LINKEDIN_FOLLOWERS_ERROR__:\" & scriptError\n              else\n                set lastResult to \"__LINKEDIN_FOLLOWERS_WAIT__:\" & scriptError\n              end if\n            end try\n\n            if lastResult starts with \"__LINKEDIN_FOLLOWERS_ERROR__:\" then\n              error lastResult\n            end if\n\n            if lastResult does not start with \"__LINKEDIN_FOLLOWERS_WAIT__:\" then\n              if keepOpenFlag is not \"true\" then\n                close targetWindow\n                set targetWindow to missing value\n              else\n                set minimized of targetWindow to true\n                set visible of targetWindow to false\n              end if\n              return lastResult\n            end if\n          end if\n          delay 0.25\n        end repeat\n\n        error \"Timed out waiting for LinkedIn followers. Last result: \" & lastResult\n      end tell\n    end using terms from\n  on error errorMessage number errorNumber\n    if targetWindow is not missing value then\n      try\n        using terms from application \"Microsoft Edge\"\n          tell application \"Microsoft Edge\"\n            if keepOpenFlag is \"true\" then\n              set minimized of targetWindow to true\n              set visible of targetWindow to false\n            else\n              close targetWindow\n            end if\n          end tell\n        end using terms from\n      end try\n    end if\n    error errorMessage number errorNumber\n  end try\nend run\n https://www.linkedin.com/in/mohamed-maouloud-mohamed (() => {\n    const waitPrefix = \"__LINKEDIN_FOLLOWERS_WAIT__:\";\n    const errorPrefix = \"__LINKEDIN_FOLLOWERS_ERROR__:\";\n    const expectedSlug = \"mohamed-maouloud-mohamed\";\n    const expectedPathSlug = \"mohamed-maouloud-mohamed\";\n    const canonicalProfileUrl = \"https://www.linkedin.com/in/mohamed-maouloud-mohamed\";\n    const browserName = \"Microsoft Edge\";\n    const pageText = document.body ? document.body.innerText : '';\n\n    if (\n      /authwall|checkpoint|login/i.test(location.pathname) ||\n      /sign in to linkedin|join linkedin/i.test(pageText)\n    ) {\n      return errorPrefix + 'The selected browser is not logged in to LinkedIn';\n    }\n    if (\n      /security verification|unusual activity|temporarily restricted/i.test(pageText)\n    ) {\n      return errorPrefix + 'LinkedIn is showing a security or restriction page';\n    }\n\n    const currentMatch = location.pathname.match(/^\\/in\\/([^/]+)\\/?$/i);\n    if (!currentMatch) {\n      return waitPrefix + 'The LinkedIn profile has not loaded yet';\n    }\n    if (currentMatch[1].toLowerCase() !== expectedPathSlug.toLowerCase()) {\n      return errorPrefix + 'LinkedIn opened a different profile than the requested URL';\n    }\n\n    const main = document.querySelector('main');\n    const profileHeading = main && main.querySelector('h1,h2,[role=\"heading\"]');\n    if (!main || !profileHeading) {\n      return waitPrefix + 'The LinkedIn profile content is not available yet';\n    }\n\n    const normalize = (value) => String(value || '')\n      .replace(/\\u00a0/g, ' ')\n      .replace(/\\s+/g, ' ')\n      .trim();\n    const followerPattern = /^((?:\\d{1,3}(?:[,.\\s]\\d{3})+|\\d+)(?:[.,]\\d+)?)([KMB])?\\+?\\s+followers$/i;\n    const matchesFollowerText = (element) => followerPattern.test(normalize(element.textContent));\n    const isRendered = (element) => {\n      const style = window.getComputedStyle(element);\n      return style.display !== 'none' &&\n        style.visibility !== 'hidden' &&\n        element.getClientRects().length > 0;\n    };\n    const exactHeadings = (element) => Array.from(\n      element.querySelectorAll('h1,h2,h3,[role=\"heading\"]')\n    ).map((heading) => normalize(heading.textContent));\n    const classify = (element) => {\n      let ancestor = element;\n      while (ancestor && ancestor !== main) {\n        const headings = exactHeadings(ancestor);\n        if (headings.length) {\n          if (normalize(ancestor.innerText).length > 2000) return null;\n          if (headings.some((heading) => /^activity$/i.test(heading))) {\n            return 'activity';\n          }\n          if (headings.some((heading) => heading === normalize(profileHeading.textContent))) {\n            return 'profile-header';\n          }\n          return null;\n        }\n        ancestor = ancestor.parentElement;\n      }\n      return null;\n    };\n    const parseCount = (text) => {\n      const match = normalize(text).match(followerPattern);\n      if (!match) return null;\n      const suffix = match[2] ? match[2].toUpperCase() : '';\n      if (!suffix) {\n        const count = Number(match[1].replace(/\\D/g, ''));\n        return Number.isSafeInteger(count)\n          ? { count, precision: 'exact', text: normalize(text) }\n          : null;\n      }\n      const numericValue = Number(match[1].replace(/\\s/g, '').replace(',', '.'));\n      const multiplier = suffix === 'K'\n        ? 1000\n        : suffix === 'M'\n          ? 1000000\n          : 1000000000;\n      const count = Math.round(numericValue * multiplier);\n      return Number.isSafeInteger(count)\n        ? { count, precision: 'rounded', text: normalize(text) }\n        : null;\n    };\n\n    const candidateElements = Array.from(main.querySelectorAll('p,span,div'))\n      .filter(matchesFollowerText)\n      .filter((element) => !Array.from(element.children).some(matchesFollowerText))\n      .filter(isRendered);\n    const observations = candidateElements.flatMap((element) => {\n      const location = classify(element);\n      const parsed = parseCount(element.textContent);\n      return location && parsed ? [{ ...parsed, location }] : [];\n    });\n\n    if (!observations.length) {\n      return waitPrefix + 'No follower count is visible in the profile header or Activity section yet';\n    }\n\n    const uniqueCounts = new Set(observations.map((observation) => observation.count));\n    if (uniqueCounts.size !== 1) {\n      return errorPrefix + 'LinkedIn displayed conflicting follower counts on the profile';\n    }\n\n    const selected = observations.find(\n      (observation) => observation.location === 'profile-header'\n    ) || observations[0];\n    const locations = Array.from(new Set(\n      observations.map((observation) => observation.location)\n    )).sort((left, right) =>\n      left === right ? 0 : left === 'profile-header' ? -1 : 1\n    );\n\n    return JSON.stringify({\n      schemaVersion: 'linkedin-followers.v1',\n      sourceUrl: location.href,\n      canonicalProfileUrl,\n      profileSlug: expectedSlug,\n      profileName: normalize(profileHeading.textContent),\n      pageTitle: document.title,\n      observedAt: new Date().toISOString(),\n      followers: {\n        count: selected.count,\n        displayText: selected.text,\n        locations,\n        precision: selected.precision,\n        source: 'linkedin-profile',\n      },\n      extraction: {\n        method: 'visible-profile-dom',\n        browser: browserName,\n      },\n    });\n  })() true 100\n. Enable View > Developer > Allow JavaScript from Apple Events in the selected browser.",
+      "failedAt": "2026-09-01T13:30:25.892Z",
+      "lastAttemptAt": "2026-09-01T13:29:50.864Z",
+      "key": "person_mohamed-salama_05vmpzh\thttps://www.linkedin.com/in/mohamed-maouloud-mohamed",
+      "personIds": [
+        "person_mohamed-salama_05vmpzh"
+      ],
+      "personNames": [
+        "Mohamed Salama"
+      ],
+      "status": "failed",
+      "uiPosition": 640,
+      "url": "https://www.linkedin.com/in/mohamed-maouloud-mohamed"
+    },
+    {
+      "attempts": 1,
+      "key": "person_mohamed-sellam_1fbh0ou\thttps://www.linkedin.com/in/mohamed-sellam-2196556b",
+      "personIds": [
+        "person_mohamed-sellam_1fbh0ou"
+      ],
+      "personNames": [
+        "Mohamed Sellam"
+      ],
+      "status": "success",
+      "uiPosition": 641,
+      "url": "https://www.linkedin.com/in/mohamed-sellam-2196556b",
+      "lastAttemptAt": "2026-09-01T14:34:04.628Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/mohamed-sellam-2196556b/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/mohamed-sellam-2196556b",
+        "profileSlug": "mohamed-sellam-2196556b",
+        "profileName": "Mohamed SELLAM",
+        "pageTitle": "Mohamed SELLAM | LinkedIn",
+        "observedAt": "2026-09-01T14:34:10.930Z",
+        "followers": {
+          "count": 136,
+          "displayText": "136 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:34:10.961Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_mohamed-serokh_0cnuxsk\thttps://www.linkedin.com/in/mohamedserokh",
+      "personIds": [
+        "person_mohamed-serokh_0cnuxsk"
+      ],
+      "personNames": [
+        "Mohamed Serokh"
+      ],
+      "status": "success",
+      "uiPosition": 642,
+      "url": "https://www.linkedin.com/in/mohamedserokh",
+      "lastAttemptAt": "2026-09-01T14:34:11.036Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/mohamedserokh/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/mohamedserokh",
+        "profileSlug": "mohamedserokh",
+        "profileName": "Mohamed Serokh",
+        "pageTitle": "Mohamed Serokh | LinkedIn",
+        "observedAt": "2026-09-01T14:34:14.898Z",
+        "followers": {
+          "count": 30683,
+          "displayText": "30,683 followers",
+          "locations": [
+            "profile-header"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:34:14.938Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_mohamed-sobhy-fouda_19ip83f\thttps://www.linkedin.com/in/mohamedsobhifouda",
+      "personIds": [
+        "person_mohamed-sobhy-fouda_19ip83f"
+      ],
+      "personNames": [
+        "Mohamed Sobhy Fouda"
+      ],
+      "status": "success",
+      "uiPosition": 643,
+      "url": "https://www.linkedin.com/in/mohamedsobhifouda",
+      "lastAttemptAt": "2026-09-01T14:34:15.041Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/mohamedsobhifouda",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/mohamedsobhifouda",
+        "profileSlug": "mohamedsobhifouda",
+        "profileName": "Mohamed Sobhy Fouda",
+        "pageTitle": "Mohamed Sobhy Fouda | LinkedIn",
+        "observedAt": "2026-09-01T14:34:17.918Z",
+        "followers": {
+          "count": 21466,
+          "displayText": "21,466 followers",
+          "locations": [
+            "profile-header"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:34:17.934Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_mohamed-touiti_1prqqgw\thttps://www.linkedin.com/in/mohamedtouiti",
+      "personIds": [
+        "person_mohamed-touiti_1prqqgw"
+      ],
+      "personNames": [
+        "Mohamed Touiti"
+      ],
+      "status": "success",
+      "uiPosition": 644,
+      "url": "https://www.linkedin.com/in/mohamedtouiti",
+      "lastAttemptAt": "2026-09-01T14:34:18.019Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/mohamedtouiti/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/mohamedtouiti",
+        "profileSlug": "mohamedtouiti",
+        "profileName": "Mohamed Touiti",
+        "pageTitle": "Mohamed Touiti | LinkedIn",
+        "observedAt": "2026-09-01T14:34:21.005Z",
+        "followers": {
+          "count": 4921,
+          "displayText": "4,921 followers",
+          "locations": [
+            "profile-header"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:34:21.027Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_mohamed-zaki_0ebofkt\thttps://www.linkedin.com/in/mohamed-zaki-8a06b33a",
+      "personIds": [
+        "person_mohamed-zaki_0ebofkt"
+      ],
+      "personNames": [
+        "Mohamed Zaki"
+      ],
+      "status": "success",
+      "uiPosition": 645,
+      "url": "https://www.linkedin.com/in/mohamed-zaki-8a06b33a",
+      "lastAttemptAt": "2026-09-01T14:34:21.095Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/mohamed-zaki-8a06b33a/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/mohamed-zaki-8a06b33a",
+        "profileSlug": "mohamed-zaki-8a06b33a",
+        "profileName": "Mohamed Zaki",
+        "pageTitle": "Mohamed Zaki | LinkedIn",
+        "observedAt": "2026-09-01T14:34:26.440Z",
+        "followers": {
+          "count": 3462,
+          "displayText": "3,462 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:34:26.458Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_mohamed-zayed_1u1h8zu\thttps://www.linkedin.com/in/mohamed-zayed-b33936229",
+      "personIds": [
+        "person_mohamed-zayed_1u1h8zu"
+      ],
+      "personNames": [
+        "Mohamed Zayed"
+      ],
+      "status": "success",
+      "uiPosition": 646,
+      "url": "https://www.linkedin.com/in/mohamed-zayed-b33936229",
+      "lastAttemptAt": "2026-09-01T14:34:26.534Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/mohamed-zayed-b33936229/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/mohamed-zayed-b33936229",
+        "profileSlug": "mohamed-zayed-b33936229",
+        "profileName": "mohamed (Shaker) zayed",
+        "pageTitle": "mohamed zayed | LinkedIn",
+        "observedAt": "2026-09-01T14:34:30.848Z",
+        "followers": {
+          "count": 107,
+          "displayText": "107 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:34:30.869Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_mohammad-alyousof_1377mot\thttps://www.linkedin.com/in/mohammedalyousef",
+      "personIds": [
+        "person_mohammad-alyousof_1377mot"
+      ],
+      "personNames": [
+        "Mohammad Alyousof"
+      ],
+      "status": "success",
+      "uiPosition": 649,
+      "url": "https://www.linkedin.com/in/mohammedalyousef",
+      "lastAttemptAt": "2026-09-01T14:34:30.920Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/mohammedalyousef/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/mohammedalyousef",
+        "profileSlug": "mohammedalyousef",
+        "profileName": "Mohammad AlYousof",
+        "pageTitle": "Mohammad AlYousof | LinkedIn",
+        "observedAt": "2026-09-01T14:34:36.075Z",
+        "followers": {
+          "count": 2646,
+          "displayText": "2,646 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:34:36.091Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_mohammed-alsheikh_0tdml0a\thttps://www.linkedin.com/in/mohammed-alsheikh26",
+      "personIds": [
+        "person_mohammed-alsheikh_0tdml0a"
+      ],
+      "personNames": [
+        "Mohammed AlSheikh"
+      ],
+      "status": "success",
+      "uiPosition": 660,
+      "url": "https://www.linkedin.com/in/mohammed-alsheikh26",
+      "lastAttemptAt": "2026-09-01T14:34:36.168Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/mohammed-alsheikh26/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/mohammed-alsheikh26",
+        "profileSlug": "mohammed-alsheikh26",
+        "profileName": "Mohammed AlSheikh",
+        "pageTitle": "Mohammed AlSheikh | LinkedIn",
+        "observedAt": "2026-09-01T14:34:48.850Z",
+        "followers": {
+          "count": 657,
+          "displayText": "657 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:34:48.865Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_mohammed-saty_1fo5xsi\thttps://www.linkedin.com/in/mohammed-saty-97368746",
+      "personIds": [
+        "person_mohammed-saty_1fo5xsi"
+      ],
+      "personNames": [
+        "Mohammed Saty"
+      ],
+      "status": "success",
+      "uiPosition": 666,
+      "url": "https://www.linkedin.com/in/mohammed-saty-97368746",
+      "lastAttemptAt": "2026-09-01T14:34:48.933Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/mohammed-saty-97368746/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/mohammed-saty-97368746",
+        "profileSlug": "mohammed-saty-97368746",
+        "profileName": "Mohammed Saty",
+        "pageTitle": "Mohammed Saty | LinkedIn",
+        "observedAt": "2026-09-01T14:34:51.248Z",
+        "followers": {
+          "count": 10171,
+          "displayText": "10,171 followers",
+          "locations": [
+            "profile-header"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:34:51.401Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_mohaned-lafi_082lbwt\thttps://www.linkedin.com/in/mohaned-lafi-75073256",
+      "personIds": [
+        "person_mohaned-lafi_082lbwt"
+      ],
+      "personNames": [
+        "Mohaned Lafi"
+      ],
+      "status": "success",
+      "uiPosition": 667,
+      "url": "https://www.linkedin.com/in/mohaned-lafi-75073256",
+      "lastAttemptAt": "2026-09-01T14:34:51.467Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/mohaned-lafi-75073256/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/mohaned-lafi-75073256",
+        "profileSlug": "mohaned-lafi-75073256",
+        "profileName": "Mohaned Lafi",
+        "pageTitle": "Mohaned Lafi | LinkedIn",
+        "observedAt": "2026-09-01T14:35:04.843Z",
+        "followers": {
+          "count": 2502,
+          "displayText": "2,502 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:35:04.856Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_mohy-aboualam_16sbs50\thttps://www.linkedin.com/in/maboualam",
+      "personIds": [
+        "person_mohy-aboualam_16sbs50"
+      ],
+      "personNames": [
+        "Mohy Aboualam"
+      ],
+      "status": "success",
+      "uiPosition": 670,
+      "url": "https://www.linkedin.com/in/maboualam",
+      "lastAttemptAt": "2026-09-01T14:35:04.909Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/maboualam/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/maboualam",
+        "profileSlug": "maboualam",
+        "profileName": "Mohy Aboualam",
+        "pageTitle": "Mohy Aboualam | LinkedIn",
+        "observedAt": "2026-09-01T14:35:14.150Z",
+        "followers": {
+          "count": 3838,
+          "displayText": "3,838 followers",
+          "locations": [
+            "profile-header",
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:35:14.167Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_mona-al-mukhaizeem_0k2u9au\thttps://www.linkedin.com/in/mona-al-mukhaizeem-921aba8",
+      "personIds": [
+        "person_mona-al-mukhaizeem_0k2u9au"
+      ],
+      "personNames": [
+        "Mona Al-Mukhaizeem"
+      ],
+      "status": "success",
+      "uiPosition": 672,
+      "url": "https://www.linkedin.com/in/mona-al-mukhaizeem-921aba8",
+      "lastAttemptAt": "2026-09-01T14:35:14.263Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/mona-al-mukhaizeem-921aba8/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/mona-al-mukhaizeem-921aba8",
+        "profileSlug": "mona-al-mukhaizeem-921aba8",
+        "profileName": "Mona Al-Mukhaizeem",
+        "pageTitle": "Mona Al-Mukhaizeem | LinkedIn",
+        "observedAt": "2026-09-01T14:35:20.476Z",
+        "followers": {
+          "count": 739,
+          "displayText": "739 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:35:20.499Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_mona-seleim_1dtzrof\thttps://www.linkedin.com/in/monaseleim",
+      "personIds": [
+        "person_mona-seleim_1dtzrof"
+      ],
+      "personNames": [
+        "Mona Seleim"
+      ],
+      "status": "success",
+      "uiPosition": 674,
+      "url": "https://www.linkedin.com/in/monaseleim",
+      "lastAttemptAt": "2026-09-01T14:35:20.567Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/monaseleim/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/monaseleim",
+        "profileSlug": "monaseleim",
+        "profileName": "Mona Seleim",
+        "pageTitle": "Mona Seleim | LinkedIn",
+        "observedAt": "2026-09-01T14:35:30.611Z",
+        "followers": {
+          "count": 4318,
+          "displayText": "4,318 followers",
+          "locations": [
+            "profile-header"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:35:30.625Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_mosab-alghamdi_1gn54n0\thttps://www.linkedin.com/in/mosab-alghamdi-a1125a10",
+      "personIds": [
+        "person_mosab-alghamdi_1gn54n0"
+      ],
+      "personNames": [
+        "Mosab AlGhamdi"
+      ],
+      "status": "success",
+      "uiPosition": 675,
+      "url": "https://www.linkedin.com/in/mosab-alghamdi-a1125a10",
+      "lastAttemptAt": "2026-09-01T14:35:30.688Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/mosab-alghamdi-a1125a10/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/mosab-alghamdi-a1125a10",
+        "profileSlug": "mosab-alghamdi-a1125a10",
+        "profileName": "Mosab AlGhamdi",
+        "pageTitle": "Mosab AlGhamdi | LinkedIn",
+        "observedAt": "2026-09-01T14:35:40.527Z",
+        "followers": {
+          "count": 7197,
+          "displayText": "7,197 followers",
+          "locations": [
+            "profile-header",
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:35:40.554Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_mostafa-elwany_0bdd8np\thttps://www.linkedin.com/in/mostafa-elwany-82983a42",
+      "personIds": [
+        "person_mostafa-elwany_0bdd8np"
+      ],
+      "personNames": [
+        "Mostafa Elwany"
+      ],
+      "status": "success",
+      "uiPosition": 678,
+      "url": "https://www.linkedin.com/in/mostafa-elwany-82983a42",
+      "lastAttemptAt": "2026-09-01T14:35:40.621Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/mostafa-elwany-82983a42/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/mostafa-elwany-82983a42",
+        "profileSlug": "mostafa-elwany-82983a42",
+        "profileName": "Mostafa Elwany",
+        "pageTitle": "Mostafa Elwany | LinkedIn",
+        "observedAt": "2026-09-01T14:35:56.556Z",
+        "followers": {
+          "count": 1522,
+          "displayText": "1,522 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:35:56.568Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_mostafa-menessy_12iuzsr\thttps://www.linkedin.com/in/mostafa-menessy",
+      "personIds": [
+        "person_mostafa-menessy_12iuzsr"
+      ],
+      "personNames": [
+        "Mostafa Menessy"
+      ],
+      "status": "success",
+      "uiPosition": 681,
+      "url": "https://www.linkedin.com/in/mostafa-menessy",
+      "lastAttemptAt": "2026-09-01T14:35:56.630Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/mostafa-menessy/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/mostafa-menessy",
+        "profileSlug": "mostafa-menessy",
+        "profileName": "Mostafa Menessy",
+        "pageTitle": "Mostafa Menessy | LinkedIn",
+        "observedAt": "2026-09-01T14:36:03.770Z",
+        "followers": {
+          "count": 18255,
+          "displayText": "18,255 followers",
+          "locations": [
+            "profile-header",
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:36:03.784Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_muath-al-qatnany_0a5fsu0\thttps://www.linkedin.com/in/muath-alqatnany",
+      "personIds": [
+        "person_muath-al-qatnany_0a5fsu0"
+      ],
+      "personNames": [
+        "Muath Al Qatnany"
+      ],
+      "status": "success",
+      "uiPosition": 685,
+      "url": "https://www.linkedin.com/in/muath-alqatnany",
+      "lastAttemptAt": "2026-09-01T14:36:03.845Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/muath-alqatnany/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/muath-alqatnany",
+        "profileSlug": "muath-alqatnany",
+        "profileName": "Muath Al Qatnany",
+        "pageTitle": "Muath Al Qatnany | LinkedIn",
+        "observedAt": "2026-09-01T14:36:10.989Z",
+        "followers": {
+          "count": 1062,
+          "displayText": "1,062 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:36:12.361Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_muhannad-ebwini_1t0jncd\thttps://www.linkedin.com/in/muhannadebwini",
+      "personIds": [
+        "person_muhannad-ebwini_1t0jncd"
+      ],
+      "personNames": [
+        "Muhannad Ebwini"
+      ],
+      "status": "success",
+      "uiPosition": 689,
+      "url": "https://www.linkedin.com/in/muhannadebwini",
+      "lastAttemptAt": "2026-09-01T14:36:12.425Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/muhannadebwini/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/muhannadebwini",
+        "profileSlug": "muhannadebwini",
+        "profileName": "Muhannad Ebwini",
+        "pageTitle": "Muhannad Ebwini | LinkedIn",
+        "observedAt": "2026-09-01T14:36:15.448Z",
+        "followers": {
+          "count": 26506,
+          "displayText": "26,506 followers",
+          "locations": [
+            "profile-header"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:36:15.490Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_musaed-alshammari_14jtml3\thttps://www.linkedin.com/in/muslabs",
+      "personIds": [
+        "person_musaed-alshammari_14jtml3"
+      ],
+      "personNames": [
+        "Musaed AlShammari"
+      ],
+      "status": "success",
+      "uiPosition": 693,
+      "url": "https://www.linkedin.com/in/muslabs",
+      "lastAttemptAt": "2026-09-01T14:36:15.558Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/muslabs/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/muslabs",
+        "profileSlug": "muslabs",
+        "profileName": "Musaed AlShammari",
+        "pageTitle": "Musaed AlShammari | LinkedIn",
+        "observedAt": "2026-09-01T14:36:21.415Z",
+        "followers": {
+          "count": 3189,
+          "displayText": "3,189 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:36:21.430Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_mustafa-eid_1y8tv8n\thttps://www.linkedin.com/in/mustafa-eid",
+      "personIds": [
+        "person_mustafa-eid_1y8tv8n"
+      ],
+      "personNames": [
+        "Mustafa Eid"
+      ],
+      "status": "success",
+      "uiPosition": 695,
+      "url": "https://www.linkedin.com/in/mustafa-eid",
+      "lastAttemptAt": "2026-09-01T14:36:21.488Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/mustafa-eid/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/mustafa-eid",
+        "profileSlug": "mustafa-eid",
+        "profileName": "Mustafa Eid",
+        "pageTitle": "Mustafa Eid | LinkedIn",
+        "observedAt": "2026-09-01T14:36:27.395Z",
+        "followers": {
+          "count": 5391,
+          "displayText": "5,391 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:36:27.410Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_nada-abdrabou_0epflkv\thttps://www.linkedin.com/in/nadaabdrabou",
+      "personIds": [
+        "person_nada-abdrabou_0epflkv"
+      ],
+      "personNames": [
+        "Nada Abdrabou"
+      ],
+      "status": "success",
+      "uiPosition": 699,
+      "url": "https://www.linkedin.com/in/nadaabdrabou",
+      "lastAttemptAt": "2026-09-01T14:36:27.489Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/nadaabdrabou",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/nadaabdrabou",
+        "profileSlug": "nadaabdrabou",
+        "profileName": "Nada Abdrabou",
+        "pageTitle": "Nada Abdrabou | LinkedIn",
+        "observedAt": "2026-09-01T14:36:31.209Z",
+        "followers": {
+          "count": 548,
+          "displayText": "548 followers",
+          "locations": [
+            "profile-header"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:36:31.235Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_nader-bassit_1mzursn\thttps://www.linkedin.com/in/nader-bassit-737ab011",
+      "personIds": [
+        "person_nader-bassit_1mzursn"
+      ],
+      "personNames": [
+        "Nader Bassit"
+      ],
+      "status": "success",
+      "uiPosition": 700,
+      "url": "https://www.linkedin.com/in/nader-bassit-737ab011",
+      "lastAttemptAt": "2026-09-01T14:36:31.301Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/nader-bassit-737ab011/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/nader-bassit-737ab011",
+        "profileSlug": "nader-bassit-737ab011",
+        "profileName": "Nader Bassit",
+        "pageTitle": "Nader Bassit | LinkedIn",
+        "observedAt": "2026-09-01T14:36:36.081Z",
+        "followers": {
+          "count": 3378,
+          "displayText": "3,378 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:36:36.094Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_nadia-al-nasser_0qt3pya\thttps://www.linkedin.com/in/nadia-al-nasser-b72062161",
+      "personIds": [
+        "person_nadia-al-nasser_0qt3pya"
+      ],
+      "personNames": [
+        "Nadia Al Nasser"
+      ],
+      "status": "success",
+      "uiPosition": 702,
+      "url": "https://www.linkedin.com/in/nadia-al-nasser-b72062161",
+      "lastAttemptAt": "2026-09-01T14:36:36.147Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/nadia-al-nasser-b72062161/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/nadia-al-nasser-b72062161",
+        "profileSlug": "nadia-al-nasser-b72062161",
+        "profileName": "Nadia Al-Nasser",
+        "pageTitle": "Nadia Al-Nasser | LinkedIn",
+        "observedAt": "2026-09-01T14:36:38.654Z",
+        "followers": {
+          "count": 2530,
+          "displayText": "2,530 followers",
+          "locations": [
+            "profile-header"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:36:38.679Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_naif-al-obaidallah_1shgj58\thttps://www.linkedin.com/in/naifalobaidallah",
+      "personIds": [
+        "person_naif-al-obaidallah_1shgj58"
+      ],
+      "personNames": [
+        "Naif Al-Obaidallah"
+      ],
+      "status": "success",
+      "uiPosition": 703,
+      "url": "https://www.linkedin.com/in/naifalobaidallah",
+      "lastAttemptAt": "2026-09-01T14:36:38.742Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/naifalobaidallah/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/naifalobaidallah",
+        "profileSlug": "naifalobaidallah",
+        "profileName": "Naif Al-Obaidallah",
+        "pageTitle": "Naif Al-Obaidallah | LinkedIn",
+        "observedAt": "2026-09-01T14:36:43.785Z",
+        "followers": {
+          "count": 4756,
+          "displayText": "4,756 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:36:43.809Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_nala-kamel_12nefo2\thttps://www.linkedin.com/in/nala-kamel-46a324289",
+      "personIds": [
+        "person_nala-kamel_12nefo2"
+      ],
+      "personNames": [
+        "Nala Kamel"
+      ],
+      "status": "success",
+      "uiPosition": 704,
+      "url": "https://www.linkedin.com/in/nala-kamel-46a324289",
+      "lastAttemptAt": "2026-09-01T14:36:43.870Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/nala-kamel-46a324289/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/nala-kamel-46a324289",
+        "profileSlug": "nala-kamel-46a324289",
+        "profileName": "Nala Kamel",
+        "pageTitle": "Nala Kamel | LinkedIn",
+        "observedAt": "2026-09-01T14:36:50.234Z",
+        "followers": {
+          "count": 682,
+          "displayText": "682 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:36:50.240Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_nasser-alajaji_023g2g3\thttps://www.linkedin.com/in/nasser-alajaji-ba4a9246",
+      "personIds": [
+        "person_nasser-alajaji_023g2g3"
+      ],
+      "personNames": [
+        "Nasser Alajaji"
+      ],
+      "status": "success",
+      "uiPosition": 706,
+      "url": "https://www.linkedin.com/in/nasser-alajaji-ba4a9246",
+      "lastAttemptAt": "2026-09-01T14:36:50.300Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/nasser-alajaji-ba4a9246/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/nasser-alajaji-ba4a9246",
+        "profileSlug": "nasser-alajaji-ba4a9246",
+        "profileName": "Nasser Alajaji",
+        "pageTitle": "Nasser Alajaji | LinkedIn",
+        "observedAt": "2026-09-01T14:36:52.524Z",
+        "followers": {
+          "count": 10148,
+          "displayText": "10,148 followers",
+          "locations": [
+            "profile-header"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:36:52.552Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_nasser-albarrak_0iu9bw1\thttps://www.linkedin.com/in/nasser-albarrak",
+      "personIds": [
+        "person_nasser-albarrak_0iu9bw1"
+      ],
+      "personNames": [
+        "Nasser Albarrak"
+      ],
+      "status": "success",
+      "uiPosition": 707,
+      "url": "https://www.linkedin.com/in/nasser-albarrak",
+      "lastAttemptAt": "2026-09-01T14:36:52.622Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/nasser-albarrak/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/nasser-albarrak",
+        "profileSlug": "nasser-albarrak",
+        "profileName": "Nasser Albarrak",
+        "pageTitle": "Nasser Albarrak | LinkedIn",
+        "observedAt": "2026-09-01T14:36:57.704Z",
+        "followers": {
+          "count": 2836,
+          "displayText": "2,836 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:36:57.740Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_nesreen-ghonaim_1gs0gmc\thttps://www.linkedin.com/in/nesreen-ghonaim-66890a5",
+      "personIds": [
+        "person_nesreen-ghonaim_1gs0gmc"
+      ],
+      "personNames": [
+        "Nesreen Ghonaim"
+      ],
+      "status": "success",
+      "uiPosition": 711,
+      "url": "https://www.linkedin.com/in/nesreen-ghonaim-66890a5",
+      "lastAttemptAt": "2026-09-01T14:36:57.802Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/nesreen-ghonaim-66890a5",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/nesreen-ghonaim-66890a5",
+        "profileSlug": "nesreen-ghonaim-66890a5",
+        "profileName": "Nesreen Ghonaim",
+        "pageTitle": "Nesreen Ghonaim | LinkedIn",
+        "observedAt": "2026-09-01T14:37:00.433Z",
+        "followers": {
+          "count": 1980,
+          "displayText": "1,980 followers",
+          "locations": [
+            "profile-header"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:37:00.449Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_nora-alrajebah_0sxbg1d\thttps://www.linkedin.com/in/nora-alrajebah",
+      "personIds": [
+        "person_nora-alrajebah_0sxbg1d"
+      ],
+      "personNames": [
+        "Nora Alrajebah"
+      ],
+      "status": "success",
+      "uiPosition": 716,
+      "url": "https://www.linkedin.com/in/nora-alrajebah",
+      "lastAttemptAt": "2026-09-01T14:37:00.511Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/nora-alrajebah/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/nora-alrajebah",
+        "profileSlug": "nora-alrajebah",
+        "profileName": "Nora Alrajebah",
+        "pageTitle": "Nora Alrajebah | LinkedIn",
+        "observedAt": "2026-09-01T14:37:06.656Z",
+        "followers": {
+          "count": 3232,
+          "displayText": "3,232 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:37:06.666Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_nora-altwairesh_0ojqe87\thttps://www.linkedin.com/in/nora-altwairesh-4038b717",
+      "personIds": [
+        "person_nora-altwairesh_0ojqe87"
+      ],
+      "personNames": [
+        "Nora Altwairesh"
+      ],
+      "status": "success",
+      "uiPosition": 717,
+      "url": "https://www.linkedin.com/in/nora-altwairesh-4038b717",
+      "lastAttemptAt": "2026-09-01T14:37:06.721Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/nora-altwairesh-4038b717/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/nora-altwairesh-4038b717",
+        "profileSlug": "nora-altwairesh-4038b717",
+        "profileName": "Nora AlTwairesh",
+        "pageTitle": "Nora AlTwairesh | LinkedIn",
+        "observedAt": "2026-09-01T14:37:11.697Z",
+        "followers": {
+          "count": 1704,
+          "displayText": "1,704 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:37:11.722Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_nora-alzahid_02reh4k\thttps://www.linkedin.com/in/nora-alzahid",
+      "personIds": [
+        "person_nora-alzahid_02reh4k"
+      ],
+      "personNames": [
+        "Nora Alzahid"
+      ],
+      "status": "failed",
+      "uiPosition": 718,
+      "url": "https://www.linkedin.com/in/nora-alzahid",
+      "lastAttemptAt": "2026-09-01T14:37:11.798Z",
+      "error": "Microsoft Edge automation failed: 3560:3572: execution error: __LINKEDIN_FOLLOWERS_ERROR__:LinkedIn displayed conflicting follower counts on the profile (-2700).",
+      "failedAt": "2026-09-01T14:37:17.312Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_norah-abokhodair_1r3f96q\thttps://www.linkedin.com/in/norah-abokhodair",
+      "personIds": [
+        "person_norah-abokhodair_1r3f96q"
+      ],
+      "personNames": [
+        "Norah Abokhodair"
+      ],
+      "status": "success",
+      "uiPosition": 720,
+      "url": "https://www.linkedin.com/in/norah-abokhodair",
+      "lastAttemptAt": "2026-09-01T14:37:17.336Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/norah-abokhodair",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/norah-abokhodair",
+        "profileSlug": "norah-abokhodair",
+        "profileName": "Norah Abokhodair, PhD",
+        "pageTitle": "Norah Abokhodair, PhD | LinkedIn",
+        "observedAt": "2026-09-01T14:37:19.745Z",
+        "followers": {
+          "count": 3679,
+          "displayText": "3,679 followers",
+          "locations": [
+            "profile-header"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:37:19.773Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_nouf-alotaibi_0c05f88\thttps://www.linkedin.com/in/nouf-alotaibi-mbci-mba-00a390a9",
+      "personIds": [
+        "person_nouf-alotaibi_0c05f88"
+      ],
+      "personNames": [
+        "⁠Nouf Alotaibi"
+      ],
+      "status": "success",
+      "uiPosition": 722,
+      "url": "https://www.linkedin.com/in/nouf-alotaibi-mbci-mba-00a390a9",
+      "lastAttemptAt": "2026-09-01T14:37:19.870Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/nouf-alotaibi-mbci-mba-00a390a9/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/nouf-alotaibi-mbci-mba-00a390a9",
+        "profileSlug": "nouf-alotaibi-mbci-mba-00a390a9",
+        "profileName": "Nouf Alotaibi, MBCI, MBA",
+        "pageTitle": "Nouf Alotaibi, MBCI, MBA | LinkedIn",
+        "observedAt": "2026-09-01T14:37:24.866Z",
+        "followers": {
+          "count": 3072,
+          "displayText": "3,072 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:37:24.879Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_nour-al-hassan_1b9te0i\thttps://www.linkedin.com/in/nour-al-hassan-106778138",
+      "personIds": [
+        "person_nour-al-hassan_1b9te0i"
+      ],
+      "personNames": [
+        "Nour Al Hassan"
+      ],
+      "status": "success",
+      "uiPosition": 723,
+      "url": "https://www.linkedin.com/in/nour-al-hassan-106778138",
+      "lastAttemptAt": "2026-09-01T14:37:24.953Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/nour-al-hassan-106778138/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/nour-al-hassan-106778138",
+        "profileSlug": "nour-al-hassan-106778138",
+        "profileName": "Nour Al Hassan",
+        "pageTitle": "Nour Al Hassan | LinkedIn",
+        "observedAt": "2026-09-01T14:37:35.775Z",
+        "followers": {
+          "count": 32744,
+          "displayText": "32,744 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:37:35.785Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_nour-taher_0qt1cqs\thttps://www.linkedin.com/in/nour-taher",
+      "personIds": [
+        "person_nour-taher_0qt1cqs"
+      ],
+      "personNames": [
+        "Nour Taher"
+      ],
+      "status": "success",
+      "uiPosition": 727,
+      "url": "https://www.linkedin.com/in/nour-taher",
+      "lastAttemptAt": "2026-09-01T14:37:35.842Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/nour-taher",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/nour-taher",
+        "profileSlug": "nour-taher",
+        "profileName": "Nour Taher",
+        "pageTitle": "Nour Taher | LinkedIn",
+        "observedAt": "2026-09-01T14:37:38.136Z",
+        "followers": {
+          "count": 35460,
+          "displayText": "35,460 followers",
+          "locations": [
+            "profile-header"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:37:38.148Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_omar-abdo_0qnfiau\thttps://www.linkedin.com/in/omaraabdo",
+      "personIds": [
+        "person_omar-abdo_0qnfiau"
+      ],
+      "personNames": [
+        "Omar Abdo"
+      ],
+      "status": "success",
+      "uiPosition": 729,
+      "url": "https://www.linkedin.com/in/omaraabdo",
+      "lastAttemptAt": "2026-09-01T14:37:38.214Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/omaraabdo/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/omaraabdo",
+        "profileSlug": "omaraabdo",
+        "profileName": "Omar Abdo",
+        "pageTitle": "Omar Abdo | LinkedIn",
+        "observedAt": "2026-09-01T14:37:40.829Z",
+        "followers": {
+          "count": 5469,
+          "displayText": "5,469 followers",
+          "locations": [
+            "profile-header"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:37:40.857Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_omar-alireza_18jb6tw\thttps://www.linkedin.com/in/omaralireza",
+      "personIds": [
+        "person_omar-alireza_18jb6tw"
+      ],
+      "personNames": [
+        "Omar Alireza"
+      ],
+      "status": "success",
+      "uiPosition": 734,
+      "url": "https://www.linkedin.com/in/omaralireza",
+      "lastAttemptAt": "2026-09-01T14:37:40.929Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/omaralireza/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/omaralireza",
+        "profileSlug": "omaralireza",
+        "profileName": "Omar Alireza, FCCA",
+        "pageTitle": "Omar Alireza, FCCA | LinkedIn",
+        "observedAt": "2026-09-01T14:37:45.836Z",
+        "followers": {
+          "count": 533,
+          "displayText": "533 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:37:45.843Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_omar-alrubaiaan_09hz04s\thttps://www.linkedin.com/in/oalrubaiaan",
+      "personIds": [
+        "person_omar-alrubaiaan_09hz04s"
+      ],
+      "personNames": [
+        "Omar Alrubaiaan"
+      ],
+      "status": "success",
+      "uiPosition": 736,
+      "url": "https://www.linkedin.com/in/oalrubaiaan",
+      "lastAttemptAt": "2026-09-01T14:37:45.907Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/oalrubaiaan/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/oalrubaiaan",
+        "profileSlug": "oalrubaiaan",
+        "profileName": "Omar Alrubaiaan, PhD, MBA",
+        "pageTitle": "Omar Alrubaiaan, PhD, MBA | LinkedIn",
+        "observedAt": "2026-09-01T14:37:48.235Z",
+        "followers": {
+          "count": 540,
+          "displayText": "540 followers",
+          "locations": [
+            "profile-header"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:37:48.258Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_omar-ekram_0sgdkxa\thttps://www.linkedin.com/in/omar-ekram-56088128",
+      "personIds": [
+        "person_omar-ekram_0sgdkxa"
+      ],
+      "personNames": [
+        "Omar Ekram"
+      ],
+      "status": "success",
+      "uiPosition": 737,
+      "url": "https://www.linkedin.com/in/omar-ekram-56088128",
+      "lastAttemptAt": "2026-09-01T14:37:48.315Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/omar-ekram-56088128/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/omar-ekram-56088128",
+        "profileSlug": "omar-ekram-56088128",
+        "profileName": "Omar Ekram",
+        "pageTitle": "Omar Ekram | LinkedIn",
+        "observedAt": "2026-09-01T14:37:52.598Z",
+        "followers": {
+          "count": 3066,
+          "displayText": "3,066 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:37:52.619Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_omar-elborolossy_0hqlkxh\thttps://www.linkedin.com/in/omar-elborolossy-86373036",
+      "personIds": [
+        "person_omar-elborolossy_0hqlkxh"
+      ],
+      "personNames": [
+        "Omar ElBorolossy"
+      ],
+      "status": "success",
+      "uiPosition": 739,
+      "url": "https://www.linkedin.com/in/omar-elborolossy-86373036",
+      "lastAttemptAt": "2026-09-01T14:37:52.678Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/omar-elborolossy-86373036/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/omar-elborolossy-86373036",
+        "profileSlug": "omar-elborolossy-86373036",
+        "profileName": "Omar ElBorolossy",
+        "pageTitle": "Omar ElBorolossy | LinkedIn",
+        "observedAt": "2026-09-01T14:37:56.861Z",
+        "followers": {
+          "count": 295,
+          "displayText": "295 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:37:56.887Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_omar-elfiky_1s2gjlw\thttps://www.linkedin.com/in/omar-elfiky-746a1911",
+      "personIds": [
+        "person_omar-elfiky_1s2gjlw"
+      ],
+      "personNames": [
+        "Omar Elfiky"
+      ],
+      "status": "success",
+      "uiPosition": 740,
+      "url": "https://www.linkedin.com/in/omar-elfiky-746a1911",
+      "lastAttemptAt": "2026-09-01T14:37:56.945Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/omar-elfiky-746a1911",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/omar-elfiky-746a1911",
+        "profileSlug": "omar-elfiky-746a1911",
+        "profileName": "Omar Elfiky",
+        "pageTitle": "Omar Elfiky | LinkedIn",
+        "observedAt": "2026-09-01T14:37:59.402Z",
+        "followers": {
+          "count": 6931,
+          "displayText": "6,931 followers",
+          "locations": [
+            "profile-header"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:37:59.421Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_omar-heraiz_02o6d46\thttps://www.linkedin.com/in/omar-heraiz",
+      "personIds": [
+        "person_omar-heraiz_02o6d46"
+      ],
+      "personNames": [
+        "Omar Heraiz"
+      ],
+      "status": "success",
+      "uiPosition": 742,
+      "url": "https://www.linkedin.com/in/omar-heraiz",
+      "lastAttemptAt": "2026-09-01T14:37:59.473Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/omar-heraiz/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/omar-heraiz",
+        "profileSlug": "omar-heraiz",
+        "profileName": "Omar Heraiz",
+        "pageTitle": "Omar Heraiz | LinkedIn",
+        "observedAt": "2026-09-01T14:38:02.142Z",
+        "followers": {
+          "count": 781,
+          "displayText": "781 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:38:02.191Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_omar-mugharbel_1ybvv65\thttps://www.linkedin.com/in/omarmugharbel",
+      "personIds": [
+        "person_omar-mugharbel_1ybvv65"
+      ],
+      "personNames": [
+        "Omar Mugharbel"
+      ],
+      "status": "success",
+      "uiPosition": 745,
+      "url": "https://www.linkedin.com/in/omarmugharbel",
+      "lastAttemptAt": "2026-09-01T14:38:02.263Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/omarmugharbel/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/omarmugharbel",
+        "profileSlug": "omarmugharbel",
+        "profileName": "Omar Mugharbel",
+        "pageTitle": "Omar Mugharbel | LinkedIn",
+        "observedAt": "2026-09-01T14:38:05.840Z",
+        "followers": {
+          "count": 5891,
+          "displayText": "5,891 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:38:05.868Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_omar-saleh_15n6jgx\thttps://www.linkedin.com/in/omar-saleh-1203bb",
+      "personIds": [
+        "person_omar-saleh_15n6jgx"
+      ],
+      "personNames": [
+        "Omar Saleh"
+      ],
+      "status": "success",
+      "uiPosition": 747,
+      "url": "https://www.linkedin.com/in/omar-saleh-1203bb",
+      "lastAttemptAt": "2026-09-01T14:38:05.930Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/omar-saleh-1203bb/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/omar-saleh-1203bb",
+        "profileSlug": "omar-saleh-1203bb",
+        "profileName": "Omar Saleh",
+        "pageTitle": "Omar Saleh | LinkedIn",
+        "observedAt": "2026-09-01T14:38:08.682Z",
+        "followers": {
+          "count": 9675,
+          "displayText": "9,675 followers",
+          "locations": [
+            "profile-header"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:38:08.708Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_prateek-avasthy_1wywhzf\thttps://www.linkedin.com/in/prateek-avasthy-649521b",
+      "personIds": [
+        "person_prateek-avasthy_1wywhzf"
+      ],
+      "personNames": [
+        "Prateek Avasthy"
+      ],
+      "status": "success",
+      "uiPosition": 756,
+      "url": "https://www.linkedin.com/in/prateek-avasthy-649521b",
+      "lastAttemptAt": "2026-09-01T14:38:08.756Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/prateek-avasthy-649521b/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/prateek-avasthy-649521b",
+        "profileSlug": "prateek-avasthy-649521b",
+        "profileName": "Prateek Avasthy",
+        "pageTitle": "Prateek Avasthy | LinkedIn",
+        "observedAt": "2026-09-01T14:38:13.500Z",
+        "followers": {
+          "count": 1843,
+          "displayText": "1,843 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:38:13.521Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_priscilla-elora-sharuk_1ic3u6g\thttps://www.linkedin.com/in/priscillaelora",
+      "personIds": [
+        "person_priscilla-elora-sharuk_1ic3u6g"
+      ],
+      "personNames": [
+        "Priscilla Elora Sharuk"
+      ],
+      "status": "success",
+      "uiPosition": 757,
+      "url": "https://www.linkedin.com/in/priscillaelora",
+      "lastAttemptAt": "2026-09-01T14:38:13.596Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/priscillaelora/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/priscillaelora",
+        "profileSlug": "priscillaelora",
+        "profileName": "Priscilla Elora Sharuk",
+        "pageTitle": "Priscilla Elora Sharuk | LinkedIn",
+        "observedAt": "2026-09-01T14:38:18.818Z",
+        "followers": {
+          "count": 3383,
+          "displayText": "3,383 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:38:18.828Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_qusai-alsaif_0n9k788\thttps://www.linkedin.com/in/qusai-alsaif",
+      "personIds": [
+        "person_qusai-alsaif_0n9k788"
+      ],
+      "personNames": [
+        "Qusai AlSaif"
+      ],
+      "status": "success",
+      "uiPosition": 762,
+      "url": "https://www.linkedin.com/in/qusai-alsaif",
+      "lastAttemptAt": "2026-09-01T14:38:18.891Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/qusai-alsaif/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/qusai-alsaif",
+        "profileSlug": "qusai-alsaif",
+        "profileName": "Qusai AlSaif, MBA",
+        "pageTitle": "Qusai AlSaif, MBA | LinkedIn",
+        "observedAt": "2026-09-01T14:38:21.651Z",
+        "followers": {
+          "count": 26130,
+          "displayText": "26,130 followers",
+          "locations": [
+            "profile-header"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:38:21.672Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_raddad-ayoub_02dp37n\thttps://www.linkedin.com/in/raddadayoub",
+      "personIds": [
+        "person_raddad-ayoub_02dp37n"
+      ],
+      "personNames": [
+        "Raddad Ayoub"
+      ],
+      "status": "success",
+      "uiPosition": 765,
+      "url": "https://www.linkedin.com/in/raddadayoub",
+      "lastAttemptAt": "2026-09-01T14:38:21.744Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/raddadayoub",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/raddadayoub",
+        "profileSlug": "raddadayoub",
+        "profileName": "Raddad Ayoub",
+        "pageTitle": "Raddad Ayoub | LinkedIn",
+        "observedAt": "2026-09-01T14:38:23.870Z",
+        "followers": {
+          "count": 6763,
+          "displayText": "6,763 followers",
+          "locations": [
+            "profile-header"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:38:23.886Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_radwa-yousef_1944lnn\thttps://www.linkedin.com/in/radwa-yousef-64624331",
+      "personIds": [
+        "person_radwa-yousef_1944lnn"
+      ],
+      "personNames": [
+        "Radwa Yousef"
+      ],
+      "status": "success",
+      "uiPosition": 767,
+      "url": "https://www.linkedin.com/in/radwa-yousef-64624331",
+      "lastAttemptAt": "2026-09-01T14:38:23.953Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/radwa-yousef-64624331/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/radwa-yousef-64624331",
+        "profileSlug": "radwa-yousef-64624331",
+        "profileName": "Radwa Yousef",
+        "pageTitle": "Radwa Yousef | LinkedIn",
+        "observedAt": "2026-09-01T14:38:28.761Z",
+        "followers": {
+          "count": 3865,
+          "displayText": "3,865 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:38:28.785Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_rahil-rangwala_1wg5grz\thttps://www.linkedin.com/in/rahil-rangwala-impactinv",
+      "personIds": [
+        "person_rahil-rangwala_1wg5grz"
+      ],
+      "personNames": [
+        "Rahil Rangwala"
+      ],
+      "status": "success",
+      "uiPosition": 772,
+      "url": "https://www.linkedin.com/in/rahil-rangwala-impactinv",
+      "lastAttemptAt": "2026-09-01T14:38:28.852Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/rahil-rangwala-impactinv/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/rahil-rangwala-impactinv",
+        "profileSlug": "rahil-rangwala-impactinv",
+        "profileName": "Rahil Rangwala",
+        "pageTitle": "Rahil Rangwala | LinkedIn",
+        "observedAt": "2026-09-01T14:38:32.544Z",
+        "followers": {
+          "count": 10841,
+          "displayText": "10,841 followers",
+          "locations": [
+            "profile-header"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:38:32.569Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_rakan-aldosary_0yo1ge3\thttps://www.linkedin.com/in/rakan-aldosary-0471bb161",
+      "personIds": [
+        "person_rakan-aldosary_0yo1ge3"
+      ],
+      "personNames": [
+        "Rakan Aldosary"
+      ],
+      "status": "success",
+      "uiPosition": 774,
+      "url": "https://www.linkedin.com/in/rakan-aldosary-0471bb161",
+      "lastAttemptAt": "2026-09-01T14:38:32.640Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/rakan-aldosary-0471bb161/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/rakan-aldosary-0471bb161",
+        "profileSlug": "rakan-aldosary-0471bb161",
+        "profileName": "Rakan Aldosary .",
+        "pageTitle": "Rakan Aldosary . | LinkedIn",
+        "observedAt": "2026-09-01T14:38:35.086Z",
+        "followers": {
+          "count": 5220,
+          "displayText": "5,220 followers",
+          "locations": [
+            "profile-header"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:38:35.105Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_ramesh-chander_0y6v86o\thttps://www.linkedin.com/in/ramesh-chander-98411b126",
+      "personIds": [
+        "person_ramesh-chander_0y6v86o"
+      ],
+      "personNames": [
+        "Ramesh Chander"
+      ],
+      "status": "success",
+      "uiPosition": 777,
+      "url": "https://www.linkedin.com/in/ramesh-chander-98411b126",
+      "lastAttemptAt": "2026-09-01T14:38:35.173Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/ramesh-chander-98411b126/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/ramesh-chander-98411b126",
+        "profileSlug": "ramesh-chander-98411b126",
+        "profileName": "ramesh chander",
+        "pageTitle": "ramesh chander | LinkedIn",
+        "observedAt": "2026-09-01T14:38:39.054Z",
+        "followers": {
+          "count": 0,
+          "displayText": "0 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:38:39.102Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_rami-al-jafar_1e18xjm\thttps://www.linkedin.com/in/rami-aljafar",
+      "personIds": [
+        "person_rami-al-jafar_1e18xjm"
+      ],
+      "personNames": [
+        "Rami Al Jafar"
+      ],
+      "status": "success",
+      "uiPosition": 779,
+      "url": "https://www.linkedin.com/in/rami-aljafar",
+      "lastAttemptAt": "2026-09-01T14:38:39.158Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/rami-aljafar/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/rami-aljafar",
+        "profileSlug": "rami-aljafar",
+        "profileName": "Rami Al Jafar, MPH, PhD",
+        "pageTitle": "Rami Al Jafar, MPH, PhD | LinkedIn",
+        "observedAt": "2026-09-01T14:38:45.021Z",
+        "followers": {
+          "count": 3929,
+          "displayText": "3,929 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:38:45.040Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_rami-el-helou_12h0fml\thttps://www.linkedin.com/in/rami-elhelou",
+      "personIds": [
+        "person_rami-el-helou_12h0fml"
+      ],
+      "personNames": [
+        "Rami El Helou"
+      ],
+      "status": "failed",
+      "uiPosition": 780,
+      "url": "https://www.linkedin.com/in/rami-elhelou",
+      "lastAttemptAt": "2026-09-01T14:38:45.116Z",
+      "error": "Microsoft Edge automation failed: 3560:3572: execution error: __LINKEDIN_FOLLOWERS_ERROR__:LinkedIn displayed conflicting follower counts on the profile (-2700).",
+      "failedAt": "2026-09-01T14:38:47.943Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_rami-maalouf_0actxbj\thttps://www.linkedin.com/in/rami-maalouf",
+      "personIds": [
+        "person_rami-maalouf_0actxbj"
+      ],
+      "personNames": [
+        "Rami Maalouf"
+      ],
+      "status": "success",
+      "uiPosition": 781,
+      "url": "https://www.linkedin.com/in/rami-maalouf",
+      "lastAttemptAt": "2026-09-01T14:38:47.964Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/rami-maalouf/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/rami-maalouf",
+        "profileSlug": "rami-maalouf",
+        "profileName": "Rami Maalouf",
+        "pageTitle": "Rami Maalouf | LinkedIn",
+        "observedAt": "2026-09-01T14:38:50.114Z",
+        "followers": {
+          "count": 1753,
+          "displayText": "1,753 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:38:50.136Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_rawan-alfar_08pgpgc\thttps://www.linkedin.com/in/rawan-alfar-1579b0182",
+      "personIds": [
+        "person_rawan-alfar_08pgpgc"
+      ],
+      "personNames": [
+        "Rawan Alfar"
+      ],
+      "status": "success",
+      "uiPosition": 785,
+      "url": "https://www.linkedin.com/in/rawan-alfar-1579b0182",
+      "lastAttemptAt": "2026-09-01T14:38:50.214Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/rawan-alfar-1579b0182/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/rawan-alfar-1579b0182",
+        "profileSlug": "rawan-alfar-1579b0182",
+        "profileName": "Rawan Alfar",
+        "pageTitle": "Rawan Alfar | LinkedIn",
+        "observedAt": "2026-09-01T14:38:54.367Z",
+        "followers": {
+          "count": 2095,
+          "displayText": "2,095 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:38:54.378Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_rawan-almogbil_0tynm67\thttps://www.linkedin.com/in/rawan-almogbil",
+      "personIds": [
+        "person_rawan-almogbil_0tynm67"
+      ],
+      "personNames": [
+        "Rawan Almogbil"
+      ],
+      "status": "success",
+      "uiPosition": 786,
+      "url": "https://www.linkedin.com/in/rawan-almogbil",
+      "lastAttemptAt": "2026-09-01T14:38:54.447Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/rawan-almogbil/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/rawan-almogbil",
+        "profileSlug": "rawan-almogbil",
+        "profileName": "Rawan Almogbil",
+        "pageTitle": "Rawan Almogbil | LinkedIn",
+        "observedAt": "2026-09-01T14:38:58.813Z",
+        "followers": {
+          "count": 2396,
+          "displayText": "2,396 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:38:58.833Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_rayan-alaql_10p44jp\thttps://www.linkedin.com/in/ralaql",
+      "personIds": [
+        "person_rayan-alaql_10p44jp"
+      ],
+      "personNames": [
+        "Rayan Alaql"
+      ],
+      "status": "success",
+      "uiPosition": 787,
+      "url": "https://www.linkedin.com/in/ralaql",
+      "lastAttemptAt": "2026-09-01T14:38:58.904Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/ralaql/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/ralaql",
+        "profileSlug": "ralaql",
+        "profileName": "ريان العقل Rayan Alaql",
+        "pageTitle": "ريان العقل Rayan Alaql | LinkedIn",
+        "observedAt": "2026-09-01T14:39:01.133Z",
+        "followers": {
+          "count": 14697,
+          "displayText": "14,697 followers",
+          "locations": [
+            "profile-header"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:39:01.150Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_rayyanah-barnawi_15zim8u\thttps://www.linkedin.com/in/rayyanahbarnawi",
+      "personIds": [
+        "person_rayyanah-barnawi_15zim8u"
+      ],
+      "personNames": [
+        "Rayyanah Barnawi"
+      ],
+      "status": "success",
+      "uiPosition": 788,
+      "url": "https://www.linkedin.com/in/rayyanahbarnawi",
+      "lastAttemptAt": "2026-09-01T14:39:01.216Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/rayyanahbarnawi/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/rayyanahbarnawi",
+        "profileSlug": "rayyanahbarnawi",
+        "profileName": "Rayyanah Barnawi",
+        "pageTitle": "Rayyanah Barnawi | LinkedIn",
+        "observedAt": "2026-09-01T14:39:05.031Z",
+        "followers": {
+          "count": 1954,
+          "displayText": "1,954 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:39:05.060Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_razan-aljamei_1reai9g\thttps://www.linkedin.com/in/razan-aljamei-319b70134",
+      "personIds": [
+        "person_razan-aljamei_1reai9g"
+      ],
+      "personNames": [
+        "Razan Aljamei"
+      ],
+      "status": "success",
+      "uiPosition": 789,
+      "url": "https://www.linkedin.com/in/razan-aljamei-319b70134",
+      "lastAttemptAt": "2026-09-01T14:39:05.119Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/razan-aljamei-319b70134/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/razan-aljamei-319b70134",
+        "profileSlug": "razan-aljamei-319b70134",
+        "profileName": "Razan Aljamei",
+        "pageTitle": "Razan Aljamei | LinkedIn",
+        "observedAt": "2026-09-01T14:39:09.695Z",
+        "followers": {
+          "count": 754,
+          "displayText": "754 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:39:09.711Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_razaq-salem_02fwvyy\thttps://www.linkedin.com/in/razaq-salem",
+      "personIds": [
+        "person_razaq-salem_02fwvyy"
+      ],
+      "personNames": [
+        "Razaq Salem"
+      ],
+      "status": "success",
+      "uiPosition": 790,
+      "url": "https://www.linkedin.com/in/razaq-salem",
+      "lastAttemptAt": "2026-09-01T14:39:09.775Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/razaq-salem/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/razaq-salem",
+        "profileSlug": "razaq-salem",
+        "profileName": "Razaq Salem عبدالرزاق سالم",
+        "pageTitle": "Razaq Salem عبدالرزاق سالم | LinkedIn",
+        "observedAt": "2026-09-01T14:39:11.983Z",
+        "followers": {
+          "count": 11165,
+          "displayText": "11,165 followers",
+          "locations": [
+            "profile-header"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:39:12.003Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_rebecca-gross_1vzjk8s\thttps://www.linkedin.com/in/rebeccadgross",
+      "personIds": [
+        "person_rebecca-gross_1vzjk8s"
+      ],
+      "personNames": [
+        "Rebecca Gross"
+      ],
+      "status": "success",
+      "uiPosition": 791,
+      "url": "https://www.linkedin.com/in/rebeccadgross",
+      "lastAttemptAt": "2026-09-01T14:39:12.100Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/rebeccadgross/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/rebeccadgross",
+        "profileSlug": "rebeccadgross",
+        "profileName": "Rebecca D. Gross",
+        "pageTitle": "Rebecca D. Gross | LinkedIn",
+        "observedAt": "2026-09-01T14:39:16.915Z",
+        "followers": {
+          "count": 653,
+          "displayText": "653 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:39:16.938Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_rema-alyahya_13g8dmv\thttps://www.linkedin.com/in/remaalyahya",
+      "personIds": [
+        "person_rema-alyahya_13g8dmv"
+      ],
+      "personNames": [
+        "Rema Alyahya"
+      ],
+      "status": "success",
+      "uiPosition": 793,
+      "url": "https://www.linkedin.com/in/remaalyahya",
+      "lastAttemptAt": "2026-09-01T14:39:17.009Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/remaalyahya/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/remaalyahya",
+        "profileSlug": "remaalyahya",
+        "profileName": "Rema Alyahya",
+        "pageTitle": "Rema Alyahya | LinkedIn",
+        "observedAt": "2026-09-01T14:39:21.835Z",
+        "followers": {
+          "count": 2401,
+          "displayText": "2,401 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:39:21.891Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_remo-giovanni-abbondandolo_0hxgtmd\thttps://www.linkedin.com/in/remogiovanni",
+      "personIds": [
+        "person_remo-giovanni-abbondandolo_0hxgtmd"
+      ],
+      "personNames": [
+        "Remo Giovanni Abbondandolo"
+      ],
+      "status": "success",
+      "uiPosition": 794,
+      "url": "https://www.linkedin.com/in/remogiovanni",
+      "lastAttemptAt": "2026-09-01T14:39:21.950Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/remogiovanni/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/remogiovanni",
+        "profileSlug": "remogiovanni",
+        "profileName": "Remo Giovanni Abbondandolo",
+        "pageTitle": "Remo Giovanni Abbondandolo | LinkedIn",
+        "observedAt": "2026-09-01T14:39:27.192Z",
+        "followers": {
+          "count": 21750,
+          "displayText": "21,750 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:39:27.211Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_riki-yamauchi_06v0bzc\thttps://www.linkedin.com/in/riki-yamauchi-21398534",
+      "personIds": [
+        "person_riki-yamauchi_06v0bzc"
+      ],
+      "personNames": [
+        "Riki Yamauchi"
+      ],
+      "status": "success",
+      "uiPosition": 798,
+      "url": "https://www.linkedin.com/in/riki-yamauchi-21398534",
+      "lastAttemptAt": "2026-09-01T14:39:27.283Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/riki-yamauchi-21398534/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/riki-yamauchi-21398534",
+        "profileSlug": "riki-yamauchi-21398534",
+        "profileName": "Riki Yamauchi",
+        "pageTitle": "Riki Yamauchi | LinkedIn",
+        "observedAt": "2026-09-01T14:39:32.690Z",
+        "followers": {
+          "count": 8893,
+          "displayText": "8,893 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:39:32.702Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_roque-lozano_1eapyjy\thttps://www.linkedin.com/in/roquelozano",
+      "personIds": [
+        "person_roque-lozano_1eapyjy"
+      ],
+      "personNames": [
+        "Roque Lozano"
+      ],
+      "status": "success",
+      "uiPosition": 800,
+      "url": "https://www.linkedin.com/in/roquelozano",
+      "lastAttemptAt": "2026-09-01T14:39:32.770Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/roquelozano/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/roquelozano",
+        "profileSlug": "roquelozano",
+        "profileName": "Roque Lozano",
+        "pageTitle": "Roque Lozano | LinkedIn",
+        "observedAt": "2026-09-01T14:39:39.710Z",
+        "followers": {
+          "count": 9019,
+          "displayText": "9,019 followers",
+          "locations": [
+            "profile-header",
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:39:39.725Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_rowan-alawi_0kl1ry4\thttps://www.linkedin.com/in/rowanalawi",
+      "personIds": [
+        "person_rowan-alawi_0kl1ry4"
+      ],
+      "personNames": [
+        "Rowan Alawi"
+      ],
+      "status": "success",
+      "uiPosition": 801,
+      "url": "https://www.linkedin.com/in/rowanalawi",
+      "lastAttemptAt": "2026-09-01T14:39:39.799Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/rowanalawi/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/rowanalawi",
+        "profileSlug": "rowanalawi",
+        "profileName": "Rowan Alawi",
+        "pageTitle": "Rowan Alawi | LinkedIn",
+        "observedAt": "2026-09-01T14:39:45.988Z",
+        "followers": {
+          "count": 11399,
+          "displayText": "11,399 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:39:46.004Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_roy-baladi_0exhxym\thttps://www.linkedin.com/in/roybaladi",
+      "personIds": [
+        "person_roy-baladi_0exhxym"
+      ],
+      "personNames": [
+        "Roy Baladi"
+      ],
+      "status": "success",
+      "uiPosition": 803,
+      "url": "https://www.linkedin.com/in/roybaladi",
+      "lastAttemptAt": "2026-09-01T14:39:46.069Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/roybaladi/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/roybaladi",
+        "profileSlug": "roybaladi",
+        "profileName": "Roy Baladi",
+        "pageTitle": "Roy Baladi | LinkedIn",
+        "observedAt": "2026-09-01T14:39:51.248Z",
+        "followers": {
+          "count": 22973,
+          "displayText": "22,973 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:39:51.257Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_rumbi-makanga_17wmfpp\thttps://www.linkedin.com/in/rumbi-makanga-89518369",
+      "personIds": [
+        "person_rumbi-makanga_17wmfpp"
+      ],
+      "personNames": [
+        "Rumbi Makanga"
+      ],
+      "status": "success",
+      "uiPosition": 805,
+      "url": "https://www.linkedin.com/in/rumbi-makanga-89518369",
+      "lastAttemptAt": "2026-09-01T14:39:51.319Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/rumbi-makanga-89518369/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/rumbi-makanga-89518369",
+        "profileSlug": "rumbi-makanga-89518369",
+        "profileName": "Rumbi Makanga",
+        "pageTitle": "Rumbi Makanga | LinkedIn",
+        "observedAt": "2026-09-01T14:39:57.272Z",
+        "followers": {
+          "count": 4131,
+          "displayText": "4,131 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:39:57.298Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_saad-alsalamah_1xpgtkm\thttps://www.linkedin.com/in/ssalamah",
+      "personIds": [
+        "person_saad-alsalamah_1xpgtkm"
+      ],
+      "personNames": [
+        "Saad Alsalamah"
+      ],
+      "status": "success",
+      "uiPosition": 809,
+      "url": "https://www.linkedin.com/in/ssalamah",
+      "lastAttemptAt": "2026-09-01T14:39:57.359Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/ssalamah",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/ssalamah",
+        "profileSlug": "ssalamah",
+        "profileName": "Saad Alsalamah",
+        "pageTitle": "Saad Alsalamah | LinkedIn",
+        "observedAt": "2026-09-01T14:40:00.159Z",
+        "followers": {
+          "count": 8206,
+          "displayText": "8,206 followers",
+          "locations": [
+            "profile-header"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:40:00.180Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_safa-alrashed_0q820ns\thttps://www.linkedin.com/in/safa-alrashed-%D8%B5%D9%81%D8%A7-%D8%A7%D9%84%D8%B1%D8%A7%D8%B4%D8%AF-55269848",
+      "personIds": [
+        "person_safa-alrashed_0q820ns"
+      ],
+      "personNames": [
+        "Safa Alrashed"
+      ],
+      "status": "success",
+      "uiPosition": 812,
+      "url": "https://www.linkedin.com/in/safa-alrashed-%D8%B5%D9%81%D8%A7-%D8%A7%D9%84%D8%B1%D8%A7%D8%B4%D8%AF-55269848",
+      "lastAttemptAt": "2026-09-01T14:40:00.374Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/safa-alrashed-%D8%B5%D9%81%D8%A7-%D8%A7%D9%84%D8%B1%D8%A7%D8%B4%D8%AF-55269848/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/safa-alrashed-%D8%B5%D9%81%D8%A7-%D8%A7%D9%84%D8%B1%D8%A7%D8%B4%D8%AF-55269848",
+        "profileSlug": "safa-alrashed-صفا-الراشد-55269848",
+        "profileName": "Safa AlRashed صفا الراشد",
+        "pageTitle": "Safa AlRashed صفا الراشد | LinkedIn",
+        "observedAt": "2026-09-01T14:40:03.178Z",
+        "followers": {
+          "count": 12373,
+          "displayText": "12,373 followers",
+          "locations": [
+            "profile-header"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:40:03.193Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_sakhar-alkhereyf_0mthbro\thttps://www.linkedin.com/in/sakhar-alkhereyf-643b7821",
+      "personIds": [
+        "person_sakhar-alkhereyf_0mthbro"
+      ],
+      "personNames": [
+        "Sakhar Alkhereyf"
+      ],
+      "status": "success",
+      "uiPosition": 813,
+      "url": "https://www.linkedin.com/in/sakhar-alkhereyf-643b7821",
+      "lastAttemptAt": "2026-09-01T14:40:03.306Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/sakhar-alkhereyf-643b7821/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/sakhar-alkhereyf-643b7821",
+        "profileSlug": "sakhar-alkhereyf-643b7821",
+        "profileName": "Sakhar Alkhereyf",
+        "pageTitle": "Sakhar Alkhereyf | LinkedIn",
+        "observedAt": "2026-09-01T14:40:08.100Z",
+        "followers": {
+          "count": 2077,
+          "displayText": "2,077 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:40:08.118Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_salah-alsaeed_1y379ab\thttps://www.linkedin.com/in/salahalsaeed",
+      "personIds": [
+        "person_salah-alsaeed_1y379ab"
+      ],
+      "personNames": [
+        "Salah AlSaeed"
+      ],
+      "status": "success",
+      "uiPosition": 814,
+      "url": "https://www.linkedin.com/in/salahalsaeed",
+      "lastAttemptAt": "2026-09-01T14:40:08.196Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/salahalsaeed/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/salahalsaeed",
+        "profileSlug": "salahalsaeed",
+        "profileName": "Salah Alsaeed",
+        "pageTitle": "Salah Alsaeed | LinkedIn",
+        "observedAt": "2026-09-01T14:40:11.801Z",
+        "followers": {
+          "count": 326,
+          "displayText": "326 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:40:11.815Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_salam-shouman_07fsk54\thttps://www.linkedin.com/in/salam-shouman-57485a3",
+      "personIds": [
+        "person_salam-shouman_07fsk54"
+      ],
+      "personNames": [
+        "Salam Shouman"
+      ],
+      "status": "success",
+      "uiPosition": 815,
+      "url": "https://www.linkedin.com/in/salam-shouman-57485a3",
+      "lastAttemptAt": "2026-09-01T14:40:11.886Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/salam-shouman-57485a3",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/salam-shouman-57485a3",
+        "profileSlug": "salam-shouman-57485a3",
+        "profileName": "Salam Shouman",
+        "pageTitle": "Salam Shouman | LinkedIn",
+        "observedAt": "2026-09-01T14:40:13.908Z",
+        "followers": {
+          "count": 4785,
+          "displayText": "4,785 followers",
+          "locations": [
+            "profile-header"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:40:13.926Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_saleh-al-muhanna_0y1ytn6\thttps://www.linkedin.com/in/salehalmuhanna",
+      "personIds": [
+        "person_saleh-al-muhanna_0y1ytn6"
+      ],
+      "personNames": [
+        "Saleh Al Muhanna"
+      ],
+      "status": "success",
+      "uiPosition": 816,
+      "url": "https://www.linkedin.com/in/salehalmuhanna",
+      "lastAttemptAt": "2026-09-01T14:40:13.998Z",
+      "result": {
+        "schemaVersion": "linkedin-followers.v1",
+        "sourceUrl": "https://www.linkedin.com/in/salehalmuhanna/",
+        "canonicalProfileUrl": "https://www.linkedin.com/in/salehalmuhanna",
+        "profileSlug": "salehalmuhanna",
+        "profileName": "Saleh Al Muhanna",
+        "pageTitle": "Saleh Al Muhanna | LinkedIn",
+        "observedAt": "2026-09-01T14:40:18.786Z",
+        "followers": {
+          "count": 4202,
+          "displayText": "4,202 followers",
+          "locations": [
+            "activity"
+          ],
+          "precision": "exact",
+          "source": "linkedin-profile"
+        },
+        "extraction": {
+          "method": "visible-profile-dom",
+          "browser": "Microsoft Edge"
+        }
+      },
+      "succeededAt": "2026-09-01T14:40:18.818Z"
+    },
+    {
+      "attempts": 1,
+      "key": "person_saleh-alharbi_1enwl6j\thttps://www.linkedin.com/in/salehharbi",
+      "personIds": [
+        "person_saleh-alharbi_1enwl6j"
+      ],
+      "personNames": [
+        "Saleh Alharbi"
+      ],
+      "status": "failed",
+      "uiPosition": 818,
+      "url": "https://www.linkedin.com/in/salehharbi",
+      "lastAttemptAt": "2026-09-01T14:40:18.910Z",
+      "error": "Microsoft Edge automation failed: 3560:3572: execution error: __LINKEDIN_FOLLOWERS_ERROR__:The selected browser is not logged in to LinkedIn (-2700).",
+      "failedAt": "2026-09-01T14:40:24.653Z"
+    },
+    {
+      "attempts": 0,
+      "key": "person_salman-bin-abdulaziz-al-badran_0tdj3a2\thttps://www.linkedin.com/in/ceo-telecom-salmanalbadran",
+      "personIds": [
+        "person_salman-bin-abdulaziz-al-badran_0tdj3a2"
+      ],
+      "personNames": [
+        "Salman Bin Abdulaziz Al Badran"
+      ],
+      "status": "pending",
+      "uiPosition": 822,
+      "url": "https://www.linkedin.com/in/ceo-telecom-salmanalbadran"
+    },
+    {
+      "attempts": 0,
+      "key": "person_sami-al-shatri_1f61dcm\thttps://www.linkedin.com/in/sami-al-shatri",
+      "personIds": [
+        "person_sami-al-shatri_1f61dcm"
+      ],
+      "personNames": [
+        "Sami Al-Shatri"
+      ],
+      "status": "pending",
+      "uiPosition": 828,
+      "url": "https://www.linkedin.com/in/sami-al-shatri"
+    },
+    {
+      "attempts": 0,
+      "key": "person_sami-salem_03ua6oz\thttps://www.linkedin.com/in/sami-salem-184a7a36",
+      "personIds": [
+        "person_sami-salem_03ua6oz"
+      ],
+      "personNames": [
+        "Sami Salem"
+      ],
+      "status": "pending",
+      "uiPosition": 830,
+      "url": "https://www.linkedin.com/in/sami-salem-184a7a36"
+    },
+    {
+      "attempts": 0,
+      "key": "person_sandra-william_0g1gd1s\thttps://www.linkedin.com/in/sandra-william",
+      "personIds": [
+        "person_sandra-william_0g1gd1s"
+      ],
+      "personNames": [
+        "Sandra William"
+      ],
+      "status": "pending",
+      "uiPosition": 833,
+      "url": "https://www.linkedin.com/in/sandra-william"
+    },
+    {
+      "attempts": 0,
+      "key": "person_sara-al-alsheikh_13xogs5\thttps://www.linkedin.com/in/sara-al-alsheikh-a1945a66",
+      "personIds": [
+        "person_sara-al-alsheikh_13xogs5"
+      ],
+      "personNames": [
+        "Sara Al-Alsheikh"
+      ],
+      "status": "pending",
+      "uiPosition": 835,
+      "url": "https://www.linkedin.com/in/sara-al-alsheikh-a1945a66"
+    },
+    {
+      "attempts": 0,
+      "key": "person_sarah-abouelkhair_01u0oko\thttps://www.linkedin.com/in/sarah-abouelkhair",
+      "personIds": [
+        "person_sarah-abouelkhair_01u0oko"
+      ],
+      "personNames": [
+        "Sarah Abouelkhair"
+      ],
+      "status": "pending",
+      "uiPosition": 837,
+      "url": "https://www.linkedin.com/in/sarah-abouelkhair"
+    },
+    {
+      "attempts": 0,
+      "key": "person_sarah-albaiz_11l91zj\thttps://www.linkedin.com/in/sarah-albaiz",
+      "personIds": [
+        "person_sarah-albaiz_11l91zj"
+      ],
+      "personNames": [
+        "Sarah Albaiz"
+      ],
+      "status": "pending",
+      "uiPosition": 839,
+      "url": "https://www.linkedin.com/in/sarah-albaiz"
+    },
+    {
+      "attempts": 0,
+      "key": "person_sarah-alhumoud_1o35yh7\thttps://www.linkedin.com/in/sarahalhumoud",
+      "personIds": [
+        "person_sarah-alhumoud_1o35yh7"
+      ],
+      "personNames": [
+        "Sarah Alhumoud"
+      ],
+      "status": "pending",
+      "uiPosition": 840,
+      "url": "https://www.linkedin.com/in/sarahalhumoud"
+    },
+    {
+      "attempts": 0,
+      "key": "person_sarah-almubarak_1io8fgw\thttps://www.linkedin.com/in/sarah-almubarak-974b1125",
+      "personIds": [
+        "person_sarah-almubarak_1io8fgw"
+      ],
+      "personNames": [
+        "Sarah AlMubarak"
+      ],
+      "status": "pending",
+      "uiPosition": 842,
+      "url": "https://www.linkedin.com/in/sarah-almubarak-974b1125"
+    },
+    {
+      "attempts": 0,
+      "key": "person_sayed-farouk_17wpocx\thttps://www.linkedin.com/in/sayedfarouk",
+      "personIds": [
+        "person_sayed-farouk_17wpocx"
+      ],
+      "personNames": [
+        "Sayed Farouk"
+      ],
+      "status": "pending",
+      "uiPosition": 846,
+      "url": "https://www.linkedin.com/in/sayedfarouk"
+    },
+    {
+      "attempts": 0,
+      "key": "person_shadi-el-ghoneimi_03sk6xs\thttps://www.linkedin.com/in/shadi-el-ghoneimi-b7925632",
+      "personIds": [
+        "person_shadi-el-ghoneimi_03sk6xs"
+      ],
+      "personNames": [
+        "Shadi El Ghoneimi"
+      ],
+      "status": "pending",
+      "uiPosition": 848,
+      "url": "https://www.linkedin.com/in/shadi-el-ghoneimi-b7925632"
+    },
+    {
+      "attempts": 0,
+      "key": "person_shadi-sayed_1qoz4uw\thttps://www.linkedin.com/in/shadis",
+      "personIds": [
+        "person_shadi-sayed_1qoz4uw"
+      ],
+      "personNames": [
+        "Shadi Sayed"
+      ],
+      "status": "pending",
+      "uiPosition": 849,
+      "url": "https://www.linkedin.com/in/shadis"
+    },
+    {
+      "attempts": 0,
+      "key": "person_shaee-almutiri_0t3qxaw\thttps://www.linkedin.com/in/shaee",
+      "personIds": [
+        "person_shaee-almutiri_0t3qxaw"
+      ],
+      "personNames": [
+        "Shaee Almutiri"
+      ],
+      "status": "pending",
+      "uiPosition": 851,
+      "url": "https://www.linkedin.com/in/shaee"
+    },
+    {
+      "attempts": 0,
+      "key": "person_shahinsha-abdul-basheer_1oqj0dl\thttps://www.linkedin.com/in/shahinshaprofile",
+      "personIds": [
+        "person_shahinsha-abdul-basheer_1oqj0dl"
+      ],
+      "personNames": [
+        "Shahinsha Abdul Basheer"
+      ],
+      "status": "pending",
+      "uiPosition": 853,
+      "url": "https://www.linkedin.com/in/shahinshaprofile"
+    },
+    {
+      "attempts": 0,
+      "key": "person_shaima-saleh-alhusseini_1yla8rf\thttps://www.linkedin.com/in/shaimaalhusseini",
+      "personIds": [
+        "person_shaima-saleh-alhusseini_1yla8rf"
+      ],
+      "personNames": [
+        "Shaima Saleh AlHusseini"
+      ],
+      "status": "pending",
+      "uiPosition": 854,
+      "url": "https://www.linkedin.com/in/shaimaalhusseini"
+    },
+    {
+      "attempts": 0,
+      "key": "person_sherief-kesseba_0vwln1c\thttps://www.linkedin.com/in/sherief-kesseba",
+      "personIds": [
+        "person_sherief-kesseba_0vwln1c"
+      ],
+      "personNames": [
+        "Sherief Kesseba"
+      ],
+      "status": "pending",
+      "uiPosition": 857,
+      "url": "https://www.linkedin.com/in/sherief-kesseba"
+    },
+    {
+      "attempts": 0,
+      "key": "person_soliman-al-walaie_15p6djt\thttps://www.linkedin.com/in/soliman-al-walaie-%D8%B3%D9%84%D9%8A%D9%85%D8%A7%D9%86-%D8%A7%D9%84%D9%88%D9%84%D9%8A%D8%B9%D9%8A-a31b0a228",
+      "personIds": [
+        "person_soliman-al-walaie_15p6djt"
+      ],
+      "personNames": [
+        "Soliman Al-Walaie"
+      ],
+      "status": "pending",
+      "uiPosition": 862,
+      "url": "https://www.linkedin.com/in/soliman-al-walaie-%D8%B3%D9%84%D9%8A%D9%85%D8%A7%D9%86-%D8%A7%D9%84%D9%88%D9%84%D9%8A%D8%B9%D9%8A-a31b0a228"
+    },
+    {
+      "attempts": 0,
+      "key": "person_soumaya-ben-beya_0jcwf2l\thttps://www.linkedin.com/in/soumaya-ben-beya-dridje-25574466",
+      "personIds": [
+        "person_soumaya-ben-beya_0jcwf2l"
+      ],
+      "personNames": [
+        "Soumaya Ben Beya"
+      ],
+      "status": "pending",
+      "uiPosition": 863,
+      "url": "https://www.linkedin.com/in/soumaya-ben-beya-dridje-25574466"
+    },
+    {
+      "attempts": 0,
+      "key": "person_suhail-alfaris_1xra0b7\thttps://www.linkedin.com/in/suhailalfaris",
+      "personIds": [
+        "person_suhail-alfaris_1xra0b7"
+      ],
+      "personNames": [
+        "Suhail Alfaris"
+      ],
+      "status": "pending",
+      "uiPosition": 864,
+      "url": "https://www.linkedin.com/in/suhailalfaris"
+    },
+    {
+      "attempts": 0,
+      "key": "person_surayyah-ahmad_1wcq1zl\thttps://www.linkedin.com/in/surayyah-ahmad-sani",
+      "personIds": [
+        "person_surayyah-ahmad_1wcq1zl"
+      ],
+      "personNames": [
+        "Surayyah Ahmad"
+      ],
+      "status": "pending",
+      "uiPosition": 867,
+      "url": "https://www.linkedin.com/in/surayyah-ahmad-sani"
+    },
+    {
+      "attempts": 0,
+      "key": "person_susana-garcia-robles_10zk276\thttps://www.linkedin.com/in/susana-garcia-robles-3767297",
+      "personIds": [
+        "person_susana-garcia-robles_10zk276"
+      ],
+      "personNames": [
+        "Susana Garcia-Robles"
+      ],
+      "status": "pending",
+      "uiPosition": 868,
+      "url": "https://www.linkedin.com/in/susana-garcia-robles-3767297"
+    },
+    {
+      "attempts": 0,
+      "key": "person_suzanne-ghazlan-leow_0lnprmm\thttps://www.linkedin.com/in/suzanneleow",
+      "personIds": [
+        "person_suzanne-ghazlan-leow_0lnprmm"
+      ],
+      "personNames": [
+        "Suzanne Ghazlan-Leow"
+      ],
+      "status": "pending",
+      "uiPosition": 869,
+      "url": "https://www.linkedin.com/in/suzanneleow"
+    },
+    {
+      "attempts": 0,
+      "key": "person_taher-hakami_06i9bwe\thttps://www.linkedin.com/in/taher-h",
+      "personIds": [
+        "person_taher-hakami_06i9bwe"
+      ],
+      "personNames": [
+        "Taher Hakami"
+      ],
+      "status": "pending",
+      "uiPosition": 871,
+      "url": "https://www.linkedin.com/in/taher-h"
+    },
+    {
+      "attempts": 0,
+      "key": "person_tala-al-jabri_0m5w50u\thttps://www.linkedin.com/in/talaa",
+      "personIds": [
+        "person_tala-al-jabri_0m5w50u"
+      ],
+      "personNames": [
+        "Tala Al Jabri"
+      ],
+      "status": "pending",
+      "uiPosition": 872,
+      "url": "https://www.linkedin.com/in/talaa"
+    },
+    {
+      "attempts": 0,
+      "key": "person_talib-al-rashdi_0xbrfzt\thttps://www.linkedin.com/in/talib-al-rashdi-5214abb8",
+      "personIds": [
+        "person_talib-al-rashdi_0xbrfzt"
+      ],
+      "personNames": [
+        "Talib Al-Rashdi"
+      ],
+      "status": "pending",
+      "uiPosition": 876,
+      "url": "https://www.linkedin.com/in/talib-al-rashdi-5214abb8"
+    },
+    {
+      "attempts": 0,
+      "key": "person_tamer-abdel-fattah_12hjhp9\thttps://www.linkedin.com/in/tamer-abdel-fattah-5b20748",
+      "personIds": [
+        "person_tamer-abdel-fattah_12hjhp9"
+      ],
+      "personNames": [
+        "Tamer Abdel-Fattah"
+      ],
+      "status": "pending",
+      "uiPosition": 877,
+      "url": "https://www.linkedin.com/in/tamer-abdel-fattah-5b20748"
+    },
+    {
+      "attempts": 0,
+      "key": "person_tamer-azer_1tp9z6o\thttps://www.linkedin.com/in/tamerazer",
+      "personIds": [
+        "person_tamer-azer_1tp9z6o"
+      ],
+      "personNames": [
+        "Tamer Azer"
+      ],
+      "status": "pending",
+      "uiPosition": 878,
+      "url": "https://www.linkedin.com/in/tamerazer"
+    },
+    {
+      "attempts": 0,
+      "key": "person_tamim-el-zein_1asljuq\thttps://www.linkedin.com/in/tamimelzein",
+      "personIds": [
+        "person_tamim-el-zein_1asljuq"
+      ],
+      "personNames": [
+        "Tamim El Zein"
+      ],
+      "status": "pending",
+      "uiPosition": 881,
+      "url": "https://www.linkedin.com/in/tamimelzein"
+    },
+    {
+      "attempts": 0,
+      "key": "person_tarek-elgamal_0mrnbue\thttps://www.linkedin.com/in/tarek-m-elgamal",
+      "personIds": [
+        "person_tarek-elgamal_0mrnbue"
+      ],
+      "personNames": [
+        "Tarek ElGamal"
+      ],
+      "status": "pending",
+      "uiPosition": 883,
+      "url": "https://www.linkedin.com/in/tarek-m-elgamal"
+    },
+    {
+      "attempts": 0,
+      "key": "person_tim-pfaelzer_1e4a1ra\thttps://www.linkedin.com/in/tpfaelzer",
+      "personIds": [
+        "person_tim-pfaelzer_1e4a1ra"
+      ],
+      "personNames": [
+        "Tim Pfaelzer"
+      ],
+      "status": "pending",
+      "uiPosition": 888,
+      "url": "https://www.linkedin.com/in/tpfaelzer"
+    },
+    {
+      "attempts": 0,
+      "key": "person_turki-aljoaib_0c59pae\thttps://www.linkedin.com/in/turk-aljoaib",
+      "personIds": [
+        "person_turki-aljoaib_0c59pae"
+      ],
+      "personNames": [
+        "Turki Aljoaib"
+      ],
+      "status": "pending",
+      "uiPosition": 889,
+      "url": "https://www.linkedin.com/in/turk-aljoaib"
+    },
+    {
+      "attempts": 0,
+      "key": "person_turki-alshlail_0uw43os\thttps://www.linkedin.com/in/turki-alshlail",
+      "personIds": [
+        "person_turki-alshlail_0uw43os"
+      ],
+      "personNames": [
+        "Turki AlShlail"
+      ],
+      "status": "pending",
+      "uiPosition": 890,
+      "url": "https://www.linkedin.com/in/turki-alshlail"
+    },
+    {
+      "attempts": 0,
+      "key": "person_turki-alsubaie_0pi29zm\thttps://www.linkedin.com/in/turki-alsubaie-71967b69",
+      "personIds": [
+        "person_turki-alsubaie_0pi29zm"
+      ],
+      "personNames": [
+        "Turki Alsubaie"
+      ],
+      "status": "pending",
+      "uiPosition": 891,
+      "url": "https://www.linkedin.com/in/turki-alsubaie-71967b69"
+    },
+    {
+      "attempts": 0,
+      "key": "person_vishal-joshi_0gr3cnb\thttps://www.linkedin.com/in/vishaljoshiqa",
+      "personIds": [
+        "person_vishal-joshi_0gr3cnb"
+      ],
+      "personNames": [
+        "Vishal Joshi"
+      ],
+      "status": "pending",
+      "uiPosition": 892,
+      "url": "https://www.linkedin.com/in/vishaljoshiqa"
+    },
+    {
+      "attempts": 0,
+      "key": "person_wael-alamri_1kcj46s\thttps://www.linkedin.com/in/wael-alamri-0206b628",
+      "personIds": [
+        "person_wael-alamri_1kcj46s"
+      ],
+      "personNames": [
+        "Wael Alamri"
+      ],
+      "status": "pending",
+      "uiPosition": 893,
+      "url": "https://www.linkedin.com/in/wael-alamri-0206b628"
+    },
+    {
+      "attempts": 0,
+      "key": "person_waleed-a-alballaa_039vp50\thttps://www.linkedin.com/in/ballaa",
+      "personIds": [
+        "person_waleed-a-alballaa_039vp50"
+      ],
+      "personNames": [
+        "Waleed A. Alballaa"
+      ],
+      "status": "pending",
+      "uiPosition": 896,
+      "url": "https://www.linkedin.com/in/ballaa"
+    },
+    {
+      "attempts": 0,
+      "key": "person_waleed-bin-khanfoor_09kybf9\thttps://www.linkedin.com/in/waleed-bin-khanfoor-3a79aa147",
+      "personIds": [
+        "person_waleed-bin-khanfoor_09kybf9"
+      ],
+      "personNames": [
+        "Waleed Bin Khanfoor"
+      ],
+      "status": "pending",
+      "uiPosition": 899,
+      "url": "https://www.linkedin.com/in/waleed-bin-khanfoor-3a79aa147"
+    },
+    {
+      "attempts": 0,
+      "key": "person_william-bao-bean_1gzrfp8\thttps://www.linkedin.com/in/williambaobean",
+      "personIds": [
+        "person_william-bao-bean_1gzrfp8"
+      ],
+      "personNames": [
+        "William Bao Bean"
+      ],
+      "status": "pending",
+      "uiPosition": 904,
+      "url": "https://www.linkedin.com/in/williambaobean"
+    },
+    {
+      "attempts": 0,
+      "key": "person_wissam-achmar_1mk3xxp\thttps://www.linkedin.com/in/wissam-achmar",
+      "personIds": [
+        "person_wissam-achmar_1mk3xxp"
+      ],
+      "personNames": [
+        "Wissam Achmar"
+      ],
+      "status": "pending",
+      "uiPosition": 905,
+      "url": "https://www.linkedin.com/in/wissam-achmar"
+    },
+    {
+      "attempts": 0,
+      "key": "person_wojciech-bajda_0zehzql\thttps://www.linkedin.com/in/wojciech-bajda-94b749406",
+      "personIds": [
+        "person_wojciech-bajda_0zehzql"
+      ],
+      "personNames": [
+        "Wojciech Bajda"
+      ],
+      "status": "pending",
+      "uiPosition": 906,
+      "url": "https://www.linkedin.com/in/wojciech-bajda-94b749406"
+    },
+    {
+      "attempts": 0,
+      "key": "person_yahia-hassan_1g3bl86\thttps://www.linkedin.com/in/yahiaelshall",
+      "personIds": [
+        "person_yahia-hassan_1g3bl86"
+      ],
+      "personNames": [
+        "Yahia Hassan"
+      ],
+      "status": "pending",
+      "uiPosition": 907,
+      "url": "https://www.linkedin.com/in/yahiaelshall"
+    },
+    {
+      "attempts": 0,
+      "key": "person_yannick-theler_0z77vn2\thttps://www.linkedin.com/in/yannicktheler",
+      "personIds": [
+        "person_yannick-theler_0z77vn2"
+      ],
+      "personNames": [
+        "Yannick Theler"
+      ],
+      "status": "pending",
+      "uiPosition": 909,
+      "url": "https://www.linkedin.com/in/yannicktheler"
+    },
+    {
+      "attempts": 0,
+      "key": "person_yara-yassin_06gx901\thttps://www.linkedin.com/in/yara-yassin-9b3733b5",
+      "personIds": [
+        "person_yara-yassin_06gx901"
+      ],
+      "personNames": [
+        "Yara Yassin"
+      ],
+      "status": "pending",
+      "uiPosition": 910,
+      "url": "https://www.linkedin.com/in/yara-yassin-9b3733b5"
+    },
+    {
+      "attempts": 0,
+      "key": "person_yazeed-al-shamsi_0hu3sxu\thttps://www.linkedin.com/in/yazeed-alshamsi",
+      "personIds": [
+        "person_yazeed-al-shamsi_0hu3sxu"
+      ],
+      "personNames": [
+        "Yazeed Al-Shamsi"
+      ],
+      "status": "pending",
+      "uiPosition": 916,
+      "url": "https://www.linkedin.com/in/yazeed-alshamsi"
+    },
+    {
+      "attempts": 0,
+      "key": "person_youssef-salem_0g6jtml\thttps://www.linkedin.com/in/youssefsamysalem",
+      "personIds": [
+        "person_youssef-salem_0g6jtml"
+      ],
+      "personNames": [
+        "Youssef Salem"
+      ],
+      "status": "pending",
+      "uiPosition": 925,
+      "url": "https://www.linkedin.com/in/youssefsamysalem"
+    },
+    {
+      "attempts": 0,
+      "key": "person_zainab-alamin_156pwra\thttps://www.linkedin.com/in/zainabalamin",
+      "personIds": [
+        "person_zainab-alamin_156pwra"
+      ],
+      "personNames": [
+        "Zainab Alamin"
+      ],
+      "status": "pending",
+      "uiPosition": 929,
+      "url": "https://www.linkedin.com/in/zainabalamin"
+    },
+    {
+      "attempts": 0,
+      "key": "person_zeina-koubar_0wzai3c\thttps://www.linkedin.com/in/zeina-g-koubar-hassan-7a39784",
+      "personIds": [
+        "person_zeina-koubar_0wzai3c"
+      ],
+      "personNames": [
+        "Zeina Koubar"
+      ],
+      "status": "pending",
+      "uiPosition": 931,
+      "url": "https://www.linkedin.com/in/zeina-g-koubar-hassan-7a39784"
+    },
+    {
+      "attempts": 0,
+      "key": "person_ziad-al-musallam_1arrc7r\thttps://www.linkedin.com/in/ziad-al-musallam",
+      "personIds": [
+        "person_ziad-al-musallam_1arrc7r"
+      ],
+      "personNames": [
+        "Ziad Al-Musallam"
+      ],
+      "status": "pending",
+      "uiPosition": 932,
+      "url": "https://www.linkedin.com/in/ziad-al-musallam"
+    },
+    {
+      "attempts": 0,
+      "key": "person_ziad-elhadary_1kdui06\thttps://www.linkedin.com/in/ziad-elhadary-852439235",
+      "personIds": [
+        "person_ziad-elhadary_1kdui06"
+      ],
+      "personNames": [
+        "Ziad Elhadary"
+      ],
+      "status": "pending",
+      "uiPosition": 933,
+      "url": "https://www.linkedin.com/in/ziad-elhadary-852439235"
+    },
+    {
+      "attempts": 0,
+      "key": "person_ziad-musallam_0rf4bmh\thttps://www.linkedin.com/in/ziad-musallam-99576162",
+      "personIds": [
+        "person_ziad-musallam_0rf4bmh"
+      ],
+      "personNames": [
+        "Ziad Musallam"
+      ],
+      "status": "pending",
+      "uiPosition": 934,
+      "url": "https://www.linkedin.com/in/ziad-musallam-99576162"
+    },
+    {
+      "attempts": 0,
+      "key": "person_ziyad-almatroudi_1ie7xmk\thttps://www.linkedin.com/in/ziyad-almatroudi-277a1368",
+      "personIds": [
+        "person_ziyad-almatroudi_1ie7xmk"
+      ],
+      "personNames": [
+        "Ziyad Almatroudi"
+      ],
+      "status": "pending",
+      "uiPosition": 935,
+      "url": "https://www.linkedin.com/in/ziyad-almatroudi-277a1368"
+    }
+  ],
+  "order": "unified-people-ui-name-ascending",
+  "sourceFile": "assets/people/unified-people.json",
+  "updatedAt": "2026-09-01T14:40:24.653Z",
+  "version": 1
+}

@@ -1,0 +1,375 @@
+{
+  "schema_version": "lead-research-source-strategy-review.v1",
+  "reviewed_at": "2026-09-05",
+  "canonical_files_modified": false,
+  "target": "Saudi-market founder or owner whose first intended core software functionality remains unbuilt, with affirmative evidence of a maximum of two current software builders and a specific project to build. A completed but private product does not qualify simply because it has not launched.",
+  "main_findings": [
+    "The existing resource set prioritizes discoverable startups with funding, launched products and demo-day coverage. Those signals often indicate the opposite of the revised persona.",
+    "Acquire candidates at program admission and idea-validation stages. Alumni success stories and showcase winners are useful for disqualification checks but are usually late discovery points.",
+    "Split umbrella brands into specific programs and editions. The Garage incubator and accelerator have different stages; Sanabil Startup Unlocked differs from Sanabil Accelerator; StartSmart 9th and 10th editions have materially different eligibility.",
+    "Misk Launchpad 10.0 lists a September 6, 2026 start and an initial Ideate phase, making current admission announcements a timely source to inspect. Attendance alone does not establish team size, budget or a paid build requirement.",
+    "A zero-person LinkedIn people result is not evidence that a company has zero developers. Visible people are a lower bound unless a current, sufficiently complete team statement establishes an upper bound.",
+    "A technical co-founder counts as one software builder, not an automatic exclusion. An equity-only co-founder request is a founder-hiring signal and must not be promoted to explicit paid-vendor demand.",
+    "The absence of an app-store listing is not evidence of a pre-build company; web applications, private deployments, contractors and white-label products must be checked.",
+    "Do not transfer the v1 accepted-lead yields into v2. Recompute all yield figures against the revised gates and retain a versioned denominator."
+  ],
+  "first_party_verifications": [
+    {
+      "id": "misk-current",
+      "url": "https://hub.misk.org.sa/en/programs/entrepreneurship/misk-launchpad/",
+      "checked_at": "2026-09-05",
+      "access_result": "readable",
+      "official_stage_eligibility": "Idea, prototype, MVP or early launch; Saudi-market commitment; solo founders eligible; initial Ideate phase followed by Build and Test to Sell.",
+      "timing": "10.0 page lists September 6, 2026 to January 2, 2027; application window June 15 to August 8, 2026.",
+      "limitation": "The page also calls the core experience 10 weeks. Record the listed dates rather than infer a consistent duration. Public testimonials include mature alumni, so do not use them as evidence of current pre-build status."
+    },
+    {
+      "id": "garage-current",
+      "url": "https://thegarage.sa/",
+      "checked_at": "2026-09-05",
+      "access_result": "readable",
+      "official_stage_eligibility": "Incubator: prototype or MVP, support toward launch. Accelerator: completed product, growth and expansion. Hosted programs include MVP Lab and Antler.",
+      "limitation": "The incubator still admits already-developed MVPs; every candidate requires product and team checks. Program listings do not constitute a public participant roster."
+    },
+    {
+      "id": "sanabil-accelerator-current",
+      "url": "https://mena.500.co/founders/mena/seed-accelerator",
+      "checked_at": "2026-09-05",
+      "access_result": "readable",
+      "official_stage_eligibility": "Technology startups with an MVP and early traction looking to scale in MENA.",
+      "limitation": "The current page contains inconsistent dates and template placeholders. Use its explicit stage criteria, not uncertain scheduling or fee fragments. This program is a poor primary fit for pre-build acquisition."
+    },
+    {
+      "id": "startup-unlocked-official-post",
+      "url": "https://www.linkedin.com/posts/500mena_what-happens-when-you-take-an-idea-a-whiteboard-activity-7395914835504295936-3kGH",
+      "checked_at": "2026-09-05",
+      "access_result": "public_post_readable",
+      "official_stage_eligibility": "Official 500 MENA post describes a five-day Riyadh bootcamp for idea or MVP founders and companies expanding into Saudi Arabia.",
+      "timing": "This post advertised February 8–12, 2026, not an upcoming event.",
+      "limitation": "Some participants may already operate products elsewhere. The post proves a relevant program format, not current availability, a complete participant list or buying readiness."
+    },
+    {
+      "id": "startsmart-ninth-edition",
+      "url": "https://competition.startsmartsaudi.com/",
+      "checked_at": "2026-09-05",
+      "access_result": "search_index_full_text",
+      "official_stage_eligibility": "Ninth edition: AI-driven ideas, MVPs and pre-seed startups; FAQ describes 40 idea-stage and pre-MVP teams; Saudi-based idea and at least one Saudi team member.",
+      "limitation": "Historical cohort from late 2025/early 2026; page contains conflicting closing dates. Its stage criteria must not be attributed to future editions. Historical participation alone is stale product evidence."
+    },
+    {
+      "id": "startsmart-tenth-edition",
+      "url": "https://startsmartsaudi.com/programs/competitions?page=1",
+      "checked_at": "2026-09-05",
+      "access_result": "readable",
+      "official_stage_eligibility": "Tenth edition, titled Competition 2027: existing startups with at least SAR 5,000 revenue; idea-only applicants explicitly ineligible. Tracks cover health, environment, social entrepreneurship and industry.",
+      "funding_caveat": "Prizes are technical subscriptions and credits, not cash paid to the winners.",
+      "limitation": "Revenue can come from a manual service, so this is not an automatic exclusion; it is a weak source for pure idea-stage founders. Verify the exact product and revenue basis."
+    },
+    {
+      "id": "monshaat-digitization-workshop",
+      "url": "https://www.monshaat.gov.sa/en/node/13506",
+      "checked_at": "2026-09-05",
+      "access_result": "readable",
+      "official_stage_eligibility": "Historical Thakaa digitization workshop teaches digital transformation strategy, project management and technology use for entrepreneurship.",
+      "timing": "Event date August 9, 2023; the page links a broader events listing.",
+      "limitation": "This proves a channel type, not a current cohort or an actionable buyer roster. General workshop attendance does not establish a bespoke software project."
+    },
+    {
+      "id": "ntdp-mvp-lab",
+      "url": "https://ntdp.gov.sa/en/initiative/mvplab",
+      "checked_at": "2026-09-05",
+      "access_result": "official_link_resolved_but_no_readable_body",
+      "official_stage_eligibility": null,
+      "limitation": "Official Garage page links this URL as MVP Lab. Eligibility, provider arrangement and grant conditions require a fresh readable first-party source before accepting claims; this review did not verify them."
+    },
+    {
+      "id": "antler-menap-residency",
+      "url": "https://www.antler.co/location/menap",
+      "checked_at": "2026-09-05",
+      "access_result": "readable",
+      "official_stage_eligibility": "Solo founders and early teams validating ideas or building first products; Riyadh fall residency includes team formation. Separate investment route accepts more established teams.",
+      "limitation": "Residency seeks co-founder formation and may provide delivery capacity. Investment is conditional; participation does not prove available budget or demand for outsourcing. Use resident introductions rather than portfolio companies."
+    }
+  ],
+  "resource_revisions": [
+    {
+      "resource_id": "resource-misk-launchpad",
+      "priority_revision": "high",
+      "action": "refocus_on_current_ideate_admissions",
+      "rationale": "Current official program accepts the desired early stage, but the old extraction method focused too much on mature testimonials.",
+      "verification_ids": ["misk-current"],
+      "extraction_recipe": "Inspect public 10.0 admission and Ideate participant posts; extract only named founders with a specific unbuilt software concept. Capture admission date, product stage statement and full source URL, then audit team and vendor demand. Recheck at transition into Build.",
+      "cadence": "weekly during admission and Ideate; every two weeks through Build",
+      "limitation": "No public list is guaranteed. Do not treat program membership or free enrollment as budget evidence."
+    },
+    {
+      "resource_id": "lr-linkedin-misk-entrepreneurship",
+      "priority_revision": "high",
+      "action": "make_an_access_channel_of_misk_launchpad",
+      "rationale": "Useful public participant discovery surface; avoid counting the same Misk cohort as two independent sources.",
+      "verification_ids": ["misk-current"],
+      "extraction_recipe": "Read current official Ideate/Build cohort posts and founders' own statements. Ignore congratulations, likes and follower lists; attribute discovery to Misk plus this access channel.",
+      "cadence": "weekly",
+      "limitation": "Program site and its LinkedIn account are one underlying organization, not independent corroboration."
+    },
+    {
+      "resource_id": "resource-the-garage",
+      "priority_revision": "high_for_incubator_low_for_accelerator",
+      "action": "split_programs",
+      "rationale": "The official incubator supports prototype/MVP toward launch, while the accelerator explicitly requires a completed product.",
+      "verification_ids": ["garage-current"],
+      "extraction_recipe": "Create child sources for incubator admissions, idea workshops, MVP Lab and accelerator. Extract named prototype teams only from the first three; use accelerator membership as a product-maturity check.",
+      "cadence": "weekly around intake; monthly otherwise",
+      "limitation": "Prototype/MVP labels need candidate-specific interpretation; a live MVP fails the user's first-product constraint."
+    },
+    {
+      "resource_id": "resource-ntdp-products",
+      "priority_revision": "medium_pending_verification",
+      "action": "split_mvp_lab_from_growth_products",
+      "rationale": "MVP Lab is a promising child channel; an umbrella of financing, growth and unicorn products is too broad.",
+      "verification_ids": ["ntdp-mvp-lab", "garage-current"],
+      "extraction_recipe": "Verify current MVP Lab rules and public beneficiaries. For a named candidate, establish that the build remains uncontracted and distinguish cash support from provider-delivered services or cloud credits.",
+      "cadence": "monthly and new intake announcements",
+      "limitation": "Current eligibility and budget terms were not readable in this review. Never assume a grant is available to hire the user's business."
+    },
+    {
+      "resource_id": "resource-sanabil-500",
+      "priority_revision": "low",
+      "action": "use_for_stage_verification",
+      "rationale": "MVP plus early traction is required; growth acceleration is poorly aligned with pre-build demand.",
+      "verification_ids": ["sanabil-accelerator-current"],
+      "extraction_recipe": "Use the cohort/company page to establish product maturity and exclude an already-launched core product. Pursue a candidate only if fresh, specific evidence establishes an eligible unbuilt product and very small team.",
+      "cadence": "on_candidate_demand",
+      "limitation": "MENA location alone does not establish Saudi operations."
+    },
+    {
+      "resource_id": "lr-linkedin-500-mena",
+      "priority_revision": "high_for_startup_unlocked_only",
+      "action": "split_unlocked_bootcamp_from_seed_accelerator",
+      "rationale": "Official Startup Unlocked messaging includes idea-stage founders, unlike the seed accelerator.",
+      "verification_ids": ["startup-unlocked-official-post", "sanabil-accelerator-current"],
+      "extraction_recipe": "Inspect the next publicly announced Startup Unlocked intake and named participant introductions. Record the exact program name and cohort; investigate pre-MVP entrants before bootcamp completion.",
+      "cadence": "monthly; weekly during active intake",
+      "limitation": "The verified February 2026 event is past; no future date is asserted. Existing companies expanding into Saudi must be filtered out if their core product already operates."
+    },
+    {
+      "resource_id": "startsmart-saudi-2026",
+      "priority_revision": "medium_historical_revalidation",
+      "action": "version_by_edition",
+      "rationale": "The 9th edition accepted idea/pre-MVP projects. The currently promoted 10th edition excludes idea-only teams and requires revenue.",
+      "verification_ids": ["startsmart-ninth-edition", "startsmart-tenth-edition"],
+      "extraction_recipe": "Keep the 9th-edition roster as a historical discovery queue and recheck every product today. Create a separate 10th-edition source; shortlist manual-service businesses only if the first core software product remains unbuilt.",
+      "cadence": "one historical revalidation pass; then per new edition",
+      "limitation": "The 10th-edition technical credits are not vendor cash. Do not carry the earlier edition's grants or stage assumptions into the new cohort."
+    },
+    {
+      "resource_id": "lr-linkedin-intent-search",
+      "priority_revision": "high",
+      "action": "replace_launch_terms_with_prebuild_and_purchase_intent",
+      "rationale": "Generic launching/platform/AI terms find completed products. Explicit current first-person build requests are closer to this persona.",
+      "verification_ids": [],
+      "extraction_recipe": "Run small read-only recent-post searches for exact phrases such as looking for an app development company, MVP development partner, developing our first app, seeking a technical cofounder, أبحث عن شركة برمجة, تطوير تطبيق لمشروعي, نبحث عن شريك تقني, and نعمل على نموذج أولي, then apply Saudi geography terms. Tag paid vendor request, employee vacancy, equity-only co-founder request, or unclear separately; exact-name verification follows discovery.",
+      "cadence": "two short passes weekly",
+      "limitation": "These are proposed search phrases, not verified buyer posts. Cofounder or employee searches establish a possible capacity gap but not paid-vendor demand; public post visibility and commercial limits may constrain coverage."
+    },
+    {
+      "resource_id": "resource-monshaat-accelerators",
+      "priority_revision": "medium",
+      "action": "focus_on_named_business_problem_announcements",
+      "rationale": "The SME lane needs owner statements and unbuilt workflow projects, not generic accelerator directories or solution providers.",
+      "verification_ids": ["monshaat-digitization-workshop"],
+      "extraction_recipe": "Use current SME Support Centre, Thakaa and sector-event pages to find public named owner cases; follow the business's own description of manual workflow and planned first system. Reject provider catalogues as buyer evidence.",
+      "cadence": "monthly pilot",
+      "limitation": "The verified workshop is historical and supplies no live buyer roster. General digital transformation interest often means off-the-shelf software adoption, not custom development."
+    },
+    {
+      "resource_id": "resource-flat6labs-rsp",
+      "priority_revision": "low",
+      "action": "verification_only_unless_prebuild_intake_proven",
+      "rationale": "Current stored evidence establishes seed support, not pre-build eligibility or small software teams.",
+      "verification_ids": [],
+      "extraction_recipe": "Before any new harvest, confirm current intake criteria; use individual company pages to check already-launched products. Do not accept a seed label as pre-build evidence.",
+      "cadence": "on_candidate_demand",
+      "limitation": "Not refreshed online in this review."
+    },
+    {
+      "resource_id": "resource-flat6labs-demo-days",
+      "priority_revision": "low",
+      "action": "stage_verification",
+      "rationale": "Stored demo-day evidence describes companies after months developing products; it tends to surface candidates late for a first build.",
+      "verification_ids": [],
+      "extraction_recipe": "Use product descriptions and company links to resolve maturity; seek admissions instead if a pre-build intake is later documented.",
+      "cadence": "on_candidate_demand",
+      "limitation": "Not refreshed online in this review."
+    },
+    {
+      "resource_id": "resource-taqadam",
+      "priority_revision": "medium",
+      "action": "admissions_only_with_stage_check",
+      "rationale": "Potentially useful at entry, but grant and accelerator status do not establish an unbuilt product or a delivery gap.",
+      "verification_ids": [],
+      "extraction_recipe": "Verify current admission criteria and isolate incoming teams with explicit first-product plans. Confirm grant award and allowable spending candidate by candidate.",
+      "cadence": "new intake only",
+      "limitation": "Not refreshed online in this review; no current pre-build eligibility asserted."
+    },
+    {
+      "resource_id": "resource-taqadam-showcases",
+      "priority_revision": "low",
+      "action": "stage_and_funding_verification",
+      "rationale": "The stored showcase describes finalists preparing to scale, so use it after discovery to verify maturity and financing.",
+      "verification_ids": [],
+      "extraction_recipe": "Cross-check named candidates against completed products and current operations; do not use prize winners as default primary acquisition.",
+      "cadence": "on_candidate_demand",
+      "limitation": "Not refreshed online in this review."
+    },
+    {
+      "resource_id": "resource-code-software-accelerator",
+      "priority_revision": "low_pending_current_idea_stage_channel",
+      "action": "replace_old_report_with_current_challenge_intakes",
+      "rationale": "A 2024 accelerator report cannot prove current intent; current idea challenges may be a better channel if named entrants are public.",
+      "verification_ids": [],
+      "extraction_recipe": "Locate a current official challenge with explicit idea/prototype entry criteria before harvesting; confirm entrants are buyers rather than software vendors.",
+      "cadence": "quarterly discovery pilot",
+      "limitation": "No specific current challenge verified here."
+    }
+  ],
+  "grouped_resource_revisions": [
+    {
+      "resource_ids": ["svc-reports", "raed-portfolio", "waed-portfolio-news", "impact46-portfolio-news", "wamda-saudi-feed", "arab-news-startups"],
+      "priority_revision": "low_for_acquisition_high_for_candidate_verification",
+      "rationale": "Funding and launch news selects visible operating companies and cannot compensate for a failed pre-build or team gate.",
+      "extraction_recipe": "Search only an already-discovered exact venture to verify financing, existing product, named founders and stage; label source role as corroboration or exclusion. Any new seed requires independent pre-build evidence.",
+      "cadence": "on_candidate_demand",
+      "limitation": "Class-level strategy recommendation based on the stored source definitions, not a fresh audit of each website."
+    },
+    {
+      "resource_ids": ["biban-ewc", "biban-forum", "leap-rocket-fuel", "money20-middle-east-startups"],
+      "priority_revision": "low_for_general_finalists_medium_for_explicit_idea_tracks",
+      "rationale": "Public exhibitors and finalists commonly have products; event location does not establish a Saudi-market venture.",
+      "extraction_recipe": "Require an explicitly documented idea/pre-launch track and named participants before harvesting. For SME owners, require an owner-described first-software project; discard technology suppliers selling products.",
+      "cadence": "edition_intake_check_only",
+      "limitation": "No current idea-track eligibility verified in this review; do not assume one exists."
+    },
+    {
+      "resource_ids": ["launchx-riyadh", "project-startup-sa"],
+      "priority_revision": "medium_experimental",
+      "rationale": "Founder introductions may expose pre-build projects, but an event/catalogue alone gives no team maximum, budget or stage guarantee.",
+      "extraction_recipe": "Time-box a current named-founder pass; retain only explicit unbuilt concepts; record reviewed and accepted counts before giving the channel more time.",
+      "cadence": "one 60-minute pilot, then yield-based",
+      "limitation": "Not refreshed online here. Project Startup's stored evidence is from 2025."
+    },
+    {
+      "resource_ids": ["lr-linkedin-zero-to-one"],
+      "priority_revision": "low",
+      "rationale": "General Saudi app and funding coverage is predominantly maturity verification, with occasional pre-launch exceptions.",
+      "extraction_recipe": "Use exact-venture lookup; only first-product plans enter the discovery queue.",
+      "cadence": "on_candidate_demand",
+      "limitation": "Publisher praise and engagement do not prove buying demand."
+    }
+  ],
+  "missing_channels": [
+    {
+      "proposed_id": "antler-riyadh-residency-admissions",
+      "priority": "medium_high_pilot",
+      "verification_ids": ["antler-menap-residency"],
+      "extraction_recipe": "Inspect public Riyadh residency admissions and founder introductions at the start of the program; record a named pre-product concept, existing software builders and stated delivery preference. Exclude portfolio success stories from the acquisition pass.",
+      "limitations": "Many founders seek an equity co-founder or build internally; paid vendor intent must be separately established."
+    },
+    {
+      "proposed_id": "owner_first_software_project_requests",
+      "priority": "high_pilot",
+      "verification_ids": [],
+      "extraction_recipe": "Search public first-person posts by Saudi owners describing a specific manual workflow and intended first app or internal system. Use business website and owner role to verify authority and operations; record software alternative fit and any explicit budget evidence.",
+      "limitations": "Channel hypothesis, not a verified source list. WhatsApp, spreadsheets or an old website alone do not prove intent or a need for custom software."
+    },
+    {
+      "proposed_id": "university_preincubation_named_project_teams",
+      "priority": "medium_pilot",
+      "verification_ids": [],
+      "extraction_recipe": "Find current official pre-incubation/idea-validation competition rosters with named adult project founders; validate ownership, continuation beyond coursework and a specific first-product plan. Avoid generic hackathon attendance lists.",
+      "limitations": "No current named program verified here. Student prototypes commonly lack budget, authority or plans for commercial continuation. A team of technical students may already exceed the software-person limit."
+    },
+    {
+      "proposed_id": "public_paid_mvp_briefs",
+      "priority": "high_pilot",
+      "verification_ids": [],
+      "extraction_recipe": "Search public requests for software agencies, freelance MVP development or a scoped first app. Capture project timing, whether compensation is cash/equity/unknown, and buyer identity when public; verify Saudi relevance without collecting contact details.",
+      "limitations": "Do not imply anonymous briefs are named verified leads. Public availability and provider competition may reduce usable yield. No accounts, submissions or outreach are required for the research pass."
+    }
+  ],
+  "evidence_and_funnel_enhancements": {
+    "new_fields": [
+      "source_program_name",
+      "source_program_edition",
+      "source_program_phase",
+      "source_role: discovery | corroboration | exclusion",
+      "product_delivery_state: idea | design | manual_pilot | no_code_prototype | private_alpha | launched | unknown",
+      "product_state_explicit_statement",
+      "software_people_observed_min",
+      "software_people_confirmed_max",
+      "team_coverage_basis: complete_current_statement | partial_public_observation | unknown",
+      "delivery_arrangement: founder_building | in_house | contractor | agency | none_confirmed | unknown",
+      "buyer_request_type: paid_vendor | employee | equity_cofounder | mixed | unclear",
+      "budget_evidence_type: project_cash | paid_pilot | cash_grant | general_funding | cloud_credits | unknown",
+      "next_evidence_needed"
+    ],
+    "qualification_rule": "Active accepted requires affirmative evidence that intended core functionality remains unbuilt and a supported software-team maximum of two. Partial public observation of 0–2 software people remains a research candidate; it is not a confirmed maximum. A single technical founder is allowed. Unknown paid buying intent limits priority even when persona fit passes.",
+    "funnel": ["raw_discovered", "identity_resolved", "prebuild_supported", "team_capacity_supported", "persona_fit", "purchase_readiness_reviewed", "accepted_or_hold_or_excluded"],
+    "time_allocation_pilot": {
+      "explicit_prebuild_or_paid_build_requests_percent": 40,
+      "current_idea_phase_program_admissions_percent": 30,
+      "sme_first_software_initiatives_percent": 20,
+      "portfolio_news_and_launch_crosschecks_percent": 10
+    },
+    "allocation_note": "Starting experiment, not an evidence-backed optimal split. Reallocate after the first comparable reviewed batches.",
+    "stop_rule": "Use reviewed-candidate yield and research cost. A source with no accepted leads after two separate 15-candidate reviewed batches should be demoted, while its unresolved count and dominant gap are reported; avoid stopping promising channels merely because public team evidence is slow to resolve.",
+    "refresh": "Recheck intent and team before acceptance; re-review active pre-launch candidates after 30 days because launch/team state can change quickly. Recheck program rules every edition."
+  },
+  "future_source_metrics": {
+    "schema_version": "lead-source-yield.v2",
+    "attribution": "Use unique candidate/project IDs; credit first discovery to a single source and track assisting verification sources separately. Official website and official social feed belong to one source family.",
+    "metrics": [
+      {
+        "name": "qualified_yield_per_reviewed",
+        "numerator": "unique candidates accepted under the revised persona after completed review",
+        "denominator": "unique candidates whose persona review was completed for this source and batch",
+        "unit": "ratio",
+        "zero_denominator": null
+      },
+      {
+        "name": "research_minutes_per_accepted",
+        "numerator": "all discovery and review minutes spent on this source batch, including rejected and held candidates",
+        "denominator": "unique accepted candidates first discovered by this source",
+        "unit": "minutes",
+        "zero_denominator": null
+      },
+      {
+        "name": "unresolved_team_share",
+        "numerator": "reviewed candidates held because team maximum is unknown",
+        "denominator": "all reviewed candidates",
+        "unit": "ratio"
+      },
+      {
+        "name": "already_launched_share",
+        "numerator": "reviewed candidates excluded because the core product is launched",
+        "denominator": "all reviewed candidates",
+        "unit": "ratio"
+      },
+      {
+        "name": "explicit_paid_demand_share",
+        "numerator": "accepted candidates with an explicit current paid external-vendor request; project budget alone is insufficient",
+        "denominator": "accepted candidates",
+        "unit": "ratio"
+      },
+      {
+        "name": "explicit_build_budget_share",
+        "numerator": "accepted candidates with an explicit cash allocation for the intended build",
+        "denominator": "accepted candidates",
+        "unit": "ratio"
+      }
+    ],
+    "required_batch_fields": ["source_id", "program_edition", "checked_at", "review_window", "discovered_unique", "reviewed_unique", "accepted_unique", "held_unique", "excluded_unique", "duplicate_unique", "research_minutes", "exclusion_reasons", "persona_version"],
+    "observed_values": null,
+    "reason_observed_values_null": "This task reviewed source strategy rather than running a new v2 lead acquisition batch. Existing v1 accepted counts are not valid v2 yields."
+  }
+}

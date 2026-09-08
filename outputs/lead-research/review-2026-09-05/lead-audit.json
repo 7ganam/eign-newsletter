@@ -1,0 +1,3014 @@
+{
+  "schema_version": "saudi-lead-audit.v1",
+  "reviewed_at": "2026-09-05",
+  "canonical_dataset_generated_at": "2026-09-03T17:06:49.199Z",
+  "methodology": "Local, read-only review of every canonical record, every stored qualification summary and all 156 stored evidence summaries. No fresh web verification was performed. Source claims are treated as previously recorded claims, not newly confirmed facts. Original worker records were consulted for urCASH and Zakn; no canonical data was modified. The coordinator additionally reported a live BookMyGuide founder-post recheck on 2026-09-05; that finding is explicitly attributed below.",
+  "target": "Saudi-market buyer with a specific unbuilt core software product and no more than two current hands-on software builders, including co-founders and contractors. Public/production software already operating is outside the target. Company operation, a website, a total-employee band, a private-alpha label or silence about developers cannot decide eligibility alone.",
+  "summary": {
+    "total_reviewed": 50,
+    "verdict_counts": {
+      "suggested_exclude": 38,
+      "needs_verification": 7,
+      "promising_for_verification": 5
+    },
+    "qualified_under_revised_persona": 0,
+    "current_band_counts": {
+      "A": 7,
+      "B": 37,
+      "C": 6
+    },
+    "current_lifecycle_counts": {
+      "launched": 12,
+      "unknown": 18,
+      "operating": 14,
+      "precompany": 2,
+      "idea": 1,
+      "beta": 3
+    },
+    "missing_complete_current_software_team_audit": 50,
+    "stored_outsourcing_level_unknown": 47,
+    "missing_or_unknown_structured_total_employee_band": 46,
+    "placeholder_product_summaries": 11,
+    "evidence_records": 156,
+    "evidence_records_with_missing_publication_date": 119,
+    "leads_with_all_evidence_publication_dates_missing": 20,
+    "rows_with_dimension_values_not_defined_in_current_persona_levels": 16,
+    "dimension_values_not_defined_in_current_persona_levels": 18,
+    "product_intent_6_rows_without_the_required_request_or_build_brief_in_attached_summaries": 13,
+    "product_intent_6_rows_with_technical_hiring_but_missing_exact_request_date": 2,
+    "budget_5_rows_without_build_specific_budget_evidence": 5,
+    "a_band_rows_not_meeting_the_stored_qualitative_a_definition": 7,
+    "rows_with_noncanonical_penalty_id_or_points": 18,
+    "promising_priority_breakdown": {
+      "high": 4,
+      "low": 1
+    }
+  },
+  "interpretation": [
+    "These verdicts are recommendations, not a migration of the canonical list. An exclusion based on an already-built product does not claim three or more engineers.",
+    "All 50 rows lack a complete current software-role census and upper bound. A visible role is a lower bound; absence of names, total employee bands and job vacancies do not prove a zero-to-two maximum.",
+    "Five records have the clearest historical pre-build signals: urCASH, Vision Mate, Wathba, Jadi and BookMyGuide. Each needs current product, team and paid-budget verification. BookMyGuide is low-priority because the coordinator's live recheck establishes planned Saudi entry, not confirmed current Saudi activity.",
+    "The other seven holds are Smart Quotation, Gaia, Zakn, Ballora, GreenVision, Suhail and Mara. Program participation, private access, an MVP label or a prototype demo does not settle current product operation.",
+    "Every SME-lane row describes an existing software offering or deployment in its actual evidence/qualification narrative. None was excluded merely because the company lifecycle says operating.",
+    "Repeated observed_at=2026-09-03 says when research was recorded; it does not refresh a 2025 or undated source. Store trigger date separately, preserve approximate age/range and source-date certainty.",
+    "Two URLs are not automatically two independent sources: founder profile, company page and founder-authored job post are typically one source group, while a mirrored job repeats the same underlying claim.",
+    "Recruiting a salaried engineer, recruiting an equity co-founder and procuring paid development are different intentions. The first two can identify a build gap without proving software-service buying intent.",
+    "Current point arithmetic may add correctly while the narrative fails the rubric. Validation should test eligibility and claim-to-rule mapping, not only numeric bounds and sums."
+  ],
+  "stage_label_corrections": [
+    {
+      "id": "lead-urcash-talal-alharbi",
+      "stored": "launched",
+      "evidence_based": "waitlist, subject to current refresh",
+      "reason": "Official product source explicitly described a waitlist rather than a full public launch."
+    },
+    {
+      "id": "lead-wathba-mashhoor-aldubayan",
+      "stored": "launched",
+      "evidence_based": "historical pre-MVP hiring signal; current stage unknown",
+      "reason": "A live community website is not proof the specific planned software MVP has been built."
+    },
+    {
+      "id": "lead-bookmyguide-hayath-kargal",
+      "stored": "beta",
+      "evidence_based": "historical pre-MVP signal; current stage unknown",
+      "reason": "Founder explicitly said pre-MVP; the coordinator's live recheck dates the post to approximately eight months ago and establishes only planned Saudi entry."
+    },
+    {
+      "id": "lead-stoqa-abdulrahman-saud",
+      "stored": "unknown",
+      "evidence_based": "launched",
+      "reason": "An app-store listing and release record were already preserved."
+    },
+    {
+      "id": "lead-zakn-ai-zakaria-alnajar",
+      "stored": "unknown",
+      "evidence_based": "unknown",
+      "reason": "Pre-launch product-validation refers to Zakn customers' use case, not necessarily Zakn lifecycle."
+    }
+  ],
+  "strongest_research_candidates": [
+    {
+      "id": "lead-urcash-talal-alharbi",
+      "name": "Talal Alharbi",
+      "company": "urCASH",
+      "reason": "Official-site evidence describes a waitlist rather than a public launch, contradicting the stored launched lifecycle label.",
+      "next_check": "Check current website/app-store state, audit all three co-founders and contributors, and establish funding or paid build capacity."
+    },
+    {
+      "id": "lead-wathba-mashhoor-aldubayan",
+      "name": "Mashhoor Aldubayan",
+      "company": "Wathba | وثبة",
+      "reason": "The original role explicitly asks one primary founding engineer to produce the first production MVP; this contradicts the stored launched label. The community website is not proof this intended product is launched.",
+      "next_check": "Check original role closure and whether engineer was hired, confirm first MVP still unbuilt, audit current contributors and cash budget."
+    },
+    {
+      "id": "lead-jadi-bashayr-alabbad",
+      "name": "Bashayr Alabbad",
+      "company": "Jadi | جادي",
+      "reason": "Founder/job evidence explicitly says the technical co-founder must build the student platform from the ground up.",
+      "next_check": "The role is closed and roughly four months old: verify present product and team, then check cash capacity because the offer is negotiable equity."
+    },
+    {
+      "id": "lead-vision-mate-abdulrahman-almuqati-cipd",
+      "name": "Abdulrahman Almuqati CIPD",
+      "company": "Vision Mate",
+      "reason": "The recent role describes a pre-company concept requiring an AI wearable and mobile/cloud implementation.",
+      "next_check": "Confirm role remains open and no prototype is operational; audit delivery roster; look for cash/grant allocation because the offer is equity-based."
+    },
+    {
+      "id": "lead-bookmyguide-hayath-kargal",
+      "name": "Hayath Kargal",
+      "company": "BookMyGuide",
+      "reason": "Founder-authored evidence says pre-MVP and planning Saudi pilots, contradicting beta. The coordinator's live recheck shows the post is approximately eight months old, so current product state remains unknown.",
+      "next_check": "First establish current Saudi presence/operations and whether the pre-MVP project remains active. Then audit product, both founders' technical roles and contributors. MVP Lab was an application, not an award or verified funding.",
+      "research_priority": "low",
+      "saudi_gate": "unknown"
+    }
+  ],
+  "second_priority_candidates_note": "Selected five examples from seven holds; all seven, including Gaia and Mara, are recorded in rows.",
+  "second_priority_candidates": [
+    {
+      "id": "lead-greenvision-yara-alalawi",
+      "name": "Yara Alalawi",
+      "company": "GreenVision",
+      "blocking_gap": "A cloud-dashboard prototype is explicitly described. That can be eligible, but it must be distinguished from already-operating deployed software.",
+      "next_check": "Confirm prototype-only state, current team with <=2 upper bound, commercial owner intent and available project funds."
+    },
+    {
+      "id": "lead-smart-quotation-radhi-alshammari",
+      "name": "Radhi Alshammari",
+      "company": "Smart Quotation",
+      "blocking_gap": "The founder already describes an MVP and supplier onboarding. A company 'building' post does not establish whether the MVP is a mock-up, private pilot or operational product.",
+      "next_check": "First establish whether the MVP is functional/in use, then audit every current founder and engineer and identify a paid build need."
+    },
+    {
+      "id": "lead-zakn-ai-zakaria-alnajar",
+      "name": "Zakaria Alnajar",
+      "company": "Zakn AI",
+      "blocking_gap": "The phrase 'pre-launch idea/product validation' describes what Zakn helps customers do; it does not prove Zakn itself has no built product. Worker context calls it an active early product.",
+      "next_check": "Inspect actual product availability and ask only public evidence whether it is a concept, prototype or usable validation platform; then audit current team and paid-build signals."
+    },
+    {
+      "id": "lead-ballora-marya-fawaz",
+      "name": "Marya Fawaz",
+      "company": "Ballora",
+      "blocking_gap": "Ballora is documented as a graduation project and conference platform; no source establishes the current software lifecycle or a commercial build decision.",
+      "next_check": "Confirm active company/project ownership and authority (official roster names Ghadah Alshehri), current product state, all contributors and a funding path."
+    },
+    {
+      "id": "lead-suhail-shatha-khalid-alharbi",
+      "name": "Shatha Khalid Alharbi | شذى الحربي",
+      "company": "Suhail | سهيل",
+      "blocking_gap": "The project advanced to an MVP-building program phase; participation does not tell us whether the MVP was subsequently completed or deployed.",
+      "next_check": "Check post-program product progress and the engineering roles of Shatha, Ghadah and Nada; then commercial ownership and funds."
+    }
+  ],
+  "rows": [
+    {
+      "id": "lead-madak-abdulaziz-ghazi-alardi",
+      "display_name": "Abdulaziz Ghazi Alardi",
+      "company": "Madak",
+      "lane": "new-founder",
+      "current_score": 16,
+      "current_band": "A",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "launched",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "The recorded official app listing reports an existing Android app, July release and 10,000+ downloads. The target core product is already built."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "Technical capacity is unknown; customer and investor counts do not supply a software-team count."
+      },
+      "evidence": [
+        {
+          "id": "lead-candidate-madak-abdulaziz-al-ardi-e2",
+          "url": "https://madak.app/en/",
+          "title": "Fractional Real Estate Ownership in Saudi Arabia",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "Madak reports a regulated Saudi fractional-property app, 30,000-plus investors, more than SAR 8 million in issued deeds, and current wallet, reporting, exit, and AI-assistant functions."
+        },
+        {
+          "id": "lead-candidate-madak-abdulaziz-al-ardi-e3",
+          "url": "https://play.google.com/store/apps/details?hl=en-US&id=com.tqwedy.mdak",
+          "title": "Madak: Fractional Ownership",
+          "published_at": "2026-07-22",
+          "observed_at": "2026-09-03",
+          "stored_summary": "The current app listing documents a July 2026 release with a redesigned experience, smart assistant, property resale, live reporting, and more than 10,000 downloads."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2026-07-22"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "low",
+      "next_check": "No priority recheck; retain exclusion unless a separate qualifying unbuilt venture is evidenced.",
+      "scoring_review_flags": [
+        {
+          "dimension": "product_intent",
+          "stored_score": 6,
+          "reason": "Attached summaries show product/funding/expansion activity, but not the explicit developer/vendor/partner request or dated build brief required for 6 by the existing persona."
+        },
+        {
+          "dimension": "budget_readiness",
+          "stored_score": 5,
+          "reason": "Funding/traction/scale is evidenced, but no explicit budget, procurement, awarded product grant or paid pilot tied to this build is identified; these are the original 5-point requirements."
+        },
+        {
+          "dimension": "band",
+          "stored_band": "A",
+          "reason": "The stored A-band definition requires strong outsourcing evidence, while this row explicitly records delivery capacity/outsourcing unknown."
+        }
+      ]
+    },
+    {
+      "id": "lead-athleads-app-marwan-alshayeb",
+      "display_name": "Marwan AlShayeb",
+      "company": "Athleads.app",
+      "lane": "new-founder",
+      "current_score": 15,
+      "current_band": "A",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "launched",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "The stored narrative describes a launched scouting/performance analytics platform, current client/investor activity and continued product work, not a first unbuilt app."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "A 2–10 total company band cannot establish <=2 software builders."
+      },
+      "evidence": [
+        {
+          "id": "lead-candidate-athleads-marwan-alshayeb-e2",
+          "url": "https://www.linkedin.com/company/athleadsapp",
+          "title": "Athleads.app LinkedIn public company page",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "Athleads reports Riyadh headquarters, a 2-10 employee range, recent investment progress, a fresh Saudi Ministry of Sport meeting, and continued work on scouting and performance analytics."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [],
+      "all_evidence_publication_dates_missing": true,
+      "research_priority": "low",
+      "next_check": "Reopen only for a separately evidenced unbuilt product; verify platform operation first if exclusion is disputed.",
+      "scoring_review_flags": [
+        {
+          "dimension": "budget_readiness",
+          "stored_score": 4,
+          "reason": "No rule for this value is specified in the stored persona's enumerated scoring levels."
+        },
+        {
+          "dimension": "product_intent",
+          "stored_score": 6,
+          "reason": "Attached summaries show product/funding/expansion activity, but not the explicit developer/vendor/partner request or dated build brief required for 6 by the existing persona."
+        },
+        {
+          "dimension": "band",
+          "stored_band": "A",
+          "reason": "The stored A-band definition requires strong outsourcing evidence, while this row explicitly records delivery capacity/outsourcing unknown."
+        }
+      ]
+    },
+    {
+      "id": "lead-handl-hub-doaa-aref",
+      "display_name": "Doaa Aref",
+      "company": "Handl Hub",
+      "lane": "new-founder",
+      "current_score": 15,
+      "current_band": "A",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "unknown",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "The official product source describes a live early-access platform with integrations, execution features and monthly pricing. Early-access wording does not make an operational product unbuilt."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "No technical-role inventory; integration complexity does not imply a team gap."
+      },
+      "evidence": [
+        {
+          "id": "lead-candidate-handl-hub-doaa-aref-e2",
+          "url": "https://ecom.handlhub.com/",
+          "title": "HandlHub - هاندل هب",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "Handl Hub describes an early-access Saudi ecommerce operations platform with direct store and advertising integrations, 63 AI recommendation engines, measurable actions, automation, execution services, and live monthly pricing."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2026-07-07"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "low",
+      "next_check": "Retain as existing-product exclusion; reopen only if first-party evidence proves the page was a nonfunctional concept.",
+      "scoring_review_flags": [
+        {
+          "dimension": "budget_readiness",
+          "stored_score": 4,
+          "reason": "No rule for this value is specified in the stored persona's enumerated scoring levels."
+        },
+        {
+          "dimension": "product_intent",
+          "stored_score": 6,
+          "reason": "Attached summaries show product/funding/expansion activity, but not the explicit developer/vendor/partner request or dated build brief required for 6 by the existing persona."
+        },
+        {
+          "dimension": "band",
+          "stored_band": "A",
+          "reason": "The stored A-band definition requires strong outsourcing evidence, while this row explicitly records delivery capacity/outsourcing unknown."
+        }
+      ]
+    },
+    {
+      "id": "lead-stoqa-abdulrahman-saud",
+      "display_name": "Abdulrahman Saud",
+      "company": "STOQA",
+      "lane": "new-founder",
+      "current_score": 15,
+      "current_band": "A",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "unknown",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "The Android app listing and company launch statement clearly evidence an already-built core product."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "Sixteen visible employees are total employees, not sixteen developers; exact engineering count remains unknown."
+      },
+      "evidence": [
+        {
+          "id": "lead-candidate-stoqa-abdulrahman-saud-e2",
+          "url": "https://www.linkedin.com/company/stoqa-company",
+          "title": "STOQA LinkedIn public company page",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "STOQA reports a Riyadh headquarters, 16 visible employees, an 11-50 employee range, a Saudi-market financial-intelligence product, a recent Android launch, and continuing feature releases."
+        },
+        {
+          "id": "lead-candidate-stoqa-abdulrahman-saud-e3",
+          "url": "https://play.google.com/store/apps/details?id=ai.stoqa.app",
+          "title": "STOQA - ستوكا",
+          "published_at": "2026-08-12",
+          "observed_at": "2026-09-03",
+          "stored_summary": "The current Android listing documents a Saudi-market investment-analysis app with paid plans, Tadawul analytics, portfolio tools, more than 23,000 daily users, more than SAR 500 million in tracked portfolios, and an August 2026 feature release."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2026-07-07",
+        "2026-08-12"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "low",
+      "next_check": "No priority research; preserve the app URL as the exclusion evidence.",
+      "scoring_review_flags": [
+        {
+          "dimension": "product_intent",
+          "stored_score": 6,
+          "reason": "Attached summaries show product/funding/expansion activity, but not the explicit developer/vendor/partner request or dated build brief required for 6 by the existing persona."
+        },
+        {
+          "dimension": "budget_readiness",
+          "stored_score": 5,
+          "reason": "Funding/traction/scale is evidenced, but no explicit budget, procurement, awarded product grant or paid pilot tied to this build is identified; these are the original 5-point requirements."
+        },
+        {
+          "dimension": "band",
+          "stored_band": "A",
+          "reason": "The stored A-band definition requires strong outsourcing evidence, while this row explicitly records delivery capacity/outsourcing unknown."
+        },
+        {
+          "dimension": "penalty",
+          "reason": "At least one applied penalty ID/point combination is not in the stored persona penalty list."
+        }
+      ]
+    },
+    {
+      "id": "lead-medirect-alwaleed-altorabi",
+      "display_name": "Alwaleed Altorabi",
+      "company": "MEDirect",
+      "lane": "new-founder",
+      "current_score": 14,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "launched",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "The stored company and founder evidence describes a live virtual-clinic SaaS product and diagnostic/payment integrations."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "A 2–10 total employee band gives no upper bound of two developers."
+      },
+      "evidence": [
+        {
+          "id": "lead-candidate-medirect-alwaleed-altorabi-e2",
+          "url": "https://www.linkedin.com/company/medirect-sa",
+          "title": "MEDirect Private Virtual Clinics LinkedIn public company page",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "MEDirect reports Riyadh headquarters, a 2-10 employee range, a live SaaS platform, and current integrations with laboratories, radiology networks, pharmacies, payments, and prescriptions."
+        },
+        {
+          "id": "lead-candidate-medirect-alwaleed-altorabi-e3",
+          "url": "https://www.linkedin.com/in/alwaleed-altorabi",
+          "title": "Alwaleed Altorabi LinkedIn public profile",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The Riyadh founder identifies his current MEDirect leadership and describes nationwide Saudi diagnostic integrations and a live virtual-clinic product."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2026-01-14"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "low",
+      "next_check": "No priority recheck; core product is already live.",
+      "scoring_review_flags": [
+        {
+          "dimension": "product_intent",
+          "stored_score": 6,
+          "reason": "Attached summaries show product/funding/expansion activity, but not the explicit developer/vendor/partner request or dated build brief required for 6 by the existing persona."
+        }
+      ]
+    },
+    {
+      "id": "lead-qubit-abdullah-rashad",
+      "display_name": "Abdullah Rashad",
+      "company": "Qubit",
+      "lane": "new-founder",
+      "current_score": 14,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "unknown",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "Current enterprise deployments, 140+ integrations and product releases describe built software."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "Product/data capability is described but there is no complete engineering-role count."
+      },
+      "evidence": [
+        {
+          "id": "lead-candidate-qubit-abdullah-rashad-e2",
+          "url": "https://www.linkedin.com/company/qubitksa",
+          "title": "Qubit LinkedIn public company page",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "Qubit reports Riyadh headquarters, a 2-10 employee range, 140-plus integrations, custom enterprise deployments, active LEAP 2026 activity, and current product work."
+        },
+        {
+          "id": "lead-candidate-qubit-abdullah-rashad-e5",
+          "url": "https://qubit.sa/en/news/taqadam-top-10",
+          "title": "Qubit named among the top 10 startups in TAQADAM's ninth cohort",
+          "published_at": "2026-05-11",
+          "observed_at": "2026-09-03",
+          "stored_summary": "Qubit confirms Riyadh headquarters, its Saudi platform, 140-plus integrations, and $140,000 in non-dilutive TAQADAM funding."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2026-05-03",
+        "2026-05-11"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "low",
+      "next_check": "No priority recheck; source can still discover younger founders.",
+      "scoring_review_flags": [
+        {
+          "dimension": "budget_readiness",
+          "stored_score": 4,
+          "reason": "No rule for this value is specified in the stored persona's enumerated scoring levels."
+        },
+        {
+          "dimension": "product_intent",
+          "stored_score": 6,
+          "reason": "Attached summaries show product/funding/expansion activity, but not the explicit developer/vendor/partner request or dated build brief required for 6 by the existing persona."
+        },
+        {
+          "dimension": "penalty",
+          "reason": "At least one applied penalty ID/point combination is not in the stored persona penalty list."
+        }
+      ]
+    },
+    {
+      "id": "lead-thedar-ai-mohy-aboualam",
+      "display_name": "Mohy Aboualam",
+      "company": "TheDar.AI",
+      "lane": "new-founder",
+      "current_score": 14,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "launched",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "Enterprise use of the Arabic media-intelligence product and commercial shipping are already recorded."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "Visible internal AI/product staff are not enumerated."
+      },
+      "evidence": [
+        {
+          "id": "lead-candidate-thedar-mohy-aboualam-e2",
+          "url": "https://onegiantleap.com/2026-speakers/mohy-aboualam",
+          "title": "Mohy Aboualam",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "LEAP identifies Aboualam as TheDar.AI co-founder and CEO and says the company relocated its headquarters to Riyadh in 2025."
+        },
+        {
+          "id": "lead-candidate-thedar-mohy-aboualam-e3",
+          "url": "https://www.linkedin.com/company/thedar-ai",
+          "title": "TheDar.AI LinkedIn public company page",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The company reports Riyadh headquarters, visible staff, an Arabic-first media intelligence product, enterprise use, and active LEAP 2026 product activity."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [],
+      "all_evidence_publication_dates_missing": true,
+      "research_priority": "low",
+      "next_check": "No priority recheck; this is an existing software offering.",
+      "scoring_review_flags": [
+        {
+          "dimension": "budget_readiness",
+          "stored_score": 4,
+          "reason": "No rule for this value is specified in the stored persona's enumerated scoring levels."
+        },
+        {
+          "dimension": "product_intent",
+          "stored_score": 6,
+          "reason": "Attached summaries show product/funding/expansion activity, but not the explicit developer/vendor/partner request or dated build brief required for 6 by the existing persona."
+        },
+        {
+          "dimension": "penalty",
+          "reason": "At least one applied penalty ID/point combination is not in the stored persona penalty list."
+        }
+      ]
+    },
+    {
+      "id": "lead-21doctors-osama-almabroum",
+      "display_name": "Osama Almabroum",
+      "company": "21Doctors",
+      "lane": "new-founder",
+      "current_score": 13,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "unknown",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "The company describes an integrated digital-health platform being expanded into Saudi Arabia, with an existing development headquarters."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": 1,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "At least one named co-founder/CTO (Rania Abu Taleb) is visible; the full delivery team and any upper bound are unknown."
+      },
+      "evidence": [
+        {
+          "id": "lead-candidate-21doctors-osama-almabroum-e2",
+          "url": "https://www.linkedin.com/company/21doctorsmedical",
+          "title": "21Doctors LinkedIn public company page",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "21Doctors describes an integrated digital-health platform, an 11-50 employee range, active expansion into Saudi Arabia with MISA support, and selection for The Garage's tenth accelerator cohort."
+        },
+        {
+          "id": "lead-candidate-21doctors-osama-almabroum-e3",
+          "url": "https://www.linkedin.com/posts/21doctorsmedical_21doctors-%D8%A7%D9%84%D8%B5%D8%AD%D8%A9%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-activity-7368680420143562753-_0N2",
+          "title": "21Doctors pre-seed and Saudi headquarters announcement",
+          "published_at": "2025-09-02",
+          "observed_at": "2026-09-03",
+          "stored_summary": "The company announces a pre-seed round and Saudi headquarters for development and operations, naming Osama Almabroum as co-founder and CEO and Rania Abu Taleb as co-founder and CTO."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2026-07-07",
+        "2025-09-02"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "low",
+      "next_check": "No priority recheck; existing platform plus development organization is outside the intended buyer stage.",
+      "scoring_review_flags": [
+        {
+          "dimension": "budget_readiness",
+          "stored_score": 4,
+          "reason": "No rule for this value is specified in the stored persona's enumerated scoring levels."
+        },
+        {
+          "dimension": "product_intent",
+          "stored_score": 6,
+          "reason": "Attached summaries show product/funding/expansion activity, but not the explicit developer/vendor/partner request or dated build brief required for 6 by the existing persona."
+        },
+        {
+          "dimension": "penalty",
+          "reason": "At least one applied penalty ID/point combination is not in the stored persona penalty list."
+        }
+      ]
+    },
+    {
+      "id": "lead-bookahospi-sebastian-jimenez",
+      "display_name": "Sebastian Jimenez",
+      "company": "Bookahospi",
+      "lane": "new-founder",
+      "current_score": 13,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "unknown",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "The marketplace is explicitly described as live; recruitment/credentialing software already supports international hires."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "An existing cross-market team is mentioned, but '60 hires' refers to placed healthcare workers, not Bookahospi staff."
+      },
+      "evidence": [
+        {
+          "id": "lead-candidate-bookahospi-sebastian-jimenez-e2",
+          "url": "https://lanzadera.es/proyecto/bookahospi/",
+          "title": "Bookahospi",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "Lanzadera names Sebastian Jimenez as CEO and reports Saudi presence, more than 60 international hires, and software for healthcare recruitment and credentialing."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2026-01-14"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "low",
+      "next_check": "No priority recheck; do not interpret placement counts as technical employees.",
+      "scoring_review_flags": [
+        {
+          "dimension": "product_intent",
+          "stored_score": 5,
+          "reason": "No rule for this value is specified in the stored persona's enumerated scoring levels."
+        },
+        {
+          "dimension": "budget_readiness",
+          "stored_score": 4,
+          "reason": "No rule for this value is specified in the stored persona's enumerated scoring levels."
+        },
+        {
+          "dimension": "penalty",
+          "reason": "At least one applied penalty ID/point combination is not in the stored persona penalty list."
+        }
+      ]
+    },
+    {
+      "id": "lead-juthor-lolwah-binsaedan",
+      "display_name": "Lolwah Binsaedan",
+      "company": "Juthor",
+      "lane": "new-founder",
+      "current_score": 13,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "launched",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "The official company site describes a live orders/inventory/analytics platform with 10+ marketplace integrations."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "Internal backend capacity is asserted in qualification notes, but no named full role inventory is preserved."
+      },
+      "evidence": [
+        {
+          "id": "lead-candidate-juthor-lolwah-binsaedan-e2",
+          "url": "https://juthor.sa/",
+          "title": "Juthor",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "Juthor describes a live Saudi commerce platform spanning product information, orders, inventory, analytics, automation, and more than ten marketplace integrations."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [],
+      "all_evidence_publication_dates_missing": true,
+      "research_priority": "low",
+      "next_check": "No priority recheck; core commerce platform is already built.",
+      "scoring_review_flags": [
+        {
+          "dimension": "budget_readiness",
+          "stored_score": 4,
+          "reason": "No rule for this value is specified in the stored persona's enumerated scoring levels."
+        },
+        {
+          "dimension": "product_intent",
+          "stored_score": 6,
+          "reason": "Attached summaries show product/funding/expansion activity, but not the explicit developer/vendor/partner request or dated build brief required for 6 by the existing persona."
+        },
+        {
+          "dimension": "penalty",
+          "reason": "At least one applied penalty ID/point combination is not in the stored persona penalty list."
+        }
+      ]
+    },
+    {
+      "id": "lead-mutim-abdulmohsin-hotami",
+      "display_name": "Abdulmohsin Hotami",
+      "company": "Mutim",
+      "lane": "new-founder",
+      "current_score": 13,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "unknown",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "Founder-authored evidence says the platform launched, obtained a paying customer and onboarded 100+ HR experts. Forthcoming modules do not reverse that launch."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "Two co-founders and a 2–10 employee band do not establish how many software builders are active."
+      },
+      "evidence": [
+        {
+          "id": "lead-candidate-mutim-abdulmohsin-hotami-e2",
+          "url": "https://www.linkedin.com/posts/hotamia_%D9%82%D8%A8%D9%84-%D8%AB%D9%85%D8%A7%D9%86%D9%8A%D8%A9-%D8%A3%D8%B4%D9%87%D8%B1-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%AA-%D9%85%D9%86-%D9%88%D8%B8%D9%8A%D9%81%D8%AA%D9%8A-%D8%A8%D8%B3%D8%A8%D8%A8-%D9%81%D9%83%D8%B1%D8%A9-activity-7428774643194531840-gY25",
+          "title": "Abdulmohsin Hotami's Mutim launch post",
+          "published_at": "2026-02-15",
+          "observed_at": "2026-09-03",
+          "stored_summary": "Hotami says he and co-founder Abdullah Binafif began building Mutim in May 2025, completed Misk Launchpad Cohort 9 Phase 3, secured a first paying customer, onboarded more than 100 HR experts, and launched the platform."
+        },
+        {
+          "id": "lead-candidate-mutim-abdulmohsin-hotami-e4",
+          "url": "https://beta.mutim.sa/",
+          "title": "Mutim HR Experts Platform",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "Mutim's product site shows an early-access Saudi platform with expert matching, project workflows, electronic agreements, protected payments, candidate tracking, and HR analytics; some modules remain marked as forthcoming."
+        },
+        {
+          "id": "lead-candidate-mutim-abdulmohsin-hotami-e5",
+          "url": "https://www.linkedin.com/posts/launch-calacanis_accessing-the-right-hr-expertise-shouldn-activity-7435392269471576064-IiQ7",
+          "title": "Mutim founder and traction profile",
+          "published_at": "2026-03-05",
+          "observed_at": "2026-09-03",
+          "stored_summary": "LAUNCH names Abdulmohsin Hotami and Abdullah Binafif as Mutim's founders and reports a Saudi HR marketplace, more than 100 onboarded experts, a live platform, and secured clients."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2026-02-15",
+        "2026-03-05"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "low",
+      "next_check": "No priority recheck; beta URL and unfinished modules are not evidence of an unbuilt core product.",
+      "scoring_review_flags": [
+        {
+          "dimension": "budget_readiness",
+          "stored_score": 2,
+          "reason": "No rule for this value is specified in the stored persona's enumerated scoring levels."
+        },
+        {
+          "dimension": "product_intent",
+          "stored_score": 6,
+          "reason": "Attached summaries show product/funding/expansion activity, but not the explicit developer/vendor/partner request or dated build brief required for 6 by the existing persona."
+        }
+      ]
+    },
+    {
+      "id": "lead-nitx-mohammed-al-saad",
+      "display_name": "Mohammed Al-Saad",
+      "company": "Nitx",
+      "lane": "new-founder",
+      "current_score": 13,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "unknown",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "The stored sources/narrative describe an established commercial advertising platform and expansion activity."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "Visible staff are not mapped to software roles."
+      },
+      "evidence": [
+        {
+          "id": "lead-candidate-nitx-mohammed-al-saad-e1",
+          "url": "https://hub.misk.org.sa/en/programs/entrepreneurship/misk-launchpad/",
+          "title": "Misk Launchpad",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "Misk's official page identifies alumni founders and summarizes product, grant, partnership, revenue, and Saudi-market milestones."
+        },
+        {
+          "id": "lead-candidate-nitx-mohammed-al-saad-e2",
+          "url": "https://www.linkedin.com/in/mohammed-al-saad-4511bb169",
+          "title": "Mohammed Al-Saad LinkedIn public profile",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The Riyadh profile identifies Al-Saad as Nitx co-founder and CEO and shows current 2026 Saudi advertising-technology activity."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [],
+      "all_evidence_publication_dates_missing": true,
+      "research_priority": "low",
+      "next_check": "No priority recheck unless a distinct unbuilt initiative is documented.",
+      "scoring_review_flags": [
+        {
+          "dimension": "product_intent",
+          "stored_score": 5,
+          "reason": "No rule for this value is specified in the stored persona's enumerated scoring levels."
+        }
+      ]
+    },
+    {
+      "id": "lead-ofintech-mohammed-alnoosh",
+      "display_name": "Mohammed Alnoosh",
+      "company": "OFINTECH",
+      "lane": "new-founder",
+      "current_score": 13,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "unknown",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "Stored evidence describes an AI/open-banking business scaling an existing platform, rather than a founder with no software product."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": 1,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "At least one CTO-associated profile is recorded; nine total visible employees are not an engineering count."
+      },
+      "evidence": [
+        {
+          "id": "lead-candidate-ofintech-mohammed-alnoosh-e2",
+          "url": "https://www.linkedin.com/company/ofintech",
+          "title": "OFINTECH LinkedIn public company page",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "OFINTECH reports a Riyadh-headquartered AI financial-management and open-banking business founded in 2024, nine visible employees, an 11-50 employee range, Attliq graduation, investment, and current scaling activity."
+        },
+        {
+          "id": "lead-candidate-ofintech-mohammed-alnoosh-e5",
+          "url": "https://www.linkedin.com/in/mohamed-ibrahim-a-441258199",
+          "title": "Mohamed H. LinkedIn public profile",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The public profile associates Mohamed H. with OFINTECH and includes direct professional evidence of a CTO role, supporting the presence of internal technical leadership."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2026-07-07",
+        "2026-01-17"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "low",
+      "next_check": "No priority recheck; confirm platform operation if disputing the suggested exclusion.",
+      "scoring_review_flags": [
+        {
+          "dimension": "budget_readiness",
+          "stored_score": 4,
+          "reason": "No rule for this value is specified in the stored persona's enumerated scoring levels."
+        },
+        {
+          "dimension": "product_intent",
+          "stored_score": 6,
+          "reason": "Attached summaries show product/funding/expansion activity, but not the explicit developer/vendor/partner request or dated build brief required for 6 by the existing persona."
+        },
+        {
+          "dimension": "penalty",
+          "reason": "At least one applied penalty ID/point combination is not in the stored persona penalty list."
+        }
+      ]
+    },
+    {
+      "id": "lead-reporty-abdulbadea-altukroni",
+      "display_name": "Abdulbadea Altukroni",
+      "company": "Reporty",
+      "lane": "new-founder",
+      "current_score": 13,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "launched",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "Stored official site and founder activity describe existing medical software, live trials and current operations."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": 1,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "A named CTO is recorded; further software capacity is unknown."
+      },
+      "evidence": [
+        {
+          "id": "lead-candidate-reporty-abdulbadea-altakroni-e2",
+          "url": "https://www.dev.reporty.sa/about-us",
+          "title": "About Reporty",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "Reporty's site names Abdulbadea Altukroni as CEO, identifies a CTO, and describes its AI-assisted dental reporting and documentation software."
+        },
+        {
+          "id": "lead-candidate-reporty-abdulbadea-altakroni-e4",
+          "url": "https://www.linkedin.com/in/abdulbadea-altakroni-42922a190",
+          "title": "Abdulbadea Altakroni LinkedIn public profile",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The founder profile shows current Saudi-based Reporty activity, live product trials, and LEAP 2026 participation."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [],
+      "all_evidence_publication_dates_missing": true,
+      "research_priority": "low",
+      "next_check": "No priority recheck; the core reporting product exists.",
+      "scoring_review_flags": [
+        {
+          "dimension": "product_intent",
+          "stored_score": 6,
+          "reason": "Attached summaries show product/funding/expansion activity, but not the explicit developer/vendor/partner request or dated build brief required for 6 by the existing persona."
+        },
+        {
+          "dimension": "penalty",
+          "reason": "At least one applied penalty ID/point combination is not in the stored persona penalty list."
+        }
+      ]
+    },
+    {
+      "id": "lead-revora-formerly-myalice-shuvo-rahman",
+      "display_name": "Shuvo Rahman",
+      "company": "Revora (formerly MyAlice)",
+      "lane": "new-founder",
+      "current_score": 13,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "unknown",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "Revora is explicitly an established SaaS platform formerly MyAlice, with growth, customers and current engineering hiring."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "Engineering/product leadership and hiring do not give an exact current count, but do evidence active internal delivery."
+      },
+      "evidence": [
+        {
+          "id": "lead-candidate-myalice-shuvo-rahman-e2",
+          "url": "https://userevora.com/about/",
+          "title": "About Revora",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "Revora says it was formerly MyAlice and positions its Arabic-first conversational-commerce platform for Saudi and Gulf brands."
+        },
+        {
+          "id": "lead-candidate-myalice-shuvo-rahman-e3",
+          "url": "https://www.linkedin.com/in/shuvo-rahman",
+          "title": "Shuvo Rahman LinkedIn public profile",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "Rahman identifies himself as founder and CEO, says Saudi Arabia is Revora's main market, reports a $2 million 2026 round and 10x growth, and describes active product, engineering-lead, and QA hiring."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2026-05-03"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "low",
+      "next_check": "No priority recheck; rebranding and beta features do not make the core SaaS product unbuilt.",
+      "scoring_review_flags": [
+        {
+          "dimension": "product_intent",
+          "stored_score": 6,
+          "reason": "Technical hiring could support the original 6-point developer-request rule, but the relevant request has no exact source date in the canonical evidence; verify recency."
+        },
+        {
+          "dimension": "budget_readiness",
+          "stored_score": 5,
+          "reason": "Funding/traction/scale is evidenced, but no explicit budget, procurement, awarded product grant or paid pilot tied to this build is identified; these are the original 5-point requirements."
+        },
+        {
+          "dimension": "penalty",
+          "reason": "At least one applied penalty ID/point combination is not in the stored persona penalty list."
+        }
+      ]
+    },
+    {
+      "id": "lead-sighti-salim-noor",
+      "display_name": "Salim Noor",
+      "company": "Sighti",
+      "lane": "new-founder",
+      "current_score": 13,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "unknown",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "The founder interview describes paid pilots and live deployments of the product; this is beyond an unbuilt core system."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "The founder has software/AI capability and active senior-AI recruiting is recorded; current total remains unknown."
+      },
+      "evidence": [
+        {
+          "id": "lead-candidate-sighti-salim-noor-e1",
+          "url": "https://startupshouse.com/en/news/attliq-cohort-5-graduation/",
+          "title": "Startups House, through Ventures by Startups House, Invests in Five Saudi Startups from the Latest Attliq Accelerator Cohort",
+          "published_at": "2026-07-07",
+          "observed_at": "2026-09-03",
+          "stored_summary": "Startups House identifies HANDL HUB, STOQA, OFINTECH, SIGHTY, and 21 DOCTORS as five pre-seed Saudi technology companies and reports a USD 100,000 SAFE investment into each after the fifth Attliq cohort Demo Day."
+        },
+        {
+          "id": "lead-candidate-sighti-salim-noor-e4",
+          "url": "https://gulfstartups.co/case-study/sighti/",
+          "title": "Meet the Riyadh Founder Turning CCTV Into AI Business Intelligence In the Gulf Region",
+          "published_at": "2025-09-19",
+          "observed_at": "2026-09-03",
+          "stored_summary": "The founder interview identifies Salim Noor, a 2025 Saudi-headquartered company, paid pilots and deployments, pre-seed backing, tailored F&B solutions, specialized-model development, and Noor's software and AI background."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2026-07-07",
+        "2025-09-19"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "low",
+      "next_check": "No priority recheck; a separate unbuilt product would require new evidence.",
+      "scoring_review_flags": [
+        {
+          "dimension": "budget_readiness",
+          "stored_score": 4,
+          "reason": "No rule for this value is specified in the stored persona's enumerated scoring levels."
+        },
+        {
+          "dimension": "product_intent",
+          "stored_score": 6,
+          "reason": "Technical hiring could support the original 6-point developer-request rule, but the relevant request has no exact source date in the canonical evidence; verify recency."
+        },
+        {
+          "dimension": "penalty",
+          "reason": "At least one applied penalty ID/point combination is not in the stored persona penalty list."
+        }
+      ]
+    },
+    {
+      "id": "lead-supplai-azmi-negro",
+      "display_name": "Azmi Negro",
+      "company": "Supplai",
+      "lane": "new-founder",
+      "current_score": 13,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "unknown",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "The co-founder and accelerator sources describe a live logistics/SaaS network with customers and shipments."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "A fifteen-person operational team is not a fifteen-person software team; no technical count is available."
+      },
+      "evidence": [
+        {
+          "id": "lead-candidate-supplai-azmi-negro-e2",
+          "url": "https://www.linkedin.com/in/azminegro121",
+          "title": "Azmi Negro LinkedIn public profile",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The co-founder describes a live Saudi cold-chain network, fundraising, customers, shipments, growth, and a 15-person team."
+        },
+        {
+          "id": "lead-candidate-supplai-azmi-negro-e3",
+          "url": "https://flat6labs.com/Company/supplai/",
+          "title": "Supplai",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "Flat6Labs names Azmi Negro as CEO and describes Supplai's Saudi B2B logistics platform and recurring SaaS model."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [],
+      "all_evidence_publication_dates_missing": true,
+      "research_priority": "low",
+      "next_check": "No priority recheck; operational software is already built.",
+      "scoring_review_flags": [
+        {
+          "dimension": "product_intent",
+          "stored_score": 5,
+          "reason": "No rule for this value is specified in the stored persona's enumerated scoring levels."
+        },
+        {
+          "dimension": "budget_readiness",
+          "stored_score": 5,
+          "reason": "Funding/traction/scale is evidenced, but no explicit budget, procurement, awarded product grant or paid pilot tied to this build is identified; these are the original 5-point requirements."
+        },
+        {
+          "dimension": "penalty",
+          "reason": "At least one applied penalty ID/point combination is not in the stored persona penalty list."
+        }
+      ]
+    },
+    {
+      "id": "lead-aya-munira-alkadi",
+      "display_name": "Munira Alkadi",
+      "company": "Aya",
+      "lane": "new-founder",
+      "current_score": 12,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "unknown",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "The recorded commerce platform serves 100,000+ customers and is iterating a mature product."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "A 60+ total team and software hiring do not specify an exact engineering count."
+      },
+      "evidence": [
+        {
+          "id": "lead-candidate-aya-munira-alkadi-e1",
+          "url": "https://www.kaust.edu.sa/en/news/four-kaust-innovators-named-to-forbes-middle-east-30-under-30-2025",
+          "title": "Four KAUST innovators named to Forbes Middle East 30 Under 30 2025",
+          "published_at": "2025-12-29",
+          "observed_at": "2026-09-03",
+          "stored_summary": "KAUST identifies Aya's founders and reports Saudi/GCC customer volume and funding."
+        },
+        {
+          "id": "lead-candidate-aya-munira-alkadi-e2",
+          "url": "https://www.linkedin.com/company/ayaapp",
+          "title": "Aya LinkedIn public company page",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "Aya identifies Munira Alkadi as co-founder and CEO, reports a 60-plus person team and Saudi/GCC growth, and advertises current software, computer-science, and product roles."
+        },
+        {
+          "id": "lead-candidate-aya-munira-alkadi-e3",
+          "url": "https://www.linkedin.com/in/muniraalkadi",
+          "title": "Munira Alkadi LinkedIn public profile",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "Alkadi reports current CEO leadership, 9x year-over-year growth, more than 100,000 customers, a 60-plus team, and a SAR 26 million Series A."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2025-12-29",
+        "2026-05-03"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "low",
+      "next_check": "No priority recheck; this is a mature operating product.",
+      "scoring_review_flags": [
+        {
+          "dimension": "product_intent",
+          "stored_score": 6,
+          "reason": "Attached summaries show product/funding/expansion activity, but not the explicit developer/vendor/partner request or dated build brief required for 6 by the existing persona."
+        },
+        {
+          "dimension": "budget_readiness",
+          "stored_score": 5,
+          "reason": "Funding/traction/scale is evidenced, but no explicit budget, procurement, awarded product grant or paid pilot tied to this build is identified; these are the original 5-point requirements."
+        },
+        {
+          "dimension": "penalty",
+          "reason": "At least one applied penalty ID/point combination is not in the stored persona penalty list."
+        }
+      ]
+    },
+    {
+      "id": "lead-coretechx-fahad-durukan",
+      "display_name": "Fahad Durukan",
+      "company": "CoreTechX",
+      "lane": "new-founder",
+      "current_score": 12,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "launched",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "The evidence and qualification narrative describe an Arabic document-intelligence product already shipping."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "'Likely internal AI development' is an inference, not a measured count."
+      },
+      "evidence": [
+        {
+          "id": "lead-candidate-coretechx-fahad-durukan-e1",
+          "url": "https://flat6labs.com/flat6labs-hosts-sixth-demo-day-in-riyadh/",
+          "title": "Flat6Labs Hosts Sixth Demo Day of Riyadh Seed Program",
+          "published_at": "2026-01-14",
+          "observed_at": "2026-09-03",
+          "stored_summary": "The official release identifies Cycle 6 ventures and describes their current software or technology products."
+        },
+        {
+          "id": "lead-candidate-coretechx-fahad-durukan-e2",
+          "url": "https://www.linkedin.com/in/fahad-durukan",
+          "title": "Fahad Durukan LinkedIn public profile",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The Riyadh profile shows Durukan's current CoreTechX leadership and 2026 product-shipping activity around Arabic document intelligence."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2026-01-14"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "low",
+      "next_check": "No priority recheck; if revisited, establish product state before investigating team size.",
+      "scoring_review_flags": [
+        {
+          "dimension": "product_intent",
+          "stored_score": 5,
+          "reason": "No rule for this value is specified in the stored persona's enumerated scoring levels."
+        },
+        {
+          "dimension": "penalty",
+          "reason": "At least one applied penalty ID/point combination is not in the stored persona penalty list."
+        }
+      ]
+    },
+    {
+      "id": "lead-fitting-mohammed-al-mubayed",
+      "display_name": "Mohammed Al-Mubayed",
+      "company": "Fitting",
+      "lane": "new-founder",
+      "current_score": 12,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "operating",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "The official site explicitly shows an operating digital procurement product with project/supply activity; this conclusion is not based on the operating label."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": "unknown",
+        "reason": "No complete software-team inventory exists."
+      },
+      "evidence": [
+        {
+          "id": "lead-fitting-mohammed-al-mubayed-e1",
+          "url": "https://www.wamda.com/2026/08/saudi-contech-fitting-raises-1-1-million-seed-fuel-expansion",
+          "title": "Saudi contech Fitting raises $1.1 million seed to fuel expansion",
+          "published_at": "2026-08-10",
+          "observed_at": "2026-09-03",
+          "stored_summary": "Wamda names CEO Mohammed Al-Mubayed and co-founder Abdulaziz Almubayad, dates the company to 2025 and reports funding for technology infrastructure and expansion."
+        },
+        {
+          "id": "lead-fitting-mohammed-al-mubayed-e2",
+          "url": "https://fitting.sa/en/buyer/developers",
+          "title": "Fitting for Developers",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The official site shows an operating digital procurement product and reports SAR150 million in supply operations across 70 projects."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2026-08-10"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "low",
+      "next_check": "No priority recheck; proposed infrastructure expansion extends an existing marketplace.",
+      "scoring_review_flags": []
+    },
+    {
+      "id": "lead-pickappo-waleed-ghloniem",
+      "display_name": "Waleed Ghloniem",
+      "company": "Pickappo",
+      "lane": "new-founder",
+      "current_score": 12,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "operating",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "The first-party site presents live delivery-management software and orders; proposed AI/automation features extend a built core platform."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": "unknown",
+        "reason": "No software-team audit or external-builder request is recorded."
+      },
+      "evidence": [
+        {
+          "id": "lead-pickappo-waleed-ghloniem-e1",
+          "url": "https://www.wamda.com/ar/2026/06/pickappo-secures-530000-expand-demand-delivery-infrastructure",
+          "title": "Pickappo secures $530,000 to expand on-demand delivery infrastructure",
+          "published_at": "2026-06-16",
+          "observed_at": "2026-09-03",
+          "stored_summary": "Wamda names co-founders Waleed Ghloniem and Ahmed Siam and reports SAR2 million for product development, AI and automation."
+        },
+        {
+          "id": "lead-pickappo-waleed-ghloniem-e2",
+          "url": "https://www.pickappo.com/en",
+          "title": "Pickappo",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The official site presents a live delivery-management product and self-reports logistics-company, app and order-volume traction."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2026-06-16"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "low",
+      "next_check": "No priority recheck; new modules are outside the current first-product target.",
+      "scoring_review_flags": []
+    },
+    {
+      "id": "lead-smart-quotation-radhi-alshammari",
+      "display_name": "Radhi Alshammari",
+      "company": "Smart Quotation",
+      "lane": "new-founder",
+      "current_score": 12,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "unknown",
+      "suggested_verdict": "needs_verification",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "unknown",
+        "reason": "The founder already describes an MVP and supplier onboarding. A company 'building' post does not establish whether the MVP is a mock-up, private pilot or operational product."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "Internal leadership is mentioned but no role census exists."
+      },
+      "evidence": [
+        {
+          "id": "lead-wave2-smart-quotation-radhi-alshammari-e1",
+          "url": "https://sa.linkedin.com/company/smart-quotation.sa",
+          "title": "Smart Quotation | LinkedIn",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The company identifies itself as a Jubail-based Saudi AI industrial-procurement marketplace founded in 2026 and describes its RFQ-to-transaction workflow and current platform build."
+        },
+        {
+          "id": "lead-wave2-smart-quotation-radhi-alshammari-e2",
+          "url": "https://www.linkedin.com/posts/smart-quotation.sa_smartquotation-industrialmarketplace-saudiarabia-activity-7475556550531788800-RPYa",
+          "title": "Smart Quotation onboards suppliers in Saudi Arabia",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "A current company update says the team is building the AI-powered marketplace and onboarding supplier partners across Saudi Arabia."
+        },
+        {
+          "id": "lead-wave2-smart-quotation-radhi-alshammari-e3",
+          "url": "https://www.linkedin.com/posts/smartquotation_flat6labs-start-smart-activity-7388390766714187777-4WeC",
+          "title": "Radhi Alshammari on Smart Quotation and StartSmart",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The founder describes the marketplace MVP and the venture's accelerator participation while seeking capital to advance the product."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [],
+      "all_evidence_publication_dates_missing": true,
+      "research_priority": "medium",
+      "next_check": "First establish whether the MVP is functional/in use, then audit every current founder and engineer and identify a paid build need.",
+      "scoring_review_flags": []
+    },
+    {
+      "id": "lead-metafare-ibrahim-almaghlouth",
+      "display_name": "Ibrahim Almaghlouth",
+      "company": "Metafare",
+      "lane": "new-founder",
+      "current_score": 11,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "operating",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "The first-party site has a live virtual-wellness product interface and recorded completed sessions; the company-operating tag alone is not the reason."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": "11-50",
+        "reason": "The 11–50 company band does not identify software capacity."
+      },
+      "evidence": [
+        {
+          "id": "lead-metafare-ibrahim-almaghlouth-e1",
+          "url": "https://www.wamda.com/en/2026/05/metafare-secures-1-million-scale-virtual-wellness-solutions",
+          "title": "Metafare secures $1 million to scale virtual wellness solutions",
+          "published_at": "2026-05-05",
+          "observed_at": "2026-09-03",
+          "stored_summary": "Wamda names founder Ibrahim Almaghlouth, dates Metafare to 2025 and reports a $1 million round plus 3,000 completed sessions."
+        },
+        {
+          "id": "lead-metafare-ibrahim-almaghlouth-e2",
+          "url": "https://metafare.sa/",
+          "title": "Metafare",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The official site provides a live Saudi virtual-wellness service and product interface."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2026-05-05"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "low",
+      "next_check": "No priority recheck; its core platform is already operational.",
+      "scoring_review_flags": []
+    },
+    {
+      "id": "lead-t-gate-fahad-alfaheid",
+      "display_name": "Fahad Alfaheid",
+      "company": "T-Gate",
+      "lane": "new-founder",
+      "current_score": 11,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "launched",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "Recorded evidence describes a mature F&B integration platform with modules for orders, branches, inventory and POS/delivery."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "An 11–50 total band is not a technical-role count."
+      },
+      "evidence": [
+        {
+          "id": "lead-candidate-t-gate-fahad-alfaheid-e2",
+          "url": "https://www.linkedin.com/company/t-gate-company",
+          "title": "T-Gate LinkedIn public company page",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "T-Gate reports a Saudi F&B integration platform, an 11-50 employee range, and current modules for orders, branches, inventory, reports, and POS/delivery connectivity."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [],
+      "all_evidence_publication_dates_missing": true,
+      "research_priority": "low",
+      "next_check": "No priority recheck; core software already exists.",
+      "scoring_review_flags": [
+        {
+          "dimension": "product_intent",
+          "stored_score": 5,
+          "reason": "No rule for this value is specified in the stored persona's enumerated scoring levels."
+        },
+        {
+          "dimension": "penalty",
+          "reason": "At least one applied penalty ID/point combination is not in the stored persona penalty list."
+        }
+      ]
+    },
+    {
+      "id": "lead-ghanem-saleh-al-ghamdi",
+      "display_name": "Saleh Al-Ghamdi",
+      "company": "Ghanem",
+      "lane": "new-founder",
+      "current_score": 10,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "operating",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "The official site presents a live fractional-property investment product; financing funds expansion."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": "11-50",
+        "reason": "The 11–50 total band leaves engineering count unknown."
+      },
+      "evidence": [
+        {
+          "id": "lead-ghanem-saleh-al-ghamdi-e2",
+          "url": "https://ghanem.sa/en",
+          "title": "Ghanem",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The official site presents a live Saudi fractional real-estate investment product and identifies REGA sandbox participation."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2025-11-16"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "low",
+      "next_check": "No priority recheck; core product already operates.",
+      "scoring_review_flags": []
+    },
+    {
+      "id": "lead-kliq-asma-a-almaraghi",
+      "display_name": "Asma'a AlMaraghi",
+      "company": "KLIQ",
+      "lane": "new-founder",
+      "current_score": 10,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "launched",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "The Saudi App Store listing establishes a public mobile app."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": "11-50",
+        "reason": "The 11–50 total band leaves engineering count unknown."
+      },
+      "evidence": [
+        {
+          "id": "lead-kliq-asmaa-almaraghi-e3",
+          "url": "https://apps.apple.com/sa/app/get-kliq/id6749889392",
+          "title": "KLIQ on the App Store",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The Saudi App Store listing confirms that a public mobile product exists."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2025-10-19"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "low",
+      "next_check": "No priority recheck; preserve the App Store URL as exclusion evidence.",
+      "scoring_review_flags": []
+    },
+    {
+      "id": "lead-swarm-robotics-mohammed-bukhamsin",
+      "display_name": "Mohammed Bukhamsin",
+      "company": "Swarm Robotics",
+      "lane": "new-founder",
+      "current_score": 10,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "unknown",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "Stored evidence describes an operating robotics/software and turnkey automation offering; no specific first unbuilt custom-software project is documented."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "A small specialist robotics team exists, but actual software roles are not enumerated."
+      },
+      "evidence": [
+        {
+          "id": "lead-candidate-swarm-robotics-mohammed-bukhamsin-e1",
+          "url": "https://hub.misk.org.sa/en/programs/entrepreneurship/misk-launchpad/",
+          "title": "Misk Launchpad",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "Misk's official page identifies alumni founders and summarizes product, grant, partnership, revenue, and Saudi-market milestones."
+        },
+        {
+          "id": "lead-candidate-swarm-robotics-mohammed-bukhamsin-e2",
+          "url": "https://www.linkedin.com/company/swarm-robotics-io",
+          "title": "Swarm Robotics LinkedIn public company page",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "Swarm reports Riyadh headquarters, a small robotics team, and current robotics software and turnkey industrial automation offerings."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [],
+      "all_evidence_publication_dates_missing": true,
+      "research_priority": "low",
+      "next_check": "Low priority; require a separate explicit unbuilt software initiative before reconsidering.",
+      "scoring_review_flags": [
+        {
+          "dimension": "budget_readiness",
+          "stored_score": 4,
+          "reason": "No rule for this value is specified in the stored persona's enumerated scoring levels."
+        },
+        {
+          "dimension": "penalty",
+          "reason": "At least one applied penalty ID/point combination is not in the stored persona penalty list."
+        }
+      ]
+    },
+    {
+      "id": "lead-urcash-talal-alharbi",
+      "display_name": "Talal Alharbi",
+      "company": "urCASH",
+      "lane": "new-founder",
+      "current_score": 10,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "launched",
+      "suggested_verdict": "promising_for_verification",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "historical_positive_signal_requires_refresh",
+        "reason": "Official-site evidence describes a waitlist rather than a public launch, contradicting the stored launched lifecycle label."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": "2-10",
+        "reason": "Founder says three co-founders and no employees. Their hands-on engineering roles and any contractors are unknown; zero employees is not zero developers."
+      },
+      "evidence": [
+        {
+          "id": "lead-urcash-talal-alharbi-e2",
+          "url": "https://www.urcash.net/",
+          "title": "urCASH",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The official product site presents a Saudi personal-finance app and an active waitlist rather than a fully public launch."
+        },
+        {
+          "id": "lead-urcash-talal-alharbi-e3",
+          "url": "https://www.linkedin.com/posts/talal638_urcash-has-3-co-founders-and-no-employees-activity-7481421898732675072-HaA9",
+          "title": "Talal Alharbi - urCASH operating model",
+          "published_at": "2026-08-01",
+          "observed_at": "2026-09-03",
+          "stored_summary": "A public co-founder post says urCASH had three co-founders and no employees and describes an AI-operated company model."
+        },
+        {
+          "id": "lead-urcash-talal-alharbi-e4",
+          "url": "https://sa.linkedin.com/company/urcash",
+          "title": "urCASH LinkedIn company page",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The public company profile lists Saudi Arabia, a 2024 founding year, a 2-10 company-size band and the urCASH brand."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2026-08-01"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "high",
+      "next_check": "Check current website/app-store state, audit all three co-founders and contributors, and establish funding or paid build capacity.",
+      "scoring_review_flags": []
+    },
+    {
+      "id": "lead-green-desert-technologies-abdulmajeed-hashem",
+      "display_name": "Abdulmajeed Hashem",
+      "company": "Green Desert Technologies",
+      "lane": "new-founder",
+      "current_score": 9,
+      "current_band": "C",
+      "current_status": "watchlist",
+      "stored_lifecycle_stage": "launched",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "no_specific_unbuilt_software_need",
+        "reason": "The product is algae-production hardware/automation; no specific unbuilt software project is evidenced. Exclusion is for missing software-project fit, not for an app launch."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "Small technical founding team is described but software roles are unknown."
+      },
+      "evidence": [
+        {
+          "id": "lead-candidate-green-desert-abdulmajeed-hashem-e1",
+          "url": "https://flat6labs.com/demoday/flat6labs-fifth-demo-day-in-riyadh/",
+          "title": "Flat6Labs Fifth Demo Day in Riyadh",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The official cohort directory identifies Cycle 5 companies, their CEOs, products, business models, target customers, and Saudi-market context."
+        },
+        {
+          "id": "lead-candidate-green-desert-abdulmajeed-hashem-e3",
+          "url": "https://flat6labs.com/Company/green-desert-tech/",
+          "title": "Green Desert Technologies",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "Flat6Labs names Abdulmajeed Hashem as CEO and describes the company's automated algae-production technology, licensing, and pricing."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [],
+      "all_evidence_publication_dates_missing": true,
+      "research_priority": "low",
+      "next_check": "Reconsider only after a specific software brief is found; hardware fundraising is insufficient.",
+      "scoring_review_flags": [
+        {
+          "dimension": "product_intent",
+          "stored_score": 3,
+          "reason": "No rule for this value is specified in the stored persona's enumerated scoring levels."
+        },
+        {
+          "dimension": "budget_readiness",
+          "stored_score": 4,
+          "reason": "No rule for this value is specified in the stored persona's enumerated scoring levels."
+        },
+        {
+          "dimension": "penalty",
+          "reason": "At least one applied penalty ID/point combination is not in the stored persona penalty list."
+        }
+      ]
+    },
+    {
+      "id": "lead-gaia-badr-al-malluh",
+      "display_name": "Badr Al-Malluh",
+      "company": "Gaia",
+      "lane": "new-founder",
+      "current_score": 6,
+      "current_band": "C",
+      "current_status": "watchlist",
+      "stored_lifecycle_stage": "unknown",
+      "suggested_verdict": "needs_verification",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "unknown",
+        "reason": "Private early access may already contain functioning enterprise software; the stored evidence does not establish an unbuilt core platform."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": 1,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "One co-founder/CPTO (Mohammad Rababah) is identified. An 11–50 total band does not prove three engineers or a <=2 upper bound."
+      },
+      "evidence": [
+        {
+          "id": "lead-wave2-gaia-badr-al-malluh-e1",
+          "url": "https://sa.linkedin.com/company/gaiaplatform",
+          "title": "Gaia | LinkedIn",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The company identifies Gaia as a Riyadh-based sovereign enterprise-AI platform, lists an 11-50 employee band, and carries recent build and NVIDIA Inception updates."
+        },
+        {
+          "id": "lead-wave2-gaia-badr-al-malluh-e2",
+          "url": "https://gaia.sa/about",
+          "title": "About Gaia - Sovereign Enterprise AI from Saudi Arabia",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "Gaia describes a Saudi-hosted enterprise-AI system connecting organizational data, systems and workflows, with private early access and local data residency."
+        },
+        {
+          "id": "lead-wave2-gaia-badr-al-malluh-e3",
+          "url": "https://sa.linkedin.com/in/mohammad-rababah-707b02146",
+          "title": "Mohammad Rababah | LinkedIn",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "Rababah identifies himself as Gaia co-founder and CPTO and published a 2026 account of starting and building the venture with Badr Al-Malluh."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [],
+      "all_evidence_publication_dates_missing": true,
+      "research_priority": "low",
+      "next_check": "Low-priority check of actual product operation and current engineering roster; do not infer sufficient team from CPTO plus company-size band alone.",
+      "scoring_review_flags": [
+        {
+          "dimension": "penalty",
+          "reason": "At least one applied penalty ID/point combination is not in the stored persona penalty list."
+        }
+      ]
+    },
+    {
+      "id": "lead-vision-mate-abdulrahman-almuqati-cipd",
+      "display_name": "Abdulrahman Almuqati CIPD",
+      "company": "Vision Mate",
+      "lane": "stealth-or-precompany",
+      "current_score": 16,
+      "current_band": "A",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "precompany",
+      "suggested_verdict": "promising_for_verification",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "historical_positive_signal_requires_refresh",
+        "reason": "The recent role describes a pre-company concept requiring an AI wearable and mobile/cloud implementation."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "A solo founder and company size of one are recorded, but a complete current roster including contractors and the founder's hands-on capacity is absent."
+      },
+      "evidence": [
+        {
+          "id": "lead-lr-linkedin-vision-mate-abdulrahman-almuqati-e1",
+          "url": "https://sa.linkedin.com/jobs/view/technical-co-founder-at-vision-mate-4460498663",
+          "title": "Technical Co-Founder at Vision Mate",
+          "published_at": "2026-09-03",
+          "observed_at": "2026-09-03",
+          "stored_summary": "The listing names Abdulrahman Almuqati as Vision Mate's solo founder, describes a wearable AI vision-assistance device with computer-vision and on-device/mobile/cloud components, says a Saudi patent application is under substantive examination and Saudi incorporation is in progress, and seeks an equity-based technical co-founder."
+        },
+        {
+          "id": "lead-lr-linkedin-vision-mate-abdulrahman-almuqati-e3",
+          "url": "https://www.linkedin.com/company/vision-mate",
+          "title": "Vision Mate - LinkedIn company page",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The venture page describes Vision Mate as a wearable AI vision-assistance product and lists a company size of one, consistent with the pre-company solo-founder stage."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2026-09-03"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "high",
+      "next_check": "Confirm role remains open and no prototype is operational; audit delivery roster; look for cash/grant allocation because the offer is equity-based.",
+      "scoring_review_flags": [
+        {
+          "dimension": "outsourcing_likelihood",
+          "stored_score": 5,
+          "reason": "A technical co-founder or employee search shows a team gap; it does not by itself establish willingness to buy an external development service. Equity-only offers especially require a separate paid-budget gate."
+        },
+        {
+          "dimension": "band",
+          "stored_band": "A",
+          "reason": "The stored A-band definition requires strong budget evidence, while this row explicitly records budget unknown."
+        }
+      ]
+    },
+    {
+      "id": "lead-wathba-mashhoor-aldubayan",
+      "display_name": "Mashhoor Aldubayan",
+      "company": "Wathba | وثبة",
+      "lane": "stealth-or-precompany",
+      "current_score": 16,
+      "current_band": "A",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "launched",
+      "suggested_verdict": "promising_for_verification",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "historical_positive_signal_requires_refresh",
+        "reason": "The original role explicitly asks one primary founding engineer to produce the first production MVP; this contradicts the stored launched label. The community website is not proof this intended product is launched."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "The role suggests a delivery gap, but an approved architecture implies earlier technical contribution and hiring may since have completed."
+      },
+      "evidence": [
+        {
+          "id": "lead-lr-linkedin-wathba-mashhoor-aldubayan-e1",
+          "url": "https://www.linkedin.com/posts/aldubayan_were-looking-for-a-founding-engineer-at-activity-7471873287841689600-uoLw",
+          "title": "Mashhoor Aldubayan - Wathba founding-engineer post",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "Mashhoor states that Wathba is looking for a founding engineer to build an ambitious new product and links to the venture role. LinkedIn displayed the post as approximately two months old."
+        },
+        {
+          "id": "lead-lr-linkedin-wathba-mashhoor-aldubayan-e2",
+          "url": "https://sa.linkedin.com/jobs/view/founding-engineer-at-wathba-%D9%88%D8%AB%D8%A8%D8%A9-4425875081",
+          "title": "Founding Engineer at Wathba | وثبة",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The listing identifies Mashhoor as poster, calls Wathba an early-stage Saudi startup preparing its MVP, and assigns one primary engineer end-to-end responsibility for backend, dashboard, integrations, cloud deployment, security and operational readiness. LinkedIn displayed the original role as about two months old and no longer accepting applications."
+        },
+        {
+          "id": "lead-lr-linkedin-wathba-mashhoor-aldubayan-e3",
+          "url": "https://sabbar.com/en/jobs/c-riyadh-r-founding-engineer/id-52af6ec7-ed8f-4528-82c7-5b719c8678c3",
+          "title": "Founding Engineer in Wathba - Sabbar",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "Sabbar mirrors the Wathba role in Riyadh and independently preserves the pre-MVP stage, approved-architecture handoff, primary-engineer ownership, and detailed platform stack. It displayed the listing as less than three weeks old."
+        },
+        {
+          "id": "lead-lr-linkedin-wathba-mashhoor-aldubayan-e4",
+          "url": "https://wathba.sa/en",
+          "title": "Wathba - Arab Community for AI Builders",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The venture site describes an AI-builder community for people creating digital products and lists monthly Riyadh meetups plus planned additional member and partner features."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [],
+      "all_evidence_publication_dates_missing": true,
+      "research_priority": "high",
+      "next_check": "Check original role closure and whether engineer was hired, confirm first MVP still unbuilt, audit current contributors and cash budget.",
+      "scoring_review_flags": [
+        {
+          "dimension": "outsourcing_likelihood",
+          "stored_score": 5,
+          "reason": "A technical co-founder or employee search shows a team gap; it does not by itself establish willingness to buy an external development service. Equity-only offers especially require a separate paid-budget gate."
+        },
+        {
+          "dimension": "band",
+          "stored_band": "A",
+          "reason": "The stored A-band definition requires strong budget evidence, while this row explicitly records budget unknown."
+        },
+        {
+          "dimension": "timing",
+          "reason": "The source job is closed and roughly two months old; a newer mirror display is not independent evidence that the hiring need is still current."
+        }
+      ]
+    },
+    {
+      "id": "lead-jadi-bashayr-alabbad",
+      "display_name": "Bashayr Alabbad",
+      "company": "Jadi | جادي",
+      "lane": "stealth-or-precompany",
+      "current_score": 15,
+      "current_band": "A",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "idea",
+      "suggested_verdict": "promising_for_verification",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "historical_positive_signal_requires_refresh",
+        "reason": "Founder/job evidence explicitly says the technical co-founder must build the student platform from the ground up."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "A missing technical co-founder is a strong historical gap signal, not proof of current <=2 software capacity."
+      },
+      "evidence": [
+        {
+          "id": "lead-lr-linkedin-jadi-bashayr-alabbad-e1",
+          "url": "https://sa.linkedin.com/in/balabbad",
+          "title": "Bashayr Alabbad - LinkedIn profile",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The exact profile places Bashayr in Dhahran and contains her first-person Jadi post seeking a technical co-founder with equity and technical autonomy."
+        },
+        {
+          "id": "lead-lr-linkedin-jadi-bashayr-alabbad-e2",
+          "url": "https://sa.linkedin.com/jobs/view/4399318887",
+          "title": "Co-Founder | Chief Technology Officer at Jadi | جادي",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The listing names Bashayr as poster, describes Jadi as a planned ecosystem for Saudi university students, and says the missing technical partner will build the architecture, core platform, infrastructure and data foundation from the ground up. LinkedIn displayed it as about four months old and no longer accepting applications."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [],
+      "all_evidence_publication_dates_missing": true,
+      "research_priority": "high",
+      "next_check": "The role is closed and roughly four months old: verify present product and team, then check cash capacity because the offer is negotiable equity.",
+      "scoring_review_flags": [
+        {
+          "dimension": "outsourcing_likelihood",
+          "stored_score": 5,
+          "reason": "A technical co-founder or employee search shows a team gap; it does not by itself establish willingness to buy an external development service. Equity-only offers especially require a separate paid-budget gate."
+        },
+        {
+          "dimension": "band",
+          "stored_band": "A",
+          "reason": "The stored A-band definition requires strong budget evidence, while this row explicitly records budget unknown."
+        }
+      ]
+    },
+    {
+      "id": "lead-eden-nicolae-esanu",
+      "display_name": "Nicolae Esanu",
+      "company": "EDEN",
+      "lane": "stealth-or-precompany",
+      "current_score": 12,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "beta",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "The company explicitly states its MVP launched to a limited Riyadh cohort in December 2025 and reports live matching. A limited release is still a built functioning core product."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "Software team count is unknown; the founder has technical systems experience but that is not an exact delivery-role count."
+      },
+      "evidence": [
+        {
+          "id": "lead-lr-linkedin-eden-nicolae-esanu-e1",
+          "url": "https://www.edentravel.online/",
+          "title": "EDEN - Transforming Solo Travel Experiences",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The site names Nicolae Esanu as co-founder and COO and describes traveler matching, group-travel creation, partner analytics, pilots, API integrations and continuous product co-creation."
+        },
+        {
+          "id": "lead-lr-linkedin-eden-nicolae-esanu-e2",
+          "url": "https://sa.linkedin.com/company/edentravelonline",
+          "title": "EDEN - LinkedIn company page",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The company page lists Riyadh headquarters, a 2026 founding year and a 2-10 size band. It reported live traveler matching at LEAP within two days of observation and described the product as built in Saudi Arabia."
+        },
+        {
+          "id": "lead-lr-linkedin-eden-nicolae-esanu-e3",
+          "url": "https://www.linkedin.com/posts/edentravelonline_misk-launchpad-90-eden-misk-foundation-activity-7429858570973646849-N0jZ",
+          "title": "EDEN completes Misk Launchpad 9.0",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "EDEN states that it completed Misk Launchpad 9.0, launched a Saudi-first MVP to a limited Riyadh cohort on December 23, 2025, and moved into strategic pilot, partnership and early angel conversations."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [],
+      "all_evidence_publication_dates_missing": true,
+      "research_priority": "low",
+      "next_check": "No priority recheck under the current unbuilt-product target.",
+      "scoring_review_flags": []
+    },
+    {
+      "id": "lead-zakn-ai-zakaria-alnajar",
+      "display_name": "Zakaria Alnajar",
+      "company": "Zakn AI",
+      "lane": "stealth-or-precompany",
+      "current_score": 12,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "unknown",
+      "suggested_verdict": "needs_verification",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "unknown",
+        "reason": "The phrase 'pre-launch idea/product validation' describes what Zakn helps customers do; it does not prove Zakn itself has no built product. Worker context calls it an active early product."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "A prior external AI contributor is visible, but current engagement, founders' software roles and total capacity are unknown."
+      },
+      "evidence": [
+        {
+          "id": "lead-wave3-zakn-zakaria-alnajar-e3",
+          "url": "https://sa.linkedin.com/in/zakalnajar",
+          "title": "Zakaria Alnajar | LinkedIn",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "Alnajar's public profile lists him as Zakn founder in Riyadh and shows a current founder-controlled update placing Zakn at LEAP 2026."
+        },
+        {
+          "id": "lead-wave3-zakn-zakaria-alnajar-e4",
+          "url": "https://www.linkedin.com/company/zakn",
+          "title": "Zakn AI | LinkedIn",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The early company page describes a Saudi-market idea-and-product validation platform, links zakn.digital, shows current LEAP and StartSmart activity, and does not publish a founding year or headquarters."
+        },
+        {
+          "id": "lead-wave3-zakn-zakaria-alnajar-e5",
+          "url": "https://tn.linkedin.com/in/moslem-ajra",
+          "title": "Moslem Ajra | LinkedIn",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "An independent developer profile lists work supporting AI integration for Zakn's pre-launch product-validation platform; this corroborates active development but is not treated as a current vendor request."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [],
+      "all_evidence_publication_dates_missing": true,
+      "research_priority": "medium",
+      "next_check": "Inspect actual product availability and ask only public evidence whether it is a concept, prototype or usable validation platform; then audit current team and paid-build signals.",
+      "scoring_review_flags": []
+    },
+    {
+      "id": "lead-ballora-marya-fawaz",
+      "display_name": "Marya Fawaz",
+      "company": "Ballora",
+      "lane": "stealth-or-precompany",
+      "current_score": 11,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "unknown",
+      "suggested_verdict": "needs_verification",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "unknown",
+        "reason": "Ballora is documented as a graduation project and conference platform; no source establishes the current software lifecycle or a commercial build decision."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "Fawaz has front-end/design experience, but the full student/project engineering team is unknown."
+      },
+      "evidence": [
+        {
+          "id": "lead-wave3-ballora-marya-fawaz-e1",
+          "url": "https://www.startsmartsaudi.com/sites/default/files/2026-02/teams_1.pdf",
+          "title": "StartSmart Saudi ninth version nominated teams",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The official finalist roster names Yara Ali Alalawi for GreenVision and Zakaria Alezi Alnajar for Zakn, names Ghadah Alshehri for Ballora, and describes each venture's specific software product."
+        },
+        {
+          "id": "lead-wave3-ballora-marya-fawaz-e2",
+          "url": "https://www.linkedin.com/posts/startsmartsaudi_through-community-jameel-saudis-support-activity-7409953622043557888-pAmo",
+          "title": "StartSmart Saudi announces 40 qualifying entrepreneurial ideas",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The official program says its 2025 qualifying ideas entered an intensive Jeddah development journey with expert training, mentorship and financial prizes, and tags Marya Fawaz, Yara Alalawi and Zakn among the participants."
+        },
+        {
+          "id": "lead-wave3-ballora-marya-fawaz-e3",
+          "url": "https://sa.linkedin.com/in/marya-fawaz",
+          "title": "Marya Fawaz | LinkedIn",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "Fawaz identifies Ballora as her graduation project, describes representing its AI platform at King Abdulaziz University's innovation conference, and separately reports its selection for StartSmart's 2025 development program."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [],
+      "all_evidence_publication_dates_missing": true,
+      "research_priority": "medium",
+      "next_check": "Confirm active company/project ownership and authority (official roster names Ghadah Alshehri), current product state, all contributors and a funding path.",
+      "scoring_review_flags": []
+    },
+    {
+      "id": "lead-greenvision-yara-alalawi",
+      "display_name": "Yara Alalawi",
+      "company": "GreenVision",
+      "lane": "stealth-or-precompany",
+      "current_score": 11,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "unknown",
+      "suggested_verdict": "needs_verification",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "unknown",
+        "reason": "A cloud-dashboard prototype is explicitly described. That can be eligible, but it must be distinguished from already-operating deployed software."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": 1,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "Yara explicitly identifies herself as lead engineer/backend architect, establishing at least one builder; other team members and contractors are uncounted."
+      },
+      "evidence": [
+        {
+          "id": "lead-wave3-greenvision-yara-alalawi-e1",
+          "url": "https://www.startsmartsaudi.com/sites/default/files/2026-02/teams_1.pdf",
+          "title": "StartSmart Saudi ninth version nominated teams",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The official finalist roster names Yara Ali Alalawi for GreenVision and Zakaria Alezi Alnajar for Zakn, names Ghadah Alshehri for Ballora, and describes each venture's specific software product."
+        },
+        {
+          "id": "lead-wave3-greenvision-yara-alalawi-e3",
+          "url": "https://sa.linkedin.com/in/yara-alalawi",
+          "title": "Yara Alalawi | LinkedIn",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "Alalawi calls GreenVision her project, explains how she originated it from a Saudi Environmental Fund field problem, identifies herself as its lead engineer and backend architect, and documents a cloud dashboard prototype and current next-step intent."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [],
+      "all_evidence_publication_dates_missing": true,
+      "research_priority": "medium",
+      "next_check": "Confirm prototype-only state, current team with <=2 upper bound, commercial owner intent and available project funds.",
+      "scoring_review_flags": []
+    },
+    {
+      "id": "lead-suhail-shatha-khalid-alharbi",
+      "display_name": "Shatha Khalid Alharbi | شذى الحربي",
+      "company": "Suhail | سهيل",
+      "lane": "stealth-or-precompany",
+      "current_score": 9,
+      "current_band": "C",
+      "current_status": "watchlist",
+      "stored_lifecycle_stage": "precompany",
+      "suggested_verdict": "needs_verification",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "unknown",
+        "reason": "The project advanced to an MVP-building program phase; participation does not tell us whether the MVP was subsequently completed or deployed."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "Three co-founders are named and technical founders are mentioned, but individual active software roles are not enumerated; do not treat all three as developers automatically."
+      },
+      "evidence": [
+        {
+          "id": "lead-lr-linkedin-suhail-shatha-khalid-alharbi-e1",
+          "url": "https://sa.linkedin.com/in/shatha-khalid-alharbi/ar",
+          "title": "Shatha Khalid Alharbi - Suhail project and Misk Launchpad 9 activity",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "Shatha's exact public profile places her in Al-Qassim and includes a first-person account of forming the project team in a Saudi university and AI-governance hackathon, evolving the initial Manhal concept into Suhail, specifying an AI-personalized learning platform, naming co-founders Ghadah Almutairi and Nada Alharbi, and advancing to Misk Launchpad 9 phase two. The profile also lists Suhail as a project with concrete AI and adaptive-learning capabilities."
+        },
+        {
+          "id": "lead-lr-linkedin-suhail-shatha-khalid-alharbi-e2",
+          "url": "https://hub.misk.org.sa/en/programs/misk-launchpad/",
+          "title": "Misk Launchpad",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "Misk defines Launchpad as a Saudi-focused pre-accelerator for idea, prototype, and MVP-stage technology ventures. Its second phase is dedicated to developing a functional MVP, and admission requires Saudi founders or non-Saudis committed to testing and launching in Saudi Arabia."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [],
+      "all_evidence_publication_dates_missing": true,
+      "research_priority": "medium",
+      "next_check": "Check post-program product progress and the engineering roles of Shatha, Ghadah and Nada; then commercial ownership and funds.",
+      "scoring_review_flags": [
+        {
+          "dimension": "timing",
+          "stored_score": 1,
+          "reason": "The narrative says approximately six to eight months old, whereas the stored rule for 1 requires older than one year but demonstrably current. This is an internal rule mismatch, not a recommendation to upgrade without refreshing the facts."
+        }
+      ]
+    },
+    {
+      "id": "lead-bookmyguide-hayath-kargal",
+      "display_name": "Hayath Kargal",
+      "company": "BookMyGuide",
+      "lane": "stealth-or-precompany",
+      "current_score": 8,
+      "current_band": "C",
+      "current_status": "watchlist",
+      "stored_lifecycle_stage": "beta",
+      "suggested_verdict": "promising_for_verification",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "historical_positive_signal_requires_refresh",
+        "reason": "Founder-authored evidence says pre-MVP and planning Saudi pilots, contradicting beta. The coordinator's live recheck shows the post is approximately eight months old, so current product state remains unknown."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "Two founders are mentioned but software roles and outside contributors are unknown."
+      },
+      "evidence": [
+        {
+          "id": "lead-lr-linkedin-bookmyguide-hayath-kargal-e1",
+          "url": "https://www.linkedin.com/posts/hayath-kargal-b0b17057_vision2030-ntdp-mvplab-activity-7412319001252618240-2TT5",
+          "title": "Hayath Kargal - BookMyGuide MVP Lab application post",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "Hayath describes BookMyGuide as a Saudi-first marketplace, names himself and a co-founder, says the venture is pre-MVP and applying to NTDP MVPLab, and reports work toward a Saudi entity and pilots in Saudi cities. LinkedIn displayed the post as roughly seven months old; no exact publication date was exposed."
+        },
+        {
+          "id": "lead-lr-linkedin-bookmyguide-hayath-kargal-e2",
+          "url": "https://sa.linkedin.com/in/hayath-kargal-b0b17057",
+          "title": "Hayath Kargal - LinkedIn profile",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The exact-name profile presents Hayath's BookMyGuide role in a Jeddah context and is consistent with the founder-authored product post."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [],
+      "all_evidence_publication_dates_missing": true,
+      "research_priority": "low",
+      "next_check": "First establish current Saudi presence/operations and whether the pre-MVP project remains active. Then audit product, both founders' technical roles and contributors. MVP Lab was an application, not an award or verified funding.",
+      "scoring_review_flags": [],
+      "saudi_gate": {
+        "status": "unknown",
+        "reason": "Coordinator's 2026-09-05 live recheck found the founder building from India, with Saudi entity and relocation planned. Planned entry is not confirmed present Saudi operation."
+      },
+      "coordinator_live_recheck": {
+        "checked_at": "2026-09-05",
+        "source_url": "https://www.linkedin.com/posts/hayath-kargal-b0b17057_vision2030-ntdp-mvplab-activity-7412319001252618240-2TT5",
+        "findings": [
+          "Founder post approximately eight months old.",
+          "Currently building from India; Saudi entity and relocation are planned.",
+          "MVP Lab application is not acceptance, award or funding."
+        ]
+      }
+    },
+    {
+      "id": "lead-mara-omar-alsumih",
+      "display_name": "Omar Alsumih",
+      "company": "Mara | مرا",
+      "lane": "stealth-or-precompany",
+      "current_score": 6,
+      "current_band": "C",
+      "current_status": "watchlist",
+      "stored_lifecycle_stage": "beta",
+      "suggested_verdict": "needs_verification",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "unknown",
+        "reason": "A first app version was demonstrated and sandbox testing is recorded. This proves some build work, but does not establish public/production operation or whether it remains a prototype."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": null,
+        "reason": "Four total employees and a software-development company category do not prove four software builders or sufficient capacity."
+      },
+      "evidence": [
+        {
+          "id": "lead-lr-linkedin-mara-omar-alsumih-e2",
+          "url": "https://www.linkedin.com/company/yourmara",
+          "title": "Mara | مرا - LinkedIn company page",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The company page lists Riyadh, a 2026 founding year, four employees and a software-development focus. Recent updates report selection into the National AI Health Sandbox, a first app version demonstrated two months earlier, and current product-design recruiting."
+        },
+        {
+          "id": "lead-lr-linkedin-mara-omar-alsumih-e3",
+          "url": "https://sa.linkedin.com/jobs/view/product-growth-intern-multidisciplinary-role-at-mara-%D9%85%D9%8E%D8%B1%D9%8E%D8%A7-4363710456",
+          "title": "Product & Growth Intern at Mara | مرا",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The venture describes itself as a student-founded early-stage Saudi health-tech startup building a multilingual AI health assistant and says the role is unpaid because resources are limited."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [],
+      "all_evidence_publication_dates_missing": true,
+      "research_priority": "low",
+      "next_check": "Low-priority check whether app is operational or just a demo; then current technical-role count. Record the unpaid role/resource constraint as a budget issue.",
+      "scoring_review_flags": [
+        {
+          "dimension": "penalty",
+          "reason": "At least one applied penalty ID/point combination is not in the stored persona penalty list."
+        }
+      ]
+    },
+    {
+      "id": "lead-aila-yousef-alsayed",
+      "display_name": "Yousef Alsayed",
+      "company": "AILA",
+      "lane": "sme-digital-build",
+      "current_score": 12,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "operating",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "The official sources describe a live learning platform with 95,000 active users and institutions; funding extends current software."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": "unknown",
+        "reason": "Named founding team is not an enumerated software roster."
+      },
+      "evidence": [
+        {
+          "id": "lead-aila-yousef-alsayed-e1",
+          "url": "https://www.wamda.com/2026/08/aila-raises-3-million-pre-series-a-expand-personalised-learning-platform",
+          "title": "AILA raises $3 million pre-Series A to expand personalised learning platform",
+          "published_at": "2026-08-19",
+          "observed_at": "2026-09-03",
+          "stored_summary": "Wamda names CEO Yousef Alsayed and co-founders Nouf and Abdulaziz Bin Mugayel and reports a $3 million round for expansion and AI development."
+        },
+        {
+          "id": "lead-aila-yousef-alsayed-e2",
+          "url": "https://aila.sa/about-us-ar/",
+          "title": "AILA - About Us",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "AILA's official team page confirms Yousef Alsayed's leadership and the founding team; the site reports a live platform and user and client traction."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2026-08-19"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "low",
+      "next_check": "No priority recheck; exclude on operating software, not merely SME operating status.",
+      "scoring_review_flags": []
+    },
+    {
+      "id": "lead-desaisiv-mohammad-nabhan",
+      "display_name": "Mohammad Nabhan",
+      "company": "DESAISIV",
+      "lane": "sme-digital-build",
+      "current_score": 12,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "operating",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "The AI insurance/pricing product launch and existing live insurance products are explicit."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": "unknown",
+        "reason": "No complete technical-team count is recorded."
+      },
+      "evidence": [
+        {
+          "id": "lead-desaisiv-mohammad-nabhan-e1",
+          "url": "https://www.wamda.com/2026/07/desaisiv-introduces-ai-powered-fair-market-pricing-engine-enterprises",
+          "title": "DESAISIV introduces AI-powered fair market pricing engine for enterprises",
+          "published_at": "2026-07-30",
+          "observed_at": "2026-09-03",
+          "stored_summary": "Wamda names founders Mohammad Nabhan and Saed Khawaldeh and reports the launch of an AI Insurance Agent alongside fundraising plans."
+        },
+        {
+          "id": "lead-desaisiv-mohammad-nabhan-e2",
+          "url": "https://www.desaisiv.com/",
+          "title": "DESAISIV Insurance AI",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The official site presents live insurance-AI products and self-reports more than 600 clients, 20 partners and a SAR2 billion wallet."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2026-07-30"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "low",
+      "next_check": "No priority recheck; an AI software vendor with launched products is outside first-product targeting.",
+      "scoring_review_flags": []
+    },
+    {
+      "id": "lead-remedium-fawaz-abu-ghazaleh",
+      "display_name": "Fawaz Abu-Ghazaleh",
+      "company": "Remedium",
+      "lane": "sme-digital-build",
+      "current_score": 12,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "operating",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "The official site describes live carbon-accounting software managing emissions; funding adds AI and modules."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": "unknown",
+        "reason": "Delivery capacity remains unknown."
+      },
+      "evidence": [
+        {
+          "id": "lead-remedium-fawaz-abu-ghazaleh-e1",
+          "url": "https://www.wamda.com/2026/09/saudi-remedium-secures-1-5-million-expand-sustainability-accounting",
+          "title": "Saudi Remedium secures $1.5 million to expand sustainability accounting",
+          "published_at": "2026-09-01",
+          "observed_at": "2026-09-03",
+          "stored_summary": "Wamda names founder Fawaz Abu-Ghazaleh, reports a $1.5 million pre-seed round and says proceeds support AI, machine learning and new platform modules."
+        },
+        {
+          "id": "lead-remedium-fawaz-abu-ghazaleh-e2",
+          "url": "https://remedium.sa/",
+          "title": "Remedium - Carbon Management Solutions",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The official site presents live carbon-accounting software and reports more than 250,000 tonnes under management."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2026-09-01"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "low",
+      "next_check": "No priority recheck; core product already exists.",
+      "scoring_review_flags": []
+    },
+    {
+      "id": "lead-rime-mohammed-almarshidi",
+      "display_name": "Mohammed Almarshidi",
+      "company": "RIME",
+      "lane": "sme-digital-build",
+      "current_score": 12,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "operating",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "The official site and source describe an operating video-intelligence product with deployed cameras/sites."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": "unknown",
+        "reason": "No complete software-role audit is recorded."
+      },
+      "evidence": [
+        {
+          "id": "lead-rime-mohammed-almarshidi-e1",
+          "url": "https://www.wamda.com/2026/08/saudi-startup-rime-raises-2-million-seed-round",
+          "title": "Saudi startup RIME raises $2 million seed round",
+          "published_at": "2026-08-04",
+          "observed_at": "2026-09-03",
+          "stored_summary": "Wamda names Mohammed Almarshidi and Aarif Alotaibi as founders and reports a seed round plus deployment traction."
+        },
+        {
+          "id": "lead-rime-mohammed-almarshidi-e2",
+          "url": "https://rime.sa/en",
+          "title": "RIME Video Intelligence",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The official site presents a live Saudi AI video-intelligence product and identifiable commercial use cases."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2026-08-04"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "low",
+      "next_check": "No priority recheck; funding supports an already-deployed software platform.",
+      "scoring_review_flags": []
+    },
+    {
+      "id": "lead-think-ahmed-alsharif",
+      "display_name": "Ahmed AlSharif",
+      "company": "Think",
+      "lane": "sme-digital-build",
+      "current_score": 12,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "operating",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "Stored product/qualification evidence describes enterprise AI products and deployments, with new funds extending the vendor's product suite. No specific first unbuilt product is identified."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": "unknown",
+        "reason": "Technical leadership is asserted, but founders' exact software roles and total delivery count are unknown."
+      },
+      "evidence": [
+        {
+          "id": "lead-think-ahmed-alsharif-e1",
+          "url": "https://www.wamda.com/2026/07/think-gears-gcc-expansion-8-million-pre-seed-funding",
+          "title": "Think gears up for GCC expansion with $8 million pre-seed funding",
+          "published_at": "2026-07-15",
+          "observed_at": "2026-09-03",
+          "stored_summary": "Wamda names CEO Ahmed AlSharif and co-founder Ammar Enaya and reports more than $8 million for product development and GCC expansion."
+        },
+        {
+          "id": "lead-think-ahmed-alsharif-e2",
+          "url": "https://www.think-ai.com/company",
+          "title": "Think - Company",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The official company page identifies Ahmed AlSharif as co-founder and CEO and Ammar Enaya as co-founder and COO."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2026-07-15"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "low",
+      "next_check": "No priority recheck; if disputed, verify whether the target is a separately unbuilt product instead of existing enterprise AI delivery.",
+      "scoring_review_flags": []
+    },
+    {
+      "id": "lead-cashin-omar-al-ramahi",
+      "display_name": "Omar Al-Ramahi",
+      "company": "Cashin",
+      "lane": "sme-digital-build",
+      "current_score": 10,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "operating",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "The official site presents operating payments/business-management software and an investor reports material processed transactions."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": "unknown",
+        "reason": "Unknown engineering count; total business scale alone is not counted as developers."
+      },
+      "evidence": [
+        {
+          "id": "lead-cashin-omar-al-ramahi-e1",
+          "url": "https://impact46.sa/cashin-closes-sar-60-million-series-a-round-led-by-impact46-to-accelerate-automation-and-digitalization-of-fuel-and-energy-stations/",
+          "title": "Cashin closes SAR 60 million Series A round led by Impact46",
+          "published_at": "2026-02-16",
+          "observed_at": "2026-09-03",
+          "stored_summary": "Impact46 names CEO Omar Al-Ramahi and co-founders Abdulkarim Zuraig and Ubay Al-Madi and states that the round supports product investment and fuel-station digitisation."
+        },
+        {
+          "id": "lead-cashin-omar-al-ramahi-e2",
+          "url": "https://cashin.sa/",
+          "title": "Cashin",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "Cashin's official site presents an operating payments and business-management platform in Saudi Arabia."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2026-02-16"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "low",
+      "next_check": "No priority recheck; first-product criterion fails on software already in operation.",
+      "scoring_review_flags": []
+    },
+    {
+      "id": "lead-najeeb-ai-ahmed-yasmina",
+      "display_name": "Ahmed Yasmina",
+      "company": "Najeeb.ai",
+      "lane": "sme-digital-build",
+      "current_score": 10,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "operating",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "The official site presents operating Arabic insurance-AI software; the funding is for additional products/integrations."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": "unknown",
+        "reason": "Some technical capability is inferred but not enumerated."
+      },
+      "evidence": [
+        {
+          "id": "lead-najeeb-ahmed-yasmina-e1",
+          "url": "https://www.wamda.com/2025/10/saudi-insurtech-najeebai-closes-pre-seed-round",
+          "title": "Saudi insurtech Najeeb.ai closes pre-seed round",
+          "published_at": "2025-10-27",
+          "observed_at": "2026-09-03",
+          "stored_summary": "Wamda names founders Ahmed Yasmina and Hammam Homsi and says pre-seed proceeds support AI products and integrations."
+        },
+        {
+          "id": "lead-najeeb-ahmed-yasmina-e2",
+          "url": "https://najeeb.ai/",
+          "title": "Najeeb.ai",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The official site presents an operating Arabic insurance-AI product and Saudi-market positioning."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2025-10-27"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "low",
+      "next_check": "No priority recheck; existing product fails the target.",
+      "scoring_review_flags": []
+    },
+    {
+      "id": "lead-wadaie-abdullah-alandas",
+      "display_name": "Abdullah Alandas",
+      "company": "Wadaie",
+      "lane": "sme-digital-build",
+      "current_score": 10,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "operating",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "The official site has a live deposit marketplace with existing investor activity."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": "unknown",
+        "reason": "No software-role census exists."
+      },
+      "evidence": [
+        {
+          "id": "lead-wadaie-abdullah-alandas-e1",
+          "url": "https://www.wamda.com/en/2025/09/wadaie-closes-seed-round-led-venturesouq",
+          "title": "Wadaie closes seed round led by VentureSouq",
+          "published_at": "2025-09-15",
+          "observed_at": "2026-09-03",
+          "stored_summary": "Wamda names founders Abdullah Alandas, Rayan Altuwayjiri and Abdulrahman Alhawas and says the round supports compliance, cybersecurity, infrastructure and product development."
+        },
+        {
+          "id": "lead-wadaie-abdullah-alandas-e2",
+          "url": "https://www.wadaie.com/en",
+          "title": "Wadaie",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The official site presents a live Saudi deposit marketplace, cites SAMA permission and self-reports more than 152,000 investors."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2025-09-15"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "low",
+      "next_check": "No priority recheck; current platform is already operating.",
+      "scoring_review_flags": []
+    },
+    {
+      "id": "lead-zahib-badr-alhader",
+      "display_name": "Badr Alhader",
+      "company": "Zahib",
+      "lane": "sme-digital-build",
+      "current_score": 10,
+      "current_band": "B",
+      "current_status": "qualified",
+      "stored_lifecycle_stage": "operating",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "The official Saudi site links a live consumer app and describes a digital laundry marketplace."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": "unknown",
+        "reason": "Delivery capacity and software-role count are unknown."
+      },
+      "evidence": [
+        {
+          "id": "lead-zahib-badr-alhader-e2",
+          "url": "https://www.zahib.sa/",
+          "title": "Zahib",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The official Saudi site links to a live consumer app and describes its digital laundry marketplace."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2025-09-15"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "low",
+      "next_check": "No priority recheck; a service business can qualify only before the target core software is built.",
+      "scoring_review_flags": []
+    },
+    {
+      "id": "lead-nqoodlet-mohamed-milyani",
+      "display_name": "Mohamed Milyani",
+      "company": "Nqoodlet",
+      "lane": "sme-digital-build",
+      "current_score": 7,
+      "current_band": "C",
+      "current_status": "watchlist",
+      "stored_lifecycle_stage": "operating",
+      "suggested_verdict": "suggested_exclude",
+      "acceptance_status": "not_qualified_under_revised_persona",
+      "product_gate": {
+        "status": "existing_software_offering_or_built_core_product",
+        "reason": "The official site confirms live SME expense/card software; the main build/funding trigger is also older than twelve months."
+      },
+      "team_gate": {
+        "status": "unknown",
+        "explicit_current_software_role_count": null,
+        "observed_technical_role_lower_bound": null,
+        "proven_software_people_upper_bound": null,
+        "company_size_band": "unknown",
+        "reason": "No software-team audit exists."
+      },
+      "evidence": [
+        {
+          "id": "lead-nqoodlet-mohamed-milyani-e1",
+          "url": "https://www.arabnews.com/finance/saudi-fintech-startup-nqoodlet-secures-3m-in-seed-funding-2599494",
+          "title": "Saudi fintech startup Nqoodlet secures $3m in seed funding",
+          "published_at": "2025-05-04",
+          "observed_at": "2026-09-03",
+          "stored_summary": "Arab News names co-founders Mohamed Milyani and Yara Ghouth and reports $3 million, 600 SME customers and planned integrations."
+        },
+        {
+          "id": "lead-nqoodlet-mohamed-milyani-e2",
+          "url": "https://nqoodlet.com/en/",
+          "title": "Nqoodlet",
+          "published_at": null,
+          "observed_at": "2026-09-03",
+          "stored_summary": "The official site confirms a live Saudi SME expense-management and card product."
+        }
+      ],
+      "original_last_researched_at": "2026-09-03",
+      "original_evidence_published_dates": [
+        "2025-05-04"
+      ],
+      "all_evidence_publication_dates_missing": false,
+      "research_priority": "low",
+      "next_check": "No priority recheck; preserve both existing-product and stale-trigger reasons.",
+      "scoring_review_flags": []
+    }
+  ]
+}
