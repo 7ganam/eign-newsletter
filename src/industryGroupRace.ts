@@ -13,6 +13,8 @@ export type GroupRaceCompany = {
   crunchbaseUrl: string
   days?: Array<{ amountUsd: number; date: string }>
   industries: string[]
+  logoUrl?: string | null
+  primaryGroupId?: string | null
   name: string
   website: string
 }
@@ -20,6 +22,7 @@ export type GroupRaceCompany = {
 export type GroupRaceCompanyLeader = {
   amountUsd: number
   crunchbaseUrl: string
+  logoUrl?: string | null
   name: string
   website: string
 }
@@ -93,30 +96,25 @@ export const buildIndustryGroupRace = (
   })
 
   companies.forEach((company) => {
-    const labels = [...new Set(company.industries.map((label) => label.trim()).filter(Boolean))]
-    if (!labels.length) return
-    const weights = new Map<number, number>()
-    labels.forEach((label) => {
-      const groupIndex = labelToGroupIndex.get(label)
-      if (groupIndex !== undefined) weights.set(groupIndex, (weights.get(groupIndex) ?? 0) + 1 / labels.length)
-    })
-    if (!weights.size) return
+    // Display eligibility is separate from funding allocation. Never move funding
+    // between groups or select a new logo home as the animation progresses.
+    const primaryIndex = groups.findIndex((group) => group.id === company.primaryGroupId)
+    if (primaryIndex < 0) return
 
     company.days?.forEach(({ amountUsd, date }) => {
       const month = date.slice(0, 7)
       if (!MONTH_PATTERN.test(month) || !Number.isFinite(amountUsd) || amountUsd <= 0) return
       const monthAdditions = companyMonthlyAdditions.get(month) ?? new Map()
-      weights.forEach((weight, groupIndex) => {
-        const groupAdditions = monthAdditions.get(groupIndex) ?? new Map()
-        const current = groupAdditions.get(company.crunchbaseUrl)
-        groupAdditions.set(company.crunchbaseUrl, {
-          amountUsd: (current?.amountUsd ?? 0) + amountUsd * weight,
-          crunchbaseUrl: company.crunchbaseUrl,
-          name: company.name,
-          website: company.website,
-        })
-        monthAdditions.set(groupIndex, groupAdditions)
+      const groupAdditions = monthAdditions.get(primaryIndex) ?? new Map()
+      const current = groupAdditions.get(company.crunchbaseUrl)
+      groupAdditions.set(company.crunchbaseUrl, {
+        amountUsd: (current?.amountUsd ?? 0) + amountUsd,
+        crunchbaseUrl: company.crunchbaseUrl,
+        logoUrl: company.logoUrl,
+        name: company.name,
+        website: company.website,
       })
+      monthAdditions.set(primaryIndex, groupAdditions)
       companyMonthlyAdditions.set(month, monthAdditions)
     })
   })
