@@ -588,7 +588,9 @@ export function IndustryFundingPost() {
   const [error, setError] = useState('')
   const [trendGroups, setTrendGroups] = useState<IndustryTrendGroup[] | null>(null)
   const [trendGroupsError, setTrendGroupsError] = useState('')
-  const [scopeKey, setScopeKey] = useState<ScopeKey>('lowerRisk')
+  // Open on the complete Crunchbase pull so every available YC profile is in
+  // scope. Readers can still opt into the evidence-filtered subset.
+  const [scopeKey, setScopeKey] = useState<ScopeKey>('all')
   const [query, setQuery] = useState('')
   const [showAll, setShowAll] = useState(false)
   const [selectedIndustry, setSelectedIndustry] = useState('')
