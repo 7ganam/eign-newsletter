@@ -42,6 +42,7 @@ type FundingScope = {
     crunchbaseUrl: string
     days?: IndustryDayValue[]
     industries: string[]
+    logoUrl?: string | null
     name: string
     website: string
   }>
@@ -395,7 +396,8 @@ function IndustryFundingGroupBarRace({
                     <span className="industry-group-race__tip">
                       {leaders.length > 0 && <span aria-label={`Top funded companies in ${row.name}`} className="industry-group-race__logos">
                         {leaders.map((company) => {
-                          const favicon = companyFavicon(company.website)
+                          const faviconUrl = companyFavicon(company.website)
+                          const logoUrl = company.logoUrl || faviconUrl
                           return (
                             <span
                               aria-label={`${company.name}, ${exactUsd(company.amountUsd)} attributed to ${row.name}`}
@@ -405,7 +407,19 @@ function IndustryFundingGroupBarRace({
                               title={`${company.name} · ${exactUsd(company.amountUsd)} attributed to ${row.name}`}
                             >
                               <span aria-hidden="true">{companyInitials(company.name)}</span>
-                              {favicon && <img alt="" decoding="async" onError={(event) => { event.currentTarget.hidden = true }} src={favicon} />}
+                              {logoUrl && <img
+                                alt=""
+                                decoding="async"
+                                onError={(event) => {
+                                  if (faviconUrl && logoUrl !== faviconUrl && !event.currentTarget.dataset.fallbackAttempted) {
+                                    event.currentTarget.dataset.fallbackAttempted = 'true'
+                                    event.currentTarget.src = faviconUrl
+                                    return
+                                  }
+                                  event.currentTarget.hidden = true
+                                }}
+                                src={logoUrl}
+                              />}
                             </span>
                           )
                         })}

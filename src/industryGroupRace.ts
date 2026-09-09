@@ -13,6 +13,7 @@ export type GroupRaceCompany = {
   crunchbaseUrl: string
   days?: Array<{ amountUsd: number; date: string }>
   industries: string[]
+  logoUrl?: string | null
   name: string
   website: string
 }
@@ -20,6 +21,7 @@ export type GroupRaceCompany = {
 export type GroupRaceCompanyLeader = {
   amountUsd: number
   crunchbaseUrl: string
+  logoUrl?: string | null
   name: string
   website: string
 }
@@ -112,6 +114,7 @@ export const buildIndustryGroupRace = (
         groupAdditions.set(company.crunchbaseUrl, {
           amountUsd: (current?.amountUsd ?? 0) + amountUsd * weight,
           crunchbaseUrl: company.crunchbaseUrl,
+          logoUrl: company.logoUrl,
           name: company.name,
           website: company.website,
         })

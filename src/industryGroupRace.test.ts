@@ -41,6 +41,7 @@ test('ranks at most three companies per group using their cumulative group-attri
       crunchbaseUrl: 'https://crunchbase.test/acme',
       days: [{ amountUsd: 100, date: '2025-01-10' }],
       industries: ['SaaS', 'Payments'],
+      logoUrl: 'https://logos.test/acme.png',
       name: 'Acme',
       website: 'https://acme.test',
     },
@@ -48,6 +49,7 @@ test('ranks at most three companies per group using their cumulative group-attri
       crunchbaseUrl: 'https://crunchbase.test/ledger',
       days: [{ amountUsd: 80, date: '2025-01-10' }],
       industries: ['Payments'],
+      logoUrl: null,
       name: 'Ledger',
       website: 'https://ledger.test',
     },
@@ -55,11 +57,11 @@ test('ranks at most three companies per group using their cumulative group-attri
 
   assert.deepEqual(industryGroupRaceLeaders(race, 0), {
     FinTech: [
-      { amountUsd: 80, crunchbaseUrl: 'https://crunchbase.test/ledger', name: 'Ledger', website: 'https://ledger.test' },
-      { amountUsd: 50, crunchbaseUrl: 'https://crunchbase.test/acme', name: 'Acme', website: 'https://acme.test' },
+      { amountUsd: 80, crunchbaseUrl: 'https://crunchbase.test/ledger', logoUrl: null, name: 'Ledger', website: 'https://ledger.test' },
+      { amountUsd: 50, crunchbaseUrl: 'https://crunchbase.test/acme', logoUrl: 'https://logos.test/acme.png', name: 'Acme', website: 'https://acme.test' },
     ],
     'SaaS & Enterprise Software': [
-      { amountUsd: 50, crunchbaseUrl: 'https://crunchbase.test/acme', name: 'Acme', website: 'https://acme.test' },
+      { amountUsd: 50, crunchbaseUrl: 'https://crunchbase.test/acme', logoUrl: 'https://logos.test/acme.png', name: 'Acme', website: 'https://acme.test' },
     ],
   })
 })
