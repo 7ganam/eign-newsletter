@@ -43,6 +43,8 @@ type FundingScope = {
     days?: IndustryDayValue[]
     industries: string[]
     logoUrl?: string | null
+    primaryGroupId?: string | null
+    primaryGroup?: string | null
     name: string
     website: string
   }>
@@ -300,7 +302,7 @@ function IndustryFundingGroupBarRace({
         <div>
           <span>YC × Crunchbase · {groups.length} technology groups</span>
           <h2 id="industry-group-race-title">The funding race</h2>
-          <p>Cumulative funding · USD. Logo chips show the three most-funded companies so far; green numbers show this month’s gain.</p>
+          <p>Cumulative funding · USD. Each company’s logo appears only in its primary group; green numbers show this month’s gain.</p>
         </div>
         <button
           className="industry-group-race__focus-button"
@@ -400,11 +402,11 @@ function IndustryFundingGroupBarRace({
                           const logoUrl = company.logoUrl || faviconUrl
                           return (
                             <span
-                              aria-label={`${company.name}, ${exactUsd(company.amountUsd)} attributed to ${row.name}`}
+                              aria-label={`${company.name}, ${exactUsd(company.amountUsd)} recorded funding; primary group ${row.name}`}
                               className="industry-group-race__logo"
                               key={company.crunchbaseUrl}
                               role="img"
-                              title={`${company.name} · ${exactUsd(company.amountUsd)} attributed to ${row.name}`}
+                              title={`${company.name} · ${exactUsd(company.amountUsd)} recorded funding · primary group ${row.name}`}
                             >
                               <span aria-hidden="true">{companyInitials(company.name)}</span>
                               {logoUrl && <img
@@ -439,7 +441,7 @@ function IndustryFundingGroupBarRace({
 
       <p className="industry-group-race__note">
         <span>{scopeLabel} · {coverage.toFixed(1)}% funding coverage</span>
-        Monthly cumulative funding across {groupedLabelCount.toLocaleString()} grouped labels. Company leaders use the same fractional label allocation as their group. Movement between months is interpolated; playback pace varies. The shared zero-based scale expands as funding grows. Vague labels remain excluded.
+        Monthly cumulative funding across {groupedLabelCount.toLocaleString()} grouped labels. Each row shows up to three companies assigned to that primary group, ranked by their recorded funding. Industry totals still use fractional label allocation across all groups. Movement between months is interpolated; playback pace varies. The shared zero-based scale expands as funding grows. Vague labels remain excluded.
       </p>
     </section>
   )

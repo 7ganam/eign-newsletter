@@ -7,6 +7,7 @@ const PROJECT_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const CRUNCHBASE_DIRECTORY = resolve(PROJECT_ROOT, 'outputs/crunchbase')
 const MANIFEST_FILE = resolve(CRUNCHBASE_DIRECTORY, 'manifest.json')
 const LOGO_FILE = resolve(PROJECT_ROOT, 'assets/crunchbase/yc-company-logo-urls.json')
+const PRIMARY_GROUP_FILE = resolve(PROJECT_ROOT, 'assets/crunchbase/yc-company-primary-groups.json')
 const RISK_DIRECTORY = resolve(
   PROJECT_ROOT,
   'outputs/yc-crunchbase-links-public/run-2026-08-28T13-08-54-240Z/risk-separation',
@@ -36,6 +37,8 @@ type CompanyAccumulator = {
   dailyUsd: Map<string, number>
   industries: string[]
   logoUrl: string | null
+  primaryGroup: string | null
+  primaryGroupId: string | null
   name: string
   totalUsd: number
   website: string
@@ -118,6 +121,8 @@ const serialiseScope = (scope: ScopeAccumulator) => ({
         .map(([date, amountUsd]) => ({ amountUsd: Math.round(amountUsd), date })),
       industries: company.industries,
       logoUrl: company.logoUrl,
+      primaryGroup: company.primaryGroup,
+      primaryGroupId: company.primaryGroupId,
       name: company.name,
       totalUsd: Math.round(company.totalUsd),
       website: company.website,
@@ -155,6 +160,17 @@ const main = async () => {
   const manifest = asRecord(JSON.parse(await readFile(MANIFEST_FILE, 'utf8')))
   const entries = asArray(manifest.entries) as ManifestEntry[]
   const successfulEntries = entries.filter((entry) => entry.status === 'success')
+  const primarySnapshot = asRecord(JSON.parse(await readFile(PRIMARY_GROUP_FILE, 'utf8')))
+  const primaryGroups = new Map<string, DataRecord>()
+  for (const value of asArray(primarySnapshot.items)) {
+    const item = asRecord(value)
+    const url = asString(item.crunchbaseUrl)
+    if (!url || primaryGroups.has(url)) throw new Error(`Invalid or duplicate primary group identity: ${url}`)
+    primaryGroups.set(url, item)
+  }
+  for (const entry of successfulEntries) {
+    if (!primaryGroups.has(asString(entry.requestedUrl))) throw new Error(`Missing primary group record: ${entry.requestedUrl}`)
+  }
   const logoSnapshot = asRecord(JSON.parse(await readFile(LOGO_FILE, 'utf8')))
   const logoByCrunchbaseUrl = new Map<string, string | null>()
   asArray(logoSnapshot.items).forEach((value) => {
@@ -207,6 +223,8 @@ const main = async () => {
       crunchbaseUrl: profileId,
       industries,
       logoUrl: logoByCrunchbaseUrl.get(requestedUrl) ?? null,
+      primaryGroup: asString(primaryGroups.get(requestedUrl)?.primaryGroup) || null,
+      primaryGroupId: asString(primaryGroups.get(requestedUrl)?.primaryGroupId) || null,
       name: asString(company.name) || filename.replace(/\.insights\.json$/, ''),
       website: asString(company.website),
     }
@@ -253,11 +271,12 @@ const main = async () => {
     source: {
       lowerRiskFile: 'outputs/yc-crunchbase-links-public/run-2026-08-28T13-08-54-240Z/risk-separation/yc-crunchbase-non-risky.csv',
       logoFile: 'assets/crunchbase/yc-company-logo-urls.json',
+      primaryGroupFile: 'assets/crunchbase/yc-company-primary-groups.json',
       manifest: 'outputs/crunchbase/manifest.json',
       provider: 'Crunchbase',
       updatedAt: sourceUpdatedAt,
     },
-    version: 5,
+    version: 6,
     years: Array.from({ length: endYear - START_YEAR + 1 }, (_, index) => START_YEAR + index),
   }
 
