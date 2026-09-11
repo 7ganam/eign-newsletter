@@ -158,6 +158,6 @@ const items = companies.map((company) => {
 })
 if (new Set(items.map((item) => item.crunchbaseUrl)).size !== companies.length) throw new Error('Duplicate company identities')
 const summary = Object.fromEntries([...new Set(items.map((item) => item.reviewStatus))].map((status) => [status, items.filter((item) => item.reviewStatus === status).length]))
-const output = new URL('assets/crunchbase/yc-company-primary-groups.json', root)
+const output = new URL('data/company-enrichment/crunchbase-yc-company-primary-groups.json', root)
 await writeFile(output, JSON.stringify({ version: 1, methodology: 'Fixed logo-display group only. Existing funding attribution is unchanged. Automatic assignments are provisional unless reviewed; unmapped companies require taxonomy review.', summary, items }) + '\n')
 console.log(fileURLToPath(output), summary)

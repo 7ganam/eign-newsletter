@@ -74,7 +74,7 @@ export function ValidLinks() {
         return response.json() as Promise<ValidLinksResponse>
       })
       .then(setData)
-      .catch((reason) => setError(reason instanceof Error ? reason.message : 'Unable to load valid links.json.'))
+      .catch((reason) => setError(reason instanceof Error ? reason.message : 'Unable to load YC-filtered Crunchbase URLs.'))
     return () => { document.title = previousTitle }
   }, [])
 
@@ -147,7 +147,7 @@ export function ValidLinks() {
         <section className="software-summary" aria-label="Valid Crunchbase links summary">
           <div>
             <strong>Valid Crunchbase links</strong>
-            <span>{data?.source ?? 'valid links.json'} · Confirmed organization URLs</span>
+            <span>{data?.source ?? 'data/company-urls/crunchbase-yc-company-urls.json'} · YC-filtered Crunchbase organization URLs</span>
           </div>
           <dl>
             <div><dt>Total links</dt><dd>{data?.summary.total.toLocaleString() ?? '—'}</dd></div>
@@ -178,7 +178,7 @@ export function ValidLinks() {
         </div>
 
         {error && <div className="software-error" role="alert">{error}</div>}
-        {!data && !error ? <div className="software-loading"><span className="loading-spinner" /> Loading valid links.json…</div> : data && (
+        {!data && !error ? <div className="software-loading"><span className="loading-spinner" /> Loading YC-filtered Crunchbase URLs…</div> : data && (
           <div className="software-grid-scroll" ref={scrollRef}>
             <div className="software-grid" style={gridStyle}>
               <div className="software-grid-header">
@@ -234,7 +234,7 @@ export function ValidLinks() {
         )}
 
         <footer className="software-statusbar">
-          <span>{data?.source ?? 'valid links.json'}</span>
+          <span>{data?.source ?? 'data/company-urls/crunchbase-yc-company-urls.json'}</span>
           <span>{displayedRows.length.toLocaleString()} of {data?.summary.total.toLocaleString() ?? '—'} links</span>
         </footer>
       </main>

@@ -6,14 +6,14 @@ import { csvParse } from 'd3'
 const PROJECT_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const CRUNCHBASE_DIRECTORY = resolve(PROJECT_ROOT, 'outputs/crunchbase')
 const MANIFEST_FILE = resolve(CRUNCHBASE_DIRECTORY, 'manifest.json')
-const LOGO_FILE = resolve(PROJECT_ROOT, 'assets/crunchbase/yc-company-logo-urls.json')
-const PRIMARY_GROUP_FILE = resolve(PROJECT_ROOT, 'assets/crunchbase/yc-company-primary-groups.json')
+const LOGO_FILE = resolve(PROJECT_ROOT, 'data/company-enrichment/crunchbase-yc-company-logo-urls.json')
+const PRIMARY_GROUP_FILE = resolve(PROJECT_ROOT, 'data/company-enrichment/crunchbase-yc-company-primary-groups.json')
 const RISK_DIRECTORY = resolve(
   PROJECT_ROOT,
   'outputs/yc-crunchbase-links-public/run-2026-08-28T13-08-54-240Z/risk-separation',
 )
 const LOWER_RISK_FILE = resolve(RISK_DIRECTORY, 'yc-crunchbase-non-risky.csv')
-const OUTPUT_FILE = resolve(PROJECT_ROOT, 'assets/posts/yc-industry-funding-by-year.json')
+const OUTPUT_FILE = resolve(PROJECT_ROOT, 'data/industry-funding/crunchbase-yc-industry-funding-by-year.json')
 const START_YEAR = 2005
 
 type DataRecord = Record<string, unknown>
@@ -270,8 +270,8 @@ const main = async () => {
     },
     source: {
       lowerRiskFile: 'outputs/yc-crunchbase-links-public/run-2026-08-28T13-08-54-240Z/risk-separation/yc-crunchbase-non-risky.csv',
-      logoFile: 'assets/crunchbase/yc-company-logo-urls.json',
-      primaryGroupFile: 'assets/crunchbase/yc-company-primary-groups.json',
+      logoFile: 'data/company-enrichment/crunchbase-yc-company-logo-urls.json',
+      primaryGroupFile: 'data/company-enrichment/crunchbase-yc-company-primary-groups.json',
       manifest: 'outputs/crunchbase/manifest.json',
       provider: 'Crunchbase',
       updatedAt: sourceUpdatedAt,

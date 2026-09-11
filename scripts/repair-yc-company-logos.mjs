@@ -3,7 +3,7 @@ import { basename, dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
-const logoFile = resolve(projectRoot, 'assets/crunchbase/yc-company-logo-urls.json')
+const logoFile = resolve(projectRoot, 'data/company-enrichment/crunchbase-yc-company-logo-urls.json')
 const manifestFile = resolve(projectRoot, 'outputs/crunchbase/manifest.json')
 const crunchbaseDirectory = resolve(projectRoot, 'outputs/crunchbase')
 const logoSnapshot = JSON.parse(await readFile(logoFile, 'utf8'))

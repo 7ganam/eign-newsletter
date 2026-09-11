@@ -31,8 +31,8 @@ const PROJECT_ROOT = process.env.VERCEL
   ? process.cwd()
   : resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const DATA_FILES = {
-  companies: resolve(PROJECT_ROOT, 'eign_index.companies.json'),
-  rounds: resolve(PROJECT_ROOT, 'eign_index.rounds.json'),
+  companies: resolve(PROJECT_ROOT, 'data/companies/web-search-startups.json'),
+  rounds: resolve(PROJECT_ROOT, 'data/funding/web-search-startup-funding-rounds.json'),
 } as const
 const TABLE_PREFERENCES_FILE = resolve(PROJECT_ROOT, 'assets/table-preferences.json')
 const TABLE_ARCHIVES_FILE = resolve(PROJECT_ROOT, 'assets/table-archives.json')
@@ -41,10 +41,10 @@ const MIDDLE_EAST_FOUNDERS_FILE = resolve(PROJECT_ROOT, 'assets/people/middle-ea
 const MIDDLE_EAST_FOUNDER_EDITS_FILE = resolve(PROJECT_ROOT, 'assets/people/middle-east-founder-edits.json')
 const MIDDLE_EAST_CRUNCHBASE_FILE = resolve(
   PROJECT_ROOT,
-  'outputs/middle-east-jordan-funding-1000-plus/companies.json',
+  'data/companies/crunchbase-middle-east-company-profiles.json',
 )
-const YC_CRUNCHBASE_SNAPSHOT_FILE = resolve(PROJECT_ROOT, 'assets/crunchbase/yc-companies.json')
-const YC_INDUSTRY_FUNDING_POST_FILE = resolve(PROJECT_ROOT, 'assets/posts/yc-industry-funding-by-year.json')
+const YC_CRUNCHBASE_SNAPSHOT_FILE = resolve(PROJECT_ROOT, 'data/companies/crunchbase-yc-company-profiles.json')
+const YC_INDUSTRY_FUNDING_POST_FILE = resolve(PROJECT_ROOT, 'data/industry-funding/crunchbase-yc-industry-funding-by-year.json')
 const YC_INDUSTRY_CHART_FILE = resolve(PROJECT_ROOT, 'assets/posts/yc-industry-funding-flourish-all-time-smoothed.tsv')
 const YC_INDUSTRY_GROUPS_FILE = resolve(PROJECT_ROOT, 'assets/posts/yc-industry-groups.json')
 const INDUSTRY_TAXONOMY_PATHS = {
@@ -449,19 +449,8 @@ const SOFTWARE_COMPANY_FILES = {
   review: resolve(PROJECT_ROOT, 'assets/companies/software-companies-non-middle-east-review.csv'),
 } as const
 
-type MiddleEastCrunchbaseCompany = {
-  country: string
-  crunchbaseUrl: string
-  foundedOn: string
-  foundedOnPrecision: string
-  name: string
-  permalink: string
-  sourcePartition: string
-  uuid: string
-}
-
 type MiddleEastCrunchbaseSnapshot = {
-  companies: MiddleEastCrunchbaseCompany[]
+  items: DataRecord[]
   updatedAt: string
   version: number
 }
@@ -472,11 +461,11 @@ const loadMiddleEastCrunchbaseSnapshot = async (): Promise<MiddleEastCrunchbaseS
     throw new Error('The Middle East Crunchbase snapshot is not a JSON object.')
   }
   const snapshot = parsed as Partial<MiddleEastCrunchbaseSnapshot>
-  if (!Array.isArray(snapshot.companies)) {
-    throw new Error('The Middle East Crunchbase snapshot has no companies array.')
+  if (!Array.isArray(snapshot.items)) {
+    throw new Error('The Middle East Crunchbase profile snapshot has no items array.')
   }
   return {
-    companies: snapshot.companies,
+    items: snapshot.items,
     updatedAt: typeof snapshot.updatedAt === 'string' ? snapshot.updatedAt : '',
     version: typeof snapshot.version === 'number' ? snapshot.version : 1,
   }
@@ -526,7 +515,7 @@ const loadPulledCrunchbaseSnapshot = () => {
     if (!Array.isArray(snapshot.items)) throw new Error('The YC Crunchbase table snapshot has no items array.')
     return {
       createdAt: asString(snapshot.createdAt),
-      inputFile: asString(snapshot.inputFile) || 'valid links.json',
+      inputFile: asString(snapshot.inputFile) || 'crunchbase-yc-company-urls.json',
       items: snapshot.items,
       updatedAt: asString(snapshot.updatedAt),
       version: asNumber(snapshot.version) || 1,
@@ -621,7 +610,7 @@ const saveSoftwareCompanyCell = async (rowKey: string, field: string, value: str
   return operation
 }
 
-const VALID_LINKS_FILE = resolve(PROJECT_ROOT, 'valid links.json')
+const VALID_LINKS_FILE = resolve(PROJECT_ROOT, 'data/company-urls/crunchbase-yc-company-urls.json')
 
 const crunchbasePermalinkFromUrl = (url: string) => {
   try {
@@ -645,7 +634,7 @@ const organizationLabelFromPermalink = (permalink: string) => {
 
 const loadValidLinks = async () => {
   const parsed: unknown = JSON.parse(await readFile(VALID_LINKS_FILE, 'utf8'))
-  if (!Array.isArray(parsed)) throw new Error('Expected a JSON array in valid links.json')
+  if (!Array.isArray(parsed)) throw new Error('Expected a JSON array in crunchbase-yc-company-urls.json')
 
   const items = parsed.flatMap((value, index) => {
     if (typeof value !== 'string') return []
@@ -666,7 +655,7 @@ const loadValidLinks = async () => {
       total: items.length,
       unique: new Set(items.map((item) => item.url)).size,
     },
-    source: 'valid links.json',
+    source: 'data/company-urls/crunchbase-yc-company-urls.json',
   }
 }
 
@@ -1668,8 +1657,8 @@ app.get('/api/health', (context) => context.json({
   status: 'ok',
   source: 'files',
   files: {
-    companies: 'eign_index.companies.json',
-    rounds: 'eign_index.rounds.json',
+    companies: 'data/companies/web-search-startups.json',
+    rounds: 'data/funding/web-search-startup-funding-rounds.json',
   },
   records: {
     companies: companyRecords.length,
@@ -1801,24 +1790,62 @@ app.patch('/api/records/:collection/:recordId', async (context) => {
 app.get('/api/middle-east-crunchbase', async (context) => {
   try {
     const snapshot = await loadMiddleEastCrunchbaseSnapshot()
-    const items = snapshot.companies.map((company) => ({
+    const items = snapshot.items.map((company) => ({
       country: asString(company.country),
       crunchbaseUrl: asString(company.crunchbaseUrl),
+      detailedRoundCount: asString(company.detailedRoundCount),
+      employeeRange: asString(company.employeeRange),
+      estimatedRevenueRange: asString(company.estimatedRevenueRange),
       foundedOn: asString(company.foundedOn),
       foundedOnPrecision: asString(company.foundedOnPrecision),
+      foundedYear: asString(company.foundedYear),
+      founders: asString(company.founders),
+      headquarters: asString(company.headquarters),
+      imageUrl: asString(company.imageUrl),
+      industries: asString(company.industries),
+      investorCount: asString(company.investorCount),
+      investors: asString(company.investors),
+      lastFundingDate: asString(company.lastFundingDate),
+      lastFundingType: asString(company.lastFundingType),
       name: asString(company.name),
+      operatingStatus: asString(company.operatingStatus),
+      ownershipStatus: asString(company.ownershipStatus),
       permalink: asString(company.permalink),
+      primaryGroup: asString(company.primaryGroup),
+      reportedRoundCount: asString(company.reportedRoundCount),
+      shortDescription: asString(company.shortDescription),
       source: 'Crunchbase',
       sourcePartition: asString(company.sourcePartition),
+      totalRaisedUsd: asString(company.totalRaisedUsd),
       uuid: asString(company.uuid),
+      website: asString(company.website),
     }))
     return context.json({
       columns: [
         'name',
         'source',
+        'imageUrl',
+        'primaryGroup',
         'country',
+        'headquarters',
+        'foundedYear',
         'foundedOn',
         'foundedOnPrecision',
+        'operatingStatus',
+        'ownershipStatus',
+        'employeeRange',
+        'estimatedRevenueRange',
+        'industries',
+        'totalRaisedUsd',
+        'reportedRoundCount',
+        'detailedRoundCount',
+        'lastFundingDate',
+        'lastFundingType',
+        'investorCount',
+        'investors',
+        'founders',
+        'website',
+        'shortDescription',
         'sourcePartition',
         'permalink',
         'crunchbaseUrl',
@@ -1831,7 +1858,7 @@ app.get('/api/middle-east-crunchbase', async (context) => {
         total: items.length,
       },
       source: {
-        file: 'outputs/middle-east-jordan-funding-1000-plus/companies.json',
+        file: 'data/companies/crunchbase-middle-east-company-profiles.json',
         provider: 'Crunchbase',
         updatedAt: snapshot.updatedAt,
         version: snapshot.version,
@@ -2107,7 +2134,7 @@ app.get('/api/valid-links', async (context) => {
   try {
     return context.json(await loadValidLinks())
   } catch (error) {
-    return context.json({ error: error instanceof Error ? error.message : 'Unable to load valid links.json.' }, 500)
+    return context.json({ error: error instanceof Error ? error.message : 'Unable to load YC-filtered Crunchbase URLs.' }, 500)
   }
 })
 

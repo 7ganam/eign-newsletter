@@ -179,7 +179,7 @@ export const loadIndustryTaxonomy = async (paths: IndustryTaxonomyPaths) => {
     industries,
     source: {
       chartFile: 'assets/posts/yc-industry-funding-flourish-all-time-smoothed.tsv',
-      companyFile: 'assets/crunchbase/yc-companies.json',
+      companyFile: 'data/companies/crunchbase-yc-company-profiles.json',
       groupsFile: 'assets/posts/yc-industry-groups.json',
       provider: 'Crunchbase',
       updatedAt: snapshot.updatedAt || snapshot.createdAt || '',

@@ -114,7 +114,7 @@ test('keeps rendered row identities stable while their visual ranks change', () 
 })
 
 test('every real-data frame shows each company at most once without changing industry totals', () => {
-  const data = JSON.parse(readFileSync(new URL('../assets/posts/yc-industry-funding-by-year.json', import.meta.url), 'utf8'))
+  const data = JSON.parse(readFileSync(new URL('../data/industry-funding/crunchbase-yc-industry-funding-by-year.json', import.meta.url), 'utf8'))
   const { groups } = JSON.parse(readFileSync(new URL('../assets/posts/yc-industry-groups.json', import.meta.url), 'utf8'))
   for (const scope of Object.values(data.scopes) as Array<{ companies: Parameters<typeof buildIndustryGroupRace>[2]; industries: Parameters<typeof buildIndustryGroupRace>[0] }>) {
     const race = buildIndustryGroupRace(scope.industries, groups, scope.companies)

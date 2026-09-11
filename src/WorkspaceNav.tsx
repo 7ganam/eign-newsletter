@@ -4,6 +4,7 @@ export type WorkspaceNavSection =
   | 'people'
   | 'lead-research'
   | 'startups'
+  | 'data'
   | 'newsletters'
   | 'posts'
   | 'in-progress'
@@ -18,10 +19,9 @@ const navigationItems: ReadonlyArray<{
   label: string
 }> = [
   { id: 'dashboard', href: '/', label: 'Dashboard' },
-  { id: 'software-companies', href: '/software-companies', label: 'Software companies' },
   { id: 'people', href: '/people', label: 'People' },
   { id: 'lead-research', href: '/lead-research', label: 'Lead research' },
-  { id: 'startups', href: '/research', label: 'Startups' },
+  { id: 'data', href: '/data', label: 'Data' },
   { id: 'newsletters', href: '/newsletters', label: 'Newsletters' },
   { id: 'posts', href: '/posts', label: 'Posts' },
   { id: 'in-progress', href: '/in-progress', label: 'In progress' },

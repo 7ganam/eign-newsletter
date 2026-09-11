@@ -4,7 +4,7 @@ import { resolve } from 'node:path'
 import type { UnifiedPeopleFile } from '../src/unifiedPeopleTypes'
 
 const PEOPLE_PATH = resolve(process.cwd(), 'assets/people/unified-people.json')
-const COMPANIES_PATH = resolve(process.cwd(), 'eign_index.companies.json')
+const COMPANIES_PATH = resolve(process.cwd(), 'data/companies/web-search-startups.json')
 const OUTPUT_PATH = resolve(process.cwd(), 'assets/riseup-summit-2026-entities.json')
 const NON_ORGANIZATION_VALUES = new Set(['-', 'n/a', 'na'])
 
@@ -181,7 +181,7 @@ const output = {
   source: source.source,
   source_data_updated_at: source.source_data_updated_at,
   generated_at: new Date().toISOString(),
-  company_file: 'eign_index.companies.json',
+  company_file: 'data/companies/web-search-startups.json',
   counts: {
     people: people.length,
     organizations: organizations.length,

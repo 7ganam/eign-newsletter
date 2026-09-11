@@ -124,7 +124,7 @@ Examples:
   pnpm scrape:crunchbase
   pnpm scrape:crunchbase https://www.crunchbase.com/organization/axiom-biosciences
   pnpm scrape:crunchbase https://www.crunchbase.com/organization/stripe -o outputs/crunchbase/stripe.json
-  pnpm scrape:crunchbase --input "valid links.json" --limit 10
+  pnpm scrape:crunchbase --input "data/company-urls/crunchbase-yc-company-urls.json" --limit 10
 
 The script uses a GUI-free Chrome-compatible HTTP session authenticated from the
 local Brave cookie store. It never opens, navigates, or focuses a browser tab.`

@@ -5635,6 +5635,254 @@ a {
   }
 }
 
+/* Data source index: a compact provenance ledger for the workspace. */
+.data-index-page {
+  --data-paper: #f3f0e8;
+  --data-ink: #17251f;
+  --data-muted: #657069;
+  --data-rule: rgba(23, 37, 31, .17);
+  min-height: 100vh;
+  color: var(--data-ink);
+  background:
+    linear-gradient(rgba(23, 37, 31, .035) 1px, transparent 1px),
+    var(--data-paper);
+  background-size: 100% 28px;
+}
+
+.data-index-main {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  padding: 34px 28px 56px;
+}
+
+.data-index-hero {
+  display: grid;
+  padding: 12px 0 30px;
+  grid-template-columns: minmax(0, 1.6fr) minmax(260px, .7fr);
+  align-items: end;
+  gap: 40px;
+  border-bottom: 1px solid var(--data-rule);
+}
+
+.data-index-kicker,
+.data-index-card__kind {
+  color: #8d4c25;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.data-index-hero h1 {
+  max-width: 720px;
+  margin: 9px 0 0;
+  font-size: clamp(32px, 5.5vw, 68px);
+  font-weight: 500;
+  letter-spacing: -.055em;
+  line-height: .98;
+}
+
+.data-index-hero > p {
+  margin: 0 0 4px;
+  color: var(--data-muted);
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.data-index-list {
+  display: grid;
+  padding-top: 18px;
+  gap: 10px;
+}
+
+.data-index-card {
+  position: relative;
+  display: grid;
+  min-height: 84px;
+  overflow: hidden;
+  grid-template-columns: 64px minmax(260px, 1.2fr) minmax(260px, 1fr) 132px;
+  background: rgba(255, 255, 255, .76);
+  border: 1px solid var(--data-rule);
+  color: inherit;
+  text-decoration: none;
+  transition: background 150ms ease, border-color 150ms ease, transform 150ms ease;
+}
+
+.data-index-card::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 4px;
+  background: #2b6750;
+  content: '';
+}
+
+.data-index-card--snapshot::before { background: #c56a2d; }
+.data-index-card--enrichment::before { background: #2f5f96; }
+.data-index-card--software::before { background: #7b5c91; }
+
+.data-index-card:hover {
+  background: #fff;
+  border-color: rgba(23, 37, 31, .36);
+  transform: translateX(3px);
+}
+
+.data-index-card__number {
+  display: flex;
+  padding: 0 14px 0 20px;
+  align-items: center;
+  color: rgba(23, 37, 31, .32);
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+
+.data-index-card__dataset {
+  display: flex;
+  min-width: 0;
+  padding: 14px 24px 14px 4px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.data-index-card__dataset h2 {
+  overflow: hidden;
+  margin: 5px 0 0;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -.025em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.data-index-card__provenance {
+  display: flex;
+  min-width: 0;
+  padding: 0 22px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  border-left: 1px solid rgba(23, 37, 31, .1);
+  color: var(--data-muted);
+  font-size: 10px;
+}
+
+.data-index-card__provenance span,
+.data-index-card__provenance code {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.data-index-card__provenance code {
+  color: #42524a;
+  font-family: var(--font-mono);
+  font-size: 9px;
+}
+
+.data-index-card__link {
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--data-ink);
+  border-left: 1px solid var(--data-rule);
+  font-size: 10px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.data-index-card__link b {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 400;
+  transition: transform 150ms ease;
+}
+
+.data-index-card__link:hover b,
+.data-index-card__link:focus-visible b,
+.data-index-card:focus-visible .data-index-card__link b {
+  transform: translate(3px, -3px);
+}
+
+.data-index-card:focus-visible {
+  outline: 2px solid #1a73e8;
+  outline-offset: -3px;
+}
+
+.data-index-note {
+  display: grid;
+  margin-top: 18px;
+  padding: 16px 18px;
+  grid-template-columns: 180px 1fr;
+  gap: 20px;
+  background: #17251f;
+  color: #f3f0e8;
+}
+
+.data-index-note strong {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.data-index-note p {
+  margin: 0;
+  color: #bdc8c1;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.data-index-note a {
+  color: #f3b36b;
+}
+
+@media (max-width: 760px) {
+  .data-index-main {
+    padding: 20px 14px 36px;
+  }
+
+  .data-index-hero {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .data-index-card {
+    grid-template-columns: 54px 1fr;
+  }
+
+  .data-index-card__dataset {
+    padding-right: 18px;
+  }
+
+  .data-index-card__provenance {
+    padding: 12px 18px 12px 58px;
+    grid-column: 1 / -1;
+    border-top: 1px solid var(--data-rule);
+    }
+
+  .data-index-card__link {
+    min-height: 50px;
+    padding: 12px 18px 12px 58px;
+    grid-column: 1 / -1;
+    border-top: 1px solid var(--data-rule);
+    border-left: 0;
+  }
+
+  .data-index-note {
+    grid-template-columns: 1fr;
+    gap: 7px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .data-index-card,
+  .data-index-card__link b {
+    transition: none;
+  }
+}
+
 /* YC industry funding post: an annual-report workbench with a searchable capital tape. */
 .industry-funding-page {
   --funding-ink: #17251f;

@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url'
 import { isIncludedChartIndustry } from './lib/yc-industry-chart-filter'
 
 const PROJECT_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
-const INPUT_FILE = resolve(PROJECT_ROOT, 'assets/posts/yc-industry-funding-by-year.json')
+const INPUT_FILE = resolve(PROJECT_ROOT, 'data/industry-funding/crunchbase-yc-industry-funding-by-year.json')
 const OUTPUT_FILE = resolve(PROJECT_ROOT, 'assets/posts/yc-industry-funding-flourish-monthly-2025.csv')
 const PASTE_FILE = resolve(PROJECT_ROOT, 'assets/posts/yc-industry-funding-flourish-monthly-2025.tsv')
 const YEAR = 2025

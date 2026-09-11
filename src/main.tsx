@@ -13,6 +13,7 @@ const isResearchLedger = window.location.pathname === '/research'
 const isVisualisations = window.location.pathname === '/visualisations'
 const isInfluencers = window.location.pathname === '/influencers'
 const isSoftwareCompanies = window.location.pathname === '/software-companies'
+const isData = window.location.pathname === '/data'
 const isNewsletters = window.location.pathname === '/newsletters'
 const isValidLinks = window.location.pathname === '/valid-links'
 const isPosts = window.location.pathname === '/posts'
@@ -41,6 +42,10 @@ const Influencers = lazy(async () => {
 const SoftwareCompanies = lazy(async () => {
   const module = await import('./SoftwareCompanies')
   return { default: module.SoftwareCompanies }
+})
+const Data = lazy(async () => {
+  const module = await import('./Data')
+  return { default: module.Data }
 })
 const Newsletters = lazy(async () => {
   const module = await import('./Newsletters')
@@ -176,6 +181,10 @@ createRoot(document.getElementById('root')!).render(
     ) : isValidLinks ? (
       <Suspense fallback={<main className="loading-view" aria-label="Loading valid links"><div className="loading-mark">EI</div></main>}>
         <ValidLinks />
+      </Suspense>
+    ) : isData ? (
+      <Suspense fallback={<main className="loading-view" aria-label="Loading data sources"><div className="loading-mark">EI</div></main>}>
+        <Data />
       </Suspense>
     ) : isNewsletters ? (
       <Suspense fallback={<main className="loading-view" aria-label="Loading newsletter research"><div className="loading-mark">EI</div></main>}>
