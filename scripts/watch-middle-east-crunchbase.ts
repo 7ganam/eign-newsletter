@@ -4,14 +4,33 @@ import { dirname, resolve } from 'node:path'
 import { setTimeout as delay } from 'node:timers/promises'
 
 const FUNDED_1000_SCOPE = process.argv.includes('--funded-1000')
+function optionValue(flag: string) {
+  const index = process.argv.indexOf(flag)
+  if (index === -1) return undefined
+  const value = process.argv[index + 1]
+  if (!value || value.startsWith('-')) throw new Error(`${flag} requires a value`)
+  return value
+}
+
+const CUSTOM_INPUT = optionValue('--input')
+const CUSTOM_OUTPUT_DIR = optionValue('--output-root')
+const REQUEST_DELAY_MS = optionValue('--request-delay') ?? '3000'
+if (CUSTOM_INPUT && !CUSTOM_OUTPUT_DIR) {
+  throw new Error('--output-root is required when --input is used')
+}
+if (!CUSTOM_INPUT && CUSTOM_OUTPUT_DIR) {
+  throw new Error('--input is required when --output-root is used')
+}
 const OUTPUT_DIR = resolve(
-  FUNDED_1000_SCOPE
+  CUSTOM_OUTPUT_DIR ?? (FUNDED_1000_SCOPE
     ? 'outputs/middle-east-jordan-funding-1000-plus'
-    : 'outputs/middle-east-crunchbase-2005-present',
+    : 'outputs/middle-east-crunchbase-2005-present'),
 )
 const STATUS_PATH = resolve(OUTPUT_DIR, 'watchdog-status.json')
 const COLLECTOR_CHECKPOINT = resolve(OUTPUT_DIR, 'collector-checkpoint.json')
-const LINKS_PATH = resolve(OUTPUT_DIR, 'crunchbase-links.json')
+const LINKS_PATH = CUSTOM_INPUT
+  ? resolve(CUSTOM_INPUT)
+  : resolve(OUTPUT_DIR, 'crunchbase-links.json')
 const MANIFEST_PATH = resolve(OUTPUT_DIR, 'scrape-manifest.json')
 const FAILED_PATH = resolve(OUTPUT_DIR, 'failed.json')
 const SCRAPES_DIR = resolve(OUTPUT_DIR, 'companies')
@@ -95,6 +114,10 @@ async function scrapeCounts() {
   )
 }
 
+function isScrapeComplete(counts: Awaited<ReturnType<typeof scrapeCounts>>) {
+  return counts.total > 0 && counts.success + counts.failed === counts.total
+}
+
 async function main() {
   const startedAt = new Date().toISOString()
   const status: WatchdogStatus = {
@@ -107,7 +130,9 @@ async function main() {
   }
 
   while (true) {
-    const collector = await readJson<{ status?: string }>(COLLECTOR_CHECKPOINT)
+    const collector = CUSTOM_INPUT
+      ? { status: 'complete' }
+      : await readJson<{ status?: string }>(COLLECTOR_CHECKPOINT)
     if (collector?.status !== 'complete') {
       status.phase = 'collecting_links'
       status.scraper = 'waiting'
@@ -129,7 +154,7 @@ async function main() {
     }
 
     const before = await scrapeCounts()
-    if (before.total > 0 && before.success === before.total) {
+    if (isScrapeComplete(before)) {
       status.phase = 'complete'
       status.scraper = 'complete'
       status.updatedAt = new Date().toISOString()
@@ -152,7 +177,7 @@ async function main() {
       '--failed',
       FAILED_PATH,
       '--request-delay',
-      '3000',
+      REQUEST_DELAY_MS,
       '--retry-delay',
       '5000',
       '--rate-limit-delay',
@@ -162,7 +187,7 @@ async function main() {
     ])
     status.childExitCode = code
     const after = await scrapeCounts()
-    if (after.total > 0 && after.success === after.total) {
+    if (isScrapeComplete(after)) {
       status.phase = 'complete'
       status.scraper = 'complete'
       status.updatedAt = new Date().toISOString()
