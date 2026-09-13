@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T19:10:34.675Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T19:10:34.673Z",
+    "url": "https://www.crunchbase.com/organization/us-health-partners"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "US Health Partners",
+      "shortDescription": "US Health Partners offers capital and expertise to physicians' practice.",
+      "website": "https://www.ushphealth.com/",
+      "foundedYear": 2021,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Rockville, Maryland, United States",
+      "geographicRegions": [
+        "Washington DC Metro Area",
+        "East Coast",
+        "Southern US"
+      ],
+      "industries": [
+        "Financial Services",
+        "Impact Investing",
+        "Professional Services"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Lending and Investments",
+        "Professional Services"
+      ],
+      "founders": [
+        "Thomas Patek"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Provides administrative, technological, and management support services to medical professional entities without delivering medical care.",
+        "name": "Management Services for Physician Practices"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2021-12-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2021-12-01",
+          "investorCount": 2,
+          "postMoneyValuation": {
+            "amount": 11799334,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "Bessemer Venture Partners",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Oxeon Partners",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2021-12-01",
+          "title": "Seed Round - US Health Partners"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 2,
+      "growthScore": 83,
+      "heatChange90Days": 5,
+      "heatScore": 79
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 42.35
+      },
+      "funding": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 21.16,
+        "timingEstimatePercent": {
+          "within6Months": 14.85,
+          "months6To11": 12.64,
+          "months12To24": 19.93,
+          "beyond24Months": 52.57
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 69.18
+      },
+      "ipo": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 25.73
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "ApexHealth is a new medicare insurance provider.",
+          "employeeRange": "11-50",
+          "name": "ApexHealth",
+          "sharedSpecialties": [
+            "Patient Portal"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "US Anesthesia Partners is a single-specialty physician services organization that provides practice management services.",
+          "employeeRange": "1,001-5,000",
+          "name": "US Anesthesia Partners",
+          "sharedSpecialties": [
+            "Medical Staffing",
+            "Revenue Cycle Management"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "U.S. Oral Surgery Management supports oral surgeons with operational, marketing, and administrative practice management services.",
+          "employeeRange": "501-1,000",
+          "name": "U.S. Oral Surgery Management",
+          "sharedCategories": [
+            "Professional Services"
+          ],
+          "sharedSpecialties": [
+            "Revenue Cycle Management"
+          ],
+          "similarityScore": 85
+        },
+        {
+          "description": "Envision Healthcare offers array of healthcare-related services to consumers and hospitals.",
+          "employeeRange": "10,001+",
+          "name": "Envision Healthcare",
+          "sharedSpecialties": [
+            "Medical Staffing"
+          ],
+          "similarityScore": 81
+        },
+        {
+          "description": "Riverchase Dermatology provides surgical and laser skin care services.",
+          "employeeRange": "251-500",
+          "name": "Riverchase Dermatology",
+          "similarityScore": 79
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $11,799,334 to $11,799,334, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 83 (+2 over 90 days) and market heat at 79 (+5).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include ApexHealth, US Anesthesia Partners, U.S. Oral Surgery Management.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

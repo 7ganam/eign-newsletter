@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T17:26:29.199Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T17:26:29.198Z",
+    "url": "https://www.crunchbase.com/organization/cinder"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Cinder",
+      "shortDescription": "Cinder provides software and services for trust and safety, moderation, investigations, and digital safety operations.",
+      "description": "Cinder develops software for trust and safety operations. Its platform manages content moderation, investigations, case workflows, policies, enforcement actions, human review, quality assurance, detection models, and operational metrics. Cinder provides tools for organizations to combine automated and human decisions, evaluate model and reviewer performance, and maintain records for compliance and oversight. The company also offers managed moderation, data labeling, applicant screening, and red-teaming services for digital products and AI systems.",
+      "website": "https://cinder.co/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Business Process Automation (BPA)",
+        "Compliance",
+        "Content",
+        "Data Collection and Labeling",
+        "Enterprise Software",
+        "Outsourcing",
+        "Quality Assurance",
+        "SaaS",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Media and Entertainment",
+        "Professional Services",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A software platform for managing trust and safety operations, including moderation, investigations, enforcement, and review workflows.",
+        "name": "Cinder Trust and Safety Platform"
+      },
+      {
+        "description": "A no-code workflow tool that routes content, users, or other entities through automated and human review steps.",
+        "name": "Workflows"
+      },
+      {
+        "description": "Tools for human review, investigations, case records, collaboration, permissions, and escalation management.",
+        "name": "Human Review and Case Management"
+      },
+      {
+        "description": "A policy and enforcement system for converting safety rules into review, routing, and action workflows.",
+        "name": "Policies and Enforcement"
+      },
+      {
+        "description": "Quality assurance tools for sampling decisions, comparing reviewers and models, and monitoring accuracy and process adherence.",
+        "name": "Quality Assurance"
+      },
+      {
+        "description": "A model management tool for building, connecting, benchmarking, and tuning content and safety detectors.",
+        "name": "Detection Management"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 18,
+      "growthScore": 91,
+      "heatChange90Days": 57,
+      "heatScore": 88
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 95.05
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 91 (+18 over 90 days) and market heat at 88 (+57).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

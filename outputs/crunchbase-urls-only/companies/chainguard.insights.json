@@ -1,0 +1,612 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T17:25:20.427Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T17:25:20.422Z",
+    "url": "https://www.crunchbase.com/organization/chainguard"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Chainguard",
+      "shortDescription": "Chainguard is a cloud-native development platform that provides low-to-zero CVE container images for building and running applications.",
+      "description": "Chainguard provides hardened, minimal container images that are continuously rebuilt from source in secure environments, aiming to eliminate known vulnerabilities and ensure end-to-end integrity. These images come with built-in cryptographic signatures, Software Bill of Materials (SBOMs), and Supply-chain Levels for Software Artifacts (SLSA) provenance. In addition to container images, Chainguard offers a catalog of guarded Java dependencies through its Chainguard Libraries, built securely from source in SLSA-certified infrastructure. The company also contributes to and maintains several widely used open source projects, reflecting its commitment to the open source community.",
+      "website": "https://www.chainguard.dev/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "251-500",
+      "estimatedRevenueRange": "$10M-$50M",
+      "headquarters": "Kirkland, Washington, United States",
+      "geographicRegions": [
+        "Greater Seattle Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Cloud Infrastructure",
+        "Cloud Security",
+        "Cyber Security",
+        "Developer Tools",
+        "Enterprise Software",
+        "Infrastructure",
+        "Open Source",
+        "Security"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Internet Services",
+        "Other",
+        "Privacy and Security",
+        "Software"
+      ],
+      "founders": [
+        "Dan Lorenc",
+        "Kim Lewandowski",
+        "Matthew Moore",
+        "Ville Aikas"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Minimal, hardened container images for building and running applications, with continuous rebuilds, vulnerability remediation, SBOMs, signatures, and provenance metadata.",
+        "name": "Chainguard Containers"
+      },
+      {
+        "description": "A catalog of secured language libraries and packages designed to reduce dependency vulnerabilities and software supply chain risks.",
+        "name": "Chainguard Libraries"
+      },
+      {
+        "description": "Virtual machine images rebuilt from source for secure deployment of operating systems and workloads in cloud and regulated environments.",
+        "name": "Chainguard VMs"
+      },
+      {
+        "description": "Secure operating-system packages used as components for building customized container images and other software artifacts.",
+        "name": "Chainguard OS Packages"
+      },
+      {
+        "description": "Secure-by-default CI/CD workflow components for automating software delivery tasks in development and deployment pipelines.",
+        "name": "Chainguard Actions"
+      },
+      {
+        "description": "A maintained catalog of hardened skills for AI agents used in software development and automation workflows.",
+        "name": "Chainguard Agent Skills"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 892000000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 6,
+      "detailedRoundCount": 6,
+      "lastFundingDate": "2025-10-23",
+      "lastFundingType": "Debt Financing",
+      "rounds": [
+        {
+          "announcedDate": "2025-10-23",
+          "amount": {
+            "amount": 280000000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "General Catalyst"
+          ],
+          "type": "Debt Financing"
+        },
+        {
+          "announcedDate": "2025-04-23",
+          "amount": {
+            "amount": 356000000,
+            "currency": "USD"
+          },
+          "investorCount": 11,
+          "leadInvestors": [
+            "IVP",
+            "Kleiner Perkins"
+          ],
+          "postMoneyValuation": {
+            "amount": 3500000000,
+            "currency": "USD"
+          },
+          "type": "Series D"
+        },
+        {
+          "announcedDate": "2024-07-25",
+          "amount": {
+            "amount": 140000000,
+            "currency": "USD"
+          },
+          "investorCount": 7,
+          "leadInvestors": [
+            "IVP",
+            "Lightspeed Venture Partners",
+            "Redpoint"
+          ],
+          "postMoneyValuation": {
+            "amount": 1120000000,
+            "currency": "USD"
+          },
+          "type": "Series C"
+        },
+        {
+          "announcedDate": "2023-11-01",
+          "amount": {
+            "amount": 61000000,
+            "currency": "USD"
+          },
+          "investorCount": 6,
+          "leadInvestors": [
+            "Spark Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 572577694,
+            "currency": "USD"
+          },
+          "type": "Series B"
+        },
+        {
+          "announcedDate": "2022-06-02",
+          "amount": {
+            "amount": 50000000,
+            "currency": "USD"
+          },
+          "investorCount": 8,
+          "leadInvestors": [
+            "Sequoia Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 282211313,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2021-12-08",
+          "amount": {
+            "amount": 5000000,
+            "currency": "USD"
+          },
+          "investorCount": 8,
+          "leadInvestors": [
+            "Amplify Partners"
+          ],
+          "postMoneyValuation": {
+            "amount": 49614240,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 25,
+        "visibleNames": [
+          {
+            "name": "Datadog Ventures",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "General Catalyst",
+            "rounds": [
+              "Debt Financing"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "IVP",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Kleiner Perkins",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "Lightspeed Venture Partners",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "MANTIS Venture Capital",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "Redpoint",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "Salesforce Ventures",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "Sequoia Capital"
+          },
+          {
+            "name": "Spark Capital",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "Windproof Partners (fka Kerrest & Co.)",
+            "rounds": [
+              "Series D"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 267,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-09-08",
+          "publisher": "The Hacker News",
+          "title": "What It Took to Reach 1 Billion Build Manifests",
+          "url": "https://thehackernews.com/2026/09/what-it-took-to-reach-1-billion-build.html"
+        },
+        {
+          "date": "2026-08-10",
+          "publisher": "Venturebeat",
+          "title": "AWS Continuum integrates with OpenAI Codex and Anthropic Claude Code in major AI security push",
+          "url": "https://venturebeat.com/security/aws-continuum-integrates-with-openai-codex-and-anthropic-claude-code-in-major-ai-security-push"
+        },
+        {
+          "date": "2026-08-06",
+          "publisher": "Indianweb2.com",
+          "title": "LTM Collaborates with Chainguard to Strengthen Software Supply Chain Security through BlueVerse™ RightLogic",
+          "url": "https://www.indianweb2.com/2026/08/ltm-collaborates-with-chainguard-to.html"
+        },
+        {
+          "date": "2026-08-06",
+          "publisher": "AETOSWire",
+          "title": "LTM Collaborates with Chainguard to Strengthen Software Supply Chain Security through BlueVerse™ RightLogic",
+          "url": "https://aetoswire.com/en/news/6082026566344"
+        },
+        {
+          "date": "2026-08-06",
+          "publisher": "Morningstar.com",
+          "title": "LTM Collaborates with Chainguard to Strengthen Software Supply Chain Security through BlueVerse™ RightLogic",
+          "url": "https://www.morningstar.com/news/business-wire/20260806364798/ltm-collaborates-with-chainguard-to-strengthen-software-supply-chain-security-through-blueverse-rightlogic"
+        },
+        {
+          "date": "2026-08-04",
+          "publisher": "PR Newswire",
+          "title": "Chainguard Joins AWS Security Hub Extended as Supply Chain Partner",
+          "url": "https://www.prnewswire.com/news-releases/chainguard-joins-aws-security-hub-extended-as-supply-chain-partner-302842943.html"
+        },
+        {
+          "date": "2026-08-04",
+          "publisher": "GlobeNewswire",
+          "title": "Apiiro Joins Chainguard's Athena Coalition, Makes AutoFix Free for Open Source Maintainers",
+          "url": "https://www.globenewswire.com/news-release/2026/08/04/3338371/0/en/apiiro-joins-chainguard-s-athena-coalition-makes-autofix-free-for-open-source-maintainers.html"
+        },
+        {
+          "date": "2026-07-28",
+          "publisher": "iTWire",
+          "title": "Chainguard's industry coalition reports 40,000 findings processed",
+          "url": "https://itwire.com/it-industry-news/deals/chainguards-industry-coalition-reports-40-000-findings-processed"
+        },
+        {
+          "date": "2026-07-09",
+          "publisher": "The Hacker News",
+          "title": "Summer of Clearinghouses",
+          "url": "https://thehackernews.com/2026/07/summer-of-clearinghouses.html"
+        },
+        {
+          "date": "2026-07-07",
+          "publisher": "prnasia.com",
+          "title": "Chainguard Adds New Members to Athena Coalition as Coordinated Open Source Defense Scales",
+          "url": "https://en.prnasia.com/releases/apac/chainguard-adds-new-members-to-athena-coalition-as-coordinated-open-source-defense-scales-539958.shtml"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 6,
+    "knownDetailedFundingAmount": {
+      "amount": 892000000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 31.39,
+    "latestToEarliestKnownValuationMultiple": 70.54
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "reportedPartnerships": {
+      "note": "Provider event summaries with linked sources; not independently verified.",
+      "items": [
+        {
+          "date": "2026-07-28",
+          "description": "Chainguard expanded the Athena open-source software defense coalition by adding Akamai and Black Duck as members.",
+          "sources": [
+            {
+              "date": "2026-07-28",
+              "publisher": "iTWire",
+              "title": "Chainguard's industry coalition reports 40,000 findings processed",
+              "url": "https://itwire.com/it-industry-news/deals/chainguards-industry-coalition-reports-40-000-findings-processed"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-15",
+          "description": "Chainguard and founding members including BNY, Cisco, Cloudflare, Corridor, DepthFirst, Docker, JPMorganChase, Kyndryl, LTIMindtree, and PwC formed Athena, a new industry coalition to coordinate AI-driven discovery and remediation of open source vulnerabilities.",
+          "sources": [
+            {
+              "date": "2026-06-15",
+              "publisher": "PR Newswire",
+              "title": "Chainguard Launches Athena, the Industry Coalition to Fix Open Source Vulnerabilities Before Attackers Can Find Them",
+              "url": "https://www.prnewswire.com/news-releases/chainguard-launches-athena-the-industry-coalition-to-fix-open-source-vulnerabilities-before-attackers-can-find-them-302799984.html"
+            }
+          ]
+        },
+        {
+          "date": "2026-04-21",
+          "description": "Chainguard and Cursor announced a new partnership to integrate Chainguard's secure open source images and libraries into Cursor's AI coding platform, providing a secure-by-default supply chain layer for agentic software development.",
+          "sources": [
+            {
+              "date": "2026-04-21",
+              "publisher": "PR Newswire",
+              "title": "Chainguard and Cursor Partner to Secure Agentic Coding with Trusted Open Source",
+              "url": "https://www.prnewswire.com/news-releases/chainguard-and-cursor-partner-to-secure-agentic-coding-with-trusted-open-source-302748112.html"
+            }
+          ]
+        },
+        {
+          "date": "2026-03-17",
+          "description": "Chainguard formed the Chainguard Commercial Builds program with initial ISV partners including Azul, Chainloop, Elastic, Expanso, F5 NGINX, GitLab, Grafana Labs, Mattermost, Nirmata, Percona, Smallstep, and Tiger Data to deliver hardened, verifiable container images of their commercial software.",
+          "sources": [
+            {
+              "date": "2026-03-17",
+              "publisher": "PR Newswire",
+              "title": "Chainguard Launches Commercial Builds with Industry Leaders, Setting a New Standard for Verifiable, Zero-Vulnerability Software",
+              "url": "https://www.prnewswire.com/news-releases/chainguard-launches-commercial-builds-with-industry-leaders-setting-a-new-standard-for-verifiable-zero-vulnerability-software-302715327.html"
+            }
+          ]
+        },
+        {
+          "date": "2026-02-02",
+          "description": "Chainguard entered a new partnership with AI agent programming company Factory, selecting its compaction engine and Droid agents to power parts of the Chainguard Factory 2.0 pipeline.",
+          "sources": [
+            {
+              "date": "2026-02-02",
+              "publisher": "The New Stack",
+              "title": "Chainguard admitted Factory 1.0 was “brittle.” Here’s how 2.0 fixes it.",
+              "url": "https://thenewstack.io/chainguard-admitted-factory-1-0-was-brittle-heres-how-2-0-fixes-it/"
+            }
+          ]
+        },
+        {
+          "date": "2025-07-30",
+          "description": "Chainguard announced a partnership with Azul to bring Azul's curated OpenJDK distributions to the Chainguard Catalog, enhancing its container image offerings with commercial support.",
+          "sources": [
+            {
+              "date": "2025-07-30",
+              "publisher": "PR Newswire",
+              "title": "Chainguard Welcomes New Chief Information Security Officer and Chief Financial Officer to Fuel Next Chapter of Growth",
+              "url": "https://www.prnewswire.com/news-releases/chainguard-welcomes-new-chief-information-security-officer-and-chief-financial-officer-to-fuel-next-chapter-of-growth-302516746.html"
+            }
+          ]
+        },
+        {
+          "date": "2025-06-20",
+          "description": "Chainguard and Orca Security have announced an integration partnership, enabling enhanced vulnerability scanning and security context for Chainguard Containers within the Orca platform.",
+          "sources": [
+            {
+              "date": "2025-06-20",
+              "publisher": "Best Endpoint Protection Security (EPP) Tools, Software, Solutions & Vendors",
+              "title": "Endpoint Security and Network Monitoring News for the Week of June 20th: Vectra AI, Fortinet, Salt Security, and More",
+              "url": "https://solutionsreview.com/endpoint-security/endpoint-security-and-network-monitoring-news-for-the-week-of-june-20th/"
+            }
+          ]
+        },
+        {
+          "date": "2025-03-25",
+          "description": "Chainguard and Datadog have announced a partnership to enhance container security and observability. The integration will provide real-time insights and risk mitigation for container infrastructure, helping engineering and security teams eliminate vulnerabilities and improve software development velocity.",
+          "sources": [
+            {
+              "date": "2025-03-25",
+              "publisher": "PR Newswire",
+              "title": "Chainguard Announces Partnership with Datadog to Strengthen Container Security and Observability",
+              "url": "https://www.prnewswire.com/news-releases/chainguard-announces-partnership-with-datadog-to-strengthen-container-security-and-observability-302409930.html"
+            }
+          ]
+        }
+      ]
+    },
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2026-03-15",
+      "growthChange90Days": -22,
+      "growthScore": 49,
+      "heatChange90Days": -9,
+      "heatScore": 75,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 68.93
+      },
+      "funding": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 68.05,
+        "timingEstimatePercent": {
+          "within6Months": 99.97,
+          "months6To11": 0.01,
+          "months12To24": 0,
+          "beyond24Months": 0.03
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 98.02
+      },
+      "ipo": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 51.03
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Red Hat is a software company that offers enterprise open-source software solutions.",
+          "employeeRange": "10,001+",
+          "name": "Red Hat",
+          "sharedCategories": [
+            "Enterprise Software",
+            "Open Source"
+          ],
+          "sharedSpecialties": [
+            "Container and Kubernetes Platform Services",
+            "Open Source Software Support"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Canonical, the publisher of Ubuntu, delivers trusted open source for everyone and provides security, support and services to enterprises.",
+          "employeeRange": "1,001-5,000",
+          "name": "Canonical",
+          "sharedCategories": [
+            "Security",
+            "Developer Tools",
+            "Enterprise Software",
+            "Open Source"
+          ],
+          "sharedSpecialties": [
+            "Container and Kubernetes Platform Services",
+            "Open Source Software Support"
+          ],
+          "similarityScore": 98.13
+        },
+        {
+          "description": "Google Cloud focuses on business challenges that head-on with cloud computing services from Google.",
+          "employeeRange": "10,001+",
+          "name": "Google Cloud",
+          "sharedCategories": [
+            "Cyber Security",
+            "Cloud Security"
+          ],
+          "similarityScore": 96.25
+        },
+        {
+          "description": "Docker’s platform helps millions of developers efficiently and collaboratively build, share, and run applications.",
+          "employeeRange": "1,001-5,000",
+          "name": "Docker",
+          "sharedCategories": [
+            "Cyber Security",
+            "Developer Tools"
+          ],
+          "sharedSpecialties": [
+            "Supply Chain Security",
+            "Container and Kubernetes Platform Services",
+            "Application Security Testing",
+            "Open Source Software Support",
+            "Open Source Package Management"
+          ],
+          "similarityScore": 96.25
+        },
+        {
+          "description": "SUSE provides reliable and interoperable Linux and cloud infrastructure solutions that give enterprises greater control and flexibility.",
+          "employeeRange": "1,001-5,000",
+          "name": "SUSE",
+          "sharedCategories": [
+            "Enterprise Software"
+          ],
+          "similarityScore": 95.31
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Debt Financing round raised $280,000,000, or 31.39% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $49,614,240 to $3,500,000,000, a 70.54x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 49 (-22 over 90 days) and market heat at 75 (-9).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Red Hat, Canonical, Google Cloud.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 267 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

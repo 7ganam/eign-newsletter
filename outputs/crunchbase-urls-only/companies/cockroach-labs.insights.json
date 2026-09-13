@@ -1,0 +1,609 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T17:29:04.161Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T17:29:04.158Z",
+    "url": "https://www.crunchbase.com/organization/cockroach-labs"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Cockroach Labs",
+      "shortDescription": "Cockroach Labs is a software company that develops a cloud-native SQL database for modern cloud applications.",
+      "description": "Cockroach Labs is behind Cockroach DB, the cloud-native, distributed SQL database to modern cloud applications. It helps companies of all sizes—and the apps they develop— to scale fast, survive anything, and thrive everywhere. CockroachDB is in use at some of the world's largest enterprises across all industries, including Equifax, Bose, Comcast, and some of the largest companies in banking, retail, and media.",
+      "website": "http://www.cockroachlabs.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "501-1,000",
+      "estimatedRevenueRange": "$10M-$50M",
+      "headquarters": "New York, United States",
+      "geographicRegions": [
+        "Greater New York Area",
+        "East Coast",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Analytics",
+        "Cloud Computing",
+        "Database",
+        "Enterprise Software",
+        "Software"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Information Technology",
+        "Internet Services",
+        "Software"
+      ],
+      "founders": [
+        "Benjamin Darnell",
+        "Peter Mattis",
+        "Spencer Kimball"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A distributed, PostgreSQL-compatible SQL database for cloud-native applications requiring scalable transactions, high availability, global data placement, and consistent performance.",
+        "name": "CockroachDB"
+      },
+      {
+        "description": "A fully managed cloud database service that runs CockroachDB while Cockroach Labs manages infrastructure, operations, scaling, upgrades, backups, and resilience.",
+        "name": "CockroachDB Fully-Managed Cloud"
+      },
+      {
+        "description": "A deployment option that runs CockroachDB in a customer-controlled public-cloud environment while providing distributed SQL capabilities and Cockroach Labs software support.",
+        "name": "CockroachDB Bring Your Own Cloud"
+      },
+      {
+        "description": "An enterprise distribution of CockroachDB for organizations that need a commercially supported database deployment under their own operational control.",
+        "name": "CockroachDB Enterprise"
+      },
+      {
+        "description": "Advisory and implementation services that help organizations deploy, migrate to, operate, and optimize CockroachDB for modern distributed applications.",
+        "name": "Cockroach Labs Professional Services"
+      },
+      {
+        "description": "Subscription-based technical assistance for CockroachDB, including usage guidance, documentation clarification, error investigation, updates, workarounds, and fixes.",
+        "name": "CockroachDB Technical Support"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 633100000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 7,
+      "detailedRoundCount": 7,
+      "lastFundingDate": "2021-12-16",
+      "lastFundingType": "Series F",
+      "rounds": [
+        {
+          "announcedDate": "2021-12-16",
+          "amount": {
+            "amount": 278000000,
+            "currency": "USD"
+          },
+          "investorCount": 13,
+          "leadInvestors": [
+            "Greenoaks"
+          ],
+          "postMoneyValuation": {
+            "amount": 5000000000,
+            "currency": "USD"
+          },
+          "type": "Series F"
+        },
+        {
+          "announcedDate": "2021-01-12",
+          "amount": {
+            "amount": 160000000,
+            "currency": "USD"
+          },
+          "investorCount": 9,
+          "leadInvestors": [
+            "Altimeter Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 2000000000,
+            "currency": "USD"
+          },
+          "type": "Series E"
+        },
+        {
+          "announcedDate": "2020-05-05",
+          "amount": {
+            "amount": 86600000,
+            "currency": "USD"
+          },
+          "investorCount": 10,
+          "leadInvestors": [
+            "Altimeter Capital",
+            "Bond"
+          ],
+          "postMoneyValuation": {
+            "amount": 755120245,
+            "currency": "USD"
+          },
+          "type": "Series D"
+        },
+        {
+          "announcedDate": "2019-08-06",
+          "amount": {
+            "amount": 55000000,
+            "currency": "USD"
+          },
+          "investorCount": 8,
+          "leadInvestors": [
+            "Altimeter Capital",
+            "Google Ventures",
+            "Tiger Global Management"
+          ],
+          "postMoneyValuation": {
+            "amount": 384409498,
+            "currency": "USD"
+          },
+          "type": "Series C"
+        },
+        {
+          "announcedDate": "2017-05-10",
+          "amount": {
+            "amount": 27000000,
+            "currency": "USD"
+          },
+          "investorCount": 6,
+          "leadInvestors": [
+            "Redpoint"
+          ],
+          "postMoneyValuation": {
+            "amount": 182118989,
+            "currency": "USD"
+          },
+          "type": "Series B"
+        },
+        {
+          "announcedDate": "2016-03-30",
+          "amount": {
+            "amount": 20250000,
+            "currency": "USD"
+          },
+          "investorCount": 5,
+          "leadInvestors": [
+            "Index Ventures"
+          ],
+          "postMoneyValuation": {
+            "amount": 86733442,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2015-06-04",
+          "amount": {
+            "amount": 6250000,
+            "currency": "USD"
+          },
+          "investorCount": 9,
+          "leadInvestors": [
+            "Benchmark"
+          ],
+          "postMoneyValuation": {
+            "amount": 24792316,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        }
+      ],
+      "investors": {
+        "reportedCount": 23,
+        "visibleNames": [
+          {
+            "name": "Altimeter Capital",
+            "rounds": [
+              "Series F"
+            ]
+          },
+          {
+            "name": "Bond",
+            "rounds": [
+              "Series F"
+            ]
+          },
+          {
+            "name": "Coatue",
+            "rounds": [
+              "Series F"
+            ]
+          },
+          {
+            "name": "FirstMark",
+            "rounds": [
+              "Series F"
+            ]
+          },
+          {
+            "name": "Google Ventures",
+            "rounds": [
+              "Series F"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Greenoaks",
+            "rounds": [
+              "Series F"
+            ]
+          },
+          {
+            "name": "Index Ventures",
+            "rounds": [
+              "Series F"
+            ]
+          },
+          {
+            "name": "JPMorganChase",
+            "rounds": [
+              "Series F"
+            ]
+          },
+          {
+            "name": "K5 Global",
+            "rounds": [
+              "Series F"
+            ]
+          },
+          {
+            "name": "Lone Pine Capital",
+            "rounds": [
+              "Series F"
+            ]
+          },
+          {
+            "name": "Sequoia Capital"
+          },
+          {
+            "name": "SV Angel"
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 235,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-07-24",
+          "publisher": "Livemint.com",
+          "title": "'No association with Cockroach Janta Party': CockroachDB employee says politicians are viewing his LinkedIn profile",
+          "url": "https://www.livemint.com/news/trends/no-association-with-cockroach-janta-party-cockroachdb-employee-says-politicians-are-viewing-his-linkedin-profile-11784910976025.html"
+        },
+        {
+          "date": "2026-06-30",
+          "publisher": "SD Times",
+          "title": "Modern Data & Knowledge Platforms: The Foundation Every AI Strategy Actually Runs On: SD Times 100",
+          "url": "https://sdtimes.com/data/modern-data-knowledge-platforms-the-foundation-every-ai-strategy-actually-runs-on-sd-times-100/"
+        },
+        {
+          "date": "2026-05-13",
+          "publisher": "PR Newswire",
+          "title": "CockroachDB Brings Distributed SQL to IBM Power and IBM Cloud",
+          "url": "https://www.prnewswire.com/news-releases/cockroachdb-brings-distributed-sql-to-ibm-power-and-ibm-cloud-302770969.html"
+        },
+        {
+          "date": "2026-02-12",
+          "publisher": "PR Newswire",
+          "title": "Cockroach Labs Pushes Distributed SQL to New Limits with 300-Node, 1PB Cluster Support",
+          "url": "https://www.prnewswire.com/news-releases/cockroach-labs-pushes-distributed-sql-to-new-limits-with-300-node-1pb-cluster-support-302685942.html"
+        },
+        {
+          "date": "2026-01-14",
+          "publisher": "PR Newswire",
+          "title": "Cockroach Labs Accelerates Momentum into 2026 as Enterprises Rebuild for AI-Scale Resilience",
+          "url": "https://www.prnewswire.com/news-releases/cockroach-labs-accelerates-momentum-into-2026-as-enterprises-rebuild-for-ai-scale-resilience-302660764.html"
+        },
+        {
+          "date": "2025-12-08",
+          "publisher": "The Register",
+          "title": "IBM straps AI to Db2 console in bid to modernize the old warhorse",
+          "url": "https://www.theregister.com/2025/12/08/ibm_db2_intelligence_center/"
+        },
+        {
+          "date": "2025-10-20",
+          "publisher": "mescomputing.com",
+          "title": "AWS Downtime Shakes Business World: ‘Outages Now Cascade Not Just Across Services, But Entire Economies,’ Says Cockroach Labs CEO",
+          "url": "https://www.mescomputing.com/news/business/aws-downtime-shakes-business-world-outages-now-cascade-not-just-across-services-but-entire-economies"
+        },
+        {
+          "date": "2025-10-10",
+          "publisher": "SiliconANGLE",
+          "title": "AI embraces and extends enterprise software as funding keeps pouring in – but is all this a bubble?",
+          "url": "https://siliconangle.com/2025/10/10/ai-embraces-extends-enterprise-software-funding-keeps-pouring-bubble/"
+        },
+        {
+          "date": "2025-10-08",
+          "publisher": "The Register",
+          "title": "IBM invites CockroachDB to infest its mainframes with PostgreSQL",
+          "url": "https://www.theregister.com/2025/10/08/ibm_cockroachdb_mainframe_postgres/"
+        },
+        {
+          "date": "2025-10-07",
+          "publisher": "PR Newswire",
+          "title": "IBM Enters OEM Partnership with Cockroach Labs to Deliver Cloud-Native Resilience for the AI Era",
+          "url": "https://www.prnewswire.com/news-releases/ibm-enters-oem-partnership-with-cockroach-labs-to-deliver-cloud-native-resilience-for-the-ai-era-302576713.html"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 7,
+    "knownDetailedFundingAmount": {
+      "amount": 633100000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 43.91,
+    "latestToEarliestKnownValuationMultiple": 201.68
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "reportedPartnerships": {
+      "note": "Provider event summaries with linked sources; not independently verified.",
+      "items": [
+        {
+          "date": "2026-05-13",
+          "description": "Cockroach Labs and IBM have expanded their collaboration into a formal commercial partnership to offer CockroachDB through IBM Cloud and IBM Power platforms, including IBM-backed support and availability via IBM Cloud agreements and channels.",
+          "sources": [
+            {
+              "date": "2026-05-13",
+              "publisher": "PR Newswire",
+              "title": "CockroachDB Brings Distributed SQL to IBM Power and IBM Cloud",
+              "url": "https://www.prnewswire.com/news-releases/cockroachdb-brings-distributed-sql-to-ibm-power-and-ibm-cloud-302770969.html"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-14",
+          "description": "Cockroach Labs expanded its OEM partnership with IBM to help enterprises modernize legacy data platforms using CockroachDB's distributed SQL database.",
+          "sources": [
+            {
+              "date": "2026-01-14",
+              "publisher": "PR Newswire",
+              "title": "Cockroach Labs Accelerates Momentum into 2026 as Enterprises Rebuild for AI-Scale Resilience",
+              "url": "https://www.prnewswire.com/news-releases/cockroach-labs-accelerates-momentum-into-2026-as-enterprises-rebuild-for-ai-scale-resilience-302660764.html"
+            }
+          ]
+        },
+        {
+          "date": "2025-10-07",
+          "description": "Cockroach Labs announced an OEM partnership with IBM to bring CockroachDB PostgreSQL for IBM to market, integrating CockroachDB across IBM LinuxONE, IBM Z, Power Systems, Red Hat OpenShift, and IBM Cloud to support hybrid cloud modernization and AI-era resilience.",
+          "sources": [
+            {
+              "date": "2025-10-07",
+              "publisher": "PR Newswire",
+              "title": "IBM Enters OEM Partnership with Cockroach Labs to Deliver Cloud-Native Resilience for the AI Era",
+              "url": "https://www.prnewswire.com/news-releases/ibm-enters-oem-partnership-with-cockroach-labs-to-deliver-cloud-native-resilience-for-the-ai-era-302576713.html"
+            }
+          ]
+        },
+        {
+          "date": "2025-06-12",
+          "description": "Cockroach Labs announced the launch of its ISV Technology Partner Program, formalizing new partnerships with software vendors including Ory, Teleport, AuthZed, and PhaseTwo to deliver resilient, integrated solutions on CockroachDB.",
+          "sources": [
+            {
+              "date": "2025-06-12",
+              "publisher": "PR Newswire",
+              "title": "Cockroach Labs Expands Ecosystem with ISV Partner Program to Deliver Resilient Solutions on Modern Enterprise Platforms",
+              "url": "https://www.prnewswire.com/news-releases/cockroach-labs-expands-ecosystem-with-isv-partner-program-to-deliver-resilient-solutions-on-modern-enterprise-platforms-302478670.html"
+            }
+          ]
+        },
+        {
+          "date": "2025-03-04",
+          "description": "Cockroach Labs and AWS have announced a collaboration to modernize Windows-based applications and legacy databases using AI-powered transformation capabilities. This partnership aims to simplify .NET application modernization and accelerate database migration to CockroachDB, leveraging AWS's global infrastructure.",
+          "sources": [
+            {
+              "date": "2025-03-04",
+              "publisher": "PR Newswire",
+              "title": "Cockroach Labs and AWS Collaborate to Accelerate Windows-based Application and Database Modernization",
+              "url": "https://www.prnewswire.com/news-releases/cockroach-labs-and-aws-collaborate-to-accelerate-windows-based-application-and-database-modernization-302391712.html"
+            }
+          ]
+        }
+      ]
+    },
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2025-04-21",
+      "growthChange90Days": -7,
+      "growthScore": 69,
+      "heatChange90Days": -9,
+      "heatScore": 60,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 40.74
+      },
+      "funding": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 20.58,
+        "timingEstimatePercent": {
+          "within6Months": 15.22,
+          "months6To11": 12.9,
+          "months12To24": 20.21,
+          "beyond24Months": 51.67
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 93.71
+      },
+      "ipo": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 18.38
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Couchbase is a NoSQL cloud platform providing scalable data solutions for applications.",
+          "employeeRange": "501-1,000",
+          "name": "Couchbase",
+          "sharedCategories": [
+            "Database",
+            "Enterprise Software"
+          ],
+          "sharedSpecialties": [
+            "Data Synchronization",
+            "Database Platform Services",
+            "Data Replication"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "MariaDB is an enterprise open source database company that delivers innovative, scalable database solutions.",
+          "employeeRange": "251-500",
+          "name": "MariaDB",
+          "sharedCategories": [
+            "Software",
+            "Database",
+            "Enterprise Software"
+          ],
+          "sharedSpecialties": [
+            "Data Synchronization",
+            "Database Administration Services",
+            "Database Platform Services",
+            "Cloud Migration",
+            "Data Replication",
+            "Change Data Capture"
+          ],
+          "similarityScore": 85.892
+        },
+        {
+          "description": "SkySQL is a software company that provides databases and backup services.",
+          "employeeRange": "1-10",
+          "name": "SkySQL",
+          "sharedCategories": [
+            "Software",
+            "Database"
+          ],
+          "similarityScore": 74.492
+        },
+        {
+          "description": "Tessell is a DBaaS platform that simplifies managing, securing, and scaling relational databases in the cloud.",
+          "employeeRange": "251-500",
+          "name": "Tessell",
+          "sharedCategories": [
+            "Software",
+            "Database"
+          ],
+          "sharedSpecialties": [
+            "Database Administration Services",
+            "Database Platform Services",
+            "Cloud Migration",
+            "Data Replication",
+            "Cloud Operations and FinOps",
+            "Change Data Capture"
+          ],
+          "similarityScore": 65.364
+        },
+        {
+          "description": "A fully managed database platform for Vitess/MySQL & Postgres—NVMe-backed performance, horizontal sharding, & enterprise-grade reliability",
+          "employeeRange": "51-100",
+          "name": "PlanetScale",
+          "sharedCategories": [
+            "Software",
+            "Database"
+          ],
+          "sharedSpecialties": [
+            "Managed Private Cloud",
+            "Database Administration Services",
+            "Cloud Hosting",
+            "Database Platform Services",
+            "Data Replication"
+          ],
+          "similarityScore": 60.697
+        }
+      ]
+    },
+    "aiResearchSummary": {
+      "notFact": true,
+      "text": "Cockroach Labs is researching methods and systems for non-blocking transactions, enabling efficient execution of write transactions in distributed databases, as described in 'Methods and systems for non-blocking transactions.' They are also developing systems for block properties in log-structured merge tree storage, optimizing data structure encoding and filtering. Additional work includes locality-aware query optimization and multi-region database systems, highlighting focus areas in distributed, cloud-native SQL database technology."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Series F round raised $278,000,000, or 43.91% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $24,792,316 to $5,000,000,000, a 201.68x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 69 (-7 over 90 days) and market heat at 60 (-9).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Couchbase, MariaDB, SkySQL.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 235 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

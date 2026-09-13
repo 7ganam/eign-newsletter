@@ -1,0 +1,616 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T17:27:55.327Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T17:27:55.323Z",
+    "url": "https://www.crunchbase.com/organization/clickhouse"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "ClickHouse",
+      "shortDescription": "ClickHouse provides an open-source database system for real-time analytical reporting.",
+      "description": "ClickHouse is an open-source column-oriented database management system that focuses on real-time analytical reporting. It enables users to execute complex SQL queries efficiently, making it suitable for applications that require fast data processing and analysis. The system is particularly effective for big data environments, allowing organizations to manage and analyze large volumes of information seamlessly. ClickHouse supports various data ingestion methods and offers features that facilitate data warehousing and observability. Its architecture is designed to optimize performance and scalability, catering to the needs of sales teams and data analysts seeking actionable insights from their data.",
+      "website": "https://clickhouse.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "251-500",
+      "headquarters": "Mountain View, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Analytics",
+        "Artificial Intelligence (AI)",
+        "Big Data",
+        "Database",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Aaron Katz",
+        "Alexey Milovidov",
+        "Yury Izrailevsky"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An open-source, column-oriented OLAP database for real-time analytical queries over large datasets using SQL.",
+        "name": "ClickHouse"
+      },
+      {
+        "description": "A fully managed ClickHouse service hosted on AWS, Google Cloud, and Microsoft Azure for scalable real-time analytics.",
+        "name": "ClickHouse Cloud"
+      },
+      {
+        "description": "A managed ClickHouse deployment installed in a customer’s own AWS or Google Cloud account.",
+        "name": "Bring Your Own Cloud"
+      },
+      {
+        "description": "An open-source observability stack for collecting, storing, and querying logs, metrics, traces, and session replays with ClickHouse.",
+        "name": "ClickStack"
+      },
+      {
+        "description": "A managed PostgreSQL service that combines transactional workloads with ClickHouse analytics in a unified data stack.",
+        "name": "Postgres managed by ClickHouse"
+      },
+      {
+        "description": "A ClickHouse Cloud data ingestion service for moving data from external systems into ClickHouse.",
+        "name": "ClickPipes"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 1150000000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 8,
+      "detailedRoundCount": 8,
+      "lastFundingDate": "2026-01-16",
+      "lastFundingType": "Series D",
+      "rounds": [
+        {
+          "announcedDate": "2026-01-16",
+          "amount": {
+            "amount": 400000000,
+            "currency": "USD"
+          },
+          "investorCount": 10,
+          "leadInvestors": [
+            "Dragoneer Investment Group"
+          ],
+          "postMoneyValuation": {
+            "amount": 15000000000,
+            "currency": "USD"
+          },
+          "type": "Series D"
+        },
+        {
+          "announcedDate": "2025-10-07",
+          "investorCount": 16,
+          "postMoneyValuation": {
+            "amount": 7558057051,
+            "currency": "USD"
+          },
+          "type": "Series C"
+        },
+        {
+          "announcedDate": "2025-05-29",
+          "amount": {
+            "amount": 350000000,
+            "currency": "USD"
+          },
+          "investorCount": 13,
+          "leadInvestors": [
+            "Khosla Ventures"
+          ],
+          "postMoneyValuation": {
+            "amount": 6350000000,
+            "currency": "USD"
+          },
+          "type": "Series C"
+        },
+        {
+          "announcedDate": "2025-05-29",
+          "amount": {
+            "amount": 100000000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "leadInvestors": [
+            "Goldman Sachs",
+            "Stifel Bank"
+          ],
+          "type": "Debt Financing"
+        },
+        {
+          "announcedDate": "2024-01-01",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 5177026247,
+            "currency": "USD"
+          },
+          "type": "Venture round"
+        },
+        {
+          "announcedDate": "2022-12-06",
+          "investorCount": 1,
+          "leadInvestors": [
+            "Thrive Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 2863315090,
+            "currency": "USD"
+          },
+          "type": "Series B"
+        },
+        {
+          "announcedDate": "2021-10-28",
+          "amount": {
+            "amount": 250000000,
+            "currency": "USD"
+          },
+          "investorCount": 10,
+          "leadInvestors": [
+            "Altimeter Capital",
+            "Coatue"
+          ],
+          "postMoneyValuation": {
+            "amount": 2000000000,
+            "currency": "USD"
+          },
+          "type": "Series B"
+        },
+        {
+          "announcedDate": "2021-09-20",
+          "amount": {
+            "amount": 50000000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "leadInvestors": [
+            "Benchmark",
+            "Index Ventures"
+          ],
+          "postMoneyValuation": {
+            "amount": 431511207,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        }
+      ],
+      "investors": {
+        "reportedCount": 38,
+        "visibleNames": [
+          {
+            "name": "Bessemer Venture Partners",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "Burch Creative Capital",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "Capital One Ventures",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Dragoneer Investment Group",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "GIC",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "Index Ventures",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "Insight Partners"
+          },
+          {
+            "name": "Khosla Ventures",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "Lightspeed Venture Partners",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "Nebius"
+          },
+          {
+            "name": "T. Rowe Price",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "WCM Investment Management",
+            "rounds": [
+              "Series D"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 168,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-09-02",
+          "publisher": "iTWire",
+          "title": "ClickHouse Acquires RunReveal",
+          "url": "https://itwire.com/it-industry-news/deals/clickhouse-acquires-runreveal"
+        },
+        {
+          "date": "2026-09-01",
+          "title": "RunReveal acquired by ClickHouse"
+        },
+        {
+          "date": "2026-08-27",
+          "publisher": "The Motley Fool",
+          "title": "Why Palo Alto Networks Stock Just Popped",
+          "url": "https://www.fool.com/investing/2026/08/27/why-palo-alto-networks-stock-just-popped/"
+        },
+        {
+          "date": "2026-08-26",
+          "publisher": "The New Stack",
+          "title": "Observability has a data problem. AI is about to make it worse.",
+          "url": "https://thenewstack.io/opentelemetry-observability-telemetry-storage/"
+        },
+        {
+          "date": "2026-08-24",
+          "publisher": "iTWire",
+          "title": "ClickHouse Joins The Open Secure AI Alliance",
+          "url": "https://itwire.com/business-it-news/data/clickhouse-joins-the-open-secure-ai-alliance"
+        },
+        {
+          "date": "2026-08-22",
+          "publisher": "The Next Web",
+          "title": "Betting brands are off Premier League shirts. Enterprise software moved in",
+          "url": "https://thenextweb.com/news/clickhouse-fulham-premier-league-gambling-sponsors"
+        },
+        {
+          "date": "2026-08-18",
+          "publisher": "PR Newswire",
+          "title": "Ciklum Announces Strategic Partnership with ClickHouse to Accelerate Enterprise Adoption of Agentic AI and Real-Time Analytics",
+          "url": "https://www.prnewswire.com/news-releases/ciklum-announces-strategic-partnership-with-clickhouse-to-accelerate-enterprise-adoption-of-agentic-ai-and-real-time-analytics-302853170.html"
+        },
+        {
+          "date": "2026-08-18",
+          "publisher": "BigDATAwire",
+          "title": "AI Agents Are Creating a New Data Problem. Ciklum and ClickHouse Have a Plan",
+          "url": "https://www.hpcwire.com/bigdatawire/2026/08/18/ai-agents-are-creating-a-new-data-problem-ciklum-and-clickhouse-have-a-plan/"
+        },
+        {
+          "date": "2026-08-05",
+          "publisher": "iTWire",
+          "title": "ClickHouse launches ClickHouse Labs with Andy Pavlo as VP of Database Research",
+          "url": "https://itwire.com/it-industry-news/strategy/clickhouse-launches-clickhouse-labs-with-andy-pavlo-as-vp-of-database-research"
+        },
+        {
+          "date": "2026-07-28",
+          "publisher": "BusinessCloud",
+          "title": "Who is Fulham FC’s new front-of-shirt tech sponsor?",
+          "url": "https://businesscloud.co.uk/news/who-is-fulham-fcs-new-front-of-shirt-tech-sponsor/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 5,
+    "knownDetailedFundingAmount": {
+      "amount": 1150000000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 34.78,
+    "latestToEarliestKnownValuationMultiple": 34.76
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "reportedPartnerships": {
+      "note": "Provider event summaries with linked sources; not independently verified.",
+      "items": [
+        {
+          "date": "2026-08-22",
+          "description": "ClickHouse became Fulham's front-of-shirt sponsor for the new Premier League season, replacing betting brand SBOTOP and giving the data infrastructure company prominent enterprise-facing visibility.",
+          "sources": [
+            {
+              "date": "2026-08-22",
+              "publisher": "The Next Web",
+              "title": "Betting brands are off Premier League shirts. Enterprise software moved in",
+              "url": "https://thenextweb.com/news/clickhouse-fulham-premier-league-gambling-sponsors"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-21",
+          "description": "ClickHouse and Fulham Football Club have entered a new multi-year principal partnership making ClickHouse the Men’s First Team front-of-shirt sponsor and strategic technology partner, with branding across kits, stadium, and digital channels.",
+          "sources": [
+            {
+              "date": "2026-07-21",
+              "publisher": "Morningstar.com",
+              "title": "ClickHouse Announced as Principal Partner & Front of Shirt Sponsor of Fulham Football Club",
+              "url": "https://www.morningstar.com/news/business-wire/20260721902779/clickhouse-announced-as-principal-partner-front-of-shirt-sponsor-of-fulham-football-club"
+            }
+          ]
+        },
+        {
+          "date": "2026-05-27",
+          "description": "ClickHouse announced House Mates, its first formal partner program, launching a structured multi-tier ecosystem partnership with more than 60 technology, services, consulting, and channel partners worldwide.",
+          "sources": [
+            {
+              "date": "2026-05-27",
+              "publisher": "Business Wire",
+              "title": "ClickHouse Tops $250M ARR and 4,000 Customers, Launches Claude-Powered Agents at Open House 2026",
+              "url": "https://www.businesswire.com/news/home/20260527813115/en/ClickHouse-Tops-%24250M-ARR-and-4000-Customers-Launches-Claude-Powered-Agents-at-Open-House-2026"
+            }
+          ]
+        },
+        {
+          "date": "2026-04-22",
+          "description": "ClickHouse and Google Cloud expanded their strategic collaboration, deepening integration across Google Cloud Lakehouse, Axion processors, and AI tooling like Google Antigravity to improve performance and flexibility for joint customers.",
+          "sources": [
+            {
+              "date": "2026-04-22",
+              "publisher": "Morningstar.com",
+              "title": "ClickHouse Expands Strategic Collaboration with Google Cloud, Bringing Deeper Integration, Cloud Flexibility, and Next-Generation Performance",
+              "url": "https://www.morningstar.com/news/business-wire/20260422655476/clickhouse-expands-strategic-collaboration-with-google-cloud-bringing-deeper-integration-cloud-flexibility-and-next-generation-performance"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-16",
+          "description": "ClickHouse announced a partnership with Ubicloud to deliver an enterprise-grade managed Postgres service tightly integrated with ClickHouse for AI application builders.",
+          "sources": [
+            {
+              "date": "2026-01-16",
+              "publisher": "Business Wire",
+              "title": "ClickHouse Raises $400M Series D Led by Dragoneer to Accelerate Expansion Across Analytics and AI Infrastructure",
+              "url": "https://www.businesswire.com/news/home/20260116008883/en/ClickHouse-Raises-%24400M-Series-D-Led-by-Dragoneer-to-Accelerate-Expansion-Across-Analytics-and-AI-Infrastructure"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-07",
+          "description": "ClickHouse partnered with Japan Cloud to establish ClickHouse K.K., a Japan subsidiary, to deepen its presence and support AI-driven real-time analytics adoption in Japan.",
+          "sources": [
+            {
+              "date": "2025-11-07",
+              "publisher": "Business Wire",
+              "title": "ClickHouse Partners with Japan Cloud to Establish ClickHouse K.K. and Accelerate Growth in Japan",
+              "url": "https://www.businesswire.com/news/home/20251106967160/en/ClickHouse-Partners-with-Japan-Cloud-to-Establish-ClickHouse-K.K.-and-Accelerate-Growth-in-Japan"
+            }
+          ]
+        }
+      ]
+    },
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2026-08-17",
+      "growthChange90Days": -3,
+      "growthScore": 95,
+      "heatChange90Days": 3,
+      "heatScore": 84,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 71.44
+      },
+      "funding": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 94.43,
+        "timingEstimatePercent": {
+          "within6Months": 100,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 95.22
+      },
+      "ipo": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 53.57
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Altinity is the real-time data company helping Enterprises build innovative ClickHouse-based analytic applications.",
+          "employeeRange": "11-50",
+          "name": "Altinity",
+          "sharedCategories": [
+            "Analytics",
+            "Software",
+            "Big Data",
+            "Database"
+          ],
+          "sharedSpecialties": [
+            "Data Engineering",
+            "Database Platform Services",
+            "Data Warehousing",
+            "Data Pipelines"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Apache Software Foundation provides organizational, legal and financial support for Apache open-source software projects.",
+          "employeeRange": "1-10",
+          "name": "The Apache Software Foundation",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Distributed Data Processing",
+            "Database Platform Services",
+            "Real-Time Big Data Processing"
+          ],
+          "similarityScore": 96
+        },
+        {
+          "description": "Aiven is a technology-driven company that enables businesses to manage an open-source data infrastructure in the cloud.",
+          "employeeRange": "251-500",
+          "name": "Aiven",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)",
+            "Database"
+          ],
+          "sharedSpecialties": [
+            "Database Platform Services",
+            "Real-Time Big Data Processing",
+            "iPaaS Data Integration",
+            "Data Warehousing",
+            "Data Pipelines"
+          ],
+          "similarityScore": 94.64
+        },
+        {
+          "description": "Grow your business with 3X greater analytics performance powered by StarRocks and backed by the enterprise support and features of CelerData",
+          "employeeRange": "51-100",
+          "name": "PhoenixAI",
+          "sharedCategories": [
+            "Software",
+            "Big Data",
+            "Database"
+          ],
+          "sharedSpecialties": [
+            "Distributed Data Processing",
+            "Data Engineering",
+            "Database Platform Services",
+            "Real-Time Big Data Processing",
+            "Data Warehousing",
+            "Data Pipelines"
+          ],
+          "similarityScore": 94.64
+        },
+        {
+          "description": "Snowflake is a cloud data platform that provides a data warehouse as a service designed for the cloud.",
+          "employeeRange": "10,001+",
+          "name": "Snowflake",
+          "sharedCategories": [
+            "Analytics",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Extract Transform Load (ETL)",
+            "Distributed Data Processing",
+            "Data Engineering",
+            "Real-Time Big Data Processing",
+            "Data Warehousing",
+            "Data Pipelines"
+          ],
+          "similarityScore": 93.57
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Series D round raised $400,000,000, or 34.78% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $431,511,207 to $15,000,000,000, a 34.76x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 95 (-3 over 90 days) and market heat at 84 (+3).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Altinity, The Apache Software Foundation, Aiven.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 168 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

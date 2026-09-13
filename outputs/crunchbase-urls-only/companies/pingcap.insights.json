@@ -1,0 +1,522 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T18:33:32.404Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T18:33:32.401Z",
+    "url": "https://www.crunchbase.com/organization/pingcap"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "TiDB Powered by PingCAP",
+      "shortDescription": "TiDB powered by PingCAP (the company) is an AI-native distributed SQL database platform for agentic workloads with elastic autoscaling.",
+      "description": "TiDB powered by PingCAP (the company) is the distributed SQL database built for AI agents. AI-native companies, leading SaaS providers, and global enterprises run TiDB to support workloads that traditional databases cannot, including millions of tables, persistent agent state, high-concurrency reads and writes, frequent schema changes, and zero-downtime scaling at petabyte scale. With AI-driven innovations across the platform and multi-cloud flexibility, TiDB delivers the resilience, performance, and security organizations need for modern applications. Headquartered in Sunnyvale, California, TiDB serves customers worldwide. Learn more at TiDB.io.",
+      "website": "https://tidb.io/",
+      "foundedYear": 2015,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "501-1,000",
+      "headquarters": "Sunnyvale, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Cloud Data Services",
+        "Database",
+        "Open Source",
+        "Software"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Information Technology",
+        "Internet Services",
+        "Software"
+      ],
+      "founders": [
+        "Dylan Cui",
+        "Edward Huang",
+        "Max Liu"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An open-source, MySQL-compatible distributed SQL database for transactional, analytical, vector-search, and AI workloads with horizontal scalability and strong ACID consistency.",
+        "name": "TiDB"
+      },
+      {
+        "description": "A fully managed, cloud-native TiDB service with autoscaling, durable object storage, automated operations, high availability, and support for transactional, analytical, vector, and AI workloads.",
+        "name": "TiDB Cloud"
+      },
+      {
+        "description": "A self-hosted deployment of TiDB that gives organizations control over infrastructure, networking, security, data locality, configuration, and upgrade operations.",
+        "name": "TiDB Self-Managed"
+      },
+      {
+        "description": "Guided services and tools for assessing, migrating, optimizing, and operating MySQL and other SQL workloads on TiDB.",
+        "name": "TiDB Migration and Technical Support Services"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 641600000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 6,
+      "detailedRoundCount": 6,
+      "lastFundingDate": "2021-05-01",
+      "lastFundingType": "Series D",
+      "rounds": [
+        {
+          "announcedDate": "2021-05-01",
+          "amount": {
+            "amount": 300000000,
+            "currency": "USD"
+          },
+          "investorCount": 8,
+          "leadInvestors": [
+            "GGV Capital",
+            "GIC",
+            "Sequoia Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 3000000000,
+            "currency": "USD"
+          },
+          "type": "Series D"
+        },
+        {
+          "announcedDate": "2020-11-16",
+          "amount": {
+            "amount": 270000000,
+            "currency": "USD"
+          },
+          "investorCount": 13,
+          "leadInvestors": [
+            "5Y Capital",
+            "Access Technology Ventures",
+            "Anatole",
+            "GGV Capital",
+            "Jeneration Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 1234635196,
+            "currency": "USD"
+          },
+          "type": "Series D"
+        },
+        {
+          "announcedDate": "2018-09-11",
+          "amount": {
+            "amount": 50000000,
+            "currency": "USD"
+          },
+          "investorCount": 6,
+          "leadInvestors": [
+            "5Y Capital",
+            "Fosun International",
+            "Morningside"
+          ],
+          "postMoneyValuation": {
+            "amount": 375778168,
+            "currency": "USD"
+          },
+          "type": "Series C"
+        },
+        {
+          "announcedDate": "2017-06-13",
+          "amount": {
+            "amount": 15000000,
+            "currency": "USD"
+          },
+          "investorCount": 6,
+          "leadInvestors": [
+            "China Growth Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 85514064,
+            "currency": "USD"
+          },
+          "type": "Series B"
+        },
+        {
+          "announcedDate": "2016-08-01",
+          "amount": {
+            "amount": 5000000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Yunqi Partners"
+          ],
+          "postMoneyValuation": {
+            "amount": 23771110,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2015-04-01",
+          "amount": {
+            "amount": 1600000,
+            "currency": "USD"
+          },
+          "postMoneyValuation": {
+            "amount": 8043142,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 21,
+        "visibleNames": [
+          {
+            "name": "5Y Capital",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Anatole",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "BAI capital",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "Coatue",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "Future Capital Discovery Fund",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "GGV Capital",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "GIC",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Jeneration Capital",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "Matrix Partners China"
+          },
+          {
+            "isLead": true,
+            "name": "Sequoia Capital",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "Yunqi Partners",
+            "rounds": [
+              "Series D"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 61,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-04-03",
+          "publisher": "The New Stack",
+          "title": "The laptop return that broke a RAG pipeline",
+          "url": "https://thenewstack.io/rag-pipeline-hybrid-search/"
+        },
+        {
+          "date": "2026-04-02",
+          "publisher": "Morningstar.com",
+          "title": "Enterprises Align AI and Data Platforms to Scale AI Deployments with Accuracy, Compliance, ISG says",
+          "url": "https://www.morningstar.com/news/business-wire/20260402298961/enterprises-align-ai-and-data-platforms-to-scale-ai-deployments-with-accuracy-compliance-isg-says"
+        },
+        {
+          "date": "2026-02-01",
+          "publisher": "The New Stack",
+          "title": "S3 is the new network: Rethinking data architecture for the cloud era",
+          "url": "https://thenewstack.io/4-data-architecture-decisions-that-make-or-break-agentic-systems-2/"
+        },
+        {
+          "date": "2025-11-19",
+          "publisher": "PingCAP (US), Inc.",
+          "title": "PingCAP Ranked Number 125 Fastest-Growing Company in North America on the 2025 Deloitte Technology Fast 500™",
+          "url": "https://www.globenewswire.com/news-release/2025/11/19/3190869/0/en/PingCAP-Ranked-Number-125-Fastest-Growing-Company-in-North-America-on-the-2025-Deloitte-Technology-Fast-500.html"
+        },
+        {
+          "date": "2025-10-08",
+          "publisher": "PingCAP (US), Inc.",
+          "title": "PingCAP Launches TiDB X and New AI Capabilities at SCaiLE Summit 2025",
+          "url": "https://www.globenewswire.com/news-release/2025/10/08/3163677/0/en/PingCAP-Launches-TiDB-X-and-New-AI-Capabilities-at-SCaiLE-Summit-2025.html"
+        },
+        {
+          "date": "2025-09-18",
+          "publisher": "PingCAP (US), Inc.",
+          "title": "At TiDB SCaiLE 2025, Global Data Leaders Share Growth Strategies for the AI Era",
+          "url": "https://www.globenewswire.com/news-release/2025/09/18/3152434/0/en/At-TiDB-SCaiLE-2025-Global-Data-Leaders-Share-Growth-Strategies-for-the-AI-Era.html"
+        },
+        {
+          "date": "2025-07-08",
+          "publisher": "GlobeNewswire News Room",
+          "title": "PingCAP Expands Collaboration with Microsoft Azure to Accelerate Distributed SQL Adoption",
+          "url": "https://www.globenewswire.com/news-release/2025/07/08/3111797/0/en/PingCAP-Expands-Collaboration-with-Microsoft-Azure-to-Accelerate-Distributed-SQL-Adoption.html"
+        },
+        {
+          "date": "2025-07-04",
+          "publisher": "crnasia.com",
+          "title": "Alibaba Cloud bolsters partner ecosystem with US$60 million investment",
+          "url": "https://www.crnasia.com/news/2025/cloud/alibaba-cloud-bolsters-partner-ecosystem-with-us-60-million"
+        },
+        {
+          "date": "2025-07-03",
+          "publisher": "TNGlobal",
+          "title": "Alibaba Cloud invests over $60M next year to accelerate AI innovation",
+          "url": "https://technode.global/2025/07/03/alibaba-cloud-invests-over-60m-next-year-to-accelerate-ai-innovation/"
+        },
+        {
+          "date": "2025-07-03",
+          "publisher": "EqualOcean",
+          "title": "Alibaba Cloud Will Invest Over CNY 400 Mn to Support International Ecosystem Development",
+          "url": "https://equalocean.com/briefing/20250703230148496"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 6,
+    "knownDetailedFundingAmount": {
+      "amount": 641600000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 46.76,
+    "latestToEarliestKnownValuationMultiple": 372.99
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "reportedPartnerships": {
+      "note": "Provider event summaries with linked sources; not independently verified.",
+      "items": [
+        {
+          "date": "2025-07-08",
+          "description": "PingCAP and Microsoft Azure announced an expanded partnership to accelerate distributed SQL adoption, including go-to-market initiatives and co-selling efforts to modernize data infrastructure for enterprises.",
+          "sources": [
+            {
+              "date": "2025-07-08",
+              "publisher": "GlobeNewswire News Room",
+              "title": "PingCAP Expands Collaboration with Microsoft Azure to Accelerate Distributed SQL Adoption",
+              "url": "https://www.globenewswire.com/news-release/2025/07/08/3111797/0/en/PingCAP-Expands-Collaboration-with-Microsoft-Azure-to-Accelerate-Distributed-SQL-Adoption.html"
+            }
+          ]
+        }
+      ]
+    },
+    "crunchbaseMomentum": {
+      "growthChange90Days": -9,
+      "growthScore": 72,
+      "heatChange90Days": -9,
+      "heatScore": 57
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 37.14
+      },
+      "funding": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 16.9,
+        "timingEstimatePercent": {
+          "within6Months": 15.12,
+          "months6To11": 12.83,
+          "months12To24": 20.14,
+          "beyond24Months": 51.92
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 85.95
+      },
+      "ipo": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 14.99
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Couchbase is a NoSQL cloud platform providing scalable data solutions for applications.",
+          "employeeRange": "501-1,000",
+          "name": "Couchbase",
+          "sharedCategories": [
+            "Database",
+            "Cloud Data Services"
+          ],
+          "sharedSpecialties": [
+            "Data Synchronization",
+            "Database Platform Services",
+            "Real-Time Big Data Processing",
+            "Data Replication"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Construct Capital invests in founders building technology to transform the most foundational industries of the economy.",
+          "employeeRange": "11-50",
+          "name": "Construct Capital",
+          "similarityScore": 94.811
+        },
+        {
+          "description": "ClickHouse provides an open-source database system for real-time analytical reporting.",
+          "employeeRange": "251-500",
+          "name": "ClickHouse",
+          "sharedCategories": [
+            "Software",
+            "Database"
+          ],
+          "sharedSpecialties": [
+            "Distributed Data Processing",
+            "Database Platform Services",
+            "Real-Time Big Data Processing",
+            "Data Warehousing"
+          ],
+          "similarityScore": 86.161
+        },
+        {
+          "description": "Vultr is an AI cloud infrastructure platform offering latest generation NVIDIA GPUs and AMD CPUs and GPUs across 32 worldwide regions",
+          "employeeRange": "251-500",
+          "name": "Vultr",
+          "sharedSpecialties": [
+            "Cloud Hosting",
+            "Database Platform Services"
+          ],
+          "similarityScore": 81.574
+        },
+        {
+          "description": "MariaDB is an enterprise open source database company that delivers innovative, scalable database solutions.",
+          "employeeRange": "251-500",
+          "name": "MariaDB",
+          "sharedCategories": [
+            "Software",
+            "Database",
+            "Open Source"
+          ],
+          "sharedSpecialties": [
+            "Data Synchronization",
+            "Database Administration Services",
+            "Distributed Data Processing",
+            "Database Platform Services",
+            "Data Replication",
+            "Data Warehousing",
+            "Change Data Capture"
+          ],
+          "similarityScore": 76.873
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Series D round raised $300,000,000, or 46.76% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $8,043,142 to $3,000,000,000, a 372.99x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 72 (-9 over 90 days) and market heat at 57 (-9).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Couchbase, Construct Capital, ClickHouse.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 61 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

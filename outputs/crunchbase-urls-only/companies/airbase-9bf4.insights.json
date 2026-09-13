@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T17:04:51.649Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T17:04:51.648Z",
+    "url": "https://www.crunchbase.com/organization/airbase-9bf4"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Airbase",
+      "shortDescription": "Airbase is a wireless infrastructure software company that provides a platform.",
+      "description": "Airbase is a wireless infrastructure software company that provides a platform for managing spectrum licensing, coordination, and data analysis. The platform supports access to radio frequencies used in communication systems across land, air, sea, and space. It replaces manual processes like static records and forms with a system for handling spectrum data. The software tracks how spectrum is assigned and shows where it is in use or unused. It helps users coordinate frequency use to avoid conflicts and interference. The platform includes data tools that show risks such as signal disruption or contested access. It serves government, military, and commercial operators that rely on wireless communication systems.",
+      "website": "https://airbase.us/",
+      "foundedYear": 2026,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "New York, United States",
+      "geographicRegions": [
+        "Greater New York Area",
+        "East Coast",
+        "Northeastern US"
+      ],
+      "industries": [
+        "GovTech"
+      ],
+      "sectors": [
+        "Government and Military",
+        "Information Technology"
+      ],
+      "founders": [
+        "Ari Rosner"
+      ]
+    },
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -2,
+      "heatScore": 56
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 5
+      },
+      "ipo": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Extreme Networks provides wired and wireless networking solutions to enhance connectivity for businesses and organizations.",
+          "employeeRange": "1,001-5,000",
+          "name": "Extreme Networks",
+          "similarityScore": 97
+        },
+        {
+          "description": "Juniper Networks is a networking company that markets and develops networking products for enterprise companies.",
+          "employeeRange": "5,001-10,000",
+          "name": "Juniper Networks",
+          "similarityScore": 93
+        },
+        {
+          "description": "Cisco develops, manufactures, and sells networking hardware, telecommunications equipment, and other technology services and products.",
+          "employeeRange": "10,001+",
+          "name": "Cisco",
+          "similarityScore": 92
+        },
+        {
+          "description": "Ubiquiti Networks manufactures a variety of high-end wireless products to cater to underserved and emerging markets.",
+          "employeeRange": "1,001-5,000",
+          "name": "Ubiquiti Networks",
+          "similarityScore": 88
+        },
+        {
+          "description": "RUCKUS Networks offers network infrastructure solutions, including Wi-Fi access points, IoT systems, and enterprise switches.",
+          "employeeRange": "501-1,000",
+          "name": "RUCKUS Networks",
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Extreme Networks, Juniper Networks, Cisco.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

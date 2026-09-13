@@ -1,0 +1,543 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T17:35:53.568Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T17:35:53.565Z",
+    "url": "https://www.crunchbase.com/organization/datastax"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "DataStax",
+      "shortDescription": "DataStax is a real-time data company for Gen AI applications.",
+      "description": "DataStax provides tools for building generative AI applications, offering a vector database with real-time data processing and integration capabilities. The Astra DB vector supports developers with APIs, data pipelines, and ecosystem integrations to facilitate the deployment of AI applications.",
+      "website": "https://www.datastax.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "501-1,000",
+      "estimatedRevenueRange": "$100M-$500M",
+      "headquarters": "Santa Clara, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Data Management",
+        "Information Technology",
+        "Open Source",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Jonathan Ellis",
+        "Matt Pfeil"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A cloud-based NoSQL database built on Apache Cassandra that supports vector search, multi-model data, and scalable real-time workloads for generative AI applications.",
+        "name": "Astra DB"
+      },
+      {
+        "description": "An on-premises and private-cloud NoSQL database based on Apache Cassandra, with vector capabilities for AI workloads and real-time application data.",
+        "name": "Hyper-converged Database (HCD)"
+      },
+      {
+        "description": "An open-source, low-code framework for prototyping, building, and deploying retrieval-augmented generation and multi-agent AI applications.",
+        "name": "Langflow"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 342571788,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 10,
+      "detailedRoundCount": 10,
+      "lastFundingDate": "2022-06-15",
+      "lastFundingType": "Venture round",
+      "rounds": [
+        {
+          "announcedDate": "2022-06-15",
+          "amount": {
+            "amount": 115000000,
+            "currency": "USD"
+          },
+          "investorCount": 6,
+          "leadInvestors": [
+            "Goldman Sachs Growth Equity"
+          ],
+          "postMoneyValuation": {
+            "amount": 1600000000,
+            "currency": "USD"
+          },
+          "type": "Venture round"
+        },
+        {
+          "announcedDate": "2021-05-26",
+          "amount": {
+            "amount": 37571788,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "leadInvestors": [
+            "Goldman Sachs Growth Equity"
+          ],
+          "postMoneyValuation": {
+            "amount": 1200571788,
+            "currency": "USD"
+          },
+          "type": "Series F"
+        },
+        {
+          "announcedDate": "2018-09-04",
+          "investorCount": 2,
+          "type": "Secondary Market"
+        },
+        {
+          "announcedDate": "2014-09-04",
+          "amount": {
+            "amount": 106000000,
+            "currency": "USD"
+          },
+          "investorCount": 9,
+          "leadInvestors": [
+            "Kleiner Perkins"
+          ],
+          "postMoneyValuation": {
+            "amount": 830000000,
+            "currency": "USD"
+          },
+          "type": "Series E"
+        },
+        {
+          "announcedDate": "2014-02-01",
+          "investorCount": 1,
+          "leadInvestors": [
+            "Akkadian Ventures"
+          ],
+          "type": "Secondary Market"
+        },
+        {
+          "announcedDate": "2013-07-23",
+          "amount": {
+            "amount": 45300000,
+            "currency": "USD"
+          },
+          "investorCount": 7,
+          "leadInvestors": [
+            "Scale Venture Partners"
+          ],
+          "postMoneyValuation": {
+            "amount": 374211272,
+            "currency": "USD"
+          },
+          "type": "Series D"
+        },
+        {
+          "announcedDate": "2012-10-01",
+          "amount": {
+            "amount": 25000000,
+            "currency": "USD"
+          },
+          "investorCount": 4,
+          "leadInvestors": [
+            "Meritech Capital Partners"
+          ],
+          "postMoneyValuation": {
+            "amount": 131734479,
+            "currency": "USD"
+          },
+          "type": "Series C"
+        },
+        {
+          "announcedDate": "2011-09-21",
+          "amount": {
+            "amount": 11000000,
+            "currency": "USD"
+          },
+          "investorCount": 3,
+          "leadInvestors": [
+            "Crosslink Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 54507631,
+            "currency": "USD"
+          },
+          "type": "Series B"
+        },
+        {
+          "announcedDate": "2010-10-27",
+          "amount": {
+            "amount": 2700000,
+            "currency": "USD"
+          },
+          "investorCount": 3,
+          "postMoneyValuation": {
+            "amount": 9774333,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2010-04-23",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 11403515,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 25,
+        "visibleNames": [
+          {
+            "name": "Bain Capital Ventures"
+          },
+          {
+            "name": "Crosslink Capital",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "DFJ Growth"
+          },
+          {
+            "name": "EDBI",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "Empede Capital",
+            "rounds": [
+              "Series F"
+            ]
+          },
+          {
+            "name": "Employee Stock Option Fund",
+            "rounds": [
+              "Secondary Market"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Goldman Sachs Growth Equity",
+            "rounds": [
+              "Venture round",
+              "Series F"
+            ]
+          },
+          {
+            "name": "Kleiner Perkins"
+          },
+          {
+            "name": "Lightspeed Venture Partners"
+          },
+          {
+            "name": "Meritech Capital Partners",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "OnePrime Capital",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "Rokos Capital Management",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "Sequoia Capital"
+          },
+          {
+            "name": "Storm Global",
+            "rounds": [
+              "Secondary Market"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 574,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-06-30",
+          "publisher": "SD Times",
+          "title": "Modern Data & Knowledge Platforms: The Foundation Every AI Strategy Actually Runs On: SD Times 100",
+          "url": "https://sdtimes.com/data/modern-data-knowledge-platforms-the-foundation-every-ai-strategy-actually-runs-on-sd-times-100/"
+        },
+        {
+          "date": "2026-05-04",
+          "publisher": "IT Web",
+          "title": "SA banks prioritise governance to harness AI fast",
+          "url": "https://www.itweb.co.za/article/sa-banks-prioritise-governance-to-harness-ai-fast/DZQ58MV8EGBvzXy2"
+        },
+        {
+          "date": "2026-04-15",
+          "publisher": "The New Stack",
+          "title": "What engineering leaders get wrong about data stack consolidation",
+          "url": "https://thenewstack.io/data-stack-consolidation-risks/"
+        },
+        {
+          "date": "2026-03-12",
+          "publisher": "EIN Presswire",
+          "title": "HCI Solutions Market 2026 Accelerating With Integrated Data Center Technologies",
+          "url": "https://www.einpresswire.com/article/898663075/hci-solutions-market-2026-accelerating-with-integrated-data-center-technologies"
+        },
+        {
+          "date": "2026-01-28",
+          "publisher": "The Register",
+          "title": "Yes, you can build an AI agent - here’s how, using LangFlow",
+          "url": "https://www.theregister.com/2026/01/28/a_beginners_guide_to_ai_agents/"
+        },
+        {
+          "date": "2025-12-10",
+          "publisher": "Business News Americas",
+          "title": "IBM expands AI capabilities at Latin American cloud region",
+          "url": "https://www.bnamericas.com/en/news/ibm-expands-ai-capabilities-at-latin-american-cloud-region"
+        },
+        {
+          "date": "2025-11-13",
+          "publisher": "Salesforce unveils simulation environment for training AI agents | CIO",
+          "title": "The biggest enterprise technology M&A deals of the year (so far)",
+          "url": "https://www.cio.com/article/196371/the-biggest-enterprise-technology-ma-deals.html"
+        },
+        {
+          "date": "2025-11-11",
+          "publisher": "Morningstar.com",
+          "title": "OpenSearch Software Foundation Welcomes IBM as a Premier Member",
+          "url": "https://www.morningstar.com/news/pr-newswire/20251111dc21147/opensearch-software-foundation-welcomes-ibm-as-a-premier-member"
+        },
+        {
+          "date": "2025-10-21",
+          "publisher": "CRN",
+          "title": "IBM Q3 2025 Earnings Preview: 5 Things To Know",
+          "url": "https://www.crn.com/news/ai/2025/ibm-q3-2025-earnings-preview-5-things-to-know"
+        },
+        {
+          "date": "2025-10-16",
+          "publisher": "CRN",
+          "title": "IBM To Boost SAP Regulated Industries Skills With Cognitus Buy",
+          "url": "https://www.crn.com/news/ai/2025/ibm-to-boost-sap-regulated-industries-skills-with-cognitus-buy"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 7,
+    "knownDetailedFundingAmount": {
+      "amount": 342571788,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 33.57,
+    "latestToEarliestKnownValuationMultiple": 140.31
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2024-07-24",
+      "growthChange90Days": 1,
+      "growthScore": 49,
+      "heatChange90Days": 1,
+      "heatScore": 42,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2025-02-07",
+        "probabilityPercent": 88.54
+      },
+      "funding": {
+        "generatedDate": "2025-11-15",
+        "probabilityPercent": 31.36,
+        "timingEstimatePercent": {
+          "within6Months": 15.4,
+          "months6To11": 13.03,
+          "months12To24": 20.35,
+          "beyond24Months": 24.99
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 93.85
+      },
+      "ipo": {
+        "generatedDate": "2025-04-27",
+        "probabilityPercent": 28.28
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "C3 AI is a provider of Enterprise AI software for accelerating digital transformation.",
+          "employeeRange": "1,001-5,000",
+          "name": "C3 AI",
+          "sharedCategories": [
+            "Software",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "MLOps",
+            "LLMOps",
+            "Data Pipelines"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Thinking Machines Lab is an AI research and product company that aims to increase understanding and customization of AI systems.",
+          "employeeRange": "11-50",
+          "name": "Thinking Machines Lab",
+          "sharedCategories": [
+            "Software",
+            "Artificial Intelligence (AI)",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "MLOps",
+            "LLMOps"
+          ],
+          "similarityScore": 94.578
+        },
+        {
+          "description": "IFS develops and delivers enterprise software solutions such as ERP, EAM, Service Management and Industrial AI",
+          "employeeRange": "5,001-10,000",
+          "name": "IFS",
+          "sharedCategories": [
+            "Software",
+            "Artificial Intelligence (AI)",
+            "Information Technology"
+          ],
+          "similarityScore": 89.753
+        },
+        {
+          "description": "Maisa offers an agentic process automation platform that enhances the performance of AI and LLM.",
+          "employeeRange": "11-50",
+          "name": "Maisa",
+          "sharedCategories": [
+            "Software",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Agentic Orchestration",
+            "LLMOps"
+          ],
+          "similarityScore": 85.052
+        },
+        {
+          "description": "H2O.ai is a machine learning platform that builds smart applications.",
+          "employeeRange": "251-500",
+          "name": "H2O.ai",
+          "sharedCategories": [
+            "Software",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "MLOps",
+            "LLMOps"
+          ],
+          "similarityScore": 80.218
+        }
+      ]
+    },
+    "aiResearchSummary": {
+      "notFact": true,
+      "text": "DataStax is researching and developing methods for data streaming between nodes of a database system, as described in 'Data streaming between nodes of a database system,' which details how nodes in a cluster transfer data segments efficiently. Additionally, 'Trie-based indices for databases' outlines the use of byte ordering for keys and trie indices to reference stored data, enhancing database indexing. These areas reflect a focus on distributed database performance and indexing techniques."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Venture round round raised $115,000,000, or 33.57% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $11,403,515 to $1,600,000,000, a 140.31x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 49 (+1 over 90 days) and market heat at 42 (+1).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include C3 AI, Thinking Machines Lab, IFS.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 574 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

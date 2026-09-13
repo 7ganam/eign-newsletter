@@ -1,0 +1,397 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T17:39:06.937Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T17:39:06.935Z",
+    "url": "https://www.crunchbase.com/organization/dlthub"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "dltHub",
+      "shortDescription": "dltHub is building an open source Python library called data load tool (dlt).",
+      "website": "https://dlthub.com/",
+      "foundedYear": 2021,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Wilmington, Delaware, United States",
+      "geographicRegions": [
+        "Greater Philadelphia Area",
+        "East Coast",
+        "Southern US"
+      ],
+      "industries": [
+        "Enterprise Software",
+        "SaaS",
+        "Software"
+      ],
+      "sectors": [
+        "Software"
+      ],
+      "founders": [
+        "Matthaus Krzykowski"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An open-source Python library for creating data ingestion pipelines that load data from various sources into structured datasets without requiring backends or containers.",
+        "name": "dlt (data load tool)"
+      },
+      {
+        "description": "A Python-based declarative configuration system and client for building data pipelines from REST APIs, enabling reusable and adaptable pipeline creation.",
+        "name": "REST API Source toolkit"
+      },
+      {
+        "description": "A tool that integrates dlt data loading pipelines with dbt transformations, enabling combined data ingestion and modeling in cloud environments like Google Cloud Functions.",
+        "name": "dlt-dbt runner"
+      },
+      {
+        "description": "A feature within dlt that tracks data provenance at both row and column levels, enabling detailed lineage and metadata management for data pipelines.",
+        "name": "Row and Column Level Lineage with dlt"
+      },
+      {
+        "description": "An automated process in dlt that infers, versions, and manages changes in data schemas to maintain structured and consistent data ingestion over time.",
+        "name": "Schema Evolution in dlt"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 14199990,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 3,
+      "detailedRoundCount": 3,
+      "lastFundingDate": "2025-11-04",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2025-11-04",
+          "amount": {
+            "amount": 7999990,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Bessemer Venture Partners"
+          ],
+          "postMoneyValuation": {
+            "amount": 44720015,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2023-12-15",
+          "amount": {
+            "amount": 4700000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Foundation Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 23111855,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2023-07-20",
+          "amount": {
+            "amount": 1500000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "leadInvestors": [
+            "DIG Ventures"
+          ],
+          "postMoneyValuation": {
+            "amount": 10201168,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 4,
+        "visibleNames": [
+          {
+            "name": "AAL VC",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Bessemer Venture Partners",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "DIG Ventures",
+            "rounds": [
+              "Pre Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Foundation Capital",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 7,
+      "includedUniqueCount": 7,
+      "items": [
+        {
+          "date": "2026-06-03",
+          "publisher": "Morningstar.com",
+          "title": "dltHub Named 2026 Snowflake Startup Program Product Partner of the Year",
+          "url": "https://www.morningstar.com/news/pr-newswire/20260603ln75258/dlthub-named-2026-snowflake-startup-program-product-partner-of-the-year"
+        },
+        {
+          "date": "2025-11-04",
+          "title": "Seed Round - dltHub"
+        },
+        {
+          "date": "2025-09-24",
+          "publisher": "Morningstar.com",
+          "title": "MotherDuck Announces European Cloud Region to Bring Serverless Analytics Built on DuckDB to EU Businesses",
+          "url": "https://www.morningstar.com/news/pr-newswire/20250924la81977/motherduck-announces-european-cloud-region-to-bring-serverless-analytics-built-on-duckdb-to-eu-businesses"
+        },
+        {
+          "date": "2025-09-24",
+          "publisher": "PR Newswire",
+          "title": "MotherDuck Announces European Cloud Region to Bring Serverless Analytics Built on DuckDB to EU Businesses",
+          "url": "https://www.prnewswire.com/news-releases/motherduck-announces-european-cloud-region-to-bring-serverless-analytics-built-on-duckdb-to-eu-businesses-302565314.html"
+        },
+        {
+          "date": "2023-12-15",
+          "title": "Seed Round - dltHub"
+        },
+        {
+          "date": "2023-09-20",
+          "publisher": "PR Newswire",
+          "title": "MotherDuck Raises $52.5 Million Series B Funding as ...",
+          "url": "https://www.prnewswire.com/news-releases/motherduck-raises-52-5-million-series-b-funding-as-duckdb-adoption-soars-301932741.html"
+        },
+        {
+          "date": "2023-07-20",
+          "title": "Pre Seed Round - dltHub"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 3,
+    "knownDetailedFundingAmount": {
+      "amount": 14199990,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 56.34,
+    "latestToEarliestKnownValuationMultiple": 4.38
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2024-01-18",
+      "growthChange90Days": 1,
+      "growthScore": 88,
+      "heatChange90Days": -13,
+      "heatScore": 59,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 68.68
+      },
+      "funding": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 92.85,
+        "timingEstimatePercent": {
+          "within6Months": 100,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 95.45
+      },
+      "ipo": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 3.89
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Airbyte is an open-source data integration engine that helps to sync data from applications to warehouses.",
+          "employeeRange": "101-250",
+          "name": "Airbyte",
+          "sharedSpecialties": [
+            "API Integration",
+            "Extract Transform Load (ETL)",
+            "Data Engineering",
+            "Data Quality and Observability",
+            "Data Lake Platforms",
+            "Data Warehousing",
+            "Change Data Capture",
+            "Data Pipelines"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Fivetran is a technology company that automates replicating data into a cloud data platforms.",
+          "employeeRange": "1,001-5,000",
+          "name": "Fivetran",
+          "sharedSpecialties": [
+            "API Integration",
+            "Data Lineage Management",
+            "Extract Transform Load (ETL)",
+            "Data Engineering",
+            "Data Cataloging",
+            "Data Quality and Observability",
+            "Data Lake Platforms",
+            "Data Warehousing",
+            "Change Data Capture",
+            "Data Pipelines"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Meltano is an open source data integration platform delivering scalable enterprise pipelines without vendor lock-in or usage-based pricing.",
+          "employeeRange": "11-50",
+          "name": "Meltano",
+          "sharedCategories": [
+            "SaaS",
+            "Software",
+            "Enterprise Software"
+          ],
+          "sharedSpecialties": [
+            "Extract Transform Load (ETL)"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "Hevo Data is a software-as-a-service company that provides an automated data pipeline platform.",
+          "employeeRange": "251-500",
+          "name": "Hevo Data",
+          "sharedCategories": [
+            "SaaS",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "API Integration",
+            "Data Lineage Management",
+            "Extract Transform Load (ETL)",
+            "Data Engineering",
+            "Data Cataloging",
+            "Data Quality and Observability",
+            "Metadata Management",
+            "Data Warehousing",
+            "Change Data Capture",
+            "Data Pipelines"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "Consolidate your customer and product data in minutesStitch, Inc.",
+          "employeeRange": "11-50",
+          "name": "Stitch",
+          "sharedSpecialties": [
+            "Extract Transform Load (ETL)",
+            "Data Engineering",
+            "Data Quality and Observability",
+            "Data Lake Platforms",
+            "Data Warehousing",
+            "Change Data Capture",
+            "Data Pipelines"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $7,999,990, or 56.34% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $10,201,168 to $44,720,015, a 4.38x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 88 (+1 over 90 days) and market heat at 59 (-13).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Airbyte, Fivetran, Meltano.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

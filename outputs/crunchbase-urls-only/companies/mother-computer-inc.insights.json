@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T18:19:21.746Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T18:19:21.745Z",
+    "url": "https://www.crunchbase.com/organization/mother-computer-inc"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Mother Computer",
+      "shortDescription": "Mother Computer develops local AI hardware and software systems for running open-source artificial intelligence models on-device.",
+      "description": "Mother Computer develops local artificial intelligence hardware and software systems that run open-source models directly on user devices. The company focuses on decentralized and private AI by tightly integrating a proprietary software stack with specialized computing hardware. Its flagship product, Mother I, is an AI supercomputer designed to train, serve, and orchestrate a wide range of open-source AI models locally. The supporting software stack handles training, high-speed inference, and multi-agent workflows without reliance on external cloud infrastructure. Mother Computer targets developers, creators, and organizations that require high-performance AI capabilities with direct control over models and data. Its offerings are positioned for use cases that benefit from local processing, including experimentation with open-source models, autonomous agents, and low-latency AI applications.",
+      "website": "https://mother.ai/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Autonomous Vehicles",
+        "Cloud Computing",
+        "Data Center Automation",
+        "Developer Tools",
+        "Enterprise Software",
+        "Hardware",
+        "Machine Learning",
+        "Privacy",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Hardware",
+        "Information Technology",
+        "Internet Services",
+        "Privacy and Security",
+        "Science and Engineering",
+        "Software",
+        "Transportation"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Mother I is a local AI supercomputer for running, training, and orchestrating open-source AI models directly on-device.",
+        "name": "Mother I"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 11,
+      "growthScore": 86,
+      "heatChange90Days": 74,
+      "heatScore": 76
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 84.01
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 86 (+11 over 90 days) and market heat at 76 (+74).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

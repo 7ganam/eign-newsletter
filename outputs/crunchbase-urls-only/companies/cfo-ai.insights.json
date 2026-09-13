@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T17:25:10.168Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T17:25:10.168Z",
+    "url": "https://www.crunchbase.com/organization/cfo-ai"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "cfo.ai",
+      "shortDescription": "Runway provides financial planning, modeling, forecasting, reporting, and AI analysis software for business teams.",
+      "description": "Runway provides financial planning and analysis software for finance teams and business operators. Its platform supports collaborative planning, financial modeling, forecasting, reporting, scenario analysis, revenue planning, headcount planning, and variance analysis. Runway connects with accounting, human resources, customer relationship management, billing, marketing, and other business systems to consolidate data into financial models and dashboards. Its AI Analyst helps users update models, examine scenarios, analyze variances, and identify financial insights. The platform also supports investor updates, interactive reports, multi-entity modeling, and shared access across departments.",
+      "website": "https://cfo.ai/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Accounting",
+        "Artificial Intelligence (AI)",
+        "Business Intelligence",
+        "Cloud Computing",
+        "Collaboration",
+        "Enterprise Software",
+        "Finance",
+        "Financial Services",
+        "SaaS"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Financial Services",
+        "Information Technology",
+        "Internet Services",
+        "Other",
+        "Professional Services",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A financial planning and analysis platform for collaborative modeling, forecasting, reporting, and business scenario analysis.",
+        "name": "Runway"
+      },
+      {
+        "description": "An AI feature that helps users update financial models, explore scenarios, analyze variances, and surface insights.",
+        "name": "AI Analyst"
+      },
+      {
+        "description": "Data integrations that connect accounting, HR, CRM, billing, marketing, and other business systems to Runway models.",
+        "name": "Runway Integrations"
+      },
+      {
+        "description": "An AI CFO that connects to business systems to build financial models, forecast cash, run scenarios, and investigate meaningful changes.",
+        "name": "Ari"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2026-09-10",
+          "publisher": "PR Newswire",
+          "title": "cfo.ai Launches an AI CFO Built for Founders",
+          "url": "https://www.prnewswire.com/news-releases/cfoai-launches-an-ai-cfo-built-for-founders-302875320.html"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatScore": 92
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 81.39
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

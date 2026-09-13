@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T19:10:48.506Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T19:10:48.504Z",
+    "url": "https://www.crunchbase.com/organization/val-town"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Val Town",
+      "shortDescription": "Val Town is a collaborative platform for writing, deploying, and running JavaScript and TypeScript code in the cloud.",
+      "website": "https://www.val.town/",
+      "foundedYear": 2022,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Brooklyn, New York, United States",
+      "geographicRegions": [
+        "Greater New York Area",
+        "East Coast",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Information Technology",
+        "Internet",
+        "Online Portals"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Internet Services"
+      ],
+      "founders": [
+        "Steve Krouse",
+        "Tom MacWright"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A cloud-based collaborative platform for writing, deploying, and running JavaScript and TypeScript code with features like API creation, scheduled cron jobs, and data persistence.",
+        "name": "Val Town Platform"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 7000000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2024-04-09",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2024-04-09",
+          "amount": {
+            "amount": 5500000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Accel"
+          ],
+          "postMoneyValuation": {
+            "amount": 27066210,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2022-08-01",
+          "amount": {
+            "amount": 1500000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Accel"
+          ],
+          "postMoneyValuation": {
+            "amount": 10993772,
+            "currency": "USD"
+          },
+          "type": "Pre Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 1,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Accel",
+            "rounds": [
+              "Seed Round",
+              "Pre Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2024-04-09",
+          "title": "Seed Round - Val Town"
+        },
+        {
+          "date": "2022-08-01",
+          "title": "Pre Seed Round - Val Town"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 2,
+    "knownDetailedFundingAmount": {
+      "amount": 7000000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 78.57,
+    "latestToEarliestKnownValuationMultiple": 2.46
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 1,
+      "growthScore": 56,
+      "heatChange90Days": 4,
+      "heatScore": 87
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 95.12
+      },
+      "funding": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 82.49,
+        "timingEstimatePercent": {
+          "within6Months": 66.03,
+          "months6To11": 0.01,
+          "months12To24": 0,
+          "beyond24Months": 33.96
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-08-15",
+        "probabilityPercent": 51.78
+      },
+      "ipo": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 3.98
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Replit provides a cloud-based development platform that enables users to write, run, and deploy applications in browsers.",
+          "employeeRange": "101-250",
+          "name": "Replit",
+          "sharedCategories": [
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Application Runtime Platforms",
+            "Database Platform Services",
+            "Code Editors and Integrated Development Environments (IDEs)",
+            "Internal Developer Platforms",
+            "Developer Portals"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "A secure runtime for JavaScript and TypeScript and a globally distributed JavaScript VM",
+          "employeeRange": "11-50",
+          "name": "Deno",
+          "sharedSpecialties": [
+            "Application Runtime Platforms",
+            "Function as a Service (FaaS)",
+            "Cloud Hosting",
+            "Serverless Computing",
+            "Developer Portals"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "Free, instant, collaborative sandboxes for rapid web development.",
+          "employeeRange": "11-50",
+          "name": "CodeSandbox",
+          "sharedCategories": [
+            "Internet",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Application Runtime Platforms",
+            "Cloud Hosting",
+            "Serverless Computing",
+            "Code Editors and Integrated Development Environments (IDEs)",
+            "Developer Portals"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Glitch is the friendly community where everyone builds the web.",
+          "employeeRange": "51-100",
+          "name": "Glitch",
+          "sharedCategories": [
+            "Internet"
+          ],
+          "sharedSpecialties": [
+            "Application Runtime Platforms",
+            "Code Editors and Integrated Development Environments (IDEs)"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Vercel is a developer platform that provides cloud infrastructure services for the web.",
+          "employeeRange": "1,001-5,000",
+          "name": "Vercel",
+          "sharedSpecialties": [
+            "Application Runtime Platforms",
+            "Cloud Hosting",
+            "Internal Developer Platforms",
+            "Developer Portals"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $5,500,000, or 78.57% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $10,993,772 to $27,066,210, a 2.46x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 56 (+1 over 90 days) and market heat at 87 (+4).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Replit, Deno, CodeSandbox.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

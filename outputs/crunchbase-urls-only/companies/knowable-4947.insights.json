@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T18:07:18.340Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T18:07:18.338Z",
+    "url": "https://www.crunchbase.com/organization/knowable-4947"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Knowable",
+      "shortDescription": "Knowable is an e-learning provider company.",
+      "website": "https://knowable.fyi/",
+      "foundedYear": 2019,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Los Angeles, California, United States",
+      "geographicRegions": [
+        "Greater Los Angeles Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "E-Learning"
+      ],
+      "sectors": [
+        "Education",
+        "Software"
+      ],
+      "founders": [
+        "Alex Benzer"
+      ]
+    },
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2021-01-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2021-01-01",
+          "investorCount": 2,
+          "postMoneyValuation": {
+            "amount": 8439043,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "Mucker Capital",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Upfront Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1,
+      "includedUniqueCount": 1,
+      "items": [
+        {
+          "date": "2021-01-01",
+          "title": "Seed Round - Knowable"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 1,
+      "growthScore": 83,
+      "heatChange90Days": 1,
+      "heatScore": 80
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 35.88
+      },
+      "funding": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 17.79,
+        "timingEstimatePercent": {
+          "within6Months": 13.92,
+          "months6To11": 11.98,
+          "months12To24": 19.19,
+          "beyond24Months": 54.9
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 66.88
+      },
+      "ipo": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 19.8
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Skillshare is an ed-tech platform offering online learning for creative fields.",
+          "employeeRange": "51-100",
+          "name": "Skillshare",
+          "sharedCategories": [
+            "E-Learning"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Udemy is an online learning platform that helps students, companies, and governments gain the skills they need to reach their goals.",
+          "employeeRange": "1,001-5,000",
+          "name": "Udemy",
+          "sharedCategories": [
+            "E-Learning"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "MasterClass is a provider of an online education platform designed to offer video based vocational courses.",
+          "employeeRange": "101-250",
+          "name": "MasterClass",
+          "similarityScore": 93
+        },
+        {
+          "description": "Coursera is an online education platform that offers classes for students",
+          "employeeRange": "101-250",
+          "name": "Coursera",
+          "sharedCategories": [
+            "E-Learning"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "EdX is a non-profit, open-source enterprise providing free online courses from universities around the world.",
+          "employeeRange": "51-100",
+          "name": "edX",
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $8,439,043 to $8,439,043, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 83 (+1 over 90 days) and market heat at 80 (+1).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Skillshare, Udemy, MasterClass.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

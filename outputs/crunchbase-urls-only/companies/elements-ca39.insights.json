@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T17:42:06.808Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T17:42:06.806Z",
+    "url": "https://www.crunchbase.com/organization/elements-ca39"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Elements",
+      "shortDescription": "Elements is a developer-first payments orchestration platform for merchants",
+      "description": "Elements is a payments orchestration platform for merchants and developers.",
+      "website": "https://www.elements.io/",
+      "foundedYear": 2020,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Payments",
+        "Transaction Processing"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Payments",
+        "Software"
+      ],
+      "founders": [
+        "Hao Min",
+        "Nafis Jamal"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An API designed for developers to implement payment infrastructure by routing transactions to any payment service provider (PSP).",
+        "name": "Payments API"
+      },
+      {
+        "description": "A secure PCI Level 1 compliant vault for storing customer payment data, acting as a custodian while the data ownership remains with the merchant.",
+        "name": "PCI Compliance Data Vault"
+      },
+      {
+        "description": "A platform feature that consolidates and organizes transaction data across multiple payment service providers into a single reporting interface.",
+        "name": "Unified Financial Reporting"
+      },
+      {
+        "description": "A service that routes payment transactions to any chosen payment service provider, enabling flexible payment processing.",
+        "name": "Payment Flow Routing"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2020-01-01",
+      "lastFundingType": "Series A",
+      "rounds": [
+        {
+          "announcedDate": "2020-01-01",
+          "investorCount": 2,
+          "type": "Series A"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "name": "Accel",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Firebolt Ventures",
+            "rounds": [
+              "Series A"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2022-09-29",
+          "title": "Elements acquired by Circle"
+        },
+        {
+          "date": "2020-01-01",
+          "title": "Series A - Elements"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": -3,
+      "growthScore": 5,
+      "heatChange90Days": -1,
+      "heatScore": 64
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 75.23
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Spreedly's open payments platform enables access to the global consumer, processing more than $60B GMV annually in more than 100 countries.",
+          "employeeRange": "101-250",
+          "name": "Spreedly",
+          "sharedCategories": [
+            "Payments"
+          ],
+          "sharedSpecialties": [
+            "Payment Processing",
+            "Tokenization Platforms",
+            "Merchant Services",
+            "Payment Fraud Detection",
+            "Payment Orchestration Platforms",
+            "Payment Gateway Services",
+            "Payment Analytics and Dashboard",
+            "API Management"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Gr4vy is a cloud payment orchestration platform that helps businesses manage their payment solutions",
+          "employeeRange": "11-50",
+          "name": "Gr4vy",
+          "sharedCategories": [
+            "Payments"
+          ],
+          "sharedSpecialties": [
+            "ACH and Bank Transfer Services",
+            "Alternative Payment Methods",
+            "Payment Processing",
+            "Tokenization Platforms",
+            "Payment Orchestration Platforms",
+            "Payment Gateway Services",
+            "Payment Analytics and Dashboard"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Primer provides payment infrastructure designed to help businesses manage and optimize payment operations through a single platform.",
+          "employeeRange": "101-250",
+          "name": "Primer",
+          "sharedCategories": [
+            "Payments"
+          ],
+          "sharedSpecialties": [
+            "Alternative Payment Methods",
+            "Tokenization Platforms",
+            "Merchant Services",
+            "Payment Fraud Detection",
+            "Payment Orchestration Platforms",
+            "Payment Gateway Services",
+            "Payment Analytics and Dashboard",
+            "API Analytics"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "VGS is the World'd Leader in Payment Tokenization",
+          "employeeRange": "251-500",
+          "name": "VGS",
+          "sharedCategories": [
+            "Payments"
+          ],
+          "sharedSpecialties": [
+            "Payment Processing",
+            "Tokenization Platforms",
+            "Merchant Services",
+            "Payment Orchestration Platforms",
+            "Payment Analytics and Dashboard"
+          ],
+          "similarityScore": 87
+        },
+        {
+          "description": "Zooz is a technology company that provides a payments platform designed to help merchants maximize their payments performance.",
+          "employeeRange": "51-100",
+          "name": "zooz",
+          "sharedCategories": [
+            "Payments"
+          ],
+          "sharedSpecialties": [
+            "ACH and Bank Transfer Services",
+            "Alternative Payment Methods",
+            "Payment Processing",
+            "Tokenization Platforms",
+            "Merchant Services",
+            "Payment Fraud Detection",
+            "Payment Orchestration Platforms",
+            "Payment Gateway Services",
+            "Payment Analytics and Dashboard"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 5 (-3 over 90 days) and market heat at 64 (-1).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Spreedly, Gr4vy, Primer.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

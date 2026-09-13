@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T17:06:08.452Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T17:06:08.451Z",
+    "url": "https://www.crunchbase.com/organization/allara-health"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Allara Health",
+      "shortDescription": "Allara Health provides telehealth care for chronic hormonal, metabolic, and gynecological conditions.",
+      "description": "Allara Health provides telehealth care for women with chronic hormonal, metabolic, and gynecological conditions. Its care model connects patients with medical providers and registered dietitians through video visits, messaging, testing, and ongoing check-ins. Services include diagnosis support, hormonal and metabolic testing, nutrition guidance, lifestyle recommendations, medication management when appropriate, and care plans for conditions such as PCOS, insulin resistance, endometriosis, thyroid disorders, menopause, and fertility issues.",
+      "website": "https://www.allarahealth.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "New York, United States",
+      "geographicRegions": [
+        "Greater New York Area",
+        "East Coast",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Fertility",
+        "Health Care",
+        "Health Diagnostics",
+        "Medical",
+        "mHealth",
+        "Nutrition",
+        "Personal Health",
+        "Telehealth",
+        "Women's"
+      ],
+      "sectors": [
+        "Community and Lifestyle",
+        "Food and Beverage",
+        "Health Care",
+        "Mobile"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A virtual healthcare program for chronic hormonal, metabolic, and gynecological conditions.",
+        "name": "Allara Telehealth Care"
+      },
+      {
+        "description": "Laboratory and imaging services used to evaluate hormonal, metabolic, reproductive, and related health conditions.",
+        "name": "Hormonal and Metabolic Testing"
+      },
+      {
+        "description": "Dietitian-led nutrition guidance, lifestyle recommendations, and dietary supplements for women's hormonal and metabolic health.",
+        "name": "Nutrition Care and Supplements"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 58,
+      "heatScore": 70
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}
