@@ -1,0 +1,488 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T18:18:20.204Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T18:18:20.200Z",
+    "url": "https://www.crunchbase.com/organization/modal-labs"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Modal Labs",
+      "shortDescription": "Modal is a serverless cloud infrastructure platform for running machine learning and data processing workloads.",
+      "description": "Modal is a serverless cloud infrastructure platform designed for running artificial intelligence, machine learning, and data processing workloads using code-based configuration. The company provides an environment where developers deploy functions for inference, training, batch processing, and data pipelines without managing servers or manual infrastructure setup. It offers GPU access and CPU resources that automatically scale based on workload demand, supporting applications such as large language model inference, model fine-tuning, and high-throughput computation tasks. Modal includes sandbox environments that execute isolated code for testing, evaluation, and agent-based workflows. The platform also integrates observability features that allow monitoring of logs, execution states, and performance metrics across workloads. It supports multi-cloud GPU scheduling and dynamic resource allocation to optimize compute availability across regions. Modal is used by teams building AI applications that require flexible compute scaling, low-latency execution, and simplified deployment workflows.",
+      "website": "https://modal.com/",
+      "foundedYear": 2021,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "51-100",
+      "estimatedRevenueRange": "$10M-$50M",
+      "headquarters": "New York, United States",
+      "geographicRegions": [
+        "Greater New York Area",
+        "East Coast",
+        "Northeastern US"
+      ],
+      "industries": [
+        "AI Infrastructure",
+        "Cloud Computing",
+        "Cloud Data Services",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Information Technology",
+        "Internet Services",
+        "Software"
+      ],
+      "founders": [
+        "Akshat Bubna",
+        "Erik Bernhardsson"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A cloud platform that runs Python functions with instant autoscaling on GPUs and CPUs for machine learning inference, training, and batch processing.",
+        "name": "Modal Serverless AI Infrastructure"
+      },
+      {
+        "description": "On-demand provisioning of Nvidia GPUs (A100, H100, B200, etc.) with pre-installed drivers and packages for ML training and inference.",
+        "name": "Modal GPU Provisioning and Management"
+      },
+      {
+        "description": "Distributed cloud storage solutions including network volumes, key-value stores, and queues accessible via Python syntax for managing ML data and weights.",
+        "name": "Modal Cloud Storage and Data Management"
+      },
+      {
+        "description": "A scheduling system for managing workloads with cron jobs, retries, timeouts, and batching to optimize resource usage.",
+        "name": "Modal Job Scheduling and Orchestration"
+      },
+      {
+        "description": "Deploy and manage web services with custom domains, streaming, websockets, and secure HTTPS endpoints for AI applications.",
+        "name": "Modal Web Endpoints and API Hosting"
+      },
+      {
+        "description": "Secure and flexible execution environments for running generated or custom code safely in isolated sandboxes.",
+        "name": "Modal Sandboxed Code Execution"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 465495842,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 5,
+      "detailedRoundCount": 5,
+      "lastFundingDate": "2026-05-21",
+      "lastFundingType": "Series C",
+      "rounds": [
+        {
+          "announcedDate": "2026-05-21",
+          "amount": {
+            "amount": 355000000,
+            "currency": "USD"
+          },
+          "investorCount": 6,
+          "leadInvestors": [
+            "General Catalyst",
+            "Redpoint"
+          ],
+          "postMoneyValuation": {
+            "amount": 4650000000,
+            "currency": "USD"
+          },
+          "type": "Series C"
+        },
+        {
+          "announcedDate": "2025-09-29",
+          "amount": {
+            "amount": 87000000,
+            "currency": "USD"
+          },
+          "investorCount": 4,
+          "leadInvestors": [
+            "Lux Capital Management, LLC"
+          ],
+          "postMoneyValuation": {
+            "amount": 1100000000,
+            "currency": "USD"
+          },
+          "type": "Series B"
+        },
+        {
+          "announcedDate": "2024-08-20",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 380822053,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2023-10-10",
+          "amount": {
+            "amount": 16495842,
+            "currency": "USD"
+          },
+          "investorCount": 34,
+          "leadInvestors": [
+            "Redpoint"
+          ],
+          "postMoneyValuation": {
+            "amount": 124461384,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2022-01-01",
+          "amount": {
+            "amount": 7000000,
+            "currency": "USD"
+          },
+          "investorCount": 5,
+          "leadInvestors": [
+            "Amplify Partners"
+          ],
+          "postMoneyValuation": {
+            "amount": 37349141,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 44,
+        "visibleNames": [
+          {
+            "name": "Accel",
+            "rounds": [
+              "Series C"
+            ]
+          },
+          {
+            "name": "Amplify Partners",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Bain Capital Ventures",
+            "rounds": [
+              "Series C"
+            ]
+          },
+          {
+            "name": "Gaingels"
+          },
+          {
+            "isLead": true,
+            "name": "General Catalyst",
+            "rounds": [
+              "Series C"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Lux Capital Management, LLC",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Menlo Ventures",
+            "rounds": [
+              "Series C"
+            ]
+          },
+          {
+            "name": "Neo",
+            "rounds": [
+              "Series C"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Redpoint",
+            "rounds": [
+              "Series C",
+              "Series B"
+            ]
+          },
+          {
+            "name": "Scott Belsky",
+            "rounds": [
+              "Series B"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 66,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-09-11",
+          "publisher": "legacy.thefly.com",
+          "title": "Cohere in advanced talks to raise up to $3B, The Globe and Mail says",
+          "url": "https://thefly.com/$PRIVATE"
+        },
+        {
+          "date": "2026-08-24",
+          "publisher": "RuntimeWire",
+          "title": "Cognition's Devin Outposts moves code execution onto customer-controlled infrastructure",
+          "url": "https://runtimewire.com/article/devin-multi-vm-cloud-agents-modal-outposts"
+        },
+        {
+          "date": "2026-08-19",
+          "publisher": "KDnuggets",
+          "title": "5 Tools for Building and Deploying AI Agents in Production",
+          "url": "https://www.kdnuggets.com/5-tools-for-building-and-deploying-ai-agents-in-production"
+        },
+        {
+          "date": "2026-08-10",
+          "publisher": "Tech Times",
+          "title": "Democrats Demand Altman, Amodei Testify Under Oath: AI Breached Five Firms",
+          "url": "https://www.techtimes.com/articles/323835/20260810/democrats-demand-altman-amodei-testify-under-oath-ai-breached-five-firms.htm"
+        },
+        {
+          "date": "2026-08-07",
+          "publisher": "Tech.eu",
+          "title": "Chip startup Olix raises $312M, Mobilise launches investment arm, and a deep dive into July funding",
+          "url": "https://tech.eu/2026/08/07/chip-startup-olix-raises-312m-mobilise-launches-investment-arm-and-a-deep-dive-into-july-funding/"
+        },
+        {
+          "date": "2026-08-06",
+          "publisher": "Tech.eu",
+          "title": "New York-headquartered AI startup Modal Labs to open London office",
+          "url": "https://tech.eu/2026/08/06/new-york-headquartered-ai-startup-modal-labs-to-open-london-office/"
+        },
+        {
+          "date": "2026-08-03",
+          "publisher": "Crunchbase News",
+          "title": "‘A Rare Land-Grab Moment’: Menlo Ventures’ Matt Murphy On The Next Wave of AI And Putting $3B In New Capital To Work",
+          "url": "https://news.crunchbase.com/venture/menlo-ventures-matt-murphy-anthropic-ai-investment-thesis/"
+        },
+        {
+          "date": "2026-07-29",
+          "publisher": "ain.ua",
+          "title": "Uncontrolled OpenAI AI Agent Escaped Again and Hacked a Modal Labs Customer",
+          "url": "https://en.ain.ua/2026/07/29/uncontrolled-openai-ai-agent-escaped-again-and-hacked-a-modal-labs-customer/"
+        },
+        {
+          "date": "2026-07-29",
+          "publisher": "Business Standard India",
+          "title": "OpenAI's AI agents compromised a customer at second tech firm Modal",
+          "url": "https://www.business-standard.com/world-news/openai-s-ai-agents-compromised-a-customer-at-second-tech-firm-modal-126072900191_1.html"
+        },
+        {
+          "date": "2026-07-29",
+          "publisher": "Gadgets 360",
+          "title": "OpenAI's Rogue Agent Compromised a Customer at a Second Tech Firm, Executive Says",
+          "url": "https://www.gadgets360.com/ai/news/openai-rogue-agent-hugging-face-compromise-second-tech-firm-11838293"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 4,
+    "knownDetailedFundingAmount": {
+      "amount": 465495842,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 76.26,
+    "latestToEarliestKnownValuationMultiple": 124.5
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2026-08-12",
+      "growthChange90Days": 1,
+      "growthScore": 94,
+      "heatChange90Days": -7,
+      "heatScore": 81,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-13",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 94.77,
+        "timingEstimatePercent": {
+          "within6Months": 100,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 94.87
+      },
+      "ipo": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 10.23
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Fireworks AI is an advanced platform that enables users to build, tune, and scale AI applications using open-source models",
+          "employeeRange": "101-250",
+          "name": "Fireworks AI",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "MLOps",
+            "LLMOps",
+            "AI Inference",
+            "Distributed Training"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Google specializes in internet-related services and products, including search, advertising, and software.",
+          "employeeRange": "10,001+",
+          "name": "Google",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 99.64
+        },
+        {
+          "description": "Together AI provides a cloud platform for developing, training, fine-tuning, and deploying generative AI models.",
+          "employeeRange": "251-500",
+          "name": "Together Computer",
+          "sharedCategories": [
+            "AI Infrastructure"
+          ],
+          "sharedSpecialties": [
+            "GPU Cloud Infrastructure",
+            "MLOps",
+            "LLMOps",
+            "AI Inference",
+            "Data Center GPUs",
+            "Distributed Training"
+          ],
+          "similarityScore": 98.57
+        },
+        {
+          "description": "Baseten provides the necessary infrastructure, tooling, and expertise to integrate AI into business operations.",
+          "employeeRange": "251-500",
+          "name": "Baseten",
+          "sharedCategories": [
+            "AI Infrastructure",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "GPU Cloud Infrastructure",
+            "MLOps",
+            "LLMOps",
+            "AI Inference",
+            "Distributed Training"
+          ],
+          "similarityScore": 97.86
+        },
+        {
+          "description": "Replicate provides a platform for open source machine learning models that enables users to run and refine open-source models with an API.",
+          "employeeRange": "11-50",
+          "name": "Replicate",
+          "sharedCategories": [
+            "AI Infrastructure"
+          ],
+          "sharedSpecialties": [
+            "Application Runtime Platforms",
+            "GPU Cloud Infrastructure",
+            "MLOps",
+            "LLMOps",
+            "AI Inference",
+            "Distributed Training"
+          ],
+          "similarityScore": 96
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Series C round raised $355,000,000, or 76.26% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $37,349,141 to $4,650,000,000, a 124.5x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 94 (+1 over 90 days) and market heat at 81 (-7).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Fireworks AI, Google, Together Computer.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 66 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

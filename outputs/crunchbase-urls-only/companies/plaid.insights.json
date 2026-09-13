@@ -1,0 +1,643 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T18:34:10.089Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T18:34:10.084Z",
+    "url": "https://www.crunchbase.com/organization/plaid"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Plaid",
+      "shortDescription": "Plaid develops financial technology infrastructure that enables applications to connect with users' bank accounts and financial data.",
+      "description": "Plaid develops financial technology infrastructure that enables applications to connect with users' bank accounts and financial data. The company provides APIs that facilitate secure access to consumer-permissioned banking, investment, and credit information across various financial institutions.\n\nPlaid’s platform supports services such as personal finance management, payments, lending, and identity verification. It is commonly used by fintech applications to streamline onboarding, verify account ownership, and aggregate financial data in real-time. By bridging financial institutions and digital tools, Plaid plays a role in enabling the development of consumer-facing financial services and tools.",
+      "website": "https://plaid.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "501-1,000",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Banking",
+        "Financial Services",
+        "FinTech",
+        "Fraud Detection"
+      ],
+      "sectors": [
+        "Financial Services",
+        "Lending and Investments",
+        "Privacy and Security"
+      ],
+      "founders": [
+        "William Hockey",
+        "Zachary Perret"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A financial data connectivity platform that lets applications access user-permissioned bank and financial-account data through APIs.",
+        "name": "Plaid Network and APIs"
+      },
+      {
+        "description": "An embeddable connection interface that enables users to securely connect bank and financial accounts to applications.",
+        "name": "Plaid Link"
+      },
+      {
+        "description": "An API-driven payment service for initiating and managing ACH, real-time payment, and FedNow transfers.",
+        "name": "Transfer"
+      },
+      {
+        "description": "A bank-account verification service that provides account and routing numbers for payment and account-linking workflows.",
+        "name": "Auth"
+      },
+      {
+        "description": "A financial data API that provides up to 24 months of categorized transaction history from linked accounts.",
+        "name": "Transactions"
+      },
+      {
+        "description": "A bank-account data service that returns account-holder and ownership information for linked financial accounts.",
+        "name": "Identity"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 1309300000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 9,
+      "detailedRoundCount": 9,
+      "lastFundingDate": "2026-02-26",
+      "lastFundingType": "Secondary Market",
+      "rounds": [
+        {
+          "announcedDate": "2026-02-26",
+          "postMoneyValuation": {
+            "amount": 8000000000,
+            "currency": "USD"
+          },
+          "type": "Secondary Market"
+        },
+        {
+          "announcedDate": "2025-04-03",
+          "amount": {
+            "amount": 575000000,
+            "currency": "USD"
+          },
+          "investorCount": 9,
+          "leadInvestors": [
+            "Franklin Templeton"
+          ],
+          "postMoneyValuation": {
+            "amount": 6100000000,
+            "currency": "USD"
+          },
+          "type": "Venture round"
+        },
+        {
+          "announcedDate": "2025-04-03",
+          "type": "Secondary Market"
+        },
+        {
+          "announcedDate": "2021-08-17",
+          "investorCount": 8,
+          "leadInvestors": [
+            "The Players Impact"
+          ],
+          "postMoneyValuation": {
+            "amount": 13421557601,
+            "currency": "USD"
+          },
+          "type": "Series D"
+        },
+        {
+          "announcedDate": "2021-04-07",
+          "amount": {
+            "amount": 425000000,
+            "currency": "USD"
+          },
+          "investorCount": 11,
+          "leadInvestors": [
+            "Altimeter Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 13400000000,
+            "currency": "USD"
+          },
+          "type": "Series D"
+        },
+        {
+          "announcedDate": "2018-12-11",
+          "amount": {
+            "amount": 250000000,
+            "currency": "USD"
+          },
+          "investorCount": 8,
+          "leadInvestors": [
+            "Index Ventures",
+            "Kleiner Perkins"
+          ],
+          "postMoneyValuation": {
+            "amount": 2650000000,
+            "currency": "USD"
+          },
+          "type": "Series C"
+        },
+        {
+          "announcedDate": "2016-06-19",
+          "amount": {
+            "amount": 44000000,
+            "currency": "USD"
+          },
+          "investorCount": 8,
+          "leadInvestors": [
+            "Goldman Sachs Investment Partners"
+          ],
+          "postMoneyValuation": {
+            "amount": 338484624,
+            "currency": "USD"
+          },
+          "type": "Series B"
+        },
+        {
+          "announcedDate": "2014-11-15",
+          "amount": {
+            "amount": 12500000,
+            "currency": "USD"
+          },
+          "investorCount": 5,
+          "leadInvestors": [
+            "New Enterprise Associates",
+            "Spark Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 64920258,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2013-09-19",
+          "amount": {
+            "amount": 2800000,
+            "currency": "USD"
+          },
+          "investorCount": 5,
+          "leadInvestors": [
+            "Spark Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 12442000,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 35,
+        "visibleNames": [
+          {
+            "name": "Altimeter Capital",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "Andreessen Horowitz"
+          },
+          {
+            "name": "Base10 Partners"
+          },
+          {
+            "name": "BlackRock",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "Coatue"
+          },
+          {
+            "name": "Company Ventures",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "Fidelity",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Franklin Templeton",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "GoalVest Venture Capital",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "HDS Capital",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "Index Ventures"
+          },
+          {
+            "name": "New Enterprise Associates",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "Norwest"
+          },
+          {
+            "name": "Pathlight Ventures",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "Ribbit Capital",
+            "rounds": [
+              "Venture round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1317,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-09-11",
+          "publisher": "legacy.thefly.com",
+          "title": "Cohere in advanced talks to raise up to $3B, The Globe and Mail says",
+          "url": "https://thefly.com/$PRIVATE"
+        },
+        {
+          "date": "2026-08-24",
+          "publisher": "Crowdfund Insider",
+          "title": "Thredd, Apple Pay, Kraken, Nium Among Those Announcing Product Releases, Partnerships This Week",
+          "url": "https://www.crowdfundinsider.com/2026/08/300372-thredd-apple-pay-kraken-nium-among-those-announcing-product-releases-partnerships-this-week/"
+        },
+        {
+          "date": "2026-08-19",
+          "publisher": "Retail Banker International",
+          "title": "Personetics integrates Plaid open banking data",
+          "url": "https://www.retailbankerinternational.com/news/personetics-plaid-banking-data/"
+        },
+        {
+          "date": "2026-08-17",
+          "publisher": "EIN Presswire",
+          "title": "Vikar reports H1 2026 growth with 33% increase in clients, expanded fintech partnerships",
+          "url": "https://www.einpresswire.com/article/934222474/vikar-reports-h1-2026-growth-with-33-increase-in-clients-expanded-fintech-partnerships"
+        },
+        {
+          "date": "2026-08-17",
+          "publisher": "GlobalFinTechSeries",
+          "title": "Vikar Reports H1 2026 Growth with 33% Increase in Clients, Expanded Fintech Partnerships",
+          "url": "https://globalfintechseries.com/fintech/vikar-reports-h1-2026-growth-with-33-increase-in-clients-expanded-fintech-partnerships/"
+        },
+        {
+          "date": "2026-08-17",
+          "publisher": "Paypers",
+          "title": "Personetics and Plaid partner on Open Finance data",
+          "url": "https://thepaypers.com/fintech/news/personetics-and-plaid-partner-on-open-finance-data"
+        },
+        {
+          "date": "2026-08-13",
+          "publisher": "Morningstar.com",
+          "title": "Top Financial Services and Fintech Executives Join Speaker Lineup at the Fintech Sandbox Innovation Forum During Boston Fintech Week 2026",
+          "url": "https://www.morningstar.com/news/accesswire/1206779msn/top-financial-services-and-fintech-executives-join-speaker-lineup-at-the-fintech-sandbox-innovation-forum-during-boston-fintech-week-2026"
+        },
+        {
+          "date": "2026-08-04",
+          "publisher": "The Fintech Times",
+          "title": "Vikar Technologies Integrates Plaid for Bank Account Opening",
+          "url": "https://thefintechtimes.com/vikar-technologies-integrates-plaid-for-bank-account-opening/"
+        },
+        {
+          "date": "2026-08-04",
+          "publisher": "Nexus - Mena Fintech Association",
+          "title": "Plaid and Sierra Collaborate on AI Agent Interface for Financial Services",
+          "url": "https://mena-fintechnexus.org/news/ai-agent-interface-plaid-and-sierra-collaborate-on/"
+        },
+        {
+          "date": "2026-08-04",
+          "publisher": "Paypers",
+          "title": "Plaid and Sierra partner to embed bank data in AI agents",
+          "url": "https://thepaypers.com/payments/news/plaid-and-sierra-partner-to-embed-bank-data-in-ai-agents"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 6,
+    "knownDetailedFundingAmount": {
+      "amount": 1309300000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestToEarliestKnownValuationMultiple": 642.98
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "reportedPartnerships": {
+      "note": "Provider event summaries with linked sources; not independently verified.",
+      "items": [
+        {
+          "date": "2026-07-08",
+          "description": "PLAID has been certified as a Databricks Consulting & Systems Integrator (C&SI) partner, formalizing a collaboration where PLAID provides consulting and implementation services on Databricks' data and AI platform for Japanese enterprises.",
+          "sources": [
+            {
+              "date": "2026-07-08",
+              "publisher": "PR TIMES",
+              "title": "プレイド、DatabricksのConsulting & Systems Integrator（C&SI）パートナーに認定",
+              "url": "https://prtimes.jp/main/html/rd/p/000000360.000010620.html"
+            }
+          ]
+        },
+        {
+          "date": "2026-05-22",
+          "description": "Plaid has formed a partnership with OpenAI that allows ChatGPT to aggregate and contextualize consumers’ financial accounts, deepening AI-driven financial insights and recommendations.",
+          "sources": [
+            {
+              "date": "2026-05-22",
+              "publisher": "Finovate",
+              "title": "The Consumer Credit Stack Is Being Rebuilt in Real Time",
+              "url": "https://finovate.com/the-consumer-credit-stack-is-being-rebuilt-in-real-time/"
+            }
+          ]
+        },
+        {
+          "date": "2026-02-19",
+          "description": "Plaid formed a new partnership with AI-powered banking platform Backbase to address data fragmentation in banking and improve innovation and customer experience.",
+          "sources": [
+            {
+              "date": "2026-02-26",
+              "publisher": "PYMNTS.com",
+              "title": "Plaid’s Valuation Hits $8 Billion in New Funding Round",
+              "url": "https://www.pymnts.com/news/fintech-investments/2026/plaids-valuation-hits-8-billion-in-new-funding-round/"
+            }
+          ]
+        },
+        {
+          "date": "2026-01-24",
+          "description": "Plaid formed new partnerships with Zilch, Raylo, Lightspeed, Squarespace, and You Need A Budget to enable and optimize bank-based and open banking payments across the UK and Europe.",
+          "sources": [
+            {
+              "date": "2026-01-24",
+              "publisher": "Crowdfund Insider",
+              "title": "Fintech Plaid Reports Growth in Open Banking Adoption, Improves Platform Security",
+              "url": "https://www.crowdfundinsider.com/2026/01/257893-fintech-plaid-reports-growth-in-open-banking-adoption-improves-platform-security/"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-04",
+          "description": "Plaid and ClearBank announced a new strategic partnership to use ClearBank’s virtual accounts and Faster Payments access to power Plaid’s Pay by Bank and open banking payment capabilities in the UK.",
+          "sources": [
+            {
+              "date": "2025-12-04",
+              "publisher": "Finovate",
+              "title": "Plaid Partners with ClearBank; Announces AI-Enabled Transaction Categorization",
+              "url": "https://finovate.com/plaid-partners-with-clearbank-announces-ai-enabled-transaction-categorization/"
+            }
+          ]
+        },
+        {
+          "date": "2025-10-19",
+          "description": "Plaid announced a partnership with FairPlay to independently assess the fairness and performance of its new LendScore credit risk model.",
+          "sources": [
+            {
+              "date": "2025-10-19",
+              "publisher": "Crowdfund Insider",
+              "title": "Plaid Introduces LendScore, Leveraging Real-Time Cash Flow Data and Account Connection Insights",
+              "url": "https://www.crowdfundinsider.com/2025/10/254766-plaid-introduces-lendscore-leveraging-real-time-cash-flow-data-and-account-connection-insights/"
+            }
+          ]
+        },
+        {
+          "date": "2025-09-02",
+          "description": "Plaid announced an integration with Replit to let product managers and developers rapidly prototype fintech apps using Plaid APIs in Replit’s browser-based IDE, enabling quick setup and real-time testing of account linking, transactions, and payments.",
+          "sources": [
+            {
+              "date": "2025-09-02",
+              "publisher": "Crowdfund Insider",
+              "title": "Fintech Plaid Announces Integration with Replit to Prototype Financial Technology Apps",
+              "url": "https://www.crowdfundinsider.com/2025/09/248884-fintech-plaid-announces-integration-with-replit-to-prototype-financial-technology-apps/"
+            }
+          ]
+        },
+        {
+          "date": "2025-06-02",
+          "description": "Plaid and Visa announced a partnership to power smarter pay-by-bank experiences, launching first in the UK and planning expansion across Europe.",
+          "sources": [
+            {
+              "date": "2025-06-02",
+              "publisher": "Finovate",
+              "title": "Fintech Rundown: A Rapid Review of Weekly News",
+              "url": "https://finovate.com/fintech-rundown-a-rapid-review-of-weekly-news-69/"
+            }
+          ]
+        }
+      ]
+    },
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2026-07-19",
+      "growthChange90Days": -7,
+      "growthScore": 90,
+      "heatChange90Days": -19,
+      "heatScore": 59,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-13",
+        "probabilityPercent": 72.65
+      },
+      "funding": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 85.09,
+        "timingEstimatePercent": {
+          "within6Months": 99.74,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0.26
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 95.03
+      },
+      "ipo": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 95.01
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Stripe is a financial technology company that provides online payment processing and payment infrastructure for businesses.",
+          "employeeRange": "5,001-10,000",
+          "name": "Stripe",
+          "sharedCategories": [
+            "Fraud Detection",
+            "Financial Services",
+            "FinTech"
+          ],
+          "sharedSpecialties": [
+            "Payment Processing",
+            "KYC Automation",
+            "Payment Fraud Detection"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "MX Technologies is a fintech company that aims to connect people with financial data in a way that automates the money experience.",
+          "employeeRange": "501-1,000",
+          "name": "MX Technologies",
+          "sharedCategories": [
+            "Banking",
+            "Financial Services",
+            "FinTech"
+          ],
+          "sharedSpecialties": [
+            "API Integration",
+            "Personal Finance Management (PFM) Platforms",
+            "Open Banking Infrastructure",
+            "Account Verification and KYC"
+          ],
+          "similarityScore": 96
+        },
+        {
+          "description": "Rain is a fintech company that builds stablecoin-powered payment infrastructure, allowing businesses and individuals to use tokenized money.",
+          "employeeRange": "101-250",
+          "name": "Rain",
+          "sharedCategories": [
+            "FinTech"
+          ],
+          "sharedSpecialties": [
+            "Payment Processing",
+            "Payment Fraud Detection",
+            "Account Verification and KYC"
+          ],
+          "similarityScore": 94.562
+        },
+        {
+          "description": "Alloy is a developer of an identity verification platform used to detect fraud and make identity management effective and simple for banks.",
+          "employeeRange": "251-500",
+          "name": "Alloy",
+          "sharedCategories": [
+            "Fraud Detection",
+            "Financial Services",
+            "FinTech"
+          ],
+          "sharedSpecialties": [
+            "KYC Automation",
+            "Trade Sanctions and OFAC Compliance",
+            "Fraud Prevention",
+            "Alternative Credit Data and Scoring",
+            "Account Verification and KYC"
+          ],
+          "similarityScore": 90.046
+        },
+        {
+          "description": "Socure provides digital identity verification, fraud prevention, and regulatory compliance software through an AI-driven platform.",
+          "employeeRange": "501-1,000",
+          "name": "Socure",
+          "sharedCategories": [
+            "Fraud Detection",
+            "Financial Services"
+          ],
+          "sharedSpecialties": [
+            "KYC Automation",
+            "Trade Sanctions and OFAC Compliance",
+            "Fraud Prevention",
+            "Account Verification and KYC"
+          ],
+          "similarityScore": 85.23
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $12,442,000 to $8,000,000,000, a 642.98x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 90 (-7 over 90 days) and market heat at 59 (-19).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Stripe, MX Technologies, Rain.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 1317 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

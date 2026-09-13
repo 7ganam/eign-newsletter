@@ -1,0 +1,382 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T18:35:29.229Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T18:35:29.227Z",
+    "url": "https://www.crunchbase.com/organization/polars"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Polars",
+      "shortDescription": "Polars develops open-source DataFrame software for data processing, transformation, querying, and data manipulation.",
+      "description": "Polars is an open-source data analytics platform built on a Rust query engine for high-performance processing of structured datasets. The company supports lazy and eager execution, streaming for larger-than-memory workloads, automatic query optimization, and parallel computation. The platform integrates with Apache Arrow, Delta Lake, cloud object storage, databases, and common file formats including Parquet, CSV, JSON, and Avro.",
+      "website": "https://www.pola.rs/",
+      "foundedYear": 2020,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Amsterdam, Noord-Holland, The Netherlands",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Analytics",
+        "Big Data",
+        "Data Integration",
+        "Developer Tools",
+        "Enterprise Software",
+        "Open Source"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Information Technology",
+        "Software"
+      ],
+      "founders": [
+        "Chiel Peters",
+        "Ritchie Vink"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An open-source, high-performance DataFrame library for Python, Rust, and JavaScript that supports data manipulation, querying, transformation, and analysis on a single machine.",
+        "name": "Polars"
+      },
+      {
+        "description": "A managed platform for running Polars queries on cloud or on-premises infrastructure, with scalable compute and the same API used by the open-source library.",
+        "name": "Polars Cloud"
+      },
+      {
+        "description": "A paid support program providing enterprise users with prioritized bug handling, feature-request consideration, developer consultations, nightly builds, and team training.",
+        "name": "Polars Enterprise Support"
+      },
+      {
+        "description": "A professional training service that teaches organizations how to use Polars for data manipulation, time-series analysis, nested data, performance optimization, and custom extensions.",
+        "name": "Polars Academy"
+      },
+      {
+        "description": "A major release of the Polars open-source data-processing library that defaults LazyFrame queries to a streaming engine for improved memory efficiency and performance.",
+        "name": "Polars 2.0"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 25057343,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 2,
+      "detailedRoundCount": 2,
+      "lastFundingDate": "2025-09-29",
+      "lastFundingType": "Series A",
+      "rounds": [
+        {
+          "announcedDate": "2025-09-29",
+          "amount": {
+            "amount": 21115162,
+            "currency": "USD"
+          },
+          "investorCount": 5,
+          "leadInvestors": [
+            "Accel"
+          ],
+          "postMoneyValuation": {
+            "amount": 76954432,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2023-08-03",
+          "amount": {
+            "amount": 3942181,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Bain Capital Ventures"
+          ],
+          "postMoneyValuation": {
+            "amount": 25942026,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 5,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Accel",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Bain Capital Ventures",
+            "rounds": [
+              "Series A",
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Bob van Luijt",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Jeroen Tas",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Thomas Wolf",
+            "rounds": [
+              "Series A"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 17,
+      "includedUniqueCount": 9,
+      "items": [
+        {
+          "date": "2026-09-06",
+          "publisher": "The New Stack",
+          "title": "Polars 2.0 pre-release comes with a 5x speed boost — but it could change row order",
+          "url": "https://thenewstack.io/polars-streaming-row-order/"
+        },
+        {
+          "date": "2025-09-30",
+          "publisher": "Silicon Canals",
+          "title": "Amsterdam’s Polars raises €18M in Series A led by Accel to advance data processing at scale",
+          "url": "https://siliconcanals.com/amsterdams-polars-raises-18m/"
+        },
+        {
+          "date": "2025-09-29",
+          "publisher": "Tech Startups - Startups and Technology news",
+          "title": "Top Startup and Tech Funding News – September 29, 2025",
+          "url": "https://techstartups.com/2025/09/29/top-startup-and-tech-funding-news-september-29-2025/"
+        },
+        {
+          "date": "2025-09-29",
+          "title": "Series A - Polars"
+        },
+        {
+          "date": "2025-09-29",
+          "publisher": "Tech Startups - Startups and Technology news",
+          "title": "Checkout.com’s valuation crashes from $40 billion to $12 billion as employees cash out shares",
+          "url": "https://techstartups.com/2025/09/29/checkout-coms-valuation-crashes-from-40-billion-to-12-billion-as-employees-cash-out-shares/"
+        },
+        {
+          "date": "2025-09-29",
+          "publisher": "FoundersToday",
+          "title": "Polars raises $21M to scale its open-source data engine into the cloud era",
+          "url": "https://www.founderstoday.news/polars-raises-21-millions-in-funding/"
+        },
+        {
+          "date": "2025-09-29",
+          "publisher": "TechCrunch",
+          "title": "The startup behind open source tool Polars raises $21M from Accel",
+          "url": "https://techcrunch.com/2025/09/29/the-startup-behind-open-source-tool-polars-raises-21m-from-accel/"
+        },
+        {
+          "date": "2025-09-29",
+          "publisher": "Tech Startups - Startups and Technology news",
+          "title": "AI recruiting startup Alex raises $20M in funding to match the right talent with the right jobs using AI",
+          "url": "https://techstartups.com/2025/09/29/ai-recruiting-startup-alex-raises-20m-in-funding-to-match-the-right-talent-with-the-right-jobs-using-ai/"
+        },
+        {
+          "date": "2025-08-19",
+          "publisher": "The New Stack",
+          "title": "Rust: Python’s New Performance Engine",
+          "url": "https://thenewstack.io/rust-pythons-new-performance-engine/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 2,
+    "knownDetailedFundingAmount": {
+      "amount": 25057343,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 84.27,
+    "latestToEarliestKnownValuationMultiple": 2.97
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2025-10-06",
+      "growthChange90Days": 2,
+      "growthScore": 75,
+      "heatChange90Days": 16,
+      "heatScore": 38,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 74.02
+      },
+      "funding": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 91.14,
+        "timingEstimatePercent": {
+          "within6Months": 99.99,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 92.81
+      },
+      "ipo": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 3.86
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "DuckDB provides an embedded analytical database, fast OLAP querying, efficient data-processing tools, and cross-language analytics support.",
+          "employeeRange": "1-10",
+          "name": "DuckDB",
+          "sharedCategories": [
+            "Open Source"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Apache Spark offers cluster computing services.",
+          "employeeRange": "251-500",
+          "name": "Apache Spark",
+          "sharedCategories": [
+            "Big Data"
+          ],
+          "sharedSpecialties": [
+            "Extract Transform Load (ETL)",
+            "Distributed Data Processing",
+            "Data Engineering",
+            "Data Quality and Observability",
+            "Data Lake Platforms",
+            "Data Warehousing",
+            "Big Data Analytics",
+            "Data Pipelines"
+          ],
+          "similarityScore": 89
+        },
+        {
+          "description": "PyData is a community for developers and users of Python data tools to share ideas and learn about how to apply its language and more.",
+          "employeeRange": "1-10",
+          "name": "PyData",
+          "sharedSpecialties": [
+            "Data Engineering",
+            "Professional Data and BI Training"
+          ],
+          "similarityScore": 76
+        },
+        {
+          "description": "RAPIDS is a software company that provides machine learning, data preparation, integration, and information services.",
+          "employeeRange": "1-10",
+          "name": "RAPIDS",
+          "sharedSpecialties": [
+            "Distributed Data Processing",
+            "Data Engineering",
+            "Big Data Infrastructure",
+            "Big Data Analytics",
+            "Data Pipelines"
+          ],
+          "similarityScore": 64
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Series A round raised $21,115,162, or 84.27% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $25,942,026 to $76,954,432, a 2.97x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 75 (+2 over 90 days) and market heat at 38 (+16).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include DuckDB, Apache Spark, PyData.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 17 timeline items but exposes 9 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

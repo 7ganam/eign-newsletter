@@ -1,0 +1,472 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T18:57:15.466Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T18:57:15.461Z",
+    "url": "https://www.crunchbase.com/organization/stairwell"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Stairwell",
+      "shortDescription": "Stairwell is a cybersecurity company that offers an Automated Threat Detection and Response platform that attackers can’t detect or evade.",
+      "description": "Stairwell is a cybersecurity company that offers a platform for Automated Threat Detection and Response that attackers can’t detect or evade. It unlocks time for threat analysis by treating all files as suspicious and pre-preserving them as evidence to speed threat detection and uncover previously unknown compromises. \n\nThe company was founded in 2019 and is headquartered in Mountain View, California.  Fast Company has recognized Stairwell as one of the most innovative companies of 2023. We're backed by an incredible lineup of partners, including Accel, Sequoia Capital, Gradient Ventures, and S32 -- not to mention angel investors like Eric Schmidt and Michael Ovitz.\n\nLet's imagine for a moment: What if you could deploy a full compromise assessment equivalent to an advanced incident response firm's typical three-week engagement -- for every file alert from your endpoint or SIEM?\n\nWhat if, within minutes of a new threat being reported – anything from supply chain attacks like 3CX or SolarWinds, the latest ransomware variant, or Log4j-style vulnerability – you received an authoritative, automated report on your organization's status regarding the threat? Either a completely \"clean bill of health\" or telling you that your organization WAS impacted, exactly WHERE, and exactly WHEN. Fully automated, powered by AI and machine learning, with absolute \"ground truth.\"\n\nWhat if you had a neural network at your fingertips, capable of providing accurate threat evaluation, severity assessment, and tracking of not only a specific threat but all of its variants across your enterprise, instantaneously.\n\nWhat if you could write threat informed detections in YARA and run near instantaneously and continuously over every executable file that's ever been in your organization.\n\nNow, let's stop imagining, because Stairwell makes this a reality. We're amplifying capabilities across the board - from SOC analysts to threat hunters to incident responders - delivering the combined superpowers of a senior incident responder, a top-tier threat hunter, and a senior malware reverse engineer to every team member via an incredible automation solution.",
+      "website": "https://www.stairwell.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "headquarters": "Mountain View, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Cyber Security",
+        "Information Technology",
+        "Network Security",
+        "Security",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Privacy and Security",
+        "Software"
+      ],
+      "founders": [
+        "Juan Guerrero-Saade",
+        "Mike Wiacek"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "An AI-driven file analysis platform that evaluates executable files and scripts to determine their safety, behavior, and threat relevance.",
+        "name": "Stairwell Intelligent Analysis (SIA)"
+      },
+      {
+        "description": "An enterprise-wide threat detection and investigation platform that continuously collects, stores, and reassesses executable files and indicators of compromise at scale.",
+        "name": "Stairwell Platform"
+      },
+      {
+        "description": "A threat hunting and alert triage capability that enables instantaneous, enterprise-wide investigations of indicators of compromise and alerts.",
+        "name": "Run to Ground (RTG)"
+      },
+      {
+        "description": "A service that continuously reanalyzes stored files using updated threat intelligence to detect evolving or delayed threats.",
+        "name": "Continuous Threat Analysis"
+      },
+      {
+        "description": "An open-source tool to decode Cobalt Strike stagers, extracting key information such as C2 server details and Malleable C2 profile data.",
+        "name": "Cobalt Strike Stager Decoder"
+      },
+      {
+        "description": "An AI-powered malware investigation platform that starts from a security alert and traces related variants, infrastructure, artifacts, systems, and historical activity to determine the full scope of a malware campaign.",
+        "name": "Backstory"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 69520000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 3,
+      "detailedRoundCount": 3,
+      "lastFundingDate": "2022-10-11",
+      "lastFundingType": "Series B",
+      "rounds": [
+        {
+          "announcedDate": "2022-10-11",
+          "amount": {
+            "amount": 45000000,
+            "currency": "USD"
+          },
+          "investorCount": 8,
+          "leadInvestors": [
+            "S32"
+          ],
+          "postMoneyValuation": {
+            "amount": 280716319,
+            "currency": "USD"
+          },
+          "type": "Series B"
+        },
+        {
+          "announcedDate": "2021-09-21",
+          "amount": {
+            "amount": 20000000,
+            "currency": "USD"
+          },
+          "investorCount": 5,
+          "leadInvestors": [
+            "Accel",
+            "Sequoia Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 89710471,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2020-10-28",
+          "amount": {
+            "amount": 4520000,
+            "currency": "USD"
+          },
+          "investorCount": 5,
+          "leadInvestors": [
+            "Accel"
+          ],
+          "postMoneyValuation": {
+            "amount": 26811136,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 11,
+        "visibleNames": [
+          {
+            "name": "Accel",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Ballistic Ventures",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Eric Schmidt",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Gradient",
+            "rounds": [
+              "Series B",
+              "Series A"
+            ]
+          },
+          {
+            "name": "Lux Capital Management, LLC",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Michael Ovitz",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "S32",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Sequoia Capital",
+            "rounds": [
+              "Series B",
+              "Series A"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 42,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-08-05",
+          "publisher": "Help Net Security",
+          "title": "Top product launches at Black Hat USA 2026",
+          "url": "https://www.helpnetsecurity.com/2026/08/05/black-hat-usa-2026-product-launches/"
+        },
+        {
+          "date": "2026-08-03",
+          "publisher": "Help Net Security",
+          "title": "Mapping the malware blast radius a single alert won’t show you",
+          "url": "https://www.helpnetsecurity.com/2026/08/03/mike-wiacek-stairwell-backstory-malware-blast-radius/"
+        },
+        {
+          "date": "2025-09-22",
+          "publisher": "Google Patent",
+          "title": "Evaluating files for malicious and/or suspicious code",
+          "url": "https://patents.google.com/patent/US20260017370A1/en"
+        },
+        {
+          "date": "2025-09-19",
+          "publisher": "Help Net Security",
+          "title": "The unseen side of malware and how to find it",
+          "url": "https://www.helpnetsecurity.com/2025/09/19/discover-hidden-malware-variants/"
+        },
+        {
+          "date": "2025-07-29",
+          "publisher": "Business Wire",
+          "title": "Stairwell Appoints Emmy Linder as New CEO to Lead Next Phase of Innovation and Growth",
+          "url": "https://www.businesswire.com/news/home/20250729879748/en/Stairwell-Appoints-Emmy-Linder-as-New-CEO-to-Lead-Next-Phase-of-Innovation-and-Growth"
+        },
+        {
+          "date": "2025-05-12",
+          "publisher": "Pulse 2.0",
+          "title": "Tesseral: $3.3 Million Raised To Simplify Authentication For Business Software",
+          "url": "https://pulse2.com/tesseral-3-3-million-raised-to-simplify-authentication-for-business-software/"
+        },
+        {
+          "date": "2025-05-07",
+          "publisher": "SC Media",
+          "title": "Startup Tesseral launches with secure auth tools",
+          "url": "https://www.scworld.com/brief/startup-tesseral-launches-with-secure-auth-tools"
+        },
+        {
+          "date": "2025-05-06",
+          "publisher": "FinSMEs",
+          "title": "Tesseral Raises $3.3M in Seed Funding",
+          "url": "https://www.finsmes.com/2025/05/tesseral-raises-3-3m-in-seed-funding.html"
+        },
+        {
+          "date": "2025-01-23",
+          "publisher": "Business Insider",
+          "title": "The 30 early-stage startups in 2025 most likely to become tech's next unicorns, according to a proprietary AI model known as 'Moneyball for VC'",
+          "url": "https://www.businessinsider.com/startups-most-likely-to-become-tech-next-unicorns-2025-1"
+        },
+        {
+          "date": "2024-12-30",
+          "publisher": "Google Patent",
+          "title": "Detecting security threats on resource-constrained appliances",
+          "url": "https://patents.google.com/patent/US20250220026A1/en"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 3,
+    "knownDetailedFundingAmount": {
+      "amount": 69520000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 64.73,
+    "latestToEarliestKnownValuationMultiple": 10.47
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 21,
+      "growthScore": 56,
+      "heatChange90Days": 13,
+      "heatScore": 30
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 49.29
+      },
+      "funding": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 27.17,
+        "timingEstimatePercent": {
+          "within6Months": 15.18,
+          "months6To11": 12.87,
+          "months12To24": 20.18,
+          "beyond24Months": 51.77
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 77.81
+      },
+      "ipo": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 26.75
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Vectra AI develops an AI-driven integrated attack signal for threat detection and response.",
+          "employeeRange": "501-1,000",
+          "name": "Vectra AI",
+          "sharedCategories": [
+            "Network Security",
+            "Cyber Security",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Security Information and Event Management (SIEM)",
+            "Incident Response",
+            "Extended Detection and Response",
+            "Anomaly Detection",
+            "Threat Intelligence",
+            "Managed Detection and Response"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "CrowdStrike is a cybersecurity technology firm that provides cloud-delivered protection for cloud workloads, identity, and data.",
+          "employeeRange": "10,001+",
+          "name": "CrowdStrike",
+          "sharedCategories": [
+            "Network Security",
+            "Cyber Security"
+          ],
+          "sharedSpecialties": [
+            "Security Information and Event Management (SIEM)",
+            "Incident Response",
+            "Extended Detection and Response",
+            "Threat Intelligence",
+            "Managed Detection and Response"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Anomali delivers the leading AI-Powered Security and IT Operations Platform.",
+          "employeeRange": "251-500",
+          "name": "Anomali",
+          "sharedCategories": [
+            "Network Security",
+            "Cyber Security",
+            "Security"
+          ],
+          "sharedSpecialties": [
+            "Data Collection and Processing",
+            "Security Information and Event Management (SIEM)",
+            "Incident Response",
+            "Extended Detection and Response",
+            "Anomaly Detection",
+            "Threat Intelligence",
+            "Managed Detection and Response"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Recorded Future provides threat intelligence for proactive cybersecurity and risk management.",
+          "employeeRange": "1,001-5,000",
+          "name": "Recorded Future",
+          "sharedCategories": [
+            "Cyber Security"
+          ],
+          "sharedSpecialties": [
+            "Security Information and Event Management (SIEM)",
+            "Incident Response",
+            "Cyber Threat Intelligence",
+            "Extended Detection and Response",
+            "Digital Forensics",
+            "Threat Intelligence",
+            "Managed Detection and Response"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "Mandiant is an information security company that provides incident response and computer forensic solutions and services.",
+          "employeeRange": "10,001+",
+          "name": "Mandiant",
+          "sharedCategories": [
+            "Network Security",
+            "Cyber Security",
+            "Security",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Incident Response",
+            "Digital Forensics",
+            "Threat Intelligence",
+            "Managed Detection and Response"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    },
+    "aiResearchSummary": {
+      "notFact": true,
+      "text": "Stairwell is researching methods and systems for evaluating uploaded files for malicious and suspicious code and for evaluating files using a rule or feature based system for detection of threats. It is also developing techniques for using files of interest to identify similar files contained in a corpus and for building a real time threat knowledge graph to identify malicious software files. Additional work focuses on detecting security threats on resource constrained appliances. Together, these efforts target automated file centric threat detection and response."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Series B round raised $45,000,000, or 64.73% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $26,811,136 to $280,716,319, a 10.47x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 56 (+21 over 90 days) and market heat at 30 (+13).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Vectra AI, CrowdStrike, Anomali.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 42 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

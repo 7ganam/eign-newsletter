@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T18:17:49.389Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T18:17:49.388Z",
+    "url": "https://www.crunchbase.com/organization/mirelo-ai-uk-ltd"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Mirelo AI",
+      "shortDescription": "Mirelo AI develops generative audio models and tools that create synchronized sound and music for video content.",
+      "description": "Mirelo AI develops artificial intelligence models and software that generate synchronized sound and music for visual media. The company focuses on foundational generative audio models that analyze video and render sound effects, ambience, and musical compositions aligned to the timeline. Its technology underpins Mirelo Studio, a web application for scene-based audio generation and editing, and native plugins for video editors such as Adobe Premiere Pro and DaVinci Resolve. Mirelo AI also offers APIs that allow developers, gaming platforms, and production pipelines to integrate video-to-audio and text-to-audio capabilities into their products. Its tools are used across use cases including content creation, AI-generated video, digital advertising, gaming, and cinematic post-production. By providing both an end-user studio and programmable interfaces, Mirelo AI supports creators and teams who need controllable, high-quality audio for video workflows.",
+      "website": "https://mirelo.ai/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "headquarters": "Altrincham, Cheshire, United Kingdom",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Advertising",
+        "Artificial Intelligence (AI)",
+        "Audio",
+        "Content",
+        "Developer APIs",
+        "Digital Media",
+        "Film Production",
+        "Gaming",
+        "Software",
+        "Video"
+      ],
+      "sectors": [
+        "Advertising",
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Gaming",
+        "Media and Entertainment",
+        "Music and Audio",
+        "Sales and Marketing",
+        "Science and Engineering",
+        "Software",
+        "Video"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A web-based workspace that generates synchronized sound effects, ambience, and music for uploaded video scenes using generative audio models.",
+        "name": "Mirelo Studio"
+      },
+      {
+        "description": "Native plugins for video editors that generate and insert synchronized sound and music for footage directly inside editing timelines.",
+        "name": "Mirelo Plugins"
+      },
+      {
+        "description": "A set of APIs that let developers integrate Mirelo’s video-to-sound and text-to-sound generative models into their own products and pipelines.",
+        "name": "Mirelo API"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 82,
+      "heatScore": 86
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 5
+      },
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 71.9
+      },
+      "ipo": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

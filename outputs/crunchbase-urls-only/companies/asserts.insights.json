@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T17:11:34.702Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T17:11:34.699Z",
+    "url": "https://www.crunchbase.com/organization/asserts"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Asserts",
+      "shortDescription": "Asserts is an Observability intelligence platform that transforms your Prometheus metrics into root cause insights.",
+      "description": "Asserts transforms your Prometheus data into root cause insights by adding a layer of intelligence to your native Prometheus ecosystem. There is no need to move your data or incur additional data storage costs.",
+      "website": "https://www.asserts.ai/",
+      "foundedYear": 2020,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "San Ramon, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "DevOps",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Software"
+      ],
+      "founders": [
+        "Manoj Acharya"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Analyzes Prometheus and OpenTelemetry metrics, traces, and metadata to build a dynamic entity graph that correlates related application and infrastructure components for root cause identification.",
+        "name": "Asserts Correlation Intelligence™"
+      },
+      {
+        "description": "A curated library of PromQL recording and alerting rules that continuously scans time-series data to detect common runtime failure patterns and presents findings in a structured assertion model.",
+        "name": "Asserts Knowledge Base™"
+      },
+      {
+        "description": "Processes and compresses high-cardinality Prometheus metrics and traces to retain only essential data, significantly reducing ingestion and long-term storage costs.",
+        "name": "Asserts Data Distiller™"
+      },
+      {
+        "description": "An automated analysis tool that correlates metrics, traces, and alerts into a unified dashboard to quickly identify and troubleshoot issues affecting service health and SLOs.",
+        "name": "Asserts Intelligent Workbench™"
+      },
+      {
+        "description": "Enables definition, tracking, and alerting on Service Level Objectives (SLOs) based on Prometheus metrics to align monitoring with business objectives and reduce alert noise.",
+        "name": "SLO Management and Alerting"
+      }
+    ],
+    "funding": {
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2022-02-09",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2022-02-09",
+          "investorCount": 2,
+          "leadInvestors": [
+            "Andreessen Horowitz"
+          ],
+          "postMoneyValuation": {
+            "amount": 7158755,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 2,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Andreessen Horowitz",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Icon Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 5,
+      "includedUniqueCount": 5,
+      "items": [
+        {
+          "date": "2023-11-14",
+          "publisher": "Silicon Angle",
+          "title": "Grafana Labs acquires AI startup Asserts.ai to ease application observability headaches",
+          "url": "https://siliconangle.com/2023/11/14/grafana-labs-acquires-ai-startup-asserts-ai-ease-application-observability-headaches/"
+        },
+        {
+          "date": "2023-11-14",
+          "title": "Asserts acquired by Grafana Labs"
+        },
+        {
+          "date": "2022-02-09",
+          "title": "Seed Round - Asserts"
+        },
+        {
+          "date": "2021-06-05",
+          "publisher": "Google Patent",
+          "title": "Automatically generating an application knowledge graph",
+          "url": "https://patents.google.com/patent/US20220245470A1/en"
+        },
+        {
+          "date": "2021-06-05",
+          "publisher": "Google Patent",
+          "title": "Automatically generating assertions and insights",
+          "url": "https://patents.google.com/patent/US20220245476A1/en"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthChange90Days": 1,
+      "growthScore": 76,
+      "heatChange90Days": 0,
+      "heatScore": 39
+    },
+    "modelPredictions": {
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 77.88
+      },
+      "ipo": {
+        "generatedDate": "2025-09-22",
+        "probabilityPercent": 2.92
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Datadog is an observability and security platform that offers infrastructure, applications, software development, and monitoring services.",
+          "employeeRange": "10,001+",
+          "name": "Datadog",
+          "sharedCategories": [
+            "DevOps"
+          ],
+          "sharedSpecialties": [
+            "Log Management",
+            "IT Infrastructure Monitoring",
+            "Error Tracking",
+            "Application Tracing",
+            "Data Pipelines"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "New Relic is a digital intelligence company that delivers full-stack visibility and analytics to enterprises.",
+          "employeeRange": "1,001-5,000",
+          "name": "New Relic",
+          "sharedCategories": [
+            "DevOps",
+            "Software"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Honeycomb provides full-stack observability for engineering teams to understand, debug, and improve production systems.",
+          "employeeRange": "101-250",
+          "name": "Honeycomb",
+          "sharedCategories": [
+            "DevOps"
+          ],
+          "sharedSpecialties": [
+            "Log Management",
+            "Data Quality and Observability",
+            "Dashboarding and Embedded Analytics",
+            "IT Infrastructure Monitoring",
+            "Error Tracking",
+            "Application Tracing",
+            "Data Pipelines"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Dynatrace is an observability platform that monitors applications, infrastructure, and experience using AI-driven analytics for enterprises.",
+          "employeeRange": "5,001-10,000",
+          "name": "Dynatrace",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Log Management",
+            "IT Infrastructure Monitoring",
+            "Application Tracing"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Sentry is a developer of an application monitoring platform that helps developers optimize the performance of their code.",
+          "employeeRange": "251-500",
+          "name": "Sentry",
+          "sharedSpecialties": [
+            "Log Management",
+            "IT Infrastructure Monitoring",
+            "Error Tracking",
+            "Application Tracing"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    },
+    "aiResearchSummary": {
+      "notFact": true,
+      "text": "Asserts is focused on developing systems that enhance observability by automatically monitoring applications and generating insights. Their technology involves creating knowledge graphs to model and correlate data, eliminating the need for manual identification of application components to monitor. This approach allows for flexible deployment across various environments, aligning with Asserts' goal of transforming Prometheus metrics into actionable root cause insights."
+    }
+  },
+  "insights": [
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $7,158,755 to $7,158,755, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 76 (+1 over 90 days) and market heat at 39 (+0).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Datadog, New Relic, Honeycomb.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

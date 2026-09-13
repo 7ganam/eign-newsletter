@@ -1,0 +1,582 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T17:31:54.140Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T17:31:54.136Z",
+    "url": "https://www.crunchbase.com/organization/corelight"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Corelight",
+      "shortDescription": "Corelight is a cybersecurity company specializing in network traffic analysis (NTA) solutions.",
+      "description": "Corelight offers network traffic analysis solutions for cybersecurity. It helps security professionals to understand network traffic and to detect and stop cyberattacks. Its solution was built on Bro, a widely-used open-source framework that provides a real-time understanding of network traffic.\n\nThe company was founded in 2013 and is headquartered in San Francisco, California.",
+      "website": "https://www.corelight.com/",
+      "foundedYear": 2013,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "251-500",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Analytics",
+        "Cyber Security",
+        "Network Security",
+        "Security",
+        "Software"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Information Technology",
+        "Privacy and Security",
+        "Software"
+      ],
+      "founders": [
+        "Gregory Bell",
+        "Robin Sommer",
+        "Seth Hall",
+        "Vern Paxson"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A network detection and response platform that converts on-premises, cloud, and hybrid network traffic into evidence for threat detection, investigation, threat hunting, and response.",
+        "name": "Corelight Open NDR Platform"
+      },
+      {
+        "description": "Network traffic sensors that collect and analyze traffic from physical, cloud, virtual, and software-defined environments, producing Zeek-based network evidence for security and operations teams.",
+        "name": "Corelight Sensors"
+      },
+      {
+        "description": "A SaaS-based network detection and response application for evidence-first alert triage, investigation, threat hunting, and incident response.",
+        "name": "Corelight Investigator"
+      },
+      {
+        "description": "A multilayer detection capability combining signatures, threat intelligence, behavioral analytics, machine learning, anomaly detection, and MITRE ATT&CK-aligned detections.",
+        "name": "Corelight Analytics & Detections"
+      },
+      {
+        "description": "A network-based visibility product that passively classifies assets and identifies anomalous network performance using data collected by Corelight Sensors.",
+        "name": "Corelight Performance & Asset Visibility"
+      },
+      {
+        "description": "A packet-capture capability that selectively stores traffic relevant to investigations, extending the historical evidence available for threat detection and forensic analysis.",
+        "name": "Corelight Smart PCAP"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 309200000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 7,
+      "detailedRoundCount": 7,
+      "lastFundingDate": "2024-04-30",
+      "lastFundingType": "Series E",
+      "rounds": [
+        {
+          "announcedDate": "2024-04-30",
+          "amount": {
+            "amount": 150000000,
+            "currency": "USD"
+          },
+          "investorCount": 3,
+          "leadInvestors": [
+            "Accel"
+          ],
+          "postMoneyValuation": {
+            "amount": 900000000,
+            "currency": "USD"
+          },
+          "type": "Series E"
+        },
+        {
+          "announcedDate": "2022-09-30",
+          "investorCount": 1,
+          "postMoneyValuation": {
+            "amount": 1087733324,
+            "currency": "USD"
+          },
+          "type": "Venture round"
+        },
+        {
+          "announcedDate": "2021-09-02",
+          "amount": {
+            "amount": 75000000,
+            "currency": "USD"
+          },
+          "investorCount": 13,
+          "leadInvestors": [
+            "Energy Impact Partners"
+          ],
+          "postMoneyValuation": {
+            "amount": 773994160,
+            "currency": "USD"
+          },
+          "type": "Series D"
+        },
+        {
+          "announcedDate": "2019-10-17",
+          "amount": {
+            "amount": 50000000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "leadInvestors": [
+            "Accel",
+            "Insight Partners"
+          ],
+          "postMoneyValuation": {
+            "amount": 270725942,
+            "currency": "USD"
+          },
+          "type": "Series C"
+        },
+        {
+          "announcedDate": "2018-09-11",
+          "amount": {
+            "amount": 25000000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "General Catalyst"
+          ],
+          "postMoneyValuation": {
+            "amount": 119479959,
+            "currency": "USD"
+          },
+          "type": "Series B"
+        },
+        {
+          "announcedDate": "2017-07-18",
+          "amount": {
+            "amount": 9200000,
+            "currency": "USD"
+          },
+          "investorCount": 3,
+          "leadInvestors": [
+            "Accel"
+          ],
+          "postMoneyValuation": {
+            "amount": 38917904,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2015-12-17",
+          "investorCount": 1,
+          "leadInvestors": [
+            "National Science Foundation"
+          ],
+          "type": "Grant"
+        }
+      ],
+      "investors": {
+        "reportedCount": 17,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Accel",
+            "rounds": [
+              "Series E"
+            ]
+          },
+          {
+            "name": "Capital One Ventures",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "Cisco Investments",
+            "rounds": [
+              "Series E"
+            ]
+          },
+          {
+            "name": "CrowdStrike Falcon Fund",
+            "rounds": [
+              "Series E"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Energy Impact Partners",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "Gaingels",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "General Catalyst",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "H.I.G. Growth Partners",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "Insight Partners"
+          },
+          {
+            "name": "National Science Foundation"
+          },
+          {
+            "name": "OUP (Osage University Partners)",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "TriplePoint Capital",
+            "rounds": [
+              "Venture round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 103,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-07-27",
+          "publisher": "PR Newswire",
+          "title": "Corelight Welcomes Veteran Customer Advocate Amanda Berger as Chief Customer Officer",
+          "url": "https://www.prnewswire.com/news-releases/corelight-welcomes-veteran-customer-advocate-amanda-berger-as-chief-customer-officer-302834468.html"
+        },
+        {
+          "date": "2026-06-24",
+          "publisher": "The Hacker News",
+          "title": "Surviving the Mythos Era: Richard Bejtlich on the Case for NDR",
+          "url": "https://thehackernews.com/2026/06/surviving-mythos-era-richard-bejtlich.html"
+        },
+        {
+          "date": "2026-06-17",
+          "publisher": "PR Newswire",
+          "title": "Corelight Extends Industry-Leading Ground Truth Data to Every Asset and AI Service on the Network, Building the Foundation for AI-Resilient Defense",
+          "url": "https://www.prnewswire.com/news-releases/corelight-extends-industry-leading-ground-truth-data-to-every-asset-and-ai-service-on-the-network-building-the-foundation-for-ai-resilient-defense-302802234.html"
+        },
+        {
+          "date": "2026-06-03",
+          "publisher": "PR Newswire",
+          "title": "Leading Cybersecurity Software Companies Launch AI Proving Grounds Consortium to Help Enterprises Build Trust in AI",
+          "url": "https://www.prnewswire.com/news-releases/leading-cybersecurity-software-companies-launch-ai-proving-grounds-consortium-to-help-enterprises-build-trust-in-ai-302790215.html"
+        },
+        {
+          "date": "2026-05-24",
+          "publisher": "The Hacker News",
+          "title": "The Alert Firehose Finally Meets Its Match",
+          "url": "https://thehackernews.com/2026/05/the-alert-firehose-finally-meets-its.html"
+        },
+        {
+          "date": "2026-05-06",
+          "publisher": "PR Newswire",
+          "title": "Corelight Appoints Cybersecurity Veterans Hatem Naguib to Board of Directors and Jack Huffard as Advisor",
+          "url": "https://www.prnewswire.com/news-releases/corelight-appoints-cybersecurity-veterans-hatem-naguib-to-board-of-directors-and-jack-huffard-as-advisor-302763222.html"
+        },
+        {
+          "date": "2026-03-25",
+          "publisher": "The Hacker News",
+          "title": "Masters of Imitation: How Hackers and Art Forgers Perfect the Art of Deception",
+          "url": "https://thehackernews.com/2026/03/masters-of-imitation-how-hackers-and.html"
+        },
+        {
+          "date": "2026-03-18",
+          "publisher": "PR Newswire",
+          "title": "Corelight Advances AI Automation in the SOC with New Agentic AI Suite",
+          "url": "https://www.prnewswire.com/news-releases/corelight-advances-ai-automation-in-the-soc-with-new-agentic-ai-suite-302716602.html"
+        },
+        {
+          "date": "2025-08-14",
+          "publisher": "PR Newswire",
+          "title": "Corelight Welcomes Veteran Security Research Leader Ali Islam to Lead Corelight Labs",
+          "url": "https://www.prnewswire.com/news-releases/corelight-welcomes-veteran-security-research-leader-ali-islam-to-lead-corelight-labs-302529359.html"
+        },
+        {
+          "date": "2025-07-31",
+          "publisher": "PR Newswire",
+          "title": "Corelight Extends Gen AI Leadership in NDR with New MCP Server and Prompt Playbooks for Faster Alert Triage and Resolution",
+          "url": "https://www.prnewswire.com/news-releases/corelight-extends-gen-ai-leadership-in-ndr-with-new-mcp-server-and-prompt-playbooks-for-faster-alert-triage-and-resolution-302518926.html"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 5,
+    "knownDetailedFundingAmount": {
+      "amount": 309200000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 48.51,
+    "grantFunding": {
+      "amount": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "disclosedRoundCount": 1
+    },
+    "latestToEarliestKnownValuationMultiple": 23.13
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "reportedPartnerships": {
+      "note": "Provider event summaries with linked sources; not independently verified.",
+      "items": [
+        {
+          "date": "2026-03-18",
+          "description": "Corelight announced a new integration and agentic response collaboration with CrowdStrike, allowing CrowdStrike's Charlotte AI and Fusion workflows to automatically pull Corelight network evidence to validate alerts and drive automated response.",
+          "sources": [
+            {
+              "date": "2026-03-18",
+              "publisher": "PR Newswire",
+              "title": "Corelight Advances AI Automation in the SOC with New Agentic AI Suite",
+              "url": "https://www.prnewswire.com/news-releases/corelight-advances-ai-automation-in-the-soc-with-new-agentic-ai-suite-302716602.html"
+            }
+          ]
+        },
+        {
+          "date": "2025-10-30",
+          "description": "Corelight announced integration of CrowdStrike Falcon Adversary Intelligence into its new Corelight Threat Intelligence feature, providing real-time IOC feeds within the Corelight Open NDR platform.",
+          "sources": [
+            {
+              "date": "2025-10-30",
+              "publisher": "PR Newswire",
+              "title": "Corelight Expands Leadership in Evasive Threat Detection with AI-Powered Enhancements and Integrated Threat Intelligence",
+              "url": "https://www.prnewswire.com/news-releases/corelight-expands-leadership-in-evasive-threat-detection-with-ai-powered-enhancements-and-integrated-threat-intelligence-302599072.html"
+            }
+          ]
+        },
+        {
+          "date": "2025-01-14",
+          "description": "Integration of Microsoft Defender data into Corelight's sensors for enhanced security operations.",
+          "sources": [
+            {
+              "date": "2025-01-14",
+              "publisher": "PR Newswire",
+              "title": "Corelight Enhances Network Visibility and Detection Coverage with Insights from Microsoft Defender",
+              "url": "https://www.prnewswire.com/news-releases/corelight-enhances-network-visibility-and-detection-coverage-with-insights-from-microsoft-defender-302349806.html"
+            }
+          ]
+        }
+      ]
+    },
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2024-07-24",
+      "growthChange90Days": -1,
+      "growthScore": 72,
+      "heatChange90Days": -5,
+      "heatScore": 68,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 95.42
+      },
+      "funding": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 94.59,
+        "timingEstimatePercent": {
+          "within6Months": 16.23,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 83.77
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 95.54
+      },
+      "ipo": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 4.99
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Darktrace is an AI company that uses cybersecurity solutions to identify, prevent, and eliminate insider threats.",
+          "employeeRange": "1,001-5,000",
+          "name": "Darktrace",
+          "sharedCategories": [
+            "Network Security",
+            "Cyber Security"
+          ],
+          "sharedSpecialties": [
+            "Security Information and Event Management (SIEM)",
+            "Incident Response",
+            "Industrial and OT Security",
+            "Extended Detection and Response",
+            "Anomaly Detection",
+            "Threat Intelligence",
+            "Cloud Workload Protection Platform (CWPP)"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Claroty is a cybersecurity company that protects XIoT and cyber-physical systems from cyber threats.",
+          "employeeRange": "501-1,000",
+          "name": "Claroty",
+          "sharedCategories": [
+            "Network Security",
+            "Cyber Security",
+            "Security"
+          ],
+          "sharedSpecialties": [
+            "Security Information and Event Management (SIEM)",
+            "Incident Response",
+            "Industrial and OT Security",
+            "Extended Detection and Response"
+          ],
+          "similarityScore": 94.915
+        },
+        {
+          "description": "Armis is a cyber exposure management and security company that protects the entire attack surface and detects threats in real time.",
+          "employeeRange": "501-1,000",
+          "name": "Armis",
+          "sharedCategories": [
+            "Network Security",
+            "Cyber Security",
+            "Security"
+          ],
+          "sharedSpecialties": [
+            "Incident Response",
+            "Industrial and OT Security",
+            "Extended Detection and Response",
+            "Threat Intelligence"
+          ],
+          "similarityScore": 90.355
+        },
+        {
+          "description": "Ontic’s Connected Intelligence Platform centralizes security operations and data into one system of record.",
+          "employeeRange": "251-500",
+          "name": "Ontic",
+          "sharedCategories": [
+            "Security",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Incident Response",
+            "Threat Intelligence"
+          ],
+          "similarityScore": 85.479
+        },
+        {
+          "description": "Nozomi Networks offers a cybersecurity platform that protects operational technology, Internet of Things, and cyber‑physical systems.",
+          "employeeRange": "251-500",
+          "name": "Nozomi Networks",
+          "sharedCategories": [
+            "Network Security",
+            "Cyber Security"
+          ],
+          "sharedSpecialties": [
+            "Security Information and Event Management (SIEM)",
+            "Industrial and OT Security",
+            "Extended Detection and Response",
+            "Anomaly Detection",
+            "Threat Intelligence"
+          ],
+          "similarityScore": 80.799
+        }
+      ]
+    },
+    "aiResearchSummary": {
+      "notFact": true,
+      "text": "Corelight is researching methods for analyzing network traffic, specifically focusing on identifying authentication methods within secure shell (SSH) data. The work described in 'System and method for identifying authentication method of secure shell (ssh)' details a process where a processor receives SSH session data and detects communication patterns related to SSH authentication. This highlights Corelight’s focus on network traffic analysis and secure authentication detection."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Series E round raised $150,000,000, or 48.51% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $38,917,904 to $900,000,000, a 23.13x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 72 (-1 over 90 days) and market heat at 68 (-5).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Darktrace, Claroty, Armis.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 103 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

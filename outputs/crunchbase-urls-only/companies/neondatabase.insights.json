@@ -1,0 +1,547 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T18:21:45.022Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T18:21:45.019Z",
+    "url": "https://www.crunchbase.com/organization/neondatabase"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Neon",
+      "shortDescription": "Neon is a software development company specializing in open-source cloud-native PostgreSQL database solutions.",
+      "description": "Neon offers a serverless PostgreSQL architecture that separates storage and compute resources, enhancing scalability for applications. This open-source solution provides developers with flexibility and transparency, allowing them to manage their databases without the complexities of traditional systems. By leveraging a management-free environment, Neon enables faster application development, helping teams streamline their workflows. The platform is designed to support various data-driven projects while ensuring efficient resource utilization. Overall, Neon serves as a practical choice for developers seeking a modern database solution that simplifies operations and fosters innovation.",
+      "website": "https://neon.tech/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "101-250",
+      "headquarters": "Menlo Park, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Cloud Computing",
+        "Database",
+        "Developer Tools",
+        "Information Technology"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Information Technology",
+        "Internet Services",
+        "Software"
+      ],
+      "founders": [
+        "Heikki Linnakangas",
+        "Nikita Shamgunov",
+        "Stas Kelvich"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A managed, cloud-based PostgreSQL platform with instant provisioning, autoscaling, scale-to-zero compute, copy-on-write storage, read replicas, and point-in-time recovery.",
+        "name": "Neon Serverless Postgres"
+      },
+      {
+        "description": "A database branching service that creates isolated PostgreSQL copies of data and schema using copy-on-write storage for development, testing, CI/CD, recovery, and analysis.",
+        "name": "Neon Branching"
+      },
+      {
+        "description": "A driver and client library for querying Neon PostgreSQL databases over HTTP, designed for applications running in serverless and edge environments.",
+        "name": "Neon Serverless Driver"
+      },
+      {
+        "description": "Programmatic management interfaces for creating, configuring, branching, and operating Neon PostgreSQL projects and databases at scale.",
+        "name": "Neon API and CLI"
+      },
+      {
+        "description": "A database provisioning and management offering for AI agents that uses the Neon API to create, clone, version, and automatically suspend PostgreSQL databases.",
+        "name": "Neon for Agents"
+      },
+      {
+        "description": "Tools for importing existing data into Neon PostgreSQL, supporting migration from other database environments into the managed Neon platform.",
+        "name": "Neon Data Migration Tools"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 129600000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 6,
+      "detailedRoundCount": 6,
+      "lastFundingDate": "2024-08-07",
+      "lastFundingType": "Venture round",
+      "rounds": [
+        {
+          "announcedDate": "2024-08-07",
+          "amount": {
+            "amount": 25600000,
+            "currency": "USD"
+          },
+          "investorCount": 5,
+          "leadInvestors": [
+            "M12 - Microsoft's Venture Fund"
+          ],
+          "postMoneyValuation": {
+            "amount": 499131743,
+            "currency": "USD"
+          },
+          "type": "Venture round"
+        },
+        {
+          "announcedDate": "2023-08-01",
+          "amount": {
+            "amount": 46000000,
+            "currency": "USD"
+          },
+          "investorCount": 9,
+          "leadInvestors": [
+            "Menlo Ventures"
+          ],
+          "postMoneyValuation": {
+            "amount": 469069955,
+            "currency": "USD"
+          },
+          "type": "Series B"
+        },
+        {
+          "announcedDate": "2023-03-23",
+          "amount": {
+            "amount": 4000000,
+            "currency": "USD"
+          },
+          "postMoneyValuation": {
+            "amount": 137810527,
+            "currency": "USD"
+          },
+          "type": "Angel"
+        },
+        {
+          "announcedDate": "2022-07-26",
+          "amount": {
+            "amount": 30000000,
+            "currency": "USD"
+          },
+          "investorCount": 15,
+          "leadInvestors": [
+            "GGV Capital",
+            "Notable Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 208489469,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2021-07-01",
+          "amount": {
+            "amount": 19000000,
+            "currency": "USD"
+          },
+          "postMoneyValuation": {
+            "amount": 104764148,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2021-03-01",
+          "amount": {
+            "amount": 5000000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 21,
+        "visibleNames": [
+          {
+            "name": "Abstract",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "Databricks Ventures",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Founders Fund"
+          },
+          {
+            "name": "General Catalyst",
+            "rounds": [
+              "Venture round",
+              "Series B"
+            ]
+          },
+          {
+            "name": "Khosla Ventures",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "M12 - Microsoft's Venture Fund",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Menlo Ventures",
+            "rounds": [
+              "Venture round",
+              "Series B"
+            ]
+          },
+          {
+            "name": "Notable Capital",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "Snowflake Ventures",
+            "rounds": [
+              "Series B"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 149,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-08-27",
+          "publisher": "ChinaVenture",
+          "title": "拒绝670亿，最“凡尔赛”融资诞生",
+          "url": "https://www.chinaventure.com.cn/news/80-20260827-392970.html"
+        },
+        {
+          "date": "2026-06-11",
+          "publisher": "EIN Presswire",
+          "title": "MONO RETURNS NOVEMBER 13-14, 2026 AT THE MIDWAY, SAN FRANCISCO",
+          "url": "https://www.einpresswire.com/article/918348825/mono-returns-november-13-14-2026-at-the-midway-san-francisco"
+        },
+        {
+          "date": "2026-05-12",
+          "publisher": "Media Post",
+          "title": "Now, Billy Ballz Shills For Cancer-Fighting Stressticles",
+          "url": "https://www.mediapost.com/publications/article/415039/now-billy-ballz-shills-for-cancer-fighting-stress.html"
+        },
+        {
+          "date": "2026-05-11",
+          "publisher": "AP News",
+          "title": "Neon, winner of 6 straight Palmes d’Or, comes into the Cannes Film Festival an unlikely heavyweight",
+          "url": "https://apnews.com/article/neon-cannes-palme-dor-ff279fcced34688a8a036b5bd95d4de0"
+        },
+        {
+          "date": "2026-04-29",
+          "publisher": "Billboard",
+          "title": "2026 AAM Awards: All The Winners",
+          "url": "https://www.billboard.com/pro/2026-aam-awards-winners/"
+        },
+        {
+          "date": "2026-04-28",
+          "publisher": "Variety",
+          "title": "Bong Joon Ho Reunites With ‘Parasite’ Distributor Neon on First Animated Movie ‘Ally’",
+          "url": "https://variety.com/2026/film/news/bong-joon-ho-animated-movie-ally-parasite-distributor-neon-1236732159/"
+        },
+        {
+          "date": "2026-04-24",
+          "publisher": "The Latest Articles from IGN",
+          "title": "Neon Genesis Evangelion Is Coming to Final Fantasy XIV With a Crossover Raid Series Called Ghosts of Desire",
+          "url": "https://www.ign.com/articles/neon-genesis-evangelion-is-coming-to-final-fantasy-xiv-with-a-crossover-raid-series-called-ghosts-of-desire"
+        },
+        {
+          "date": "2026-04-21",
+          "publisher": "The Hollywood Reporter",
+          "title": "Behind Neon’s Slow Burn Legal Battle That May Lay Bare Hollywood Accounting Practices",
+          "url": "https://www.hollywoodreporter.com/business/business-news/neon-lawsuit-film-accounting-1236560710/"
+        },
+        {
+          "date": "2026-04-10",
+          "publisher": "Variety",
+          "title": "Neon Buys Korean Thriller ‘Hope,’ Starring Michael Fassbender, Alicia Vikander and Hoyeon, Ahead of Cannes Premiere (EXCLUSIVE)",
+          "url": "https://variety.com/2026/film/news/neon-buys-hope-cannes-film-festival-1236713358/"
+        },
+        {
+          "date": "2026-04-01",
+          "publisher": "Variety",
+          "title": "Screenplay Development Incubator Palmtrees Partners With Neon (EXCLUSIVE)",
+          "url": "https://variety.com/2026/film/news/palmtrees-neon-1236704661/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 6,
+    "knownDetailedFundingAmount": {
+      "amount": 129600000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 19.75,
+    "latestToEarliestKnownValuationMultiple": 4.76
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "reportedPartnerships": {
+      "note": "Provider event summaries with linked sources; not independently verified.",
+      "items": [
+        {
+          "date": "2026-02-19",
+          "description": "Neon entered a distribution partnership for worldwide rights to Nigerian feature film Clarissa, overseeing U.S. theatrical release and international markets, with Neon International handling foreign sales.",
+          "sources": [
+            {
+              "date": "2026-02-19",
+              "publisher": "AllAfrica.com",
+              "title": "Canex Creations Inc. Invests in Feature Film Clarissa, Acquired for Worldwide Distribution By Neon",
+              "url": "https://allafrica.com/stories/202602190606.html"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-21",
+          "description": "Neon and Qatar Film Committee signed a four-year co-development, co-production and co-financing partnership to collaborate on film projects announced in Doha.",
+          "sources": [
+            {
+              "date": "2025-11-21",
+              "publisher": "Variety",
+              "title": "Neon and Nascent Doha Film Committee Sign Four-Year Co-Production Deal That Is Among ‘Milestone’ Agreements Announced by Hassan Al Thawadi",
+              "url": "https://variety.com/2025/film/global/neon-doha-film-committee-co-production-deal-hassan-thawadi-1236587718/"
+            }
+          ]
+        },
+        {
+          "date": "2025-10-09",
+          "description": "Neon acquired U.S. distribution rights to Baz Luhrmann’s film EPiC: Elvis Presley in Concert and will release it theatrically in the U.S.; the project comes from Sony Music Vision, Bazmark and Authentic Studios.",
+          "sources": [
+            {
+              "date": "2025-10-09",
+              "publisher": "Variety",
+              "title": "Baz Luhrmann’s ‘EPiC: Elvis Presley in Concert’ Acquired by Neon and Universal Pictures Content Group",
+              "url": "https://variety.com/2025/film/news/baz-luhrmann-elvis-presley-concert-film-neon-universal-1236544317/"
+            }
+          ]
+        },
+        {
+          "date": "2025-08-12",
+          "description": "Neon and Razorpay have announced a strategic partnership to enable Neon clients to accept local payments in India, including UPI, credit, and debit cards, enhancing payment options for India's gaming market.",
+          "sources": [
+            {
+              "date": "2025-08-12",
+              "publisher": "Neon",
+              "title": "Neon and Razorpay Partner to Bring World-Class DTC Payments to India’s Gaming Market",
+              "url": "https://www.globenewswire.com/news-release/2025/08/12/3131793/0/en/Neon-and-Razorpay-Partner-to-Bring-World-Class-DTC-Payments-to-India-s-Gaming-Market.html"
+            }
+          ]
+        },
+        {
+          "date": "2024-12-03",
+          "description": "Neon and Microsoft Azure announced a partnership to integrate Neon Serverless Postgres with Azure, enhancing cloud database services for Azure users.",
+          "sources": [
+            {
+              "date": "2024-12-03",
+              "publisher": "GlobeNewswire News Room",
+              "title": "Neon Serverless Postgres Announces Native Integration with Microsoft Azure",
+              "url": "https://www.globenewswire.com/news-release/2024/12/03/2990992/0/en/Neon-Serverless-Postgres-Announces-Native-Integration-with-Microsoft-Azure.html"
+            }
+          ]
+        }
+      ]
+    },
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2026-05-24",
+      "growthChange90Days": -21,
+      "growthScore": 70,
+      "heatChange90Days": -17,
+      "heatScore": 55,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2025-05-11",
+        "probabilityPercent": 56.06
+      },
+      "funding": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 45.67,
+        "timingEstimatePercent": {
+          "within6Months": 79.37,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 20.63
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 86.08
+      },
+      "ipo": {
+        "generatedDate": "2025-09-22",
+        "probabilityPercent": 47.66
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Supabase offers an open source backend platform for app development built around a managed PostgreSQL database and tools.",
+          "employeeRange": "251-500",
+          "name": "Supabase",
+          "sharedCategories": [
+            "Database",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Function as a Service (FaaS)",
+            "Database Administration Services",
+            "Database Platform Services",
+            "API Management"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Tembo offers a platform that automates tasks for engineering teams, aiding them in coding and managing complexity effectively.",
+          "employeeRange": "11-50",
+          "name": "Tembo",
+          "sharedCategories": [
+            "Database"
+          ],
+          "sharedSpecialties": [
+            "Database Administration Services"
+          ],
+          "similarityScore": 97.38
+        },
+        {
+          "description": "Xata is a fully-managed PostgreSQL database platform. Designed for businesses to build faster, ship reliably and scale infinitely.",
+          "employeeRange": "11-50",
+          "name": "Xata.io",
+          "sharedCategories": [
+            "Database",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Database Administration Services",
+            "Database Platform Services",
+            "Data Replication"
+          ],
+          "similarityScore": 96.69
+        },
+        {
+          "description": "Render provides a unified cloud for developers and teams to host all their applications, databases, and websites.",
+          "employeeRange": "101-250",
+          "name": "Render",
+          "sharedSpecialties": [
+            "CI/CD (Continuous Integration / Continuous Delivery)",
+            "Database Platform Services"
+          ],
+          "similarityScore": 96.16
+        },
+        {
+          "description": "The all-in-one intelligent cloud provider",
+          "employeeRange": "11-50",
+          "name": "Railway",
+          "sharedCategories": [
+            "Developer Tools",
+            "Cloud Computing",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Database Platform Services"
+          ],
+          "similarityScore": 95.99
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Venture round round raised $25,600,000, or 19.75% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $104,764,148 to $499,131,743, a 4.76x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 70 (-21 over 90 days) and market heat at 55 (-17).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Supabase, Tembo, Xata.io.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 149 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

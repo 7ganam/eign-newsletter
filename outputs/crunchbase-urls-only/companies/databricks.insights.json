@@ -1,0 +1,708 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T17:35:32.874Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T17:35:32.870Z",
+    "url": "https://www.crunchbase.com/organization/databricks"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Databricks",
+      "shortDescription": "Databricks is a data and AI platform that unifies data engineering, analytics, and machine learning on a lakehouse architecture.",
+      "description": "Databricks offers a cloud platform that unifies data engineering, warehousing, analytics, and AI workflows. It applies a lakehouse approach to support data ingestion, transformation, and governance alongside development and deployment of machine learning and generative AI models. The platform includes features like ETL orchestration, serverless SQL analytics, data sharing across environments, notebook-based collaboration, model training, model registry, and application development tools. Databricks also maintains several open-source projects, including Delta Lake, MLflow, and the DBRX large language model, and it continues to integrate AI-driven enhancements such as test-time adaptive model optimization.",
+      "website": "https://www.databricks.com/",
+      "foundedYear": 2013,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "10,001+",
+      "estimatedRevenueRange": "$1B-$10B",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Analytics",
+        "Artificial Intelligence (AI)",
+        "Data Integration",
+        "Data Management",
+        "Data Storage",
+        "Information Technology",
+        "Machine Learning"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Hardware",
+        "Information Technology",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Ali Ghodsi",
+        "Andy Konwinski",
+        "Arsalan Tavakoli-Shiraji",
+        "Ion Stoica",
+        "Matei Zaharia",
+        "Patrick Wendell",
+        "Reynold Xin"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A cloud-based platform that unifies data engineering, analytics, business intelligence, machine learning, governance, and generative AI on a lakehouse architecture.",
+        "name": "Databricks Data Intelligence Platform"
+      },
+      {
+        "description": "Tools for building, scheduling, monitoring, and optimizing batch and streaming ETL pipelines while managing data quality and reliability.",
+        "name": "Databricks Data Engineering"
+      },
+      {
+        "description": "A cloud data warehousing service for SQL analytics and business intelligence workloads, with serverless operation, optimized query execution, and open data formats.",
+        "name": "Databricks SQL"
+      },
+      {
+        "description": "A unified governance service for data, analytics, AI assets, permissions, lineage, discovery, monitoring, and compliance across an organization’s data estate.",
+        "name": "Unity Catalog"
+      },
+      {
+        "description": "Capabilities for developing, tuning, deploying, and monitoring machine learning and generative AI applications using governed enterprise data.",
+        "name": "Databricks Artificial Intelligence"
+      },
+      {
+        "description": "Lakehouse data management capabilities for storing, processing, securing, and optimizing reliable data using open table and data formats.",
+        "name": "Databricks Data Management"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 32246939324,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 17,
+      "detailedRoundCount": 10,
+      "lastFundingDate": "2026-08-13",
+      "lastFundingType": "Private Equity",
+      "rounds": [
+        {
+          "announcedDate": "2026-08-13",
+          "amount": {
+            "amount": 5000000000,
+            "currency": "USD"
+          },
+          "investorCount": 26,
+          "leadInvestors": [
+            "Coatue",
+            "Unknown Investor"
+          ],
+          "postMoneyValuation": {
+            "amount": 190000000000,
+            "currency": "USD"
+          },
+          "type": "Private Equity"
+        },
+        {
+          "announcedDate": "2026-02-09",
+          "amount": {
+            "amount": 2000000000,
+            "currency": "USD"
+          },
+          "investorCount": 5,
+          "leadInvestors": [
+            "JPMorganChase"
+          ],
+          "type": "Debt Financing"
+        },
+        {
+          "announcedDate": "2025-12-16",
+          "amount": {
+            "amount": 5000000000,
+            "currency": "USD"
+          },
+          "investorCount": 26,
+          "leadInvestors": [
+            "Fidelity",
+            "Insight Partners",
+            "J.P. Morgan Asset Management"
+          ],
+          "postMoneyValuation": {
+            "amount": 134000000000,
+            "currency": "USD"
+          },
+          "type": "Private Equity"
+        },
+        {
+          "announcedDate": "2025-09-08",
+          "amount": {
+            "amount": 1000000000,
+            "currency": "USD"
+          },
+          "investorCount": 5,
+          "leadInvestors": [
+            "Andreessen Horowitz",
+            "Insight Partners",
+            "MGX",
+            "Thrive Capital",
+            "WCM Investment Management"
+          ],
+          "postMoneyValuation": {
+            "amount": 100000000000,
+            "currency": "USD"
+          },
+          "type": "Venture round"
+        },
+        {
+          "announcedDate": "2025-01-13",
+          "amount": {
+            "amount": 5250000000,
+            "currency": "USD"
+          },
+          "investorCount": 9,
+          "type": "Debt Financing"
+        },
+        {
+          "announcedDate": "2024-12-17",
+          "amount": {
+            "amount": 10000000000,
+            "currency": "USD"
+          },
+          "investorCount": 26,
+          "leadInvestors": [
+            "Andreessen Horowitz",
+            "DST Global",
+            "GIC",
+            "Insight Partners",
+            "Thrive Capital",
+            "WCM Investment Management"
+          ],
+          "postMoneyValuation": {
+            "amount": 62000000000,
+            "currency": "USD"
+          },
+          "type": "Series J"
+        },
+        {
+          "announcedDate": "2023-09-14",
+          "amount": {
+            "amount": 500000000,
+            "currency": "USD"
+          },
+          "investorCount": 25,
+          "leadInvestors": [
+            "NVIDIA",
+            "T. Rowe Price"
+          ],
+          "postMoneyValuation": {
+            "amount": 43000000000,
+            "currency": "USD"
+          },
+          "type": "Series I"
+        },
+        {
+          "announcedDate": "2023-07-31",
+          "type": "Secondary Market"
+        },
+        {
+          "announcedDate": "2021-08-31",
+          "amount": {
+            "amount": 1600000000,
+            "currency": "USD"
+          },
+          "investorCount": 28,
+          "leadInvestors": [
+            "Counterpoint Global"
+          ],
+          "postMoneyValuation": {
+            "amount": 38000000000,
+            "currency": "USD"
+          },
+          "type": "Series H"
+        },
+        {
+          "announcedDate": "2021-02-01",
+          "amount": {
+            "amount": 1000000000,
+            "currency": "USD"
+          },
+          "investorCount": 23,
+          "leadInvestors": [
+            "Franklin Templeton"
+          ],
+          "postMoneyValuation": {
+            "amount": 28000000000,
+            "currency": "USD"
+          },
+          "type": "Series G"
+        }
+      ],
+      "investors": {
+        "reportedCount": 102,
+        "visibleNames": [
+          {
+            "name": "Andreessen Horowitz",
+            "rounds": [
+              "Private Equity Round"
+            ]
+          },
+          {
+            "name": "Clearlake Capital Group",
+            "rounds": [
+              "Private Equity Round"
+            ]
+          },
+          {
+            "name": "Fidelity",
+            "rounds": [
+              "Private Equity Round"
+            ]
+          },
+          {
+            "name": "Franklin Templeton",
+            "rounds": [
+              "Private Equity Round"
+            ]
+          },
+          {
+            "name": "Morgan Stanley",
+            "rounds": [
+              "Private Equity Round"
+            ]
+          },
+          {
+            "name": "New Enterprise Associates",
+            "rounds": [
+              "Private Equity Round"
+            ]
+          },
+          {
+            "name": "NVIDIA"
+          },
+          {
+            "name": "Premji Invest",
+            "rounds": [
+              "Private Equity Round"
+            ]
+          },
+          {
+            "name": "Sixth Street Growth",
+            "rounds": [
+              "Private Equity Round"
+            ]
+          },
+          {
+            "name": "Temasek",
+            "rounds": [
+              "Private Equity Round"
+            ]
+          },
+          {
+            "name": "TPG"
+          },
+          {
+            "isLead": true,
+            "name": "Unknown Investor",
+            "rounds": [
+              "Private Equity Round"
+            ]
+          },
+          {
+            "name": "Wellington Management"
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2649,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-09-12",
+          "publisher": "SaaStrAI",
+          "title": "Is the Era of the Sales-Guy CEO … Over in B2B?",
+          "url": "https://www.saastr.com/is-the-era-of-the-sales-guy-ceo-over-in-b2b/"
+        },
+        {
+          "date": "2026-09-11",
+          "publisher": "QuotedData",
+          "title": "Public access to private businesses",
+          "url": "https://quoteddata.com/2026/09/public-access-to-private-businesses/"
+        },
+        {
+          "date": "2026-09-10",
+          "publisher": "TechTarget",
+          "title": "Databricks launches model to boost data retrieval for AI",
+          "url": "https://www.techtarget.com/data-technologies/news/366650164/Databricks-launches-model-to-boost-data-retrieval-for-AI"
+        },
+        {
+          "date": "2026-09-10",
+          "publisher": "legacy.thefly.com",
+          "title": "Salesforce completes acquisition of Fin",
+          "url": "https://thefly.com/CRM"
+        },
+        {
+          "date": "2026-09-10",
+          "publisher": "legacy.thefly.com",
+          "title": "Talkdesk, Microsoft expand partnership for enterprise contact centers",
+          "url": "https://thefly.com/MSFT"
+        },
+        {
+          "date": "2026-09-09",
+          "publisher": "SiliconANGLE",
+          "title": "Databricks adds adaptive search model to speed agent retrieval",
+          "url": "https://siliconangle.com/2026/09/09/databricks-adds-adaptive-search-model-to-speed-agent-retrieval/"
+        },
+        {
+          "date": "2026-09-09",
+          "publisher": "legacy.thefly.com",
+          "title": "Wipro, CrowdStrike launch CISO Command Center",
+          "url": "https://thefly.com/WIT"
+        },
+        {
+          "date": "2026-09-09",
+          "publisher": "Venturebeat",
+          "title": "Databricks-trained AI agents match Claude and GPT-5.6 Luna's answer quality — in half the time",
+          "url": "https://venturebeat.com/data/databricks-trained-ai-agents-match-claude-and-gpt-5-6-lunas-answer-quality-in-half-the-time"
+        },
+        {
+          "date": "2026-09-08",
+          "publisher": "DZone",
+          "title": "What Branching Does Not Solve",
+          "url": "https://dzone.com/articles/lakebase-ai-agents"
+        },
+        {
+          "date": "2026-09-07",
+          "publisher": "Frenchweb.fr",
+          "title": "D’OURA à STRIPE, comment les entreprises organisent la liquidité avant la Bourse",
+          "url": "https://www.frenchweb.fr/doura-a-stripe-comment-les-entreprises-organisent-la-liquidite-avant-la-bourse/463240"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 9,
+    "knownDetailedFundingAmount": {
+      "amount": 31350000000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 97.22,
+    "unattributedFundingAmount": {
+      "amount": 896939324,
+      "currency": "USD"
+    },
+    "latestRoundShareOfTotalPercent": 15.51,
+    "latestToEarliestKnownValuationMultiple": 6.79
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "reportedPartnerships": {
+      "note": "Provider event summaries with linked sources; not independently verified.",
+      "items": [
+        {
+          "date": "2026-07-23",
+          "description": "Databricks and Microsoft expanded and extended their strategic partnership into the 2030s, with Databricks committing to run its core business operations on Azure Databricks, increasing use of Azure Cobalt infrastructure, and both companies deepening native integrations between the Databricks Data + AI Platform and Microsoft products including Microsoft 365, Teams and Copilot.",
+          "sources": [
+            {
+              "date": "2026-07-23",
+              "publisher": "PR Newswire",
+              "title": "Databricks and Microsoft expand partnership to help enterprises bring business context to enterprise AI",
+              "url": "https://www.prnewswire.com/news-releases/databricks-and-microsoft-expand-partnership-to-help-enterprises-bring-business-context-to-enterprise-ai-302832954.html"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-16",
+          "description": "Databricks announced an open partner ecosystem around CustomerLake, forming new integrations and collaborations with major martech and adtech providers to ingest and activate customer data across platforms.",
+          "sources": [
+            {
+              "date": "2026-06-16",
+              "publisher": "MarTech",
+              "title": "Databricks unveils CustomerLake, its agentic CDP",
+              "url": "https://martech.org/databricks-unveils-customerlake-its-agentic-cdp/"
+            }
+          ]
+        },
+        {
+          "date": "2026-05-07",
+          "description": "Databricks is collaborating with PETRONAS Digital and Malaysia Aviation Group to build governed data platforms and AI use cases in Malaysia, including PETRONAS' PetroWizard assistant and Malaysia Aviation Group's MABEL data lake.",
+          "sources": [
+            {
+              "date": "2026-05-07",
+              "publisher": "CRN Asia",
+              "title": "Databricks AI Day Kuala Lumpur 2026 highlights enterprise AI adoption in Malaysia",
+              "url": "https://www.crnasia.com/news/2026/data-and-analytics/databricks-ai-day-kuala-lumpur-2026-highlights-enterprise-ai"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-18",
+          "description": "Databricks and Google Cloud have formed a strategic partnership to make the Databricks data and AI platform available on Google Cloud infrastructure in Saudi Arabia, supporting local enterprises with compliant, scalable AI capabilities.",
+          "sources": [
+            {
+              "date": "2025-11-18",
+              "publisher": "TechAfrica News",
+              "title": "Databricks Launches on Google Cloud to Boost AI and Data Innovation in Saudi Arabia",
+              "url": "https://techafricanews.com/2025/11/18/databricks-launches-on-google-cloud-to-boost-ai-and-data-innovation-in-saudi-arabia/"
+            }
+          ]
+        },
+        {
+          "date": "2025-07-01",
+          "description": "Databricks Inc. formed a partnership with Shaip Inc. in July 2025 to provide de-identified healthcare data for AI applications, supporting medical AI solutions.",
+          "sources": [
+            {
+              "date": "2026-01-07",
+              "publisher": "GlobeNewswire",
+              "title": "Artificial Intelligence (AI) Voice De-identification Global Market Analysis Report 2025 Featuring Key Players - Microsoft, IBM, SoundHound AI, OpenAI, Axis Communications - Forecasts to 2029 and 2034",
+              "url": "https://www.globenewswire.com/news-release/2026/01/07/3214716/28124/en/Artificial-Intelligence-AI-Voice-De-identification-Global-Market-Analysis-Report-2025-Featuring-Key-Players-Microsoft-IBM-SoundHound-AI-OpenAI-Axis-Communications-Forecasts-to-2029.html"
+            }
+          ]
+        },
+        {
+          "date": "2025-06-05",
+          "description": "Databricks and Noma Security have announced a strategic partnership to deliver integrated AI security and governance solutions for enterprises, embedding Noma Security's platform within the Databricks Data Intelligence Platform.",
+          "sources": [
+            {
+              "date": "2025-06-05",
+              "publisher": "ChannelE2E",
+              "title": "Databricks and Noma Security Partner to Deliver Enterprise-Grade AI Security and Governance at Scale",
+              "url": "https://www.channele2e.com/news/databricks-and-noma-security-partner-to-deliver-enterprise-grade-ai-security-and-governance-at-scale"
+            }
+          ]
+        },
+        {
+          "date": "2025-06-01",
+          "description": "Databricks and Google Cloud established a strategic partnership to make Gemini models natively available on the Databricks platform, enabling bidirectional workflows between Databricks and BigQuery.",
+          "sources": [
+            {
+              "date": "2025-08-21",
+              "publisher": "WebProNews",
+              "title": "Google Cloud Gemini AI Automates Databricks to BigQuery SQL Migration",
+              "url": "https://www.webpronews.com/google-cloud-gemini-ai-automates-databricks-to-bigquery-sql-migration/"
+            }
+          ]
+        },
+        {
+          "date": "2025-04-15",
+          "description": "Databricks and Anthropic have announced a partnership to accelerate the development of domain-specific AI agents, leveraging their combined expertise in analytics and AI systems.",
+          "sources": [
+            {
+              "date": "2025-04-15",
+              "publisher": "TechCrunch",
+              "title": "Witness a dynamic dialogue between two visionary CEOs",
+              "url": "https://techcrunch.com/2025/04/15/witness-a-dynamic-dialogue-between-two-visionary-ceos/"
+            }
+          ]
+        },
+        {
+          "date": "2025-01-22",
+          "sources": [
+            {
+              "date": "2025-01-22",
+              "publisher": "Investing.com",
+              "title": "Meta backs data analytics firm Databricks as AI boom attracts investors",
+              "url": "https://www.investing.com/news/stock-market-news/meta-backs-data-analytics-firm-databricks-as-ai-boom-attracts-investors-3825188"
+            }
+          ]
+        }
+      ]
+    },
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2026-07-26",
+      "growthChange90Days": -4,
+      "growthScore": 93,
+      "heatChange90Days": 8,
+      "heatScore": 76,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-08-13",
+        "probabilityPercent": 81.29
+      },
+      "funding": {
+        "generatedDate": "2026-08-29",
+        "probabilityPercent": 94.95,
+        "timingEstimatePercent": {
+          "within6Months": 100,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 93.66
+      },
+      "ipo": {
+        "generatedDate": "2026-08-29",
+        "probabilityPercent": 95.45
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Snowflake is a cloud data platform that provides a data warehouse as a service designed for the cloud.",
+          "employeeRange": "10,001+",
+          "name": "Snowflake",
+          "sharedCategories": [
+            "Data Integration",
+            "Machine Learning",
+            "Data Management",
+            "Analytics",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Data Engineering",
+            "Data Cataloging",
+            "MLOps",
+            "Data Quality and Observability",
+            "Data Lake Platforms",
+            "Metadata Management",
+            "Data Warehousing",
+            "Data Pipelines"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Amazon is a tech firm with a focus on e-commerce, cloud computing, digital streaming, and AI infrastructure.",
+          "employeeRange": "10,001+",
+          "name": "Amazon",
+          "similarityScore": 97.81
+        },
+        {
+          "description": "Microsoft provides computer software, consumer electronics, cloud computing platforms, and digital enterprise systems.",
+          "employeeRange": "10,001+",
+          "name": "Microsoft",
+          "similarityScore": 97.19
+        },
+        {
+          "description": "Google specializes in internet-related services and products, including search, advertising, and software.",
+          "employeeRange": "10,001+",
+          "name": "Google",
+          "sharedSpecialties": [
+            "GPU and AI Infrastructure",
+            "Data Warehousing"
+          ],
+          "similarityScore": 96.72
+        },
+        {
+          "description": "Cloudera is a software development company that offers data management and cloud-native data analytic solutions.",
+          "employeeRange": "1,001-5,000",
+          "name": "Cloudera",
+          "sharedCategories": [
+            "Machine Learning",
+            "Data Management",
+            "Analytics",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Data Lineage Management",
+            "Data Engineering",
+            "Data Cataloging",
+            "Data Quality and Observability",
+            "Data Lake Platforms",
+            "Data Warehousing",
+            "Big Data Analytics",
+            "Data Pipelines"
+          ],
+          "similarityScore": 92.5
+        }
+      ]
+    },
+    "aiResearchSummary": {
+      "notFact": true,
+      "text": "Databricks is researching unified data and AI infrastructure focused on scalable data processing, lakehouse table management, and machine learning workflows. Work such as Pipelined execution of database queries processing streaming data, Multi-cluster query result caching, Auto maintenance for data tables in cloud storage, Feature Store with Integrated Tracking, Model ml registry and model serving, and Training machine learning transformer architectures with hybrid moving average shows efforts in streaming SQL, table optimization, feature and model management, and transformer and language model training. Together these target streaming analytics, data governance, and ML lifecycle management."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Private Equity round raised $5,000,000,000, or 15.51% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ],
+      "caveats": [
+        "Crunchbase reports 17 rounds but provides 10 detailed rows."
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $28,000,000,000 to $190,000,000,000, a 6.79x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 93 (-4 over 90 days) and market heat at 76 (+8).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Snowflake, Amazon, Microsoft.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "medium",
+        "finding": "Crunchbase reports 17 funding rounds but supplies 10 detailed rows.",
+        "impact": "The detailed round history is incomplete."
+      },
+      {
+        "severity": "medium",
+        "finding": "Disclosed detailed amounts total $31,350,000,000, leaving $896,939,324 of reported funding unattributed.",
+        "impact": "Do not invent or assign the missing amount to a round."
+      },
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 2649 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T17:30:16.860Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T17:30:16.857Z",
+    "url": "https://www.crunchbase.com/organization/columnar"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Columnar",
+      "shortDescription": "Columnar is a SaaS company that offers fast universal data connectivity services.",
+      "website": "https://columnar.tech/",
+      "foundedYear": 2025,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "headquarters": "New York, United States",
+      "geographicRegions": [
+        "Greater New York Area",
+        "East Coast",
+        "Northeastern US"
+      ],
+      "industries": [
+        "Data Integration",
+        "SaaS",
+        "Software"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Information Technology",
+        "Software"
+      ],
+      "founders": [
+        "Ian Cook"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "Arrow-native database connectivity based on the ADBC standard, enabling applications to query and exchange data with databases in columnar format across multiple languages.",
+        "name": "ADBC Connectivity Platform"
+      },
+      {
+        "description": "A command-line tool for installing, discovering, and managing ADBC drivers across Linux, macOS, and Windows.",
+        "name": "dbc"
+      },
+      {
+        "description": "A command-line tool for querying databases through ADBC drivers from a terminal.",
+        "name": "databow"
+      },
+      {
+        "description": "A DuckDB extension that connects DuckDB to databases supported by ADBC for querying, attaching, inserting, copying, and table creation.",
+        "name": "DuckDB ADBC Extension"
+      },
+      {
+        "description": "An open-source hub for developing, publishing, and maintaining ADBC drivers for database and query systems.",
+        "name": "ADBC Driver Foundry"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 3999999,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2025-05-21",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2025-05-21",
+          "amount": {
+            "amount": 3999999,
+            "currency": "USD"
+          },
+          "investorCount": 15,
+          "leadInvestors": [
+            "Bessemer Venture Partners"
+          ],
+          "postMoneyValuation": {
+            "amount": 22064084,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 15,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Bessemer Venture Partners",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Breakers",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Caitlin Colgrove",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Composed Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "K5 Global",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Next Play Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Olivier Pomel",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Paul Dix",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Scott Breitenother",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Swaroop Jagadish",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Tristan Handy"
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 2,
+      "includedUniqueCount": 2,
+      "items": [
+        {
+          "date": "2025-11-03",
+          "publisher": "The New Stack",
+          "title": "Apache Arrow’s Final Frontier: Replacing Outdated Database Drivers",
+          "url": "https://thenewstack.io/apache-arrows-final-frontier-replacing-outdated-database-drivers/"
+        },
+        {
+          "date": "2025-05-21",
+          "title": "Seed Round - Columnar"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 3999999,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100,
+    "latestToEarliestKnownValuationMultiple": 1
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2025-11-10",
+      "growthChange90Days": -6,
+      "growthScore": 53,
+      "heatChange90Days": -8,
+      "heatScore": 16,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 68.01
+      },
+      "funding": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 83.67,
+        "timingEstimatePercent": {
+          "within6Months": 99.99,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0.01
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 82.19
+      },
+      "ipo": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 3.84
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "CData Software is a software company that offers data integration solutions for real-time access to applications, databases, and Web APIs.",
+          "employeeRange": "251-500",
+          "name": "CData Software",
+          "sharedCategories": [
+            "Data Integration",
+            "Software"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Progress is a global software company that simplifies the development, deployment and management of business applications.",
+          "employeeRange": "1,001-5,000",
+          "name": "Progress",
+          "sharedCategories": [
+            "Software"
+          ],
+          "similarityScore": 92
+        },
+        {
+          "description": "Microsoft provides computer software, consumer electronics, cloud computing platforms, and digital enterprise systems.",
+          "employeeRange": "10,001+",
+          "name": "Microsoft",
+          "similarityScore": 88
+        },
+        {
+          "description": "Oracle is an integrated cloud application and platform services that sells a range of enterprise information technology solutions.",
+          "employeeRange": "10,001+",
+          "name": "Oracle",
+          "sharedCategories": [
+            "SaaS",
+            "Software"
+          ],
+          "similarityScore": 86
+        },
+        {
+          "description": "Devart is one of the leading developers of database tools and administration software",
+          "employeeRange": "101-250",
+          "name": "Devart",
+          "sharedCategories": [
+            "Data Integration",
+            "Software"
+          ],
+          "similarityScore": 84
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $3,999,999, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $22,064,084 to $22,064,084, a 1x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 53 (-6 over 90 days) and market heat at 16 (-8).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include CData Software, Progress, Microsoft.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

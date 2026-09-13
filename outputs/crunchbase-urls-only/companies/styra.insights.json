@@ -1,0 +1,449 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T18:58:28.696Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T18:58:28.693Z",
+    "url": "https://www.crunchbase.com/organization/styra"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Styra",
+      "shortDescription": "Styra offers a platform that allows companies to enforce and monitor authorization policies across cloud-native applications.",
+      "description": "Styra offers a platform that allows companies to enforce and monitor authorization policies across cloud-native applications. Styra delivers a fully managed Open Policy Agent platform with a built-in library of policies that allow customers to implement authorization policy-as-code. Prerunning supports the monitoring and validating of policy changes before committing, mitigating risk predeployment. Meanwhile, declarative models outline the desired state to prevent security drift and eliminate errors before they occur.\n\nStyra works with cloud-native APIs to define, enforce, and keep tabs on policies before runtime. The platform takes in a business context and outputs security decisions across namespaces and clusters, letting customers write policy once and enact it where necessary.",
+      "website": "https://www.styra.com/",
+      "foundedYear": 2016,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "51-100",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Redwood City, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Cloud Infrastructure",
+        "Cloud Management",
+        "Cloud Security",
+        "Cyber Security",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Internet Services",
+        "Privacy and Security",
+        "Software"
+      ],
+      "founders": [
+        "Pierre Ettori",
+        "Teemu Koponen",
+        "Tim Hinrichs"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A platform for fine-grained, policy-based authorization that supports cloud migration, Zero Trust, and application modernization across various architectures.",
+        "name": "Enterprise OPA Platform"
+      },
+      {
+        "description": "An enterprise-grade distribution of Open Policy Agent optimized for data-heavy authorization workloads with improved memory and CPU efficiency.",
+        "name": "Enterprise OPA"
+      },
+      {
+        "description": "A tool that enables business users and analysts to author and deploy authorization policies without coding, featuring automated regression analysis and approval workflows.",
+        "name": "Low-Code Policy Builder"
+      },
+      {
+        "description": "Policy-based access control solution to manage employee access, minimizing risks from credential compromise and insider threats.",
+        "name": "Workforce Authorization"
+      },
+      {
+        "description": "A scalable authorization platform to provide secure and seamless access for customers to applications.",
+        "name": "Customer Authorization"
+      },
+      {
+        "description": "Authorization platform feature that enforces row-level and column-level data access controls for employees and customers.",
+        "name": "Data Access Filtering"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 54000000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 3,
+      "detailedRoundCount": 3,
+      "lastFundingDate": "2021-05-18",
+      "lastFundingType": "Series B",
+      "rounds": [
+        {
+          "announcedDate": "2021-05-18",
+          "amount": {
+            "amount": 40000000,
+            "currency": "USD"
+          },
+          "investorCount": 7,
+          "leadInvestors": [
+            "Battery Ventures"
+          ],
+          "postMoneyValuation": {
+            "amount": 202734968,
+            "currency": "USD"
+          },
+          "type": "Series B"
+        },
+        {
+          "announcedDate": "2019-11-12",
+          "amount": {
+            "amount": 14000000,
+            "currency": "USD"
+          },
+          "investorCount": 3,
+          "leadInvestors": [
+            "Accel"
+          ],
+          "postMoneyValuation": {
+            "amount": 62585185,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2015-07-15",
+          "investorCount": 2,
+          "postMoneyValuation": {
+            "amount": 5132588,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 10,
+        "visibleNames": [
+          {
+            "name": "A Capital",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "A.Capital Ventures",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Accel",
+            "rounds": [
+              "Series B",
+              "Series A"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Battery Ventures",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Capital One Ventures",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Cisco Investments",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Citi Ventures",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "SV Angel"
+          },
+          {
+            "name": "Unusual Ventures",
+            "rounds": [
+              "Series B",
+              "Series A"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 32,
+      "includedUniqueCount": 9,
+      "items": [
+        {
+          "date": "2024-10-21",
+          "publisher": "The Hacker News",
+          "title": "Security Flaw in Styra's OPA Exposes NTLM Hashes to Remote Attackers",
+          "url": "https://thehackernews.com/2024/10/security-flaw-in-styras-opa-exposes.html"
+        },
+        {
+          "date": "2024-02-05",
+          "publisher": "Pulse 2.0",
+          "title": "Styra: How This Company Is Building Policy As Code For Cloud Native Security",
+          "url": "https://pulse2.com/styra-tim-hinrichs-profile/"
+        },
+        {
+          "date": "2023-11-10",
+          "publisher": "Google Patent",
+          "title": "Graphical user interface and system for defining and maintaining code-based …",
+          "url": "https://patents.google.com/patent/US20240078097A1/en"
+        },
+        {
+          "date": "2023-11-09",
+          "publisher": "Computer Weekly",
+          "title": "Why IT governance is a coding issue",
+          "url": "https://www.computerweekly.com/news/366558852/Why-IT-governance-is-a-coding-issue"
+        },
+        {
+          "date": "2023-11-07",
+          "publisher": "InfoQ",
+          "title": "Seven Essential Tracks at QCon London 2024: GenAI ...",
+          "url": "https://www.infoq.com/news/2023/11/qcon-london-2024-tracks/"
+        },
+        {
+          "date": "2023-10-31",
+          "publisher": "The New Stack",
+          "title": "Charlie Egan, Author at The New Stack",
+          "url": "https://thenewstack.io/author/charlie-egan/"
+        },
+        {
+          "date": "2023-10-27",
+          "publisher": "InfoQ",
+          "title": "Agile Rehab: Replacing Process Dogma with Engineering to ...",
+          "url": "https://www.infoq.com/articles/replace-process-dogma-engineering/"
+        },
+        {
+          "date": "2023-10-04",
+          "publisher": "InfoQ",
+          "title": "Effective Performance Engineering at Twitter-Scale: Yao Yue ...",
+          "url": "https://www.infoq.com/news/2023/10/performance-engineering-scale/"
+        },
+        {
+          "date": "2023-08-29",
+          "publisher": "Google Patent",
+          "title": "Partial policy evaluation",
+          "url": "https://patents.google.com/patent/US12118102B1/en"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 2,
+    "knownDetailedFundingAmount": {
+      "amount": 54000000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 74.07,
+    "latestToEarliestKnownValuationMultiple": 39.5
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2024-01-17",
+      "growthChange90Days": 1,
+      "growthScore": 64,
+      "heatChange90Days": -4,
+      "heatScore": 64,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 18.02,
+        "timingEstimatePercent": {
+          "within6Months": 14.73,
+          "months6To11": 12.56,
+          "months12To24": 19.84,
+          "beyond24Months": 52.87
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 69.18
+      },
+      "ipo": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Aserto enables SaaS application developers to roll out enterprise-ready permissions and RBAC through its modern authorization platform.",
+          "employeeRange": "11-50",
+          "name": "Aserto",
+          "sharedSpecialties": [
+            "Compliance Automation",
+            "Zero Trust Security",
+            "API Security",
+            "Identity Governance and Administration (IGA)"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Oso is authorization as a service",
+          "employeeRange": "11-50",
+          "name": "Oso",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Zero Trust Security",
+            "API Security",
+            "Identity Governance and Administration (IGA)",
+            "Data Policy Management"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Permit.io empowers developers to bake in permissions and access-control into product in minutes and takes away the pain of rebuilding them.",
+          "employeeRange": "11-50",
+          "name": "Permit.io",
+          "sharedCategories": [
+            "Cyber Security",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Compliance Automation",
+            "Cloud Infrastructure Entitlement Management (CIEM)",
+            "Identity Governance and Administration (IGA)",
+            "Open Source Governance"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Frontegg provides a powerful user management infrastructure, designed for modern applications.",
+          "employeeRange": "51-100",
+          "name": "Frontegg",
+          "sharedCategories": [
+            "Cyber Security"
+          ],
+          "sharedSpecialties": [
+            "Data Privacy Management",
+            "Zero Trust Security",
+            "Workflow Automation",
+            "Identity Governance and Administration (IGA)"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Cerbos is an authorization management platform for software and AI",
+          "employeeRange": "11-50",
+          "name": "Cerbos",
+          "sharedCategories": [
+            "Cyber Security"
+          ],
+          "sharedSpecialties": [
+            "Zero Trust Security",
+            "API Security",
+            "Identity Governance and Administration (IGA)",
+            "Open Source Governance",
+            "Data Policy Management"
+          ],
+          "similarityScore": 87
+        }
+      ]
+    },
+    "aiResearchSummary": {
+      "notFact": true,
+      "text": "Styra is researching methods for defining code-based policies through graphical user interfaces, as described in 'Graphical user interface and system for defining and maintaining code-based policies.' The company is also developing techniques for partial policy evaluation and authorizing API calls, as seen in 'Partial policy evaluation' and 'Method and apparatus to reduce the window for policy violations with minimal impact.' Additional work includes viewing aggregate policies and validating policies and data in API authorization systems. These areas reflect Styra’s focus on policy management and API authorization."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Series B round raised $40,000,000, or 74.07% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $5,132,588 to $202,734,968, a 39.5x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 64 (+1 over 90 days) and market heat at 64 (-4).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Aserto, Oso, Permit.io.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 32 timeline items but exposes 9 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

@@ -1,0 +1,517 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T18:03:18.244Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T18:03:18.241Z",
+    "url": "https://www.crunchbase.com/organization/inworld-ai"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Inworld AI",
+      "shortDescription": "Inworld AI is a realtime voice AI research lab. Its TTS, STT, LLM Router, and Realtime API power consumer AI applications at scale.",
+      "description": "Inworld AI is a research lab focused on realtime voice AI, providing the voice layer for consumer AI applications. Developers use Inworld to give their applications natural, low-latency voice conversations at scale.\n\nThe platform includes Realtime TTS-2, a text-to-speech model supporting more than 100 languages with natural-language voice steering, alongside speech-to-text, an LLM Router with access to more than 200 models at provider rates, dedicated GPU infrastructure, and a Realtime API that unifies speech-to-text, language models, and text-to-speech into a single live conversation. Each product is available through its own API, with unified billing.\n\nInworld is built for realtime conversation at scale: roughly 200-millisecond responses at high concurrency, with cost efficiency that holds as usage grows. Its text-to-speech models are among the top-ranked on the independent Artificial Analysis Speech Arena. Because Inworld ships models and APIs rather than consumer products of its own, it does not compete with the applications built on it.\n\nInworld powers voice applications across companionship, education, coaching, and entertainment, with customers including Status by Wishroll, Bible Chat, Talkpal, NVIDIA, NBCUniversal, and Logitech Streamlabs. The founding team led product for LLMs at DeepMind and built Dialogflow, the conversational AI platform acquired by Google. Founded in 2021 and headquartered in Mountain View, California, Inworld has raised more than $125M from investors including Lightspeed, Kleiner Perkins, Founders Fund, CRV, Microsoft's M12, Meta, Intel Capital, Samsung NEXT, LG Technology Ventures, and Bitkraft.",
+      "website": "https://inworld.ai/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "101-250",
+      "estimatedRevenueRange": "$10M-$50M",
+      "headquarters": "Mountain View, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Agentic AI",
+        "AI Infrastructure",
+        "Artificial Intelligence (AI)",
+        "Developer APIs",
+        "Developer Tools",
+        "Generative AI",
+        "Machine Learning"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Ilya Gelfenbeyn",
+        "Kylan Gibbs",
+        "Michael Ermolenko"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "API-based text-to-speech for generating natural, expressive audio with low latency. It supports voice cloning, text-based voice design, voice direction, streaming, and over 100 languages.",
+        "name": "Realtime TTS"
+      },
+      {
+        "description": "A cloud API for building full-duplex, speech-to-speech conversations with streaming audio, tool calling, customizable voices, turn taking, and dynamic context management.",
+        "name": "Realtime API"
+      },
+      {
+        "description": "A provider-agnostic LLM routing API that selects among more than 220 models from providers such as OpenAI, Anthropic, and Google, with analytics, failover, A/B testing, and optimization controls.",
+        "name": "Realtime Router"
+      },
+      {
+        "description": "A realtime speech-to-text API for streaming and file transcription, with voice profiling, semantic and acoustic voice activity detection, custom vocabulary, timestamps, and speaker diarization.",
+        "name": "Realtime STT"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 123200000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 6,
+      "detailedRoundCount": 6,
+      "lastFundingDate": "2023-08-02",
+      "lastFundingType": "Series A",
+      "rounds": [
+        {
+          "announcedDate": "2023-08-02",
+          "amount": {
+            "amount": 56000000,
+            "currency": "USD"
+          },
+          "investorCount": 8,
+          "leadInvestors": [
+            "Lightspeed Venture Partners"
+          ],
+          "postMoneyValuation": {
+            "amount": 521000000,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2023-06-27",
+          "investorCount": 1,
+          "leadInvestors": [
+            "Comcast NBCUniversal LIFT Labs"
+          ],
+          "type": "Non Equity Assistance"
+        },
+        {
+          "announcedDate": "2022-08-23",
+          "amount": {
+            "amount": 50000000,
+            "currency": "USD"
+          },
+          "investorCount": 14,
+          "leadInvestors": [
+            "Intel Capital",
+            "S32"
+          ],
+          "postMoneyValuation": {
+            "amount": 391785672,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2022-07-13",
+          "investorCount": 1,
+          "leadInvestors": [
+            "Disney Accelerator"
+          ],
+          "type": "Non Equity Assistance"
+        },
+        {
+          "announcedDate": "2022-03-03",
+          "amount": {
+            "amount": 10000000,
+            "currency": "USD"
+          },
+          "investorCount": 11,
+          "leadInvestors": [
+            "BITKRAFT Ventures"
+          ],
+          "postMoneyValuation": {
+            "amount": 76095930,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2021-11-08",
+          "amount": {
+            "amount": 7200000,
+            "currency": "USD"
+          },
+          "investorCount": 5,
+          "leadInvestors": [
+            "CRV",
+            "Kleiner Perkins"
+          ],
+          "postMoneyValuation": {
+            "amount": 46852896,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 30,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Comcast NBCUniversal LIFT Labs",
+            "rounds": [
+              "Non Equity Assistance"
+            ]
+          },
+          {
+            "name": "Dentsu Ventures",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "First Spark Ventures",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Founders Fund"
+          },
+          {
+            "name": "LG Technology Ventures",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Lightspeed Venture Partners",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "M12 - Microsoft's Venture Fund",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Meta"
+          },
+          {
+            "name": "NTT DOCOMO Ventures",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "S32"
+          },
+          {
+            "name": "Samsung NEXT",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "Sequoia Capital"
+          },
+          {
+            "name": "Stanford University",
+            "rounds": [
+              "Series A"
+            ]
+          },
+          {
+            "name": "XRM Media",
+            "rounds": [
+              "Series A"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 161,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-06-16",
+          "publisher": "prnasia.com",
+          "title": "Tencent Cloud and Inworld AI Announce Strategic Partnership to Deliver a One-Stop, Lifelike, Realtime Voice AI Solution",
+          "url": "https://en.prnasia.com/releases/apac/tencent-cloud-and-inworld-ai-announce-strategic-partnership-to-deliver-a-one-stop-lifelike-realtime-voice-ai-solution-537364.shtml"
+        },
+        {
+          "date": "2026-06-10",
+          "publisher": "Morningstar.com",
+          "title": "Inworld Cuts Prices to Take Down the Biggest Wall in Consumer AI: Cost",
+          "url": "https://www.morningstar.com/news/business-wire/20260610968386/inworld-cuts-prices-to-take-down-the-biggest-wall-in-consumer-ai-cost"
+        },
+        {
+          "date": "2026-06-10",
+          "publisher": "Business Wire",
+          "title": "Inworld Cuts Prices to Take Down the Biggest Wall in Consumer AI: Cost",
+          "url": "https://www.businesswire.com/news/home/20260610968386/en/Inworld-Cuts-Prices-to-Take-Down-the-Biggest-Wall-in-Consumer-AI-Cost"
+        },
+        {
+          "date": "2026-05-05",
+          "publisher": "Business Wire",
+          "title": "Inworld Launches New Frontier Voice Model That Gives AI Agents Contextual Empathy",
+          "url": "https://www.businesswire.com/news/home/20260505096579/en/Inworld-Launches-New-Frontier-Voice-Model-That-Gives-AI-Agents-Contextual-Empathy"
+        },
+        {
+          "date": "2026-05-05",
+          "publisher": "Business Insider",
+          "title": "This new AI model hears your tone, senses your mood, and talks back like a real human. Siri could never.",
+          "url": "https://www.businessinsider.com/ai-feels-how-you-speak-inworld-kylan-gibbs-2026-4"
+        },
+        {
+          "date": "2026-01-23",
+          "publisher": "Venturebeat",
+          "title": "Everything in voice AI just changed: how enterprise AI builders can benefit",
+          "url": "https://venturebeat.com/orchestration/everything-in-voice-ai-just-changed-how-enterprise-ai-builders-can-benefit"
+        },
+        {
+          "date": "2026-01-21",
+          "publisher": "GlobeNewswire",
+          "title": "Inworld AI Launches TTS-1.5, a Groundbreaking Voice AI model for the Next Wave of Realtime AI Applications",
+          "url": "https://www.globenewswire.com/news-release/2026/01/21/3222492/0/en/Inworld-AI-Launches-TTS-1-5-a-Groundbreaking-Voice-AI-model-for-the-Next-Wave-of-Realtime-AI-Applications.html"
+        },
+        {
+          "date": "2025-12-17",
+          "publisher": "UrbanGeekz",
+          "title": "UrbanGeekz 50 2025: AI & Machine Learning",
+          "url": "https://urbangeekz.com/2025/12/urbangeekz-50-2025-ai-machine-learning/"
+        },
+        {
+          "date": "2025-11-10",
+          "publisher": "Newsfile",
+          "title": "TRMNL4 and Inworld AI Launch Equity-Free Consumer AI Accelerator to Scale Startups and Boost Growth",
+          "url": "https://www.newsfilecorp.com/release/273465/TRMNL4-and-Inworld-AI-Launch-EquityFree-Consumer-AI-Accelerator-to-Scale-Startups-and-Boost-Growth"
+        },
+        {
+          "date": "2025-09-18",
+          "publisher": "TechRadar.com",
+          "title": "After seeing Logitech’s AI-powered game streaming assistant in action, I think it’s one of the best uses of the tech yet",
+          "url": "https://www.techradar.com/gaming/after-seeing-logitechs-ai-powered-game-streaming-assistant-in-action-i-think-its-one-of-the-best-uses-of-the-tech-yet"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 4,
+    "knownDetailedFundingAmount": {
+      "amount": 123200000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 45.45,
+    "latestToEarliestKnownValuationMultiple": 11.12
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "reportedPartnerships": {
+      "note": "Provider event summaries with linked sources; not independently verified.",
+      "items": [
+        {
+          "date": "2025-01-07",
+          "sources": [
+            {
+              "date": "2025-01-07",
+              "publisher": "Business Wire",
+              "title": "Inworld AI Collaborates with Logitech G’s Streamlabs and NVIDIA to Power the Brains Behind Intelligent Streaming Assistant",
+              "url": "https://www.businesswire.com/news/home/20250106653761/en/Inworld-AI-Collaborates-with-Logitech-G%E2%80%99s-Streamlabs-and-NVIDIA-to-Power-the-Brains-Behind-Intelligent-Streaming-Assistant"
+            }
+          ]
+        }
+      ]
+    },
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2024-05-03",
+      "growthChange90Days": -36,
+      "growthScore": 51,
+      "heatChange90Days": -13,
+      "heatScore": 59,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 32.91,
+        "timingEstimatePercent": {
+          "within6Months": 16.22,
+          "months6To11": 13.59,
+          "months12To24": 20.93,
+          "beyond24Months": 49.26
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 69.58
+      },
+      "ipo": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "OpenAI is an AI research and deployment company that develops advanced AI models, including ChatGPT.",
+          "employeeRange": "1,001-5,000",
+          "name": "OpenAI",
+          "sharedCategories": [
+            "Agentic AI",
+            "Machine Learning",
+            "Generative AI",
+            "AI Infrastructure",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "LLMOps",
+            "AI Chatbots and Virtual Assistants"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "ElevenLabs develops artificial intelligence software focused on speech synthesis and voice generation.",
+          "employeeRange": "501-1,000",
+          "name": "ElevenLabs",
+          "sharedCategories": [
+            "Developer APIs",
+            "Generative AI",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "AI Chatbots and Virtual Assistants"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Vapi is a voice AI platform that allows developers to build, test and deploy voice agents for phone calls and customer support.",
+          "employeeRange": "101-250",
+          "name": "Vapi",
+          "sharedCategories": [
+            "Machine Learning",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Agentic Orchestration",
+            "AI Chatbots and Virtual Assistants"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "LiveKit provides a cloud platform that enables developers to build, deploy, and manage real-time communication and AI-driven applications.",
+          "employeeRange": "101-250",
+          "name": "LiveKit",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "AI Chatbots and Virtual Assistants"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Retell AI is the AI voice platform that helps corporate call centers automate calls indistinguishable from human.",
+          "employeeRange": "101-250",
+          "name": "Retell AI",
+          "sharedCategories": [
+            "Generative AI",
+            "Artificial Intelligence (AI)"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    },
+    "aiResearchSummary": {
+      "notFact": true,
+      "text": "Inworld AI is researching systems and methods for artificial intelligence character models, including language model orchestration, multi source based knowledge data, and controlling generative language models for artificial intelligence characters. Work spans emotional state models and continuous update of emotional states, contextually oriented behavior, goal oriented behavior, and real time animation. Additional efforts address dynamic control of knowledge scope and behavioral characteristics, safety settings, and user interfaces for construction, training, and sharing of artificial intelligence characters."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Series A round raised $56,000,000, or 45.45% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $46,852,896 to $521,000,000, a 11.12x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 51 (-36 over 90 days) and market heat at 59 (-13).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include OpenAI, ElevenLabs, Vapi.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 161 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

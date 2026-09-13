@@ -1,0 +1,544 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T18:57:32.973Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T18:57:32.969Z",
+    "url": "https://www.crunchbase.com/organization/starkware-industries-ltd"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "StarkWare Industries",
+      "shortDescription": "StarkWare Industries develops a full-proof stack in generating and verifying proofs of computational integrity in the blockchain.",
+      "description": "StarkWare Industries uses Stark technology to develop a full proof stack in generating and verifying proofs of computational integrity.",
+      "website": "http://www.starkware.co/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "101-250",
+      "headquarters": "Netanya, HaMerkaz, Israel",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)",
+        "Middle East",
+        "Middle East and North Africa (MENA)"
+      ],
+      "industries": [
+        "Blockchain",
+        "Cryptocurrency",
+        "Information Technology",
+        "Infrastructure",
+        "Software"
+      ],
+      "sectors": [
+        "Blockchain and Cryptocurrency",
+        "Financial Services",
+        "Information Technology",
+        "Other",
+        "Payments",
+        "Software"
+      ],
+      "founders": [
+        "Alessandro Chiesa",
+        "Eli Ben-Sasson",
+        "Michael Riabzev",
+        "Uri Kolodny"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A permissionless Layer 2 blockchain that uses STARK proofs to scale Ethereum transactions while supporting smart contracts written in Cairo.",
+        "name": "Starknet"
+      },
+      {
+        "description": "A scalable validity-proof service for deploying application-specific Layer 2 systems and processing transactions with cryptographic proofs verified on Ethereum.",
+        "name": "StarkEx"
+      },
+      {
+        "description": "A programming language and development ecosystem for writing provable programs and smart contracts that can run on Starknet and other STARK-based systems.",
+        "name": "Cairo"
+      },
+      {
+        "description": "Cryptographic infrastructure for generating and verifying STARK proofs of computational integrity, enabling scalable blockchain execution and data processing.",
+        "name": "STARK Proving and Verification Stack"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 273000000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 8,
+      "detailedRoundCount": 8,
+      "lastFundingDate": "2024-05-21",
+      "lastFundingType": "Secondary Market",
+      "rounds": [
+        {
+          "announcedDate": "2024-05-21",
+          "type": "Secondary Market"
+        },
+        {
+          "announcedDate": "2023-09-11",
+          "investorCount": 3,
+          "type": "Venture round"
+        },
+        {
+          "announcedDate": "2022-05-25",
+          "amount": {
+            "amount": 100000000,
+            "currency": "USD"
+          },
+          "investorCount": 4,
+          "leadInvestors": [
+            "Alameda Research",
+            "Coatue",
+            "Greenoaks"
+          ],
+          "postMoneyValuation": {
+            "amount": 8000000000,
+            "currency": "USD"
+          },
+          "type": "Series D"
+        },
+        {
+          "announcedDate": "2021-11-16",
+          "amount": {
+            "amount": 50000000,
+            "currency": "USD"
+          },
+          "investorCount": 4,
+          "leadInvestors": [
+            "Sequoia Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 2000000000,
+            "currency": "USD"
+          },
+          "type": "Series C"
+        },
+        {
+          "announcedDate": "2021-03-24",
+          "amount": {
+            "amount": 75000000,
+            "currency": "USD"
+          },
+          "investorCount": 9,
+          "leadInvestors": [
+            "Paradigm"
+          ],
+          "postMoneyValuation": {
+            "amount": 571244958,
+            "currency": "USD"
+          },
+          "type": "Series B"
+        },
+        {
+          "announcedDate": "2018-10-28",
+          "amount": {
+            "amount": 30000000,
+            "currency": "USD"
+          },
+          "investorCount": 21,
+          "leadInvestors": [
+            "Paradigm",
+            "Sequoia Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 164308777,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2018-07-16",
+          "amount": {
+            "amount": 12000000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Ethereum Foundation"
+          ],
+          "type": "Grant"
+        },
+        {
+          "announcedDate": "2018-01-31",
+          "amount": {
+            "amount": 6000000,
+            "currency": "USD"
+          },
+          "investorCount": 11,
+          "postMoneyValuation": {
+            "amount": 23624174,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 40,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Alameda Research",
+            "rounds": [
+              "Series D",
+              "Series C"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Coatue",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "ConsenSys Mesh",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "DCVC",
+            "rounds": [
+              "Series C"
+            ]
+          },
+          {
+            "name": "Figment Capital",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "Founders Fund"
+          },
+          {
+            "isLead": true,
+            "name": "Greenoaks",
+            "rounds": [
+              "Series D"
+            ]
+          },
+          {
+            "name": "IOSG Ventures",
+            "rounds": [
+              "Series C"
+            ]
+          },
+          {
+            "name": "OKX Ventures",
+            "rounds": [
+              "Venture round"
+            ]
+          },
+          {
+            "name": "Paradigm"
+          },
+          {
+            "name": "Sequoia Capital"
+          },
+          {
+            "name": "Tiger Global Management",
+            "rounds": [
+              "Series D"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 106,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-09-11",
+          "publisher": "Decrypt",
+          "title": "Morning Minute: AI Agents Cut BTC Quantum Attack Benchmark by 86%",
+          "url": "https://decrypt.co/377948/morning-minute-ai-agents-cut-btc-quantum-attack-benchmark-by-86"
+        },
+        {
+          "date": "2026-09-10",
+          "publisher": "TradingView",
+          "title": "Starknet: v0.14.4 mainnet upgrade enables 1.1B gas block-sized proofs - 05 Oct 2026",
+          "url": "https://www.tradingview.com/news/coinmarketcal:d1832a271094b:0-starknet-v0-14-4-mainnet-upgrade-enables-1-1b-gas-block-sized-proofs-05-oct-2026/"
+        },
+        {
+          "date": "2026-09-09",
+          "publisher": "Crunchbase News",
+          "title": "Tech Layoffs: US Companies That Cut Jobs 2022-2026",
+          "url": "https://news.crunchbase.com/startups/tech-layoffs/"
+        },
+        {
+          "date": "2026-08-28",
+          "publisher": "Decrypt",
+          "title": "Bitcoin Completes First Experimental Quantum-Safe Transaction, Starkware Says",
+          "url": "https://decrypt.co/376767/bitcoin-quantum-safe-transaction-starkware"
+        },
+        {
+          "date": "2026-08-27",
+          "publisher": "Tokenist",
+          "title": "StarkWare Mines Bitcoin Quantum-Safe Transaction on Mainnet",
+          "url": "https://tokenist.com/bitcoin-quantum-safe-mainnet/"
+        },
+        {
+          "date": "2026-08-27",
+          "publisher": "Cointelegraph",
+          "title": "StarkWare tests quantum-resistant Bitcoin transaction on mainnet",
+          "url": "https://cointelegraph.com/news/starkware-quantum-resistant-bitcoin-transaction-mainnet"
+        },
+        {
+          "date": "2026-08-27",
+          "publisher": "PANews",
+          "title": "StarkWare宣布首笔抗量子比特币交易已成功执行"
+        },
+        {
+          "date": "2026-08-27",
+          "publisher": "PANews",
+          "title": "PA日报 | 英伟达交出超预期财报，明年营收预计再增70%；比特币现货ETF昨日净流入2.32亿美元"
+        },
+        {
+          "date": "2026-08-27",
+          "publisher": "Crowdfund Insider",
+          "title": "StarkWare Confirms First Quantum-Safe Bitcoin Spend on Mainnet, Without a Protocol Change",
+          "url": "https://www.crowdfundinsider.com/2026/08/302209-starkware-confirms-first-quantum-safe-bitcoin-spend-on-mainnet-without-a-protocol-change/"
+        },
+        {
+          "date": "2026-08-27",
+          "publisher": "PANews",
+          "title": "昨夜今晨重要资讯（8月26日-8月27日）"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 6,
+    "knownDetailedFundingAmount": {
+      "amount": 273000000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "grantFunding": {
+      "amount": {
+        "amount": 12000000,
+        "currency": "USD"
+      },
+      "disclosedRoundCount": 1,
+      "shareOfTotalPercent": 4.4
+    },
+    "latestToEarliestKnownValuationMultiple": 338.64
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "reportedPartnerships": {
+      "note": "Provider event summaries with linked sources; not independently verified.",
+      "items": [
+        {
+          "date": "2026-02-17",
+          "description": "StarkWare announces a strategic collaboration with EY through the integration of EY-developed Nightfall, bringing enterprise-grade privacy capabilities to Starknet and Ethereum for institutional blockchain use.",
+          "sources": [
+            {
+              "date": "2026-02-17",
+              "publisher": "Morningstar.com",
+              "title": "Private Blockchain Payments Arrive on Public Rails",
+              "url": "https://www.morningstar.com/news/pr-newswire/20260217ln89364/private-blockchain-payments-arrive-on-public-rails"
+            }
+          ]
+        }
+      ]
+    },
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2026-07-05",
+      "growthChange90Days": 4,
+      "growthScore": 45,
+      "heatChange90Days": -4,
+      "heatScore": 77,
+      "status": "Declining"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 95.42
+      },
+      "funding": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 35.07,
+        "timingEstimatePercent": {
+          "within6Months": 77.94,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 22.06
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 23.78
+      },
+      "ipo": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 18.86
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Matter Labs is a blockchain technology company focused on building scalable infrastructure for decentralized applications.",
+          "employeeRange": "51-100",
+          "name": "Matter Labs",
+          "sharedCategories": [
+            "Blockchain",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Blockchain Gaming",
+            "Decentralized Exchanges",
+            "NFT Marketplaces",
+            "Smart Contract Development Frameworks",
+            "Cross-Chain Bridges"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "ZKsync provides safe one-tap onboarding with FaceID/Passkeys, removing the need for seed phrases and lowering the danger of hacking.",
+          "employeeRange": "51-100",
+          "name": "ZKsync",
+          "sharedCategories": [
+            "Blockchain"
+          ],
+          "sharedSpecialties": [
+            "NFT Marketplaces",
+            "Smart Contract Development Frameworks",
+            "Cross-Chain Bridges"
+          ],
+          "similarityScore": 96
+        },
+        {
+          "description": "Scroll.io provides a native zkEVM scaling solution for Ethereum.",
+          "employeeRange": "51-100",
+          "name": "Scroll.io",
+          "sharedCategories": [
+            "Blockchain",
+            "Cryptocurrency",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Blockchain Gaming",
+            "Developer Documentation Platforms",
+            "NFT Marketplaces",
+            "Smart Contract Development Frameworks",
+            "Cross-Chain Bridges",
+            "SDK Management"
+          ],
+          "similarityScore": 94
+        },
+        {
+          "description": "Polygon is a platform for Ethereum scaling and infrastructure development.",
+          "employeeRange": "1-10",
+          "name": "Polygon",
+          "sharedCategories": [
+            "Blockchain",
+            "Infrastructure",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Developer Documentation Platforms",
+            "NFT Marketplaces",
+            "Smart Contract Development Frameworks",
+            "Cross-Chain Bridges",
+            "Developer Portals"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "Immutable is a blockchain-based games platform that aims to introduce people to blockchain technology.",
+          "employeeRange": "101-250",
+          "name": "Immutable Systems",
+          "sharedCategories": [
+            "Blockchain",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Blockchain Gaming",
+            "NFT Marketplaces",
+            "Smart Contract Development Frameworks"
+          ],
+          "similarityScore": 88
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Meaningful non-dilutive funding",
+      "statement": "1 disclosed grants total $12,000,000, representing 4.4% of reported funding.",
+      "implication": "The grants reduce the share of reported financing attributed to equity or notes, although their restrictions and milestone requirements need separate verification.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.grantFunding"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $23,624,174 to $8,000,000,000, a 338.64x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 45 (+4 over 90 days) and market heat at 77 (-4).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Matter Labs, ZKsync, Scroll.io.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 106 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

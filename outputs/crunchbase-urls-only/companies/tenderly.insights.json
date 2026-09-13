@@ -1,0 +1,480 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T19:03:20.213Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T19:03:20.210Z",
+    "url": "https://www.crunchbase.com/organization/tenderly"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Tenderly",
+      "shortDescription": "Tenderly is a blockchain operations platform for simulating, validating, and monitoring onchain activity.",
+      "description": "Tenderly is a blockchain operations platform for teams running production systems onchain. It pioneered transaction simulation in web3 and built one of the first smart contract debuggers, and today gives engineering, finance, and risk teams a single environment to simulate, validate, and monitor onchain activity, so they can model the outcome of any transaction, integration, or capital allocation against live production state before it happens.\n\nHigh-fidelity Simulations preview any onchain action against real, current state, including live oracle prices and synced liquidity. A multichain Explorer decodes transactions and contract activity into readable operational context. Real-time Monitoring detects anomalies and triggers automated, validated responses. The platform supports 100+ EVM networks, from Ethereum and leading Layer 2s (Arbitrum, Optimism, Base, Polygon, Linea) to emerging chains such as World Chain, MegaETH, and Plasma.\n\nTenderly is a chosen infrastructure and tooling provider for major new networks, including Robinhood Chain, Circle's Arc, Sony's Soneium, and Tempo, the payments blockchain incubated by Stripe and Paradigm. Founded in 2018, it is used across the onchain ecosystem: by protocols such as Aave, Uniswap, Morpho, Safe, Chainlink, and Sky; by institutions, exchanges, and market makers including Kraken, Binance, Anchorage Digital, Maple, Tether, and Wintermute; and by security teams such as the Security Alliance (SEAL), zeroShadow, and Cyfrin. Teams have run more than 4 billion simulations and debugged over 10 million transactions on the platform, which powers protocols and organizations behind more than 50 billion dollars in onchain value.",
+      "website": "https://tenderly.co/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "51-100",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Belgrade, Vojvodina, Serbia",
+      "geographicRegions": [
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Blockchain",
+        "Developer Platform",
+        "Developer Tools",
+        "Financial Services",
+        "FinTech",
+        "SaaS",
+        "Software",
+        "Web3"
+      ],
+      "sectors": [
+        "Blockchain and Cryptocurrency",
+        "Financial Services",
+        "Internet Services",
+        "Software"
+      ],
+      "founders": [
+        "Andrej Bencic",
+        "Bogdan Habic",
+        "Miljan Tekic",
+        "Nebojsa Urosevic"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A blockchain simulation environment for testing transactions, multi-step flows, smart-contract changes, and cross-chain operations against current or historical network state before deployment.",
+        "name": "Tenderly Simulator"
+      },
+      {
+        "description": "An onchain investigation and operations interface for decoding transactions, tracing execution, analyzing contract failures, viewing cross-chain activity, and validating fixes through simulation.",
+        "name": "Tenderly Console"
+      },
+      {
+        "description": "An onchain monitoring and response service that detects transaction failures, state changes, balance movements, events, and other conditions, then delivers notifications or initiates validated actions.",
+        "name": "Tenderly Monitor"
+      },
+      {
+        "description": "A low-latency, production-oriented RPC infrastructure service that provides blockchain network access for applications, protocols, and ecosystem partners across supported chains.",
+        "name": "Tenderly Node"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 58630000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 3,
+      "detailedRoundCount": 3,
+      "lastFundingDate": "2022-03-02",
+      "lastFundingType": "Series B",
+      "rounds": [
+        {
+          "announcedDate": "2022-03-02",
+          "amount": {
+            "amount": 40000000,
+            "currency": "USD"
+          },
+          "investorCount": 11,
+          "leadInvestors": [
+            "Spark Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 272547781,
+            "currency": "USD"
+          },
+          "type": "Series B"
+        },
+        {
+          "announcedDate": "2021-07-29",
+          "amount": {
+            "amount": 3300000,
+            "currency": "USD"
+          },
+          "investorCount": 3,
+          "leadInvestors": [
+            "Point Nine",
+            "Version One Ventures"
+          ],
+          "postMoneyValuation": {
+            "amount": 37361063,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2021-07-29",
+          "amount": {
+            "amount": 15330000,
+            "currency": "USD"
+          },
+          "investorCount": 3,
+          "leadInvestors": [
+            "Accel"
+          ],
+          "postMoneyValuation": {
+            "amount": 103493350,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        }
+      ],
+      "investors": {
+        "reportedCount": 13,
+        "visibleNames": [
+          {
+            "name": "Abstract",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Accel",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Coinbase Ventures",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Daedalus Angel Syndicate",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Eric Ries",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Guillermo Rauch",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Jinglan Wang",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Spark Capital",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Tihomir Bajic",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Uniswap Labs",
+            "rounds": [
+              "Series B"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 25,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-05-18",
+          "publisher": "TheRecursive.com",
+          "title": "Beyond the €4.5B Boom: Can Serbia’s Tech Ecosystem Navigate its Own Success?",
+          "url": "https://therecursive.com/serbia-tech-ecosystem-ict-exports-2025/"
+        },
+        {
+          "date": "2026-05-04",
+          "publisher": "TechSavvy",
+          "title": "Udbuds-AI til milliardmarked vandt EU-pris – har klaret sig uden funding",
+          "url": "https://techsavvy.media/udbuds-ai-til-milliardmarked-vandt-eu-pris-har-klaret-sig-uden-funding/"
+        },
+        {
+          "date": "2025-12-31",
+          "publisher": "Crowdfund Insider",
+          "title": "EVM and Blockchain Adoption : Tenderly Now an Official Polygon Public RPC Provider",
+          "url": "https://www.crowdfundinsider.com/2025/12/256994-evm-and-blockchain-adoption-tenderly-now-an-official-polygon-public-rpc-provider/"
+        },
+        {
+          "date": "2025-09-04",
+          "publisher": "Tech Startups - Startups and Technology news",
+          "title": "Atlassian to acquire The Browser Company for $610M to bring AI-powered browsing into the enterprise",
+          "url": "https://techstartups.com/2025/09/04/atlassian-to-acquire-the-browser-company-for-610m-to-bring-ai-powered-browsing-into-the-enterprise/"
+        },
+        {
+          "date": "2025-09-04",
+          "publisher": "Tech Startups - Startups and Technology news",
+          "title": "French AI startup Mistral is raising €2B in funding at $14B valuation",
+          "url": "https://techstartups.com/2025/09/04/french-ai-startup-mistral-is-raising-e2b-in-funding-at-14b-valuation/"
+        },
+        {
+          "date": "2025-09-04",
+          "publisher": "Tech Startups - Startups and Technology news",
+          "title": "Aleo and Request Finance partner to bring privacy-first crypto payroll to Web2 and Web3 companies",
+          "url": "https://techstartups.com/2025/09/04/aleo-and-request-finance-partner-to-power-privacy-first-crypto-payroll-for-web2-and-web3-companies/"
+        },
+        {
+          "date": "2025-09-04",
+          "publisher": "Tech Startups - Startups and Technology news",
+          "title": "Sendmarc appoints Rob Bowker as North American Region Lead",
+          "url": "https://techstartups.com/2025/09/04/sendmarc-appoints-rob-bowker-as-north-american-region-lead/"
+        },
+        {
+          "date": "2025-09-04",
+          "publisher": "Tech Startups - Startups and Technology news",
+          "title": "Elon Musk’s X payments ambitions face delays amid licensing Battles, regulatory hurdles, and staff exit",
+          "url": "https://techstartups.com/2025/09/04/elon-musks-x-payments-ambitions-face-delays-amid-licensing-battles-regulatory-hurdles-and-staff-exit/"
+        },
+        {
+          "date": "2025-09-04",
+          "publisher": "Tech Startups - Startups and Technology news",
+          "title": "NOWPayments to Participate in SiGMA Europe Rome 2025",
+          "url": "https://techstartups.com/2025/09/04/nowpayments-to-participate-in-sigma-europe-rome-2025/"
+        },
+        {
+          "date": "2025-09-04",
+          "publisher": "Tech Startups - Startups and Technology news",
+          "title": "Honeywell’s quantum startup Quantinuum raises $600M in funding at $10B valuation, backed by Nvidia and JPMorgan",
+          "url": "https://techstartups.com/2025/09/04/honeywells-quantum-startup-quantinuum-raises-600m-in-funding-at-10b-valuation-backed-by-nvidia-and-jpmorgan/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 3,
+    "knownDetailedFundingAmount": {
+      "amount": 58630000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 68.22,
+    "latestToEarliestKnownValuationMultiple": 7.29
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "reportedPartnerships": {
+      "note": "Provider event summaries with linked sources; not independently verified.",
+      "items": [
+        {
+          "date": "2025-12-31",
+          "description": "Tenderly became an official public RPC infrastructure partner for the Polygon blockchain network, providing enterprise-grade RPC access and tooling to Polygon developers.",
+          "sources": [
+            {
+              "date": "2025-12-31",
+              "publisher": "Crowdfund Insider",
+              "title": "EVM and Blockchain Adoption : Tenderly Now an Official Polygon Public RPC Provider",
+              "url": "https://www.crowdfundinsider.com/2025/12/256994-evm-and-blockchain-adoption-tenderly-now-an-official-polygon-public-rpc-provider/"
+            }
+          ]
+        }
+      ]
+    },
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2026-07-14",
+      "growthChange90Days": -6,
+      "growthScore": 86,
+      "heatChange90Days": -12,
+      "heatScore": 70,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 0
+      },
+      "funding": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 21.51,
+        "timingEstimatePercent": {
+          "within6Months": 15.45,
+          "months6To11": 13.06,
+          "months12To24": 20.38,
+          "beyond24Months": 51.11
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 85.09
+      },
+      "ipo": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Alchemy is a developer platform that helps companies to build reliable decentralized applications.",
+          "employeeRange": "101-250",
+          "name": "Alchemy",
+          "sharedCategories": [
+            "Blockchain",
+            "Developer Platform",
+            "Web3"
+          ],
+          "sharedSpecialties": [
+            "Ethereum Analytics Platforms",
+            "Developer Analytics",
+            "Smart Contract Development Frameworks",
+            "API Gateway",
+            "SDK Management",
+            "Developer Portals"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "#1 Blockchain Infrastructure Platform. Learn, Build, and Scale Onchain.",
+          "employeeRange": "101-250",
+          "name": "Quicknode",
+          "sharedCategories": [
+            "Blockchain",
+            "Developer Tools",
+            "Web3"
+          ],
+          "sharedSpecialties": [
+            "Ethereum Analytics Platforms",
+            "API Gateway",
+            "SDK Management",
+            "Developer Portals"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Infura strives to deliver the best infrastructure and tools for developers to build amazing Web 3.0 applications.",
+          "employeeRange": "11-50",
+          "name": "Infura",
+          "sharedCategories": [
+            "Blockchain",
+            "Web3"
+          ],
+          "sharedSpecialties": [
+            "API Design and Testing",
+            "API Gateway",
+            "Developer Portals"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Blockscout is a powerful open-source blockchain explorer and analytics platform.",
+          "employeeRange": "11-50",
+          "name": "Blockscout",
+          "sharedCategories": [
+            "Blockchain",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Ethereum Analytics Platforms",
+            "API Gateway",
+            "Developer Portals"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Etherscan is a block explorer and analytics platform for Ethereum, a decentralized smart contracts platform.",
+          "employeeRange": "11-50",
+          "name": "Etherscan",
+          "sharedCategories": [
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Ethereum Analytics Platforms",
+            "Developer Analytics",
+            "Developer Portals"
+          ],
+          "similarityScore": 89
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Series B round raised $40,000,000, or 68.22% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $37,361,063 to $272,547,781, a 7.29x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 86 (-6 over 90 days) and market heat at 70 (-12).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Alchemy, Quicknode, Infura.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 25 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

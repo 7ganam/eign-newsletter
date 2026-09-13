@@ -1,0 +1,653 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T18:21:34.813Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T18:21:34.809Z",
+    "url": "https://www.crunchbase.com/organization/nebius-group"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Nebius",
+      "shortDescription": "Nebius is a cloud platform designed for artificial intelligence development, training, and inference.",
+      "description": "Nebius provides infrastructure that scales from individual units to large clusters, using a range of NVIDIA graphics processing accelerators and networking components. Its services include managed Kubernetes environments, orchestration tools, and storage solutions tailored for demanding machine learning workloads. The entity supports diverse applications, from generative design and molecular discovery to large language model optimization. By managing data centers and hardware configurations, the group enables researchers and engineers to deploy complex models without maintaining physical server environments. These resources enable the creation of digital art, music generation, and pharmaceutical research through automated workflows.",
+      "website": "https://nebius.com/",
+      "foundedYear": 1989,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Public",
+      "companyType": "For profit",
+      "employeeRange": "1,001-5,000",
+      "estimatedRevenueRange": "$1B-$10B",
+      "headquarters": "Schiphol, Noord-Holland, The Netherlands",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Cloud Computing",
+        "Cloud Storage",
+        "Data Storage",
+        "Developer Tools",
+        "Enterprise Software",
+        "Financial Services",
+        "Health Care",
+        "Machine Learning",
+        "Retail",
+        "SaaS"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Commerce and Shopping",
+        "Data and Analytics",
+        "Financial Services",
+        "Hardware",
+        "Health Care",
+        "Information Technology",
+        "Internet Services",
+        "Software"
+      ],
+      "founders": [
+        "Arkady Volozh",
+        "Roman Chernin"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "GPU and CPU cloud infrastructure for AI workloads, from single virtual machines to multi-node clusters with bare-metal-level GPU and networking performance.",
+        "name": "Nebius AI Cloud Compute"
+      },
+      {
+        "description": "A managed inference platform that provides API access to open-source and other AI models for deploying scalable language, multimodal, and agentic applications.",
+        "name": "Nebius Token Factory"
+      },
+      {
+        "description": "Tools and managed capabilities for provisioning, scheduling, and operating distributed AI, data, and batch workloads across cloud infrastructure.",
+        "name": "AI Orchestration"
+      },
+      {
+        "description": "A serverless execution service for running AI jobs without provisioning or maintaining dedicated compute infrastructure.",
+        "name": "Serverless AI"
+      },
+      {
+        "description": "Managed data services for AI applications, including PostgreSQL with pgvector for transactional data, metadata, agent state, and vector search.",
+        "name": "DataOps"
+      },
+      {
+        "description": "Managed MLflow Tracking and Model Registry for recording experiments, versioning models, evaluating candidates, and managing handoff to deployment.",
+        "name": "ModelOps"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 18416335965,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 10,
+      "detailedRoundCount": 10,
+      "lastFundingDate": "2026-08-19",
+      "lastFundingType": "Post IPO Debt",
+      "rounds": [
+        {
+          "announcedDate": "2026-08-19",
+          "amount": {
+            "amount": 5750000000,
+            "currency": "USD"
+          },
+          "type": "Post IPO Debt"
+        },
+        {
+          "announcedDate": "2026-07-17",
+          "amount": {
+            "amount": 775000000,
+            "currency": "USD"
+          },
+          "investorCount": 9,
+          "type": "Post IPO Debt"
+        },
+        {
+          "announcedDate": "2026-03-18",
+          "amount": {
+            "amount": 4300000000,
+            "currency": "USD"
+          },
+          "type": "Post IPO Debt"
+        },
+        {
+          "announcedDate": "2026-03-11",
+          "amount": {
+            "amount": 2000000000,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "NVIDIA"
+          ],
+          "type": "Post IPO Equity"
+        },
+        {
+          "announcedDate": "2025-09-10",
+          "amount": {
+            "amount": 2750000000,
+            "currency": "USD"
+          },
+          "type": "Post IPO Debt"
+        },
+        {
+          "announcedDate": "2025-09-10",
+          "amount": {
+            "amount": 1000000000,
+            "currency": "USD"
+          },
+          "type": "Post IPO Equity"
+        },
+        {
+          "announcedDate": "2025-06-02",
+          "amount": {
+            "amount": 1000000000,
+            "currency": "USD"
+          },
+          "type": "Post IPO Debt"
+        },
+        {
+          "announcedDate": "2025-05-14",
+          "amount": {
+            "amount": 45227509,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Israel Innovation Authority"
+          ],
+          "type": "Grant"
+        },
+        {
+          "announcedDate": "2025-05-14",
+          "amount": {
+            "amount": 96108456,
+            "currency": "USD"
+          },
+          "investorCount": 1,
+          "leadInvestors": [
+            "Israel Innovation Authority"
+          ],
+          "type": "Post IPO Equity"
+        },
+        {
+          "announcedDate": "2024-12-02",
+          "amount": {
+            "amount": 700000000,
+            "currency": "USD"
+          },
+          "investorCount": 3,
+          "type": "Post IPO Equity"
+        }
+      ],
+      "investors": {
+        "reportedCount": 13,
+        "visibleNames": [
+          {
+            "name": "ABN AMRO Bank N.V.",
+            "rounds": [
+              "Post-IPO Debt"
+            ]
+          },
+          {
+            "name": "Accel"
+          },
+          {
+            "name": "Bank of America",
+            "rounds": [
+              "Post-IPO Debt"
+            ]
+          },
+          {
+            "name": "Citi",
+            "rounds": [
+              "Post-IPO Debt"
+            ]
+          },
+          {
+            "name": "Credit Agricole CIB",
+            "rounds": [
+              "Post-IPO Debt"
+            ]
+          },
+          {
+            "name": "Deutsche Bank",
+            "rounds": [
+              "Post-IPO Debt"
+            ]
+          },
+          {
+            "name": "Goldman Sachs",
+            "rounds": [
+              "Post-IPO Debt"
+            ]
+          },
+          {
+            "name": "HSBC",
+            "rounds": [
+              "Post-IPO Debt"
+            ]
+          },
+          {
+            "name": "ING Group",
+            "rounds": [
+              "Post-IPO Debt"
+            ]
+          },
+          {
+            "name": "Morgan Stanley",
+            "rounds": [
+              "Post-IPO Debt"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "NVIDIA",
+            "rounds": [
+              "Post-IPO Equity"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 1149,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-09-11",
+          "publisher": "TheStreet.com",
+          "title": "Veteran analyst resets Palantir price target for rest of 2026",
+          "url": "https://www.thestreet.com/investing/palantir-da-davidson-raises-price-target"
+        },
+        {
+          "date": "2026-09-10",
+          "publisher": "legacy.thefly.com",
+          "title": "Palantir, Fujitsu renew strategic partnership",
+          "url": "https://thefly.com/PLTR"
+        },
+        {
+          "date": "2026-09-10",
+          "publisher": "The Motley Fool",
+          "title": "Where Will Nebius Stock Be in 3 Years?",
+          "url": "https://www.fool.com/investing/2026/09/10/where-will-nebius-stock-be-in-3-years/"
+        },
+        {
+          "date": "2026-09-10",
+          "publisher": "The Motley Fool",
+          "title": "Can New Era Energy & Digital Become the Next Nebius Group?",
+          "url": "https://www.fool.com/investing/2026/09/10/can-new-era-energy-digital-become-the-next-nebius/"
+        },
+        {
+          "date": "2026-09-10",
+          "publisher": "PYMNTS.com",
+          "title": "How $100 Million CFOs Are Setting Their Neocloud Budgets",
+          "url": "https://www.pymnts.com/news/artificial-intelligence/2026/how-100-million-dollar-chief-financial-officers-are-setting-their-neocloud-budgets/"
+        },
+        {
+          "date": "2026-09-10",
+          "publisher": "The Next Web",
+          "title": "Nvidia and Palantir are selling a sovereign AI stack, starting with Nvidia’s own supply chain",
+          "url": "https://thenextweb.com/news/nvidia-palantir-sovereign-ai-supply-chains"
+        },
+        {
+          "date": "2026-09-09",
+          "publisher": "TradingView",
+          "title": "CRWV: CoreWeave Stock Soars 15% as OpenAI’s GPT-6 Astra Reboots AI Trade",
+          "url": "https://www.tradingview.com/news/tradingview:dd2062601094b:0-crwv-coreweave-stock-soars-15-as-openai-s-gpt-6-astra-reboots-ai-trade/"
+        },
+        {
+          "date": "2026-09-09",
+          "publisher": "Verdict",
+          "title": "Palantir and Nebius form sovereign AI infrastructure partnership",
+          "url": "https://www.verdict.co.uk/palantir-nebius-sovereign-ai-infrastructue/"
+        },
+        {
+          "date": "2026-09-09",
+          "publisher": "Pulse 2.0",
+          "title": "Palantir And Nebius Partner To Deliver Sovereign AI Stack To Commercial Customers",
+          "url": "https://pulse2.com/palantir-and-nebius-partner-to-deliver-sovereign-ai-stack-to-commercial-customers/"
+        },
+        {
+          "date": "2026-09-08",
+          "publisher": "MarketScreener",
+          "title": "Palantir partners with Nebius on sovereign AI",
+          "url": "https://www.marketscreener.com/news/palantir-partners-with-nebius-on-sovereign-ai-ce785bd8dc8af721"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 10,
+    "knownDetailedFundingAmount": {
+      "amount": 18416335965,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 31.22,
+    "grantFunding": {
+      "amount": {
+        "amount": 45227509,
+        "currency": "USD"
+      },
+      "disclosedRoundCount": 1,
+      "shareOfTotalPercent": 0.25
+    }
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "reportedPartnerships": {
+      "note": "Provider event summaries with linked sources; not independently verified.",
+      "items": [
+        {
+          "date": "2026-08-04",
+          "description": "Nebius Group entered a major commercial capacity agreement with Microsoft, which agreed to pay up to $17.4 billion through 2031 and potentially purchase an additional $2 billion in services or capacity.",
+          "sources": [
+            {
+              "date": "2026-08-04",
+              "publisher": "The Motley Fool",
+              "title": "Better Neocloud Stock: CoreWeave vs. Nebius",
+              "url": "https://www.fool.com/investing/2026/08/04/better-neocloud-stock-nebius-vs-coreweave/"
+            }
+          ]
+        },
+        {
+          "date": "2026-05-01",
+          "description": "Nebius Group entered a partnership with Bloom Energy to install fuel cell-based power capacity supporting Nebius' expanding AI data centers.",
+          "sources": [
+            {
+              "date": "2026-07-04",
+              "publisher": "The Motley Fool",
+              "title": "Why Did Nebius Stock Jump 20% in June?",
+              "url": "https://www.fool.com/investing/2026/07/04/why-did-nebius-stock-jump-20-in-june/"
+            }
+          ]
+        },
+        {
+          "date": "2026-04-27",
+          "description": "Nebius entered into large multi-year AI data center capacity partnerships with Microsoft and Meta Platforms, supplying hundreds of megawatts of computing power under long-term contracts.",
+          "sources": [
+            {
+              "date": "2026-04-27",
+              "publisher": "The Motley Fool",
+              "title": "3 AI Stocks That Can Beat Nvidia Over the Next Five Years",
+              "url": "https://www.fool.com/investing/2026/04/27/3-ai-stocks-that-can-beat-nvidia-over-the-next-fiv/"
+            }
+          ]
+        },
+        {
+          "date": "2026-03-25",
+          "description": "Nebius has partnered with Nvidia to gain early access to Nvidia's latest AI computing technology for deployment in its global data centers serving hyperscale clients.",
+          "sources": [
+            {
+              "date": "2026-03-25",
+              "publisher": "The Motley Fool",
+              "title": "Prediction: These 3 Stocks Will Be the Best Performers Over the Next 3 Years",
+              "url": "https://www.fool.com/investing/2026/03/25/prediction-these-3-stocks-will-be-the-best-perform/"
+            }
+          ]
+        },
+        {
+          "date": "2026-03-01",
+          "description": "Nebius and Meta Platforms agreed to a five-year dedicated AI-compute capacity arrangement valued at $12 billion, with additional commitments potentially taking Meta's purchases to $15 billion.",
+          "sources": [
+            {
+              "date": "2026-09-04",
+              "publisher": "The Motley Fool",
+              "title": "CoreWeave vs. Nebius: Which AI Infrastructure Stock Is the Better Buy?",
+              "url": "https://www.fool.com/investing/2026/09/04/coreweave-vs-nebius-which-ai-infrastructure-stock/"
+            }
+          ]
+        },
+        {
+          "date": "2026-03-01",
+          "description": "Nvidia and Nebius Group formed a strategic partnership to accelerate development of AI-focused cloud computing infrastructure using Nvidia GPUs in Nebius data centers.",
+          "sources": [
+            {
+              "date": "2026-06-02",
+              "publisher": "The Motley Fool",
+              "title": "Why Nebius Stock Soared to a New All-Time High Today",
+              "url": "https://www.fool.com/investing/2026/06/01/why-nebius-stock-soared-new-all-time-high-today/"
+            }
+          ]
+        },
+        {
+          "date": "2026-02-12",
+          "description": "Nebius reported that it signed new contracts to provide AI infrastructure capacity and managed services to major clients including Microsoft and Meta Platforms, supporting growing demand for AI workloads.",
+          "sources": [
+            {
+              "date": "2026-02-12",
+              "publisher": "The Motley Fool",
+              "title": "2 Red-Hot Growth Stocks to Buy in 2026",
+              "url": "https://www.fool.com/investing/2026/02/11/2-red-hot-growth-stocks-to-buy-in-2026/"
+            }
+          ]
+        },
+        {
+          "date": "2025-12-17",
+          "description": "Nebius Group agreed to provide Microsoft with GPU infrastructure worth $17.4 billion over five years, expanding Microsoft's access to AI compute capacity.",
+          "sources": [
+            {
+              "date": "2025-12-17",
+              "publisher": "BNN Bloomberg",
+              "title": "From OpenAI to Google, firms channel billions into AI infrastructure as demand booms",
+              "url": "https://www.bnnbloomberg.ca/business/2025/12/17/from-openai-to-google-firms-channel-billions-into-ai-infrastructure-as-demand-booms/"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-13",
+          "description": "Nebius Group disclosed a new five-year, $3 billion commercial deal with Meta Platforms, supporting Nebius's AI compute infrastructure growth.",
+          "sources": [
+            {
+              "date": "2025-11-13",
+              "publisher": "Benzinga.com",
+              "title": "Nebius (NBIS) Stock Slides As Earnings Miss, Dilution Concerns Weigh On Shares",
+              "url": "https://www.benzinga.com/trading-ideas/movers/25/11/48841479/nebius-nbis-stock-slides-as-earnings-miss-dilution-concerns-weigh-on-shares"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-01",
+          "description": "Meta Platforms expanded its commercial relationship with Nebius Group by awarding the neocloud provider a five-year $3 billion AI infrastructure contract in November 2025, making Nebius part of Meta’s deployment of Nvidia-powered cloud partner systems.",
+          "sources": [
+            {
+              "date": "2026-02-23",
+              "publisher": "The Motley Fool",
+              "title": "Meta Platforms Just Gave Incredible News for Nebius Investors",
+              "url": "https://www.fool.com/investing/2026/02/23/meta-platforms-incredible-news-nebius-nbis/"
+            }
+          ]
+        }
+      ]
+    },
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2026-07-26",
+      "growthChange90Days": -5,
+      "growthScore": 94,
+      "heatChange90Days": -3,
+      "heatScore": 90,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-01-03",
+        "probabilityPercent": 68.78
+      },
+      "funding": {
+        "generatedDate": "2026-01-03",
+        "probabilityPercent": 93.95,
+        "timingEstimatePercent": {
+          "within6Months": 100,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-03-07",
+        "probabilityPercent": 95
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Amazon Web Services provides information technology infrastructure services to businesses in the form of web services.",
+          "employeeRange": "10,001+",
+          "name": "Amazon Web Services, Inc.",
+          "sharedCategories": [
+            "Machine Learning",
+            "Cloud Computing",
+            "Data Storage",
+            "Cloud Storage",
+            "Enterprise Software"
+          ],
+          "sharedSpecialties": [
+            "Database Platform Services",
+            "Container and Kubernetes Platform Services",
+            "MLOps",
+            "Infrastructure as Code"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "CoreWeave provides cloud infrastructure services designed to support artificial intelligence and high-performance computing workloads.",
+          "employeeRange": "1,001-5,000",
+          "name": "CoreWeave",
+          "sharedCategories": [
+            "Machine Learning",
+            "Cloud Computing"
+          ],
+          "sharedSpecialties": [
+            "Bare Metal Cloud",
+            "Container and Kubernetes Platform Services",
+            "GPU Cloud Infrastructure",
+            "High Performance Computing",
+            "MLOps",
+            "AI Inference",
+            "Data Center GPUs",
+            "Distributed Training"
+          ],
+          "similarityScore": 98.97
+        },
+        {
+          "description": "Google Cloud focuses on business challenges that head-on with cloud computing services from Google.",
+          "employeeRange": "10,001+",
+          "name": "Google Cloud",
+          "sharedCategories": [
+            "Machine Learning",
+            "Data Storage"
+          ],
+          "sharedSpecialties": [
+            "Database Platform Services",
+            "MLOps",
+            "AI Inference"
+          ],
+          "similarityScore": 98.28
+        },
+        {
+          "description": "Microsoft provides computer software, consumer electronics, cloud computing platforms, and digital enterprise systems.",
+          "employeeRange": "10,001+",
+          "name": "Microsoft",
+          "sharedCategories": [
+            "Cloud Computing"
+          ],
+          "similarityScore": 97.41
+        },
+        {
+          "description": "Lambda is a cloud-based platform that provides high-performance GPU hardware and cloud infrastructure for AI model training and inference.",
+          "employeeRange": "501-1,000",
+          "name": "Lambda",
+          "sharedCategories": [
+            "Machine Learning",
+            "Cloud Computing"
+          ],
+          "sharedSpecialties": [
+            "Bare Metal Cloud",
+            "GPU Cloud Infrastructure",
+            "High Performance Computing",
+            "AI Inference",
+            "Data Center GPUs",
+            "GPU Accelerators",
+            "Distributed Training"
+          ],
+          "similarityScore": 95.34
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Post IPO Debt round raised $5,750,000,000, or 31.22% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Meaningful non-dilutive funding",
+      "statement": "1 disclosed grants total $45,227,509, representing 0.25% of reported funding.",
+      "implication": "The grants reduce the share of reported financing attributed to equity or notes, although their restrictions and milestone requirements need separate verification.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.grantFunding"
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 94 (-5 over 90 days) and market heat at 90 (-3).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Amazon Web Services, Inc., CoreWeave, Google Cloud.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 1149 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

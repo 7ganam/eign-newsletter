@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T19:06:11.944Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T19:06:11.941Z",
+    "url": "https://www.crunchbase.com/organization/trace-data"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Trace Data",
+      "shortDescription": "Data observability for a connected world. Trace Data helps companies understand, monitor and secure their data.",
+      "website": "https://www.tracedata.io/",
+      "operatingStatus": "Closed",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "1-10",
+      "estimatedRevenueRange": "$10M-$50M",
+      "headquarters": "San Francisco, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "Analytics",
+        "Big Data",
+        "Cyber Security",
+        "Privacy"
+      ],
+      "sectors": [
+        "Data and Analytics",
+        "Information Technology",
+        "Privacy and Security"
+      ],
+      "founders": [
+        "James Donelan"
+      ]
+    },
+    "funding": {
+      "totalRaised": {
+        "amount": 5000000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 1,
+      "detailedRoundCount": 1,
+      "lastFundingDate": "2019-07-01",
+      "lastFundingType": "Seed",
+      "rounds": [
+        {
+          "announcedDate": "2019-07-01",
+          "amount": {
+            "amount": 5000000,
+            "currency": "USD"
+          },
+          "investorCount": 3,
+          "leadInvestors": [
+            "Accel",
+            "Kleiner Perkins"
+          ],
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 3,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Accel",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Kleiner Perkins",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "overtime.vc",
+            "rounds": [
+              "Seed Round"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 4,
+      "includedUniqueCount": 4,
+      "items": [
+        {
+          "date": "2024-11-07",
+          "publisher": "DIGIT",
+          "title": "DIGIT Deal Roundup | October 2024",
+          "url": "https://www.digit.fyi/digit-deal-roundup-october-2024/"
+        },
+        {
+          "date": "2022-06-13",
+          "publisher": "Threat.Technology",
+          "title": "Meet California, United States’s 38 Top CEO’s in the Privacy Startup Space",
+          "url": "https://threat.technology/meet-california-united-statess-38-top-ceos-in-the-privacy-startup-space/"
+        },
+        {
+          "date": "2021-04-01",
+          "title": "Trace Data acquired by Netskope"
+        },
+        {
+          "date": "2019-07-01",
+          "title": "Seed Round - Trace Data"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 1,
+    "knownDetailedFundingAmount": {
+      "amount": 5000000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 100
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": -5,
+      "heatScore": 42
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Monte Carlo develops a data and AI observability platform that monitors data, AI systems, and AI agents to detect and resolve issues.",
+          "employeeRange": "101-250",
+          "name": "Monte Carlo",
+          "sharedCategories": [
+            "Analytics"
+          ],
+          "similarityScore": 97
+        },
+        {
+          "description": "Bigeye provides data observability solutions for monitoring and analyzing data integrity.",
+          "employeeRange": "11-50",
+          "name": "Bigeye",
+          "sharedCategories": [
+            "Analytics"
+          ],
+          "similarityScore": 95
+        },
+        {
+          "description": "Soda is a software company that provides data quality solutions through testing and preventing data issues.",
+          "employeeRange": "11-50",
+          "name": "Soda",
+          "sharedCategories": [
+            "Analytics",
+            "Big Data"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Acceldata offers an Agentic Data Management Platform that intelligently monitors and optimizes enterprise data systems.",
+          "employeeRange": "251-500",
+          "name": "Acceldata",
+          "sharedCategories": [
+            "Big Data"
+          ],
+          "similarityScore": 91
+        },
+        {
+          "description": "Anomalo allows users to continuously inspect and validate the data coming into their warehouses.",
+          "employeeRange": "51-100",
+          "name": "Anomalo",
+          "similarityScore": 87
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Seed round raised $5,000,000, or 100% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Monte Carlo, Bigeye, Soda.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

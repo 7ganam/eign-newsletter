@@ -1,0 +1,539 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T17:17:45.006Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T17:17:45.003Z",
+    "url": "https://www.crunchbase.com/organization/black-forest-labs-01de"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Black Forest Labs",
+      "shortDescription": "Black Forest Labs develops advanced generative deep learning models that focus on producing and transforming visual content.",
+      "description": "Black Forest Labs develops advanced generative deep learning models that focus on producing and transforming visual content such as images and videos. The company offers the FLUX model suite, which includes versions designed for high-detail image creation, developer experimentation, and fast local generation. Its models use a hybrid architecture that combines diffusion and transformer techniques, allowing them to generate images from text prompts or edit existing visuals through image-to-image workflows. Black Forest Labs distributes these models through a managed API that enables product teams to embed visual generation into applications and digital platforms. The company also provides open-weight versions so developers and researchers can run, customize, or fine-tune models in their preferred environments. Its technology is adopted by creative software providers and media tools that integrate FLUX into editing, design, or content-creation pipelines. Black Forest Labs continues to expand its platform toward broader visual-intelligence infrastructure, including planned capabilities for video generation and advanced media workflows.",
+      "website": "https://bfl.ai/",
+      "foundedYear": 2024,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "101-250",
+      "headquarters": "Freiburg Im Breisgau, Baden-Wurttemberg, Germany",
+      "geographicRegions": [
+        "European Union (EU)",
+        "Europe, Middle East, and Africa (EMEA)"
+      ],
+      "industries": [
+        "Artificial Intelligence (AI)",
+        "Foundational AI",
+        "Generative AI",
+        "Information Technology",
+        "Media and Entertainment"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Information Technology",
+        "Media and Entertainment",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "An­dre­as Blatt­mann",
+        "Andreas Blattmann",
+        "Patrick Esser",
+        "Robin Rombach"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A family of generative image models for producing images from text prompts, with configurable quality, speed, licensing, and deployment options.",
+        "name": "FLUX.1 Model Family"
+      },
+      {
+        "description": "An API for integrating Black Forest Labs’ image-generation and image-editing models into applications, products, and enterprise workflows.",
+        "name": "BFL API"
+      },
+      {
+        "description": "An image-editing model for masked inpainting and outpainting, allowing users to modify selected regions or extend an existing composition.",
+        "name": "FLUX Fill"
+      },
+      {
+        "description": "An image-variation model that transforms reference images using additional images or text prompts to create revised or substantially different compositions.",
+        "name": "FLUX Redux"
+      },
+      {
+        "description": "A guided image-generation model that uses depth information to control the arrangement of poses, backgrounds, objects, and other structural elements.",
+        "name": "FLUX Depth"
+      },
+      {
+        "description": "A guided image-generation model that uses edge or line information to preserve outlines and structural features while creating a new visual interpretation.",
+        "name": "FLUX Canny"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 450202193,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 3,
+      "detailedRoundCount": 3,
+      "lastFundingDate": "2025-12-01",
+      "lastFundingType": "Series B",
+      "rounds": [
+        {
+          "announcedDate": "2025-12-01",
+          "amount": {
+            "amount": 300000000,
+            "currency": "USD"
+          },
+          "investorCount": 35,
+          "leadInvestors": [
+            "Salesforce Ventures"
+          ],
+          "postMoneyValuation": {
+            "amount": 3250000000,
+            "currency": "USD"
+          },
+          "type": "Series B"
+        },
+        {
+          "announcedDate": "2025-01-01",
+          "amount": {
+            "amount": 120000000,
+            "currency": "USD"
+          },
+          "investorCount": 8,
+          "leadInvestors": [
+            "Andreessen Horowitz"
+          ],
+          "postMoneyValuation": {
+            "amount": 824080913,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2024-08-01",
+          "amount": {
+            "amount": 30202193,
+            "currency": "USD"
+          },
+          "investorCount": 9,
+          "leadInvestors": [
+            "Andreessen Horowitz"
+          ],
+          "postMoneyValuation": {
+            "amount": 151130976,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 42,
+        "visibleNames": [
+          {
+            "name": "Andreessen Horowitz"
+          },
+          {
+            "name": "BroadLight Capital",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Canva",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Cherry Ventures",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Clem Delangue",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Figma Ventures",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "General Catalyst",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Headline"
+          },
+          {
+            "name": "LEA Partners",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Mati Staniszewski",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Notion Capital",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "NVIDIA"
+          },
+          {
+            "name": "S32",
+            "rounds": [
+              "Series B"
+            ]
+          },
+          {
+            "name": "Temasek"
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 146,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-09-01",
+          "publisher": "CzechCrunch s.r.o.",
+          "title": "Byl armádním pilotem i vědcem, založil dvě miliardové firmy. A ukazuje, že v Evropě není vše ztraceno",
+          "url": "https://cc.cz/byl-armadnim-pilotem-i-vedcem-zalozil-dve-miliardove-firmy-a-ukazuje-ze-v-evrope-neni-vse-ztraceno/"
+        },
+        {
+          "date": "2026-08-27",
+          "publisher": "PEdaily.cn",
+          "title": "英伟达同意129亿美元买下Hugging Face？",
+          "url": "https://news.pedaily.cn/202608/568181.shtml"
+        },
+        {
+          "date": "2026-08-25",
+          "publisher": "36kr.com",
+          "title": "NVIDIA places a $40 billion bet on open source, profiting from both selling \"shovels\" and mining gold at the same time.",
+          "url": "https://eu.36kr.com/en/p/3954557325802627"
+        },
+        {
+          "date": "2026-08-21",
+          "publisher": "EIN Presswire",
+          "title": "PixPix Integrates FLUX Upscale for Native 4K AI Video Enhancement",
+          "url": "https://www.einpresswire.com/article/935904550/pixpix-integrates-flux-upscale-for-native-4k-ai-video-enhancement"
+        },
+        {
+          "date": "2026-07-24",
+          "publisher": "Decrypt",
+          "title": "Black Forest Labs Unveils FLUX 3 AI: Ditches Stills for Video—And Robot Hands",
+          "url": "https://decrypt.co/374189/black-forest-labs-flux-3-image-video-robot-hands"
+        },
+        {
+          "date": "2026-07-24",
+          "publisher": "PANews",
+          "title": "德国AI研究实验室Black Forest Labs推出机器人模型，进军物理AI领域"
+        },
+        {
+          "date": "2026-07-23",
+          "publisher": "Venturebeat",
+          "title": "Black Forest Labs launches FLUX 3 capable of generating images and 20-second video with audio — but in limited release to start",
+          "url": "https://venturebeat.com/technology/black-forest-labs-launches-flux-3-capable-of-generating-images-and-20-second-video-with-audio-but-in-limited-release-to-start"
+        },
+        {
+          "date": "2026-07-23",
+          "publisher": "Techmeme",
+          "title": "Germany's Black Forest Labs launches Flux 3 and Flux-mimic, its first models for robotics, as it expands from generative AI into physical AI (Yazhou Sun/Bloomberg)",
+          "url": "https://www.techmeme.com/260723/p44"
+        },
+        {
+          "date": "2026-06-17",
+          "publisher": "IndiaTimes",
+          "title": "Salesforce CEO Marc Benioff shares selfie with PM Modi at G7 summit, says: ‘Inspired by my…’",
+          "url": "https://timesofindia.indiatimes.com/technology/tech-news/salesforce-ceo-marc-benioff-shares-selfie-with-pm-modi-at-g7-summit-says-inspired-by-my/articleshow/131805430.cms"
+        },
+        {
+          "date": "2026-06-10",
+          "publisher": "Variety",
+          "title": "Art Directors Guild Slams Martin Scorsese for AI Partnership: ‘Turning His Back on the Human Artists’",
+          "url": "https://variety.com/2026/film/news/art-directors-guild-statement-martin-scorsese-ai-1236770996/"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 3,
+    "knownDetailedFundingAmount": {
+      "amount": 450202193,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 66.64,
+    "latestToEarliestKnownValuationMultiple": 21.5
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "reportedPartnerships": {
+      "note": "Provider event summaries with linked sources; not independently verified.",
+      "items": [
+        {
+          "date": "2026-07-23",
+          "description": "Black Forest Labs and Mimic Robotics entered a collaboration to develop FLUX-mimic, a video-action model built on the FLUX 3 backbone for data-efficient robotic manipulation learning.",
+          "sources": [
+            {
+              "date": "2026-07-23",
+              "publisher": "Venturebeat",
+              "title": "Black Forest Labs launches FLUX 3 capable of generating images and 20-second video with audio — but in limited release to start",
+              "url": "https://venturebeat.com/technology/black-forest-labs-launches-flux-3-capable-of-generating-images-and-20-second-video-with-audio-but-in-limited-release-to-start"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-02",
+          "description": "Martin Scorsese has teamed up with AI company Black Forest Labs as an advisor, collaborating on the use of AI tools for storyboarding to speed creative workflows.",
+          "sources": [
+            {
+              "date": "2026-06-02",
+              "publisher": "The Hollywood Reporter",
+              "title": "Martin Scorsese Teams Up With AI Company, Says Tech Was “Creatively Freeing” for Storyboard Use: AI “Allowed Us to Move Faster”",
+              "url": "https://www.hollywoodreporter.com/movies/movie-news/martin-scorsese-backs-ai-company-storyboard-use-1236611861/"
+            }
+          ]
+        },
+        {
+          "date": "2025-11-26",
+          "description": "Black Forest Labs, NVIDIA, and ComfyUI formed a strategic collaboration to develop and optimise the FLUX.2 visual generative AI models for RTX GPUs and ComfyUI workflows.",
+          "sources": [
+            {
+              "date": "2025-11-26",
+              "publisher": "KitGuru.net",
+              "title": "Black Forest Labs unveils FLUX.2 image generation models with NVIDIA optimisations",
+              "url": "https://www.kitguru.net/channel/generaltech/matthew-wilson/black-forest-labs-unveils-flux-2-image-generation-models-with-nvidia-optimisations/"
+            }
+          ]
+        },
+        {
+          "date": "2025-09-10",
+          "description": "Black Forest Labs reportedly signed a $140 million deal with Meta, indicating a newly formed commercial partnership between the two companies; specific terms were not disclosed.",
+          "sources": [
+            {
+              "date": "2025-09-10",
+              "publisher": "Sifted",
+              "title": "Black Forest Labs inks $140m deal with Meta, reports say",
+              "url": "https://sifted.eu/articles/black-forest-labs-meta/"
+            }
+          ]
+        },
+        {
+          "date": "2025-01-16",
+          "sources": [
+            {
+              "date": "2025-01-16",
+              "publisher": "VentureBeat",
+              "title": "You can now fine-tune your own version of AI image maker Flux with just 5 images",
+              "url": "https://venturebeat.com/ai/you-can-now-fine-tune-your-own-version-of-ai-image-maker-flux-with-just-5-images/"
+            }
+          ]
+        }
+      ]
+    },
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2026-08-02",
+      "growthChange90Days": -12,
+      "growthScore": 86,
+      "heatChange90Days": -16,
+      "heatScore": 47,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 80.4
+      },
+      "funding": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 81.11,
+        "timingEstimatePercent": {
+          "within6Months": 100,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 95.54
+      },
+      "ipo": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 28.34
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "OpenAI is an AI research and deployment company that develops advanced AI models, including ChatGPT.",
+          "employeeRange": "1,001-5,000",
+          "name": "OpenAI",
+          "sharedCategories": [
+            "Foundational AI",
+            "Generative AI",
+            "Artificial Intelligence (AI)",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "AI Content Generation",
+            "Model Fine-Tuning"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Stability AI develops generative AI models and tools for creating and editing visual, audio, video, and three-dimensional content.",
+          "employeeRange": "101-250",
+          "name": "Stability AI",
+          "sharedCategories": [
+            "Foundational AI",
+            "Media and Entertainment",
+            "Generative AI",
+            "Artificial Intelligence (AI)",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "AI Content Generation",
+            "AI Inference",
+            "Model Fine-Tuning",
+            "AI Image Editors"
+          ],
+          "similarityScore": 97.29
+        },
+        {
+          "description": "Google Cloud focuses on business challenges that head-on with cloud computing services from Google.",
+          "employeeRange": "10,001+",
+          "name": "Google Cloud",
+          "sharedCategories": [
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "AI Inference"
+          ],
+          "similarityScore": 96.2
+        },
+        {
+          "description": "Ideogram is an artificial intelligence startup that provides generative text-to-image technology.",
+          "employeeRange": "11-50",
+          "name": "Ideogram",
+          "sharedCategories": [
+            "Generative AI",
+            "Artificial Intelligence (AI)",
+            "Information Technology"
+          ],
+          "similarityScore": 95.12
+        },
+        {
+          "description": "Leonardo.Ai is a creator-first generative AI platform for imagination, exploration, and creative control.",
+          "employeeRange": "11-50",
+          "name": "Leonardo.Ai",
+          "sharedCategories": [
+            "Generative AI",
+            "Artificial Intelligence (AI)",
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Image Tools",
+            "Generative and Algorithmic Art",
+            "AI Content Generation",
+            "AI Image Editors"
+          ],
+          "similarityScore": 94.04
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Series B round raised $300,000,000, or 66.64% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $151,130,976 to $3,250,000,000, a 21.5x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 86 (-12 over 90 days) and market heat at 47 (-16).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include OpenAI, Stability AI, Google Cloud.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 146 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

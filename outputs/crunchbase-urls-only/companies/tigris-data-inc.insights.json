@@ -1,0 +1,457 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T19:04:56.534Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T19:04:56.530Z",
+    "url": "https://www.crunchbase.com/organization/tigris-data-inc"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "Tigris Data",
+      "shortDescription": "Tigris is an S3-compatible, globally distributed object storage service that is purpose-built for AI.",
+      "description": "Like the Unix philosophy, we do one thing and do it right: storage, built for AI. Tigris is an S3-compatible, globally distributed object storage service that unlocks true choice for builders. Use all the familiar tools you love, mix and match any compute provider, and stay free from Big Cloud lock-in.",
+      "website": "https://www.tigrisdata.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "11-50",
+      "estimatedRevenueRange": "Less than $1M",
+      "headquarters": "Sunnyvale, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "AI Infrastructure",
+        "Artificial Intelligence (AI)",
+        "Cloud Computing",
+        "Cloud Storage",
+        "Database",
+        "Data Storage",
+        "Developer Tools",
+        "Software"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Hardware",
+        "Information Technology",
+        "Internet Services",
+        "Science and Engineering",
+        "Software"
+      ],
+      "founders": [
+        "Himank Chaudhary",
+        "Ovais Tariq",
+        "Yevgeniy Firsov"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A multi-region object storage service compatible with AWS S3 API, providing global data availability and zero egress fees.",
+        "name": "Tigris Globally Distributed S3-Compatible Object Storage"
+      },
+      {
+        "description": "A migration feature that enables incremental, on-demand data copying from existing cloud storage to Tigris with read-through and write-through capabilities.",
+        "name": "Shadow Bucket Migration"
+      },
+      {
+        "description": "A caching service that stores Docker images pulled from Docker Hub in Tigris to reduce rate limit impacts and improve image pull performance.",
+        "name": "Docker Hub Pull-Through Cache"
+      },
+      {
+        "description": "A feature that fetches and caches files from another S3-compatible source on demand, enabling global thumbnail generation and delivery with caching.",
+        "name": "Shadow Buckets for Global Image Delivery and Thumbnailing"
+      },
+      {
+        "description": "Support for backing up and restoring FoundationDB databases using Tigris as the object storage backend for continuous and logical backups.",
+        "name": "FoundationDB Backup and Disaster Recovery Integration"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 31900000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 4,
+      "detailedRoundCount": 4,
+      "lastFundingDate": "2025-10-09",
+      "lastFundingType": "Series A",
+      "rounds": [
+        {
+          "announcedDate": "2025-10-09",
+          "amount": {
+            "amount": 25000000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "leadInvestors": [
+            "Spark Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 133529214,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        },
+        {
+          "announcedDate": "2024-03-14",
+          "investorCount": 1,
+          "leadInvestors": [
+            "Andreessen Horowitz"
+          ],
+          "postMoneyValuation": {
+            "amount": 62933817,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2022-09-27",
+          "amount": {
+            "amount": 6900000,
+            "currency": "USD"
+          },
+          "investorCount": 4,
+          "postMoneyValuation": {
+            "amount": 36795263,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        },
+        {
+          "announcedDate": "2022-07-12",
+          "investorCount": 2,
+          "leadInvestors": [
+            "Jamstack Innovation Fund"
+          ],
+          "postMoneyValuation": {
+            "amount": 14316540,
+            "currency": "USD"
+          },
+          "type": "Seed"
+        }
+      ],
+      "investors": {
+        "reportedCount": 8,
+        "visibleNames": [
+          {
+            "isLead": true,
+            "name": "Andreessen Horowitz",
+            "rounds": [
+              "Series A",
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Angel Collective",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Basis Set Ventures",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "General Catalyst",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Guillermo Rauch",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Jamstack Innovation Fund",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "name": "Rob Skillington",
+            "rounds": [
+              "Seed Round"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Spark Capital",
+            "rounds": [
+              "Series A"
+            ]
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 13,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-01-13",
+          "publisher": "The New Stack",
+          "title": "Why Neoclouds Are the Answer To AI Storage Lock-in",
+          "url": "https://thenewstack.io/why-neoclouds-are-the-answer-to-ai-storage-lock-in/"
+        },
+        {
+          "date": "2026-01-11",
+          "publisher": "Business Recorder",
+          "title": "AI boom: Pakistan must invest to stay relevant, says Tigris Data CEO",
+          "url": "https://www.brecorder.com/news/40401538/ai-boom-pakistan-must-invest-to-stay-relevant-says-tigris-data-ceo"
+        },
+        {
+          "date": "2025-11-03",
+          "publisher": "The New Stack",
+          "title": "How Bucket Forking Brings GitHub-Style Forking To Object Storage",
+          "url": "https://thenewstack.io/how-bucket-forking-brings-github-style-forking-to-object-storage/"
+        },
+        {
+          "date": "2025-10-18",
+          "publisher": "TechCrunch",
+          "title": "This distributed data storage startup wants to take on Big Cloud | TechCrunch",
+          "url": "https://techcrunch.com/2025/10/09/this-distributed-data-storage-startup-wants-to-take-on-big-cloud/"
+        },
+        {
+          "date": "2025-10-10",
+          "publisher": "SiliconANGLE",
+          "title": "AI embraces and extends enterprise software as funding keeps pouring in – but is all this a bubble?",
+          "url": "https://siliconangle.com/2025/10/10/ai-embraces-extends-enterprise-software-funding-keeps-pouring-bubble/"
+        },
+        {
+          "date": "2025-10-09",
+          "title": "Series A - Tigris Data"
+        },
+        {
+          "date": "2025-07-25",
+          "publisher": "The New Stack",
+          "title": "FoundationDB: A Distributed Database That Can’t Be Killed",
+          "url": "https://thenewstack.io/foundationdb-a-distributed-database-that-cant-be-killed/"
+        },
+        {
+          "date": "2024-08-23",
+          "publisher": "Google Patent",
+          "title": "Efficient storage and retrieval of small objects",
+          "url": "https://patents.google.com/patent/US20250068629A1/en"
+        },
+        {
+          "date": "2024-05-14",
+          "publisher": "LinkedIn",
+          "title": "Ovais Tariq on LinkedIn: A new S3 is coming, for every data system to be built on S3! Chat with…",
+          "url": "https://www.linkedin.com/posts/ovaistariq_a-new-s3-is-coming-for-every-data-system-activity-7194732959105499136-GkxI"
+        },
+        {
+          "date": "2024-03-14",
+          "title": "Seed Round - Tigris Data"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 2,
+    "knownDetailedFundingAmount": {
+      "amount": 31900000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 78.37,
+    "latestToEarliestKnownValuationMultiple": 9.33
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2026-01-18",
+      "growthChange90Days": -4,
+      "growthScore": 75,
+      "heatChange90Days": -5,
+      "heatScore": 66,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 88.74
+      },
+      "funding": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 89.29,
+        "timingEstimatePercent": {
+          "within6Months": 100,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 0
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 95.38
+      },
+      "ipo": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 9.09
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Amazon Web Services provides information technology infrastructure services to businesses in the form of web services.",
+          "employeeRange": "10,001+",
+          "name": "Amazon Web Services, Inc.",
+          "sharedCategories": [
+            "Cloud Computing",
+            "AI Infrastructure",
+            "Data Storage",
+            "Cloud Storage",
+            "Artificial Intelligence (AI)"
+          ],
+          "sharedSpecialties": [
+            "Content Delivery Network (CDN) Services",
+            "Container and Kubernetes Platform Services",
+            "Object Storage"
+          ],
+          "similarityScore": 96
+        },
+        {
+          "description": "Cloudflare is a web performance and security company that provides online services to protect and accelerate websites online.",
+          "employeeRange": "5,001-10,000",
+          "name": "Cloudflare",
+          "sharedCategories": [
+            "Developer Tools",
+            "AI Infrastructure"
+          ],
+          "sharedSpecialties": [
+            "Content Delivery Network (CDN) Services",
+            "Object Storage"
+          ],
+          "similarityScore": 93
+        },
+        {
+          "description": "Google Cloud focuses on business challenges that head-on with cloud computing services from Google.",
+          "employeeRange": "10,001+",
+          "name": "Google Cloud",
+          "sharedCategories": [
+            "AI Infrastructure",
+            "Data Storage",
+            "Artificial Intelligence (AI)",
+            "Database"
+          ],
+          "sharedSpecialties": [
+            "Object Storage"
+          ],
+          "similarityScore": 90
+        },
+        {
+          "description": "Microsoft provides computer software, consumer electronics, cloud computing platforms, and digital enterprise systems.",
+          "employeeRange": "10,001+",
+          "name": "Microsoft",
+          "sharedCategories": [
+            "Cloud Computing"
+          ],
+          "similarityScore": 88
+        },
+        {
+          "description": "DigitalOcean provides a cloud platform to deploy, manage, and scale applications of any size.",
+          "employeeRange": "1,001-5,000",
+          "name": "DigitalOcean",
+          "sharedCategories": [
+            "Cloud Computing",
+            "Cloud Storage"
+          ],
+          "sharedSpecialties": [
+            "Container and Kubernetes Platform Services",
+            "Object Storage"
+          ],
+          "similarityScore": 86
+        }
+      ]
+    },
+    "aiResearchSummary": {
+      "notFact": true,
+      "text": "Tigris Data is focused on developing methods for efficient storage and retrieval of small objects in distributed systems. Their research involves a computer-implemented method that optimizes the storage process by inlining objects in metadata storage and coalescing them for storage in an object store. This approach enhances the efficiency of object storage systems, aligning with Tigris's focus on globally distributed, S3-compatible object storage solutions."
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Series A round raised $25,000,000, or 78.37% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $14,316,540 to $133,529,214, a 9.33x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 75 (-4 over 90 days) and market heat at 66 (-5).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Amazon Web Services, Inc., Cloudflare, Google Cloud.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 13 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

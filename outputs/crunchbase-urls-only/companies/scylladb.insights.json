@@ -1,0 +1,506 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T18:48:53.015Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T18:48:53.011Z",
+    "url": "https://www.crunchbase.com/organization/scylladb"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "ScyllaDB",
+      "shortDescription": "ScyllaDB produces a NoSQL database compatible with Apache Cassandra and Amazon DynamoDB at 10x the throughput with reliably low latencies.",
+      "description": "ScyllaDB is the monstrously fast and scalable database for today's terabyte-scale and beyond data intensive applications. ScyllaDB is available as open source and enterprise offerings that can be run anywhere, and ScyllaDB Cloud, a fully-managed Database as a Service (DBaaS) available on AWS and Google Cloud. ScyllaDB supports wide-column NoSQL workloads fully compatible with Apache Cassandra and Amazon DynamoDB. ScyllaDB was founded under the name Cloudius Systems. As Cloudius Systems, the company pioneered the unikernel trend with the development of OSv, designed from the ground up to execute a single application on top of a hypervisor for superior performance and effortless management.",
+      "website": "http://www.scylladb.com/",
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "employeeRange": "101-250",
+      "estimatedRevenueRange": "$1M-$10M",
+      "headquarters": "Sunnyvale, California, United States",
+      "geographicRegions": [
+        "San Francisco Bay Area",
+        "Silicon Valley",
+        "West Coast",
+        "Western US"
+      ],
+      "industries": [
+        "DevOps",
+        "Enterprise Software",
+        "Information Services",
+        "Information Technology",
+        "Software"
+      ],
+      "sectors": [
+        "Information Technology",
+        "Software"
+      ],
+      "founders": [
+        "Avi Kivity",
+        "Dor Laor"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "A distributed NoSQL database for high-throughput, low-latency applications, compatible with Apache Cassandra through CQL and with DynamoDB through Alternator.",
+        "name": "ScyllaDB"
+      },
+      {
+        "description": "A fully managed ScyllaDB database service running on AWS and Google Cloud, with managed operations, elastic scaling, backups, monitoring, and support.",
+        "name": "ScyllaDB Cloud"
+      },
+      {
+        "description": "A commercial distribution of ScyllaDB with tested binaries, enterprise features, cluster administration tools, hot fixes, ScyllaDB Manager, and 24/7 technical support.",
+        "name": "ScyllaDB Enterprise"
+      },
+      {
+        "description": "An integrated vector search capability for storing embeddings and performing approximate nearest-neighbor queries alongside operational data in ScyllaDB.",
+        "name": "ScyllaDB Vector Search"
+      },
+      {
+        "description": "A DynamoDB-compatible API that lets existing DynamoDB applications use ScyllaDB with the same client SDKs, data models, and queries.",
+        "name": "ScyllaDB Alternator"
+      },
+      {
+        "description": "An open-source Kubernetes operator for deploying and managing ScyllaDB clusters, including installation, scaling, upgrades, and operational automation.",
+        "name": "ScyllaDB Operator"
+      }
+    ],
+    "funding": {
+      "totalRaised": {
+        "amount": 103000000,
+        "currency": "USD"
+      },
+      "reportedRoundCount": 7,
+      "detailedRoundCount": 7,
+      "lastFundingDate": "2023-10-10",
+      "lastFundingType": "Series C",
+      "rounds": [
+        {
+          "announcedDate": "2023-10-10",
+          "amount": {
+            "amount": 43000000,
+            "currency": "USD"
+          },
+          "investorCount": 5,
+          "leadInvestors": [
+            "Eight Roads Ventures"
+          ],
+          "postMoneyValuation": {
+            "amount": 388179059,
+            "currency": "USD"
+          },
+          "type": "Series C"
+        },
+        {
+          "announcedDate": "2019-09-11",
+          "amount": {
+            "amount": 25000000,
+            "currency": "USD"
+          },
+          "investorCount": 5,
+          "leadInvestors": [
+            "Eight Roads Ventures"
+          ],
+          "postMoneyValuation": {
+            "amount": 157538935,
+            "currency": "USD"
+          },
+          "type": "Series C"
+        },
+        {
+          "announcedDate": "2018-04-25",
+          "amount": {
+            "amount": 10000000,
+            "currency": "USD"
+          },
+          "investorCount": 5,
+          "leadInvestors": [
+            "TLV Partners"
+          ],
+          "postMoneyValuation": {
+            "amount": 99321830,
+            "currency": "USD"
+          },
+          "type": "Series C"
+        },
+        {
+          "announcedDate": "2017-03-08",
+          "amount": {
+            "amount": 16000000,
+            "currency": "USD"
+          },
+          "investorCount": 5,
+          "leadInvestors": [
+            "Magma Venture Partners",
+            "Qualcomm Ventures",
+            "Samsung Ventures",
+            "Western Digital Capital"
+          ],
+          "postMoneyValuation": {
+            "amount": 61131477,
+            "currency": "USD"
+          },
+          "type": "Series B"
+        },
+        {
+          "announcedDate": "2015-11-01",
+          "amount": {
+            "amount": 2000000,
+            "currency": "USD"
+          },
+          "investorCount": 2,
+          "type": "Venture round"
+        },
+        {
+          "announcedDate": "2013-09-16",
+          "amount": {
+            "amount": 7000000,
+            "currency": "USD"
+          },
+          "investorCount": 3,
+          "leadInvestors": [
+            "Bessemer Venture Partners"
+          ],
+          "postMoneyValuation": {
+            "amount": 41672238,
+            "currency": "USD"
+          },
+          "type": "Venture round"
+        },
+        {
+          "announcedDate": "2013-01-01",
+          "investorCount": 1,
+          "leadInvestors": [
+            "Ariel Maislos"
+          ],
+          "postMoneyValuation": {
+            "amount": 13156796,
+            "currency": "USD"
+          },
+          "type": "Series A"
+        }
+      ],
+      "investors": {
+        "reportedCount": 11,
+        "visibleNames": [
+          {
+            "name": "AllianceBernstein",
+            "rounds": [
+              "Series C"
+            ]
+          },
+          {
+            "name": "Bessemer Venture Partners",
+            "rounds": [
+              "Series C"
+            ]
+          },
+          {
+            "isLead": true,
+            "name": "Eight Roads Ventures",
+            "rounds": [
+              "Series C"
+            ]
+          },
+          {
+            "name": "Magma Venture Partners",
+            "rounds": [
+              "Series C"
+            ]
+          },
+          {
+            "name": "Qualcomm Ventures",
+            "rounds": [
+              "Series C"
+            ]
+          },
+          {
+            "name": "TLV Partners",
+            "rounds": [
+              "Series C"
+            ]
+          },
+          {
+            "name": "Wing Venture Capital"
+          }
+        ]
+      }
+    },
+    "recentNews": {
+      "reportedCount": 114,
+      "includedUniqueCount": 10,
+      "items": [
+        {
+          "date": "2026-06-08",
+          "publisher": "HackerNoon",
+          "title": "How MoEngage Achieved Millisecond Personalization with ScyllaDB",
+          "url": "https://hackernoon.com/how-moengage-achieved-millisecond-personalization-with-scylladb?source=rss"
+        },
+        {
+          "date": "2026-05-05",
+          "publisher": "The New Stack",
+          "title": "ScyllaDB cut Sprig’s read latency 4X after Redis and ClickHouse hit a wall",
+          "url": "https://thenewstack.io/sprig-postgres-scylladb-migration/"
+        },
+        {
+          "date": "2026-05-05",
+          "publisher": "GlobeNewswire",
+          "title": "ScyllaDB is the First to Bring Native Vector Search to the DynamoDB API",
+          "url": "https://www.globenewswire.com/news-release/2026/05/05/3287822/0/en/scylladb-is-the-first-to-bring-native-vector-search-to-the-dynamodb-api.html"
+        },
+        {
+          "date": "2026-02-05",
+          "publisher": "The New Stack",
+          "title": "Open source USearch library jumpstarts ScyllaDB vector search",
+          "url": "https://thenewstack.io/open-source-usearch-library-jumpstarts-scylladb-vector-search/"
+        },
+        {
+          "date": "2026-01-20",
+          "publisher": "GlobeNewswire",
+          "title": "ScyllaDB Brings Massive-Scale Vector Search to Real-Time AI",
+          "url": "https://www.globenewswire.com/news-release/2026/01/20/3221783/0/en/ScyllaDB-Brings-Massive-Scale-Vector-Search-to-Real-Time-AI.html"
+        },
+        {
+          "date": "2026-01-20",
+          "publisher": "SD Times",
+          "title": "ScyllaDB Releases Integrated Vector Search: 1B Vectors with 2ms P99s and 250K QPS Throughput",
+          "url": "https://sdtimes.com/scylladb-releases-integrated-vector-search-1b-vectors-with-2ms-p99s-and-250k-qps-throughput/"
+        },
+        {
+          "date": "2026-01-20",
+          "publisher": "TechTarget",
+          "title": "ScyllaDB adds vector search to managed database platform",
+          "url": "https://www.techtarget.com/searchdatamanagement/news/366637573/ScyllaDB-adds-vector-search-to-managed-database-platform"
+        },
+        {
+          "date": "2026-01-15",
+          "publisher": "GlobeNewswire",
+          "title": "New ScyllaDB Release Is a DynamoDB Alternative That Scales Faster and Costs 50% Less",
+          "url": "https://www.globenewswire.com/news-release/2026/01/15/3219606/0/en/New-ScyllaDB-Release-Is-a-DynamoDB-Alternative-That-Scales-Faster-and-Costs-50-Less.html"
+        },
+        {
+          "date": "2026-01-15",
+          "publisher": "The New Stack",
+          "title": "ScyllaDB’s New Cloud Challenges DynamoDB Cost, Performance",
+          "url": "https://thenewstack.io/scylladbs-new-cloud-challenges-dynamodb-cost-performance/"
+        },
+        {
+          "date": "2026-01-15",
+          "publisher": "TechTarget",
+          "title": "ScyllaDB X Cloud update addresses database cost, performance",
+          "url": "https://www.techtarget.com/searchdatamanagement/news/366637326/ScyllaDB-X-Cloud-update-addresses-database-cost-performance"
+        }
+      ]
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 6,
+    "knownDetailedFundingAmount": {
+      "amount": 103000000,
+      "currency": "USD"
+    },
+    "fundingAmountCoveragePercent": 100,
+    "latestRoundShareOfTotalPercent": 41.75,
+    "latestToEarliestKnownValuationMultiple": 29.5
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "reportedPartnerships": {
+      "note": "Provider event summaries with linked sources; not independently verified.",
+      "items": [
+        {
+          "date": "2025-07-24",
+          "description": "ScyllaDB and Google Cloud announced a partnership to offer ScyllaDB Cloud with a BYOA model on Google Cloud, enabling customers to deploy and manage database clusters within their own GCP accounts.",
+          "sources": [
+            {
+              "date": "2025-07-24",
+              "publisher": "ScyllaDB",
+              "title": "ScyllaDB Cloud Now Available on Google Cloud with BYOA Model",
+              "url": "https://www.globenewswire.com/news-release/2025/07/24/3121119/0/en/ScyllaDB-Cloud-Now-Available-on-Google-Cloud-with-BYOA-Model.html"
+            }
+          ]
+        }
+      ]
+    },
+    "crunchbaseMomentum": {
+      "growthInsightGeneratedDate": "2024-06-26",
+      "growthChange90Days": -6,
+      "growthScore": 73,
+      "heatChange90Days": -14,
+      "heatScore": 48,
+      "status": "Growing"
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 95.61
+      },
+      "funding": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 13.86,
+        "timingEstimatePercent": {
+          "within6Months": 1.99,
+          "months6To11": 0,
+          "months12To24": 0,
+          "beyond24Months": 98.01
+        }
+      },
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 68.39
+      },
+      "ipo": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 12.99
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors.",
+      "companies": [
+        {
+          "description": "Grafana Labs delivers the open observability cloud, helping builders everywhere turn signals into action.",
+          "employeeRange": "1,001-5,000",
+          "name": "Grafana Labs",
+          "sharedCategories": [
+            "DevOps",
+            "Software"
+          ],
+          "sharedSpecialties": [
+            "Data Quality and Observability"
+          ],
+          "similarityScore": 100
+        },
+        {
+          "description": "Neon is a software development company specializing in open-source cloud-native PostgreSQL database solutions.",
+          "employeeRange": "101-250",
+          "name": "Neon",
+          "sharedCategories": [
+            "Information Technology"
+          ],
+          "sharedSpecialties": [
+            "Database Administration Services",
+            "Database Platform Services",
+            "Backup Automation",
+            "Data Replication",
+            "SDK Management"
+          ],
+          "similarityScore": 95.496
+        },
+        {
+          "description": "Harness provides a software delivery platform that helps engineering teams build, deploy, and operate applications through a set of tools.",
+          "employeeRange": "1,001-5,000",
+          "name": "Harness",
+          "sharedCategories": [
+            "DevOps"
+          ],
+          "sharedSpecialties": [
+            "Database Platform Services"
+          ],
+          "similarityScore": 90.948
+        },
+        {
+          "description": "Couchbase is a NoSQL cloud platform providing scalable data solutions for applications.",
+          "employeeRange": "501-1,000",
+          "name": "Couchbase",
+          "sharedCategories": [
+            "Enterprise Software"
+          ],
+          "sharedSpecialties": [
+            "Data Synchronization",
+            "Database Platform Services",
+            "Container and Kubernetes Platform Services",
+            "Real-Time Big Data Processing",
+            "Data Replication",
+            "SDK Management"
+          ],
+          "similarityScore": 85.913
+        },
+        {
+          "description": "Tines is a no-code workflow automation platform designed especially for security teams.",
+          "employeeRange": "251-500",
+          "name": "Tines",
+          "sharedCategories": [
+            "Software",
+            "Enterprise Software"
+          ],
+          "similarityScore": 80.073
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "title": "Funding is concentrated in the latest major round",
+      "statement": "The latest disclosed Series C round raised $43,000,000, or 41.75% of reported total funding.",
+      "implication": "This round accounts for most reported historical financing, making it important when assessing funding-source concentration and fundraising cadence.",
+      "confidence": "high",
+      "evidence": [
+        "facts.funding.totalRaised",
+        "facts.funding.rounds.0",
+        "derivedMetrics.latestRoundShareOfTotalPercent"
+      ]
+    },
+    {
+      "title": "Valuation increased across disclosed rounds",
+      "statement": "Known post-money valuation rose from $13,156,796 to $388,179,059, a 29.5x increase.",
+      "implication": "The disclosed financing history indicates a material valuation step-up between the earliest and latest rounds with known valuations.",
+      "confidence": "medium",
+      "evidence": [
+        "facts.funding.rounds",
+        "derivedMetrics.latestToEarliestKnownValuationMultiple"
+      ],
+      "caveats": [
+        "Only rounds with a disclosed post-money valuation are compared."
+      ]
+    },
+    {
+      "title": "Sharp recent attention and growth momentum",
+      "statement": "Crunchbase scores growth at 73 (-6 over 90 days) and market heat at 48 (-14).",
+      "implication": "The company has recently become much more visible, but the scores should be treated as attention/activity indicators rather than revenue or clinical-performance metrics.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.crunchbaseMomentum",
+        "facts.recentNews"
+      ],
+      "caveats": [
+        "Crunchbase does not expose the complete weighting behind these proprietary scores."
+      ]
+    },
+    {
+      "title": "Competitive benchmark reflects the modeled peer set",
+      "statement": "Crunchbase’s closest modeled peers include Grafana Labs, Neon, Harness.",
+      "implication": "These matches provide a starting point for comparing differentiation, scale, and shared specialties, but they should not be treated as a verified competitor set.",
+      "confidence": "medium",
+      "evidence": [
+        "providerSignals.similarCompanies",
+        "facts.productsAndServices"
+      ],
+      "caveats": [
+        "Similarity scores are algorithmic matches, not verified direct competitors."
+      ]
+    }
+  ],
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "issues": [
+      {
+        "severity": "low",
+        "finding": "Crunchbase reports 114 timeline items but exposes 10 unique items in this payload.",
+        "impact": "Recent news is a partial sample, not a complete history."
+      }
+    ],
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}

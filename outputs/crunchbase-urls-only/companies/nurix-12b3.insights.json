@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-12T18:24:53.633Z",
+  "source": {
+    "provider": "Crunchbase",
+    "scrapedAt": "2026-09-12T18:24:53.632Z",
+    "url": "https://www.crunchbase.com/organization/nurix-12b3"
+  },
+  "methodology": {
+    "facts": "Strict allowlist of company-facing fields from the authenticated organization payload.",
+    "insights": "Deterministic calculations and evidence-linked interpretations; no external facts were added.",
+    "limitation": "Crunchbase profile data, third-party models, and company descriptions were not independently verified."
+  },
+  "facts": {
+    "company": {
+      "name": "nurix",
+      "shortDescription": "Nurix develops AI agents for customer engagement and enterprise workflow automation.",
+      "description": "Nurix develops AI agents for enterprise customer engagement and workflow automation. Its systems support voice, chat, SMS, and email interactions for sales, customer support, lead qualification, collections, and other operational processes. NuPlay provides conversational AI agents for customer-facing teams, while NuStack is an enterprise workflow engine for connecting systems and automating back-office processes. Nurix also offers customized AI solutions for document processing, research, and knowledge-intensive workflows. The company integrates its agents with CRM, ticketing, payment, telephony, and internal API systems.",
+      "website": "https://nurix.ai/",
+      "foundedYear": 2024,
+      "operatingStatus": "Active",
+      "ownershipStatus": "Private",
+      "companyType": "For profit",
+      "industries": [
+        "Agentic AI",
+        "Artificial Intelligence (AI)",
+        "Business Process Automation (BPA)",
+        "Chatbot",
+        "Customer Service",
+        "Enterprise Software",
+        "Lead Generation",
+        "Natural Language Processing",
+        "SaaS",
+        "Sales Automation"
+      ],
+      "sectors": [
+        "Artificial Intelligence (AI)",
+        "Data and Analytics",
+        "Professional Services",
+        "Sales and Marketing",
+        "Science and Engineering",
+        "Software"
+      ]
+    },
+    "productsAndServices": [
+      {
+        "description": "NuPlay provides voice and chat AI agents for sales, support, lead qualification, and other customer-facing workflows.",
+        "name": "NuPlay"
+      },
+      {
+        "description": "NuStack connects enterprise systems and orchestrates AI agents for back-office workflow automation and operational tasks.",
+        "name": "NuStack"
+      },
+      {
+        "description": "NuLoop helps advertisers connect advertising accounts, review campaign data, draft campaigns, and propose optimization actions.",
+        "name": "NuLoop"
+      },
+      {
+        "description": "Nurix builds customized AI systems for document processing, research, knowledge work, and enterprise workflow automation.",
+        "name": "Custom AI Solutions"
+      }
+    ],
+    "funding": {
+      "detailedRoundCount": 0
+    },
+    "recentNews": {
+      "reportedCount": 0,
+      "includedUniqueCount": 0
+    }
+  },
+  "derivedMetrics": {
+    "disclosedAmountRoundCount": 0
+  },
+  "providerSignals": {
+    "note": "The following are Crunchbase-generated or algorithmic signals, not verified company facts.",
+    "crunchbaseMomentum": {
+      "heatChange90Days": 89,
+      "heatScore": 90
+    },
+    "modelPredictions": {
+      "acquisition": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 5
+      },
+      "growth": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 93.57
+      },
+      "ipo": {
+        "generatedDate": "2026-09-05",
+        "probabilityPercent": 0
+      }
+    },
+    "similarCompanies": {
+      "description": "Top five algorithmic similarity matches; not verified direct competitors."
+    }
+  },
+  "dataQuality": {
+    "overallAssessment": "Core company and funding facts are usable with caveats; detailed lists are partial and model-generated signals are provisional.",
+    "intentionallyOmitted": [
+      "Browser session, account, authentication, and internal page metadata",
+      "UUIDs, permalinks, image references, entity wrappers, and layout fields",
+      "Semrush traffic/location estimates because the sample is extremely small and geographic shares are inconsistent",
+      "Aberdeen IT-spend estimate because its date and methodology are not supplied",
+      "Empty cards and chart-history arrays"
+    ]
+  }
+}
